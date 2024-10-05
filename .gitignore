@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.cursorrules
+.env
+agentops.agent_logs/
+instructions.txt
