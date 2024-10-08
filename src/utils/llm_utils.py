@@ -5,7 +5,8 @@ import logging
 import json
 import re
 from src.utils.logger_utils import setup_logging
-from typing import List, Dict
+from typing import List, Dict, Union
+import re
 
 load_dotenv(override=True)
 
@@ -74,12 +75,12 @@ def get_llm(intelligent_or_cheap: str) -> AzureChatOpenAI:
     else:
         raise ValueError(f"Invalid LLM type: {intelligent_or_cheap}")
 
-def clean_llm_response(response: str) -> List[Dict]:
+def clean_llm_json_response(response: str) -> List[Dict]:
     """
     Clean and extract a valid JSON array from the LLM response.
     
     Args:
-        response (str): The raw response from the LLM.
+        response (str): The raw response from the LLM, expected to contain JSON.
     
     Returns:
         List[Dict]: A cleaned list of dictionaries containing the entities.
@@ -88,50 +89,71 @@ def clean_llm_response(response: str) -> List[Dict]:
         ValueError: If no valid JSON object or array found in the response.
     """
     
-    # Try to extract a JSON object or array from the response
-    json_match = re.search(r'(\{|\[)[\s\S]*(\}|\])', response)
-    
-    if not json_match:
-        raise ValueError("No valid JSON object or array found in the response")
-    
-    json_str = json_match.group(0)
-    
-    # Remove any trailing commas inside objects and arrays
-    json_str = re.sub(r',\s*([}\]])', r'\1', json_str)
-    
-    # Remove from the string ```json and ```
-    json_str = json_str.replace("```json", "").replace("```", "")
+    # Remove from the string ```json, ```plaintext, ```markdown and ```
+    response_cleaned = re.sub(r"```(json|plaintext|markdown)?", "", response)
     
     # Remove any comments
-    json_str = re.sub(r'//.*?$|/\*.*?\*/', '', json_str, flags=re.MULTILINE | re.DOTALL)
+    response_cleaned = re.sub(r'//.*?$|/\*.*?\*/', '', response_cleaned, flags=re.MULTILINE | re.DOTALL)
     
-    # Ensure all keys are properly quoted
-    json_str = re.sub(r'(\w+)(?=\s*:)', r'"\1"', json_str)
+    # Try to extract a JSON object or array from the cleaned response
+    json_match = re.search(r'(\{|\[)[\s\S]*(\}|\])', response_cleaned)
     
-    # Fix common JSON issues
-    json_str = re.sub(r'(\w+)\s*:\s*([a-zA-Z0-9_]+)', r'"\1": "\2"', json_str)  # Ensure values are quoted
-
-    # Handle nested objects and arrays
-    json_str = re.sub(r'([\[{])\s*,\s*', r'\1', json_str)  # Remove leading commas in arrays/objects
-    json_str = re.sub(r',\s*([\]}])', r'\1', json_str)  # Remove trailing commas in arrays/objects
-
-    # Wrap the response in an array if it contains multiple objects
-    if json_str.startswith('{'):
-        json_str = f'[{json_str}]'  # Wrap single object in an array
-
-    # Try to parse the JSON to catch any remaining issues
-    try:
-        parsed_json = json.loads(json_str)
+    if json_match:
+        json_str = json_match.group(0)
         
-        # If the parsed JSON is a dictionary, convert it to a list
-        if isinstance(parsed_json, dict):
-            return [parsed_json]  # Wrap the single entity in a list
-        elif not isinstance(parsed_json, list):
-            raise ValueError("Parsed JSON is not a list")
+        # Remove any trailing commas inside objects and arrays
+        json_str = re.sub(r',\s*([}\]])', r'\1', json_str)
         
-        return parsed_json  # Return the parsed list of dictionaries
-    except json.JSONDecodeError as e:
-        logger.error(f"Failed to parse cleaned JSON: {e}")
-        logger.error(f"Cleaned JSON string: {json_str}")
-        logger.error(f"Full response: {response}")  # Log the full response
-        raise ValueError(f"Failed to parse cleaned JSON: {e}")
+        # Ensure all keys are properly quoted
+        json_str = re.sub(r'(\w+)(?=\s*:)', r'"\1"', json_str)
+        
+        # Fix common JSON issues
+        json_str = re.sub(r'(\w+)\s*:\s*([a-zA-Z0-9_]+)', r'"\1": "\2"', json_str)  # Ensure values are quoted
+        
+        # Handle nested objects and arrays
+        json_str = re.sub(r'([\[{])\s*,\s*', r'\1', json_str)  # Remove leading commas in arrays/objects
+        json_str = re.sub(r',\s*([\]}])', r'\1', json_str)  # Remove trailing commas in arrays/objects
+        json_str = re.sub(r"’", "'", json_str)  # Replace all curly apostrophies with regular apostrophies
+        
+        
+        # Wrap the response in an array if it contains a single object
+        if json_str.startswith('{'):
+            json_str = f'[{json_str}]'  # Wrap single object in an array
+        
+        # Try to parse the JSON
+        try:
+            parsed_json = json.loads(json_str)
+            
+            # If the parsed JSON is a dictionary, convert it to a list
+            if isinstance(parsed_json, dict):
+                return [parsed_json]  # Wrap the single entity in a list
+            elif isinstance(parsed_json, list):
+                return parsed_json  # Return the parsed list of dictionaries
+        except json.JSONDecodeError as e:
+            logger.error(f"Failed to parse cleaned JSON: {e}")
+            logger.error(f"Cleaned JSON string: {json_str}")
+            logger.error(f"Full response: {response}")
+            raise ValueError(f"Failed to parse cleaned JSON: {e}")
+    
+    # If no valid JSON is found, raise an error
+    raise ValueError("No valid JSON object or array found in the response")
+
+def clean_llm_text_response(response: str) -> str:
+    """
+    Clean and extract meaningful text from a markdown or plaintext LLM response.
+    
+    Args:
+        response (str): The raw response from the LLM, expected to be plaintext or markdown.
+    
+    Returns:
+        str: A cleaned version of the text.
+    """
+    
+    # Remove any formatting indicators like ```plaintext, ```markdown, and ```
+    response_cleaned = re.sub(r"```(plaintext|markdown|html)?", "", response)
+    response_cleaned = re.sub(r"```", "", response_cleaned)  # Remove all triple backticks
+    response_cleaned = re.sub(r"’", "'", response_cleaned)  # Replace all curly apostrophies with regular apostrophies
+    # Strip extra whitespace
+    response_cleaned = response_cleaned.strip()
+    
+    return response_cleaned

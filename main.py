@@ -1,11 +1,11 @@
 from src.utils.logger_utils import setup_logging
 from src.plot_processing.plot_preprocessing import replace_pronouns_with_names, simplify_text
 from src.plot_processing.plot_semantic_processing import semantic_split
-from src.plot_processing.plot_ner_entity_extraction import extract_and_refine_entities
+from src.plot_processing.plot_ner_entity_extraction import extract_and_refine_entities, substitute_appellations_with_names
 from src.plot_processing.plot_character_graph import build_character_graph
 from src.plot_processing.plot_processing_models import EntityLink, EntityLinkEncoder
 from src.utils.text_utils import load_text, clean_text
-from src.utils.llm_utils import get_llm, clean_llm_response
+from src.utils.llm_utils import get_llm
 from src.path_handler import PathHandler
 import os
 import json
@@ -101,13 +101,26 @@ def process_text(path_handler: PathHandler) -> None:
                 entities_data = json.load(episode_extracted_refined_entities_file)
                 entities = [EntityLink(**entity) for entity in entities_data]
 
-        """
+        
+        entity_substituted_plot_path = path_handler.get_entity_substituted_plot_file_path()
+        
+        if not os.path.exists(entity_substituted_plot_path):
+            entity_substituted_plot = substitute_appellations_with_names(named_plot, entities, llm_intelligent)
+            with open(entity_substituted_plot_path, "w") as entity_substituted_plot_file:
+                entity_substituted_plot_file.write(entity_substituted_plot)
+        
+        else:
+            logger.info(f"Loading entity substituted plot from: {entity_substituted_plot_path}")
+            with open(entity_substituted_plot_path, "r") as entity_substituted_plot_file:
+                entity_substituted_plot = entity_substituted_plot_file.read()
+        
         # Perform semantic splitting if the file does not exist
         semantic_segments_path = path_handler.get_semantic_segments_path()
-        
+        plot_localized_sentences_path = path_handler.get_plot_localized_sentences_path()
+          
         if not os.path.exists(semantic_segments_path):
             logger.info("Performing semantic splitting.")
-            semantic_segments = semantic_split(named_plot, llm_intelligent, window_size=15)
+            semantic_segments = semantic_split(text=entity_substituted_plot, llm=llm_cheap)
 
             with open(semantic_segments_path, "w", encoding='utf-8') as semantic_segments_file:
                 json.dump(semantic_segments, semantic_segments_file, indent=2, ensure_ascii=False)
@@ -116,7 +129,7 @@ def process_text(path_handler: PathHandler) -> None:
             logger.info(f"Loading semantic segments from: {semantic_segments_path}")
             with open(semantic_segments_path, "r") as semantic_segments_file:
                 semantic_segments = json.load(semantic_segments_file)
-        
+        '''
         # Prepare file paths for narrative arc extraction
         file_paths_for_graph = {
             "season_plot_path": path_handler.get_season_plot_file_path(),
@@ -137,7 +150,7 @@ def process_text(path_handler: PathHandler) -> None:
         season_arcs = narrative_arcs_result['season_arcs']
 
         logger.info("Processing complete.")
-"""
+'''
     except Exception as e:
         logger.error(f"An error occurred during processing: {e}")
         raise
@@ -146,7 +159,7 @@ if __name__ == "__main__":
     # Configuration
     series = "GA"
     season = "S01"
-    episode = "E02"
+    episode = "E01"
 
     # Initialize PathHandler
     path_handler = PathHandler(series, season, episode)

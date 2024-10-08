@@ -5,7 +5,7 @@ from langgraph.graph import StateGraph, END
 from pydantic import BaseModel, Field
 import os
 import json
-from src.utils.llm_utils import clean_llm_response, get_llm
+from src.utils.llm_utils import clean_llm_json_response, get_llm, clean_llm_text_response
 from src.utils.logger_utils import setup_logging  # Import the setup_logging function
 
 # Set up logging
@@ -186,7 +186,7 @@ def episode_narrative_arc_extraction(state: NarrativeState) -> NarrativeState:
     logger.info("Episode narrative analysis completed.")
     
     try:
-        cleaned_content = clean_llm_response(episode_analysis.content)
+        cleaned_content = clean_llm_json_response(episode_analysis.content)
         logger.debug(f"Cleaned content: {cleaned_content[:500]}...")  # Log the first 500 characters
 
         parsed_arcs = json.loads(cleaned_content)
@@ -248,7 +248,7 @@ def verify_narrative_arcs(state: NarrativeState) -> NarrativeState:
     verified_arcs = llm.invoke(prompt.format_messages(episode_arcs=json.dumps([arc for arc in state['episode_arcs']])))
     
     try:
-        cleaned_content = clean_llm_response(verified_arcs.content)
+        cleaned_content = clean_llm_json_response(verified_arcs.content)
         parsed_arcs = json.loads(cleaned_content)
         state['episode_arcs'] = [NarrativeArc(**arc) for arc in parsed_arcs]
         logger.info("Narrative arcs verified successfully.")

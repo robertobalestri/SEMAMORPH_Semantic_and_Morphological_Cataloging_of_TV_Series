@@ -3,8 +3,7 @@
     "entity_name": "meredith_grey",
     "appellations": [
       "Meredith",
-      "Meredith Grey",
-      "Meredith Grey's"
+      "Meredith Grey"
     ],
     "entity_type": "PERSON"
   },
@@ -18,9 +17,10 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "alex_karev",
+    "entity_name": "cristina_yang",
     "appellations": [
-      "Alex Karev"
+      "Cristina",
+      "Cristina Yang"
     ],
     "entity_type": "PERSON"
   },
@@ -33,41 +33,44 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "katie_bryce",
-    "appellations": [
-      "Katie Bryce",
-      "Katie"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
     "entity_name": "isobel_stevens",
     "appellations": [
       "Isobel",
+      "Isobel Stevens",
       "Izzie",
       "Izzie Stevens"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "jeremy",
+    "entity_name": "miranda_bailey",
     "appellations": [
-      "Jeremy"
+      "Bailey",
+      "Miranda Bailey",
+      "The Nazi"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "cristina_yang",
+    "entity_name": "preston_burke",
     "appellations": [
-      "Cristina",
-      "Cristina Yang"
+      "Preston Burke",
+      "Dr. Preston Burke"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "mr_jones",
+    "entity_name": "alex_karev",
     "appellations": [
-      "Mr. Jones"
+      "Alex Karev"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "katie_bryce",
+    "appellations": [
+      "Katie",
+      "Katie Bryce"
     ],
     "entity_type": "PERSON"
   },
@@ -86,42 +89,39 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "tyler",
+    "entity_name": "gloria_savitch",
     "appellations": [
-      "Tyler"
+      "Gloria",
+      "Gloria Savitch"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "tony_savitch",
     "appellations": [
-      "Tony Savitch",
-      "Tony"
+      "Tony",
+      "Tony Savitch"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "miranda_bailey",
+    "entity_name": "nurse_tyler",
     "appellations": [
-      "Bailey",
-      "Miranda Bailey"
+      "Tyler"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "preston_burke",
+    "entity_name": "jeremy_resident",
     "appellations": [
-      "Preston Burke",
-      "Dr. Preston Burke",
-      "Preston Burke's"
+      "Jeremy"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "gloria_savitch",
+    "entity_name": "mr_jones",
     "appellations": [
-      "Gloria Savitch",
-      "Gloria"
+      "Mr. Jones"
     ],
     "entity_type": "PERSON"
   }

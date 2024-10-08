@@ -19,12 +19,12 @@ class PathHandler:
 
     def get_named_plot_file_path(self) -> str:
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_plot_named.txt")
+    
+    def get_entity_substituted_plot_file_path(self) -> str:
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_plot_entities_substituted.txt")
 
     def get_season_plot_file_path(self) -> str:
         return os.path.join(self.base_dir, self.series, self.season, f"{self.series}{self.season}_season_plot.txt")
-    
-
-
 
     def get_semantic_segments_path(self) -> str:
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_plot_semantic_segments.json")
@@ -41,9 +41,6 @@ class PathHandler:
     def get_season_narrative_analysis_path(self) -> str:
         return os.path.join(self.base_dir, self.series, self.season, f"{self.series}{self.season}_multiagent_season_narrative_analysis.txt")
 
-    def get_episode_plot_entities_image_svg_path(self) -> str:
-        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_plot_entities_image.svg")  # New method for SVG path
-
     def get_episode_refined_entities_path(self) -> str:
         """Path for saving refined entities for the episode."""
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_refined_entities.json")
@@ -54,3 +51,6 @@ class PathHandler:
     
     def get_season_extracted_refined_entities_path(self) -> str:
         return os.path.join(self.base_dir, self.series, self.season, f"{self.series}{self.season}_extracted_entities.json")
+    
+    def get_plot_localized_sentences_path(self) -> str:
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_plot_localized_sentences.json")

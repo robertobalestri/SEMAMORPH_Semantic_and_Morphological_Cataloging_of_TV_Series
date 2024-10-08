@@ -5,7 +5,7 @@ from src.plot_processing.plot_processing_models import EntityLink
 from src.utils.logger_utils import setup_logging
 from langchain_core.messages import HumanMessage
 from langchain_openai import AzureChatOpenAI
-from src.utils.llm_utils import clean_llm_response
+from src.utils.llm_utils import clean_llm_text_response, clean_llm_json_response
 import json
 import os
 import re
@@ -41,12 +41,15 @@ def extract_entities_with_spacy(text: str) -> List[str]:
     for ent in doc.ents:
         if ent.label_ == "PERSON":  # Only process PERSON entities
             # Check if the previous token is a title
+            #se gli ultimi due caratteri sono 's allora li rimuove
+            entity_text = ent.text if not ent.text.endswith("'s") else ent.text[:-2]
+            
             prev_token = doc[ent.start - 1] if ent.start > 0 else None
             if prev_token and prev_token.text in titles_list:
                 # Combine title with the entity text
-                entities.add(f"{prev_token.text} {ent.text}")
+                entities.add(f"{prev_token.text} {entity_text}")
             else:
-                entities.add(ent.text)
+                entities.add(entity_text)
 
     return list(entities)
 
@@ -81,7 +84,7 @@ def refine_entities(entities: List[str], plot: str, llm: AzureChatOpenAI, existi
     response = llm.invoke([HumanMessage(content=prompt)])
     
     try:
-        refined_entities = clean_llm_response(response.content)
+        refined_entities = clean_llm_json_response(response.content)
         logger.info(f"Refined entities: {refined_entities}")
         
         if isinstance(refined_entities, list) and len(refined_entities) > 0:
@@ -161,7 +164,7 @@ Respond in the following JSON format:
 
     response = llm.invoke([HumanMessage(content=prompt)])
     try:
-        result = json.loads(clean_llm_response(response.content))
+        result = json.loads(clean_llm_json_response(response.content))
         logger.info(f"LLM disambiguation result: {result}")
         return result["should_merge"], result["merge_with"]
     except Exception as e:
@@ -207,8 +210,8 @@ def substitute_appellations_with_names(text: str, entities: List[EntityLink], ll
         sorted_appellations = sorted(entity.appellations, key=len, reverse=True)
         
         for appellation in sorted_appellations:
-            # Use word boundaries and capture surrounding whitespace
-            pattern = r'(\s|^)(' + re.escape(appellation) + r')(\s|$)'
+            # Use word boundaries and capture surrounding whitespace, optional possessive form, and following punctuation
+            pattern = r'(\s|^)(' + re.escape(appellation) + r"(?:'s)?)(\s|[.,!?;]|$)"
             
             for match in re.finditer(pattern, text, flags=re.IGNORECASE):
                 start, end = match.span(2)  # Get the span of the actual appellation (group 2)
@@ -220,21 +223,25 @@ def substitute_appellations_with_names(text: str, entities: List[EntityLink], ll
                     if len(ambiguous_entities) > 1:
                         ambiguous_substitutions.append((appellation, ambiguous_entities, start, end))
                     else:
-                        substitutions.append((appellation, entity.entity_name, start, end))
+                        # Preserve possessive form if present
+                        replacement = f"[{entity.entity_name}]" + match.group(2)[len(appellation):]
+                        substitutions.append((match.group(2), replacement, start, end))
 
     # Resolve ambiguous substitutions using LLM
     for appellation, ambiguous_entities, start, end in ambiguous_substitutions:
         context = text[max(0, start-100):min(len(text), end+100)]  # Get surrounding context
         entity_name = disambiguate_appellation(appellation, ambiguous_entities, context, llm)
         if entity_name:
-            substitutions.append((appellation, entity_name, start, end))
+            # Preserve possessive form if present
+            replacement = f"[{entity_name}]" + text[start:end][len(appellation):]
+            substitutions.append((text[start:end], replacement, start, end))
 
     # Apply substitutions in reverse order of their position in the text
-    for appellation, entity_name, start, end in sorted(substitutions, key=lambda x: x[2], reverse=True):
-        logger.debug(f"Substituting '{appellation}' with '{entity_name}' at positions {start}:{end}")
+    for original, replacement, start, end in sorted(substitutions, key=lambda x: x[2], reverse=True):
+        logger.debug(f"Substituting '{original}' with '{replacement}' at positions {start}:{end}")
         prefix = text[:start]
         suffix = text[end:]
-        text = f"{prefix}{entity_name}{suffix}"
+        text = f"{prefix}{replacement}{suffix}"
 
     return text
 
@@ -259,7 +266,7 @@ Your response should be in the following format:
 
     response = llm.invoke([HumanMessage(content=prompt)])
     try:
-        result = json.loads(clean_llm_response(response.content))
+        result = json.loads(clean_llm_json_response(response.content))
         logger.info(f"LLM disambiguation result for appellation '{appellation}': {result}")
         return result["entity_name"] if result["entity_name"] != "UNCERTAIN" else None
     except Exception as e:
