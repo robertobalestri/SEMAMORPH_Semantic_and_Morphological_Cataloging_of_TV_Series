@@ -1,0 +1,23 @@
+[
+  {
+    "entity_name": "god",
+    "appellations": [
+      "God"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "gretel",
+    "appellations": [
+      "Gretel"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "hansel",
+    "appellations": [
+      "Hansel"
+    ],
+    "entity_type": "PERSON"
+  }
+]

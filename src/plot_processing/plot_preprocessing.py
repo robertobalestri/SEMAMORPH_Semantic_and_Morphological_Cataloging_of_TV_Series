@@ -36,14 +36,15 @@ def replace_pronouns_with_names(text: str, intelligent_llm: AzureChatOpenAI, che
         prompt = (
             "Rewrite the following text, replacing pronouns and generic references with specific character names. "
             "Follow these guidelines:\n"
-            "1. Replace all pronouns (he, she, they, etc.) with the appropriate character name.\n"
-            "2. Replace generic references like 'the woman', 'the boy', 'the old man' with specific character names found in the text.\n"
+            "1. Replace all pronouns (he, she, they, etc.) with the appropriate character name. Pay attention to the context to understand who the pronoun refers to, don't just replace the pronoun with the nearest names you find.\n"
+            "2. Replace generic references like 'the woman', 'the boy', 'the old man' with specific character names found in the provided text.\n"
             "3. Clarify possessive pronouns (his, her, their) when the reference is unclear.\n"
             "4. If you think that a sentence can be rephrased to be more clear, do so.\n"
             "5. Do not add or remove any information beyond the replacements.\n"
             "6. Separate each sentence with a newline character.\n"
             "7. You will be given the previous context (if any) of the text you are modifying.\n"
             "8. You should only output the rewritten [TEXT TO MODIFY] text. You should never output the text included in the [PREVIOUS CONTEXT] tags.\n\n"
+            "9. IMPORTANT: Do not make up character names. Only replace names that are explicitly mentioned in the text provided. If you don't read the name of a character in the text, do not replace it."
         )
         
         if i > 0:
@@ -87,6 +88,7 @@ def simplify_text(text: str, llm: AzureChatOpenAI, window_size: int = 10) -> str
         
         prompt = dedent(f"""You are a text simplification and clarification expert. You will be given a text and you will need to simplify and clarify it.
         You will be rephrasing the sentences in a simpler way, preferring shorter periods, but very clear and precise, avoiding ambiguities and maintaining all the details about place, time, characters, and actions.
+        You will try to avoid direct quotes and instead use a indirect quotation.
         You will split the text in a way that each period is focused on a single character or event.
         You will not add any other text or commentary, nor backticks or markdown formatting.
         Please simplify the following text:\n{window_text}""")

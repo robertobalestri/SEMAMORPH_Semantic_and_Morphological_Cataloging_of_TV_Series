@@ -16,7 +16,7 @@ from dotenv import load_dotenv
 
 load_dotenv(override=True)
 
-#agentops.init()
+agentops.init()
 
 # Set up logging
 logger = setup_logging(__name__)
@@ -36,25 +36,27 @@ def process_text(path_handler: PathHandler) -> None:
         llm_intelligent = get_llm("intelligent")
         llm_cheap = get_llm("cheap")
         
-        # Load raw text
-        input_file = path_handler.get_raw_plot_file_path()
-        logger.info(f"Loading raw plot from: {input_file}")
         
-        if not os.path.exists(input_file):
-            logger.error(f"Raw plot file not found: {input_file}")
-            return
-        
-        raw_plot = load_text(input_file)
-        logger.debug(f"Raw plot content: {raw_plot[:100]}...")  # Log the first 100 characters for brevity
-        
-        cleaned_plot = clean_text(raw_plot)
-        logger.info("Cleaning plot text completed.")
-        logger.debug(f"cleaned_plot plot content: {cleaned_plot[:100]}...")  # Log the first 100 characters for brevity
         
         # Simplify the text if the file does not exist
         simplified_file_path = path_handler.get_simplified_plot_file_path()
         
         if not os.path.exists(simplified_file_path):
+            # Load raw text
+            input_file = path_handler.get_raw_plot_file_path()
+            logger.info(f"Loading raw plot from: {input_file}")
+            
+            if not os.path.exists(input_file):
+                logger.error(f"Raw plot file not found: {input_file}")
+                return
+            
+            raw_plot = load_text(input_file)
+            logger.debug(f"Raw plot content: {raw_plot[:100]}...")  # Log the first 100 characters for brevity
+            
+            cleaned_plot = clean_text(raw_plot)
+            logger.info("Cleaning plot text completed.")
+            logger.debug(f"cleaned_plot plot content: {cleaned_plot[:100]}...")  # Log the first 100 characters for brevity
+                
             logger.info(f"Simplifying text and saving to: {simplified_file_path}")
             simplified_text = simplify_text(cleaned_plot, llm_intelligent)
             logger.debug(f"Simplified text content: {simplified_text[:100]}...")  # Log the first 100 characters for brevity
@@ -116,11 +118,11 @@ def process_text(path_handler: PathHandler) -> None:
         
         # Perform semantic splitting if the file does not exist
         semantic_segments_path = path_handler.get_semantic_segments_path()
-        plot_localized_sentences_path = path_handler.get_plot_localized_sentences_path()
+        #plot_localized_sentences_path = path_handler.get_plot_localized_sentences_path()
           
         if not os.path.exists(semantic_segments_path):
             logger.info("Performing semantic splitting.")
-            semantic_segments = semantic_split(text=entity_substituted_plot, llm=llm_cheap)
+            semantic_segments = semantic_split(text=entity_substituted_plot, llm=llm_intelligent)
 
             with open(semantic_segments_path, "w", encoding='utf-8') as semantic_segments_file:
                 json.dump(semantic_segments, semantic_segments_file, indent=2, ensure_ascii=False)
@@ -129,7 +131,11 @@ def process_text(path_handler: PathHandler) -> None:
             logger.info(f"Loading semantic segments from: {semantic_segments_path}")
             with open(semantic_segments_path, "r") as semantic_segments_file:
                 semantic_segments = json.load(semantic_segments_file)
-        '''
+                
+                
+                
+                
+        
         # Prepare file paths for narrative arc extraction
         file_paths_for_graph = {
             "season_plot_path": path_handler.get_season_plot_file_path(),
@@ -150,7 +156,7 @@ def process_text(path_handler: PathHandler) -> None:
         season_arcs = narrative_arcs_result['season_arcs']
 
         logger.info("Processing complete.")
-'''
+
     except Exception as e:
         logger.error(f"An error occurred during processing: {e}")
         raise

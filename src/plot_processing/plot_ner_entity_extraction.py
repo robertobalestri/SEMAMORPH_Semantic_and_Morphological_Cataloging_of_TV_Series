@@ -70,7 +70,9 @@ def refine_entities(entities: List[str], plot: str, llm: AzureChatOpenAI, existi
                 4. For families or groups, use "the_surname" format. Families and members of the family are different entities. They should be added separately and the family members should not be listed in the appellations of the family.
                 5. Treat individuals with the same surname (e.g., Mr. Smith and Mrs. Smith) as separate entities unless there's clear evidence they're the same person.
                 6. Exclude generic appellatives (e.g. "the baby", "the old man", "the woman", "she", "he", etc.) and non-character entities (like name of Universities, Companies, etc.), also exclude names that are not characters (for example in "Bob looks like Dumbo", Dumbo is not a character).
-
+                7. Sometimes some characters might be referred only with a generic term like "the dragon", "the mage", "the robot", etc. In those cases use the generic term as the entity name.
+                8. If a character is not in the existing entities list, you can still add it if you are sure that it's a new character.
+                
                 Respond with a JSON list of objects in this format:
                 [
                     {{

@@ -17,7 +17,7 @@ class NarrativeArc(BaseModel):
     Title: str = Field(..., description="The title of the narrative arc")
     Description: str = Field(..., description="A brief description of the narrative arc")
     Progression: List[str] = Field(default_factory=list, description="Key progression points of the narrative arc")
-    Type: str = Field(..., description="Type of the arc: 'Episodic', 'Seasonal', or 'Potential Series-wide'")
+    Type: str = Field(..., description="Type of the arc: 'Episodic' or 'Seasonal'")
     Characters: List[str] = Field(default_factory=list, description="Characters involved in this arc")
 
 class NarrativeState(TypedDict):
@@ -137,7 +137,7 @@ def episode_narrative_arc_extraction(state: NarrativeState) -> NarrativeState:
                 Example: Standalone cases in Law & Order, medical cases in Grey's Anatomy, or main anthologic plots in Black Mirror.
 
             Mythology Arc: Focuses on the overarching lore or thematic elements that span across episodes or seasons.
-                Example: The alien conspiracy in The X-Files.
+                Example: The alien conspiracy in The X-Files or the Night Walkers plot in Game of Thrones.
 
         Task:
 
@@ -160,6 +160,7 @@ def episode_narrative_arc_extraction(state: NarrativeState) -> NarrativeState:
         2. Identify both episodic arcs and ongoing seasonal arcs.
         3. Be specific about plot points and character motivations.
         4. Avoid broad or vague categories; each arc should be distinct and well-defined.
+        5. The title should be specific. For example for a medical drama the episodic content should be "Medical Case: [insert case name here]", for a procedural it should be "Procedural Case: [insert case name here]" and so on.
         
         Return the narrative arcs in the following JSON format:
         [
