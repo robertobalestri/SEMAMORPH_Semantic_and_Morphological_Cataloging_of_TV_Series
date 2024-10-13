@@ -1,16 +1,17 @@
 from src.utils.logger_utils import setup_logging
-from src.plot_processing.plot_preprocessing import replace_pronouns_with_names, simplify_text
+from src.plot_processing.plot_text_processing import replace_pronouns_with_names, simplify_text, summarize_plot
 from src.plot_processing.plot_semantic_processing import semantic_split
-from src.plot_processing.plot_ner_entity_extraction import extract_and_refine_entities, substitute_appellations_with_names
+from src.plot_processing.plot_ner_entity_extraction import extract_and_refine_entities, substitute_appellations_with_names, normalize_entities_names_to_best_appellation
 from src.plot_processing.plot_character_graph import build_character_graph
 from src.plot_processing.plot_processing_models import EntityLink, EntityLinkEncoder
 from src.utils.text_utils import load_text, clean_text
-from src.utils.llm_utils import get_llm
+from src.ai_models.ai_models import get_llm
 from src.path_handler import PathHandler
 import os
 import json
 import agentops
 from src.langgraph_narrative_arcs_extraction.narrative_arc_graph import extract_narrative_arcs
+from src.ai_models.ai_models import LLMType
 
 from dotenv import load_dotenv
 
@@ -33,10 +34,8 @@ def process_text(path_handler: PathHandler) -> None:
     """
     try:
         logger.info("Initializing language models.")
-        llm_intelligent = get_llm("intelligent")
-        llm_cheap = get_llm("cheap")
-        
-        
+        llm_intelligent = get_llm(LLMType.INTELLIGENT)
+        llm_cheap = get_llm(LLMType.CHEAP)
         
         # Simplify the text if the file does not exist
         simplified_file_path = path_handler.get_simplified_plot_file_path()
@@ -105,24 +104,34 @@ def process_text(path_handler: PathHandler) -> None:
 
         
         entity_substituted_plot_path = path_handler.get_entity_substituted_plot_file_path()
+        entity_normalized_plot_path = path_handler.get_entity_normalized_plot_file_path()
         
-        if not os.path.exists(entity_substituted_plot_path):
+        if not os.path.exists(entity_substituted_plot_path) :
             entity_substituted_plot = substitute_appellations_with_names(named_plot, entities, llm_intelligent)
             with open(entity_substituted_plot_path, "w") as entity_substituted_plot_file:
                 entity_substituted_plot_file.write(entity_substituted_plot)
-        
         else:
             logger.info(f"Loading entity substituted plot from: {entity_substituted_plot_path}")
             with open(entity_substituted_plot_path, "r") as entity_substituted_plot_file:
                 entity_substituted_plot = entity_substituted_plot_file.read()
         
+        
+        if not os.path.exists(entity_normalized_plot_path):
+            entity_normalized_plot = normalize_entities_names_to_best_appellation(entity_substituted_plot, entities)
+            with open(entity_normalized_plot_path, "w") as entity_normalized_plot_file:
+                entity_normalized_plot_file.write(entity_normalized_plot)
+        
+        else:           
+            logger.info(f"Loading entity normalized plot from: {entity_normalized_plot_path}")
+            with open(entity_normalized_plot_path, "r") as entity_normalized_plot_file:
+                entity_normalized_plot = entity_normalized_plot_file.read()
+                
         # Perform semantic splitting if the file does not exist
         semantic_segments_path = path_handler.get_semantic_segments_path()
-        #plot_localized_sentences_path = path_handler.get_plot_localized_sentences_path()
           
         if not os.path.exists(semantic_segments_path):
             logger.info("Performing semantic splitting.")
-            semantic_segments = semantic_split(text=entity_substituted_plot, llm=llm_intelligent)
+            semantic_segments = semantic_split(text=entity_normalized_plot, llm=llm_intelligent)
 
             with open(semantic_segments_path, "w", encoding='utf-8') as semantic_segments_file:
                 json.dump(semantic_segments, semantic_segments_file, indent=2, ensure_ascii=False)
@@ -130,10 +139,16 @@ def process_text(path_handler: PathHandler) -> None:
         else:
             logger.info(f"Loading semantic segments from: {semantic_segments_path}")
             with open(semantic_segments_path, "r") as semantic_segments_file:
-                semantic_segments = json.load(semantic_segments_file)
+                semantic_segments = json.load(semantic_segments_file)          
                 
                 
-                
+        summarized_plot_path = path_handler.get_summarized_plot_path()        
+        if not os.path.exists(summarized_plot_path):
+            summarized_plot = summarize_plot(entity_normalized_plot, llm_cheap, summarized_plot_path)
+        else:
+            logger.info(f"Loading summarized plot from: {summarized_plot_path}")
+            with open(summarized_plot_path, "r") as summarized_plot_file:
+                summarized_plot = summarized_plot_file.read()
                 
         
         # Prepare file paths for narrative arc extraction
@@ -143,12 +158,13 @@ def process_text(path_handler: PathHandler) -> None:
             "seasonal_narrative_analysis_output_path": path_handler.get_season_narrative_analysis_path(),
             "episode_narrative_analysis_output_path": path_handler.get_episode_narrative_analysis_path(),
             "episode_narrative_arcs_path": path_handler.get_episode_narrative_arcs_path(),
-            "season_narrative_arcs_path": path_handler.get_season_narrative_arcs_path()  # Add this line
+            "season_narrative_arcs_path": path_handler.get_season_narrative_arcs_path(),
+            "summarized_plot_path": summarized_plot_path
         }
 
         # Extract narrative arcs using LangGraph
         logger.info("Extracting narrative arcs.")
-        narrative_arcs_result = extract_narrative_arcs(file_paths_for_graph)
+        narrative_arcs_result = extract_narrative_arcs(file_paths_for_graph, series, season, episode)
 
         # Process the results
         season_analysis = narrative_arcs_result['season_analysis']

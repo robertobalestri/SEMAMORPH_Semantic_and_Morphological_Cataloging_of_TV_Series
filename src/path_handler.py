@@ -23,6 +23,9 @@ class PathHandler:
     def get_entity_substituted_plot_file_path(self) -> str:
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_plot_entities_substituted.txt")
 
+    def get_entity_normalized_plot_file_path(self) -> str:
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_plot_entities_normalized.txt")
+
     def get_season_plot_file_path(self) -> str:
         return os.path.join(self.base_dir, self.series, self.season, f"{self.series}{self.season}_season_plot.txt")
 
@@ -54,3 +57,6 @@ class PathHandler:
     
     def get_plot_localized_sentences_path(self) -> str:
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_plot_localized_sentences.json")
+    
+    def get_summarized_plot_path(self) -> str:
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_summarized_plot.txt")

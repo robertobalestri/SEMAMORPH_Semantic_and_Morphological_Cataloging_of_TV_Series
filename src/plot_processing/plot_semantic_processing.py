@@ -78,7 +78,7 @@ def correct_segments(segments: List[str], llm: AzureChatOpenAI, batch_size: int 
     logger.info(f"Segment correction complete. Total segments: {len(corrected_segments)}")
     return corrected_segments
 
-def semantic_split(text: str, llm: AzureChatOpenAI, window_size: int = 20, correction_batch_size: int = 3) -> List[str]:
+def semantic_split(text: str, llm: AzureChatOpenAI, summarized_plot: str, window_size: int = 20, correction_batch_size: int = 3) -> List[str]:
     logger.info("Starting semantic split")
 
     sentences = split_into_sentences(text)

@@ -1,0 +1,90 @@
+[
+  {
+    "Title": "Meredith and Derek's Relationship",
+    "Arc_Type": "Soap Arc",
+    "Description": "Explores the romantic tension and complications between Meredith and Derek.",
+    "Progression": [
+      "Meredith wakes up with Derek after a one-night stand.",
+      "Meredith discovers Derek is her superior at the hospital.",
+      "Derek asks Meredith out again, but she declines due to professional boundaries.",
+      "Derek insists Meredith assist in surgery due to her competence, not their personal history."
+    ],
+    "Duration": "Seasonal",
+    "Characters": [
+      "Meredith Grey",
+      "Derek Shepherd"
+    ]
+  },
+  {
+    "Title": "Medical Case: Katie Bryce's Seizures",
+    "Arc_Type": "Episodic Arc",
+    "Description": "The interns work to diagnose and treat Katie Bryce, a patient with unexplained seizures.",
+    "Progression": [
+      "Katie is admitted with seizures.",
+      "Meredith is assigned to her case.",
+      "Interns compete to diagnose the cause.",
+      "Meredith and Cristina discover Katie has an aneurysm.",
+      "Meredith assists in the surgery to save Katie."
+    ],
+    "Duration": "Episodic",
+    "Characters": [
+      "Meredith Grey",
+      "Cristina Yang",
+      "Derek Shepherd",
+      "Katie Bryce"
+    ]
+  },
+  {
+    "Title": "Interns' First Day Challenges",
+    "Arc_Type": "Genre-Specific Arc",
+    "Description": "The interns face the realities of their first day at Seattle Grace Hospital.",
+    "Progression": [
+      "Interns meet their resident, Bailey.",
+      "Each intern is assigned tasks and struggles with their responsibilities.",
+      "George fails in his first surgery attempt.",
+      "Izzie struggles with a central line procedure.",
+      "Meredith saves Katie during a seizure."
+    ],
+    "Duration": "Episodic",
+    "Characters": [
+      "Meredith Grey",
+      "Cristina Yang",
+      "George O'Malley",
+      "Izzie Stevens",
+      "Alex Karev",
+      "Miranda Bailey"
+    ]
+  },
+  {
+    "Title": "Meredith's Personal Struggles",
+    "Arc_Type": "Character Arc",
+    "Description": "Meredith grapples with her mother's legacy and her own identity as a surgeon.",
+    "Progression": [
+      "Meredith is introduced as the daughter of a famous surgeon.",
+      "She struggles with her mother's expectations and her own self-doubt.",
+      "Meredith decides not to sell her mother's house and plans to get roommates.",
+      "Revealed that her mother, Ellis Grey, has Alzheimer's disease."
+    ],
+    "Duration": "Seasonal",
+    "Characters": [
+      "Meredith Grey",
+      "Ellis Grey"
+    ]
+  },
+  {
+    "Title": "George's Quest for Respect",
+    "Arc_Type": "Character Arc",
+    "Description": "George seeks to prove himself as a competent surgeon.",
+    "Progression": [
+      "George is chosen for an appendectomy but fails.",
+      "He is nicknamed '007' by his peers.",
+      "George promises a patient's wife that her husband will be okay, but the patient dies.",
+      "George is tasked with delivering the bad news, highlighting his struggle for respect."
+    ],
+    "Duration": "Seasonal",
+    "Characters": [
+      "George O'Malley",
+      "Preston Burke"
+    ]
+  }
+]

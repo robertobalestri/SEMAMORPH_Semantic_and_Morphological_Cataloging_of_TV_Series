@@ -1,44 +1,55 @@
 from typing import Dict, List, TypedDict
-from langchain_openai import AzureChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from langgraph.graph import StateGraph, END
 from pydantic import BaseModel, Field
 import os
 import json
-from src.utils.llm_utils import clean_llm_json_response, get_llm, clean_llm_text_response
-from src.utils.logger_utils import setup_logging  # Import the setup_logging function
+from src.utils.llm_utils import clean_llm_json_response
+from src.utils.logger_utils import setup_logging
+from vectorstore.vectorstore_collection import CollectionType, get_vectorstore_collection
+from src.ai_models.ai_models import get_llm, LLMType
+from src.narrative_classes.narrative_classes import NarrativeArc
 
 # Set up logging
-logger = setup_logging(__name__)  # Use the setup_logging function
+logger = setup_logging(__name__)
 
-# Define the state
-class NarrativeArc(BaseModel):
-    """Model representing a narrative arc."""
-    Title: str = Field(..., description="The title of the narrative arc")
-    Description: str = Field(..., description="A brief description of the narrative arc")
-    Progression: List[str] = Field(default_factory=list, description="Key progression points of the narrative arc")
-    Type: str = Field(..., description="Type of the arc: 'Episodic' or 'Seasonal'")
-    Characters: List[str] = Field(default_factory=list, description="Characters involved in this arc")
 
-class NarrativeState(TypedDict):
+class NarrativeArcsExtractionState(TypedDict):
     """State representation for the narrative analysis process."""
     season_analysis: str
     episode_arcs: List[NarrativeArc]
     season_arcs: List[NarrativeArc]
     file_paths: Dict[str, str]
     existing_arcs: Dict[str, NarrativeArc]
-    episode_narrative_analysis: str  # New field for episode narrative analysis
+    episode_narrative_analysis: str
+    similar_arcs: List[Dict[str, str]]
+    series: str
+    season: str
+    episode: str
 
-
-llm = get_llm("intelligent")
+llm = get_llm(LLMType.INTELLIGENT)
 
 def read_file_content(file_path: str) -> str:
-    """Read the content of a file."""
+    """Read the content of a file.
+
+    Args:
+        file_path (str): The path to the file to be read.
+
+    Returns:
+        str: The content of the file.
+    """
     with open(file_path, 'r') as file:
         return file.read()
 
 def load_existing_arcs(file_path: str) -> Dict[str, NarrativeArc]:
-    """Load existing narrative arcs from a JSON file."""
+    """Load existing narrative arcs from a JSON file.
+
+    Args:
+        file_path (str): The path to the JSON file containing narrative arcs.
+
+    Returns:
+        Dict[str, NarrativeArc]: A dictionary of existing narrative arcs.
+    """
     try:
         with open(file_path, 'r') as file:
             data = json.load(file)
@@ -47,23 +58,15 @@ def load_existing_arcs(file_path: str) -> Dict[str, NarrativeArc]:
         logger.warning(f"File not found: {file_path}. Returning empty existing arcs.")
         return {}
 
-def update_narrative_arcs(existing_arcs: Dict[str, NarrativeArc], new_arcs: List[NarrativeArc]) -> Dict[str, NarrativeArc]:
-    """Update existing narrative arcs with new information."""
-    for new_arc in new_arcs:
-        if new_arc.Title in existing_arcs:
-            existing_arc = existing_arcs[new_arc.Title]
-            existing_arc.Description = new_arc.Description
-            existing_arc.Progression.extend(new_arc.Progression)
-            existing_arc.Characters = list(set(existing_arc.Characters + new_arc.Characters))
-            logger.info(f"Updated existing arc: {new_arc.Title}")
-        else:
-            existing_arcs[new_arc.Title] = new_arc
-            logger.info(f"Added new arc: {new_arc.Title}")
-    return existing_arcs
+def seasonal_narrative_analysis(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
+    """Analyze the season plot to identify overarching themes and character development.
 
-# Define the nodes
-def seasonal_narrative_analysis(state: NarrativeState) -> NarrativeState:
-    """Analyze the season plot to identify overarching themes and character development."""
+    Args:
+        state (NarrativeArcsExtractionState): The current state of the narrative analysis.
+
+    Returns:
+        NarrativeArcsExtractionState: The updated state after analysis.
+    """
     logger.info("Starting seasonal narrative analysis.")
     
     # Check if the seasonal analysis output file already exists
@@ -88,7 +91,6 @@ def seasonal_narrative_analysis(state: NarrativeState) -> NarrativeState:
         4. The interconnectedness of themes and character arcs.
 
         Your analysis should be detailed, insightful, and avoid generic or vague statements.
-        Focus on the specific narrative elements that make this season unique and impactful.
         """
     )
     season_analysis = llm.invoke(prompt.format_messages(season_plot=season_plot))
@@ -102,8 +104,70 @@ def seasonal_narrative_analysis(state: NarrativeState) -> NarrativeState:
 
     return state
 
-def episode_narrative_arc_extraction(state: NarrativeState) -> NarrativeState:
-    """Analyze the episode plot to identify narrative arcs based on the season analysis."""
+def episode_narrative_analysis(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
+    """Analyze the episode plot to provide a discoursive narrative analysis based on the season analysis.
+
+    Args:
+        state (NarrativeArcsExtractionState): The current state of the narrative analysis.
+
+    Returns:
+        NarrativeArcsExtractionState: The updated state after analysis.
+    """
+    logger.info("Starting episode narrative analysis.")
+    
+    # Check if the episode narrative analysis output file already exists
+    if os.path.exists(state['file_paths']['episode_narrative_analysis_output_path']):
+        logger.info("Episode narrative analysis output already exists. Loading from file.")
+        with open(state['file_paths']['episode_narrative_analysis_output_path'], 'r') as f:
+            state['episode_narrative_analysis'] = f.read()
+        return state
+
+    episode_plot = read_file_content(state['file_paths']['episode_plot_path'])
+    logger.debug(f"Episode plot content: {episode_plot[:100]}...")  # Log the first 100 characters for brevity
+
+    prompt = ChatPromptTemplate.from_template(
+        """As an Episode Narrative Analyzer, your task is to analyze the following episode plot in the context of the overall season analysis:
+        
+        Episode Plot:
+        {episode_plot}
+
+        Season Analysis:
+        {season_analysis}
+
+        Provide a comprehensive narrative analysis focusing on:
+        1. Key themes and motifs present in the episode.
+        2. Character development and interactions.
+        3. Narrative techniques and stylistic choices.
+        4. How this episode contributes to the overarching narrative of the season.
+
+        Your analysis should be detailed, insightful, and avoid generic or vague statements.
+        """
+    )
+    
+    episode_analysis = llm.invoke(prompt.format_messages(
+        episode_plot=episode_plot,
+        season_analysis=state['season_analysis'],
+    ))
+    
+    logger.info("Episode narrative analysis completed.")
+    state['episode_narrative_analysis'] = episode_analysis.content
+
+    # Save the episode narrative analysis output to a file
+    with open(state['file_paths']['episode_narrative_analysis_output_path'], 'w') as f:
+        f.write(state['episode_narrative_analysis'])
+    logger.info("Episode narrative analysis output saved.")
+
+    return state
+
+def episode_narrative_arc_extraction(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
+    """Analyze the episode plot to identify narrative arcs based on the season analysis.
+
+    Args:
+        state (NarrativeArcsExtractionState): The current state of the narrative analysis.
+
+    Returns:
+        NarrativeArcsExtractionState: The updated state after arc extraction.
+    """
     logger.info("Starting episode narrative analysis.")
     
     # Check if the episode analysis output file already exists
@@ -114,10 +178,10 @@ def episode_narrative_arc_extraction(state: NarrativeState) -> NarrativeState:
         return state
 
     episode_plot = read_file_content(state['file_paths']['episode_plot_path'])
-    logger.debug(f"Episode plot content: {episode_plot[:100]}...")  # Log the first 100 characters for brevity
+    logger.debug(f"Episode plot content: {episode_plot[:100]}...")
 
-    existing_arcs = state['existing_arcs'] if state['existing_arcs'] else {}
-    logger.info(f"Existing arcs before analysis: {list(existing_arcs.keys())}")
+    vectorstore_collection = get_vectorstore_collection(collection_type=CollectionType.NARRATIVE_ARCS)
+    llm = get_llm(LLMType.INTELLIGENT)
 
     prompt = ChatPromptTemplate.from_template(
         """
@@ -127,7 +191,7 @@ def episode_narrative_arc_extraction(state: NarrativeState) -> NarrativeState:
             Soap Arc: Focuses on the development of a romantic relationship between characters or explores the dynamics and evolution of family relationships or friendships.
                 Example: Jim and Pam's relationship in The Office or the family interactions in This Is Us.
                 
-            Genre-Specific Arc: This arc is specific to the genre of the show, such as specific professional challenges in a medical drama, family or political dynamics in a fantasy series, or survival in a horror series.
+            Genre-Specific Arc: This arc is specific to the genre of the show, such as specific professional challenges in a medical drama, family or political dynamics in a fantasy series, survival in a horror series, professional work in a legal drama, etc.
                 Example: The power struggles between families in Game of Thrones, or medical challenges in Grey's Anatomy.
 
             Character Arc: Follows the personal growth or transformation of a character over time.
@@ -166,9 +230,10 @@ def episode_narrative_arc_extraction(state: NarrativeState) -> NarrativeState:
         [
             {{
                 "Title": "Arc Title",
+                "Arc_Type": "Soap Arc/Genre-Specific Arc/Character Arc/Episodic Arc/Mythology Arc",
                 "Description": "Brief description of the arc",
                 "Progression": ["Key point 1", "Key point 2", ...],
-                "Type": "Episodic/Seasonal/Potential Series-wide",
+                "Duration": "Episodic/Seasonal",
                 "Characters": ["Character 1", "Character 2", ...]
             }},
             ... more arcs ...
@@ -181,21 +246,15 @@ def episode_narrative_arc_extraction(state: NarrativeState) -> NarrativeState:
     
     episode_analysis = llm.invoke(prompt.format_messages(
         episode_plot=episode_plot,
-        season_analysis=state['season_analysis']
+        season_analysis=state['season_analysis'],
     ))
     
     logger.info("Episode narrative analysis completed.")
     
+    logger.debug(f"Raw episode analysis content: {episode_analysis.content}")
+    
     try:
-        cleaned_content = clean_llm_json_response(episode_analysis.content)
-        logger.debug(f"Cleaned content: {cleaned_content[:500]}...")  # Log the first 500 characters
-
-        parsed_arcs = json.loads(cleaned_content)
-        
-        if not isinstance(parsed_arcs, list):
-            logger.error("Parsed content is not a list. Raw content: {}".format(cleaned_content))
-            raise ValueError("Parsed content is not a list")
-
+        parsed_arcs = clean_llm_json_response(episode_analysis.content)
         new_arcs = []
         for arc in parsed_arcs:
             if not isinstance(arc, dict):
@@ -209,27 +268,47 @@ def episode_narrative_arc_extraction(state: NarrativeState) -> NarrativeState:
 
         logger.info(f"New arcs identified: {[arc.Title for arc in new_arcs]}")
         state['episode_arcs'] = new_arcs
-        state['existing_arcs'] = update_narrative_arcs(state['existing_arcs'], new_arcs)
+
+        # Update the vector database with new arcs
+        series = state['series']
+        season = state['season']
+        episode = state['episode']
+        if new_arcs:
+            vectorstore_collection.add_narrative_arcs(new_arcs, series, season, episode)
+            logger.info(f"Added {len(new_arcs)} new narrative arcs for {series} {season} {episode} to the vector database.")
+        else:
+            logger.warning("No valid narrative arcs were created. Skipping vector database update.")
+
     except json.JSONDecodeError as e:
         logger.error(f"Failed to parse JSON: {e}")
         logger.error(f"Raw response content: {episode_analysis.content}")
-    except ValueError as e:
-        logger.error(f"Invalid data structure: {e}")
-        logger.error(f"Parsed content: {parsed_arcs}")
     except Exception as e:
         logger.error(f"Unexpected error: {e}")
         logger.error(f"Raw response content: {episode_analysis.content}")
-    
-    # Save the episode narrative analysis output to a file
-    with open(state['file_paths']['episode_narrative_arcs_path'], 'w') as f:
-        json.dump([arc.dict() for arc in state['episode_arcs']], f, indent=2)
-    logger.info("Episode narrative analysis output saved.")
 
     return state
 
-def verify_narrative_arcs(state: NarrativeState) -> NarrativeState:
-    """Verify the identified narrative arcs for consistency and distinctness."""
+def verify_narrative_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
+    """Verify the identified narrative arcs for consistency and distinctness.
+
+    Args:
+        state (NarrativeArcsExtractionState): The current state of the narrative analysis.
+
+    Returns:
+        NarrativeArcsExtractionState: The updated state after verification.
+    """
     logger.info("Starting verification of narrative arcs.")
+    
+    # Convert NarrativeArc instances to dictionaries for JSON serialization
+    episode_arcs_dicts = []
+    for arc in state['episode_arcs']:
+        if isinstance(arc, NarrativeArc):
+            episode_arcs_dicts.append(arc.model_dump())
+        elif isinstance(arc, dict):
+            episode_arcs_dicts.append(arc)
+        else:
+            logger.warning(f"Unexpected type for arc: {type(arc)}. Skipping.")
+    
     prompt = ChatPromptTemplate.from_template(
         """As a Narrative Verification Specialist, your task is to verify the following narrative arcs:
 
@@ -239,20 +318,31 @@ def verify_narrative_arcs(state: NarrativeState) -> NarrativeState:
         1. Each arc is distinct and doesn't overlap significantly with others.
         2. Arc titles are consistent with the broader story and not too episode-specific.
         3. Descriptions and progressions are clear and relevant to the arc.
-        4. The categorization (Episodic/Seasonal/Potential Series-wide) is appropriate.
+        4. The categorization (Episodic/Seasonal) is appropriate.
 
         If you find any issues, please correct them. Return the verified and potentially corrected arcs in the same JSON format.
         Ensure your response contains only the JSON array of narrative arcs, without any additional text or explanations.
         """
     )
     
-    verified_arcs = llm.invoke(prompt.format_messages(episode_arcs=json.dumps([arc for arc in state['episode_arcs']])))
+    verified_arcs = llm.invoke(prompt.format_messages(episode_arcs=json.dumps(episode_arcs_dicts)))
     
     try:
         cleaned_content = clean_llm_json_response(verified_arcs.content)
+        
+        # Ensure cleaned_content is a JSON string before parsing
+        if isinstance(cleaned_content, list):
+            cleaned_content = json.dumps(cleaned_content)  # Convert list to JSON string
+        
         parsed_arcs = json.loads(cleaned_content)
         state['episode_arcs'] = [NarrativeArc(**arc) for arc in parsed_arcs]
         logger.info("Narrative arcs verified successfully.")
+        
+        # Save the episode narrative analysis output to a file
+        with open(state['file_paths']['episode_narrative_arcs_path'], 'w') as f:
+            json.dump([arc.model_dump() for arc in state['episode_arcs']], f, indent=2)
+        logger.info("Episode narrative analysis output saved.")
+        
     except (json.JSONDecodeError, ValueError) as e:
         logger.error(f"Failed to parse verified arcs: {e}")
         logger.error(f"Raw response content: {verified_arcs.content}")
@@ -260,78 +350,47 @@ def verify_narrative_arcs(state: NarrativeState) -> NarrativeState:
     
     return state
 
-def manage_season_arcs(state: NarrativeState) -> NarrativeState:
-    """Manage and update the season-wide narrative arcs based on episode analysis."""
+def manage_season_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
+    """Manage and update the season-wide narrative arcs based on episode analysis.
+
+    Args:
+        state (NarrativeArcsExtractionState): The current state of the narrative analysis.
+
+    Returns:
+        NarrativeArcsExtractionState: The updated state after managing season arcs.
+    """
     logger.info("Managing season arcs.")
-    season_arcs = update_narrative_arcs(state['existing_arcs'], state['episode_arcs'])
-    state['season_arcs'] = list(season_arcs.values())
-    logger.info(f"Updated season arcs: {[arc.Title for arc in state['season_arcs']]}")
-    return state
-
-def episode_narrative_analysis(state: NarrativeState) -> NarrativeState:
-    """Analyze the episode plot to provide a discoursive narrative analysis based on the season analysis."""
-    logger.info("Starting episode narrative analysis.")
-    
-    # Check if the episode narrative analysis output file already exists
-    if os.path.exists(state['file_paths']['episode_narrative_analysis_output_path']):
-        logger.info("Episode narrative analysis output already exists. Loading from file.")
-        with open(state['file_paths']['episode_narrative_analysis_output_path'], 'r') as f:
-            state['episode_narrative_analysis'] = f.read()
-        return state
-
-    episode_plot = read_file_content(state['file_paths']['episode_plot_path'])
-    logger.debug(f"Episode plot content: {episode_plot[:100]}...")  # Log the first 100 characters for brevity
-
-    prompt = ChatPromptTemplate.from_template(
-        """As an Episode Narrative Analyzer, your task is to analyze the following episode plot in the context of the overall season analysis:
-
-        Episode Plot:
-        {episode_plot}
-
-        Season Analysis:
-        {season_analysis}
-
-        Provide a comprehensive narrative analysis focusing on:
-        1. Key themes and motifs present in the episode.
-        2. Character development and interactions.
-        3. Narrative techniques and stylistic choices.
-        4. How this episode contributes to the overarching narrative of the season.
-
-        Your analysis should be detailed, insightful, and avoid generic or vague statements.
-        Focus on the specific narrative elements that make this episode unique and impactful.
-        """
+    vectorstore_collection = get_vectorstore_collection(collection_type=CollectionType.NARRATIVE_ARCS)
+    updated_arcs = vectorstore_collection.update_narrative_arcs(
+        state['existing_arcs'], 
+        state['episode_arcs'],
+        state['series'],
+        state['season'],
+        state['episode']
     )
-    
-    episode_analysis = llm.invoke(prompt.format_messages(
-        episode_plot=episode_plot,
-        season_analysis=state['season_analysis']
-    ))
-    
-    logger.info("Episode narrative analysis completed.")
-    state['episode_narrative_analysis'] = episode_analysis.content
-
-    # Save the episode narrative analysis output to a file
-    with open(state['file_paths']['episode_narrative_analysis_output_path'], 'w') as f:
-        f.write(state['episode_narrative_analysis'])
-    logger.info("Episode narrative analysis output saved.")
-
+    state['season_arcs'] = list(updated_arcs.values())
+    logger.info(f"Updated season arcs: {[arc.Title for arc in state['season_arcs']]}")
     return state
 
 # Create the graph
 def create_narrative_arc_graph():
-    """Create and configure the state graph for narrative arc extraction."""
-    workflow = StateGraph(NarrativeState)
+    """Create and configure the state graph for narrative arc extraction.
+
+    Returns:
+        StateGraph: The compiled state graph for narrative arc extraction.
+    """
+    workflow = StateGraph(NarrativeArcsExtractionState)
 
     workflow.add_node("seasonal_analysis_node", seasonal_narrative_analysis)
-    workflow.add_node("episode_analysis_node", episode_narrative_arc_extraction)
-    workflow.add_node("episode_narrative_analysis_node", episode_narrative_analysis)  # New node
+    workflow.add_node("episode_narrative_analysis_node", episode_narrative_analysis)
+    workflow.add_node("episode_narrative_arc_extraction", episode_narrative_arc_extraction)   
     workflow.add_node("verify_arcs_node", verify_narrative_arcs)
     workflow.add_node("manage_season_arcs_node", manage_season_arcs)
 
     workflow.set_entry_point("seasonal_analysis_node")
-    workflow.add_edge("seasonal_analysis_node", "episode_analysis_node")
-    workflow.add_edge("episode_analysis_node", "episode_narrative_analysis_node")  # New edge
-    workflow.add_edge("episode_narrative_analysis_node", "verify_arcs_node")
+    workflow.add_edge("seasonal_analysis_node", "episode_narrative_analysis_node")
+    workflow.add_edge("episode_narrative_analysis_node", "episode_narrative_arc_extraction")
+    workflow.add_edge("episode_narrative_arc_extraction", "verify_arcs_node")
     workflow.add_edge("verify_arcs_node", "manage_season_arcs_node")
     workflow.add_edge("manage_season_arcs_node", END)
     
@@ -340,23 +399,37 @@ def create_narrative_arc_graph():
     return workflow.compile()
 
 # Function to run the graph
-def extract_narrative_arcs(file_paths: Dict[str, str]) -> Dict[str, List[NarrativeArc]]:
-    """Extract narrative arcs from the provided file paths and save the results."""
+def extract_narrative_arcs(file_paths: Dict[str, str], series: str, season: str, episode: str) -> Dict[str, List[NarrativeArc]]:
+    """Extract narrative arcs from the provided file paths and save the results.
+
+    Args:
+        file_paths (Dict[str, str]): A dictionary containing file paths for input and output.
+        series (str): The series identifier.
+        season (str): The season identifier.
+        episode (str): The episode identifier.
+
+    Returns:
+        Dict[str, List[NarrativeArc]]: The result containing updated narrative arcs.
+    """
     existing_arcs = load_existing_arcs(file_paths.get("season_narrative_arcs_path", ""))
     graph = create_narrative_arc_graph()
-    initial_state = NarrativeState(
+    initial_state = NarrativeArcsExtractionState(
         season_analysis="",
         episode_arcs=[],
         season_arcs=[],
         file_paths=file_paths,
         existing_arcs=existing_arcs,
-        episode_narrative_analysis="" 
+        episode_narrative_analysis="",
+        similar_arcs=[],
+        series=series,
+        season=season,
+        episode=episode
     )
     result = graph.invoke(initial_state)
 
     # Save the updated narrative arcs
     with open(file_paths["season_narrative_arcs_path"], 'w') as f:
-        json.dump([arc.dict() for arc in result['season_arcs']], f, indent=2)
+        json.dump([arc.model_dump() for arc in result['season_arcs']], f, indent=2)
 
     # Save the seasonal narrative analysis output
     with open(file_paths['seasonal_narrative_analysis_output_path'], 'w') as f:
@@ -364,10 +437,16 @@ def extract_narrative_arcs(file_paths: Dict[str, str]) -> Dict[str, List[Narrati
 
     # Save the episode narrative analysis
     with open(file_paths['episode_narrative_arcs_path'], 'w') as f:
-        json.dump([arc.dict() for arc in result['episode_arcs']], f, indent=2)
+        json.dump([arc.model_dump() for arc in result['episode_arcs']], f, indent=2)
 
     # Save the episode narrative analysis
     with open(file_paths['episode_narrative_analysis_output_path'], 'w') as f:
-        f.write(result['episode_narrative_analysis'])  # Ensure this is included
+        f.write(result['episode_narrative_analysis'])
+
+    # Update the vector database with all arcs
+    vectorstore_collection = get_vectorstore_collection(collection_type=CollectionType.NARRATIVE_ARCS)
+    vectorstore_collection.add_narrative_arcs(result['episode_arcs'], series, season, episode)
+    vectorstore_collection.add_narrative_arcs(result['season_arcs'], series, season, episode)
+    logger.info("Updated vector database with all narrative arcs.")
 
     return result

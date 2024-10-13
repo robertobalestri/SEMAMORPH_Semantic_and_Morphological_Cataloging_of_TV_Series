@@ -88,10 +88,10 @@ Afterward, [george_omalley] worries about the nickname.
 [meredith_grey] runs through the hospital.
 [meredith_grey] finds [katie_bryce], who faked a seizure and wants [meredith_grey] to call someone.
 Annoyed, [meredith_grey] leaves.
-Nurse [nurse_tyler] asks [isobel_stevens] what [isobel_stevens] needs.
+[nurse_tyler] asks [isobel_stevens] what [isobel_stevens] needs.
 [isobel_stevens] says [mr_jones] has bad veins and needs antibiotics.
 [isobel_stevens] should start a central line but doesn't know how.
-Nurse [nurse_tyler] smiles and tells [isobel_stevens] to wake up [miranda_bailey], the on-call resident.
+[nurse_tyler] smiles and tells [isobel_stevens] to wake up [miranda_bailey], the on-call resident.
 [isobel_stevens] timidly walks over.
 [miranda_bailey] asks if the patient is dying.
 When [isobel_stevens] says no, [miranda_bailey] goes back to sleep.
@@ -102,7 +102,7 @@ After a few seconds, [miranda_bailey] gets up grumpily and starts the central li
 The nurse asks if [alex_karev] is sure.
 [alex_karev] sarcastically asks if the nurse went through four years of medical school.
 [alex_karev] walks over to [meredith_grey].
-[alex_karev] says he has [jeremy_resident] as his resident.
+[alex_karev] says he has [jeremy] as his resident.
 [meredith_grey] replies that the patient might not have pneumonia; it could be splinting.
 [alex_karev] calls [meredith_grey] a nurse.
 [meredith_grey] feels insulted but answers her page.

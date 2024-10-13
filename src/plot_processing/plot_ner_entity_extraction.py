@@ -5,7 +5,7 @@ from src.plot_processing.plot_processing_models import EntityLink
 from src.utils.logger_utils import setup_logging
 from langchain_core.messages import HumanMessage
 from langchain_openai import AzureChatOpenAI
-from src.utils.llm_utils import clean_llm_text_response, clean_llm_json_response
+from src.utils.llm_utils import clean_llm_json_response
 import json
 import os
 import re
@@ -66,9 +66,10 @@ def refine_entities(entities: List[str], plot: str, llm: AzureChatOpenAI, existi
                 For each character:
                 1. Provide a primary name in the format "name_surname" (lowercase with underscores). If a character has only one name or surname with a title, use the title and the name (e.g. "dr_johnson").
                 2. In appellations, list ALL names, titles and nicknames used for the character in the plot.
-                3. Include full names, first names, last names, titles, and nicknames in appellations.
-                4. For families or groups, use "the_surname" format. Families and members of the family are different entities. They should be added separately and the family members should not be listed in the appellations of the family.
-                5. Treat individuals with the same surname (e.g., Mr. Smith and Mrs. Smith) as separate entities unless there's clear evidence they're the same person.
+                3. Choose from the appellations found the best appellation for the character, we will use it as the entity name.
+                4. Include full names, first names, last names, titles, and nicknames in appellations.
+                5. For families or groups, use "the_surname" format. Families and members of the family are different entities. They should be added separately and the family members should not be listed in the appellations of the family.
+                6. Treat individuals with the same surname (e.g., Mr. Smith and Mrs. Smith) as separate entities unless there's clear evidence they're the same person.
                 6. Exclude generic appellatives (e.g. "the baby", "the old man", "the woman", "she", "he", etc.) and non-character entities (like name of Universities, Companies, etc.), also exclude names that are not characters (for example in "Bob looks like Dumbo", Dumbo is not a character).
                 7. Sometimes some characters might be referred only with a generic term like "the dragon", "the mage", "the robot", etc. In those cases use the generic term as the entity name.
                 8. If a character is not in the existing entities list, you can still add it if you are sure that it's a new character.
@@ -77,6 +78,7 @@ def refine_entities(entities: List[str], plot: str, llm: AzureChatOpenAI, existi
                 [
                     {{
                         "entity_name": "primary_name",
+                        "best_appellation": "Chosen Appellation",
                         "appellations": ["Appellation1", "Appellation2", ...]
                     }},
                     ...
@@ -99,13 +101,15 @@ def refine_entities(entities: List[str], plot: str, llm: AzureChatOpenAI, existi
         return []
 
 def merge_entities(existing_entities: List[EntityLink], new_entities: List[EntityLink], llm: AzureChatOpenAI) -> List[EntityLink]:
-    merged = defaultdict(lambda: {"entity_name": "", "appellations": set()})
+    merged = defaultdict(lambda: {"entity_name": "", "best_appellation": "","appellations": set()})  # Added best_appellation
     
     # First, process existing entities
     for entity in existing_entities:
         key = entity.entity_name.lower()
         merged[key]["entity_name"] = entity.entity_name
+        merged[key]["best_appellation"] = entity.best_appellation
         merged[key]["appellations"].update(entity.appellations)
+        
     
     # Then, process new entities
     for new_entity in new_entities:
@@ -114,6 +118,7 @@ def merge_entities(existing_entities: List[EntityLink], new_entities: List[Entit
         # Check if this entity already exists
         if lower_name in merged:
             merged[lower_name]["appellations"].update(new_entity.appellations)
+            merged[lower_name]["best_appellation"] = new_entity.best_appellation
         else:
             # Check for shared appellations
             shared_appellation_entities = []
@@ -127,18 +132,21 @@ def merge_entities(existing_entities: List[EntityLink], new_entities: List[Entit
                 should_merge, merge_with = disambiguate_entities(new_entity, shared_appellation_entities, merged, llm)
                 if should_merge:
                     merged[merge_with]["appellations"].update(new_entity.appellations)
+                    merged[merge_with]["best_appellation"] = new_entity.best_appellation  # Update best_appellation
                     logger.info(f"Merged '{new_entity.entity_name}' with existing entity '{merged[merge_with]['entity_name']}' based on LLM disambiguation")
                 else:
                     merged[lower_name]["entity_name"] = new_entity.entity_name
                     merged[lower_name]["appellations"].update(new_entity.appellations)
+                    merged[lower_name]["best_appellation"] = new_entity.best_appellation  # Store best_appellation
                     logger.info(f"Added '{new_entity.entity_name}' as a new entity based on LLM disambiguation")
             else:
                 # No shared appellations, add as a new entity
                 merged[lower_name]["entity_name"] = new_entity.entity_name
                 merged[lower_name]["appellations"].update(new_entity.appellations)
+                merged[lower_name]["best_appellation"] = new_entity.best_appellation  # Store best_appellation
     
     # Convert back to EntityLink objects
-    return [EntityLink(entity_name=data["entity_name"], appellations=list(data["appellations"])) for data in merged.values()]
+    return [EntityLink(entity_name=data["entity_name"], appellations=list(data["appellations"]), best_appellation=data["best_appellation"]) for data in merged.values()]  # Include best_appellation
 
 def disambiguate_entities(new_entity: EntityLink, shared_appellation_entities: List[Tuple[str, set]], merged: Dict, llm: AzureChatOpenAI) -> Tuple[bool, str]:
     prompt = f"""I need to determine if the following entity should be merged with any existing entities or kept separate:
@@ -274,3 +282,9 @@ Your response should be in the following format:
     except Exception as e:
         logger.error(f"Failed to parse LLM response for appellation disambiguation: {e}")
         return None
+
+def normalize_entities_names_to_best_appellation(text: str, entities: List[EntityLink]) -> str:
+    #substitute the [entity_name] with the best_appellation
+    for entity in entities:
+        text = text.replace(f"[{entity.entity_name}]", entity.best_appellation)
+    return text

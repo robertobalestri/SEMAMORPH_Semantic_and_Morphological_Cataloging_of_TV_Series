@@ -1,79 +1,9 @@
-from langchain_openai import AzureChatOpenAI
-from dotenv import load_dotenv
-import os
-import logging
+from typing import List, Dict
+import re
 import json
-import re
 from src.utils.logger_utils import setup_logging
-from typing import List, Dict, Union
-import re
 
-load_dotenv(override=True)
-
-# Set up logging
 logger = setup_logging(__name__)
-
-# Global variables to store LLM instances
-_intelligent_llm = None
-_cheap_llm = None
-
-def _initialize_llm(intelligent_or_cheap: str) -> AzureChatOpenAI:
-    """
-    Initialize and return an instance of AzureChatOpenAI LLM.
-
-    Args:
-        intelligent_or_cheap (str): Specify whether to initialize the 'intelligent' or 'cheap' LLM.
-
-    Returns:
-        AzureChatOpenAI: An instance of the AzureChatOpenAI LLM.
-    """
-    try:
-        if intelligent_or_cheap == "intelligent":
-            return AzureChatOpenAI(
-                deployment_name=os.getenv("AZURE_OPENAI_LLM_DEPLOYMENT_NAME_INTELLIGENT"),
-                model=os.getenv("AZURE_OPENAI_LLM_MODEL_NAME_INTELLIGENT"),
-                api_key=os.getenv("AZURE_OPENAI_API_KEY"),
-                azure_endpoint=os.getenv("AZURE_OPENAI_API_ENDPOINT"),
-                api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
-                temperature=0.2,
-            )
-        elif intelligent_or_cheap == "cheap":
-            return AzureChatOpenAI(
-                deployment_name=os.getenv("AZURE_OPENAI_LLM_DEPLOYMENT_NAME_CHEAP"),
-                model=os.getenv("AZURE_OPENAI_LLM_MODEL_NAME_CHEAP"),
-                api_key=os.getenv("AZURE_OPENAI_API_KEY"),
-                azure_endpoint=os.getenv("AZURE_OPENAI_API_ENDPOINT"),
-                api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
-                temperature=0.2,
-            )
-        else:
-            raise ValueError(f"Invalid LLM type: {intelligent_or_cheap}")
-    except Exception as e:
-        logger.error(f"Failed to initialize LLM: {e}")
-        raise
-
-def get_llm(intelligent_or_cheap: str) -> AzureChatOpenAI:
-    """
-    Get the initialized LLM instance. If not initialized, initialize it first.
-
-    Args:
-        intelligent_or_cheap (str): Specify whether to get the 'intelligent' or 'cheap' LLM.
-
-    Returns:
-        AzureChatOpenAI: An instance of the AzureChatOpenAI LLM.
-    """
-    global _intelligent_llm, _cheap_llm
-
-    if intelligent_or_cheap == "intelligent":
-        if _intelligent_llm is None:
-            _intelligent_llm = _initialize_llm("intelligent")
-        return _intelligent_llm
-    elif intelligent_or_cheap == "cheap":
-        if _cheap_llm is None:
-            _cheap_llm = _initialize_llm("cheap")
-        return _cheap_llm
-    else:
-        raise ValueError(f"Invalid LLM type: {intelligent_or_cheap}")
 
 def clean_llm_json_response(response: str) -> List[Dict]:
     """
@@ -98,23 +28,30 @@ def clean_llm_json_response(response: str) -> List[Dict]:
     # Try to extract a JSON object or array from the cleaned response
     json_match = re.search(r'(\{|\[)[\s\S]*(\}|\])', response_cleaned)
     
+    #if the first and last characters are ' or " then remove them in 2 calls
+    if response_cleaned[0] in ['"', "'"]:
+        response_cleaned = response_cleaned[1:]
+    if response_cleaned[-1] in ['"', "'"]:
+        response_cleaned = response_cleaned[:-1]
+    
     if json_match:
         json_str = json_match.group(0)
         
         # Remove any trailing commas inside objects and arrays
-        json_str = re.sub(r',\s*([}\]])', r'\1', json_str)
+        #json_str = re.sub(r',\s*([}\]])', r'\1', json_str)
         
         # Ensure all keys are properly quoted
-        json_str = re.sub(r'(\w+)(?=\s*:)', r'"\1"', json_str)
+        #json_str = re.sub(r'(\w+)(?=\s*:)', r'"\1"', json_str)
         
         # Fix common JSON issues
-        json_str = re.sub(r'(\w+)\s*:\s*([a-zA-Z0-9_]+)', r'"\1": "\2"', json_str)  # Ensure values are quoted
+        #json_str = re.sub(r'(\w+)\s*:\s*([a-zA-Z0-9_]+)', r'"\1": "\2"', json_str)  # Ensure values are quoted
         
         # Handle nested objects and arrays
-        json_str = re.sub(r'([\[{])\s*,\s*', r'\1', json_str)  # Remove leading commas in arrays/objects
-        json_str = re.sub(r',\s*([\]}])', r'\1', json_str)  # Remove trailing commas in arrays/objects
-        json_str = re.sub(r"’", "'", json_str)  # Replace all curly apostrophies with regular apostrophies
+        #json_str = re.sub(r'([\[{])\s*,\s*', r'\1', json_str)  # Remove leading commas in arrays/objects
+        #json_str = re.sub(r',\s*([\]}])', r'\1', json_str)  # Remove trailing commas in arrays/objects
         
+        # Replace all curly apostrophes with regular apostrophes
+        json_str = json_str.replace("'", "'")
         
         # Wrap the response in an array if it contains a single object
         if json_str.startswith('{'):
@@ -152,7 +89,7 @@ def clean_llm_text_response(response: str) -> str:
     # Remove any formatting indicators like ```plaintext, ```markdown, and ```
     response_cleaned = re.sub(r"```(plaintext|markdown|html)?", "", response)
     response_cleaned = re.sub(r"```", "", response_cleaned)  # Remove all triple backticks
-    response_cleaned = re.sub(r"’", "'", response_cleaned)  # Replace all curly apostrophies with regular apostrophies
+    response_cleaned = re.sub(r"’", "'", response_cleaned)  # Replace all curly apostrophies with regular apostrophes
     # Strip extra whitespace
     response_cleaned = response_cleaned.strip()
     

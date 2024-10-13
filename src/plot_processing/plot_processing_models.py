@@ -5,6 +5,7 @@ from json import JSONEncoder
 
 class EntityLink(BaseModel):
     entity_name: str  # Updated from character to entity_name
+    best_appellation: str
     appellations: List[str]
     entity_type: str = "PERSON"  # Default to PERSON, but can be ORG, GPE, etc.
     
