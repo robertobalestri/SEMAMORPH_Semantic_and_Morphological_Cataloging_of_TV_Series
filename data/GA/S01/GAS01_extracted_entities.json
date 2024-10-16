@@ -1,49 +1,49 @@
 [
   {
     "entity_name": "meredith_grey",
-    "best_appellation": "Meredith Grey",
+    "best_appellation": "Meredith",
     "appellations": [
-      "Meredith Grey",
-      "Meredith"
+      "Meredith",
+      "Meredith Grey"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "derek_shepherd",
-    "best_appellation": "Derek Shepherd",
+    "best_appellation": "Derek",
     "appellations": [
       "Dr. Derek Shepherd",
-      "Derek Shepherd",
-      "Derek"
+      "Derek",
+      "Derek Shepherd"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "cristina_yang",
-    "best_appellation": "Cristina Yang",
+    "best_appellation": "Cristina",
     "appellations": [
-      "Cristina",
-      "Cristina Yang"
+      "Cristina Yang",
+      "Cristina"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "george_omalley",
-    "best_appellation": "George O'Malley",
+    "best_appellation": "George",
     "appellations": [
-      "George",
-      "George O'Malley"
+      "George O'Malley",
+      "George"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "isobel_stevens",
-    "best_appellation": "Isobel Stevens",
+    "best_appellation": "Izzie Stevens",
     "appellations": [
+      "Isobel Stevens",
       "Izzie Stevens",
-      "Isobel",
       "Izzie",
-      "Isobel Stevens"
+      "Isobel"
     ],
     "entity_type": "PERSON"
   },
@@ -51,9 +51,9 @@
     "entity_name": "miranda_bailey",
     "best_appellation": "Miranda Bailey",
     "appellations": [
-      "Miranda Bailey",
       "Bailey",
-      "The Nazi"
+      "The Nazi",
+      "Miranda Bailey"
     ],
     "entity_type": "PERSON"
   },
@@ -61,25 +61,28 @@
     "entity_name": "alex_karev",
     "best_appellation": "Alex Karev",
     "appellations": [
-      "Alex",
-      "Alex Karev"
+      "Alex Karev",
+      "Alex"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "preston_burke",
-    "best_appellation": "Preston Burke",
+    "best_appellation": "Burke",
     "appellations": [
       "Dr. Preston Burke",
-      "Preston Burke"
+      "Preston Burke",
+      "Burke"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "richard_webber",
-    "best_appellation": "Richard Webber",
+    "best_appellation": "Richard",
     "appellations": [
-      "Richard Webber"
+      "Richard",
+      "Richard Webber",
+      "Webber"
     ],
     "entity_type": "PERSON"
   },
@@ -113,8 +116,8 @@
     "entity_name": "tony_savitch",
     "best_appellation": "Tony Savitch",
     "appellations": [
-      "Tony Savitch",
-      "Tony"
+      "Tony",
+      "Tony Savitch"
     ],
     "entity_type": "PERSON"
   },
@@ -122,8 +125,8 @@
     "entity_name": "nurse_tyler",
     "best_appellation": "Nurse Tyler",
     "appellations": [
-      "Tyler",
-      "Nurse Tyler"
+      "Nurse Tyler",
+      "Tyler"
     ],
     "entity_type": "PERSON"
   },
@@ -140,6 +143,62 @@
     "best_appellation": "Mr. Jones",
     "appellations": [
       "Mr. Jones"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "mrs_johnson",
+    "best_appellation": "Mrs. Johnson",
+    "appellations": [
+      "Mrs. Johnson"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "ahn",
+    "best_appellation": "Ahn",
+    "appellations": [
+      "Ahn"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "patricia",
+    "best_appellation": "Patricia",
+    "appellations": [
+      "Patricia"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "allison",
+    "best_appellation": "Allison",
+    "appellations": [
+      "Allison"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "ms_lu",
+    "best_appellation": "Ms. Lu",
+    "appellations": [
+      "Ms. Lu"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "dr_kay",
+    "best_appellation": "Dr. Kay",
+    "appellations": [
+      "Dr. Kay"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "the_johnsons",
+    "best_appellation": "Johnsons",
+    "appellations": [
+      "Johnsons"
     ],
     "entity_type": "PERSON"
   }

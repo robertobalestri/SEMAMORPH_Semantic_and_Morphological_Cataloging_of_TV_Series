@@ -1,90 +1,96 @@
 [
   {
-    "Title": "Meredith and Derek's Relationship",
-    "Arc_Type": "Soap Arc",
-    "Description": "Explores the romantic tension and complications between Meredith and Derek.",
-    "Progression": [
-      "Meredith wakes up with Derek after a one-night stand.",
-      "Meredith discovers Derek is her superior at the hospital.",
-      "Derek asks Meredith out again, but she declines due to professional boundaries.",
-      "Derek insists Meredith assist in surgery due to her competence, not their personal history."
-    ],
-    "Duration": "Seasonal",
-    "Characters": [
-      "Meredith Grey",
-      "Derek Shepherd"
-    ]
-  },
-  {
-    "Title": "Medical Case: Katie Bryce's Seizures",
-    "Arc_Type": "Episodic Arc",
-    "Description": "The interns work to diagnose and treat Katie Bryce, a patient with unexplained seizures.",
-    "Progression": [
-      "Katie is admitted with seizures.",
-      "Meredith is assigned to her case.",
-      "Interns compete to diagnose the cause.",
-      "Meredith and Cristina discover Katie has an aneurysm.",
-      "Meredith assists in the surgery to save Katie."
-    ],
-    "Duration": "Episodic",
-    "Characters": [
+    "title": "Medical Case: Katie Bryce's Aneurysm",
+    "arc_type": "Episodic Arc",
+    "description": "This arc focuses on the medical case of Katie Bryce, a patient experiencing severe seizures, which serves as a pivotal learning experience for the interns at Seattle Grace Hospital.",
+    "duration": "Episodic",
+    "characters": [
       "Meredith Grey",
       "Cristina Yang",
+      "George O'Malley",
       "Derek Shepherd",
       "Katie Bryce"
-    ]
+    ],
+    "series": "GA",
+    "progressions": [
+      {
+        "content": "Meredith is assigned to Katie Bryce's case and quickly realizes the severity of her condition. | The interns collaborate to diagnose Katie's condition, leading to the discovery of her aneurysm. | Meredith successfully assists in the surgery, showcasing her potential as a surgeon.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E01",
+        "ordinal_position": 1,
+        "main_arc_id": "f7fbc7d05e419d6e26421f564de6e02a"
+      }
+    ],
+    "id": "f7fbc7d05e419d6e26421f564de6e02a"
   },
   {
-    "Title": "Interns' First Day Challenges",
-    "Arc_Type": "Genre-Specific Arc",
-    "Description": "The interns face the realities of their first day at Seattle Grace Hospital.",
-    "Progression": [
-      "Interns meet their resident, Bailey.",
-      "Each intern is assigned tasks and struggles with their responsibilities.",
-      "George fails in his first surgery attempt.",
-      "Izzie struggles with a central line procedure.",
-      "Meredith saves Katie during a seizure."
+    "title": "Romantic Tension: Meredith and Derek",
+    "arc_type": "Soap Arc",
+    "description": "This arc explores the complicated romantic relationship between Meredith and Derek, which begins with their one-night stand and evolves as they navigate their professional lives.",
+    "duration": "Seasonal",
+    "characters": [
+      "Meredith Grey",
+      "Derek Shepherd"
     ],
-    "Duration": "Episodic",
-    "Characters": [
+    "series": "GA",
+    "progressions": [
+      {
+        "content": "Meredith and Derek's initial encounter leads to a one-night stand, creating immediate tension. | Meredith's embarrassment and desire to avoid Derek complicate their interactions at the hospital. | Despite their awkwardness, Derek acknowledges Meredith's skills, hinting at a deeper connection.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E01",
+        "ordinal_position": 1,
+        "main_arc_id": "5deb60dd07c31e26c2b73000e6a8bc9d"
+      }
+    ],
+    "id": "5deb60dd07c31e26c2b73000e6a8bc9d"
+  },
+  {
+    "title": "Interns' Professional Growth: The First Day at Seattle Grace",
+    "arc_type": "Genre-Specific Arc",
+    "description": "This arc follows the journey of the interns as they face the challenges of their first day in a high-pressure medical environment, highlighting their professional development and the dynamics of their relationships.",
+    "duration": "Seasonal",
+    "characters": [
       "Meredith Grey",
       "Cristina Yang",
       "George O'Malley",
       "Izzie Stevens",
-      "Alex Karev",
       "Miranda Bailey"
-    ]
+    ],
+    "series": "GA",
+    "progressions": [
+      {
+        "content": "The interns are introduced to the realities of hospital life, including the pressure of patient care. | Each intern faces personal challenges, such as George's insecurity and Izzie's struggle for respect. | Meredith's quick thinking in a crisis solidifies her role as a competent intern.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E01",
+        "ordinal_position": 1,
+        "main_arc_id": "27b395cde65fc0319b928b3e3018ce47"
+      }
+    ],
+    "id": "27b395cde65fc0319b928b3e3018ce47"
   },
   {
-    "Title": "Meredith's Personal Struggles",
-    "Arc_Type": "Character Arc",
-    "Description": "Meredith grapples with her mother's legacy and her own identity as a surgeon.",
-    "Progression": [
-      "Meredith is introduced as the daughter of a famous surgeon.",
-      "She struggles with her mother's expectations and her own self-doubt.",
-      "Meredith decides not to sell her mother's house and plans to get roommates.",
-      "Revealed that her mother, Ellis Grey, has Alzheimer's disease."
-    ],
-    "Duration": "Seasonal",
-    "Characters": [
+    "title": "Legacy and Identity: Meredith's Relationship with Her Mother",
+    "arc_type": "Mythology Arc",
+    "description": "This arc delves into Meredith's struggle with her mother's legacy as a renowned surgeon, impacting her self-identity and professional aspirations throughout the season.",
+    "duration": "Seasonal",
+    "characters": [
       "Meredith Grey",
       "Ellis Grey"
-    ]
-  },
-  {
-    "Title": "George's Quest for Respect",
-    "Arc_Type": "Character Arc",
-    "Description": "George seeks to prove himself as a competent surgeon.",
-    "Progression": [
-      "George is chosen for an appendectomy but fails.",
-      "He is nicknamed '007' by his peers.",
-      "George promises a patient's wife that her husband will be okay, but the patient dies.",
-      "George is tasked with delivering the bad news, highlighting his struggle for respect."
     ],
-    "Duration": "Seasonal",
-    "Characters": [
-      "George O'Malley",
-      "Preston Burke"
-    ]
+    "series": "GA",
+    "progressions": [
+      {
+        "content": "Meredith grapples with the pressure of living up to her mother's reputation. | Her embarrassment over her mother's legacy influences her interactions with colleagues. | The revelation of her mother's Alzheimer's disease adds complexity to Meredith's identity crisis.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E01",
+        "ordinal_position": 1,
+        "main_arc_id": "2fec51a95b458037dc6a3df0d7de5ec4"
+      }
+    ],
+    "id": "2fec51a95b458037dc6a3df0d7de5ec4"
   }
 ]

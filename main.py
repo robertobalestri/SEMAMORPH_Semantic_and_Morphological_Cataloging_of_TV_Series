@@ -2,7 +2,6 @@ from src.utils.logger_utils import setup_logging
 from src.plot_processing.plot_text_processing import replace_pronouns_with_names, simplify_text, summarize_plot
 from src.plot_processing.plot_semantic_processing import semantic_split
 from src.plot_processing.plot_ner_entity_extraction import extract_and_refine_entities, substitute_appellations_with_names, normalize_entities_names_to_best_appellation
-from src.plot_processing.plot_character_graph import build_character_graph
 from src.plot_processing.plot_processing_models import EntityLink, EntityLinkEncoder
 from src.utils.text_utils import load_text, clean_text
 from src.ai_models.ai_models import get_llm

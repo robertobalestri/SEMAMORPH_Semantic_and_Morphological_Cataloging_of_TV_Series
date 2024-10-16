@@ -32,7 +32,7 @@ def split_text(window_text: str, llm: AzureChatOpenAI) -> List[str]:
     """)
 
     response = llm.invoke([HumanMessage(content=prompt)])
-    marked_text = clean_llm_text_response(response.content.strip())
+    marked_text = clean_llm_text_response(str(response.content).strip())
 
     segments = re.split(r'<BOS>', marked_text)
     segments = [clean_text(seg.strip()) for seg in segments if seg.strip()]
@@ -66,7 +66,7 @@ def correct_segments(segments: List[str], llm: AzureChatOpenAI, batch_size: int 
         """)
 
         response = llm.invoke([HumanMessage(content=prompt)])
-        corrected_text = clean_llm_text_response(response.content.strip())
+        corrected_text = clean_llm_text_response(str(response.content).strip())
 
         batch_corrected_segments = re.split(r'<BOS>', corrected_text)
         batch_corrected_segments = [clean_text(seg.strip()) for seg in batch_corrected_segments if seg.strip()]
@@ -78,7 +78,7 @@ def correct_segments(segments: List[str], llm: AzureChatOpenAI, batch_size: int 
     logger.info(f"Segment correction complete. Total segments: {len(corrected_segments)}")
     return corrected_segments
 
-def semantic_split(text: str, llm: AzureChatOpenAI, summarized_plot: str, window_size: int = 20, correction_batch_size: int = 3) -> List[str]:
+def semantic_split(text: str, llm: AzureChatOpenAI, window_size: int = 20, correction_batch_size: int = 3) -> List[str]:
     logger.info("Starting semantic split")
 
     sentences = split_into_sentences(text)

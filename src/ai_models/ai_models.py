@@ -2,12 +2,21 @@ from langchain_openai import AzureChatOpenAI, AzureOpenAIEmbeddings
 from dotenv import load_dotenv
 import os
 from enum import Enum
-from src.utils.logger_utils import setup_logging
 
-load_dotenv(override=True)
 
-# Set up logging
-logger = setup_logging(__name__)
+try:
+    from src.utils.logger_utils import setup_logging
+    load_dotenv(override=True)
+
+    # Set up logging
+    logger = setup_logging(__name__)
+except:
+    import logging
+    logger = logging.getLogger(__name__)
+    logger.setLevel(logging.DEBUG)
+    logger.addHandler(logging.StreamHandler())
+
+
 
 # Global variables to store LLM instances
 _intelligent_llm = None
@@ -83,4 +92,14 @@ def get_embedding_model():
         openai_api_key=os.getenv("AZURE_OPENAI_API_KEY"),
         openai_api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
         openai_api_type=os.getenv("OPENAI_API_TYPE"),
+        model=os.getenv("AZURE_OPENAI_EMBEDDING_MODEL_NAME"),
     )
+    
+    
+def test_llm():
+    llm = get_llm(LLMType.CHEAP)
+    print(llm)
+    print(llm.invoke("Hello, how are you?"))
+    
+if __name__ == "__main__":
+    test_llm()
