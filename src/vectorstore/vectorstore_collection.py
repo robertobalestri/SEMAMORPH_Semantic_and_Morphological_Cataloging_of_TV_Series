@@ -31,7 +31,7 @@ class MainDocumentMetadata(BaseModel):
     title: str
     description: str
     arc_type: str
-    duration: str
+    episodic: bool
     characters: str
     doc_type: str
     series: str
@@ -42,7 +42,7 @@ class MainDocumentMetadata(BaseModel):
 class ProgressionDocumentMetadata(BaseModel):
     title: str
     arc_type: str
-    duration: str
+    episodic: bool
     characters: str
     progression: str
     doc_type: str
@@ -142,7 +142,7 @@ class NarrativeArcCollection(VectorStoreCollection):
                     # Merge arcs
                     existing_arc.description = arc.description
                     existing_arc.arc_type = arc.arc_type
-                    existing_arc.duration = arc.duration
+                    existing_arc.episodic = arc.episodic
                     existing_arc.characters = list(set(existing_arc.characters + arc.characters))
                     
                     # Assign ordinal position to new progression
@@ -186,7 +186,7 @@ class NarrativeArcCollection(VectorStoreCollection):
             "title": arc.title,
             "arc_type": arc.arc_type,
             "description": arc.description,
-            "duration": arc.duration,
+            "episodic": arc.episodic,   
             "characters": ','.join(arc.characters),  # Ensure this is a string
             "series": arc.series,
             "doc_type": "main",
@@ -204,7 +204,7 @@ class NarrativeArcCollection(VectorStoreCollection):
         metadata = {
             "title": arc.title,
             "arc_type": arc.arc_type,
-            "duration": arc.duration,
+            "episodic": arc.episodic,
             "characters": ','.join(arc.characters),
             "series": arc.series,
             "doc_type": "progression",
@@ -240,7 +240,7 @@ class NarrativeArcCollection(VectorStoreCollection):
                 "title": title,
                 "description": description,
                 "arc_type": metadata.get('arc_type'),
-                "duration": metadata.get('duration'),
+                "episodic": metadata.get('episodic'),
                 "characters": metadata['characters'],
                 "series": metadata.get('series'),
                 "id": arc_id
@@ -344,7 +344,7 @@ class NarrativeArcCollection(VectorStoreCollection):
             Progression: {progression_b}
 
             Do these arcs represent the same narrative arc continuing across episodes, or are they distinct arcs?
-
+            Consider that another llm gave you the title and description of the arc, without knowing previous arcs in the series, so often these arcs are called with different names but they are meant to be the same.
             Answer with "Yes" if they are the same arc, or "No" if they are different arcs.
 
             Provide a brief justification for your answer.

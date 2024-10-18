@@ -1,34 +1,37 @@
 [
   {
-    "title": "Medical Case: Katie Bryce's Aneurysm",
-    "arc_type": "Episodic Arc",
-    "description": "This arc focuses on the medical case of Katie Bryce, a patient experiencing severe seizures, which serves as a pivotal learning experience for the interns at Seattle Grace Hospital.",
-    "duration": "Episodic",
+    "title": "Medical Case: Katie Bryce",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The medical case involving Katie Bryce, a patient experiencing severe seizures, which serves as a pivotal learning experience for the interns at Seattle Grace Hospital.",
+    "episodic": true,
     "characters": [
       "Meredith Grey",
       "Cristina Yang",
       "George O'Malley",
+      "Izzie Stevens",
+      "Katie Bryce",
       "Derek Shepherd",
-      "Katie Bryce"
+      "Miranda Bailey",
+      "Preston Burke"
     ],
     "series": "GA",
     "progressions": [
       {
-        "content": "Meredith is assigned to Katie Bryce's case and quickly realizes the severity of her condition. | The interns collaborate to diagnose Katie's condition, leading to the discovery of her aneurysm. | Meredith successfully assists in the surgery, showcasing her potential as a surgeon.",
+        "content": "The interns are introduced to Katie Bryce, who is having seizures. | Meredith takes charge of Katie's care and faces challenges in diagnosing her condition. | The interns work together to uncover the cause of Katie's seizures. | Meredith successfully assists in the surgery that saves Katie's life.",
         "series": "GA",
         "season": "S01",
         "episode": "E01",
         "ordinal_position": 1,
-        "main_arc_id": "f7fbc7d05e419d6e26421f564de6e02a"
+        "main_arc_id": "8f24c03713db50c6382ead66ea64e9d3"
       }
     ],
-    "id": "f7fbc7d05e419d6e26421f564de6e02a"
+    "id": "8f24c03713db50c6382ead66ea64e9d3"
   },
   {
-    "title": "Romantic Tension: Meredith and Derek",
+    "title": "Meredith and Derek's Complicated Relationship",
     "arc_type": "Soap Arc",
-    "description": "This arc explores the complicated romantic relationship between Meredith and Derek, which begins with their one-night stand and evolves as they navigate their professional lives.",
-    "duration": "Seasonal",
+    "description": "The evolving relationship between Meredith Grey and Derek Shepherd, marked by their one-night stand and the complications that arise from it as they navigate their professional lives.",
+    "episodic": false,
     "characters": [
       "Meredith Grey",
       "Derek Shepherd"
@@ -36,46 +39,71 @@
     "series": "GA",
     "progressions": [
       {
-        "content": "Meredith and Derek's initial encounter leads to a one-night stand, creating immediate tension. | Meredith's embarrassment and desire to avoid Derek complicate their interactions at the hospital. | Despite their awkwardness, Derek acknowledges Meredith's skills, hinting at a deeper connection.",
+        "content": "Meredith and Derek share a one-night stand. | Derek expresses interest in continuing their relationship, but Meredith is hesitant. | Their professional lives intersect at the hospital, complicating their dynamic. | Meredith grapples with her feelings for Derek while trying to maintain professionalism.",
         "series": "GA",
         "season": "S01",
         "episode": "E01",
         "ordinal_position": 1,
-        "main_arc_id": "5deb60dd07c31e26c2b73000e6a8bc9d"
+        "main_arc_id": "780e80619cfabc4856a4e68ef15a985f"
       }
     ],
-    "id": "5deb60dd07c31e26c2b73000e6a8bc9d"
+    "id": "780e80619cfabc4856a4e68ef15a985f"
   },
   {
-    "title": "Interns' Professional Growth: The First Day at Seattle Grace",
-    "arc_type": "Genre-Specific Arc",
-    "description": "This arc follows the journey of the interns as they face the challenges of their first day in a high-pressure medical environment, highlighting their professional development and the dynamics of their relationships.",
-    "duration": "Seasonal",
+    "title": "Interns' Struggles and Friendships",
+    "arc_type": "Soap Arc",
+    "description": "The budding friendships and rivalries among the group of interns at Seattle Grace as they navigate the challenges of their new roles and support each other.",
+    "episodic": false,
     "characters": [
       "Meredith Grey",
       "Cristina Yang",
       "George O'Malley",
-      "Izzie Stevens",
-      "Miranda Bailey"
+      "Izzie Stevens"
     ],
     "series": "GA",
     "progressions": [
       {
-        "content": "The interns are introduced to the realities of hospital life, including the pressure of patient care. | Each intern faces personal challenges, such as George's insecurity and Izzie's struggle for respect. | Meredith's quick thinking in a crisis solidifies her role as a competent intern.",
+        "content": "Meredith connects with Cristina, George, and Izzie during their first day. | The interns bond over their shared experiences and challenges. | George faces ridicule from other interns but finds support from Meredith. | Cristina and Meredith's friendship deepens as they work together.",
         "series": "GA",
         "season": "S01",
         "episode": "E01",
         "ordinal_position": 1,
-        "main_arc_id": "27b395cde65fc0319b928b3e3018ce47"
+        "main_arc_id": "e08d7aaa6bcd3a3f6f267e7d57a43ffd"
       }
     ],
-    "id": "27b395cde65fc0319b928b3e3018ce47"
+    "id": "e08d7aaa6bcd3a3f6f267e7d57a43ffd"
   },
   {
-    "title": "Legacy and Identity: Meredith's Relationship with Her Mother",
-    "arc_type": "Mythology Arc",
-    "description": "This arc delves into Meredith's struggle with her mother's legacy as a renowned surgeon, impacting her self-identity and professional aspirations throughout the season.",
-    "duration": "Seasonal",
+    "title": "George O'Malley's Journey as an Intern",
+    "arc_type": "Episodic Arc",
+    "description": "George O'Malley's experiences and challenges as a new intern at Seattle Grace, highlighting his insecurities and growth throughout his first day.",
+    "episodic": true,
+    "characters": [
+      "George O'Malley",
+      "Meredith Grey",
+      "Cristina Yang",
+      "Izzie Stevens",
+      "Miranda Bailey",
+      "Preston Burke"
+    ],
+    "series": "GA",
+    "progressions": [
+      {
+        "content": "George nervously introduces himself to the other interns. | He struggles with a procedure and faces ridicule from his peers. | George receives support from Meredith and begins to find his footing. | He grapples with the pressure of being an intern and his self-doubt.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E01",
+        "ordinal_position": 1,
+        "main_arc_id": "942fd5aff4648606de4d6664107be428"
+      }
+    ],
+    "id": "942fd5aff4648606de4d6664107be428"
+  },
+  {
+    "title": "Meredith's Relationship with Her Mother",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey's complex relationship with her mother, Ellis Grey, who is a renowned surgeon but suffers from Alzheimer's disease, impacting Meredith's self-perception and career choices.",
+    "episodic": false,
     "characters": [
       "Meredith Grey",
       "Ellis Grey"
@@ -83,14 +111,14 @@
     "series": "GA",
     "progressions": [
       {
-        "content": "Meredith grapples with the pressure of living up to her mother's reputation. | Her embarrassment over her mother's legacy influences her interactions with colleagues. | The revelation of her mother's Alzheimer's disease adds complexity to Meredith's identity crisis.",
+        "content": "Meredith struggles with her identity as the daughter of a famous surgeon. | She grapples with her mother's legacy and the pressure it places on her. | The revelation of her mother's Alzheimer's disease adds emotional weight to Meredith's journey.",
         "series": "GA",
         "season": "S01",
         "episode": "E01",
         "ordinal_position": 1,
-        "main_arc_id": "2fec51a95b458037dc6a3df0d7de5ec4"
+        "main_arc_id": "2635bd941724a643105c3e28d37e0de0"
       }
     ],
-    "id": "2fec51a95b458037dc6a3df0d7de5ec4"
+    "id": "2635bd941724a643105c3e28d37e0de0"
   }
 ]

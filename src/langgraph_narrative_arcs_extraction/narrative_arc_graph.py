@@ -170,6 +170,43 @@ def episode_narrative_analysis(state: NarrativeArcsExtractionState) -> Narrative
 
     return state
 
+# Add this near the top of the file, after the imports
+
+NARRATIVE_ARC_GUIDELINES = """
+Guidelines for Narrative Arc Extraction:
+
+1. Arc Types:
+   - Soap Arc: Focuses on romantic relationships, family dynamics, or friendships.
+   - Genre-Specific Arc: Relates to the show's genre (e.g., medical challenges, political intrigues).
+   - Episodic Arc: Self-contained story within a single episode.
+
+2. Title Creation:
+   - Be specific and descriptive.
+   - Include main entities involved (e.g., "The Trial of Benedict Arnold", "Walter White and Skyler's Relationship").
+   - For episodic content, use format: "[Genre] Case: [Specific Case Name]" (e.g., "Medical Case: Rare Genetic Disorder", "Procedural Case: Presidential Assassination").
+   - Especially for an episodic arc, the title should be descriptive and not vague like "Character X's difficulties" or "Character X's problems" or "Character X's professional growth" etc. etc.
+
+   3. Description:
+   - Provide an overall summary of the arc's content season-wide.
+   - Unless the arc is episodic, avoid focusing on the arc's development within the specific episode.
+
+4. Episodic Flag:
+   - Set to True for self-contained, anthology-like plots.
+   - Set to False for arcs spanning multiple episodes.
+
+5. Character List:
+   - Include all relevant characters involved in the arc.
+
+6. Distinctness:
+   - Each arc should be well-defined and distinct from others.
+   - Avoid overlap between arcs.
+   - Sometimes there arcs that seems indipendent in the episode, but they are actually part of a season's overarching plot.
+
+7. Progression:
+   - List key points in the arc's development.
+   - Focus on major events or turning points.
+"""
+
 def episode_narrative_arc_extraction(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
     """Analyze the episode plot to identify narrative arcs based on the season analysis."""
     logger.info("Starting episode narrative arc extraction.")
@@ -184,45 +221,46 @@ def episode_narrative_arc_extraction(state: NarrativeArcsExtractionState) -> Nar
 
     episode_plot = read_file_content(state['file_paths']['episode_plot_path'])
     logger.debug(f"Episode plot content: {episode_plot[:100]}...")
+
+    # Load existing season arcs
+    existing_season_arcs = load_existing_season_arcs(state['file_paths']['season_narrative_arcs_path'])
     
+    # Extract only title and description from existing season arcs
+    season_arc_summaries = [
+        {"title": arc['title'], "description": arc['description']}
+        for arc in existing_season_arcs
+    ]
+
     prompt = ChatPromptTemplate.from_template(
         """
-        You are tasked with identifying and classifying the different types of narrative arcs present in a TV series episode. These arcs focus on the thematic development of stories, character relationships, and specific journeys tied to the genre of the series. Below are the main types of narrative arcs commonly found in TV shows.
-        Types of Narrative Arcs:
+        You are tasked with identifying and classifying the different types of narrative arcs present in a TV series episode. These arcs focus on the thematic development of stories, character relationships, and specific journeys tied to the genre of the series.
 
-            Soap Arc: Focuses on the development of a romantic relationship between characters or explores the dynamics and evolution of family relationships or friendships.
-                Example: Jim and Pam's relationship in The Office or the family interactions in This Is Us.
-                
-            Genre-Specific Arc: This arc is specific to the genre of the show, such as specific professional challenges in a medical drama, family or political dynamics in a fantasy series, survival in a horror series, professional work in a legal drama, etc.
-                Example: The power struggles between families in Game of Thrones, or medical challenges in Grey's Anatomy.
+        Please follow these guidelines when identifying and describing narrative arcs:
 
-            Episodic Arc: A self-contained story that begins and ends within a single episode. Often refers to the vertical storytelling of a single episode.
-                Example: Standalone cases in Law & Order, medical cases in Grey's Anatomy, or main anthologic plots in Black Mirror.
-
-        Task:
-
-        For each storyline you identify in a TV series episode, assign it to one of these narrative arc types. Provide a brief explanation for your classification, focusing on how the storyline fits within the chosen narrative type.
+        {guidelines}
 
         Analyze the following episode plot:
 
         [EPISODE PLOT]
         {episode_plot}
         [/EPISODE PLOT]
-        
-        Consider this season analysis for context:
 
-        [SEASON ANALYSIS]
-        {episode_analysis}
-        [/SEASON ANALYSIS]
+        Consider these existing (if any) season-wide narrative arcs:
+        {season_arc_summaries}
 
-        identify specific narrative arcs for this episode:
-        1. identify both episodic arcs and ongoing seasonal arcs, focusing also on character arcs and their development, relationship, genre-specific, episodic and mythology arcs.
-        2. Be specific about plot points and motivations.
-        3. Each arc should be distinct and well-defined. 
-        4. The title should be specific. For example for a medical drama the episodic content should be "Medical Case: [insert case name here]", for a procedural it should be "Procedural Case: [insert case name here]" and so on.
-        5. Always avoid vague and not defined arc titles such as "Character's personal growth" or "Character's relationships".
-        6. The description should be an overall summary of the content of the arc season-wide, not about the development of the arc inside the specific episode.
-        
+        Important instructions for handling season-wide arcs:
+        1. If you identify an arc that continues from the season-wide arcs listed above, use the exact same title and description.
+        2. For these continuing arcs, only add the progression specific to this episode.
+        3. Do not create a new season arc if it's a continuation of an existing one.
+        4. Set the "episodic" flag to False for these continuing season arcs.
+
+        For new arcs specific to this episode:
+        1. Create a new arc entry with a unique title and description.
+        2. Set the "episodic" flag to True if it's contained within this episode, or False if you believe it will continue in future episodes.
+
+        Identify specific narrative arcs for this episode following the provided guidelines.
+        Usually there are five or more arcs in an episode, including both continuing season arcs and new episodic arcs.
+
         Return the narrative arcs in the following JSON format:
         [
             {{
@@ -230,7 +268,7 @@ def episode_narrative_arc_extraction(state: NarrativeArcsExtractionState) -> Nar
                 "arc_type": "Soap Arc/Genre-Specific Arc/Episodic Arc",
                 "description": "Brief season-wide description of the arc",
                 "progression": ["Key point 1", "Key point 2", ...],
-                "duration": "Episodic/Seasonal",
+                "episodic": "True/False",
                 "characters": ["Character 1", "Character 2", ...]
             }},
             ... more arcs ...
@@ -244,6 +282,8 @@ def episode_narrative_arc_extraction(state: NarrativeArcsExtractionState) -> Nar
     prompt_formatted = prompt.format_messages(
         episode_plot=episode_plot,
         episode_analysis=state['episode_narrative_analysis'],
+        guidelines=NARRATIVE_ARC_GUIDELINES,
+        season_arc_summaries=json.dumps(season_arc_summaries, indent=2)
     )
     
     logger.info(f"Prompt formatted: {prompt_formatted}")
@@ -278,7 +318,7 @@ def episode_narrative_arc_extraction(state: NarrativeArcsExtractionState) -> Nar
                     title=arc['title'], 
                     arc_type=arc['arc_type'],
                     description=arc['description'],
-                    duration=arc['duration'],
+                    episodic=arc['episodic'],
                     characters=arc['characters'],
                     series=state['series'],
                     progressions=[progression]
@@ -300,42 +340,110 @@ def episode_narrative_arc_extraction(state: NarrativeArcsExtractionState) -> Nar
 
     return state
 
-def verify_narrative_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
-    """Verify the identified narrative arcs for consistency and distinctness.
+def identify_missing_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
+    """Identify and add any missing narrative arcs based on the episode plot."""
+    logger.info("Starting identification of missing narrative arcs.")
 
-    Args:
-        state (NarrativeArcsExtractionState): The current state of the narrative analysis.
-
-    Returns:
-        NarrativeArcsExtractionState: The updated state after verification.
-    """
-    logger.info("Starting verification of narrative arcs.")
+    episode_plot = read_file_content(state['file_paths']['episode_plot_path'])
     
     # Convert NarrativeArc instances to dictionaries for JSON serialization
     episode_arcs_dicts = [arc.model_dump() for arc in state['episode_arcs']]
     
     prompt = ChatPromptTemplate.from_template(
-        """As a Narrative Verification Specialist, your task is to verify the following narrative arcs:
+        """As a Narrative Arc Identification Specialist, your task is to review the existing narrative arcs and identify any missing ones based on the episode plot.
+        You can also modify the existing arcs if you think that some of them are not correctly classified or described and that can be improved.
 
+        Please follow these guidelines when identifying and describing narrative arcs:
+
+        {guidelines}
+
+        Existing Arcs:
         {episode_arcs}
 
-        Ensure that:
-        1. Each arc is distinct and doesn't overlap significantly with others.
-        2. Arc titles are consistent with the broader story and not too episode-specific, but should avoid vague titles such as "Character's personal growth" or "Character's relationships".
-        3. descriptions and progressions are clear and relevant to the arc.
-        4. The categorization (Episodic/Seasonal) is appropriate.
+        Episode Plot:
+        {episode_plot}
 
-        If you find any issues, please correct them. Return the verified and potentially corrected arcs in the same JSON format.
+        Your task:
+        1. Carefully review the existing arcs and the episode plot.
+        2. Identify any significant storylines, character developments, or thematic elements that are not represented in the existing arcs.
+        3. For each missing arc you identify, create a new arc entry following the same format as the existing ones and adhering to the provided guidelines.
+        4. Ensure that new arcs are distinct from existing ones and provide meaningful additions to the narrative analysis. They should not overlap with existing arcs.
+        5. Sometimes there arcs that seems indipendent in the episode, but they are actually part of a season's overarching plot. If you think that an arc is part of the overarching plot, add it as a season arc, updating its description, title and type.
+
+        Return the complete list of arcs (existing + new) in the same JSON format.
         Ensure your response contains only the JSON array of narrative arcs, without any additional text or explanations.
         """
     )
     
-    verified_arcs = llm.invoke(prompt.format_messages(episode_arcs=json.dumps(episode_arcs_dicts)))
+    updated_arcs = llm.invoke(prompt.format_messages(
+        episode_arcs=json.dumps(episode_arcs_dicts),
+        episode_plot=episode_plot,
+        guidelines=NARRATIVE_ARC_GUIDELINES
+    ))
+    
+    try:
+        cleaned_content = clean_llm_json_response(updated_arcs.content)
+        
+        if isinstance(cleaned_content, list):
+            parsed_arcs = cleaned_content
+        else:
+            parsed_arcs = json.loads(cleaned_content)
+
+        state['episode_arcs'] = [NarrativeArc(**arc) for arc in parsed_arcs]
+        logger.info(f"Updated arcs list with {len(state['episode_arcs']) - len(episode_arcs_dicts)} new arcs.")
+        
+    except (json.JSONDecodeError, ValueError) as e:
+        logger.error(f"Failed to parse updated arcs: {e}")
+        logger.error(f"Raw response content: {updated_arcs.content}")
+        logger.warning("Keeping original arcs due to parsing error")
+    
+    return state
+
+def verify_narrative_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
+    """Verify the identified narrative arcs for consistency and correctness."""
+    logger.info("Starting verification of narrative arcs.")
+
+    episode_plot = read_file_content(state['file_paths']['episode_plot_path'])
+    season_analysis = state['season_analysis']
+    
+    # Convert NarrativeArc instances to dictionaries for JSON serialization
+    episode_arcs_dicts = [arc.model_dump() for arc in state['episode_arcs']]
+    
+    prompt = ChatPromptTemplate.from_template(
+        """As a Narrative Verification Specialist, your task is to verify the metadata of the following narrative arcs:
+
+        {episode_arcs}
+
+        Based on the plot of the episode:
+        {episode_plot}
+
+        Please follow these guidelines when verifying and correcting narrative arcs:
+
+        {guidelines}
+
+        Ensure that for each arc:
+        1. The title, description, and other elements adhere to the provided guidelines. This is very important: titles should not be vague or overlapping.
+        2. The arc_type classification is appropriate.
+        3. The episodic flag correctly indicates whether the arc is self-contained or part of a larger narrative.
+        4. The characters list is accurate and complete.
+
+        Do not add new arcs or remove existing ones. Focus solely on verifying and correcting the information for each arc.
+
+        Return the verified and corrected arcs in the same JSON format.
+        Ensure your response contains only the JSON array of narrative arcs, without any additional text or explanations.
+        """
+    )
+    
+    verified_arcs = llm.invoke(prompt.format_messages(
+        episode_arcs=json.dumps(episode_arcs_dicts),
+        episode_plot=episode_plot,
+        season_analysis=season_analysis,
+        guidelines=NARRATIVE_ARC_GUIDELINES
+    ))
     
     try:
         cleaned_content = clean_llm_json_response(verified_arcs.content)
         
-        # Ensure cleaned_content is a list of dictionaries
         if isinstance(cleaned_content, list):
             parsed_arcs = cleaned_content
         else:
@@ -390,7 +498,7 @@ def manage_season_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtr
             existing_arc = existing_arcs_dict[arc.title]
             existing_arc['description'] = arc.description
             existing_arc['arc_type'] = arc.arc_type
-            existing_arc['duration'] = arc.duration
+            existing_arc['episodic'] = arc.episodic
             existing_arc['characters'] = list(set(existing_arc['characters'] + arc.characters))
             existing_arc['Progression'].extend(arc.progressions)
         else:
@@ -427,19 +535,13 @@ def save_arcs_to_json(state: NarrativeArcsExtractionState) -> NarrativeArcsExtra
 
 # Create the graph
 def create_narrative_arc_graph():
-    """Create and configure the state graph for narrative arc extraction.
-
-    Returns:
-        StateGraph: The compiled state graph for narrative arc extraction.
-    """
+    """Create and configure the state graph for narrative arc extraction."""
     workflow = StateGraph(NarrativeArcsExtractionState)
 
     workflow.add_node("seasonal_analysis_node", seasonal_narrative_analysis)
     workflow.add_node("episode_narrative_analysis_node", episode_narrative_analysis)
-    
-    logger.info("Adding episode_narrative_arc_extraction_node to the graph")
-    workflow.add_node("episode_narrative_arc_extraction_node", episode_narrative_arc_extraction)   
-    
+    workflow.add_node("episode_narrative_arc_extraction_node", episode_narrative_arc_extraction)
+    workflow.add_node("identify_missing_arcs_node", identify_missing_arcs)
     workflow.add_node("verify_arcs_node", verify_narrative_arcs)
     workflow.add_node("update_vectorstore_node", update_vectorstore)
     workflow.add_node("manage_season_arcs_node", manage_season_arcs)
@@ -448,7 +550,8 @@ def create_narrative_arc_graph():
     workflow.set_entry_point("seasonal_analysis_node")
     workflow.add_edge("seasonal_analysis_node", "episode_narrative_analysis_node")
     workflow.add_edge("episode_narrative_analysis_node", "episode_narrative_arc_extraction_node")
-    workflow.add_edge("episode_narrative_arc_extraction_node", "verify_arcs_node")
+    workflow.add_edge("episode_narrative_arc_extraction_node", "identify_missing_arcs_node")
+    workflow.add_edge("identify_missing_arcs_node", "verify_arcs_node")
     workflow.add_edge("verify_arcs_node", "update_vectorstore_node")
     workflow.add_edge("update_vectorstore_node", "manage_season_arcs_node")
     workflow.add_edge("manage_season_arcs_node", "save_arcs_to_json_node")
@@ -498,3 +601,5 @@ def extract_narrative_arcs(file_paths: Dict[str, str], series: str, season: str,
 
     logger.info("Narrative arcs extraction process completed.")
     return result
+
+

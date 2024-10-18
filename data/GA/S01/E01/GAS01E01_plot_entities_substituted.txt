@@ -1,213 +1,139 @@
-[meredith_grey] wakes up from the couch.
+[meredith_grey] wakes up on her couch.
 [meredith_grey] wraps a towel around herself and starts picking up her clothes.
-[meredith_grey] throws a cushion at a man.
-[derek_shepherd] wakes up sleepily and hands [meredith_grey] her bra.
-[meredith_grey] feels embarrassed and tells [derek_shepherd] to get dressed.
-They chat while [derek_shepherd] dresses.
-[meredith_grey] mentions she will be late for her first day at a new job.
-[derek_shepherd] compliments [meredith_grey]'s house.
-[meredith_grey] says it isn't hers; it was her mother's, and she is selling it.
-[derek_shepherd] apologizes, thinking [meredith_grey]'s mother is dead.
-[meredith_grey] quickly clarifies her mother is not dead.
-[meredith_grey] says they don't need to pretend to care.
-[meredith_grey] goes to see [derek_shepherd] off but forgets his name.
-[derek_shepherd] introduces himself as [derek_shepherd].
-[meredith_grey] introduces herself as [meredith_grey].
-[meredith_grey] runs upstairs to shower.
-Later, [meredith_grey] leaves her car.
-[meredith_grey] joins the new interns at Seattle Grace Hospital.
-The Chief finishes the tour.
-The Chief says the next seven years will be the best and worst of the interns' lives.
-In the locker room, [meredith_grey] bonds with [cristina_yang].
-[meredith_grey] and [cristina_yang] find out they have the same resident, [miranda_bailey], also known as "The Nazi."
-[george_omalley], another intern, overhears and introduces himself.
-[george_omalley] talks nervously and tells [meredith_grey] they met last night.
-[george_omalley] describes [meredith_grey]'s outfit but stops when [meredith_grey] and [cristina_yang] think he's gay.
-The three interns, along with [isobel_stevens], are called to see [miranda_bailey].
-They approach [miranda_bailey] and are surprised she's a woman and not a Nazi.
-[isobel_stevens] thinks the nickname might be due to jealousy.
-[cristina_yang] dismisses this, but [isobel_stevens] introduces herself as [isobel_stevens], saying everyone calls her [isobel_stevens].
-[miranda_bailey] ignores the introduction, shows the interns their equipment, gives a short tour, and explains her rules.
-[miranda_bailey] gets a page, and she and the interns rush to the roof.
-A helicopter lands on the roof with details about a patient, [katie_bryce], who is having seizures.
-In the hospital, the interns and nurses inject [katie_bryce], and [katie_bryce] stops moving.
-[preston_burke] enters and compares [katie_bryce] to a wet fish on dry land.
-[preston_burke] orders basic tests.
-[george_omalley] is assigned workups, [cristina_yang] is to do labs, and [meredith_grey] is assigned to [katie_bryce] and to get her a CT scan.
-[miranda_bailey] tells [isobel_stevens] to perform rectal exams with a smile.
-[isobel_stevens] does the rectal exams.
-[cristina_yang] gets the test results and hints to [miranda_bailey] about wanting a surgery.
-[george_omalley] tries a simple procedure on a patient.
-[preston_burke] gets frustrated and takes over.
-[george_omalley] jokes that [preston_burke] probably messed up a lot at first too.
-[preston_burke] smiles tightly and tells [george_omalley] he’ll have fun with him.
-[george_omalley] gulps.
-[meredith_grey] is lost in the hospital with [katie_bryce].
-[katie_bryce] talks about missing a beauty pageant and how she was great except for falling during rhythmic gymnastics.
-[katie_bryce] occasionally tells [meredith_grey] she is lost.
-A group of interns sit in the canteen after 7 hours of their first shift.
-[isobel_stevens] says a resident already hates her.
-[george_omalley] sympathizes, saying attendings hate him too.
-[cristina_yang] asks if anyone knew [meredith_grey]'s mother is [ellis_grey], a famous surgeon who won the Harper Avery Award twice.
-[meredith_grey] quickly says [katie_bryce] is unbearable.
-[preston_burke] arrives at the table.
-[preston_burke] says he can choose one intern to assist in a surgery.
-[preston_burke] picks [george_omalley] for an appendectomy and walks away.
-[miranda_bailey] complains to [preston_burke] about his decision.
-[miranda_bailey] says [george_omalley] barely made it into the program.
-[preston_burke] insists that if he pressures [george_omalley], the rest will follow.
-[miranda_bailey] tries to persuade [preston_burke] otherwise.
+[meredith_grey] throws a cushion at [dr_derek_shepherd], waking him up.
+[dr_derek_shepherd] sleepily hands [meredith_grey] her bra back.
+[meredith_grey] feels embarrassed and tells [dr_derek_shepherd] to get dressed.
+[meredith_grey] and [dr_derek_shepherd] chat while [dr_derek_shepherd] puts on his clothes.
+[meredith_grey] mentions she might be late for her first day at her new job.
+[dr_derek_shepherd] compliments [meredith_grey]'s house, but [meredith_grey] clarifies it belongs to her mother and she is selling it.
+[dr_derek_shepherd] expresses sympathy, and [meredith_grey] quickly adds that her mother is not dead.
+[meredith_grey] then suggests they skip the pretense of caring.
+As [meredith_grey] sees [dr_derek_shepherd] off, she forgets [dr_derek_shepherd]'s name.
+[dr_derek_shepherd] quickly tells [meredith_grey] his name.
+[meredith_grey] then runs upstairs to take a shower.
+Soon after, [meredith_grey] leaves her car and joins a group of new interns at Seattle Grace Hospital.
+The Chief finishes his tour by saying the next seven years will be both great and terrible for the interns.
+In the locker room, [meredith_grey] connects with another intern named [cristina_yang].
+[meredith_grey] and [cristina_yang] find out they have the same resident, Bailey, who is nicknamed "The Nazi."
+While they talk, another intern introduces himself as [george_omalley].
+[george_omalley] speaks nervously and mentions that he met [meredith_grey] the night before.
+[george_omalley] describes [meredith_grey]'s outfit but stops when he realizes that [cristina_yang] and [izzie_stevens] Stevens think he is gay.
+The three interns, along with [izzie_stevens] Stevens, who is an ex-model, are then called to see [miranda_bailey].
+[george_omalley], [cristina_yang], and [izzie_stevens] approach [miranda_bailey] and are surprised to find that Miranda is a woman, not a Nazi.
+[izzie_stevens] thinks the nickname might come from professional jealousy.
+[cristina_yang] laughs at this, but [izzie_stevens] introduces herself as [izzie_stevens].
+[miranda_bailey] does not respond to the introduction.
+Miranda shows the interns their equipment, gives a brief tour, and explains her rules.
+Then, Miranda receives a page and runs with the interns to the roof.
+A helicopter lands there, bringing information about a patient named [katie_bryce], who is having seizures.
+In the hospital, the interns and nurses inject [katie_bryce], and she finally stops moving.
+Another doctor, [preston_burke], enters and describes [katie_bryce] as a wet fish on dry land.
+Preston instructs the interns to perform all the basic tests.
+[george_omalley] is assigned to workups, [cristina_yang] to labs, and [meredith_grey] to [katie_bryce] for a CT scan.
+[izzie_stevens] is told by a smiling Miranda to perform rectal exams.
+[izzie_stevens] does the rectal examinations.
+[cristina_yang] receives the test results and hints to Miranda that she wants to perform surgery.
+[george_omalley] attempts a simple procedure on a patient.
+[preston_burke], finding it frustrating, steps in to do it himself.
+[george_omalley] jokes that [preston_burke] likely struggled at first too.
+[preston_burke] smiles tightly and warns [george_omalley] that he will have fun with [george_omalley], making [george_omalley] nervous.
+Meanwhile, [meredith_grey] is lost in the hospital.
+[katie_bryce] talks non-stop about the beauty pageant [katie_bryce] is missing.
+[katie_bryce] mentions [katie_bryce]'s past success, except for when [katie_bryce] fell during rhythmic gymnastics, and keeps reminding [meredith_grey] that [meredith_grey] is lost.
+A group of interns sits in the canteen after the interns' first seven-hour shift.
+[izzie_stevens] expresses [izzie_stevens]'s worry about a resident who dislikes [izzie_stevens].
+[george_omalley] relates by saying that some attendings already hate [george_omalley].
+[cristina_yang] interrupts to reveal that [ellis_grey] is the famous surgeon [ellis_grey], known for her amazing surgeries, books, and two Harper Avery Awards.
+[meredith_grey] quickly cuts off the conversation, saying [katie_bryce] is unbearable.
+[preston_burke] arrives at the table and announces that he can choose one intern to assist him in surgery.
+[preston_burke] selects [george_omalley] for an appendectomy and then leaves.
+[miranda_bailey] tells [preston_burke] that [george_omalley] barely got into the program.
+[preston_burke] believes that if he intimidates one person, the others will follow.
+Bailey keeps trying to change [preston_burke]'s mind.
 [katie_bryce]'s parents enter [katie_bryce]'s room.
-[katie_bryce]'s parents check if [katie_bryce] feels okay.
-[katie_bryce]'s parents ask [meredith_grey] if [katie_bryce] might need surgery.
-[meredith_grey] explains she isn't the doctor.
-[meredith_grey] goes to [miranda_bailey] to find [preston_burke].
-[preston_burke] is off the case, so [miranda_bailey] directs [meredith_grey] to [derek_shepherd].
-[meredith_grey] looks at [derek_shepherd] as [derek_shepherd] looks up.
-[meredith_grey] quickly walks away because [derek_shepherd] is her one-night stand, [derek_shepherd].
-[derek_shepherd] catches up with [meredith_grey] and pulls her into a stairwell.
-[meredith_grey] decides to pretend it never happened.
-[derek_shepherd] says [meredith_grey] took advantage of him.
-[meredith_grey] starts to disagree.
-[derek_shepherd] quickly asks if [meredith_grey] wants to take advantage of him next Friday.
-[meredith_grey] smiles, says it's inappropriate, and walks away.
-[george_omalley] is in the operating room.
-In the gallery, other interns bet against [george_omalley].
-[meredith_grey] defends [george_omalley].
-[george_omalley] starts the procedure well.
-At the end, [george_omalley] pulls the purse strings too hard and breaks them.
-The patient starts to bleed.
-[george_omalley] can't think of what to do.
-[preston_burke] pushes [george_omalley] aside and finishes the procedure.
-The interns nickname [george_omalley] "007" in the gallery.
-Afterward, [george_omalley] worries about the nickname.
-[meredith_grey] is paged and leaves for [katie_bryce].
-[george_omalley] says he should have gone into geriatrics.
-[cristina_yang] says geriatrics is for losers who never have sex and live with their mothers.
-[george_omalley] quietly tells [isobel_stevens] he needs a new place.
-[meredith_grey] runs through the hospital.
-[meredith_grey] finds [katie_bryce], who faked a seizure and wants [meredith_grey] to call someone.
+[katie_bryce]'s parents check on [katie_bryce]'s condition and ask [meredith_grey] if [meredith_grey] thinks [katie_bryce] needs surgery.
+[meredith_grey] clarifies that [meredith_grey] is not the doctor. [meredith_grey] goes to find [preston_burke] but learns [preston_burke] is no longer on the case. [miranda_bailey] directs [meredith_grey] to the new attending, [dr_derek_shepherd]. [meredith_grey] glances at [dr_derek_shepherd] just as [dr_derek_shepherd] looks up. [meredith_grey] quickly walks away because [dr_derek_shepherd] is [dr_derek_shepherd], [meredith_grey]'s one-night stand. [dr_derek_shepherd] catches up with [meredith_grey] and pulls [meredith_grey] into a stairwell. [meredith_grey] decides to act like nothing happened. [dr_derek_shepherd] claims [meredith_grey] took advantage of him. [meredith_grey] starts to argue, but [dr_derek_shepherd] asks if [meredith_grey] wants to take advantage of him again next Friday. [meredith_grey] smiles and says something is inappropriate before walking away. [george_omalley] is in the operating room. The other interns in the gallery start making bets against [george_omalley], but [meredith_grey] quickly defends [george_omalley]. [george_omalley] begins the procedure, and it goes well until the end. [george_omalley] accidentally pulls the purse strings too hard and breaks them. This causes bleeding, and [george_omalley] feels unsure about what to do. After a few seconds, [preston_burke] steps in and finishes the procedure. The interns in the gallery give [george_omalley] the nickname 007, meaning "license to kill." After the procedure, [george_omalley] worries about this nickname.
+[george_omalley] is being comforted when [meredith_grey] receives a page and leaves for a 911 call about [katie_bryce].
+[george_omalley] expresses regret about not choosing geriatrics, but [cristina_yang] tells [george_omalley] that geriatrics is for losers who live with their mothers and have no sex.
+[george_omalley] then quietly tells [izzie_stevens] that [george_omalley] really needs to find a new place to live.
+[meredith_grey] runs through the hospital to check on [katie_bryce].
+[meredith_grey] finds out that [katie_bryce] faked a seizure and wants [meredith_grey] to call someone.
 Annoyed, [meredith_grey] leaves.
-[nurse_tyler] asks [isobel_stevens] what [isobel_stevens] needs.
-[isobel_stevens] says [mr_jones] has bad veins and needs antibiotics.
-[isobel_stevens] should start a central line but doesn't know how.
-[nurse_tyler] smiles and tells [isobel_stevens] to wake up [miranda_bailey], the on-call resident.
-[isobel_stevens] timidly walks over.
+Nurse [tyler] sees [izzie_stevens] staring and asks [izzie_stevens] what [izzie_stevens] needs.
+[izzie_stevens] says [mr_jones] has junky veins and needs antibiotics.
+[izzie_stevens] needs to start a central line but doesn't know how.
+[tyler] smiles and tells [izzie_stevens] to wake up [miranda_bailey], the on-call resident.
+[izzie_stevens] approaches [miranda_bailey] timidly.
 [miranda_bailey] asks if the patient is dying.
-When [isobel_stevens] says no, [miranda_bailey] goes back to sleep.
-After a few seconds, [miranda_bailey] gets up grumpily and starts the central line.
-[miranda_bailey] tells [isobel_stevens] that next time [miranda_bailey] is woken up, the patient better be near death.
-[alex_karev] looks at a patient's chart.
-[alex_karev] tells the nurse they have pneumonia and to start antibiotics.
-The nurse asks if [alex_karev] is sure.
-[alex_karev] sarcastically asks if the nurse went through four years of medical school.
+When [izzie_stevens] says no, [miranda_bailey] goes back to sleep.
+After a moment, [miranda_bailey] gets up grumpily and starts the central line.
+[miranda_bailey] warns [izzie_stevens] that next time [miranda_bailey] is woken, the patient should be very close to death.
+Another intern, [alex_karev], is looking at a patient's chart.
+[alex_karev] tells the nurse that the patient has pneumonia and needs antibiotics.
+The nurse asks [alex_karev] if [alex_karev] is sure.
+[alex_karev] sarcastically questions if [meredith_grey] went through four years of medical school.
 [alex_karev] walks over to [meredith_grey].
-[alex_karev] says he has [jeremy] as his resident.
-[meredith_grey] replies that the patient might not have pneumonia; it could be splinting.
-[alex_karev] calls [meredith_grey] a nurse.
-[meredith_grey] feels insulted but answers her page.
-It's another 911 from [katie_bryce].
-[alex_karev] asks another intern if [meredith_grey] is single.
-[george_omalley] says they are friends.
-[alex_karev] tells [george_omalley] to stop talking.
-[meredith_grey] rushes to [katie_bryce]'s room.
-[meredith_grey] is shocked to see [katie_bryce] having severe seizures.
-The drugs didn't work.
-[meredith_grey] tells a nurse to page [miranda_bailey] and [derek_shepherd].
-The drugs still don't work, so [meredith_grey] charges the paddles.
-On the fourth try, [katie_bryce]'s heartbeat and blood flow return to normal.
-[derek_shepherd] arrives and tells [meredith_grey] to leave.
-[miranda_bailey] walks by and lectures [meredith_grey].
-[meredith_grey] ignores [miranda_bailey] and walks quickly out of the hospital.
-[cristina_yang] follows [meredith_grey] and sees [meredith_grey] throw up against a tree.
-[meredith_grey] returns to the hospital and tells [cristina_yang] to keep it a secret.
-Inside the hospital, [derek_shepherd] talks to [katie_bryce]'s parents.
-[derek_shepherd] says it might not be a seizure disorder.
-[katie_bryce]'s parents want another doctor because they feel [derek_shepherd] isn't trying hard enough.
-In another part of the hospital, [preston_burke] explains a procedure to a patient named [tony_savitch].
-[preston_burke] will put [tony_savitch] on bypass, fix [tony_savitch]'s heart, and finish.
-[gloria_savitch], [tony_savitch]'s wife, asks if she should worry.
-[preston_burke] assures [gloria_savitch] he is skilled, but reminds [gloria_savitch] that surgery has risks.
-[preston_burke] leaves, but [gloria_savitch] is still worried.
-[george_omalley] comforts [gloria_savitch] and promises [tony_savitch] will do well in surgery.
-[cristina_yang] waits for [derek_shepherd] and sutures a banana.
-[cristina_yang] calls [george_omalley] "007" when [george_omalley] laughs but quickly apologizes, saying [cristina_yang] gets mean when tired.
-[derek_shepherd] enters and says [katie_bryce] is having seizures without a clear cause.
-[derek_shepherd] calls [katie_bryce] a ticking clock.
-The intern who discovers the cause will assist in the advanced surgery.
-All the interns take copies of [katie_bryce]'s chart.
-[alex_karev] approaches a nurse.
-The nurse confirms she paged [alex_karev] because the patient in 4B isn't responding to antibiotics.
-[alex_karev] dismisses it, saying the patient is old, and asks not to be paged again.
-[meredith_grey] walks away.
-[cristina_yang] catches up and suggests they work together for a better chance at the surgery.
-[meredith_grey] agrees but says [meredith_grey] doesn't want the surgery to avoid spending time with [derek_shepherd].
-In the hospital library, [cristina_yang] and [meredith_grey] try to diagnose [katie_bryce].
-[cristina_yang] asks why [meredith_grey] avoids [derek_shepherd].
-[meredith_grey] admits she had sex with [derek_shepherd].
-They return to discussing [katie_bryce] when [meredith_grey] realizes something.
-[meredith_grey] tells [cristina_yang] to find [derek_shepherd].
-[cristina_yang] and [meredith_grey] confront [derek_shepherd] and tell him they suspect [katie_bryce] has an aneurysm, even without proof.
-[katie_bryce] had a minor fall, but [katie_bryce]'s doctor didn't mention it.
-[derek_shepherd] checks and is shocked to find [cristina_yang] and [meredith_grey] were right.
-[katie_bryce] is bleeding into her brain.
-[derek_shepherd] says [katie_bryce] might have lived her whole life without it being a problem.
-[derek_shepherd] congratulates [cristina_yang] and [meredith_grey] and chooses [meredith_grey] to join him in the O.R.
-After [derek_shepherd] leaves, [cristina_yang] glares at [meredith_grey] and storms off.
-Meanwhile, [preston_burke] operates on [tony_savitch].
-After a while, [preston_burke] goes to [george_omalley].
-[george_omalley] is shocked at [preston_burke]'s speed.
-[preston_burke] explains the heart was too damaged and [tony_savitch] died.
-[george_omalley] is upset and tells [preston_burke] he promised [gloria_savitch] that [tony_savitch] would be okay.
-[preston_burke] is angry.
-[preston_burke] says only God can keep such a promise.
-[preston_burke] tells [george_omalley] to inform [gloria_savitch].
-[isobel_stevens] and [cristina_yang] are sitting privately.
-[isobel_stevens] suggests it might not be [meredith_grey]'s fault.
-[cristina_yang] interrupts [isobel_stevens].
-[meredith_grey] arrives and tries to apologize.
-[cristina_yang] says [meredith_grey] can't seek forgiveness from her.
-[cristina_yang] adds that at least [meredith_grey] didn't get into med school because of her mother or good surgeries by sleeping with her boss.
-[meredith_grey] leaves upset.
+[alex_karev] mentions that [jeremy] is [alex_karev]'s resident.
+[meredith_grey] responds that the patient might not have pneumonia; it could be splinting.
+[alex_karev] calls [meredith_grey] a nurse, which insults [meredith_grey].
+[meredith_grey] has to answer a page from [katie_bryce].
+[alex_karev] asks another intern if she is single.
+[george_omalley] replies that they are friends.
+[alex_karev] interrupts and tells [george_omalley] to stop talking.
+[meredith_grey] enters [katie_bryce]'s room and is shocked to see [katie_bryce] having severe seizures.
+The drugs given to [katie_bryce] are ineffective.
+[meredith_grey] instructs a nurse to page [miranda_bailey] and [dr_derek_shepherd] Shepherd.
+When the drugs still do not work, [meredith_grey] prepares the paddles.
+On the fourth attempt, [katie_bryce]'s heartbeat and blood flow return to normal.
+[dr_derek_shepherd] Shepherd arrives and tells [meredith_grey] to leave.
+[miranda_bailey] walks by and lectures [meredith_grey], but [meredith_grey] ignores her and quickly exits the hospital.
+[cristina_yang] is worried as she sees [meredith_grey] vomit against a tree.
+[meredith_grey] goes back into the hospital and asks [cristina_yang] not to tell anyone.
+In the hospital, [dr_derek_shepherd] Shepherd tells [katie_bryce]'s parents that [katie_bryce]'s condition might not be a seizure disorder.
+[katie_bryce]'s parents express their desire for a different doctor because they feel [dr_derek_shepherd] Shepherd isn't trying hard enough.
+Meanwhile, [preston_burke] explains a procedure to a patient.
+[preston_burke] tells the patient he will put the patient on bypass, fix the patient's heart, and then finish.
+Gloria, [tony_savitch]'s wife, asks if she should be worried.
+[preston_burke] reassures Gloria that he is skilled, but surgery does have risks.
+After [preston_burke] leaves, Gloria remains anxious.
+[george_omalley] comforts Gloria and promises that [tony_savitch] will do well in surgery.
+While waiting for [dr_derek_shepherd] Shepherd, [cristina_yang] sutures a banana.
+[cristina_yang] jokingly calls [george_omalley] 007 when [george_omalley] laughs, but quickly apologizes, saying she becomes mean when tired.
+[dr_derek_shepherd] Shepherd enters and explains that [katie_bryce] is having seizures without a clear cause.
+[dr_derek_shepherd] Shepherd mentions that the intern who discovers the cause will assist in the advanced surgery.
+The interns take copies of [katie_bryce]'s chart.
+[alex_karev] approaches a nurse and asks if the nurse paged him.
+The nurse confirms she did and mentions that the patient in room 4B is not responding to antibiotics.
+[alex_karev] dismisses the nurse's concern, stating the patient is old, and asks the nurse not to page him again.
+[meredith_grey] walks away, and [cristina_yang] runs after [meredith_grey].
+[cristina_yang] suggests they work together to increase their chances of getting into the surgery.
+[meredith_grey] agrees but says [meredith_grey] wants to avoid spending time with [dr_derek_shepherd] Shepherd. In the hospital library, [meredith_grey] and [cristina_yang] discuss [katie_bryce]'s condition. [cristina_yang] asks why [meredith_grey] wants to avoid [dr_derek_shepherd] Shepherd. [meredith_grey] eventually reveals that [meredith_grey] and [dr_derek_shepherd] Shepherd had sex. They return to discussing [katie_bryce], and [meredith_grey] suddenly realizes something. [meredith_grey] tells [cristina_yang] to get up, and they go to find [dr_derek_shepherd] Shepherd. They confront [dr_derek_shepherd] Shepherd and tell him that [katie_bryce] might have an aneurysm, even though [meredith_grey] and [cristina_yang] lack proof. [katie_bryce] had a minor fall, which [katie_bryce]'s doctor did not mention. [dr_derek_shepherd] Shepherd goes to investigate and is shocked to find that [meredith_grey] and [cristina_yang] were correct; [katie_bryce] is bleeding in her brain. [dr_derek_shepherd] Shepherd explains that [katie_bryce] could have lived her whole life without this being a problem and congratulates [cristina_yang] and [meredith_grey]. He then chooses [meredith_grey] to assist him in the operating room. After [dr_derek_shepherd] Shepherd leaves, [cristina_yang] glares at [meredith_grey] and storms off. Meanwhile, [preston_burke] is performing surgery on [tony_savitch]. After some time, [preston_burke] finishes and goes outside to [george_omalley]. [george_omalley] is surprised by how quickly [preston_burke] worked. [preston_burke] explains that the heart was too damaged and [tony_savitch] died. [george_omalley] is shocked and upset. [george_omalley] tells [preston_burke] that [george_omalley] had promised Gloria that [tony_savitch] would be okay.
+[preston_burke] is very angry.
+[preston_burke] says only God can keep a promise like that.
+[preston_burke] tells [george_omalley] he can inform Gloria.
+[izzie_stevens] and [cristina_yang] are alone.
+[izzie_stevens] tries to convince [cristina_yang] that [meredith_grey] might not be to blame.
+[cristina_yang] interrupts [izzie_stevens].
+[meredith_grey] arrives and wants to apologize.
+[cristina_yang] tells [meredith_grey] she can't seek forgiveness from her.
+[cristina_yang] points out that [meredith_grey] didn't get into medical school because of [meredith_grey]'s mother or good surgeries from sleeping with [dr_derek_shepherd] Shepherd.
+[meredith_grey] then leaves in anger.
 [george_omalley] is in the waiting area.
-[george_omalley] tries to tell [gloria_savitch] that [tony_savitch] died.
-[george_omalley] apologizes, but [gloria_savitch] asks him to leave and collapses into a chair.
-[derek_shepherd] is shaving [katie_bryce]'s head.
-[meredith_grey] says she doesn't want to assist, but [derek_shepherd] insists.
-[derek_shepherd] explains his decision wasn't because they had sex, but because [meredith_grey] was [katie_bryce]'s doctor and helped save her life on her first day.
+[george_omalley] tries to tell Gloria that [tony_savitch] has died.
+[george_omalley] wants to apologize, but Gloria asks him to go and then sits down heavily in a chair.
+[dr_derek_shepherd] Shepherd is shaving [katie_bryce]'s head.
+[meredith_grey] says she doesn't want to assist in the procedure, but [dr_derek_shepherd] Shepherd insists she must.
+[dr_derek_shepherd] Shepherd explains that his decision is not because they had sex, but because [meredith_grey] is [katie_bryce]'s doctor and saved [katie_bryce]'s life on [meredith_grey]'s first day.
 [meredith_grey] and [george_omalley] sit on a window ledge outside.
-[meredith_grey] and [george_omalley] wish they had chosen different careers.
-[george_omalley] mentions his parents brag about him being a surgeon.
-[meredith_grey] shares that [ellis_grey] tried to discourage her from medical school, doubting [meredith_grey]'s abilities, so [george_omalley] shouldn't feel bad.
-[richard_webber] asks [alex_karev] some questions.
-[alex_karev] doesn't reply.
-[richard_webber] asks if anyone knows the common causes of post-op fever.
-Nobody answers.
-[meredith_grey] answers.
-[richard_webber] asks [meredith_grey] what she thinks is wrong with the patient.
-[meredith_grey] says patient 4B might have a pulmonary embolism.
-[richard_webber] asks how [meredith_grey] would diagnose it.
-[meredith_grey] answers correctly.
-[richard_webber] tells [alex_karev] to follow [meredith_grey]'s advice and removes [alex_karev] from the case.
-As [richard_webber] walks away, he tells [meredith_grey] he recognizes her and she looks like [ellis_grey].
-[meredith_grey] goes to the O.R. where [katie_bryce] is being prepped.
-[meredith_grey] watches with admiration.
-[derek_shepherd] tells [meredith_grey] to take a look.
-[meredith_grey] looks and is amazed.
-[meredith_grey] realizes it's more than a game.
-[meredith_grey] and [cristina_yang] have lives in their hands.
-Outside the operating room, after the surgery, [cristina_yang] compliments [meredith_grey].
-A few minutes later, [meredith_grey] and [cristina_yang] make up.
-[cristina_yang] leaves, and [derek_shepherd] arrives.
-[meredith_grey] tells [derek_shepherd] the surgery was amazing and more exciting than she expected.
-[meredith_grey] and [derek_shepherd] share a moment, and [derek_shepherd] says he'll see [meredith_grey] around, then leaves.
-[meredith_grey] later leaves the hospital with [cristina_yang], [isobel_stevens], and [george_omalley].
-Later, [meredith_grey] walks up the steps of a house in the rain.
-[meredith_grey] tells [ellis_grey] she won't sell her house and plans to get roommates.
-[meredith_grey] mentions her fellow interns are great.
-[ellis_grey] asks if [meredith_grey] is her doctor.
-[meredith_grey] says no, but she is a doctor.
-[ellis_grey] asks [meredith_grey]'s name, and [meredith_grey] reminds her.
-[ellis_grey] says she thinks she used to be a doctor.
-[meredith_grey] smiles and confirms [ellis_grey] was a doctor.
+[meredith_grey] and [george_omalley] both wish they had chosen different careers.
+[george_omalley] mentions that [george_omalley]'s parents brag about [george_omalley] being a surgeon as if it’s a major achievement. [meredith_grey] shares that when [meredith_grey] told [meredith_grey]'s mother about wanting to go to medical school, [meredith_grey]'s mother tried to dissuade [meredith_grey], doubting [meredith_grey]'s abilities. [meredith_grey] tells [george_omalley] he shouldn't feel too bad. The chief asks [alex_karev] some questions. When [alex_karev] does not respond, the chief asks the room if anyone knows the common causes of post-operative fever. No one answers, but [meredith_grey] does. The chief then asks [meredith_grey] what she thinks is wrong with the patient. [meredith_grey] correctly identifies patient 4B as likely having a pulmonary embolism. The chief asks [meredith_grey] how [meredith_grey] would diagnose it, and [meredith_grey] answers correctly again. The chief tells [alex_karev] to follow [meredith_grey]'s advice and then leaves the case. As the chief walks away, the chief tells [meredith_grey] he would recognize [meredith_grey] anywhere and that [meredith_grey] looks just like [meredith_grey]'s mother. [meredith_grey] then walks to the operating room where [katie_bryce] is being prepared. [meredith_grey] watches with admiration. When [dr_derek_shepherd] Shepherd tells [meredith_grey] to take a look, [meredith_grey] does and is amazed. [meredith_grey] realizes that this is more than just a game; they are responsible for people's lives. After the surgery, [cristina_yang] praises [meredith_grey]. A few minutes later, [cristina_yang] and [meredith_grey] reconcile. Soon after [cristina_yang] leaves, [dr_derek_shepherd] Shepherd arrives.
+[meredith_grey] tells [dr_derek_shepherd] Shepherd the surgery exceeded [meredith_grey]'s expectations.
+[meredith_grey] and [dr_derek_shepherd] Shepherd share a brief moment before [dr_derek_shepherd] Shepherd says he will see [meredith_grey] later.
+Later, [meredith_grey] leaves the hospital with [cristina_yang], [izzie_stevens], and [george_omalley].
+Eventually, [meredith_grey] walks up the steps of a house in the rain.
+[meredith_grey] informs [ellis_grey] that [meredith_grey] will not sell [ellis_grey]'s house anymore and plans to get roommates.
+[meredith_grey] mentions that [meredith_grey]'s fellow interns are great.
+[ellis_grey] asks if [meredith_grey] is [ellis_grey]'s doctor, but [meredith_grey] clarifies that [meredith_grey] is not, although [meredith_grey] is a doctor.
+[ellis_grey] then asks for [meredith_grey]'s name, and [meredith_grey] reminds [ellis_grey].
+[ellis_grey] believes she used to be a doctor, and [meredith_grey] smiles, confirming that [ellis_grey] was indeed a doctor.
 [ellis_grey] has Alzheimer's disease.

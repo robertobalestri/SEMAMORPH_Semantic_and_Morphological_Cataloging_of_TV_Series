@@ -180,7 +180,7 @@ if __name__ == "__main__":
     # Configuration
     series = "GA"
     season = "S01"
-    episode = "E01"
+    episode = "E02"
 
     # Initialize PathHandler
     path_handler = PathHandler(series, season, episode)

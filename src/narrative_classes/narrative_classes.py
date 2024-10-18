@@ -17,7 +17,7 @@ class NarrativeArc(BaseModel):
     title: str = Field(..., description="The title of the narrative arc")
     arc_type: str = Field(..., description="Type of the arc such as 'Soap Arc'/'Genre-Specific Arc'/'Character Arc'/'Episodic Arc'/'Mythology Arc'")
     description: str = Field(..., description="A brief description of the narrative arc")
-    duration: str = Field(..., description="Type of the arc: 'Episodic' or 'Seasonal'")
+    episodic: bool = Field(..., description="If the arc is episodic or not")
     characters: List[str] = Field(default_factory=list, description="Characters involved in this arc")
     series: str = Field(..., description="The series this arc belongs to")
     progressions: List[ArcProgression] = Field(default_factory=list, description="List of progressions for this arc")

@@ -74,6 +74,12 @@ def get_llm(intelligent_or_cheap: LLMType) -> AzureChatOpenAI:
     """
     global _intelligent_llm, _cheap_llm
 
+
+    #FINCHE NO NRISOLVONO PROBLEMA USIAMO SOLO 4o-mini
+    if intelligent_or_cheap == LLMType.INTELLIGENT:
+        intelligent_or_cheap = LLMType.CHEAP
+
+
     if intelligent_or_cheap == LLMType.INTELLIGENT:
         if _intelligent_llm is None:
             _intelligent_llm = _initialize_llm(LLMType.INTELLIGENT)

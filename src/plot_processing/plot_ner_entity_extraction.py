@@ -66,7 +66,7 @@ def refine_entities(entities: List[str], plot: str, llm: AzureChatOpenAI, existi
                 For each character:
                 1. Provide a primary name in the format "name_surname" (lowercase with underscores). If a character has only one name or surname with a title, use the title and the name (e.g. "dr_johnson").
                 2. In appellations, list ALL names, titles and nicknames used for the character in the plot.
-                3. Choose from the appellations found the best appellation for the character, we will use it as the entity name.
+                3. Choose from the appellations found the best appellation for the character, we will use it as the entity name. When possible, choose the appellation with name and surname, or with title and surname.
                 4. Include full names, first names, last names, titles, and nicknames in appellations.
                 5. For families or groups, use "the_surname" format. Families and members of the family are different entities. They should be added separately and the family members should not be listed in the appellations of the family.
                 6. Treat individuals with the same surname (e.g., Mr. Smith and Mrs. Smith) as separate entities unless there's clear evidence they're the same person.
@@ -182,23 +182,31 @@ Respond in the following JSON format:
         return False, ""
 
 def extract_and_refine_entities(text: str, llm: AzureChatOpenAI, refined_output_path: str, raw_output_path: str, season_entities_path: str) -> List[EntityLink]:
-    existing_entities = []
-    if os.path.exists(season_entities_path):
-        with open(season_entities_path, 'r') as f:
-            existing_entities = [EntityLink(**entity) for entity in json.load(f)]
-        
+   
+    # Extract new entities
     extracted_entities = extract_entities_with_spacy(text)
     
     with open(raw_output_path, "w", encoding="utf-8") as raw_file:
         json.dump(extracted_entities, raw_file, indent=2)
-        
-    # Substitute appellations with existing names in the plot
-    text = substitute_appellations_with_names(text, existing_entities, llm)
-    logger.info("Substituted appellations with existing names in the plot")
 
-    refined_entities = refine_entities(extracted_entities, text, llm, existing_entities)
-    merged_entities = merge_entities(existing_entities, refined_entities, llm)  # Pass llm here
+    # Load existing season entities
+    existing_entities = []
+    if os.path.exists(season_entities_path):
+        with open(season_entities_path, 'r') as f:
+            existing_entities = [EntityLink(**entity) for entity in json.load(f)]
+        logger.info(f"Loaded {len(existing_entities)} existing entities from season file")
+
+    # Pre-process text with existing entities
+    preprocessed_text = substitute_appellations_with_names(text, existing_entities, llm)
+    logger.info("Pre-processed text with existing season entities")
+
+    # Refine new entities, considering existing ones
+    refined_entities = refine_entities(extracted_entities, preprocessed_text, llm, existing_entities)
     
+    # Merge new entities with existing ones, prioritizing season-level information
+    merged_entities = merge_entities(existing_entities, refined_entities, llm)
+    
+    # Update season entities file with new information
     with open(season_entities_path, "w", encoding="utf-8") as season_file:
         json.dump([entity.model_dump() for entity in merged_entities], season_file, indent=2)
     
@@ -267,7 +275,7 @@ Possible entities:
 
 Respond with the name of the entity that the appellation most likely refers to in this context. If you're unsure, respond with "UNCERTAIN".
 
-Your response should be in the following format:
+Your response should be in the following JSON format:
 {{
     "entity_name": "chosen_entity_name_or_UNCERTAIN",
     "explanation": "Brief explanation of your decision"
@@ -281,6 +289,7 @@ Your response should be in the following format:
         return result["entity_name"] if result["entity_name"] != "UNCERTAIN" else None
     except Exception as e:
         logger.error(f"Failed to parse LLM response for appellation disambiguation: {e}")
+        logger.error(f"Raw response: {response.content}")
         return None
 
 def normalize_entities_names_to_best_appellation(text: str, entities: List[EntityLink]) -> str:

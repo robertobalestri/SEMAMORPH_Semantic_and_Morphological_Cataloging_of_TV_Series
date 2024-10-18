@@ -1,4 +1,2 @@
-2024-10-15 21:12:40,186 - WARNING -  WARNING: agentops is out of date. Please update with the command: 'pip install --upgrade agentops'
-2024-10-15 21:12:41,102 - INFO - Session Replay: https://app.agentops.ai/drilldown?session_id=b1fec4f9-f786-48a9-bb39-b7f4cdfe2100
-2024-10-15 21:12:59,107 - INFO - Analytics for this run - LLM calls: 2 | Tool calls: 0 | Actions: 0 | Errors: 0 | Duration: 17.2s | Cost: $0.001592
-2024-10-15 21:12:59,107 - INFO - Session Replay: https://app.agentops.ai/drilldown?session_id=b1fec4f9-f786-48a9-bb39-b7f4cdfe2100
+2024-10-18 11:35:40,811 - INFO - Session Replay: https://app.agentops.ai/drilldown?session_id=7a066161-c96e-4afa-9db5-506423baaa9d
+2024-10-18 11:35:54,750 - WARNING -  WARNING: agentops is out of date. Please update with the command: 'pip install --upgrade agentops'
