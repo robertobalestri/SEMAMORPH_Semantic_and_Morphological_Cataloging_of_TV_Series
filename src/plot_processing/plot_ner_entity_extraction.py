@@ -223,6 +223,9 @@ def substitute_appellations_with_names(text: str, entities: List[EntityLink], ll
     substitutions: List[Tuple[str, str, int, int]] = []
     ambiguous_substitutions: List[Tuple[str, List[EntityLink], int, int]] = []
 
+    # Cache for disambiguation results
+    disambiguation_cache = {}
+
     for entity in sorted_entities:
         # Sort appellations by length in descending order
         sorted_appellations = sorted(entity.appellations, key=len, reverse=True)
@@ -239,20 +242,16 @@ def substitute_appellations_with_names(text: str, entities: List[EntityLink], ll
                     # Check if this appellation is ambiguous (belongs to multiple entities)
                     ambiguous_entities = [e for e in entities if appellation.lower() in [a.lower() for a in e.appellations]]
                     if len(ambiguous_entities) > 1:
-                        ambiguous_substitutions.append((appellation, ambiguous_entities, start, end))
+                        if appellation not in disambiguation_cache:
+                            context = text[max(0, start-100):min(len(text), end+100)]
+                            disambiguation_cache[appellation] = disambiguate_appellation(appellation, ambiguous_entities, context, llm)
+                        entity_name = disambiguation_cache[appellation]
+                        if entity_name:
+                            replacement = f"[{entity_name}]" + match.group(2)[len(appellation):]
+                            substitutions.append((match.group(2), replacement, start, end))
                     else:
-                        # Preserve possessive form if present
                         replacement = f"[{entity.entity_name}]" + match.group(2)[len(appellation):]
                         substitutions.append((match.group(2), replacement, start, end))
-
-    # Resolve ambiguous substitutions using LLM
-    for appellation, ambiguous_entities, start, end in ambiguous_substitutions:
-        context = text[max(0, start-100):min(len(text), end+100)]  # Get surrounding context
-        entity_name = disambiguate_appellation(appellation, ambiguous_entities, context, llm)
-        if entity_name:
-            # Preserve possessive form if present
-            replacement = f"[{entity_name}]" + text[start:end][len(appellation):]
-            substitutions.append((text[start:end], replacement, start, end))
 
     # Apply substitutions in reverse order of their position in the text
     for original, replacement, start, end in sorted(substitutions, key=lambda x: x[2], reverse=True):
@@ -284,16 +283,31 @@ Your response should be in the following JSON format:
 
     response = llm.invoke([HumanMessage(content=prompt)])
     try:
-        result = json.loads(clean_llm_json_response(response.content))
+        # First, try to parse the response directly as JSON
+        result = json.loads(response.content)
+        
+        # If parsing succeeds, use the result directly
         logger.info(f"LLM disambiguation result for appellation '{appellation}': {result}")
-        return result["entity_name"] if result["entity_name"] != "UNCERTAIN" else None
-    except Exception as e:
-        logger.error(f"Failed to parse LLM response for appellation disambiguation: {e}")
-        logger.error(f"Raw response: {response.content}")
-        return None
+        return result.get("entity_name") if result.get("entity_name") != "UNCERTAIN" else None
+    except json.JSONDecodeError:
+        # If direct parsing fails, use the clean_llm_json_response function
+        try:
+            cleaned_response = clean_llm_json_response(response.content)
+            if isinstance(cleaned_response, list) and len(cleaned_response) > 0:
+                result = cleaned_response[0]  # Take the first item if it's a list
+            else:
+                result = cleaned_response  # Use as is if it's not a list
+            
+            logger.info(f"LLM disambiguation result for appellation '{appellation}': {result}")
+            return result.get("entity_name") if result.get("entity_name") != "UNCERTAIN" else None
+        except Exception as e:
+            logger.error(f"Failed to process LLM response for appellation disambiguation: {e}")
+            logger.error(f"Raw response: {response.content}")
+            return None
 
 def normalize_entities_names_to_best_appellation(text: str, entities: List[EntityLink]) -> str:
     #substitute the [entity_name] with the best_appellation
     for entity in entities:
         text = text.replace(f"[{entity.entity_name}]", entity.best_appellation)
     return text
+

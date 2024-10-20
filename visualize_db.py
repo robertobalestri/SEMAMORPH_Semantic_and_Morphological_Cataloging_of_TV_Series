@@ -1,3 +1,6 @@
+import sys
+import os
+# Use absolute imports from the src directory
 from src.vectorstore.vectorstore_collection import get_vectorstore_collection, CollectionType
 from src.narrative_classes.narrative_classes import NarrativeArc, ArcProgression
 from sklearn.decomposition import PCA
@@ -45,10 +48,8 @@ for doc, meta, doc_id in zip(documents, metadatas, ids):
     
     try:
         if doc_type == 'main':
-
             print("\nDocument: ", doc)
             print("\nMetadata: ", meta)
-            
             print("\n\n")
 
             arc_data = {k: v for k, v in meta.items() if k in NarrativeArc.__annotations__}
@@ -58,10 +59,8 @@ for doc, meta, doc_id in zip(documents, metadatas, ids):
             text_label = f"Title: {arc.title}<br>Description: {arc.description[:20]}"
             colors.append('blue')
         elif doc_type == 'progression':
-
             print("\nDocument: ", doc)
             print("\nMetadata: ", meta)
-            
             print("\n\n")
 
             progression_data = {
@@ -73,12 +72,10 @@ for doc, meta, doc_id in zip(documents, metadatas, ids):
                 'title': meta.get('title', '')
             }
 
-
             print("\nProgression data: ", progression_data)
             print("\n\n")
 
             text_label = f"Title: {progression_data['title']}<br> Progression: {progression_data['content'][:50]}"
-               
             colors.append('red')
         else:
             text_label = f"Unknown Document Type: {doc_type}<br>" + "<br>".join([f"{k}: {v}" for k, v in meta.items()])
@@ -86,7 +83,6 @@ for doc, meta, doc_id in zip(documents, metadatas, ids):
 
     except Exception as e:
         print(f"Error processing document: {e}")
-
         text_label = "Error processing document"
         colors.append('gray')
 

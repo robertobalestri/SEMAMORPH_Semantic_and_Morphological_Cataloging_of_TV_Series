@@ -1,0 +1,126 @@
+[
+  {
+    "entity_name": "mrs_drake",
+    "best_appellation": "Mrs. Drake",
+    "appellations": [
+      "Mrs. Drake"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "meredith_grey",
+    "best_appellation": "Meredith Grey",
+    "appellations": [
+      "Meredith",
+      "Meredith Grey"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "dr_derek_shepherd",
+    "best_appellation": "Dr. Derek Shepherd",
+    "appellations": [
+      "Derek",
+      "Derek Shepherd",
+      "Dr. Derek Shepherd"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "george_omalley",
+    "best_appellation": "George O'Malley",
+    "appellations": [
+      "George",
+      "George O'Malley"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "jerry_frost",
+    "best_appellation": "Jerry Frost",
+    "appellations": [
+      "Jerry",
+      "Jerry Frost"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "dr_preston_burke",
+    "best_appellation": "Dr. Preston Burke",
+    "appellations": [
+      "Preston",
+      "Preston Burke",
+      "Dr. Preston Burke"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "richard_webber",
+    "best_appellation": "Dr. Richard Webber",
+    "appellations": [
+      "Richard",
+      "Dr. Webber",
+      "Richard Webber"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "cristina_yang",
+    "best_appellation": "Cristina Yang",
+    "appellations": [
+      "Cristina",
+      "Cristina Yang"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "miranda_bailey",
+    "best_appellation": "Miranda Bailey",
+    "appellations": [
+      "Miranda",
+      "Miranda Bailey"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "ellis_grey",
+    "best_appellation": "Ellis Grey",
+    "appellations": [
+      "Ellis",
+      "Ellis Grey"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "mr_patterson",
+    "best_appellation": "Mr. Patterson",
+    "appellations": [
+      "Mr. Patterson"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "mr_sterman",
+    "best_appellation": "Mr. Sterman",
+    "appellations": [
+      "Mr. Sterman"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "hank",
+    "best_appellation": "Hank",
+    "appellations": [
+      "Hank"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "mrs_patterson",
+    "best_appellation": "Mrs. Patterson",
+    "appellations": [
+      "Mrs. Patterson"
+    ],
+    "entity_type": "PERSON"
+  }
+]

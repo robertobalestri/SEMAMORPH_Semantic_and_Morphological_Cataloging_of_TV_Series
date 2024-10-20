@@ -1,0 +1,126 @@
+[
+  {
+    "entity_name": "meredith_grey",
+    "best_appellation": "Meredith Grey",
+    "appellations": [
+      "Meredith",
+      "Meredith Grey"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "george_omalley",
+    "best_appellation": "George O'Malley",
+    "appellations": [
+      "George O'Malley",
+      "George"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "zoey_glass",
+    "best_appellation": "Zoey Glass",
+    "appellations": [
+      "Zoey Glass",
+      "Zoey"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "esther",
+    "best_appellation": "Esther",
+    "appellations": [
+      "Esther",
+      "Devo Friedman"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "harper",
+    "best_appellation": "Nurse Harper",
+    "appellations": [
+      "Harper",
+      "Nurse Harper"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "mr_walker",
+    "best_appellation": "Mr. Walker",
+    "appellations": [
+      "Mr. Walker"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "martha_stewart",
+    "best_appellation": "Martha Stewart",
+    "appellations": [
+      "Martha Stewart"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "izzie_stevens",
+    "best_appellation": "Izzie Stevens",
+    "appellations": [
+      "Izzie Stevens",
+      "Isobel \"Izzie\" Stevens",
+      "Izzie"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "cristina_yang",
+    "best_appellation": "Cristina Yang",
+    "appellations": [
+      "Cristina Yang",
+      "Cristina"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "miranda_bailey",
+    "best_appellation": "Miranda Bailey",
+    "appellations": [
+      "Miranda Bailey",
+      "Bailey"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "devo_friedman",
+    "best_appellation": "Devo Friedman",
+    "appellations": [
+      "Devo Friedman",
+      "Devo"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "preston_burke",
+    "best_appellation": "Preston Burke",
+    "appellations": [
+      "Preston Burke",
+      "Burke"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "alex_karev",
+    "best_appellation": "Alex Karev",
+    "appellations": [
+      "Alex Karev",
+      "Alex"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "mr_duff",
+    "best_appellation": "Mr. Duff",
+    "appellations": [
+      "Mr. Duff"
+    ],
+    "entity_type": "PERSON"
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "entity_name": "meredith_grey",
+    "best_appellation": "meredith_grey",
+    "appellations": [
+      "meredith",
+      "meredith_grey"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "jake_johnson",
+    "best_appellation": "jake_johnson",
+    "appellations": [
+      "jake",
+      "gunshot wound victim"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "miranda_bailey",
+    "best_appellation": "miranda_bailey",
+    "appellations": [
+      "bailey",
+      "miranda_bailey"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "george_omalley",
+    "best_appellation": "george_omalley",
+    "appellations": [
+      "george",
+      "george_omalley"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "sophie_jones",
+    "best_appellation": "sophie_jones",
+    "appellations": [
+      "sophie",
+      "little girl"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "preston_burke",
+    "best_appellation": "preston_burke",
+    "appellations": [
+      "burke",
+      "preston_burke"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "lily_johnson",
+    "best_appellation": "lily_johnson",
+    "appellations": [
+      "lily",
+      "teenager"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "dr_taylor",
+    "best_appellation": "dr_taylor",
+    "appellations": [
+      "dr_taylor",
+      "anesthesiologist"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "cristina_yang",
+    "best_appellation": "cristina_yang",
+    "appellations": [
+      "cristina",
+      "cristina_yang"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "mrs_johnson",
+    "best_appellation": "mrs_johnson",
+    "appellations": [
+      "mrs_johnson",
+      "lily's mother"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "derek_shepherd",
+    "best_appellation": "derek_shepherd",
+    "appellations": [
+      "derek",
+      "dr_derek_shepherd"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "alex_karev",
+    "best_appellation": "alex_karev",
+    "appellations": [
+      "alex",
+      "alex_karev"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "izzie_stevens",
+    "best_appellation": "izzie_stevens",
+    "appellations": [
+      "izzie",
+      "izzie_stevens"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "dr_burke",
+    "best_appellation": "dr_preston_burke",
+    "appellations": [
+      "dr_burke",
+      "preston_burke"
+    ],
+    "entity_type": "PERSON"
+  }
+]

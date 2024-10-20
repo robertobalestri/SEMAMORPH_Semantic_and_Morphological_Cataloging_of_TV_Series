@@ -11,6 +11,7 @@ import hashlib
 from langchain.prompts import ChatPromptTemplate
 from src.utils.llm_utils import clean_llm_json_response
 from pydantic import BaseModel
+import traceback
 
 logger = setup_logging(__name__)
 
@@ -121,64 +122,113 @@ class NarrativeArcCollection(VectorStoreCollection):
             return []
 
         arc_id_map = []
-        processed_arcs: Set[str] = set()  # Keep track of processed arcs to avoid redundant searches
-        added_arc_ids: Set[str] = set()  # Keep track of arc IDs added in this run
+        processed_arcs: Set[str] = set()
+        added_arc_ids: Set[str] = set()
+        changes: List[Dict] = []  # To keep track of changes for potential rollback
 
-        for arc in arcs:
-            if arc.title in processed_arcs:
-                continue  # Skip if we've already processed this arc
+        cosine_distance_threshold = 0.3
 
-            query = f"{arc.title}\n\n{arc.description}\n\n{' '.join([prog.content for prog in arc.progressions])}"
-            logger.debug(f"Searching for similar arcs in series: {series}")
-            logger.debug(f"Arc progressions: {[prog.content for prog in arc.progressions]}")
-            similar_arcs = self.find_similar_arcs(query, n_results=5, series=series, exclude_ids=added_arc_ids)
-            
-            merged = False
-            for similar_arc in similar_arcs:
-                existing_arc = self.get_arc_by_id(similar_arc['metadata']['id'])
+        try:
+            for arc in arcs:
+                #if arc.title in processed_arcs:
+                #    continue
+
+                query = f"{arc.title}\n\n{arc.description}\n\n{' '.join([prog.content for prog in arc.progressions])}"
+                similar_arcs = self.find_similar_arcs(query, n_results=5, series=series, exclude_ids=added_arc_ids)
                 
-                if existing_arc and self.decide_arc_merging(arc, existing_arc):
-                    logger.info(f"Merging arc '{arc.title}' with existing arc '{existing_arc.title}'")
-                    # Merge arcs
-                    existing_arc.description = arc.description
-                    existing_arc.arc_type = arc.arc_type
-                    existing_arc.episodic = arc.episodic
-                    existing_arc.characters = list(set(existing_arc.characters + arc.characters))
-                    
-                    # Assign ordinal position to new progression
-                    new_progression = arc.progressions[0]
-                    new_progression.ordinal_position = len(existing_arc.progressions) + 1
-                    new_progression.main_arc_id = existing_arc.id
-                    existing_arc.progressions.append(new_progression)
-                    
-                    # Update the existing arc in the vector store
-                    self._save_main_arc_document(existing_arc)
-                    self._save_progression_document(existing_arc, new_progression)
-                    
-                    arc_id_map.append((existing_arc, existing_arc.id))
-                    added_arc_ids.add(existing_arc.id)
-                    merged = True
-                    break
-                else:
-                    logger.debug(f"Arc '{arc.title}' not merged with '{existing_arc.title}'. Reason: Not similar enough.")
-            
-            if not merged:
-                logger.info(f"Adding new arc: '{arc.title}'")
-                # Add as a new arc if no similar arcs found or none were merged
-                new_arc_id = self.generate_content_based_id(f"main_{arc.title}_{series}")
-                arc.id = new_arc_id
-                arc.progressions[0].ordinal_position = 1
-                arc.progressions[0].main_arc_id = new_arc_id
-                logger.debug(f"Progression content before saving: {arc.progressions[0].content}")
-                self._save_main_arc_document(arc)
-                self._save_progression_document(arc, arc.progressions[0])
-                arc_id_map.append((arc, new_arc_id))
-                added_arc_ids.add(new_arc_id)
 
-            processed_arcs.add(arc.title)  # Mark this arc as processed
 
-        logger.info(f"Added or updated {len(arc_id_map)} narrative arcs for {series} {season} {episode} in the vector database.")
-        return arc_id_map
+                merged = False
+                for similar_arc in similar_arcs:
+                    if similar_arc['cosine_distance'] < cosine_distance_threshold:
+                    
+                        existing_arc = self.get_arc_by_id(similar_arc['metadata']['id'])
+                        
+                        if existing_arc and self.decide_arc_merging(arc, existing_arc):
+
+                            if existing_arc.id in added_arc_ids:
+                                logger.warning(f"Arc to be merged with same episode merging. Just mantain the existing arc and discard the new one.")
+                                #here we should discard the new arc from the lists where we have that
+                                arcs.remove(arc)
+                                merged = True
+                                break
+
+
+
+                            logger.info(f"Merging arc '{arc.title}' with existing arc '{existing_arc.title}'")
+                            
+                            # Store original state for potential rollback
+                            original_state = {
+                                'arc': existing_arc.model_copy(deep=True),
+                                'action': 'update'
+                            }
+                            
+                            # Perform the merge
+                            # We don't update title and description because the embeddings and the arc id are calculated on them
+                            existing_arc.arc_type = arc.arc_type
+                            existing_arc.episodic = arc.episodic
+                            existing_arc.characters = list(set(existing_arc.characters + arc.characters))
+                            
+                            new_progression = arc.progressions[0]
+                            new_progression.ordinal_position = len(existing_arc.progressions) + 1
+                            new_progression.main_arc_id = existing_arc.id
+                            existing_arc.progressions.append(new_progression)
+                            
+                            self._save_main_arc_document(existing_arc)
+                            self._save_progression_document(existing_arc, new_progression)
+                            
+                            changes.append(original_state)
+                            
+                            arc_id_map.append((existing_arc, existing_arc.id))
+                            added_arc_ids.add(existing_arc.id)
+                            merged = True
+                            processed_arcs.add(arc.title)
+                            break
+                
+                if not merged:
+                    logger.info(f"Adding new arc: '{arc.title}'")
+                    new_arc_id = self.generate_content_based_id(f"main_{arc.title}_{series}")
+                    arc.id = new_arc_id
+                    arc.progressions[0].ordinal_position = 1
+                    arc.progressions[0].main_arc_id = new_arc_id
+                    self._save_main_arc_document(arc)
+                    self._save_progression_document(arc, arc.progressions[0])
+                    
+                    changes.append({
+                        'arc': arc,
+                        'action': 'add'
+                    })
+                    
+                    arc_id_map.append((arc, new_arc_id))
+                    added_arc_ids.add(new_arc_id)
+
+                    processed_arcs.add(arc.title)
+
+            logger.info(f"Added or updated {len(arc_id_map)} narrative arcs for {series} {season} {episode} in the vector database.")
+            for arc, arc_id in arc_id_map:
+                logger.debug(f"Added or updated arc: {arc.title}")
+            return arc_id_map
+
+        except Exception as e:
+            logger.error(f"An error occurred while adding or updating narrative arcs: {str(e)}")
+            logger.error(traceback.format_exc())
+            self._rollback_changes(changes)
+            raise
+
+    def _rollback_changes(self, changes: List[Dict]):
+        """Rollback the changes made to the vector store."""
+        logger.info("Rolling back changes due to an error...")
+        for change in reversed(changes):
+            if change['action'] == 'update':
+                self._save_main_arc_document(change['arc'])
+                for progression in change['arc'].progressions:
+                    self._save_progression_document(change['arc'], progression)
+            elif change['action'] == 'add':
+                self.collection.delete(ids=[change['arc'].id])
+                for progression in change['arc'].progressions:
+                    prog_id = self.generate_content_based_id(f"prog_{change['arc'].title}_{progression.series}_{progression.season}_{progression.episode}")
+                    self.collection.delete(ids=[prog_id])
+        logger.info("Rollback completed.")
 
     def _save_main_arc_document(self, arc: NarrativeArc):
         """Save or update the main arc document in the vector store."""
@@ -292,9 +342,6 @@ class NarrativeArcCollection(VectorStoreCollection):
         if series:
             filter_criteria["$and"].append({"series": series})
         
-        if exclude_ids:
-            filter_criteria["$and"].append({"id": {"$nin": list(exclude_ids)}})
-        
         logger.debug(f"Query: {query}")
         logger.debug(f"Filter criteria for similarity search: {filter_criteria}")
         
@@ -323,6 +370,11 @@ class NarrativeArcCollection(VectorStoreCollection):
         Returns:
             bool: True if the arcs represent the same narrative arc, False otherwise.
         """
+
+        if new_arc.title == existing_arc.title:
+            return True
+
+
         prompt = ChatPromptTemplate.from_template(
             """
             You are an expert in analyzing narrative arcs in TV series.
@@ -344,8 +396,10 @@ class NarrativeArcCollection(VectorStoreCollection):
             Progression: {progression_b}
 
             Do these arcs represent the same narrative arc continuing across episodes, or are they distinct arcs?
-            Consider that another llm gave you the title and description of the arc, without knowing previous arcs in the series, so often these arcs are called with different names but they are meant to be the same.
+            Sometimes these arcs are called with different names but they are meant to be the same.
             Answer with "Yes" if they are the same arc, or "No" if they are different arcs.
+            The progressions are always different because they are in different episodes, so you should not consider them for deciding if the arcs are the same.
+            Also the descriptions can be a little different while the arcs being the same.
 
             Provide a brief justification for your answer.
 
@@ -428,6 +482,50 @@ class NarrativeArcCollection(VectorStoreCollection):
             logger.info(f"Document metadata: {metadata}")
             logger.info(f"Document content (first 100 chars): {document[:100]}...")
             logger.info("---")
+
+    def get_all_season_arcs(self, series: str, season: str) -> List[NarrativeArc]:
+        """
+        Retrieve all narrative arcs for a given series and season.
+
+        Args:
+            series (str): The series to retrieve arcs for.
+            season (str): The season to retrieve arcs for.
+
+        Returns:
+            List[NarrativeArc]: A list of NarrativeArc objects for the given series and season.
+        """
+        logger.info(f"Retrieving all season arcs for {series} season {season}")
+
+        # Query the collection for all main documents of the given series and season
+        results = self.collection.get(
+            where={"$and": [{"doc_type": "main"}, {"series": series}]},
+            include=["metadatas", "documents"]
+        )
+
+        arcs = []
+        for metadata, content in zip(results['metadatas'], results['documents']):
+            title, description = content.split("\n\n", 1)
+            arc = NarrativeArc(
+                id=metadata['id'],
+                title=title,
+                arc_type=metadata['arc_type'],
+                description=description,
+                episodic=metadata['episodic'],
+                characters=metadata['characters'].split(',') if metadata['characters'] else [],
+                series=series,
+                progressions=[]
+            )
+
+            # Fetch progressions for this arc
+            progressions = self._get_arc_progressions(arc.id)
+            
+            # Filter progressions for the current season
+            arc.progressions = [prog for prog in progressions if prog.season == season]
+
+            arcs.append(arc)
+
+        logger.info(f"Retrieved {len(arcs)} arcs for {series} season {season}")
+        return arcs
 
 def get_vectorstore_collection(collection_type: CollectionType = CollectionType.NARRATIVE_ARCS) -> VectorStoreCollection:
     """

@@ -1,0 +1,148 @@
+[
+  {
+    "entity_name": "liz_fallon",
+    "best_appellation": "Elizabeth \"Liz\" Fallon",
+    "appellations": [
+      "Liz",
+      "Elizabeth Fallon",
+      "Elizabeth \"Liz\" Fallon"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "zona_cruz",
+    "best_appellation": "Zona Cruz",
+    "appellations": [
+      "Zona",
+      "Zona Cruz"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "alex_karev",
+    "best_appellation": "Alex Karev",
+    "appellations": [
+      "Alex",
+      "Alex Karev"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "cristina_yang",
+    "best_appellation": "Cristina Yang",
+    "appellations": [
+      "Cristina",
+      "Cristina Yang"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "jorge_cruz",
+    "best_appellation": "Jorge Cruz",
+    "appellations": [
+      "Jorge",
+      "Jorge Cruz"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "izzie_stevens",
+    "best_appellation": "Izzie Stevens",
+    "appellations": [
+      "Izzie",
+      "Izzie Stevens"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "harry_victor",
+    "best_appellation": "Dr. Harry Victor",
+    "appellations": [
+      "Dr. Harry Victor",
+      "Harry Victor",
+      "Limp Harry"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "miranda_bailey",
+    "best_appellation": "Miranda Bailey",
+    "appellations": [
+      "Miranda",
+      "Miranda Bailey"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "richard_webber",
+    "best_appellation": "Richard Webber",
+    "appellations": [
+      "Richard",
+      "Richard Webber"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "meredith_grey",
+    "best_appellation": "Meredith Grey",
+    "appellations": [
+      "Meredith",
+      "Meredith Grey"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "george_omalley",
+    "best_appellation": "George O'Malley",
+    "appellations": [
+      "George",
+      "George O'Malley"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "ellis_grey",
+    "best_appellation": "Ellis Grey",
+    "appellations": [
+      "Ellis",
+      "Ellis Grey"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "dr_harry_victor",
+    "best_appellation": "Dr. Harry Victor",
+    "appellations": [
+      "Dr. Harry Victor",
+      "Harry Victor",
+      "Limp Harry"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "derek_shepherd",
+    "best_appellation": "Dr. Derek Shepherd",
+    "appellations": [
+      "Derek",
+      "Dr. Derek Shepherd"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "preston_burke",
+    "best_appellation": "Preston Burke",
+    "appellations": [
+      "Burke",
+      "Preston Burke"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "mr_humphrey",
+    "best_appellation": "Mr. Humphrey",
+    "appellations": [
+      "Mr. Humphrey"
+    ],
+    "entity_type": "PERSON"
+  }
+]

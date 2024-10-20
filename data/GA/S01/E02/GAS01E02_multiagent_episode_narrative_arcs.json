@@ -11,14 +11,6 @@
     "series": "GA",
     "progressions": [
       {
-        "content": "Meredith wakes up after a one-night stand with Derek, only to discover he is her new boss, setting the stage for their complex relationship.",
-        "series": "GA",
-        "season": "S01",
-        "episode": "E01",
-        "ordinal_position": 1,
-        "main_arc_id": "7e2d32e0337a9543544ef915f4ab113e"
-      },
-      {
         "content": "Meredith and Derek's interactions highlight the tension between their professional roles and personal feelings, setting the stage for future complications. They share a kiss in the elevator, and Meredith later decides to take the stairs instead of riding with him.",
         "series": "GA",
         "season": "S01",
@@ -28,30 +20,6 @@
       }
     ],
     "id": "7e2d32e0337a9543544ef915f4ab113e"
-  },
-  {
-    "title": "Medical Case: Katie Bryce's Aneurysm",
-    "arc_type": "Episodic Arc",
-    "description": "The interns' first major medical challenge involving the diagnosis and treatment of Katie Bryce's aneurysm.",
-    "episodic": true,
-    "characters": [
-      "Meredith Grey",
-      "Cristina Yang",
-      "Derek Shepherd",
-      "Katie Bryce"
-    ],
-    "series": "GA",
-    "progressions": [
-      {
-        "content": "Meredith and Cristina work together to diagnose Katie Bryce's condition, and Meredith assists Derek in surgery after correctly diagnosing the aneurysm.",
-        "series": "GA",
-        "season": "S01",
-        "episode": "E01",
-        "ordinal_position": 1,
-        "main_arc_id": "f7fbc7d05e419d6e26421f564de6e02a"
-      }
-    ],
-    "id": "f7fbc7d05e419d6e26421f564de6e02a"
   },
   {
     "title": "Cristina Yang's Surgical Ambitions",
@@ -65,14 +33,6 @@
     ],
     "series": "GA",
     "progressions": [
-      {
-        "content": "Cristina collaborates with Meredith to diagnose Katie Bryce, showcasing her ambition and competitive spirit.",
-        "series": "GA",
-        "season": "S01",
-        "episode": "E01",
-        "ordinal_position": 1,
-        "main_arc_id": "e057af3a9db177abc519cc90f010386a"
-      },
       {
         "content": "Cristina navigates interactions in the hospital, showcasing her ambition and competitive nature, particularly when discussing the rapist's surgery with Meredith. She is frustrated by interruptions and eager to gain OR time.",
         "series": "GA",
@@ -97,14 +57,6 @@
     "series": "GA",
     "progressions": [
       {
-        "content": "George struggles in surgery, earning the nickname '007' due to his lack of confidence.",
-        "series": "GA",
-        "season": "S01",
-        "episode": "E01",
-        "ordinal_position": 1,
-        "main_arc_id": "7fd9701852b57c22926025654e1763b5"
-      },
-      {
         "content": "George boasts about his role on the code team, indicating his ongoing struggle with confidence and desire to prove himself. He forgets his badge and is nearly run over by Cristina.",
         "series": "GA",
         "season": "S01",
@@ -128,14 +80,6 @@
     "series": "GA",
     "progressions": [
       {
-        "content": "Izzie begins her journey to integrate into the hospital environment and prove her capabilities.",
-        "series": "GA",
-        "season": "S01",
-        "episode": "E01",
-        "ordinal_position": 1,
-        "main_arc_id": "7b7ef9d415d6a14b57603766be20e874"
-      },
-      {
         "content": "Izzie struggles with a language barrier while treating a patient, demonstrating her efforts to be seen as a competent intern. She helps an undocumented worker outside the hospital, risking her position.",
         "series": "GA",
         "season": "S01",
@@ -145,54 +89,6 @@
       }
     ],
     "id": "7b7ef9d415d6a14b57603766be20e874"
-  },
-  {
-    "title": "Meredith Grey's Family Legacy and Challenges",
-    "arc_type": "Soap Arc",
-    "description": "Meredith Grey's struggle with her mother's legacy and her own identity as a surgeon, compounded by her mother's illness.",
-    "episodic": false,
-    "characters": [
-      "Meredith Grey",
-      "Ellis Grey"
-    ],
-    "series": "GA",
-    "progressions": [
-      {
-        "content": "Meredith decides not to sell her mother's house and plans to live with fellow interns, while it is revealed that her mother has Alzheimer's disease.",
-        "series": "GA",
-        "season": "S01",
-        "episode": "E01",
-        "ordinal_position": 1,
-        "main_arc_id": "95240c975ca90e3b49d2a2b91fa4998e"
-      }
-    ],
-    "id": "95240c975ca90e3b49d2a2b91fa4998e"
-  },
-  {
-    "title": "Meredith's First Day as a Surgical Intern",
-    "arc_type": "Episodic Arc",
-    "description": "Meredith Grey's challenging first day as a surgical intern at Seattle Grace Hospital.",
-    "episodic": true,
-    "characters": [
-      "Meredith Grey",
-      "Cristina Yang",
-      "George O'Malley",
-      "Izzie Stevens",
-      "Miranda Bailey",
-      "Derek Shepherd"
-    ],
-    "series": "GA",
-    "progressions": [
-      {
-        "content": "Meredith starts her first day at Seattle Grace, meets fellow interns, and navigates the challenges of her new role. She successfully diagnoses a patient, impressing her superiors.",
-        "series": "GA",
-        "season": "S01",
-        "episode": "E01",
-        "ordinal_position": 1,
-        "main_arc_id": "92687e43cc71a6af8ddf54cc59e50cee"
-      }
-    ],
-    "id": "92687e43cc71a6af8ddf54cc59e50cee"
   },
   {
     "title": "Cristina Yang and Meredith Grey's Budding Friendship",
@@ -206,14 +102,6 @@
     "series": "GA",
     "progressions": [
       {
-        "content": "Cristina and Meredith bond over their shared experiences as interns and work together on Katie's case, though tension arises when Meredith is chosen for surgery.",
-        "series": "GA",
-        "season": "S01",
-        "episode": "E01",
-        "ordinal_position": 1,
-        "main_arc_id": "6b034ca2e822dd74fd125f15e3a31d8d"
-      },
-      {
         "content": "Meredith and Cristina discuss the rapist's surgery, and Meredith ultimately decides to leave the hospital with her friends, including Cristina, highlighting their developing friendship.",
         "series": "GA",
         "season": "S01",
@@ -223,28 +111,6 @@
       }
     ],
     "id": "6b034ca2e822dd74fd125f15e3a31d8d"
-  },
-  {
-    "title": "Ellis Grey's Alzheimer's Revelation",
-    "arc_type": "Soap Arc",
-    "description": "Meredith Grey's relationship with her mother, Ellis Grey, and the impact of Ellis's Alzheimer's disease.",
-    "episodic": false,
-    "characters": [
-      "Meredith Grey",
-      "Ellis Grey"
-    ],
-    "series": "GA",
-    "progressions": [
-      {
-        "content": "Meredith visits her mother, Ellis, revealing her Alzheimer's diagnosis and the emotional complexity of their relationship.",
-        "series": "GA",
-        "season": "S01",
-        "episode": "E01",
-        "ordinal_position": 1,
-        "main_arc_id": "2b947c86dc37448105efed1c2f354913"
-      }
-    ],
-    "id": "2b947c86dc37448105efed1c2f354913"
   },
   {
     "title": "Medical Case: Allison's Assault and Recovery",

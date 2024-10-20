@@ -182,8 +182,16 @@ if __name__ == "__main__":
     season = "S01"
     episode = "E02"
 
-    # Initialize PathHandler
     path_handler = PathHandler(series, season, episode)
 
     logger.info("Starting text processing.")
     process_text(path_handler)
+
+    '''for ep in range(1, 10):
+        episode = f"E{ep:02d}"
+        
+        # Initialize PathHandler
+        path_handler = PathHandler(series, season, episode)
+
+        logger.info("Starting text processing.")
+        process_text(path_handler)'''

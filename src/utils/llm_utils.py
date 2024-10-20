@@ -37,19 +37,6 @@ def clean_llm_json_response(response: str) -> List[Dict]:
     if json_match:
         json_str = json_match.group(0)
         
-        # Remove any trailing commas inside objects and arrays
-        #json_str = re.sub(r',\s*([}\]])', r'\1', json_str)
-        
-        # Ensure all keys are properly quoted
-        #json_str = re.sub(r'(\w+)(?=\s*:)', r'"\1"', json_str)
-        
-        # Fix common JSON issues
-        #json_str = re.sub(r'(\w+)\s*:\s*([a-zA-Z0-9_]+)', r'"\1": "\2"', json_str)  # Ensure values are quoted
-        
-        # Handle nested objects and arrays
-        #json_str = re.sub(r'([\[{])\s*,\s*', r'\1', json_str)  # Remove leading commas in arrays/objects
-        #json_str = re.sub(r',\s*([\]}])', r'\1', json_str)  # Remove trailing commas in arrays/objects
-        
         # Replace all curly apostrophes with regular apostrophes
         json_str = json_str.replace("'", "'")
         

@@ -1,5 +1,6 @@
 import json
 import re
+import os
 from typing import List
 from nltk.tokenize import sent_tokenize
 from functools import lru_cache
@@ -9,10 +10,14 @@ from typing import Dict
 
 
 def load_text(file_path: str) -> str:
+    if not os.path.exists(file_path):
+        return None
     with open(file_path, 'r', encoding='utf-8') as f:
         return f.read()
     
 def load_json(file_path: str) -> List[Dict]:
+    if not os.path.exists(file_path):
+        return []
     with open(file_path, 'r') as f:
         return json.load(f)
     
