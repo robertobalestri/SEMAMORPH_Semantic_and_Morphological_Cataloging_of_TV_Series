@@ -1,38 +1,51 @@
 from langchain.prompts import ChatPromptTemplate
+from textwrap import dedent
 
-NARRATIVE_ARC_GUIDELINES = """
-Guidelines for Narrative Arc Extraction:
-
+NARRATIVE_ARC_GUIDELINES = dedent("""
+Guidelines for Narrative Arc Extraction
 1. Arc Types:
-   - Soap Arc: Focuses on romantic relationships, family dynamics, or friendships. Usually a love story between characters represent also an arc.
-   - Genre-Specific Arc: Relates to the show's genre (e.g., medical challenges, political intrigues,professional relationships, etc.), but not the case of a single episode.
-   - Episodic Arc: Self-contained story within a single episode based on the genre of the show (medical/procedural/etc.).
+
+    Soap Arc: Focuses on personal relationships like romance, family dynamics, or friendships. Any love story between characters qualifies as a soap arc.
+    Genre-Specific Arc: Relates to the core genre of the show (e.g., medical challenges, political intrigues, professional conflicts) and spans multiple episodes.
+    Episodic Arc: A self-contained story within a single episode, driven by the show's genre (e.g., medical, legal, or procedural case).
 
 2. Title Creation:
-   - Be specific and descriptive, the titles should never be vague like "Growth and Responsibility" or "Character X's difficulties" or "Secrets and Revelations" or "Character X's professional growth" or "Personal Struggles" or "Professional Rivalries", "Professionalism vs. Personal Relationships" etc.
-   - Include main entities involved (e.g., "The Trial of Benedict Arnold", "Walter White and Skyler's Relationship").
-   - For episodic content, use format: "[Genre] Case: [Specific Case Name]" (e.g., "Medical Case: Rare Genetic Disorder", "Procedural Case: Presidential Assassination").
-   - Especially for an episodic arc, the title should be descriptive and not vague like "Character X's difficulties" or "Character X's problems" or "Character X's professional growth" etc.
-   - A good title usually contains the main characters involved and the main theme of the arc.
 
-3. Description:
-   - Unless the arc is episodic, avoid focusing on the arc's development within the specific episode; instead, focus on the arc's development across the season.
+    Be specific: Titles must be clear, focused, and descriptive. Avoid vague or generic titles (e.g., "Character X's Struggles" or "Professional Rivalries").
+    Include key details: Titles should reference the main characters and the central conflict or theme. Example: “The Trial of Benedict Arnold” or “Walter White and Skyler's Relationship Strain.”
+    For episodic arcs: Use the format "[Genre] Case: [Specific Case Name]" (e.g., "Medical Case: Rare Genetic Disorder," "Procedural Case: Kidnapped Diplomat"). Be as detailed as possible about the case.
+
+3. Arc Description:
+
+    Focus on the long-term development of the arc across multiple episodes, unless it's episodic.
+    Provide a clear overview of how the arc progresses and its broader significance in the season.
 
 4. Episodic Flag:
-   - Set to True for self-contained, anthology-like plots.
-   - Set to False for arcs spanning multiple episodes.
+
+    Set this to True if the plot is self-contained and doesn't span across episodes.
+    Set this to False if the arc continues or develops over multiple episodes.
 
 5. Character List:
-   - Include all relevant characters involved in the arc.
 
-6. Distinctness:
-   - Each arc should be well-defined and distinct from others.
-   - Absolutely avoid overlap between arcs.
+    Include all key characters involved in the arc. Keep this list focused and relevant to the arc at hand.
 
-7. Progression:
-   - List key points in the arc's development.
-   - Focus on major events or turning points.
-"""
+6. Arc Distinctness:
+
+    Ensure that each arc is clearly defined and does not overlap with others. For example, “Character X's professional growth” and “Character X's friendship with Y” should be treated as two separate arcs.
+    Avoid combining different types of developments into one arc (e.g., merging professional and personal issues into one title).
+
+7. Key Progression Points:
+
+    Identify major events or turning points in the arc's development. Focus on moments that significantly advance the storyline or change character dynamics.
+
+Example Breakdown:
+    Arc Type: Soap Arc
+    Title: “Jane's Affair and its Impact on Her Family”
+    Description: Across the season, Jane's extramarital affair comes to light, leading to tension between her and her spouse. This strains her relationship with her children and ultimately results in a separation.
+    Episodic Flag: False
+    Character List: Jane, Mark, Bob, Julie
+    Progression: Jane begins the affair. Mark becomes suspicious. The affair is revealed at a family event. Jane's children (Bob and Julie) become distant. Jane and Mark decide to separate.
+""")
 
 SEASONAL_NARRATIVE_ANALYZER_PROMPT = ChatPromptTemplate.from_template(
     """You are a Seasonal Narrative Analyzer, an expert in analyzing and structuring season-long narratives in television series. Your task is to provide a structured and concise analysis of the following season plot:
@@ -53,6 +66,7 @@ SEASONAL_NARRATIVE_ANALYZER_PROMPT = ChatPromptTemplate.from_template(
        - List the major events that shape the overall narrative.
 
     Keep the analysis concise and structured for easy arc extraction. Avoid unnecessary detail and focus on the elements that are most significant to the season-long story.
+    You will not add any comments or explanations, just the structured analysis.
     """
 )
 
@@ -80,6 +94,7 @@ EPISODE_NARRATIVE_ANALYZER_PROMPT = ChatPromptTemplate.from_template(
 
     Keep the analysis concise and structured for easy arc extraction. Avoid unnecessary detail and focus on how this episode fits into the larger season narrative while also highlighting its unique elements.
     You should never talk about the season arcs that are not directly referenced in the episode plot. You can say that an arc may evolve in another episode, but mantain your analysis focused on the episode plot.
+    You will not add any comments or explanations, just the structured analysis.
     """
 )
 
@@ -139,7 +154,7 @@ ARC_EXTRACTOR_FROM_ANALYSIS_PROMPT = ChatPromptTemplate.from_template(
             "description": "Brief season-wide description of the arc",
             "single_episode_progression_string": "Detailed description of the arc's progression in this episode",
             "episodic": "True/False",
-            "characters": ["Character 1", "Character 2", ...]
+            "characters": "Character 1; Character 2; ..."
         }},
         ... more arcs ...
     ]
@@ -177,7 +192,7 @@ ARC_EXTRACTOR_FROM_PLOT_PROMPT = ChatPromptTemplate.from_template(
             "description": "Brief season-wide description of the arc",
             "single_episode_progression_string": "Detailed description of the arc's progression in this episode",
             "episodic": "True/False",
-            "characters": ["Character 1", "Character 2", ...]
+            "characters": "Character 1; Character 2; ..."
         }},
         ... more arcs ...
     ]
@@ -222,7 +237,7 @@ ARC_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
             "description": "Brief season-wide description of the arc",
             "single_episode_progression_string": "Detailed description of the arc's progression in this episode",
             "episodic": "True/False",
-            "characters": ["Character 1", "Character 2", ...]
+            "characters": "Character 1; Character 2; ..."
         }},
         ... more arcs ...
     ]
@@ -255,7 +270,7 @@ ARC_PROGRESSION_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
         "description": "Updated overall description of the arc",
         "single_episode_progression_string": "Detailed description of the arc's progression in this episode",
         "episodic": "True/False",
-        "characters": ["Character 1", "Character 2", ...]
+        "characters": "Character 1; Character 2; ..."
     }}
 
     Ensure your response contains only the JSON object of the verified arc, without any additional text or explanations.

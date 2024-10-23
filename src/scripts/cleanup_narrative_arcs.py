@@ -4,6 +4,14 @@ import shutil
 def delete_narrative_arcs(series: str, season: str):
     base_dir = "data"  # Base directory for data
     chroma_db_path = os.path.join('chroma_db')  # Path to the @chroma_db folder
+    database_path = os.path.join('narrative_arcs.db')
+
+    # Delete the database file if it exists
+    if os.path.exists(database_path):
+        os.remove(database_path)
+        print(f"Deleted file: {database_path}")
+    else:
+        print(f"File not found: {database_path}")
 
     # Delete the @chroma_db folder if it exists
     if os.path.exists(chroma_db_path):
@@ -28,7 +36,7 @@ def delete_narrative_arcs(series: str, season: str):
         # Delete the multiagent season narrative analysis file
         season_narrative_analysis_path = os.path.join(season_path, f"{series}{season}_multiagent_season_narrative_analysis.txt")
         if os.path.exists(season_narrative_analysis_path):
-            os.remove(season_narrative_analysis_path)
+            #os.remove(season_narrative_analysis_path)
             print(f"Deleted file: {season_narrative_analysis_path}")
         else:
             print(f"File not found: {season_narrative_analysis_path}")
@@ -50,7 +58,7 @@ def delete_narrative_arcs(series: str, season: str):
             if os.path.isdir(episode_path):
                 episode_narrative_analysis_path = os.path.join(episode_path, f"{series}{season}{episode}_multiagent_episode_narrative_analysis.txt")
                 if os.path.exists(episode_narrative_analysis_path):
-                    os.remove(episode_narrative_analysis_path)
+                    #os.remove(episode_narrative_analysis_path)
                     print(f"Deleted file: {episode_narrative_analysis_path}")
                 else:
                     print(f"File not found: {episode_narrative_analysis_path}")

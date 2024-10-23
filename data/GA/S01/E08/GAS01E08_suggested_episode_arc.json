@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Meredith and Derek's Complicated Relationship",
+    "arc_type": "Soap Arc",
+    "description": "The evolving romantic and professional dynamics between Meredith and Derek as they navigate their feelings and responsibilities at Seattle Grace Hospital.",
+    "episodic": false,
+    "characters": "Meredith; Derek",
+    "single_episode_progression_string": "Meredith expresses her desire to know more about Derek, questioning their relationship's depth. After a discussion about personal details, she decides to withhold sex until she feels more connected, while Derek suggests they will learn about each other over time. This tension highlights their ongoing struggle to balance intimacy with emotional understanding."
+  },
+  {
+    "title": "Cristina Yang's Ambition and Challenges",
+    "arc_type": "Soap Arc",
+    "description": "Cristina Yang's journey as she balances her ambition and competitiveness with the challenges of being a surgical intern.",
+    "episodic": false,
+    "characters": "Cristina; Zoey",
+    "single_episode_progression_string": "Cristina faces the emotional weight of her patients' decisions, particularly with Zoey Glass, who chooses to keep her baby despite her cancer. Cristina's struggle to understand Zoey's choice reflects her own challenges in balancing ambition with empathy."
+  },
+  {
+    "title": "Izzie Stevens' Professional Development",
+    "arc_type": "Soap Arc",
+    "description": "Izzie Stevens faces personal challenges while striving to establish herself as a competent surgical intern.",
+    "episodic": false,
+    "characters": "Izzie; Mr. Duff; Devo",
+    "single_episode_progression_string": "Izzie grapples with her emotional involvement in her patients' lives, particularly Mr. Duff and Devo. She tries to assert her professional judgment by pushing for surgery on Mr. Duff, despite Bailey's concerns about her emotional state. This episode showcases her determination to prove herself while dealing with personal feelings."
+  },
+  {
+    "title": "Alex Karev's Struggles for Acceptance",
+    "arc_type": "Soap Arc",
+    "description": "Alex Karev's journey as he attempts to find his place within the intern group while dealing with his arrogance and interpersonal conflicts.",
+    "episodic": false,
+    "characters": "Alex; Devo; Burke",
+    "single_episode_progression_string": "Alex demonstrates growth by advocating for a bovine valve for Devo, challenging Burke's initial recommendation. This moment reflects his desire to prove himself and gain acceptance among his peers, as he navigates the complexities of teamwork and professional respect."
+  },
+  {
+    "title": "Medical Case: Mr. Walker's Surgery for Suspected Spinal Clot",
+    "arc_type": "Episodic Arc",
+    "description": "The medical challenges faced by the surgical team as they navigate the complexities of Mr. Walker's condition.",
+    "episodic": true,
+    "characters": "Mr. Walker; Burke; Alex; Cristina",
+    "single_episode_progression_string": "Mr. Walker undergoes surgery for a suspected spinal clot, presenting a critical case that tests the skills and teamwork of the surgical interns."
+  },
+  {
+    "title": "Medical Case: Zoey Glass's Pregnancy and Cancer Treatment Decision",
+    "arc_type": "Episodic Arc",
+    "description": "The ethical dilemmas faced by the medical team as they assist Zoey Glass in making a life-altering decision regarding her pregnancy and cancer treatment.",
+    "episodic": true,
+    "characters": "Zoey Glass; Izzie; Cristina",
+    "single_episode_progression_string": "Zoey Glass faces a difficult decision about her pregnancy and cancer treatment, prompting discussions among the interns about the ethical implications of her choices."
+  },
+  {
+    "title": "Medical Case: Mr. Duff's Psychic Visions and Medical Condition",
+    "arc_type": "Episodic Arc",
+    "description": "The exploration of Mr. Duff's psychic visions as they relate to his medical condition, challenging the interns' understanding of medicine.",
+    "episodic": true,
+    "characters": "Mr. Duff; Cristina; Alex",
+    "single_episode_progression_string": "Mr. Duff's psychic visions are linked to a medical condition, leading the interns to confront the intersection of medicine and the supernatural."
+  },
+  {
+    "title": "Medical Case: Psychic Predictions and Patient Decisions",
+    "arc_type": "Episodic Arc",
+    "description": "The episode revolves around the medical and ethical dilemmas faced by patients and doctors, particularly concerning life-altering decisions.",
+    "episodic": true,
+    "characters": "Devo; Zoey; Mr. Duff; Meredith; Derek; Izzie; Alex; Burke",
+    "single_episode_progression_string": "The episode features multiple patients facing critical decisions: Devo's surgery options, Zoey's choice between chemotherapy and her pregnancy, and Mr. Duff's surgery for his brain condition. The intertwining of their stories highlights the emotional and ethical complexities of medical practice."
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Meredith and Derek's Complicated Relationship",
+    "arc_type": "Soap Arc",
+    "description": "The evolving romantic and professional dynamics between Meredith and Derek as they navigate their feelings and responsibilities at Seattle Grace Hospital.",
+    "episodic": false,
+    "characters": "Meredith Grey; Derek Shepherd; Addison Shepherd",
+    "single_episode_progression_string": "Meredith grapples with her feelings for Derek while dealing with her mother's Alzheimer's. Derek comforts her, but their relationship is complicated by the arrival of Addison Shepherd, who implies a deeper connection with Derek."
+  },
+  {
+    "title": "Cristina Yang's Ambition and Challenges",
+    "arc_type": "Soap Arc",
+    "description": "Cristina Yang's journey as she balances her ambition and competitiveness with the challenges of being a surgical intern.",
+    "episodic": false,
+    "characters": "Cristina Yang; Preston Burke",
+    "single_episode_progression_string": "Cristina faces the emotional toll of losing a patient, Mr. Franklin, and feels frustrated about not knowing the cause of death. She also navigates her relationship with Burke, who questions her avoidance of him."
+  },
+  {
+    "title": "George O'Malley's Insecurities and Self-Doubt",
+    "arc_type": "Soap Arc",
+    "description": "George O'Malley faces insecurities about his abilities as a surgeon and his place among his peers.",
+    "episodic": false,
+    "characters": "George O'Malley; Olivia; Alex Karev",
+    "single_episode_progression_string": "George struggles with the embarrassment of having syphilis, leading to a confrontation with Olivia and a physical altercation with Alex. He feels isolated as he learns that his peers are aware of his condition."
+  },
+  {
+    "title": "Izzie Stevens' Professional Development",
+    "arc_type": "Soap Arc",
+    "description": "Izzie Stevens faces personal challenges while striving to establish herself as a competent surgical intern.",
+    "episodic": false,
+    "characters": "Izzie Stevens; Cristina Yang; Mr. Franklin",
+    "single_episode_progression_string": "Izzie navigates her professional responsibilities while dealing with George's syphilis. She shows determination in her work with Cristina and Mr. Franklin's case, but also grapples with ethical dilemmas regarding the autopsy."
+  },
+  {
+    "title": "Alex Karev's Struggles for Acceptance",
+    "arc_type": "Soap Arc",
+    "description": "Alex Karev's journey as he attempts to find his place within the intern group while dealing with his arrogance and interpersonal conflicts.",
+    "episodic": false,
+    "characters": "Alex Karev; George O'Malley",
+    "single_episode_progression_string": "Alex's arrogance is highlighted when he examines George's rash and later jokes about it. His interactions with George lead to a physical confrontation, showcasing his struggle for acceptance among his peers."
+  },
+  {
+    "title": "The Weight of Family Legacy on Meredith Grey",
+    "arc_type": "Soap Arc",
+    "description": "Meredith grapples with the legacy of her mother, renowned surgeon Ellis Grey, and how it affects her identity and career.",
+    "episodic": false,
+    "characters": "Meredith Grey; Derek Shepherd",
+    "single_episode_progression_string": "Meredith's emotional struggle with her mother's Alzheimer's is highlighted, affecting her interactions with Derek and her work. She seeks comfort in her relationship with Derek but is reminded of her mother's legacy."
+  },
+  {
+    "title": "Medical Case: Mr. Franklin's Unexpected Death",
+    "arc_type": "Episodic Arc",
+    "description": "The ethical dilemmas faced by the surgical team following the unexpected death of a patient, Mr. Franklin.",
+    "episodic": true,
+    "characters": "Mr. Franklin; Izzie; George; The Chief",
+    "single_episode_progression_string": "The team confronts the implications of Mr. Franklin's death, leading to debates about the necessity of an autopsy and the ethical responsibilities of medical professionals."
+  },
+  {
+    "title": "Medical Case: Syphilis Outbreak",
+    "arc_type": "Episodic Arc",
+    "description": "The medical staff at Seattle Grace Hospital faces a syphilis outbreak among the interns, leading to various personal and professional complications.",
+    "episodic": true,
+    "characters": "George O'Malley; Izzie Stevens; Alex Karev; Miranda Bailey; Richard Webber",
+    "single_episode_progression_string": "The episode revolves around George's diagnosis of syphilis, which creates tension among the interns. The chief addresses the outbreak, leading to a humorous yet serious discussion about safe sex practices in the hospital."
+  }
+]

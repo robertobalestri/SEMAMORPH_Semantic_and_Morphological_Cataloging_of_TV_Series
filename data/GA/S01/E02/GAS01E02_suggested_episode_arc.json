@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Meredith and Derek's Complicated Relationship",
+    "arc_type": "Soap Arc",
+    "description": "The evolving romantic and professional dynamics between Meredith and Derek as they navigate their feelings and responsibilities at Seattle Grace Hospital.",
+    "episodic": false,
+    "characters": "Meredith Grey; Derek Shepherd",
+    "single_episode_progression_string": "In this episode, Meredith sets clear boundaries with Derek, asserting that she won't date him because he is her boss. Despite their tension, they share a kiss, indicating unresolved feelings. The episode ends with Meredith choosing to take the stairs instead of the elevator with Derek, highlighting her internal conflict."
+  },
+  {
+    "title": "Cristina Yang's Ambition and Challenges",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Cristina Yang's journey as she balances her ambition and competitiveness with the challenges of being a surgical intern.",
+    "episodic": false,
+    "characters": "Cristina Yang; Alex Karev",
+    "single_episode_progression_string": "Cristina arrives on her motorcycle, showcasing her ambition and individuality. Throughout the episode, she navigates her interactions with other interns, reflecting her competitive nature and the challenges she faces as an intern."
+  },
+  {
+    "title": "George O'Malley's Insecurities and Self-Doubt",
+    "arc_type": "Genre-Specific Arc",
+    "description": "George O'Malley faces insecurities about his abilities as a surgeon and his place among his peers.",
+    "episodic": false,
+    "characters": "George O'Malley",
+    "single_episode_progression_string": "George forgets his badge and boasts about his role on the code team, which indicates his struggle with self-doubt and the need to prove himself among his peers."
+  },
+  {
+    "title": "Izzie Stevens' Professional Development",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Izzie Stevens faces personal challenges while striving to establish herself as a competent surgical intern.",
+    "episodic": false,
+    "characters": "Izzie Stevens",
+    "single_episode_progression_string": "Izzie feels uncomfortable in a crowded elevator and struggles with a language barrier while treating a patient, highlighting her ongoing challenges and growth as she works to establish her competence in the surgical field."
+  },
+  {
+    "title": "Cristina and Meredith's Collaborative Partnership",
+    "arc_type": "Soap Arc",
+    "description": "Cristina Yang and Meredith Grey develop a partnership as they navigate the challenges of their medical training together.",
+    "episodic": false,
+    "characters": "Cristina Yang; Meredith Grey",
+    "single_episode_progression_string": "Meredith and Cristina discuss the rapist's surgery, showcasing their collaborative approach to handling difficult cases and their growing partnership as they support each other in their medical training."
+  },
+  {
+    "title": "Medical Case: Rape Victim and Ethical Dilemmas",
+    "arc_type": "Episodic Arc",
+    "description": "The episode centers around the medical and ethical challenges faced by the staff while treating a rape victim.",
+    "episodic": true,
+    "characters": "Meredith Grey; George O'Malley; Izzie Stevens",
+    "single_episode_progression_string": "Meredith deals with a rape victim case, which becomes more complicated when the rapist is brought to the hospital, forcing the team to confront ethical dilemmas."
+  }
+]

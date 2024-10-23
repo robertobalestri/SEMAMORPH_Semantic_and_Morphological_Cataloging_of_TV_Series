@@ -11,6 +11,7 @@ import json
 import agentops
 from src.langgraph_narrative_arcs_extraction.narrative_arc_graph import extract_narrative_arcs
 from src.ai_models.ai_models import LLMType
+from src.storage.narrative_arc_manager import NarrativeArcManager
 
 from dotenv import load_dotenv
 
@@ -149,27 +150,35 @@ def process_text(path_handler: PathHandler) -> None:
             with open(summarized_plot_path, "r") as summarized_plot_file:
                 summarized_plot = summarized_plot_file.read()
                 
+        suggested_episode_arc_path = path_handler.get_suggested_episode_arc_path()
         
-        # Prepare file paths for narrative arc extraction
-        file_paths_for_graph = {
-            "season_plot_path": path_handler.get_season_plot_file_path(),
-            "episode_plot_path": path_handler.get_simplified_plot_file_path(),
-            "seasonal_narrative_analysis_output_path": path_handler.get_season_narrative_analysis_path(),
-            "episode_narrative_analysis_output_path": path_handler.get_episode_narrative_analysis_path(),
-            "episode_narrative_arcs_path": path_handler.get_episode_narrative_arcs_path(),
-            "season_narrative_arcs_path": path_handler.get_season_narrative_arcs_path(),
-            "summarized_plot_path": summarized_plot_path
-        }
+        if not os.path.exists(suggested_episode_arc_path):
+            # Prepare file paths for narrative arc extraction
+            file_paths_for_graph = {
+                "season_plot_path": path_handler.get_season_plot_file_path(),
+                "episode_plot_path": path_handler.get_simplified_plot_file_path(),
+                "seasonal_narrative_analysis_output_path": path_handler.get_season_narrative_analysis_path(),
+                "episode_narrative_analysis_output_path": path_handler.get_episode_narrative_analysis_path(),
+                "summarized_plot_path": summarized_plot_path,
+                "season_entities_path": path_handler.get_season_extracted_refined_entities_path(),
+                "suggested_episode_arc_path": suggested_episode_arc_path
+            }
 
-        # Extract narrative arcs using LangGraph
-        logger.info("Extracting narrative arcs.")
-        narrative_arcs_result = extract_narrative_arcs(file_paths_for_graph, series, season, episode)
+            # Extract narrative arcs using LangGraph
+            logger.info("Extracting narrative arcs.")
+            extract_narrative_arcs(file_paths_for_graph, series, season, episode)
 
-        # Process the results
-        season_analysis = narrative_arcs_result['season_analysis']
-        episode_arcs = narrative_arcs_result['episode_arcs']
-        season_arcs = narrative_arcs_result['season_arcs']
+        # Process the suggested arcs and update the database
+        logger.info("Processing suggested arcs and updating database.")
+        narrative_arc_manager = NarrativeArcManager()
+        updated_arcs = narrative_arc_manager.process_suggested_arcs(
+            suggested_episode_arc_path,
+            series,
+            season,
+            episode
+        )
 
+        logger.info(f"Updated {len(updated_arcs)} arcs in the database.")
         logger.info("Processing complete.")
 
     except Exception as e:
@@ -180,18 +189,16 @@ if __name__ == "__main__":
     # Configuration
     series = "GA"
     season = "S01"
-    episode = "E02"
-
-    path_handler = PathHandler(series, season, episode)
 
     logger.info("Starting text processing.")
-    process_text(path_handler)
 
-    '''for ep in range(1, 10):
+    ep_number = 3
+    for ep in range(ep_number, 10): #(1, 2) for only episode 1
         episode = f"E{ep:02d}"
         
         # Initialize PathHandler
         path_handler = PathHandler(series, season, episode)
 
         logger.info("Starting text processing.")
-        process_text(path_handler)'''
+        process_text(path_handler)
+

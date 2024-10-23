@@ -311,3 +311,22 @@ def normalize_entities_names_to_best_appellation(text: str, entities: List[Entit
         text = text.replace(f"[{entity.entity_name}]", entity.best_appellation)
     return text
 
+def normalize_names(text: str, entities: List[EntityLink], llm: AzureChatOpenAI) -> str:
+    """
+    Normalize names in the text by substituting appellations with names and then normalizing to best appellations.
+
+    Args:
+        text (str): The input text to process.
+        entities (List[EntityLink]): A list of entities to use for normalization.
+        llm (AzureChatOpenAI): The language model to use for processing.
+
+    Returns:
+        str: The text with normalized names.
+    """
+    # Step 1: Substitute appellations with names
+    substituted_text = substitute_appellations_with_names(text, entities, llm)
+
+    # Step 2: Normalize to best appellations
+    normalized_text = normalize_entities_names_to_best_appellation(substituted_text, entities)
+
+    return normalized_text

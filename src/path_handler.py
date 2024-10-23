@@ -60,3 +60,6 @@ class PathHandler:
     
     def get_summarized_plot_path(self) -> str:
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_summarized_plot.txt")
+    
+    def get_suggested_episode_arc_path(self) -> str:
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_suggested_episode_arc.json")

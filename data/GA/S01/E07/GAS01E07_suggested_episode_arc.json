@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Meredith and Derek's Complicated Relationship",
+    "arc_type": "Soap Arc",
+    "description": "The evolving romantic and professional dynamics between Meredith and Derek as they navigate their feelings and responsibilities at Seattle Grace Hospital.",
+    "episodic": false,
+    "characters": "Meredith Grey; Derek Shepherd; George O'Malley; Izzie Stevens",
+    "single_episode_progression_string": "Derek sneaks out of Meredith's house, leading to George's jealousy and Izzie's confrontation with Meredith about her feelings for Derek, ultimately revealing Meredith's love for him."
+  },
+  {
+    "title": "George O'Malley's Insecurities and Self-Doubt",
+    "arc_type": "Genre-Specific Arc",
+    "description": "George O'Malley faces insecurities about his abilities as a surgeon and his place among his peers.",
+    "episodic": false,
+    "characters": "George O'Malley; Dr. Taylor; Derek Shepherd",
+    "single_episode_progression_string": "George grapples with his concerns about Dr. Taylor's competency and his own worthiness to participate in a major surgery, leading to his removal from the operating room."
+  },
+  {
+    "title": "Cristina Yang's Ambition and Challenges",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Cristina Yang's journey as she balances her ambition and competitiveness with the challenges of being a surgical intern.",
+    "episodic": false,
+    "characters": "Cristina Yang; Dr. Burke",
+    "single_episode_progression_string": "Cristina's flu-like symptoms lead her to suspect she might be pregnant, adding personal turmoil to her professional aspirations."
+  },
+  {
+    "title": "Izzie Stevens' Professional Development",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Izzie Stevens faces personal challenges while striving to establish herself as a competent surgical intern.",
+    "episodic": false,
+    "characters": "Izzie Stevens; Meredith Grey",
+    "single_episode_progression_string": "Izzie confronts Meredith about her relationship with Derek, ultimately feeling empathy for her friend as she realizes Meredith's true feelings."
+  },
+  {
+    "title": "Alex Karev's Struggles for Acceptance",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Alex Karev's journey as he attempts to find his place within the intern group while dealing with his arrogance and interpersonal conflicts.",
+    "episodic": false,
+    "characters": "Alex Karev; Gunshot Wound Victim",
+    "single_episode_progression_string": "Alex connects with a tattooed gunshot victim over their shared past in wrestling, highlighting his search for understanding and acceptance."
+  },
+  {
+    "title": "Medical Case: Complications from Gastric Bypass Surgery",
+    "arc_type": "Episodic Arc",
+    "description": "A teenager faces severe complications after undergoing gastric bypass surgery in Mexico without parental consent.",
+    "episodic": true,
+    "characters": "Meredith Grey; Miranda Bailey; Teenage Patient",
+    "single_episode_progression_string": "Meredith and Bailey deal with the aftermath of a failed gastric bypass surgery, which leads to serious complications for the patient, emphasizing the risks of unsupervised medical procedures."
+  },
+  {
+    "title": "Medical Case: Hemispherectomy for Toddler",
+    "arc_type": "Episodic Arc",
+    "description": "A toddler requires a hemispherectomy due to rapidly deteriorating brain tissue.",
+    "episodic": true,
+    "characters": "Derek Shepherd; George O'Malley; Toddler Patient",
+    "single_episode_progression_string": "Derek performs a hemispherectomy on a toddler, but complications arise when anesthesia is mishandled, leading to a critical moment during the surgery."
+  },
+  {
+    "title": "Medical Case: Scheduled Gunshot Wound",
+    "arc_type": "Episodic Arc",
+    "description": "A gunshot wound victim arrives at the hospital with a unique story behind his injury.",
+    "episodic": true,
+    "characters": "Alex Karev; Gunshot Wound Victim",
+    "single_episode_progression_string": "Alex encounters a gunshot wound victim who scheduled his injury, leading to a deeper conversation about pain and acceptance."
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Meredith and Derek's Complicated Relationship",
+    "arc_type": "Soap Arc",
+    "description": "The evolving romantic and professional dynamics between Meredith and Derek as they navigate their feelings and responsibilities at Seattle Grace Hospital.",
+    "episodic": false,
+    "characters": "Meredith Grey; Derek Shepherd",
+    "single_episode_progression_string": "Meredith wakes up after a one-night stand with Derek, leading to a complex relationship as they begin to work together professionally."
+  },
+  {
+    "title": "Cristina Yang's Ambition and Challenges",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Cristina Yang's journey as she balances her ambition and competitiveness with the challenges of being a surgical intern.",
+    "episodic": false,
+    "characters": "Cristina Yang; Meredith Grey",
+    "single_episode_progression_string": "Cristina works alongside Meredith to diagnose Katie Bryce, showcasing her determination and skill in a high-pressure environment."
+  },
+  {
+    "title": "George O'Malley's Quest for Respect",
+    "arc_type": "Genre-Specific Arc",
+    "description": "George O'Malley's struggle for recognition and self-worth as he navigates the challenges of being a new intern.",
+    "episodic": false,
+    "characters": "George O'Malley",
+    "single_episode_progression_string": "George earns the nickname 007 after a failed procedure, highlighting his ongoing struggle for respect among his peers."
+  },
+  {
+    "title": "Izzie Stevens' Professional Development",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Izzie Stevens faces personal challenges while striving to establish herself as a competent surgical intern.",
+    "episodic": false,
+    "characters": "Izzie Stevens",
+    "single_episode_progression_string": "Izzie encounters difficulties with her resident and her tasks, emphasizing her growth and resilience in the face of adversity."
+  },
+  {
+    "title": "Alex Karev's Struggles for Acceptance",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Alex Karev's journey as he attempts to find his place within the intern group while dealing with his arrogance and interpersonal conflicts.",
+    "episodic": false,
+    "characters": "Alex Karev; Meredith Grey",
+    "single_episode_progression_string": "Alex displays arrogance and clashes with Meredith, highlighting his struggle to integrate into the team."
+  },
+  {
+    "title": "Meredith's Complex Relationship with Ellis Grey",
+    "arc_type": "Soap Arc",
+    "description": "The impact of Meredith's complicated relationship with her mother, Ellis Grey, particularly as Ellis's Alzheimer's diagnosis unfolds.",
+    "episodic": false,
+    "characters": "Meredith Grey; Ellis Grey",
+    "single_episode_progression_string": "Meredith learns about her mother Ellis's Alzheimer's disease, deepening her emotional struggle and connection to her past."
+  },
+  {
+    "title": "Medical Case: Katie Bryce's Life-Threatening Condition",
+    "arc_type": "Episodic Arc",
+    "description": "The urgent medical case of Katie Bryce, a patient diagnosed with a critical condition that the interns must address.",
+    "episodic": true,
+    "characters": "Meredith Grey; Cristina Yang; Derek Shepherd; Katie Bryce",
+    "single_episode_progression_string": "Meredith and Cristina work together to diagnose Katie Bryce, and Meredith assists Derek in surgery, ultimately saving her life."
+  },
+  {
+    "title": "Meredith's First Day at Seattle Grace Hospital",
+    "arc_type": "Episodic Arc",
+    "description": "Meredith Grey navigates her first day as an intern at Seattle Grace Hospital, facing challenges and forming new relationships.",
+    "episodic": true,
+    "characters": "Meredith Grey; Derek Shepherd; Cristina Yang; George O'Malley; Isobel Stevens; Miranda Bailey; Katie Bryce",
+    "single_episode_progression_string": "Meredith wakes up on her couch, embarrassed after a one-night stand with Derek. She starts her first day at Seattle Grace, where she meets fellow interns Cristina, George, and Izzie. They are introduced to their resident, Miranda Bailey, and face the challenges of their first shift, including a critical case involving Katie Bryce. Meredith's medical skills are tested as she discovers a serious condition in Katie, leading to her assisting in surgery, marking a significant moment in her medical career."
+  },
+  {
+    "title": "The Weight of Family Legacy on Meredith Grey",
+    "arc_type": "Soap Arc",
+    "description": "Meredith grapples with the legacy of her mother, renowned surgeon Ellis Grey, and how it affects her identity and career.",
+    "episodic": false,
+    "characters": "Meredith Grey; Cristina Yang; Ellis Grey",
+    "single_episode_progression_string": "Cristina reveals to the other interns that Meredith's mother is Ellis Grey, which causes Meredith to feel the weight of her mother's reputation. This revelation leads to tension as Meredith tries to distance herself from her mother's legacy while proving her own capabilities as a doctor."
+  },
+  {
+    "title": "George O'Malley's Insecurities and Self-Doubt",
+    "arc_type": "Soap Arc",
+    "description": "George O'Malley faces insecurities about his abilities as a surgeon and his place among his peers.",
+    "episodic": false,
+    "characters": "George O'Malley; Miranda Bailey; Preston Burke",
+    "single_episode_progression_string": "George feels nervous and out of place during his first day, especially when he is assigned a procedure that he struggles with, leading to a mishap. He worries about being nicknamed '007' after his mistake, reflecting his self-doubt and desire to prove himself."
+  },
+  {
+    "title": "Cristina and Meredith's Collaborative Partnership",
+    "arc_type": "Soap Arc",
+    "description": "Cristina Yang and Meredith Grey develop a partnership as they navigate the challenges of their medical training together.",
+    "episodic": false,
+    "characters": "Cristina Yang; Meredith Grey",
+    "single_episode_progression_string": "Cristina suggests that she and Meredith work together to increase their chances of getting into surgery, highlighting their growing friendship and professional alliance. They collaborate to diagnose Katie's condition, showcasing their teamwork and determination."
+  }
+]
