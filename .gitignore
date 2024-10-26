@@ -5,3 +5,4 @@ __pycache__/
 .env
 agentops.agent_logs/
 instructions.txt
+frontend/node_modules/

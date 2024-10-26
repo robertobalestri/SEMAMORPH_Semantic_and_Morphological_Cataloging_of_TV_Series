@@ -18,6 +18,15 @@ logger = setup_logging(__name__)
 nlp = spacy.load("en_core_web_trf")
 
 def extract_entities_with_spacy(text: str) -> List[str]:
+    """
+    Extract entities from the text using spaCy's NER, including titles.
+
+    Args:
+        text (str): The input text to process.
+
+    Returns:
+        List[str]: A list of entity mentions, including titles.
+    """
     doc = nlp(text)
     entities = set()
     for ent in doc.ents:
@@ -54,6 +63,18 @@ def extract_entities_with_spacy(text: str) -> List[str]:
     return list(entities)
 
 def refine_entities(entities: List[str], plot: str, llm: AzureChatOpenAI, existing_entities: List[EntityLink]) -> List[EntityLink]:
+    """
+    Refine the extracted entities using a language model to ensure accuracy and completeness.
+
+    Args:
+        entities (List[str]): The list of extracted entities.
+        plot (str): The plot text for context.
+        llm (AzureChatOpenAI): The language model for refining entities.
+        existing_entities (List[EntityLink]): The list of existing entities for reference.
+
+    Returns:
+        List[EntityLink]: A list of refined entities as EntityLink objects.
+    """
     existing_info = "Existing characters:\n" + "\n".join([f"{e.entity_name}" for e in existing_entities])
     new_entities = "New characters to refine:\n" + "\n".join(entities)
 
@@ -101,6 +122,17 @@ def refine_entities(entities: List[str], plot: str, llm: AzureChatOpenAI, existi
         return []
 
 def merge_entities(existing_entities: List[EntityLink], new_entities: List[EntityLink], llm: AzureChatOpenAI) -> List[EntityLink]:
+    """
+    Merge new entities with existing ones, resolving any conflicts using a language model.
+
+    Args:
+        existing_entities (List[EntityLink]): The list of existing entities.
+        new_entities (List[EntityLink]): The list of new entities to merge.
+        llm (AzureChatOpenAI): The language model for disambiguation.
+
+    Returns:
+        List[EntityLink]: A list of merged entities as EntityLink objects.
+    """
     merged = defaultdict(lambda: {"entity_name": "", "best_appellation": "","appellations": set()})  # Added best_appellation
     
     # First, process existing entities
@@ -149,6 +181,18 @@ def merge_entities(existing_entities: List[EntityLink], new_entities: List[Entit
     return [EntityLink(entity_name=data["entity_name"], appellations=list(data["appellations"]), best_appellation=data["best_appellation"]) for data in merged.values()]  # Include best_appellation
 
 def disambiguate_entities(new_entity: EntityLink, shared_appellation_entities: List[Tuple[str, set]], merged: Dict, llm: AzureChatOpenAI) -> Tuple[bool, str]:
+    """
+    Determine if a new entity should be merged with existing entities based on shared appellations.
+
+    Args:
+        new_entity (EntityLink): The new entity to evaluate.
+        shared_appellation_entities (List[Tuple[str, set]]): Existing entities with shared appellations.
+        merged (Dict): The merged entities dictionary.
+        llm (AzureChatOpenAI): The language model for disambiguation.
+
+    Returns:
+        Tuple[bool, str]: A tuple indicating whether to merge and the entity to merge with.
+    """
     prompt = f"""I need to determine if the following entity should be merged with any existing entities or kept separate:
 
 New Entity: {new_entity.entity_name}
@@ -182,6 +226,19 @@ Respond in the following JSON format:
         return False, ""
 
 def extract_and_refine_entities(text: str, llm: AzureChatOpenAI, refined_output_path: str, raw_output_path: str, season_entities_path: str) -> List[EntityLink]:
+    """
+    Extract and refine entities from the provided text, saving results to specified paths.
+
+    Args:
+        text (str): The input text to process.
+        llm (AzureChatOpenAI): The language model for processing.
+        refined_output_path (str): Path to save refined entities.
+        raw_output_path (str): Path to save raw extracted entities.
+        season_entities_path (str): Path to load existing season entities.
+
+    Returns:
+        List[EntityLink]: A list of merged entities as EntityLink objects.
+    """
    
     # Extract new entities
     extracted_entities = extract_entities_with_spacy(text)
@@ -216,6 +273,17 @@ def extract_and_refine_entities(text: str, llm: AzureChatOpenAI, refined_output_
     return merged_entities
 
 def substitute_appellations_with_names(text: str, entities: List[EntityLink], llm: AzureChatOpenAI) -> str:
+    """
+    Substitute appellations in the text with their corresponding entity names.
+
+    Args:
+        text (str): The input text to process.
+        entities (List[EntityLink]): A list of entities for substitution.
+        llm (AzureChatOpenAI): The language model for disambiguation.
+
+    Returns:
+        str: The text with appellations substituted by entity names.
+    """
     # Sort entities by the length of their longest appellation
     sorted_entities = sorted(entities, key=lambda e: max(len(a) for a in e.appellations), reverse=True)
     
@@ -263,6 +331,18 @@ def substitute_appellations_with_names(text: str, entities: List[EntityLink], ll
     return text
 
 def disambiguate_appellation(appellation: str, entities: List[EntityLink], context: str, llm: AzureChatOpenAI) -> str:
+    """
+    Disambiguate an appellation to determine which entity it refers to based on context.
+
+    Args:
+        appellation (str): The appellation to disambiguate.
+        entities (List[EntityLink]): Possible entities for the appellation.
+        context (str): The surrounding context for disambiguation.
+        llm (AzureChatOpenAI): The language model for processing.
+
+    Returns:
+        str: The name of the entity that the appellation most likely refers to, or None if uncertain.
+    """
     prompt = f"""Given the following context and a list of possible entities, determine which entity the appellation refers to:
 
 Context: "{context}"
@@ -306,6 +386,16 @@ Your response should be in the following JSON format:
             return None
 
 def normalize_entities_names_to_best_appellation(text: str, entities: List[EntityLink]) -> str:
+    """
+    Normalize entity names in the text to their best appellations.
+
+    Args:
+        text (str): The input text to process.
+        entities (List[EntityLink]): A list of entities for normalization.
+
+    Returns:
+        str: The text with normalized entity names.
+    """
     #substitute the [entity_name] with the best_appellation
     for entity in entities:
         text = text.replace(f"[{entity.entity_name}]", entity.best_appellation)
@@ -330,3 +420,4 @@ def normalize_names(text: str, entities: List[EntityLink], llm: AzureChatOpenAI)
     normalized_text = normalize_entities_names_to_best_appellation(substituted_text, entities)
 
     return normalized_text
+
