@@ -192,7 +192,7 @@ if __name__ == "__main__":
 
     logger.info("Starting text processing.")
 
-    ep_number = 3
+    ep_number = 2
     for ep in range(ep_number, 10): #(1, 2) for only episode 1
         episode = f"E{ep:02d}"
         

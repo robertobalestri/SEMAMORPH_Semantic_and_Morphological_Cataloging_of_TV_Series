@@ -1,21 +1,47 @@
-1. **Key Episode Events**:
-   - Meredith struggles with her relationship with Derek and its impact on her professional life.
-   - George's feelings for Meredith are hinted at but unreciprocated.
-   - Cristina and Burke navigate their personal and professional relationship.
-   - Alex's insensitivity affects his role in a critical surgery.
-   - Izzie performs a risky procedure under pressure.
-   - Annie's surgery ends tragically, impacting the interns.
-   - Derek and Meredith share a moment, indicating unresolved feelings.
+### 1. Key Episode Events:
+- Meredith struggles with her relationship with Derek and its professional implications.
+- Bailey warns Derek about favoritism towards Meredith.
+- Alex's insensitive comments about a patient lead to his removal from surgery.
+- Izzie performs a critical procedure on Jimmy, showcasing her growth.
+- Annie's surgery fails, resulting in her death.
+- Cristina and Burke's relationship faces tension.
+- George's unrequited feelings for Meredith are highlighted.
 
-2. **Narrative Arcs**:
-   - Meredith's Relationship with Derek
-   - Cristina and Burke's Personal and Professional Dynamics
-   - George's Unrequited Feelings for Meredith
-   - Alex's Struggle with Team Integration
-   - Izzie's Professional Growth and Challenges
+### 2. Narrative Arcs:
 
-3. **Themes and Motifs**:
-   - Professional Challenges and Growth
-   - Personal Relationships and Complications
-   - Ethical Dilemmas in Medicine
-   - Secrets and Revelations
+#### Arc Type: Soap Arc
+- **Title:** “Meredith and Derek's Complicated Romance”
+- **Description:** Meredith and Derek's relationship faces professional challenges and personal complications, with Meredith considering ending it.
+- **Episodic Flag:** False
+- **Main Characters:** Meredith Grey, Derek Shepherd
+- **Interfering Episode Characters:** Miranda Bailey, Cristina Yang
+- **Progression:** Meredith struggles with the implications of her relationship with Derek. Bailey warns about favoritism.
+
+#### Arc Type: Genre-Specific Arc
+- **Title:** “Interns' Journey at Seattle Grace”
+- **Description:** The interns face professional challenges, ethical dilemmas, and personal growth through demanding medical cases.
+- **Episodic Flag:** False
+- **Main Characters:** Meredith Grey, Cristina Yang, Izzie Stevens, George O'Malley, Alex Karev
+- **Interfering Episode Characters:** Miranda Bailey, Preston Burke
+- **Progression:** Izzie performs a critical procedure. Alex faces consequences for his behavior. Interns learn from their experiences.
+
+#### Arc Type: Soap Arc
+- **Title:** “Cristina and Burke's Secret Relationship”
+- **Description:** Cristina and Burke's relationship continues to develop amidst professional challenges.
+- **Episodic Flag:** False
+- **Main Characters:** Cristina Yang, Preston Burke
+- **Interfering Episode Characters:** Meredith Grey
+- **Progression:** Tension arises as Cristina and Burke navigate their relationship.
+
+#### Arc Type: Episodic Arc
+- **Title:** “Medical Case: Annie's Massive Tumor”
+- **Description:** The medical team faces the challenge of treating Annie's massive tumor, highlighting the limits of medical intervention.
+- **Episodic Flag:** True
+- **Main Characters:** Meredith Grey, Derek Shepherd, Miranda Bailey
+- **Interfering Episode Characters:** Alex Karev, Cristina Yang
+- **Progression:** Annie's surgery is attempted but ultimately fails, leading to her death.
+
+### 3. Themes and Motifs:
+- Professional Challenges and Growth
+- Personal Relationships and Romantic Entanglements
+- Ethical Dilemmas and Moral Choices

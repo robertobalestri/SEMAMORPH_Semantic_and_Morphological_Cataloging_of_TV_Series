@@ -5,16 +5,15 @@ from sqlalchemy import Column
 import uuid
 
 class ArcProgression(SQLModel, table=True):
-    """Model representing a specific progression of a narrative arc in an episode."""
-    id: str = Field(default_factory=lambda: str(uuid.uuid4()), primary_key=True)
+    id: Optional[str] = Field(default=None, primary_key=True)
+    main_arc_id: str = Field(foreign_key="narrativearc.id")
     content: str
     series: str
     season: str
     episode: str
-    ordinal_position: Optional[int] = Field(default=None)
-    
-    # Relationship
-    main_arc_id: Optional[str] = Field(default=None, foreign_key="narrativearc.id")
+    ordinal_position: int = Field(default=0, nullable=False)
+    interfering_episode_characters: str = Field(default="", sa_column=Column(String, default=""))
+
     narrative_arc: Optional["NarrativeArc"] = Relationship(back_populates="progressions")
 
     def get_title(self, session) -> Optional[str]:
@@ -31,7 +30,7 @@ class NarrativeArc(SQLModel, table=True):
     arc_type: str
     description: str
     episodic: bool
-    characters: str = Field(default="", sa_column=Column(String, default=""))
+    main_characters: str = Field(default="", sa_column=Column(String, default=""))
     series: str
 
     # Relationships
@@ -44,9 +43,9 @@ class NarrativeArc(SQLModel, table=True):
         if 'id' not in data or data['id'] is None:
             data['id'] = str(uuid.uuid4())
         super().__init__(**data)
-        if isinstance(data.get('characters'), list):
-            self.characters = ", ".join(data['characters'])
+        if isinstance(data.get('main_characters'), list):
+            self.main_characters = ", ".join(data['main_characters'])
 
-    def update_characters(self, new_characters: List[str]):
-        """Update the characters attribute with a list of new characters."""
-        self.characters = ", ".join(new_characters)
+    def update_main_characters(self, new_characters: List[str]):
+        """Update the main_characters attribute with a list of new characters."""
+        self.main_characters = ", ".join(new_characters)

@@ -25,9 +25,10 @@ Guidelines for Narrative Arc Extraction
     Set this to True if the plot is self-contained and doesn't span across episodes.
     Set this to False if the arc continues or develops over multiple episodes.
 
-5. Character List:
+5. Character Lists:
 
-    Include all key characters involved in the arc. Keep this list focused and relevant to the arc at hand.
+    Main characters: Include the undisputed main characters of the arc. Keep this list focused and relevant to the arc at hand. It should include only the protagonists of the arc.
+    Interfering episode characters: Include also the interfering characters: characters that collide and have a part in the arc during the episode, but are not protagonists of the arc.
 
 6. Arc Distinctness:
 
@@ -40,12 +41,29 @@ Guidelines for Narrative Arc Extraction
 
 Example Breakdown:
     Arc Type: Soap Arc
-    Title: “Jane's Affair and its Impact on Her Family”
+    Title: “Jane's Affair and the separation with Mark”
     Description: Across the season, Jane's extramarital affair comes to light, leading to tension between her and her spouse. This strains her relationship with her children and ultimately results in a separation.
     Episodic Flag: False
-    Character List: Jane, Mark, Bob, Julie
-    Progression: Jane begins the affair. Mark becomes suspicious. The affair is revealed at a family event. Jane's children (Bob and Julie) become distant. Jane and Mark decide to separate.
+    Main Characters: Jane, Mark
+    Interfering Episode Characters: Karla, Bob, Julie
+    Progression: Jane begins the affair. Mark becomes suspicious. The affair is revealed at a family event. Jane's children (Bob and Julie) become distant. In this episode,Jane and Mark decide to separate in front of the judge named Karla.
 """)
+
+OUTPUT_JSON_FORMAT = """
+    [
+        {{
+            "title": "Specific Arc title",
+            "arc_type": "Soap Arc/Genre-Specific Arc/Episodic Arc",
+            "description": "Brief season-wide description of the arc",
+            "single_episode_progression_string": "Detailed description of the arc's progression in this episode. It should contains various sentences touching the various plot points of the episode in which the arc is being developed.",
+            "episodic": "True/False",
+            "main_characters": "Character 1; Character 2; ...",
+            "interfering_episode_characters": "Character 1; Character 2; ..."
+        }},
+        ... more arcs ...
+    ]
+"""
+
 
 SEASONAL_NARRATIVE_ANALYZER_PROMPT = ChatPromptTemplate.from_template(
     """You are a Seasonal Narrative Analyzer, an expert in analyzing and structuring season-long narratives in television series. Your task is to provide a structured and concise analysis of the following season plot:
@@ -60,7 +78,8 @@ SEASONAL_NARRATIVE_ANALYZER_PROMPT = ChatPromptTemplate.from_template(
        - List the key themes of the season.
     
     2. **Narrative Arcs**:
-       - List the narrative arcs of the season, this can refer to events or characters.
+       - List the narrative arcs of the season, this can refer to events or characters. But please follow these guidelines:
+       {guidelines}
     
     3. **Major Plot Points**:
        - List the major events that shape the overall narrative.
@@ -87,7 +106,8 @@ EPISODE_NARRATIVE_ANALYZER_PROMPT = ChatPromptTemplate.from_template(
        - List the major events that occur in this episode.
     
     2. **Narrative Arcs**:
-       - List the narrative arcs of the season, this can refer to events or characters. The narrative arcs should never be vague like "The boys' professional rivalries", "The girls' friendship","Character X's growth and responsibility" or anything like that.
+       - List the narrative arcs of the season, this can refer to events or characters. But please follow these guidelines:
+       {guidelines}
     
     3. **Themes and Motifs**:
        - Identify any recurring themes or motifs present in this episode.
@@ -147,17 +167,7 @@ ARC_EXTRACTOR_FROM_ANALYSIS_PROMPT = ChatPromptTemplate.from_template(
     4. Provide the progression as a single, coherent string that summarizes the arc's development in this episode.
 
     Return the narrative arcs in the following JSON format:
-    [
-        {{
-            "title": "Specific Arc title",
-            "arc_type": "Soap Arc/Genre-Specific Arc/Episodic Arc",
-            "description": "Brief season-wide description of the arc",
-            "single_episode_progression_string": "Detailed description of the arc's progression in this episode",
-            "episodic": "True/False",
-            "characters": "Character 1; Character 2; ..."
-        }},
-        ... more arcs ...
-    ]
+    {output_json_format}
     Ensure that your response is a valid JSON array containing only the narrative arcs, without any additional text.
     """
 )
@@ -185,17 +195,7 @@ ARC_EXTRACTOR_FROM_PLOT_PROMPT = ChatPromptTemplate.from_template(
     5. Consider how events in this episode might be part of larger season-long arcs, even if they're not fully resolved within this episode.
 
     Return the narrative arcs in the following JSON format:
-    [
-        {{
-            "title": "Specific Arc title",
-            "arc_type": "Soap Arc/Genre-Specific Arc/Episodic Arc",
-            "description": "Brief season-wide description of the arc",
-            "single_episode_progression_string": "Detailed description of the arc's progression in this episode",
-            "episodic": "True/False",
-            "characters": "Character 1; Character 2; ..."
-        }},
-        ... more arcs ...
-    ]
+    {output_json_format}
     Ensure that your response is a valid JSON array containing only the narrative arcs, without any additional text. Aim to be as comprehensive as possible in identifying arcs, including those that might be more subtle or developing over the course of the season.
     """
 )
@@ -229,18 +229,7 @@ ARC_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
     8. Focus on verifying and correcting only the title and description of each arc based on the episode plot provided.
 
     Return the verified and corrected arcs in the following JSON format:
-    [
-        {{
-            "motivation": "Brief description of why you chose to merge, update, or maintain the arc as is",
-            "title": "Specific Arc title",
-            "arc_type": "Soap Arc/Genre-Specific Arc/Episodic Arc",
-            "description": "Brief season-wide description of the arc",
-            "single_episode_progression_string": "Detailed description of the arc's progression in this episode",
-            "episodic": "True/False",
-            "characters": "Character 1; Character 2; ..."
-        }},
-        ... more arcs ...
-    ]
+    {output_json_format}
     Ensure your response contains only the JSON array of narrative arcs, without any additional text or explanations. The final list should contain no duplicates or highly similar arcs.
     """
 )
@@ -264,14 +253,36 @@ ARC_PROGRESSION_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
 
     Please verify and adjust the arc's description and progression based on these guidelines. Return the result in the following JSON format:
 
-    {{
-        "title": "Arc Title",
-        "arc_type": "Soap Arc/Genre-Specific Arc/Episodic Arc",
-        "description": "Updated overall description of the arc",
-        "single_episode_progression_string": "Detailed description of the arc's progression in this episode",
-        "episodic": "True/False",
-        "characters": "Character 1; Character 2; ..."
-    }}
+    {output_json_format}
+
+    Ensure your response contains only the JSON object of the verified arc, without any additional text or explanations.
+    """
+)
+
+CHARACTER_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
+    """You are a Character Role Analysis Expert, specializing in determining the precise roles of characters within narrative arcs. Your task is to verify and correctly categorize characters as either main protagonists or interfering characters for a given arc.
+
+    Episode Plot:
+    {episode_plot}
+
+    Arc to Verify:
+    {arc_to_verify}
+
+    As a Character Role Analysis Expert, you understand that:
+    1. Main characters are the true protagonists of the arc - those whose actions, decisions, and development drive the arc forward
+    2. Interfering characters are those who participate in or affect the arc but are not central to its development
+    3. A character's importance to the episode overall doesn't automatically make them a main character in every arc
+
+    Guidelines for character categorization:
+    1. Main characters should ONLY include those who are truly central to this specific arc's development
+    2. If a character appears in the arc but isn't driving it forward, they should be listed as interfering
+    3. Consider the arc's focus - for example, in a romance arc, the couple would be main characters while their friends would be interfering, but even in a friendship or family arc, the friends or family members could be main characters.
+    4. Some arcs might have only one main character if they focus on that character's personal journey
+    5. Avoid listing background characters who have minimal impact on the arc
+    6. Be always sure that the interfering characters interfere with the arc in the specific episode.
+
+    Return the verified arc with properly categorized characters in the following JSON format:
+    {output_json_format}
 
     Ensure your response contains only the JSON object of the verified arc, without any additional text or explanations.
     """

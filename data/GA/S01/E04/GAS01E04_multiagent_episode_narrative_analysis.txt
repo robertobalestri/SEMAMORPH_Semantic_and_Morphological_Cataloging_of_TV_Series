@@ -1,26 +1,52 @@
-1. **Key Episode Events**:
-   - Izzie, Meredith, and George's morning routine and George's embarrassment.
-   - Derek's flirtation with Meredith and her annoyance.
-   - Veteran nurse Liz Fallon is admitted, creating a buzz.
-   - Cristina is mocked by Liz for trying to impress Burke.
-   - Izzie's patient, Mr. Humphrey, refuses her for a biopsy.
-   - Alex and Meredith assist Derek with a trauma case involving Jorge Cruz.
-   - Liz learns Meredith is at Seattle Grace.
-   - Izzie confronts Alex about her modeling photos.
-   - Cristina learns Liz is terminal.
-   - Liz dies after signing a do-not-resuscitate order.
-   - Meredith and Zona discuss the risks of Jorge's surgery.
-   - Izzie advocates for Mr. Humphrey's surgery approach.
+### 1. Key Episode Events:
+- Izzie, Meredith, and George's morning routine creates tension.
+- Derek flirts with Meredith, causing annoyance.
+- Veteran scrub nurse Liz Fallon is admitted, exciting the staff.
+- Cristina is assigned to Liz and teased about impressing Burke.
+- Izzie's patient, Mr. Humphrey, refuses her help due to her modeling past.
+- Derek handles a trauma case with Jorge Cruz, who has nails in his head.
+- Liz learns Meredith works at Seattle Grace and later dies.
+- Izzie confronts Alex about exposing her modeling photos.
+- Meredith struggles with her mother's memory issues.
+- Zona decides on risky surgery for Jorge, despite Meredith's advice.
+- Izzie advocates for Mr. Humphrey's surgical options.
 
-2. **Narrative Arcs**:
-   - Meredith's Relationship with Derek: Flirtation and tension.
-   - Cristina's Professional and Personal Struggles: Interaction with Liz and Burke.
-   - George's Quest for Respect and Identity: Embarrassment and complaints.
-   - Izzie's Past and Professional Growth: Modeling revelation and patient advocacy.
-   - Alex's Integration into the Team: Conflict with Izzie.
+### 2. Narrative Arcs:
 
-3. **Themes and Motifs**:
-   - Professional Challenges and Growth: Izzie's patient interaction, Cristina's assignment.
-   - Personal Relationships and Complications: Meredith and Derek, George's dynamic with roommates.
-   - Secrets and Revelations: Izzie's modeling past, Liz's terminal condition.
-   - Ethical Dilemmas in Medicine: Jorge's risky surgery, Mr. Humphrey's treatment plan.
+#### Arc Type: Soap Arc
+- **Title:** “Meredith and Derek's Complicated Romance”
+- **Description:** Meredith and Derek's relationship faces challenges as Derek's flirtation annoys Meredith, highlighting their ongoing romantic tension.
+- **Episodic Flag:** False
+- **Main Characters:** Meredith Grey, Derek Shepherd
+- **Interfering Episode Characters:** None
+- **Progression:** Derek's flirtation annoys Meredith, reflecting ongoing romantic tension.
+
+#### Arc Type: Genre-Specific Arc
+- **Title:** “Interns' Journey at Seattle Grace”
+- **Description:** The interns navigate professional challenges, including handling difficult patients and personal conflicts, showcasing their growth and resilience.
+- **Episodic Flag:** False
+- **Main Characters:** Meredith Grey, Cristina Yang, Izzie Stevens, George O'Malley, Alex Karev
+- **Interfering Episode Characters:** Richard Webber, Preston Burke, Miranda Bailey
+- **Progression:** Interns face challenging cases and personal conflicts, highlighting growth.
+
+#### Arc Type: Episodic Arc
+- **Title:** “Medical Case: Jorge Cruz's Nail Gun Injury”
+- **Description:** Derek and the interns handle a complex trauma case involving Jorge Cruz, who has multiple nails in his head, requiring a risky surgical decision.
+- **Episodic Flag:** True
+- **Main Characters:** Derek Shepherd, Meredith Grey, Alex Karev
+- **Interfering Episode Characters:** Zona Cruz
+- **Progression:** Jorge's injury requires a risky surgical decision, highlighting medical challenges.
+
+#### Arc Type: Episodic Arc
+- **Title:** “Medical Case: Liz Fallon's Final Days”
+- **Description:** Cristina and Meredith deal with the emotional impact of Liz Fallon's admission and death, reflecting on personal and professional connections.
+- **Episodic Flag:** True
+- **Main Characters:** Cristina Yang, Meredith Grey
+- **Interfering Episode Characters:** Richard Webber
+- **Progression:** Liz's admission and death impact Cristina and Meredith emotionally.
+
+### 3. Themes and Motifs:
+- Professional Challenges and Growth
+- Personal Relationships and Romantic Entanglements
+- Ethical Dilemmas and Moral Choices
+- Secrets and Revelations

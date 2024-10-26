@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Meredith and Derek's Complicated Romance",
+    "arc_type": "Soap Arc",
+    "description": "Meredith and Derek's relationship begins with a one-night stand, complicated by Derek being her boss. Their romance faces challenges, including workplace gossip and Meredith's struggle to keep it professional.",
+    "episodic": false,
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "Jorge Cruz; Zona Cruz",
+    "single_episode_progression_string": "Derek flirts with Meredith, causing annoyance and highlighting the ongoing romantic tension between them. Meredith is reminded of the complications in their relationship as Derek insists on their decision regarding Jorge's surgery."
+  },
+  {
+    "title": "Intern Dynamics and Rivalries",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The new interns at Seattle Grace Hospital navigate their roles, forming alliances and rivalries as they begin their medical careers.",
+    "episodic": false,
+    "main_characters": "Isobel Stevens; George O'Malley; Cristina Yang; Alex Karev",
+    "interfering_episode_characters": "Elizabeth 'Liz' Fallon; Preston Burke",
+    "single_episode_progression_string": "George complains about Izzie walking around in her underwear, causing tension. Izzie confronts Alex after he exposes her modeling past, asserting her accomplishments. Cristina is teased by Liz about impressing Burke, highlighting her competitive nature."
+  },
+  {
+    "title": "Meredith's Legacy and Family Ties",
+    "arc_type": "Soap Arc",
+    "description": "Meredith grapples with her mother's legacy as a renowned surgeon and her own path in medicine, while dealing with her mother's Alzheimer's.",
+    "episodic": false,
+    "main_characters": "Meredith Grey",
+    "interfering_episode_characters": "Ellis Grey; Elizabeth 'Liz' Fallon; Richard Webber",
+    "single_episode_progression_string": "Meredith feels upset visiting her mother, Ellis, who remembers Liz but not her. Liz's presence at the hospital and her death remind Meredith of her mother's legacy."
+  },
+  {
+    "title": "George's Personal Growth and Challenges",
+    "arc_type": "Genre-Specific Arc",
+    "description": "George navigates personal and professional challenges, including his interactions with patients and colleagues, as he grows more confident in his role.",
+    "episodic": false,
+    "main_characters": "George O'Malley",
+    "interfering_episode_characters": "Isobel Stevens; Meredith Grey",
+    "single_episode_progression_string": "George is embarrassed by Izzie's behavior and struggles with buying tampons, highlighting his personal growth challenges. He researches nail gun cases, showing his dedication to his role."
+  },
+  {
+    "title": "Medical Case: Jorge Cruz's Nail Gun Injury",
+    "arc_type": "Episodic Arc",
+    "description": "A trauma case involving Jorge Cruz, who has sixteen nails in his head from a nail gun accident, requiring a risky surgery.",
+    "episodic": true,
+    "main_characters": "Derek Shepherd; Meredith Grey; Jorge Cruz; Zona Cruz",
+    "interfering_episode_characters": "Alex Karev",
+    "single_episode_progression_string": "Derek and Meredith are called to assist with Jorge Cruz, who has sixteen nails in his head. Zona Cruz must decide on the risky surgery, ultimately choosing more time with her husband despite the risks."
+  },
+  {
+    "title": "Medical Case: Mr. Humphrey's Biopsy",
+    "arc_type": "Episodic Arc",
+    "description": "Izzie's patient, Mr. Humphrey, refuses her help for his biopsy due to her modeling past, leading to a confrontation.",
+    "episodic": true,
+    "main_characters": "Isobel Stevens; Mr. Humphrey",
+    "interfering_episode_characters": "Miranda Bailey; Dr. Victor",
+    "single_episode_progression_string": "Mr. Humphrey refuses Izzie's help after recognizing her from a photoshoot. Izzie confronts him about chauvinism, and he admits he was embarrassed by his fantasies. Izzie supports him and convinces Dr. Victor not to cut the nerves."
+  },
+  {
+    "title": "Cristina's Professional Ambitions",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Cristina Yang navigates her professional ambitions and challenges, often clashing with her superiors and colleagues.",
+    "episodic": false,
+    "main_characters": "Cristina Yang",
+    "interfering_episode_characters": "Preston Burke; Elizabeth 'Liz' Fallon",
+    "single_episode_progression_string": "Cristina is assigned to Liz Fallon and is teased about impressing Burke. She confronts Burke about unnecessary tests, learning Liz was terminal, highlighting her drive and ambition."
+  }
+]

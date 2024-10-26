@@ -1,39 +1,21 @@
 [
   {
-    "entity_name": "meredith_grey",
-    "best_appellation": "Meredith Grey",
+    "entity_name": "bailey",
+    "best_appellation": "Bailey",
     "appellations": [
-      "Meredith",
-      "Meredith Grey"
+      "Bailey",
+      "miranda_bailey",
+      "Miranda Bailey"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "ellis_grey",
-    "best_appellation": "Ellis Grey",
+    "entity_name": "webber",
+    "best_appellation": "Webber",
     "appellations": [
-      "Ellis",
-      "Ellis Grey"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "miranda_bailey",
-    "best_appellation": "Miranda Bailey",
-    "appellations": [
-      "Miranda",
-      "Miranda Bailey",
-      "Bailey"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "preston_burke",
-    "best_appellation": "Preston Burke",
-    "appellations": [
-      "Preston",
-      "Preston Burke",
-      "Burke"
+      "Webber",
+      "richard_webber",
+      "Richard Webber"
     ],
     "entity_type": "PERSON"
   },
@@ -41,62 +23,35 @@
     "entity_name": "alex_karev",
     "best_appellation": "Alex Karev",
     "appellations": [
-      "Alex",
-      "Alex Karev"
+      "Alex Karev",
+      "alex_karev",
+      "Alex"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "cristina_yang",
-    "best_appellation": "Cristina Yang",
+    "entity_name": "the_johnson",
+    "best_appellation": "the Johnson",
     "appellations": [
-      "Cristina",
-      "Cristina Yang"
+      "Johnson",
+      "the Johnson"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "george_omalley",
-    "best_appellation": "George O'Malley",
+    "entity_name": "patricia",
+    "best_appellation": "Patricia",
     "appellations": [
-      "George",
-      "George O'Malley"
+      "Patricia"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "dr_derek_shepherd",
-    "best_appellation": "Dr. Derek Shepherd",
+    "entity_name": "dr_kay",
+    "best_appellation": "Dr. Kay",
     "appellations": [
-      "Derek",
-      "Derek Shepherd",
-      "Dr. Derek Shepherd"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "izzie_stevens",
-    "best_appellation": "Izzie Stevens",
-    "appellations": [
-      "Izzie",
-      "Izzie Stevens"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "richard_webber",
-    "best_appellation": "Richard Webber",
-    "appellations": [
-      "Richard",
-      "Richard Webber"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "allison",
-    "best_appellation": "Allison",
-    "appellations": [
-      "Allison"
+      "Dr. Kay",
+      "Kay"
     ],
     "entity_type": "PERSON"
   },
@@ -105,6 +60,14 @@
     "best_appellation": "Ms. Lu",
     "appellations": [
       "Ms. Lu"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "allison",
+    "best_appellation": "Allison",
+    "appellations": [
+      "Allison"
     ],
     "entity_type": "PERSON"
   },
@@ -121,14 +84,6 @@
     "best_appellation": "Mrs. Johnson",
     "appellations": [
       "Mrs. Johnson"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "the_johnson",
-    "best_appellation": "the Johnsons",
-    "appellations": [
-      "the Johnsons"
     ],
     "entity_type": "PERSON"
   }

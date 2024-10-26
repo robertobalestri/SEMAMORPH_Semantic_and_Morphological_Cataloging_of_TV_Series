@@ -1,262 +1,171 @@
-[meredith_grey] is in bed.
-It's 4:37 am and raining.
-[izzie_stevens] stands beside [meredith_grey]'s bed holding coffee.
-[izzie_stevens] says [george_omalley]'s bedroom is bigger than [izzie_stevens]'s.
-[meredith_grey] gets up but trips and falls.
+[meredith_grey] is in bed at 4:37 am while it rains.
+[isobel_stevens] stands beside [meredith_grey] holding coffee and mentions that [george_omalley]'s room is bigger than [isobel_stevens]'s.
+[meredith_grey] gets up, trips, and falls.
 [meredith_grey] limps away.
-[izzie_stevens] follows [meredith_grey] and explains [izzie_stevens] needs more space for [izzie_stevens]'s clothes.
-[george_omalley] interrupts, saying [george_omalley] got there first.
-[izzie_stevens] insists it's [meredith_grey]'s decision.
-[george_omalley] says [george_omalley]'s room is only two inches bigger.
-[izzie_stevens] argues [george_omalley] has a bigger closet.
-[george_omalley] suggests [izzie_stevens] put [izzie_stevens]'s clothes elsewhere.
-[izzie_stevens] says everywhere is filled with [ellis_grey]'s boxes.
-[izzie_stevens] and [george_omalley] ask [meredith_grey] if they can store the boxes or unpack some items like lamps, paintings, or pillows to make the house cozier.
-[izzie_stevens] and [george_omalley] ask to watch surgical tapes from [ellis_grey]'s boxes.
-[meredith_grey] slams the door in [izzie_stevens]'s and [george_omalley]'s faces.
-[meredith_grey] re-opens it, takes [izzie_stevens]'s coffee, and shuts the door again.
+[isobel_stevens] follows, explaining [isobel_stevens] needs more space for her clothes.
+[george_omalley] interrupts, saying [george_omalley] was there first, but [isobel_stevens] insists it's [meredith_grey]'s choice.
+[george_omalley] points out [george_omalley]'s room is only two inches bigger, but [isobel_stevens] argues [george_omalley] has a larger closet.
+[george_omalley] suggests [isobel_stevens] put her clothes elsewhere, but [isobel_stevens] says [meredith_grey]'s mother's boxes fill the space.
+[isobel_stevens] and [george_omalley] ask [meredith_grey] if they can store the boxes or unpack items like lamps, paintings, or pillows to make the house cozier.
+[isobel_stevens] and [george_omalley] ask [meredith_grey] if they can watch surgical tapes from [meredith_grey]'s mother's boxes.
+[meredith_grey] shuts the door on [isobel_stevens] and [george_omalley], then reopens it to take [isobel_stevens]'s coffee before closing it again.
 [meredith_grey] leans against the door, holding the coffee.
 [miranda_bailey] stands on a street corner, looking confused.
-[dr_derek_shepherd] joins [miranda_bailey] and says hello.
-[miranda_bailey] tells [dr_derek_shepherd] to be quiet because something important is happening today, but [miranda_bailey] can't remember what.
-[dr_derek_shepherd] starts to cross the road.
-[miranda_bailey] gasps and grabs [dr_derek_shepherd] as several bike riders race past, and two crash.
-At the hospital, [miranda_bailey] complains to the interns about the bikers, saying they're just fools killing themselves.
-[alex_karev] asks [george_omalley] if [miranda_bailey] is off her medication.
-[george_omalley] is surprised he never heard of the race.
-[richard_webber], [preston_burke], and [dr_derek_shepherd] stand in front of the O.R. Schedule board.
-They note it's well-organized, so they might finish early.
-[miranda_bailey] tells [richard_webber], [preston_burke], and [dr_derek_shepherd] that "Dead baby bike race day" started 20 minutes ago.
-[george_omalley] and [meredith_grey] explain that every year a bar holds an illegal underground bike race.
-[miranda_bailey] complains again, saying it's crazy that bike messengers race against traffic for free tequila shots.
-[miranda_bailey] says she needs someone on the OR floor.
-The Chief needs help.
-Everyone raises their hand except [meredith_grey].
-[miranda_bailey] chooses [george_omalley].
-[miranda_bailey] tells the others not to talk to the ER interns.
-[miranda_bailey] says the ER interns don't know much.
-The interns must sew quickly, discharge quickly, and take bodies to the OR immediately.
-[miranda_bailey] warns the interns not to fight over patients.
-The interns run and push for position.
-The interns see injured bike riders everywhere.
-[izzie_stevens] and [cristina_yang] hurry to get a patient.
-[meredith_grey] sees a man with bicycle spokes in his side.
-[alex_karev] and [meredith_grey] rush to the man.
+[derek_shepherd] joins [miranda_bailey] and greets her, but [miranda_bailey] tells [derek_shepherd] to be quiet because something important is supposed to happen today, though [miranda_bailey] can't remember what.
+[derek_shepherd] starts to cross the road, and [miranda_bailey] gasps, pulling [derek_shepherd] back as several bike riders race past, with two crashing.
+At the hospital, [miranda_bailey] complains to the interns about the reckless bike riders.
+[alex_karev] asks [george_omalley] if [miranda_bailey] is off her medication, and [george_omalley] is surprised [alex_karev] hasn't heard of the race.
+[richard_webber], [preston_burke], and [derek_shepherd] discuss the O.R.
+[richard_webber] notes the schedule looks good for an early night.
+[miranda_bailey] informs [richard_webber], [preston_burke], and [derek_shepherd] that "Dead baby bike race day" started 20 minutes ago.
+[george_omalley] and [meredith_grey] explain that every year, a bar hosts an illegal underground bike race.
+[miranda_bailey] complains about the craziness of bike messengers racing against traffic for free tequila shots.
+[miranda_bailey] tells the group that the Chief needs help on the OR floor.
+Everyone except [meredith_grey] volunteers, and [miranda_bailey] chooses [george_omalley].
+[miranda_bailey] warns them not to interact with the ER interns, who [miranda_bailey] thinks are inexperienced.
+They need to work quickly, discharging patients and taking bodies to the OR immediately.
+[miranda_bailey] also tells them not to fight over patients.
+The interns rush to find patients and see injured bike riders everywhere.
+[isobel_stevens] and [cristina_yang] hurry to get a patient.
+[meredith_grey] notices a man with bicycle spokes in his side.
+[alex_karev] and [meredith_grey] both run to him.
 Behind a curtain, [alex_karev] and [meredith_grey] argue over the patient.
-The patient, [viper], pulls back the curtain.
-[viper] asks if [alex_karev] and [meredith_grey] can remove the spokes so he can win his race.
+The patient, named [viper], interrupts and asks [alex_karev] and [meredith_grey] to remove the spokes so he can continue his race.
 [meredith_grey] tells [alex_karev] they need to run tests first.
-[alex_karev] insists it's a superficial wound, not surgical.
-[alex_karev] leaves [meredith_grey] to sew it up.
-[cristina_yang], [izzie_stevens], and [dr_derek_shepherd] stand over a patient.
-[cristina_yang] reports to [dr_derek_shepherd] about the patient: an unidentified man in his mid-thirties, hit by a car avoiding a bike.
-The man's GCS is 3, pupils are fixed and dilated, and atropine was given for a low pulse.
-[preston_burke] mentions the bike race claimed its first victim.
-[izzie_stevens] asks if the patient will go to the O.R.
-[dr_derek_shepherd] instructs [izzie_stevens] to do confirmatory tests.
-If there's no response in six hours, [dr_derek_shepherd] says they should declare the patient brain dead.
-[richard_webber] is in surgery.
-[george_omalley] asks [richard_webber] if he should scrub in.
-[richard_webber] says no and tells [george_omalley] to monitor [george_omalley]'s pre-op and post-op patients.
-[richard_webber] asks [george_omalley] to pay special attention to [richard_webber]'s friend, [lloyd_mackie], in room 4451.
+[alex_karev] insists it's a superficial wound and not surgical, then leaves [meredith_grey] to stitch it up.
+[cristina_yang], [isobel_stevens], and [derek_shepherd] examine a patient.
+[cristina_yang] informs [derek_shepherd] that the patient is an unidentified man in his mid-thirties, hit by a car avoiding a bike.
+[cristina_yang] mentions the man's GCS is 3, pupils are fixed and dilated, and atropine was given for a low pulse.
+[preston_burke] comments that the bike race has its first victim.
+[isobel_stevens] asks [derek_shepherd] if the man will go to the O.R.
+[derek_shepherd] instructs [isobel_stevens] to do confirmatory tests and declare the man brain dead if there's no response in six hours.
+[richard_webber] is in surgery when [george_omalley] asks if he should join.
+[richard_webber] says no and tells [george_omalley] to monitor [george_omalley]'s pre-op and post-op patients, especially a friend named [lloyd_mackie] in room 4451.
 [lloyd_mackie] is in bed and lights a cigarette.
-[george_omalley] tells [lloyd_mackie] to put it out because smoking kills.
-[lloyd_mackie] replies that liver cancer will kill him, and cigarettes just speed it up.
+[george_omalley] tells [lloyd_mackie] to put it out, warning that smoking is deadly.
+[lloyd_mackie] responds that liver cancer will kill him and cigarettes just speed it up.
 [george_omalley] insists there is hope because [lloyd_mackie] is at the top of the donor list.
-[lloyd_mackie] says he has been at the top for eight months.
-[izzie_stevens] and [cristina_yang] are with their patient.
-[izzie_stevens] worries the patient won't respond, and they have only 5 hours left.
-[cristina_yang] says if the patient doesn't respond, he's already dead.
-[cristina_yang] wants the patient to hurry and go into the light so she can get another case.
-[izzie_stevens] looks shocked and says it's a waste of the patient's life.
-[cristina_yang] adds it's a waste of good organs too, and [izzie_stevens] realizes [cristina_yang]'s plan.
-[meredith_grey] sews up [viper], and [viper] flirts with [meredith_grey], calling her a "rocking babe."
-[meredith_grey] ignores [viper]'s refusal and asks to do some tests, promising to finish in an hour.
-[viper] insists he must finish the race.
+[lloyd_mackie] replies he has been waiting there for eight months.
+[isobel_stevens] and [cristina_yang] are with the unidentified man.
+[isobel_stevens] is worried the man won't respond, and they have only 5 hours left.
+[cristina_yang] explains that if the man doesn't respond, it means he's already dead.
+[cristina_yang] adds that she wants the man to hurry up and go into the light so she can take another case.
+[isobel_stevens] is shocked and says it's a waste of the man's life.
+[cristina_yang] comments it's also a waste of good organs, and [isobel_stevens] realizes [cristina_yang]'s plan.
+[meredith_grey] is sewing up [viper].
+While [meredith_grey] works, [viper] flirts with her, calling her attractive.
+[meredith_grey] ignores [viper]'s refusal and asks him to let her run some tests, promising it would take an hour.
+[viper] declines, saying he needs to finish the race.
 Before leaving, [meredith_grey] asks [viper] to sign an AMA form.
-[viper] signs and turns to leave but kisses [meredith_grey].
-[viper] leaves, and [meredith_grey] shakes her head and starts stripping the bed.
-[meredith_grey] sees [dr_derek_shepherd] outside.
-[dr_derek_shepherd] enters, and [meredith_grey] asks [dr_derek_shepherd] if he's jealous.
-[dr_derek_shepherd] says he's not but mentions he almost died today and wonders how [meredith_grey] would feel if they never went out.
-[meredith_grey] tells [dr_derek_shepherd] to get over himself and asks if it's just the thrill of the chase for him.
-[dr_derek_shepherd] looks surprised.
-[meredith_grey] accuses [dr_derek_shepherd] of playing a game and storms out angrily.
-[miranda_bailey] is performing surgery when [izzie_stevens] and [cristina_yang] enter.
-[izzie_stevens] and [cristina_yang] ask if they can harvest their patient's organs.
-[miranda_bailey] is surprised.
-[miranda_bailey] tells [izzie_stevens] and [cristina_yang] to identify the patient, contact the patient's family, and get consent forms.
-[izzie_stevens] and [cristina_yang] hurry away.
-[alex_karev] walks to a desk where [george_omalley] is sitting.
-[george_omalley] explains he is hiding from [lloyd_mackie].
-[george_omalley] thinks [lloyd_mackie] might be attracted to him.
-[alex_karev] jokingly tells [george_omalley] to go for it.
-Then, [alex_karev] realizes [george_omalley] isn't gay.
-[george_omalley] looks shocked as [alex_karev] walks away.
-[izzie_stevens] and [cristina_yang] approach the other desk.
+After signing, [viper] starts to leave but turns back, kisses [meredith_grey], and then departs.
+[meredith_grey] shakes her head and begins to strip the bed.
+She notices [derek_shepherd] standing outside.
+[derek_shepherd] comes in, and [meredith_grey] asks if [derek_shepherd] is jealous.
+[derek_shepherd] denies it but mentions he almost died today and wonders how [meredith_grey] would feel if she never got to date him.
+[meredith_grey] tells [derek_shepherd] to stop being self-centered and questions if it's just the thrill of the chase for him.
+[derek_shepherd] looks surprised, but [meredith_grey] insists it's just a game to him.
+Upset, [meredith_grey] leaves the room.
+Meanwhile, [miranda_bailey] is performing surgery when [isobel_stevens] and [cristina_yang] enter.
+[isobel_stevens] and [cristina_yang] ask [miranda_bailey] if they can harvest their patient's organs.
+[miranda_bailey] is surprised and tells [isobel_stevens] and [cristina_yang] to identify the patient, contact his family, and get consent forms.
+[isobel_stevens] and [cristina_yang] quickly leave to do this.
+[alex_karev] approaches [george_omalley] at a desk.
+[george_omalley] explains to [alex_karev] that he is hiding from [lloyd_mackie] because he thinks [lloyd_mackie] might be attracted to him.
+[alex_karev] jokingly suggests [george_omalley] should pursue it but then realizes [george_omalley] isn't gay.
+[george_omalley] is shocked as [alex_karev] walks away.
+[isobel_stevens] and [cristina_yang] arrive at another desk.
 [george_omalley] asks [cristina_yang] if she or [meredith_grey] think he is gay.
-[cristina_yang] asks [george_omalley] if he is.
-When [george_omalley] says no, [cristina_yang] is surprised.
-A woman approaches [izzie_stevens].
-[cristina_yang] returns to the scene.
-[izzie_stevens] gives the woman a hotel key card to give to the police.
-After they finish talking, [george_omalley] asks [izzie_stevens] and [cristina_yang] if they have a potential organ donor.
-[george_omalley] inquires about the blood type and checks the chart.
-[izzie_stevens] talks to her [john_doe].
-[izzie_stevens] says, "I know you probably can't hear me. You're feeling a push to go towards the light."
-Sharing your organs is great, but I think you have a family. I can feel it. It'd be great if you could get better. Just live. Can you try that for me?
-Suddenly, an alarm sounds. [john_doe] begins to crash, and [john_doe]'s pulse drops.
-[meredith_grey] runs in.
-After a few tense moments, [meredith_grey] and [izzie_stevens] decide to get dopamine and blood to transfuse [john_doe].
-[george_omalley] examines Mackie.
-Mackie flirts with [george_omalley].
-[izzie_stevens] and [meredith_grey] go up some stairs.
-[cristina_yang] meets [izzie_stevens] and [meredith_grey].
-[cristina_yang] is excited about [john_doe] becoming an organ donor.
-[izzie_stevens] insists [john_doe] should have surgery to live.
-[cristina_yang] tells [meredith_grey] they need to go above [miranda_bailey] for their plan.
+[cristina_yang] asks if he is, and when he says no, she is surprised.
+A woman approaches [isobel_stevens], and [cristina_yang] returns.
+[isobel_stevens] gives the woman a hotel key card to pass to the police.
+After their conversation, [george_omalley] asks [cristina_yang] if there is a potential organ donor.
+[george_omalley] inquires about the blood type and checks it against his chart.
+[isobel_stevens] looks at her patient, [kevin_davidson], and talks to him, hoping he can hear.
+[isobel_stevens] suggests he might feel a pull towards the light but believes he has a family and encourages him to live.
+Suddenly, an alarm sounds, and [kevin_davidson]'s condition worsens as his pulse drops.
+[meredith_grey] rushes in, and after some tense moments, they decide to get dopamine and blood for a transfusion.
+[george_omalley] examines [lloyd_mackie], who flirts with him.
+Meanwhile, [isobel_stevens] and [meredith_grey] go upstairs.
+[cristina_yang] meets them and is excited about a potential organ donor.
+[isobel_stevens] insists the patient should have surgery to survive.
+[cristina_yang] tells [meredith_grey] they need to bypass [miranda_bailey] for their plan.
 In the men's bathroom, [meredith_grey] and [cristina_yang] see [preston_burke].
-[meredith_grey] and [cristina_yang] ask [preston_burke] to repair [john_doe]'s heart.
-[preston_burke] notes that [meredith_grey] and [cristina_yang] like to cross the line.
-[preston_burke] tells [meredith_grey] and [cristina_yang] to either show a penis or leave.
-[meredith_grey] asks [dr_derek_shepherd] for advice.
-[dr_derek_shepherd] hesitantly suggests going over [preston_burke]'s head to the Chief.
-[izzie_stevens], [meredith_grey], and [cristina_yang] ask [george_omalley] if [george_omalley] wants to join a transplant surgery.
-[richard_webber] asks about Mackie.
-[george_omalley] tells [richard_webber] they might have a liver for Mackie.
-The Chief listens intently.
-[alex_karev] sees [izzie_stevens], [meredith_grey], [cristina_yang], and [george_omalley] watching [george_omalley] and [richard_webber].
-[preston_burke] walks by.
-[richard_webber] stops [preston_burke] to discuss the surgery.
-[preston_burke] looks at the other interns.
-The interns hurry away.
-[alex_karev] stays.
-[preston_burke] turns to leave.
-[alex_karev] follows [preston_burke].
-In the open heart surgery, [alex_karev] assists [preston_burke].
-The interns in the gallery glare at [alex_karev].
-[izzie_stevens] is happy the patient is getting surgery.
-A nurse enters and tells [izzie_stevens] that [john_doe] has been identified.
-[shelley_davidson], the wife, is coming.
-[dr_derek_shepherd] introduces [shelley_davidson] to [izzie_stevens].
-[dr_derek_shepherd] leaves and tells [izzie_stevens] and [shelley_davidson] to page him if needed.
-[izzie_stevens] tells [shelley_davidson] that [kevin], her husband, might wake up.
-If [kevin] doesn't change by morning, [izzie_stevens] asks [shelley_davidson] if she's considered organ donation for [kevin].
-[richard_webber] shakes Mackie's shoulder lightly.
-[richard_webber] tells Mackie that [george_omalley] found him a liver.
-Mackie looks at [richard_webber], then at [george_omalley].
-Mackie's face starts to break up.
-Mackie looks away, trying not to cry.
-[richard_webber] pats Mackie's shoulder.
-[george_omalley] leaves.
-[alex_karev] enters the locker room to find [meredith_grey].
-[alex_karev] tells [meredith_grey] he smells like open-heart surgery and nuzzles her hair.
-[meredith_grey] grabs [alex_karev] and pushes him against the lockers by his shirt.
-[meredith_grey] tells [alex_karev] to stay away and that he smells bad.
-[meredith_grey] and [alex_karev] both see [dr_derek_shepherd].
-[meredith_grey] returns to [meredith_grey]'s locker.
-[meredith_grey] moves to confront [alex_karev] again.
-[dr_derek_shepherd] tells [alex_karev] to leave.
-[dr_derek_shepherd] pushes [alex_karev] out and closes the door.
-[alex_karev] makes a face at [meredith_grey].
-[meredith_grey] closes her locker and acts like she's leaving.
-[dr_derek_shepherd] opens the door for [meredith_grey].
-[meredith_grey] looks at [dr_derek_shepherd] for a moment, then walks away.
-[meredith_grey] arrives home.
-[izzie_stevens] and [george_omalley] are watching video tapes.
-[meredith_grey] is angry and asks why [izzie_stevens] and [george_omalley] touched her mother's surgical tapes.
-[meredith_grey] storms upstairs.
-[izzie_stevens] and [george_omalley] exchange looks and giggle.
-Outside the hospital, [meredith_grey] talks to [cristina_yang].
-[meredith_grey] explains how perky and helpful [meredith_grey]'s roommates are.
-[cristina_yang] suggests [meredith_grey] should kick [izzie_stevens] and [george_omalley] out.
-[meredith_grey] decides she can't do that.
-[alex_karev] comes up behind [meredith_grey] and [cristina_yang] as they enter the hospital.
-[alex_karev] complains about being stuck in the pit again.
-[cristina_yang] is getting the harvest surgery.
-Annoyed with [alex_karev], [meredith_grey] and [cristina_yang] jokingly consider becoming lesbians.
-The elevator dings, but [meredith_grey] and [cristina_yang] choose the stairs.
-[cristina_yang] talks to [kevin]'s wife and little girl.
-[cristina_yang] goes over the organ donation form with [shelley_davidson].
-When [shelley_davidson] gets teary, [cristina_yang] leaves the room.
-[cristina_yang] explains to [miranda_bailey] that [cristina_yang] isn't a people person and it's too hard.
-[miranda_bailey] tells [cristina_yang] it won't be easy, but [kevin] is a person, not just for organ harvesting.
-Remembering this, [cristina_yang] re-enters the room.
-[cristina_yang] talks with [shelley_davidson] again.
-Mackie begins to flirt with [george_omalley] again.
-[george_omalley] awkwardly tries to tell Mackie he is not gay.
-Mackie smiles and says Mackie never thought [george_omalley] was gay, and Mackie isn't either.
-Mackie tells [george_omalley] that dying is like a free pass.
-Mackie can be bold, and no one can say anything.
-Mackie asks [george_omalley] if there was anyone [george_omalley] liked but couldn't have.
-After a while, [george_omalley] says, "Meredith."
-In the organ harvest preparation, [preston_burke] talks about not liking harvesting because [preston_burke] saves lives, and harvesting ends one.
-[izzie_stevens] quietly tells [kevin] he did [kevin]'s best and says goodbye.
-[meredith_grey] and [alex_karev] work in Trauma.
-[meredith_grey] sees [viper] waiting in a chair.
-[meredith_grey] asks [alex_karev] why [viper] is there and how long [viper] has been waiting.
-[alex_karev] says [alex_karev] doesn't know because [alex_karev] was busy with real cases.
-[viper] starts coughing, and [meredith_grey] walks towards [viper] worriedly.
-[viper] tries to stand, and [meredith_grey] runs to [viper], but [viper] falls unconscious.
-Blood comes out of [viper]'s mouth.
-[meredith_grey] lifts [viper]'s shirt and sees [viper]'s stitches have ripped open.
-The area around the stitches is swollen to the size of a small melon.
-[meredith_grey] puts [viper] on a gurney.
-[meredith_grey] climbs on top to hold [viper]'s wound closed.
-[meredith_grey] asks a nurse to inform the OR that [meredith_grey] is coming and to page [miranda_bailey].
-They arrive at the OR.
-[miranda_bailey] tells [meredith_grey] to scrub in.
-[meredith_grey] tells [alex_karev] to go back downstairs as punishment for only handling urgent cases.
-Mackie is on the OR table, ready for anesthesia.
-The Chief asks Mackie to count backwards.
-Mackie counts and quickly falls asleep.
-[izzie_stevens] and [cristina_yang] scrub in.
-[richard_webber] and [preston_burke] enter.
-[richard_webber] tells [izzie_stevens] and [cristina_yang] he'll be next door when they're ready.
+[meredith_grey] and [cristina_yang] ask [preston_burke] to fix [kevin_davidson]'s heart.
+[preston_burke] comments on their boldness and tells [meredith_grey] and [cristina_yang] to leave.
+[meredith_grey] seeks advice from [derek_shepherd], who reluctantly suggests going to the Chief instead of [preston_burke].
+[isobel_stevens], [meredith_grey], and [cristina_yang] ask [george_omalley] if he wants to join a transplant surgery.
+When [richard_webber] inquires about [lloyd_mackie], [george_omalley] mentions a liver is available for [lloyd_mackie], and the Chief listens closely.
+[alex_karev] notices the group watching [george_omalley] and [richard_webber].
+[preston_burke] walks by, and [richard_webber] informs [preston_burke] about the surgery.
+[preston_burke] notices the other interns leaving quickly.
+[alex_karev] stays behind and follows [preston_burke] when [preston_burke] leaves.
+During open heart surgery, [alex_karev] helps [preston_burke].
+The interns watch from the gallery, upset with [alex_karev], but [isobel_stevens] is glad the patient is getting the surgery.
+A nurse informs [isobel_stevens] that their [kevin_davidson] has been identified, and [kevin_davidson]'s wife is coming.
+[derek_shepherd] introduces the wife, [shelley_davidson], to [isobel_stevens] and leaves, asking [isobel_stevens] to page him if needed.
+[isobel_stevens] explains to [shelley_davidson] that her husband might wake up, but if not, they would like to know if [shelley_davidson] has considered organ donation for [kevin_davidson].
+[richard_webber] gently shakes [lloyd_mackie]'s shoulder and tells [lloyd_mackie] that [george_omalley] found a liver for him.
+[lloyd_mackie] looks at [richard_webber] and then at [george_omalley], trying not to cry as [richard_webber] comforts him.
+[george_omalley] leaves. [alex_karev] rushes into the locker room to find [meredith_grey]. [alex_karev] mentions he smells like open-heart surgery and starts nuzzling [meredith_grey]'s hair. [meredith_grey] turns, grabs [alex_karev], and pushes him against the lockers by his shirt. [meredith_grey] tells [alex_karev] to stay away and says he smells bad. They both notice [derek_shepherd]. [meredith_grey] returns to her locker, then moves to confront [alex_karev] again. [derek_shepherd] tells [alex_karev] to leave, pushes him out, and closes the door. [alex_karev] makes a face at [meredith_grey]. [meredith_grey] closes her locker and prepares to leave. [derek_shepherd] opens the door for [meredith_grey], and she looks at [derek_shepherd] briefly before walking away. [meredith_grey] arrives home to find [isobel_stevens] and [george_omalley] watching video tapes. [meredith_grey] is angry and asks why [isobel_stevens] and [george_omalley] touched her mother's surgical tapes. [meredith_grey] goes upstairs angrily while [isobel_stevens] and [george_omalley] share a look and laugh. Outside the hospital, [meredith_grey] tells [cristina_yang] about her cheerful and helpful roommates. [cristina_yang] suggests [meredith_grey] should kick them out, but [meredith_grey] says she can't. As [meredith_grey] and [cristina_yang] enter the hospital, [alex_karev] complains about being assigned to the pit again while [cristina_yang] gets the harvest surgery. Annoyed with [alex_karev], [meredith_grey] and [cristina_yang] joke about becoming lesbians.
+[cristina_yang] and [meredith_grey] choose the stairs instead of the elevator.
+[cristina_yang] speaks with [shelley_davidson] and her daughter.
+[cristina_yang] reviews the organ donation form with [shelley_davidson], but when [shelley_davidson] starts crying, [cristina_yang] leaves.
+[cristina_yang] tells [miranda_bailey] it's too hard because she's not good with people.
+[miranda_bailey] reminds [cristina_yang] that it's not easy, and [kevin_davidson] is more than just organs.
+[cristina_yang] goes back to talk to [shelley_davidson] again.
+[george_omalley] examines [lloyd_mackie], who flirts with [george_omalley].
+[george_omalley] awkwardly tries to explain that he is not gay.
+[lloyd_mackie] smiles and tells [george_omalley] he never thought [george_omalley] was gay, and [lloyd_mackie] isn't either.
+[lloyd_mackie] says dying is like a free pass to be bold without anyone judging.
+[lloyd_mackie] asks [george_omalley] if there was someone he was attracted to but couldn't have.
+After some time, [george_omalley] mentions [meredith_grey].
+In the organ harvest preparation, [preston_burke] shares that he dislikes harvesting because it ends a life, while he prefers saving them.
+[isobel_stevens] quietly tells [kevin_davidson] he did his best and says goodbye.
+[meredith_grey] and [alex_karev] are working in Trauma.
+[meredith_grey] notices [viper] sitting in a chair and asks [alex_karev] why [viper] is there and how long he's been waiting.
+[alex_karev] replies he doesn't know because he was busy with other cases.
+[viper] starts coughing, and [meredith_grey] approaches [viper] worriedly.
+As [viper] tries to stand, [viper] collapses and blood comes from [viper]'s mouth.
+[meredith_grey] lifts [viper]'s shirt and sees [viper]'s stitches have ripped open, with the area swollen to the size of a small melon.
+[meredith_grey] places [viper] on a gurney and tries to stop [viper]'s bleeding.
+[meredith_grey] asks a nurse to inform the OR that they are coming and to contact [miranda_bailey].
+They reach the OR.
+[miranda_bailey] instructs [meredith_grey] to scrub in and tells [alex_karev] to return downstairs as a consequence for prioritizing only urgent cases.
+[lloyd_mackie] is on the OR table, ready for anesthesia.
+The Chief asks [lloyd_mackie] to count backwards, and [lloyd_mackie] quickly falls asleep.
+[isobel_stevens] and [cristina_yang] scrub in while [richard_webber] and [preston_burke] enter.
+[richard_webber] informs them he will be next door when needed.
 They begin the operation.
-The organs are placed in plastic bags and special sealed containers.
+The organs are placed in plastic bags and sealed containers.
 The liver is placed on ice.
 [george_omalley] takes the liver and gives it to [richard_webber].
-[richard_webber] puts the liver in Mackie.
-Meanwhile, an alarm starts beeping.
+[richard_webber] places the liver in [lloyd_mackie].
+Back at the harvest, an alarm starts beeping.
 The heart is being removed.
-Everyone prepares to leave.
-[izzie_stevens] stays behind.
-[cristina_yang] looks back at [izzie_stevens].
-[izzie_stevens] says she wants to sew Mackie up for his family.
-[cristina_yang] decides to help [izzie_stevens].
-Later, [cristina_yang] and [izzie_stevens] meet [shelley_davidson].
-[cristina_yang] and [izzie_stevens] tell [shelley_davidson] that Mackie is ready.
-[cristina_yang] looks thoughtfully at [viper]'s friends.
-[viper]'s friends are also waiting.
-[miranda_bailey] and [meredith_grey] walk out to see [viper]'s friends.
-[viper]'s friends ask if [viper] is okay.
+Everyone prepares to leave, but [isobel_stevens] stays.
+[cristina_yang] looks at [isobel_stevens], who explains she wants to sew the patient up for his family.
+[cristina_yang] decides to help [isobel_stevens].
+Later, [cristina_yang] and [isobel_stevens] meet [shelley_davidson] and tell her the patient is ready.
+[cristina_yang] looks thoughtfully at [viper]'s friends, who are also waiting.
+[miranda_bailey] and [meredith_grey] come out to see [viper]'s friends.
+They ask if [viper] is okay.
 [miranda_bailey] starts shouting, asking if [viper] is okay.
-No, [viper] is not okay at all.
-[viper] threw himself down a concrete hill at full speed for no reason.
-People do risky things like piercing and smoking, acting like their bodies can't get hurt.
-If you want to risk your life on a concrete hill, that's your choice.
-But remember, others are walking, driving, and living their lives there too.
-Today, someone got hurt because of reckless behavior.
-[meredith_grey] interrupts, and [miranda_bailey] calms down, saying she thinks [viper] is not fine, then leaves angrily.
-[meredith_grey] awkwardly explains that [miranda_bailey] is tired but assures [viper]'s friends that [viper] will be okay.
+[viper] is not okay at all.
+[viper] threw himself down a concrete hill at high speed without a good reason.
+People often harm themselves and act recklessly, but there are others on that hill—walking, driving, living their lives.
+Today, someone got hurt because of this reckless behavior.
+[meredith_grey] interrupts, and [miranda_bailey] calms down, saying she believes [viper] is not fine, then leaves.
+[meredith_grey] awkwardly explains that [miranda_bailey] is tired but assures them [viper] will be okay.
 In the locker room, [meredith_grey] packs her things.
-[dr_derek_shepherd] enters and closes the door.
-[dr_derek_shepherd] tells [meredith_grey] it's not about the chase or a game; it's her hair.
-[meredith_grey] raises her eyebrows, and [dr_derek_shepherd] explains it smells nice.
-[dr_derek_shepherd] also mentions [meredith_grey]'s bossiness.
-[meredith_grey] tells [dr_derek_shepherd] she still won't go out with him.
-[dr_derek_shepherd] leaves, saying, "You say that now."
-[george_omalley] tells Mackie the surgery went well.
-Mackie sighs and realizes Mackie must quit smoking.
-Mackie smiles and holds [george_omalley]'s hand.
-[meredith_grey] opens her front door.
-Inside, [izzie_stevens], [cristina_yang], and [george_omalley] are eating pizza and drinking beer.
-[izzie_stevens], [cristina_yang], and [george_omalley] are watching a surgical tape.
-Everyone stops to look at [meredith_grey].
-[george_omalley] quickly says [cristina_yang] made them watch the tapes.
-[cristina_yang] glares at [george_omalley].
-[meredith_grey] asks what they are watching.
-[meredith_grey] sits down and grabs some popcorn.
-They watch for a few seconds.
-Suddenly, they all recoil, screaming and laughing in shock at the tape.
+[derek_shepherd] enters, closes the door, and tells [meredith_grey] it's not about the chase or a game; it's her hair.
+[meredith_grey] looks surprised, and [derek_shepherd] adds that it smells nice and mentions her bossiness.
+[meredith_grey] insists she won't go out with [derek_shepherd], but he leaves, saying she'll change her mind.
+[george_omalley] informs [lloyd_mackie] that the surgery was successful.
+[lloyd_mackie] sighs, realizing [lloyd_mackie] needs to quit smoking, and then smiles while holding [george_omalley]'s hand.
+[meredith_grey] enters [meredith_grey]'s house.
+[isobel_stevens], [cristina_yang], and [george_omalley] are eating pizza, drinking beer, and watching a surgical tape.
+[isobel_stevens], [cristina_yang], and [george_omalley] pause to look at [meredith_grey].
+[george_omalley] quickly says [cristina_yang] insisted on watching the tapes.
+[cristina_yang] gives [george_omalley] a glare.
+[meredith_grey] inquires about the tape, sits down, and takes some popcorn.
+After watching for a few seconds, [meredith_grey], [isobel_stevens], [cristina_yang], and [george_omalley] all react with screams and laughter, surprised by the tape.

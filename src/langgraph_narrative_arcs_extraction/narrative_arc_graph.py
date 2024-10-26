@@ -22,10 +22,12 @@ from .prompts import (
     ARC_EXTRACTOR_FROM_PLOT_PROMPT,
     ARC_VERIFIER_PROMPT,
     NARRATIVE_ARC_GUIDELINES,
-    ARC_PROGRESSION_VERIFIER_PROMPT
+    ARC_PROGRESSION_VERIFIER_PROMPT,
+    OUTPUT_JSON_FORMAT,
+    CHARACTER_VERIFIER_PROMPT
 )
 llm = get_llm(LLMType.INTELLIGENT)
-
+cheap_llm = get_llm(LLMType.CHEAP)
 from pydantic import BaseModel, Field
 
 class IntermediateNarrativeArc(BaseModel):
@@ -34,7 +36,8 @@ class IntermediateNarrativeArc(BaseModel):
     arc_type: str = Field(..., description="Type of the arc such as 'Soap Arc'/'Genre-Specific Arc'/'Character Arc'/'Episodic Arc'/'Mythology Arc'")
     description: str = Field(..., description="A brief description of the narrative arc")
     episodic: bool = Field(..., description="If the arc is episodic or not")
-    characters: str = Field(..., description="Characters involved in this arc")
+    main_characters: str = Field(..., description="Main characters involved in this arc")
+    interfering_episode_characters: str = Field(..., description="Interfering characters involved in this arc")
     single_episode_progression_string: str = Field("", description="The progression of the arc for the current episode")
 
     class Config:
@@ -100,8 +103,11 @@ def seasonal_narrative_analysis(state: NarrativeArcsExtractionState) -> Narrativ
     # Check if the seasonal analysis output file already exists
     if len(state['season_analysis']) > 0:
         return state
+    
+    prompt_formatted = SEASONAL_NARRATIVE_ANALYZER_PROMPT.format(season_plot=state['season_plot'], guidelines=NARRATIVE_ARC_GUIDELINES)
+    logger.debug(f"Formatted prompt: {prompt_formatted}")
 
-    season_analysis = llm.invoke(SEASONAL_NARRATIVE_ANALYZER_PROMPT.format_messages(season_plot=state['season_plot']))
+    season_analysis = llm.invoke(prompt_formatted)
     logger.info("Season narrative analysis completed.")
 
     # Save the structured season analysis
@@ -125,6 +131,7 @@ def episode_narrative_analysis(state: NarrativeArcsExtractionState) -> Narrative
     episode_analysis = llm.invoke(EPISODE_NARRATIVE_ANALYZER_PROMPT.format_messages(
         episode_plot=state['episode_plot'],
         season_analysis=state['season_analysis'],
+        guidelines=NARRATIVE_ARC_GUIDELINES
     ))
 
     logger.info("Episode narrative analysis completed.")
@@ -207,8 +214,6 @@ def extract_arcs_from_analysis(state: NarrativeArcsExtractionState) -> Narrative
     """Extract narrative arcs from the seasonal analysis and episode analysis."""
     logger.info("Extracting arcs from seasonal and episode analyses.")
 
-
-
     # Use present season arcs identified earlier
     present_season_arcs_summaries = [
         {"title": arc['title'], "description": arc['description']}
@@ -218,7 +223,8 @@ def extract_arcs_from_analysis(state: NarrativeArcsExtractionState) -> Narrative
     response = llm.invoke(ARC_EXTRACTOR_FROM_ANALYSIS_PROMPT.format_messages(
         episode_analysis=state['episode_narrative_analysis'],
         present_season_arcs_summaries=json.dumps(present_season_arcs_summaries, indent=2),
-        guidelines=NARRATIVE_ARC_GUIDELINES
+        guidelines=NARRATIVE_ARC_GUIDELINES,
+        output_json_format=OUTPUT_JSON_FORMAT
     ))
 
     try:
@@ -231,7 +237,8 @@ def extract_arcs_from_analysis(state: NarrativeArcsExtractionState) -> Narrative
                 arc_type=arc['arc_type'],
                 description=arc['description'],
                 episodic=arc['episodic'],
-                characters=arc['characters'],
+                main_characters=arc['main_characters'],
+                interfering_episode_characters=arc['interfering_episode_characters'],
                 single_episode_progression_string=arc['single_episode_progression_string']
             )
             arcs.append(new_arc)
@@ -257,7 +264,8 @@ def extract_arcs_from_plot(state: NarrativeArcsExtractionState) -> NarrativeArcs
     response = llm.invoke(ARC_EXTRACTOR_FROM_PLOT_PROMPT.format_messages(
         episode_plot=state['episode_plot'],
         present_season_arcs_summaries=json.dumps(present_season_arcs_summaries, indent=2),
-        guidelines=NARRATIVE_ARC_GUIDELINES
+        guidelines=NARRATIVE_ARC_GUIDELINES,
+        output_json_format=OUTPUT_JSON_FORMAT
     ))
 
     try:
@@ -270,7 +278,8 @@ def extract_arcs_from_plot(state: NarrativeArcsExtractionState) -> NarrativeArcs
                 arc_type=arc['arc_type'],
                 description=arc['description'],
                 episodic=arc['episodic'],
-                characters=arc['characters'],
+                main_characters=arc['main_characters'],
+                interfering_episode_characters=arc['interfering_episode_characters'],
                 single_episode_progression_string=arc['single_episode_progression_string']
             )
             arcs.append(new_arc)
@@ -291,14 +300,10 @@ def verify_arc_progression(state: NarrativeArcsExtractionState) -> NarrativeArcs
 
     verified_arcs = []
     for arc in combined_arcs:
-        # Normalize character names to best appellations once comined the arcs from analysis and plot
-        #keep it commented for testing
-
-        #arc.characters = normalize_names(arc.characters, state['existing_season_entities'], llm)
-
         response = llm.invoke(ARC_PROGRESSION_VERIFIER_PROMPT.format_messages(
             episode_plot=state['episode_plot'],
-            arc_to_verify=arc.model_dump()
+            arc_to_verify=arc.model_dump(),
+            output_json_format=OUTPUT_JSON_FORMAT
         ))
 
         try:
@@ -311,7 +316,8 @@ def verify_arc_progression(state: NarrativeArcsExtractionState) -> NarrativeArcs
                 arc_type=verified_arc_data['arc_type'],
                 description=verified_arc_data['description'],
                 episodic=verified_arc_data['episodic'],
-                characters=verified_arc_data['characters'],
+                main_characters=verified_arc_data['main_characters'],
+                interfering_episode_characters=verified_arc_data['interfering_episode_characters'],
                 single_episode_progression_string=verified_arc_data['single_episode_progression_string']
             )
             verified_arcs.append(verified_arc)
@@ -341,7 +347,8 @@ def verify_and_finalize_arcs(state: NarrativeArcsExtractionState) -> NarrativeAr
         episode_plot=state['episode_plot'],
         arcs_to_verify=arcs_to_verify,
         present_season_arcs_summaries=json.dumps(state['present_season_arcs'], indent=2),
-        guidelines=NARRATIVE_ARC_GUIDELINES
+        guidelines=NARRATIVE_ARC_GUIDELINES,
+        output_json_format=OUTPUT_JSON_FORMAT
     ))
 
     try:
@@ -353,7 +360,8 @@ def verify_and_finalize_arcs(state: NarrativeArcsExtractionState) -> NarrativeAr
                 arc_type=arc['arc_type'],
                 description=arc['description'],
                 episodic=arc['episodic'],
-                characters=arc['characters'],
+                main_characters=arc['main_characters'],
+                interfering_episode_characters=arc['interfering_episode_characters'],
                 single_episode_progression_string=arc['single_episode_progression_string']
             )
             arcs.append(new_arc)
@@ -373,13 +381,12 @@ def save_episode_arcs_to_json(state: NarrativeArcsExtractionState) -> NarrativeA
     if 'episode_narrative_arcs_path' in state['file_paths']:
         episode_arcs = []
         for arc in state['episode_arcs']:
-            # Fetch a fresh instance of the arc within this session
-            arc_with_progressions = state['db_session'].merge(arc)
-            
+            arc.main_characters = normalize_names(arc.main_characters, state['existing_season_entities'], cheap_llm)
+            arc.interfering_episode_characters = normalize_names(arc.interfering_episode_characters, state['existing_season_entities'], cheap_llm)
             # Keep only the progression for the current episode
-            current_progression = next((p for p in arc_with_progressions.progressions if p.episode == state['episode'] and p.season == state['season']), None)
+            current_progression = next((p for p in arc.progressions if p.episode == state['episode'] and p.season == state['season']), None)
             if current_progression:
-                arc_dict = arc_with_progressions.model_dump()
+                arc_dict = arc.model_dump()
                 arc_dict['progressions'] = [current_progression.model_dump()]
                 episode_arcs.append(arc_dict)
 
@@ -410,6 +417,41 @@ def save_season_arcs_to_json(state: NarrativeArcsExtractionState) -> NarrativeAr
 
     return state
 
+def verify_character_roles(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
+    """Verify and correctly categorize characters as either main or interfering for each arc."""
+    logger.info("Verifying character roles in arcs.")
+
+    verified_arcs = []
+    for arc in state['episode_arcs']:
+        response = llm.invoke(CHARACTER_VERIFIER_PROMPT.format_messages(
+            episode_plot=state['episode_plot'],
+            arc_to_verify=arc.model_dump(),
+            output_json_format=OUTPUT_JSON_FORMAT
+        ))
+
+        try:
+            verified_arc_data = clean_llm_json_response(response.content)
+            if isinstance(verified_arc_data, list):
+                verified_arc_data = verified_arc_data[0]
+
+            verified_arc = IntermediateNarrativeArc(
+                title=verified_arc_data['title'],
+                arc_type=verified_arc_data['arc_type'],
+                description=verified_arc_data['description'],
+                episodic=verified_arc_data['episodic'],
+                main_characters=verified_arc_data['main_characters'],
+                interfering_episode_characters=verified_arc_data['interfering_episode_characters'],
+                single_episode_progression_string=verified_arc_data['single_episode_progression_string']
+            )
+            verified_arcs.append(verified_arc)
+        except Exception as e:
+            logger.error(f"Error verifying character roles: {e}")
+            verified_arcs.append(arc)  # Keep the original arc if verification fails
+
+    state['episode_arcs'] = verified_arcs
+    logger.info(f"Verified character roles for {len(verified_arcs)} arcs.")
+    return state
+
 def create_narrative_arc_graph():
     """Create and configure the state graph for narrative arc extraction."""
     workflow = StateGraph(NarrativeArcsExtractionState)
@@ -422,6 +464,7 @@ def create_narrative_arc_graph():
     workflow.add_node("extract_arcs_from_analysis_node", extract_arcs_from_analysis)
     workflow.add_node("extract_arcs_from_plot_node", extract_arcs_from_plot)
     workflow.add_node("verify_arc_progression_node", verify_arc_progression)
+    workflow.add_node("verify_character_roles_node", verify_character_roles)  # Add new node
     workflow.add_node("verify_and_finalize_arcs_node", verify_and_finalize_arcs)
 
     # Set the entry point and edges
@@ -432,7 +475,8 @@ def create_narrative_arc_graph():
     workflow.add_edge("identify_present_season_arcs_node", "extract_arcs_from_analysis_node")
     workflow.add_edge("extract_arcs_from_analysis_node", "extract_arcs_from_plot_node")
     workflow.add_edge("extract_arcs_from_plot_node", "verify_arc_progression_node")
-    workflow.add_edge("verify_arc_progression_node", "verify_and_finalize_arcs_node")
+    workflow.add_edge("verify_arc_progression_node", "verify_character_roles_node")  # Add new edge
+    workflow.add_edge("verify_character_roles_node", "verify_and_finalize_arcs_node")  # Update edge
     workflow.add_edge("verify_and_finalize_arcs_node", END)
 
     logger.info("Narrative arc graph workflow created successfully.")

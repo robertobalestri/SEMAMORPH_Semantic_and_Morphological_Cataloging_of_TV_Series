@@ -62,4 +62,4 @@ class PathHandler:
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_summarized_plot.txt")
     
     def get_suggested_episode_arc_path(self) -> str:
-        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_suggested_episode_arc.json")
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_multiagent_suggested_episode_arcs.json")

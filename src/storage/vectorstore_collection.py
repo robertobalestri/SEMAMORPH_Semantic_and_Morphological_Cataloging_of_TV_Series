@@ -46,8 +46,6 @@ class VectorStoreCollection:
     
     def get_all_ids(self) -> List[str]:
         """Get all IDs from the collection."""
-        # Assuming that the Chroma vector store does not support fetching IDs directly,
-        # you may need to store IDs in a different way or fetch them from the metadata.
         results = self.collection.get(include=["metadatas"])  # Fetch metadata instead
         return [meta.get('id') for meta in results["metadatas"] if 'id' in meta]  # Extract IDs from metadata
     
@@ -59,19 +57,25 @@ class VectorStoreCollection:
         """Get all metadatas from the collection."""
         return self.collection.get(include=["metadatas"])["metadatas"]
 
-    @staticmethod
-    def generate_content_based_id(text: str) -> str:
-        """Generate a unique ID based on the content of the text."""
-        return hashlib.md5(text.encode("utf-8")).hexdigest()
-
     def add_documents(self, documents: List[Document], ids: List[str]):
         """Add documents to the vector store."""
-        self.collection.add_documents(documents, ids=ids)
-        logger.info(f"Added {len(documents)} documents to the vector store.")
+        # Ensure that all metadata fields are valid (non-None)
+        for doc, doc_id in zip(documents, ids):
+            metadata = doc.metadata
+            if not isinstance(metadata, dict):
+                raise ValueError(f"Metadata for document ID '{doc_id}' must be a dictionary.")
+            
+            # Check for None values in metadata
+            for key, value in metadata.items():
+                if value is None:
+                    raise ValueError(f"Metadata field '{key}' for document ID '{doc_id}' is None. All metadata values must be of type str, int, float, or bool.")
 
-    def similarity_search_with_score(self, query: str, k: int = 5, filter: Optional[Dict] = None):
-        """Perform a similarity search with cosine distances."""
-        return self.collection.similarity_search_with_score(query, k=k, filter=filter)
+        try:
+            self.collection.add_documents(documents, ids=ids)
+            logger.info(f"Added {len(documents)} documents to the vector store.")
+        except Exception as e:
+            logger.error(f"Failed to add documents to the vector store: {e}")
+            raise
 
     def get_document_by_id(self, doc_id: str) -> Optional[Document]:
         """Retrieve a document by its ID."""
@@ -86,6 +90,10 @@ class VectorStoreCollection:
         """Delete the entire collection from the vector store."""
         self.collection.delete_collection()
         logger.info(f"Deleted collection {self.collection_name}")
+
+    def similarity_search_with_score(self, query: str, k: int = 5, filter: Optional[Dict] = None):
+        """Perform a similarity search with cosine distances."""
+        return self.collection.similarity_search_with_score(query, k=k, filter=filter)
 
     def find_similar_arcs(self, query: str, n_results: int = 5, series: Optional[str] = None) -> List[Dict[str, Any]]:
         """Find similar narrative arcs based on a query."""

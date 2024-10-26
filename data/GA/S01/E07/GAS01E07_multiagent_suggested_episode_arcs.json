@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Meredith and Derek's Complicated Romance",
+    "arc_type": "Soap Arc",
+    "description": "Meredith and Derek's relationship begins with a one-night stand, complicated by Derek being her boss. Their romance faces challenges, including workplace gossip and Meredith's struggle to keep it professional.",
+    "episodic": false,
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "George O'Malley; Isobel Stevens",
+    "single_episode_progression_string": "George and Izzie see Derek leaving Meredith's house, realizing he is involved with her. Derek later admits his intentions with Meredith to George. Izzie confronts Meredith about her relationship with Derek and realizes Meredith is in love with him."
+  },
+  {
+    "title": "Intern Dynamics and Rivalries",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The new interns at Seattle Grace Hospital navigate their roles, forming alliances and rivalries as they begin their medical careers.",
+    "episodic": false,
+    "main_characters": "George O'Malley; Isobel Stevens; Cristina Yang",
+    "interfering_episode_characters": "Meredith Grey; Derek Shepherd; Dr. Taylor",
+    "single_episode_progression_string": "George feels jealous of Derek's relationship with Meredith. Izzie is upset, thinking Meredith gets better surgeries due to her relationship with Derek. George confronts Dr. Taylor about smelling alcohol, leading to tension with Derek and Cristina replacing him in surgery."
+  },
+  {
+    "title": "George's Personal Growth and Challenges",
+    "arc_type": "Genre-Specific Arc",
+    "description": "George navigates personal and professional challenges, including his interactions with patients and colleagues, as he grows more confident in his role.",
+    "episodic": false,
+    "main_characters": "George O'Malley",
+    "interfering_episode_characters": "Derek Shepherd; Dr. Taylor",
+    "single_episode_progression_string": "George is impressed by Derek's skills during surgery but is concerned about Dr. Taylor's potential alcohol use. He confronts Dr. Taylor, leading to his removal from surgery and a confrontation with Derek."
+  },
+  {
+    "title": "Cristina's Professional Ambitions",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Cristina Yang navigates her professional ambitions and challenges, often clashing with her superiors and colleagues.",
+    "episodic": false,
+    "main_characters": "Cristina Yang",
+    "interfering_episode_characters": "Preston Burke",
+    "single_episode_progression_string": "Cristina takes George's place in the surgery after he is removed, demonstrating her ambition and readiness to seize opportunities. Additionally, her suspicion of pregnancy and unhappiness with the test results add complexity to her personal and professional life."
+  },
+  {
+    "title": "Medical Case: Toddler's Hemispherectomy",
+    "arc_type": "Episodic Arc",
+    "description": "A toddler with severe tremors requires a hemispherectomy to remove half her brain, a procedure that can allow adaptation in young children.",
+    "episodic": true,
+    "main_characters": "Derek Shepherd; George O'Malley",
+    "interfering_episode_characters": "Dr. Taylor",
+    "single_episode_progression_string": "George initially joins the surgery with Derek on a toddler with severe tremors. Derek discovers the girl's brain tissue is dying rapidly and decides on a hemispherectomy. During surgery, the girl begins to wake up due to Dr. Taylor's negligence, leading to his removal."
+  },
+  {
+    "title": "Medical Case: Gastric Bypass Complications",
+    "arc_type": "Episodic Arc",
+    "description": "Meredith assists Bailey with a case involving a teenager who had a bad gastric bypass in Mexico, leading to severe complications.",
+    "episodic": true,
+    "main_characters": "Meredith Grey; Miranda Bailey",
+    "interfering_episode_characters": "Teenage Patient",
+    "single_episode_progression_string": "Meredith helps Bailey with a teenager who had a gastric bypass without parental consent. The procedure to reverse it fails, and the patient's bowel bursts, leading to lifelong nutritional struggles."
+  },
+  {
+    "title": "Medical Case: Gunshot Victim with Tattoo Infection",
+    "arc_type": "Episodic Arc",
+    "description": "Alex deals with a gunshot victim whose infected tattoo worsens due to stress, leading to his death.",
+    "episodic": true,
+    "main_characters": "Alex Karev",
+    "interfering_episode_characters": "Gunshot Victim",
+    "single_episode_progression_string": "Alex notices a gunshot victim in the lobby who was shot by a friend to enhance his tattoos. The stress from the wound worsens an infected tattoo, leading to the patient's death."
+  },
+  {
+    "title": "Soap Arc: Izzie's Emotional Turmoil",
+    "arc_type": "Soap Arc",
+    "description": "Izzie navigates her emotions regarding Meredith's relationship with Derek and her own professional insecurities.",
+    "episodic": true,
+    "main_characters": "Isobel Stevens",
+    "interfering_episode_characters": "Meredith Grey",
+    "single_episode_progression_string": "Izzie is upset, thinking Meredith gets better surgeries due to her relationship with Derek. She confronts Meredith and realizes Meredith's genuine feelings for Derek, feeling less upset and somewhat sorry for her."
+  }
+]

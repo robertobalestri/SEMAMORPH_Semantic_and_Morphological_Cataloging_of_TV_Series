@@ -66,14 +66,14 @@ def refine_entities(entities: List[str], plot: str, llm: AzureChatOpenAI, existi
                 For each character:
                 1. Provide a primary name in the format "name_surname" (lowercase with underscores). If a character has only one name or surname with a title, use the title and the name (e.g. "dr_johnson").
                 2. In appellations, list ALL names, titles and nicknames used for the character in the plot.
-                3. Choose from the appellations found the best appellation for the character, we will use it as the entity name. When possible, choose the appellation with name and surname, or with title and surname.
-                4. Include full names, first names, last names, titles, and nicknames in appellations.
-                5. For families or groups, use "the_surname" format. Families and members of the family are different entities. They should be added separately and the family members should not be listed in the appellations of the family.
-                6. Treat individuals with the same surname (e.g., Mr. Smith and Mrs. Smith) as separate entities unless there's clear evidence they're the same person.
+                3. Include full names, first names, last names, titles, and nicknames in appellations.
+                4. For families or groups, use "the_surname" format. Families and members of the family are different entities. They should be added separately and the family members should not be listed in the appellations of the family.
+                5. Treat individuals with the same surname (e.g., Mr. Smith and Mrs. Smith) as separate entities unless there's clear evidence they're the same person.
                 6. Exclude generic appellatives (e.g. "the baby", "the old man", "the woman", "she", "he", etc.) and non-character entities (like name of Universities, Companies, etc.), also exclude names that are not characters (for example in "Bob looks like Dumbo", Dumbo is not a character).
                 7. Sometimes some characters might be referred only with a generic term like "the dragon", "the mage", "the robot", etc. In those cases use the generic term as the entity name.
                 8. If a character is not in the existing entities list, you can still add it if you are sure that it's a new character.
-                
+                9. To choose the best appellation follow this rule: if name and surname are present ALWAYS use just them without title. If only one of the two is present, but it's present also a title, use the appellation that comprehends also the title.
+
                 Respond with a JSON list of objects in this format:
                 [
                     {{

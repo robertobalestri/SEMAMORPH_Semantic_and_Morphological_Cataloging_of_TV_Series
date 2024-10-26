@@ -48,17 +48,20 @@ class DatabaseManager:
         """Internal method to add or update a NarrativeArc."""
         existing_arc = session.get(NarrativeArc, arc.id)
         if existing_arc:
-            # Update existing arc
+            # Update existing arc's fields
             existing_arc.title = arc.title
             existing_arc.description = arc.description
             existing_arc.arc_type = arc.arc_type
             existing_arc.episodic = arc.episodic
             existing_arc.characters = arc.characters
             existing_arc.series = arc.series
-            session.add(existing_arc)
+
+            # Update progressions using cascading
+            existing_arc.progressions = arc.progressions  # Cascading handles add/update
+
             logger.info(f"Updated existing arc: {arc.title}")
         else:
-            # Add new arc
+            # Add new arc with progressions
             session.add(arc)
             logger.info(f"Added new arc: {arc.title}")
 
@@ -148,10 +151,10 @@ class DatabaseManager:
     # database.py
 
     def _get_arc_progressions(self, session: Session, main_arc_id: str) -> List["ArcProgression"]:
-        """Internal method to retrieve ArcProgressions."""
+        """Internal method to retrieve ArcProgressions with their NarrativeArc eagerly loaded."""
         query = select(ArcProgression).where(
             ArcProgression.main_arc_id == main_arc_id
-        )
+        ).options(selectinload(ArcProgression.narrative_arc))  # Eagerly load the narrative_arc relationship
         progressions = session.exec(query).all() or []  # Ensure it's a list
         sorted_progressions = sorted(progressions, key=lambda p: p.ordinal_position or 0)
         logger.debug(f"Retrieved {len(sorted_progressions)} progressions for arc ID {main_arc_id}.")

@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Meredith and Derek's Complicated Romance",
+    "arc_type": "Soap Arc",
+    "description": "Meredith and Derek's relationship begins with a one-night stand, complicated by Derek being her boss. Their romance faces challenges, including workplace gossip and Meredith's struggle to keep it professional.",
+    "episodic": false,
+    "main_characters": "Meredith; Derek",
+    "interfering_episode_characters": "Bailey; Cristina",
+    "single_episode_progression_string": "Meredith struggles with the implications of her relationship with Derek, considering ending it due to professional challenges. Bailey warns Derek about favoritism towards Meredith, adding tension to their relationship. Meredith and Derek meet in the parking lot where Derek accuses Meredith of avoiding him. They discuss the complications of their relationship, with Meredith feeling the pressure of being involved with an attending. Derek offers to give her time. Meredith later decides to break up with Derek, but they share a tender moment in the rain at the end of the episode."
+  },
+  {
+    "title": "Intern Dynamics and Rivalries",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The new interns at Seattle Grace Hospital navigate their roles, forming alliances and rivalries as they begin their medical careers.",
+    "episodic": false,
+    "main_characters": "Izzie; George; Alex; Cristina",
+    "interfering_episode_characters": "Meredith; Bailey",
+    "single_episode_progression_string": "Izzie and George argue about waiting for Meredith. Izzie teases George about liking Meredith. Alex's behavior is criticized by Bailey and Annie. Cristina and Alex argue about their roles in surgeries. Izzie handles a medical emergency on her own, leading to tension with Alex."
+  },
+  {
+    "title": "George's Personal Growth and Challenges",
+    "arc_type": "Genre-Specific Arc",
+    "description": "George navigates personal and professional challenges, including his interactions with patients and colleagues, as he grows more confident in his role.",
+    "episodic": false,
+    "main_characters": "George",
+    "interfering_episode_characters": "Izzie; Meredith; Annie Connors",
+    "single_episode_progression_string": "George spills coffee on himself and is teased by Izzie. He awkwardly tries to flirt with Meredith and later talks to Annie about procrastination. He reflects on his missed chance with Meredith."
+  },
+  {
+    "title": "Cristina's Professional Ambitions",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Cristina Yang navigates her professional ambitions and challenges, often clashing with her superiors and colleagues.",
+    "episodic": false,
+    "main_characters": "Cristina",
+    "interfering_episode_characters": "Meredith; Burke",
+    "single_episode_progression_string": "Cristina reassures Meredith about her relationship with Derek. She wants to be involved in Annie's case and later discusses her relationship with Burke, questioning the need for labels."
+  },
+  {
+    "title": "Medical Case: Annie Connors' Tumor",
+    "arc_type": "Episodic Arc",
+    "description": "The medical team at Seattle Grace Hospital deals with Annie Connors, a patient with a massive tumor, exploring the challenges and ethical considerations of her treatment.",
+    "episodic": true,
+    "main_characters": "Annie Connors; Bailey; Burke",
+    "interfering_episode_characters": "Alex; Cristina; George",
+    "single_episode_progression_string": "Bailey introduces Annie Connors, who has a massive tumor. The interns discuss her condition, and Alex's insensitive comments are overheard by Annie. Cristina talks to Annie's mother about her history. During surgery, complications arise, and despite efforts, Annie passes away."
+  },
+  {
+    "title": "Medical Case: Edward's Brain Surgery",
+    "arc_type": "Episodic Arc",
+    "description": "The team handles a complex brain surgery for Edward, a patient with Parkinson's, exploring the emotional and technical challenges involved.",
+    "episodic": true,
+    "main_characters": "Edward; Meredith; Derek",
+    "interfering_episode_characters": "Bailey",
+    "single_episode_progression_string": "Meredith speaks with Edward's daughter about persuading him to have brain surgery. Derek and Meredith perform the surgery, and Edward's hands stop shaking. Meredith assists Edward in walking to his daughter, who is relieved."
+  },
+  {
+    "title": "Izzie's Emergency Procedure on Jimmy",
+    "arc_type": "Episodic Arc",
+    "description": "Izzie faces a critical situation with a patient named Jimmy, where she must perform an emergency procedure under pressure.",
+    "episodic": true,
+    "main_characters": "Izzie; Jimmy",
+    "interfering_episode_characters": "Alex; Burke",
+    "single_episode_progression_string": "Izzie reviews Jimmy's diagnosis and suggests an X-Ray. During an emergency, she is forced to operate immediately, massaging his heart until his pulse returns. Burke reassures her that she saved Jimmy's life."
+  }
+]

@@ -1,127 +1,82 @@
 [
   {
-    "entity_name": "meredith_grey",
-    "best_appellation": "meredith_grey",
+    "entity_name": "dr_taylor",
+    "best_appellation": "Dr. Taylor",
     "appellations": [
-      "meredith",
-      "meredith_grey"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "jake_johnson",
-    "best_appellation": "jake_johnson",
-    "appellations": [
-      "jake",
-      "gunshot wound victim"
+      "Dr. Taylor"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "miranda_bailey",
-    "best_appellation": "miranda_bailey",
+    "best_appellation": "Miranda Bailey",
     "appellations": [
-      "bailey",
-      "miranda_bailey"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "george_omalley",
-    "best_appellation": "george_omalley",
-    "appellations": [
-      "george",
-      "george_omalley"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "sophie_jones",
-    "best_appellation": "sophie_jones",
-    "appellations": [
-      "sophie",
-      "little girl"
+      "Miranda Bailey",
+      "Bailey"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "preston_burke",
-    "best_appellation": "preston_burke",
+    "best_appellation": "Preston Burke",
     "appellations": [
-      "burke",
-      "preston_burke"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "lily_johnson",
-    "best_appellation": "lily_johnson",
-    "appellations": [
-      "lily",
-      "teenager"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "dr_taylor",
-    "best_appellation": "dr_taylor",
-    "appellations": [
-      "dr_taylor",
-      "anesthesiologist"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "cristina_yang",
-    "best_appellation": "cristina_yang",
-    "appellations": [
-      "cristina",
-      "cristina_yang"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "mrs_johnson",
-    "best_appellation": "mrs_johnson",
-    "appellations": [
-      "mrs_johnson",
-      "lily's mother"
+      "Preston Burke",
+      "Burke",
+      "Dr. Burke"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "derek_shepherd",
-    "best_appellation": "derek_shepherd",
+    "best_appellation": "Derek Shepherd",
     "appellations": [
-      "derek",
-      "dr_derek_shepherd"
+      "Derek Shepherd",
+      "Derek"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "alex_karev",
-    "best_appellation": "alex_karev",
+    "best_appellation": "Alex Karev",
     "appellations": [
-      "alex",
-      "alex_karev"
+      "Alex Karev",
+      "Alex"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "izzie_stevens",
-    "best_appellation": "izzie_stevens",
+    "entity_name": "george_omalley",
+    "best_appellation": "George O'Malley",
     "appellations": [
-      "izzie",
-      "izzie_stevens"
+      "George O'Malley",
+      "George"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "dr_burke",
-    "best_appellation": "dr_preston_burke",
+    "entity_name": "isobel_stevens",
+    "best_appellation": "Isobel Stevens",
     "appellations": [
-      "dr_burke",
-      "preston_burke"
+      "Isobel Stevens",
+      "Izzie"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "cristina_yang",
+    "best_appellation": "Cristina Yang",
+    "appellations": [
+      "Cristina Yang",
+      "Cristina"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "meredith_grey",
+    "best_appellation": "Meredith Grey",
+    "appellations": [
+      "Meredith Grey",
+      "Meredith"
     ],
     "entity_type": "PERSON"
   }

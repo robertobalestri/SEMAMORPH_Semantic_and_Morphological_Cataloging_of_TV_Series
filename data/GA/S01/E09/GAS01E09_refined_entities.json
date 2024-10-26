@@ -1,62 +1,12 @@
 [
   {
-    "entity_name": "meredith_grey",
-    "best_appellation": "Meredith Grey",
+    "entity_name": "bailey",
+    "best_appellation": "Bailey",
     "appellations": [
-      "Meredith",
-      "Meredith Grey"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "preston_burke",
-    "best_appellation": "Preston Burke",
-    "appellations": [
-      "Preston",
-      "Preston Burke",
-      "Dr. Burke"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "olivia",
-    "best_appellation": "Olivia",
-    "appellations": [
-      "Olivia"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "george_omalley",
-    "best_appellation": "George O'Malley",
-    "appellations": [
-      "George",
-      "George O'Malley"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "rebecca_franklin",
-    "best_appellation": "Rebecca Franklin",
-    "appellations": [
-      "Rebecca Franklin"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "mr_franklin",
-    "best_appellation": "Mr. Franklin",
-    "appellations": [
-      "Mr. Franklin",
-      "Franklin"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "holly",
-    "best_appellation": "Holly",
-    "appellations": [
-      "Holly"
+      "Bailey",
+      "Dr. Bailey",
+      "Miranda Bailey",
+      "Miranda"
     ],
     "entity_type": "PERSON"
   },
@@ -65,25 +15,9 @@
     "best_appellation": "Richard Webber",
     "appellations": [
       "Richard Webber",
-      "Webber"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "izzie_stevens",
-    "best_appellation": "Izzie Stevens",
-    "appellations": [
-      "Izzie",
-      "Izzie Stevens"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "cristina_yang",
-    "best_appellation": "Cristina Yang",
-    "appellations": [
-      "Cristina",
-      "Cristina Yang"
+      "Webber",
+      "Richard",
+      "The Chief"
     ],
     "entity_type": "PERSON"
   },
@@ -96,15 +30,6 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "miranda_bailey",
-    "best_appellation": "Miranda Bailey",
-    "appellations": [
-      "Miranda Bailey",
-      "Bailey"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
     "entity_name": "patricia",
     "best_appellation": "Patricia",
     "appellations": [
@@ -113,10 +38,20 @@
     "entity_type": "PERSON"
   },
   {
+    "entity_name": "alice_franklin",
+    "best_appellation": "Alice Franklin",
+    "appellations": [
+      "Alice Franklin",
+      "Alice"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
     "entity_name": "addison_shepherd",
     "best_appellation": "Addison Shepherd",
     "appellations": [
-      "Addison Shepherd"
+      "Addison Shepherd",
+      "Addison"
     ],
     "entity_type": "PERSON"
   },
@@ -129,11 +64,10 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "alice_franklin",
-    "best_appellation": "Alice Franklin",
+    "entity_name": "jimmy",
+    "best_appellation": "Jimmy",
     "appellations": [
-      "Alice",
-      "Alice Franklin"
+      "Jimmy"
     ],
     "entity_type": "PERSON"
   },
@@ -146,20 +80,34 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "derek_shepherd",
-    "best_appellation": "Derek Shepherd",
+    "entity_name": "rebecca_franklin",
+    "best_appellation": "Rebecca Franklin",
     "appellations": [
-      "Derek",
-      "Derek Shepherd"
+      "Rebecca Franklin"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "alex_karev",
-    "best_appellation": "Alex Karev",
+    "entity_name": "holly",
+    "best_appellation": "Holly",
     "appellations": [
-      "Alex",
-      "Alex Karev"
+      "Holly"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "olivia",
+    "best_appellation": "Olivia",
+    "appellations": [
+      "Olivia"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "mr_franklin",
+    "best_appellation": "Mr. Franklin",
+    "appellations": [
+      "Mr. Franklin"
     ],
     "entity_type": "PERSON"
   }

@@ -1,27 +1,52 @@
-**1. Key Episode Events**:
-   - George and Izzie discover Derek sneaking out of Meredith's house.
-   - George feels jealous; Izzie is upset about Meredith's surgical opportunities.
-   - A flu spreads in the hospital; Cristina feels nauseous and blames Dr. Burke.
-   - Alex encounters a gunshot wound victim with a scheduled appointment.
-   - Meredith assists Bailey with a case involving a botched gastric bypass.
-   - Izzie helps a man who swallowed his girlfriend's keys.
-   - George is excited about a major surgery but suspects Dr. Taylor of drinking.
-   - Derek performs a hemispherectomy on a toddler.
-   - Alex's patient dies from an infection.
-   - Dr. Taylor falls asleep during surgery; Derek removes him.
-   - Derek apologizes to George and admits feelings for Meredith.
-   - Izzie confronts Meredith about Derek; realizes Meredith loves him.
-   - Cristina suspects pregnancy and takes tests.
+1. **Key Episode Events**:
+   - George and Izzie discover Derek's involvement with Meredith.
+   - George feels jealous; Izzie is upset about Meredith's surgeries.
+   - A flu spreads in the hospital; Cristina feels nauseous.
+   - Alex encounters a gunshot victim with an unusual story.
+   - Meredith and Bailey handle a case of a teenager with a failed gastric bypass.
+   - Izzie assists a man who swallowed keys.
+   - George works with Derek on a toddler's hemispherectomy.
+   - George suspects Dr. Taylor of drinking; confronts him.
+   - Alex's patient dies from infection.
+   - Derek removes Dr. Taylor from surgery.
+   - Cristina takes pregnancy tests.
 
-**2. Narrative Arcs**:
-   - Meredith's Relationship with Derek
-   - George's Quest for Respect and Identity
-   - Cristina's Professional and Personal Struggles
-   - Izzie's Past and Professional Growth
-   - Alex's Integration into the Team
+2. **Narrative Arcs**:
 
-**3. Themes and Motifs**:
+   Arc Type: Soap Arc
+   Title: “Meredith and Derek's Complicated Romance”
+   Description: Meredith and Derek's secret relationship is exposed to George and Izzie, adding tension and jealousy.
+   Episodic Flag: False
+   Main Characters: Meredith Grey, Derek Shepherd
+   Interfering Episode Characters: George O'Malley, Izzie Stevens
+   Progression: George and Izzie discover the relationship, leading to jealousy and confrontation.
+
+   Arc Type: Genre-Specific Arc
+   Title: “Interns' Journey at Seattle Grace”
+   Description: The interns face ethical dilemmas and professional challenges, including George's confrontation with Dr. Taylor and handling complex medical cases.
+   Episodic Flag: False
+   Main Characters: Meredith Grey, George O'Malley, Cristina Yang, Alex Karev, Izzie Stevens
+   Interfering Episode Characters: Derek Shepherd, Miranda Bailey
+   Progression: George confronts Dr. Taylor; interns handle challenging cases, showcasing growth and ethical challenges.
+
+   Arc Type: Soap Arc
+   Title: “Cristina and Burke's Secret Relationship”
+   Description: Cristina's nausea leads to the discovery of her pregnancy, adding complexity to her relationship with Burke.
+   Episodic Flag: False
+   Main Characters: Cristina Yang, Preston Burke
+   Interfering Episode Characters: None
+   Progression: Cristina suspects pregnancy, confirmed by tests.
+
+   Arc Type: Episodic Arc
+   Title: “Medical Case: Teen's Failed Gastric Bypass”
+   Description: Meredith and Bailey attempt to fix a teenager's botched gastric bypass, facing complications and ethical concerns.
+   Episodic Flag: True
+   Main Characters: Meredith Grey, Miranda Bailey
+   Interfering Episode Characters: None
+   Progression: Attempt to reverse bypass fails, leading to lifelong complications for the patient.
+
+3. **Themes and Motifs**:
    - Professional Challenges and Growth
-   - Personal Relationships and Complications
+   - Personal Relationships and Romantic Entanglements
+   - Ethical Dilemmas and Moral Choices
    - Secrets and Revelations
-   - Ethical Dilemmas in Medicine

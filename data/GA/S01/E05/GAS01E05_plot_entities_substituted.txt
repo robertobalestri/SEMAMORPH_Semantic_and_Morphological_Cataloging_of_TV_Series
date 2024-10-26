@@ -1,296 +1,298 @@
-[meredith_grey] is sleeping in the shower while holding a toothbrush.
-[meredith_grey] wakes up when her arm slips from her knee and continues her shower.
-Later, [meredith_grey] goes to the nursing home where [ellis_grey] lives.
-[meredith_grey] talks about having [ellis_grey] sign over her estate while [ellis_grey] is still clear-minded.
-[meredith_grey] watches [ellis_grey] through the glass and mentions that [meredith_grey] hasn’t slept in 48 hours.
-[meredith_grey] explains that [meredith_grey] is missing rounds because [meredith_grey] is scheduled for heart surgery that morning.
-[meredith_grey] asks if there is anyone else who can handle the situation.
-The nursing home representative tells [meredith_grey] that they are discussing [meredith_grey]'s mother’s estate, finances, and medical care.
-The representative asks if [meredith_grey] really wants to leave [meredith_grey]'s mother’s care to someone else.
+[meredith_grey] is asleep in the shower with a toothbrush.
+[meredith_grey] wakes up when her arm slips and continues showering.
+Later, [meredith_grey] visits the nursing home where her mother lives.
+[meredith_grey] talks about having her mother sign everything over to her while her mother is still clear-minded.
+[meredith_grey] watches her mother through the glass and mentions she hasn't slept in 48 hours.
+[meredith_grey] has her first heart surgery that morning and is missing rounds.
+[meredith_grey] asks if someone else can handle the situation.
+The nursing home representative explains they are discussing her mother's estate, finances, and medical care, questioning if [meredith_grey] wants to leave these matters to someone else.
 In the operating room, [preston_burke] is placing a stitch.
 [meredith_grey] starts to nod off while holding the heart.
-[preston_burke] sees [meredith_grey] jerk awake and asks about it.
-[meredith_grey] apologizes and says the heart slipped.
-[meredith_grey] adds that [preston_burke] is finished, so [meredith_grey] can release Mrs. Patterson’s heart now.
+[preston_burke] notices and asks [meredith_grey] about it.
+[meredith_grey] apologizes, saying the heart slipped, but [preston_burke] is finished, and [meredith_grey] can release [mrs_patterson]'s heart.
 As they prepare to take the patient off bypass, [george_omalley] and [cristina_yang] watch from the gallery.
 [george_omalley] feels jealous that [meredith_grey] got to hold a heart.
 [cristina_yang] believes a monkey could hold a heart.
-[george_omalley] thinks [cristina_yang] feels this way because [cristina_yang] is upset that [preston_burke] didn’t ask [cristina_yang] to help.
-[izzie_stevens] enters looking for [george_omalley].
-[izzie_stevens] tells [george_omalley] that [izzie_stevens] needs more ice and chips.
-[george_omalley] is surprised and asks how many people [izzie_stevens] invited.
-[cristina_yang] reminds [george_omalley] and [izzie_stevens] that the invite list was only for surgery, trauma, and plastics.
-[izzie_stevens] mentions that [izzie_stevens] invited some people from pediatrics, which [cristina_yang] refers to as preschoolers.
-[cristina_yang] thinks therapists will be next.
-When [izzie_stevens] turns away, [izzie_stevens] realizes [izzie_stevens] already invited them and says the party is already dead.
-[george_omalley] reminds [izzie_stevens] that [meredith_grey] thinks this is a small cocktail gathering to meet boyfriends.
-[george_omalley] asks [izzie_stevens] if [izzie_stevens] cleared it with [meredith_grey] first.
-[izzie_stevens] admits [izzie_stevens] didn’t but promises to do so.
-[cristina_yang] questions why [izzie_stevens] is using the weekend with [izzie_stevens]'s boyfriend for a party.
-[cristina_yang] assumes it’s because [izzie_stevens]'s boyfriend is not good in bed.
-[izzie_stevens] denies this and says [izzie_stevens] just wants [izzie_stevens]'s boyfriend to meet [izzie_stevens]'s friends.
-[cristina_yang] is unsure but is called away.
-[alex_karev] enters and asks about a party at [meredith_grey]'s house.
-[alex_karev] takes [cristina_yang]'s seat.
-[cristina_yang], [george_omalley], and [izzie_stevens] all say there is no party while [alex_karev] watches the surgery below.
-In the operating room, an alarm sounds, but the team is unsure of the issue.
-The anesthesiologist informs Preston [preston_burke] that the patient's temperature is rising as they massage the heart. Preston [preston_burke] comments that the patient should be able to do that on her own by now. Suddenly, the patient flatlines. Preston [preston_burke] and the team continue chest compressions while Preston [preston_burke] requests paddles and shocks the patient twice before restoring a heartbeat. Preston [preston_burke] praises the team and leaves to scrub out. As [meredith_grey] turns away from the table, [meredith_grey] sees that her fingernail has punctured her glove and worries she may have caused a problem. [dr_derek_shepherd] approaches [meredith_grey] while eating and asks how the surgery went. [meredith_grey] feels less excited when [george_omalley] arrives. [dr_derek_shepherd] sees [meredith_grey]'s change in mood. When the elevator comes, [george_omalley] and [meredith_grey] get in, leaving [dr_derek_shepherd] behind. [meredith_grey] tells [george_omalley] she might have accidentally harmed the heart while holding it. [meredith_grey] fell asleep briefly and thinks she may have squeezed it too hard. [george_omalley] brushes off [meredith_grey]'s concern, saying the heart is strong. [meredith_grey] mentions that her fingernail broke a glove. [meredith_grey] worries that she might have punctured the patient’s heart. [george_omalley] reassures [meredith_grey] that if she had, they would have noticed when they tried to restore blood flow. Since they got the patient’s heart started again, everything is fine. [meredith_grey] questions whether she should inform Preston [preston_burke].
-[george_omalley] insists there’s nothing to report because nothing went wrong and the patient is okay.
-[george_omalley] and [meredith_grey] both reassure each other that the patient is fine.
-[richard_webber], [miranda_bailey], and [george_omalley] are looking at chest films for [mrs_drake].
-[miranda_bailey] asks [george_omalley] what he notices.
-[george_omalley] sees hyperinflated lungs that are cloudy and have bullae.
-[george_omalley] notes that [mrs_drake] likely has trouble breathing.
-[miranda_bailey] then asks what [george_omalley] would do next.
-[george_omalley] replies that he would perform a bullectomy to relieve the pressure.
-[richard_webber] checks the chart and mentions that they operated on [mrs_drake] in 1999.
-Even though [mrs_drake] has had this procedure before, [george_omalley] still needs to explain it to her and avoid anti-smoking talks, as [mrs_drake] already feels bad.
-As [george_omalley] leaves, he asks [miranda_bailey] if putting the lung scan on cigarette packs would make people stop smoking.
-Meanwhile, [dr_derek_shepherd] and [alex_karev] are with a patient who has back pain.
-[alex_karev] asks the patient how long he has been in pain.
-The patient explains that it is chronic, meaning it hurts all the time.
-[alex_karev] acknowledges that he understands what chronic means and asks the patient to describe the type of pain he feels.
-The patient describes his pain as if a thousand samurai are stabbing him in the spine.
-The patient mentions he is allergic to aspirin and most NSAIDs.
-[alex_karev] suggests using morphine, but the patient insists that only Demerol or dilaudid helps.
-Derek notices track marks on the patient's arm.
-Derek and [alex_karev] leave the room, and [alex_karev] thinks the patient is just seeking drugs.
-[alex_karev] believes the patient has exaggerated his pain and calls the patient a junkie.
-Derek asks [alex_karev] what [alex_karev] would do in this situation.
-[alex_karev] wants to check the patient's history in the database, refer the patient to a program, and then discharge the patient.
-Derek agrees to check the history but insists on giving the patient something first.
-[alex_karev] feels annoyed, thinking this is what the patient wants.
-Derek argues that they must treat the pain as if it is real.
-Derek states that the first rule of pain management is to be cautious.
-Derek instructs [alex_karev] to start a central line, noting that the patient’s veins are in poor condition, and then Derek is paged away.
-[mrs_drake] tells [george_omalley] that [mrs_drake]'s last surgery was meant to help [mrs_drake], but it never felt right.
-[george_omalley] suggests that quitting smoking might have been a good idea.
-[mrs_drake] responds that [mrs_drake] used to smoke four packs a day, which was very difficult, but [mrs_drake] quit and it didn’t help at all.
-This surprises [george_omalley], who thought [mrs_drake] was still smoking based on [mrs_drake]'s scans.
-[mrs_drake] confirms that [mrs_drake] quit cold-turkey five years ago as [george_omalley] and the medical team prepare [mrs_drake] for surgery.
-[mrs_drake] explains that [mrs_drake] had to leave [mrs_drake]'s job at the restaurant because even sitting hurt, but no one believed [mrs_drake].
-[george_omalley] reassures [mrs_drake] that [george_omalley] saw the films, and it’s not just in [mrs_drake]'s head.
-[mrs_drake] asks [george_omalley] to come closer and comments that [george_omalley] looks too young to be a doctor.
-[george_omalley] insists [george_omalley] is older than [george_omalley] appears.
-[mrs_drake] inquires if [george_omalley] thinks the procedure will work this time, and [george_omalley] tells [mrs_drake] it’s [mrs_drake]'s best option.
-[mrs_drake] appreciates [george_omalley]'s honesty.
-[meredith_grey] watches from a distance as Nurse [tyler] helps [mrs_patterson] settle into [mrs_patterson]'s hospital bed.
-[meredith_grey] then approaches [mr_patterson] to greet him and get an update on [mrs_patterson]'s condition.
-[meredith_grey] reassures [mr_patterson] that [mrs_patterson]'s levels are stable.
-[meredith_grey] explains that heart surgery is very taxing on patients and that the medical team is monitoring [mrs_patterson] closely.
-[meredith_grey] believes [mrs_patterson] will be okay.
-[izzie_stevens] pulls the curtain aside as [izzie_stevens] walks over to [mr_sterman].
-[izzie_stevens] asks [mr_sterman] how [mr_sterman] is feeling today.
-[mr_sterman] replies that [mr_sterman] feels mostly fine but hopes to avoid another bowel obstruction.
-[izzie_stevens] jokes about how many people request bowel obstructions and checks if [mr_sterman] is managing to keep down clear fluids.
-[izzie_stevens] also asks [mr_sterman] if [mr_sterman] has used the bathroom yet.
-[mr_sterman] is uncertain, but [izzie_stevens] suggests [mr_sterman] would likely know if [mr_sterman] had.
-[izzie_stevens] then inquires if [mr_sterman] has passed gas.
-[mr_sterman] says yes, but [izzie_stevens] suspects [mr_sterman] is not telling the truth.
-[mr_sterman] admits [mr_sterman] lied and shares that [mr_sterman] attended medical school but dropped out during [mr_sterman]'s last year of clinical training.
-[mr_sterman] had been working too many hours and was going through a divorce.
-Now, [mr_sterman] does research and has a life and family.
-[mr_sterman] apologizes for any offense, but [izzie_stevens] reassures [mr_sterman] it’s fine.
-[izzie_stevens] believes it is possible for someone to have both a successful career and a family.
-[mr_sterman] is uncertain, thinking a doctor's main duty is to the patients.
-As [izzie_stevens] leaves Mr. Sterman’s room, [preston_burke] approaches [cristina_yang] at the nurse’s station.
-[preston_burke] hands [cristina_yang] a coffee while sipping his own.
-[cristina_yang] looks up at [preston_burke], confused.
-[preston_burke] tells [cristina_yang] it’s just coffee.
-[cristina_yang] awkwardly takes the coffee, and [preston_burke] and [cristina_yang] part ways.
-After [cristina_yang] turns the corner, [preston_burke] looks back at [cristina_yang] with a smile.
+[george_omalley] thinks [cristina_yang] feels this way because [preston_burke] didn't ask her to assist.
+[isobel_stevens] enters looking for [george_omalley], saying she needs more ice and chips.
+[george_omalley] is surprised and asks how many people [isobel_stevens] invited.
+[cristina_yang] reminds [george_omalley] and [isobel_stevens] the invite list was for 'jocks only,' meaning surgery, trauma, and plastics.
+[isobel_stevens] admits she also invited people from pediatrics, whom [cristina_yang] calls preschoolers.
+[cristina_yang] jokes that shrinks are next, and when [isobel_stevens] turns away, [cristina_yang] realizes [isobel_stevens] already invited them and says the party is already a failure.
+[george_omalley] reminds [isobel_stevens] that [meredith_grey] thinks it's a small, meet-your-boyfriend cocktail event, and asks if [isobel_stevens] got [meredith_grey]'s approval.
+[isobel_stevens] admits she didn't but promises to do so.
+[cristina_yang] questions why [isobel_stevens] is spending the weekend her boyfriend is in town on a party, assuming it's because he's bad in bed.
+[isobel_stevens] denies this and says she just wants him to meet her friends.
+[cristina_yang] is called away despite her doubts.
+[alex_karev] arrives and inquires about a party at [meredith_grey]'s house, taking [cristina_yang]'s seat.
+[cristina_yang], [george_omalley], and [isobel_stevens] deny any party while [alex_karev] observes the surgery below.
+In the operating room, an alarm sounds, but the issue is unclear.
+The anesthesiologist informs [preston_burke] that the patient's temperature is rising as they massage the heart.
+[preston_burke] comments that the heart should be working on its own by now when the patient flatlines.
+They continue compressions, and [preston_burke] uses paddles to shock the patient twice, restoring a rhythm.
+[preston_burke] praises the team and leaves to scrub out.
+[meredith_grey] notices her fingernail has punctured her glove and worries she may have caused a problem.
+[derek_shepherd], while eating, approaches [meredith_grey] and asks about the surgery.
+[meredith_grey] seems less excited when [george_omalley] joins them.
+[derek_shepherd] notices [meredith_grey]'s change in attitude.
+When the elevator arrives, [george_omalley] and [meredith_grey] get on, leaving [derek_shepherd] behind.
+[meredith_grey] confides in [george_omalley] that she might have done something to the heart while holding it.
+[meredith_grey] admits she nodded off and thinks she might have squeezed it.
+[george_omalley] reassures [meredith_grey], saying the heart is a strong muscle.
+[meredith_grey] mentions her fingernail popped a glove and worries she might have punctured the heart.
+[george_omalley] explains that if [meredith_grey] had punctured it, they would have noticed when they tried to reperfuse, but since the heart started again, the patient is fine.
+[meredith_grey] considers telling [preston_burke].
+[george_omalley] questions what there is to tell since nothing happened and the patient is okay.
+[meredith_grey] and [george_omalley] both continue to reassure each other that the patient is fine.
+[richard_webber], [miranda_bailey], and [george_omalley] are looking at chest X-rays for [mrs_drake].
+[miranda_bailey] asks [george_omalley] for his observations.
+[george_omalley] notes the lungs are hyperinflated, cloudy with bullae, and have reduced capacity, suggesting breathing difficulties.
+[miranda_bailey] inquires about [george_omalley]'s next steps, and [george_omalley] mentions he would perform a bullectomy to relieve pressure.
+[richard_webber], holding the chart, mentions they operated on [mrs_drake] in 1999.
+Despite her previous procedure, [george_omalley] needs to explain it to [mrs_drake] again and avoid anti-smoking lectures, as she already feels guilty.
+As [george_omalley] leaves, he asks [miranda_bailey] if displaying lung scans on cigarette packs would deter smoking.
+Meanwhile, [derek_shepherd] and [alex_karev] are with a patient who has back pain.
+[alex_karev] asks how long the pain has persisted.
+The patient describes it as chronic, meaning it is constant.
+[alex_karev] acknowledges understanding "chronic" and requests more details about the pain type.
+The patient describes the pain as feeling like a thousand swords stabbing his spine.
+The patient mentions being allergic to aspirin and most NSAIDs.
+[alex_karev] suggests using morphine, but the patient insists that only Demerol or Dilaudid work for him.
+[derek_shepherd] notices track marks on the patient's arm.
+Outside the room, [alex_karev] thinks the patient is seeking drugs.
+[alex_karev] believes the patient exaggerated the pain and calls him a junkie.
+[derek_shepherd] asks [alex_karev] what he would do.
+[alex_karev] suggests checking the patient's history in the database, referring him to a program, and discharging him.
+[derek_shepherd] tells [alex_karev] he can do that after giving the patient something for the pain.
+[alex_karev] is frustrated, saying that's what the patient wants.
+[derek_shepherd] explains they must treat the pain as if it's real and that they should always be cautious in pain management.
+[derek_shepherd] instructs [alex_karev] to start a central line, noting the patient's veins are damaged, and then [derek_shepherd] is paged away.
+[mrs_drake] mentioned to [george_omalley] that her last surgery was meant to help, but it never felt right.
+[george_omalley] suggested that quitting smoking might have been wise.
+[mrs_drake] retorted that she had a 4-pack-a-day habit, which was tough, but she did quit, and it didn’t help.
+[george_omalley] was surprised and said he thought [mrs_drake] was still smoking based on her scans.
+[mrs_drake] confirmed she quit cold turkey 5 years ago as they prepared her for surgery.
+[mrs_drake] shared that she had to leave her restaurant job because even sitting was painful, but no one believed her.
+[george_omalley] assured [mrs_drake] he saw the films and it wasn’t just in her head.
+[mrs_drake] asked [george_omalley] to come closer and remarked he seemed too young to be a doctor.
+[george_omalley] replied that he was older than he looked.
+[mrs_drake] inquired if the procedure would work this time, and [george_omalley] said it was her best option.
+[mrs_drake] appreciated [george_omalley]'s honesty.
+[meredith_grey] watches as [tyler_nurse] helps [mrs_patterson] settle into the hospital bed.
+[meredith_grey] then greets [mr_patterson] and learns about [mrs_patterson]'s condition.
+[meredith_grey] assures [mr_patterson] that [mrs_patterson]'s levels are good and explains that heart surgery is very taxing.
+[meredith_grey] says they are monitoring [mrs_patterson] closely, and she should recover well.
+[isobel_stevens] approaches [mr_sterman] and asks about his condition.
+[mr_sterman] says he feels okay but doesn’t want another bowel obstruction.
+[isobel_stevens] jokes that many people request them and asks if [mr_sterman] is managing clear fluids and if he has used the bathroom.
+[mr_sterman] is unsure, so [isobel_stevens] asks if he has passed gas.
+[mr_sterman] lies and says yes, but [isobel_stevens] knows he’s not telling the truth.
+[mr_sterman] apologizes and reveals he attended medical school but left during his final year of clinical training.
+[mr_sterman] worked too many hours and was going through a divorce.
+Now, [mr_sterman] does research and has a family.
+[mr_sterman] apologizes, saying he meant no offense.
+[isobel_stevens] assures [mr_sterman] it's fine.
+[isobel_stevens] believes it's possible to have both a successful career and a family.
+[mr_sterman] doubts it, thinking doctors must prioritize their patients.
+As [isobel_stevens] leaves [mr_sterman]'s room, [preston_burke] approaches [cristina_yang] at the nurse's station and gives [cristina_yang] a coffee.
+[cristina_yang] looks at [preston_burke], confused, while [preston_burke] drinks his own coffee.
+[preston_burke] tells [cristina_yang] it's just coffee.
+[cristina_yang] awkwardly accepts it, and they part ways.
+As [cristina_yang] turns the corner, [preston_burke] watches [cristina_yang] with a smile.
 [meredith_grey] is washing her face in the locker room.
-[richard_webber] is doing a procedure on [mrs_drake] while [miranda_bailey] explains it to [george_omalley].
-[miranda_bailey] and [george_omalley] see something strange in the field, which surprises [miranda_bailey].
+[richard_webber] is doing a 'spaghetti procedure' on [mrs_drake].
+[miranda_bailey] explains the procedure to [george_omalley].
+They notice something unusual, surprising [miranda_bailey].
 [richard_webber] decides to switch to an open procedure and removes the scopes.
-[richard_webber] makes an incision while [miranda_bailey] helps him.
-[richard_webber] then pulls a towel out from inside [mrs_drake].
-[george_omalley] asks [richard_webber] where the towel came from, and [richard_webber] guesses it might be from [mrs_drake]'s surgery five years ago.
-[miranda_bailey] warns that something careless is happening and continues to assist.
-[cristina_yang] joins [richard_webber], [miranda_bailey], and [george_omalley] outside the operating room.
-[cristina_yang] is surprised that [richard_webber], [miranda_bailey], and [george_omalley] found a towel in a patient.
-[george_omalley] explains that [mrs_drake] had complained of chest pressure, but no one took [mrs_drake] seriously.
-[richard_webber] leaves, stating that the situation is bad for [mrs_drake] and the hospital.
-[miranda_bailey] asks [cristina_yang] to look through the files for details about the initial operation.
-[miranda_bailey] needs [cristina_yang] to find out who was in the room and who closed it.
-[miranda_bailey] tells [george_omalley] to stay with [mrs_drake], who seems to like [george_omalley].
-[george_omalley] asks how long he has to wait since [george_omalley]'s shift ends at 6pm.
-[miranda_bailey] knows about the party and asks [george_omalley] if [miranda_bailey] is invited.
-[george_omalley] confirms that [miranda_bailey] is invited.
-After [miranda_bailey] leaves, [cristina_yang] looks at [george_omalley] with irritation.
-[george_omalley] is confused about what [george_omalley] should have said.
-[izzie_stevens] is on the phone ordering beer for the party when [alex_karev] approaches [izzie_stevens].
-[alex_karev] asks for local microbrews and bar snacks.
-[izzie_stevens] tells [alex_karev] she is ordering office supplies but agrees to add [alex_karev]'s request and changes the delivery time from 5 to 7.
-[mr_sterman] walks by and jokingly asks if [mr_sterman] will be invited to the party if [mr_sterman] poops.
-Derek hears a pain patient complaining and struggling with a nurse as Derek walks by.
-Frost asks Derek where Derek has been.
-Derek assures Frost that Derek will help and goes to find [alex_karev].
-Derek scolds [alex_karev] for not starting a central line without questioning Derek.
-[alex_karev] responds that the patient has been in seven hospitals in four months and is an addict.
-Derek acknowledges the patient’s addiction but insists that the patient’s pain is real.
-Derek tells [alex_karev] to stop being disrespectful and to start the central line.
-[george_omalley] is with [mrs_drake].
-[mrs_drake] mentions that a handsome, older male surgeon told [mrs_drake] that [mrs_drake] had a towel inside her.
-[george_omalley] informs [mrs_drake] that the surgeon is [richard_webber], their chief.
-[mrs_drake] realizes that the towel was left inside after Mrs. Drake’s last surgery and questions how that could happen.
-[george_omalley] agrees that it doesn’t seem right.
-[cristina_yang] enters an office and begins searching through files for information about Mrs. Drake’s initial surgery.
-[cristina_yang] finds a post-operative report.
-The report lists Dr. John Davies as the surgeon and [dr_preston_burke] as the surgical fellow.
-[cristina_yang] takes this information to [miranda_bailey] and asks what will happen next.
-[miranda_bailey] tells [cristina_yang] to keep it private while they sort it out.
-[meredith_grey] is at the nurse’s station when Derek approaches [meredith_grey].
-Derek notices that [meredith_grey] seems off and asks if [meredith_grey] is okay.
-[meredith_grey] replies that [meredith_grey] is just tired from a long procedure.
-Derek invites [meredith_grey] to dinner that night, but [meredith_grey] declines.
-Derek suggests that [meredith_grey] forget about the party, which surprises [meredith_grey] since [meredith_grey] hadn’t mentioned it.
-Derek sarcastically thanks [meredith_grey] for not inviting him, saying it felt good.
-Derek tells [meredith_grey] to think about dinner as Derek leaves, and [meredith_grey] receives a page.
-[meredith_grey] goes to Mrs. Patterson’s bed.
-Nurse [tyler] informs [meredith_grey] that there was swelling over the sternum, followed by blood gushing.
-Preston [preston_burke] has been paged by someone.
-[mr_patterson] is anxious to know if [mrs_patterson] is dying.
-[meredith_grey] asks someone to take [mr_patterson] away and to apply pressure to the wound.
-When Preston [preston_burke] arrives, Preston instructs [tyler] to call for an operating room and asks [meredith_grey] for an update.
-[meredith_grey] informs Preston that [mrs_patterson] has received medication without any allergic reactions and shares [meredith_grey]'s lab results.
-Preston is confused about what went wrong and tells the team to act quickly.
-[meredith_grey] hesitates but admits that [meredith_grey] accidentally popped a glove in the operating room.
-[mr_patterson] overhears this and watches as the team takes [mrs_patterson] to surgery.
-In the operating room, Preston scolds [meredith_grey] for not speaking up earlier.
-Preston points out that [meredith_grey] had many chances to inform Preston before Preston closed and that [meredith_grey] confessed in front of [mr_patterson].
-Preston mentions that [meredith_grey] is unsure if [meredith_grey] is to blame, and [meredith_grey] keeps apologizing.
-Preston then identifies the issue and signals for [meredith_grey] to join him at the table.
-There is a significant rupture in the wall, much larger than a fingernail.
-Preston informs [meredith_grey] that [mrs_patterson] has weak ventricular walls just as [richard_webber] enters from the scrub room.
-[richard_webber] says he spoke with [mr_patterson] and needs copies of [mrs_patterson]'s chart in his office by 5 PM.
-[richard_webber] adds that [preston_burke] and [meredith_grey] will meet with legal tomorrow and must explain what happened.
-As [richard_webber] leaves, [richard_webber] complains about people damaging hearts and leaving towels behind.
-[preston_burke] tells [meredith_grey] he will return to speak with [mr_patterson] and advises [meredith_grey] to review the history and apologize sincerely.
-[preston_burke] warns [meredith_grey] that her job is at stake.
-[meredith_grey] is now going over the chart with [cristina_yang] and [george_omalley].
-[meredith_grey] informs [cristina_yang] and [george_omalley] that she must meet the chief tomorrow morning.
-[meredith_grey] mentions that she might be removed from the program.
-[george_omalley] doubts that [meredith_grey] will be removed.
-[cristina_yang] believes that [mr_patterson] will file a lawsuit.
-[cristina_yang] questions why [meredith_grey] told [preston_burke].
-[george_omalley] mentions he advised [meredith_grey] not to share that information.
-[meredith_grey]'s phone rings, and [meredith_grey] says she needs to answer it.
-[meredith_grey] sarcastically thanks [cristina_yang] and [george_omalley] for their support.
-[izzie_stevens] arrives with coffee, a banana, and chips.
-[cristina_yang] mentions that beer will arrive at 7 PM and some floor nurses are bringing wine.
-[cristina_yang] is upset that [izzie_stevens] invited nurses.
-[george_omalley] asks if [izzie_stevens] checked with [meredith_grey].
-[izzie_stevens] argues that a few more guests won't matter; a party is a party.
-[cristina_yang] agrees but adds that a bigger party means less time for [cristina_yang]'s bad sex with [cristina_yang]'s hockey player.
-[izzie_stevens] tells [cristina_yang] to stop, claiming that [izzie_stevens] and [hank] have great sex often.
-[izzie_stevens] suggests that [izzie_stevens] and [hank] might even have sex after or during the party.
-[cristina_yang] laughs.
-[george_omalley] reminds [cristina_yang] to check with [meredith_grey].
-[izzie_stevens] says [hank] needs to understand that doctors can have fun and are not just workaholics.
-[cristina_yang] disagrees, saying that is exactly what doctors are, which annoys [izzie_stevens].
-Meanwhile, [george_omalley] plays with an inflated glove.
-[meredith_grey] is on the phone.
-[meredith_grey] confirms that the notary will arrive at 6:30.
-The doctor will also be there to verify [meredith_grey]'s mother’s mental competency.
-[meredith_grey] asks if [meredith_grey] needs to bring anything besides [meredith_grey]'s license and checkbook.
-After confirming the time again, [meredith_grey] ends the call as Derek arrives.
-Derek mentions that Derek heard [meredith_grey]'s conversation.
-[meredith_grey] thinks Derek is referring to her phone call and tries to change the subject.
-However, Derek is actually talking about the heart issue and asks if [meredith_grey] wants to discuss it.
-[meredith_grey] responds that [meredith_grey] and Derek are adults but wonders when that happened and how to stop it as [meredith_grey] leaves.
-[cristina_yang] returns a patient chart to the rack.
-[preston_burke] is at the nurse’s station, busy with charting.
+[richard_webber] makes an incision while [miranda_bailey] assists.
+[richard_webber] pulls a towel from inside [mrs_drake].
+[george_omalley] wonders about the towel's origin.
+[richard_webber] guesses it’s from [mrs_drake]'s surgery 5 years ago.
+[miranda_bailey] comments on the carelessness and continues assisting.
+[cristina_yang] joins [richard_webber], [miranda_bailey], and [george_omalley] outside the OR.
+[cristina_yang] is surprised about the towel.
+[george_omalley] explains [mrs_drake] had complained about chest pressure, but no one took her seriously.
+[richard_webber] said it was bad for [mrs_drake] and the hospital as he left.
+[miranda_bailey] asked [cristina_yang] to find all information about the initial operation, including who was present and who closed.
+[miranda_bailey] told [george_omalley] to stay with [mrs_drake], who liked him.
+[george_omalley] asked how long he needed to wait since his shift ended at 6pm.
+[miranda_bailey] knew about the party and asked if she was invited.
+[george_omalley] confirmed [miranda_bailey] was.
+After [miranda_bailey] left, [cristina_yang] looked at [george_omalley] annoyed, but [george_omalley] was unsure what else to say.
+[isobel_stevens] was on the phone ordering beer for the party when [alex_karev] asked for local microbrews and bar nuts.
+[isobel_stevens] pretended to order office supplies but made the request and changed delivery from 5 to 7.
+[mr_sterman] passed [isobel_stevens] and joked about being invited if he pooped.
+[derek_shepherd] heard his pain patient complaining and struggling with a nurse as [derek_shepherd] walked by.
+Mr.
+[jerry_frost] asks [derek_shepherd] where [derek_shepherd] has been.
+[derek_shepherd] assures [jerry_frost] they will help and goes to find [alex_karev].
+[derek_shepherd] criticizes [alex_karev] for not starting a central line as instructed.
+[alex_karev] explains the patient has been in seven hospitals in four months and is an addict.
+[derek_shepherd] points out the patient has a 3-lumbar fusion, but [alex_karev] only sees an addict.
+[derek_shepherd] acknowledges the addiction but insists the pain is real.
+[derek_shepherd] tells [alex_karev] to drop the attitude and start the central line.
+[george_omalley] is with [mrs_drake], who mentions a handsome, older surgeon told her about a towel left inside her.
+[george_omalley] identifies the surgeon as [richard_webber], their chief.
+[mrs_drake] realizes the towel was left after her last surgery and questions how that could happen.
+[george_omalley] agrees with [mrs_drake]'s concern.
+[cristina_yang] enters an office and searches through files for information on Mrs. Drake’s initial surgery.
+[cristina_yang] finds a post-op report naming [dr_john_davies] as the surgeon and [preston_burke] as the surgical fellow.
+[cristina_yang] takes this information to [miranda_bailey] and asks what to do next.
+[miranda_bailey] advises [cristina_yang] to keep it private while they figure it out.
+[meredith_grey] is at the nurse’s station when [derek_shepherd] approaches.
+[derek_shepherd] senses something is wrong and asks [meredith_grey] if she’s okay.
+[meredith_grey] says she’s just tired from a long procedure.
+[derek_shepherd] invites [meredith_grey] to dinner, but [meredith_grey] declines.
+[derek_shepherd] mentions forgetting about the party, surprising [meredith_grey] since she hadn’t told [derek_shepherd] about it.
+[derek_shepherd] sarcastically thanks [meredith_grey] for not inviting him and suggests she reconsider dinner as he leaves.
+[meredith_grey] is then paged.
+[meredith_grey] goes to Mrs. Patterson’s bed, where [tyler_nurse] informs [meredith_grey] there was swelling over the sternum, followed by heavy bleeding.
+[tyler_nurse] had already contacted [preston_burke].
+[mr_patterson] wanted to know if [mrs_patterson] was dying.
+[meredith_grey] asked someone to remove [mr_patterson] and apply pressure to the wound.
+When [preston_burke] arrived, he instructed [tyler_nurse] to arrange an OR and asked [meredith_grey] for an update.
+[meredith_grey] informed [preston_burke] that [mrs_patterson] had received medication without any allergic reactions and updated him on her lab results.
+[preston_burke] was unsure about the issue and told the team to move.
+[meredith_grey] hesitated but admitted she had torn a glove in the OR.
+[mr_patterson] heard everything and watched as they took [mrs_patterson] to surgery.
+In the OR, [preston_burke] criticized [meredith_grey] for not speaking up earlier.
+[meredith_grey] had chances to tell [preston_burke] before he closed, but instead, she confessed in front of [mr_patterson].
+[preston_burke] says [meredith_grey] isn't sure if it was her fault and keeps apologizing.
+[preston_burke] finds the problem and calls [meredith_grey] to the table.
+There is a rupture in the wall, larger than a fingernail.
+[preston_burke] explains that [mrs_patterson]'s ventricular walls are weak.
+[richard_webber] enters from the scrub room and mentions he spoke with [mr_patterson].
+[richard_webber] requests copies of [mrs_patterson]'s chart in his office by 5pm.
+[richard_webber] informs [preston_burke] and [meredith_grey] that they will meet with legal tomorrow and must explain the situation.
+As [richard_webber] leaves, he complains about mistakes like poking holes in hearts and leaving towels behind.
+[preston_burke] tells [meredith_grey] he will talk to [mr_patterson] and advises her to review the history and apologize a lot.
+[meredith_grey]'s job is at risk.
+[meredith_grey] is reviewing the chart with [cristina_yang] and [george_omalley].
+[meredith_grey] mentions she has to meet the chief tomorrow morning and might be expelled from the program.
+[george_omalley] doubts [meredith_grey] will be expelled, while [cristina_yang] thinks [mr_patterson] might sue.
+[cristina_yang] questions why [meredith_grey] informed [preston_burke].
+[george_omalley] says he advised [meredith_grey] not to tell [preston_burke].
+[meredith_grey]'s phone rings, and she sarcastically thanks [cristina_yang] and [george_omalley] for their support as she answers it.
+[isobel_stevens] arrives with coffee, a banana, and chips, mentioning that beer will arrive at 7 PM and some floor nurses are bringing wine.
+[cristina_yang] is annoyed about the nurses being invited.
+[george_omalley] asks if [isobel_stevens] has [meredith_grey]'s approval.
+[isobel_stevens] believes a few more people won't matter, saying a party is a party.
+[cristina_yang] agrees, noting that a bigger party means less time for bad sex with her hockey player.
+[isobel_stevens] tells [cristina_yang] to stop, insisting she and [hank] have great sex often and might even during the party.
+[cristina_yang] laughs, and [george_omalley] reminds [isobel_stevens] to check with [meredith_grey].
+[isobel_stevens] mentions that [hank] needs to see doctors can have fun and aren't just workaholics.
+[cristina_yang] insists doctors are workaholics, which annoys [isobel_stevens].
+[george_omalley] plays with an inflated glove.
+[meredith_grey] is on the phone confirming a notary will arrive at 6:30, along with the home's doctor to verify her mother's mental competency.
+[meredith_grey] asks if she needs anything besides her license and checkbook, confirms the time again, and ends the call.
+[derek_shepherd] approaches [meredith_grey], having overheard.
+[meredith_grey] assumes [derek_shepherd] is talking about her call and tries to cover, but [derek_shepherd] is referring to the heart issue and asks if she wants to discuss it.
+[meredith_grey] says they're adults but questions when that happened and how to stop it as she leaves.
+[cristina_yang] puts a patient chart back on the rack while [preston_burke] is working at the nurse’s station.
 [cristina_yang] and [preston_burke] greet each other awkwardly.
-[cristina_yang] brings up the heart graft issue.
-[preston_burke] responds that it was manageable for him.
-[cristina_yang] walks away, feeling uncertain.
-[mr_patterson] is outside the hospital on the phone.
-[mr_patterson] quickly hangs up when [meredith_grey] approaches.
-[mr_patterson] explains that it was his lawyer, who advised him not to speak with [meredith_grey].
-[meredith_grey] sees that [mr_patterson] is frustrated and angry.
-[meredith_grey] asks [mr_patterson] for details about his wife.
-[meredith_grey] informs [mr_patterson] that his wife's heart walls are unusually thin, which makes [mr_patterson] even angrier.
-[mr_patterson] tells [meredith_grey] not to blame his wife for the situation.
-[mr_patterson] insists that he heard directly from his wife what happened.
-[mr_patterson] claims his wife was in excellent health and suggests that [meredith_grey] consult his wife's cardiologist.
-[mr_patterson] mentions that [mrs_patterson] had recently lost 100 pounds and warns [meredith_grey] not to place any blame on [mrs_patterson].
-[meredith_grey] tries to talk again, but [mr_patterson] says he is finished and walks away.
-[alex_karev] and Derek are in [jerry_frost]'s room.
-[alex_karev] and Derek tell [jerry_frost] that they know [jerry_frost] is there to ask for drugs because of [jerry_frost]'s addiction.
-[alex_karev] and Derek advise [jerry_frost] to go home and seek help.
-[izzie_stevens] is in [mr_sterman]'s room when Derek asks [izzie_stevens] to discharge the drug-addicted patient.
-In the hallway, [izzie_stevens] and [george_omalley] plan to get beers for the party.
-[izzie_stevens] asks [george_omalley] to get the beers.
-[alex_karev] overhears [izzie_stevens] and [george_omalley] and suggests [izzie_stevens] should ask her boyfriend instead.
-[izzie_stevens] replies that she didn't invite [alex_karev] because [alex_karev] is unpleasant.
-[alex_karev] claims he wouldn't have come anyway.
-[george_omalley] is concerned that [meredith_grey] doesn't realize how many people will be at [meredith_grey]'s house.
-[izzie_stevens] wants to inform [meredith_grey], but [cristina_yang] warns [izzie_stevens] that [meredith_grey] has already left.
-[george_omalley] asks [izzie_stevens] to tell [meredith_grey] that [george_omalley] is not involved in the party.
-[meredith_grey] goes to the notary.
-[ellis_grey], who has Alzheimer's, refuses to sign the house documents.
-[meredith_grey] pleads with [ellis_grey] to focus and sign.
-The notary's secretary informs [meredith_grey] that they cannot complete the deal that day.
-[izzie_stevens] suggests [meredith_grey] return the next day when [ellis_grey] is clearer.
+[cristina_yang] mentions the heart graft complication.
+[preston_burke] says he could handle it.
+[cristina_yang] walks away but feels uncertain.
+[mr_patterson] is on the phone outside the hospital.
+[mr_patterson] ends the call when [meredith_grey] approaches.
+[mr_patterson] explains it was his lawyer, who advised against talking to [meredith_grey].
+[meredith_grey] understands [mr_patterson]'s frustration and anger.
+[meredith_grey] asks for information about [mr_patterson]'s wife.
+[meredith_grey] explains the walls of [mrs_patterson]'s heart are abnormally thin.
+This angers [mr_patterson] more.
+[mr_patterson] insists not to blame his wife.
+[mr_patterson] says he heard directly from [mrs_patterson] what happened.
+[mr_patterson] claims she was in the best shape of her life.
+[mr_patterson] suggests [meredith_grey] ask [mrs_patterson]'s cardiologist.
+[mr_patterson] mentions [mrs_patterson] had just lost 100 pounds and warns [meredith_grey] not to blame his wife.
+[meredith_grey] tries again to talk, but [mr_patterson] refuses and leaves.
+[alex_karev] and [derek_shepherd] are in [jerry_frost]'s room.
+[alex_karev] and [derek_shepherd] tell [jerry_frost] they've realized he's only there to get drugs because of his addiction.
+[alex_karev] and [derek_shepherd] advise [jerry_frost] to go home and seek help.
+Meanwhile, [isobel_stevens] is in [mr_sterman]'s room.
+[derek_shepherd] asks [isobel_stevens] to discharge the drug-addicted patient.
+In the hallway, [isobel_stevens] and [george_omalley] plan to get beers for the party.
+[isobel_stevens] asks [george_omalley] to buy them.
+[alex_karev] overhears and teasingly suggests [isobel_stevens] ask her boyfriend.
+[isobel_stevens] irritably replies that she didn't invite [alex_karev] because [alex_karev] is unpleasant.
+[alex_karev] says [alex_karev] wouldn't have come anyway.
+[george_omalley] is concerned that [meredith_grey] doesn't know how many people will be at [meredith_grey]'s house.
+[isobel_stevens] wants to tell [meredith_grey], but [cristina_yang] warns that [meredith_grey] has already left.
+[george_omalley] asks [isobel_stevens] to inform [meredith_grey] that [george_omalley] is not involved with the party.
+[meredith_grey] goes to the notary, but [meredith_grey]'s mother, who is having an Alzheimer's crisis, won't sign the house documents.
+[meredith_grey] pleads with her mother to focus and sign.
+The notary's secretary informs [meredith_grey] that they can't complete the deal that day and suggests [meredith_grey] return when her mother is clear-headed.
 Frustrated, [meredith_grey] leaves angrily.
-[cristina_yang] sees [miranda_bailey] and [preston_burke] talking.
-[cristina_yang] realizes [miranda_bailey] is giving [preston_burke] the files about the surgery where a sponge was left inside [mrs_drake].
-[preston_burke] looks through the files, feeling worried.
-When [meredith_grey] gets home, [meredith_grey] finds a party happening at [meredith_grey]'s place.
-During the party, [cristina_yang] asks [miranda_bailey] for updates on [mrs_drake]'s sponge case.
-[miranda_bailey] advises [cristina_yang] not to get involved.
-At the hospital, [izzie_stevens] and [alex_karev], along with a nurse, are escorting [jerry_frost].
-[jerry_frost] reacts violently.
-Some nurses try to hold a man down, but the man gets up and runs away.
-The man falls, hits his head, and loses consciousness.
-Derek looks at the CT scan results of [jerry_frost]'s head.
-Derek asks [izzie_stevens] and [alex_karev] what they see in the scans.
-[izzie_stevens] and [alex_karev] identify a subdural hemorrhage.
-Derek states that they need to perform surgery right away.
-Derek asks [izzie_stevens] if [izzie_stevens] was meant to leave or if [izzie_stevens] wants to stay for the surgery.
-[izzie_stevens] replies that [izzie_stevens] wants to stay.
-At the party, [meredith_grey] sees [george_omalley] and asks about [izzie_stevens]. [meredith_grey] scolds [george_omalley] because the party was meant to be a small gathering for friends to meet [meredith_grey]'s boyfriend. [meredith_grey] expresses that [meredith_grey] can't handle the situation. [george_omalley] offers to ask everyone to leave. Meanwhile, a drunk [cristina_yang] approaches [meredith_grey]. [meredith_grey] drinks and dances with [cristina_yang]. [meredith_grey] and [cristina_yang] invite [george_omalley] to join them. Derek, [izzie_stevens], and [alex_karev] are in surgery with a patient named [jerry_frost]. [alex_karev] shares that [alex_karev]'s father struggled with heroin addiction. At the party, [cristina_yang] and [meredith_grey] continue to drink and have fun. [hank] arrives and inquires about [izzie_stevens]. [cristina_yang] tells [hank] that [izzie_stevens] is not there and won't return soon. [hank] expresses surprise at the large party for [hank]. [hank] repeatedly asks when [izzie_stevens] will show up. After the surgery, Derek asks [izzie_stevens] and [alex_karev] to care for the patient. [alex_karev] assures [izzie_stevens] he will handle it and tells [izzie_stevens] she can go to her boyfriend. [izzie_stevens] thanks [alex_karev] and looks troubled. [hank] waits outside the hospital for [izzie_stevens].
-[izzie_stevens] and [hank] greet each other with a kiss.
-[izzie_stevens] starts to talk about her surgery.
-[hank] says [hank] did not want a big party and does not want to meet [izzie_stevens]'s coworkers.
-[izzie_stevens] reminds [hank] that [hank] did not mind meeting [izzie_stevens]'s colleagues when [izzie_stevens] was a model.
-[hank] replies that [izzie_stevens] used to attend her parties back then.
-[izzie_stevens] insists her life has changed and her patients come first now.
-[izzie_stevens] and [hank] argue about [hank] traveling a long way for [izzie_stevens] while [izzie_stevens] chose work over [hank].
-[izzie_stevens] asks [hank] to come to the party, but [hank] refuses and leaves.
-[meredith_grey] is outside the house, drunk, and sees [dr_derek_shepherd] leaning against a car, waiting for [meredith_grey].
-[meredith_grey] and Derek begin flirting and discuss tequila.
-[meredith_grey] and Derek kiss and have sex in the car.
-[miranda_bailey] sees [meredith_grey] and Derek from outside the car.
+[cristina_yang] notices [miranda_bailey] and [preston_burke] talking.
+[cristina_yang] realizes [miranda_bailey] is giving [preston_burke] files about a surgery where [preston_burke] left a sponge inside [mrs_drake].
+[preston_burke] looks at the files, concerned.
+[meredith_grey] returns home to find a party happening at [meredith_grey]'s place.
+During the party, [cristina_yang] asks [miranda_bailey] for updates on [mrs_drake]'s case.
+[miranda_bailey] advises [cristina_yang] to stay out of it.
+At the hospital, [isobel_stevens], [alex_karev], and a nurse are escorting [jerry_frost], who suddenly becomes violent.
+Some nurses try to hold [jerry_frost], but [jerry_frost] escapes, falls, hits his head, and loses consciousness.
+[derek_shepherd] looks at [jerry_frost]'s CT scan.
+[derek_shepherd] asks [isobel_stevens] and [alex_karev] what they notice.
+[isobel_stevens] and [alex_karev] see a subdural hemorrhage.
+[derek_shepherd] says they must operate right away.
+[derek_shepherd] asks [isobel_stevens] if she is leaving or staying for the surgery.
+[isobel_stevens] says she wants to stay.
+At the party, [meredith_grey] asks [george_omalley] about [isobel_stevens]'s whereabouts.
+[meredith_grey] tells [george_omalley] the party was meant to be a small gathering to meet her boyfriend.
+[meredith_grey] says she is overwhelmed, and [george_omalley] offers to send everyone home.
+Meanwhile, [cristina_yang], who is drunk, greets [meredith_grey].
+[meredith_grey] and [cristina_yang] start drinking and dancing.
+[meredith_grey] and [cristina_yang] invite [george_omalley] to join them.
+[derek_shepherd], [isobel_stevens], and [alex_karev] are performing surgery on [jerry_frost].
+[alex_karev] mentions [alex_karev]'s father was addicted to heroin.
+At the party, [cristina_yang] and [meredith_grey] continue playing while drunk.
+[hank] arrives and asks about [isobel_stevens].
+[cristina_yang] tells [hank] [isobel_stevens] isn't there and won't return soon.
+[hank] is surprised by the large party and keeps asking when [isobel_stevens] will arrive.
+After the surgery, [derek_shepherd] asks [isobel_stevens] and [alex_karev] to finish caring for [jerry_frost].
+[alex_karev] offers to handle it and tells [isobel_stevens] she can go to her boyfriend.
+[isobel_stevens] thanks [alex_karev] but looks upset.
+[hank] waits outside the hospital for [isobel_stevens].
+[hank] and [isobel_stevens] greet with a kiss.
+[isobel_stevens] starts talking about the surgery.
+[hank] mentions he didn't want a big party and doesn't want to meet [isobel_stevens]'s coworkers.
+[isobel_stevens] reminds [hank] he was okay meeting her colleagues when she was a model.
+[hank] points out [isobel_stevens] used to attend those parties.
+[isobel_stevens] insists her life has changed and her patients are now her priority.
+[hank] and [isobel_stevens] argue because [hank] traveled far for her, but she focused on work.
+[isobel_stevens] asks [hank] to come to the party.
+[hank] refuses and leaves.
+[meredith_grey] is outside the house, drunk.
+[meredith_grey] sees [derek_shepherd] leaning against a car, waiting for her.
+[meredith_grey] and [derek_shepherd] start flirting and talk about tequila.
+[meredith_grey] and [derek_shepherd] kiss and have sex in the car.
+[miranda_bailey] sees [meredith_grey] and [derek_shepherd] from outside.
 The next morning, the house is messy.
-[george_omalley] brings a cup to [meredith_grey].
-[meredith_grey] tells [george_omalley] she has to meet with the chief in an hour.
-[izzie_stevens] walks in and asks about the mess.
-[meredith_grey] jokingly says she shouldn't talk to [izzie_stevens] anymore, but questions why it matters since [meredith_grey] had nothing else to do.
-[george_omalley] sarcastically reminds [meredith_grey] that [meredith_grey] was supposed to prepare for a meeting that could ruin [meredith_grey].
-[meredith_grey] and [izzie_stevens] then discuss [mrs_patterson].
-[meredith_grey] states that the heart should not have torn.
-[meredith_grey] mentions that [mrs_patterson] lost 50 pounds and was in great shape.
-[izzie_stevens] thinks about whether losing 50 pounds in a year affected [mrs_patterson]'s muscle mass.
+[george_omalley] brings [meredith_grey] a cup.
+[meredith_grey] tells [george_omalley] she has to meet the chief in an hour.
+[isobel_stevens] enters and asks about the mess.
+[meredith_grey], feeling down, jokes that [isobel_stevens] shouldn't talk to her, but says it’s no big deal since she had nothing else to do.
+[george_omalley] sarcastically reminds [meredith_grey] she was supposed to prepare for a meeting that could ruin her.
+They discuss [mrs_patterson].
+[meredith_grey] says the heart shouldn't have torn because [mrs_patterson] lost 50 pounds and was in great shape.
+[isobel_stevens] thinks about whether losing 50 pounds in a year affected [mrs_patterson]'s muscle mass.
 [meredith_grey] is at a meeting.
-Meanwhile, [george_omalley], [izzie_stevens], and [cristina_yang] are betting on the meeting's outcome.
-During her talk with [richard_webber], [meredith_grey] takes responsibility for the previous day's events.
-[meredith_grey] mentions that [mrs_patterson]'s weight of 100 pounds is important.
-Mrs. Patterson’s muscle mass, including her heart muscle, has greatly decreased due to extreme weight loss.
-[richard_webber] believes this explains the heart tearing from a minor impact.
-The hospital lawyer points out that [meredith_grey] did not report the minor impact quickly, which puts the hospital at risk.
-Dr. [preston_burke] supports [meredith_grey] and shares his experience with a patient named [mrs_drake].
-Dr. [preston_burke] recalls that five years ago, as a resident, he did not report leaving a sponge inside a patient.
-Dr. [preston_burke] was afraid of a meeting that could ruin his career.
-Dr. [preston_burke] argues that even skilled doctors make mistakes and should feel safe to speak up.
-[meredith_grey] informs her colleagues that [meredith_grey] was not fired and will be monitored for a month.
-[miranda_bailey] tells [cristina_yang] that Dr. [preston_burke] had planned to reveal the secret about [mrs_drake]'s case; Dr. [preston_burke] was just waiting for the right time because knowledge is powerful.
-Finally, [ellis_grey] signs the documents in front of [meredith_grey].
-[alex_karev] sets up a meeting for [jerry_frost], who is in bed after surgery, with a psychologist for addiction recovery.
-Dr. [preston_burke] says sorry to [mrs_drake].
-[miranda_bailey] looks at Derek with disapproval.
-[mr_sterman] tells [izzie_stevens] he has finally had a bowel movement, and [izzie_stevens] feels happy about it.
-[alex_karev] joins [izzie_stevens] and makes a joke.
-[cristina_yang] and Dr. [preston_burke] have sex in the locker room.
-[meredith_grey], [george_omalley], [izzie_stevens], and [cristina_yang] clean the house after the party.
+Meanwhile, [george_omalley], [isobel_stevens], and [cristina_yang] are betting on the meeting's outcome.
+[meredith_grey] talks to [richard_webber] and takes responsibility for the previous day's events.
+[meredith_grey] mentions that the patient's condition, who still weighs 100 pounds, is crucial.
+The patient's muscle mass, including heart muscle, has reduced significantly due to weight loss.
+[richard_webber] believes this explains the heart tearing after a minor impact.
+The hospital lawyer points out that [meredith_grey] didn't report the minor impact quickly, risking hospital liability.
+[preston_burke] defends [meredith_grey] and shares his experience with [mrs_drake].
+[preston_burke] recalls not reporting a sponge left inside a patient five years ago due to fear of career consequences.
+[preston_burke] believes even great doctors make mistakes and should speak up without fear.
+[meredith_grey] informs her colleagues that she wasn't fired and will be monitored for a month.
+[miranda_bailey] tells [cristina_yang] that [preston_burke] had planned to reveal [mrs_drake]'s case secret and was waiting for the right time because "information is power."
+[ellis_grey] finally signs documents in front of [meredith_grey].
+[alex_karev] sets up a meeting for [jerry_frost], who is recovering in bed after surgery, with a psychologist to help with addiction recovery.
+[preston_burke] apologizes to [mrs_drake].
+[miranda_bailey] looks at [derek_shepherd] disapprovingly.
+[mr_sterman] informs [isobel_stevens] that he finally had a bowel movement, which makes [isobel_stevens] happy.
+[alex_karev] joins [isobel_stevens] and jokes around.
+[cristina_yang] and [preston_burke] have sex in the locker room.
+[meredith_grey], [george_omalley], [isobel_stevens], and [cristina_yang] clean the house after the party.
