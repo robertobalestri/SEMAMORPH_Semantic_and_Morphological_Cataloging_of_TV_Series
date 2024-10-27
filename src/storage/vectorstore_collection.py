@@ -119,6 +119,35 @@ class VectorStoreCollection:
         # Include cosine distance in the returned results
         return [{"metadata": result[0].metadata, "cosine_distance": result[1]} for result in results]
 
+    def delete(self, filter: Optional[Dict] = None) -> None:
+        """
+        Delete documents from the collection based on a filter.
+
+        Args:
+            filter (Optional[Dict]): Filter criteria for documents to delete.
+                Example: {"$and": [{"id": "123"}, {"doc_type": "main"}]}
+        """
+        try:
+            if filter:
+                # Get documents matching the filter
+                results = self.collection.get(
+                    where=filter,
+                    include=['metadatas']  # Changed from 'ids' to 'metadatas'
+                )
+                if results and results['ids']:  # Chroma still returns 'ids' in results
+                    # Delete the matched documents
+                    self.collection.delete(ids=results['ids'])
+                    logger.info(f"Deleted {len(results['ids'])} documents matching filter: {filter}")
+                else:
+                    logger.info(f"No documents found matching filter: {filter}")
+            else:
+                # If no filter provided, delete all documents
+                self.collection.delete()
+                logger.info("Deleted all documents from collection")
+        except Exception as e:
+            logger.error(f"Error deleting documents: {e}")
+            raise
+
 def get_vectorstore_collection(collection_type: CollectionType = CollectionType.NARRATIVE_ARCS) -> VectorStoreCollection:
     """
     Get the appropriate vector store collection based on the collection type.

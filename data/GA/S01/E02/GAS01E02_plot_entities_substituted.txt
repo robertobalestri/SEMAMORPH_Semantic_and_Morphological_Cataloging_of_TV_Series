@@ -1,213 +1,134 @@
-[meredith_grey] goes into the locker room and posts a notice about needing a roommate.
-[george_omalley] parks his car at the hospital but forgets his badge, so [george_omalley] goes back to get it and accidentally honks the horn.
-[isobel_stevens] calls an elevator, and when it opens, it's full of men staring at [isobel_stevens], making her feel uneasy.
-[cristina_yang] arrives at the hospital on her motorcycle and nearly hits [george_omalley].
-[cristina_yang] quickly parks and runs inside.
-The interns start putting on their scrubs.
-[meredith_grey] places her leopard print shoes in her locker.
-[meredith_grey] talks to an intern interested in being her roommate but decides the intern isn't suitable and declines.
-[isobel_stevens] questions [meredith_grey] about why [meredith_grey] posts roommate notices if she seems uninterested in having one.
-[meredith_grey] confirms she has a coffee for [miranda_bailey].
-[cristina_yang] notices and accuses [meredith_grey] of bribing.
-[george_omalley] mentions his mom irons his scrubs and hints he wants to be [meredith_grey]'s roommate, but [meredith_grey] disagrees.
-[isobel_stevens] also tries to ask, but [meredith_grey] refuses.
-[meredith_grey] explains she wants two strangers as roommates so she doesn't have to interact with them.
+Meredith enters the locker room.
+Meredith puts a notice for a roommate on the bulletin board.
+[george_omalley] parks his car and heads to the hospital.
+[george_omalley] realizes he forgot his badge and has to go back.
+While retrieving the badge, [george_omalley] accidentally honks his horn.
+[izzie_stevens] calls for an elevator.
+When the doors open, [izzie_stevens] sees it is full of men who are staring at [izzie_stevens].
+This makes [izzie_stevens] uncomfortable.
+[cristina_yang] arrives at the hospital on her motorcycle.
+[cristina_yang] almost runs over [george_omalley] as [cristina_yang] parks and then runs inside.
+The interns are putting on their scrubs.
+Meredith places her leopard print shoes in her locker.
+Meredith talks to an intern who wants to be Meredith's roommate.
+However, Meredith feels the intern is not a good fit and declines.
+[izzie_stevens] asks Meredith why Meredith puts up roommate posters if Meredith doesn't want a roommate.
+Meredith agrees to something.
+[cristina_yang] interrupts and points out that Meredith has a coffee meant for [miranda_bailey], calling it a bribe.
+[george_omalley] mentions that [george_omalley]'s mom irons [george_omalley]'s scrubs and hints [george_omalley] wants to be Meredith's roommate, but Meredith disagrees.
+[izzie_stevens] also tries to ask to be Meredith's roommate, but Meredith refuses.
+Meredith states that Meredith wants two strangers who Meredith doesn't have to interact with.
 [miranda_bailey] arrives and gives the interns their tasks.
-As [miranda_bailey] goes upstairs, [meredith_grey] asks to assist in the OR and offers a mocha latte.
-The interns crowd [miranda_bailey], insisting if [meredith_grey] gets to assist, they should too.
-[miranda_bailey] tells them their job is to make their resident happy, which [miranda_bailey] isn't.
-[miranda_bailey] takes the mocha latte and says the interns won't use a scalpel until [miranda_bailey] is as happy as Mary Poppins.
-[meredith_grey] then heads to an elevator where [derek_shepherd] is waiting.
-[derek_shepherd] recently discovered that Seattle has ferry boats because [derek_shepherd] has only lived there for six weeks.
-As the elevator doors open, [derek_shepherd] mentions he's from New York.
-When the doors close, [meredith_grey] tells [derek_shepherd] she won't date him.
-[derek_shepherd] responds that he never asked, but inquires if [meredith_grey] would like to.
-[meredith_grey] declines and adds she won't sleep with [derek_shepherd] because he is her boss.
-[derek_shepherd] dismisses [meredith_grey]'s comment, and [meredith_grey] accuses [derek_shepherd] of sexual harassment.
-[meredith_grey] insists she's setting boundaries, and [derek_shepherd] jokingly asks if [meredith_grey] needs a marker.
-[meredith_grey] glares at [derek_shepherd], drops her folders, and they kiss until the doors open.
-[meredith_grey] then picks up her folders and leaves.
-[meredith_grey] goes to a trauma room where a nurse informs her about a rape victim found in the park with severe injuries.
-[meredith_grey] notices the victim's shoes are like hers and starts to zone out.
-A nurse calls [meredith_grey], and she quickly begins giving orders.
-The rape victim is in surgery.
-[derek_shepherd] mentions the victim will need a lot of recovery and rehab time.
-[derek_shepherd] is surprised the victim survived the attack.
-[preston_burke] observes the victim tried to fight back.
-[derek_shepherd] comments that [allison] fought hard since the rape kit was negative.
-[preston_burke] calls [allison] a warrior, but [meredith_grey] says her name is [allison].
-[preston_burke] identifies the cause of the rupture but doesn't know what it is.
-[meredith_grey] explains it's the rapist's penis, and the doctors react with disgust.
-As [derek_shepherd] and [preston_burke] finish up, they talk about [allison]'s recovery.
-[preston_burke] suggests getting a drink later and asks [derek_shepherd] why [derek_shepherd] left New York for Seattle.
-[derek_shepherd] says there's nothing to tell; [webber] made [derek_shepherd] an offer [derek_shepherd] couldn't refuse and leaves.
-[george_omalley] boasts to [cristina_yang] about being on the code team, but [cristina_yang] tells [george_omalley] to stop talking.
-[cristina_yang] claims she has a B.A. from Smith, a PhD from Berkeley, and an M.D. from Stanford.
-[cristina_yang] is delivering labs and says it will take her all day.
-[miranda_bailey] overhears and tells [cristina_yang] to get started.
-[cristina_yang] tries to explain she wasn't complaining, but [miranda_bailey] insists.
-[miranda_bailey] mentions she has reassigned an intern to [cristina_yang].
-[cristina_yang] should show the intern how [miranda_bailey] operates.
-The intern introduces himself as [alex_karev].
-[cristina_yang] recalls [alex_karev] called [meredith_grey] a nurse and tells [alex_karev] she dislikes him on principle.
-[alex_karev] responds that he feels the same as [alex_karev] and [cristina_yang] walk away.
-[george_omalley]'s pager beeps, and [george_omalley] leaves.
-[george_omalley] runs down a corridor with the code team following.
-The patient is crashing and has no heartbeat.
-[george_omalley] starts giving orders and instructs a nurse to charge the paddles.
-[isobel_stevens] tells [ms_lu], a Chinese woman, that [ms_lu] needs six stitches and asks about any medication allergies.
-[ms_lu] speaks in Cantonese, asking if [isobel_stevens] understands Cantonese and can help her.
-[isobel_stevens] then asks if [ms_lu] knows any English.
-[ms_lu] replies in Cantonese, saying her daughter outside has worse injuries, while [ms_lu] only hurt her arm.
-[isobel_stevens] asks if anyone in the room speaks Chinese, but no one responds.
-[meredith_grey] goes to the Chief's office.
-[patricia] is there and realizes the box contains the rapist's penis.
-[patricia] asks to see it but quickly changes her mind.
-[richard_webber] enters and mentions hearing that [meredith_grey]'s mother is leaving Mayo.
-[meredith_grey] explains her mother is just taking a break.
-[meredith_grey] tells [richard_webber] she was instructed to bring the "penis box" to him.
-[richard_webber] corrects [meredith_grey], saying the police need it, and she must keep it until it is handed over to them, as all medical evidence must stay with the collector until police custody.
-[cristina_yang] and [alex_karev] give lab results to a family.
-[cristina_yang] and [alex_karev] inform the patient about a disorder called multinucleate cell angiohistiocytoma.
-It's not cancerous, just a rare and minor disease.
-The patient will be discharged that day.
-The family feels relieved, and one member hugs [cristina_yang].
-[cristina_yang] glares at [alex_karev], who smiles at her.
-[meredith_grey] places a box on a counter where [george_omalley] is working.
-[george_omalley] asks about it, and [meredith_grey] says he doesn't want to know.
-[george_omalley] insists, so [meredith_grey] tells him.
-[george_omalley] regrets asking.
-[cristina_yang] and [alex_karev] walk by, and [cristina_yang] complains about being hugged often.
-[alex_karev] says it's because [cristina_yang] is an ovarian sister, which insults her.
-[george_omalley] mentions [meredith_grey] is carrying a penis in a jar.
-[cristina_yang] looks, jokes about it, and leaves.
-[george_omalley] asks [meredith_grey] if she's okay.
-[meredith_grey] explains that [allison] has the same shoes she wore that day.
-[meredith_grey] finds them uncomfortable and rarely wears them.
-[meredith_grey] thinks the situation is foolish.
-[george_omalley] believes he knows what [meredith_grey] needs, but [meredith_grey] disagrees.
-[george_omalley] insists [meredith_grey] can join him or remain unhappy.
-[george_omalley] and [meredith_grey] are outside the nursery, observing the babies.
-[george_omalley]'s pager goes off, indicating a code, so [george_omalley] leaves [meredith_grey].
-While [meredith_grey] watches, one baby's face turns blue.
-[meredith_grey] enters to check on the baby.
-A pediatrics intern arrives and questions [meredith_grey]'s actions.
-[meredith_grey] explains the baby has a murmur.
-The intern acknowledges this, but [meredith_grey] is surprised and mentions the baby turned blue.
-The intern informs [meredith_grey] she isn't authorized to be there.
-[meredith_grey] asks about tests, but the intern says it's a benign condition that resolves with age.
-[meredith_grey] is told to leave, and she does.
-[isobel_stevens] brings [cristina_yang] to help translate for [ms_lu], thinking [cristina_yang] knows Chinese.
-[ms_lu] repeatedly says her daughter is outside with a head injury and wants to help stitch it up but can't.
-[cristina_yang] explains she is from Beverly Hills and only knows Chinese from a menu.
-[cristina_yang] also mentions she is Korean and then leaves.
-[preston_burke] asks [richard_webber] why [derek_shepherd] was invited to Seattle Grace.
-[richard_webber] explains [derek_shepherd] is a former student.
-[preston_burke] suspects another reason and claims the Chief of Surgery position is his.
-[richard_webber] responds he won't be leaving soon, and [preston_burke] leaves angrily.
-[cristina_yang] talks to [alex_karev].
-[alex_karev] asked how they would get OR time.
-[cristina_yang] grabbed her files, handed some to [alex_karev], and told him to hurry.
-[cristina_yang] and [alex_karev] left together.
-[cristina_yang] and [alex_karev] delivered lab results to several patients.
-[cristina_yang] got annoyed when one patient hugged her.
-[george_omalley] rushed into a patient room with the code team.
-The patient flatlined, and [george_omalley] had to call the time of death.
-[meredith_grey] asked some interns about their favorite 80s group.
-The interns answered incorrectly, so [meredith_grey] left.
-While [meredith_grey] was looking at [allison], [derek_shepherd] approached her.
-[derek_shepherd] mentioned that the rapist would eventually need medical attention and that [meredith_grey] had evidence to catch him.
-[meredith_grey] inquired about [allison]'s family.
-[derek_shepherd] explained [allison] had none, as her parents were deceased and she had no siblings.
-[derek_shepherd] asked [meredith_grey] if she was okay, and [meredith_grey] replied that she was fine.
-[meredith_grey] then asked [preston_burke] about a baby she saw turning blue in pediatrics.
-[preston_burke] mentioned he can't proceed without a pediatric consultation.
-[isobel_stevens] finishes bandaging a man's hand. The man tries to flirt with [isobel_stevens], but she realizes he is drunk. The man thinks he recognizes [isobel_stevens] from a magazine. [isobel_stevens] acknowledges this and tells the man to leave. [ms_lu] sits down, and [isobel_stevens] starts stitching [ms_lu]'s arm. [ms_lu] speaks in Chinese, but [isobel_stevens] remains silent. [meredith_grey] talks to [cristina_yang] in the lobby. [meredith_grey] and [cristina_yang] notice a truck swerving into the parking lot. They go outside and see a man with blood-soaked clothes, especially around his crotch. The man collapses, and doctors and nurses gather around him. [meredith_grey] realizes the man is the rapist. Inside, [meredith_grey] calls security and shows [miranda_bailey] the rapist. [miranda_bailey] instructs [meredith_grey] to take the rapist to OR 1 and inform the Chief. During the surgery, [cristina_yang] and [meredith_grey] discuss [allison] and the rapist. [miranda_bailey] asks why they can't reattach the penis. [meredith_grey] explains they need a clean cut, and [allison]'s digestive juices damaged it. [meredith_grey] mentions the rapist will use a bag to pee for a long time. [cristina_yang] notes the rapist won't have sex again, calling it a shame.
-[miranda_bailey] sarcastically suggests they mourn, then the team continues operating.
-[richard_webber] finishes in an OR and tells [preston_burke] they have the rapist.
-The conversation shifts when [preston_burke] asks [richard_webber] why he can't be Chief.
-[richard_webber] responds that [preston_burke] only does what is necessary and nothing more, then walks away.
-[derek_shepherd] is worried about [allison]'s recovery.
-[isobel_stevens] finishes [ms_lu]'s stitches and hears [ms_lu] speak in Chinese again.
-[isobel_stevens] tells [ms_lu] she can't understand and has other patients, so [ms_lu] leaves.
-[alex_karev] complains about a headache.
-[cristina_yang] sarcastically hopes it's a brain tumor, saying she'd rip [alex_karev]'s face off if she could assist in surgery.
-[isobel_stevens] joins them and mentions she's been suturing all day.
-[george_omalley] points out [isobel_stevens] is helping people, and [alex_karev] adds she's practicing medicine.
-[isobel_stevens] talks about [ms_lu], but [cristina_yang] ignores her.
-[meredith_grey] arrives and says the police can't pick up the penis, so she has to keep it overnight.
-They all express frustration about being interns.
-[miranda_bailey] enters, looking hopeful, and the interns leave.
-[meredith_grey] sees the baby's parents and shares her worries.
-The pediatric intern tells [meredith_grey] she's overstepping because she mentioned the murmur might not be harmless.
-The intern brings her resident, [dr_kay].
-[dr_kay] asks what's happening, and Mr. and [mrs_johnson] say they want treatment if their child is sick.
-[dr_kay] inquires who informed them, and the intern points to [meredith_grey].
-[dr_kay] asks if [meredith_grey] is allowed there, and [preston_burke] says he authorized it.
-[preston_burke] questions the intern's certainty about the murmur being harmless.
-When the intern says 75%, [preston_burke] takes over the case and introduces himself to Mr. and [mrs_johnson].
-The intern asks [dr_kay] if [preston_burke] can take patients, and [dr_kay] confirms he can because he's an attending.
-[preston_burke] introduces himself to Mr. and [mrs_johnson] again and gives [meredith_grey] instructions.
-After [isobel_stevens] finishes suturing, [isobel_stevens] meets [ms_lu].
-[ms_lu] is with a girl named [ahn], who has a large cut on her forehead.
-[isobel_stevens] offers to help and examines the injury.
-[ahn] explains that a machine broke at the factory and hurt her.
-[isobel_stevens] suggests they go inside, but [ahn] refuses because she doesn't have a green card and fears jail.
-[isobel_stevens] tells them to wait while she gets supplies.
-Meanwhile, [meredith_grey] talks to [preston_burke] about a baby with a birth defect.
-[meredith_grey] thanks [preston_burke] for his help, but he warns her not to repeat her actions or he will make her residency very difficult.
-[george_omalley] is trying to revive a patient.
-[cristina_yang] delivers lab results to a patient and gets hugged repeatedly.
-[isobel_stevens] gathers supplies to stitch [ahn]'s forehead.
-[derek_shepherd] sits by [allison]'s bedside.
-[george_omalley] announces the time of death for a patient who flatlined.
-[isobel_stevens] stitches [ahn]'s forehead and mentions she could have done better with more light.
-[ahn] reassures [isobel_stevens] it's fine.
-[isobel_stevens] instructs [ahn] to return in five days to remove the stitches and gives [ahn] her pager number.
-[isobel_stevens] warns [ahn] not to tell anyone she helped, as she could lose her job.
-As [ahn] leaves, [ms_lu] returns to thank [isobel_stevens] in her own language, then departs.
+As [miranda_bailey] goes upstairs, Meredith asks to help [miranda_bailey] in the operating room and offers [miranda_bailey] a mocha latte.
+The interns quickly surround [miranda_bailey], arguing that if Meredith gets to assist, they should too.
+[miranda_bailey] responds that their job is to make their resident happy, which [miranda_bailey] is not.
+[miranda_bailey] takes the mocha latte and leaves, saying they won't get to use a scalpel until [miranda_bailey] is as happy as [mary_poppins].
+Meredith then goes to the elevator, where [derek_shepherd] is also waiting.
+[derek_shepherd] realizes that Seattle has ferry boats, which [derek_shepherd] didn't know after living there for six weeks.
+When the doors open, [derek_shepherd] introduces himself as being from New York.
+After the doors close, Meredith tells [derek_shepherd] that Meredith won't go out with [derek_shepherd].
+[derek_shepherd] replies that [derek_shepherd] never asked but inquires if Meredith wants to.
+Meredith declines and states that Meredith won't sleep with [derek_shepherd] because [derek_shepherd] is Meredith's boss.
+[derek_shepherd] brushes Meredith off, and Meredith accuses [derek_shepherd] of sexual harassment.
+Meredith asserts that Meredith is setting a boundary, and [derek_shepherd] jokingly asks if Meredith needs a marker.
+Meredith glares at [derek_shepherd], drops Meredith's folders, and they kiss until the doors open.
+Afterward, Meredith picks up Meredith's folders and leaves.
+Meredith then enters a trauma room where a nurse informs Meredith about a rape victim found in the park with serious injuries.
+Meredith begins to lose focus when Meredith notices that the victim's shoes are identical to Meredith's. A nurse calls Meredith's name, bringing Meredith back to reality. Meredith then starts giving orders. The rape victim is currently in surgery. [derek_shepherd] mentions that [allison] will need a long recovery and rehabilitation. [derek_shepherd] is surprised that [allison] survived after what happened to her. [preston_burke] observes that [allison] fought back. [derek_shepherd] responds that [allison] did well since the rape kit showed no evidence of assault. [preston_burke] refers to [allison] as a warrior, but Meredith corrects [preston_burke], saying her name is [allison]. [preston_burke] discovers the cause of the injury but is unsure what it is. [preston_burke] asks the others in the room, and Meredith states it is the rapist's penis, causing the doctors to mumble in disgust. As [derek_shepherd] and [preston_burke] finish scrubbing up, [derek_shepherd] and [preston_burke] talk about [allison]'s recovery. [preston_burke] suggests they go for a drink later. [preston_burke] wants to know why [derek_shepherd] moved from New York to Seattle. [derek_shepherd] replies that there is nothing to explain; [richard_webber] made [derek_shepherd] an offer [derek_shepherd] couldn't refuse, and then [derek_shepherd] leaves. [george_omalley] boasts to [cristina_yang] about being on the code team, but [cristina_yang] tells [george_omalley] to stop talking. [cristina_yang] has a B.A. from Smith, a PhD from Berkeley, and an M.D.
+[cristina_yang] has a B.A. from Smith, a PhD from Berkeley, and an M.D. from Stanford.
+[cristina_yang] is working on labs and says it will take [cristina_yang] all day to finish them.
+[miranda_bailey] hears this and tells [cristina_yang] to start working.
+[cristina_yang] tries to explain that [cristina_yang] wasn't complaining, but [miranda_bailey] interrupts [cristina_yang].
+[miranda_bailey] mentions that [miranda_bailey] has an intern who has been reassigned and that [cristina_yang] should show the intern how [cristina_yang] works.
+The intern introduces himself as Alex Karev.
+[cristina_yang] remembers that Alex called Meredith a nurse, so [cristina_yang] tells Alex that [cristina_yang] dislikes him.
+Alex replies that Alex feels the same way as Alex and [cristina_yang] walk away.
+[george_omalley]'s pager goes off, and [george_omalley] leaves too.
+[george_omalley] runs down a corridor with the code team following him.
+The patient is in critical condition and has no heartbeat.
+[george_omalley] starts giving orders and tells a nurse to charge the paddles.
+[izzie_stevens] tells Ms. Lu, a Chinese woman, that Ms. Lu needs six stitches.
+[izzie_stevens] asks Ms. Lu if Ms. Lu is allergic to any medication.
+Ms. Lu responds in Cantonese, asking if [izzie_stevens] speaks Cantonese and requesting help.
+[izzie_stevens] then asks Ms. Lu if Ms. Lu knows any English.
+Ms. Lu replies in Cantonese, saying Ms. Lu's daughter is outside with worse injuries, while Ms. Lu has only hurt Ms. Lu's arm.
+[izzie_stevens] asks if anyone in the room speaks Chinese, but no one responds.
+Meanwhile, Meredith Grey arrives at [richard_webber] [richard_webber]'s office. [patricia_clarkson] is there and realizes the box contains the rapist's penis. [patricia_clarkson] asks to see it but quickly changes her mind. [richard_webber] enters and mentions he heard Meredith's mother, [ellis_grey], is leaving Mayo Clinic. Meredith explains [ellis_grey] is just taking a break. Meredith tells [richard_webber] she was instructed to bring the "penis box" to him. [richard_webber] corrects Meredith, stating the police need it. [richard_webber] explains that until the police take custody, Meredith must keep it because all medical items must stay with the person who collected them. [cristina_yang] and Alex Karev give lab results to a family. [cristina_yang] and Alex inform the patient about a disorder called multinucleate cell angiohistiocytoma. [cristina_yang] and Alex explain it is not a cancerous sarcoma and is a very rare but minor disease. The family feels relieved and one member hugs [cristina_yang]. [cristina_yang] glares at Alex, who is smiling at her. Meredith places a box on a counter where [george_omalley] is working. [george_omalley] asks Meredith what it is. Meredith tells [george_omalley] he does not want to know, but [george_omalley] insists he does. Meredith then reveals it is a penis box, and [george_omalley] regrets asking. [cristina_yang] and Alex walk by.
+[cristina_yang] complains about being hugged all the time.
+Alex Karev responds that it is because [cristina_yang] is an ovarian sister.
+[cristina_yang] feels insulted.
+[george_omalley] points out that Meredith Grey is carrying a penis in a jar.
+[cristina_yang] looks at it, makes a joke, and leaves.
+[george_omalley] asks Meredith if she is okay.
+Meredith explains that [allison] has the same uncomfortable shoes she is wearing.
+Meredith mentions that she rarely wears those shoes, but chose to wear them that day.
+Meredith thinks the situation is foolish.
+[george_omalley] believes he understands Meredith's needs, but Meredith disagrees.
+[george_omalley] offers Meredith a choice: join him or stay unhappy.
+[george_omalley] and Meredith are outside the nursery, observing the babies.
+[george_omalley]'s pager goes off, and [george_omalley] informs Meredith that it's an emergency, so [george_omalley] leaves.
+While watching the babies, Meredith notices one baby's face turning blue.
+Meredith enters the nursery to check on the baby.
+A pediatric intern arrives and asks Meredith what she is doing.
+Meredith explains that the baby has a murmur.
+The intern acknowledges this but surprises Meredith by saying the baby turned blue.
+The pediatric intern then tells Meredith that Meredith is not authorized to be there.
+Meredith inquires about tests, but the pediatric intern reassures Meredith that it is benign and will resolve with age.
+Meredith is told to leave, and Meredith does.
+[izzie_stevens] brings [cristina_yang], thinking [izzie_stevens] can translate for Ms. Lu.
+Ms. Lu keeps saying Ms. Lu's daughter is outside with a head injury, and Ms. Lu wants to help, but Ms. Lu can't.
+[cristina_yang] explains [cristina_yang] is from Beverly Hills and only knows some Chinese from a menu.
+[cristina_yang] also mentions [cristina_yang] is Korean and then leaves.
+[preston_burke] asks [richard_webber] why [richard_webber] invited [derek_shepherd] to Seattle Grace.
+[richard_webber] explains that [derek_shepherd] was [richard_webber]'s former student.
+[preston_burke] realizes there might be another reason and mentions that [preston_burke] wants to be Chief of Surgery.
+[richard_webber] responds that [richard_webber] won't be leaving anytime soon, and [preston_burke] storms off.
+Meanwhile, [cristina_yang] is talking to Alex.
+[cristina_yang] asks Alex how they will get OR time.
+[cristina_yang] gathers [cristina_yang]'s files and gives some to Alex, telling Alex to hurry.
+[cristina_yang] and Alex leave together.
+[cristina_yang] and Alex provide lab results to several patients.
+[cristina_yang] feels annoyed after one patient hugs [cristina_yang].
+[george_omalley] rushes into a patient room with the code team.
+The patient flatlines, and [george_omalley] has to call the time of death.
+Meredith asks some interns about their favorite 80s music group.
+When the interns answer incorrectly, Meredith walks away.
+While Meredith is looking at [allison], [derek_shepherd] approaches Meredith.
+[derek_shepherd] tells Meredith that the rapist will eventually need medical care and that Meredith has evidence against him.
+Meredith inquires about her family, and [derek_shepherd] informs Meredith that Meredith's parents are dead and that Meredith has no siblings.
+[derek_shepherd] then asks Meredith if Meredith is okay, and Meredith replies that Meredith is fine.
+Meredith also asks [preston_burke] about a baby Meredith saw turning blue in pediatrics.
+[preston_burke] states that [preston_burke] cannot proceed without a pediatric consult.
+[izzie_stevens] is busy bandaging a man's hand.
+The man tries to flirt with [izzie_stevens], but [izzie_stevens] realizes the man is drunk.
+The man mentions that he thinks he recognizes [izzie_stevens] from a magazine.
+[izzie_stevens] acknowledges this and tells the man to leave.
+Ms. Lu arrives and sits down.
+[izzie_stevens] starts stitching Ms. Lu's arm while Ms. Lu continues speaking in Chinese.
+[izzie_stevens] remains silent.
+Meanwhile, Meredith is talking to [cristina_yang] in the lobby.
+After a while, Meredith and [cristina_yang] notice a truck entering the parking lot.
+Meredith and [cristina_yang] go outside and see a man whose clothes are soaked in blood, especially around his crotch. The man collapses, and doctors and nurses rush to help him. Meredith realizes the man is the rapist. Inside, Meredith calls for security and shows [miranda_bailey] the rapist. [miranda_bailey] tells Meredith to take the rapist to OR 1 and to inform [richard_webber] [richard_webber] about the situation. While the rapist is in surgery, [cristina_yang] and Meredith discuss [allison] and the rapist. [miranda_bailey] asks why they don't reattach the penis. Meredith explains they can't reattach it because it wasn't a clean cut, and [allison]'s digestive juices damaged it. Meredith mentions the rapist will have to use a bag to urinate for a long time. [cristina_yang] adds that the rapist will never be able to have sex again, which [cristina_yang] thinks is unfortunate. [miranda_bailey] sarcastically suggests they should take a moment to mourn, and then Meredith and [cristina_yang] return to their work. [richard_webber] [richard_webber] leaves an operating room and tells [preston_burke] they have the rapist. The conversation shifts when [preston_burke] asks why he can't be Chief. [richard_webber] [richard_webber] replies that he only does what is necessary and nothing more. Then, [richard_webber] [richard_webber] walks away. [derek_shepherd] is worried about [allison]'s recovery. [izzie_stevens] finishes stitching Ms. Lu. [izzie_stevens] tries to communicate with Ms. Lu in Chinese but cannot understand.
+[izzie_stevens] tells Ms. Lu that [izzie_stevens] has other patients, and Ms. Lu leaves. Alex Karev mentions that Alex has a headache. [cristina_yang] jokingly hopes it is a brain tumor so [cristina_yang] can scrub in and confront Alex. [izzie_stevens] enters and says [izzie_stevens] has been suturing all day. [george_omalley] points out that at least [izzie_stevens] is helping people. Alex adds that [izzie_stevens] is practicing medicine. [izzie_stevens] starts to talk about Ms. Lu, but [cristina_yang] ignores [izzie_stevens]. Meredith Grey arrives and informs them that the police cannot take the penis, so Meredith must keep it overnight. They all express their frustrations about being interns. [miranda_bailey] enters with an eager expression, and the interns exit. Meredith sees the baby's parents, Mr. and [mrs_johnson], and expresses her worries about their child. The pediatric intern tells Meredith that Meredith overstepped by suggesting the heart murmur might not be harmless. The pediatric intern then gets [dr_kay], her resident. [dr_kay] asks what the issue is, and Mr. and [mrs_johnson] say they want treatment if their child is sick. [dr_kay] inquires who informed them of this, and the pediatric intern replies it was Meredith. When [dr_kay] asks if Meredith is allowed to be there, [preston_burke] confirms he authorized Meredith's presence. [preston_burke] questions the pediatric intern about her certainty regarding the murmur's benign nature. The pediatric intern states she is 75% sure.
+[preston_burke] then mentions that the baby is now under [preston_burke]'s care and introduces himself to Mr. and [mrs_johnson]. The pediatric intern asks [dr_kay] if [preston_burke] can take patients, and [dr_kay] confirms [preston_burke] can since [preston_burke] is an attending physician. [preston_burke] introduces himself to Mr. and [mrs_johnson] and gives Meredith Grey some instructions. [izzie_stevens] finishes her suturing for the day. [izzie_stevens] sees Ms. Lu, who calls [izzie_stevens] outside. There, [izzie_stevens] meets a girl named [ahn]. [ahn] has a large cut on her forehead. [izzie_stevens] offers to help and examines [ahn]'s injury. [ahn] explains that a machine broke in the factory and hurt [ahn]. [izzie_stevens] suggests they go inside, but [ahn] refuses. [ahn] is scared of going to jail because [ahn] doesn't have a green card. [izzie_stevens] tells [ahn] to wait while [izzie_stevens] gets supplies. Meredith Grey asks [preston_burke] about a baby. [preston_burke] tells Meredith Grey it has a birth defect. Meredith Grey thanks [preston_burke] for his help. [preston_burke] warns Meredith Grey that if Meredith Grey does something like that again, [preston_burke] will make Meredith Grey's residency very difficult. Meanwhile, [george_omalley] is trying to resuscitate a patient. [cristina_yang] keeps giving lab results to a patient.
+[ahn] hugs [izzie_stevens] several times.
+[izzie_stevens] gathers supplies to stitch [ahn]'s forehead.
+[derek_shepherd] sits next to [allison]'s bedside.
+[george_omalley] announces the time of death for a patient who has flatlined.
+[izzie_stevens] stitches [ahn]'s forehead and mentions [izzie_stevens] could have done a better job with more light.
+[ahn] reassures [izzie_stevens] that it looks good.
+[izzie_stevens] instructs [ahn] and the accompanying person to return in five days to remove the stitches and gives them [izzie_stevens] Stevens' pager number.
+[izzie_stevens] warns them not to tell anyone [izzie_stevens] helped them, as it could cost [izzie_stevens] Stevens' job.
+As [ahn] and the accompanying person start to leave, Ms. Lu returns and thanks [izzie_stevens] in her language before leaving.
 [preston_burke] asks [miranda_bailey] if [preston_burke] is too confident.
-[miranda_bailey] says no, but [preston_burke] feels [miranda_bailey] is lying and tells [miranda_bailey] she can speak freely for the next thirty seconds.
-[miranda_bailey] starts listing negative things about [preston_burke].
-[preston_burke] tries to interrupt, but [miranda_bailey] insists she's not finished.
-In the locker room, [cristina_yang] complains she needs a drink, a man, and a massage.
-[george_omalley] mentions he lost five patients.
-[cristina_yang] tells [george_omalley] most code patients are already dead before [george_omalley] arrives, then [cristina_yang] leaves.
-[meredith_grey] sits in a rocking chair in the nursery.
-The peds intern thought [meredith_grey] was right, but [meredith_grey] says interns are almost never right.
-The intern asks [meredith_grey] if [meredith_grey] feels terrified.
-[meredith_grey] says yes, and the intern feels relieved it's not just her.
-[meredith_grey] asks [derek_shepherd] about [allison], and [derek_shepherd] says there's no change.
-[derek_shepherd] mentions he has four sisters, and if [derek_shepherd] were in a coma, they'd all be there.
-[derek_shepherd] talks about their relationship, but the focus shifts to [allison], who feels alone.
-As they talk, [allison]'s condition worsens.
-[derek_shepherd] tells the team to prepare the OR for an emergency craniotomy.
-After the surgery, [derek_shepherd] updates [meredith_grey] about [allison].
-[meredith_grey] asks if [allison] will survive, and [derek_shepherd] says she will if she wakes up.
-[derek_shepherd] asks [preston_burke] about a drink they mentioned earlier.
-[preston_burke] now declines, saying [derek_shepherd] is just competition for Chief of Surgery, and [preston_burke] walks away.
-[meredith_grey] signs a paper about the penis box with [patricia]'s help.
-[richard_webber] tries to say "penis," noting it shouldn't be awkward since [richard_webber] is a doctor, but he used to change [meredith_grey]'s diapers.
-[richard_webber] then gives the penis box to the police, and [meredith_grey] leaves.
-[the_johnson] baby is in surgery.
-[preston_burke] explains the procedure to the team.
-[preston_burke] starts to open the baby's chest and tells [meredith_grey] to scrub in because [preston_burke] will let her hold the clamp.
-[meredith_grey] quickly goes to the scrub room.
-[derek_shepherd] enters the rapist's room angrily and hits the bed to wake him.
-[derek_shepherd] informs the rapist that [miranda_bailey] stopped his bleeding but his penis was given to the police, then [derek_shepherd] leaves.
-The rapist notices the rapist is handcuffed to the bed.
-[cristina_yang] and [alex_karev] deliver more test results.
-[cristina_yang] tells a patient their tumor is benign, so the patient can go home.
-The patient hugs the patient's husband, who then tries to hug [cristina_yang].
-[cristina_yang] quickly pushes [alex_karev] in the way, so [alex_karev] receives the hug instead.
-[cristina_yang] leaves, satisfied.
-[preston_burke] operates on [the_johnson] baby while [meredith_grey] holds the clamp.
-The interns watch the babies in the nursery.
-[meredith_grey] tells [isobel_stevens] and [george_omalley] they can move in.
-[isobel_stevens] and [george_omalley] get excited and hug each other.
-[allison] starts waking up, and [derek_shepherd] welcomes [allison] back.
-[meredith_grey] goes to an elevator where [derek_shepherd] is waiting.
-[derek_shepherd] mentions [derek_shepherd] really likes ferry boats.
-After looking at [derek_shepherd], [meredith_grey] decides to take the stairs.
-[derek_shepherd] feels sorry for [meredith_grey]'s "lack of self-control."
-[meredith_grey] leaves the hospital to join [george_omalley], [isobel_stevens], and [cristina_yang].
+[miranda_bailey] replies no, but [preston_burke] feels [miranda_bailey] is not being honest.
+[preston_burke] tells [miranda_bailey] that anything [miranda_bailey] says in the next thirty seconds is free.
+[miranda_bailey] starts listing all the bad things about a person.
+[preston_burke] tries to interrupt, but [miranda_bailey] insists she is not finished.
+In the locker room, [cristina_yang] says she needs a drink, a man, and a massage.
+[george_omalley] mentions he lost five patients, but [cristina_yang] tells [george_omalley] that most patients in code are already dead by the time [george_omalley] arrives.
+[cristina_yang] then leaves.
+Meredith Grey sits in a rocking chair in the nursery.
+A pediatric intern expresses that the pediatric intern thought the pediatric intern was correct. Meredith Grey responds that interns are usually wrong. The pediatric intern then asks Meredith Grey if Meredith Grey feels scared. When Meredith Grey confirms that Meredith Grey does, the pediatric intern feels relieved that the pediatric intern is not alone in the fear. Meredith Grey asks [derek_shepherd] about [allison]'s condition. [derek_shepherd] replies that there has been no change. [derek_shepherd] shares that [derek_shepherd] has four sisters, and if [derek_shepherd] were in a coma, all four sisters would be there. [derek_shepherd] talks about [derek_shepherd]'s relationship, but the discussion shifts back to [allison], who feels alone. As they speak, [allison]'s condition worsens. [derek_shepherd] instructs the team to prepare the operating room for an emergency craniotomy. After the surgery, [derek_shepherd] updates Meredith Grey about [allison]. Meredith Grey asks if [allison] will survive, and [derek_shepherd] replies that [allison] will be fine if [allison] wakes up. [derek_shepherd] then asks [preston_burke] about the drink that [derek_shepherd] and [preston_burke] had discussed. [preston_burke] declines, stating that [derek_shepherd] is just competition for Chief of Surgery, and [preston_burke] walks away. Meredith Grey works on a paper about a penis box with [patricia_clarkson]'s help. [richard_webber] [richard_webber] tries to say "penis" but struggles. [richard_webber] [richard_webber] mentions that it shouldn't be awkward since [richard_webber] [richard_webber] is a doctor, but [richard_webber] [richard_webber] used to change Meredith Grey's diapers. [richard_webber] [richard_webber] then gives the penis box to the police, and Meredith Grey leaves.
+Meanwhile, the Johnson baby is in surgery. [preston_burke] explains the procedure to the team. [preston_burke] starts to open the baby's chest and tells Meredith Grey to scrub in, as [preston_burke] will let Meredith Grey hold the clamp. Meredith Grey goes to the scrub room. [derek_shepherd] enters the rapist's room and hits the end of the bed, waking the man. [derek_shepherd] informs the rapist that [miranda_bailey] stopped the rapist's bleeding, but the police took the rapist's penis. [derek_shepherd] then leaves. The rapist realizes he is handcuffed to the bed. [cristina_yang] and Alex Karev provide more test results. [cristina_yang] tells a patient that the patient's tumor is benign, so the patient can go home. The patient hugs the patient's husband, who then approaches [cristina_yang]. [cristina_yang] quickly pushes Alex Karev in front of her. Alex Karev receives the hug, and [cristina_yang] leaves, feeling satisfied. [preston_burke] operates on the baby while Meredith Grey holds the clamp. The interns are watching the babies in the nursery. Meredith Grey tells [izzie_stevens] and [george_omalley] they can move in, and [izzie_stevens] and [george_omalley] get excited and hug each other. [allison] starts to wake up, and [derek_shepherd] greets [allison]. Meredith Grey goes to the elevator where [derek_shepherd] is waiting.
+[george_omalley] mentions that [george_omalley] has a strong interest in ferry boats. After thinking about it, [cristina_yang] decides to take the stairs instead. [derek_shepherd] feels sorry for [cristina_yang]'s lack of self-control. Meredith Grey leaves the hospital to join [george_omalley], [izzie_stevens], and [cristina_yang].

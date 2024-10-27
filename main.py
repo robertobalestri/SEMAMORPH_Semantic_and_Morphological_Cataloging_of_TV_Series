@@ -91,6 +91,7 @@ def process_text(path_handler: PathHandler) -> None:
             logger.info("Extracting and refining entities from named plot.")
             entities = extract_and_refine_entities(
                 named_plot, 
+                series,
                 llm_intelligent, 
                 episode_extracted_refined_entities_path, 
                 path_handler.get_episode_raw_spacy_entities_path(),
@@ -192,8 +193,8 @@ if __name__ == "__main__":
 
     logger.info("Starting text processing.")
 
-    ep_number = 2
-    for ep in range(ep_number, 10): #(1, 2) for only episode 1
+    ep_number = 1
+    for ep in range(ep_number, 3): #(1, 2) for only episode 1
         episode = f"E{ep:02d}"
         
         # Initialize PathHandler

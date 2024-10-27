@@ -6,15 +6,18 @@ from sqlalchemy.orm import selectinload
 from src.utils.logger_utils import setup_logging
 from contextlib import contextmanager
 from typing import Generator
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
-from src.storage.narrative_arc_models import NarrativeArc, ArcProgression
+from src.storage.narrative_models import NarrativeArc, ArcProgression
 
 
 logger = setup_logging(__name__)
 
 class DatabaseManager:
-    def __init__(self, db_url: str = 'sqlite:///narrative_arcs.db'):
+    def __init__(self, db_url: str = f'sqlite:///{os.getenv("DATABASE_NAME")}'):
         self.engine = create_engine(db_url, echo=False)
         SQLModel.metadata.create_all(self.engine)
         logger.info(f"Database engine initialized with URL: {db_url}")
@@ -148,8 +151,6 @@ class DatabaseManager:
                 return self._get_arc_progressions(session, main_arc_id)
         return self._get_arc_progressions(session, main_arc_id)
 
-    # database.py
-
     def _get_arc_progressions(self, session: Session, main_arc_id: str) -> List["ArcProgression"]:
         """Internal method to retrieve ArcProgressions with their NarrativeArc eagerly loaded."""
         query = select(ArcProgression).where(
@@ -170,3 +171,6 @@ class DatabaseManager:
         )
         progression = session.exec(query).first()
         return progression
+
+
+

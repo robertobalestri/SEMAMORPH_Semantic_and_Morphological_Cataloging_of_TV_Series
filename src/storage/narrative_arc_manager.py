@@ -2,7 +2,7 @@
 
 from typing import List, Optional, Dict, Any
 from sqlmodel import Session, select
-from src.storage.narrative_arc_models import NarrativeArc, ArcProgression
+from src.storage.narrative_models import NarrativeArc, ArcProgression, Character
 import src.storage.database as db
 import src.storage.vectorstore_collection as vectorstore_collection
 from src.ai_models.ai_models import get_llm, LLMType
@@ -10,8 +10,13 @@ from langchain.schema import Document
 from langchain.prompts import ChatPromptTemplate
 from src.utils.llm_utils import clean_llm_json_response
 from src.utils.logger_utils import setup_logging
+from src.plot_processing.plot_ner_entity_extraction import (
+    EntityLink
+)
 import uuid
 import json
+from src.storage.character_storage import CharacterStorage
+import os
 
 logger = setup_logging(__name__)
 
@@ -23,6 +28,7 @@ class NarrativeArcManager:
         self.db_manager = db.DatabaseManager()
         self.vectorstore_collection = vectorstore_collection.get_vectorstore_collection(vectorstore_collection.CollectionType.NARRATIVE_ARCS)
         self.llm = get_llm(LLMType.INTELLIGENT)
+        self.character_storage = CharacterStorage()
 
     def add_or_update_narrative_arcs(
         self,
@@ -67,7 +73,8 @@ class NarrativeArcManager:
             if not merged:
                 logger.info(f"No similar arcs found. Adding '{arc.title}' as a new arc.")
                 self.add_new_arc(arc, series, season, episode, session=session)
-                updated_arcs.append(arc)
+                if arc not in updated_arcs:  # Add this check to prevent duplicates
+                    updated_arcs.append(arc)
 
         logger.info(f"Added or updated {len(updated_arcs)} narrative arcs for {series} {season} {episode}.")
         return updated_arcs
@@ -188,55 +195,83 @@ class NarrativeArcManager:
     def _update_embeddings(self, arc: NarrativeArc, progressions_to_update: List[ArcProgression], session: Session):
         """
         Update embeddings in the vector store for an arc and its specified progressions.
-        Maintains the existing arc's ID in the vector store.
         """
-        # Create main arc document
-        main_doc = Document(
-            page_content=f"{arc.title}\n\n{arc.description}",
-            metadata={
-                "title": arc.title,
-                "arc_type": arc.arc_type,
-                "description": arc.description,
-                "episodic": arc.episodic,
-                "main_characters": arc.main_characters,  # Changed from characters
-                "series": arc.series,
-                "doc_type": "main",
-                "id": arc.id,
-            }
-        )
+        try:
+            # Convert empty lists to strings for metadata
+            main_characters = arc.main_characters if arc.main_characters else ""
+            if isinstance(main_characters, list):
+                main_characters = ", ".join(main_characters)
 
-        docs = [main_doc]
-        ids = [arc.id]
-
-        for progression in progressions_to_update:
-            # Ensure ordinal_position is set
-            if progression.ordinal_position is None:
-                progression.ordinal_position = self.get_next_ordinal_position(arc.id, session)
-
-            prog_doc = Document(
-                page_content=progression.content,
+            # Create main arc document
+            main_doc = Document(
+                page_content=f"{arc.title}\n\n{arc.description}",
                 metadata={
                     "title": arc.title,
                     "arc_type": arc.arc_type,
+                    "description": arc.description,
                     "episodic": arc.episodic,
-                    "main_characters": arc.main_characters,  # Changed from characters
-                    "interfering_episode_characters": progression.interfering_episode_characters,  # Added
+                    "main_characters": main_characters,
                     "series": arc.series,
-                    "doc_type": "progression",
-                    "id": progression.id,
-                    "main_arc_id": arc.id,
-                    "season": progression.season,
-                    "episode": progression.episode,
-                    "ordinal_position": progression.ordinal_position
+                    "doc_type": "main",
+                    "id": arc.id,
                 }
             )
-            docs.append(prog_doc)
-            ids.append(progression.id)
 
-        try:
+            docs = [main_doc]
+            ids = [arc.id]
+
+            # Create a set to track used IDs
+            used_ids = {arc.id}
+
+            for progression in progressions_to_update:
+                # Generate a new unique ID if the current one is already used
+                prog_id = progression.id
+                while prog_id in used_ids:
+                    prog_id = str(uuid.uuid4())
+                used_ids.add(prog_id)
+
+                # Convert empty lists to strings for metadata
+                interfering_chars = progression.interfering_episode_characters if progression.interfering_episode_characters else ""
+                if isinstance(interfering_chars, list):
+                    interfering_chars = ", ".join(interfering_chars)
+
+                prog_doc = Document(
+                    page_content=progression.content,
+                    metadata={
+                        "title": arc.title,
+                        "arc_type": arc.arc_type,
+                        "episodic": arc.episodic,
+                        "main_characters": main_characters,
+                        "interfering_episode_characters": interfering_chars,
+                        "series": arc.series,
+                        "doc_type": "progression",
+                        "id": prog_id,
+                        "main_arc_id": arc.id,
+                        "season": progression.season,
+                        "episode": progression.episode,
+                        "ordinal_position": progression.ordinal_position
+                    }
+                )
+                docs.append(prog_doc)
+                ids.append(prog_id)
+
+            # Delete existing documents
+            try:
+                # Delete main arc document
+                self.vectorstore_collection.delete(
+                    filter={"$and": [{"id": arc.id}, {"doc_type": "main"}]}
+                )
+                # Delete progression documents
+                self.vectorstore_collection.delete(
+                    filter={"$and": [{"main_arc_id": arc.id}, {"doc_type": "progression"}]}
+                )
+            except Exception as e:
+                logger.warning(f"Could not delete existing documents: {e}. Continuing with upsert.")
+
+            # Add new documents
             self.vectorstore_collection.add_documents(docs, ids=ids)
             logger.info(f"Updated embeddings for arc '{arc.title}' and {len(progressions_to_update)} progressions.")
-        except ValueError as e:
+        except Exception as e:
             logger.error(f"Error updating embeddings: {e}")
             raise
 
@@ -260,88 +295,147 @@ class NarrativeArcManager:
         existing_arc.episodic = new_arc.episodic
         existing_arc.series = series
 
-        # Update main characters
-        existing_main_characters = set(existing_arc.main_characters.split(", ") if existing_arc.main_characters else [])
-        new_main_characters = set(new_arc.main_characters.split(", ") if new_arc.main_characters else [])
-        existing_arc.main_characters = ", ".join(existing_main_characters.union(new_main_characters))
+        # Update main characters (now using List[str])
+        existing_arc.main_characters = list(set(existing_arc.main_characters + new_arc.main_characters))
+
+        # Get existing progression for this episode if any
+        existing_progression = self.db_manager.get_single_arc_episode_progression(
+            arc_id=existing_arc.id,
+            series=series,
+            season=season,
+            episode=episode,
+            session=session
+        )
+
+        # Get all progressions for this arc to determine the correct ordinal position
+        all_progressions = self.db_manager.get_arc_progressions(main_arc_id=existing_arc.id, session=session)
+        next_ordinal = max([p.ordinal_position for p in all_progressions], default=0) + 1
 
         # Handle progressions
-        progressions_to_update = []
         for new_progression in new_arc.progressions:
-            existing_progression = self.db_manager.get_single_arc_episode_progression(
-                arc_id=existing_arc.id,
-                series=series,
-                season=season,
-                episode=episode,
-                session=session
-            )
-            
             if existing_progression:
-                # Update existing progression
+                # Update existing progression content but keep its original ordinal position
                 existing_progression.content = new_progression.content
-                existing_progression.ordinal_position = new_progression.ordinal_position or self.get_next_ordinal_position(existing_arc.id, session)
-                existing_progression.interfering_episode_characters = new_progression.interfering_episode_characters  # Added
-                progressions_to_update.append(existing_progression)
+                existing_progression.interfering_episode_characters = new_progression.interfering_episode_characters
+                logger.info(f"Updated existing progression for arc {existing_arc.title} with ordinal position {existing_progression.ordinal_position}")
             else:
-                # Create new progression
-                new_progression = ArcProgression(
-                    id=str(uuid.uuid4()),
-                    main_arc_id=existing_arc.id,
-                    content=new_progression.content,
-                    series=series,
-                    season=season,
-                    episode=episode,
-                    ordinal_position=new_progression.ordinal_position or self.get_next_ordinal_position(existing_arc.id, session),
-                    interfering_episode_characters=new_progression.interfering_episode_characters  # Added
-                )
+                # Create new progression with next available ordinal position
+                new_progression.id = str(uuid.uuid4())
+                new_progression.main_arc_id = existing_arc.id
+                new_progression.narrative_arc = existing_arc
+                new_progression.ordinal_position = next_ordinal
                 session.add(new_progression)
                 existing_arc.progressions.append(new_progression)
-                progressions_to_update.append(new_progression)
+                logger.info(f"Added new progression for arc {existing_arc.title} with ordinal position {next_ordinal}")
 
-        # Embeddings update handled within the session
-        self._update_embeddings(existing_arc, progressions_to_update, session)
+        # Update embeddings
+        self._update_embeddings(existing_arc, existing_arc.progressions, session)
 
+    def link_characters_to_arc(self, characters: List[Character], arc: NarrativeArc):
+        """Link characters to a narrative arc."""
+        # Filter out None values
+        valid_characters = [c for c in characters if c is not None]
+        
+        # Create sets for existing and new characters
+        existing_ids = {c.id for c in arc.characters}
+        new_characters = [c for c in valid_characters if c.id not in existing_ids]
+        
+        if new_characters:
+            # Add new characters to the relationship
+            arc.characters.extend(new_characters)
+            
+            # Update main_characters list with all characters' best appellations
+            all_appellations = [c.best_appellation for c in arc.characters]
+            arc.main_characters = list(set(all_appellations))
+            
+            # Ensure the relationship is bidirectional
+            for character in new_characters:
+                if arc not in character.narrative_arcs:
+                    character.narrative_arcs.append(arc)
+            
+            logger.info(f"Linked {len(new_characters)} characters to arc '{arc.title}'")
+
+    def link_characters_to_progression(self, characters: List[Character], progression: ArcProgression):
+        """Link characters to an arc progression."""
+        # Filter out None values
+        valid_characters = [c for c in characters if c is not None]
+        
+        # Create sets for existing and new characters
+        existing_ids = {c.id for c in progression.characters}
+        new_characters = [c for c in valid_characters if c.id not in existing_ids]
+        
+        if new_characters:
+            # Add new characters to the relationship
+            progression.characters.extend(new_characters)
+            
+            # Update interfering_episode_characters list with all characters' best appellations
+            all_appellations = [c.best_appellation for c in progression.characters]
+            progression.interfering_episode_characters = list(set(all_appellations))
+            
+            # Ensure the relationship is bidirectional
+            for character in new_characters:
+                if progression not in character.progressions:
+                    character.progressions.append(progression)
+            
+            logger.info(f"Linked {len(new_characters)} characters to progression {progression.id}")
 
     def process_suggested_arcs(self, suggested_arcs_path: str, series: str, season: str, episode: str) -> List[NarrativeArc]:
-        """
-        Process the suggested arcs from the JSON file and update the database and vectorstore.
-        """
-        logger.info(f"Processing suggested arcs from {suggested_arcs_path}")
-
+        """Process the suggested arcs from the JSON file and update the database and vectorstore."""
         with open(suggested_arcs_path, 'r') as f:
             suggested_arcs_data = json.load(f)
 
         with self.db_manager.session_scope() as session:
             final_arcs = []
             for arc_data in suggested_arcs_data:
-                # Create a new NarrativeArc instance
                 narrative_arc = NarrativeArc(
                     id=str(uuid.uuid4()),
                     title=arc_data['title'],
                     arc_type=arc_data['arc_type'],
                     description=arc_data['description'],
                     episodic=arc_data['episodic'],
-                    main_characters=arc_data['main_characters'],  # Changed from characters
                     series=series,
-                    progressions=[]
+                    progressions=[],
+                    main_characters=[]
                 )
 
-                # Create and associate ArcProgression instances
+                # Get main characters from database
+                if arc_data.get('main_characters'):
+                    character_names = [name.strip() for name in arc_data['main_characters'].split(';') if name.strip()]
+                    arc_characters = self.character_storage.get_characters_by_appellations(character_names, series, session)
+                    if arc_characters:
+                        self.link_characters_to_arc(arc_characters, narrative_arc)
+
+                # Handle progression
                 progression_data = arc_data.get('single_episode_progression_string')
                 if progression_data:
-                    ordinal_position = self.get_next_ordinal_position(narrative_arc.id, session)
+                    # First, check if this arc already exists and get its ID
+                    existing_arc = self.db_manager.get_narrative_arc_by_title(narrative_arc.title, series, session)
+                    arc_id = existing_arc.id if existing_arc else narrative_arc.id
+                    
+                    # Get the next ordinal position based on existing progressions
+                    next_position = self.get_next_ordinal_position(arc_id, session)
+                    logger.debug(f"Next ordinal position for arc {arc_id}: {next_position}")
 
                     progression = ArcProgression(
                         id=str(uuid.uuid4()),
+                        main_arc_id=narrative_arc.id,
                         content=progression_data,
                         series=series,
                         season=season,
                         episode=episode,
-                        ordinal_position=ordinal_position,
-                        interfering_episode_characters=arc_data.get('interfering_episode_characters', '')  # Added
+                        ordinal_position=next_position,  # Use the calculated position
+                        interfering_episode_characters=[]
                     )
+                    progression.narrative_arc = narrative_arc
+
+                    # Get interfering characters from database
+                    if arc_data.get('interfering_episode_characters'):
+                        interfering_names = [name.strip() for name in arc_data['interfering_episode_characters'].split(';') if name.strip()]
+                        progression_characters = self.character_storage.get_characters_by_appellations(interfering_names, series, session)
+                        if progression_characters:
+                            self.link_characters_to_progression(progression_characters, progression)
+
                     narrative_arc.progressions.append(progression)
-                    logger.info(f"Created progression for arc '{narrative_arc.title}' with ordinal position {ordinal_position}.")
 
                 final_arcs.append(narrative_arc)
 
@@ -353,23 +447,66 @@ class NarrativeArcManager:
                 session
             )
 
-        logger.info(f"Processed {len(updated_arcs)} arcs for {series} {season} {episode}")
-        return updated_arcs
+            return updated_arcs
     
     def get_next_ordinal_position(self, arc_id: str, session: Session) -> int:
         """
         Calculate the next ordinal position for a new progression within a given arc.
+        The ordinal position represents the sequence of progressions within the arc.
 
         Args:
             arc_id (str): The ID of the NarrativeArc.
             session (Session): The current database session.
 
         Returns:
-            int: The next ordinal position.
+            int: The next available ordinal position (1-based).
         """
-        existing_progressions = self.db_manager.get_arc_progressions(main_arc_id=arc_id, session=session) or []
-        max_ordinal = max([p.ordinal_position or 0 for p in existing_progressions], default=0)
-        return max_ordinal + 1
+        # Get all progressions for this arc
+        existing_progressions = self.db_manager.get_arc_progressions(main_arc_id=arc_id, session=session)
+        
+        if not existing_progressions:
+            return 1
+
+        # Get all used ordinal positions
+        used_positions = {p.ordinal_position for p in existing_progressions if p.ordinal_position is not None}
+        
+        # Find the first available position
+        position = 1
+        while position in used_positions:
+            position += 1
+        
+        # Log for debugging
+        logger.debug(f"Next available ordinal position for arc {arc_id}: {position}")
+        
+        return position
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

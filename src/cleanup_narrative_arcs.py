@@ -7,14 +7,14 @@ def get_episodes_in_season(season_path: str) -> List[str]:
     """Get list of episode folders in a season directory."""
     return [ep for ep in os.listdir(season_path) if os.path.isdir(os.path.join(season_path, ep))]
 
-def delete_narrative_arcs(series: str, season: str):
+def delete_narrative_arcs_and_entities(series: str, season: str):
     """Delete only narrative arcs related files and databases."""
     base_dir = "data"  # Base directory for data
     chroma_db_path = os.path.join('chroma_db')  # Path to the @chroma_db folder
-    database_path = os.path.join('narrative_arcs.db')
+    database_path = os.path.join('narrative.db')
 
 
-    should_delete_analysis = False
+    should_delete_analysis = True
 
     # Delete the database file if it exists
     if os.path.exists(database_path):
@@ -36,6 +36,12 @@ def delete_narrative_arcs(series: str, season: str):
     # Check if the season directory exists
     if os.path.exists(season_path):
         print(f"Season directory found: {season_path}")
+
+        extracted_entities_path = os.path.join(base_dir, series, season, f"{series}{season}_extracted_entities.json")
+        if os.path.exists(extracted_entities_path):
+            os.remove(extracted_entities_path)
+            print(f"Deleted file: {extracted_entities_path}")
+
         # Delete the multiagent episode narrative arcs JSON files
         for episode in os.listdir(season_path):
             episode_path = os.path.join(season_path, episode)
@@ -44,6 +50,22 @@ def delete_narrative_arcs(series: str, season: str):
                 if os.path.exists(episode_narrative_arcs_path):
                     os.remove(episode_narrative_arcs_path)
                     print(f"Deleted file: {episode_narrative_arcs_path}")
+                plot_entities_normalized_path = os.path.join(episode_path, f"{series}{season}{episode}_plot_entities_normalized.txt")
+                plot_entities_substituted_path = os.path.join(episode_path, f"{series}{season}{episode}_plot_entities_substituted.txt")
+                raw_spacy_entities_path = os.path.join(episode_path, f"{series}{season}{episode}_raw_spacy_entities.json")
+                refined_entities_path = os.path.join(episode_path, f"{series}{season}{episode}_refined_entities.json")
+                if os.path.exists(plot_entities_normalized_path):
+                    os.remove(plot_entities_normalized_path)
+                    print(f"Deleted file: {plot_entities_normalized_path}")
+                if os.path.exists(plot_entities_substituted_path):
+                    os.remove(plot_entities_substituted_path)
+                    print(f"Deleted file: {plot_entities_substituted_path}")
+                if os.path.exists(raw_spacy_entities_path):
+                    os.remove(raw_spacy_entities_path)
+                    print(f"Deleted file: {raw_spacy_entities_path}")
+                if os.path.exists(refined_entities_path):
+                    os.remove(refined_entities_path)
+                    print(f"Deleted file: {refined_entities_path}")
                 else:
                     print(f"File not found: {episode_narrative_arcs_path}")
 
@@ -77,7 +99,7 @@ def deep_clean_season(series: str, season: str):
     """Perform deep cleaning of generated files while preserving original data."""
     base_dir = "data"  # Base directory for data
     chroma_db_path = os.path.join('chroma_db')  # Path to the @chroma_db folder
-    database_path = os.path.join('narrative_arcs.db')
+    database_path = os.path.join('narrative.db')
 
     # Delete the database file if it exists
     if os.path.exists(database_path):
@@ -145,5 +167,5 @@ if __name__ == "__main__":
     season_name = "S01"  # e.g., "Season1"
     
     # Choose which cleanup function to run
-    delete_narrative_arcs(series_name, season_name)  # For narrative arcs only
+    delete_narrative_arcs_and_entities(series_name, season_name)  # For narrative arcs only
     #deep_clean_season(series_name, season_name)    # For full cleanup

@@ -2,46 +2,28 @@
   {
     "title": "Meredith and Derek's Complicated Romance",
     "arc_type": "Soap Arc",
-    "description": "Meredith and Derek's relationship begins with a one-night stand, complicated by Derek being her boss. Their romance faces challenges, including workplace gossip and Meredith's struggle to keep it professional.",
+    "description": "Meredith's one-night stand with Derek evolves into a complex relationship as she discovers he is her boss, leading to tension and complications in her professional life.",
     "episodic": false,
     "main_characters": "Meredith Grey; Derek Shepherd",
-    "interfering_episode_characters": "Miranda Bailey",
-    "single_episode_progression_string": "Meredith sets boundaries with Derek in the elevator, despite their mutual attraction. They share a moment over Allison's case, highlighting their complicated feelings. Meredith insists on boundaries due to his position as her boss, but they share a kiss, complicating their relationship further."
+    "interfering_episode_characters": "Izzie Stevens; George O'Malley; Miranda Bailey",
+    "single_episode_progression_string": "In this episode, Meredith sets boundaries with Derek regarding their relationship, which leads to tension and a kiss. She grapples with her feelings for him while trying to maintain professionalism, culminating in her decision to take the stairs instead of the elevator with him, highlighting her internal conflict."
   },
   {
-    "title": "Intern Dynamics and Rivalries",
-    "arc_type": "Genre-Specific Arc",
-    "description": "The new interns at Seattle Grace Hospital navigate their roles, forming alliances and rivalries as they begin their medical careers.",
-    "episodic": false,
-    "main_characters": "Meredith Grey; Cristina Yang; Isobel Stevens; George O'Malley",
-    "interfering_episode_characters": "Alex Karev; Miranda Bailey",
-    "single_episode_progression_string": "Meredith, George, Cristina, and Izzie navigate their roles, with George wanting to be Meredith's roommate and Cristina asserting her credentials. Alex Karev is introduced, causing tension with Cristina. The interns vie for Bailey's approval, highlighting their competitive nature."
-  },
-  {
-    "title": "Medical Case: Allison's Assault and Recovery",
+    "title": "Medical Case: Rape Victim Allison's Recovery",
     "arc_type": "Episodic Arc",
-    "description": "The episode focuses on the medical and emotional challenges surrounding the treatment of a rape victim, Allison, who is found with severe injuries.",
+    "description": "The episode centers around the medical and emotional challenges faced by a rape victim, Allison, as the interns navigate their responsibilities in her care.",
     "episodic": true,
-    "main_characters": "Meredith Grey; Derek Shepherd; Preston Burke",
-    "interfering_episode_characters": "Miranda Bailey; Webber",
-    "single_episode_progression_string": "Meredith encounters a rape victim, Allison, who has similar shoes to hers, causing her distress. The medical team works on Allison's recovery, with Derek and Burke discussing her condition. The rapist is later brought in, and Meredith and Cristina assist in his surgery."
+    "main_characters": "Meredith Grey; Derek Shepherd; Miranda Bailey; Burke",
+    "interfering_episode_characters": "Izzie Stevens; George O'Malley; Alex Karev; Patricia; Richard",
+    "single_episode_progression_string": "The episode introduces a rape victim, Allison, whose case becomes central to the interns' experiences. Meredith is deeply affected when she realizes Allison shares her shoes, prompting her to take charge in the trauma room. As the medical team discusses Allison's injuries and recovery, they grapple with the emotional weight of the situation. Derek expresses concern for Allison's long-term recovery, while Burke refers to her as a warrior, emphasizing her strength. The interns' interactions with Allison's case highlight their growth and the harsh realities of their medical training."
   },
   {
-    "title": "Burke's Ambition for Chief of Surgery",
+    "title": "Interns' Struggles and Growth",
     "arc_type": "Genre-Specific Arc",
-    "description": "Burke aspires to become Chief of Surgery, facing competition and navigating hospital politics.",
-    "episodic": false,
-    "main_characters": "Preston Burke; Richard",
-    "interfering_episode_characters": "Derek Shepherd",
-    "single_episode_progression_string": "Burke questions Richard about Derek's presence at Seattle Grace, suspecting competition for the Chief position. Richard dismisses Burke's concerns, leading to tension between them."
-  },
-  {
-    "title": "Professional Challenges and Growth",
-    "arc_type": "Genre-Specific Arc",
-    "description": "The interns face various professional challenges, learning to navigate the complexities of their medical careers.",
+    "description": "The interns face various challenges in their medical training, navigating personal relationships and professional responsibilities.",
     "episodic": true,
-    "main_characters": "Meredith Grey; Isobel Stevens; Cristina Yang; George O'Malley",
-    "interfering_episode_characters": "Alex Karev; Preston Burke",
-    "single_episode_progression_string": "Meredith deals with the aftermath of Allison's case, questioning her instincts about a baby's condition. Izzie helps an undocumented worker, risking her job. Cristina and Alex deliver lab results, and George faces the harsh reality of losing patients."
+    "main_characters": "Meredith Grey; George O'Malley; Izzie Stevens; Cristina Yang; Alex Karev",
+    "interfering_episode_characters": "Miranda Bailey; Derek Shepherd; Burke; Ms. Lu; Ahn",
+    "single_episode_progression_string": "Throughout the episode, the interns deal with their individual challenges, such as George's struggle with his confidence after losing patients, Izzie's attempts to communicate with a non-English speaking patient, and Cristina's annoyance with Alex. Their interactions reveal their frustrations and aspirations as they work under Bailey's guidance. The episode culminates in moments of camaraderie, such as when Meredith offers to let Izzie and George move in with her, showcasing their evolving relationships and support for one another."
   }
 ]
