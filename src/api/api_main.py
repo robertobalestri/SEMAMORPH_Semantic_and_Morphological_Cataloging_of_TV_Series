@@ -11,13 +11,15 @@ logger = setup_logging(__name__)
 
 app = FastAPI(title="Narrative Arcs Dashboard API")
 
-# Configure CORS
+# Configure CORS with more permissive settings
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000"],  # React frontend URL
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+    expose_headers=["*"],  # Exposes all headers
+    max_age=3600,  # Cache preflight requests for 1 hour
 )
 
 db_manager = DatabaseManager()
@@ -86,7 +88,7 @@ async def get_arcs_by_series(series: str):
                             ordinal_position=prog.ordinal_position,
                             interfering_episode_characters=prog.interfering_episode_characters
                         )
-                        for prog in arc.progressions
+                        for prog in sorted(arc.progressions, key=lambda x: (x.season, x.episode))
                     ]
                 )
                 for arc in arcs
@@ -134,7 +136,7 @@ async def get_arcs_by_episode(series: str, season: str, episode: str):
                     prog for prog in arc.progressions
                     if (prog.series == series and 
                         prog.season == season and 
-                        prog.episode == normalized_episode)  # Use normalized episode
+                        prog.episode == normalized_episode)
                 ]
                 if episode_progressions:
                     episode_arcs.append(

@@ -1,22 +1,17 @@
 [
   {
-    "entity_name": "god",
+    "entity_name": "hansel",
+    "best_appellation": "Hansel",
     "appellations": [
-      "God"
+      "Hansel"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "gretel",
+    "best_appellation": "Gretel",
     "appellations": [
       "Gretel"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "hansel",
-    "appellations": [
-      "Hansel"
     ],
     "entity_type": "PERSON"
   }

@@ -20,21 +20,21 @@ Overhearing them, [george_omalley] introduces himself.
 The three interns, along with another intern, [isobel_stevens], an ex-model, are called to see [miranda_bailey].
 They approach [miranda_bailey] and are surprised she's a woman and not a Nazi.
 [isobel_stevens] thinks the nickname might be due to jealousy.
-[cristina_yang] dismisses this, but Isobel introduces herself as [isobel_stevens], saying everyone calls her [isobel_stevens].
-[miranda_bailey] ignores Isobel, shows the interns their equipment, gives a brief tour, and explains Miranda's rules.
+[cristina_yang] dismisses this, but [isobel_stevens] introduces herself as [isobel_stevens], saying everyone calls her [isobel_stevens].
+[miranda_bailey] ignores [isobel_stevens], shows the interns their equipment, gives a brief tour, and explains [miranda_bailey]'s rules.
 [miranda_bailey] gets a page, and they all rush to the roof.
 A helicopter lands with details about a patient, [katie_bryce], who is having seizures.
 In the hospital, the interns and nurses inject [katie_bryce], and [katie_bryce] stops moving.
-[dr_preston_burke] arrives and compares [katie_bryce] to a wet fish on dry land.
-[dr_preston_burke] instructs the interns to perform basic tests.
+[preston_burke] arrives and compares [katie_bryce] to a wet fish on dry land.
+[preston_burke] instructs the interns to perform basic tests.
 [george_omalley] is assigned workups, [cristina_yang] is to do labs, [meredith_grey] is responsible for [katie_bryce] and getting [katie_bryce] a CT scan.
 [isobel_stevens] is told to perform rectal exams by [miranda_bailey], who smiles.
 [isobel_stevens] does the rectal exams.
 [cristina_yang] gets the test results and hints to [miranda_bailey] that [cristina_yang] wants a surgery.
 [george_omalley] tries a simple procedure on a patient.
-[dr_preston_burke], annoyed, takes over and does it himself.
-[george_omalley] jokes that [dr_preston_burke] probably made mistakes at first too.
-[dr_preston_burke], smiling tightly, tells [george_omalley] he will have fun with him.
+[preston_burke], annoyed, takes over and does it himself.
+[george_omalley] jokes that [preston_burke] probably made mistakes at first too.
+[preston_burke], smiling tightly, tells [george_omalley] he will have fun with him.
 [george_omalley] feels nervous.
 [meredith_grey] is lost in the hospital with [katie_bryce], who talks about missing a beauty pageant.
 [katie_bryce] mentions she was good except for a fall during rhythmic gymnastics and sometimes tells [meredith_grey] she is lost.
@@ -43,13 +43,13 @@ After seven hours of their first shift, a group of interns sit in the canteen.
 [george_omalley] sympathizes, saying attendings dislike him too.
 [cristina_yang] asks if anyone knew [meredith_grey]'s mother is [ellis_grey], a famous surgeon who wrote books and won the Harper Avery Award twice.
 [meredith_grey] quickly changes the subject, saying [katie_bryce] is unbearable.
-[dr_preston_burke] arrives and announces he will choose one intern for a surgery.
+[preston_burke] arrives and announces he will choose one intern for a surgery.
 He picks [george_omalley] for an appendectomy and leaves.
-[miranda_bailey] tells [dr_preston_burke] she disagrees with his decision, mentioning that [george_omalley] barely got into the program.
-[dr_preston_burke] argues that intimidating one will make the others follow, but [miranda_bailey] keeps trying to change his mind.
+[miranda_bailey] tells [preston_burke] she disagrees with his decision, mentioning that [george_omalley] barely got into the program.
+[preston_burke] argues that intimidating one will make the others follow, but [miranda_bailey] keeps trying to change his mind.
 [katie_bryce]'s parents enter her room and, after checking on [katie_bryce], ask [meredith_grey] if surgery is needed.
-[meredith_grey] explains she isn't the doctor and goes to [miranda_bailey] to find [dr_preston_burke].
-[miranda_bailey] informs her that [dr_preston_burke] is no longer on the case and directs her to [derek_shepherd], the new attending.
+[meredith_grey] explains she isn't the doctor and goes to [miranda_bailey] to find [preston_burke].
+[miranda_bailey] informs her that [preston_burke] is no longer on the case and directs her to [derek_shepherd], the new attending.
 [meredith_grey] notices [derek_shepherd], who is [derek_shepherd], her one-night stand, and quickly walks away.
 [derek_shepherd] follows her to a stairwell.
 [meredith_grey] decides to act like nothing happened, but [derek_shepherd] jokes that [meredith_grey] took advantage of him.
@@ -59,7 +59,7 @@ He picks [george_omalley] for an appendectomy and leaves.
 In the gallery, other interns bet against [george_omalley], but [meredith_grey] defends him.
 [george_omalley] starts the procedure well, but at the end, he pulls the purse strings too hard and breaks them.
 The patient starts to bleed, and [george_omalley] can't think of a solution.
-[dr_preston_burke] steps in and finishes the procedure.
+[preston_burke] steps in and finishes the procedure.
 The interns in the gallery nickname [george_omalley] "007" (license to kill).
 Afterward, [george_omalley] worries about the nickname.
 [meredith_grey] is paged and leaves for a 911 call about [katie_bryce].
@@ -69,10 +69,10 @@ Afterward, [george_omalley] worries about the nickname.
 [meredith_grey] runs through the hospital to check on [katie_bryce].
 [meredith_grey] finds out [katie_bryce] faked a seizure and wants [meredith_grey] to call someone.
 Annoyed, [meredith_grey] leaves.
-Nurse Tyler asks [isobel_stevens] what she needs.
-[isobel_stevens] says Mr. Jones has difficult veins and needs antibiotics.
+[tyler] asks [isobel_stevens] what she needs.
+[isobel_stevens] says [mr_jones] has difficult veins and needs antibiotics.
 [isobel_stevens] should start a central line but doesn't know how.
-Nurse Tyler tells [isobel_stevens] to wake up [miranda_bailey], the on-call resident.
+[tyler] tells [isobel_stevens] to wake up [miranda_bailey], the on-call resident.
 [isobel_stevens] timidly approaches [miranda_bailey].
 [miranda_bailey] asks if the patient is dying.
 When [isobel_stevens] says no, [miranda_bailey] goes back to sleep.
@@ -96,12 +96,12 @@ On the fourth attempt, [katie_bryce]'s heartbeat and blood flow return to normal
 [meredith_grey] returns to the hospital and asks [cristina_yang] to keep it a secret.
 Inside the hospital, [derek_shepherd] tells [katie_bryce]'s parents that it might not be a seizure disorder.
 The parents want a different doctor because they feel [derek_shepherd] isn't trying hard enough.
-In another part of the hospital, [dr_preston_burke] explains a procedure to a patient.
-[dr_preston_burke] will put the patient on bypass, fix the heart, and finish the surgery.
-[gloria_savitch], the patient's wife, asks if she should worry.
-[dr_preston_burke] reassures [gloria_savitch] of his skills but mentions the risks of surgery.
-[dr_preston_burke] leaves, and [gloria_savitch] remains concerned.
-[george_omalley] comforts [gloria_savitch], promising that [tony_savitch] will do well in surgery.
+In another part of the hospital, [preston_burke] explains a procedure to a patient.
+[preston_burke] will put the patient on bypass, fix the heart, and finish the surgery.
+[gloria], the patient's wife, asks if she should worry.
+[preston_burke] reassures [gloria] of his skills but mentions the risks of surgery.
+[preston_burke] leaves, and [gloria] remains concerned.
+[george_omalley] comforts [gloria], promising that [tony_savitch] will do well in surgery.
 [cristina_yang], waiting for [derek_shepherd], practices suturing on a banana.
 [cristina_yang] calls [george_omalley] 007 when he laughs but quickly apologizes, saying she gets mean when tired.
 [derek_shepherd] enters and says [katie_bryce] is having seizures without a clear cause.
@@ -125,18 +125,18 @@ They tell [derek_shepherd] that [katie_bryce] might have an aneurysm, even thoug
 [derek_shepherd] notes that [katie_bryce] could have lived her whole life without issues.
 [derek_shepherd] praises [meredith_grey] and [cristina_yang] and chooses [meredith_grey] to join him in the O.R.
 After [derek_shepherd] leaves, [cristina_yang] angrily looks at [meredith_grey] and walks away.
-Meanwhile, [dr_preston_burke] operates on [tony_savitch].
-Later, [dr_preston_burke] informs [george_omalley] that the operation was quick because [tony_savitch]'s heart was too damaged, and [tony_savitch] died.
-[george_omalley] is shocked and upset, reminding [dr_preston_burke] he had assured [gloria_savitch] that [tony_savitch] would be fine.
-[dr_preston_burke] is angry and says only God could keep such a promise.
-[dr_preston_burke] suggests [george_omalley] should tell [gloria_savitch].
+Meanwhile, [preston_burke] operates on [tony_savitch].
+Later, [preston_burke] informs [george_omalley] that the operation was quick because [tony_savitch]'s heart was too damaged, and [tony_savitch] died.
+[george_omalley] is shocked and upset, reminding [preston_burke] he had assured [gloria] that [tony_savitch] would be fine.
+[preston_burke] is angry and says only God could keep such a promise.
+[preston_burke] suggests [george_omalley] should tell [gloria].
 [isobel_stevens] and [cristina_yang] are talking privately.
 [isobel_stevens] tries to convince [cristina_yang] that [meredith_grey] might not be at fault, but [cristina_yang] disagrees.
 [meredith_grey] comes in to apologize, but [cristina_yang] says [meredith_grey] shouldn't seek forgiveness from her.
 [cristina_yang] adds that at least she didn't get into med school because of her mother or good surgeries by sleeping with her boss.
 [meredith_grey] leaves upset.
-[george_omalley] is in the waiting area trying to tell [gloria_savitch] that [tony_savitch] has died.
-[george_omalley] apologizes, but [gloria_savitch] asks him to leave and sits down in shock.
+[george_omalley] is in the waiting area trying to tell [gloria] that [tony_savitch] has died.
+[george_omalley] apologizes, but [gloria] asks him to leave and sits down in shock.
 [derek_shepherd] is shaving [katie_bryce]'s head.
 [meredith_grey] says she doesn't want to assist, but [derek_shepherd] insists.
 [derek_shepherd] explains it isn't because they have a personal relationship, but because [meredith_grey] is [katie_bryce]'s doctor and helped save her life on her first day.

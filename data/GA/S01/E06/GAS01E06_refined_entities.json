@@ -1,0 +1,102 @@
+[
+  {
+    "entity_name": "izzie_stevens",
+    "best_appellation": "Izzie Stevens",
+    "appellations": [
+      "izzie_stevens",
+      "Izzie"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "cristina_yang",
+    "best_appellation": "Cristina Yang",
+    "appellations": [
+      "cristina_yang",
+      "Cristina"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "edward_connors",
+    "best_appellation": "Edward Connors",
+    "appellations": [
+      "Edward",
+      "Edwards"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "derek_shepherd",
+    "best_appellation": "Derek Shepherd",
+    "appellations": [
+      "derek_shepherd",
+      "Derek",
+      "McDreamy"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "alex_karev",
+    "best_appellation": "Alex Karev",
+    "appellations": [
+      "alex_karev",
+      "Alex"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "annie_connors",
+    "best_appellation": "Annie Connors",
+    "appellations": [
+      "Annie Connors",
+      "Annie"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "jimmy_connors",
+    "best_appellation": "Jimmy Connors",
+    "appellations": [
+      "Jimmy"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "meredith_grey",
+    "best_appellation": "Meredith Grey",
+    "appellations": [
+      "meredith_grey",
+      "Meredith"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "preston_burke",
+    "best_appellation": "Preston Burke",
+    "appellations": [
+      "preston_burke",
+      "Burke",
+      "Dr. Burke"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "george_omalley",
+    "best_appellation": "George O'Malley",
+    "appellations": [
+      "george_omalley",
+      "George"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "miranda_bailey",
+    "best_appellation": "Miranda Bailey",
+    "appellations": [
+      "miranda_bailey",
+      "Bailey"
+    ],
+    "entity_type": "PERSON"
+  }
+]

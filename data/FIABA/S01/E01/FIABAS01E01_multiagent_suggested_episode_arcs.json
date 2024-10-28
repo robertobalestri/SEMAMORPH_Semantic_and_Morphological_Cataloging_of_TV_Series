@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Episodic Case: Hansel and Gretel's Ordeal and Escape",
+    "arc_type": "Episodic Arc",
+    "description": "Hansel and Gretel face abandonment and danger in the woods, ultimately defeating a witch and returning home with treasure.",
+    "episodic": true,
+    "main_characters": "Hansel; Gretel",
+    "interfering_episode_characters": "The Witch; The Woodcutter; The Mother",
+    "single_episode_progression_string": "A famine strikes, leaving a woodcutter's family with little to eat. The mother suggests abandoning their children, Hansel and Gretel, in the woods. Hansel gathers pebbles to find their way back home. The children are left in the woods but return home using the pebbles. The parents plan to abandon them again; Hansel uses breadcrumbs this time. Birds eat the breadcrumbs, leaving the children lost. Hansel and Gretel find a house made of bread and meet a witch. The witch captures Hansel to eat him, but Gretel outsmarts and kills her. They find treasure in the witch's house and return home to their father."
+  },
+  {
+    "title": "Soap Arc: Parental Desperation and Moral Conflict",
+    "arc_type": "Soap Arc",
+    "description": "The parents of Hansel and Gretel face moral dilemmas and desperation due to famine, leading to decisions that impact their family dynamics.",
+    "episodic": true,
+    "main_characters": "Father; Mother",
+    "interfering_episode_characters": "Hansel; Gretel",
+    "single_episode_progression_string": "The father struggles with the moral conflict of abandoning his children due to famine. The mother pressures him into agreeing to leave Hansel and Gretel in the woods. After the children return, the mother insists on abandoning them again, leading to further tension. The father's relief upon the children's return highlights his internal conflict and regret."
+  },
+  {
+    "title": "Episodic Case: The Witch's Deception and Downfall",
+    "arc_type": "Episodic Arc",
+    "description": "A witch uses deception to lure children into her home with the intent to eat them, but her plans are thwarted by Gretel's cleverness.",
+    "episodic": true,
+    "main_characters": "Gretel; Witch",
+    "interfering_episode_characters": "Hansel",
+    "single_episode_progression_string": "The witch lures Hansel and Gretel with a house made of sweets. She captures Hansel to fatten him up for eating. Gretel is forced to assist but ultimately tricks the witch into the oven, leading to the witch's demise. This allows Hansel and Gretel to escape with treasures."
+  }
+]

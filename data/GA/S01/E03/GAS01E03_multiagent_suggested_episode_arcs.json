@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Meredith and Derek's Complicated Romance",
+    "arc_type": "Soap Arc",
+    "description": "Meredith and Derek's relationship begins with a one-night stand and evolves into a complicated romance, affecting their professional lives and friendships.",
+    "episodic": false,
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "Miranda Bailey; Viper",
+    "single_episode_progression_string": "Meredith and Derek have a tense interaction after Derek almost gets hit by a bike. Derek expresses concern about how Meredith would feel if he died, leading to a discussion about their relationship. Meredith accuses Derek of being interested only in the chase. Later, Derek tells Meredith it's not about the chase but about her hair and bossiness, hinting at his genuine feelings."
+  },
+  {
+    "title": "Intern Dynamics and Challenges",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The new interns at Seattle Grace Hospital face various challenges as they adjust to their roles, navigate relationships, and compete for opportunities.",
+    "episodic": false,
+    "main_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
+    "interfering_episode_characters": "Bailey; Richard Webber; Preston Burke",
+    "single_episode_progression_string": "The interns deal with the chaos of the 'Dead baby bike race day,' competing for cases and navigating hospital politics. Izzie and Cristina work together on a potential organ donor case, while Alex and Meredith clash over a patient named Viper. George is tasked with monitoring patients and faces awkward interactions with Mackie. The interns' dynamics are further explored as they watch Meredith's mother's surgical tapes together."
+  },
+  {
+    "title": "George's Struggles and Growth",
+    "arc_type": "Genre-Specific Arc",
+    "description": "George O'Malley faces challenges as an intern, dealing with self-doubt and striving to prove himself in a competitive environment.",
+    "episodic": false,
+    "main_characters": "George O'Malley",
+    "interfering_episode_characters": "Alex Karev; Richard Webber; Mackie",
+    "single_episode_progression_string": "George is assigned to assist the Chief and monitor patients, including Mackie, who flirts with him. George struggles with his identity and perceptions, asking Cristina if she thinks he's gay. He ultimately finds a liver for Mackie, gaining recognition from Webber and showing growth in his confidence."
+  },
+  {
+    "title": "Medical Case: Viper's Bike Race Injury",
+    "arc_type": "Episodic Arc",
+    "description": "The episode focuses on the medical challenges faced by the interns during the chaotic 'Dead baby bike race day,' particularly involving a patient named Viper.",
+    "episodic": true,
+    "main_characters": "Meredith Grey; Alex Karev",
+    "interfering_episode_characters": "Viper; Bailey",
+    "single_episode_progression_string": "Meredith and Alex argue over treating Viper, a bike race participant with spokes in his side. Meredith insists on running tests, but Viper leaves against medical advice. Later, Viper returns with severe complications, and Meredith takes charge to save him in the OR, showcasing her medical skills and determination."
+  },
+  {
+    "title": "Organ Donation Dilemma",
+    "arc_type": "Episodic Arc",
+    "description": "The interns deal with the ethical and emotional challenges of organ donation as they work with a brain-dead patient, John Doe.",
+    "episodic": true,
+    "main_characters": "Cristina Yang; Izzie Stevens",
+    "interfering_episode_characters": "Shelley Davidson; Bailey",
+    "single_episode_progression_string": "Cristina and Izzie handle a brain-dead patient, John Doe, and navigate the process of organ donation. They face ethical dilemmas and emotional challenges, especially when interacting with the patient's wife, Shelley. Cristina learns the importance of empathy, while Izzie shows compassion by sewing up the patient for his family."
+  }
+]

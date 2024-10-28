@@ -1,51 +1,56 @@
 1. **Major Themes**:
-   - The challenges of medical training and the harsh realities of surgery.
-   - The complexity of personal relationships and romantic entanglements.
-   - The emotional toll of patient care and ethical dilemmas in medicine.
-   - The struggle for professional identity and ambition among interns.
-   - The impact of secrets and past traumas on present relationships.
+   - Professional Challenges and Growth
+   - Personal Relationships and Romantic Entanglements
+   - Ethical Dilemmas in Medicine
+   - Secrets and Revelations
 
 2. **Narrative Arcs**:
 
-   **Arc Type**: Soap Arc  
-   **Title**: “Meredith and Derek's Complicated Romance”  
-   **Description**: Meredith and Derek's relationship evolves from a one-night stand to a secret affair, causing tension among the interns and jeopardizing their careers.  
-   **Episodic Flag**: False  
-   **Main Characters**: Meredith Grey, Derek Shepherd  
-   **Interfering Episode Characters**: Izzie Stevens, George O'Malley, Miranda Bailey  
-   **Progression**: Meredith discovers Derek is her boss. Their affair is revealed, leading to complications with Bailey and the other interns. The relationship deepens but faces scrutiny and challenges.
+   - Arc Type: Soap Arc
+     Title: “Meredith and Derek's Complicated Romance”
+     Description: Meredith and Derek's relationship begins with a one-night stand and evolves into a complicated romance, affecting their professional lives and friendships.
+     Episodic Flag: False
+     Main Characters: Meredith Grey, Derek Shepherd
+     Interfering Episode Characters: Miranda Bailey, George O'Malley, Izzie Stevens
+     Progression: Meredith discovers Derek is her boss. Bailey finds out about their affair. Meredith and Derek grow closer despite complications.
 
-   **Arc Type**: Genre-Specific Arc  
-   **Title**: “The Ethics of Organ Donation”  
-   **Description**: Cristina and Izzie's emotional journey surrounding organ donation highlights the ethical dilemmas faced by medical professionals.  
-   **Episodic Flag**: False  
-   **Main Characters**: Cristina Yang, Izzie Stevens  
-   **Interfering Episode Characters**: George O'Malley, Meredith Grey  
-   **Progression**: The interns grapple with the decision to harvest organs from a brain-dead patient, leading to personal reflections and emotional growth.
+   - Arc Type: Genre-Specific Arc
+     Title: “Interns' Professional Challenges at Seattle Grace”
+     Description: The interns face various medical and ethical challenges, learning the harsh realities of being surgeons and navigating complex cases.
+     Episodic Flag: False
+     Main Characters: Meredith Grey, Cristina Yang, Izzie Stevens, George O'Malley, Alex Karev
+     Interfering Episode Characters: Richard Webber, Preston Burke
+     Progression: Interns handle difficult cases like organ donation and a record-breaking tumor. They face personal and professional dilemmas.
 
-   **Arc Type**: Soap Arc  
-   **Title**: “George's Struggles with Identity and Relationships”  
-   **Description**: George navigates his feelings of inadequacy and jealousy as he feels sidelined by Izzie and Meredith's close friendship.  
-   **Episodic Flag**: False  
-   **Main Characters**: George O'Malley  
-   **Interfering Episode Characters**: Izzie Stevens, Meredith Grey  
-   **Progression**: George's frustration grows as he feels treated like a sibling. His romantic misadventures, including syphilis, further complicate his self-image.
+   - Arc Type: Soap Arc
+     Title: “Cristina and Burke's Secret Relationship”
+     Description: Cristina and Burke's relationship develops secretly, adding tension to their professional and personal lives.
+     Episodic Flag: False
+     Main Characters: Cristina Yang, Preston Burke
+     Interfering Episode Characters: Meredith Grey, Izzie Stevens
+     Progression: Relationship begins in secret. Complications arise as they balance personal and professional boundaries.
 
-   **Arc Type**: Genre-Specific Arc  
-   **Title**: “The Tumor Case: A Record-Breaking Challenge”  
-   **Description**: The arrival of a patient with a record-breaking tumor presents a significant medical challenge for the interns, testing their skills and resolve.  
-   **Episodic Flag**: True  
-   **Main Characters**: Meredith Grey, Cristina Yang, Alex Karev  
-   **Interfering Episode Characters**: Derek Shepherd, Miranda Bailey  
-   **Progression**: The interns work together to address the complexities of the case, showcasing their growth and the harsh realities of advanced medical conditions.
+   - Arc Type: Genre-Specific Arc
+     Title: “Meredith's Struggle with Her Mother's Secret”
+     Description: Meredith grapples with the secret of her mother's past, affecting her emotionally and professionally.
+     Episodic Flag: False
+     Main Characters: Meredith Grey
+     Interfering Episode Characters: Cristina Yang, Derek Shepherd
+     Progression: Meredith hides her mother's secret. Encounters with Ellis Grey's past impact her.
+
+   - Arc Type: Episodic Arc
+     Title: “Medical Case: Patient with Nails in Head”
+     Description: The interns deal with a challenging case involving a patient with nails in his head, testing their medical skills.
+     Episodic Flag: True
+     Main Characters: Meredith Grey, Derek Shepherd, George O'Malley, Alex Karev
+     Interfering Episode Characters: Izzie Stevens
+     Progression: The interns work together to treat the patient, showcasing their teamwork and medical abilities.
 
 3. **Major Plot Points**:
-   - Meredith's one-night stand with Derek is revealed to be with her boss.
-   - George and Izzie move in with Meredith, complicating their dynamics.
-   - Cristina and Izzie's emotional struggle with organ donation.
-   - Meredith's fear of being sued after a surgical mistake.
-   - Bailey discovers Meredith and Derek's affair, putting their jobs at risk.
-   - Cristina discovers she is pregnant, adding complexity to her relationship with Burke.
-   - George's confrontation with the anesthesiologist leads to professional repercussions.
-   - Izzie performs a major procedure alone, showcasing her growth and independence.
-   - The interns deal with various patient cases, highlighting their development and challenges in the medical field.
+   - Meredith discovers Derek is her boss.
+   - George finds a towel in a patient.
+   - Bailey discovers Meredith and Derek's affair.
+   - Cristina discovers she is pregnant.
+   - George contracts syphilis from Olivia.
+   - Meredith struggles with her mother's secret.
+   - Izzie performs a major procedure on her own.

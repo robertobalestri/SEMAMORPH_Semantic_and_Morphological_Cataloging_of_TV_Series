@@ -188,13 +188,13 @@ def process_text(path_handler: PathHandler) -> None:
 
 if __name__ == "__main__":
     # Configuration
-    series = "GA"
+    series = "FIABA"
     season = "S01"
 
     logger.info("Starting text processing.")
 
     ep_number = 1
-    for ep in range(ep_number, 3): #(1, 2) for only episode 1
+    for ep in range(ep_number, 2): #(1, 2) for only episode 1
         episode = f"E{ep:02d}"
         
         # Initialize PathHandler

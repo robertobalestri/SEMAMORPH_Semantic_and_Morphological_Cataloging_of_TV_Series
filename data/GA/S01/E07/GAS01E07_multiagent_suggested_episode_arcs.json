@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Meredith and Derek's Complicated Romance",
+    "arc_type": "Soap Arc",
+    "description": "Meredith and Derek's relationship begins with a one-night stand and evolves into a complicated romance, affecting their professional lives and friendships.",
+    "episodic": false,
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "George O'Malley; Izzie Stevens",
+    "single_episode_progression_string": "George and Izzie see Derek leaving Meredith's house, confirming his involvement with her. Derek admits his feelings about Meredith to George, and Izzie confronts Meredith about the relationship, realizing Meredith is in love with Derek."
+  },
+  {
+    "title": "Intern Dynamics and Challenges",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The new interns at Seattle Grace Hospital face various challenges as they adjust to their roles, navigate relationships, and compete for opportunities.",
+    "episodic": false,
+    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Alex Karev",
+    "interfering_episode_characters": "Miranda Bailey; Derek Shepherd",
+    "single_episode_progression_string": "Meredith assists Bailey with a complex gastric bypass case, facing complications. George suspects Dr. Taylor of drinking and confronts him, leading to tension with Derek. Alex connects with a gunshot victim but faces the patient's death."
+  },
+  {
+    "title": "Cristina's Unexpected Pregnancy",
+    "arc_type": "Soap Arc",
+    "description": "Cristina suspects her flu symptoms might be pregnancy and faces the emotional implications.",
+    "episodic": false,
+    "main_characters": "Cristina Yang",
+    "interfering_episode_characters": "Preston Burke",
+    "single_episode_progression_string": "Cristina feels nauseous and blames Dr. Burke. She takes two pregnancy tests and is unhappy with the results, indicating a potential pregnancy."
+  },
+  {
+    "title": "George's Struggles and Growth",
+    "arc_type": "Genre-Specific Arc",
+    "description": "George O'Malley faces challenges as an intern, dealing with self-doubt and striving to prove himself in a competitive environment.",
+    "episodic": false,
+    "main_characters": "George O'Malley",
+    "interfering_episode_characters": "Derek Shepherd; Dr. Taylor; Cristina Yang",
+    "single_episode_progression_string": "George joins Derek on a toddler's surgery and suspects Dr. Taylor of drinking. He confronts Taylor, leading to his removal from surgery, but later receives an apology from Derek."
+  },
+  {
+    "title": "Medical Case: Unauthorized Gastric Bypass Reversal",
+    "arc_type": "Episodic Arc",
+    "description": "Meredith helps Bailey with a case involving a teenager who had an unauthorized gastric bypass in Mexico, which was poorly done and needs fixing.",
+    "episodic": true,
+    "main_characters": "Meredith Grey; Miranda Bailey",
+    "interfering_episode_characters": "Teenage Patient; Patient's Mother",
+    "single_episode_progression_string": "Meredith learns the teenager's surgery was driven by her mother's expectations. The reversal procedure fails, and complications arise, leaving the patient with lifelong nutritional challenges."
+  },
+  {
+    "title": "Medical Case: Toddler's Hemispherectomy",
+    "arc_type": "Episodic Arc",
+    "description": "Derek performs a hemispherectomy on a toddler with severe tremors, a procedure involving the removal of half the brain.",
+    "episodic": true,
+    "main_characters": "Derek Shepherd",
+    "interfering_episode_characters": "George O'Malley; Dr. Taylor",
+    "single_episode_progression_string": "Derek discovers the toddler's brain tissue is dying rapidly and decides on a hemispherectomy. During the surgery, the anesthesiologist Dr. Taylor falls asleep, causing the child to wake up, leading to Derek removing Dr. Taylor from the surgery."
+  },
+  {
+    "title": "Medical Case: Gunshot Victim with Tattoo Infection",
+    "arc_type": "Episodic Arc",
+    "description": "Alex deals with a gunshot victim who believes scars enhance his tattoos, but the stress from the wound worsens an existing infection.",
+    "episodic": true,
+    "main_characters": "Alex Karev",
+    "interfering_episode_characters": "Gunshot Victim; Preston Burke",
+    "single_episode_progression_string": "Alex connects with the gunshot victim over shared wrestling experiences. The patient's condition deteriorates due to a tattoo infection, ultimately leading to his death."
+  }
+]

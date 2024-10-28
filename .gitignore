@@ -6,3 +6,4 @@ __pycache__/
 agentops.agent_logs/
 instructions.txt
 frontend/node_modules/
+agentops.log

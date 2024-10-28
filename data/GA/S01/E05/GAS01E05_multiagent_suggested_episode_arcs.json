@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Meredith and Derek's Complicated Romance",
+    "arc_type": "Soap Arc",
+    "description": "Meredith and Derek's relationship begins with a one-night stand and evolves into a complicated romance, affecting their professional lives and friendships.",
+    "episodic": false,
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "George O'Malley; Miranda Bailey",
+    "single_episode_progression_string": "Meredith and Derek's relationship is strained when Derek notices Meredith's change in attitude around George. Later, they flirt and have sex in a car during the party, witnessed by Bailey."
+  },
+  {
+    "title": "Intern Dynamics and Challenges",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The new interns at Seattle Grace Hospital face various challenges as they adjust to their roles, navigate relationships, and compete for opportunities.",
+    "episodic": false,
+    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Izzie Stevens; Alex Karev",
+    "interfering_episode_characters": "Preston Burke; Miranda Bailey",
+    "single_episode_progression_string": "The interns deal with professional jealousy and competition, as seen when George envies Meredith for holding a heart. Izzie's party planning causes tension among the interns, and Cristina's sarcastic remarks highlight their interpersonal dynamics."
+  },
+  {
+    "title": "Meredith's Family Legacy and Personal Struggles",
+    "arc_type": "Soap Arc",
+    "description": "Meredith grapples with her mother's legacy as a renowned surgeon and her own personal struggles, including her mother's Alzheimer's diagnosis.",
+    "episodic": false,
+    "main_characters": "Meredith Grey",
+    "interfering_episode_characters": "Ellis Grey; Nursing Home Representative",
+    "single_episode_progression_string": "Meredith visits her mother in the nursing home, trying to have her sign over her estate. Her mother's Alzheimer's episode prevents this, adding to Meredith's stress as she deals with her first heart surgery."
+  },
+  {
+    "title": "George's Struggles and Growth",
+    "arc_type": "Genre-Specific Arc",
+    "description": "George O'Malley faces challenges as an intern, dealing with self-doubt and striving to prove himself in a competitive environment.",
+    "episodic": false,
+    "main_characters": "George O'Malley",
+    "interfering_episode_characters": "Meredith Grey; Preston Burke; Miranda Bailey",
+    "single_episode_progression_string": "George assists in surgeries and deals with jealousy over Meredith's opportunities. He shows empathy towards Mrs. Drake, gaining her trust, and is involved in solving her medical mystery."
+  },
+  {
+    "title": "Medical Case: Mrs. Patterson's Heart Surgery Complications",
+    "arc_type": "Episodic Arc",
+    "description": "Meredith's first heart surgery is complicated by her fatigue and a potential mistake, leading to a crisis in the operating room.",
+    "episodic": true,
+    "main_characters": "Meredith Grey; Preston Burke",
+    "interfering_episode_characters": "Mrs. Patterson; Mr. Patterson; Richard Webber",
+    "single_episode_progression_string": "Meredith holds a heart during surgery but nods off, worrying she might have damaged it. Later, Mrs. Patterson experiences complications, and Meredith admits to tearing a glove. Burke discovers the heart's ventricular walls are weak, not due to Meredith's actions."
+  },
+  {
+    "title": "Medical Case: Mrs. Drake's Retained Surgical Towel",
+    "arc_type": "Episodic Arc",
+    "description": "A towel left inside Mrs. Drake during a previous surgery is discovered, leading to a medical and ethical dilemma.",
+    "episodic": true,
+    "main_characters": "George O'Malley; Cristina Yang; Preston Burke",
+    "interfering_episode_characters": "Richard Webber; Miranda Bailey; Mrs. Drake",
+    "single_episode_progression_string": "George assists with Mrs. Drake's surgery, where a towel is found inside her. Cristina investigates the original surgery, discovering Burke was involved. The case raises concerns about hospital liability and surgical errors."
+  },
+  {
+    "title": "Medical Case: Jerry Frost's Drug Addiction and Surgery",
+    "arc_type": "Episodic Arc",
+    "description": "Jerry Frost, a patient with a drug addiction, presents with back pain and later requires emergency surgery after a fall.",
+    "episodic": true,
+    "main_characters": "Derek Shepherd; Alex Karev; Izzie Stevens",
+    "interfering_episode_characters": "Jerry Frost",
+    "single_episode_progression_string": "Alex suspects Jerry of drug-seeking behavior, but Derek insists on treating his pain. Jerry becomes violent, falls, and requires surgery for a subdural hemorrhage, which Derek performs with Izzie's assistance."
+  },
+  {
+    "title": "Izzie's Relationship with Hank",
+    "arc_type": "Soap Arc",
+    "description": "Izzie struggles to balance her relationship with Hank and her demanding career as a surgical intern.",
+    "episodic": false,
+    "main_characters": "Izzie Stevens; Hank",
+    "interfering_episode_characters": "Cristina Yang; George O'Malley",
+    "single_episode_progression_string": "Izzie plans a party for Hank to meet her friends, but it spirals out of control. Hank is upset about the party's size and Izzie's focus on work, leading to an argument and his departure."
+  }
+]

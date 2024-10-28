@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Meredith and Derek's Complicated Romance",
+    "arc_type": "Soap Arc",
+    "description": "Meredith and Derek's relationship begins with a one-night stand and evolves into a complicated romance, affecting their professional lives and friendships.",
+    "episodic": false,
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "Miranda Bailey; Cristina Yang",
+    "single_episode_progression_string": "Meredith avoids Derek, admitting their relationship is complicated due to his position as an attending. Derek confronts her about avoiding him, and they share a tender moment in the rain at the end of the episode. Meredith decides to break up with Derek but struggles with her feelings."
+  },
+  {
+    "title": "Intern Dynamics and Challenges",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The new interns at Seattle Grace Hospital face various challenges as they adjust to their roles, navigate relationships, and compete for opportunities.",
+    "episodic": false,
+    "main_characters": "Meredith Grey; Izzie Stevens; George O'Malley; Alex Karev; Cristina Yang",
+    "interfering_episode_characters": "Miranda Bailey; Preston Burke",
+    "single_episode_progression_string": "The interns deal with a complex case involving a patient with a large tumor. Izzie takes charge in an emergency, while Alex faces consequences for his behavior. George struggles with self-doubt, and Meredith navigates her relationship with Derek amidst professional challenges."
+  },
+  {
+    "title": "George's Struggles and Growth",
+    "arc_type": "Genre-Specific Arc",
+    "description": "George O'Malley faces challenges as an intern, dealing with self-doubt and striving to prove himself in a competitive environment.",
+    "episodic": false,
+    "main_characters": "George O'Malley",
+    "interfering_episode_characters": "Meredith Grey; Izzie Stevens; Alex Karev",
+    "single_episode_progression_string": "George spills coffee on himself, struggles with his feelings for Meredith, and makes a mistake during surgery. He compares his dating issues to a patient's serious condition, highlighting his ongoing self-doubt."
+  },
+  {
+    "title": "Professional Rivalry: Burke and Derek",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Burke and Derek's professional rivalry intensifies as they vie for the position of Chief of Surgery.",
+    "episodic": false,
+    "main_characters": "Preston Burke; Derek Shepherd",
+    "interfering_episode_characters": "Alex Karev; Miranda Bailey",
+    "single_episode_progression_string": "Burke and Derek discuss different approaches to a patient's treatment, showcasing their professional rivalry. Burke warns Alex about potential legal issues, demonstrating his authoritative stance."
+  },
+  {
+    "title": "Medical Case: Annie Connors' Tumor",
+    "arc_type": "Episodic Arc",
+    "description": "The interns handle a challenging case involving Annie Connors, a patient with a large tumor, exploring themes of self-neglect and medical ethics.",
+    "episodic": true,
+    "main_characters": "Annie Connors; Alex Karev; Preston Burke",
+    "interfering_episode_characters": "Cristina Yang; George O'Malley; Miranda Bailey",
+    "single_episode_progression_string": "Annie Connors is introduced with a large tumor. The interns discuss her condition, and Alex's insensitive comments lead to his removal from the surgery. Despite efforts, Annie's surgery fails, and she passes away, leaving a significant impact on the team."
+  },
+  {
+    "title": "Medical Case: Edward's Brain Surgery",
+    "arc_type": "Episodic Arc",
+    "description": "The team works on Edward's brain surgery, dealing with the ethical implications and personal stakes involved.",
+    "episodic": true,
+    "main_characters": "Meredith Grey; Derek Shepherd; Edward",
+    "interfering_episode_characters": "Miranda Bailey",
+    "single_episode_progression_string": "Meredith and Derek perform surgery on Edward, who is hesitant about the procedure. His daughter pleads for him to reconsider, and the surgery is successful, allowing him to walk again. Meredith asks Derek to stop giving her favors."
+  }
+]

@@ -2,28 +2,55 @@
   {
     "title": "Meredith and Derek's Complicated Romance",
     "arc_type": "Soap Arc",
-    "description": "Meredith's one-night stand with Derek evolves into a complex relationship as she discovers he is her boss, leading to tension and complications in her professional life.",
+    "description": "Meredith and Derek's relationship begins with a one-night stand and evolves into a complicated romance, affecting their professional lives and friendships.",
     "episodic": false,
     "main_characters": "Meredith Grey; Derek Shepherd",
-    "interfering_episode_characters": "Izzie Stevens; George O'Malley; Miranda Bailey",
-    "single_episode_progression_string": "In this episode, Meredith sets boundaries with Derek regarding their relationship, which leads to tension and a kiss. She grapples with her feelings for him while trying to maintain professionalism, culminating in her decision to take the stairs instead of the elevator with him, highlighting her internal conflict."
+    "interfering_episode_characters": "Miranda Bailey; George O'Malley; Izzie Stevens",
+    "single_episode_progression_string": "Meredith and Derek share a tense elevator ride where Meredith sets boundaries, accusing Derek of sexual harassment. Despite this, they share a passionate kiss. Later, Derek expresses interest in ferry boats, hinting at his continued interest in Meredith."
   },
   {
-    "title": "Medical Case: Rape Victim Allison's Recovery",
-    "arc_type": "Episodic Arc",
-    "description": "The episode centers around the medical and emotional challenges faced by a rape victim, Allison, as the interns navigate their responsibilities in her care.",
-    "episodic": true,
-    "main_characters": "Meredith Grey; Derek Shepherd; Miranda Bailey; Burke",
-    "interfering_episode_characters": "Izzie Stevens; George O'Malley; Alex Karev; Patricia; Richard",
-    "single_episode_progression_string": "The episode introduces a rape victim, Allison, whose case becomes central to the interns' experiences. Meredith is deeply affected when she realizes Allison shares her shoes, prompting her to take charge in the trauma room. As the medical team discusses Allison's injuries and recovery, they grapple with the emotional weight of the situation. Derek expresses concern for Allison's long-term recovery, while Burke refers to her as a warrior, emphasizing her strength. The interns' interactions with Allison's case highlight their growth and the harsh realities of their medical training."
-  },
-  {
-    "title": "Interns' Struggles and Growth",
+    "title": "Intern Dynamics and Challenges",
     "arc_type": "Genre-Specific Arc",
-    "description": "The interns face various challenges in their medical training, navigating personal relationships and professional responsibilities.",
+    "description": "The new interns at Seattle Grace Hospital face various challenges as they adjust to their roles, navigate relationships, and compete for opportunities.",
+    "episodic": false,
+    "main_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
+    "interfering_episode_characters": "Miranda Bailey",
+    "single_episode_progression_string": "The interns struggle with their tasks and compete for Bailey's approval. Meredith deals with the responsibility of handling a sensitive case involving a rape victim. Cristina is frustrated with constant hugs from patients. Izzie faces language barriers with a patient and secretly helps an undocumented worker."
+  },
+  {
+    "title": "George's Struggles and Growth",
+    "arc_type": "Genre-Specific Arc",
+    "description": "George O'Malley faces challenges as an intern, dealing with self-doubt and striving to prove himself in a competitive environment.",
+    "episodic": false,
+    "main_characters": "George O'Malley",
+    "interfering_episode_characters": "Meredith Grey; Cristina Yang",
+    "single_episode_progression_string": "George forgets his badge and faces embarrassment. He is part of the code team but struggles with the pressure of calling time of death. He expresses a desire to be Meredith's roommate but is rejected."
+  },
+  {
+    "title": "Medical Case: Allison's Assault and Recovery",
+    "arc_type": "Episodic Arc",
+    "description": "The episode focuses on the case of Allison, a rape victim found with severe injuries, and the medical team's efforts to treat her.",
     "episodic": true,
-    "main_characters": "Meredith Grey; George O'Malley; Izzie Stevens; Cristina Yang; Alex Karev",
-    "interfering_episode_characters": "Miranda Bailey; Derek Shepherd; Burke; Ms. Lu; Ahn",
-    "single_episode_progression_string": "Throughout the episode, the interns deal with their individual challenges, such as George's struggle with his confidence after losing patients, Izzie's attempts to communicate with a non-English speaking patient, and Cristina's annoyance with Alex. Their interactions reveal their frustrations and aspirations as they work under Bailey's guidance. The episode culminates in moments of camaraderie, such as when Meredith offers to let Izzie and George move in with her, showcasing their evolving relationships and support for one another."
+    "main_characters": "Meredith Grey; Derek Shepherd; Preston Burke",
+    "interfering_episode_characters": "Miranda Bailey; Richard Webber",
+    "single_episode_progression_string": "Meredith is emotionally affected by Allison's case due to their shared taste in shoes. The medical team discovers the rapist's penis was the cause of Allison's injury. Derek and Burke discuss Allison's recovery, and Derek performs an emergency craniotomy."
+  },
+  {
+    "title": "Professional Rivalry: Burke and Derek",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Burke and Derek's professional rivalry intensifies as they vie for the position of Chief of Surgery.",
+    "episodic": false,
+    "main_characters": "Preston Burke; Derek Shepherd",
+    "interfering_episode_characters": "Richard Webber",
+    "single_episode_progression_string": "Burke questions Richard about Derek's presence at Seattle Grace, suspecting competition for Chief of Surgery. Burke declines Derek's offer for a drink, acknowledging the rivalry."
+  },
+  {
+    "title": "Izzie's Compassionate Care",
+    "arc_type": "Episodic Arc",
+    "description": "Izzie goes beyond her duties to provide care for patients, showing her compassionate nature.",
+    "episodic": true,
+    "main_characters": "Izzie Stevens",
+    "interfering_episode_characters": "Ms. Lu; Ahn",
+    "single_episode_progression_string": "Izzie struggles with a language barrier while treating Ms. Lu and secretly helps her daughter, Ahn, who is injured and undocumented. She provides medical care outside the hospital's regulations."
   }
 ]

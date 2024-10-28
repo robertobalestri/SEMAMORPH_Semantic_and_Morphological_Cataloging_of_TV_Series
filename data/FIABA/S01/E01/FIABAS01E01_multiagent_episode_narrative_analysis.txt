@@ -1,0 +1,26 @@
+1. **Key Episode Events**:
+   - A famine strikes, leaving a woodcutter's family with little to eat.
+   - The mother suggests abandoning their children, Hansel and Gretel, in the woods.
+   - Hansel gathers pebbles to find their way back home.
+   - The children are left in the woods but return home using the pebbles.
+   - The parents plan to abandon them again; Hansel uses breadcrumbs this time.
+   - Birds eat the breadcrumbs, leaving the children lost.
+   - Hansel and Gretel find a house made of bread and meet a witch.
+   - The witch captures Hansel to eat him, but Gretel outsmarts and kills her.
+   - They find treasure in the witch's house and return home to their father.
+
+2. **Narrative Arcs**:
+
+   Arc Type: Episodic Arc  
+   Title: “Fairy Tale Case: Hansel and Gretel's Survival”  
+   Description: Hansel and Gretel face abandonment and danger in the woods, ultimately defeating a witch and returning home with treasure.  
+   Episodic Flag: True  
+   Main Characters: Hansel, Gretel  
+   Interfering Episode Characters: The Witch, The Woodcutter, The Mother  
+   Progression: The children are abandoned twice. They find the witch's house. Gretel kills the witch. They return home with treasure.
+
+3. **Themes and Motifs**:
+   - Survival and Ingenuity
+   - Family and Betrayal
+   - Good vs. Evil
+   - Resourcefulness and Resilience

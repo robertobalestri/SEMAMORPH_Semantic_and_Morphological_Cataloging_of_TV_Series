@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Meredith and Derek's Complicated Romance",
+    "arc_type": "Soap Arc",
+    "description": "Meredith and Derek's relationship begins with a one-night stand and evolves into a complicated romance, affecting their professional lives and friendships.",
+    "episodic": false,
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "George O'Malley; Izzie Stevens; Zona Cruz; Jorge Cruz",
+    "single_episode_progression_string": "Derek flirts with Meredith, which annoys her, highlighting the ongoing complexity and tension in their relationship. Derek pulls Meredith aside and reminds her it was Jorge and Zona's decision to proceed with the surgery."
+  },
+  {
+    "title": "Intern Dynamics and Challenges",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The new interns at Seattle Grace Hospital face various challenges as they adjust to their roles, navigate relationships, and compete for opportunities.",
+    "episodic": false,
+    "main_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
+    "interfering_episode_characters": "Richard Webber; Preston Burke; Miranda Bailey; Elizabeth 'Liz' Fallon",
+    "single_episode_progression_string": "Izzie, Meredith, and George prepare for their day, with George feeling uncomfortable about Izzie's behavior. Izzie's patient refuses her help, leading to Bailey scolding her. George talks to Izzie and Meredith about his frustrations. Alex mocks Izzie by exposing her modeling past. Cristina is teased by Liz about impressing Burke."
+  },
+  {
+    "title": "Meredith's Family Legacy and Personal Struggles",
+    "arc_type": "Soap Arc",
+    "description": "Meredith grapples with her mother's legacy as a renowned surgeon and her own personal struggles, including her mother's Alzheimer's diagnosis.",
+    "episodic": false,
+    "main_characters": "Meredith Grey",
+    "interfering_episode_characters": "Elizabeth 'Liz' Fallon; Richard Webber; Ellis Grey",
+    "single_episode_progression_string": "Liz Fallon, who was Ellis Grey's scrub nurse, is admitted to Seattle Grace. Meredith visits her mother and feels upset because Ellis remembers Liz but not Meredith. Meredith visits Liz, and they talk about Ellis."
+  },
+  {
+    "title": "George's Struggles and Growth",
+    "arc_type": "Genre-Specific Arc",
+    "description": "George O'Malley faces challenges as an intern, dealing with self-doubt and striving to prove himself in a competitive environment.",
+    "episodic": false,
+    "main_characters": "George O'Malley",
+    "interfering_episode_characters": "Izzie Stevens; Meredith Grey",
+    "single_episode_progression_string": "George is uncomfortable with Izzie's behavior and complains about it. He researches nail gun cases to help with Jorge's surgery. George continues to bring up the morning's events and argues with Izzie about buying tampons."
+  },
+  {
+    "title": "Medical Case: Jorge Cruz's Nail Gun Injury",
+    "arc_type": "Episodic Arc",
+    "description": "The medical team at Seattle Grace deals with a complex trauma case involving a patient with multiple nails embedded in his head.",
+    "episodic": true,
+    "main_characters": "Derek Shepherd; Jorge Cruz",
+    "interfering_episode_characters": "Meredith Grey; Zona Cruz; Alex Karev",
+    "single_episode_progression_string": "Derek's patient, Jorge Cruz, injured himself by falling down the stairs with a nail gun. Sixteen nails are in his head, and his condition is worsening. Jorge's wife, Zona, must decide about the risky surgery to remove the nails. Meredith tries to convince Zona to reconsider, but Zona insists on proceeding."
+  },
+  {
+    "title": "Izzie's Modeling Past Exposed",
+    "arc_type": "Episodic Arc",
+    "description": "Izzie Stevens faces embarrassment and professional challenges when her past as a model is exposed at the hospital.",
+    "episodic": true,
+    "main_characters": "Izzie Stevens",
+    "interfering_episode_characters": "Alex Karev; Mr. Humphrey",
+    "single_episode_progression_string": "Izzie is shocked to see her modeling past exposed when Alex prints large photos of her and puts them everywhere. Izzie confronts Alex and defends her choices, explaining she graduated debt-free."
+  },
+  {
+    "title": "Liz Fallon's Final Days",
+    "arc_type": "Episodic Arc",
+    "description": "The hospital staff deals with the emotional impact of a veteran scrub nurse's terminal condition and her decision to die at Seattle Grace.",
+    "episodic": true,
+    "main_characters": "Cristina Yang; Elizabeth 'Liz' Fallon",
+    "interfering_episode_characters": "Preston Burke; Richard Webber; Meredith Grey",
+    "single_episode_progression_string": "Cristina is assigned to Liz Fallon, who teases her about impressing Burke. Liz learns from Richard that Meredith works at Seattle Grace. Liz's condition worsens, and she dies later that evening because she had signed a DNR."
+  }
+]

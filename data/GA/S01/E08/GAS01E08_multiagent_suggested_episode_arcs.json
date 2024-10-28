@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Meredith and Derek's Complicated Romance",
+    "arc_type": "Soap Arc",
+    "description": "Meredith and Derek's relationship begins with a one-night stand and evolves into a complicated romance, affecting their professional lives and friendships.",
+    "episodic": false,
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "George O'Malley; Izzie Stevens",
+    "single_episode_progression_string": "Meredith questions Derek about why they always stay at her place, leading to a discussion about their relationship. She feels she doesn't know him well and decides to withhold sex until she knows more about him. Derek suggests that discovering these things is the fun part of a relationship. At the end of the episode, Derek takes Meredith to his trailer and shares more about himself."
+  },
+  {
+    "title": "Intern Dynamics and Challenges",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The new interns at Seattle Grace Hospital face various challenges as they adjust to their roles, navigate relationships, and compete for opportunities.",
+    "episodic": false,
+    "main_characters": "Izzie Stevens; George O'Malley; Alex Karev; Cristina Yang",
+    "interfering_episode_characters": "Miranda Bailey; Preston Burke",
+    "single_episode_progression_string": "Izzie struggles with her cupcakes and refuses to call her mother for help. George deals with intubation challenges and receives praise from Nurse Harper. Alex challenges Burke with a new solution for Devo's surgery, leading to tension. Cristina navigates her pregnancy and professional responsibilities, asking George to cover for her."
+  },
+  {
+    "title": "Cristina's Unexpected Pregnancy",
+    "arc_type": "Soap Arc",
+    "description": "Cristina suspects her flu symptoms might be pregnancy and faces the emotional implications.",
+    "episodic": false,
+    "main_characters": "Cristina Yang",
+    "interfering_episode_characters": "George O'Malley; Mr. Duff",
+    "single_episode_progression_string": "Cristina is seen in a doctor's office scheduling a termination. She asks George to cover for her on the 16th, indicating her plans. Mr. Duff somehow realizes Cristina is pregnant, adding to her stress. She is assigned to a case involving a pregnant breast cancer patient, which further complicates her emotions."
+  },
+  {
+    "title": "Medical Case: Mr. Duff's Psychic Seizures",
+    "arc_type": "Episodic Arc",
+    "description": "Mr. Duff claims to have psychic abilities linked to his seizures, leading to a medical investigation.",
+    "episodic": true,
+    "main_characters": "Mr. Duff; Izzie Stevens",
+    "interfering_episode_characters": "Cristina Yang; Meredith Grey; Miranda Bailey",
+    "single_episode_progression_string": "Mr. Duff claims to talk to dead people and predicts a death on the 4th floor. Cristina and Meredith work on his case, discovering an arteriovenous malformation. Izzie is emotionally involved, and Mr. Duff's surgery is planned to stop his visions."
+  },
+  {
+    "title": "Medical Case: Devo's Heart Valve Dilemma",
+    "arc_type": "Episodic Arc",
+    "description": "Devo, a patient with Von Willebrand's disease, faces a dilemma over a heart valve replacement due to religious beliefs.",
+    "episodic": true,
+    "main_characters": "Devo Friedman; Alex Karev",
+    "interfering_episode_characters": "Preston Burke; Devo's Parents",
+    "single_episode_progression_string": "Devo needs a valve replacement but refuses a pig valve due to religious reasons. Alex suggests a bovine valve, leading to a confrontation with Burke. Burke eventually agrees to the alternative, and a rabbi is found for a blessing."
+  },
+  {
+    "title": "Medical Case: Zoey Glass's Pregnancy and Cancer",
+    "arc_type": "Episodic Arc",
+    "description": "Zoey Glass faces a difficult decision between cancer treatment and her pregnancy.",
+    "episodic": true,
+    "main_characters": "Zoey Glass; Cristina Yang",
+    "interfering_episode_characters": "Miranda Bailey",
+    "single_episode_progression_string": "Cristina informs Zoey that her pregnancy hormones are speeding up her cancer. Zoey initially decides to have an abortion but later changes her mind, choosing to keep the baby despite the risks."
+  },
+  {
+    "title": "Medical Case: Mr. Walker's Psychosomatic Paralysis",
+    "arc_type": "Episodic Arc",
+    "description": "Mr. Walker experiences paralysis that may be linked to stress, leading to a medical investigation.",
+    "episodic": true,
+    "main_characters": "Mr. Walker; Derek Shepherd",
+    "interfering_episode_characters": "Meredith Grey",
+    "single_episode_progression_string": "Mr. Walker is paralyzed after a rock climbing incident. Derek suspects a spinal clot and performs surgery, successfully locating the clot and restoring movement."
+  }
+]
