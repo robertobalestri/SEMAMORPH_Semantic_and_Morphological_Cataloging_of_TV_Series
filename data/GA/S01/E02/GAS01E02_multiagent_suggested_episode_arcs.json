@@ -1,56 +1,65 @@
 [
   {
-    "title": "Meredith and Derek's Complicated Romance",
+    "title": "Meredith and Derek's Complicated Relationship",
     "arc_type": "Soap Arc",
-    "description": "Meredith and Derek's relationship begins with a one-night stand and evolves into a complicated romance, affecting their professional lives and friendships.",
+    "description": "Meredith and Derek's relationship begins with a one-night stand and evolves amidst professional challenges and personal revelations.",
     "episodic": false,
-    "main_characters": "Meredith Grey; Derek Shepherd",
-    "interfering_episode_characters": "Miranda Bailey; George O'Malley; Izzie Stevens",
-    "single_episode_progression_string": "Meredith and Derek share a tense elevator ride where Meredith sets boundaries, accusing Derek of sexual harassment. Despite this, they share a passionate kiss. Later, Derek expresses interest in ferry boats, hinting at his continued interest in Meredith."
+    "main_characters": "Meredith; Derek",
+    "interfering_episode_characters": "Bailey",
+    "single_episode_progression_string": "Meredith and Derek share a tense elevator ride where Meredith sets boundaries, accusing Derek of sexual harassment. Despite this, they share a passionate kiss. Later, Derek expresses interest in ferry boats, hinting at his desire to connect with Meredith, but she chooses to take the stairs, indicating her struggle with self-control."
   },
   {
-    "title": "Intern Dynamics and Challenges",
+    "title": "Intern Dynamics at Seattle Grace",
     "arc_type": "Genre-Specific Arc",
-    "description": "The new interns at Seattle Grace Hospital face various challenges as they adjust to their roles, navigate relationships, and compete for opportunities.",
+    "description": "The interns at Seattle Grace Hospital form friendships and rivalries as they navigate the challenges of their medical training.",
     "episodic": false,
-    "main_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
-    "interfering_episode_characters": "Miranda Bailey",
-    "single_episode_progression_string": "The interns struggle with their tasks and compete for Bailey's approval. Meredith deals with the responsibility of handling a sensitive case involving a rape victim. Cristina is frustrated with constant hugs from patients. Izzie faces language barriers with a patient and secretly helps an undocumented worker."
+    "main_characters": "Meredith; George; Cristina; Izzie",
+    "interfering_episode_characters": "Alex; Bailey",
+    "single_episode_progression_string": "Meredith, George, Cristina, and Izzie navigate their roles as interns, dealing with professional challenges and personal interactions. Meredith refuses to have any of them as roommates initially but later agrees. Cristina's competitive nature is highlighted in her interactions with Alex. George faces professional embarrassment but continues to grow."
   },
   {
-    "title": "George's Struggles and Growth",
+    "title": "Cristina's Competitive Nature",
     "arc_type": "Genre-Specific Arc",
-    "description": "George O'Malley faces challenges as an intern, dealing with self-doubt and striving to prove himself in a competitive environment.",
+    "description": "Cristina Yang's ambition and competitive drive often put her at odds with her peers, particularly Meredith.",
     "episodic": false,
-    "main_characters": "George O'Malley",
-    "interfering_episode_characters": "Meredith Grey; Cristina Yang",
-    "single_episode_progression_string": "George forgets his badge and faces embarrassment. He is part of the code team but struggles with the pressure of calling time of death. He expresses a desire to be Meredith's roommate but is rejected."
-  },
-  {
-    "title": "Medical Case: Allison's Assault and Recovery",
-    "arc_type": "Episodic Arc",
-    "description": "The episode focuses on the case of Allison, a rape victim found with severe injuries, and the medical team's efforts to treat her.",
-    "episodic": true,
-    "main_characters": "Meredith Grey; Derek Shepherd; Preston Burke",
-    "interfering_episode_characters": "Miranda Bailey; Richard Webber",
-    "single_episode_progression_string": "Meredith is emotionally affected by Allison's case due to their shared taste in shoes. The medical team discovers the rapist's penis was the cause of Allison's injury. Derek and Burke discuss Allison's recovery, and Derek performs an emergency craniotomy."
-  },
-  {
-    "title": "Professional Rivalry: Burke and Derek",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Burke and Derek's professional rivalry intensifies as they vie for the position of Chief of Surgery.",
-    "episodic": false,
-    "main_characters": "Preston Burke; Derek Shepherd",
-    "interfering_episode_characters": "Richard Webber",
-    "single_episode_progression_string": "Burke questions Richard about Derek's presence at Seattle Grace, suspecting competition for Chief of Surgery. Burke declines Derek's offer for a drink, acknowledging the rivalry."
+    "main_characters": "Cristina",
+    "interfering_episode_characters": "Alex; Meredith",
+    "single_episode_progression_string": "Cristina's competitive nature is evident as she interacts with Alex, whom she dislikes for calling Meredith a nurse. She is also frustrated by constant hugs from patients and is focused on getting OR time."
   },
   {
     "title": "Izzie's Compassionate Care",
     "arc_type": "Episodic Arc",
-    "description": "Izzie goes beyond her duties to provide care for patients, showing her compassionate nature.",
+    "description": "Izzie Stevens demonstrates her compassionate nature by going above and beyond to help patients, even when it risks her job.",
     "episodic": true,
-    "main_characters": "Izzie Stevens",
+    "main_characters": "Izzie",
     "interfering_episode_characters": "Ms. Lu; Ahn",
-    "single_episode_progression_string": "Izzie struggles with a language barrier while treating Ms. Lu and secretly helps her daughter, Ahn, who is injured and undocumented. She provides medical care outside the hospital's regulations."
+    "single_episode_progression_string": "Izzie struggles with a language barrier while treating Ms. Lu and her daughter Ahn, who is injured and undocumented. She secretly provides medical care to Ahn, showing her dedication and compassion."
+  },
+  {
+    "title": "George's Professional Embarrassment and Growth",
+    "arc_type": "Genre-Specific Arc",
+    "description": "George O'Malley faces professional challenges and personal growth as he navigates his internship.",
+    "episodic": false,
+    "main_characters": "George",
+    "interfering_episode_characters": "Cristina; Meredith",
+    "single_episode_progression_string": "George forgets his badge, faces embarrassment, and struggles with his role on the code team. Despite losing patients, he continues to learn and grow, showing resilience."
+  },
+  {
+    "title": "Medical Case: Allison's Assault and Recovery",
+    "arc_type": "Episodic Arc",
+    "description": "The episode focuses on the medical case of Allison, a rape victim found in the park, and her subsequent recovery.",
+    "episodic": true,
+    "main_characters": "Meredith; Derek; Burke",
+    "interfering_episode_characters": "Bailey; Allison",
+    "single_episode_progression_string": "Meredith becomes emotionally involved with Allison's case due to their shared shoes. The medical team works to save Allison, who is in critical condition. Derek and Burke discuss her recovery, and Meredith is deeply affected by the case. The rapist is later brought in, and the team decides not to reattach his penis due to the damage."
+  },
+  {
+    "title": "Professional Ambitions: Chief of Surgery Position",
+    "arc_type": "Episodic Arc",
+    "description": "Burke and Derek discuss the Chief of Surgery position, highlighting their professional ambitions.",
+    "episodic": true,
+    "main_characters": "Burke; Derek",
+    "interfering_episode_characters": "None",
+    "single_episode_progression_string": "Burke and Derek engage in a discussion about the Chief of Surgery position, indicating their professional aspirations."
   }
 ]

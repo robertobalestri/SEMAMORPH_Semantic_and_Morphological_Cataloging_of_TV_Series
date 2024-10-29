@@ -1,4 +1,5 @@
 import os
+from typing import List
 
 class PathHandler:
     def __init__(self, series: str, season: str, episode: str, base_dir: str = "data"):
@@ -63,3 +64,27 @@ class PathHandler:
     
     def get_suggested_episode_arc_path(self) -> str:
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_multiagent_suggested_episode_arcs.json")
+
+    @staticmethod
+    def get_episode_plot_path(base_dir: str, series: str, season: str, episode: str) -> str:
+        """Get the path for an episode's plot file."""
+        return os.path.join(base_dir, series, season, episode, f"{series}{season}{episode}_plot.txt")
+    
+    @staticmethod
+    def get_episode_summary_path(base_dir: str, series: str, season: str, episode: str) -> str:
+        """Get the path for an episode's summary file."""
+        return os.path.join(base_dir, series, season, episode, f"{series}{season}{episode}_summarized_plot.txt")
+    
+    @staticmethod
+    def get_season_plot_path(base_dir: str, series: str, season: str) -> str:
+        """Get the path for a season's plot file."""
+        return os.path.join(base_dir, series, season, f"{series}{season}_season_plot.txt")
+    
+    @staticmethod
+    def list_episode_folders(base_dir: str, series: str, season: str) -> List[str]:
+        """List all episode folders in a season directory."""
+        season_path = os.path.join(base_dir, series, season)
+        if not os.path.exists(season_path):
+            return []
+        return sorted([d for d in os.listdir(season_path) 
+                      if os.path.isdir(os.path.join(season_path, d)) and d.startswith('E')])

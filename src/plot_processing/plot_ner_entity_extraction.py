@@ -165,35 +165,26 @@ def extract_and_refine_entities(text: str, series: str, llm: AzureChatOpenAI, re
     
     return refined_entities
 
-def substitute_appellations_with_names(text: str, entities: List[EntityLink], llm: AzureChatOpenAI) -> str:
-    """Substitute appellations in the text with their corresponding entity names."""
-    # Sort entities by the length of their longest appellation
-    sorted_entities = sorted(entities, key=lambda e: max(len(a) for a in e.appellations), reverse=True)
+def substitute_appellations_with_names(text: str, entities: List[EntityLink], llm) -> str:
+    """
+    Substitute appellations in the text with their corresponding best appellations.
+    Sorts entities by appellation length to handle longer appellations first.
+    """
+    if not entities:
+        return text
+
+    # Sort entities by appellation length (longest first) to avoid partial replacements
+    sorted_entities = sorted(entities, key=lambda e: len(e.entity_name), reverse=True)
     
-    # Keep track of substitutions
-    substitutions: List[Tuple[str, str, int, int]] = []
+    # Create a copy of the text to modify
+    modified_text = text
 
     for entity in sorted_entities:
-        # Sort appellations by length in descending order
-        sorted_appellations = sorted(entity.appellations, key=len, reverse=True)
-        
-        for appellation in sorted_appellations:
-            # Use word boundaries and capture surrounding whitespace
-            pattern = r'(\s|^)(' + re.escape(appellation) + r"(?:'s)?)(\s|[.,!?;]|$)"
-            
-            for match in re.finditer(pattern, text, flags=re.IGNORECASE):
-                start, end = match.span(2)  # Get the span of the actual appellation
-                
-                # Check if this span overlaps with any previous substitution
-                if not any(s <= start < e or s < end <= e for _, _, s, e in substitutions):
-                    replacement = f"[{entity.entity_name}]" + match.group(2)[len(appellation):]
-                    substitutions.append((match.group(2), replacement, start, end))
+        # Replace entity name with best appellation
+        if entity.entity_name and len(entity.entity_name.strip()) > 1:  # Skip empty or single-char names
+            modified_text = modified_text.replace(entity.entity_name, entity.best_appellation)
 
-    # Apply substitutions in reverse order
-    for original, replacement, start, end in sorted(substitutions, key=lambda x: x[2], reverse=True):
-        text = f"{text[:start]}{replacement}{text[end:]}"
-
-    return text
+    return modified_text
 
 def normalize_entities_names_to_best_appellation(text: str, entities: List[EntityLink]) -> str:
     """Normalize entity names in the text to their best appellations."""
@@ -206,4 +197,3 @@ def normalize_names(text: str, entities: List[EntityLink], llm: AzureChatOpenAI)
     substituted_text = substitute_appellations_with_names(text, entities, llm)
     normalized_text = normalize_entities_names_to_best_appellation(substituted_text, entities)
     return normalized_text
-

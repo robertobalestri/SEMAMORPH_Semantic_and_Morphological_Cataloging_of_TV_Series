@@ -17,6 +17,7 @@ import uuid
 import json
 from src.storage.character_storage import CharacterStorage
 import os
+from textwrap import dedent
 
 logger = setup_logging(__name__)
 
@@ -48,7 +49,19 @@ class NarrativeArcManager:
         for arc in arcs:
             logger.info(f"Processing arc: '{arc.title}'")
             
-            # Create query from arc information
+            # First check for exact title matches in the database
+            existing_arc = self.db_manager.get_narrative_arc_by_title(arc.title, series, session)
+            if existing_arc:
+                logger.info(f"Found existing arc with same title: '{existing_arc.title}'")
+                merged_arc = self.decide_arc_merging(arc, existing_arc)
+                if merged_arc:
+                    logger.info(f"Merging arc '{arc.title}' with existing arc '{existing_arc.title}'")
+                    self._update_existing_arc(existing_arc, arc, series, season, episode, session=session)
+                    if existing_arc not in updated_arcs:
+                        updated_arcs.append(existing_arc)
+                    continue
+
+            # If no exact title match, look for similar arcs
             query = f"{arc.title}\n\n{arc.description}\n\n{arc.main_characters}"
             similar_arcs = self.vectorstore_collection.find_similar_arcs(query, n_results=5, series=series)
 
@@ -58,12 +71,11 @@ class NarrativeArcManager:
                     id2search = similar_arc['metadata']['id'] if similar_arc['metadata']['doc_type'] == 'main' else similar_arc['metadata']['main_arc_id']
 
                     existing_arc = self.db_manager.get_narrative_arc_by_id(id2search, session=session)
-                    if existing_arc:
+                    if existing_arc and existing_arc.title != arc.title:  # Skip if titles match (already handled)
                         logger.info(f"Found similar arc '{existing_arc.title}' with distance {similar_arc['cosine_distance']}. Checking if they should be merged...")
                         merged_arc = self.decide_arc_merging(arc, existing_arc)
                         if merged_arc:
-                            logger.info(f"Merging arc '{arc.title}' with existing arc '{existing_arc.title}'")
-                            # Update the existing arc with new information
+                            logger.info(f"Merging arc '{arc.title}' with similar arc '{existing_arc.title}'")
                             self._update_existing_arc(existing_arc, arc, series, season, episode, session=session)
                             if existing_arc not in updated_arcs:
                                 updated_arcs.append(existing_arc)
@@ -71,59 +83,68 @@ class NarrativeArcManager:
                             break
 
             if not merged:
-                logger.info(f"No similar arcs found. Adding '{arc.title}' as a new arc.")
+                logger.info(f"No matching arcs found. Adding '{arc.title}' as a new arc.")
                 self.add_new_arc(arc, series, season, episode, session=session)
-                if arc not in updated_arcs:  # Add this check to prevent duplicates
+                if arc not in updated_arcs:
                     updated_arcs.append(arc)
 
         logger.info(f"Added or updated {len(updated_arcs)} narrative arcs for {series} {season} {episode}.")
         return updated_arcs
 
     def decide_arc_merging(self, new_arc: NarrativeArc, existing_arc: NarrativeArc) -> Optional[NarrativeArc]:
+        """Decide whether two arcs should be merged based on their content and titles."""
+        base_prompt = """You are an expert in analyzing narrative arcs in TV series.
 
+Given the following two narrative arcs:
 
-        base_prompt = """
-                You are an expert in analyzing narrative arcs in TV series.
+Arc A:
+title: {title_a}
+description: {description_a}
+main_characters: {main_characters_a}
+Arc Type: {arc_type_a}
 
-                Given the following two narrative arcs:
-
-                Arc A:
-                title: {title_a}
-                description: {description_a}
-                main_characters: {main_characters_a}
-                Arc Type: {arc_type_a}
-
-                Arc B:
-                title: {title_b}
-                description: {description_b}
-                main_characters: {main_characters_b}
-                Arc Type: {arc_type_b}
-
-                """
+Arc B:
+title: {title_b}
+description: {description_b}
+main_characters: {main_characters_b}
+Arc Type: {arc_type_b}
+"""
         
-        if new_arc.title == existing_arc.title:
-            base_prompt += """\n\nSince they share the same title, merge them and adapt the description to be comprehensive.
-            Provide your response in JSON format as:
-                {{
-                    "merged_title": "Your merged title",
-                    "merged_description": "Your merged description",
-                }}
-            """
+        if existing_arc.title == new_arc.title:
+            base_prompt += """
+These arcs share the same title. Analyze if they represent:
+1. The same narrative arc that should be merged (in which case, provide a merged description)
+2. Different arcs that need more specific titles (in which case, provide distinct specific titles and descriptions for each)
+
+Consider:
+- The specific focus and scope of each arc
+- The character development being tracked
+- Whether one is a subset/continuation of the other
+
+Provide your response in JSON format as:
+{{
+    "same_arc": true or false,
+    "justification": "Your detailed explanation here",
+    "merged_title": "Title for merged arc if same_arc is true",
+    "merged_description": "Description for merged arc if same_arc is true",
+    "arc_a_specific_title": "More specific title for Arc A if same_arc is false",
+    "arc_a_specific_description": "Updated description for Arc A if same_arc is false",
+    "arc_b_specific_title": "More specific title for Arc B if same_arc is false",
+    "arc_b_specific_description": "Updated description for Arc B if same_arc is false"
+}}"""
         else:
-            base_prompt += """\n\nDo these arcs represent the same narrative arc continuing across episodes, or are they distinct arcs?
+            base_prompt += """
+Do these arcs represent the same narrative arc continuing across episodes, or are they distinct arcs?
 
-            If they are the same arc, suggest a better title and description for the arc combining the key information,
-            but remember that if the arc_type is not episodic, the arc description should be season-wide and not episode-specific.
-            
-            Provide your response in JSON format as:
-                {{
-                    "same_arc": true or false,
-                    "justification": "Your explanation here",
-                    "merged_title": "Your merged title if applicable, if not, use the existing arc title",
-                    "merged_description": "Your merged description if applicable, if not, use the existing arc description",
-                }}
-            """
+Provide your response in JSON format as:
+{{
+    "same_arc": true or false,
+    "justification": "Your detailed explanation here",
+    "merged_title": "Your suggested title that best represents both arcs if they should be merged",
+    "merged_description": "Your suggested description that best combines both arcs' information if they should be merged"
+}}"""
 
+        # Create the prompt template with the complete text
         prompt = ChatPromptTemplate.from_template(base_prompt)
 
         response = self.llm.invoke(prompt.format_messages(
@@ -139,28 +160,35 @@ class NarrativeArcManager:
 
         original_arc_title = existing_arc.title
 
-        logger.info(f"LLM response for arc merging: {response.content}")    
+        logger.debug(f"LLM response for arc merging: {response.content}")    
         try:
             response_json = clean_llm_json_response(response.content)
             if isinstance(response_json, list):
                 response_json = response_json[0]
 
-            if response_json.get("same_arc", None) is None:
-                response_json["same_arc"] = True
-                response_json["justification"] = "Same titles"
-
-            if isinstance(response_json, dict) and response_json.get("same_arc", False):
-                existing_arc.title = response_json.get("merged_title", original_arc_title)
-                existing_arc.description = response_json.get("merged_description", existing_arc.description)
-
-                logger.info(f"Merged arc '{original_arc_title}' with '{new_arc.title}' to '{existing_arc.title}'")
-
-                return existing_arc
-            else:
-                if existing_arc.title != original_arc_title:
-                    logger.info(f"Decided not to merge arc '{new_arc.title}' with '{existing_arc.title}'")
+            if isinstance(response_json, dict):
+                if response_json.get("same_arc", None):
+                    existing_arc.title = response_json.get("merged_title", original_arc_title)
+                    existing_arc.description = response_json.get("merged_description", existing_arc.description)
+                    logger.warning(f"Merged arc '{original_arc_title}' with '{new_arc.title}' to '{existing_arc.title}'")
+                    return existing_arc
                 else:
-                    logger.error(f"Decided not to merge arc '{new_arc.title}' with '{existing_arc.title}' even if they share the same title. The LLM response was: {json.dumps(response_json, indent=4)}")
+                    if existing_arc.title == new_arc.title:
+                        # Update both arcs with more specific titles
+                        existing_arc.title = response_json.get("arc_a_specific_title", existing_arc.title)
+                        existing_arc.description = response_json.get("arc_a_specific_description", existing_arc.description)
+                        new_arc.title = response_json.get("arc_b_specific_title", new_arc.title)
+                        new_arc.description = response_json.get("arc_b_specific_description", new_arc.description)
+                        logger.warning(
+                            f"Split identical title '{original_arc_title}' into two specific arcs: "
+                            f"'{existing_arc.title}' and '{new_arc.title}'"
+                        )
+                    else:
+                        logger.warning(
+                            f"Arcs not merged (different titles). "
+                            f"Arc A: '{existing_arc.title}', Arc B: '{new_arc.title}'. "
+                            f"Reason: {response_json.get('justification', 'Different titles')}"
+                        )
 
         except Exception as e:
             logger.error(f"Error parsing LLM response for arc merging: {e}")
@@ -331,10 +359,18 @@ class NarrativeArcManager:
         # Update embeddings
         self._update_embeddings(existing_arc, existing_arc.progressions, session)
 
-    def link_characters_to_arc(self, characters: List[Character], arc: NarrativeArc):
+    def link_characters_to_arc(self, characters: List[Character], arc: NarrativeArc, session: Session):
         """Link characters to a narrative arc."""
-        # Filter out None values
-        valid_characters = [c for c in characters if c is not None]
+        # Filter out None values and ensure characters are in session
+        valid_characters = []
+        for c in characters:
+            if c is not None:
+                # Get fresh instance from session
+                char = session.merge(c)
+                valid_characters.append(char)
+        
+        # Get fresh arc instance from session
+        arc = session.merge(arc)
         
         # Create sets for existing and new characters
         existing_ids = {c.id for c in arc.characters}
@@ -351,33 +387,43 @@ class NarrativeArcManager:
             # Ensure the relationship is bidirectional
             for character in new_characters:
                 if arc not in character.narrative_arcs:
-                    character.narrative_arcs.append(arc)
+                    character.narrative_arcs.append(character)
             
             logger.info(f"Linked {len(new_characters)} characters to arc '{arc.title}'")
 
     def link_characters_to_progression(self, characters: List[Character], progression: ArcProgression):
         """Link characters to an arc progression."""
-        # Filter out None values
-        valid_characters = [c for c in characters if c is not None]
-        
-        # Create sets for existing and new characters
-        existing_ids = {c.id for c in progression.characters}
-        new_characters = [c for c in valid_characters if c.id not in existing_ids]
-        
-        if new_characters:
-            # Add new characters to the relationship
-            progression.characters.extend(new_characters)
+        # Filter out None values and ensure characters are in session
+        valid_characters = []
+        with self.db_manager.session_scope() as session:
+            for c in characters:
+                if c is not None:
+                    # Get fresh instance from session
+                    char = session.merge(c)
+                    valid_characters.append(char)
             
-            # Update interfering_episode_characters list with all characters' best appellations
-            all_appellations = [c.best_appellation for c in progression.characters]
-            progression.interfering_episode_characters = list(set(all_appellations))
+            # Get fresh progression instance from session
+            progression = session.merge(progression)
             
-            # Ensure the relationship is bidirectional
-            for character in new_characters:
-                if progression not in character.progressions:
-                    character.progressions.append(progression)
+            # Create sets for existing and new characters
+            existing_ids = {c.id for c in progression.characters}
+            new_characters = [c for c in valid_characters if c.id not in existing_ids]
             
-            logger.info(f"Linked {len(new_characters)} characters to progression {progression.id}")
+            if new_characters:
+                # Add new characters to the relationship
+                progression.characters.extend(new_characters)
+                
+                # Update interfering_episode_characters list with all characters' best appellations
+                all_appellations = [c.best_appellation for c in progression.characters]
+                progression.interfering_episode_characters = list(set(all_appellations))
+                
+                # Ensure the relationship is bidirectional
+                for character in new_characters:
+                    if progression not in character.progressions:
+                        character.progressions.append(progression)
+                
+                session.commit()
+                logger.info(f"Linked {len(new_characters)} characters to progression {progression.id}")
 
     def process_suggested_arcs(self, suggested_arcs_path: str, series: str, season: str, episode: str) -> List[NarrativeArc]:
         """Process the suggested arcs from the JSON file and update the database and vectorstore."""
@@ -387,67 +433,80 @@ class NarrativeArcManager:
         with self.db_manager.session_scope() as session:
             final_arcs = []
             for arc_data in suggested_arcs_data:
-                narrative_arc = NarrativeArc(
-                    id=str(uuid.uuid4()),
-                    title=arc_data['title'],
-                    arc_type=arc_data['arc_type'],
-                    description=arc_data['description'],
-                    episodic=arc_data['episodic'],
-                    series=series,
-                    progressions=[],
-                    main_characters=[]
-                )
-
-                # Get main characters from database
-                if arc_data.get('main_characters'):
-                    character_names = [name.strip() for name in arc_data['main_characters'].split(';') if name.strip()]
-                    arc_characters = self.character_storage.get_characters_by_appellations(character_names, series, session)
-                    if arc_characters:
-                        self.link_characters_to_arc(arc_characters, narrative_arc)
-
-                # Handle progression
-                progression_data = arc_data.get('single_episode_progression_string')
-                if progression_data:
-                    # First, check if this arc already exists and get its ID
-                    existing_arc = self.db_manager.get_narrative_arc_by_title(narrative_arc.title, series, session)
-                    arc_id = existing_arc.id if existing_arc else narrative_arc.id
+                try:
+                    # First check if arc already exists
+                    existing_arc = self.db_manager.get_narrative_arc_by_title(arc_data['title'], series, session)
                     
-                    # Get the next ordinal position based on existing progressions
-                    next_position = self.get_next_ordinal_position(arc_id, session)
-                    logger.debug(f"Next ordinal position for arc {arc_id}: {next_position}")
+                    if existing_arc:
+                        narrative_arc = existing_arc
+                        # Update existing arc fields
+                        narrative_arc.arc_type = arc_data['arc_type']
+                        narrative_arc.description = arc_data['description']
+                        narrative_arc.episodic = arc_data['episodic']
+                    else:
+                        # Create new arc only if it doesn't exist
+                        narrative_arc = NarrativeArc(
+                            id=str(uuid.uuid4()),
+                            title=arc_data['title'],
+                            arc_type=arc_data['arc_type'],
+                            description=arc_data['description'],
+                            episodic=arc_data['episodic'],
+                            series=series,
+                            progressions=[],
+                            main_characters=[]
+                        )
+                        session.add(narrative_arc)
 
-                    progression = ArcProgression(
-                        id=str(uuid.uuid4()),
-                        main_arc_id=narrative_arc.id,
-                        content=progression_data,
-                        series=series,
-                        season=season,
-                        episode=episode,
-                        ordinal_position=next_position,  # Use the calculated position
-                        interfering_episode_characters=[]
-                    )
-                    progression.narrative_arc = narrative_arc
+                    # Get main characters from database
+                    if arc_data.get('main_characters'):
+                        character_names = [name.strip() for name in arc_data['main_characters'].split(';') if name.strip()]
+                        arc_characters = self.character_storage.get_characters_by_appellations(character_names, series, session)
+                        if arc_characters:
+                            self.link_characters_to_arc(arc_characters, narrative_arc, session)
 
-                    # Get interfering characters from database
-                    if arc_data.get('interfering_episode_characters'):
-                        interfering_names = [name.strip() for name in arc_data['interfering_episode_characters'].split(';') if name.strip()]
-                        progression_characters = self.character_storage.get_characters_by_appellations(interfering_names, series, session)
-                        if progression_characters:
-                            self.link_characters_to_progression(progression_characters, progression)
+                    # Handle progression
+                    progression_data = arc_data.get('single_episode_progression_string')
+                    if progression_data:
+                        # Get the next ordinal position based on existing progressions
+                        next_position = self.get_next_ordinal_position(narrative_arc.id, session)
+                        logger.debug(f"Next ordinal position for arc {narrative_arc.id}: {next_position}")
 
-                    narrative_arc.progressions.append(progression)
+                        # Check if progression for this episode already exists
+                        existing_progression = self.db_manager.get_single_arc_episode_progression(
+                            arc_id=narrative_arc.id,
+                            series=series,
+                            season=season,
+                            episode=episode,
+                            session=session
+                        )
 
-                final_arcs.append(narrative_arc)
+                        if existing_progression:
+                            progression = existing_progression
+                            progression.content = progression_data
+                        else:
+                            progression = ArcProgression(
+                                id=str(uuid.uuid4()),
+                                main_arc_id=narrative_arc.id,
+                                content=progression_data,
+                                series=series,
+                                season=season,
+                                episode=episode,
+                                ordinal_position=next_position,
+                                interfering_episode_characters=[]
+                            )
+                            session.add(progression)
+                            narrative_arc.progressions.append(progression)
 
-            updated_arcs = self.add_or_update_narrative_arcs(
-                final_arcs,
-                series,
-                season,
-                episode,
-                session
-            )
+                    final_arcs.append(narrative_arc)
+                    session.flush()  # Flush changes for each arc
 
-            return updated_arcs
+                except Exception as e:
+                    logger.error(f"Error processing arc {arc_data.get('title')}: {e}")
+                    session.rollback()
+                    continue
+
+            session.commit()  # Commit all changes at once
+            return final_arcs
     
     def get_next_ordinal_position(self, arc_id: str, session: Session) -> int:
         """
@@ -480,6 +539,20 @@ class NarrativeArcManager:
         
         return position
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

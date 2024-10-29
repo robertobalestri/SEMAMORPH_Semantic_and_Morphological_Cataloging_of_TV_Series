@@ -1,74 +1,56 @@
 [
   {
-    "title": "Meredith and Derek's Complicated Romance",
+    "title": "Meredith and Derek's Complicated Relationship",
     "arc_type": "Soap Arc",
-    "description": "Meredith and Derek's relationship begins with a one-night stand and evolves into a complicated romance, affecting their professional lives and friendships.",
+    "description": "Meredith and Derek's relationship begins with a one-night stand and evolves amidst professional challenges and personal revelations.",
     "episodic": false,
     "main_characters": "Meredith Grey; Derek Shepherd",
-    "interfering_episode_characters": "Addison Shepherd; Miranda Bailey",
-    "single_episode_progression_string": "Meredith reveals her mother's Alzheimer's to Derek, deepening their emotional connection. Addison Shepherd confronts Meredith and Derek, adding tension to their relationship."
+    "interfering_episode_characters": "Addison Shepherd",
+    "single_episode_progression_string": "Meredith reveals her mother's Alzheimer's to Derek, adding complexity to their relationship. Addison confronts Meredith about Derek, highlighting the complexities of their relationship."
   },
   {
-    "title": "Intern Dynamics and Challenges",
+    "title": "George's Professional Embarrassment and Growth",
     "arc_type": "Genre-Specific Arc",
-    "description": "The new interns at Seattle Grace Hospital face various challenges as they adjust to their roles, navigate relationships, and compete for opportunities.",
-    "episodic": false,
-    "main_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
-    "interfering_episode_characters": "Richard Webber; Miranda Bailey",
-    "single_episode_progression_string": "George discovers he has syphilis from Alex, causing personal turmoil. Cristina and Izzie perform an unauthorized autopsy, highlighting ethical dilemmas faced by the interns."
-  },
-  {
-    "title": "Meredith's Family Legacy and Personal Struggles",
-    "arc_type": "Soap Arc",
-    "description": "Meredith grapples with her mother's legacy as a renowned surgeon and her own personal struggles, including her mother's Alzheimer's diagnosis.",
-    "episodic": false,
-    "main_characters": "Meredith Grey",
-    "interfering_episode_characters": "Derek Shepherd",
-    "single_episode_progression_string": "Meredith deals with the emotional weight of her mother's Alzheimer's, confiding in Derek about the truth. She also receives a call from her mother's nurse, indicating ongoing concerns about her mother's condition."
-  },
-  {
-    "title": "George's Struggles and Growth",
-    "arc_type": "Soap Arc",
-    "description": "George O'Malley faces challenges as an intern, dealing with self-doubt and striving to prove himself in a competitive environment.",
+    "description": "George O'Malley faces professional challenges and personal growth as he navigates his internship.",
     "episodic": false,
     "main_characters": "George O'Malley",
     "interfering_episode_characters": "Olivia Harper; Alex Karev",
-    "single_episode_progression_string": "George discovers he has syphilis, leading to embarrassment and tension with Olivia. He confronts Alex, believing he contracted it from him. Despite the personal turmoil, George continues to work on medical cases, showing resilience."
+    "single_episode_progression_string": "George discovers he has syphilis, leading to embarrassment and tension with Olivia. He confronts Alex, believing he contracted it from him. Despite the personal setback, George continues to work on cases, showing resilience."
   },
   {
-    "title": "Cristina's Unexpected Pregnancy",
+    "title": "Cristina's Pregnancy and Abortion Decision",
     "arc_type": "Soap Arc",
-    "description": "Cristina suspects her flu symptoms might be pregnancy and faces the emotional implications.",
+    "description": "Cristina grapples with an unexpected pregnancy and her decision to have an abortion, affecting her relationship with Burke.",
     "episodic": false,
     "main_characters": "Cristina Yang",
     "interfering_episode_characters": "Preston Burke",
-    "single_episode_progression_string": "Cristina considers telling Burke about her pregnancy but decides against it. She schedules an abortion and navigates the emotional complexity of her situation while maintaining her professional responsibilities."
+    "single_episode_progression_string": "Cristina considers telling Burke about her pregnancy but decides against it. She schedules an abortion and avoids discussing it with Burke, highlighting her internal conflict."
   },
   {
-    "title": "Medical Case: Chief's Vision and Secret Surgery",
-    "arc_type": "Episodic Arc",
-    "description": "The chief's vision problems lead to a secret surgery, highlighting the challenges of maintaining professional integrity.",
-    "episodic": true,
+    "title": "The Chief's Secret Health Issue",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The Chief struggles with a secret health issue that affects his ability to perform surgeries.",
+    "episodic": false,
     "main_characters": "Richard Webber; Derek Shepherd",
     "interfering_episode_characters": "Miranda Bailey",
-    "single_episode_progression_string": "The chief struggles with vision issues, prompting Derek and the chief to plan a secret surgery to address the problem."
+    "single_episode_progression_string": "The Chief's vision problems become apparent during surgery, prompting Derek to conduct secret tests. They discover a tumor on his optic nerve, leading to a covert operation to address the issue."
   },
   {
-    "title": "Medical Case: Franklin's Mysterious Condition",
+    "title": "Intern Dynamics at Seattle Grace",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The interns at Seattle Grace Hospital form friendships and rivalries as they navigate the challenges of their medical training.",
+    "episodic": false,
+    "main_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
+    "interfering_episode_characters": "Miranda Bailey; Richard Webber",
+    "single_episode_progression_string": "The interns deal with various personal and professional challenges. Izzie teases George about his syphilis, and Cristina and Izzie perform an unauthorized autopsy. The interns' interactions highlight their evolving dynamics and the pressures of their training."
+  },
+  {
+    "title": "Medical Case: Mr. Franklin's Mysterious Condition",
     "arc_type": "Episodic Arc",
-    "description": "The medical team investigates Mr. Franklin's condition, which leads to unexpected complications and ethical dilemmas.",
+    "description": "The medical team investigates Mr. Franklin's mysterious abdominal condition, leading to unexpected complications.",
     "episodic": true,
     "main_characters": "Cristina Yang; Izzie Stevens",
     "interfering_episode_characters": "Miranda Bailey; Mr. Franklin; Alice Franklin",
-    "single_episode_progression_string": "Cristina and Izzie examine Mr. Franklin, who has a large abdomen. After his death, they perform an unauthorized autopsy, discovering hemochromatosis as the cause. This leads to a confrontation with Bailey, but ultimately provides closure for the family."
-  },
-  {
-    "title": "Burke's Ethical Dilemma with Bill",
-    "arc_type": "Episodic Arc",
-    "description": "Burke faces an ethical dilemma when he discovers a personal and medical secret about his friend Bill during surgery.",
-    "episodic": true,
-    "main_characters": "Preston Burke",
-    "interfering_episode_characters": "Bill; Holly",
-    "single_episode_progression_string": "Burke discovers that Bill has an ovary, not a tumor, and learns that Bill's wife is pregnant by another man. Burke struggles with the decision to tell Bill the truth, balancing his roles as a friend and a doctor."
+    "single_episode_progression_string": "Cristina and Izzie examine Mr. Franklin's large abdomen and later perform an unauthorized autopsy after his death. They discover hemochromatosis as the cause, providing closure to the family despite initial resistance."
   }
 ]

@@ -1,47 +1,56 @@
 [
   {
-    "entity_name": "izzie_stevens",
-    "best_appellation": "Izzie Stevens",
+    "entity_name": "meredith_grey",
+    "best_appellation": "Meredith",
     "appellations": [
-      "izzie_stevens",
-      "Izzie"
+      "Meredith",
+      "Meredith Grey"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "george_omalley",
+    "best_appellation": "George",
+    "appellations": [
+      "George",
+      "George O'Malley"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "cristina_yang",
-    "best_appellation": "Cristina Yang",
+    "best_appellation": "Cristina",
     "appellations": [
-      "cristina_yang",
-      "Cristina"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "edward_connors",
-    "best_appellation": "Edward Connors",
-    "appellations": [
-      "Edward",
-      "Edwards"
+      "Cristina",
+      "Cristina Yang"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "derek_shepherd",
-    "best_appellation": "Derek Shepherd",
+    "best_appellation": "Derek",
     "appellations": [
-      "derek_shepherd",
       "Derek",
+      "Derek Shepherd",
       "McDreamy"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "alex_karev",
-    "best_appellation": "Alex Karev",
+    "best_appellation": "Alex",
     "appellations": [
-      "alex_karev",
-      "Alex"
+      "Alex",
+      "Alex Karev"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "miranda_bailey",
+    "best_appellation": "Bailey",
+    "appellations": [
+      "Bailey",
+      "Miranda Bailey"
     ],
     "entity_type": "PERSON"
   },
@@ -49,53 +58,52 @@
     "entity_name": "annie_connors",
     "best_appellation": "Annie Connors",
     "appellations": [
-      "Annie Connors",
-      "Annie"
+      "Annie",
+      "Annie Connors"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "jimmy_connors",
-    "best_appellation": "Jimmy Connors",
+    "entity_name": "isobel_stevens",
+    "best_appellation": "Izzie",
     "appellations": [
-      "Jimmy"
+      "Izzie",
+      "Isobel Stevens"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "meredith_grey",
-    "best_appellation": "Meredith Grey",
+    "entity_name": "edward",
+    "best_appellation": "Edward",
     "appellations": [
-      "meredith_grey",
-      "Meredith"
+      "Edward"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "dr_edwards",
+    "best_appellation": "Edwards",
+    "appellations": [
+      "Edwards",
+      "Dr. Edwards"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "preston_burke",
-    "best_appellation": "Preston Burke",
+    "best_appellation": "Burke",
     "appellations": [
-      "preston_burke",
       "Burke",
-      "Dr. Burke"
+      "Dr. Burke",
+      "Preston Burke"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "george_omalley",
-    "best_appellation": "George O'Malley",
+    "entity_name": "jimmy",
+    "best_appellation": "Jimmy",
     "appellations": [
-      "george_omalley",
-      "George"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "miranda_bailey",
-    "best_appellation": "Miranda Bailey",
-    "appellations": [
-      "miranda_bailey",
-      "Bailey"
+      "Jimmy"
     ],
     "entity_type": "PERSON"
   }

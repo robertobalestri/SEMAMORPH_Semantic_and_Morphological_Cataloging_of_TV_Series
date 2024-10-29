@@ -1,102 +1,33 @@
 [
   {
-    "entity_name": "izzie_stevens",
-    "best_appellation": "Izzie Stevens",
+    "entity_name": "zona_cruz",
+    "best_appellation": "Zona",
     "appellations": [
-      "Izzie",
-      "Izzie Stevens",
-      "Dr. Model"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "cristina_yang",
-    "best_appellation": "Cristina Yang",
-    "appellations": [
-      "Cristina",
-      "Cristina Yang"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "george_omalley",
-    "best_appellation": "George O'Malley",
-    "appellations": [
-      "George",
-      "George O'Malley"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "derek_shepherd",
-    "best_appellation": "Derek Shepherd",
-    "appellations": [
-      "Derek",
-      "Derek Shepherd"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "richard_webber",
-    "best_appellation": "Richard Webber",
-    "appellations": [
-      "Richard",
-      "Richard Webber"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "miranda_bailey",
-    "best_appellation": "Miranda Bailey",
-    "appellations": [
-      "Bailey",
-      "Miranda Bailey"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "alex_karev",
-    "best_appellation": "Alex Karev",
-    "appellations": [
-      "Alex",
-      "Alex Karev"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "preston_burke",
-    "best_appellation": "Preston Burke",
-    "appellations": [
-      "Burke",
-      "Preston Burke"
+      "Zona"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "meredith_grey",
-    "best_appellation": "Meredith Grey",
+    "best_appellation": "Meredith",
     "appellations": [
-      "Meredith",
-      "Meredith Grey"
+      "Meredith"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "jorge_cruz",
-    "best_appellation": "Jorge Cruz",
+    "entity_name": "alex_karev",
+    "best_appellation": "Alex",
     "appellations": [
-      "Jorge",
-      "Jorge Cruz"
+      "Alex"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "elizabeth_fallon",
-    "best_appellation": "Elizabeth Fallon",
+    "entity_name": "cristina_yang",
+    "best_appellation": "Cristina",
     "appellations": [
-      "Elizabeth Fallon",
-      "Liz",
-      "Liz Fallon"
+      "Cristina"
     ],
     "entity_type": "PERSON"
   },
@@ -109,8 +40,41 @@
     "entity_type": "PERSON"
   },
   {
+    "entity_name": "miranda_bailey",
+    "best_appellation": "Bailey",
+    "appellations": [
+      "Bailey"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "richard_webber",
+    "best_appellation": "Richard",
+    "appellations": [
+      "Richard"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "jorge_cruz",
+    "best_appellation": "Jorge",
+    "appellations": [
+      "Jorge",
+      "Jorge Cruz"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "ellis_grey",
+    "best_appellation": "Ellis",
+    "appellations": [
+      "Ellis"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
     "entity_name": "dr_harry_victor",
-    "best_appellation": "Dr. Harry Victor",
+    "best_appellation": "Dr. Victor",
     "appellations": [
       "Dr. Victor",
       "Dr. Harry Victor"
@@ -118,19 +82,46 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "ellis_grey",
-    "best_appellation": "Ellis Grey",
+    "entity_name": "george_omalley",
+    "best_appellation": "George",
     "appellations": [
-      "Ellis",
-      "Ellis Grey"
+      "George"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "zona_cruz",
-    "best_appellation": "Zona Cruz",
+    "entity_name": "derek_shepherd",
+    "best_appellation": "Derek",
     "appellations": [
-      "Zona"
+      "Derek"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "elizabeth_fallon",
+    "best_appellation": "Liz",
+    "appellations": [
+      "Liz",
+      "Elizabeth",
+      "Elizabeth Fallon",
+      "Elizabeth \"Liz\" Fallon"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "preston_burke",
+    "best_appellation": "Burke",
+    "appellations": [
+      "Burke"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "isobel_stevens",
+    "best_appellation": "Izzie",
+    "appellations": [
+      "Izzie",
+      "Dr. Model"
     ],
     "entity_type": "PERSON"
   }

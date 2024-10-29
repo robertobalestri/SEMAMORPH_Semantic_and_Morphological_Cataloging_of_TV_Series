@@ -8,6 +8,6 @@ Npm install the node modules from the frontend folder.
 
 Run main.py to make all happens.
 
-When ready, to visualize, run "uvicorn src.api.main:app --reload"
+When ready, to visualize, run "uvicorn src.api.api_main:app --reload"
 
 from the cmd prompt goes to the frontend folder and run "npm run dev"

@@ -1,48 +1,22 @@
 1. **Key Episode Events**:
    - Meredith struggles with her relationship with Derek and its professional implications.
-   - Bailey confronts Derek about favoritism towards Meredith.
-   - Alex's insensitive comments about a patient lead to his removal from surgery.
-   - Izzie performs an emergency procedure on Jimmy.
-   - Annie's surgery fails, and she passes away.
-   - Cristina and Burke's relationship faces tension over professional boundaries.
-   - George's feelings for Meredith are teased by Izzie.
+   - George spills coffee and awkwardly tries to flirt with Meredith.
+   - Bailey introduces the interns to Annie Connors, a patient with a large tumor.
+   - Alex's insensitive comments about Annie are overheard, leading to his removal from surgery.
+   - Izzie performs an emergency procedure on Jimmy, saving his life.
+   - Annie dies during surgery despite efforts to save her.
+   - Derek and Meredith share a tender moment in the rain.
 
 2. **Narrative Arcs**:
-
-   - Arc Type: Soap Arc
-     Title: “Meredith and Derek's Complicated Romance”
-     Description: Meredith and Derek's relationship affects their professional lives, leading to tension with Bailey and Meredith's internal conflict.
-     Episodic Flag: False
-     Main Characters: Meredith Grey, Derek Shepherd
-     Interfering Episode Characters: Miranda Bailey, George O'Malley
-     Progression: Meredith considers ending the relationship due to professional complications. Bailey warns Derek about favoritism.
-
-   - Arc Type: Genre-Specific Arc
-     Title: “Interns' Professional Challenges at Seattle Grace”
-     Description: The interns face ethical and medical challenges, highlighting their growth and struggles in the surgical field.
-     Episodic Flag: False
-     Main Characters: Meredith Grey, Cristina Yang, Izzie Stevens, George O'Malley, Alex Karev
-     Interfering Episode Characters: Miranda Bailey, Preston Burke
-     Progression: Izzie handles an emergency procedure. Alex's behavior impacts his professional opportunities.
-
-   - Arc Type: Soap Arc
-     Title: “Cristina and Burke's Secret Relationship”
-     Description: Cristina and Burke navigate their secret relationship, balancing personal and professional boundaries.
-     Episodic Flag: False
-     Main Characters: Cristina Yang, Preston Burke
-     Interfering Episode Characters: Meredith Grey
-     Progression: Tension arises as Cristina wants to be involved in Burke's professional life.
-
-   - Arc Type: Episodic Arc
-     Title: “Medical Case: Annie's Tumor Surgery”
-     Description: The interns work on a challenging case involving a patient with a large tumor, testing their skills and empathy.
-     Episodic Flag: True
-     Main Characters: Meredith Grey, Cristina Yang, Alex Karev, George O'Malley
-     Interfering Episode Characters: Miranda Bailey, Preston Burke
-     Progression: The surgery fails, leading to Annie's death, impacting the interns emotionally.
+   - **Meredith and Derek's Relationship**: Tension over professional boundaries and personal feelings.
+   - **Intern Dynamics**: Conflicts and camaraderie among the interns, particularly involving Alex and Izzie.
+   - **Cristina and Burke's Relationship**: Professional and personal boundaries blur as they navigate their relationship.
+   - **Izzie's Growth**: Demonstrates her capability and determination in a crisis.
+   - **George's Challenges**: Struggles with unrequited feelings for Meredith and professional mishaps.
 
 3. **Themes and Motifs**:
-   - Professional Challenges and Growth
-   - Personal Relationships and Romantic Entanglements
-   - Ethical Dilemmas in Medicine
-   - Secrets and Revelations
+   - **Professional and Personal Boundaries**: Meredith and Derek's relationship challenges these boundaries.
+   - **Responsibility and Growth**: Izzie's decisive actions in a medical emergency.
+   - **Secrets and Revelations**: Alex's comments about Annie reveal his insensitivity.
+   - **Love and Betrayal**: Romantic tensions and misunderstandings among the characters.
+   - **Friendship and Rivalry**: Intern dynamics highlight both support and competition.

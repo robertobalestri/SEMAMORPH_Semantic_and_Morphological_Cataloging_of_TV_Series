@@ -1,5 +1,5 @@
 from src.utils.logger_utils import setup_logging
-from src.plot_processing.plot_text_processing import replace_pronouns_with_names, simplify_text, summarize_plot
+from src.plot_processing.plot_text_processing import replace_pronouns_with_names, simplify_text
 from src.plot_processing.plot_semantic_processing import semantic_split
 from src.plot_processing.plot_ner_entity_extraction import extract_and_refine_entities, substitute_appellations_with_names, normalize_entities_names_to_best_appellation
 from src.plot_processing.plot_processing_models import EntityLink, EntityLinkEncoder
@@ -12,6 +12,7 @@ import agentops
 from src.langgraph_narrative_arcs_extraction.narrative_arc_graph import extract_narrative_arcs
 from src.ai_models.ai_models import LLMType
 from src.storage.narrative_arc_manager import NarrativeArcManager
+from src.plot_processing.plot_summarizing import create_season_summary
 
 from dotenv import load_dotenv
 
@@ -37,6 +38,38 @@ def process_text(path_handler: PathHandler) -> None:
         llm_intelligent = get_llm(LLMType.INTELLIGENT)
         llm_cheap = get_llm(LLMType.CHEAP)
         
+        # Check if season summary needs to be created
+        season_plot_path = path_handler.get_season_plot_file_path()
+        if not os.path.exists(season_plot_path):
+            logger.info("Season summary not found. Creating season summary from episode plots.")
+            
+            # Get all episode folders
+            episode_folders = PathHandler.list_episode_folders(
+                path_handler.base_dir,
+                path_handler.series,
+                path_handler.season
+            )
+            
+            # Collect paths for all episode plots
+            episode_plots = []
+            for ep_folder in episode_folders:
+                ep_plot_path = PathHandler.get_episode_plot_path(
+                    path_handler.base_dir,
+                    path_handler.series,
+                    path_handler.season,
+                    ep_folder
+                )
+                if os.path.exists(ep_plot_path):
+                    episode_plots.append(ep_plot_path)
+            
+            if episode_plots:
+                logger.info(f"Found {len(episode_plots)} episode plots to summarize")
+                create_season_summary(episode_plots, llm_cheap, season_plot_path)
+            else:
+                logger.warning("No episode plots found to create season summary.")
+        else:
+            logger.info(f"Season summary already exists at: {season_plot_path}")
+
         # Simplify the text if the file does not exist
         simplified_file_path = path_handler.get_simplified_plot_file_path()
         
@@ -142,15 +175,6 @@ def process_text(path_handler: PathHandler) -> None:
             with open(semantic_segments_path, "r") as semantic_segments_file:
                 semantic_segments = json.load(semantic_segments_file)          
                 
-                
-        summarized_plot_path = path_handler.get_summarized_plot_path()        
-        if not os.path.exists(summarized_plot_path):
-            summarized_plot = summarize_plot(entity_normalized_plot, llm_cheap, summarized_plot_path)
-        else:
-            logger.info(f"Loading summarized plot from: {summarized_plot_path}")
-            with open(summarized_plot_path, "r") as summarized_plot_file:
-                summarized_plot = summarized_plot_file.read()
-                
         suggested_episode_arc_path = path_handler.get_suggested_episode_arc_path()
         
         if not os.path.exists(suggested_episode_arc_path):
@@ -160,7 +184,7 @@ def process_text(path_handler: PathHandler) -> None:
                 "episode_plot_path": path_handler.get_simplified_plot_file_path(),
                 "seasonal_narrative_analysis_output_path": path_handler.get_season_narrative_analysis_path(),
                 "episode_narrative_analysis_output_path": path_handler.get_episode_narrative_analysis_path(),
-                "summarized_plot_path": summarized_plot_path,
+                "summarized_plot_path": path_handler.get_summarized_plot_path(),
                 "season_entities_path": path_handler.get_season_extracted_refined_entities_path(),
                 "suggested_episode_arc_path": suggested_episode_arc_path
             }
@@ -188,18 +212,16 @@ def process_text(path_handler: PathHandler) -> None:
 
 if __name__ == "__main__":
     # Configuration
-    series = "FIABA"
+    series = "GA"
     season = "S01"
 
     logger.info("Starting text processing.")
 
-    ep_number = 1
-    for ep in range(ep_number, 2): #(1, 2) for only episode 1
+    ep_number = 2
+    
+    # Now process each episode
+    for ep in range(ep_number, 10):
         episode = f"E{ep:02d}"
-        
-        # Initialize PathHandler
         path_handler = PathHandler(series, season, episode)
-
-        logger.info("Starting text processing.")
+        logger.warning(f"Starting text processing for episode {episode}")
         process_text(path_handler)
-

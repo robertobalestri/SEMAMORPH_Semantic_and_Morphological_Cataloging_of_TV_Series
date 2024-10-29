@@ -24,7 +24,9 @@ from .prompts import (
     NARRATIVE_ARC_GUIDELINES,
     ARC_PROGRESSION_VERIFIER_PROMPT,
     OUTPUT_JSON_FORMAT,
-    CHARACTER_VERIFIER_PROMPT
+    CHARACTER_VERIFIER_PROMPT,
+    TEMPORALITY_VERIFIER_PROMPT,
+    ARC_DEDUPLICATOR_PROMPT
 )
 llm = get_llm(LLMType.INTELLIGENT)
 cheap_llm = get_llm(LLMType.CHEAP)
@@ -329,6 +331,76 @@ def verify_arc_progression(state: NarrativeArcsExtractionState) -> NarrativeArcs
     logger.info(f"Verified progressions for {len(verified_arcs)} arcs.")
     return state
 
+def verify_character_roles(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
+    """Verify and correctly categorize characters as either main or interfering for each arc."""
+    logger.info("Verifying character roles in arcs.")
+
+    verified_arcs = []
+    for arc in state['episode_arcs']:
+        response = llm.invoke(CHARACTER_VERIFIER_PROMPT.format_messages(
+            episode_plot=state['episode_plot'],
+            arc_to_verify=arc.model_dump(),
+            output_json_format=OUTPUT_JSON_FORMAT
+        ))
+
+        try:
+            verified_arc_data = clean_llm_json_response(response.content)
+            if isinstance(verified_arc_data, list):
+                verified_arc_data = verified_arc_data[0]
+
+            verified_arc = IntermediateNarrativeArc(
+                title=verified_arc_data['title'],
+                arc_type=verified_arc_data['arc_type'],
+                description=verified_arc_data['description'],
+                episodic=verified_arc_data['episodic'],
+                main_characters=verified_arc_data['main_characters'],
+                interfering_episode_characters=verified_arc_data['interfering_episode_characters'],
+                single_episode_progression_string=verified_arc_data['single_episode_progression_string']
+            )
+            verified_arcs.append(verified_arc)
+        except Exception as e:
+            logger.error(f"Error verifying character roles: {e}")
+            verified_arcs.append(arc)  # Keep the original arc if verification fails
+
+    state['episode_arcs'] = verified_arcs
+    logger.info(f"Verified character roles for {len(verified_arcs)} arcs.")
+    return state
+
+def verify_arc_temporality(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
+    """Verify and correctly categorize the temporality of each arc."""
+    logger.info("Verifying arc temporality.")
+    verified_arcs = []
+    for arc in state['episode_arcs']:
+        response = llm.invoke(TEMPORALITY_VERIFIER_PROMPT.format_messages(
+            episode_plot=state['episode_plot'],
+            season_plot=state['season_plot'],
+            arc_to_verify=arc.model_dump(),
+            output_json_format=OUTPUT_JSON_FORMAT,
+            guidelines=NARRATIVE_ARC_GUIDELINES
+        ))
+
+        try:
+            verified_arc_data = clean_llm_json_response(response.content)
+            if isinstance(verified_arc_data, list):
+                verified_arc_data = verified_arc_data[0]
+
+            verified_arc = IntermediateNarrativeArc(
+                title=verified_arc_data['title'],
+                arc_type=verified_arc_data['arc_type'],
+                description=verified_arc_data['description'],
+                episodic=verified_arc_data['episodic'],
+                main_characters=verified_arc_data['main_characters'],
+                interfering_episode_characters=verified_arc_data['interfering_episode_characters'],
+                single_episode_progression_string=verified_arc_data['single_episode_progression_string']
+            )
+            verified_arcs.append(verified_arc)
+        except Exception as e:
+            logger.error(f"Error verifying character roles: {e}")
+            verified_arcs.append(arc)  # Keep the original arc if verification fails
+
+    state['episode_arcs'] = verified_arcs
+    logger.info(f"Verified character roles for {len(verified_arcs)} arcs.")
+    return state
 
 def verify_and_finalize_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
     """Verify and finalize the arcs, ensuring they have the right metadata, titles, descriptions."""
@@ -371,6 +443,40 @@ def verify_and_finalize_arcs(state: NarrativeArcsExtractionState) -> NarrativeAr
     except Exception as e:
         logger.error(f"Error verifying arcs: {e}")
         state['episode_arcs'] = combined_arcs  # Use the combined arcs if verification fails
+
+    return state
+
+def deduplicate_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
+    """Deduplicate and merge similar arcs, ensuring consistent titles and descriptions."""
+    logger.info("Deduplicating and merging similar arcs.")
+
+    response = llm.invoke(ARC_DEDUPLICATOR_PROMPT.format_messages(
+        episode_plot=state['episode_plot'],
+        arcs_to_deduplicate=state['episode_arcs'],
+        present_season_arcs_summaries=json.dumps(state['present_season_arcs'], indent=2),
+        guidelines=NARRATIVE_ARC_GUIDELINES,
+        output_json_format=OUTPUT_JSON_FORMAT
+    ))
+
+    try:
+        deduplicated_arcs_data = clean_llm_json_response(response.content)
+        deduplicated_arcs = []
+        for arc in deduplicated_arcs_data:
+            new_arc = IntermediateNarrativeArc(
+                title=arc['title'],
+                arc_type=arc['arc_type'],
+                description=arc['description'],
+                episodic=arc['episodic'],
+                main_characters=arc['main_characters'],
+                interfering_episode_characters=arc['interfering_episode_characters'],
+                single_episode_progression_string=arc['single_episode_progression_string']
+            )
+            deduplicated_arcs.append(new_arc)
+        state['episode_arcs'] = deduplicated_arcs
+        logger.info(f"Deduplicated to {len(deduplicated_arcs)} unique arcs.")
+    except Exception as e:
+        logger.error(f"Error deduplicating arcs: {e}")
+        # Keep original arcs if deduplication fails
 
     return state
 
@@ -417,41 +523,6 @@ def save_season_arcs_to_json(state: NarrativeArcsExtractionState) -> NarrativeAr
 
     return state
 
-def verify_character_roles(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
-    """Verify and correctly categorize characters as either main or interfering for each arc."""
-    logger.info("Verifying character roles in arcs.")
-
-    verified_arcs = []
-    for arc in state['episode_arcs']:
-        response = llm.invoke(CHARACTER_VERIFIER_PROMPT.format_messages(
-            episode_plot=state['episode_plot'],
-            arc_to_verify=arc.model_dump(),
-            output_json_format=OUTPUT_JSON_FORMAT
-        ))
-
-        try:
-            verified_arc_data = clean_llm_json_response(response.content)
-            if isinstance(verified_arc_data, list):
-                verified_arc_data = verified_arc_data[0]
-
-            verified_arc = IntermediateNarrativeArc(
-                title=verified_arc_data['title'],
-                arc_type=verified_arc_data['arc_type'],
-                description=verified_arc_data['description'],
-                episodic=verified_arc_data['episodic'],
-                main_characters=verified_arc_data['main_characters'],
-                interfering_episode_characters=verified_arc_data['interfering_episode_characters'],
-                single_episode_progression_string=verified_arc_data['single_episode_progression_string']
-            )
-            verified_arcs.append(verified_arc)
-        except Exception as e:
-            logger.error(f"Error verifying character roles: {e}")
-            verified_arcs.append(arc)  # Keep the original arc if verification fails
-
-    state['episode_arcs'] = verified_arcs
-    logger.info(f"Verified character roles for {len(verified_arcs)} arcs.")
-    return state
-
 def create_narrative_arc_graph():
     """Create and configure the state graph for narrative arc extraction."""
     workflow = StateGraph(NarrativeArcsExtractionState)
@@ -464,8 +535,10 @@ def create_narrative_arc_graph():
     workflow.add_node("extract_arcs_from_analysis_node", extract_arcs_from_analysis)
     workflow.add_node("extract_arcs_from_plot_node", extract_arcs_from_plot)
     workflow.add_node("verify_arc_progression_node", verify_arc_progression)
-    workflow.add_node("verify_character_roles_node", verify_character_roles)  # Add new node
+    workflow.add_node("verify_character_roles_node", verify_character_roles)
+    workflow.add_node("verify_arc_temporality_node", verify_arc_temporality)
     workflow.add_node("verify_and_finalize_arcs_node", verify_and_finalize_arcs)
+    workflow.add_node("deduplicate_arcs_node", deduplicate_arcs)  # Add new node
 
     # Set the entry point and edges
     workflow.set_entry_point("initialize_state_node")
@@ -475,9 +548,11 @@ def create_narrative_arc_graph():
     workflow.add_edge("identify_present_season_arcs_node", "extract_arcs_from_analysis_node")
     workflow.add_edge("extract_arcs_from_analysis_node", "extract_arcs_from_plot_node")
     workflow.add_edge("extract_arcs_from_plot_node", "verify_arc_progression_node")
-    workflow.add_edge("verify_arc_progression_node", "verify_character_roles_node")  # Add new edge
-    workflow.add_edge("verify_character_roles_node", "verify_and_finalize_arcs_node")  # Update edge
-    workflow.add_edge("verify_and_finalize_arcs_node", END)
+    workflow.add_edge("verify_arc_progression_node", "verify_character_roles_node")
+    workflow.add_edge("verify_character_roles_node", "verify_arc_temporality_node")
+    workflow.add_edge("verify_arc_temporality_node", "verify_and_finalize_arcs_node")
+    workflow.add_edge("verify_and_finalize_arcs_node", "deduplicate_arcs_node")  # Add new edge
+    workflow.add_edge("deduplicate_arcs_node", END)
 
     logger.info("Narrative arc graph workflow created successfully.")
 
@@ -514,4 +589,3 @@ def extract_narrative_arcs(file_paths: Dict[str, str], series: str, season: str,
     save_json(suggested_arcs, file_paths['suggested_episode_arc_path'])
 
     logger.info(f"Suggested episode arcs saved to {file_paths['suggested_episode_arc_path']}")
-

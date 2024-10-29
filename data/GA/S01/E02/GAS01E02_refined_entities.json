@@ -3,8 +3,8 @@
     "entity_name": "meredith_grey",
     "best_appellation": "Meredith Grey",
     "appellations": [
-      "Meredith Grey",
-      "Meredith"
+      "Meredith",
+      "Meredith Grey"
     ],
     "entity_type": "PERSON"
   },
@@ -12,8 +12,8 @@
     "entity_name": "derek_shepherd",
     "best_appellation": "Derek Shepherd",
     "appellations": [
-      "Derek Shepherd",
-      "Derek"
+      "Derek",
+      "Derek Shepherd"
     ],
     "entity_type": "PERSON"
   },
@@ -21,8 +21,8 @@
     "entity_name": "cristina_yang",
     "best_appellation": "Cristina Yang",
     "appellations": [
-      "Cristina Yang",
-      "Cristina"
+      "Cristina",
+      "Cristina Yang"
     ],
     "entity_type": "PERSON"
   },
@@ -30,8 +30,8 @@
     "entity_name": "george_omalley",
     "best_appellation": "George O'Malley",
     "appellations": [
-      "George O'Malley",
-      "George"
+      "George",
+      "George O'Malley"
     ],
     "entity_type": "PERSON"
   },
@@ -39,9 +39,8 @@
     "entity_name": "isobel_stevens",
     "best_appellation": "Izzie Stevens",
     "appellations": [
-      "Izzie Stevens",
       "Izzie",
-      "Isobel Stevens"
+      "Izzie Stevens"
     ],
     "entity_type": "PERSON"
   },
@@ -49,9 +48,9 @@
     "entity_name": "miranda_bailey",
     "best_appellation": "Miranda Bailey",
     "appellations": [
-      "Miranda Bailey",
+      "Bailey",
       "Miranda",
-      "Bailey"
+      "Miranda Bailey"
     ],
     "entity_type": "PERSON"
   },
@@ -59,8 +58,8 @@
     "entity_name": "preston_burke",
     "best_appellation": "Preston Burke",
     "appellations": [
-      "Preston Burke",
-      "Burke"
+      "Burke",
+      "Preston Burke"
     ],
     "entity_type": "PERSON"
   },
@@ -68,17 +67,8 @@
     "entity_name": "alex_karev",
     "best_appellation": "Alex Karev",
     "appellations": [
-      "Alex Karev",
-      "Alex"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "ellis_grey",
-    "best_appellation": "Ellis Grey",
-    "appellations": [
-      "Ellis Grey",
-      "Ellis"
+      "Alex",
+      "Alex Karev"
     ],
     "entity_type": "PERSON"
   },
@@ -86,26 +76,18 @@
     "entity_name": "richard_webber",
     "best_appellation": "Richard Webber",
     "appellations": [
-      "Richard Webber",
       "Richard",
+      "Richard Webber",
       "Webber"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "ms_lu",
-    "best_appellation": "Ms. Lu",
+    "entity_name": "ellis_grey",
+    "best_appellation": "Ellis Grey",
     "appellations": [
-      "Ms. Lu"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "patricia_clarkson",
-    "best_appellation": "Patricia Clarkson",
-    "appellations": [
-      "Patricia Clarkson",
-      "Patricia"
+      "Ellis",
+      "Ellis Grey"
     ],
     "entity_type": "PERSON"
   },
@@ -118,10 +100,35 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "mrs_johnson",
-    "best_appellation": "Mrs. Johnson",
+    "entity_name": "ms_lu",
+    "best_appellation": "Ms. Lu",
     "appellations": [
-      "Mrs. Johnson"
+      "Ms. Lu"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "dr_kay",
+    "best_appellation": "Dr. Kay",
+    "appellations": [
+      "Dr. Kay"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "patricia_clarkson",
+    "best_appellation": "Patricia Clarkson",
+    "appellations": [
+      "Patricia",
+      "Patricia Clarkson"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "johnson_family",
+    "best_appellation": "the Johnsons",
+    "appellations": [
+      "the Johnsons"
     ],
     "entity_type": "PERSON"
   },
@@ -134,10 +141,10 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "dr_kay",
-    "best_appellation": "Dr. Kay",
+    "entity_name": "mrs_johnson",
+    "best_appellation": "Mrs. Johnson",
     "appellations": [
-      "Dr. Kay"
+      "Mrs. Johnson"
     ],
     "entity_type": "PERSON"
   },

@@ -1,51 +1,27 @@
-## Key Episode Events:
+1. **Key Episode Events**:
+   - George and Izzie see Derek leaving Meredith's house.
+   - George feels jealous; Izzie is upset about Meredith's surgeries.
+   - A flu spreads in the hospital; Cristina feels nauseous.
+   - Alex encounters a gunshot victim in the lobby.
+   - Meredith helps Bailey with a botched gastric bypass case.
+   - Izzie assists a man who swallowed keys.
+   - George works with Derek on a toddler's hemispherectomy.
+   - George suspects Dr. Taylor of drinking; confronts him.
+   - Alex's tattooed patient dies from infection.
+   - Derek removes Dr. Taylor from surgery; apologizes to George.
+   - Izzie confronts Meredith about Derek.
+   - Cristina takes pregnancy tests.
 
-- George and Izzie see Derek leaving Meredith's house.
-- George feels jealous; Izzie is upset, thinking Meredith gets better surgeries.
-- A flu spreads in the hospital; Cristina feels nauseous and blames Dr. Burke.
-- Alex notices a gunshot victim in the lobby; the man has an appointment.
-- Meredith helps Bailey with a teenager's unauthorized gastric bypass case.
-- Izzie assists a man who swallowed his girlfriend's keys.
-- George joins Derek on a toddler's surgery involving severe tremors.
-- George suspects Dr. Taylor, the anesthesiologist, of drinking.
-- Alex connects with the gunshot victim over shared experiences.
-- George confronts Dr. Taylor; Derek supports Taylor, removing George from surgery.
-- Meredith empathizes with her patient pressured by her mother's expectations.
-- The gastric bypass reversal fails, causing complications.
-- Alex's tattooed patient dies from an infection.
-- During surgery, Dr. Taylor falls asleep; Derek removes him and apologizes to George.
-- Izzie confronts Meredith about Derek; realizes Meredith loves him.
-- Cristina suspects pregnancy and takes tests.
+2. **Narrative Arcs**:
+   - **Meredith and Derek's Relationship**: Complicated by professional boundaries; Meredith's feelings revealed.
+   - **George's Challenges**: Jealousy, professional embarrassment, and moral dilemma with Dr. Taylor.
+   - **Cristina's Ambition and Personal Life**: Balances professional drive with personal revelations.
+   - **Izzie's Growth and Relationships**: Confronts Meredith, shows empathy.
+   - **Alex's Professional Development**: Connects with patients, faces loss.
 
-## Narrative Arcs:
-
-### Arc Type: Soap Arc
-Title: “Meredith and Derek's Complicated Romance”
-Description: Meredith and Derek's relationship affects their professional lives and friendships.
-Episodic Flag: False
-Main Characters: Meredith Grey, Derek Shepherd
-Interfering Episode Characters: George O'Malley, Izzie Stevens
-Progression: George and Izzie discover Derek's involvement with Meredith. Izzie confronts Meredith about Derek, realizing Meredith's feelings.
-
-### Arc Type: Genre-Specific Arc
-Title: “Interns' Professional Challenges at Seattle Grace”
-Description: Interns face medical and ethical challenges, learning the realities of being surgeons.
-Episodic Flag: False
-Main Characters: Meredith Grey, Cristina Yang, George O'Malley, Alex Karev
-Interfering Episode Characters: Miranda Bailey, Derek Shepherd
-Progression: Meredith handles a complex gastric bypass case. George deals with ethical concerns about Dr. Taylor. Alex faces a patient's death.
-
-### Arc Type: Soap Arc
-Title: “Cristina and Burke's Secret Relationship”
-Description: Cristina and Burke's relationship adds tension to their professional and personal lives.
-Episodic Flag: False
-Main Characters: Cristina Yang, Preston Burke
-Interfering Episode Characters: None
-Progression: Cristina experiences nausea and suspects pregnancy, affecting her relationship with Burke.
-
-## Themes and Motifs:
-
-- Professional Challenges and Growth
-- Personal Relationships and Romantic Entanglements
-- Ethical Dilemmas in Medicine
-- Secrets and Revelations
+3. **Themes and Motifs**:
+   - **Professional and Personal Boundaries**: Meredith and Derek's relationship; George's confrontation with Dr. Taylor.
+   - **Friendship and Rivalry**: Tensions among interns, Izzie's confrontation with Meredith.
+   - **Responsibility and Growth**: George's moral decision, Izzie's empathy.
+   - **Secrets and Revelations**: Cristina's pregnancy, Meredith's feelings.
+   - **Love and Betrayal**: Meredith and Derek's evolving relationship, George's jealousy.

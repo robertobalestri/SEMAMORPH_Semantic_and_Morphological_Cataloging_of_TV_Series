@@ -75,7 +75,7 @@ def get_llm(intelligent_or_cheap: LLMType) -> AzureChatOpenAI:
     global _intelligent_llm, _cheap_llm
 
 
-    #FINCHE NO NRISOLVONO PROBLEMA USIAMO SOLO 4o-mini
+    #Metti tutto cheap per i test
     #if intelligent_or_cheap == LLMType.INTELLIGENT:
     #   intelligent_or_cheap = LLMType.CHEAP
 

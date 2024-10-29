@@ -1,168 +1,175 @@
 [
   {
-    "entity_name": "izzie_stevens",
-    "best_appellation": "izzie_stevens",
+    "entity_name": "mr_franklin",
+    "best_appellation": "Mr. Franklin",
     "appellations": [
-      "Izzie",
-      "izzie_stevens"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "cristina_yang",
-    "best_appellation": "cristina_yang",
-    "appellations": [
-      "Cristina",
-      "cristina_yang"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "derek_shepherd",
-    "best_appellation": "derek_shepherd",
-    "appellations": [
-      "Derek",
-      "derek_shepherd"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "alex_karev",
-    "best_appellation": "alex_karev",
-    "appellations": [
-      "Alex",
-      "alex_karev"
+      "Mr. Franklin",
+      "Franklin"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "meredith_grey",
-    "best_appellation": "meredith_grey",
+    "best_appellation": "Meredith",
     "appellations": [
-      "Meredith",
-      "meredith_grey"
+      "Meredith"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "preston_burke",
-    "best_appellation": "preston_burke",
+    "entity_name": "alex_karev",
+    "best_appellation": "Alex",
     "appellations": [
-      "Burke",
-      "preston_burke"
+      "Alex"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "george_omalley",
-    "best_appellation": "george_omalley",
+    "entity_name": "cristina_yang",
+    "best_appellation": "Cristina",
     "appellations": [
-      "George",
-      "George O'Malley",
-      "george_omalley"
+      "Cristina"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "miranda_bailey",
-    "best_appellation": "miranda_bailey",
+    "best_appellation": "Miranda",
     "appellations": [
       "Miranda",
-      "Bailey",
-      "miranda_bailey"
+      "Bailey"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "franklin_family",
-    "best_appellation": "the_franklin",
+    "entity_name": "george_omalley",
+    "best_appellation": "George O'Malley",
     "appellations": [
-      "Mr. Franklin",
-      "Franklin",
-      "Rebecca Franklin"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "addison_shepherd",
-    "best_appellation": "addison_shepherd",
-    "appellations": [
-      "Addison",
-      "Addison Shepherd"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "alice_franklin",
-    "best_appellation": "alice_franklin",
-    "appellations": [
-      "Alice"
+      "George O'Malley",
+      "George"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "richard_webber",
-    "best_appellation": "richard_webber",
+    "best_appellation": "Richard",
     "appellations": [
       "Richard",
-      "Webber",
-      "Chief"
+      "Chief",
+      "Webber"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "olivia",
-    "best_appellation": "olivia",
+    "entity_name": "derek_shepherd",
+    "best_appellation": "Derek",
     "appellations": [
-      "Olivia"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "ms_henry",
-    "best_appellation": "ms_henry",
-    "appellations": [
-      "Ms. Henry"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "dr_knox",
-    "best_appellation": "dr_knox",
-    "appellations": [
-      "Dr. Knox"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "ellis_grey",
-    "best_appellation": "ellis_grey",
-    "appellations": [
-      "Ellis"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "patricia",
-    "best_appellation": "patricia",
-    "appellations": [
-      "Patricia"
+      "Derek"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "bill",
-    "best_appellation": "bill",
+    "best_appellation": "Bill",
     "appellations": [
       "Bill"
     ],
     "entity_type": "PERSON"
   },
   {
+    "entity_name": "jimmy",
+    "best_appellation": "Jimmy",
+    "appellations": [
+      "Jimmy"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "addison_shepherd",
+    "best_appellation": "Addison Shepherd",
+    "appellations": [
+      "Addison Shepherd",
+      "Addison"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "olivia",
+    "best_appellation": "Olivia",
+    "appellations": [
+      "Olivia"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "dr_knox",
+    "best_appellation": "Dr. Knox",
+    "appellations": [
+      "Dr. Knox"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "izzie_stevens",
+    "best_appellation": "Izzie",
+    "appellations": [
+      "Izzie"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
     "entity_name": "holly",
-    "best_appellation": "holly",
+    "best_appellation": "Holly",
     "appellations": [
       "Holly"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "ms_henry",
+    "best_appellation": "Ms. Henry",
+    "appellations": [
+      "Ms. Henry"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "alice_franklin",
+    "best_appellation": "Alice",
+    "appellations": [
+      "Alice"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "patricia",
+    "best_appellation": "Patricia",
+    "appellations": [
+      "Patricia"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "ellis_grey",
+    "best_appellation": "Ellis",
+    "appellations": [
+      "Ellis"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "rebecca_franklin",
+    "best_appellation": "Rebecca Franklin",
+    "appellations": [
+      "Rebecca Franklin"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "preston_burke",
+    "best_appellation": "Burke",
+    "appellations": [
+      "Burke"
     ],
     "entity_type": "PERSON"
   }

@@ -27,7 +27,7 @@ Guidelines for Narrative Arc Extraction
 
 5. Character Lists:
 
-    Main characters: Include the undisputed main characters of the arc. Keep this list focused and relevant to the arc at hand. It should include only the protagonists of the arc.
+    Main characters: Include the undisputed main characters of the arc. Keep this list focused and relevant to the arc at hand. It should include only the protagonists of the arc. A relationship arc usually has two main characters.
     Interfering episode characters: Include also the interfering characters: characters that collide and have a part in the arc during the episode, but are not protagonists of the arc.
 
 6. Arc Distinctness:
@@ -78,8 +78,7 @@ SEASONAL_NARRATIVE_ANALYZER_PROMPT = ChatPromptTemplate.from_template(
        - List the key themes of the season.
     
     2. **Narrative Arcs**:
-       - List the narrative arcs of the season, this can refer to events or characters. But please follow these guidelines:
-       {guidelines}
+       - List the narrative arcs of the season with a brief description, this can refer to events, characters, ensembles of characters, etc.
     
     3. **Major Plot Points**:
        - List the major events that shape the overall narrative.
@@ -106,8 +105,7 @@ EPISODE_NARRATIVE_ANALYZER_PROMPT = ChatPromptTemplate.from_template(
        - List the major events that occur in this episode.
     
     2. **Narrative Arcs**:
-       - List the narrative arcs of the season, this can refer to events or characters. But please follow these guidelines:
-       {guidelines}
+       - List the narrative arcs of the episode with a brief description, this can refer to events, characters, ensembles of characters, etc.
     
     3. **Themes and Motifs**:
        - Identify any recurring themes or motifs present in this episode.
@@ -214,23 +212,60 @@ ARC_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
 
     As an Expert Narratology Scholar, you have an unparalleled ability to discern the nuances of storytelling and ensure that each narrative arc is precisely defined and described. You understand the importance of maintaining consistency in ongoing arcs while also recognizing the unique elements of each episode.
 
-    Please follow these guidelines when verifying and correcting narrative arcs:
+    Please follow these guidelines when verifying narrative arcs:
 
     {guidelines}
 
     Important instructions:
-    1. If an arc from "Arcs to Verify" corresponds to an existing season arc, update its title and description to match exactly with the existing season arc.
-    2. Merge overlapping or redundant arcs, providing a brief "motivation" for your decision. When merging, keep only one arc and discard the others completely. Do not return both the original and merged arcs.
-    3. If an arc has a too vague title, change it to be more specific, providing a brief "motivation" for your decision. Don't ever use titles like "The boys' professional rivalries", "The girls' friendship" or anything like that. 
-    4. In the title mention the main characters involved in the arc, instead of focusing only on one character.
-    5. Ensure that all arcs are distinct and follow the guidelines strictly.
-    6. After processing all arcs, perform a final check to ensure there are no duplicate titles or highly similar arcs. If found, merge them and keep only one.
-    7. It is absolutely crucial that you maintain only one instance of each unique arc. Duplicates must be eliminated entirely from your output.
-    8. Focus on verifying and correcting only the title and description of each arc based on the episode plot provided.
+    1. If an arc corresponds to an existing season arc, update its title and description to match exactly with the existing season arc.
+    2. Ensure titles are specific and mention the main characters involved in the arc.
+    3. Avoid vague titles like "The boys' professional rivalries" or "The girls' friendship".
+    4. Focus on verifying and correcting only the title and description of each arc based on the episode plot provided.
 
-    Return the verified and corrected arcs in the following JSON format:
+    Return the verified arcs in the following JSON format:
     {output_json_format}
-    Ensure your response contains only the JSON array of narrative arcs, without any additional text or explanations. The final list should contain no duplicates or highly similar arcs.
+    Ensure your response contains only the JSON array of narrative arcs, without any additional text or explanations.
+    """
+)
+
+ARC_DEDUPLICATOR_PROMPT = ChatPromptTemplate.from_template(
+    """You are a Narrative Arc Deduplication Expert, specializing in identifying and merging similar or overlapping narrative arcs. Your task is to analyze the provided arcs and combine any that represent the same underlying story thread.
+
+    Episode Plot:
+    {episode_plot}
+
+    Arcs to Deduplicate:
+    {arcs_to_deduplicate}
+
+    Present Season Arcs (if any):
+    {present_season_arcs_summaries}
+
+    As a Narrative Arc Deduplication Expert, you excel at:
+    1. Identifying when multiple arcs are describing the same narrative thread from different angles
+    2. Merging overlapping arcs into a single, comprehensive arc
+    3. Ensuring no information is lost during the merging process
+    4. Maintaining consistency with existing season arcs
+
+    Please follow these guidelines when deduplicating arcs:
+
+    {guidelines}
+
+    Important instructions:
+    1. Identify any arcs that are describing the same underlying story or character development
+    2. When merging arcs:
+       - Choose the most specific and accurate title
+       - Combine the relevant details from all descriptions
+       - Ensure all important character roles are preserved
+       - Maintain the most detailed progression information
+    3. Provide a brief "merge_explanation" for each merged arc explaining why the arcs were combined
+    4. After merging, ensure there are no remaining duplicate or highly similar arcs
+    5. Keep only one instance of each unique arc - duplicates must be eliminated entirely
+
+    Return the deduplicated arcs in the following JSON format:
+    {output_json_format}
+    
+    Additionally, for each arc that is the result of a merge, include a "merge_explanation" field explaining which arcs were merged and why.
+    Ensure your response contains only the JSON array of deduplicated arcs, without any additional text or explanations.
     """
 )
 
@@ -277,13 +312,45 @@ CHARACTER_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
     1. Main characters should ONLY include those who are truly central to this specific arc's development
     2. If a character appears in the arc but isn't driving it forward, they should be listed as interfering
     3. Consider the arc's focus - for example, in a romance arc, the couple would be main characters while their friends would be interfering, but even in a friendship or family arc, the friends or family members could be main characters.
-    4. Some arcs might have only one main character if they focus on that character's personal journey
+    4. Some arcs might have only one main character if they focus on that character's personal development
     5. Avoid listing background characters who have minimal impact on the arc
     6. Be always sure that the interfering characters interfere with the arc in the specific episode.
+    7. Check twice that a relationship arc has both protagonists listed.
 
     Return the verified arc with properly categorized characters in the following JSON format:
     {output_json_format}
 
     Ensure your response contains only the JSON object of the verified arc, without any additional text or explanations.
+    """
+)
+
+TEMPORALITY_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
+    """You are a Temporal Analysis Expert, specializing in determining the temporality of narrative arcs.
+    Your task is to verify and correctly categorize the temporality of each arc.
+
+    Season Plot:
+    {season_plot}
+
+    Episode Plot:
+    {episode_plot}
+
+    Arc to Verify:
+    {arc_to_verify}
+
+    Knowing that these were the guidelines for narrative arc extractions:
+    {guidelines}
+
+    Please verify and adjust episodic flag of the arc. Return the result in the following JSON format:
+    {output_json_format}
+
+    Please for every JSON object add also a field called "temporality_explanation" that explains why you chose the episodic flag you chose.
+
+    Is the narrative arc really seasonal or really episodic?
+    Consider if the single arc is only present in this episode or if it may be part of a larger plot that develops over multiple episodes.
+    Consider that usually a relationship arc (professional, sentimental etc. etc.) or even a personal character arc or a mythology arc develops over multiple episodes, while something that happens specifically in the episode is episodic.
+    
+    Example:
+    An arc that talks about Walter White's relationship with his family is a seasonal arc, because it develops over the whole season, while the Battle of the Bastards in Game of Thrones is an episodic arc, because it happens in a single episode.
+    An arc like the difficulties of Jesse Pinkman in his relationship with Walter White is a seasonal arc, because it develops over the whole season, while a murder case in CSI is an episodic arc, because it happens in a single episode.
     """
 )

@@ -1,65 +1,74 @@
 [
   {
-    "title": "Meredith and Derek's Complicated Romance",
+    "title": "Meredith and Derek's Complicated Relationship",
     "arc_type": "Soap Arc",
-    "description": "Meredith and Derek's relationship begins with a one-night stand and evolves into a complicated romance, affecting their professional lives and friendships.",
+    "description": "Meredith and Derek's relationship begins with a one-night stand and evolves amidst professional challenges and personal revelations.",
     "episodic": false,
     "main_characters": "Meredith Grey; Derek Shepherd",
     "interfering_episode_characters": "George O'Malley; Izzie Stevens",
-    "single_episode_progression_string": "George and Izzie see Derek leaving Meredith's house, confirming his involvement with her. Derek admits his feelings about Meredith to George, and Izzie confronts Meredith about the relationship, realizing Meredith is in love with Derek."
+    "single_episode_progression_string": "Meredith and Derek's relationship is further complicated as George and Izzie realize Derek is involved with Meredith. Derek admits his feelings about Meredith to George, and Izzie confronts Meredith about the relationship, eventually feeling sorry for her."
   },
   {
-    "title": "Intern Dynamics and Challenges",
+    "title": "Intern Dynamics at Seattle Grace",
     "arc_type": "Genre-Specific Arc",
-    "description": "The new interns at Seattle Grace Hospital face various challenges as they adjust to their roles, navigate relationships, and compete for opportunities.",
+    "description": "The interns at Seattle Grace Hospital form friendships and rivalries as they navigate the challenges of their medical training.",
     "episodic": false,
-    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Alex Karev",
-    "interfering_episode_characters": "Miranda Bailey; Derek Shepherd",
-    "single_episode_progression_string": "Meredith assists Bailey with a complex gastric bypass case, facing complications. George suspects Dr. Taylor of drinking and confronts him, leading to tension with Derek. Alex connects with a gunshot victim but faces the patient's death."
+    "main_characters": "George O'Malley; Izzie Stevens; Cristina Yang; Alex Karev",
+    "interfering_episode_characters": "Meredith Grey; Derek Shepherd",
+    "single_episode_progression_string": "George feels jealous of Derek and Meredith's relationship, while Izzie is upset about perceived favoritism. Cristina and George face professional challenges, and Alex connects with a patient over shared experiences."
   },
   {
-    "title": "Cristina's Unexpected Pregnancy",
-    "arc_type": "Soap Arc",
-    "description": "Cristina suspects her flu symptoms might be pregnancy and faces the emotional implications.",
+    "title": "Cristina's Competitive Nature and Potential Pregnancy",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Cristina Yang's ambition and competitive drive often put her at odds with her peers, particularly Meredith, while she also faces personal challenges with a potential pregnancy.",
     "episodic": false,
     "main_characters": "Cristina Yang",
-    "interfering_episode_characters": "Preston Burke",
-    "single_episode_progression_string": "Cristina feels nauseous and blames Dr. Burke. She takes two pregnancy tests and is unhappy with the results, indicating a potential pregnancy."
+    "interfering_episode_characters": "George O'Malley; Derek Shepherd; Dr. Burke",
+    "single_episode_progression_string": "Cristina is replaced by George in a major surgery but later takes his place after George confronts Dr. Taylor. She also suspects her flu symptoms might be pregnancy, which adds to her stress."
   },
   {
-    "title": "George's Struggles and Growth",
+    "title": "George's Professional Embarrassment and Growth",
     "arc_type": "Genre-Specific Arc",
-    "description": "George O'Malley faces challenges as an intern, dealing with self-doubt and striving to prove himself in a competitive environment.",
+    "description": "George O'Malley faces professional challenges and personal growth as he navigates his internship.",
     "episodic": false,
     "main_characters": "George O'Malley",
-    "interfering_episode_characters": "Derek Shepherd; Dr. Taylor; Cristina Yang",
-    "single_episode_progression_string": "George joins Derek on a toddler's surgery and suspects Dr. Taylor of drinking. He confronts Taylor, leading to his removal from surgery, but later receives an apology from Derek."
+    "interfering_episode_characters": "Derek Shepherd; Dr. Taylor",
+    "single_episode_progression_string": "George is initially part of a major surgery but is removed after confronting Dr. Taylor about smelling bourbon. He is replaced by Cristina, leading to embarrassment but also growth as Derek later apologizes to him."
   },
   {
-    "title": "Medical Case: Unauthorized Gastric Bypass Reversal",
+    "title": "Medical Case: Unauthorized Gastric Bypass",
     "arc_type": "Episodic Arc",
-    "description": "Meredith helps Bailey with a case involving a teenager who had an unauthorized gastric bypass in Mexico, which was poorly done and needs fixing.",
+    "description": "Meredith helps Bailey with a case involving a teenager who had an unauthorized gastric bypass in Mexico, leading to severe complications.",
     "episodic": true,
     "main_characters": "Meredith Grey; Miranda Bailey",
-    "interfering_episode_characters": "Teenage Patient; Patient's Mother",
-    "single_episode_progression_string": "Meredith learns the teenager's surgery was driven by her mother's expectations. The reversal procedure fails, and complications arise, leaving the patient with lifelong nutritional challenges."
+    "interfering_episode_characters": "Teenage Patient",
+    "single_episode_progression_string": "Meredith and Bailey work on a teenager who underwent a poorly done gastric bypass in Mexico. The reversal procedure fails, and the patient's bowel bursts, leading to lifelong nutritional challenges."
   },
   {
-    "title": "Medical Case: Toddler's Hemispherectomy",
+    "title": "Medical Case: Man Who Swallowed Keys",
     "arc_type": "Episodic Arc",
-    "description": "Derek performs a hemispherectomy on a toddler with severe tremors, a procedure involving the removal of half the brain.",
+    "description": "Izzie assists a patient who has swallowed keys, demonstrating her empathy and problem-solving abilities.",
     "episodic": true,
-    "main_characters": "Derek Shepherd",
-    "interfering_episode_characters": "George O'Malley; Dr. Taylor",
-    "single_episode_progression_string": "Derek discovers the toddler's brain tissue is dying rapidly and decides on a hemispherectomy. During the surgery, the anesthesiologist Dr. Taylor falls asleep, causing the child to wake up, leading to Derek removing Dr. Taylor from the surgery."
+    "main_characters": "Izzie Stevens",
+    "interfering_episode_characters": "",
+    "single_episode_progression_string": "Izzie shows empathy and medical skill as she assists a man who has swallowed keys, highlighting her growth as a doctor."
   },
   {
     "title": "Medical Case: Gunshot Victim with Tattoo Infection",
     "arc_type": "Episodic Arc",
-    "description": "Alex deals with a gunshot victim who believes scars enhance his tattoos, but the stress from the wound worsens an existing infection.",
+    "description": "Alex deals with a gunshot victim whose wound exacerbates a tattoo infection, leading to the patient's death.",
     "episodic": true,
     "main_characters": "Alex Karev",
-    "interfering_episode_characters": "Gunshot Victim; Preston Burke",
-    "single_episode_progression_string": "Alex connects with the gunshot victim over shared wrestling experiences. The patient's condition deteriorates due to a tattoo infection, ultimately leading to his death."
+    "interfering_episode_characters": "Gunshot Victim",
+    "single_episode_progression_string": "Alex connects with a gunshot victim who believes scars enhance his tattoos. The stress from the wound worsens an existing infection, and the patient dies."
+  },
+  {
+    "title": "Medical Case: Toddler's Hemispherectomy",
+    "arc_type": "Episodic Arc",
+    "description": "Derek performs a hemispherectomy on a toddler with severe tremors, showcasing his surgical skills.",
+    "episodic": true,
+    "main_characters": "Derek Shepherd",
+    "interfering_episode_characters": "George O'Malley; Dr. Taylor",
+    "single_episode_progression_string": "Derek discovers a toddler's brain tissue is dying and decides on a hemispherectomy. During the surgery, the anesthesiologist Dr. Taylor falls asleep, causing the child to wake up. Derek removes Dr. Taylor and completes the surgery."
   }
 ]

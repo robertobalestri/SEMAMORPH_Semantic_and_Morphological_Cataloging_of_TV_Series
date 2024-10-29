@@ -32,7 +32,8 @@
     "best_appellation": "George O'Malley",
     "appellations": [
       "George",
-      "George O'Malley"
+      "George O'Malley",
+      "007"
     ],
     "entity_type": "PERSON"
   },
@@ -40,8 +41,8 @@
     "entity_name": "isobel_stevens",
     "best_appellation": "Isobel Stevens",
     "appellations": [
-      "Isobel",
       "Izzie",
+      "Isobel",
       "Isobel Stevens",
       "Izzie Stevens"
     ],
@@ -51,7 +52,6 @@
     "entity_name": "miranda_bailey",
     "best_appellation": "Miranda Bailey",
     "appellations": [
-      "Miranda",
       "Bailey",
       "Miranda Bailey",
       "The Nazi"
@@ -63,7 +63,7 @@
     "best_appellation": "Preston Burke",
     "appellations": [
       "Burke",
-      "Dr. Preston Burke",
+      "Preston",
       "Preston Burke"
     ],
     "entity_type": "PERSON"
@@ -72,8 +72,8 @@
     "entity_name": "alex_karev",
     "best_appellation": "Alex Karev",
     "appellations": [
-      "Alex",
-      "Alex Karev"
+      "Alex Karev",
+      "Alex"
     ],
     "entity_type": "PERSON"
   },
@@ -90,7 +90,8 @@
     "entity_name": "ellis_grey",
     "best_appellation": "Ellis Grey",
     "appellations": [
-      "Ellis Grey"
+      "Ellis Grey",
+      "Ellis"
     ],
     "entity_type": "PERSON"
   },
@@ -123,7 +124,7 @@
     "entity_name": "tyler",
     "best_appellation": "Tyler",
     "appellations": [
-      "Nurse Tyler"
+      "Tyler"
     ],
     "entity_type": "PERSON"
   },

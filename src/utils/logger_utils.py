@@ -1,5 +1,9 @@
 import logging
 from colorlog import ColoredFormatter
+from dotenv import load_dotenv
+import os
+
+load_dotenv(override=True)
 
 def setup_logging(name: str) -> logging.Logger:
     """
@@ -30,8 +34,7 @@ def setup_logging(name: str) -> logging.Logger:
     logger = logging.getLogger(name)
     logger.addHandler(handler)
     logger.setLevel(logging.DEBUG)
-
-    logging.getLogger('sqlalchemy.engine').setLevel(logging.INFO)
-    logging.getLogger('sqlalchemy.orm').setLevel(logging.INFO)
+    logging.getLogger('sqlalchemy.engine').setLevel(logging.DEBUG)
+    logging.getLogger('sqlalchemy.orm').setLevel(logging.DEBUG)
 
     return logger

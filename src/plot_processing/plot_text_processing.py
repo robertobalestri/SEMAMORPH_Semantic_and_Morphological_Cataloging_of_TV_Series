@@ -110,21 +110,3 @@ def simplify_text(text: str, llm: AzureChatOpenAI, window_size: int = 10) -> str
     
     simplified_text = '\n'.join(simplified_sentences)
     return simplified_text
-
-def summarize_plot(text: str, llm: AzureChatOpenAI, summarized_plot_path: str) -> str:
-    """
-    Summarize the plot of a series using the LLM.
-    """
-    prompt = dedent(f"""You are an expert at summarizing plots of TV series.
-    You will be given a text with the plot of a TV series and you will need to summarize it in a concise but detailed way, without inventing things and without losing information.
-    You will not add any other text or commentary, nor give a conclusion or a final synthesis, nor backticks or markdown formatting.
-    Please summarize the following text:\n{text}""")
-    
-    response = llm.invoke([HumanMessage(content=prompt)])
-    
-    summary = clean_llm_text_response(response.content.strip())
-    
-    with open(summarized_plot_path, "w") as summarized_plot_file:
-        summarized_plot_file.write(summary)
-    
-    return summary 
