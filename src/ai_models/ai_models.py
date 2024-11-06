@@ -77,7 +77,7 @@ def get_llm(intelligent_or_cheap: LLMType) -> AzureChatOpenAI:
 
     #Metti tutto cheap per i test
     #if intelligent_or_cheap == LLMType.INTELLIGENT:
-    #   intelligent_or_cheap = LLMType.CHEAP
+    #    intelligent_or_cheap = LLMType.CHEAP
 
 
     if intelligent_or_cheap == LLMType.INTELLIGENT:

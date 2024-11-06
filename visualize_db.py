@@ -1,113 +1,174 @@
-import sys
-import os
-# Use absolute imports from the src directory
-from src.storage.vectorstore_collection import get_vectorstore_collection, CollectionType
+from src.narrative_storage.repositories import DatabaseSessionManager
+from src.narrative_storage.vector_store_service import VectorStoreService
+from src.narrative_storage.narrative_models import NarrativeArc, ArcProgression
 from sklearn.decomposition import PCA
 import plotly.express as px
 import numpy as np
-from src.storage.database import NarrativeArc, ArcProgression, DatabaseManager
+import logging
+import pandas as pd
+from sqlmodel import select
+from sqlalchemy.orm import selectinload
 
-# Initialize the database manager
-db_manager = DatabaseManager()
+logger = logging.getLogger(__name__)
 
-# Initialize the vectorstore collection for narrative arcs
-vectorstore_collection = get_vectorstore_collection(collection_type=CollectionType.NARRATIVE_ARCS)
-
-# Get embeddings, ids, documents, and metadata from the collection
-embeddings = vectorstore_collection.get_all_embeddings()  # Update this line
-ids = vectorstore_collection.get_all_ids()
-documents = vectorstore_collection.get_all_documents()
-metadatas = vectorstore_collection.get_all_metadatas()
-
-# Fetch ArcProgressions from the database based on main arc IDs
-arc_progressions = {}
-with db_manager.session_scope() as session:  # Use the session_scope method from DatabaseManager
-    for arc_id in ids:
-        progressions = db_manager.get_arc_progressions(arc_id, session=session)  # Fetch progressions using db_manager
-        arc_progressions[arc_id] = [(prog.get_title(session), prog) for prog in progressions]  # Store titles and progressions by arc ID
-
-# Convert embeddings to numpy array
-embeddings_array = np.array(embeddings)
-
-# Print some statistics
-print(f"Total number of embeddings: {len(embeddings)}")
-print(f"Number of documents: {len(documents)}")
-print(f"Number of unique titles: {len(set(meta.get('title', '') for meta in metadatas))}")
-print(f"Document types: {set(meta.get('doc_type', 'N/A') for meta in metadatas)}")
-
-# Check if we have enough data for PCA
-if len(embeddings) < 3:
-    print("Not enough embeddings for PCA. Need at least 3.")
-    exit()
-
-# Reduce the embedding dimensionality with PCA to 3 components for visualization
-pca = PCA(n_components=3)
-vis_dims = pca.fit_transform(embeddings_array)
-
-# Prepare text for the scatter plot with relevant metadata
-text_labels = []
-colors = []
-main_arcs = {}  # Dictionary to store main arcs by their id
-
-for doc, meta, doc_id in zip(documents, metadatas, ids):
+def visualize_narrative_arcs():
+    # Initialize services
+    db_manager = DatabaseSessionManager()
+    vector_store_service = VectorStoreService()
     
-    doc_type = meta.get('doc_type', 'N/A')
-
-    # Convert Characters string to list
-    characters = meta.get('characters', '').split(';') if isinstance(meta.get('characters'), str) else meta.get('characters', [])
-    
-    try:
-        if doc_type == 'main':
-            print("\nDocument: ", doc)
-            print("\nMetadata: ", meta)
-            print("\n\n")
-
-            # Create a NarrativeArc instance with updated attributes
-            arc_data = {k: v for k, v in meta.items() if k in NarrativeArc.__annotations__}
-            arc_data['characters'] = characters
-            
-            # Debugging output to check arc_data
-            print(f"Creating NarrativeArc with data: {arc_data}")
-
-            arc = NarrativeArc(**arc_data)  # Ensure to match the updated model structure
-            main_arcs[arc.id] = arc  # Store the main arc in the dictionary
-            text_label = f"Title: {arc.title}<br>Description: {arc.description[:20]}"
-            colors.append('blue')
-        elif doc_type == 'progression':
-            # Use the arc_progressions dictionary to get the titles
-            progression_titles = [title for title, _ in arc_progressions.get(meta.get('main_arc_id', ''), [])]
-            text_label = f"Title: {progression_titles}<br> Progression: {doc[:50]}"  # Use doc for content
-            colors.append('red')
-        else:
-            text_label = f"Unknown Document Type: {doc_type}<br>" + "<br>".join([f"{k}: {v}" for k, v in meta.items()])
-            colors.append('gray')
-
-    except Exception as e:
-        print(f"Error processing document: {e}")
-        text_label = "Error processing document"
-        colors.append('gray')
-
-    text_labels.append(text_label)
-
-# Create an interactive 3D plot with Plotly
-fig = px.scatter_3d(
-    x=vis_dims[:, 0],
-    y=vis_dims[:, 1],
-    z=vis_dims[:, 2],
-    color=colors,
-    text=text_labels,  # Show only titles on the dots
-    labels={'x': 'PCA Component 1', 'y': 'PCA Component 2', 'z': 'PCA Component 3', 'color': 'Document Type'},
-    title='3D PCA of Narrative Arc Embeddings'
-)
-
-# Update color legend
-fig.update_layout(
-    coloraxis_colorbar=dict(
-        title="Document Type",
-        tickvals=[0, 1, 2],
-        ticktext=["Main", "Progression", "Unknown"],
+    # Get all documents from vector store
+    results = vector_store_service.collection.get(
+        include=['embeddings', 'documents', 'metadatas']
     )
-)
+    
+    if not results or not results['ids']:
+        logger.warning("No documents found in vector store")
+        return
+        
+    embeddings = results['embeddings']
+    documents = results['documents']
+    metadatas = results['metadatas']
+    ids = results['ids']
 
-# Show the 3D PCA plot
-fig.show()
+    # Convert embeddings to numpy array
+    embeddings_array = np.array(embeddings)
+
+    # Print statistics
+    print(f"Total number of embeddings: {len(embeddings)}")
+    print(f"Number of documents: {len(documents)}")
+    print(f"Number of unique titles: {len(set(meta.get('title', '') for meta in metadatas))}")
+    print(f"Document types: {set(meta.get('doc_type', 'N/A') for meta in metadatas)}")
+
+    # Check if we have enough data for PCA
+    if len(embeddings) < 3:
+        logger.warning("Not enough embeddings for PCA. Need at least 3.")
+        return
+
+    # Reduce dimensionality with PCA
+    pca = PCA(n_components=3)
+    vis_dims = pca.fit_transform(embeddings_array)
+
+    # Prepare visualization data
+    text_labels = []
+    doc_types = []
+
+    with db_manager.session_scope() as session:
+        # Fetch all arcs with their progressions in one query
+        query = select(NarrativeArc).options(
+            selectinload(NarrativeArc.progressions),
+            selectinload(NarrativeArc.main_characters)
+        )
+        arcs = session.exec(query).all()
+        arc_cache = {arc.id: arc for arc in arcs}
+
+        for doc, meta, doc_id in zip(documents, metadatas, ids):
+            doc_type = meta.get('doc_type', 'N/A')
+            
+            try:
+                if doc_type == 'main':
+                    arc = arc_cache.get(meta.get('id'))
+                    if arc:
+                        # Access relationships within session
+                        main_characters = [char.best_appellation for char in arc.main_characters]
+                        text_label = (
+                            f"Title: {arc.title}<br>"
+                            f"Type: {arc.arc_type}<br>"
+                            f"Characters: {', '.join(main_characters)}<br>"
+                            f"Description: {arc.description[:100]}..."
+                        )
+                    else:
+                        text_label = (
+                            f"Title: {meta.get('title', 'N/A')}<br>"
+                            f"Type: {meta.get('arc_type', 'N/A')}<br>"
+                            f"Characters: {meta.get('main_characters', 'N/A')}<br>"
+                            f"Description: {meta.get('description', 'N/A')[:100]}..."
+                        )
+                    doc_types.append('Main Arc')
+                    
+                elif doc_type == 'progression':
+                    # Get the parent arc to get the title
+                    main_arc_id = meta.get('main_arc_id')
+                    parent_arc = arc_cache.get(main_arc_id)
+                    if parent_arc:
+                        text_label = (
+                            f"Progression for: {parent_arc.title}<br>"
+                            f"S{meta.get('season', 'N/A')}E{meta.get('episode', 'N/A')}<br>"
+                            f"Characters: {meta.get('interfering_episode_characters', 'N/A')}<br>"
+                            f"Content: {doc[:100]}..."
+                        )
+                    else:
+                        text_label = (
+                            f"Progression (Arc not found)<br>"
+                            f"S{meta.get('season', 'N/A')}E{meta.get('episode', 'N/A')}<br>"
+                            f"Content: {doc[:100]}..."
+                        )
+                    doc_types.append('Progression')
+                    
+                else:
+                    text_label = f"Unknown Document Type: {doc_type}"
+                    doc_types.append('Unknown')
+
+            except Exception as e:
+                logger.error(f"Error processing document: {e}")
+                text_label = "Error processing document"
+                doc_types.append('Error')
+
+            text_labels.append(text_label)
+
+    # Create DataFrame for plotting
+    df = pd.DataFrame({
+        'PCA1': vis_dims[:, 0],
+        'PCA2': vis_dims[:, 1],
+        'PCA3': vis_dims[:, 2],
+        'Type': doc_types,
+        'Label': text_labels
+    })
+
+    # Create interactive 3D plot
+    fig = px.scatter_3d(
+        df,
+        x='PCA1',
+        y='PCA2',
+        z='PCA3',
+        color='Type',
+        hover_data=['Label'],
+        labels={
+            'PCA1': 'PCA Component 1',
+            'PCA2': 'PCA Component 2',
+            'PCA3': 'PCA Component 3',
+        },
+        title='3D PCA of Narrative Arc Embeddings',
+        color_discrete_map={
+            'Main Arc': 'blue',
+            'Progression': 'red',
+            'Unknown': 'gray',
+            'Error': 'black'
+        }
+    )
+
+    # Update layout
+    fig.update_layout(
+        scene=dict(
+            annotations=[
+                dict(
+                    showarrow=False,
+                    x=vis_dims[i][0],
+                    y=vis_dims[i][1],
+                    z=vis_dims[i][2],
+                    text=text_labels[i],
+                    xanchor="left",
+                    xshift=10,
+                    opacity=0.7
+                ) for i in range(len(vis_dims))
+            ]
+        ),
+        showlegend=True,
+        legend_title_text="Document Type"
+    )
+
+    # Show plot
+    fig.show()
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+    visualize_narrative_arcs()

@@ -11,8 +11,9 @@ import json
 import agentops
 from src.langgraph_narrative_arcs_extraction.narrative_arc_graph import extract_narrative_arcs
 from src.ai_models.ai_models import LLMType
-from src.storage.narrative_arc_manager import NarrativeArcManager
+#from src.storage.narrative_arc_manager import NarrativeArcManager
 from src.plot_processing.plot_summarizing import create_season_summary
+from src.narrative_storage.narrative_storage_main import process_suggested_arcs
 
 from dotenv import load_dotenv
 
@@ -195,8 +196,8 @@ def process_text(path_handler: PathHandler) -> None:
 
         # Process the suggested arcs and update the database
         logger.info("Processing suggested arcs and updating database.")
-        narrative_arc_manager = NarrativeArcManager()
-        updated_arcs = narrative_arc_manager.process_suggested_arcs(
+
+        updated_arcs = process_suggested_arcs(
             suggested_episode_arc_path,
             series,
             season,
@@ -217,7 +218,7 @@ if __name__ == "__main__":
 
     logger.info("Starting text processing.")
 
-    ep_number = 2
+    ep_number = 3
     
     # Now process each episode
     for ep in range(ep_number, 10):

@@ -2,27 +2,27 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional
 from pydantic import BaseModel
-from src.storage.database import DatabaseManager
-from src.storage.narrative_models import NarrativeArc, ArcProgression
+from src.narrative_storage.repositories import DatabaseSessionManager
+from src.narrative_storage.narrative_models import NarrativeArc, ArcProgression
 from src.utils.logger_utils import setup_logging
-from sqlmodel import Session
+from sqlmodel import Session, select
 
 logger = setup_logging(__name__)
 
 app = FastAPI(title="Narrative Arcs Dashboard API")
 
-# Configure CORS with more permissive settings
+# Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # React frontend URL
+    allow_origins=["http://localhost:3000"],
     allow_credentials=True,
-    allow_methods=["*"],  # Allows all methods
-    allow_headers=["*"],  # Allows all headers
-    expose_headers=["*"],  # Exposes all headers
-    max_age=3600,  # Cache preflight requests for 1 hour
+    allow_methods=["*"],
+    allow_headers=["*"],
+    expose_headers=["*"],
+    max_age=3600,
 )
 
-db_manager = DatabaseManager()
+db_manager = DatabaseSessionManager()
 
 class ArcProgressionResponse(BaseModel):
     id: str
@@ -31,17 +31,28 @@ class ArcProgressionResponse(BaseModel):
     season: str
     episode: str
     ordinal_position: int
-    interfering_episode_characters: List[str]
+    interfering_characters: List[str]
 
     class Config:
         from_attributes = True
+
+    @classmethod
+    def from_progression(cls, prog: ArcProgression):
+        return cls(
+            id=prog.id,
+            content=prog.content,
+            series=prog.series,
+            season=prog.season,
+            episode=prog.episode,
+            ordinal_position=prog.ordinal_position,
+            interfering_characters=[char.best_appellation for char in prog.interfering_characters]
+        )
 
 class NarrativeArcResponse(BaseModel):
     id: str
     title: str
     description: str
     arc_type: str
-    episodic: bool
     main_characters: List[str]
     series: str
     progressions: List[ArcProgressionResponse]
@@ -49,15 +60,28 @@ class NarrativeArcResponse(BaseModel):
     class Config:
         from_attributes = True
 
+    @classmethod
+    def from_arc(cls, arc: NarrativeArc):
+        return cls(
+            id=arc.id,
+            title=arc.title,
+            description=arc.description,
+            arc_type=arc.arc_type,
+            main_characters=[char.best_appellation for char in arc.main_characters],
+            series=arc.series,
+            progressions=[ArcProgressionResponse.from_progression(prog) for prog in sorted(
+                arc.progressions,
+                key=lambda x: (x.season, x.episode)
+            )]
+        )
+
 @app.get("/api/series", response_model=List[str])
 async def get_series():
     """Get all unique series names."""
     try:
         with db_manager.session_scope() as session:
-            arcs = db_manager.get_all_narrative_arcs(session=session)
-            # Convert to list before the session closes
-            series_list = list(set(arc.series for arc in arcs))
-            return series_list
+            result = session.exec(select(NarrativeArc.series).distinct())
+            return list(result)
     except Exception as e:
         logger.error(f"Error getting series: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -67,32 +91,9 @@ async def get_arcs_by_series(series: str):
     """Get all narrative arcs for a specific series."""
     try:
         with db_manager.session_scope() as session:
-            arcs = db_manager.get_all_narrative_arcs(series=series, session=session)
-            # Convert to response model before session closes
-            return [
-                NarrativeArcResponse(
-                    id=arc.id,
-                    title=arc.title,
-                    description=arc.description,
-                    arc_type=arc.arc_type,
-                    episodic=arc.episodic,
-                    main_characters=arc.main_characters,
-                    series=arc.series,
-                    progressions=[
-                        ArcProgressionResponse(
-                            id=prog.id,
-                            content=prog.content,
-                            series=prog.series,
-                            season=prog.season,
-                            episode=prog.episode,
-                            ordinal_position=prog.ordinal_position,
-                            interfering_episode_characters=prog.interfering_episode_characters
-                        )
-                        for prog in sorted(arc.progressions, key=lambda x: (x.season, x.episode))
-                    ]
-                )
-                for arc in arcs
-            ]
+            query = select(NarrativeArc).where(NarrativeArc.series == series)
+            arcs = session.exec(query).all()
+            return [NarrativeArcResponse.from_arc(arc) for arc in arcs]
     except Exception as e:
         logger.error(f"Error getting arcs for series {series}: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -102,17 +103,20 @@ async def get_episodes(series: str):
     """Get all episodes for a series."""
     try:
         with db_manager.session_scope() as session:
-            arcs = db_manager.get_all_narrative_arcs(series=series, session=session)
-            episodes = set()
-            for arc in arcs:
-                for prog in arc.progressions:
-                    # Normalize episode format: remove 'E' prefix and ensure 2 digits
-                    episode_num = prog.episode.replace('E', '') if prog.episode.startswith('E') else prog.episode
-                    episodes.add((prog.season, episode_num.zfill(2)))
+            query = select(ArcProgression.season, ArcProgression.episode)\
+                .where(ArcProgression.series == series)\
+                .distinct()
+            episodes = session.exec(query).all()
             
-            # Convert to list before session closes
-            return [{"season": season, "episode": episode} 
-                    for season, episode in sorted(episodes)]
+            # Convert to list of dicts and sort
+            episode_list = [
+                {"season": season, "episode": episode.replace('E', '').zfill(2)}
+                for season, episode in episodes
+            ]
+            return sorted(
+                episode_list,
+                key=lambda x: (x["season"], x["episode"])
+            )
     except Exception as e:
         logger.error(f"Error getting episodes for series {series}: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -121,52 +125,27 @@ async def get_episodes(series: str):
 async def get_arcs_by_episode(series: str, season: str, episode: str):
     """Get all narrative arcs that have progressions in a specific episode."""
     try:
-        logger.debug(f"Fetching arcs for {series} {season} {episode}")
-        
-        # Normalize episode format
-        normalized_episode = f"{episode.zfill(2)}"  # Ensure episode is prefixed with 'E'
-        logger.debug(f"Normalized episode: {normalized_episode}")
+        normalized_episode = f"E{episode.zfill(2)}"
+        logger.debug(f"Fetching arcs for {series} {season} {normalized_episode}")
         
         with db_manager.session_scope() as session:
-            arcs = db_manager.get_all_narrative_arcs(series=series, session=session)
-            episode_arcs = []
+            # Get arcs that have progressions in this episode
+            query = select(NarrativeArc)\
+                .join(ArcProgression)\
+                .where(
+                    ArcProgression.series == series,
+                    ArcProgression.season == season,
+                    ArcProgression.episode == normalized_episode
+                )\
+                .distinct()
             
-            for arc in arcs:
-                episode_progressions = [
-                    prog for prog in arc.progressions
-                    if (prog.series == series and 
-                        prog.season == season and 
-                        prog.episode == normalized_episode)
-                ]
-                if episode_progressions:
-                    episode_arcs.append(
-                        NarrativeArcResponse(
-                            id=arc.id,
-                            title=arc.title,
-                            description=arc.description,
-                            arc_type=arc.arc_type,
-                            episodic=arc.episodic,
-                            main_characters=arc.main_characters,
-                            series=arc.series,
-                            progressions=[
-                                ArcProgressionResponse(
-                                    id=prog.id,
-                                    content=prog.content,
-                                    series=prog.series,
-                                    season=prog.season,
-                                    episode=prog.episode,
-                                    ordinal_position=prog.ordinal_position,
-                                    interfering_episode_characters=prog.interfering_episode_characters
-                                )
-                                for prog in episode_progressions
-                            ]
-                        )
-                    )
+            arcs = session.exec(query).all()
             
-            if not episode_arcs:
+            if not arcs:
                 logger.warning(f"No arcs found for {series} {season} {normalized_episode}")
+                return []
             
-            return episode_arcs
+            return [NarrativeArcResponse.from_arc(arc) for arc in arcs]
             
     except Exception as e:
         logger.error(f"Error processing request: {str(e)}")

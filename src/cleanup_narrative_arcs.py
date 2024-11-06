@@ -15,6 +15,7 @@ def delete_narrative_arcs_and_entities(series: str, season: str):
 
 
     should_delete_analysis = True
+    should_delete_entities = True
 
     # Delete the database file if it exists
     if os.path.exists(database_path):
@@ -50,22 +51,25 @@ def delete_narrative_arcs_and_entities(series: str, season: str):
                 if os.path.exists(episode_narrative_arcs_path):
                     os.remove(episode_narrative_arcs_path)
                     print(f"Deleted file: {episode_narrative_arcs_path}")
-                plot_entities_normalized_path = os.path.join(episode_path, f"{series}{season}{episode}_plot_entities_normalized.txt")
-                plot_entities_substituted_path = os.path.join(episode_path, f"{series}{season}{episode}_plot_entities_substituted.txt")
-                raw_spacy_entities_path = os.path.join(episode_path, f"{series}{season}{episode}_raw_spacy_entities.json")
-                refined_entities_path = os.path.join(episode_path, f"{series}{season}{episode}_refined_entities.json")
-                if os.path.exists(plot_entities_normalized_path):
-                    os.remove(plot_entities_normalized_path)
+                
+                if should_delete_entities:
+                    plot_entities_normalized_path = os.path.join(episode_path, f"{series}{season}{episode}_plot_entities_normalized.txt")
+                    plot_entities_substituted_path = os.path.join(episode_path, f"{series}{season}{episode}_plot_entities_substituted.txt")
+                    raw_spacy_entities_path = os.path.join(episode_path, f"{series}{season}{episode}_raw_spacy_entities.json")
+                    refined_entities_path = os.path.join(episode_path, f"{series}{season}{episode}_refined_entities.json")
+                    if os.path.exists(plot_entities_normalized_path):
+                        os.remove(plot_entities_normalized_path)
                     print(f"Deleted file: {plot_entities_normalized_path}")
-                if os.path.exists(plot_entities_substituted_path):
-                    os.remove(plot_entities_substituted_path)
-                    print(f"Deleted file: {plot_entities_substituted_path}")
-                if os.path.exists(raw_spacy_entities_path):
-                    os.remove(raw_spacy_entities_path)
-                    print(f"Deleted file: {raw_spacy_entities_path}")
-                if os.path.exists(refined_entities_path):
-                    os.remove(refined_entities_path)
-                    print(f"Deleted file: {refined_entities_path}")
+                    if os.path.exists(plot_entities_substituted_path):
+                        os.remove(plot_entities_substituted_path)
+                        print(f"Deleted file: {plot_entities_substituted_path}")
+                    if os.path.exists(raw_spacy_entities_path):
+                        os.remove(raw_spacy_entities_path)
+                        print(f"Deleted file: {raw_spacy_entities_path}")
+                    if os.path.exists(refined_entities_path):
+                        os.remove(refined_entities_path)
+                        print(f"Deleted file: {refined_entities_path}")
+                
                 else:
                     print(f"File not found: {episode_narrative_arcs_path}")
 

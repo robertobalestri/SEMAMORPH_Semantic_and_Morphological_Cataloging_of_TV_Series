@@ -1,56 +1,82 @@
 [
   {
-    "title": "Meredith and Derek's Complicated Relationship",
+    "title": "Meredith Grey's Journey: Balancing Legacy, Love, and Professional Boundaries",
     "arc_type": "Soap Arc",
-    "description": "Meredith and Derek's relationship begins with a one-night stand and evolves amidst professional challenges and personal revelations.",
-    "episodic": false,
+    "description": "Meredith Grey navigates her first year as a surgical intern at Seattle Grace Hospital, balancing the legacy of her renowned mother, Ellis Grey, and her evolving relationship with Derek Shepherd. She strives to establish her own identity and career while dealing with professional boundaries, personal challenges, and the complexities of hospital life.",
     "main_characters": "Meredith Grey; Derek Shepherd",
-    "interfering_episode_characters": "Zona Cruz",
-    "single_episode_progression_string": "Derek flirts with Meredith, which annoys her, highlighting the ongoing tension and complexity in their relationship. Later, Derek pulls Meredith aside to remind her that the decision about Jorge's surgery was up to the patient and his wife."
+    "interfering_episode_characters": "Ellis Grey; Liz Fallon; Richard Webber; Jorge Cruz; Zona Cruz",
+    "single_episode_progression_string": "Meredith faces a poignant reminder of her mother's legacy when Liz Fallon, Ellis's former scrub nurse, is admitted to the hospital. Liz's recognition of Ellis but not Meredith intensifies Meredith's struggle with her identity and her place in the hospital. Liz's death underscores Meredith's emotional turmoil and the weight of her mother's shadow. Meanwhile, Meredith's relationship with Derek is tested as they navigate professional boundaries and differing opinions on patient care."
   },
   {
-    "title": "Meredith's Struggle with Her Mother's Alzheimer's",
+    "title": "Intern Dynamics: Friendship, Rivalry, and Growth",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The surgical interns, Meredith Grey, Cristina Yang, George O'Malley, Izzie Stevens, and Alex Karev, navigate the intense world of surgical residency at Seattle Grace Hospital. As they compete for surgical opportunities, they form complex relationships marked by friendship, rivalry, and personal growth. The arc explores their professional challenges, personal conflicts, and the support they offer each other through the trials of their internship.",
+    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Izzie Stevens; Alex Karev",
+    "interfering_episode_characters": "Derek Shepherd; Richard Webber; Liz Fallon; Mr. Humphrey; Jorge Cruz; Zona Cruz",
+    "single_episode_progression_string": "George grapples with discomfort over Izzie's casual behavior at home, creating tension among the interns. Izzie encounters professional obstacles when a patient refuses her assistance due to her past modeling career, leading to a confrontation with Alex. Meredith faces emotional turmoil as she deals with her mother's memory issues and her own sense of identity. Cristina is challenged emotionally when assigned to a terminal patient, Liz, who was a significant figure in her mentor's past. These events underscore the personal and professional hurdles the interns face, highlighting their evolving dynamics and the complexities of their relationships."
+  },
+  {
+    "title": "Meredith and Derek: A Complicated Romance",
     "arc_type": "Soap Arc",
-    "description": "Meredith grapples with her mother's Alzheimer's diagnosis while trying to establish herself as a competent intern.",
-    "episodic": false,
-    "main_characters": "Meredith Grey",
-    "interfering_episode_characters": "Ellis Grey; Liz Fallon",
-    "single_episode_progression_string": "Meredith visits her mother and feels upset because Ellis remembers Liz, her scrub nurse, but not Meredith. Liz's presence and subsequent death highlight Meredith's ongoing struggle with her mother's condition."
+    "description": "Meredith Grey and Derek Shepherd's relationship begins with a one-night stand and evolves into a complex romance, complicated by their professional roles at Seattle Grace Hospital. Meredith strives to establish herself independently in the medical field while navigating her growing feelings for Derek, who is her superior. Their relationship is further complicated by the legacy of Meredith's mother at the hospital and the expectations it brings.",
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "Richard Webber; Liz Fallon",
+    "single_episode_progression_string": "Derek attempts to take Meredith to breakfast and flirts with her, which annoys her, highlighting the tension between their personal and professional lives. Meredith is reminded of her mother's legacy at the hospital through Liz Fallon, adding pressure to her relationship with Derek. Derek later pulls Meredith aside to remind her of the importance of respecting patient decisions, reinforcing the complexity of their dynamic."
   },
   {
-    "title": "Intern Dynamics at Seattle Grace",
+    "title": "Cristina Yang: Ambition and Professional Growth",
     "arc_type": "Genre-Specific Arc",
-    "description": "The interns at Seattle Grace Hospital form friendships and rivalries as they navigate the challenges of their medical training.",
-    "episodic": false,
-    "main_characters": "Izzie Stevens; Meredith Grey; George O'Malley",
-    "interfering_episode_characters": "Alex Karev",
-    "single_episode_progression_string": "George expresses frustration about Izzie walking around in her underwear. Izzie and Meredith dismiss his concerns. Izzie and Meredith are later angry with George for not buying tampons. Izzie confronts Alex for mocking her modeling past."
+    "description": "Cristina Yang's journey at Seattle Grace Hospital is marked by her relentless ambition to excel in her medical career. Her determination often leads to conflicts with peers and mentors as she navigates the competitive environment, striving to secure surgical opportunities and prove her capabilities. Throughout the season, Cristina's interactions with colleagues and superiors highlight her focus on professional growth and her struggle to balance personal relationships with her career aspirations.",
+    "main_characters": "Cristina Yang; Preston Burke",
+    "interfering_episode_characters": "Elizabeth 'Liz' Fallon; Richard Webber",
+    "single_episode_progression_string": "Cristina is assigned to care for Liz Fallon, a veteran scrub nurse, which she initially sees as a chance to impress Dr. Burke. Frustration arises when she realizes the tasks are routine and seemingly pointless. Upon confronting Burke, she learns that Liz is terminal and was admitted to Seattle Grace to die, underscoring the emotional complexities of patient care and the limitations of ambition in the face of human mortality."
   },
   {
-    "title": "Cristina's Competitive Nature",
+    "title": "Bailey's Mentorship: Guiding the New Interns",
     "arc_type": "Genre-Specific Arc",
-    "description": "Cristina Yang's ambition and competitive drive often put her at odds with her peers, particularly Meredith.",
-    "episodic": false,
-    "main_characters": "Cristina Yang",
-    "interfering_episode_characters": "Preston Burke; Liz Fallon",
-    "single_episode_progression_string": "Cristina is assigned to Liz Fallon and tries to impress Burke. She confronts Burke about sending her to do pointless tests on Liz, only to learn Liz is terminal."
+    "description": "Miranda Bailey, known for her strict yet effective teaching style, mentors a new group of interns at Seattle Grace Hospital. Throughout the season, she balances her tough exterior with moments of guidance and support, helping them grow into competent surgeons. Her mentorship is characterized by strict rules, high expectations, and occasional displays of empathy, ultimately shaping the interns' professional and personal development.",
+    "main_characters": "Miranda Bailey; Izzie Stevens",
+    "interfering_episode_characters": "Mr. Humphrey; Dr. Harry Victor",
+    "single_episode_progression_string": "Bailey reinforces her strict teaching approach by scolding Izzie for her inability to manage Mr. Humphrey's refusal for a biopsy. Later, she supports Izzie's decision to advise Dr. Victor against cutting the nerves during Mr. Humphrey's surgery, demonstrating her ability to recognize and encourage good judgment in her interns."
   },
   {
-    "title": "Medical Case: Jorge Cruz's Nail Gun Injury",
-    "arc_type": "Episodic Arc",
-    "description": "A patient, Jorge Cruz, is admitted with sixteen nails in his head after a nail gun accident, requiring a risky surgery.",
-    "episodic": true,
-    "main_characters": "Jorge Cruz; Zona Cruz",
-    "interfering_episode_characters": "Derek Shepherd; Meredith Grey; Alex Karev",
-    "single_episode_progression_string": "Derek's patient, Jorge Cruz, has sixteen nails in his head from a nail gun accident. His wife, Zona, must decide on a risky surgery. Meredith tries to convince Zona to reconsider, but Zona insists on proceeding."
+    "title": "Izzie Stevens: Overcoming Stereotypes and Judgments",
+    "arc_type": "Soap Arc",
+    "description": "Izzie Stevens navigates the challenges of being judged for her past as a model while striving to establish herself as a competent and dedicated surgeon. She faces skepticism from peers and patients but remains determined to prove her worth and advocate for her patients' best interests.",
+    "main_characters": "Izzie Stevens",
+    "interfering_episode_characters": "Alex Karev; Mr. Humphrey; Dr. Bailey; Dr. Victor",
+    "single_episode_progression_string": "Izzie confronts ridicule from Alex, who exposes her modeling past by displaying her photos throughout the hospital. She stands up to him, emphasizing her achievements and financial independence. Izzie also encounters resistance from Mr. Humphrey, who initially refuses her care due to embarrassment over his fantasies about her. She addresses his concerns and successfully advocates for a treatment plan that preserves his quality of life, gaining support from Dr. Bailey."
   },
   {
-    "title": "Medical Case: Mr. Humphrey's Prostate Cancer",
-    "arc_type": "Episodic Arc",
-    "description": "Izzie's patient, Mr. Humphrey, refuses her help for his prostate cancer biopsy, leading to a confrontation about his treatment options.",
-    "episodic": true,
-    "main_characters": "Izzie Stevens; Mr. Humphrey",
-    "interfering_episode_characters": "Miranda Bailey; Dr. Harry Victor",
-    "single_episode_progression_string": "Mr. Humphrey refuses Izzie's help due to embarrassment over her modeling past. Izzie confronts him, and he explains his embarrassment. Izzie advises Dr. Victor not to cut the nerves, and Bailey supports her."
+    "title": "Cristina and Burke: Professional and Personal Tensions",
+    "arc_type": "Soap Arc",
+    "description": "Cristina Yang's journey to establish herself as a competent surgeon is intertwined with her complex relationship with Dr. Burke. Their professional interactions are often marked by Cristina's ambition to impress Burke, which sometimes clashes with his expectations and decisions. This arc explores the challenges and growth in their dynamic as Cristina navigates the balance between personal ambition and professional respect.",
+    "main_characters": "Cristina Yang; Dr. Burke",
+    "interfering_episode_characters": "Liz Fallon; Dr. Richard Webber",
+    "single_episode_progression_string": "Cristina is assigned to care for veteran scrub nurse Liz Fallon by Burke, who teases her about her efforts to impress him. Cristina's frustration grows as she questions the necessity of the tests Burke ordered for Liz. Burke reveals that Liz is terminal and was admitted to Seattle Grace to spend her final days, deepening Cristina's understanding of the gravity behind Burke's decisions and adding complexity to their professional relationship."
+  },
+  {
+    "title": "Alex Karev: Rivalries and Growth",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Alex Karev's journey at Seattle Grace is marked by his competitive nature and professional rivalries, particularly with fellow intern Izzie Stevens. His actions often reflect his struggle with insecurity, but through these conflicts, he gradually learns to embrace personal growth and maturity.",
+    "main_characters": "Alex Karev; Izzie Stevens",
+    "interfering_episode_characters": "Meredith Grey; George O'Malley",
+    "single_episode_progression_string": "Alex attempts to undermine Izzie by posting her modeling photos around the hospital, exposing his insecurity and competitive nature. Izzie confronts him, asserting her financial independence and maturity, which challenges Alex to reconsider his actions and motivations."
+  },
+  {
+    "title": "George O'Malley: Navigating Personal Boundaries",
+    "arc_type": "Soap Arc",
+    "description": "George O'Malley struggles with establishing personal boundaries and comfort levels while living with his fellow interns. He faces challenges in asserting himself, particularly with Izzie's nonchalant attitude towards nudity and the dynamics of their shared living space, which often leaves him feeling marginalized and uncomfortable.",
+    "main_characters": "George O'Malley; Izzie Stevens",
+    "interfering_episode_characters": "Meredith Grey; Alex Karev",
+    "single_episode_progression_string": "George is uncomfortable with Izzie's casual nudity and expresses his frustrations to Meredith and Izzie, who dismiss his concerns. Throughout the day, he repeatedly brings up the morning's events, feeling unheard and marginalized. His discomfort is exacerbated by Izzie's dismissive attitude, culminating in a confrontation where he is tasked with buying tampons, highlighting his struggle with traditional gender roles and personal boundaries."
+  },
+  {
+    "title": "Institutional Challenges at Seattle Grace",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The interns at Seattle Grace Hospital navigate the complexities of their surgical residency, facing institutional challenges such as hierarchical dynamics, demanding mentors, and the pressure to uphold the hospital's legacy. These experiences shape their professional growth and interpersonal relationships.",
+    "main_characters": "Izzie Stevens; George O'Malley; Cristina Yang; Meredith Grey",
+    "interfering_episode_characters": "Miranda Bailey; Richard Webber; Preston Burke; Alex Karev",
+    "single_episode_progression_string": "Izzie confronts professional challenges when her past modeling career undermines her credibility with a patient, forcing her to assert her competence. George grapples with feelings of disrespect and discomfort among his peers, reflecting gender dynamics and personal boundaries within the hospital. Cristina faces the emotional burden of caring for a terminal patient, Liz, while striving to impress her mentor, Burke. Meredith struggles with the weight of her mother's legacy and the emotional toll of working in the same hospital where her mother was a celebrated surgeon."
   }
 ]

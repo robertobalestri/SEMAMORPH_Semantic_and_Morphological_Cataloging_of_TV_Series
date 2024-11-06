@@ -1,74 +1,82 @@
 [
   {
-    "title": "Meredith and Derek's Complicated Relationship",
+    "title": "George's Journey: Jealousy, Integrity, and Growth",
     "arc_type": "Soap Arc",
-    "description": "Meredith and Derek's relationship begins with a one-night stand and evolves amidst professional challenges and personal revelations.",
-    "episodic": false,
-    "main_characters": "Meredith Grey; Derek Shepherd",
-    "interfering_episode_characters": "George O'Malley; Izzie Stevens",
-    "single_episode_progression_string": "Meredith and Derek's relationship is further complicated as George and Izzie realize Derek is involved with Meredith. Derek admits his feelings about Meredith to George, and Izzie confronts Meredith about the relationship, eventually feeling sorry for her."
+    "description": "George O'Malley grapples with his jealousy over Meredith's relationship with Derek while confronting a moral dilemma involving Dr. Taylor's potential impairment during surgery. This arc delves into George's internal struggle between personal emotions and professional integrity, showcasing his development as he learns to navigate these challenges and prioritize patient safety.",
+    "main_characters": "George O'Malley; Derek Shepherd",
+    "interfering_episode_characters": "Meredith Grey; Dr. Taylor; Cristina Yang",
+    "single_episode_progression_string": "George experiences jealousy upon seeing Derek leave Meredith's house. During a critical surgery, he suspects Dr. Taylor of being impaired and confronts him, resulting in his removal from the surgery. Despite this setback, George's actions lead Derek to apologize and confess his feelings for Meredith, illustrating George's growth in prioritizing patient safety over personal emotions."
   },
   {
-    "title": "Intern Dynamics at Seattle Grace",
-    "arc_type": "Genre-Specific Arc",
-    "description": "The interns at Seattle Grace Hospital form friendships and rivalries as they navigate the challenges of their medical training.",
-    "episodic": false,
-    "main_characters": "George O'Malley; Izzie Stevens; Cristina Yang; Alex Karev",
-    "interfering_episode_characters": "Meredith Grey; Derek Shepherd",
-    "single_episode_progression_string": "George feels jealous of Derek and Meredith's relationship, while Izzie is upset about perceived favoritism. Cristina and George face professional challenges, and Alex connects with a patient over shared experiences."
+    "title": "Izzie's Professional Jealousy and Personal Evolution",
+    "arc_type": "Soap Arc",
+    "description": "Izzie Stevens navigates her professional jealousy towards Meredith Grey, stemming from Meredith's relationship with Derek Shepherd, which she believes impacts her own surgical opportunities. This arc explores Izzie's emotional journey, leading to personal growth and a reevaluation of her motivations and career aspirations.",
+    "main_characters": "Izzie Stevens; Meredith Grey",
+    "interfering_episode_characters": "Derek Shepherd; George O'Malley",
+    "single_episode_progression_string": "Izzie feels upset upon realizing Meredith's involvement with Derek, suspecting it influences Meredith's surgical opportunities. Throughout the day, Izzie criticizes Meredith, but her anger subsides as she recognizes Meredith's genuine feelings for Derek, prompting a shift in Izzie's perspective."
   },
   {
-    "title": "Cristina's Competitive Nature and Potential Pregnancy",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Cristina Yang's ambition and competitive drive often put her at odds with her peers, particularly Meredith, while she also faces personal challenges with a potential pregnancy.",
-    "episodic": false,
+    "title": "Cristina's Personal Dilemma and Career Ambitions",
+    "arc_type": "Soap Arc",
+    "description": "Cristina Yang navigates a personal challenge when she suspects she might be pregnant, which could impact her ambitious career goals. This arc explores her determination and resilience as she faces potential changes in her personal life while striving to maintain her professional trajectory.",
     "main_characters": "Cristina Yang",
-    "interfering_episode_characters": "George O'Malley; Derek Shepherd; Dr. Burke",
-    "single_episode_progression_string": "Cristina is replaced by George in a major surgery but later takes his place after George confronts Dr. Taylor. She also suspects her flu symptoms might be pregnancy, which adds to her stress."
+    "interfering_episode_characters": "Dr. Burke",
+    "single_episode_progression_string": "Cristina experiences flu-like symptoms and suspects she might be pregnant. She takes two pregnancy tests, confirming her fears, and is visibly unhappy with the results, indicating a significant personal dilemma."
   },
   {
-    "title": "George's Professional Embarrassment and Growth",
+    "title": "Alex's Patient Connections and Personal Beliefs",
     "arc_type": "Genre-Specific Arc",
-    "description": "George O'Malley faces professional challenges and personal growth as he navigates his internship.",
-    "episodic": false,
-    "main_characters": "George O'Malley",
-    "interfering_episode_characters": "Derek Shepherd; Dr. Taylor",
-    "single_episode_progression_string": "George is initially part of a major surgery but is removed after confronting Dr. Taylor about smelling bourbon. He is replaced by Cristina, leading to embarrassment but also growth as Derek later apologizes to him."
-  },
-  {
-    "title": "Medical Case: Unauthorized Gastric Bypass",
-    "arc_type": "Episodic Arc",
-    "description": "Meredith helps Bailey with a case involving a teenager who had an unauthorized gastric bypass in Mexico, leading to severe complications.",
-    "episodic": true,
-    "main_characters": "Meredith Grey; Miranda Bailey",
-    "interfering_episode_characters": "Teenage Patient",
-    "single_episode_progression_string": "Meredith and Bailey work on a teenager who underwent a poorly done gastric bypass in Mexico. The reversal procedure fails, and the patient's bowel bursts, leading to lifelong nutritional challenges."
-  },
-  {
-    "title": "Medical Case: Man Who Swallowed Keys",
-    "arc_type": "Episodic Arc",
-    "description": "Izzie assists a patient who has swallowed keys, demonstrating her empathy and problem-solving abilities.",
-    "episodic": true,
-    "main_characters": "Izzie Stevens",
-    "interfering_episode_characters": "",
-    "single_episode_progression_string": "Izzie shows empathy and medical skill as she assists a man who has swallowed keys, highlighting her growth as a doctor."
-  },
-  {
-    "title": "Medical Case: Gunshot Victim with Tattoo Infection",
-    "arc_type": "Episodic Arc",
-    "description": "Alex deals with a gunshot victim whose wound exacerbates a tattoo infection, leading to the patient's death.",
-    "episodic": true,
+    "description": "Throughout the season, Alex Karev navigates his interactions with patients, often connecting with them over shared experiences. His belief that pain can be beneficial is challenged as he encounters situations that force him to reconsider the consequences of this mindset. This arc highlights Alex's growth in empathy and understanding as he balances his personal beliefs with his professional responsibilities.",
     "main_characters": "Alex Karev",
-    "interfering_episode_characters": "Gunshot Victim",
-    "single_episode_progression_string": "Alex connects with a gunshot victim who believes scars enhance his tattoos. The stress from the wound worsens an existing infection, and the patient dies."
+    "interfering_episode_characters": "Gunshot Victim; Dr. Burke",
+    "single_episode_progression_string": "Alex connects with a gunshot victim over their shared wrestling background and mutual belief in the benefits of pain. As the patient's condition deteriorates due to an infection, leading to his death, Alex is confronted with the harsh realities of glorifying pain, prompting him to reflect on the impact of his beliefs."
   },
   {
-    "title": "Medical Case: Toddler's Hemispherectomy",
-    "arc_type": "Episodic Arc",
-    "description": "Derek performs a hemispherectomy on a toddler with severe tremors, showcasing his surgical skills.",
-    "episodic": true,
-    "main_characters": "Derek Shepherd",
+    "title": "Derek's Professional Challenges and Emotional Conflicts",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Throughout the season, Derek Shepherd navigates the complexities of his professional responsibilities and personal emotions. He faces challenges such as managing impaired colleagues during critical surgeries while grappling with his growing feelings for Meredith Grey. This arc underscores Derek's adeptness in high-pressure situations and his ongoing struggle to balance personal and professional boundaries.",
+    "main_characters": "Derek Shepherd; Meredith Grey",
     "interfering_episode_characters": "George O'Malley; Dr. Taylor",
-    "single_episode_progression_string": "Derek discovers a toddler's brain tissue is dying and decides on a hemispherectomy. During the surgery, the anesthesiologist Dr. Taylor falls asleep, causing the child to wake up. Derek removes Dr. Taylor and completes the surgery."
+    "single_episode_progression_string": "Derek encounters a critical situation when Dr. Taylor, the anesthesiologist, is suspected of being impaired during a high-stakes surgery. George reports his concerns, leading to a confrontation that results in Derek removing Dr. Taylor mid-surgery. Derek later acknowledges his feelings for Meredith, admitting the challenges of separating his personal and professional lives."
+  },
+  {
+    "title": "Meredith's Empathy and Surgical Development",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Meredith Grey continues to hone her surgical skills while empathizing with patients facing personal and familial pressures. Throughout the season, this arc emphasizes Meredith's growth in understanding the complexities of patient care beyond medical procedures, showcasing her development as a compassionate and skilled surgeon.",
+    "main_characters": "Meredith Grey",
+    "interfering_episode_characters": "Miranda Bailey; Teenage Patient; Patient's Mother",
+    "single_episode_progression_string": "Meredith assists Dr. Bailey with a challenging case involving a teenager who underwent an unauthorized gastric bypass in Mexico. Despite the surgery's failure and complications, Meredith empathizes with the patient, understanding the pressure from her mother's expectations. This experience deepens Meredith's insight into the emotional aspects of patient care."
+  },
+  {
+    "title": "Medical Case: The Tattooed Gunshot Victim",
+    "arc_type": "Anthology Arc",
+    "description": "Alex Karev encounters a unique case involving a gunshot victim who believes his scars enhance his tattoos. The patient's condition deteriorates due to a tattoo infection worsened by the gunshot wound, ultimately leading to his death. This arc explores themes of self-harm and the consequences of extreme body modification.",
+    "main_characters": "Alex Karev; Tattooed Gunshot Victim",
+    "interfering_episode_characters": "Dr. Burke",
+    "single_episode_progression_string": "Alex notices a gunshot victim in the hospital lobby and learns the man was shot with permission to enhance his tattoos. The patient and Alex bond over shared experiences in Iowa and a belief in the benefits of pain. However, the stress from the gunshot wound exacerbates an existing tattoo infection. Despite medical intervention, the infection spreads too rapidly, and the patient dies, leaving Alex to reflect on the consequences of self-harm."
+  },
+  {
+    "title": "Medical Case: The Unauthorized Gastric Bypass",
+    "arc_type": "Anthology Arc",
+    "description": "Meredith Grey and Miranda Bailey tackle a series of complex medical cases, including a teenager who underwent an unauthorized gastric bypass in Mexico. The arc explores the consequences of medical tourism and the pressures of parental expectations, highlighting the emotional and physical challenges faced by patients and doctors alike.",
+    "main_characters": "Meredith Grey; Miranda Bailey",
+    "interfering_episode_characters": "Teenage Patient; Patient's Mother",
+    "single_episode_progression_string": "Meredith and Bailey collaborate on a case involving a teenager who had a poorly executed gastric bypass surgery in Mexico. During the attempt to reverse the surgery, the patient's bowel bursts, resulting in severe complications and lifelong nutritional challenges. Meredith empathizes with the patient, recognizing the pressure from her mother's high expectations."
+  },
+  {
+    "title": "Medical Case: The Hemispherectomy on a Toddler",
+    "arc_type": "Anthology Arc",
+    "description": "A challenging medical case where Derek Shepherd and George O'Malley address a toddler's severe tremors caused by rapidly dying brain tissue. The case highlights the complexities and ethical dilemmas of performing a hemispherectomy, a procedure that involves removing half of the brain to allow the remaining tissue to adapt.",
+    "main_characters": "Derek Shepherd; George O'Malley",
+    "interfering_episode_characters": "Dr. Taylor; Cristina Yang",
+    "single_episode_progression_string": "George and Derek identify the toddler's rapidly deteriorating brain tissue, leading to the decision to perform a hemispherectomy. During the procedure, the anesthesiologist, Dr. Taylor, is found asleep, causing the child to wake up mid-surgery. Derek removes Dr. Taylor and completes the surgery, later acknowledging George's concerns and apologizing for his initial doubt."
+  },
+  {
+    "title": "Medical Case: The Key Swallower",
+    "arc_type": "Anthology Arc",
+    "description": "Izzie navigates the challenges of treating a man who swallowed his girlfriend's keys during a breakup, exploring the intersection of emotional distress and medical emergencies.",
+    "main_characters": "Izzie; The Key Swallower",
+    "interfering_episode_characters": "Girlfriend of the Key Swallower",
+    "single_episode_progression_string": "Izzie assists a man who swallowed his girlfriend's keys, addressing both the medical complications of his impulsive act and his emotional turmoil. She works to safely retrieve the keys while understanding the patient's distress."
   }
 ]

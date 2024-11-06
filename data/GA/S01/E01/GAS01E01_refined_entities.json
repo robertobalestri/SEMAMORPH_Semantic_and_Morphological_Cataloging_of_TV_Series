@@ -1,10 +1,21 @@
 [
   {
-    "entity_name": "meredith_grey",
-    "best_appellation": "Meredith Grey",
+    "entity_name": "george_omalley",
+    "best_appellation": "George O'Malley",
     "appellations": [
-      "Meredith",
-      "Meredith Grey"
+      "George",
+      "George O'Malley",
+      "007"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "miranda_bailey",
+    "best_appellation": "Miranda Bailey",
+    "appellations": [
+      "Miranda Bailey",
+      "Bailey",
+      "The Nazi"
     ],
     "entity_type": "PERSON"
   },
@@ -19,21 +30,12 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "cristina_yang",
-    "best_appellation": "Cristina Yang",
+    "entity_name": "preston_burke",
+    "best_appellation": "Preston Burke",
     "appellations": [
-      "Cristina",
-      "Cristina Yang"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "george_omalley",
-    "best_appellation": "George O'Malley",
-    "appellations": [
-      "George",
-      "George O'Malley",
-      "007"
+      "Burke",
+      "Preston",
+      "Preston Burke"
     ],
     "entity_type": "PERSON"
   },
@@ -41,30 +43,37 @@
     "entity_name": "isobel_stevens",
     "best_appellation": "Isobel Stevens",
     "appellations": [
-      "Izzie",
       "Isobel",
-      "Isobel Stevens",
-      "Izzie Stevens"
+      "Izzie",
+      "Izzie Stevens",
+      "Isobel \"Izzie\" Stevens",
+      "Isobel Stevens"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "miranda_bailey",
-    "best_appellation": "Miranda Bailey",
+    "entity_name": "gloria_savitch",
+    "best_appellation": "Gloria",
     "appellations": [
-      "Bailey",
-      "Miranda Bailey",
-      "The Nazi"
+      "Gloria"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "preston_burke",
-    "best_appellation": "Preston Burke",
+    "entity_name": "meredith_grey",
+    "best_appellation": "Meredith Grey",
     "appellations": [
-      "Burke",
-      "Preston",
-      "Preston Burke"
+      "Meredith",
+      "Meredith Grey"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "cristina_yang",
+    "best_appellation": "Cristina Yang",
+    "appellations": [
+      "Cristina",
+      "Cristina Yang"
     ],
     "entity_type": "PERSON"
   },
@@ -87,11 +96,18 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "ellis_grey",
-    "best_appellation": "Ellis Grey",
+    "entity_name": "tyler",
+    "best_appellation": "Tyler",
     "appellations": [
-      "Ellis Grey",
-      "Ellis"
+      "Tyler"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "god",
+    "best_appellation": "God",
+    "appellations": [
+      "God"
     ],
     "entity_type": "PERSON"
   },
@@ -105,14 +121,6 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "gloria",
-    "best_appellation": "Gloria",
-    "appellations": [
-      "Gloria"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
     "entity_name": "mr_jones",
     "best_appellation": "Mr. Jones",
     "appellations": [
@@ -121,10 +129,10 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "tyler",
-    "best_appellation": "Tyler",
+    "entity_name": "ellis_grey",
+    "best_appellation": "Ellis Grey",
     "appellations": [
-      "Tyler"
+      "Ellis Grey"
     ],
     "entity_type": "PERSON"
   },

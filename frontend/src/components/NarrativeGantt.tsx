@@ -20,7 +20,7 @@ interface ArcProgression {
   season: string;
   episode: string;
   ordinal_position: number;
-  interfering_episode_characters: string[];
+  interfering_characters: string[];
 }
 
 interface NarrativeArc {
@@ -28,7 +28,6 @@ interface NarrativeArc {
   title: string;
   description: string;
   arc_type: string;
-  episodic: boolean;
   main_characters: string[];
   series: string;
   progressions: ArcProgression[];

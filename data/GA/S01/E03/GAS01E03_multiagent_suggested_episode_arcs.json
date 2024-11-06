@@ -1,56 +1,58 @@
 [
   {
-    "title": "Meredith and Derek's Complicated Relationship",
+    "title": "Meredith Grey's Journey: Balancing Legacy, Love, and Professional Boundaries",
     "arc_type": "Soap Arc",
-    "description": "Meredith and Derek's relationship begins with a one-night stand and evolves amidst professional challenges and personal revelations.",
-    "episodic": false,
-    "main_characters": "Meredith; Derek",
-    "interfering_episode_characters": "Viper; Bailey",
-    "single_episode_progression_string": "Meredith and Derek have a tense interaction after Derek almost gets hit by a bike. Meredith accuses Derek of being interested only in the chase. Derek later tells Meredith it's not about the chase but about her hair, hinting at his genuine interest."
+    "description": "Meredith Grey navigates her first year as a surgical intern at Seattle Grace Hospital, balancing the legacy of her renowned mother, Ellis Grey, and her evolving relationship with Derek Shepherd. She strives to establish her own identity and career while dealing with professional boundaries, personal challenges, and the complexities of hospital life.",
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "Izzie Stevens; George O'Malley; Alex Karev; Cristina Yang; Miranda Bailey",
+    "single_episode_progression_string": "Meredith faces the challenge of her mother's legacy as her roommates, Izzie and George, encroach on her personal space by watching Ellis Grey's surgical tapes. This intrusion underscores her struggle to maintain boundaries between her personal and professional life. Meanwhile, Meredith's relationship with Derek is tested as they confront issues of jealousy and the nature of their connection. The chaotic day at the hospital, marked by the aftermath of an illegal bike race, further complicates Meredith's efforts to balance her responsibilities and emotions."
   },
   {
-    "title": "Meredith's Struggle with Her Mother's Alzheimer's",
+    "title": "Intern Dynamics: Friendship, Rivalry, and Growth",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The surgical interns, Meredith Grey, Cristina Yang, George O'Malley, Izzie Stevens, and Alex Karev, navigate the intense world of surgical residency at Seattle Grace Hospital. As they compete for surgical opportunities, they form complex relationships marked by friendship, rivalry, and personal growth. The arc explores their professional challenges, personal conflicts, and the support they offer each other through the trials of their internship.",
+    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Izzie Stevens; Alex Karev",
+    "interfering_episode_characters": "Miranda Bailey; Derek Shepherd; Richard Webber; Preston Burke",
+    "single_episode_progression_string": "The interns encounter a mix of personal and professional challenges, emphasizing their competitive nature and developing friendships. Meredith grapples with household tensions and a flirtatious patient, while Cristina and Izzie face the emotional intricacies of organ donation. George deals with misunderstandings about his sexuality and his unspoken feelings for Meredith. Alex's ambition creates friction with Meredith, leading to repercussions for his focus on intriguing cases. The narrative highlights the interns' growth as they learn to balance rivalry with camaraderie."
+  },
+  {
+    "title": "Meredith and Derek: A Complicated Romance",
     "arc_type": "Soap Arc",
-    "description": "Meredith grapples with her mother's Alzheimer's diagnosis while trying to establish herself as a competent intern.",
-    "episodic": false,
-    "main_characters": "Meredith",
-    "interfering_episode_characters": "Izzie; George",
-    "single_episode_progression_string": "Meredith is reminded of her mother's legacy when Izzie and George watch her mother's surgical tapes, causing her to react angrily."
+    "description": "Meredith Grey and Derek Shepherd's relationship begins with a one-night stand and evolves into a complex romance, complicated by their professional roles at Seattle Grace Hospital. Meredith strives to establish herself independently in the medical field while navigating her growing feelings for Derek, who is her superior.",
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "Alex Karev; Miranda Bailey",
+    "single_episode_progression_string": "Meredith and Derek's relationship faces tension as Derek expresses concern about their potential future, while Meredith questions his intentions, suspecting he is only interested in the chase. Despite their professional interactions, personal feelings surface, leading to a confrontation where Derek admits his attraction to Meredith, not just for the thrill but for her qualities. This moment of honesty adds complexity to their evolving relationship."
   },
   {
-    "title": "Intern Dynamics at Seattle Grace",
+    "title": "George O'Malley's Journey to Confidence and Independence",
+    "arc_type": "Soap Arc",
+    "description": "George O'Malley navigates the challenges of being a surgical intern, dealing with self-doubt and the pressure to prove himself to his superiors and peers. Throughout the season, he faces various setbacks but gradually builds his confidence and competence as a surgeon. Additionally, he seeks independence from his overbearing family, adding another layer to his journey of personal and professional growth.",
+    "main_characters": "George O'Malley",
+    "interfering_episode_characters": "Izzie Stevens; Miranda Bailey; Richard Webber; Lloyd Mackie",
+    "single_episode_progression_string": "George is embroiled in a dispute over room space with Izzie, highlighting his struggle to assert himself. Bailey selects him to assist the Chief, marking a step towards gaining trust from superiors. George manages a patient, Lloyd Mackie, who flirts with him, prompting George to confront his insecurities about how others perceive him. Ultimately, George successfully finds a liver for Mackie, earning recognition from the Chief and boosting his confidence."
+  },
+  {
+    "title": "Cristina Yang: Ambition and Professional Growth",
+    "arc_type": "Soap Arc",
+    "description": "Cristina Yang's journey at Seattle Grace Hospital is defined by her relentless ambition and drive to excel in her medical career. Her determination often leads to conflicts with peers and mentors as she navigates the competitive environment, striving to secure surgical opportunities and prove her capabilities. Throughout the season, Cristina's interactions with colleagues and superiors highlight her focus on professional growth and her struggle to balance personal relationships with her career aspirations.",
+    "main_characters": "Cristina Yang",
+    "interfering_episode_characters": "Miranda Bailey; Izzie Stevens; Shelley Davidson",
+    "single_episode_progression_string": "Cristina is eager to take on more challenging cases and sees the potential organ donor as an opportunity to advance her career. Initially focused on the medical benefits of organ donation, she is reminded by Bailey of the human aspect, prompting her to reconsider her approach. Despite her ambition, Cristina learns to balance her professional drive with empathy, assisting Izzie in preparing the donor's body for his family."
+  },
+  {
+    "title": "Bailey's Mentorship: Guiding the New Interns",
     "arc_type": "Genre-Specific Arc",
-    "description": "The interns at Seattle Grace Hospital form friendships and rivalries as they navigate the challenges of their medical training.",
-    "episodic": false,
-    "main_characters": "Meredith; Izzie; George; Cristina; Alex",
-    "interfering_episode_characters": "Bailey; Burke",
-    "single_episode_progression_string": "Izzie and George argue over room space, showcasing their living dynamics. The interns compete for cases during the bike race chaos. Cristina and Izzie work together on an organ donor case, while Alex and Meredith clash over a patient."
+    "description": "Miranda Bailey, known for her strict yet effective teaching style, mentors a new group of interns at Seattle Grace Hospital. Throughout the season, she balances her tough exterior with moments of guidance and support, helping them grow into competent surgeons. Her mentorship is characterized by strict rules, high expectations, and occasional displays of empathy, ultimately shaping the interns' professional and personal development.",
+    "main_characters": "Miranda Bailey; Izzie Stevens; Cristina Yang; George O'Malley; Meredith Grey; Alex Karev",
+    "interfering_episode_characters": "Richard Webber; Derek Shepherd; Preston Burke",
+    "single_episode_progression_string": "Bailey assigns tasks to the interns during the chaotic aftermath of the illegal bike race, emphasizing the importance of efficiency and cautioning them against interacting with inexperienced ER interns. She guides Izzie and Cristina on the ethical considerations of organ donation, reminding them of the human aspect of their work. Her interactions with the interns highlight her role as a mentor who balances discipline with teaching moments."
   },
   {
-    "title": "George's Professional Embarrassment and Growth",
+    "title": "Alex Karev: Striving for Respect and Recognition",
     "arc_type": "Genre-Specific Arc",
-    "description": "George O'Malley faces professional challenges and personal growth as he navigates his internship.",
-    "episodic": false,
-    "main_characters": "George",
-    "interfering_episode_characters": "Mackie; Webber; Alex",
-    "single_episode_progression_string": "George is tasked with monitoring patients and faces awkwardness with Mackie, who flirts with him. He successfully finds a liver for Mackie, showing his growth and competence."
-  },
-  {
-    "title": "Medical Case: Viper's Treatment",
-    "arc_type": "Episodic Arc",
-    "description": "The interns deal with a patient named Viper, who is injured in a bike race.",
-    "episodic": true,
-    "main_characters": "Meredith; Alex",
-    "interfering_episode_characters": "Bailey; Viper",
-    "single_episode_progression_string": "Meredith and Alex argue over the treatment of Viper, a patient injured in the bike race. Bailey and Meredith address Viper's friends, managing the situation."
-  },
-  {
-    "title": "Medical Case: Unidentified Patient and Organ Donation",
-    "arc_type": "Episodic Arc",
-    "description": "Cristina and Izzie handle an unidentified patient and explore the possibility of organ donation.",
-    "episodic": true,
-    "main_characters": "Cristina; Izzie",
-    "interfering_episode_characters": "Unidentified Patient",
-    "single_episode_progression_string": "Cristina and Izzie deal with an unidentified patient, focusing on the potential for organ donation. An organ harvest surgery takes place, highlighting Cristina's ambition."
+    "description": "Alex Karev navigates the competitive environment of Seattle Grace Hospital, seeking respect and recognition from his peers and superiors. His journey is marked by clashes with fellow interns and efforts to prove his competence and dedication.",
+    "main_characters": "Alex Karev",
+    "interfering_episode_characters": "Meredith Grey; Miranda Bailey; Preston Burke",
+    "single_episode_progression_string": "Alex Karev clashes with Meredith Grey over the treatment of a patient named Viper, debating the severity of the injury. His tendency to prioritize interesting cases over routine ones leads to a reprimand from Miranda Bailey, who sends him back to the pit as a penalty. Despite assisting Preston Burke in an open-heart surgery, this incident underscores his ongoing struggle for recognition and respect."
   }
 ]
