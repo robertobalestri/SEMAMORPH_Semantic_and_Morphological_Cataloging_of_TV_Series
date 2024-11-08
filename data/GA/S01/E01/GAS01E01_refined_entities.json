@@ -1,11 +1,19 @@
 [
   {
-    "entity_name": "george_omalley",
-    "best_appellation": "George O'Malley",
+    "entity_name": "cristina_yang",
+    "best_appellation": "Cristina Yang",
     "appellations": [
-      "George",
-      "George O'Malley",
-      "007"
+      "Cristina Yang",
+      "Cristina"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "alex_karev",
+    "best_appellation": "Alex Karev",
+    "appellations": [
+      "Alex Karev",
+      "Alex"
     ],
     "entity_type": "PERSON"
   },
@@ -20,12 +28,13 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "derek_shepherd",
-    "best_appellation": "Derek Shepherd",
+    "entity_name": "isobel_stevens",
+    "best_appellation": "Isobel Stevens",
     "appellations": [
-      "Derek",
-      "Dr. Derek Shepherd",
-      "Derek Shepherd"
+      "Isobel Stevens",
+      "Isobel",
+      "Izzie Stevens",
+      "Izzie"
     ],
     "entity_type": "PERSON"
   },
@@ -33,90 +42,9 @@
     "entity_name": "preston_burke",
     "best_appellation": "Preston Burke",
     "appellations": [
-      "Burke",
+      "Preston Burke",
       "Preston",
-      "Preston Burke"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "isobel_stevens",
-    "best_appellation": "Isobel Stevens",
-    "appellations": [
-      "Isobel",
-      "Izzie",
-      "Izzie Stevens",
-      "Isobel \"Izzie\" Stevens",
-      "Isobel Stevens"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "gloria_savitch",
-    "best_appellation": "Gloria",
-    "appellations": [
-      "Gloria"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "meredith_grey",
-    "best_appellation": "Meredith Grey",
-    "appellations": [
-      "Meredith",
-      "Meredith Grey"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "cristina_yang",
-    "best_appellation": "Cristina Yang",
-    "appellations": [
-      "Cristina",
-      "Cristina Yang"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "alex_karev",
-    "best_appellation": "Alex Karev",
-    "appellations": [
-      "Alex Karev",
-      "Alex"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "katie_bryce",
-    "best_appellation": "Katie Bryce",
-    "appellations": [
-      "Katie",
-      "Katie Bryce"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "tyler",
-    "best_appellation": "Tyler",
-    "appellations": [
-      "Tyler"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "god",
-    "best_appellation": "God",
-    "appellations": [
-      "God"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "tony_savitch",
-    "best_appellation": "Tony Savitch",
-    "appellations": [
-      "Tony",
-      "Tony Savitch"
+      "Burke"
     ],
     "entity_type": "PERSON"
   },
@@ -129,10 +57,73 @@
     "entity_type": "PERSON"
   },
   {
+    "entity_name": "katie_bryce",
+    "best_appellation": "Katie Bryce",
+    "appellations": [
+      "Katie Bryce",
+      "Katie"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
     "entity_name": "ellis_grey",
     "best_appellation": "Ellis Grey",
     "appellations": [
       "Ellis Grey"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "meredith_grey",
+    "best_appellation": "Meredith Grey",
+    "appellations": [
+      "Meredith Grey",
+      "Meredith"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "tyler",
+    "best_appellation": "Tyler",
+    "appellations": [
+      "Tyler"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "george_omalley",
+    "best_appellation": "George O'Malley",
+    "appellations": [
+      "George O'Malley",
+      "George",
+      "007"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "gloria",
+    "best_appellation": "Gloria",
+    "appellations": [
+      "Gloria"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "derek_shepherd",
+    "best_appellation": "Derek Shepherd",
+    "appellations": [
+      "Derek Shepherd",
+      "Dr. Derek Shepherd",
+      "Derek"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "tony_savitch",
+    "best_appellation": "Tony Savitch",
+    "appellations": [
+      "Tony Savitch",
+      "Tony"
     ],
     "entity_type": "PERSON"
   },

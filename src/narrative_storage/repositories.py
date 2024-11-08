@@ -100,6 +100,13 @@ class NarrativeArcRepository(BaseRepository):
             query = query.where(NarrativeArc.series == series)
         return self.session.exec(query).all()
 
+    def delete(self, arc_id: str):
+        """Delete a narrative arc and its progressions."""
+        arc = self.session.get(NarrativeArc, arc_id)
+        if arc:
+            self.session.delete(arc)
+            logger.info(f"Deleted NarrativeArc: {arc.title}")
+
 class ArcProgressionRepository(BaseRepository):
     """Repository for ArcProgression operations."""
 
@@ -140,6 +147,10 @@ class ArcProgressionRepository(BaseRepository):
             selectinload(ArcProgression.interfering_characters)
         )
         return self.session.exec(query).first()
+
+    def get_by_id(self, progression_id: str) -> Optional[ArcProgression]:
+        """Get a progression by its ID."""
+        return self.session.get(ArcProgression, progression_id)
 
 class CharacterRepository(BaseRepository):
     """Repository for Character operations."""

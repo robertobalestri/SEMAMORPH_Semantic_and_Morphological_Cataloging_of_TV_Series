@@ -9,8 +9,14 @@ import {
   useColorModeValue,
   VStack,
   HStack,
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
 } from '@chakra-ui/react';
-import NarrativeGantt from './components/NarrativeGantt';
+import NarrativeArcManager from './components/NarrativeArcManager';
+import VectorStoreExplorer from './components/VectorStoreExplorer';
 
 interface ArcProgression {
   id: string;
@@ -90,6 +96,47 @@ function App() {
   useEffect(() => {
     if (selectedSeries && selectedSeason) {
       setIsLoading(true);
+      console.log('Fetching arcs for:', { selectedSeries, selectedSeason });
+      fetch(`http://localhost:8000/api/arcs/${selectedSeries}`, fetchOptions)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then(data => {
+          console.log('Received arcs data:', data);
+          const seasonArcsData = data.filter((arc: NarrativeArc) =>
+            arc.progressions.some(prog => prog.season === selectedSeason)
+          );
+          console.log('Filtered season arcs:', seasonArcsData);
+          setSeasonArcs({
+            series: selectedSeries,
+            season: selectedSeason,
+            arcs: seasonArcsData
+          });
+        })
+        .catch(error => {
+          console.error('Error fetching season arcs:', error);
+          setSeasonArcs(null);
+        })
+        .finally(() => {
+          setIsLoading(false);
+        });
+    }
+  }, [selectedSeries, selectedSeason]);
+
+  // Get unique seasons and sort them
+  const seasons = [...new Set(episodes.map(ep => ep.season))].sort((a, b) => {
+    const numA = parseInt(a.replace('S', ''));
+    const numB = parseInt(b.replace('S', ''));
+    return numA - numB;
+  });
+
+  const handleArcUpdated = () => {
+    // Refresh arcs data when an arc is updated
+    if (selectedSeries && selectedSeason) {
+      setIsLoading(true);
       fetch(`http://localhost:8000/api/arcs/${selectedSeries}`, fetchOptions)
         .then(response => {
           if (!response.ok) {
@@ -115,25 +162,20 @@ function App() {
           setIsLoading(false);
         });
     }
-  }, [selectedSeries, selectedSeason]);
-
-  // Get unique seasons and sort them
-  const seasons = [...new Set(episodes.map(ep => ep.season))].sort((a, b) => {
-    const numA = parseInt(a.replace('S', ''));
-    const numB = parseInt(b.replace('S', ''));
-    return numA - numB;
-  });
+  };
 
   return (
     <ChakraProvider>
-      <Box p={5} minH="100vh" bg={useColorModeValue('gray.50', 'gray.900')}>
-        <Grid gap={6} maxW="1200px" mx="auto">
+      <Box minH="100vh" bg={useColorModeValue('gray.50', 'gray.900')} position="relative">
+        <Box maxW="100%" mx="auto">
           <VStack spacing={4} align="stretch">
-            <Heading as="h1" size="xl" mb={6} textAlign="center">
-              Narrative Arcs Visualization
-            </Heading>
+            <Box px={4} py={5} bg={useColorModeValue('white', 'gray.800')} shadow="sm">
+              <Heading as="h1" size="xl" textAlign="center">
+                Narrative Arcs Dashboard
+              </Heading>
+            </Box>
 
-            <VStack spacing={4}>
+            <Box px={4}>
               <HStack spacing={4} width="100%">
                 <Select
                   placeholder="Select series"
@@ -161,27 +203,41 @@ function App() {
                   ))}
                 </Select>
               </HStack>
+            </Box>
 
-              {isLoading ? (
-                <Box mt={8} textAlign="center">
-                  <Text>Loading season overview...</Text>
-                </Box>
-              ) : seasonArcs ? (
-                <Box mt={8} width="100%">
-                  <NarrativeGantt 
-                    arcs={seasonArcs.arcs}
-                    episodes={episodes}
-                    selectedSeason={selectedSeason}
-                  />
-                </Box>
-              ) : (
-                <Box mt={8} textAlign="center">
-                  <Text>Select a series and season to view the overview.</Text>
-                </Box>
-              )}
-            </VStack>
+            {isLoading ? (
+              <Box textAlign="center" p={8}>
+                <Text>Loading season overview...</Text>
+              </Box>
+            ) : seasonArcs ? (
+              <Box width="100%" overflowX="hidden">
+                <Tabs isFitted variant="enclosed">
+                  <TabList>
+                    <Tab>Narrative Arcs</Tab>
+                    <Tab>Vector Store</Tab>
+                  </TabList>
+                  <TabPanels>
+                    <TabPanel p={0}>
+                      <NarrativeArcManager 
+                        arcs={seasonArcs.arcs}
+                        episodes={episodes}
+                        selectedSeason={selectedSeason}
+                        onArcUpdated={handleArcUpdated}
+                      />
+                    </TabPanel>
+                    <TabPanel>
+                      <VectorStoreExplorer series={selectedSeries} />
+                    </TabPanel>
+                  </TabPanels>
+                </Tabs>
+              </Box>
+            ) : (
+              <Box textAlign="center" p={8}>
+                <Text>Select a series and season to view the overview.</Text>
+              </Box>
+            )}
           </VStack>
-        </Grid>
+        </Box>
       </Box>
     </ChakraProvider>
   );

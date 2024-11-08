@@ -104,18 +104,24 @@ PRESENT_SEASON_ARCS_OUTPUT_JSON_FORMAT = dedent("""
 
 # 1. Present Season Arcs Identifier
 PRESENT_SEASON_ARCS_IDENTIFIER_PROMPT = ChatPromptTemplate.from_template(
-    """You are a Season Arc Continuity Expert. Identify existing season arcs present in the episode based on the plot below.
+    """You are a Season Arc Continuity Expert. Determine if the given season arc is present in the episode based on the plot below.
 
 **Episode Plot:**
 {summarized_episode_plot}
 
-**Existing Season Arcs:**
-{existing_season_arcs_summaries}
+**Season Arc to Check:**
+Title: {arc_title}
+Description: {arc_description}
 
-If an already found seasonal arc is present in the episode, provide its title and description and a brief explanation referencing specific events or character actions from the episode.
+Determine if this specific season arc continues or develops in this episode. If it does, provide a brief explanation referencing specific events or character actions from the episode.
 
-**Return the result as a JSON array:**
-{output_json_format}
+**Return the result as a JSON object:**
+{{
+    "is_present": true/false,
+    "title": "Arc title",
+    "description": "Arc description",
+    "explanation": "Explanation of why the arc is present in the episode (if is_present is true)"
+}}
 """
 )
 

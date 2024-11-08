@@ -35,7 +35,13 @@ class VectorStoreService:
             logger.error(f"Failed to add documents to the vector store: {e}")
             raise
 
-    def find_similar_arcs(self, query: str, n_results: int = 5, series: Optional[str] = None) -> List[Dict[str, Any]]:
+    def find_similar_arcs(
+        self,
+        query: str,
+        n_results: int = 5,
+        series: Optional[str] = None
+    ) -> List[Dict[str, Any]]:
+        """Find similar arcs (main documents only) to a query."""
         filter_criteria = {"$and": [{"doc_type": "main"}]}
         if series:
             filter_criteria["$and"].append({"series": series})
@@ -94,3 +100,65 @@ class VectorStoreService:
         except Exception as e:
             logger.error(f"Error deleting documents: {e}")
             raise
+
+    def get_all_documents(self, series: str, include_embeddings: bool = False) -> List[Dict]:
+        """Get all documents for a series from the vector store."""
+        try:
+            # Get documents with series filter
+            results = self.collection.get(
+                where={"series": series},
+                include=['metadatas', 'documents', 'embeddings'] if include_embeddings else ['metadatas', 'documents']
+            )
+
+            # Format results
+            documents = []
+            for i in range(len(results['ids'])):
+                doc = {
+                    'id': results['ids'][i],
+                    'content': results['documents'][i],
+                    'metadata': results['metadatas'][i],
+                }
+                if include_embeddings and 'embeddings' in results:
+                    doc['embedding'] = results['embeddings'][i]
+                documents.append(doc)
+
+            return documents
+
+        except Exception as e:
+            logger.error(f"Error getting all documents: {e}")
+            return []
+
+    def find_similar_documents(
+        self,
+        query: str,
+        series: str,
+        n_results: int = 10,
+        include_embeddings: bool = False
+    ) -> List[Dict]:
+        """Find similar documents (both arcs and progressions) to a query."""
+        try:
+            filter_criteria = {"series": series}
+            
+            # Perform similarity search
+            results = self.collection.similarity_search_with_score(
+                query,
+                k=n_results,
+                filter=filter_criteria
+            )
+
+            # Format results
+            documents = []
+            for doc, score in results:
+                entry = {
+                    'id': doc.metadata.get('id'),
+                    'content': doc.page_content,
+                    'metadata': doc.metadata,
+                    'distance': score
+                }
+                documents.append(entry)
+
+            return documents
+
+        except Exception as e:
+            logger.error(f"Error during similarity search: {e}")
+            return []

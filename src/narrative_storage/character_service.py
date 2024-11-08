@@ -106,6 +106,7 @@ class CharacterService:
             else:
                 cleaned_appellations.append(appellation.strip())
 
+        # Add explicit series filter to ensure we only get characters from this series
         return self.character_repository.get_by_appellations(cleaned_appellations, series)
 
     def link_characters_to_arc(self, characters: List[Character], arc: Optional[NarrativeArc]):

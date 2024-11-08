@@ -8,8 +8,9 @@ import logging
 import pandas as pd
 from sqlmodel import select
 from sqlalchemy.orm import selectinload
+from src.utils.logger_utils import setup_logging
 
-logger = logging.getLogger(__name__)
+logger = setup_logging(__name__)
 
 def visualize_narrative_arcs():
     # Initialize services
@@ -103,7 +104,9 @@ def visualize_narrative_arcs():
                             f"Content: {doc[:100]}..."
                         )
                     doc_types.append('Progression')
-                    
+
+                    logger.warning(f"Progression datas: {meta}")
+                                                                    
                 else:
                     text_label = f"Unknown Document Type: {doc_type}"
                     doc_types.append('Unknown')

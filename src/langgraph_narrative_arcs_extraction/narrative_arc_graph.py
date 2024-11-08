@@ -1,5 +1,6 @@
 # narrative_arc_graph.py
 
+import asyncio
 from typing import Dict, List, TypedDict
 from langgraph.graph import StateGraph, END
 import os
@@ -105,7 +106,7 @@ def initialize_state(state: NarrativeArcsExtractionState) -> NarrativeArcsExtrac
     logger.info(f"Loaded {len(state['existing_season_entities'])} existing entities from season file.")
 
     return state
-
+'''
 def identify_present_season_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
     """Identify which existing season arcs are clearly present in the current episode."""
     logger.info("Identifying present season arcs in the episode.")
@@ -125,61 +126,121 @@ def identify_present_season_arcs(state: NarrativeArcsExtractionState) -> Narrati
             # Filter arcs that have progressions in the current season
             filtered_arcs = []
             for arc in season_arcs:
-                # Assuming progressions are already loaded due to selectinload in the repository
                 progressions_in_season = [prog for prog in arc.progressions if prog.season == state['season']]
                 if progressions_in_season:
-                    # Update arc's progressions to only include those in the current season
                     arc.progressions = progressions_in_season
                     filtered_arcs.append(arc)
 
-            state['existing_season_arcs'] = [arc.dict() for arc in filtered_arcs]
-
-            for arc in filtered_arcs:
-                # Serialize the arc and its progressions
-                serialized_arc = arc.dict()
-                serialized_arc['progressions'] = [prog.dict() for prog in arc.progressions]
-                serialized_season_arcs.append(serialized_arc)
-
-            state['season_arcs'] = serialized_season_arcs
-            logger.info(f"Retrieved {len(serialized_season_arcs)} arcs for {state['series']} season {state['season']}.")
+            state['season_arcs'] = [arc.dict() for arc in filtered_arcs]
+            logger.info(f"Retrieved {len(filtered_arcs)} arcs for {state['series']} season {state['season']}.")
 
     except Exception as e:
         logger.error(f"Error managing season arcs: {e}")
         state['season_arcs'] = []
+        return state
 
-    # Prepare existing season arcs summaries
-    existing_season_arcs_summaries = [
-        {"title": arc['title'], "description": arc['description']}
-        for arc in serialized_season_arcs
-    ]
-
-    if len(existing_season_arcs_summaries) == 0:
+    if not state['season_arcs']:
         logger.warning("No existing season arcs found. Skipping present season arcs identification.")
         state['present_season_arcs'] = []
         return state
 
-    response = llm.invoke(PRESENT_SEASON_ARCS_IDENTIFIER_PROMPT.format_messages(
-        summarized_episode_plot=state['summarized_plot'],
-        existing_season_arcs_summaries=json.dumps(existing_season_arcs_summaries, indent=2),
-        output_json_format=PRESENT_SEASON_ARCS_OUTPUT_JSON_FORMAT
-    ))
+    present_arcs = []
+    # Process each arc individually
+    for arc in state['season_arcs']:
+        try:
+            #do not consider anthology arcs for individuation in other episodes
+            if arc['arc_type'] == "Anthology Arc":
+                continue
+
+            response = llm.invoke(PRESENT_SEASON_ARCS_IDENTIFIER_PROMPT.format_messages(
+                summarized_episode_plot=state['summarized_plot'],
+                arc_title=arc['title'],
+                arc_description=arc['description']
+            ))
+
+            arc_data = clean_llm_json_response(response.content)
+            if isinstance(arc_data, list):
+                arc_data = arc_data[0]
+
+            if arc_data['is_present']:
+                present_arcs.append({
+                    "title": arc_data['title'],
+                    "description": arc_data['description'],
+                    "presence_explanation": arc_data['explanation']
+                })
+                logger.warning(f"Arc '{arc['title']}' identified as present in episode.")
+            else:
+                logger.info(f"Arc '{arc['title']}' not present in episode.")
+
+        except Exception as e:
+            logger.error(f"Error processing arc '{arc['title']}': {e}")
+            continue
+
+    state['present_season_arcs'] = present_arcs
+    logger.info(f"Identified {len(present_arcs)} season arcs present in the episode.")
+    return state'''
+
+
+#DA TESTARE SE VANNO LE CHIAMATE IN PARALLELO
+from src.langgraph_narrative_arcs_extraction.async_llm_processors import PresentSeasonArcsProcessor
+
+def identify_present_season_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
+    """Identify which existing season arcs are clearly present in the current episode."""
+    logger.info("Identifying present season arcs in the episode.")
+
+    #logger.info("Identifying present season arcs in the episode.")
+
+    # Initialize the database session manager and repositories
+    db_manager = DatabaseSessionManager()
+    serialized_season_arcs = []
 
     try:
-        arcs_data = clean_llm_json_response(response.content)
-        present_arcs = []
-        for arc in arcs_data:
-            present_arcs.append({
-                "title": arc['title'],
-                "description": arc['description'],
-                "presence_explanation": arc.get('presence_explanation', '')
-            })
-        state['present_season_arcs'] = present_arcs
-        logger.info(f"Identified {len(present_arcs)} season arcs present in the episode.")
-    except Exception as e:
-        logger.error(f"Error identifying present season arcs: {e}")
-        state['present_season_arcs'] = []
+        with db_manager.session_scope() as session:
+            # Initialize repositories
+            arc_repository = NarrativeArcRepository(session)
 
+            # Get all narrative arcs for the series
+            season_arcs = arc_repository.get_all(series=state['series'])
+
+            # Filter arcs that have progressions in the current season
+            filtered_arcs = []
+            for arc in season_arcs:
+                progressions_in_season = [prog for prog in arc.progressions if prog.season == state['season']]
+                if progressions_in_season:
+                    arc.progressions = progressions_in_season
+                    filtered_arcs.append(arc)
+
+            state['season_arcs'] = [arc.dict() for arc in filtered_arcs]
+            logger.info(f"Retrieved {len(filtered_arcs)} arcs for {state['series']} season {state['season']}.")
+
+    except Exception as e:
+        logger.error(f"Error managing season arcs: {e}")
+        state['season_arcs'] = []
+        return state
+
+    if not state['season_arcs']:
+        logger.warning("No existing season arcs found. Skipping present season arcs identification.")
+        state['present_season_arcs'] = []
+        return state
+
+    async def run_parallel_processing():
+        processor = PresentSeasonArcsProcessor(
+            max_concurrent=5,
+            timeout=30.0,
+            retry_attempts=3
+        )
+        
+        for arc in state['season_arcs']:
+            processor.add_task(arc, state['summarized_plot'], llm)
+        
+        return await processor.process_all()
+
+    present_arcs = asyncio.run(run_parallel_processing())
+    state['present_season_arcs'] = present_arcs
+    logger.info(f"Identified {len(present_arcs)} season arcs present in the episode.")
     return state
+
+
 
 def extract_anthology_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
     """Extract self-contained anthology arcs from the episode plot."""

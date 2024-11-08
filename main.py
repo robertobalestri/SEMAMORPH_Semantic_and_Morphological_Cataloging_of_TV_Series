@@ -218,7 +218,7 @@ if __name__ == "__main__":
 
     logger.info("Starting text processing.")
 
-    ep_number = 3
+    ep_number = 1
     
     # Now process each episode
     for ep in range(ep_number, 10):
