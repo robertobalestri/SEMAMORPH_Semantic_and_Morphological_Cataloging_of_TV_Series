@@ -131,3 +131,68 @@ class CharacterService:
                 if progression not in character.interfering_progressions:
                     character.interfering_progressions.append(progression)
             logger.info(f"Linked {len(new_characters)} characters to progression in S{progression.season}E{progression.episode}")
+
+    def delete_character(self, entity_name: str, series: str) -> bool:
+        """
+        Delete a character and update all related arcs and progressions.
+        Returns True if successful, False otherwise.
+        """
+        try:
+            character = self.character_repository.get_by_entity_name(entity_name, series)
+            if not character:
+                return False
+
+            # Remove character from main characters in arcs
+            for arc in character.main_narrative_arcs:
+                arc.main_characters.remove(character)
+
+            # Remove character from interfering characters in progressions
+            for progression in character.interfering_progressions:
+                progression.interfering_characters.remove(character)
+
+            # Delete the character
+            self.character_repository.delete(character)
+            return True
+
+        except Exception as e:
+            logger.error(f"Error deleting character {entity_name}: {e}")
+            raise
+
+    def merge_characters(self, character1_id: str, character2_id: str, series: str) -> bool:
+        """
+        Merge two characters, updating all related arcs and progressions.
+        The first character (character1_id) will be kept, the second will be deleted.
+        """
+        try:
+            char1 = self.character_repository.get_by_entity_name(character1_id, series)
+            char2 = self.character_repository.get_by_entity_name(character2_id, series)
+
+            if not char1 or not char2:
+                return False
+
+            # Merge appellations
+            existing_appellations = {app.appellation for app in char1.appellations}
+            for app in char2.appellations:
+                if app.appellation not in existing_appellations:
+                    app.character = char1
+                    existing_appellations.add(app.appellation)
+
+            # Update main characters in arcs
+            for arc in char2.main_narrative_arcs:
+                if char1 not in arc.main_characters:
+                    arc.main_characters.append(char1)
+                arc.main_characters.remove(char2)
+
+            # Update interfering characters in progressions
+            for progression in char2.interfering_progressions:
+                if char1 not in progression.interfering_characters:
+                    progression.interfering_characters.append(char1)
+                progression.interfering_characters.remove(char2)
+
+            # Delete the second character
+            self.character_repository.delete(char2)
+            return True
+
+        except Exception as e:
+            logger.error(f"Error merging characters {character1_id} and {character2_id}: {e}")
+            raise

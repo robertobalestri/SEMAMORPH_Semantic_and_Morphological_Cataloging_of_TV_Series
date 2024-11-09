@@ -147,9 +147,18 @@ ARC_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
 **Instructions:**
 1. If possible, match arcs to existing season arcs and update titles accordingly.
 2. Following guidelines, focus on verifying titles, descriptions and progression based on the episode plot.
+3. Ensure all character lists and progression details are maintained.
+4. Keep the original fields if they are valid, only modify if necessary.
 
-**Return the verified arcs as a JSON array:**
-{output_json_format}
+**Return the verified arcs as a JSON array with each arc containing:**
+{
+    "title": "Verified arc title",
+    "arc_type": "Soap Arc/Genre-Specific Arc/Anthology Arc",
+    "description": "Verified season-wide description",
+    "main_characters": "Character1; Character2; ...",
+    "interfering_episode_characters": "Character1; Character2; ...",
+    "single_episode_progression_string": "Verified progression in this episode"
+}
 """
 )
 

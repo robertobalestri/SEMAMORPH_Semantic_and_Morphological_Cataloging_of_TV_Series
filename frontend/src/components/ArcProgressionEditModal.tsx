@@ -23,6 +23,7 @@ import {
   HStack,
   Checkbox,
 } from '@chakra-ui/react';
+import { DeleteIcon } from '@chakra-ui/icons';
 import { useState, useEffect, useRef } from 'react';
 
 interface ArcProgressionEditModalProps {
@@ -40,6 +41,8 @@ interface ArcProgressionEditModalProps {
   onEpisodeChange?: (episode: string) => void;
   availableSeasons?: string[];
   availableEpisodes?: string[];
+  onDelete?: () => void;
+  showDelete?: boolean;
 }
 
 const ArcProgressionEditModal: React.FC<ArcProgressionEditModalProps> = ({
@@ -57,6 +60,8 @@ const ArcProgressionEditModal: React.FC<ArcProgressionEditModalProps> = ({
   onEpisodeChange,
   availableSeasons = [],
   availableEpisodes = [],
+  onDelete,
+  showDelete = false,
 }) => {
   const [editContent, setEditContent] = useState(content);
   const [selectedCharacters, setSelectedCharacters] = useState<string[]>(interferingCharacters);
@@ -217,12 +222,24 @@ const ArcProgressionEditModal: React.FC<ArcProgressionEditModalProps> = ({
         </ModalBody>
 
         <ModalFooter>
-          <Button variant="ghost" mr={3} onClick={handleClose}>
-            Cancel
-          </Button>
-          <Button colorScheme="blue" onClick={handleSave}>
-            Save
-          </Button>
+          <HStack spacing={4}>
+            {showDelete && onDelete && (
+              <Button
+                leftIcon={<DeleteIcon />}
+                colorScheme="red"
+                variant="ghost"
+                onClick={onDelete}
+              >
+                Delete Progression
+              </Button>
+            )}
+            <Button variant="ghost" onClick={handleClose}>
+              Cancel
+            </Button>
+            <Button colorScheme="blue" onClick={handleSave}>
+              Save
+            </Button>
+          </HStack>
         </ModalFooter>
       </ModalContent>
     </Modal>

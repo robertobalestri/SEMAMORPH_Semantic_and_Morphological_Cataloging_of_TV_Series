@@ -152,6 +152,13 @@ class ArcProgressionRepository(BaseRepository):
         """Get a progression by its ID."""
         return self.session.get(ArcProgression, progression_id)
 
+    def delete(self, progression_id: str):
+        """Delete a progression."""
+        progression = self.session.get(ArcProgression, progression_id)
+        if progression:
+            self.session.delete(progression)
+            logger.info(f"Deleted progression {progression_id}")
+
 class CharacterRepository(BaseRepository):
     """Repository for Character operations."""
 
@@ -202,3 +209,32 @@ class CharacterRepository(BaseRepository):
         """Update an existing character in the database."""
         self.session.add(character)  # Add or update the character
         self.session.flush()
+
+    def get_by_series(self, series: str) -> List[Character]:
+        """Get all characters for a series."""
+        query = select(Character).where(Character.series == series).options(
+            selectinload(Character.appellations)
+        )
+        return self.session.exec(query).all()
+
+    def delete(self, character: Character):
+        """Delete a character from the database."""
+        try:
+            # Delete all appellations first
+            for appellation in character.appellations:
+                self.session.delete(appellation)
+            
+            # Remove character from all arcs and progressions
+            for arc in character.main_narrative_arcs:
+                arc.main_characters.remove(character)
+            
+            for progression in character.interfering_progressions:
+                progression.interfering_characters.remove(character)
+            
+            # Finally delete the character
+            self.session.delete(character)
+            self.session.flush()
+            logger.info(f"Successfully deleted character {character.entity_name}")
+        except Exception as e:
+            logger.error(f"Error deleting character {character.entity_name}: {e}")
+            raise

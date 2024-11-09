@@ -132,8 +132,7 @@ class VectorStoreService:
         self,
         query: str,
         series: str,
-        n_results: int = 10,
-        include_embeddings: bool = False
+        n_results: int = 10
     ) -> List[Dict]:
         """Find similar documents (both arcs and progressions) to a query."""
         try:

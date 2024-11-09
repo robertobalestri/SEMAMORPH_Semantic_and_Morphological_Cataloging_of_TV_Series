@@ -120,6 +120,39 @@ class ArcMergeRequest(BaseModel):
     main_characters: List[str]
     progression_mappings: List[ProgressionMapping]
 
+class InitialProgressionData(BaseModel):
+    content: str
+    season: str
+    episode: str
+    interfering_characters: List[str]
+
+class ArcCreateRequest(BaseModel):
+    title: str
+    description: str
+    arc_type: str
+    main_characters: List[str]
+    series: str
+    initial_progression: Optional[InitialProgressionData] = None
+
+class CharacterResponse(BaseModel):
+    entity_name: str
+    best_appellation: str
+    series: str
+    appellations: List[str]
+
+    class Config:
+        from_attributes = True
+
+class CharacterCreateRequest(BaseModel):
+    entity_name: str
+    best_appellation: str
+    series: str
+    appellations: List[str]
+
+class CharacterMergeRequest(BaseModel):
+    character1_id: str
+    character2_id: str
+
 def normalize_season_episode(season: str, episode: str) -> tuple[str, str]:
     """Normalize season and episode format to S01, E01."""
     # Remove any S/SS or E/EE prefix and leading zeros
@@ -128,6 +161,12 @@ def normalize_season_episode(season: str, episode: str) -> tuple[str, str]:
     
     # Format with leading zeros
     return f"S{season_num:02d}", f"E{episode_num:02d}"
+
+def pad_number(num_str: str) -> str:
+    """Pad a number string to at least 2 digits."""
+    if len(num_str) == 1:
+        return f"0{num_str}"
+    return num_str
 
 @app.get("/api/series", response_model=List[str])
 async def get_series():
@@ -313,12 +352,16 @@ async def update_progression(progression_id: str, update_data: ProgressionUpdate
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/api/progressions", response_model=ArcProgressionResponse)
-async def create_progression(progression_data: ProgressionCreateRequest):
-    """Create a new progression for an arc."""
+async def create_progression(progression: ProgressionCreateRequest):
+    """Create a new progression."""
     try:
         with db_manager.session_scope() as session:
-            arc_repository = NarrativeArcRepository(session)
+            # Format season and episode numbers
+            season = f"S{pad_number(progression.season.replace('S', ''))}"
+            episode = f"E{pad_number(progression.episode.replace('E', ''))}"
+
             progression_repository = ArcProgressionRepository(session)
+            arc_repository = NarrativeArcRepository(session)
             character_service = CharacterService(CharacterRepository(session))
             vector_store_service = VectorStoreService()
             
@@ -332,12 +375,12 @@ async def create_progression(progression_data: ProgressionCreateRequest):
             )
             
             new_progression = narrative_arc_service.add_progression(
-                arc_id=progression_data.arc_id,
-                content=progression_data.content,
-                series=progression_data.series,
-                season=progression_data.season,
-                episode=progression_data.episode,
-                interfering_characters=progression_data.interfering_characters
+                arc_id=progression.arc_id,
+                content=progression.content,
+                series=progression.series,
+                season=season,
+                episode=episode,
+                interfering_characters=progression.interfering_characters
             )
             if not new_progression:
                 raise HTTPException(status_code=404, detail="Arc not found")
@@ -416,4 +459,192 @@ async def merge_arcs(merge_data: ArcMergeRequest):
             
     except Exception as e:
         logger.error(f"Error merging arcs: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.delete("/api/progressions/{progression_id}")
+async def delete_progression(progression_id: str):
+    """Delete a progression."""
+    try:
+        with db_manager.session_scope() as session:
+            arc_repository = NarrativeArcRepository(session)
+            progression_repository = ArcProgressionRepository(session)
+            character_service = CharacterService(CharacterRepository(session))
+            vector_store_service = VectorStoreService()
+            
+            narrative_arc_service = NarrativeArcService(
+                arc_repository=arc_repository,
+                progression_repository=progression_repository,
+                character_service=character_service,
+                llm_service=None,
+                vector_store_service=vector_store_service,
+                session=session
+            )
+            
+            # Get the progression to find its arc
+            progression = progression_repository.get_by_id(progression_id)
+            if not progression:
+                raise HTTPException(status_code=404, detail="Progression not found")
+            
+            # Delete the progression
+            progression_repository.delete(progression_id)
+            
+            # Update the vector store for the arc
+            narrative_arc_service.update_embeddings(progression.narrative_arc)
+            
+            return {"message": "Progression deleted successfully"}
+            
+    except Exception as e:
+        logger.error(f"Error deleting progression: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/api/arcs", response_model=NarrativeArcResponse)
+async def create_arc(arc_data: ArcCreateRequest):
+    """Create a new narrative arc."""
+    try:
+        with db_manager.session_scope() as session:
+            arc_repository = NarrativeArcRepository(session)
+            progression_repository = ArcProgressionRepository(session)
+            character_service = CharacterService(CharacterRepository(session))
+            vector_store_service = VectorStoreService()
+            
+            narrative_arc_service = NarrativeArcService(
+                arc_repository=arc_repository,
+                progression_repository=progression_repository,
+                character_service=character_service,
+                llm_service=None,
+                vector_store_service=vector_store_service,
+                session=session
+            )
+            
+            # First create the arc
+            new_arc = narrative_arc_service.add_arc(
+                arc_data=arc_data.dict(exclude={'initial_progression'}),
+                series=arc_data.series,
+                season="",
+                episode=""
+            )
+            
+            # Then create the initial progression if provided
+            if arc_data.initial_progression:
+                season = f"S{pad_number(arc_data.initial_progression.season.replace('S', ''))}"
+                episode = f"E{pad_number(arc_data.initial_progression.episode.replace('E', ''))}"
+                
+                narrative_arc_service.add_progression(
+                    arc_id=new_arc.id,
+                    content=arc_data.initial_progression.content,
+                    series=arc_data.series,
+                    season=season,
+                    episode=episode,
+                    interfering_characters=arc_data.initial_progression.interfering_characters
+                )
+            
+            return NarrativeArcResponse.from_arc(new_arc)
+            
+    except Exception as e:
+        logger.error(f"Error creating arc: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/characters/{series}", response_model=List[CharacterResponse])
+async def get_characters(series: str):
+    """Get all characters for a series."""
+    try:
+        with db_manager.session_scope() as session:
+            character_repository = CharacterRepository(session)
+            characters = character_repository.get_by_series(series)
+            return [
+                CharacterResponse(
+                    entity_name=char.entity_name,
+                    best_appellation=char.best_appellation,
+                    series=char.series,
+                    appellations=[app.appellation for app in char.appellations]
+                )
+                for char in characters
+            ]
+    except Exception as e:
+        logger.error(f"Error getting characters: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/api/characters/{series}", response_model=CharacterResponse)
+async def create_character(series: str, character_data: CharacterCreateRequest):
+    """Create a new character."""
+    try:
+        with db_manager.session_scope() as session:
+            character_service = CharacterService(CharacterRepository(session))
+            character = character_service.add_or_update_character(
+                EntityLink(
+                    entity_name=character_data.entity_name,
+                    best_appellation=character_data.best_appellation,
+                    appellations=character_data.appellations
+                ),
+                series=series
+            )
+            if not character:
+                raise HTTPException(status_code=400, detail="Failed to create character")
+            return CharacterResponse(
+                entity_name=character.entity_name,
+                best_appellation=character.best_appellation,
+                series=character.series,
+                appellations=[app.appellation for app in character.appellations]
+            )
+    except Exception as e:
+        logger.error(f"Error creating character: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.patch("/api/characters/{series}", response_model=CharacterResponse)
+async def update_character(series: str, character_data: CharacterCreateRequest):
+    """Update an existing character."""
+    try:
+        with db_manager.session_scope() as session:
+            character_service = CharacterService(CharacterRepository(session))
+            character = character_service.add_or_update_character(
+                EntityLink(
+                    entity_name=character_data.entity_name,
+                    best_appellation=character_data.best_appellation,
+                    appellations=character_data.appellations
+                ),
+                series=series
+            )
+            if not character:
+                raise HTTPException(status_code=404, detail="Character not found")
+            return CharacterResponse(
+                entity_name=character.entity_name,
+                best_appellation=character.best_appellation,
+                series=character.series,
+                appellations=[app.appellation for app in character.appellations]
+            )
+    except Exception as e:
+        logger.error(f"Error updating character: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.delete("/api/characters/{series}/{entity_name}")
+async def delete_character(series: str, entity_name: str):
+    """Delete a character."""
+    try:
+        with db_manager.session_scope() as session:
+            character_repository = CharacterRepository(session)
+            character = character_repository.get_by_entity_name(entity_name, series)
+            if not character:
+                raise HTTPException(status_code=404, detail="Character not found")
+            character_repository.delete(character)
+            return {"message": "Character deleted successfully"}
+    except Exception as e:
+        logger.error(f"Error deleting character: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/api/characters/{series}/merge")
+async def merge_characters(series: str, merge_data: CharacterMergeRequest):
+    """Merge two characters."""
+    try:
+        with db_manager.session_scope() as session:
+            character_service = CharacterService(CharacterRepository(session))
+            success = character_service.merge_characters(
+                merge_data.character1_id,
+                merge_data.character2_id,
+                series
+            )
+            if not success:
+                raise HTTPException(status_code=400, detail="Failed to merge characters")
+            return {"message": "Characters merged successfully"}
+    except Exception as e:
+        logger.error(f"Error merging characters: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))

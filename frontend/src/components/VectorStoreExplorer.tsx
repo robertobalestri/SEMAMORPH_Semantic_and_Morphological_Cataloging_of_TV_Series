@@ -16,7 +16,7 @@ import {
   Divider,
 } from '@chakra-ui/react';
 import { SearchIcon } from '@chakra-ui/icons';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 
 interface VectorStoreEntry {
   id: string;
@@ -35,6 +35,7 @@ interface VectorStoreEntry {
     ordinal_position?: number;
     main_arc_id?: string;
     parent_arc_title?: string;
+    id?: string;
   };
   distance?: number;
 }
@@ -90,6 +91,43 @@ const VectorStoreExplorer: React.FC<VectorStoreExplorerProps> = ({ series }) => 
     fetchEntries();
   };
 
+  const sortedEntries = useMemo(() => {
+    // First, group entries by arc
+    const groupedEntries = entries.reduce((acc, entry) => {
+      const arcId = entry.metadata.doc_type === 'main' ? 
+        entry.metadata.id : 
+        entry.metadata.main_arc_id;
+      
+      if (!arcId) return acc;
+      
+      if (!acc[arcId]) {
+        acc[arcId] = [];
+      }
+      acc[arcId].push(entry);
+      return acc;
+    }, {} as Record<string, VectorStoreEntry[]>);
+
+    // Sort entries within each group and flatten
+    return Object.values(groupedEntries).flatMap(group => {
+      // Sort entries within the group
+      return group.sort((a, b) => {
+        // Main doc always comes first in its group
+        if (a.metadata.doc_type !== b.metadata.doc_type) {
+          return a.metadata.doc_type === 'main' ? -1 : 1;
+        }
+
+        // If both are progressions, sort by ordinal position
+        if (a.metadata.doc_type === 'progression' && b.metadata.doc_type === 'progression') {
+          const posA = a.metadata.ordinal_position || 0;
+          const posB = b.metadata.ordinal_position || 0;
+          return posA - posB;
+        }
+
+        return 0;
+      });
+    });
+  }, [entries]);
+
   return (
     <Box p={4}>
       <VStack spacing={4} align="stretch">
@@ -118,7 +156,7 @@ const VectorStoreExplorer: React.FC<VectorStoreExplorerProps> = ({ series }) => 
           </Box>
         ) : (
           <Accordion allowMultiple>
-            {entries.map((entry) => (
+            {sortedEntries.map((entry) => (
               <AccordionItem key={entry.id}>
                 <h2>
                   <AccordionButton>

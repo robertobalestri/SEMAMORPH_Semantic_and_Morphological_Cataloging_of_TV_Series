@@ -470,23 +470,34 @@ def verify_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionS
     try:
         verified_arcs_data = clean_llm_json_response(response.content)
         verified_arcs = []
-        for arc in verified_arcs_data:
-            new_arc = IntermediateNarrativeArc(
-                title=arc['title'],
-                arc_type=arc['arc_type'],
-                description=arc['description'],
-                main_characters=arc['main_characters'],
-                interfering_episode_characters=arc['interfering_episode_characters'],
-                single_episode_progression_string=arc['single_episode_progression_string']
-            )
-            verified_arcs.append(new_arc)
+        
+        for arc_data in verified_arcs_data:
+            try:
+                # Ensure all required fields are present with defaults if missing
+                new_arc = IntermediateNarrativeArc(
+                    title=arc_data['title'],
+                    arc_type=arc_data['arc_type'],
+                    description=arc_data['description'],
+                    main_characters=arc_data.get('main_characters', ''),
+                    interfering_episode_characters=arc_data.get('interfering_episode_characters', ''),
+                    single_episode_progression_string=arc_data.get('single_episode_progression_string', '')
+                )
+                verified_arcs.append(new_arc)
+            except Exception as e:
+                logger.error(f"Error processing verified arc: {e}")
+                logger.error(f"Problematic arc data: {arc_data}")
+                continue
 
-        logger.info(f"Verified {len(state['episode_arcs'])} arcs.")
-
-        state['episode_arcs'] = verified_arcs
-
+        if verified_arcs:
+            state['episode_arcs'] = verified_arcs
+            logger.info(f"Successfully verified {len(verified_arcs)} arcs.")
+        else:
+            logger.warning("No arcs were successfully verified. Keeping original arcs.")
+            
     except Exception as e:
-        logger.error(f"Error verifying arcs: {e}")
+        logger.error(f"Error during arc verification: {e}")
+        # Keep original arcs if verification completely fails
+        logger.warning("Verification failed. Keeping original arcs.")
 
     return state
 
