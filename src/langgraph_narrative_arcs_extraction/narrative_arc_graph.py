@@ -5,6 +5,8 @@ from typing import Dict, List, TypedDict
 from langgraph.graph import StateGraph, END
 import os
 import json
+from datetime import datetime
+from pathlib import Path
 
 from regex import D
 
@@ -106,7 +108,46 @@ def initialize_state(state: NarrativeArcsExtractionState) -> NarrativeArcsExtrac
     logger.info(f"Loaded {len(state['existing_season_entities'])} existing entities from season file.")
 
     return state
-'''
+
+def log_agent_output(agent_name: str, output_data: dict, log_dir: str = "agent_logs") -> None:
+    """Log agent output to a file with timestamp."""
+    # Create logs directory if it doesn't exist
+    log_dir_path = Path(log_dir)
+    log_dir_path.mkdir(parents=True, exist_ok=True)
+    
+    # Create a timestamp for the current run if it doesn't exist
+    timestamp_file = log_dir_path / "current_run_timestamp.txt"
+    if not timestamp_file.exists():
+        current_timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        timestamp_file.write_text(current_timestamp)
+    else:
+        current_timestamp = timestamp_file.read_text().strip()
+    
+    # Create log file path
+    log_file = log_dir_path / f"run_{current_timestamp}.jsonl"
+    
+    # Prepare log entry with proper formatting
+    log_entry = {
+        "timestamp": datetime.now().isoformat(),
+        "agent": agent_name,
+        "output": output_data
+    }
+    
+    # Format the JSON with proper indentation and ensure_ascii=False for proper character handling
+    formatted_json = json.dumps(
+        log_entry,
+        ensure_ascii=False,
+        indent=2,
+        sort_keys=True,
+        default=str  # Handles any non-serializable objects
+    )
+    
+    # Add a newline after each formatted JSON entry
+    with open(log_file, 'a', encoding='utf-8') as f:
+        f.write(formatted_json + "\n\n")  # Add extra newline for better readability
+    
+    logger.info(f"Logged output from {agent_name}")
+
 def identify_present_season_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
     """Identify which existing season arcs are clearly present in the current episode."""
     logger.info("Identifying present season arcs in the episode.")
@@ -178,69 +219,14 @@ def identify_present_season_arcs(state: NarrativeArcsExtractionState) -> Narrati
 
     state['present_season_arcs'] = present_arcs
     logger.info(f"Identified {len(present_arcs)} season arcs present in the episode.")
-    return state'''
 
-
-#DA TESTARE SE VANNO LE CHIAMATE IN PARALLELO
-from src.langgraph_narrative_arcs_extraction.async_llm_processors import PresentSeasonArcsProcessor
-
-def identify_present_season_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
-    """Identify which existing season arcs are clearly present in the current episode."""
-    logger.info("Identifying present season arcs in the episode.")
-
-    #logger.info("Identifying present season arcs in the episode.")
-
-    # Initialize the database session manager and repositories
-    db_manager = DatabaseSessionManager()
-    serialized_season_arcs = []
-
-    try:
-        with db_manager.session_scope() as session:
-            # Initialize repositories
-            arc_repository = NarrativeArcRepository(session)
-
-            # Get all narrative arcs for the series
-            season_arcs = arc_repository.get_all(series=state['series'])
-
-            # Filter arcs that have progressions in the current season
-            filtered_arcs = []
-            for arc in season_arcs:
-                progressions_in_season = [prog for prog in arc.progressions if prog.season == state['season']]
-                if progressions_in_season:
-                    arc.progressions = progressions_in_season
-                    filtered_arcs.append(arc)
-
-            state['season_arcs'] = [arc.dict() for arc in filtered_arcs]
-            logger.info(f"Retrieved {len(filtered_arcs)} arcs for {state['series']} season {state['season']}.")
-
-    except Exception as e:
-        logger.error(f"Error managing season arcs: {e}")
-        state['season_arcs'] = []
-        return state
-
-    if not state['season_arcs']:
-        logger.warning("No existing season arcs found. Skipping present season arcs identification.")
-        state['present_season_arcs'] = []
-        return state
-
-    async def run_parallel_processing():
-        processor = PresentSeasonArcsProcessor(
-            max_concurrent=5,
-            timeout=30.0,
-            retry_attempts=3
-        )
-        
-        for arc in state['season_arcs']:
-            processor.add_task(arc, state['summarized_plot'], llm)
-        
-        return await processor.process_all()
-
-    present_arcs = asyncio.run(run_parallel_processing())
-    state['present_season_arcs'] = present_arcs
-    logger.info(f"Identified {len(present_arcs)} season arcs present in the episode.")
+    # Add logging before returning
+    log_agent_output("identify_present_season_arcs", {
+        "present_season_arcs": state['present_season_arcs'],
+        "season_arcs": state['season_arcs']
+    })
+    
     return state
-
-
 
 def extract_anthology_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
     """Extract self-contained anthology arcs from the episode plot."""
@@ -268,6 +254,11 @@ def extract_anthology_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcs
         logger.error(f"Error extracting anthology arcs: {e}")
         state['anthology_arcs'] = []
 
+    # Add logging before returning
+    log_agent_output("extract_anthology_arcs", {
+        "anthology_arcs": [arc.model_dump() for arc in state['anthology_arcs']]
+    })
+    
     return state
 
 def extract_soap_and_genre_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
@@ -305,6 +296,12 @@ def extract_soap_and_genre_arcs(state: NarrativeArcsExtractionState) -> Narrativ
         state['soap_arcs'] = []
         state['genre_arcs'] = []
 
+    # Add logging before returning
+    log_agent_output("extract_soap_and_genre_arcs", {
+        "soap_arcs": [arc.model_dump() for arc in state['soap_arcs']],
+        "genre_arcs": [arc.model_dump() for arc in state['genre_arcs']]
+    })
+    
     return state
 
 def verify_arc_progression(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
@@ -330,8 +327,8 @@ def verify_arc_progression(state: NarrativeArcsExtractionState) -> NarrativeArcs
                 title=verified_arc_data['title'],
                 arc_type=verified_arc_data['arc_type'],
                 description=verified_arc_data['description'],
-                main_characters=verified_arc_data['main_characters'],
-                interfering_episode_characters=verified_arc_data['interfering_episode_characters'],
+                main_characters=verified_arc_data['main_characters'] if 'main_characters' in verified_arc_data else '',
+                interfering_episode_characters=verified_arc_data['interfering_episode_characters'] if 'interfering_episode_characters' in verified_arc_data else '',
                 single_episode_progression_string=verified_arc_data['single_episode_progression_string']
             )
             verified_arcs.append(verified_arc)
@@ -341,6 +338,12 @@ def verify_arc_progression(state: NarrativeArcsExtractionState) -> NarrativeArcs
 
     state['episode_arcs'] = verified_arcs
     logger.info(f"Verified progressions for {len(verified_arcs)} arcs.")
+
+    # Add logging before returning
+    log_agent_output("verify_arc_progression", {
+        "verified_arcs": [arc.model_dump() for arc in state['episode_arcs']]
+    })
+    
     return state
 
 def verify_character_roles(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
@@ -375,6 +378,12 @@ def verify_character_roles(state: NarrativeArcsExtractionState) -> NarrativeArcs
 
     state['episode_arcs'] = verified_arcs
     logger.info(f"Verified character roles for {len(verified_arcs)} arcs.")
+
+    # Add logging before returning
+    log_agent_output("verify_character_roles", {
+        "verified_arcs": [arc.model_dump() for arc in state['episode_arcs']]
+    })
+    
     return state
 
 def deduplicate_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
@@ -408,6 +417,11 @@ def deduplicate_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtrac
         logger.error(f"Error deduplicating arcs: {e}")
         state['episode_arcs'] = all_arcs  # Keep original arcs if deduplication fails
 
+    # Add logging before returning
+    log_agent_output("deduplicate_arcs", {
+        "deduplicated_arcs": [arc.model_dump() for arc in state['episode_arcs']]
+    })
+    
     return state
 
 def enhance_arc_details(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
@@ -452,6 +466,12 @@ def enhance_arc_details(state: NarrativeArcsExtractionState) -> NarrativeArcsExt
 
     state['episode_arcs'] = enhanced_arcs
     logger.info(f"Enhanced {len(enhanced_arcs)} arcs with additional details.")
+
+    # Add logging before returning
+    log_agent_output("enhance_arc_details", {
+        "enhanced_arcs": [arc.model_dump() for arc in state['episode_arcs']]
+    })
+    
     return state
 
 def verify_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
@@ -462,7 +482,7 @@ def verify_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionS
         episode_plot=state['episode_plot'],
         season_plot=state['season_plot'],
         arcs_to_verify=json.dumps([arc.model_dump() for arc in state['episode_arcs']], indent=2),
-        present_season_arcs_summaries=json.dumps(state['present_season_arcs'], indent=2),
+        present_season_arcs_summaries=json.dumps(state['present_season_arcs'], indent=2), 
         guidelines=NARRATIVE_ARC_GUIDELINES,
         output_json_format=DETAILED_OUTPUT_JSON_FORMAT
     ))
@@ -499,6 +519,11 @@ def verify_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionS
         # Keep original arcs if verification completely fails
         logger.warning("Verification failed. Keeping original arcs.")
 
+    # Add logging before returning
+    log_agent_output("verify_arcs", {
+        "final_verified_arcs": [arc.model_dump() for arc in state['episode_arcs']]
+    })
+    
     return state
 
 def optimize_arcs_with_season_context(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionState:
@@ -540,6 +565,11 @@ def optimize_arcs_with_season_context(state: NarrativeArcsExtractionState) -> Na
         # If optimization fails, use original arcs along with anthology arcs
         state['optimized_arcs'] = state['anthology_arcs'] + arcs_to_optimize
         
+    # Add logging before returning
+    log_agent_output("optimize_arcs", {
+        "optimized_arcs": [arc.model_dump() for arc in state['optimized_arcs']]
+    })
+    
     return state
 
 def create_narrative_arc_graph():
@@ -576,6 +606,13 @@ def create_narrative_arc_graph():
 def extract_narrative_arcs(file_paths: Dict[str, str], series: str, season: str, episode: str) -> None:
     """Extract narrative arcs from the provided file paths and save the results to a JSON file."""
     logger.info("Starting extract_narrative_arcs function")
+    
+    # Create a unique timestamp for this run
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_dir = Path("agent_logs")
+    log_dir.mkdir(parents=True, exist_ok=True)
+    (log_dir / "current_run_timestamp.txt").write_text(timestamp)
+    
     graph = create_narrative_arc_graph()
 
     initial_state = NarrativeArcsExtractionState(

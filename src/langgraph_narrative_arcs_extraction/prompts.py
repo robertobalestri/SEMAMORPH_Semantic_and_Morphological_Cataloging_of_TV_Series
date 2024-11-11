@@ -25,16 +25,18 @@ NARRATIVE_ARC_GUIDELINES = dedent("""
     - **Long-Term Focus**: Do not describe the progression of the arc in the episode, but give an overview of the arc season-wide (unless it's an anthology arc).
     - **Overview**: Summarize what the arc is about (e.g., "Jane and Mark's romantic relationship").
     - **Avoid useless phrases**: E.g., "in this arc".
+                                  
+4. **Progression**: The progression should be specific to the arc in the episode, without speculations about what do the progressions mean for a character or other reasoning or research of meaning. Progressions should be precise key plot points separated by a dot.
 
-4. **Character Lists:**
-    - **Main Characters**: Protagonists driving the arc (typically two for relationship arcs).
+5. **Character Lists:**
+    - **Main Characters**: Protagonists driving the arc (typically two for relationship arcs).  An arc should have at least one main character.
     - **Interfering Characters**: Characters that influence the arc within the episode but are not central.
 
-5. **Arc Distinctness:**
+6. **Arc Distinctness:**
     - **Clarity**: Each arc should be distinct without overlapping with others.
     - **Main Type**: Even if an arc is a little mix of soap and genre-specific type, choose the most appropriate type.
 
-6. **Key Progression Points:**
+7. **Key Progression Points:**
     - **Major Events**: Identify turning points that advance the storyline or alter character dynamics during the specific episode.
 
 **Example Breakdown:**
@@ -151,14 +153,7 @@ ARC_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
 4. Keep the original fields if they are valid, only modify if necessary.
 
 **Return the verified arcs as a JSON array with each arc containing:**
-{
-    "title": "Verified arc title",
-    "arc_type": "Soap Arc/Genre-Specific Arc/Anthology Arc",
-    "description": "Verified season-wide description",
-    "main_characters": "Character1; Character2; ...",
-    "interfering_episode_characters": "Character1; Character2; ...",
-    "single_episode_progression_string": "Verified progression in this episode"
-}
+{output_json_format}
 """
 )
 
@@ -184,6 +179,7 @@ ARC_DEDUPLICATOR_PROMPT = ChatPromptTemplate.from_template(
 3. Do not merge arcs that involve different relationships, storylines or character development arcs for the same character.
 4. If merging, combine the descriptions to capture the full narrative.
 5. Choose the most appropriate arc type.
+6. Arcs should be distinct and not overlapping. Two differente storylines should be in different arcs.
 
 **Additional Instructions:**
 - Do not delete or merge anthology arcs, as they are self-contained and should remain distinct.
@@ -205,7 +201,20 @@ ARC_PROGRESSION_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
 
 **Guidelines:**
 1. **Description**: Provide an overview of the entire arc across episodes.
-2. **Progression**: Detail developments within this episode only, avoiding phrases like "in this episode" or "the episode shows".
+2. **Progression**: 
+   - Focus ONLY on key plot points specific to this arc in this episode
+   - Write brief, focused points separated by dots
+   - Include ONLY events directly related to this arc's development
+   - Avoid any analysis, speculation, or character motivations
+   - Exclude events from other arcs or general episode events
+   - Use simple present tense, active voice
+   - Omit phrases like "in this episode" or "we see that"
+
+**Example Good Progression:**
+"Jane discovers Mark's affair with his secretary. Mark moves out of the house. Their children choose to stay with Jane."
+
+**Example Bad Progression:**
+"In this episode, we see Jane struggling with her emotions when she finds out about Mark's affair, which leads to a confrontation where Mark decides to leave, showing how their relationship has deteriorated, and interestingly their children, who are also affected by this situation, decide to stay with their mother."
 
 **Return the verified arc as a JSON object:**
 {output_json_format}
@@ -223,11 +232,10 @@ CHARACTER_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
 {arc_to_verify}
 
 **Guidelines:**
-1. **Main Characters**: Drive the arc's development.
+1. **Main Characters**: Drive the arc's development. They are the absolute protagonists of the arc.
 2. **Interfering Characters**: Affect the arc during the specific episode but are not central.
-3. Ensure relationship arcs include both protagonists.
+3. Ensure relationship arcs include both protagonists as main characters.
 4. Avoid background characters with minimal impact.
-5. Check the arc title for main characters or groups involved.
 
 **Return the verified arc as a JSON object:**
 {output_json_format}
@@ -239,21 +247,26 @@ ANTHOLOGY_ARC_EXTRACTOR_PROMPT = ChatPromptTemplate.from_template(
     """You are an Anthology Arc Specialist. Extract standalone anthology arcs from the episode plot.
 
 **Only extract Anthology Arcs:**
-- Self-contained cases or challenges within the episode
+- Self-contained cases or challenges within the episode (for example episode murders in CSI, episode medical cases in Dr. House etc. etc.)
 - Case-of-the-week elements
-- Guest character storylines
 
 **Episode Plot:**
 {episode_plot}
 
 **Guidelines:**
 1. Focus on complete, self-contained stories within the episode.
-2. Use the format "[Genre] Case: [Specific Case Name]", like "Procedural Case: The Missing Heir", or "Medical Case: The Heart Attack of Bob Bale".
+2. Use the format "[Genre] Case: [Specific Case Name]".
 3. Provide clear descriptions of each case's significance.
+4. DO NOT create arcs that are not about a genre-specific case of the episode.
 
 You must be sure that the arc is self-contained and not a part of a larger arc in the season.
 So here is the season plot:
 {season_plot}
+
+**Example of titles:**
+- Medical Case: The Heart Attack of Bob Bale
+- Procedural Case: The Missing Heir
+- Murder Case: Mary Bale stabbed with a kitchen knife
 
 **Return only titles and descriptions as a JSON array:**
 {output_json_format}
@@ -275,10 +288,21 @@ ARC_ENHANCER_PROMPT = ChatPromptTemplate.from_template(
 
 **Enhancements Needed:**
 1. **Main Characters**: List protagonists driving the arc.
-2. **Interfering Episode Characters**: List characters affecting the arc in this episode.
-3. **Single Episode Progression**: Describe how the arc develops in this episode.
+2. **Interfering Episode Characters**: List characters affecting the arc in this specific episode.
+3. **Single Episode Progression**: 
+   - Write ONLY key plot points specific to this arc
+   - Use brief, focused statements separated by dots
+   - Include ONLY events that directly advance this arc
+   - Exclude background events or other arcs' developments
+   - Use simple present tense
+   - Focus on actions and concrete events
+   - Avoid analysis or speculation
 
-**Avoid temporal phrases. Describe actions and events directly.**
+**Example Good Progression:**
+"Detective Smith finds the murder weapon. The forensic team links it to the suspect. Smith arrests the suspect."
+
+**Example Bad Progression:**
+"Detective Smith continues his investigation and makes progress when he discovers the important murder weapon, which leads to a breakthrough in the case as the forensic team does their analysis, ultimately resulting in the arrest of the suspect who had been under surveillance."
 
 **Return the enhanced details as a JSON object:**
 {output_json_format}

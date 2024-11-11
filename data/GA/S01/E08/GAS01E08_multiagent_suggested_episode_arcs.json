@@ -1,98 +1,90 @@
 [
   {
-    "title": "Meredith And Derek's Professional And Personal Entanglement",
+    "title": "Meredith And Derek's Complex Relationship",
     "arc_type": "Soap Arc",
-    "description": "Meredith Grey and Derek Shepherd's relationship begins with a chance encounter and evolves into a complex dynamic as they work together at Seattle Grace Hospital. Their personal and professional lives become increasingly intertwined, leading to challenges and growth for both characters. The arc explores the impact of favoritism and personal relationships on their professional environment, testing their ability to balance personal feelings with professional responsibilities.",
+    "description": "Meredith Grey and Derek Shepherd navigate their intricate personal and professional relationship, which begins with a one-night stand and evolves amidst hospital challenges and personal revelations, including the arrival of Derek's estranged wife, Addison.",
     "main_characters": "Meredith Grey; Derek Shepherd",
-    "interfering_episode_characters": "George O'Malley; Cristina Yang",
-    "single_episode_progression_string": "Meredith questions Derek about his personal life, feeling she doesn't know him well enough despite their intimate relationship. Derek deflects her questions, leading Meredith to withhold intimacy until she learns more about him. This tension highlights the struggle to balance their personal and professional lives."
+    "interfering_episode_characters": "George O'Malley; Izzie Stevens",
+    "single_episode_progression_string": "Meredith questions why Derek always stays at her place. Meredith confronts Derek about not knowing much about his personal life. Meredith decides to withhold sex until she learns more about Derek. Derek takes Meredith to his trailer and shares more about himself."
   },
   {
-    "title": "George's Struggle With Jealousy And Integrity",
+    "title": "Cristina Yang's Ambition And Personal Struggles",
     "arc_type": "Soap Arc",
-    "description": "George O'Malley navigates the challenges of being a surgical intern, grappling with self-doubt and the pressure to prove himself. He faces the complexities of setting and communicating personal boundaries with his friends and colleagues, while also dealing with unreciprocated feelings for Meredith Grey. His concerns about professional competence highlight his commitment to integrity, despite conflicts with superiors. These experiences lead to awkward interactions and affect his self-esteem, underscoring the challenges of maintaining professionalism while managing personal emotions in a high-stress environment. Throughout the season, George learns to overcome his insecurities, assert himself in uncomfortable situations, and grows into a more confident and capable surgeon.",
-    "main_characters": "George O'Malley",
-    "interfering_episode_characters": "Izzie Stevens; Meredith Grey; Derek Shepherd; Cristina Yang",
-    "single_episode_progression_string": "George supports Izzie with her cupcake dilemma, showcasing his helpful nature. He is distracted by Derek and Meredith's relationship, which underscores his unreciprocated feelings for Meredith. Successfully intubating a patient boosts his confidence. He agrees to cover for Cristina on the 16th, demonstrating his supportive nature despite his own struggles."
-  },
-  {
-    "title": "Intern Dynamics: Friendship, Rivalry, And Growth",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Throughout their internship at Seattle Grace Hospital, surgical interns Meredith Grey, Cristina Yang, George O'Malley, and Isobel 'Izzie' Stevens navigate the complexities of forming friendships and rivalries. They face the pressures of their demanding training, learning to support each other while also competing for opportunities and recognition. Through personal challenges and patient interactions, they experience significant growth, both individually and as a group.",
-    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Isobel 'Izzie' Stevens",
-    "interfering_episode_characters": "Derek Shepherd; Preston Burke; Alex Karev; Miranda Bailey",
-    "single_episode_progression_string": "The episode showcases the dynamics between the interns as they navigate their personal and professional lives. Izzie expresses frustration over her cupcakes, and George offers support, suggesting she call her mother. Cristina asks George to cover for her, indicating a reliance on each other despite distractions. Meredith and Cristina discuss a patient, showing their friendship and professional collaboration. Izzie and Bailey work together on a surgery, and Izzie learns from Mr. Duff, highlighting her growth."
-  },
-  {
-    "title": "Cristina Yang's Ambition And Personal Dilemmas",
-    "arc_type": "Soap Arc",
-    "description": "Cristina Yang is driven by her ambition to become a top surgeon, often leading to intense rivalries with her peers. Her competitive nature pushes her to seek out surgical opportunities and prove her capabilities, sometimes at the expense of her relationships. Her potential pregnancy introduces personal challenges, testing her ability to balance her professional aspirations with personal issues. Throughout the season, Cristina navigates the challenges of balancing her professional aspirations with personal connections, learning to integrate empathy into her practice.",
-    "main_characters": "Cristina Yang",
-    "interfering_episode_characters": "George O'Malley; Zoey Glass; Mr. Duff",
-    "single_episode_progression_string": "Cristina schedules a termination for her pregnancy, indicating her struggle to balance her career ambitions with personal issues. She clashes with a psych resident over a patient's diagnosis, showcasing her competitive nature. Cristina also faces a moral dilemma with a pregnant cancer patient, highlighting her struggle to integrate empathy into her practice."
-  },
-  {
-    "title": "Izzie Stevens' Fight For Respect",
-    "arc_type": "Soap Arc",
-    "description": "Izzie Stevens, a former model turned surgical intern, strives to gain respect from her colleagues at Seattle Grace Hospital. Battling stereotypes and ridicule due to her modeling past, she is determined to prove her competence and dedication as a doctor, aiming to be recognized for her skills and professionalism throughout her journey.",
-    "main_characters": "Izzie Stevens",
-    "interfering_episode_characters": "George O'Malley; Mr. Duff; Miranda Bailey",
-    "single_episode_progression_string": "Izzie struggles with her baking skills, feeling inadequate and missing a key ingredient in her cupcakes. She becomes emotionally involved with Mr. Duff, a psychic patient, who surprises her by knowing personal details about her. Despite skepticism from others, she advocates for his surgery, demonstrating her determination to be taken seriously as a doctor. By the end, she gains a small victory when Mr. Duff confirms his visions post-surgery, validating her belief in him."
-  },
-  {
-    "title": "Bailey's Mentorship Of New Interns",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Miranda Bailey, a seasoned and tough resident, mentors a new group of surgical interns at Seattle Grace Hospital. Known for her strict demeanor and high expectations, she guides them through the challenges of their early medical careers, balancing discipline with the responsibility of shaping competent surgeons. Throughout the season, Bailey navigates the complexities of hospital politics, personal relationships, and the interns' growth, ensuring they develop into skilled and ethical doctors.",
-    "main_characters": "Miranda Bailey; Izzie Stevens; Cristina Yang",
-    "interfering_episode_characters": "Mr. Duff; Zoey Glass",
-    "single_episode_progression_string": "Bailey supervises the interns as they tackle various medical cases, including Izzie's emotional involvement with a psychic patient and Cristina's management of a pregnant cancer patient. She challenges Cristina to perform a dilation and curettage and negotiates with her to take over Mr. Duff's case. Bailey also addresses Izzie's emotional attachment to patients, emphasizing the importance of maintaining professional detachment."
-  },
-  {
-    "title": "Navigating Hierarchies At Seattle Grace",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Interns and residents at Seattle Grace Hospital navigate the intricate power dynamics and hierarchies within the surgical program. They face the pressures of proving themselves to their superiors while simultaneously forming and managing personal and professional relationships. The arc explores how personal histories and biases influence professional interactions and decisions, affecting both career progression and personal lives.",
-    "main_characters": "Cristina Yang; Alex Karev; George O'Malley; Izzie Stevens",
-    "interfering_episode_characters": "Preston Burke; Miranda Bailey; Mr. Duff",
-    "single_episode_progression_string": "The episode showcases several instances of navigating hierarchies and power dynamics at Seattle Grace. Cristina insists on a specific date for a procedure, showing her determination to manage her professional responsibilities and personal life. George struggles with intubating a patient, but Burke steps in, highlighting the pressure to prove oneself to superiors. Cristina asks George to cover for her, indicating the negotiation of responsibilities among peers. Additionally, Alex suggests a treatment option for Devo, which Burke agrees to, demonstrating the influence of residents on decision-making."
-  },
-  {
-    "title": "Cristina And Burke's Ambitious Romance",
-    "arc_type": "Soap Arc",
-    "description": "Cristina Yang and Preston Burke navigate a complex relationship that intertwines their personal ambitions with their professional lives. Their romance is characterized by a deep respect for each other's career goals, often influencing their interactions and decisions both inside and outside the hospital. As they balance their personal connection with their professional responsibilities, they face challenges that test their commitment and understanding of each other.",
+    "description": "Cristina Yang's relentless ambition in her surgical career often leads to emotional detachment from patients, as she struggles to balance her drive for success with the compassionate aspects of patient care. Her professional aspirations are further complicated by personal challenges, such as a potential pregnancy, highlighting her ongoing struggle to integrate success with empathy. Preston Burke plays a significant role in this dynamic, as Cristina navigates the complexities of her personal and professional life.",
     "main_characters": "Cristina Yang; Preston Burke",
-    "interfering_episode_characters": "Alex Karev; George O'Malley",
-    "single_episode_progression_string": "Cristina seeks Burke's help with her schedule, hinting at a personal matter she needs to address. Despite their professional distance, Burke approaches Cristina to admit his lack of knowledge about a medical procedure, showing vulnerability and trust. Cristina suggests a solution, indicating their mutual reliance and respect."
+    "interfering_episode_characters": "George O'Malley; Zoey Glass; Mr. Duff",
+    "single_episode_progression_string": "Cristina schedules a termination for the 16th. She asks George to cover for her on that day. Mr. Duff realizes Cristina is pregnant. Cristina is assigned to a pregnant breast cancer patient. Zoey Glass decides against abortion, impacting Cristina. Burke admits he doesn't know how to perform a bovine transplant, and Cristina suggests a solution."
   },
   {
-    "title": "Medical Case: Devo's Valve Replacement",
+    "title": "Izzie Stevens' Fight For Respect And Advocacy",
+    "arc_type": "Soap Arc",
+    "description": "Izzie Stevens battles stereotypes and seeks respect from her colleagues, proving her competence as a former model turned surgical intern. She advocates for her patients' well-being and forms bonds with fellow interns, demonstrating her dedication and skill in the medical field.",
+    "main_characters": "Izzie Stevens",
+    "interfering_episode_characters": "George O'Malley; Miranda Bailey; Mr. Duff",
+    "single_episode_progression_string": "Izzie complains about her cupcakes not tasting right. She refuses George's suggestion to call her mother. Izzie performs surgery with Bailey, discussing the psychic. She insists the psychic is a fraud. Izzie shows Mr. Duff's brain CT scan to Bailey, advocating for his surgery. Izzie denies being emotionally involved with patients. Izzie asks Mr. Duff to sign surgery papers. Mr. Duff calls her 'Cricket.' Izzie learns the secret ingredient for her cupcakes from Mr. Duff. She calls her mom."
+  },
+  {
+    "title": "George O'Malley's Journey To Self-Confidence",
+    "arc_type": "Genre-Specific Arc",
+    "description": "George O'Malley struggles to build his confidence as a surgical intern, facing personal and professional setbacks while striving to meet expectations from peers and mentors.",
+    "main_characters": "George O'Malley",
+    "interfering_episode_characters": "Izzie Stevens; Burke; Nurse Harper",
+    "single_episode_progression_string": "George reassures Izzie about her cupcakes. George accidentally places the ventilator in the esophagus. Burke successfully intubates the patient after George's mistake. George successfully intubates a patient with Nurse Harper's guidance. Burke observes George's successful intubation and praises him."
+  },
+  {
+    "title": "Alex Karev's Professional Growth And Challenges",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Alex Karev navigates the competitive environment of surgical training, driven by his competitive nature to prove himself and grow professionally. He faces challenges in maintaining professionalism, often encountering setbacks due to his behavior and interactions with colleagues and patients. Despite these challenges, Alex's journey is marked by significant professional growth and development.",
+    "main_characters": "Alex Karev",
+    "interfering_episode_characters": "Devo Friedman; Preston Burke",
+    "single_episode_progression_string": "Alex examines Devo and learns about her condition. Alex suggests an alternative transplant option to Devo's parents without consulting Burke. Burke removes Alex from his duties for not consulting him first. Burke later asks Alex to find a rabbi for a blessing for Devo, showing trust in his instincts."
+  },
+  {
+    "title": "Bailey's Leadership, Mentorship, And Empathy",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Miranda Bailey mentors the surgical interns with a balance of discipline and empathy, guiding them through their professional development and patient care challenges, shaping their growth as future surgeons.",
+    "main_characters": "Miranda Bailey",
+    "interfering_episode_characters": "Izzie Stevens; Cristina Yang; Mr. Duff",
+    "single_episode_progression_string": "Bailey performs surgery with Izzie and questions her emotional involvement with patients. Bailey assigns Cristina to a case involving a pregnant breast cancer patient. Bailey agrees to reassign Mr. Duff to another doctor if Cristina handles her paperwork. Bailey asks Cristina if she has performed a dilation and curettage."
+  },
+  {
+    "title": "Navigating Power And Hierarchical Dynamics At Seattle Grace",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The interns and residents at Seattle Grace Hospital navigate complex power dynamics and hierarchical challenges, dealing with attendings' expectations, superiors' decisions, and peer competition as they strive to establish themselves in the medical field.",
+    "main_characters": "Cristina; Alex; Burke",
+    "interfering_episode_characters": "George; Bailey; Meredith; Derek",
+    "single_episode_progression_string": "Cristina negotiates with George to cover her shift. Alex challenges Burke's decision in front of a patient's family. Burke removes Alex from his duties for not consulting him first. Burke later asks Alex to find a rabbi for a blessing, showing trust in his instincts. Cristina is assigned to a case involving a pregnant breast cancer patient. Cristina is tasked with performing a dilation and curettage. Cristina and Burke discuss the bovine valve transplant, and Burke admits he doesn't know how to perform it."
+  },
+  {
+    "title": "Medical Case: Devo's Heart Valve Dilemma",
     "arc_type": "Anthology Arc",
-    "description": "Devo, a 17-year-old girl, is admitted to the hospital with excessive bleeding and a heart murmur following a root canal. She requires a valve replacement but faces a conflict due to her religious beliefs against using a pig valve. The medical team navigates the challenge of respecting her faith while ensuring her health, ultimately opting for a bovine valve, highlighting the intersection of faith and medical ethics.",
-    "main_characters": "Devo; Alex; Burke",
+    "description": "Devo, a 17-year-old patient, faces a life-threatening condition requiring a heart valve replacement. The medical team must navigate her religious beliefs, which prohibit the use of a pig valve, and find an alternative solution to save her life.",
+    "main_characters": "Devo; Burke; Alex",
     "interfering_episode_characters": "Devo's Parents; Rabbi",
-    "single_episode_progression_string": "Devo is admitted with excessive bleeding and a heart murmur, necessitating a valve replacement. Her religious beliefs prevent her from accepting a pig valve. Alex suggests using a bovine valve as an alternative, challenging Burke's initial plan. Burke eventually agrees to the bovine valve after consulting with Alex and arranging for a rabbi's blessing. The surgery is successful, respecting Devo's faith while addressing her medical needs."
+    "single_episode_progression_string": "Devo is admitted with excessive bleeding and a heart murmur. Burke suggests a pig valve replacement, but Devo's religious beliefs prohibit it. Alex proposes a bovine valve as an alternative. Burke initially removes Alex from the case for not consulting him. Burke later agrees to the bovine valve after Alex's insistence. Burke asks Alex to find a rabbi for a blessing before the surgery. The surgery proceeds with a doctor guiding the bovine valve transplant via video call."
   },
   {
     "title": "Medical Case: Mr. Duff's Psychic Seizures",
     "arc_type": "Anthology Arc",
-    "description": "Mr. Duff, a patient who claims to have psychic abilities, experiences seizures that are initially considered psychiatric in nature. The medical team discovers an arteriovenous malformation in his brain, necessitating surgery. This arc explores the tension between medical science and the patient's belief in his psychic visions, culminating in a successful operation that leaves the nature of his abilities ambiguous.",
-    "main_characters": "Mr. Duff; Izzie Stevens",
-    "interfering_episode_characters": "Cristina Yang; Meredith Grey; Derek Shepherd; Miranda Bailey",
-    "single_episode_progression_string": "Mr. Duff arrives at the hospital claiming psychic abilities and experiences seizures. Initially dismissed as psychiatric, further tests reveal an arteriovenous malformation in his brain. Despite skepticism from the medical staff, the surgery is performed successfully, and Mr. Duff's visions persist, suggesting a complex interplay between his medical condition and perceived psychic abilities."
+    "description": "Mr. Duff, a patient claiming to have psychic visions, experiences seizures that lead the medical team to discover an arteriovenous malformation in his brain. The team must decide on the best course of action to address his condition while considering his fears of losing his 'visions.'",
+    "main_characters": "Mr. Duff; Izzie; Cristina",
+    "interfering_episode_characters": "Meredith; Bailey",
+    "single_episode_progression_string": "Mr. Duff claims to have psychic visions and experiences seizures. Cristina and Meredith perform a workup and witness a seizure. A code blue on the 4th floor coincides with Mr. Duff's prediction. Izzie and Bailey discover an arteriovenous malformation in Mr. Duff's brain. Mr. Duff agrees to surgery despite fears of losing his visions. After surgery, Mr. Duff indicates he still has visions."
   },
   {
-    "title": "Medical Case: Zoey Glass's Cancer and Pregnancy",
+    "title": "Medical Case: Mr. Walker's Mysterious Paralysis",
     "arc_type": "Anthology Arc",
-    "description": "Zoey Glass, a pregnant patient with breast cancer, faces a heart-wrenching decision between undergoing life-saving treatment that would require terminating her pregnancy or risking her life to carry the pregnancy to term. This arc delves into the emotional and ethical challenges faced by both the medical team and the patient, emphasizing the complexities of patient autonomy and the weight of medical advice.",
-    "main_characters": "Zoey Glass; Cristina Yang; Miranda Bailey",
-    "interfering_episode_characters": "Zoey's Husband",
-    "single_episode_progression_string": "Zoey Glass is diagnosed with breast cancer during her pregnancy. Cristina Yang and Miranda Bailey present her with the difficult choice between treatment, which necessitates an abortion, or continuing the pregnancy at great personal risk. Initially, Zoey decides to have an abortion but later changes her mind after discussing with her husband, choosing to carry the pregnancy to term despite the risks. Cristina grapples with Zoey's decision, reflecting on the emotional burden of respecting patient autonomy."
+    "description": "Mr. Walker, a patient who suddenly loses the ability to move his limbs, presents a challenging case for Derek and Meredith. They must determine whether his symptoms are psychosomatic or if there is an underlying medical issue, ultimately discovering a spinal clot that requires urgent surgery.",
+    "main_characters": "Derek; Meredith",
+    "interfering_episode_characters": "Mr. Walker",
+    "single_episode_progression_string": "Mr. Walker arrives at the hospital with sudden paralysis. Derek and Meredith investigate the cause of his symptoms. Derek suspects a spinal clot and prepares for surgery. During surgery, they successfully locate and remove the clot."
   },
   {
-    "title": "Medical Case: Mr. Walker's Psychosomatic Paralysis",
+    "title": "Medical Case: Zoey Glass's Cancer And Pregnancy",
     "arc_type": "Anthology Arc",
-    "description": "Mr. Walker, a patient who becomes paralyzed after a rock climbing accident, presents a complex case where the medical team must discern between psychosomatic symptoms and a physical ailment. The investigation leads to a high-stakes surgery that challenges the understanding of the interplay between mental and physical health.",
-    "main_characters": "Derek Shepherd; Meredith Grey",
-    "interfering_episode_characters": "Mr. Walker; Mr. Duff",
-    "single_episode_progression_string": "Mr. Walker is admitted with paralysis following a rock climbing accident. Derek suspects a spinal clot and decides to proceed with surgery, despite Meredith's concerns about the potential psychosomatic nature of his symptoms. During the operation, Derek successfully identifies and resolves the clot, confirming a physical cause for Mr. Walker's paralysis."
+    "description": "Zoey Glass, a pregnant patient diagnosed with breast cancer, faces a difficult decision between undergoing treatment that would require an abortion or risking her life to keep the baby. The medical team must provide guidance and support as she navigates this heart-wrenching choice.",
+    "main_characters": "Zoey Glass; Cristina Yang",
+    "interfering_episode_characters": "Miranda Bailey; Zoey's Husband",
+    "single_episode_progression_string": "Zoey Glass is diagnosed with breast cancer during pregnancy. Cristina explains the urgency of treatment and its implications. Zoey initially decides to have an abortion. Zoey and her husband reconsider and decide to keep the baby. Cristina prepares discharge papers as Zoey accepts the risks."
   }
 ]

@@ -1,4 +1,5 @@
 from langchain_openai import AzureChatOpenAI, AzureOpenAIEmbeddings
+from langchain_cohere import CohereEmbeddings
 from dotenv import load_dotenv
 import os
 from enum import Enum
@@ -15,6 +16,7 @@ except:
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)
     logger.addHandler(logging.StreamHandler())
+    load_dotenv(override=True)
 
 
 
@@ -76,8 +78,8 @@ def get_llm(intelligent_or_cheap: LLMType) -> AzureChatOpenAI:
 
 
     #Metti tutto cheap per i test
-    #if intelligent_or_cheap == LLMType.INTELLIGENT:
-    #    intelligent_or_cheap = LLMType.CHEAP
+    if os.getenv("ONLY_CHEAP_LLM") == "true":
+        intelligent_or_cheap = LLMType.CHEAP
 
 
     if intelligent_or_cheap == LLMType.INTELLIGENT:
@@ -91,7 +93,7 @@ def get_llm(intelligent_or_cheap: LLMType) -> AzureChatOpenAI:
     else:
         raise ValueError(f"Invalid LLM type: {intelligent_or_cheap}")
 
-def get_embedding_model():
+'''def get_embedding_model():
     return AzureOpenAIEmbeddings(
         deployment=os.getenv("AZURE_OPENAI_EMBEDDING_MODEL_NAME"),
         azure_endpoint=os.getenv("AZURE_OPENAI_API_ENDPOINT"),
@@ -99,6 +101,13 @@ def get_embedding_model():
         openai_api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
         openai_api_type=os.getenv("OPENAI_API_TYPE"),
         model=os.getenv("AZURE_OPENAI_EMBEDDING_MODEL_NAME"),
+    )'''
+
+def get_embedding_model():
+    return CohereEmbeddings(
+        model="Cohere-embed-v3-english",
+        cohere_api_key=os.getenv("AZURE_COHERE_EMBEDDING_API_KEY"),
+        base_url=os.getenv("AZURE_COHERE_EMBEDDING_API_ENDPOINT"),
     )
     
     
@@ -106,6 +115,12 @@ def test_llm():
     llm = get_llm(LLMType.CHEAP)
     print(llm)
     print(llm.invoke("Hello, how are you?"))
+
+
+def test_embedding():
+    embedding = get_embedding_model()
+    print(embedding.embed_query("Hello, how are you?"))
     
 if __name__ == "__main__":
-    test_llm()
+    #test_llm()
+    test_embedding()

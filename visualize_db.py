@@ -9,10 +9,11 @@ import pandas as pd
 from sqlmodel import select
 from sqlalchemy.orm import selectinload
 from src.utils.logger_utils import setup_logging
+from typing import List, Optional
 
 logger = setup_logging(__name__)
 
-def visualize_narrative_arcs():
+def visualize_narrative_arcs(arc_types: Optional[List[str]] = None):
     # Initialize services
     db_manager = DatabaseSessionManager()
     vector_store_service = VectorStoreService()
@@ -30,6 +31,25 @@ def visualize_narrative_arcs():
     documents = results['documents']
     metadatas = results['metadatas']
     ids = results['ids']
+
+    # Filter by arc type if specified
+    if arc_types:
+        filtered_metadatas = []
+        filtered_embeddings = []
+        filtered_documents = []
+        filtered_ids = []
+
+        for metadata, embedding, document, id_ in zip(metadatas, embeddings, documents, ids):
+            if metadata.get('arc_type') in arc_types:
+                filtered_metadatas.append(metadata)
+                filtered_embeddings.append(embedding)
+                filtered_documents.append(document)
+                filtered_ids.append(id_)
+
+        metadatas = filtered_metadatas
+        embeddings = filtered_embeddings
+        documents = filtered_documents
+        ids = filtered_ids
 
     # Convert embeddings to numpy array
     embeddings_array = np.array(embeddings)
@@ -173,5 +193,14 @@ def visualize_narrative_arcs():
     fig.show()
 
 if __name__ == "__main__":
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Visualize narrative arcs')
+    parser.add_argument('--arc-types', nargs='+', 
+                       choices=['Soap Arc', 'Genre-Specific Arc', 'Anthology Arc'],
+                       help='Arc types to include in visualization')
+    
+    args = parser.parse_args()
     logging.basicConfig(level=logging.INFO)
-    visualize_narrative_arcs()
+    
+    visualize_narrative_arcs(arc_types=args.arc_types)

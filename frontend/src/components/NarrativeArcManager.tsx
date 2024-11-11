@@ -40,6 +40,8 @@ import { useState, useMemo, useEffect, useCallback } from 'react';
 import ArcMergeModal from './ArcMergeModal';
 import ArcProgressionEditModal from './ArcProgressionEditModal';
 import NewArcModal from './NewArcModal';
+import ArcFilters from './ArcFilters';
+import { ARC_TYPES, ArcType } from '../types/ArcTypes';
 
 interface ArcProgression {
   id: string;
@@ -214,119 +216,6 @@ const ArcTimeline: React.FC<{
   );
 };
 
-// 2. Filters component
-const ArcFilters: React.FC<{
-  seasons: string[];
-  selectedSeason: string;
-  onSeasonChange: (season: string) => void;
-  allCharacters: string[];
-  selectedCharacters: string[];
-  setSelectedCharacters: (chars: string[]) => void;
-  includeInterferingCharacters: boolean;
-  setIncludeInterferingCharacters: (include: boolean) => void;
-  selectedEpisodes: string[];
-  setSelectedEpisodes: (episodes: string[]) => void;
-  episodes: { season: string; episode: string; }[];
-}> = ({
-  seasons,
-  selectedSeason,
-  onSeasonChange,
-  allCharacters,
-  selectedCharacters,
-  setSelectedCharacters,
-  includeInterferingCharacters,
-  setIncludeInterferingCharacters,
-  selectedEpisodes,
-  setSelectedEpisodes,
-  episodes,
-}) => {
-  return (
-    <Grid templateColumns="repeat(2, 1fr)" gap={4} mb={4}>
-      {/* Character Filter */}
-      <Box borderWidth={1} borderRadius="md" p={4}>
-        <VStack align="stretch" spacing={3}>
-          <FormControl>
-            <FormLabel fontWeight="bold">Filter by Characters</FormLabel>
-            <Box maxH="200px" overflowY="auto" borderWidth={1} borderRadius="md" p={2} bg="white">
-              <VStack align="start" spacing={1}>
-                {allCharacters.map(char => (
-                  <Checkbox
-                    key={char}
-                    isChecked={selectedCharacters.includes(char)}
-                    onChange={(e) => {
-                      if (e.target.checked) {
-                        setSelectedCharacters([...selectedCharacters, char]);
-                      } else {
-                        setSelectedCharacters(selectedCharacters.filter(c => c !== char));
-                      }
-                    }}
-                  >
-                    <Text fontSize="sm">{char}</Text>
-                  </Checkbox>
-                ))}
-              </VStack>
-            </Box>
-            <FormControl mt={2}>
-              <HStack>
-                <Switch
-                  id="include-interfering"
-                  isChecked={includeInterferingCharacters}
-                  onChange={(e) => setIncludeInterferingCharacters(e.target.checked)}
-                />
-                <FormLabel htmlFor="include-interfering" mb={0}>
-                  Include Interfering Characters
-                </FormLabel>
-              </HStack>
-            </FormControl>
-          </FormControl>
-        </VStack>
-      </Box>
-
-      {/* Episode Filter */}
-      <Box borderWidth={1} borderRadius="md" p={4}>
-        <VStack align="stretch" spacing={3}>
-          <FormControl>
-            <FormLabel fontWeight="bold">Season & Episodes</FormLabel>
-            <ChakraSelect
-              value={selectedSeason}
-              onChange={(e) => onSeasonChange(e.target.value)}
-              mb={3}
-            >
-              {seasons.map(season => (
-                <option key={season} value={season}>
-                  Season {season.replace('S', '')}
-                </option>
-              ))}
-            </ChakraSelect>
-            <Box maxH="200px" overflowY="auto" borderWidth={1} borderRadius="md" p={2} bg="white">
-              <SimpleGrid columns={3} spacing={2}>
-                {episodes
-                  .filter(ep => ep.season === selectedSeason)
-                  .map(ep => (
-                    <Checkbox
-                      key={`${ep.season}-${ep.episode}`}
-                      isChecked={selectedEpisodes.includes(`${ep.season}-${ep.episode}`)}
-                      onChange={(e) => {
-                        const episodeKey = `${ep.season}-${ep.episode}`;
-                        if (e.target.checked) {
-                          setSelectedEpisodes([...selectedEpisodes, episodeKey]);
-                        } else {
-                          setSelectedEpisodes(selectedEpisodes.filter(e => e !== episodeKey));
-                        }
-                      }}
-                    >
-                      <Text fontSize="sm">Ep {ep.episode.replace('E', '')}</Text>
-                    </Checkbox>
-                  ))}
-              </SimpleGrid>
-            </Box>
-          </FormControl>
-        </VStack>
-      </Box>
-    </Grid>
-  );
-};
-
 // Main component
 const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
   arcs,
@@ -334,7 +223,7 @@ const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
   onArcUpdated,
   series,
 }) => {
-  // Basic state
+  // All state declarations at the top
   const [selectedSeason, setSelectedSeason] = useState('');
   const [isMergeMode, setIsMergeMode] = useState(false);
   const [selectedForMerge, setSelectedForMerge] = useState<NarrativeArc[]>([]);
@@ -345,9 +234,10 @@ const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
   const [editArcDescription, setEditArcDescription] = useState('');
   const [editArcType, setEditArcType] = useState('');
   const [editMainCharacters, setEditMainCharacters] = useState<string[]>([]);
-  const editArcDisclosure = useDisclosure();
-
-  // Add missing state
+  const [selectedCharacters, setSelectedCharacters] = useState<string[]>([]);
+  const [selectedEpisodes, setSelectedEpisodes] = useState<string[]>([]);
+  const [includeInterferingCharacters, setIncludeInterferingCharacters] = useState(false);
+  const [selectedArcTypes, setSelectedArcTypes] = useState<ArcType[]>(Object.keys(ARC_TYPES) as ArcType[]);
   const [selectedCell, setSelectedCell] = useState<{
     arc: NarrativeArc;
     season: string;
@@ -356,10 +246,10 @@ const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
     interferingCharacters?: string[];
   } | null>(null);
 
-  // Add missing disclosure hook
+  const editArcDisclosure = useDisclosure();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  // Add missing memos
+  // Memoized values
   const allCharacters = useMemo(() => {
     const characters = new Set<string>();
     arcs.forEach(arc => {
@@ -371,62 +261,85 @@ const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
     return Array.from(characters).sort();
   }, [arcs]);
 
-  // Update the seasonEpisodes useMemo
-  const seasonEpisodes = useMemo(() => {
-    if (!selectedSeason) return [];
+  // Single filteredArcs implementation
+  const filteredArcs = useMemo(() => {
+    let filtered = arcs;
 
-    // Get episodes from the episodes list
-    const episodesList = episodes
-      .filter(ep => ep.season === selectedSeason)
-      .map(ep => ({ season: ep.season, episode: ep.episode }));
+    // Arc type filter
+    filtered = filtered.filter(arc => selectedArcTypes.includes(arc.arc_type as ArcType));
 
-    // Get episodes from progressions
-    const progressionEpisodes = arcs.flatMap(arc => 
-      arc.progressions
-        .filter(prog => prog.season === selectedSeason)
-        .map(prog => ({ season: prog.season, episode: prog.episode }))
-    );
-
-    // Combine both lists and remove duplicates
-    const uniqueEpisodes = [...new Set([
-      ...episodesList.map(ep => ep.episode),
-      ...progressionEpisodes.map(ep => ep.episode)
-    ])];
-
-    // Create array of all possible episodes for this season
-    const allPossibleEpisodes = uniqueEpisodes.map(ep => ({
-      season: selectedSeason,
-      episode: ep
-    }));
-
-    // Sort by episode number
-    return allPossibleEpisodes.sort((a, b) => 
-      parseInt(a.episode.replace('E', '')) - parseInt(b.episode.replace('E', ''))
-    );
-  }, [episodes, arcs, selectedSeason]);
-
-  // Update the seasons useMemo
-  const seasons = useMemo(() => {
-    // Get seasons from episodes
-    const episodeSeasons = new Set(episodes.map(ep => ep.season));
-    
-    // Get seasons from progressions
-    const progressionSeasons = new Set(
-      arcs.flatMap(arc => arc.progressions.map(prog => prog.season))
-    );
-    
-    // Combine both sets and sort
-    const allSeasons = [...new Set([...episodeSeasons, ...progressionSeasons])].sort();
-    
-    return allSeasons;
-  }, [episodes, arcs]);
-
-  // Set initial season
-  useEffect(() => {
-    if (seasons.length > 0 && !selectedSeason) {
-      setSelectedSeason(seasons[0]);
+    // Filter by season if selected
+    if (selectedSeason) {
+      filtered = filtered.filter(arc => 
+        arc.progressions.some(prog => prog.season === selectedSeason)
+      );
     }
-  }, [seasons, selectedSeason]);
+
+    // Filter by characters
+    if (selectedCharacters.length > 0) {
+      filtered = filtered.filter(arc => {
+        const isMainCharacter = selectedCharacters.some(char => arc.main_characters.includes(char));
+        const isInterferingCharacter = includeInterferingCharacters && 
+          arc.progressions.some(prog => 
+            selectedCharacters.some(char => prog.interfering_characters.includes(char))
+          );
+        return isMainCharacter || isInterferingCharacter;
+      });
+    }
+
+    // Fix episode filtering
+    if (selectedEpisodes.length > 0) {
+      filtered = filtered.filter(arc => {
+        return arc.progressions.some(prog => {
+          const episodeKey = `${prog.season}-${prog.episode}`;
+          return selectedEpisodes.includes(episodeKey);
+        });
+      });
+    }
+
+    return filtered;
+  }, [
+    arcs, 
+    selectedSeason, 
+    selectedCharacters, 
+    selectedEpisodes, 
+    includeInterferingCharacters,
+    selectedArcTypes
+  ]);
+
+  // Add arc type filter component
+  const renderArcTypeFilters = () => (
+    <Box borderWidth={1} borderRadius="md" p={4}>
+      <FormControl>
+        <FormLabel fontWeight="bold">Arc Types</FormLabel>
+        <SimpleGrid columns={3} spacing={2}>
+          {(Object.keys(ARC_TYPES) as ArcType[]).map(arcType => (
+            <Checkbox
+              key={arcType}
+              isChecked={selectedArcTypes.includes(arcType)}
+              onChange={(e) => {
+                if (e.target.checked) {
+                  setSelectedArcTypes([...selectedArcTypes, arcType]);
+                } else {
+                  setSelectedArcTypes(selectedArcTypes.filter(t => t !== arcType));
+                }
+              }}
+            >
+              <HStack>
+                <Box
+                  w="3"
+                  h="3"
+                  borderRadius="full"
+                  bg={ARC_TYPES[arcType]}
+                />
+                <Text fontSize="sm">{arcType}</Text>
+              </HStack>
+            </Checkbox>
+          ))}
+        </SimpleGrid>
+      </FormControl>
+    </Box>
+  );
 
   // Event handlers
   const handleCellClick = useCallback((arc: NarrativeArc, season: string, episode: string) => {
@@ -604,47 +517,6 @@ const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
     }
   }, [editingArc, editArcTitle, editArcDescription, editArcType, editMainCharacters, onArcUpdated, editArcDisclosure]);
 
-  // Add filter-related state
-  const [selectedCharacters, setSelectedCharacters] = useState<string[]>([]);
-  const [selectedEpisodes, setSelectedEpisodes] = useState<string[]>([]);
-  const [includeInterferingCharacters, setIncludeInterferingCharacters] = useState(false);
-
-  // Update the filteredArcs useMemo
-  const filteredArcs = useMemo(() => {
-    let filtered = arcs;
-
-    // Filter by season if selected
-    if (selectedSeason) {
-      filtered = filtered.filter(arc => 
-        arc.progressions.some(prog => prog.season === selectedSeason)
-      );
-    }
-
-    // Filter by characters
-    if (selectedCharacters.length > 0) {
-      filtered = filtered.filter(arc => {
-        const isMainCharacter = selectedCharacters.some(char => arc.main_characters.includes(char));
-        const isInterferingCharacter = includeInterferingCharacters && 
-          arc.progressions.some(prog => 
-            selectedCharacters.some(char => prog.interfering_characters.includes(char))
-          );
-        return isMainCharacter || isInterferingCharacter;
-      });
-    }
-
-    // Fix episode filtering
-    if (selectedEpisodes.length > 0) {
-      filtered = filtered.filter(arc => {
-        return arc.progressions.some(prog => {
-          const episodeKey = `${prog.season}-${prog.episode}`;
-          return selectedEpisodes.includes(episodeKey);
-        });
-      });
-    }
-
-    return filtered;
-  }, [arcs, selectedSeason, selectedCharacters, selectedEpisodes, includeInterferingCharacters]);
-
   // Add a useEffect to handle season changes
   useEffect(() => {
     if (selectedSeason) {
@@ -657,199 +529,262 @@ const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
     }
   }, [selectedSeason]);
 
+  // Update the seasonEpisodes useMemo
+  const seasonEpisodes = useMemo(() => {
+    if (!selectedSeason) return [];
+
+    // Get episodes from the episodes list
+    const episodesList = episodes
+      .filter(ep => ep.season === selectedSeason)
+      .map(ep => ({ season: ep.season, episode: ep.episode }));
+
+    // Get episodes from progressions
+    const progressionEpisodes = arcs.flatMap(arc => 
+      arc.progressions
+        .filter(prog => prog.season === selectedSeason)
+        .map(prog => ({ season: prog.season, episode: prog.episode }))
+    );
+
+    // Combine both lists and remove duplicates
+    const uniqueEpisodes = [...new Set([
+      ...episodesList.map(ep => ep.episode),
+      ...progressionEpisodes.map(ep => ep.episode)
+    ])];
+
+    // Create array of all possible episodes for this season
+    const allPossibleEpisodes = uniqueEpisodes.map(ep => ({
+      season: selectedSeason,
+      episode: ep
+    }));
+
+    // Sort by episode number
+    return allPossibleEpisodes.sort((a, b) => 
+      parseInt(a.episode.replace('E', '')) - parseInt(b.episode.replace('E', ''))
+    );
+  }, [episodes, arcs, selectedSeason]);
+
+  // Update the seasons useMemo
+  const seasons = useMemo(() => {
+    // Get seasons from episodes
+    const episodeSeasons = new Set(episodes.map(ep => ep.season));
+    
+    // Get seasons from progressions
+    const progressionSeasons = new Set(
+      arcs.flatMap(arc => arc.progressions.map(prog => prog.season))
+    );
+    
+    // Combine both sets and sort
+    const allSeasons = [...new Set([...episodeSeasons, ...progressionSeasons])].sort();
+    
+    return allSeasons;
+  }, [episodes, arcs]);
+
+  // Set initial season
+  useEffect(() => {
+    if (seasons.length > 0 && !selectedSeason) {
+      setSelectedSeason(seasons[0]);
+    }
+  }, [seasons, selectedSeason]);
+
   return (
     <Box>
-      <ArcFilters
-        seasons={seasons}
-        selectedSeason={selectedSeason}
-        onSeasonChange={setSelectedSeason}
-        allCharacters={allCharacters}
-        selectedCharacters={selectedCharacters}
-        setSelectedCharacters={setSelectedCharacters}
-        includeInterferingCharacters={includeInterferingCharacters}
-        setIncludeInterferingCharacters={setIncludeInterferingCharacters}
-        selectedEpisodes={selectedEpisodes}
-        setSelectedEpisodes={setSelectedEpisodes}
-        episodes={episodes}
-      />
+      <VStack spacing={4} align="stretch">
+        {/* Arc Type Filters */}
+        {renderArcTypeFilters()}
 
-      {/* Action Buttons */}
-      <HStack spacing={4} justify="flex-end" mb={4}>
-        <Button
-          colorScheme="gray"
-          onClick={onArcUpdated}
-          leftIcon={<RepeatIcon />}
-        >
-          Refresh Arcs
-        </Button>
-        <Button
-          colorScheme={isMergeMode ? "orange" : "gray"}
-          onClick={() => setIsMergeMode(!isMergeMode)}
-        >
-          {isMergeMode ? "Cancel Merge" : "Merge Arcs"}
-        </Button>
-        {isMergeMode && (
+        {/* Arc Filters */}
+        <ArcFilters
+          seasons={seasons}
+          selectedSeason={selectedSeason}
+          onSeasonChange={setSelectedSeason}
+          allCharacters={allCharacters}
+          selectedCharacters={selectedCharacters}
+          setSelectedCharacters={setSelectedCharacters}
+          includeInterferingCharacters={includeInterferingCharacters}
+          setIncludeInterferingCharacters={setIncludeInterferingCharacters}
+          selectedEpisodes={selectedEpisodes}
+          setSelectedEpisodes={setSelectedEpisodes}
+          episodes={episodes}
+        />
+
+        {/* Action Buttons */}
+        <HStack spacing={4} justify="flex-end" mb={4}>
           <Button
-            colorScheme="blue"
-            isDisabled={selectedForMerge.length !== 2}
-            onClick={() => setShowMergeModal(true)}
+            colorScheme="gray"
+            onClick={onArcUpdated}
+            leftIcon={<RepeatIcon />}
           >
-            Merge Selected ({selectedForMerge.length}/2)
+            Refresh Arcs
           </Button>
+          <Button
+            colorScheme={isMergeMode ? "orange" : "gray"}
+            onClick={() => setIsMergeMode(!isMergeMode)}
+          >
+            {isMergeMode ? "Cancel Merge" : "Merge Arcs"}
+          </Button>
+          {isMergeMode && (
+            <Button
+              colorScheme="blue"
+              isDisabled={selectedForMerge.length !== 2}
+              onClick={() => setShowMergeModal(true)}
+            >
+              Merge Selected ({selectedForMerge.length}/2)
+            </Button>
+          )}
+          <Button
+            leftIcon={<AddIcon />}
+            colorScheme="green"
+            onClick={() => setIsNewArcModalOpen(true)}
+          >
+            New Arc
+          </Button>
+        </HStack>
+
+        {/* Timeline - Update to use filteredArcs instead of arcs */}
+        <ArcTimeline
+          arcs={filteredArcs}
+          episodes={episodes}
+          selectedSeason={selectedSeason}
+          onCellClick={handleCellClick}
+          isMergeMode={isMergeMode}
+          selectedForMerge={selectedForMerge}
+          onToggleMerge={handleToggleMerge}
+          onEditArc={handleEditArc}
+        />
+
+        {/* Add Modals */}
+        {/* Merge Modal */}
+        {showMergeModal && selectedForMerge.length === 2 && (
+          <ArcMergeModal
+            isOpen={showMergeModal}
+            onClose={() => {
+              setShowMergeModal(false);
+              setIsMergeMode(false);
+              setSelectedForMerge([]);
+            }}
+            arc1={selectedForMerge[0]}
+            arc2={selectedForMerge[1]}
+            availableCharacters={allCharacters}
+            onMergeComplete={() => {
+              onArcUpdated();
+              setShowMergeModal(false);
+              setIsMergeMode(false);
+              setSelectedForMerge([]);
+            }}
+          />
         )}
-        <Button
-          leftIcon={<AddIcon />}
-          colorScheme="green"
-          onClick={() => setIsNewArcModalOpen(true)}
-        >
-          New Arc
-        </Button>
-      </HStack>
 
-      {/* Timeline */}
-      <ArcTimeline
-        arcs={filteredArcs}
-        episodes={episodes}
-        selectedSeason={selectedSeason}
-        onCellClick={handleCellClick}
-        isMergeMode={isMergeMode}
-        selectedForMerge={selectedForMerge}
-        onToggleMerge={handleToggleMerge}
-        onEditArc={handleEditArc}
-      />
-
-      {/* Add Modals */}
-      {/* Merge Modal */}
-      {showMergeModal && selectedForMerge.length === 2 && (
-        <ArcMergeModal
-          isOpen={showMergeModal}
-          onClose={() => {
-            setShowMergeModal(false);
-            setIsMergeMode(false);
-            setSelectedForMerge([]);
-          }}
-          arc1={selectedForMerge[0]}
-          arc2={selectedForMerge[1]}
+        {/* New Arc Modal */}
+        <NewArcModal
+          isOpen={isNewArcModalOpen}
+          onClose={() => setIsNewArcModalOpen(false)}
+          onSubmit={handleCreateArc}
           availableCharacters={allCharacters}
-          onMergeComplete={() => {
-            onArcUpdated();
-            setShowMergeModal(false);
-            setIsMergeMode(false);
-            setSelectedForMerge([]);
-          }}
+          series={arcs[0]?.series || ''}
         />
-      )}
 
-      {/* New Arc Modal */}
-      <NewArcModal
-        isOpen={isNewArcModalOpen}
-        onClose={() => setIsNewArcModalOpen(false)}
-        onSubmit={handleCreateArc}
-        availableCharacters={allCharacters}
-        series={arcs[0]?.series || ''}
-      />
+        {/* Progression Edit Modal */}
+        {selectedCell && (
+          <ArcProgressionEditModal
+            isOpen={isOpen}
+            onClose={onClose}
+            arcTitle={selectedCell.arc.title}
+            season={selectedCell.season}
+            episode={selectedCell.episode}
+            content={selectedCell.content || ''}
+            interferingCharacters={selectedCell.interferingCharacters || []}
+            availableCharacters={allCharacters}
+            onSave={handleSaveProgression}
+            allowCustomEpisode={false}
+            availableSeasons={seasons}
+            availableEpisodes={seasonEpisodes
+              .filter(ep => ep.season === selectedCell.season)
+              .map(ep => ep.episode)
+            }
+            showDelete={true}
+            onDelete={handleDeleteProgression}
+          />
+        )}
 
-      {/* Progression Edit Modal */}
-      {selectedCell && (
-        <ArcProgressionEditModal
-          isOpen={isOpen}
-          onClose={onClose}
-          arcTitle={selectedCell.arc.title}
-          season={selectedCell.season}
-          episode={selectedCell.episode}
-          content={selectedCell.content || ''}
-          interferingCharacters={selectedCell.interferingCharacters || []}
-          availableCharacters={allCharacters}
-          onSave={handleSaveProgression}
-          allowCustomEpisode={false}
-          availableSeasons={seasons}
-          availableEpisodes={seasonEpisodes
-            .filter(ep => ep.season === selectedCell.season)
-            .map(ep => ep.episode)
-          }
-          showDelete={true}
-          onDelete={handleDeleteProgression}
-        />
-      )}
-
-      {/* Arc Edit Modal */}
-      <Modal isOpen={editArcDisclosure.isOpen} onClose={editArcDisclosure.onClose} size="xl">
-        <ModalOverlay />
-        <ModalContent>
-          <ModalHeader>Edit Arc</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            <VStack spacing={4}>
-              <FormControl>
-                <FormLabel>Title</FormLabel>
-                <Input
-                  value={editArcTitle}
-                  onChange={(e) => setEditArcTitle(e.target.value)}
-                />
-              </FormControl>
-              <FormControl>
-                <FormLabel>Description</FormLabel>
-                <Textarea
-                  value={editArcDescription}
-                  onChange={(e) => setEditArcDescription(e.target.value)}
-                  rows={4}
-                />
-              </FormControl>
-              <FormControl>
-                <FormLabel>Arc Type</FormLabel>
-                <ChakraSelect
-                  value={editArcType}
-                  onChange={(e) => setEditArcType(e.target.value)}
+        {/* Arc Edit Modal */}
+        <Modal isOpen={editArcDisclosure.isOpen} onClose={editArcDisclosure.onClose} size="xl">
+          <ModalOverlay />
+          <ModalContent>
+            <ModalHeader>Edit Arc</ModalHeader>
+            <ModalCloseButton />
+            <ModalBody>
+              <VStack spacing={4}>
+                <FormControl>
+                  <FormLabel>Title</FormLabel>
+                  <Input
+                    value={editArcTitle}
+                    onChange={(e) => setEditArcTitle(e.target.value)}
+                  />
+                </FormControl>
+                <FormControl>
+                  <FormLabel>Description</FormLabel>
+                  <Textarea
+                    value={editArcDescription}
+                    onChange={(e) => setEditArcDescription(e.target.value)}
+                    rows={4}
+                  />
+                </FormControl>
+                <FormControl>
+                  <FormLabel>Arc Type</FormLabel>
+                  <ChakraSelect
+                    value={editArcType}
+                    onChange={(e) => setEditArcType(e.target.value)}
+                  >
+                    <option value="Soap Arc">Soap Arc</option>
+                    <option value="Genre-Specific Arc">Genre-Specific Arc</option>
+                    <option value="Episodic Arc">Episodic Arc</option>
+                  </ChakraSelect>
+                </FormControl>
+                <FormControl>
+                  <FormLabel>Main Characters</FormLabel>
+                  <Box maxH="200px" overflowY="auto" borderWidth={1} borderRadius="md" p={2}>
+                    <VStack align="start" spacing={1}>
+                      {allCharacters.map(char => (
+                        <Checkbox
+                          key={char}
+                          isChecked={editMainCharacters.includes(char)}
+                          onChange={(e) => {
+                            if (e.target.checked) {
+                              setEditMainCharacters(prev => [...prev, char]);
+                            } else {
+                              setEditMainCharacters(prev => prev.filter(c => c !== char));
+                            }
+                          }}
+                        >
+                          <Text fontSize="sm">{char}</Text>
+                        </Checkbox>
+                      ))}
+                    </VStack>
+                  </Box>
+                </FormControl>
+              </VStack>
+            </ModalBody>
+            <ModalFooter>
+              <HStack spacing={4}>
+                <Button
+                  leftIcon={<DeleteIcon />}
+                  colorScheme="red"
+                  variant="ghost"
+                  onClick={handleDeleteArc}
                 >
-                  <option value="Soap Arc">Soap Arc</option>
-                  <option value="Genre-Specific Arc">Genre-Specific Arc</option>
-                  <option value="Episodic Arc">Episodic Arc</option>
-                </ChakraSelect>
-              </FormControl>
-              <FormControl>
-                <FormLabel>Main Characters</FormLabel>
-                <Box maxH="200px" overflowY="auto" borderWidth={1} borderRadius="md" p={2}>
-                  <VStack align="start" spacing={1}>
-                    {allCharacters.map(char => (
-                      <Checkbox
-                        key={char}
-                        isChecked={editMainCharacters.includes(char)}
-                        onChange={(e) => {
-                          if (e.target.checked) {
-                            setEditMainCharacters(prev => [...prev, char]);
-                          } else {
-                            setEditMainCharacters(prev => prev.filter(c => c !== char));
-                          }
-                        }}
-                      >
-                        <Text fontSize="sm">{char}</Text>
-                      </Checkbox>
-                    ))}
-                  </VStack>
-                </Box>
-              </FormControl>
-            </VStack>
-          </ModalBody>
-          <ModalFooter>
-            <HStack spacing={4}>
-              <Button
-                leftIcon={<DeleteIcon />}
-                colorScheme="red"
-                variant="ghost"
-                onClick={handleDeleteArc}
-              >
-                Delete Arc
-              </Button>
-              <Button variant="ghost" onClick={editArcDisclosure.onClose}>
-                Cancel
-              </Button>
-              <Button colorScheme="blue" onClick={handleSaveArcChanges}>
-                Save
-              </Button>
-            </HStack>
-          </ModalFooter>
-        </ModalContent>
-      </Modal>
+                  Delete Arc
+                </Button>
+                <Button variant="ghost" onClick={editArcDisclosure.onClose}>
+                  Cancel
+                </Button>
+                <Button colorScheme="blue" onClick={handleSaveArcChanges}>
+                  Save
+                </Button>
+              </HStack>
+            </ModalFooter>
+          </ModalContent>
+        </Modal>
+      </VStack>
     </Box>
   );
 };

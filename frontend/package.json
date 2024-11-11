@@ -14,9 +14,12 @@
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+    "@types/plotly.js": "^2.33.5",
     "framer-motion": "^11.0.5",
+    "ml-pca": "^4.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-plotly.js": "^2.6.0",
     "react-vertical-timeline-component": "^3.6.0"
   },
   "devDependencies": {

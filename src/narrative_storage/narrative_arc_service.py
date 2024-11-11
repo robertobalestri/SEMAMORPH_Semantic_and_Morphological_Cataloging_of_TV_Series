@@ -12,6 +12,7 @@ import uuid
 import logging
 from contextlib import contextmanager
 from sqlmodel import Session, select
+from src.plot_processing.plot_processing_models import EntityLink
 
 from src.utils.logger_utils import setup_logging
 logger = setup_logging(__name__)
@@ -56,54 +57,156 @@ class NarrativeArcService:
     ) -> NarrativeArc:
         """
         Add a new narrative arc, handling deduplication and updating the vector store.
-
-        Args:
-            arc_data: Dictionary containing arc details.
-            series: The series name.
-            season: The season number.
-            episode: The episode number.
-            initial_progression: Optional dictionary containing initial progression data.
-
-        Returns:
-            The added or updated NarrativeArc object.
+        Only uses existing characters from the database.
         """
         with self.transaction():
             try:
-                # Normalize the title
+                # Get main characters from the database
+                main_character_names = []
+                if 'main_characters' in arc_data:
+                    main_character_names = [
+                        name.strip() 
+                        for name in arc_data['main_characters'].split(';') 
+                        if name.strip()
+                    ]
+                    
+                # Check for existing arc by title
                 title_normalized = arc_data['title'].strip().lower()
-
-                # Check for existing arc by title (case-insensitive)
                 existing_arc = self.arc_repository.get_by_title(title_normalized, series)
 
                 if existing_arc:
                     logger.info(f"Arc with title '{arc_data['title']}' already exists. Updating existing arc.")
                     return self.update_arc(existing_arc.id, arc_data, series, season, episode)
 
-                # If no duplicates or similar arcs, proceed to add as new
+                # If no exact title match, check for similar arcs using vector store
+                similar_arcs = self.vector_store_service.find_similar_arcs(
+                    query=f"{arc_data['title']}\n{arc_data['description']}",
+                    n_results=5,
+                    series=series
+                )
+
+                # Filter arcs by similarity threshold
+                SIMILARITY_THRESHOLD = 0.3
+                similar_arcs = [
+                    arc for arc in similar_arcs 
+                    if arc['cosine_distance'] < SIMILARITY_THRESHOLD
+                ]
+
+                if similar_arcs:
+                    # Get the most similar arc
+                    most_similar = similar_arcs[0]
+                    existing_arc = self.arc_repository.get_by_id(most_similar['metadata']['id'])
+
+                    if existing_arc:
+                        # Use LLM to decide if arcs should be merged
+                        merge_decision = self.llm_service.decide_arc_merging(
+                            new_arc=NarrativeArc(
+                                id=str(uuid.uuid4()),
+                                title=arc_data['title'],
+                                description=arc_data['description'],
+                                arc_type=arc_data['arc_type'],
+                                series=series
+                            ),
+                            existing_arc=existing_arc
+                        )
+
+                        if merge_decision.get('same_arc', False):
+                            logger.info(f"LLM decided arcs are the same. Updating existing arc.")
+                            return self.update_arc(
+                                existing_arc.id, 
+                                arc_data, 
+                                series, 
+                                season, 
+                                episode,
+                                merge_decision=merge_decision
+                            )
+
+                elif existing_arc:
+                    # If exact title match, use LLM to merge identical arcs
+                    merge_decision = self.llm_service.merge_identical_arcs(
+                        new_arc=NarrativeArc(
+                            id=str(uuid.uuid4()),
+                            title=arc_data['title'],
+                            description=arc_data['description'],
+                            arc_type=arc_data['arc_type'],
+                            series=series
+                        ),
+                        existing_arc=existing_arc
+                    )
+                    return self.update_arc(
+                        existing_arc.id, 
+                        arc_data, 
+                        series, 
+                        season, 
+                        episode,
+                        merge_decision=merge_decision
+                    )
+
+                # If no similar arcs found or LLM decided they're different, create new arc
+                # Create new arc
                 new_arc = self._construct_narrative_arc(arc_data, series)
                 self.arc_repository.add_or_update(new_arc)
 
-                # Handle main characters
-                if 'main_characters' in arc_data:
-                    main_character_names = arc_data['main_characters']
-                    if main_character_names:
-                        main_characters = self.character_service.get_characters_by_appellations(
-                            main_character_names, 
+                # Link main characters to arc (only existing ones)
+                if main_character_names:
+                    main_characters = self.character_service.get_characters_by_appellations(
+                        main_character_names, 
+                        series
+                    )
+                    if main_characters:
+                        self.character_service.link_characters_to_arc(main_characters, new_arc)
+                        logger.info(f"Linked {len(main_characters)} main characters to arc '{new_arc.title}'")
+                    else:
+                        logger.warning(f"No existing characters found for main characters: {main_character_names}")
+
+                # Handle progression
+                progression_data = arc_data.get('single_episode_progression_string')
+                if progression_data:
+                    # Get interfering characters from the database
+                    interfering_chars = []
+                    if 'interfering_episode_characters' in arc_data:
+                        interfering_chars = [
+                            name.strip() 
+                            for name in arc_data['interfering_episode_characters'].split(';') 
+                            if name.strip()
+                        ]
+
+                    # Create and add progression
+                    progression = ArcProgression(
+                        id=str(uuid.uuid4()),
+                        main_arc_id=new_arc.id,
+                        content=progression_data,
+                        series=series,
+                        season=season,
+                        episode=episode
+                    )
+
+                    # Link interfering characters to progression (only existing ones)
+                    if interfering_chars:
+                        interfering_characters = self.character_service.get_characters_by_appellations(
+                            interfering_chars, 
                             series
                         )
-                        if main_characters:
-                            self.character_service.link_characters_to_arc(main_characters, new_arc)
+                        if interfering_characters:
+                            self.character_service.link_characters_to_progression(
+                                interfering_characters, 
+                                progression
+                            )
+                            logger.info(f"Linked {len(interfering_characters)} interfering characters to progression")
                         else:
-                            logger.warning(f"No main characters found for arc: {arc_data['title']}")
+                            logger.warning(f"No existing characters found for interfering characters: {interfering_chars}")
 
-                # Handle initial progression if provided
-                if initial_progression:
-                    progression_data = {
-                        'content': initial_progression['content'],
-                        'interfering_characters': initial_progression['interfering_characters']
-                    }
-                    self._handle_progressions(new_arc, progression_data, series, season, episode)
+                    # Add progression
+                    self.progression_service.add_or_update_progression(
+                        arc=new_arc,
+                        progression=progression,
+                        series=series,
+                        season=season,
+                        episode=episode
+                    )
+                    logger.info(f"Added progression to arc '{new_arc.title}'")
 
+                # Update embeddings
                 self.update_embeddings(new_arc)
                 logger.info(f"Added new arc '{new_arc.title}' to the database and vector store.")
                 return new_arc
@@ -142,22 +245,17 @@ class NarrativeArcService:
                     logger.warning(f"No arc found with ID {arc_id}. Cannot update.")
                     raise ValueError(f"No arc found with ID {arc_id}.")
 
-                # Update fields from arc_data
-                updated_fields = {
-                    "title": arc_data.get("title", existing_arc.title),
-                    "description": arc_data.get("description", existing_arc.description),
-                    "arc_type": arc_data.get("arc_type", existing_arc.arc_type),
-                }
-
-                # If merge_decision is provided, use merged details
-                if merge_decision and merge_decision.get("merged_description"):
-                    updated_fields["description"] = merge_decision["merged_description"]
+                # Update fields based on merge decision if provided
+                if merge_decision:
+                    existing_arc.description = merge_decision.get('merged_description', existing_arc.description)
+                    if 'merged_title' in merge_decision:
+                        existing_arc.title = merge_decision['merged_title']
 
                 # Normalize title
-                updated_fields["title"] = updated_fields["title"].strip().title()
+                existing_arc.title = existing_arc.title.strip().title()
 
                 # Update the arc
-                self.arc_repository.update_fields(existing_arc, updated_fields)
+                self.arc_repository.update_fields(existing_arc, existing_arc.__dict__)
                 logger.info(f"Updated arc '{existing_arc.title}' with ID {arc_id}.")
 
                 # Update main characters if provided in arc_data
@@ -240,7 +338,7 @@ class NarrativeArcService:
                         progression
                     )
                 else:
-                    logger.warning(f"No interfering characters found for progression in S{season}E{episode}")
+                    logger.warning(f"No interfering characters found for progression in {season}{episode}")
 
             # Add or update progression
             self.progression_service.add_or_update_progression(

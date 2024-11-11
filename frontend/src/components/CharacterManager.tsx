@@ -27,6 +27,7 @@ import {
   TagLabel,
   TagCloseButton,
   Checkbox,
+  useToast,
 } from '@chakra-ui/react';
 import { AddIcon, EditIcon, DeleteIcon } from '@chakra-ui/icons';
 import { useState, useEffect } from 'react';
@@ -57,6 +58,7 @@ const CharacterManager: React.FC<CharacterManagerProps> = ({ series, onCharacter
   const [appellations, setAppellations] = useState<string[]>([]);
   
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const toast = useToast();
 
   const fetchCharacters = async () => {
     setIsLoading(true);
@@ -126,12 +128,50 @@ const CharacterManager: React.FC<CharacterManagerProps> = ({ series, onCharacter
         body: JSON.stringify(characterData),
       });
 
-      if (!response.ok) throw new Error('Failed to save character');
+      if (!response.ok) {
+        const errorData = await response.json();
+        console.error('Failed to save character:', errorData);
+        
+        if (errorData.detail && errorData.detail.includes('UNIQUE constraint failed: character_appellation.appellation')) {
+          toast({
+            title: 'Error',
+            description: 'One or more appellations are already used by another character. Please use different appellations.',
+            status: 'error',
+            duration: 5000,
+            isClosable: true,
+          });
+          return;
+        }
+
+        toast({
+          title: 'Error',
+          description: errorData.detail || 'Failed to save character',
+          status: 'error',
+          duration: 5000,
+          isClosable: true,
+        });
+        return;
+      }
       
+      toast({
+        title: 'Success',
+        description: `Character ${editingCharacter ? 'updated' : 'created'} successfully`,
+        status: 'success',
+        duration: 3000,
+        isClosable: true,
+      });
+
       fetchCharacters();
       onClose();
     } catch (error) {
       console.error('Error saving character:', error);
+      toast({
+        title: 'Error',
+        description: 'An unexpected error occurred',
+        status: 'error',
+        duration: 5000,
+        isClosable: true,
+      });
     }
   };
 
@@ -139,19 +179,46 @@ const CharacterManager: React.FC<CharacterManagerProps> = ({ series, onCharacter
     if (selectedCharacters.length !== 2) return;
 
     try {
+      console.log('Attempting to merge characters:', {
+        character1_id: selectedCharacters[0].entity_name,
+        character2_id: selectedCharacters[1].entity_name
+      });
+
       const response = await fetch(`http://localhost:8000/api/characters/${series}/merge`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          character1_id: selectedCharacters[0],
-          character2_id: selectedCharacters[1],
+          character1_id: selectedCharacters[0].entity_name,
+          character2_id: selectedCharacters[1].entity_name
         }),
       });
 
-      if (!response.ok) throw new Error('Failed to merge characters');
+      if (!response.ok) {
+        const errorData = await response.json();
+        console.error('Merge failed:', errorData);
+        toast({
+          title: 'Merge Failed',
+          description: errorData.detail || 'Failed to merge characters',
+          status: 'error',
+          duration: 5000,
+          isClosable: true,
+        });
+        return;
+      }
+
+      const result = await response.json();
+      console.log('Merge successful:', result);
       
+      toast({
+        title: 'Success',
+        description: 'Characters merged successfully',
+        status: 'success',
+        duration: 3000,
+        isClosable: true,
+      });
+
       setSelectedCharacters([]);
       setIsMergeMode(false);
       fetchCharacters();
@@ -160,6 +227,13 @@ const CharacterManager: React.FC<CharacterManagerProps> = ({ series, onCharacter
       }
     } catch (error) {
       console.error('Error merging characters:', error);
+      toast({
+        title: 'Error',
+        description: 'An unexpected error occurred while merging characters',
+        status: 'error',
+        duration: 5000,
+        isClosable: true,
+      });
     }
   };
 

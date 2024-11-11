@@ -173,6 +173,7 @@ function App() {
                         arcs={arcs}
                         episodes={episodes}
                         onArcUpdated={handleArcUpdated}
+                        series={selectedSeries}
                       />
                     </TabPanel>
                     <TabPanel>

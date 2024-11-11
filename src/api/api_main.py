@@ -1,15 +1,16 @@
 from fastapi import FastAPI, HTTPException, Body
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional, Dict, Union
-from pydantic import BaseModel
+from pydantic import BaseModel, ValidationError
 from src.narrative_storage.repositories import DatabaseSessionManager
 from src.narrative_storage.narrative_arc_service import NarrativeArcService
 from src.narrative_storage.repositories import NarrativeArcRepository, ArcProgressionRepository, CharacterRepository
 from src.narrative_storage.character_service import CharacterService
 from src.narrative_storage.vector_store_service import VectorStoreService
-from src.narrative_storage.narrative_models import NarrativeArc, ArcProgression
+from src.narrative_storage.narrative_models import NarrativeArc, ArcProgression, Character
 from src.utils.logger_utils import setup_logging
 from sqlmodel import Session, select
+from src.plot_processing.plot_processing_models import EntityLink
 
 
 logger = setup_logging(__name__)
@@ -143,11 +144,23 @@ class CharacterResponse(BaseModel):
     class Config:
         from_attributes = True
 
+    @classmethod
+    def from_character(cls, character: Character):
+        return cls(
+            entity_name=character.entity_name,
+            best_appellation=character.best_appellation,
+            series=character.series,
+            appellations=[app.appellation for app in character.appellations]
+        )
+
 class CharacterCreateRequest(BaseModel):
     entity_name: str
     best_appellation: str
     series: str
     appellations: List[str]
+
+    class Config:
+        from_attributes = True
 
 class CharacterMergeRequest(BaseModel):
     character1_id: str
@@ -596,16 +609,23 @@ async def update_character(series: str, character_data: CharacterCreateRequest):
     try:
         with db_manager.session_scope() as session:
             character_service = CharacterService(CharacterRepository(session))
-            character = character_service.add_or_update_character(
-                EntityLink(
-                    entity_name=character_data.entity_name,
-                    best_appellation=character_data.best_appellation,
-                    appellations=character_data.appellations
-                ),
-                series=series
+            
+            # Create EntityLink with all the data
+            entity = EntityLink(
+                entity_name=character_data.entity_name,
+                best_appellation=character_data.best_appellation,
+                appellations=character_data.appellations,
+                entity_type="PERSON"  # Default type for characters
             )
+            
+            # Update character
+            character = character_service.add_or_update_character(entity, series)
             if not character:
                 raise HTTPException(status_code=404, detail="Character not found")
+            
+            # Refresh the character to get updated data
+            session.refresh(character)
+            
             return CharacterResponse(
                 entity_name=character.entity_name,
                 best_appellation=character.best_appellation,
@@ -631,20 +651,40 @@ async def delete_character(series: str, entity_name: str):
         logger.error(f"Error deleting character: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/api/characters/{series}/merge")
+@app.post("/api/characters/{series}/merge", response_model=dict)
 async def merge_characters(series: str, merge_data: CharacterMergeRequest):
     """Merge two characters."""
     try:
+        logger.info(f"Attempting to merge characters in series {series}. Request data: {merge_data.dict()}")
+        
         with db_manager.session_scope() as session:
             character_service = CharacterService(CharacterRepository(session))
+            
+            # Log before merge attempt
+            logger.info(f"Merging character1_id: {merge_data.character1_id} into character2_id: {merge_data.character2_id}")
+            
             success = character_service.merge_characters(
                 merge_data.character1_id,
                 merge_data.character2_id,
                 series
             )
+            
             if not success:
-                raise HTTPException(status_code=400, detail="Failed to merge characters")
+                error_msg = f"Failed to merge characters. One or both characters not found: {merge_data.character1_id}, {merge_data.character2_id}"
+                logger.error(error_msg)
+                raise HTTPException(
+                    status_code=400, 
+                    detail=error_msg
+                )
+            
+            logger.info(f"Successfully merged characters {merge_data.character1_id} and {merge_data.character2_id}")
             return {"message": "Characters merged successfully"}
+            
+    except ValidationError as e:
+        error_msg = f"Validation error in merge request: {str(e)}"
+        logger.error(error_msg)
+        raise HTTPException(status_code=422, detail=error_msg)
     except Exception as e:
-        logger.error(f"Error merging characters: {str(e)}")
-        raise HTTPException(status_code=500, detail=str(e))
+        error_msg = f"Error merging characters: {str(e)}"
+        logger.error(error_msg)
+        raise HTTPException(status_code=500, detail=error_msg)
