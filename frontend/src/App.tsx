@@ -80,8 +80,8 @@ function App() {
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             return response.json();
           }),
-        // Fetch arcs
-        fetch(`http://localhost:8000/api/arcs/${selectedSeries}`, fetchOptions)
+        // Use the correct endpoint for fetching arcs by series
+        fetch(`http://localhost:8000/api/arcs/series/${selectedSeries}`, fetchOptions)
           .then(response => {
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             return response.json();
@@ -111,7 +111,7 @@ function App() {
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             return response.json();
           }),
-        fetch(`http://localhost:8000/api/arcs/${selectedSeries}`, fetchOptions)
+        fetch(`http://localhost:8000/api/arcs/series/${selectedSeries}`, fetchOptions)
           .then(response => {
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             return response.json();
@@ -177,7 +177,10 @@ function App() {
                       />
                     </TabPanel>
                     <TabPanel>
-                      <VectorStoreExplorer series={selectedSeries} />
+                      <VectorStoreExplorer 
+                        series={selectedSeries} 
+                        onArcUpdated={handleArcUpdated}
+                      />
                     </TabPanel>
                     <TabPanel>
                       <CharacterManager 

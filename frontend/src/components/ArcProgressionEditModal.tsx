@@ -75,6 +75,13 @@ const ArcProgressionEditModal: React.FC<ArcProgressionEditModalProps> = ({
   }, [content, interferingCharacters]);
 
   const handleSave = () => {
+    console.log('ArcProgressionEditModal - handleSave called with:', {
+      content: editContent,
+      selectedCharacters,
+      season,
+      episode,
+      arcTitle
+    });
     onSave(editContent, selectedCharacters);
   };
 
@@ -167,7 +174,11 @@ const ArcProgressionEditModal: React.FC<ArcProgressionEditModalProps> = ({
               <FormLabel>Content</FormLabel>
               <Textarea
                 value={editContent}
-                onChange={(e) => setEditContent(e.target.value)}
+                onChange={(e) => {
+                  setEditContent(e.target.value);
+                  // Update parent component immediately
+                  // onSave(e.target.value, selectedCharacters);
+                }}
                 rows={6}
                 placeholder="Enter progression content..."
               />
@@ -236,7 +247,11 @@ const ArcProgressionEditModal: React.FC<ArcProgressionEditModalProps> = ({
             <Button variant="ghost" onClick={handleClose}>
               Cancel
             </Button>
-            <Button colorScheme="blue" onClick={handleSave}>
+            <Button 
+              colorScheme="blue" 
+              onClick={handleSave}
+              isDisabled={!editContent.trim()}  // Disable if content is empty
+            >
               Save
             </Button>
           </HStack>

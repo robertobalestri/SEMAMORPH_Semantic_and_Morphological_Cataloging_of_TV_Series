@@ -1,11 +1,13 @@
 # vector_store_service.py
 
-from typing import List, Dict, Optional, Any
+from typing import List, Dict, Optional, Any, Union
 from langchain.schema import Document
 from langchain_chroma import Chroma
 from src.ai_models.ai_models import get_embedding_model
 import logging
 import os
+import numpy as np
+from hdbscan import HDBSCAN
 
 from src.utils.logger_utils import setup_logging
 logger = setup_logging(__name__)
@@ -161,3 +163,154 @@ class VectorStoreService:
         except Exception as e:
             logger.error(f"Error during similarity search: {e}")
             return []
+
+    def calculate_arcs_cosine_distances(
+        self,
+        arc_ids: List[str]
+    ) -> Dict[str, Union[str, float]]:
+        """Calculate cosine distances between selected arcs."""
+        try:
+            # Get documents by IDs
+            results = self.collection.get(
+                ids=arc_ids,
+                include=['metadatas', 'embeddings']
+            )
+
+            if not results or 'embeddings' not in results or len(results['embeddings']) != 2:
+                raise ValueError("Could not find embeddings for both arcs")
+
+            # Get embeddings as numpy arrays
+            embedding1 = np.array(results['embeddings'][0])
+            embedding2 = np.array(results['embeddings'][1])
+
+            # Calculate dot product
+            dot_product = np.dot(embedding1, embedding2)
+            
+            # Calculate norms
+            norm1 = np.linalg.norm(embedding1)
+            norm2 = np.linalg.norm(embedding2)
+            
+            # Calculate cosine distance
+            if norm1 == 0 or norm2 == 0:
+                cosine_distance = 1.0  # Maximum distance for zero vectors
+            else:
+                cosine_similarity = dot_product / (norm1 * norm2)
+                # Ensure the similarity is within [-1, 1] to avoid numerical errors
+                cosine_similarity = np.clip(cosine_similarity, -1.0, 1.0)
+                cosine_distance = 1.0 - cosine_similarity
+
+            return {
+                "arc1": {
+                    "id": results['ids'][0],
+                    "title": results['metadatas'][0].get('title', ''),
+                    "type": results['metadatas'][0].get('arc_type', '')
+                },
+                "arc2": {
+                    "id": results['ids'][1],
+                    "title": results['metadatas'][1].get('title', ''),
+                    "type": results['metadatas'][1].get('arc_type', '')
+                },
+                "distance": float(cosine_distance)  # Convert numpy float to Python float
+            }
+
+        except Exception as e:
+            logger.error(f"Error calculating cosine distances: {e}")
+            raise
+
+    def find_similar_arcs_clusters(
+        self,
+        series: str,
+        min_cluster_size: int = 2,
+        min_samples: int = 1,
+        cluster_selection_epsilon: float = 0.3
+    ) -> List[Dict]:
+        """Find clusters of similar arcs using HDBSCAN clustering."""
+        try:
+            # Get all main arcs with their embeddings
+            results = self.collection.get(
+                where={"$and": [{"series": series}, {"doc_type": "main"}]},
+                include=['metadatas', 'embeddings']
+            )
+
+            if not results or 'embeddings' not in results or len(results['embeddings']) < 2:
+                return []
+
+            # Convert embeddings to numpy array
+            embeddings = np.array(results['embeddings'])
+            
+            # Pre-compute distance matrix using cosine distance
+            distance_matrix = np.zeros((len(embeddings), len(embeddings)))
+            for i in range(len(embeddings)):
+                for j in range(len(embeddings)):
+                    if i != j:
+                        # Calculate cosine distance
+                        dot_product = np.dot(embeddings[i], embeddings[j])
+                        norm_i = np.linalg.norm(embeddings[i])
+                        norm_j = np.linalg.norm(embeddings[j])
+                        if norm_i == 0 or norm_j == 0:
+                            distance_matrix[i, j] = 1.0
+                        else:
+                            cosine_sim = dot_product / (norm_i * norm_j)
+                            # Ensure similarity is within [-1, 1]
+                            cosine_sim = np.clip(cosine_sim, -1.0, 1.0)
+                            distance_matrix[i, j] = 1.0 - cosine_sim
+
+            # Perform HDBSCAN clustering with pre-computed distances
+            clusterer = HDBSCAN(
+                min_cluster_size=min_cluster_size,
+                min_samples=min_samples,
+                cluster_selection_epsilon=cluster_selection_epsilon,
+                metric='precomputed',  # Use pre-computed distance matrix
+                core_dist_n_jobs=-1
+            )
+            
+            # Fit using the distance matrix
+            clusterer.fit(distance_matrix)
+            labels = clusterer.labels_
+            probabilities = clusterer.probabilities_
+
+            # Group arcs by cluster
+            clusters = {}
+            for i, (label, prob) in enumerate(zip(labels, probabilities)):
+                if label != -1:  # Ignore noise points
+                    if label not in clusters:
+                        clusters[label] = []
+                    clusters[label].append({
+                        "id": results['ids'][i],
+                        "title": results['metadatas'][i].get('title', ''),
+                        "type": results['metadatas'][i].get('arc_type', ''),
+                        "metadata": results['metadatas'][i],
+                        "cluster_probability": float(prob)
+                    })
+
+            # Format results
+            similar_groups = []
+            for cluster_id, arcs in clusters.items():
+                # Use the pre-computed distance matrix for average distance
+                cluster_indices = [results['ids'].index(arc['id']) for arc in arcs]
+                distances = []
+                for i, idx1 in enumerate(cluster_indices):
+                    for j, idx2 in enumerate(cluster_indices[i+1:], i+1):
+                        distances.append(distance_matrix[idx1, idx2])
+                
+                avg_distance = np.mean(distances) if distances else 0
+                avg_probability = np.mean([arc['cluster_probability'] for arc in arcs])
+                cluster_persistence = clusterer.cluster_persistence_[cluster_id]
+
+                similar_groups.append({
+                    "cluster_id": int(cluster_id),
+                    "arcs": arcs,
+                    "average_distance": float(avg_distance),
+                    "size": len(arcs),
+                    "average_probability": float(avg_probability),
+                    "cluster_persistence": float(cluster_persistence)
+                })
+
+            # Sort clusters by size and average probability
+            similar_groups.sort(key=lambda x: (x['size'], x['average_probability']), reverse=True)
+            
+            return similar_groups
+
+        except Exception as e:
+            logger.error(f"Error finding similar arcs clusters: {e}")
+            raise

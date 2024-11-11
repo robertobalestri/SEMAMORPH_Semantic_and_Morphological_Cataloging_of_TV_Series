@@ -192,7 +192,7 @@ async def get_series():
         logger.error(f"Error getting series: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/api/arcs/{series}", response_model=List[NarrativeArcResponse])
+@app.get("/api/arcs/series/{series}", response_model=List[NarrativeArcResponse])
 async def get_arcs_by_series(series: str):
     """Get all narrative arcs for a specific series."""
     try:
@@ -204,12 +204,10 @@ async def get_arcs_by_series(series: str):
             
             # Normalize season/episode format in progressions
             for arc in arcs:
-                logger.info(f"Arc '{arc.title}' has {len(arc.progressions)} progressions")
                 for prog in arc.progressions:
                     normalized_season, normalized_episode = normalize_season_episode(prog.season, prog.episode)
                     prog.season = normalized_season
                     prog.episode = normalized_episode
-                    logger.info(f"  - Progression in {normalized_season}{normalized_episode}")
             
             return [NarrativeArcResponse.from_arc(arc) for arc in arcs]
     except Exception as e:
@@ -413,8 +411,7 @@ async def get_vector_store_entries(series: str, query: Optional[str] = None):
             results = vector_store_service.find_similar_documents(
                 query=query,
                 series=series,
-                n_results=10,
-                include_embeddings=True
+                n_results=10
             )
             return results
         else:
@@ -432,6 +429,9 @@ async def get_vector_store_entries(series: str, query: Optional[str] = None):
 async def merge_arcs(merge_data: ArcMergeRequest):
     """Merge two arcs into a new one."""
     try:
+        logger.info(f"Received merge request for arcs: {merge_data.arc_id_1} and {merge_data.arc_id_2}")
+        logger.info(f"Merge data: {merge_data.dict()}")
+        
         with db_manager.session_scope() as session:
             arc_repository = NarrativeArcRepository(session)
             progression_repository = ArcProgressionRepository(session)
@@ -447,6 +447,32 @@ async def merge_arcs(merge_data: ArcMergeRequest):
                 session=session
             )
             
+            # Verify both arcs exist before attempting merge
+            arc1 = arc_repository.get_by_id(merge_data.arc_id_1)
+            arc2 = arc_repository.get_by_id(merge_data.arc_id_2)
+            
+            if not arc1 or not arc2:
+                raise HTTPException(
+                    status_code=404,
+                    detail="One or both arcs not found"
+                )
+            
+            # Normalize season/episode in progression mappings
+            normalized_mappings = []
+            for prog in merge_data.progression_mappings:
+                if not prog.content.strip():  # Skip empty progressions
+                    continue
+                    
+                season = f"S{pad_number(prog.season.replace('S', ''))}"
+                episode = f"E{pad_number(prog.episode.replace('E', ''))}"
+                
+                normalized_mappings.append({
+                    "season": season,
+                    "episode": episode,
+                    "content": prog.content,
+                    "interfering_characters": prog.interfering_characters
+                })
+            
             merged_arc = narrative_arc_service.merge_arcs(
                 arc_id_1=merge_data.arc_id_1,
                 arc_id_2=merge_data.arc_id_2,
@@ -454,20 +480,16 @@ async def merge_arcs(merge_data: ArcMergeRequest):
                 merged_description=merge_data.merged_description,
                 merged_arc_type=merge_data.merged_arc_type,
                 main_characters=merge_data.main_characters,
-                progression_mappings=[
-                    {
-                        "season": prog.season,
-                        "episode": prog.episode,
-                        "content": prog.content,
-                        "interfering_characters": prog.interfering_characters
-                    }
-                    for prog in merge_data.progression_mappings
-                ]
+                progression_mappings=normalized_mappings
             )
             
             if not merged_arc:
-                raise HTTPException(status_code=404, detail="One or both arcs not found")
+                raise HTTPException(
+                    status_code=500,
+                    detail="Failed to merge arcs"
+                )
             
+            logger.info(f"Successfully merged arcs into '{merged_arc.title}'")
             return NarrativeArcResponse.from_arc(merged_arc)
             
     except Exception as e:
@@ -688,3 +710,71 @@ async def merge_characters(series: str, merge_data: CharacterMergeRequest):
         error_msg = f"Error merging characters: {str(e)}"
         logger.error(error_msg)
         raise HTTPException(status_code=500, detail=error_msg)
+
+@app.post("/api/vector-store/compare", response_model=Dict)
+async def compare_arcs(arc_ids: List[str]):
+    """Calculate cosine distance between two arcs."""
+    try:
+        if len(arc_ids) != 2:
+            raise HTTPException(
+                status_code=400,
+                detail="Exactly two arc IDs must be provided"
+            )
+
+        vector_store_service = VectorStoreService()
+        result = vector_store_service.calculate_arcs_cosine_distances(arc_ids)
+        return result
+
+    except Exception as e:
+        logger.error(f"Error comparing arcs: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/vector-store/{series}/clusters", response_model=List[Dict])
+async def get_arc_clusters(
+    series: str,
+    min_cluster_size: int = 2,
+    min_samples: int = 1,
+    cluster_selection_epsilon: float = 0.3
+):
+    """Get clusters of similar arcs using HDBSCAN."""
+    try:
+        vector_store_service = VectorStoreService()
+        clusters = vector_store_service.find_similar_arcs_clusters(
+            series=series,
+            min_cluster_size=min_cluster_size,
+            min_samples=min_samples,
+            cluster_selection_epsilon=cluster_selection_epsilon
+        )
+        return clusters
+    except Exception as e:
+        logger.error(f"Error getting arc clusters: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/arcs/by-id/{arc_id}", response_model=NarrativeArcResponse)
+async def get_arc_by_id(arc_id: str):
+    """Get a single arc by ID with all its details."""
+    try:
+        with db_manager.session_scope() as session:
+            arc_repository = NarrativeArcRepository(session)
+            arc = arc_repository.get_by_id(arc_id)
+            
+            if not arc:
+                raise HTTPException(status_code=404, detail=f"Arc with ID {arc_id} not found")
+            
+            # Ensure the arc is fully loaded with its relationships
+            session.refresh(arc, ['main_characters', 'progressions'])
+            
+            # Normalize season/episode format in progressions
+            for prog in arc.progressions:
+                normalized_season, normalized_episode = normalize_season_episode(prog.season, prog.episode)
+                prog.season = normalized_season
+                prog.episode = normalized_episode
+            
+            # Create response using the model
+            response = NarrativeArcResponse.from_arc(arc)
+            logger.info(f"Retrieved arc '{arc.title}' with {len(arc.progressions)} progressions")
+            return response
+            
+    except Exception as e:
+        logger.error(f"Error getting arc by ID {arc_id}: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))

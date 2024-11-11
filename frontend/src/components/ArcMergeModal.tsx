@@ -190,10 +190,8 @@ const ArcMergeModal: React.FC<ArcMergeModalProps> = ({
     
     const normalizedSeason = `S${season.replace(/\D/g, '').padStart(2, '0')}`;
     const normalizedEpisode = `E${episode.replace(/\D/g, '').padStart(2, '0')}`;
-    const newEpisodeKey = `${normalizedSeason}-${normalizedEpisode}`;
-    
     const newKey = `new-${normalizedSeason}-${normalizedEpisode}`;
-
+    
     // Get existing interfering characters if any
     const existingMapping = progressionMappings[newKey];
     const existingCharacters = existingMapping?.interferingCharacters || [];
@@ -207,21 +205,41 @@ const ArcMergeModal: React.FC<ArcMergeModalProps> = ({
       }
     }));
 
-    // Update episodes list if it's a new episode
-    if (!allEpisodes.includes(newEpisodeKey)) {
-      const newEpisodes = [...allEpisodes, newEpisodeKey].sort((a, b) => {
-        const [s1, e1] = a.split('-').map(x => parseInt(x.replace(/[SE]/g, '')));
-        const [s2, e2] = b.split('-').map(x => parseInt(x.replace(/[SE]/g, '')));
-        return s1 === s2 ? e1 - e2 : s1 - s2;
-      });
-      setAllEpisodes(newEpisodes);
-    }
-
+    // Close the modal and reset form
     setShowNewProgressionForm(false);
     setNewProgressionContent('');
     setNewProgressionInterferingChars([]);
     setCustomSeason('');
     setCustomEpisode('');
+  };
+
+  // Add this function to handle progression content updates
+  const handleProgressionUpdate = (season: string, episode: string, content: string, interferingChars: string[]) => {
+    console.log('ArcMergeModal - handleProgressionUpdate called with:', {
+      season,
+      episode,
+      content,
+      interferingChars
+    });
+    
+    const key = `new-${season}-${episode}`;
+    console.log('Using key:', key);
+    console.log('Current progressionMappings:', progressionMappings);
+    
+    setProgressionMappings(prev => {
+      const updated = {
+        ...prev,
+        [key]: {
+          content: content,
+          interferingCharacters: interferingChars
+        }
+      };
+      console.log('Updated progressionMappings:', updated);
+      return updated;
+    });
+
+    // Close the modal after updating
+    setShowNewProgressionForm(false);
   };
 
   return (
@@ -439,7 +457,10 @@ const ArcMergeModal: React.FC<ArcMergeModalProps> = ({
           {/* Modified New Progression Form Modal */}
           <ArcProgressionEditModal 
             isOpen={showNewProgressionForm}
-            onClose={() => setShowNewProgressionForm(false)}
+            onClose={() => {
+              console.log('ArcProgressionEditModal - onClose called');
+              setShowNewProgressionForm(false);
+            }}
             arcTitle={mergedTitle}
             season={newProgressionSeason}
             episode={newProgressionEpisode}
@@ -447,9 +468,24 @@ const ArcMergeModal: React.FC<ArcMergeModalProps> = ({
             interferingCharacters={newProgressionInterferingChars}
             availableCharacters={availableCharacters}
             onSave={(content, interferingChars) => {
+              console.log('ArcProgressionEditModal - onSave callback with:', {
+                content,
+                interferingChars,
+                season: newProgressionSeason,
+                episode: newProgressionEpisode
+              });
+              
+              // Update the progression content and characters
+              handleProgressionUpdate(
+                newProgressionSeason, 
+                newProgressionEpisode, 
+                content, 
+                interferingChars
+              );
+
+              // Update local state
               setNewProgressionContent(content);
               setNewProgressionInterferingChars(interferingChars);
-              handleAddNewProgression();
             }}
             allowCustomEpisode={true}
             onSeasonChange={setNewProgressionSeason}
