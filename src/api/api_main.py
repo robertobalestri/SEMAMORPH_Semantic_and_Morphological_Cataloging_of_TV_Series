@@ -11,9 +11,17 @@ from src.narrative_storage.narrative_models import NarrativeArc, ArcProgression,
 from src.utils.logger_utils import setup_logging
 from sqlmodel import Session, select
 from src.plot_processing.plot_processing_models import EntityLink
+import sys
 
-
+# Set up logging at the very beginning
 logger = setup_logging(__name__)
+
+# Also set up root logger to catch all logs
+root_logger = setup_logging("root")
+
+# Disable uvicorn access log to avoid duplicate logging
+import logging
+logging.getLogger("uvicorn.access").handlers = []
 
 app = FastAPI(title="Narrative Arcs Dashboard API")
 
@@ -131,7 +139,7 @@ class ArcCreateRequest(BaseModel):
     title: str
     description: str
     arc_type: str
-    main_characters: List[str]
+    main_characters: str  # Comma-separated string
     series: str
     initial_progression: Optional[InitialProgressionData] = None
 
@@ -331,35 +339,58 @@ async def update_arc(arc_id: str, update_data: ArcUpdateRequest):
         logger.error(f"Error updating arc: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.patch("/api/progressions/{progression_id}")
-async def update_progression(progression_id: str, update_data: ProgressionUpdateRequest):
-    """Update progression content and interfering characters."""
+@app.patch("/api/progressions/{progression_id}", response_model=ArcProgressionResponse)
+async def update_progression(progression_id: str, progression_data: ProgressionUpdateRequest):
+    """Update a progression."""
     try:
         with db_manager.session_scope() as session:
-            arc_repository = NarrativeArcRepository(session)
             progression_repository = ArcProgressionRepository(session)
             character_service = CharacterService(CharacterRepository(session))
             vector_store_service = VectorStoreService()
             
+            # Get the progression
+            progression = progression_repository.get_by_id(progression_id)
+            if not progression:
+                raise HTTPException(status_code=404, detail="Progression not found")
+            
+            # Update the progression
+            progression.content = progression_data.content
+            
+            # Update interfering characters
+            # Split the characters if they're in a string format
+            character_names = (
+                progression_data.interfering_characters.split(';') 
+                if isinstance(progression_data.interfering_characters, str) 
+                else progression_data.interfering_characters
+            )
+            
+            # Get characters from the database
+            interfering_characters = character_service.get_characters_by_appellations(
+                character_names,
+                progression.series
+            )
+            
+            progression.interfering_characters = interfering_characters
+            
+            # Save changes
+            session.commit()
+            session.refresh(progression)
+            
+            # Update vector store
             narrative_arc_service = NarrativeArcService(
-                arc_repository=arc_repository,
+                arc_repository=NarrativeArcRepository(session),
                 progression_repository=progression_repository,
                 character_service=character_service,
                 llm_service=None,
                 vector_store_service=vector_store_service,
                 session=session
             )
+            narrative_arc_service.update_embeddings(progression.narrative_arc)
             
-            updated_progression = narrative_arc_service.update_progression(
-                progression_id=progression_id,
-                content=update_data.content,
-                interfering_characters=update_data.interfering_characters
-            )
-            if not updated_progression:
-                raise HTTPException(status_code=404, detail="Progression not found")
-            return ArcProgressionResponse.from_progression(updated_progression)
+            return ArcProgressionResponse.from_progression(progression)
+            
     except Exception as e:
-        logger.error(f"Error updating progression: {str(e)}")
+        logger.error(f"Error updating progression: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/api/progressions", response_model=ArcProgressionResponse)
@@ -385,17 +416,27 @@ async def create_progression(progression: ProgressionCreateRequest):
                 session=session
             )
             
+            # Split characters if they're in a string format
+            character_names = (
+                progression.interfering_characters.split(';') 
+                if isinstance(progression.interfering_characters, str) 
+                else progression.interfering_characters
+            )
+            
             new_progression = narrative_arc_service.add_progression(
                 arc_id=progression.arc_id,
                 content=progression.content,
                 series=progression.series,
                 season=season,
                 episode=episode,
-                interfering_characters=progression.interfering_characters
+                interfering_characters=character_names
             )
+            
             if not new_progression:
                 raise HTTPException(status_code=404, detail="Arc not found")
+                
             return ArcProgressionResponse.from_progression(new_progression)
+            
     except Exception as e:
         logger.error(f"Error creating progression: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -532,10 +573,29 @@ async def delete_progression(progression_id: str):
         logger.error(f"Error deleting progression: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
+class InitialProgressionRequest(BaseModel):
+    content: str
+    season: str
+    episode: str
+    interfering_characters: str  # Comma-separated string
+
+class ArcCreateRequest(BaseModel):
+    title: str
+    description: str
+    arc_type: str
+    main_characters: str  # Comma-separated string
+    series: str
+    initial_progression: InitialProgressionRequest
+
 @app.post("/api/arcs", response_model=NarrativeArcResponse)
 async def create_arc(arc_data: ArcCreateRequest):
     """Create a new narrative arc."""
     try:
+        # Log the raw request data
+        logger.info("=== Raw Request Data ===")
+        logger.info(f"Type of arc_data: {type(arc_data)}")
+        logger.info(f"Raw arc_data: {arc_data.dict()}")
+        
         with db_manager.session_scope() as session:
             arc_repository = NarrativeArcRepository(session)
             progression_repository = ArcProgressionRepository(session)
@@ -551,32 +611,34 @@ async def create_arc(arc_data: ArcCreateRequest):
                 session=session
             )
             
-            # First create the arc
+            # Create arc data dict with initial progression data
+            arc_dict = {
+                'title': arc_data.title,
+                'description': arc_data.description,
+                'arc_type': arc_data.arc_type,
+                'main_characters': arc_data.main_characters,  # Already semicolon-separated string
+                'single_episode_progression_string': arc_data.initial_progression.content if arc_data.initial_progression else None,
+                'interfering_episode_characters': arc_data.initial_progression.interfering_characters if arc_data.initial_progression else None
+            }
+
+            # Create the arc with its initial progression
             new_arc = narrative_arc_service.add_arc(
-                arc_data=arc_data.dict(exclude={'initial_progression'}),
+                arc_data=arc_dict,
                 series=arc_data.series,
-                season="",
-                episode=""
+                season=arc_data.initial_progression.season if arc_data.initial_progression else "",
+                episode=arc_data.initial_progression.episode if arc_data.initial_progression else "",
+                initial_progression=None  # We're using the fields in arc_dict instead
             )
             
-            # Then create the initial progression if provided
+            logger.info(f"Created new arc with ID: {new_arc.id}")
             if arc_data.initial_progression:
-                season = f"S{pad_number(arc_data.initial_progression.season.replace('S', ''))}"
-                episode = f"E{pad_number(arc_data.initial_progression.episode.replace('E', ''))}"
-                
-                narrative_arc_service.add_progression(
-                    arc_id=new_arc.id,
-                    content=arc_data.initial_progression.content,
-                    series=arc_data.series,
-                    season=season,
-                    episode=episode,
-                    interfering_characters=arc_data.initial_progression.interfering_characters
-                )
+                logger.info(f"Initial progression data: {arc_data.initial_progression}")
             
             return NarrativeArcResponse.from_arc(new_arc)
             
     except Exception as e:
         logger.error(f"Error creating arc: {e}")
+        logger.error("Full error details:", exc_info=True)
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/api/characters/{series}", response_model=List[CharacterResponse])
@@ -732,20 +794,32 @@ async def compare_arcs(arc_ids: List[str]):
 @app.get("/api/vector-store/{series}/clusters", response_model=List[Dict])
 async def get_arc_clusters(
     series: str,
+    threshold: float = 0.5,  # Similarity threshold (1 - distance)
     min_cluster_size: int = 2,
-    min_samples: int = 1,
-    cluster_selection_epsilon: float = 0.3
+    max_clusters: int = 5  # New parameter to limit number of clusters
 ):
     """Get clusters of similar arcs using HDBSCAN."""
     try:
+        # Convert similarity threshold to distance threshold
+        cluster_selection_epsilon = 1 - threshold
+        
         vector_store_service = VectorStoreService()
         clusters = vector_store_service.find_similar_arcs_clusters(
             series=series,
             min_cluster_size=min_cluster_size,
-            min_samples=min_samples,
+            min_samples=1,  # Keep this low for more flexible clustering
             cluster_selection_epsilon=cluster_selection_epsilon
         )
-        return clusters
+        
+        # Sort clusters by size and probability, then limit to max_clusters
+        sorted_clusters = sorted(
+            clusters,
+            key=lambda x: (x['size'], x['average_probability']),
+            reverse=True
+        )[:max_clusters]
+        
+        return sorted_clusters
+        
     except Exception as e:
         logger.error(f"Error getting arc clusters: {e}")
         raise HTTPException(status_code=500, detail=str(e))

@@ -1,98 +1,98 @@
 [
   {
-    "title": "Meredith and Derek's Professional and Personal Entanglement",
-    "arc_type": "Soap Arc",
-    "description": "Meredith Grey and Derek Shepherd navigate their complex relationship, which begins with a one-night stand and evolves as they work together at Seattle Grace Hospital, balancing personal feelings with professional responsibilities amidst hospital drama.",
-    "main_characters": "Meredith Grey; Derek Shepherd",
-    "interfering_episode_characters": "Cristina Yang; Miranda Bailey; Preston Burke; George O'Malley; Isobel Stevens; Alex Karev",
-    "single_episode_progression_string": "Meredith wakes up next to Derek after a one-night stand. Meredith heads to her first day at the hospital. Meredith discovers Derek is her superior at work. Derek suggests continuing their personal relationship. Meredith assists Derek in a critical surgery, showcasing her skills."
-  },
-  {
-    "title": "George O'Malley's Journey to Self-Confidence",
-    "arc_type": "Soap Arc",
-    "description": "George O'Malley struggles to build his confidence as a surgical intern, facing personal and professional setbacks while striving to meet expectations from peers and mentors.",
-    "main_characters": "George O'Malley",
-    "interfering_episode_characters": "Preston Burke; Meredith Grey; Cristina Yang; Izzie Stevens; Derek Shepherd",
-    "single_episode_progression_string": "George is selected by Burke for an appendectomy. George accidentally breaks the purse strings during the procedure. Burke steps in to complete the surgery. George is nicknamed 007 by his peers. George expresses regret about his career choice to Meredith."
-  },
-  {
-    "title": "Izzie Stevens' Fight for Respect",
-    "arc_type": "Soap Arc",
-    "description": "Izzie Stevens battles stereotypes and seeks acceptance from her colleagues, proving her competence as a former model turned surgical intern, while advocating for her patients and forming bonds with fellow interns.",
-    "main_characters": "Izzie Stevens",
-    "interfering_episode_characters": "Miranda Bailey; Alex Karev; Meredith Grey; Cristina Yang; George O'Malley",
-    "single_episode_progression_string": "Izzie introduces herself to Bailey, who ignores her. Izzie is assigned to perform rectal exams. Izzie struggles with a central line and seeks Bailey's help. Izzie is dismissed by Alex Karev. Izzie expresses concern about a resident disliking her. Izzie tries to mediate between Meredith and Cristina."
-  },
-  {
-    "title": "Meredith Grey's Legacy and Personal Struggles",
-    "arc_type": "Soap Arc",
-    "description": "Meredith Grey navigates the challenges of her medical career while dealing with the shadow of her mother, Ellis Grey, a legendary surgeon, and the emotional impact of Ellis's Alzheimer's disease.",
-    "main_characters": "Meredith Grey",
-    "interfering_episode_characters": "Derek Shepherd; Ellis Grey; Cristina Yang; Miranda Bailey; George O'Malley; Isobel Stevens; Preston Burke",
-    "single_episode_progression_string": "Meredith starts her first day as an intern at Seattle Grace Hospital. She is reminded of her mother's legacy by her peers. Meredith discovers her mother, Ellis Grey, has Alzheimer's disease."
-  },
-  {
-    "title": "Interns' Bond and Support Network",
-    "arc_type": "Soap Arc",
-    "description": "Meredith, Cristina, George, and Izzie form a strong support system, navigating the challenges of their surgical internships together, developing deep friendships, and supporting each other through personal and professional trials.",
-    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Isobel Stevens",
-    "interfering_episode_characters": "Derek Shepherd; Miranda Bailey; Preston Burke",
-    "single_episode_progression_string": "Meredith and Cristina connect over their shared resident. George introduces himself to Meredith and the group. The interns support each other during their first shift. Cristina and Meredith team up to solve Katie's medical mystery. Cristina feels betrayed when Meredith is chosen for surgery. Meredith and Cristina reconcile after the surgery. George shares his career doubts with Meredith."
-  },
-  {
-    "title": "Meredith Grey's Professional Growth",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Meredith Grey's journey as a surgical intern at Seattle Grace Hospital involves overcoming professional challenges, gaining medical expertise, and navigating personal relationships as she establishes herself in a demanding field.",
-    "main_characters": "Meredith Grey",
-    "interfering_episode_characters": "Derek Shepherd; Cristina Yang; Miranda Bailey; Preston Burke; George O'Malley; Isobel Stevens",
-    "single_episode_progression_string": "Meredith wakes up after a one-night stand with Derek. She starts her first day as an intern at Seattle Grace Hospital. Meredith is assigned to Katie Bryce's case. She successfully diagnoses Katie's aneurysm. Meredith assists Derek in surgery, proving her skills."
-  },
-  {
-    "title": "Cristina Yang's Ambition and Rivalry",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Cristina Yang is determined to excel in her surgical internship, often leading to rivalry with her peers, particularly Meredith Grey, as she competes for prestigious surgeries and recognition throughout the season.",
-    "main_characters": "Cristina Yang; Meredith Grey",
-    "interfering_episode_characters": "Miranda Bailey; Derek Shepherd",
-    "single_episode_progression_string": "Cristina connects with Meredith and learns they share the same resident. Cristina hints to Bailey about wanting a surgery. Cristina and Meredith work together to solve Katie's case. Cristina is upset when Meredith is chosen for the surgery. Cristina and Meredith reconcile after the surgery."
-  },
-  {
-    "title": "Bailey's Mentorship and Leadership",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Miranda Bailey, known for her tough but fair approach, mentors the new interns, guiding them through their first year with high standards and discipline, shaping their development as future surgeons.",
-    "main_characters": "Miranda Bailey",
-    "interfering_episode_characters": "Meredith Grey; Cristina Yang; George O'Malley; Isobel Stevens; Alex Karev",
-    "single_episode_progression_string": "Bailey introduces herself to the interns and sets her expectations. She assigns tasks to each intern, testing their skills and resilience. Bailey intervenes when Izzie struggles with a central line. She observes the interns' performance and provides guidance."
-  },
-  {
-    "title": "Navigating Power Dynamics at Seattle Grace",
-    "arc_type": "Genre-Specific Arc",
-    "description": "The interns and residents at Seattle Grace Hospital navigate complex power dynamics, dealing with attendings' expectations, peer competition, and the hierarchical structure of the hospital.",
-    "main_characters": "Meredith Grey; George O'Malley; Cristina Yang",
-    "interfering_episode_characters": "Miranda Bailey; Derek Shepherd; Preston Burke",
-    "single_episode_progression_string": "Meredith and other interns meet their resident, Bailey, and learn about her reputation. Burke selects George for an appendectomy to test him. Meredith impresses the Chief with her medical knowledge. Derek chooses Meredith to assist in surgery after she diagnoses Katie's condition."
-  },
-  {
     "title": "Medical Case: Katie Bryce's Seizures",
     "arc_type": "Anthology Arc",
-    "description": "The interns at Seattle Grace Hospital face their first major challenge as they diagnose and treat Katie Bryce, a patient with unexplained seizures. Meredith Grey demonstrates her medical acumen by reviving Katie and identifying the cause of her condition, leading to a successful surgery.",
+    "description": "The interns at Seattle Grace Hospital face their first major challenge as they work together to diagnose and treat Katie Bryce, a patient with unexplained seizures. Meredith Grey plays a pivotal role in identifying the cause and assisting in the surgery, marking the beginning of her journey as a surgeon.",
     "main_characters": "Meredith Grey; Derek Shepherd",
     "interfering_episode_characters": "Cristina Yang; Miranda Bailey; Preston Burke; Alex Karev; George O'Malley; Isobel Stevens",
-    "single_episode_progression_string": "Katie Bryce is brought to the hospital with seizures. Meredith revives Katie during a critical moment. Meredith and Cristina suspect an aneurysm. Derek Shepherd confirms the diagnosis. Meredith assists in the surgery to repair the aneurysm."
+    "single_episode_progression_string": "Katie Bryce is brought in with seizures. Meredith revives Katie during a critical seizure. Meredith and Cristina suspect a brain aneurysm. Derek Shepherd confirms the aneurysm. Meredith assists in Katie's surgery."
   },
   {
     "title": "Medical Case: Tony Savitch's Heart Surgery",
     "arc_type": "Anthology Arc",
-    "description": "Preston Burke performs heart surgery on Tony Savitch, but the operation reveals the heart is too damaged, leading to Tony's death. This case highlights the emotional challenges faced by the interns, particularly George O'Malley, who struggles with the outcome and the promise made to Tony's wife, Gloria.",
+    "description": "George O'Malley is involved in the case of Tony Savitch, a patient undergoing heart surgery. Despite assurances given to Tony's wife, Gloria, the surgery does not go as planned, and Tony dies, leaving George to deliver the devastating news.",
     "main_characters": "George O'Malley; Preston Burke",
     "interfering_episode_characters": "Gloria Savitch",
-    "single_episode_progression_string": "Burke explains the heart surgery to Tony and Gloria. Burke performs the surgery and discovers the heart is too damaged. Tony dies during the operation. Burke informs George of Tony's death. George struggles to tell Gloria about Tony's death."
+    "single_episode_progression_string": "George comforts Gloria before the surgery. Burke performs the surgery but Tony dies. Burke instructs George to inform Gloria about Tony's death."
   },
   {
     "title": "Medical Case: Patient 4B's Pulmonary Embolism",
     "arc_type": "Anthology Arc",
-    "description": "Meredith Grey demonstrates her medical acumen by correctly diagnosing a pulmonary embolism in patient 4B. This highlights her ability to think critically under pressure in the competitive environment of Seattle Grace Hospital.",
+    "description": "Meredith Grey demonstrates her diagnostic skills by correctly identifying a pulmonary embolism in patient 4B, earning recognition from the Chief and establishing her competence among her peers.",
     "main_characters": "Meredith Grey",
     "interfering_episode_characters": "Alex Karev; The Chief",
-    "single_episode_progression_string": "The Chief asks Alex about post-operative fever causes. Alex fails to answer. Meredith correctly identifies the condition as a pulmonary embolism. The Chief instructs Alex to follow Meredith's advice."
+    "single_episode_progression_string": "Alex Karev dismisses patient 4B's symptoms. The Chief questions Alex about post-operative fever causes. Meredith identifies the symptoms as a pulmonary embolism. The Chief acknowledges Meredith's diagnosis and instructs Alex to follow her advice."
+  },
+  {
+    "title": "Meredith and Derek's Professional and Personal Entanglement",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey and Derek Shepherd's relationship evolves from a one-night stand to a complex dynamic, affecting their professional interactions and personal lives at Seattle Grace Hospital.",
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "Cristina Yang; Miranda Bailey",
+    "single_episode_progression_string": "Meredith wakes up next to Derek after a one-night stand. Meredith and Derek meet again at the hospital, realizing Derek is her superior. Derek offers Meredith the chance to assist in surgery, leading to tension with Cristina."
+  },
+  {
+    "title": "Meredith Grey's Journey of Growth and Legacy",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey navigates the pressures of her surgical internship while grappling with her mother's legacy and her own self-doubt, striving to establish her identity at Seattle Grace Hospital.",
+    "main_characters": "Meredith Grey",
+    "interfering_episode_characters": "Derek Shepherd; Cristina Yang; Ellis Grey; Miranda Bailey; George O'Malley; Isobel Stevens; Preston Burke; Alex Karev",
+    "single_episode_progression_string": "Meredith wakes up from a one-night stand with Derek. Meredith starts her internship at Seattle Grace Hospital. Meredith learns that her mother is a renowned surgeon. Meredith diagnoses Katie Bryce's condition and is chosen to assist in surgery. Meredith decides not to sell her mother's house and plans to get roommates."
+  },
+  {
+    "title": "Intern Rivalries and Alliances",
+    "arc_type": "Soap Arc",
+    "description": "The interns, including Meredith, Cristina, George, and Izzie, navigate the complexities of their surgical training, forming alliances and rivalries that challenge their professional and personal relationships.",
+    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Isobel Stevens",
+    "interfering_episode_characters": "Miranda Bailey; Preston Burke; Derek Shepherd",
+    "single_episode_progression_string": "Meredith and Cristina bond over their shared resident. George introduces himself awkwardly, leading to misunderstandings. Cristina discovers Meredith's mother is Ellis Grey, causing tension. Burke selects George for surgery, creating rivalry. Meredith and Cristina collaborate on Katie's case. Cristina feels betrayed when Meredith is chosen for surgery."
+  },
+  {
+    "title": "Cristina Yang's Relentless Pursuit of Excellence",
+    "arc_type": "Soap Arc",
+    "description": "Cristina Yang's ambition drives her to excel in her internship, often leading to conflicts with peers and mentors as she seeks to prove her surgical prowess.",
+    "main_characters": "Cristina Yang; Meredith Grey",
+    "interfering_episode_characters": "Miranda Bailey; Derek Shepherd",
+    "single_episode_progression_string": "Cristina connects with Meredith and learns they share the same resident. Cristina expresses her desire for surgery to Bailey. Cristina and Meredith work together to diagnose Katie Bryce. Cristina is upset when Meredith is chosen for surgery."
+  },
+  {
+    "title": "George O'Malley's Quest for Confidence",
+    "arc_type": "Soap Arc",
+    "description": "George O'Malley navigates the challenges of being a surgical intern, facing self-doubt and striving to prove his competence at Seattle Grace Hospital.",
+    "main_characters": "George O'Malley",
+    "interfering_episode_characters": "Preston Burke; Meredith Grey; Cristina Yang; Izzie Stevens",
+    "single_episode_progression_string": "George is selected to assist in an appendectomy. He makes a mistake during the procedure. Burke steps in to complete the surgery. George is nicknamed 007 by his peers. George expresses regret about his career choice."
+  },
+  {
+    "title": "Ellis Grey's Shadow Over Meredith",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey navigates her career as a surgical intern while dealing with the expectations and legacy left by her mother, Ellis Grey, a renowned surgeon.",
+    "main_characters": "Meredith Grey",
+    "interfering_episode_characters": "Cristina Yang; Richard Webber; Ellis Grey; Derek Shepherd",
+    "single_episode_progression_string": "Meredith starts her internship at Seattle Grace Hospital. Cristina reveals Meredith's mother is the famous surgeon Ellis Grey. The Chief recognizes Meredith's resemblance to Ellis. Meredith decides not to sell her mother's house and plans to get roommates."
+  },
+  {
+    "title": "Bailey's Formidable Mentorship",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Miranda Bailey, known for her tough love approach, mentors the interns with a firm hand, guiding them through the rigors of their surgical training.",
+    "main_characters": "Miranda Bailey",
+    "interfering_episode_characters": "Meredith Grey; Cristina Yang; George O'Malley; Isobel Stevens; Alex Karev",
+    "single_episode_progression_string": "Bailey introduces herself to the interns with a strict demeanor. She assigns tasks to each intern, setting high expectations. Bailey surprises the interns by being a woman and not a Nazi. She gives Izzie a challenging task to perform rectal exams. Bailey is paged and leads the interns to a critical case on the roof. She instructs Meredith to handle a CT scan for Katie Bryce. Bailey is woken up by Izzie for a central line and teaches her the procedure. Bailey lectures Meredith after the seizure incident with Katie."
+  },
+  {
+    "title": "Challenges Within Seattle Grace Hospital",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The interns at Seattle Grace Hospital face the intense demands of their medical training, navigating professional challenges, personal relationships, and the high-pressure environment of a top medical facility.",
+    "main_characters": "Meredith Grey; Miranda Bailey; Derek Shepherd",
+    "interfering_episode_characters": "Cristina Yang; George O'Malley; Preston Burke; Izzie Stevens; Alex Karev",
+    "single_episode_progression_string": "Meredith begins her internship at Seattle Grace Hospital. Bailey introduces the interns to the hospital's rules and expectations. Meredith handles a CT scan for Katie Bryce. Meredith identifies a potential aneurysm in Katie Bryce, leading to a successful surgery. The interns confront the reality of their responsibilities and the pressure of their new roles."
+  },
+  {
+    "title": "Alex Karev's Struggle for Respect",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Alex Karev navigates professional challenges and conflicts as he strives to earn respect and establish himself as a competent surgical intern amidst his peers and superiors.",
+    "main_characters": "Alex Karev",
+    "interfering_episode_characters": "Meredith Grey; Chief Webber; Nurse",
+    "single_episode_progression_string": "Alex dismisses a nurse's concern about a patient's condition. Meredith correctly diagnoses the patient, undermining Alex's authority. The Chief assigns Alex to follow Meredith's advice, highlighting his need for improvement."
   }
 ]

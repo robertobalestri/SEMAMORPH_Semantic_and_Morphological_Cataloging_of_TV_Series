@@ -1,14 +1,17 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
 
 export default defineConfig({
-  plugins: [react({
-    jsxRuntime: 'automatic',
-    jsxImportSource: '@emotion/react',
-    babel: {
-      plugins: ['@emotion/babel-plugin']
-    }
-  })],
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+  optimizeDeps: {
+    include: ['react-plotly.js', 'plotly.js-dist-min', 'ml-pca', 'ml-matrix']
+  },
   server: {
     port: 3000,
     proxy: {
@@ -17,8 +20,23 @@ export default defineConfig({
         changeOrigin: true,
       },
     },
+    fs: {
+      strict: false
+    },
+    hmr: {
+      overlay: true
+    }
   },
-  resolve: {
-    extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json']
+  build: {
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'chakra': ['@chakra-ui/react', '@chakra-ui/icons'],
+          'plotly': ['plotly.js-dist-min', 'react-plotly.js'],
+          'ml': ['ml-pca', 'ml-matrix']
+        }
+      }
+    }
   }
-})
+}); 

@@ -1,106 +1,98 @@
 [
   {
-    "title": "Meredith And Derek's Professional And Personal Entanglement",
-    "arc_type": "Soap Arc",
-    "description": "Meredith Grey and Derek Shepherd navigate their complex relationship, which begins with a one-night stand and evolves as they work together at Seattle Grace Hospital, balancing personal feelings with professional responsibilities amidst hospital drama.",
-    "main_characters": "Meredith Grey; Derek Shepherd",
-    "interfering_episode_characters": "Cristina Yang; Bailey; Richard Webber",
-    "single_episode_progression_string": "Meredith and Derek share a tense elevator ride where Meredith sets boundaries. They kiss in the elevator despite Meredith's initial refusal. Meredith accuses Derek of sexual harassment but they share a passionate moment. Meredith decides to take the stairs instead of riding the elevator with Derek again."
-  },
-  {
-    "title": "George O'Malley's Journey To Self-Confidence",
-    "arc_type": "Soap Arc",
-    "description": "George O'Malley struggles to build his confidence as a surgical intern, facing personal and professional setbacks while striving to meet expectations from peers and mentors.",
-    "main_characters": "George O'Malley",
-    "interfering_episode_characters": "Meredith Grey; Cristina Yang; Miranda Bailey",
-    "single_episode_progression_string": "George forgets his badge and has to return to his car. George hints at wanting to be Meredith's roommate but is rejected. George boasts about being on the code team to Cristina. George runs with the code team to a critical patient. George gives orders during a code situation. George calls the time of death for a patient."
-  },
-  {
-    "title": "Izzie Stevens' Fight For Respect",
-    "arc_type": "Soap Arc",
-    "description": "Izzie Stevens battles stereotypes and seeks acceptance from her colleagues, proving her competence as a former model turned surgical intern, while advocating for her patients and forming bonds with fellow interns.",
-    "main_characters": "Izzie Stevens",
-    "interfering_episode_characters": "Ms. Lu; Ahn; Cristina Yang",
-    "single_episode_progression_string": "Izzie feels uncomfortable in a crowded elevator. Izzie struggles to communicate with Ms. Lu due to a language barrier. Izzie helps Ahn with her injury despite the risk to her job. Izzie is thanked by Ms. Lu in her language."
-  },
-  {
-    "title": "Interns' Bond And Support Network",
-    "arc_type": "Soap Arc",
-    "description": "Meredith, Cristina, George, and Izzie form a strong support system, navigating the challenges of their surgical internships together, developing deep friendships, and supporting each other through personal and professional trials.",
-    "main_characters": "Meredith; Cristina; George; Izzie",
-    "interfering_episode_characters": "Bailey; Alex; Derek; Burke",
-    "single_episode_progression_string": "Meredith refuses to have George and Izzie as roommates. Meredith eventually agrees to let George and Izzie move in. The interns express their frustrations about being interns. Meredith, George, and Izzie celebrate their new living arrangement."
-  },
-  {
-    "title": "Meredith Grey's Professional Growth",
-    "arc_type": "Soap Arc",
-    "description": "Meredith Grey's journey as a surgical intern at Seattle Grace Hospital involves overcoming professional challenges, gaining medical expertise, and navigating personal relationships as she establishes herself in a demanding field.",
-    "main_characters": "Meredith Grey",
-    "interfering_episode_characters": "Bailey; Derek Shepherd; Burke; Richard Webber; George O'Malley; Izzie Stevens; Cristina Yang; Alex Karev",
-    "single_episode_progression_string": "Meredith posts a notice for a roommate. Meredith declines an intern's request to be her roommate. Meredith offers Bailey a mocha latte to assist in the operating room. Meredith is tasked with handling the rapist's penis box. Meredith identifies the rapist's injury in surgery. Meredith questions the pediatric intern about a baby's condition. Meredith is authorized by Burke to assist in the baby's surgery."
-  },
-  {
-    "title": "Cristina Yang's Ambition And Rivalry",
-    "arc_type": "Soap Arc",
-    "description": "Cristina Yang is determined to excel in her surgical internship, often leading to rivalry with her peers, particularly Meredith Grey, as she competes for prestigious surgeries and recognition throughout the season.",
-    "main_characters": "Cristina Yang",
-    "interfering_episode_characters": "Meredith Grey; Alex Karev; George O'Malley; Miranda Bailey",
-    "single_episode_progression_string": "Cristina almost runs over George as she arrives at the hospital. She is assigned to show Alex Karev how she works and resents it. Cristina is frustrated by constant hugs from patients. She competes with Alex to deliver lab results. Cristina discusses with Meredith the implications of not reattaching the rapist's penis."
-  },
-  {
-    "title": "Bailey's Mentorship And Leadership",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Miranda Bailey, known for her tough but fair approach, mentors the new interns, guiding them through their first year with high standards and discipline, shaping their development as future surgeons.",
-    "main_characters": "Miranda Bailey",
-    "interfering_episode_characters": "Meredith Grey; Derek Shepherd; Preston Burke; George O'Malley; Cristina Yang; Izzie Stevens; Alex Karev",
-    "single_episode_progression_string": "Bailey assigns tasks to the interns and emphasizes making their resident happy. Bailey takes the mocha latte from Meredith but denies her request to assist in surgery. Bailey instructs Meredith to take the rapist to OR 1 and inform the Chief. Bailey sarcastically suggests mourning the rapist's condition and returns to work."
-  },
-  {
-    "title": "Navigating Power Dynamics At Seattle Grace",
-    "arc_type": "Genre-Specific Arc",
-    "description": "The interns and residents at Seattle Grace Hospital navigate complex power dynamics, dealing with attendings' expectations, peer competition, and the hierarchical structure of the hospital. They learn to balance personal ambitions with professional responsibilities while forming alliances and rivalries.",
-    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley",
-    "interfering_episode_characters": "Miranda Bailey; Preston Burke; Alex Karev; Derek Shepherd",
-    "single_episode_progression_string": "Meredith offers Bailey a mocha latte to assist in the OR. Bailey refuses to let interns use a scalpel until she is happy. Cristina is tasked with showing Alex how she works. George leads the code team but loses a patient. Meredith questions a pediatric intern's diagnosis. Burke takes over the baby's care. Meredith is allowed to hold the clamp during surgery."
-  },
-  {
-    "title": "Cristina And Alex's Professional Rivalry",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Cristina Yang and Alex Karev engage in a professional rivalry, competing for surgical opportunities and recognition, while learning to work together as interns.",
-    "main_characters": "Cristina Yang; Alex Karev",
-    "interfering_episode_characters": "Meredith Grey; Bailey",
-    "single_episode_progression_string": "Cristina is assigned to show Alex how she works. Cristina remembers Alex called Meredith a nurse and tells him she dislikes him. Cristina and Alex give lab results to a family. Cristina glares at Alex when a family member hugs her. Cristina and Alex provide lab results to several patients. Cristina pushes Alex in front of her to avoid a hug."
-  },
-  {
-    "title": "Burke's Ambition For Chief Of Surgery",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Preston Burke aspires to become Chief of Surgery, navigating hospital politics and competing with Derek Shepherd for the prestigious position.",
-    "main_characters": "Preston Burke",
-    "interfering_episode_characters": "Richard Webber; Derek Shepherd",
-    "single_episode_progression_string": "Burke questions Richard about inviting Derek to Seattle Grace. Burke expresses his desire to become Chief of Surgery. Richard tells Burke he won't be leaving anytime soon. Burke confronts Derek about being competition for Chief of Surgery."
-  },
-  {
-    "title": "Medical Case: Allison's Assault And Recovery",
+    "title": "Medical Case: Allison's Assault and Recovery",
     "arc_type": "Anthology Arc",
-    "description": "The interns handle the case of Allison, a rape victim found in the park with serious injuries. The arc follows her surgery, recovery, and the hospital's involvement in identifying and treating the rapist.",
-    "main_characters": "Meredith; Derek; Allison",
-    "interfering_episode_characters": "Bailey; Burke; Cristina; Alex; George; Izzie",
-    "single_episode_progression_string": "Meredith encounters a rape victim with injuries identical to her own shoes. The team performs surgery on Allison. The rapist is brought to the hospital with severe injuries. The police take custody of the rapist's penis. Allison begins to wake up after surgery."
+    "description": "The interns handle a challenging case involving a rape victim named Allison, focusing on her surgery, recovery, and the emotional impact on the medical team.",
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "Burke; Bailey; Richard Webber",
+    "single_episode_progression_string": "Meredith encounters Allison, a rape victim with severe injuries. Derek and Burke perform surgery on Allison, noting her resilience. Meredith and Derek discuss Allison's recovery and lack of family support. Allison begins to wake up post-surgery, showing signs of recovery."
   },
   {
     "title": "Medical Case: The Blue Baby",
     "arc_type": "Anthology Arc",
-    "description": "Meredith notices a baby with a heart murmur, leading to an investigation and surgery to address the condition.",
-    "main_characters": "Meredith; Burke",
-    "interfering_episode_characters": "Pediatric Intern; Dr. Kay; Mr. and Mrs. Johnson",
-    "single_episode_progression_string": "Meredith notices a baby turning blue in the nursery. Meredith raises concerns about a heart murmur to the pediatric intern. The pediatric intern dismisses Meredith's concerns. Meredith informs Burke about the baby's condition. Burke takes over the case and confirms the heart murmur is serious. Burke performs surgery on the baby with Meredith assisting."
+    "description": "Meredith becomes concerned about a baby's health after noticing a blue tint, leading to a deeper investigation into a potential heart defect. The arc explores the challenges of pediatric diagnoses and the importance of advocating for patient care.",
+    "main_characters": "Meredith Grey; Preston Burke",
+    "interfering_episode_characters": "Pediatric Intern; Dr. Kay; Mr. Johnson; Mrs. Johnson",
+    "single_episode_progression_string": "Meredith notices a baby's face turning blue in the nursery. Meredith expresses her concerns about the baby's heart murmur to the pediatric intern. The pediatric intern dismisses Meredith's concerns. Meredith informs Burke about the situation. Burke takes over the baby's care and confirms the need for surgery. Burke performs surgery on the baby with Meredith assisting."
   },
   {
-    "title": "Medical Case: Ms. Lu And Ahn's Injuries",
+    "title": "Medical Case: Ms. Lu and Ahn's Injuries",
     "arc_type": "Anthology Arc",
-    "description": "Izzie navigates a language barrier while treating Ms. Lu, who is worried about her daughter Ahn's injury. Izzie discreetly provides medical assistance to Ahn outside the hospital due to her undocumented status.",
-    "main_characters": "Izzie",
+    "description": "Izzie navigates ethical challenges and language barriers while treating patients, highlighting the complexities and moral dilemmas faced by medical interns.",
+    "main_characters": "Izzie Stevens",
     "interfering_episode_characters": "Ms. Lu; Ahn",
-    "single_episode_progression_string": "Izzie encounters Ms. Lu, who speaks Cantonese, and struggles to communicate. Ms. Lu indicates her daughter Ahn is injured outside. Izzie finds Ahn with a head injury and learns she is undocumented. Izzie discreetly stitches Ahn's wound outside the hospital. Ms. Lu thanks Izzie in her language before leaving."
+    "single_episode_progression_string": "Izzie encounters Ms. Lu, who speaks Cantonese, and learns about her daughter Ahn's head injury. Ms. Lu communicates her concerns about Ahn. Izzie discreetly treats Ahn's injury outside the hospital. Izzie provides instructions for follow-up care and shares her pager number for further assistance."
+  },
+  {
+    "title": "Meredith and Derek's Complex Relationship",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey and Derek Shepherd navigate the complexities of their evolving relationship, balancing personal attraction with professional boundaries at Seattle Grace Hospital. Their interactions are marked by tension and chemistry, as they struggle to maintain professionalism while acknowledging their mutual attraction.",
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "Cristina Yang; Miranda Bailey",
+    "single_episode_progression_string": "Meredith and Derek share a tense elevator ride where Meredith sets boundaries. They share a passionate kiss despite Meredith's initial refusal. Meredith decides not to pursue a relationship with Derek due to professional boundaries."
+  },
+  {
+    "title": "Meredith Grey's Journey of Growth and Legacy",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey grapples with her mother's legacy and her own self-doubt, striving to establish her identity and grow as a surgeon amidst personal and professional challenges.",
+    "main_characters": "Meredith Grey",
+    "interfering_episode_characters": "Izzie Stevens; George O'Malley; Derek Shepherd; Richard Webber; Cristina Yang; Miranda Bailey; Alex Karev; Preston Burke",
+    "single_episode_progression_string": "Meredith puts up a notice for a roommate but rejects all her friends. She is confronted by Izzie about her reluctance to have a roommate. Meredith is distracted by a rape victim with shoes identical to hers. She is tasked with keeping the rapist's severed penis until the police arrive. Meredith decides to let Izzie and George move in with her."
+  },
+  {
+    "title": "Intern Rivalries and Alliances",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The interns, including Meredith, Cristina, George, and Izzie, navigate the complexities of their surgical training, forming alliances and rivalries that challenge their professional and personal relationships.",
+    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Izzie Stevens",
+    "interfering_episode_characters": "Alex Karev; Miranda Bailey; Preston Burke; Derek Shepherd",
+    "single_episode_progression_string": "Meredith refuses to have George and Izzie as roommates, preferring strangers. Cristina is assigned to mentor Alex Karev, whom she dislikes. George tries to prove himself on the code team but struggles with patient deaths. Izzie faces challenges communicating with a patient due to a language barrier. Meredith eventually allows George and Izzie to move in with her."
+  },
+  {
+    "title": "Cristina Yang's Relentless Pursuit of Excellence",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Cristina Yang's ambition drives her to excel in her internship, often leading to conflicts with peers and mentors as she seeks to prove her surgical prowess.",
+    "main_characters": "Cristina Yang",
+    "interfering_episode_characters": "George O'Malley; Alex Karev; Miranda Bailey",
+    "single_episode_progression_string": "Cristina almost runs over George as she arrives at the hospital. Bailey assigns Cristina to work with Alex, whom she dislikes. Cristina is tasked with delivering lab results and is annoyed by patient interactions. Cristina and Alex provide lab results to several patients. Cristina is frustrated by constant hugs from patients. Cristina and Alex discuss strategies to gain OR time."
+  },
+  {
+    "title": "George O'Malley's Quest for Confidence and Belonging",
+    "arc_type": "Soap Arc",
+    "description": "George O'Malley navigates the challenges of being a surgical intern, facing self-doubt and striving to prove his competence while seeking to form closer bonds with his peers.",
+    "main_characters": "George O'Malley",
+    "interfering_episode_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; Miranda Bailey",
+    "single_episode_progression_string": "George forgets his badge and has to return to his car. He hints at wanting to be Meredith's roommate but is rejected. George is on the code team and tries to resuscitate a patient. He announces the time of death for a patient. George observes babies with Meredith and offers her a choice to join him or stay unhappy. George's pager goes off, and he leaves for an emergency."
+  },
+  {
+    "title": "Izzie's Ethical Dilemmas",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Izzie Stevens faces ethical challenges as she navigates patient care, testing her moral compass and professional responsibilities amidst language barriers and patient advocacy.",
+    "main_characters": "Izzie Stevens",
+    "interfering_episode_characters": "Ms. Lu; Ahn",
+    "single_episode_progression_string": "Izzie encounters Ms. Lu, who speaks Cantonese, and struggles to communicate. Izzie discovers Ms. Lu's daughter, Ahn, has a head injury and is undocumented. Izzie decides to treat Ahn's injury outside the hospital to avoid legal issues. Izzie gives Ahn her pager number for follow-up care."
+  },
+  {
+    "title": "Bailey's Formidable Mentorship",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Miranda Bailey's leadership style and influence shape the interns' experiences, as she balances tough mentorship with guiding them through the complexities of their medical training.",
+    "main_characters": "Miranda Bailey",
+    "interfering_episode_characters": "Meredith Grey; Cristina Yang; George O'Malley; Izzie Stevens; Alex Karev",
+    "single_episode_progression_string": "Bailey assigns tasks to the interns and emphasizes making their resident happy. Meredith attempts to bribe Bailey with a mocha latte. Bailey refuses to let the interns use a scalpel until she is satisfied with their performance. Bailey sarcastically comments on the rapist's condition, showing her tough demeanor."
+  },
+  {
+    "title": "Burke's Ambition for Chief of Surgery",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Preston Burke's ambition to become Chief of Surgery drives his actions and decisions throughout the season, leading to professional conflicts and strategic maneuvers within Seattle Grace Hospital.",
+    "main_characters": "Preston Burke",
+    "interfering_episode_characters": "Richard Webber; Derek Shepherd",
+    "single_episode_progression_string": "Burke expresses his desire to become Chief of Surgery to Richard. Burke confronts Richard about inviting Derek to Seattle Grace. Burke tells Derek he sees him as competition for Chief of Surgery."
+  },
+  {
+    "title": "Challenges Within Seattle Grace Hospital",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The interns at Seattle Grace Hospital face the intense demands of their medical training, navigating professional challenges, personal relationships, and the high-pressure environment of a top medical facility.",
+    "main_characters": "Meredith Grey; George O'Malley; Cristina Yang; Izzie Stevens",
+    "interfering_episode_characters": "Miranda Bailey; Derek Shepherd; Preston Burke; Alex Karev",
+    "single_episode_progression_string": "Meredith posts a notice for a roommate but rejects all her friends. Bailey assigns tasks to the interns and sets high expectations. Meredith deals with the trauma of a rape victim with shoes identical to hers. George handles a critical patient but faces the reality of losing them. Cristina and Alex navigate patient interactions and lab results. Izzie helps an undocumented worker outside the hospital."
   }
 ]

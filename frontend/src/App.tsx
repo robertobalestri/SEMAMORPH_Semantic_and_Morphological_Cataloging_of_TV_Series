@@ -1,206 +1,149 @@
-import { useState, useEffect } from 'react';
-import { 
-  ChakraProvider, 
-  Box, 
-  Grid, 
-  Select, 
-  Heading, 
+import React, { useState, useEffect } from 'react';
+import {
+  Box,
+  VStack,
+  Select,
+  Heading,
   Text,
   useColorModeValue,
-  VStack,
-  HStack,
   Tabs,
   TabList,
   TabPanels,
   Tab,
   TabPanel,
 } from '@chakra-ui/react';
-import NarrativeArcManager from './components/NarrativeArcManager';
-import VectorStoreExplorer from './components/VectorStoreExplorer';
-import CharacterManager from './components/CharacterManager';
+import styles from '@/styles/components/Layout.module.css';
+import { NarrativeArcManager } from './components/narrative/NarrativeArcManager';
+import { VectorStoreExplorer } from './components/vector/VectorStoreExplorer';
+import { CharacterManager } from './components/character/CharacterManager';
+import { ApiClient } from './services/api/ApiClient';
+import type { NarrativeArc, Episode } from './architecture/types';
 
-interface ArcProgression {
-  id: string;
-  content: string;
-  series: string;
-  season: string;
-  episode: string;
-  ordinal_position: number;
-  interfering_characters: string[];
-}
-
-interface NarrativeArc {
-  id: string;
-  title: string;
-  description: string;
-  arc_type: string;
-  main_characters: string[];
-  series: string;
-  progressions: ArcProgression[];
-}
-
-function App() {
+const App: React.FC = () => {
   const [series, setSeries] = useState<string[]>([]);
   const [selectedSeries, setSelectedSeries] = useState<string>('');
-  const [episodes, setEpisodes] = useState<{ season: string; episode: string; }[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [episodes, setEpisodes] = useState<Episode[]>([]);
   const [arcs, setArcs] = useState<NarrativeArc[]>([]);
-
-  const fetchOptions = {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json',
-    },
-    mode: 'cors' as RequestMode,
-  };
+  const api = new ApiClient();
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/series', fetchOptions)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
+    const fetchSeries = async () => {
+      try {
+        const response = await api.request<string[]>('/series');
+        if (!response.error) {
+          setSeries(response.data);
         }
-        return response.json();
-      })
-      .then(data => setSeries(data))
-      .catch(error => {
+      } catch (error) {
         console.error('Error fetching series:', error);
         setSeries([]);
-      });
+      }
+    };
+
+    fetchSeries();
   }, []);
 
   useEffect(() => {
     if (selectedSeries) {
-      setIsLoading(true);
-      Promise.all([
-        // Fetch episodes
-        fetch(`http://localhost:8000/api/episodes/${selectedSeries}`, fetchOptions)
-          .then(response => {
-            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-            return response.json();
-          }),
-        // Use the correct endpoint for fetching arcs by series
-        fetch(`http://localhost:8000/api/arcs/series/${selectedSeries}`, fetchOptions)
-          .then(response => {
-            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-            return response.json();
-          })
-      ])
-      .then(([episodesData, arcsData]) => {
-        setEpisodes(episodesData);
-        setArcs(arcsData);
-      })
-      .catch(error => {
-        console.error('Error fetching data:', error);
-        setEpisodes([]);
-        setArcs([]);
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
+      const fetchData = async () => {
+        try {
+          const [episodesResponse, arcsResponse] = await Promise.all([
+            api.request<Episode[]>(`/episodes/${selectedSeries}`),
+            api.request<NarrativeArc[]>(`/arcs/series/${selectedSeries}`)
+          ]);
+
+          if (!episodesResponse.error) {
+            setEpisodes(episodesResponse.data);
+          }
+          if (!arcsResponse.error) {
+            setArcs(arcsResponse.data);
+          }
+        } catch (error) {
+          console.error('Error fetching data:', error);
+          setEpisodes([]);
+          setArcs([]);
+        }
+      };
+
+      fetchData();
     }
   }, [selectedSeries]);
 
-  const handleArcUpdated = () => {
+  const handleArcUpdated = async () => {
     if (selectedSeries) {
-      setIsLoading(true);
-      Promise.all([
-        fetch(`http://localhost:8000/api/episodes/${selectedSeries}`, fetchOptions)
-          .then(response => {
-            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-            return response.json();
-          }),
-        fetch(`http://localhost:8000/api/arcs/series/${selectedSeries}`, fetchOptions)
-          .then(response => {
-            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-            return response.json();
-          })
-      ])
-      .then(([episodesData, arcsData]) => {
-        setEpisodes(episodesData);
-        setArcs(arcsData);
-      })
-      .catch(error => {
-        console.error('Error fetching data:', error);
-        setEpisodes([]);
-        setArcs([]);
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
+      try {
+        const response = await api.request<NarrativeArc[]>(`/arcs/series/${selectedSeries}`);
+        if (!response.error) {
+          setArcs(response.data);
+        }
+      } catch (error) {
+        console.error('Error refreshing arcs:', error);
+      }
     }
   };
 
   return (
-    <ChakraProvider>
-      <Box minH="100vh" bg={useColorModeValue('gray.50', 'gray.900')} position="relative">
-        <Box maxW="100%" mx="auto">
-          <VStack spacing={4} align="stretch">
-            <Box px={4} py={5} bg={useColorModeValue('white', 'gray.800')} shadow="sm">
-              <Heading as="h1" size="xl" textAlign="center">
-                Narrative Arcs Dashboard
-              </Heading>
-            </Box>
+    <Box className={styles.pageContainer} bg={useColorModeValue('gray.50', 'gray.900')}>
+      <Box className={styles.mainContent}>
+        <VStack spacing={4} align="stretch">
+          <Box className={styles.header} bg={useColorModeValue('white', 'gray.800')}>
+            <Heading className={styles.pageTitle}>
+              Narrative Arcs Dashboard
+            </Heading>
+          </Box>
 
-            <Box px={4}>
-              <Select
-                placeholder="Select series"
-                value={selectedSeries}
-                onChange={(e) => setSelectedSeries(e.target.value)}
-              >
-                {series.map(s => (
-                  <option key={s} value={s}>{s}</option>
-                ))}
-              </Select>
-            </Box>
+          <Box px={4}>
+            <Select
+              placeholder="Select series"
+              value={selectedSeries}
+              onChange={(e) => setSelectedSeries(e.target.value)}
+            >
+              {series.map(s => (
+                <option key={s} value={s}>{s}</option>
+              ))}
+            </Select>
+          </Box>
 
-            {isLoading ? (
-              <Box textAlign="center" p={8}>
-                <Text>Loading data...</Text>
-              </Box>
-            ) : selectedSeries ? (
-              <Box width="100%" overflowX="hidden">
-                <Tabs isFitted variant="enclosed">
-                  <TabList>
-                    <Tab>Narrative Arcs</Tab>
-                    <Tab>Vector Store</Tab>
-                    <Tab>Characters</Tab>
-                  </TabList>
-                  <TabPanels>
-                    <TabPanel p={0}>
-                      <NarrativeArcManager 
-                        arcs={arcs}
-                        episodes={episodes}
-                        onArcUpdated={handleArcUpdated}
-                        series={selectedSeries}
-                      />
-                    </TabPanel>
-                    <TabPanel>
-                      <VectorStoreExplorer 
-                        series={selectedSeries} 
-                        onArcUpdated={handleArcUpdated}
-                      />
-                    </TabPanel>
-                    <TabPanel>
-                      <CharacterManager 
-                        series={selectedSeries} 
-                        onCharacterUpdated={handleArcUpdated}
-                      />
-                    </TabPanel>
-                  </TabPanels>
-                </Tabs>
-              </Box>
-            ) : (
-              <Box textAlign="center" p={8}>
-                <Text>Select a series to view the dashboard.</Text>
-              </Box>
-            )}
-          </VStack>
-        </Box>
+          {selectedSeries ? (
+            <Box className={styles.tabContainer}>
+              <Tabs isFitted variant="enclosed">
+                <TabList>
+                  <Tab>Narrative Arcs</Tab>
+                  <Tab>Vector Store</Tab>
+                  <Tab>Characters</Tab>
+                </TabList>
+                <TabPanels>
+                  <TabPanel p={0}>
+                    <NarrativeArcManager 
+                      series={selectedSeries}
+                      arcs={arcs}
+                      episodes={episodes}
+                      onArcUpdated={handleArcUpdated}
+                    />
+                  </TabPanel>
+                  <TabPanel>
+                    <VectorStoreExplorer 
+                      series={selectedSeries} 
+                      onArcUpdated={handleArcUpdated}
+                    />
+                  </TabPanel>
+                  <TabPanel>
+                    <CharacterManager 
+                      series={selectedSeries} 
+                      onCharacterUpdated={handleArcUpdated}
+                    />
+                  </TabPanel>
+                </TabPanels>
+              </Tabs>
+            </Box>
+          ) : (
+            <Box textAlign="center" p={8}>
+              <Text>Select a series to view the dashboard.</Text>
+            </Box>
+          )}
+        </VStack>
       </Box>
-    </ChakraProvider>
+    </Box>
   );
-}
+};
 
 export default App;

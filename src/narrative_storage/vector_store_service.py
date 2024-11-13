@@ -41,12 +41,15 @@ class VectorStoreService:
         self,
         query: str,
         n_results: int = 5,
-        series: Optional[str] = None
+        series: Optional[str] = None,
+        exclude_anthology: bool = False
     ) -> List[Dict[str, Any]]:
         """Find similar arcs (main documents only) to a query."""
         filter_criteria = {"$and": [{"doc_type": "main"}]}
         if series:
             filter_criteria["$and"].append({"series": series})
+        if exclude_anthology:
+            filter_criteria["$and"].append({"arc_type": {"$ne": "Anthology Arc"}})
 
         try:
             results = self.collection.similarity_search_with_score(
@@ -255,13 +258,16 @@ class VectorStoreService:
                             cosine_sim = np.clip(cosine_sim, -1.0, 1.0)
                             distance_matrix[i, j] = 1.0 - cosine_sim
 
-            # Perform HDBSCAN clustering with pre-computed distances
+            # Modify HDBSCAN parameters
             clusterer = HDBSCAN(
                 min_cluster_size=min_cluster_size,
                 min_samples=min_samples,
                 cluster_selection_epsilon=cluster_selection_epsilon,
-                metric='precomputed',  # Use pre-computed distance matrix
-                core_dist_n_jobs=-1
+                metric='precomputed',
+                core_dist_n_jobs=-1,
+                cluster_selection_method='leaf',
+                prediction_data=True,
+                allow_single_cluster=True
             )
             
             # Fit using the distance matrix

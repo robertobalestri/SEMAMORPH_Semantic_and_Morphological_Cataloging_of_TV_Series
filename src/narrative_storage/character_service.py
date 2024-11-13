@@ -26,106 +26,102 @@ class CharacterService:
         try:
             # Ensure entity_name is normalized
             normalized_entity_name = self._normalize_name(entity.entity_name)
-            entity.entity_name = normalized_entity_name  # Update the entity with normalized name
+            entity.entity_name = normalized_entity_name
 
-            # Ensure best_appellation is in appellations list
-            if entity.best_appellation and entity.best_appellation not in entity.appellations:
-                entity.appellations.append(entity.best_appellation)
+            # Normalize and validate appellations
+            validated_appellations = set()
+            for appellation in entity.appellations:
+                if appellation and len(appellation.strip()) > 1:
+                    validated_appellations.add(appellation.strip())
+            
+            # Ensure best_appellation is valid and included
+            if entity.best_appellation and len(entity.best_appellation.strip()) > 1:
+                validated_appellations.add(entity.best_appellation.strip())
+            elif validated_appellations:
+                # If no valid best_appellation, use the first valid appellation
+                entity.best_appellation = next(iter(validated_appellations))
+            else:
+                logger.warning(f"No valid appellations found for entity: {entity.entity_name}")
+                return None
 
             # First try to find existing character by normalized entity_name
             existing_character = self.character_repository.get_by_entity_name(normalized_entity_name, series)
             
             # If not found by entity_name, try to find by any appellation
             if not existing_character:
-                for appellation in entity.appellations:
-                    if len(appellation.strip()) > 1:
-                        existing_character = self.character_repository.get_character_by_appellation(
-                            appellation.strip(), 
-                            series
-                        )
-                        if existing_character:
-                            break
+                for appellation in validated_appellations:
+                    existing_character = self.character_repository.get_character_by_appellation(
+                        appellation, 
+                        series
+                    )
+                    if existing_character:
+                        break
 
             if existing_character:
-                # Update existing character's appellations
-                existing_appellations = {app.appellation.lower() for app in existing_character.appellations}
+                # Update existing character
+                # Clear existing appellations to avoid duplicates
+                existing_character.appellations.clear()
                 
-                # Remove existing appellations to avoid conflicts
-                for app in existing_character.appellations[:]:  # Create a copy of the list to iterate
-                    existing_character.appellations.remove(app)
-                
-                # Add all appellations (both existing and new)
-                for appellation in set(entity.appellations):  # Use set to remove duplicates
-                    appellation = appellation.strip()
-                    if len(appellation) > 1:
-                        # Check if appellation is used by another character
-                        other_character = self.character_repository.get_character_by_appellation(appellation, series)
-                        if other_character and other_character.entity_name != existing_character.entity_name:
-                            logger.warning(f"Appellation '{appellation}' is already used by character '{other_character.entity_name}', skipping.")
-                            continue
-                        
-                        new_appellation = CharacterAppellation(
-                            appellation=appellation,
-                            character_id=existing_character.entity_name
-                        )
-                        existing_character.appellations.append(new_appellation)
-                        existing_appellations.add(appellation.lower())
+                # Update best appellation
+                existing_character.best_appellation = entity.best_appellation
 
-                # Update best appellation if provided
-                if entity.best_appellation and len(entity.best_appellation.strip()) > 1:
-                    existing_character.best_appellation = entity.best_appellation
-                    # Ensure best_appellation is in appellations
-                    if entity.best_appellation not in {app.appellation for app in existing_character.appellations}:
-                        new_appellation = CharacterAppellation(
-                            appellation=entity.best_appellation,
-                            character_id=existing_character.entity_name
+                # Add all validated appellations
+                for appellation in validated_appellations:
+                    # Check if appellation is used by another character
+                    other_character = self.character_repository.get_character_by_appellation(appellation, series)
+                    if other_character and other_character.entity_name != existing_character.entity_name:
+                        logger.warning(
+                            f"Appellation '{appellation}' is already used by character "
+                            f"'{other_character.entity_name}', skipping."
                         )
-                        existing_character.appellations.append(new_appellation)
+                        continue
+                    
+                    new_appellation = CharacterAppellation(
+                        appellation=appellation,
+                        character_id=existing_character.entity_name
+                    )
+                    existing_character.appellations.append(new_appellation)
 
                 self.character_repository.update(existing_character)
-                logger.info(f"Updated existing character: {existing_character.entity_name} with appellations: {existing_appellations}")
+                logger.info(
+                    f"Updated existing character: {existing_character.entity_name} "
+                    f"with appellations: {[app.appellation for app in existing_character.appellations]}"
+                )
                 return existing_character
             else:
-                # Create new character with normalized entity_name
+                # Create new character
                 new_character = Character(
                     entity_name=normalized_entity_name,
-                    best_appellation=entity.best_appellation or entity.appellations[0],
+                    best_appellation=entity.best_appellation,
                     series=series
                 )
 
-                # Add appellations
-                added_appellations = set()  # Track added appellations to avoid duplicates
-                for appellation in entity.appellations:
-                    appellation = appellation.strip()
-                    if len(appellation) > 1 and appellation.lower() not in added_appellations:
-                        # Check if appellation is already used
-                        existing_char = self.character_repository.get_character_by_appellation(appellation, series)
-                        if existing_char:
-                            logger.warning(f"Appellation '{appellation}' is already used by character '{existing_char.entity_name}', skipping.")
-                            continue
-
-                        new_appellation = CharacterAppellation(
-                            appellation=appellation,
-                            character_id=new_character.entity_name
+                # Add all validated appellations
+                for appellation in validated_appellations:
+                    # Check if appellation is already used
+                    existing_char = self.character_repository.get_character_by_appellation(appellation, series)
+                    if existing_char:
+                        logger.warning(
+                            f"Appellation '{appellation}' is already used by character "
+                            f"'{existing_char.entity_name}', skipping."
                         )
-                        new_character.appellations.append(new_appellation)
-                        added_appellations.add(appellation.lower())
+                        continue
 
-                # Ensure best_appellation is in appellations
-                if new_character.best_appellation and new_character.best_appellation.lower() not in added_appellations:
                     new_appellation = CharacterAppellation(
-                        appellation=new_character.best_appellation,
+                        appellation=appellation,
                         character_id=new_character.entity_name
                     )
                     new_character.appellations.append(new_appellation)
-                    added_appellations.add(new_character.best_appellation.lower())
 
                 if not new_character.appellations:
                     logger.warning(f"No valid appellations for character: {entity.entity_name}")
                     return None
 
                 self.character_repository.add(new_character)
-                logger.info(f"Added new character: {new_character.entity_name} with appellations: {[app.appellation for app in new_character.appellations]}")
+                logger.info(
+                    f"Added new character: {new_character.entity_name} "
+                    f"with appellations: {[app.appellation for app in new_character.appellations]}"
+                )
                 return new_character
 
         except IntegrityError as e:

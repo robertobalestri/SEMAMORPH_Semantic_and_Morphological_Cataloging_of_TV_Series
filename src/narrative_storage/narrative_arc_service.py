@@ -63,7 +63,7 @@ class NarrativeArcService:
             try:
                 # Get main characters from the database
                 main_character_names = []
-                if 'main_characters' in arc_data:
+                if 'main_characters' in arc_data and isinstance(arc_data['main_characters'], str):
                     main_character_names = [
                         name.strip() 
                         for name in arc_data['main_characters'].split(';') 
@@ -82,11 +82,12 @@ class NarrativeArcService:
                 similar_arcs = self.vector_store_service.find_similar_arcs(
                     query=f"{arc_data['title']}\n{arc_data['description']}",
                     n_results=5,
-                    series=series
+                    series=series,
+                    exclude_anthology=True
                 )
 
                 # Filter arcs by similarity threshold
-                SIMILARITY_THRESHOLD = 0.3
+                SIMILARITY_THRESHOLD = 0.35
                 similar_arcs = [
                     arc for arc in similar_arcs 
                     if arc['cosine_distance'] < SIMILARITY_THRESHOLD

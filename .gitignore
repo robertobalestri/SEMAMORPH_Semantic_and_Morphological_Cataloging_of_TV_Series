@@ -1,11 +1,14 @@
 .venv/
 __pycache__/
 *.pyc
-.cursorrules
+
 .env
 agentops.agent_logs/
 instructions.txt
 frontend/node_modules/
-agentops.log
+new_frontend/node_modules/
 
 data/FIABA/
+*.log
+new_frontend/
+agent_logs/

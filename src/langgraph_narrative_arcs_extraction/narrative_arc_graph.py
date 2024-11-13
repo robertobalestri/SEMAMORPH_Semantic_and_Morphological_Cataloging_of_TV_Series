@@ -390,13 +390,14 @@ def deduplicate_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtrac
     """Deduplicate and merge similar arcs from different extraction methods."""
     logger.info("Deduplicating and merging similar arcs from different extraction methods.")
 
-    # Use optimized_arcs instead of combining all arcs
-    all_arcs = state['optimized_arcs']
+    # Separate anthology arcs
+    non_anthology_arcs = [arc for arc in state['optimized_arcs'] if arc.arc_type != "Anthology Arc"]
+    anthology_arcs = [arc for arc in state['optimized_arcs'] if arc.arc_type == "Anthology Arc"]
 
     response = llm.invoke(ARC_DEDUPLICATOR_PROMPT.format_messages(
         episode_plot=state['episode_plot'],
-        arcs_to_deduplicate=[arc.model_dump() for arc in all_arcs],
-        present_season_arcs_summaries=json.dumps(state['present_season_arcs'], indent=2),
+        arcs_to_deduplicate=[arc.model_dump() for arc in non_anthology_arcs],
+        anthology_arcs=[arc.model_dump() for arc in anthology_arcs],  # Added anthology arcs as context
         guidelines=NARRATIVE_ARC_GUIDELINES,
         output_json_format=EXTRACTOR_OUTPUT_JSON_FORMAT
     ))
@@ -411,15 +412,19 @@ def deduplicate_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtrac
                 description=arc['description']
             )
             deduplicated_arcs.append(new_arc)
-        state['episode_arcs'] = deduplicated_arcs
-        logger.info(f"Deduplicated to {len(deduplicated_arcs)} unique arcs from {len(all_arcs)} original arcs.")
+        
+        # Combine anthology arcs with deduplicated arcs
+        state['episode_arcs'] = anthology_arcs + deduplicated_arcs
+        logger.info(f"Deduplicated to {len(deduplicated_arcs)} unique arcs + {len(anthology_arcs)} anthology arcs.")
     except Exception as e:
         logger.error(f"Error deduplicating arcs: {e}")
-        state['episode_arcs'] = all_arcs  # Keep original arcs if deduplication fails
+        state['episode_arcs'] = anthology_arcs + non_anthology_arcs
 
     # Add logging before returning
     log_agent_output("deduplicate_arcs", {
-        "deduplicated_arcs": [arc.model_dump() for arc in state['episode_arcs']]
+        "deduplicated_arcs": [arc.model_dump() for arc in state['episode_arcs']],
+        "anthology_arcs_count": len(anthology_arcs),
+        "other_arcs_count": len(deduplicated_arcs)
     })
     
     return state

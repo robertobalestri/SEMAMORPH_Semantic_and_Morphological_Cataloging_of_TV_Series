@@ -159,32 +159,61 @@ ARC_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
 
 # 3. Arc Deduplicator
 ARC_DEDUPLICATOR_PROMPT = ChatPromptTemplate.from_template(
-    """You are a Narrative Arc Deduplication Expert. Merge similar or overlapping arcs from different extraction methods.
+    """You are a Narrative Arc Deduplication Expert. Review and deduplicate arcs only when they are truly redundant.
 
 **Episode Plot:**
 {episode_plot}
 
-**Arcs to Deduplicate:**
-{arcs_to_deduplicate}
+**Anthology Arcs (Context):**
+{anthology_arcs}
 
-**Present Season Arcs (if any):**
-{present_season_arcs_summaries}
+**Arcs to Review:**
+{arcs_to_deduplicate}
 
 **Guidelines:**
 {guidelines}
 
-**Instructions:**
-1. Identify arcs describing the exact same narrative from different angles.
-2. Only merge arcs if they refer to the same specific storyline with the same characters and events. 
-3. Do not merge arcs that involve different relationships, storylines or character development arcs for the same character.
-4. If merging, combine the descriptions to capture the full narrative.
-5. Choose the most appropriate arc type.
-6. Arcs should be distinct and not overlapping. Two differente storylines should be in different arcs.
+**Deduplication Rules:**
+1. Only merge arcs if they describe  the same storyline.
+2. Keep arcs separate if they:
+   - Focus on different aspects of a character's journey
+   - Involve different character relationships
+   - Cover different themes or conflicts
+   - Have different main characters
 
-**Additional Instructions:**
-- Do not delete or merge anthology arcs, as they are self-contained and should remain distinct.
+3. For character-focused arcs:
+   - Keep personal/emotional arcs separate from professional arcs
+   - Keep relationship arcs separate from individual character arcs
+   - Keep separate any character arc that significantly intersects with an anthology case
+   Example: If there's an anthology case and a character's development arc, keep them separate if the case significantly impacts their growth
 
-**Return the deduplicated arcs as a JSON array:**
+4. For institutional/group arcs:
+   - Keep specific team dynamics separate from broader organizational challenges
+   - Keep mentor-mentee relationships separate from general group dynamics
+   - Keep separate any group dynamics specifically tied to anthology cases
+   Example: If there's a case-of-the-week and an arc about workplace dynamics, keep them separate if they represent different aspects
+
+5. Anthology Arc Considerations:
+   - The anthology arcs provided above are for context only - DO NOT modify or include them in output
+   - When a character's story intersects with an anthology case:
+     * Keep the character's broader arc (e.g., "Character's Personal Growth")
+     * Keep their specific involvement in the case separate (handled by anthology arc)
+   - When organizational challenges relate to anthology cases:
+     * Keep general challenges (e.g., "Workplace Culture Issues")
+     * Keep case-specific challenges separate (handled by anthology arc)
+
+**Examples - Keep Separate:**
+- "Sarah's Leadership Development" (about career growth)
+- "Sarah and Tom's Partnership" (about their relationship)
+- "Sarah's Identity Crisis" (about personal growth)
+- "Sarah's Role in the Henderson Case" (covered by anthology arc)
+
+**Examples - Merge:**
+- "Sarah's Journey to Leadership"
+- "Sarah's Leadership Evolution"
+(These describe the same character development storyline)
+
+**Return ONLY the deduplicated non-anthology arcs as a JSON array:**
 {output_json_format}
 """
 )
@@ -334,6 +363,8 @@ SOAP_AND_GENRE_ARC_EXTRACTOR_PROMPT = ChatPromptTemplate.from_template(
 3. Avoid duplicating anthology arcs.
 4. Ensure arcs are season-wide, not episode-specific.
 5. Be exhaustive and thorough.
+6. Be sure to include every already existing season arc in the output (this is very important)
+7. For already existing season arcs, mantain their title and adapt the description to your new knowledge.
 
 **Return the arcs as a JSON array:**
 {output_json_format}
@@ -358,6 +389,7 @@ SEASONAL_ARC_OPTIMIZER_PROMPT = ChatPromptTemplate.from_template(
     - Reflect the specific arc scope across the season.
     - Be precise, including key characters, relationships, and themes.
     - Avoid vague or overly broad titles.
+    - IF AN ARC IS IN PRESENT SEASON ARCS, DO NOT CHANGE THE TITLE!
 2. **Description Enhancement:**
     - Cover the specific arc development across episodes.
     - Focus on the core narrative thread for each distinct arc.

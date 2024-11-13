@@ -1,34 +1,10 @@
 [
   {
-    "entity_name": "tony_savitch",
-    "best_appellation": "Tony Savitch",
+    "entity_name": "meredith_grey",
+    "best_appellation": "Meredith Grey",
     "appellations": [
-      "Tony Savitch",
-      "Tony"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "george_omalley",
-    "best_appellation": "George",
-    "appellations": [
-      "George"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "jeremy",
-    "best_appellation": "Jeremy",
-    "appellations": [
-      "Jeremy"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "god",
-    "best_appellation": "God",
-    "appellations": [
-      "God"
+      "Meredith",
+      "Meredith Grey"
     ],
     "entity_type": "PERSON"
   },
@@ -36,34 +12,45 @@
     "entity_name": "derek_shepherd",
     "best_appellation": "Derek Shepherd",
     "appellations": [
-      "Derek",
-      "Derek Shepherd"
+      "Derek Shepherd",
+      "Derek"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "meredith_grey",
-    "best_appellation": "Meredith",
+    "entity_name": "miranda_bailey",
+    "best_appellation": "Miranda Bailey",
     "appellations": [
-      "Meredith"
+      "Miranda Bailey",
+      "Bailey",
+      "Miranda"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "gloria",
-    "best_appellation": "Gloria",
+    "entity_name": "george_omalley",
+    "best_appellation": "George O'Malley",
     "appellations": [
-      "Gloria"
+      "George O'Malley",
+      "George"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "preston_burke",
-    "best_appellation": "Preston Burke",
+    "entity_name": "cristina_yang",
+    "best_appellation": "Cristina Yang",
     "appellations": [
-      "Burke",
-      "Dr. Burke",
-      "Preston Burke"
+      "Cristina Yang",
+      "Cristina"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "alex_karev",
+    "best_appellation": "Alex Karev",
+    "appellations": [
+      "Alex Karev",
+      "Alex"
     ],
     "entity_type": "PERSON"
   },
@@ -77,36 +64,12 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "cristina_yang",
-    "best_appellation": "Cristina",
+    "entity_name": "preston_burke",
+    "best_appellation": "Preston Burke",
     "appellations": [
-      "Cristina"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "alex_karev",
-    "best_appellation": "Alex",
-    "appellations": [
-      "Alex"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "mr_jones",
-    "best_appellation": "Mr. Jones",
-    "appellations": [
-      "Mr. Jones"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "miranda_bailey",
-    "best_appellation": "Miranda Bailey",
-    "appellations": [
-      "Bailey",
-      "Miranda",
-      "Miranda Bailey"
+      "Preston Burke",
+      "Dr. Preston Burke",
+      "Burke"
     ],
     "entity_type": "PERSON"
   },
@@ -114,17 +77,8 @@
     "entity_name": "katie_bryce",
     "best_appellation": "Katie Bryce",
     "appellations": [
-      "Katie Bryce",
-      "Katie"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "tyler",
-    "best_appellation": "Tyler",
-    "appellations": [
-      "Tyler",
-      "Nurse Tyler"
+      "Katie",
+      "Katie Bryce"
     ],
     "entity_type": "PERSON"
   },
@@ -137,30 +91,43 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "allison",
-    "best_appellation": "Allison",
+    "entity_name": "tony_savitch",
+    "best_appellation": "Tony Savitch",
     "appellations": [
-      "Allison"
+      "Tony",
+      "Tony Savitch"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "richard_webber",
-    "best_appellation": "Dr. Webber",
+    "entity_name": "gloria_savitch",
+    "best_appellation": "Gloria",
     "appellations": [
-      "Richard",
-      "Dr. Webber"
+      "Gloria"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "the_johnsons",
-    "best_appellation": "the Johnsons",
+    "entity_name": "mr_jones",
+    "best_appellation": "Mr. Jones",
     "appellations": [
-      "Johnson",
-      "Mr. Johnson",
-      "Mrs. Johnson",
-      "the Johnsons"
+      "Mr. Jones"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "nurse_tyler",
+    "best_appellation": "Tyler",
+    "appellations": [
+      "Tyler"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "jeremy",
+    "best_appellation": "Jeremy",
+    "appellations": [
+      "Jeremy"
     ],
     "entity_type": "PERSON"
   },
@@ -174,18 +141,20 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "ahn",
-    "best_appellation": "Ahn",
+    "entity_name": "mary_poppins",
+    "best_appellation": "Mary Poppins",
     "appellations": [
-      "Ahn"
+      "Mary Poppins"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "ms_lu",
-    "best_appellation": "Ms. Lu",
+    "entity_name": "richard_webber",
+    "best_appellation": "Richard Webber",
     "appellations": [
-      "Ms. Lu"
+      "Richard Webber",
+      "Dr. Webber",
+      "Richard"
     ],
     "entity_type": "PERSON"
   },
@@ -198,28 +167,42 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "mary_poppins",
-    "best_appellation": "Mary Poppins",
+    "entity_name": "allison",
+    "best_appellation": "Allison",
     "appellations": [
-      "Mary Poppins"
+      "Allison"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "shelley_davidson",
-    "best_appellation": "Shelley Davidson",
+    "entity_name": "mrs_johnson",
+    "best_appellation": "Mrs. Johnson",
     "appellations": [
-      "Shelley Davidson",
-      "Shelley"
+      "Mrs. Johnson"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "john_doe",
-    "best_appellation": "John Doe",
+    "entity_name": "ms_lu",
+    "best_appellation": "Ms. Lu",
     "appellations": [
-      "John Doe",
-      "Kevin"
+      "Ms. Lu"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "ahn",
+    "best_appellation": "Ahn",
+    "appellations": [
+      "Ahn"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "johnson_family",
+    "best_appellation": "the Johnsons",
+    "appellations": [
+      "the Johnsons"
     ],
     "entity_type": "PERSON"
   },
@@ -227,9 +210,9 @@
     "entity_name": "lloyd_mackie",
     "best_appellation": "Lloyd Mackie",
     "appellations": [
-      "Lloyd Mackie",
       "Lloyd",
-      "Mackie"
+      "Mackie",
+      "Lloyd Mackie"
     ],
     "entity_type": "PERSON"
   },
@@ -242,27 +225,47 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "george",
-    "best_appellation": "George",
+    "entity_name": "john_doe",
+    "best_appellation": "John Doe",
     "appellations": [
-      "George"
+      "John Doe"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "bailey",
-    "best_appellation": "Bailey",
+    "entity_name": "kevin_davidson",
+    "best_appellation": "Kevin Davidson",
     "appellations": [
-      "Bailey"
+      "Kevin",
+      "Kevin Davidson"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "jorge_cruz",
-    "best_appellation": "Jorge Cruz",
+    "entity_name": "shelley_davidson",
+    "best_appellation": "Shelley Davidson",
     "appellations": [
-      "Jorge",
-      "Jorge Cruz"
+      "Shelley",
+      "Shelley Davidson"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "harry_victor",
+    "best_appellation": "Dr. Harry Victor",
+    "appellations": [
+      "Dr. Victor",
+      "Dr. Harry Victor"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "elizabeth_fallon",
+    "best_appellation": "Elizabeth 'Liz' Fallon",
+    "appellations": [
+      "Elizabeth 'Liz' Fallon",
+      "Liz",
+      "Liz Fallon"
     ],
     "entity_type": "PERSON"
   },
@@ -275,45 +278,19 @@
     "entity_type": "PERSON"
   },
   {
+    "entity_name": "jorge_cruz",
+    "best_appellation": "Jorge Cruz",
+    "appellations": [
+      "Jorge Cruz",
+      "Jorge"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
     "entity_name": "mr_humphrey",
     "best_appellation": "Mr. Humphrey",
     "appellations": [
       "Mr. Humphrey"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "dr_harry_victor",
-    "best_appellation": "Dr. Victor",
-    "appellations": [
-      "Dr. Harry Victor",
-      "Dr. Victor"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "elizabeth_fallon",
-    "best_appellation": "Liz",
-    "appellations": [
-      "Liz",
-      "Elizabeth Fallon",
-      "Elizabeth \"Liz\" Fallon"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "mrs_drake",
-    "best_appellation": "Mrs. Drake",
-    "appellations": [
-      "Mrs. Drake"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "john_davies",
-    "best_appellation": "Dr. John Davies",
-    "appellations": [
-      "Dr. John Davies"
     ],
     "entity_type": "PERSON"
   },
@@ -326,6 +303,16 @@
     "entity_type": "PERSON"
   },
   {
+    "entity_name": "jerry_frost",
+    "best_appellation": "Jerry Frost",
+    "appellations": [
+      "Jerry Frost",
+      "Jerry",
+      "Frost"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
     "entity_name": "mr_patterson",
     "best_appellation": "Mr. Patterson",
     "appellations": [
@@ -334,20 +321,27 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "mr_sterman",
-    "best_appellation": "Mr. Sterman",
+    "entity_name": "mrs_drake",
+    "best_appellation": "Mrs. Drake",
     "appellations": [
-      "Mr. Sterman"
+      "Mrs. Drake"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "jerry_frost",
-    "best_appellation": "Jerry Frost",
+    "entity_name": "tyler",
+    "best_appellation": "Tyler",
     "appellations": [
-      "Jerry",
-      "Jerry Frost",
-      "Frost"
+      "Tyler",
+      "Nurse Tyler"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "john_davies",
+    "best_appellation": "Dr. John Davies",
+    "appellations": [
+      "Dr. John Davies"
     ],
     "entity_type": "PERSON"
   },
@@ -356,6 +350,14 @@
     "best_appellation": "Mrs. Patterson",
     "appellations": [
       "Mrs. Patterson"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "mr_sterman",
+    "best_appellation": "Mr. Sterman",
+    "appellations": [
+      "Mr. Sterman"
     ],
     "entity_type": "PERSON"
   }

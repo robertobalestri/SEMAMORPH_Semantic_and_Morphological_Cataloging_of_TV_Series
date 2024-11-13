@@ -1,74 +1,90 @@
 [
   {
-    "title": "Meredith and Derek's Complex Relationship",
+    "title": "Medical Case: Viper's Bicycle Spoke Injury",
+    "arc_type": "Anthology Arc",
+    "description": "Meredith and Alex handle a challenging case involving a patient named Viper, who is injured during an illegal bike race. Meredith's commitment to patient care is tested when Viper prioritizes the race over his health, leading to a medical emergency.",
+    "main_characters": "Meredith Grey; Alex Karev",
+    "interfering_episode_characters": "Viper; Miranda Bailey",
+    "single_episode_progression_string": "Meredith and Alex argue over treating Viper. Viper insists on leaving to finish the race. Meredith stitches him up and has him sign an AMA form. Viper collapses later due to complications. Meredith rushes him to the OR for emergency surgery."
+  },
+  {
+    "title": "Medical Case: John Doe's Organ Donation",
+    "arc_type": "Anthology Arc",
+    "description": "Cristina and Izzie navigate the complexities of organ donation with a patient, John Doe, who is critically injured after a bike accident. They face challenges in obtaining consent and dealing with the emotional impact on the patient's family.",
+    "main_characters": "Cristina; Izzie",
+    "interfering_episode_characters": "Derek; Bailey; Shelley Davidson",
+    "single_episode_progression_string": "Cristina and Izzie examine John Doe, who is in critical condition. Derek instructs them to perform confirmatory tests. Cristina and Izzie discuss the possibility of organ donation. They seek Bailey's approval for organ harvesting. Shelley Davidson, John Doe's wife, arrives at the hospital. Cristina and Izzie inform Shelley about her husband's condition and discuss organ donation. The organ harvest is prepared and performed."
+  },
+  {
+    "title": "Medical Case: Lloyd Mackie's Liver Transplant",
+    "arc_type": "Anthology Arc",
+    "description": "George is responsible for overseeing Lloyd Mackie, a liver cancer patient on the transplant list. The arc explores the journey of securing a liver for Mackie, capturing the emotional and procedural hurdles of organ transplantation.",
+    "main_characters": "George; Lloyd Mackie",
+    "interfering_episode_characters": "Webber; Izzie; Cristina",
+    "single_episode_progression_string": "George is assigned to monitor Lloyd Mackie. Mackie expresses frustration over his long wait for a liver. A potential organ donor is identified. George informs Webber about the liver match. Mackie is prepped for surgery. The liver is successfully transplanted into Mackie."
+  },
+  {
+    "title": "Meredith and Derek's Professional and Romantic Entanglement",
     "arc_type": "Soap Arc",
-    "description": "Meredith Grey and Derek Shepherd navigate their intricate personal and professional relationship, which begins with a one-night stand and evolves amidst hospital challenges and personal revelations, including the arrival of Derek's estranged wife, Addison.",
+    "description": "Meredith Grey and Derek Shepherd navigate the complexities of their evolving relationship, balancing personal attraction with professional boundaries at Seattle Grace Hospital. Their interactions are marked by tension and chemistry, impacting their personal and professional lives.",
     "main_characters": "Meredith Grey; Derek Shepherd",
-    "interfering_episode_characters": "Alex Karev",
-    "single_episode_progression_string": "Derek expresses concern about almost dying and how Meredith would feel. Meredith accuses Derek of being interested only in the chase. Derek denies it and mentions he likes her hair. Meredith insists she won't date him."
+    "interfering_episode_characters": "Alex Karev; Bailey",
+    "single_episode_progression_string": "Derek almost gets hit by bike riders, prompting a conversation with Meredith about mortality and dating. Meredith accuses Derek of being interested only in the chase. Derek denies it and later tells Meredith he likes her hair and bossiness. Meredith insists she won't date him."
   },
   {
-    "title": "George's Journey of Self-Discovery and Confidence",
+    "title": "Meredith Grey's Journey of Growth and Legacy",
     "arc_type": "Soap Arc",
-    "description": "George O'Malley explores his identity and builds self-confidence as he navigates misunderstandings about his sexuality, unrequited feelings for Meredith, and forms meaningful connections with patients and colleagues.",
-    "main_characters": "George O'Malley",
-    "interfering_episode_characters": "Izzie Stevens; Cristina Yang; Alex Karev; Lloyd Mackie",
-    "single_episode_progression_string": "Alex suggests George might be gay. George awkwardly tries to explain to Mackie that he is not gay. Mackie reassures George and encourages him to be bold. George admits to Mackie that he has unrequited feelings for Meredith."
+    "description": "Meredith Grey navigates the challenges of her mother's legacy and her own insecurities while establishing her identity as a surgical intern at Seattle Grace Hospital. Her interactions with patients and colleagues highlight her ongoing journey of personal and professional development.",
+    "main_characters": "Meredith Grey",
+    "interfering_episode_characters": "Izzie Stevens; George O'Malley; Derek Shepherd; Alex Karev; Bailey",
+    "single_episode_progression_string": "Meredith is woken by Izzie and George arguing about room space. Meredith is pressured to decide about her mother's belongings. Meredith is confronted by Derek about their relationship. Meredith handles Viper's medical emergency. Meredith confronts Izzie and George about watching her mother's surgical tapes."
   },
   {
-    "title": "Cristina's Ambition and Emotional Detachment",
+    "title": "Interns' Rivalries and Collaborations",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The surgical interns, including Meredith, Cristina, Izzie, George, and Alex, navigate professional rivalries and collaborations, competing for cases and opportunities to prove their skills, while forming alliances and facing personal challenges.",
+    "main_characters": "Meredith; Cristina; Izzie; George; Alex",
+    "interfering_episode_characters": "Bailey; Derek; Burke; Webber",
+    "single_episode_progression_string": "Izzie and George argue over room space, involving Meredith. Meredith and Alex compete for a patient named Viper. Cristina and Izzie work together on a potential organ donor case. Alex assists Burke in open-heart surgery, causing tension with other interns. Cristina and Izzie handle the emotional aspects of organ donation. Meredith and Alex clash over patient priorities."
+  },
+  {
+    "title": "Cristina Yang's Pursuit of Excellence and Emotional Growth",
     "arc_type": "Soap Arc",
-    "description": "Cristina Yang's relentless ambition in her surgical career often leads to emotional detachment from patients, as she struggles to balance her drive for success with the compassionate aspects of patient care.",
+    "description": "Cristina Yang navigates her surgical career with a focus on excellence, learning to balance her ambition with empathy and understanding the human side of medicine.",
     "main_characters": "Cristina Yang",
     "interfering_episode_characters": "Izzie Stevens; Miranda Bailey; Shelley Davidson",
-    "single_episode_progression_string": "Cristina expresses impatience for a patient to die to take another case. She is shocked by Izzie's emotional response to the patient's potential death. Cristina initially struggles with comforting the patient's family. Bailey reminds Cristina of the human aspect of patient care. Cristina returns to the family, showing growth in her emotional engagement."
+    "single_episode_progression_string": "Cristina expresses impatience for a patient's death to take another case. Izzie is shocked by Cristina's focus on organ donation. Bailey reminds Cristina of the human aspect of patient care. Cristina returns to comfort the patient's family, showing growth in empathy."
   },
   {
-    "title": "Izzie's Fight for Respect and Ethical Challenges",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Izzie Stevens battles stereotypes and seeks respect from her colleagues while facing ethical dilemmas in patient care, particularly in organ donation and advocating for her patients' well-being.",
-    "main_characters": "Izzie Stevens",
-    "interfering_episode_characters": "Cristina Yang; Shelley Davidson; Miranda Bailey",
-    "single_episode_progression_string": "Izzie argues with Cristina about the value of their patient's life. Izzie insists on trying to save the patient instead of focusing on organ donation. Izzie talks to Shelley about organ donation for her husband. Izzie decides to sew up Kevin for his family after the organ harvest."
+    "title": "George O'Malley's Quest for Confidence and Belonging",
+    "arc_type": "Soap Arc",
+    "description": "George O'Malley faces personal growth challenges as he navigates his feelings for Meredith, questions about his sexuality, and his interactions with patients, seeking confidence and belonging at Seattle Grace Hospital.",
+    "main_characters": "George O'Malley",
+    "interfering_episode_characters": "Izzie Stevens; Alex Karev; Meredith Grey; Lloyd Mackie; Richard Webber",
+    "single_episode_progression_string": "George argues with Izzie about room sizes, seeking Meredith's decision. Alex suggests George might be gay, surprising him. George awkwardly denies being gay to Mackie, who reassures him. George admits to Mackie that he has feelings for Meredith. George finds a liver for Mackie, gaining confidence from Webber's praise."
   },
   {
-    "title": "Alex's Competitive Drive and Professional Growth",
+    "title": "Bailey's Leadership and Formidable Mentorship",
     "arc_type": "Genre-Specific Arc",
-    "description": "Alex Karev's competitive nature propels his interactions with fellow interns and patients, as he strives to prove himself and grow professionally amidst the challenges of surgical training.",
-    "main_characters": "Alex Karev",
-    "interfering_episode_characters": "Meredith Grey; Bailey; Burke",
-    "single_episode_progression_string": "Alex argues with Meredith over a patient named Viper. Alex leaves Meredith to stitch up Viper, dismissing the case as non-surgical. Alex assists Burke in open-heart surgery, impressing the other interns. Alex is sent back to the pit by Bailey for prioritizing interesting cases over necessary ones."
-  },
-  {
-    "title": "Bailey's Leadership and Empathy",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Miranda Bailey balances her role as a tough mentor with empathy and understanding, guiding the interns through their first year and shaping their development as future surgeons.",
+    "description": "Miranda Bailey's leadership style is characterized by her tough love approach, guiding the interns through chaotic situations and emphasizing her role as a mentor.",
     "main_characters": "Miranda Bailey",
-    "interfering_episode_characters": "Derek Shepherd; Cristina Yang; Meredith Grey",
-    "single_episode_progression_string": "Bailey warns the interns about the ER interns and emphasizes efficiency. Bailey pulls Derek back from traffic, showing her protective nature. Bailey complains about the bike race, highlighting her frustration with recklessness. Bailey instructs the interns on handling the OR floor and patient discharges. Bailey advises Cristina on handling the organ donor's family with empathy. Bailey calms down after Meredith intervenes with Viper's friends."
+    "interfering_episode_characters": "George O'Malley; Izzie Stevens; Cristina Yang; Meredith Grey; Alex Karev",
+    "single_episode_progression_string": "Bailey warns the interns not to interact with the ER interns and to work quickly. Bailey assigns George to help the Chief on the OR floor. Bailey performs surgery while instructing Izzie and Cristina on organ donation procedures. Bailey calms down after Meredith interrupts her outburst at Viper's friends."
   },
   {
-    "title": "Interns' Bond and Support Network",
-    "arc_type": "Soap Arc",
-    "description": "Meredith, Cristina, George, and Izzie form a strong support system, navigating the challenges of their surgical internships together, developing deep friendships, and supporting each other through personal and professional trials.",
-    "main_characters": "Meredith; Cristina; George; Izzie",
-    "interfering_episode_characters": "Alex; Derek; Bailey",
-    "single_episode_progression_string": "Izzie and George discuss room arrangements with Meredith. Meredith, Cristina, George, and Izzie work together in the hospital, dealing with various patients. Izzie and Cristina collaborate on a potential organ donor case. The interns gather at Meredith's home to watch surgical tapes, sharing a moment of camaraderie."
-  },
-  {
-    "title": "Navigating Power Dynamics at Seattle Grace",
+    "title": "Alex Karev's Struggle for Professional Respect",
     "arc_type": "Genre-Specific Arc",
-    "description": "The interns and residents at Seattle Grace Hospital navigate complex power dynamics, dealing with attendings' expectations, peer competition, and the hierarchical structure of the hospital.",
-    "main_characters": "Meredith; Cristina; Bailey",
-    "interfering_episode_characters": "George; Alex; Derek; Burke; Webber",
-    "single_episode_progression_string": "Bailey warns interns not to interact with ER interns. George is chosen to assist the Chief on the OR floor. Meredith and Alex argue over a patient. Cristina and Izzie seek permission for organ donation. Meredith and Cristina approach Burke for surgery. Derek advises Meredith to go over Burke's head. Alex assists Burke in surgery, causing tension among interns."
+    "description": "Alex Karev strives to earn respect from his peers and superiors, facing challenges in asserting his professional judgment and handling difficult cases, as he seeks to establish himself as a competent surgical intern.",
+    "main_characters": "Alex Karev",
+    "interfering_episode_characters": "Meredith Grey; Miranda Bailey; Preston Burke",
+    "single_episode_progression_string": "Alex argues with Meredith over the treatment of a patient named Viper. Alex leaves Meredith to stitch up Viper, dismissing it as a non-surgical case. Alex assists Burke in an open-heart surgery, gaining some recognition. Alex is sent back to the pit by Bailey for prioritizing interesting cases over necessary ones."
   },
   {
-    "title": "Meredith Grey's Legacy and Personal Struggles",
+    "title": "Roommate Dynamics and Personal Space",
     "arc_type": "Soap Arc",
-    "description": "Meredith Grey navigates the challenges of her medical career while dealing with the shadow of her mother, Ellis Grey, a legendary surgeon, and the emotional impact of Ellis's Alzheimer's disease.",
-    "main_characters": "Meredith Grey",
-    "interfering_episode_characters": "Izzie Stevens; George O'Malley; Derek Shepherd",
-    "single_episode_progression_string": "Meredith is woken up by Izzie and George arguing about space in the house. They ask Meredith about unpacking her mother's boxes. Meredith shuts the door on them, taking Izzie's coffee. Meredith confronts Derek about his intentions, questioning if he is interested in the chase. Meredith is upset by Derek's response and leaves. Meredith finds Izzie and George watching her mother's surgical tapes and gets angry."
+    "description": "The living arrangement between Meredith, Izzie, and George creates ongoing conflicts and negotiations over personal space, highlighting the challenges of balancing friendship and cohabitation while dealing with Meredith's legacy and her mother's belongings.",
+    "main_characters": "Meredith; Izzie; George",
+    "interfering_episode_characters": "None",
+    "single_episode_progression_string": "Izzie complains about needing more space for her clothes. George argues that his room is only slightly bigger. Izzie and George ask Meredith if they can store her mother's boxes elsewhere. Meredith shuts the door on them. Meredith finds Izzie and George watching her mother's surgical tapes and gets angry."
   }
 ]
