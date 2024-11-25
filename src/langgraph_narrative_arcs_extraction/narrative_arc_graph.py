@@ -16,11 +16,11 @@ from src.utils.text_utils import load_text, save_json
 from src.ai_models.ai_models import get_llm, LLMType
 from src.plot_processing.plot_ner_entity_extraction import EntityLink, normalize_names
 # Import the new repositories and models
-from src.narrative_storage.repositories import (
+from src.narrative_storage_management.repositories import (
     DatabaseSessionManager,
     NarrativeArcRepository,
 )
-from src.narrative_storage.narrative_models import NarrativeArc, ArcProgression
+from src.narrative_storage_management.narrative_models import NarrativeArc, ArcProgression
 import logging
 
 logger = setup_logging(__name__)

@@ -11,6 +11,7 @@ import {
 } from '@chakra-ui/react';
 import type { NarrativeArc, ArcProgression } from '@/architecture/types';
 import styles from '@/styles/components/ArcTimeline.module.css';
+import { StarIcon } from '@chakra-ui/icons';
 
 interface ArcTimelineProps {
   arcs: NarrativeArc[];
@@ -22,6 +23,7 @@ interface ArcTimelineProps {
   selectedForMerge: NarrativeArc[];
   onToggleMerge: (arc: NarrativeArc) => void;
   onEditArc: (arc: NarrativeArc) => void;
+  onGenerateAll: (arc: NarrativeArc, overwriteExisting?: boolean) => void;
 }
 
 export const ArcTimeline: React.FC<ArcTimelineProps> = ({
@@ -34,6 +36,7 @@ export const ArcTimeline: React.FC<ArcTimelineProps> = ({
   selectedForMerge,
   onToggleMerge,
   onEditArc,
+  onGenerateAll,
 }) => {
   const bgColor = useColorModeValue('gray.50', 'gray.700');
   const cellBgColor = useColorModeValue('white', 'gray.800');
@@ -128,6 +131,17 @@ export const ArcTimeline: React.FC<ArcTimelineProps> = ({
                       }}
                     >
                       Edit
+                    </Button>
+                    <Button
+                      size="sm"
+                      colorScheme="purple"
+                      leftIcon={<StarIcon />}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        onGenerateAll(arc);
+                      }}
+                    >
+                      Generate All
                     </Button>
                   </VStack>
                 </HStack>

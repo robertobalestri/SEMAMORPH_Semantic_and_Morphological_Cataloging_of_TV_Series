@@ -16,10 +16,10 @@ from src.utils.logger_utils import setup_logging
 from src.utils.llm_utils import clean_llm_json_response
 
 # Import your models and services
-from src.narrative_storage.repositories import DatabaseSessionManager, CharacterRepository
-from src.narrative_storage.character_service import CharacterService
+from src.narrative_storage_management.repositories import DatabaseSessionManager, CharacterRepository
+from src.narrative_storage_management.character_service import CharacterService
 from src.plot_processing.plot_processing_models import EntityLink  # Adjust import path if needed
-from src.narrative_storage.narrative_models import CharacterAppellation, Character  # Import models if needed
+from src.narrative_storage_management.narrative_models import CharacterAppellation, Character  # Import models if needed
 
 logger = setup_logging(__name__)
 nlp = spacy.load("en_core_web_trf")

@@ -17,6 +17,16 @@ interface ArcCreateData extends Partial<NarrativeArc> {
   };
 }
 
+interface GenerateProgressionResponse {
+  content: string;
+  interfering_characters: string[];
+}
+
+interface ApiProgressionResponse {
+  data: GenerateProgressionResponse | null;
+  error?: string;
+}
+
 export class ApiClient {
   private baseUrl: string;
 
@@ -234,5 +244,44 @@ export class ApiClient {
         method: 'DELETE'
       }
     );
+  }
+
+  async generateProgression(
+    arcId: string | null,
+    series: string,
+    season: string,
+    episode: string,
+    title?: string,
+    description?: string
+  ): Promise<ApiProgressionResponse> {
+    const response = await this.request<GenerateProgressionResponse>(
+      `/progressions/generate?series=${series}&season=${season}&episode=${episode}`,
+      {
+        method: 'POST',
+        body: JSON.stringify({
+          arc_id: arcId,
+          arc_title: title || null,
+          arc_description: description || null
+        }),
+      }
+    );
+
+    // Check for NO_PROGRESSION
+    if (response.data?.content === "NO_PROGRESSION") {
+      return {
+        data: null,
+        error: "No progression found for this arc in this episode"
+      };
+    }
+
+    // Check if we have valid content
+    if (!response.data?.content) {
+      return {
+        data: null,
+        error: "Failed to generate progression content"
+      };
+    }
+
+    return { data: response.data };
   }
 } 
