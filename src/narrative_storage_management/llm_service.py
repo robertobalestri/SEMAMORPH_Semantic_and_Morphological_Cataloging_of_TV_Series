@@ -1,7 +1,7 @@
 # llm_service.py
 
 from textwrap import dedent
-from typing import Optional, Dict
+from typing import Optional, Dict, List
 from src.narrative_storage_management.narrative_models import NarrativeArc
 from src.ai_models.ai_models import get_llm, LLMType
 from langchain.prompts import ChatPromptTemplate
@@ -145,15 +145,15 @@ class LLMService:
                 "merged_description": f"{existing_arc.description}\n\nAdditional context: {new_arc.description}"
             }
 
-    def generate_progression_content(self, arc_title: str, arc_description: str, episode_plot_path: str) -> str:
-        """Generate progression content for an arc in a specific episode."""
+    def generate_progression_content(self, arc_title: str, arc_description: str, episode_plot_path: str, other_arcs_context: Optional[List[Dict[str, str]]] = None) -> str:
+        """Generate progression content for an arc in a specific episode and validate it against the plot."""
         try:
             # Early validation of required parameters
             if not arc_title or not arc_description:
                 logger.error("Missing required arc information for generation")
                 logger.error(f"Title: {arc_title}")
                 logger.error(f"Description: {arc_description}")
-                return ""
+                return "NO_PROGRESSION"
 
             logger.info(f"Generating progression for arc: {arc_title}")
             logger.info(f"Episode plot path: {episode_plot_path}")
@@ -163,65 +163,132 @@ class LLMService:
                 episode_plot = f.read()
                 logger.info(f"Episode plot length: {len(episode_plot)} characters")
 
-            base_prompt = dedent(
-                """You are an expert in analyzing narrative arcs in TV series. Given a narrative arc and an episode plot, identify the key events that advance the arc in the episode.
+            # Build context about other arcs in the episode
+            other_arcs_prompt = ""
+            if other_arcs_context:
+                other_arcs_prompt = "\nMajor plot points being covered by other arcs:\n"
+                for arc in other_arcs_context:
+                    other_arcs_prompt += f"• {arc['title']}: {arc['description']}\n"
 
-                Narrative Arc
+            # Initial progression generation prompt
+            base_prompt = dedent(
+                """You are an expert in analyzing narrative arcs in TV series. Extract ONLY the most crucial plot points that DIRECTLY advance the specific narrative described in this arc.
+
+                Narrative Arc to Track
                 Title: {arc_title}
                 Description: {arc_description}
 
                 Episode Plot
                 {episode_plot}
-
+                
                 Progression Guidelines:
+                    - Write a MAXIMUM of 3-5 brief sentences
+                    - Each sentence must:
+                    • DIRECTLY advance the specific narrative described in the arc
+                    • Contain only verified plot events
+                    • Focus on actions and outcomes
+                    - Exclude:
+                    • any event that is not explicitly about part of this narrative arc
+                    • speculation or interpretation
+                    • character emotions or reactions
+                    • context or background information
+                    - judgement or opinion (such as "X do this demonstrating his resilience")
 
-                    Focus solely on events specific to this arc in this episode.
-                    Write concise points, each separated by a dot.
-                    Use active voice and simple present tense.
-                    Include only events directly relevant to the arc.
-                    Avoid analysis, speculation, or references to other arcs or general episode events.
+                If the arc has no significant developments in this episode, respond with "NO_PROGRESSION".
 
-                **Example Good Progression:**
-                "Jane discovers Mark's affair with his secretary. Mark moves out of the house. Their children choose to stay with Jane."
-
-                **Example Bad Progression:**
-                "In this episode, we see Jane struggling with her emotions when she finds out about Mark's affair, which leads to a confrontation where Mark decides to leave, showing how their relationship has deteriorated, and interestingly their children, who are also affected by this situation, decide to stay with their mother."
-                                 
-                If the arc does not have any significant development in this episode, respond with "NO_PROGRESSION".
-                                 
-                """)
+                Your response should contain exclusively the progression content made of sentences separated by dots. No quotes, no numbered lists, no other formatting.
+                VERY IMPORTANT: Return the progression ONLY if it is present in the episode plot. If it is not, return "NO_PROGRESSION".
+                """
+            )
 
             prompt = ChatPromptTemplate.from_template(base_prompt)
 
-            logger.info("Sending request to LLM with parameters:")
+            # First LLM call to generate progression
+            logger.info("Sending first request to LLM with parameters:")
             logger.info(f"Arc title: {arc_title}")
             logger.info(f"Arc description: {arc_description}")
             logger.info(f"Episode plot excerpt: {episode_plot[:200]}...")
-            
+            if other_arcs_context:
+                logger.info(f"Number of other arcs in context: {len(other_arcs_context)}")
+
             response = self.llm.invoke(prompt.format_messages(
                 arc_title=arc_title,
                 arc_description=arc_description,
-                episode_plot=episode_plot
+                episode_plot=episode_plot,
+                other_arcs_context=other_arcs_prompt
             ))
 
-            content = response.content.strip()
-            logger.info(f"Raw LLM response content: {content}")
-            
-            if content == "NO_PROGRESSION":
+            progression_content = response.content.strip()
+            logger.info(f"Raw LLM response content: {progression_content}")
+
+            # If "NO_PROGRESSION", skip second call
+            if progression_content == "NO_PROGRESSION":
                 logger.info("LLM determined NO_PROGRESSION for this episode")
-                return content
-            
-            if not content:
+                return progression_content
+
+            if not progression_content:
                 logger.warning("LLM returned empty content")
-                return ""
-            
-            logger.info(f"Generated progression content: {content}")
-            return content
+                return "NO_PROGRESSION"
+
+            logger.info(f"Generated progression content: {progression_content}")
+
+            # Validation prompt to confirm arc presence and avoid false positives
+            validation_prompt = dedent(
+                """You are an expert in verifying the presence of narrative arcs in TV series. Analyze the following arc title and description and confirm whether they are explicitly present and relevant to the given episode plot.
+
+                Episode Plot:
+                {episode_plot}
+
+                Arc Title: {arc_title}
+                Arc Description: {arc_description}
+
+                Validation Guidelines:
+                    - Ensure the episode plot explicitly supports the arc title and description.
+                    - Verify the arc's relevance to the episode plot.
+                    - Pay attention to false positives and learn how to avoid them. For example, if an arc mentions "Battle of Winterfell" and in the plot it is mentioned "Battle of Riverrun", you might think that is the same thing, but it is not. Same thing, if we are talking about a "Brain surgery on patient X", and in the plot it is mentioned "Brain surgery on patient Y", it is not the same thing and the specific arc is not present in the episode plot.
+                    - If the arc and description are clearly present and relevant, provide the response "TRUE."
+                    - If the arc and description are NOT clearly present or relevant, provide the response "FALSE."
+
+                Return your answer as a JSON object with the following structure:
+                {{
+                    "Chain of Thought": "Detailed reasoning explaining whether the arc title and description are present and relevant in the plot, referencing specific parts of the plot to justify your decision.",
+                    "Response": "TRUE" or "FALSE"
+                }}
+                """
+            )
+
+            prompt = ChatPromptTemplate.from_template(validation_prompt)
+
+            logger.info("Sending validation request to LLM to verify arc presence and relevance:")
+            validation_response = self.llm.invoke(prompt.format_messages(
+                episode_plot=episode_plot,
+                arc_title=arc_title,
+                arc_description=arc_description
+            ))
+
+            validation_result = clean_llm_json_response(validation_response.content.strip())
+            if isinstance(validation_result, list):
+                validation_result = validation_result[0]
+
+            logger.info(f"Validation LLM response: {validation_result}")
+            chain_of_thought = validation_result.get("Chain of Thought", "")
+            response = validation_result.get("Response", "")
+
+            logger.info(f"Chain of Thought: {chain_of_thought}")
+            logger.info(f"Final Validation Response: {response}")
+
+            if response == "TRUE":
+                logger.info("Arc presence validated successfully")
+                return progression_content
+            else:
+                logger.warning("Arc presence validation failed")
+                return "NO_PROGRESSION"
 
         except FileNotFoundError as e:
             logger.error(f"Episode plot file not found: {episode_plot_path}")
-            return ""
+            return "NO_PROGRESSION"
         except Exception as e:
             logger.error(f"Error generating progression content: {str(e)}")
             logger.exception(e)
-            return ""
+            return "NO_PROGRESSION"
+

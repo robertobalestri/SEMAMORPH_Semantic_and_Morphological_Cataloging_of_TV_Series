@@ -208,44 +208,63 @@ class CharacterService:
             logger.error(f"Error deleting character {entity_name}: {e}")
             raise
 
-    def merge_characters(self, character1_id: str, character2_id: str, series: str) -> bool:
+    def merge_characters(
+        self,
+        character1_id: str,
+        character2_id: str,
+        series: str,
+        keep_character: str = 'character1'
+    ) -> bool:
         """
-        Merge two characters, updating all related arcs and progressions.
-        The first character (character1_id) will be kept, the second will be deleted.
+        Merge two characters, keeping the data from the specified character.
+        
+        Args:
+            character1_id: Entity name of the first character
+            character2_id: Entity name of the second character
+            series: Series identifier
+            keep_character: Which character to keep ('character1' or 'character2')
+        
+        Returns:
+            bool: True if merge was successful, False otherwise
         """
-        try:
-            char1 = self.character_repository.get_by_entity_name(character1_id, series)
-            char2 = self.character_repository.get_by_entity_name(character2_id, series)
+        # Get both characters
+        char1 = self.character_repository.get_by_entity_name(character1_id, series)
+        char2 = self.character_repository.get_by_entity_name(character2_id, series)
 
-            if not char1 or not char2:
-                return False
+        if not char1 or not char2:
+            return False
 
-            # Merge appellations
-            existing_appellations = {app.appellation for app in char1.appellations}
-            for app in char2.appellations:
-                if app.appellation not in existing_appellations:
-                    app.character = char1
-                    existing_appellations.add(app.appellation)
+        # Determine which character to keep based on keep_character parameter
+        kept_char = char1 if keep_character == 'character1' else char2
+        merged_char = char2 if keep_character == 'character1' else char1
 
-            # Update main characters in arcs
-            for arc in char2.main_narrative_arcs:
-                if char1 not in arc.main_characters:
-                    arc.main_characters.append(char1)
-                arc.main_characters.remove(char2)
+        # Merge appellations
+        merged_appellations = set([app.appellation for app in kept_char.appellations])
+        merged_appellations.update([app.appellation for app in merged_char.appellations])
 
-            # Update interfering characters in progressions
-            for progression in char2.interfering_progressions:
-                if char1 not in progression.interfering_characters:
-                    progression.interfering_characters.append(char1)
-                progression.interfering_characters.remove(char2)
+        # Update the kept character with merged appellations
+        kept_char.appellations = [
+            CharacterAppellation(
+                appellation=app,
+                character_id=kept_char.entity_name
+            )
+            for app in merged_appellations
+        ]
 
-            # Delete the second character
-            self.character_repository.delete(char2)
-            return True
+        # Update any references from narrative arcs
+        for arc in merged_char.main_narrative_arcs:
+            if kept_char not in arc.main_characters:
+                arc.main_characters.append(kept_char)
 
-        except Exception as e:
-            logger.error(f"Error merging characters {character1_id} and {character2_id}: {e}")
-            raise
+        # Update any references from progressions
+        for prog in merged_char.interfering_progressions:
+            if kept_char not in prog.interfering_characters:
+                prog.interfering_characters.append(kept_char)
+
+        # Delete the other character
+        self.character_repository.delete(merged_char)
+
+        return True
 
     def _normalize_name(self, name: str) -> str:
         """Helper method to normalize character names."""

@@ -176,6 +176,7 @@ class CharacterCreateRequest(BaseModel):
 class CharacterMergeRequest(BaseModel):
     character1_id: str
     character2_id: str
+    keep_character: str  # 'character1' or 'character2'
 
 def normalize_season_episode(season: str, episode: str) -> tuple[str, str]:
     """Normalize season and episode format to S01, E01."""
@@ -747,13 +748,11 @@ async def merge_characters(series: str, merge_data: CharacterMergeRequest):
         with db_manager.session_scope() as session:
             character_service = CharacterService(CharacterRepository(session))
             
-            # Log before merge attempt
-            logger.info(f"Merging character1_id: {merge_data.character1_id} into character2_id: {merge_data.character2_id}")
-            
             success = character_service.merge_characters(
                 merge_data.character1_id,
                 merge_data.character2_id,
-                series
+                series,
+                keep_character=merge_data.keep_character
             )
             
             if not success:
@@ -767,10 +766,6 @@ async def merge_characters(series: str, merge_data: CharacterMergeRequest):
             logger.info(f"Successfully merged characters {merge_data.character1_id} and {merge_data.character2_id}")
             return {"message": "Characters merged successfully"}
             
-    except ValidationError as e:
-        error_msg = f"Validation error in merge request: {str(e)}"
-        logger.error(error_msg)
-        raise HTTPException(status_code=422, detail=error_msg)
     except Exception as e:
         error_msg = f"Error merging characters: {str(e)}"
         logger.error(error_msg)
@@ -861,7 +856,7 @@ async def generate_progression(
     series: str = Query(...),
     season: str = Query(...),
     episode: str = Query(...),
-    data: dict = Body(...)  # Accept request body as dict
+    data: dict = Body(...)
 ):
     """Generate progression content for an arc in a specific episode."""
     try:
@@ -870,19 +865,23 @@ async def generate_progression(
         
         with db_manager.session_scope() as session:
             arc_repository = NarrativeArcRepository(session)
+            progression_repository = ArcProgressionRepository(session)
             character_repository = CharacterRepository(session)
             character_service = CharacterService(character_repository)
             llm_service = LLMService()
 
-            # Get arc details either from ID or directly from request
+            # Get arc details
+            arc = None
             arc_title = None
             arc_description = None
+            arc_id = None
             
             if data.get('arc_id'):
                 arc = arc_repository.get_by_id(data['arc_id'])
                 if arc:
                     arc_title = arc.title
                     arc_description = arc.description
+                    arc_id = arc.id
                     logger.info(f"Found arc by ID: {arc.title}")
             else:
                 arc_title = data.get('arc_title')
@@ -907,30 +906,41 @@ async def generate_progression(
                 episode_plot_path=episode_plot_path
             )
             
-            logger.info(f"Generated content length: {len(content)}")
-            if content == "NO_PROGRESSION":
-                logger.info("Returning NO_PROGRESSION response")
+            # If content is NO_PROGRESSION and we have an arc, delete any existing progression
+            if content == "NO_PROGRESSION" and arc and data.get('delete_existing', False):
+                existing_progression = progression_repository.get_single(
+                    arc_id=arc.id,
+                    series=series,
+                    season=season,
+                    episode=episode
+                )
+                if existing_progression:
+                    logger.info(f"Deleting existing progression for S{season}E{episode} due to NO_PROGRESSION")
+                    progression_repository.delete(existing_progression.id)
+
                 return {
                     "content": "NO_PROGRESSION",
                     "interfering_characters": []
                 }
 
-            # Get all characters for the series
-            all_characters = character_repository.get_by_series(series)
-            
-            # Find mentioned characters in the content
-            mentioned_appellations = []
-            for character in all_characters:
-                for appellation in character.appellations:
-                    if appellation.appellation in content:
-                        mentioned_appellations.append(character.best_appellation)
-                        break  # Only add each character once
+            # If we have valid content, process it
+            if content != "NO_PROGRESSION":
+                # Get all characters for the series
+                all_characters = character_repository.get_by_series(series)
+                
+                # Find mentioned characters in the content
+                mentioned_appellations = []
+                for character in all_characters:
+                    for appellation in character.appellations:
+                        if appellation.appellation in content:
+                            mentioned_appellations.append(character.best_appellation)
+                            break  # Only add each character once
 
-            logger.info(f"Found interfering characters: {mentioned_appellations}")
-            return {
-                "content": content,
-                "interfering_characters": mentioned_appellations
-            }
+                logger.info(f"Found interfering characters: {mentioned_appellations}")
+                return {
+                    "content": content,
+                    "interfering_characters": mentioned_appellations
+                }
 
     except Exception as e:
         logger.error(f"Error generating progression: {str(e)}")

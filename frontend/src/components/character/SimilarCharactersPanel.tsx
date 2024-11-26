@@ -12,6 +12,9 @@ import {
   SliderThumb,
   FormControl,
   FormLabel,
+  RadioGroup,
+  Radio,
+  Stack,
 } from '@chakra-ui/react';
 import styles from '@/styles/components/SimilarCharactersPanel.module.css';
 
@@ -29,7 +32,7 @@ interface Character {
 
 interface SimilarCharactersPanelProps {
   similarCharacters: SimilarCharacterPair[];
-  onMergeCharacters: (char1: Character, char2: Character) => void;
+  onMergeCharacters: (char1: Character, char2: Character, keepCharacter: 'character1' | 'character2') => void;
   onThresholdChange?: (threshold: number) => void;
 }
 
@@ -39,6 +42,7 @@ export const SimilarCharactersPanel: React.FC<SimilarCharactersPanelProps> = ({
   onThresholdChange,
 }) => {
   const [threshold, setThreshold] = useState(0.5);
+  const [selectedCharacter, setSelectedCharacter] = useState<'character1' | 'character2'>('character1');
 
   const handleThresholdChange = (value: number) => {
     setThreshold(value);
@@ -102,11 +106,29 @@ export const SimilarCharactersPanel: React.FC<SimilarCharactersPanelProps> = ({
                     </Text>
                   </Box>
                   
+                  <RadioGroup
+                    value={selectedCharacter}
+                    onChange={(value: 'character1' | 'character2') => setSelectedCharacter(value)}
+                    mb={3}
+                  >
+                    <Stack>
+                      <Radio value="character1">
+                        Keep "{pair.character1.best_appellation}"
+                      </Radio>
+                      <Radio value="character2">
+                        Keep "{pair.character2.best_appellation}"
+                      </Radio>
+                    </Stack>
+                  </RadioGroup>
+                  
                   <Button
                     size="sm"
                     colorScheme="yellow"
-                    mt={3}
-                    onClick={() => onMergeCharacters(pair.character1, pair.character2)}
+                    onClick={() => onMergeCharacters(
+                      pair.character1,
+                      pair.character2,
+                      selectedCharacter
+                    )}
                   >
                     Merge Characters
                   </Button>

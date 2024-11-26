@@ -164,15 +164,15 @@ export class ApiClient {
 
   async mergeCharacters(
     series: string,
-    character1Id: string,
-    character2Id: string
+    data: {
+      character1_id: string;
+      character2_id: string;
+      keep_character: 'character1' | 'character2';
+    }
   ): Promise<ApiResponse<void>> {
     return this.request<void>(`/characters/${series}/merge`, {
       method: 'POST',
-      body: JSON.stringify({
-        character1_id: character1Id,
-        character2_id: character2Id,
-      }),
+      body: JSON.stringify(data),
     });
   }
 
@@ -261,7 +261,8 @@ export class ApiClient {
         body: JSON.stringify({
           arc_id: arcId,
           arc_title: title || null,
-          arc_description: description || null
+          arc_description: description || null,
+          delete_existing: true
         }),
       }
     );
