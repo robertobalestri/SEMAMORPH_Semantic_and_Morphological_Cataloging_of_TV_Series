@@ -108,7 +108,7 @@ class ProgressionCreateRequest(BaseModel):
     series: str
     season: str
     episode: str
-    interfering_characters: List[str]
+    interfering_characters: Union[str, List[str]]  # Accept either string or list
 
 class VectorStoreEntry(BaseModel):
     id: str
@@ -420,20 +420,21 @@ async def create_progression(progression: ProgressionCreateRequest):
                 session=session
             )
             
-            # Split characters if they're in a string format
+            # Handle interfering_characters as either string or list
             character_names = (
                 progression.interfering_characters.split(';') 
                 if isinstance(progression.interfering_characters, str) 
                 else progression.interfering_characters
             )
-            
+
+            # Create progression
             new_progression = narrative_arc_service.add_progression(
                 arc_id=progression.arc_id,
                 content=progression.content,
                 series=progression.series,
                 season=season,
                 episode=episode,
-                interfering_characters=character_names
+                interfering_characters=character_names  # Pass as list
             )
             
             if not new_progression:

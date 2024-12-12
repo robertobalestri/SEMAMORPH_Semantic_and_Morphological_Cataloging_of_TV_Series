@@ -343,8 +343,13 @@ SOAP_AND_GENRE_ARC_EXTRACTOR_PROMPT = ChatPromptTemplate.from_template(
     """You are a Narrative Arc Specialist for Soap and Genre arcs. Extract all relevant soap and genre-specific arcs from the episode plot.
 
 **Types of Arcs:**
-- **Soap Arc**: Personal relationships, romances, family dynamics, friendships, personal growth, conflicts.
-- **Genre-Specific Arc**: Professional conflicts, workplace dynamics, missions/objectives, power struggles, institutional challenges, skill development, political maneuvers.
+- **Soap Arc**: Personal relationships, romances, family dynamics, friendships, personal growth, conflicts, character development
+- **Genre-Specific Arc**: Professional conflicts, workplace dynamics, missions/objectives, power struggles, institutional challenges, skill development, political maneuvers, battles, etc.
+
+**Examples of Genre-Specific Arcs:**
+- For a zombie series, a genre-specific arc could be "Building of the new village for the survivors".
+- For a drama series on bank employees, a genre-specific arc could be "The new director's conflict with employees".
+- For Breaking Bad, a genre-specific arc could be "Heisenberg's work for Gus" or "Saul Goodman's criminal activities".
 
 **Exclude**: Anthology Arcs already identified.
 

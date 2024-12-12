@@ -13,6 +13,7 @@ def setup_logging(name: str) -> logging.Logger:
     # Create logger
     logger = logging.getLogger(name)
     logger.propagate = False  # Prevent double logging
+
     
     # Clear any existing handlers
     if logger.handlers:
@@ -52,5 +53,14 @@ def setup_logging(name: str) -> logging.Logger:
     # Add handlers to the logger
     logger.addHandler(console_handler)
     logger.addHandler(file_handler)
+
     
+    # Suppress `httpcore` logs
+    logging.getLogger("httpcore").setLevel(logging.WARNING)
+    logging.getLogger("httpx").setLevel(logging.WARNING)  # Optional, if using `httpx`
+    # Suppress `openai._base_client` logs
+    logging.getLogger("openai._base_client").setLevel(logging.WARNING)
+    logging.getLogger("urllib3.connectionpool").setLevel(logging.WARNING)
+    logging.getLogger("chromadb.config").setLevel(logging.WARNING)
+    logging.getLogger("chromadb.api.segment").setLevel(logging.WARNING)
     return logger

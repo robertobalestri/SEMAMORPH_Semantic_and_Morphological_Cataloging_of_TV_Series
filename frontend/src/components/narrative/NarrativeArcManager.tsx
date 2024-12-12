@@ -38,7 +38,14 @@ import { ArcFilters } from '../filters/ArcFilters';
 import { useArcStore } from '@/store/arcStore';
 import { useApi } from '@/hooks/useApi';
 import { ApiClient } from '@/services/api/ApiClient';
-import type { NarrativeArc, Episode, ArcProgression, Character, ProgressionMapping } from '@/architecture/types';
+import type { 
+  NarrativeArc, 
+  Episode, 
+  ArcProgression, 
+  Character, 
+  ProgressionMapping,
+  CreateArcData
+} from '@/architecture/types';
 import { ArcProgressionEditModal } from '../modals/ArcProgressionEditModal';
 import { ArcType } from '@/architecture/types/arc';
 import { ArcEditModal } from '../modals/ArcEditModal';
@@ -76,6 +83,7 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
   const [isGenerateAllDialogOpen, setIsGenerateAllDialogOpen] = useState(false);
   const [selectedArcForGeneration, setSelectedArcForGeneration] = useState<NarrativeArc | null>(null);
   const cancelRef = React.useRef<HTMLButtonElement>(null);
+  const [isGenerating, setIsGenerating] = useState(false);
 
   // Modal disclosures
   const {
@@ -192,7 +200,7 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
     selectedEpisode
   ]);
 
-  const handleCreateArc = async (arcData: Partial<NarrativeArc>) => {
+  const handleCreateArc = async (arcData: CreateArcData) => {
     try {
       const response = await request(() => api.createArc(arcData));
       if (response) {
@@ -355,12 +363,12 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
         // Create new progression
         await request(() =>
           api.createProgression({
-            content: updatedProgression.content,
             arc_id: selectedArc.id,
+            content: updatedProgression.content,
             series: series,
             season: updatedProgression.season,
             episode: updatedProgression.episode,
-            interfering_characters: updatedProgression.interfering_characters
+            interfering_characters: updatedProgression.interfering_characters.join(';')
           })
         );
       }
@@ -416,48 +424,6 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
     }
   };
 
-  // Update the renderArcTypeFilters function
-  const renderArcTypeFilters = () => {
-    const arcTypeColors = {
-      'Soap Arc': '#F687B3',
-      'Genre-Specific Arc': '#ED8936',
-      'Anthology Arc': '#48BB78',
-    };
-
-    return (
-      <Box borderWidth={1} borderRadius="md" p={4}>
-        <FormControl>
-          <FormLabel fontWeight="bold">Arc Types</FormLabel>
-          <SimpleGrid columns={3} spacing={2}>
-            {Object.values(ArcType).map((arcType) => (
-              <Checkbox
-                key={arcType}
-                isChecked={selectedArcTypes.includes(arcType)}
-                onChange={(e) => {
-                  if (e.target.checked) {
-                    setSelectedArcTypes([...selectedArcTypes, arcType]);
-                  } else {
-                    setSelectedArcTypes(selectedArcTypes.filter(t => t !== arcType));
-                  }
-                }}
-              >
-                <HStack>
-                  <Box
-                    w="3"
-                    h="3"
-                    borderRadius="full"
-                    bg={arcTypeColors[arcType as keyof typeof arcTypeColors]}
-                  />
-                  <Text fontSize="sm">{arcType}</Text>
-                </HStack>
-              </Checkbox>
-            ))}
-          </SimpleGrid>
-        </FormControl>
-      </Box>
-    );
-  };
-
   const handleUpdateArc = async (updatedArc: Partial<NarrativeArc>) => {
     try {
       await request(() => api.updateArc(updatedArc.id!, updatedArc));
@@ -486,6 +452,8 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
   const handleGenerateAll = async (overwriteExisting: boolean = false) => {
     if (!selectedArcForGeneration) return;
     
+    setIsGenerating(true);
+    
     const arc = selectedArcForGeneration;
     const allEpisodes = episodes
       .filter(ep => ep.season === selectedSeason)
@@ -497,8 +465,8 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
 
     try {
       const loadingToastId = toast({
-        title: 'Generating progressions',
-        description: 'This may take a few minutes...',
+        title: `Generating progressions for "${arc.title}"`,
+        description: 'Starting generation...',
         status: 'info',
         duration: null,
         isClosable: true,
@@ -512,6 +480,11 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
       console.log(`Total episodes to process: ${allEpisodes.length}`);
 
       for (const ep of allEpisodes) {
+        // Update toast with current episode
+        toast.update(loadingToastId, {
+          description: `Processing S${ep.season.replace('S', '').padStart(2, '0')}E${ep.episode.replace('E', '').padStart(2, '0')} (${generatedCount + skippedCount + noProgressionCount + 1}/${allEpisodes.length})`,
+        });
+        
         console.log(`Processing S${ep.season}E${ep.episode}`);
         
         // Skip if progression already exists and we're not overwriting
@@ -551,12 +524,14 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
               // Create new progression
               await request(() =>
                 api.createProgression({
-                  content: response.content,
                   arc_id: arc.id,
+                  content: response.content,
                   series: series,
                   season: ep.season,
                   episode: ep.episode,
-                  interfering_characters: response.interfering_characters || []
+                  interfering_characters: Array.isArray(response.interfering_characters)
+                    ? response.interfering_characters.join(';')
+                    : response.interfering_characters || ''
                 })
               );
             }
@@ -588,6 +563,7 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
         duration: 5000,
       });
     } finally {
+      setIsGenerating(false);
       setIsGenerateAllDialogOpen(false);
       setSelectedArcForGeneration(null);
     }
@@ -596,9 +572,6 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
   return (
     <Box>
       <VStack spacing={4} align="stretch">
-        {/* Arc Type Filters */}
-        {renderArcTypeFilters()}
-
         {/* Arc Filters */}
         <ArcFilters
           seasons={seasons}
@@ -671,6 +644,7 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
           onSubmit={handleCreateArc}
           availableCharacters={characters.map(c => c.best_appellation)}
           series={series}
+          episodes={episodes}
         />
 
         {selectedForMerge.length === 2 && (
@@ -720,13 +694,19 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
               </AlertDialogBody>
 
               <AlertDialogFooter>
-                <Button ref={cancelRef} onClick={() => setIsGenerateAllDialogOpen(false)}>
+                <Button 
+                  ref={cancelRef} 
+                  onClick={() => setIsGenerateAllDialogOpen(false)}
+                  isDisabled={isGenerating}
+                >
                   Cancel
                 </Button>
                 <Button
                   colorScheme="blue"
                   onClick={() => handleGenerateAll(false)}
                   ml={3}
+                  isDisabled={isGenerating}
+                  isLoading={isGenerating}
                 >
                   No, Skip Existing
                 </Button>
@@ -734,6 +714,8 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
                   colorScheme="red"
                   onClick={() => handleGenerateAll(true)}
                   ml={3}
+                  isDisabled={isGenerating}
+                  isLoading={isGenerating}
                 >
                   Yes, Overwrite All
                 </Button>

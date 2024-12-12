@@ -543,14 +543,18 @@ class NarrativeArcService:
         series: str,
         season: str,
         episode: str,
-        interfering_characters: List[str]
+        interfering_characters: Union[str, List[str]]
     ) -> Optional[ArcProgression]:
-        """
-        Add a new progression to an existing arc.
-        Updates vector store embeddings for the arc.
-        """
+        """Add a new progression to an existing arc."""
         with self.transaction():
             try:
+                # Convert interfering_characters to list if it's a string
+                character_names = (
+                    interfering_characters.split(';') 
+                    if isinstance(interfering_characters, str) 
+                    else interfering_characters
+                )
+                
                 arc = self.arc_repository.get_by_id(arc_id)
                 if not arc:
                     logger.warning(f"No arc found with ID {arc_id}")
@@ -570,9 +574,9 @@ class NarrativeArcService:
                 )
 
                 # Get and link interfering characters
-                if interfering_characters:
+                if character_names:
                     characters = self.character_service.get_characters_by_appellations(
-                        interfering_characters, 
+                        character_names, 
                         series
                     )
                     if characters:

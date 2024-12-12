@@ -93,16 +93,6 @@ def get_llm(intelligent_or_cheap: LLMType) -> AzureChatOpenAI:
     else:
         raise ValueError(f"Invalid LLM type: {intelligent_or_cheap}")
 
-'''def get_embedding_model():
-    return AzureOpenAIEmbeddings(
-        deployment=os.getenv("AZURE_OPENAI_EMBEDDING_MODEL_NAME"),
-        azure_endpoint=os.getenv("AZURE_OPENAI_API_ENDPOINT"),
-        openai_api_key=os.getenv("AZURE_OPENAI_API_KEY"),
-        openai_api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
-        openai_api_type=os.getenv("OPENAI_API_TYPE"),
-        model=os.getenv("AZURE_OPENAI_EMBEDDING_MODEL_NAME"),
-    )'''
-
 def get_embedding_model():
     return CohereEmbeddings(
         model="Cohere-embed-v3-english",

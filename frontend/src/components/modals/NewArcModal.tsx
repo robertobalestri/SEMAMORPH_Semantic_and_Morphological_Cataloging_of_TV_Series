@@ -28,16 +28,17 @@ import {
   TabPanel,
 } from '@chakra-ui/react';
 import { ArcType } from '@/architecture/types';
-import type { NarrativeArc } from '@/architecture/types';
+import type { NarrativeArc, ArcProgression, Episode, CreateArcData } from '@/architecture/types';
 import { StarIcon } from '@chakra-ui/icons';
 import { ApiClient } from '@/services/api/ApiClient';
 
 interface NewArcModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onSubmit: (arcData: Partial<NarrativeArc>) => void;
+  onSubmit: (arcData: CreateArcData) => void;
   availableCharacters: string[];
   series: string;
+  episodes: Episode[];
 }
 
 export const NewArcModal: React.FC<NewArcModalProps> = ({
@@ -46,6 +47,7 @@ export const NewArcModal: React.FC<NewArcModalProps> = ({
   onSubmit,
   availableCharacters,
   series,
+  episodes,
 }) => {
   const bgColor = useColorModeValue('gray.50', 'gray.700');
   const toast = useToast();
@@ -62,18 +64,22 @@ export const NewArcModal: React.FC<NewArcModalProps> = ({
   const [activeTab, setActiveTab] = useState(0);
 
   const handleSubmit = () => {
-    const arcData: Partial<NarrativeArc> = {
+    const initialProgression: Omit<Partial<ArcProgression>, 'id'> = {
+      content: progressionContent,
+      season: `S${progressionSeason.padStart(2, '0')}`,
+      episode: `E${progressionEpisode.padStart(2, '0')}`,
+      interfering_characters: interferingCharacters,
+      series: series,
+      ordinal_position: parseInt(progressionEpisode)
+    };
+
+    const arcData: CreateArcData = {
       title: title.trim(),
       description: description.trim(),
       arc_type: arcType,
-      main_characters: mainCharacters.join(';'),
+      main_characters: mainCharacters,
       series,
-      initial_progression: {
-        content: progressionContent,
-        season: `S${progressionSeason.padStart(2, '0')}`,
-        episode: `E${progressionEpisode.padStart(2, '0')}`,
-        interfering_characters: interferingCharacters.join(';')
-      }
+      progressions: [initialProgression]
     };
 
     onSubmit(arcData);
@@ -149,10 +155,10 @@ export const NewArcModal: React.FC<NewArcModalProps> = ({
   };
 
   const handleGenerateAllProgressions = async () => {
-    if (!title || !description || !progressionSeason || !progressionEpisode) {
+    if (!title || !description || !progressionSeason) {
       toast({
         title: 'Missing Information',
-        description: 'Please fill in the title, description, season, and episode first',
+        description: 'Please fill in the title, description, and season first',
         status: 'warning',
         duration: 3000,
       });
@@ -169,54 +175,83 @@ export const NewArcModal: React.FC<NewArcModalProps> = ({
     });
 
     try {
-      // Get all episodes for the season
-      const seasonNum = parseInt(progressionSeason);
-      const episodes = Array.from({ length: 24 }, (_, i) => i + 1); // Assuming max 24 episodes
-      const allProgressions = [];
+      const seasonEpisodes = episodes
+        .filter(ep => ep.season === `S${progressionSeason.padStart(2, '0')}`)
+        .sort((a, b) => parseInt(a.episode.replace('E', '')) - parseInt(b.episode.replace('E', '')));
 
-      for (const epNum of episodes) {
-        const season = `S${progressionSeason.padStart(2, '0')}`;
-        const episode = `E${epNum.toString().padStart(2, '0')}`;
+      console.log('Processing episodes:', seasonEpisodes);
+      const allProgressions: Omit<Partial<ArcProgression>, 'id'>[] = [];
+      let generatedCount = 0;
+      let noProgressionCount = 0;
+      let errorCount = 0;
 
+      for (const ep of seasonEpisodes) {
+        console.log(`Generating for episode ${ep.season}${ep.episode}`);
         const response = await api.generateProgression(
           null,
           series,
-          season,
-          episode,
+          ep.season,
+          ep.episode,
           title,
           description
         );
 
-        if (response.data?.content && response.data.content !== "NO_PROGRESSION") {
+        if (response.error) {
+          console.warn(`Error for episode ${ep.episode}:`, response.error);
+          errorCount++;
+          continue;
+        }
+
+        if (response.data) {
           allProgressions.push({
             content: response.data.content,
-            season,
-            episode,
+            season: ep.season,
+            episode: ep.episode,
+            series,
+            ordinal_position: parseInt(ep.episode.replace('E', '')),
             interfering_characters: response.data.interfering_characters
           });
+          generatedCount++;
+          console.log(`Added progression for episode ${ep.episode}, total now: ${allProgressions.length}`);
+        } else {
+          noProgressionCount++;
         }
+
+        toast.update(loadingToast, {
+          description: `Processing episode ${ep.episode}... (${generatedCount} generated, ${noProgressionCount} skipped, ${errorCount} errors)`,
+        });
       }
 
-      // Create arc with all progressions
-      const arcData: Partial<NarrativeArc> = {
-        title: title.trim(),
-        description: description.trim(),
-        arc_type: arcType,
-        main_characters: mainCharacters,
-        series,
-        progressions: allProgressions
-      };
+      if (allProgressions.length > 0) {
+        console.log(`Creating arc with ${allProgressions.length} progressions`);
+        const arcData: CreateArcData = {
+          title: title.trim(),
+          description: description.trim(),
+          arc_type: arcType,
+          main_characters: mainCharacters,
+          series,
+          progressions: allProgressions
+        };
 
-      toast.close(loadingToast);
-      toast({
-        title: 'Success',
-        description: `Generated ${allProgressions.length} progressions`,
-        status: 'success',
-        duration: 5000,
-      });
+        console.log('Submitting arc data:', arcData);
+        toast.close(loadingToast);
+        toast({
+          title: 'Generation Complete',
+          description: `Generated ${generatedCount} progressions, ${noProgressionCount} skipped, ${errorCount} errors`,
+          status: 'success',
+          duration: 5000,
+        });
 
-      onSubmit(arcData);
-      resetForm();
+        onSubmit(arcData);
+        resetForm();
+      } else {
+        toast({
+          title: 'No Progressions Generated',
+          description: `No valid progressions found (${noProgressionCount} skipped, ${errorCount} errors)`,
+          status: 'warning',
+          duration: 5000,
+        });
+      }
 
     } catch (error) {
       toast.close(loadingToast);

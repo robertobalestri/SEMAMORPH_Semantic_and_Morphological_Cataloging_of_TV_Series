@@ -57,6 +57,12 @@ export const ArcFilters: React.FC<ArcFiltersProps> = ({
   const bgColor = useColorModeValue('white', 'gray.800');
   const borderColor = useColorModeValue('gray.200', 'gray.600');
 
+  const arcTypeColors = {
+    [ArcType.SoapArc]: '#F687B3',
+    [ArcType.GenreSpecificArc]: '#ED8936',
+    [ArcType.AnthologyArc]: '#48BB78',
+  };
+
   return (
     <div className={styles.filtersGrid}>
       <Box className={styles.filterBox} bg={bgColor}>
@@ -97,7 +103,6 @@ export const ArcFilters: React.FC<ArcFiltersProps> = ({
         </VStack>
       </Box>
 
-      {/* Arc Types */}
       <Box 
         p={4} 
         borderWidth={1} 
@@ -121,14 +126,21 @@ export const ArcFilters: React.FC<ArcFiltersProps> = ({
                   }
                 }}
               >
-                <Text fontSize="sm">{type}</Text>
+                <HStack spacing={2} align="center">
+                  <Box
+                    w="3"
+                    h="3"
+                    borderRadius="full"
+                    bg={arcTypeColors[type]}
+                  />
+                  <Text fontSize="sm">{type}</Text>
+                </HStack>
               </Checkbox>
             ))}
           </SimpleGrid>
         </VStack>
       </Box>
 
-      {/* Character Filter */}
       <Box 
         p={4} 
         borderWidth={1} 

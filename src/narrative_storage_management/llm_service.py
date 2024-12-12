@@ -157,22 +157,15 @@ class LLMService:
 
             logger.info(f"Generating progression for arc: {arc_title}")
             logger.info(f"Episode plot path: {episode_plot_path}")
-            
+
             # Read the episode plot
             with open(episode_plot_path, 'r') as f:
                 episode_plot = f.read()
                 logger.info(f"Episode plot length: {len(episode_plot)} characters")
 
-            # Build context about other arcs in the episode
-            other_arcs_prompt = ""
-            if other_arcs_context:
-                other_arcs_prompt = "\nMajor plot points being covered by other arcs:\n"
-                for arc in other_arcs_context:
-                    other_arcs_prompt += f"• {arc['title']}: {arc['description']}\n"
-
-            # Initial progression generation prompt
+            # Initial progression generation prompt with Chain of Thought
             base_prompt = dedent(
-                """You are an expert in analyzing narrative arcs in TV series. Extract ONLY the most crucial plot points that DIRECTLY advance the specific narrative described in this arc.
+                """You are an expert in analyzing narrative arcs in TV series. Extract ONLY the most crucial plot points that advance the specific narrative described in this arc.
 
                 Narrative Arc to Track
                 Title: {arc_title}
@@ -184,46 +177,48 @@ class LLMService:
                 Progression Guidelines:
                     - Write a MAXIMUM of 3-5 brief sentences
                     - Each sentence must:
-                    • DIRECTLY advance the specific narrative described in the arc
+                    • Advance the specific narrative described in the arc
                     • Contain only verified plot events
                     • Focus on actions and outcomes
                     - Exclude:
                     • any event that is not explicitly about part of this narrative arc
-                    • speculation or interpretation
-                    • character emotions or reactions
-                    • context or background information
-                    - judgement or opinion (such as "X do this demonstrating his resilience")
+                    • speculation or interpretation such as "X do this, highlighting his dedication" or "X do that indicating its romantic tension". Just use "X do this" or "X do that"
+                    • judgement or opinion (such as "X do this demonstrating his resilience")
 
-                If the arc has no significant developments in this episode, respond with "NO_PROGRESSION".
+                If the arc does not have any developments in this episode, respond with "NO_PROGRESSION".
 
-                Your response should contain exclusively the progression content made of sentences separated by dots. No quotes, no numbered lists, no other formatting.
-                VERY IMPORTANT: Return the progression ONLY if it is present in the episode plot. If it is not, return "NO_PROGRESSION".
+                Return your answer as a JSON object with the following structure:
+                {{
+                    "Chain of Thought": "Detailed reasoning explaining how the progression content was derived and why these events are relevant to the arc.",
+                    "ProgressionContent": "Content containing exclusively the progression made of sentences separated by dots. No quotes, no numbered lists, no other formatting."
+                }}
                 """
             )
 
             prompt = ChatPromptTemplate.from_template(base_prompt)
 
             # First LLM call to generate progression
-            logger.info("Sending first request to LLM with parameters:")
-            logger.info(f"Arc title: {arc_title}")
-            logger.info(f"Arc description: {arc_description}")
-            logger.info(f"Episode plot excerpt: {episode_plot[:200]}...")
-            if other_arcs_context:
-                logger.info(f"Number of other arcs in context: {len(other_arcs_context)}")
-
+            logger.info(f"Starting progression generation for arc '{arc_title}' in {episode_plot_path}")
+            
             response = self.llm.invoke(prompt.format_messages(
                 arc_title=arc_title,
                 arc_description=arc_description,
-                episode_plot=episode_plot,
-                other_arcs_context=other_arcs_prompt
+                episode_plot=episode_plot
             ))
 
-            progression_content = response.content.strip()
-            logger.info(f"Raw LLM response content: {progression_content}")
+            first_call_result = clean_llm_json_response(response.content.strip())
+            if isinstance(first_call_result, list):
+                first_call_result = first_call_result[0]
 
-            # If "NO_PROGRESSION", skip second call
+            logger.info(f"First LLM call response: {first_call_result}")
+            chain_of_thought = first_call_result.get("Chain of Thought", "")
+            progression_content = first_call_result.get("ProgressionContent", "").strip()
+
+            logger.info(f"Chain of Thought (First Call): {chain_of_thought}")
+            logger.info(f"Generated Progression Content: {progression_content}")
+
             if progression_content == "NO_PROGRESSION":
-                logger.info("LLM determined NO_PROGRESSION for this episode")
+                logger.info(f"No progression found for arc '{arc_title}' - Generation complete")
                 return progression_content
 
             if not progression_content:
@@ -234,7 +229,8 @@ class LLMService:
 
             # Validation prompt to confirm arc presence and avoid false positives
             validation_prompt = dedent(
-                """You are an expert in verifying the presence of narrative arcs in TV series. Analyze the following arc title and description and confirm whether they are explicitly present and relevant to the given episode plot.
+                """You are an expert in verifying narrative arc presence in TV series. 
+                Your task is to verify that the first agent's reasoning is correct and provide a refined progression focusing only on the specific arc.
 
                 Episode Plot:
                 {episode_plot}
@@ -242,17 +238,32 @@ class LLMService:
                 Arc Title: {arc_title}
                 Arc Description: {arc_description}
 
+                First Agent's Analysis:
+                {first_agent_chain_of_thought}
+                Generated Content: {progression_content}
+
                 Validation Guidelines:
-                    - Ensure the episode plot explicitly supports the arc title and description.
-                    - Verify the arc's relevance to the episode plot.
-                    - Pay attention to false positives and learn how to avoid them. For example, if an arc mentions "Battle of Winterfell" and in the plot it is mentioned "Battle of Riverrun", you might think that is the same thing, but it is not. Same thing, if we are talking about a "Brain surgery on patient X", and in the plot it is mentioned "Brain surgery on patient Y", it is not the same thing and the specific arc is not present in the episode plot.
-                    - If the arc and description are clearly present and relevant, provide the response "TRUE."
-                    - If the arc and description are NOT clearly present or relevant, provide the response "FALSE."
+                - Your primary tasks are:
+                    • Verify there is no hallucination
+                    • Assess how confident you are that this arc is present in the episode
+                    • Rewrite the progression to include ONLY events directly related to this specific arc
+                
+                - When calculating the probability of presence percentage consider:
+                    • How clearly the arc's elements are present in the episode (100% = perfectly clear presence)
+                    • Whether the events are actually about this arc or a different one
+                    • Whether the characters and events mentioned actually appear
+                    • The relevance of the events to this specific arc
+                    
+                - Do NOT reduce probability of presence just because:
+                    • The arc's presence is subtle or minor
+                    • The progression is short
+                    • The arc is in an early or late stage
 
                 Return your answer as a JSON object with the following structure:
                 {{
-                    "Chain of Thought": "Detailed reasoning explaining whether the arc title and description are present and relevant in the plot, referencing specific parts of the plot to justify your decision.",
-                    "Response": "TRUE" or "FALSE"
+                    "Chain of Thought": "Detailed reasoning explaining your confidence assessment and progression refinement",
+                    "Probability of Presence": "Number between 0 and 100 representing how confident you are that this arc is present",
+                    "RefinedProgression": "The progression rewritten to focus only on events directly related to this arc. Return NO_PROGRESSION if you can't find any relevant events."
                 }}
                 """
             )
@@ -263,7 +274,9 @@ class LLMService:
             validation_response = self.llm.invoke(prompt.format_messages(
                 episode_plot=episode_plot,
                 arc_title=arc_title,
-                arc_description=arc_description
+                arc_description=arc_description,
+                first_agent_chain_of_thought=chain_of_thought,
+                progression_content=progression_content
             ))
 
             validation_result = clean_llm_json_response(validation_response.content.strip())
@@ -272,23 +285,26 @@ class LLMService:
 
             logger.info(f"Validation LLM response: {validation_result}")
             chain_of_thought = validation_result.get("Chain of Thought", "")
-            response = validation_result.get("Response", "")
+            probability_of_presence = float(validation_result.get("Probability of Presence", 0))
+            refined_progression = validation_result.get("RefinedProgression", "").strip()
 
             logger.info(f"Chain of Thought: {chain_of_thought}")
-            logger.info(f"Final Validation Response: {response}")
+            logger.info(f"Probability of Presence: {probability_of_presence}%")
+            logger.info(f"Refined Progression: {refined_progression}")
 
-            if response == "TRUE":
-                logger.info("Arc presence validated successfully")
-                return progression_content
+            if probability_of_presence >= 40 and refined_progression and refined_progression != "NO_PROGRESSION":
+                logger.info(f"Successfully generated progression for arc '{arc_title}' with {probability_of_presence}% confidence")
+                return refined_progression
             else:
-                logger.warning("Arc presence validation failed")
+                logger.info(f"No valid progression found for arc '{arc_title}' after validation")
                 return "NO_PROGRESSION"
 
         except FileNotFoundError as e:
             logger.error(f"Episode plot file not found: {episode_plot_path}")
             return "NO_PROGRESSION"
         except Exception as e:
-            logger.error(f"Error generating progression content: {str(e)}")
-            logger.exception(e)
+            logger.error(f"Error generating progression for arc '{arc_title}': {str(e)}")
             return "NO_PROGRESSION"
+        finally:
+            logger.info(f"Completed progression generation attempt for arc '{arc_title}'")
 

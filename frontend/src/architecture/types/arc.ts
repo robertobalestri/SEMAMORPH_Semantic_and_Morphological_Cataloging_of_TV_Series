@@ -52,4 +52,9 @@ export interface ProgressionMapping {
   arc_id?: string;
   arc_title?: string;
   series?: string;
+}
+
+// Add a new type for creating arcs
+export interface CreateArcData extends Omit<Partial<NarrativeArc>, 'progressions'> {
+  progressions?: Omit<Partial<ArcProgression>, 'id'>[];
 } 

@@ -8,8 +8,6 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-from regex import D
-
 from src.utils.llm_utils import clean_llm_json_response
 from src.utils.logger_utils import setup_logging
 from src.utils.text_utils import load_text, save_json
