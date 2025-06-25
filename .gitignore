@@ -13,3 +13,5 @@ data/FIABA/
 new_frontend/
 agent_logs/
 frontend backup/
+*copy/
+*copy.db
