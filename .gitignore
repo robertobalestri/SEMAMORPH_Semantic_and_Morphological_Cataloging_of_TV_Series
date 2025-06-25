@@ -12,3 +12,4 @@ data/FIABA/
 *.log
 new_frontend/
 agent_logs/
+frontend backup/
