@@ -1,13 +1,101 @@
-To make it work:
+# SEMAMORPH: Semantic and Morphological Cataloging of TV Series
 
-```
+This project provides tools for semantic and morphological analysis of TV series content, including narrative arc extraction, character analysis, and entity linking.
+
+## Setup
+
+### Backend Setup
+```bash
 pip install -r requirements.txt
 ```
 
-Npm install the node modules from the frontend folder. Then npm run dev.
+### Frontend Setup
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-Run main.py to make all happens.
+### Running the Application
 
-When ready, to visualize, run "uvicorn api.api_main:app --reload"
+1. **Start the API server:**
+   ```bash
+   uvicorn api.api_main:app --reload
+   ```
 
-from the cmd prompt goes to the frontend folder and run "npm run dev"
+2. **Start the frontend:**
+   ```bash
+   cd frontend
+   npm run dev
+   ```
+
+3. **Process episodes:**
+   Run `main.py` to process individual episodes, or use the web interface's Processing tab.
+
+## Configuration
+
+The project includes a configuration system that allows you to customize processing behavior:
+
+### Viewing Configuration
+```bash
+python3 config_manager.py
+```
+
+### Key Configuration Options
+
+**Use Original Plot as Summary:**
+```bash
+# Use original plot files as summarized plots (faster processing)
+python3 config_manager.py set-original true
+
+# Generate new summarized plots using LLM (default)
+python3 config_manager.py set-original false
+```
+
+When `use_original_plot_as_summary` is set to `true`, the system will copy the original plot file as the summarized plot instead of generating a new summary using LLM. This significantly speeds up processing while maintaining compatibility with the narrative arc extraction system.
+
+## Data Management
+
+### Processing Data
+Use the web interface's "Processing" tab to process episodes and generate narrative arcs, or run:
+```bash
+python main.py --series GA --season S01 --episode E01
+```
+
+### Cleaning Processed Data
+The project includes tools to clean processed data while preserving original source files:
+
+#### Interactive Cleanup (Recommended)
+```bash
+./clean_data_interactive.sh
+```
+
+#### Command Line Cleanup
+```bash
+# Preview what would be deleted
+python3 clean_data.py --dry-run
+
+# Clean all processed data
+python3 clean_data.py
+
+# Clean specific series
+python3 clean_data.py --series GA
+
+# Clean specific season
+python3 clean_data.py --series GA --season S01
+```
+
+**Note:** The cleaning scripts preserve:
+- `*_plot.txt` (original plot files)
+- `*_full_dialogues.json` (original dialogue files)
+
+All other processed files (entities, semantic segments, narrative arcs, etc.) will be deleted.
+
+## Project Structure
+
+- `data/` - TV series data organized by series/season/episode
+- `frontend/` - React-based web interface
+- `api/` - FastAPI backend
+- `src/` - Core processing modules
+- `main.py` - Episode processing script
+- `clean_data.py` - Data cleaning utility

@@ -6,8 +6,10 @@ from src.plot_processing.plot_processing_models import EntityLink, EntityLinkEnc
 from src.utils.text_utils import load_text, clean_text
 from src.ai_models.ai_models import get_llm
 from src.path_handler import PathHandler
+from src.config import config
 import os
 import json
+import shutil
 import agentops
 from src.langgraph_narrative_arcs_extraction.narrative_arc_graph import extract_narrative_arcs
 from src.ai_models.ai_models import LLMType
@@ -23,12 +25,33 @@ agentops.init()
 # Set up logging
 logger = setup_logging(__name__)
 
-def process_text(path_handler: PathHandler) -> None:
+def process_single_episode(series: str, season: str, episode: str) -> None:
+    """
+    Process a single episode with given series, season, and episode.
+    
+    Args:
+        series (str): Series name (e.g., "GA")
+        season (str): Season name (e.g., "S01")
+        episode (str): Episode name (e.g., "E01")
+    """
+    try:
+        path_handler = PathHandler(series, season, episode)
+        logger.info(f"Processing {series} {season} {episode}")
+        process_text(path_handler, series, season, episode)
+        logger.info(f"Successfully processed {series} {season} {episode}")
+    except Exception as e:
+        logger.error(f"Error processing {series} {season} {episode}: {e}")
+        raise
+
+def process_text(path_handler: PathHandler, series: str, season: str, episode: str) -> None:
     """
     Process the input text file, extracting entities and performing semantic analysis.
 
     Args:
         path_handler (PathHandler): An instance of PathHandler to manage file paths.
+        series (str): Series name
+        season (str): Season name  
+        episode (str): Episode name
 
     Returns:
         None
@@ -174,6 +197,36 @@ def process_text(path_handler: PathHandler) -> None:
             logger.info(f"Loading semantic segments from: {semantic_segments_path}")
             with open(semantic_segments_path, "r") as semantic_segments_file:
                 semantic_segments = json.load(semantic_segments_file)          
+        
+        # Handle summarized plot creation based on configuration
+        summarized_plot_path = path_handler.get_summarized_plot_path()
+        
+        if not os.path.exists(summarized_plot_path):
+            if config.use_original_plot_as_summary:
+                # Use original plot as summarized plot
+                logger.info("Using original plot as summarized plot (as configured)")
+                original_plot_path = path_handler.get_raw_plot_file_path()
+                if os.path.exists(original_plot_path):
+                    shutil.copy2(original_plot_path, summarized_plot_path)
+                    logger.info(f"Copied original plot to: {summarized_plot_path}")
+                else:
+                    logger.warning(f"Original plot file not found: {original_plot_path}")
+                    # Fall back to using simplified plot if original not found
+                    simplified_plot_path = path_handler.get_simplified_plot_file_path()
+                    if os.path.exists(simplified_plot_path):
+                        shutil.copy2(simplified_plot_path, summarized_plot_path)
+                        logger.info(f"Fallback: Copied simplified plot to: {summarized_plot_path}")
+            else:
+                # Generate summarized plot using LLM (existing behavior)
+                logger.info("Generating summarized plot using LLM")
+                # Note: The actual summarization logic should be implemented here
+                # For now, we'll use the simplified plot as a fallback
+                simplified_plot_path = path_handler.get_simplified_plot_file_path()
+                if os.path.exists(simplified_plot_path):
+                    shutil.copy2(simplified_plot_path, summarized_plot_path)
+                    logger.info(f"Temporary: Using simplified plot as summarized plot: {summarized_plot_path}")
+        else:
+            logger.info(f"Summarized plot already exists: {summarized_plot_path}")
                 
         suggested_episode_arc_path = path_handler.get_suggested_episode_arc_path()
         
@@ -190,8 +243,13 @@ def process_text(path_handler: PathHandler) -> None:
             }
 
             # Extract narrative arcs using LangGraph
-            logger.info("Extracting narrative arcs.")
-            extract_narrative_arcs(file_paths_for_graph, series, season, episode)
+            if config.narrative_arc_extraction_method == "enhanced":
+                logger.info("Extracting narrative arcs using ENHANCED method.")
+                from src.langgraph_narrative_arcs_extraction.enhanced_narrative_arc_graph import extract_enhanced_narrative_arcs
+                extract_enhanced_narrative_arcs(file_paths_for_graph, series, season, episode)
+            else:
+                logger.info("Extracting narrative arcs using ORIGINAL method.")
+                extract_narrative_arcs(file_paths_for_graph, series, season, episode)
 
         # Process the suggested arcs and update the database
         logger.info("Processing suggested arcs and updating database.")
@@ -211,17 +269,26 @@ def process_text(path_handler: PathHandler) -> None:
         raise
 
 if __name__ == "__main__":
-    # Configuration
-    series = "GA"
-    season = "S01"
-
-    logger.info("Starting text processing.")
-
-    ep_number = 1
+    import argparse
     
-    # Now process each episode
-    for ep in range(ep_number, 10):
-        episode = f"E{ep:02d}"
-        path_handler = PathHandler(series, season, episode)
-        logger.warning(f"Starting text processing for episode {episode}")
-        process_text(path_handler)
+    parser = argparse.ArgumentParser(description='Process TV series episodes')
+    parser.add_argument('--series', default='GA', help='Series name (default: GA)')
+    parser.add_argument('--season', default='S01', help='Season name (default: S01)')
+    parser.add_argument('--episode', help='Specific episode to process (e.g., E01)')
+    parser.add_argument('--start-episode', type=int, default=1, help='Starting episode number (default: 1)')
+    parser.add_argument('--end-episode', type=int, default=9, help='Ending episode number (default: 9)')
+    
+    args = parser.parse_args()
+    
+    logger.info("Starting text processing.")
+    
+    if args.episode:
+        # Process single episode
+        logger.info(f"Processing single episode: {args.series} {args.season} {args.episode}")
+        process_single_episode(args.series, args.season, args.episode)
+    else:
+        # Process range of episodes
+        logger.info(f"Processing episodes from E{args.start_episode:02d} to E{args.end_episode:02d}")
+        for ep in range(args.start_episode, args.end_episode + 1):
+            episode = f"E{ep:02d}"
+            process_single_episode(args.series, args.season, episode)

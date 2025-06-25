@@ -1,11 +1,37 @@
 [
   {
+    "entity_name": "jeremy",
+    "best_appellation": "Jeremy",
+    "appellations": [
+      "Jeremy"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
     "entity_name": "derek_shepherd",
     "best_appellation": "Derek Shepherd",
     "appellations": [
       "Derek",
-      "Dr. Derek Shepherd",
+      "Dr. Shepherd",
       "Derek Shepherd"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "ellis_grey",
+    "best_appellation": "Ellis Grey",
+    "appellations": [
+      "Ellis Grey",
+      "Meredith's mother"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "alex_karev",
+    "best_appellation": "Alex Karev",
+    "appellations": [
+      "Alex",
+      "Alex Karev"
     ],
     "entity_type": "PERSON"
   },
@@ -14,10 +40,9 @@
     "best_appellation": "Isobel Stevens",
     "appellations": [
       "Isobel",
+      "Isobel Stevens",
       "Izzie",
-      "Izzie Stevens",
-      "Isobel \"Izzie\" Stevens",
-      "Isobel Stevens"
+      "Isobel Izzie"
     ],
     "entity_type": "PERSON"
   },
@@ -27,41 +52,17 @@
     "appellations": [
       "George",
       "George O'Malley",
+      "O'Malley",
       "007"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "katie_bryce",
-    "best_appellation": "Katie Bryce",
+    "entity_name": "tony_savitch",
+    "best_appellation": "Tony Savitch",
     "appellations": [
-      "Katie",
-      "Katie Bryce"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "ellis_grey",
-    "best_appellation": "Ellis Grey",
-    "appellations": [
-      "Ellis Grey",
-      "Ellis"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "jeremy",
-    "best_appellation": "Jeremy",
-    "appellations": [
-      "Jeremy"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "gloria",
-    "best_appellation": "Gloria",
-    "appellations": [
-      "Gloria"
+      "Tony",
+      "Tony Savitch"
     ],
     "entity_type": "PERSON"
   },
@@ -76,11 +77,18 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "tony_savitch",
-    "best_appellation": "Tony Savitch",
+    "entity_name": "katie_bryce",
+    "best_appellation": "Katie Bryce",
     "appellations": [
-      "Tony",
-      "Tony Savitch"
+      "Katie Bryce"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "mr_jones",
+    "best_appellation": "Mr. Jones",
+    "appellations": [
+      "Mr. Jones"
     ],
     "entity_type": "PERSON"
   },
@@ -89,8 +97,8 @@
     "best_appellation": "Preston Burke",
     "appellations": [
       "Burke",
-      "Preston",
-      "Preston Burke"
+      "Preston Burke",
+      "George Preston Burke"
     ],
     "entity_type": "PERSON"
   },
@@ -104,11 +112,10 @@
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "meredith_grey",
-    "best_appellation": "Meredith Grey",
+    "entity_name": "gloria",
+    "best_appellation": "Gloria",
     "appellations": [
-      "Meredith",
-      "Meredith Grey"
+      "Gloria"
     ],
     "entity_type": "PERSON"
   },
@@ -116,24 +123,34 @@
     "entity_name": "tyler",
     "best_appellation": "Tyler",
     "appellations": [
-      "Tyler"
+      "Tyler",
+      "Nurse Tyler"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "alex_karev",
-    "best_appellation": "Alex Karev",
+    "entity_name": "the_bryce",
+    "best_appellation": "Katie Bryce's parents",
     "appellations": [
-      "Alex Karev",
-      "Alex"
+      "Katie Bryce\u2019s parents",
+      "Katie Bryce's parents"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "mr_jones",
-    "best_appellation": "Mr. Jones",
+    "entity_name": "god",
+    "best_appellation": "God",
     "appellations": [
-      "Mr. Jones"
+      "God"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "the_chief",
+    "best_appellation": "The Chief",
+    "appellations": [
+      "The Chief",
+      "chief"
     ],
     "entity_type": "PERSON"
   }

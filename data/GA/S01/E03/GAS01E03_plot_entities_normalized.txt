@@ -1,179 +1,238 @@
-Meredith is in bed at 4:37 am while it rains.
-Izzie stands beside Meredith with coffee, mentioning that George's room is bigger than hers.
-Meredith gets up, trips, and falls.
-Meredith limps away.
-Izzie follows Meredith, explaining Izzie needs more space for her clothes.
-George interrupts, saying George was there first, but Izzie insists it's Meredith's decision.
-George argues his room is only slightly bigger, but Izzie points out George's larger closet.
-George suggests Izzie store her clothes elsewhere, but Izzie says Meredith's mother's boxes fill the space.
-Izzie and George ask Meredith if they can store the boxes or unpack items like lamps, paintings, or pillows to make the house cozier.
-Izzie and George ask Meredith if they can watch surgical tapes from Meredith's mother's boxes.
-Meredith shuts the door on them, then reopens it to take Izzie's coffee before closing it again.
-Meredith leans against the door, holding the coffee.
-Bailey stands on a street corner, looking confused.
-Shepherd joins Bailey and greets her, but Bailey tells him to be quiet because something important is happening today, though Bailey can't remember what.
-Derek starts to cross the road, and Bailey gasps, pulling Derek back as several bike riders race past, with two crashing.
-At the hospital, Bailey complains to the interns about the reckless bike riders.
-Alex asks George if Bailey is off her medication, and George is surprised Alex hasn't heard of the race.
-Webber, Burke, and Shepherd look at the O.R.
-Webber notes the schedule board is well-organized, so they might finish early.
-Bailey informs Webber, Burke, and Shepherd that "Dead baby bike race day" started 20 minutes ago.
-George and Meredith explain that every year, a bar hosts an illegal underground bike race.
-Bailey complains again about the bike messengers racing against traffic for free tequila shots.
-Bailey tells the interns that the Chief needs help on the OR floor.
-Everyone except Meredith volunteers, and Bailey chooses George.
-Bailey warns the interns not to interact with the ER interns, who she thinks are inexperienced.
-Bailey instructs them to work quickly, discharging patients and moving bodies to the OR immediately.
-Bailey also tells them not to fight over patients.
-The interns rush to find positions and see injured bike riders everywhere.
-Izzie and Cristina hurry to get a patient.
-Meredith notices a man with bicycle spokes in his side.
-Alex and Meredith both run to him.
-Behind a curtain, Alex and Meredith argue over the patient.
-The patient, named Viper, interrupts and asks them to remove the spokes so he can continue his race.
-Meredith tells Alex they need to run tests first.
-Alex insists it's a superficial wound and not surgical, then leaves Meredith to stitch it up.
-Cristina, Izzie, and Derek examine a patient.
-Cristina informs Derek that the patient is an unidentified man in his mid-thirties, hit by a car avoiding a bike.
-Cristina describes the man's condition as having a GCS of 3, fixed and dilated pupils, and atropine given for a low pulse.
-Burke mentions that the bike race has claimed its first victim.
-Izzie asks Derek if the patient will go to the O.R.
-Derek instructs Izzie to do confirmatory tests and says if there is no response in six hours, they should declare the man brain dead.
-Webber is in surgery when George asks if he should join.
-Webber tells George no and instructs him to monitor his pre-op and post-op patients.
-Webber emphasizes paying special attention to a friend named Lloyd Mackie in room 4451.
-Lloyd is in bed and lights a cigarette.
-George tells Lloyd to put it out, saying smoking is deadly.
-Lloyd responds that liver cancer will kill him anyway, and cigarettes just speed it up.
+Meredith is in bed at 4:37am while it is raining.
+Izzie stands next to Meredith's bed, holding coffee.
+Izzie mentions that George's bedroom is bigger than Izzie's bedroom.
+Meredith gets out of bed but trips and falls on Meredith's face.
+Meredith limps away from the room.
+Izzie follows Meredith and says Izzie needs more space because Izzie has more clothes.
+George interrupts and says George got George's room first, but Izzie insists that Meredith should decide.
+George tells Izzie that George's room is only two inches bigger, but Izzie points out that George has a bigger closet.
+George suggests Izzie put Izzie's clothes somewhere else, but Izzie says all the spaces are filled with boxes belonging to Meredith's mother.
+Izzie and George ask Meredith if Izzie and George can put the boxes in storage or unpack some items like lamps, paintings, or pillows to make the house feel more comfortable.
+Izzie and George quickly ask if Izzie and George can watch the tapes of surgical procedures from one of the boxes.
+Meredith responds by slamming a door in Izzie and George's faces.
+A moment later, Meredith opens the door, takes Izzie's coffee, and shuts the door again.
+Meredith sits against the other side of the door, holding the coffee.
+Bailey stands on a street corner and looks confused.
+Shepherd joins Bailey and greets Bailey.
+Bailey tells Shepherd to be quiet because something important is supposed to happen today, but Bailey cannot remember what it is.
+Derek walks forward to cross the road.
+Bailey gasps and grabs Derek as several bike riders speed past and two of the bike riders crash.
+At the hospital, Bailey complains to the interns about the bike riders, saying the bike riders are just fools killing themselves.
+Alex asks George if Bailey is off Bailey's medication.
+George is surprised that Alex has never heard of the race.
+Webber, Burke, and Shepherd stand in front of the O.R. schedule board.
+Webber, Burke, and Shepherd notice the schedule is well done and think Webber, Burke, and Shepherd might get an early night.
+Bailey tells Webber, Burke, and Shepherd that "Dead baby bike race day" started 20 minutes ago.
+George and Meredith explain that every year a bar holds an illegal underground bike race.
+Bailey complains again about bike messengers racing against traffic for free tequila shots.
+Bailey says Bailey needs someone to go up to the OR floor because the Chief needs help.
+Everyone except Meredith raises a hand, and Bailey chooses George.
+Bailey warns the others not to mingle with the E.R. interns, who Bailey says are inexperienced.
+Bailey tells the interns to sew quickly, discharge patients quickly, and take bodies to the OR immediately.
+Bailey warns the interns not to fight over patients.
+The interns run and push for position and see many injured bike riders.
+Izzie and Cristina rush to grab a patient.
+Meredith sees a man with bicycle spokes in his side.
+Alex and Meredith both run to help the man with bicycle spokes in his side.
+Behind a curtain, Alex and Meredith argue about who will take the patient.
+The patient, named Viper, pulls back the curtain and asks Alex and Meredith to remove the spokes so Viper can continue Viper's race.
+Meredith tells Alex that Meredith and Alex need to run some tests first.
+Alex ignores Meredith and removes the spokes from Viper, saying the wound is superficial and does not need surgery.
+Alex leaves Meredith to stitch up the wound.
+Cristina, Izzie, and Derek stand by a patient.
+Cristina explains to Derek that the patient is an unidentified man in his mid-thirties.
+The unidentified man was a pedestrian hit by a car that swerved to avoid a bike.
+Cristina says the unidentified man's Glasgow Coma Scale score is 3, the unidentified man's pupils are fixed and dilated, and the unidentified man was given atropine because the unidentified man's pulse was in the forties.
+Cristina continues to assess the unidentified man.
+Burke comments that the bike race has claimed its first victim.
+Izzie asks Derek if the unidentified man will go to the operating room.
+Derek tells Izzie to do confirmatory tests.
+Derek says if the unidentified man does not respond in six hours, Cristina, Izzie, and Derek should declare the unidentified man brain dead.
+Webber is in surgery.
+George comes in and asks Webber if George should scrub in.
+Webber tells George not to scrub in because Webber will be in the operating room all day.
+Webber instructs George to monitor George's pre-op and post-op patients.
+Webber tells George to pay special attention to a friend in room 4451 named Lloyd Mackie.
+Lloyd Mackie is in Lloyd Mackie's hospital bed.
+Lloyd Mackie lights a cigarette.
+George tells Lloyd Mackie to put it out and warns Lloyd Mackie that smoking is dangerous.
+Lloyd replies that liver cancer will kill Lloyd and the cigarettes only make it happen faster.
 George insists there is hope because Lloyd is at the top of the donor list.
-Lloyd replies he has been waiting there for eight months.
-Izzie and Cristina are with their patient.
-Izzie is worried the man won't respond, and they have only 5 hours left.
-Cristina explains that if the man doesn't respond, it means he's already dead.
-Cristina adds she wants the man to hurry up and go into the light so she can take another case.
-Izzie is shocked and says it's a waste of the man's life.
-Cristina mentions it's also a waste of good organs, and Izzie realizes Cristina's plan.
+Lloyd says Lloyd has been at the top of the list for eight months.
+Izzie and Cristina are with the unidentified man.
+Izzie worries that the unidentified man will not respond and says Cristina and Izzie only have five hours left.
+Cristina tells Izzie that if the unidentified man does not respond to the tests, the unidentified man is already dead.
+Cristina says Cristina wants the unidentified man to die soon so Cristina can get another case.
+Izzie is shocked and says it is a waste of the unidentified man’s life.
+Cristina replies that it is also a waste of good organs.
+Izzie realizes Cristina wants the unidentified man’s organs for transplant.
 Meredith is sewing up Viper.
-While Meredith works, Viper flirts with her, calling her attractive.
-Meredith ignores Viper's refusal and asks him to let her run some tests, promising it would only take an hour.
-Viper declines, saying he needs to finish the race.
-Before Viper leaves, Meredith asks him to sign an AMA form.
-After signing, Viper starts to leave but turns back, kisses Meredith, and then departs.
-Meredith shakes her head and begins to strip the bed.
-Meredith notices Derek standing outside.
-Derek comes in, and Meredith asks if Derek is jealous.
-Derek denies it but mentions he almost died today and wonders how Meredith would feel if she never got to date him.
-Meredith tells Derek to stop being self-centered and questions if he's just interested in the chase.
-Derek seems surprised, but Meredith insists it's just a game for him.
-Upset, Meredith leaves the room.
-Meanwhile, Bailey is performing surgery when Izzie and Cristina enter.
-Izzie and Cristina ask Bailey if they can take their patient's organs.
-Bailey, surprised, tells Izzie and Cristina to identify the patient, contact the family, and get consent forms.
-Izzie and Cristina quickly leave to do this.
-Alex approaches George at a desk.
-George explains he is hiding from Lloyd because he thinks Lloyd might be attracted to him.
-Alex suggests George should pursue it but then realizes George isn't gay.
+While Meredith works, Viper flirts with Meredith.
+Meredith ignores Viper and asks Viper to let Meredith do some tests, promising Viper could leave in an hour.
+Viper refuses because Viper wants to finish the race.
+Meredith asks Viper to sign an AMA form before Viper leaves.
+Viper signs the form, gets up, and kisses Meredith before leaving.
+Meredith shakes Meredith’s head and starts to strip the bed.
+Meredith sees Derek standing outside.
+Derek comes in.
+Meredith asks Derek if Derek is jealous.
+Derek says Derek is not, but mentions Derek almost died today and asks how Meredith would feel if Meredith never got to go out with Derek.
+Meredith tells Derek to get over himself and asks if Derek just likes the chase.
+Derek is surprised.
+Meredith says it is just a game for Derek and storms out angrily.
+Bailey is performing surgery.
+Izzie and Cristina enter the room.
+Izzie and Cristina ask Bailey if Izzie and Cristina can harvest organs from the unidentified man.
+Bailey is surprised.
+Bailey tells Izzie and Cristina they need to identify the unidentified man, contact the unidentified man’s family, and get consent forms.
+Izzie and Cristina leave quickly to do this.
+Alex goes to a desk where George is sitting.
+George tells Alex that George is hiding from Lloyd because George thinks Lloyd might be attracted to George.
+Alex jokes that George should go for it, but then Alex realizes George is not gay.
 George is shocked as Alex walks away.
 Izzie and Cristina arrive at another desk.
-George asks Cristina if she or Meredith think he is gay.
-Cristina asks if George is, and when he says no, Cristina is surprised.
-A woman approaches Izzie, and Cristina returns.
-Izzie gives the woman a hotel key card to pass to the police.
-After their conversation, George asks Izzie and Cristina if they have a potential organ donor.
-George inquires about the blood type and checks the chart.
-Izzie looks at her patient, John Doe, and tells John Doe she believes he has a family.
-Izzie hopes John Doe will recover and live.
-Suddenly, an alarm sounds, and John Doe's condition worsens as his pulse drops.
-Meredith rushes in, and they decide to get dopamine and blood for a transfusion.
-George examines Mackie, who flirts with George.
-Izzie and Meredith go up some stairs.
-Cristina meets Izzie and Meredith and is excited about their patient possibly becoming an organ donor.
-Izzie insists John Doe should have surgery to survive.
-Cristina tells Meredith they need to go above Dr. Bailey for their plan.
-In the men's bathroom, Meredith and Cristina see Dr. Burke.
-Meredith and Cristina ask Dr. Burke to repair John Doe's heart.
-Dr. Burke notes they often cross the line and tells Meredith and Cristina to leave.
-Meredith asks Dr. Derek Shepherd for advice.
-Dr. Derek Shepherd hesitantly suggests going over Dr. Burke's head to the Chief.
-Izzie, Meredith, and Cristina ask George if he wants to join a transplant surgery.
-Dr. Webber asks George about Mackie's condition.
-George mentions they might have a liver for Mackie, and Dr. Webber listens carefully.
-Alex notices the others watching George and Dr. Webber.
-Dr. Burke walks by, and Dr. Webber stops him to discuss the surgery.
-Dr. Burke notices the other interns quickly leaving.
-Alex stays behind and follows Dr. Burke when he turns to go.
-During the open-heart surgery, Alex helps Dr. Burke.
-The interns watch from the gallery, upset with Alex, but Izzie is relieved John Doe is getting surgery.
-A nurse informs Izzie that John Doe has been identified, and his wife is on her way.
-Dr. Derek Shepherd introduces the wife, Shelley Davidson, to Izzie and leaves, asking to be paged if needed.
-Izzie explains to Shelley Davidson that Kevin might wake up, but if not by morning, they would like to know if Shelley has considered organ donation for Kevin.
-Dr. Webber gently shakes Mackie's shoulder and tells Mackie that George found a liver for him.
-Mackie looks at Dr. Webber and then at George, trying not to cry as Dr. Webber comforts him.
-George leaves.
-Alex rushes into the locker room to find Meredith.
-Alex mentions he smells like open-heart surgery and gets close to Meredith.
-Meredith grabs Alex and pushes him against the lockers, telling Alex to stay away and that he smells bad.
-They both notice Dr. Derek Shepherd.
-Meredith returns to her locker, then moves aggressively towards Alex.
-Dr. Derek Shepherd tells Alex to leave and pushes him out, while Alex makes a face at Meredith.
-Meredith closes her locker and prepares to leave.
-Dr. Derek Shepherd opens the door for Meredith, and she looks at him briefly before walking away.
-Meredith arrives home to find Izzie and George watching video tapes.
-Meredith is angry and asks why Izzie and George touched her mother's surgical tapes.
-Meredith goes upstairs angrily.
-Izzie and George look at each other and laugh.
-Outside the hospital, Meredith tells Cristina about her cheerful and helpful roommates.
-Cristina suggests Meredith should kick them out, but Meredith decides she can't do that.
-As Meredith and Cristina enter the hospital, Alex complains about being assigned to the pit again while Cristina gets the harvest surgery.
-Annoyed with Alex, Meredith and Cristina jokingly consider becoming lesbians.
-Meredith and Cristina choose the stairs instead of the elevator.
-Cristina talks to Kevin's wife and daughter.
-Cristina reviews the organ donation form with Shelley.
-When Shelley starts crying, Cristina leaves and tells Bailey it's too difficult because Cristina is not good with people.
-Bailey reminds Cristina that it's not supposed to be easy and that Kevin is a person, not just for organ harvesting.
-Remembering this, Cristina goes back to talk to Shelley again.
+George asks Cristina if Cristina or Meredith think George is gay.
+Cristina asks George if George is gay, and when George says no, Cristina is surprised.
+A woman approaches Izzie and Cristina.
+Izzie gives the woman a hotel key card and asks the woman to give it to the police.
+After the woman leaves, George asks Izzie and Cristina if Izzie and Cristina really have a possible organ donor.
+George asks about the blood type and compares the blood type with George's chart.
+Izzie goes to Izzie's John Doe patient.
+Izzie talks to John Doe, saying Izzie knows John Doe probably cannot hear Izzie.
+Izzie tells John Doe that Izzie feels John Doe has a family and asks John Doe to try to get better and live.
+Suddenly, an alarm sounds.
+John Doe starts to crash and John Doe's pulse drops.
+Meredith runs in.
+Izzie and Meredith decide to get dopamine and blood for a transfusion.
 George examines Mackie.
-When Mackie flirts with George, George awkwardly tries to explain that he is not gay.
-Mackie smiles and tells George he never thought George was gay, and Mackie isn't either.
-Mackie mentions that dying gives him freedom to be bold without judgment.
-Mackie asks George if there was anyone George was attracted to but couldn't have.
-After some time, George admits it was Meredith.
-During organ harvest preparation, Burke shares he dislikes harvesting because it ends a life, while Burke prefers saving them.
-Izzie quietly tells Kevin he did his best and says goodbye.
+Mackie flirts with George.
+Meanwhile, Izzie and Meredith go up some stairs.
+Cristina meets Izzie and Meredith and is excited about the possibility of John Doe becoming an organ donor.
+Izzie insists John Doe should get surgery to survive.
+Cristina tells Meredith that Cristina and Meredith need to go to someone higher than Bailey for Cristina and Meredith's plan.
+Meredith and Cristina go to the men's bathroom and see Burke.
+Meredith and Cristina ask Burke to repair John Doe's heart.
+Burke comments that Meredith and Cristina like to cross the line and tells Meredith and Cristina to either expose themselves or leave.
+Meredith asks Derek for advice.
+Derek hesitantly tells Meredith to go over Burke's head and talk to the Chief.
+Izzie, Meredith, and Cristina ask George if George wants to join a transplant surgery.
+Webber asks George about Mackie's condition.
+George tells Webber that George and the others might have a liver for Mackie.
+Webber listens carefully.
+Alex notices Izzie, Meredith, and Cristina watching George and Webber.
+Burke walks by, and Webber stops Burke to tell Burke about the surgery.
+Burke looks at Izzie, Meredith, Cristina, and Alex.
+Izzie, Meredith, and Cristina quickly leave.
+Alex stays behind.
+When Burke starts to leave, Alex follows Burke.
+During the open heart surgery, Alex helps Burke.
+Izzie, Meredith, and Cristina watch from the gallery and glare at Alex.
+Izzie is happy because Izzie's patient is getting the surgery.
+A nurse comes in and tells Izzie that John Doe has been identified.
+The nurse says John Doe's wife is coming.
+Derek brings Shelley Davidson to Izzie.
+Derek leaves and tells Izzie and Shelley to page Derek if Izzie and Shelley need help.
+Izzie explains to Shelley that Kevin might wake up, but if Kevin does not improve by morning, Izzie and the others want to know if Shelley has thought about organ donation for Kevin.
+Webber gently shakes Mackie's shoulder.
+Webber tells Mackie that George found Mackie a liver.
+Mackie looks at Webber and then at George.
+Mackie starts to cry and looks away.
+Webber pats Mackie's shoulder.
+George leaves the room.
+Alex rushes into the locker room and finds Meredith.
+Alex tells Meredith that Alex smells like open-heart surgery and nuzzles Meredith's hair.
+Meredith turns around, grabs Alex, and pushes Alex against the lockers by Alex's shirt.
+Meredith tells Alex to stay away from Meredith and says Alex smells bad.
+Meredith turns and sees Derek.
+Meredith goes back to Meredith's locker.
+Meredith then tries to attack Alex again, but Derek tells Alex to leave.
+Derek pushes Alex out and closes the door.
+Alex makes a face at Meredith.
+Meredith closes Meredith's locker and gets ready to leave.
+Derek opens the door for Meredith.
+Meredith looks at Derek for a few seconds, then walks away.
+Meredith goes home.
+Izzie and George are watching video tapes.
+Meredith is angry and asks why Izzie and George touched Ellis's surgical tapes.
+Meredith storms upstairs.
+Izzie and George look at each other and laugh.
+Outside the hospital, Meredith talks to Cristina.
+Meredith complains about Izzie and George being too cheerful and helpful.
+Cristina suggests that Meredith should kick Izzie and George out, but Meredith says Meredith cannot do that.
+Alex joins Meredith and Cristina as they enter the hospital.
+Alex complains about being assigned to the pit again and says Cristina gets the harvest surgery.
+Meredith and Cristina are annoyed with Alex and joke about becoming lesbians.
+The elevator arrives, but Meredith, Cristina, and Alex choose to take the stairs.
+Cristina talks to Shelley and Shelley's daughter.
+Cristina goes over the organ donation form with Shelley.
+When Shelley starts to cry, Cristina leaves the room and tells Bailey that Cristina is not good with people and finds it too hard.
+Bailey tells Cristina that it is not supposed to be easy and reminds Cristina that Kevin is a person, not just someone to take organs from.
+Cristina remembers this and goes back to talk to Shelley again.
+Mackie starts to flirt with George again.
+George awkwardly tries to tell Mackie that George is not gay.
+Mackie smiles and says Mackie never thought George was gay.
+Mackie also says Mackie is not gay himself.
+Mackie tells George that dying gives Mackie freedom to act boldly, because no one can criticize Mackie anymore.
+Mackie asks George if there was ever someone George liked but could not have.
+After some time, George admits that George was attracted to Meredith.
+During the organ harvest preparation, Burke talks about how Burke dislikes harvesting organs.
+Burke says Burke prefers saving lives, but harvesting ends one.
+Izzie quietly tells Kevin that Kevin did Kevin's best.
+Izzie says goodbye to Kevin.
 Meredith and Alex are working in Trauma.
-Meredith notices Viper sitting in a chair and asks Alex why Viper is there and how long Viper has been waiting.
-Alex replies that Alex doesn't know because Alex was busy with other cases.
-Viper starts coughing, and Meredith approaches Viper worriedly.
-As Viper tries to stand, Viper collapses unconscious, bleeding from Viper's mouth.
-Meredith lifts Viper's shirt and sees Viper's stitches have ripped open, with swelling the size of a small melon.
-Meredith places Viper on a gurney and tries to stop Viper's bleeding.
-Meredith asks a nurse to inform the OR that Meredith is coming and to contact Bailey.
-They reach the OR.
-Bailey instructs Meredith to scrub in and sends Alex back downstairs as a penalty for prioritizing only interesting cases.
-Mackie is on the OR table, prepared for anesthesia.
-The Chief asks Mackie to count backwards, and Mackie soon falls asleep.
-Izzie and Cristina scrub in while Webber and Burke enter.
-Webber mentions Webber will be next door when needed.
-They begin the operation.
-The organs are placed in plastic bags and sealed containers.
+Meredith notices Viper sitting in a chair.
+Meredith asks Alex why Viper is there and how long Viper has been waiting.
+Alex says Alex does not know because Alex was busy with other patients.
+Viper starts coughing.
+Meredith walks towards Viper, worried.
+Viper tries to stand up, but Viper collapses and blood comes out of Viper's mouth.
+Meredith lifts Viper's shirt and sees that Viper's stitches have opened.
+The area around Viper's wound is swollen, about the size of a small melon.
+Meredith puts Viper on a gurney.
+Meredith climbs on top of Viper and tries to hold Viper's wound closed.
+Meredith tells a nurse to inform the OR that Meredith is coming and to page Bailey.
+Meredith and Viper arrive at the OR and go inside.
+Bailey tells Meredith to scrub in.
+Bailey tells Alex to go back downstairs as punishment for only focusing on the interesting cases.
+Mackie is on the OR table, ready for anesthesia.
+The Chief tells Mackie to count backwards.
+Mackie counts and quickly falls asleep.
+Izzie and Cristina scrub in for surgery.
+Webber and Burke enter the room.
+Webber says Webber will be next door when the team is ready.
+The team begins the operation.
+The team places the organs in plastic bags and sealed containers.
 The liver is put on ice.
-George gives it to Webber.
-Webber places it in Mackie.
-Meanwhile, an alarm starts beeping during the harvest.
-The heart is being removed. Everyone prepares to leave, but Izzie stays. Cristina notices and asks why. Izzie says she wants to sew Viper up for Viper's family. Cristina decides to help Izzie.
-Later, Cristina and Izzie meet Shelley and inform Shelley that Viper is ready. Cristina looks thoughtfully at Viper's friends, who are also waiting. Bailey and Meredith come out to see Viper's friends. They ask about Viper's condition.
-Bailey begins shouting, questioning if Viper is okay. Viper is not okay at all. Viper threw himself down a concrete hill at high speed for no reason. People often harm themselves and act recklessly. However, others are trying to live their lives on that hill. Today, someone got hurt because of this behavior.
-Meredith interrupts, and Bailey calms down, saying she believes Viper is not fine, then leaves. Meredith awkwardly explains that Bailey is tired but assures them that Viper will recover. In the locker room, Meredith packs her things.
-Derek enters and closes the door.
-Derek tells Meredith it’s not about the chase or a game; it’s about her hair.
-Meredith looks surprised, and Derek adds that it smells nice.
-Derek also mentions Meredith's bossiness.
-Meredith insists she won't date Derek, but he leaves, saying she might change her mind.
-George informs Mackie that the surgery went well.
-Mackie sighs, realizing Mackie needs to quit smoking, and smiles while holding George's hand.
-Meredith opens her front door to find Izzie, Cristina, and George eating pizza, drinking beer, and watching a surgical tape.
-Everyone pauses to look at Meredith.
-George quickly says that Cristina insisted on watching the tapes.
-Cristina gives George a glare.
-Meredith asks about the tape, sits down, and grabs some popcorn.
-After watching for a few seconds, they all scream and laugh in shock at what they see.
+George takes the liver and gives it to Webber, who places it in Mackie.
+Back at the harvest, an alarm starts beeping as the heart is removed.
+The team prepares to leave, but Izzie stays behind.
+Cristina looks back at Izzie.
+Izzie says Izzie wants to sew up the body for the family.
+Cristina returns to help Izzie.
+Later, Cristina and Izzie meet Shelley and tell Shelley that Shelley’s loved one is ready.
+Cristina looks thoughtful at Viper's friends, who are waiting.
+Bailey and Meredith come out to see Viper's friends.
+Viper's friends ask if Viper is okay.
+Bailey begins shouting, asking if Viper is okay.
+Viper is not okay.
+Viper threw Viper's self down a concrete hill at high speed for no real reason.
+Bailey is upset because people act recklessly with their bodies.
+Bailey mentions that some people want to harm themselves by speeding down the hill.
+Bailey is also worried about others who use the hill, like walkers and drivers.
+Bailey says that today, someone got seriously hurt because of this reckless behavior.
+Meredith interrupts Bailey, so Bailey calms down and says again that Viper is not fine.
+Bailey then leaves the room angrily.
+After Bailey leaves, Meredith tells Viper's friends that Bailey is just tired.
+Meredith also says that Viper will survive.
+Later, Meredith is in the locker room packing Meredith's things.
+Derek enters, closes the door, and talks to Meredith.
+Derek tells Meredith that Derek is interested in Meredith because of Meredith's hair, not because of a game or a chase.
+Meredith looks surprised, so Derek explains that Meredith's hair smells good.
+Derek also says Derek likes Meredith's bossy attitude.
+Meredith tells Derek Meredith still will not go out with Derek.
+Derek leaves and says Meredith will change Meredith's mind.
+Meanwhile, George tells Mackie that Mackie's surgery went well.
+Mackie sighs and says Mackie needs to stop smoking.
+Mackie smiles and holds George’s hand.
+Meredith goes home and opens Meredith's front door.
+Izzie, Cristina, and George are inside. Izzie, Cristina, and George are eating pizza, drinking beer, and watching a surgical video. When Meredith enters, Izzie, Cristina, and George all look at Meredith. George quickly says that Cristina made Izzie, George, and Cristina watch the tapes. Cristina looks annoyed at George. Meredith asks what Izzie, Cristina, and George are watching, sits down, and takes some popcorn. Izzie, Cristina, George, and Meredith all watch the video for a few seconds. Suddenly, Izzie, Cristina, George, and Meredith all jump back, screaming and laughing in shock at what Izzie, Cristina, George, and Meredith see on the tape.

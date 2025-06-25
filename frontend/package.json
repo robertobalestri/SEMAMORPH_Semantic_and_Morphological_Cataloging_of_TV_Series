@@ -21,6 +21,7 @@
     "plotly.js-dist-min": "^2.24.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
     "react-plotly.js": "^2.6.0",
     "zustand": "^4.3.0"
   },
@@ -39,4 +40,4 @@
     "typescript": "^5.0.0",
     "vite": "^4.4.0"
   }
-} 
+}

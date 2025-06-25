@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Body, Query
+from fastapi import FastAPI, HTTPException, Body, Query, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional, Dict, Union
 from pydantic import BaseModel, ValidationError
@@ -15,6 +15,43 @@ import sys
 from pathlib import Path
 from src.narrative_storage_management.llm_service import LLMService
 from src.path_handler import PathHandler
+import asyncio
+import subprocess
+import os
+import json
+from datetime import datetime
+from enum import Enum
+import sys
+import os
+import subprocess
+import asyncio
+
+# Simple wrapper function to run the main.py processing
+def run_episode_processing_subprocess(series: str, season: str, episode: str):
+    """Run episode processing using subprocess"""
+    try:
+        # Run the main.py script with the episode parameters
+        result = subprocess.run([
+            sys.executable, 'main.py', 
+            '--series', series,
+            '--season', season, 
+            '--episode', episode
+        ], 
+        cwd=os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+        capture_output=True, 
+        text=True, 
+        timeout=1800  # 30 minutes timeout
+        )
+        
+        if result.returncode != 0:
+            raise Exception(f"Processing failed with return code {result.returncode}: {result.stderr}")
+            
+        return result.stdout
+        
+    except subprocess.TimeoutExpired:
+        raise Exception("Processing timed out after 30 minutes")
+    except Exception as e:
+        raise Exception(f"Failed to run processing: {str(e)}")
 
 # Set up logging at the very beginning
 logger = setup_logging(__name__)
@@ -178,6 +215,32 @@ class CharacterMergeRequest(BaseModel):
     character2_id: str
     keep_character: str  # 'character1' or 'character2'
 
+class ProcessingStatus(str, Enum):
+    PENDING = "pending"
+    RUNNING = "running"
+    COMPLETED = "completed"
+    FAILED = "failed"
+
+class ProcessingJob(BaseModel):
+    id: str
+    series: str
+    season: str
+    episodes: List[str]
+    status: ProcessingStatus
+    created_at: datetime
+    started_at: Optional[datetime] = None
+    completed_at: Optional[datetime] = None
+    error_message: Optional[str] = None
+    progress: Dict[str, str] = {}
+
+class ProcessingRequest(BaseModel):
+    series: str
+    season: str
+    episodes: List[str]  # List of episode numbers like ["E01", "E02"]
+
+# In-memory storage for processing jobs (in production, use Redis or database)
+processing_jobs: Dict[str, ProcessingJob] = {}
+
 def normalize_season_episode(season: str, episode: str) -> tuple[str, str]:
     """Normalize season and episode format to S01, E01."""
     # Remove any S/SS or E/EE prefix and leading zeros
@@ -195,14 +258,40 @@ def pad_number(num_str: str) -> str:
 
 @app.get("/api/series", response_model=List[str])
 async def get_series():
-    """Get all unique series names."""
+    """Get all unique series names from both database and filesystem."""
     try:
-        with db_manager.session_scope() as session:
-            result = session.exec(select(NarrativeArc.series).distinct())
-            return list(result)
+        series_set = set()
+        
+        # Get series from database
+        try:
+            with db_manager.session_scope() as session:
+                db_result = session.exec(select(NarrativeArc.series).distinct())
+                series_set.update(db_result)
+        except Exception as db_error:
+            logger.warning(f"Could not fetch series from database: {db_error}")
+        
+        # Get series from filesystem
+        try:
+            data_dir = "data"
+            if os.path.exists(data_dir):
+                for item in os.listdir(data_dir):
+                    item_path = os.path.join(data_dir, item)
+                    if os.path.isdir(item_path) and not item.startswith('.'):
+                        series_set.add(item)
+        except Exception as fs_error:
+            logger.warning(f"Could not scan filesystem for series: {fs_error}")
+        
+        # If no series found, provide default options
+        if not series_set:
+            series_set = {"GA", "FIABA"}
+            logger.info("No series found, using default options")
+        
+        return sorted(list(series_set))
+        
     except Exception as e:
         logger.error(f"Error getting series: {str(e)}")
-        raise HTTPException(status_code=500, detail=str(e))
+        # Return default series even if everything fails
+        return ["GA", "FIABA"]
 
 @app.get("/api/arcs/series/{series}", response_model=List[NarrativeArcResponse])
 async def get_arcs_by_series(series: str):
@@ -976,3 +1065,175 @@ async def get_arc_by_id(arc_id: str):
     except Exception as e:
         logger.error(f"Error getting arc by ID {arc_id}: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/api/processing/episodes", response_model=ProcessingJob)
+async def start_episode_processing(request: ProcessingRequest, background_tasks: BackgroundTasks):
+    """Start processing episodes in the background"""
+    try:
+        # Generate job ID
+        job_id = f"{request.series}_{request.season}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        
+        # Create job
+        job = ProcessingJob(
+            id=job_id,
+            series=request.series,
+            season=request.season,
+            episodes=request.episodes,
+            status=ProcessingStatus.PENDING,
+            created_at=datetime.now(),
+            progress={ep: "pending" for ep in request.episodes}
+        )
+        
+        processing_jobs[job_id] = job
+        
+        # Start background processing
+        background_tasks.add_task(
+            run_episode_processing,
+            job_id,
+            request.series,
+            request.season,
+            request.episodes
+        )
+        
+        logger.info(f"Started processing job {job_id} for {request.series} {request.season}")
+        return job
+        
+    except Exception as e:
+        logger.error(f"Error starting processing: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/processing/jobs", response_model=List[ProcessingJob])
+async def get_processing_jobs():
+    """Get all processing jobs"""
+    return list(processing_jobs.values())
+
+@app.get("/api/processing/jobs/{job_id}", response_model=ProcessingJob)
+async def get_processing_job(job_id: str):
+    """Get a specific processing job"""
+    if job_id not in processing_jobs:
+        raise HTTPException(status_code=404, detail="Job not found")
+    return processing_jobs[job_id]
+
+@app.delete("/api/processing/jobs/{job_id}")
+async def delete_processing_job(job_id: str):
+    """Delete a processing job"""
+    if job_id not in processing_jobs:
+        raise HTTPException(status_code=404, detail="Job not found")
+    
+    job = processing_jobs[job_id]
+    if job.status == ProcessingStatus.RUNNING:
+        raise HTTPException(status_code=400, detail="Cannot delete running job")
+    
+    del processing_jobs[job_id]
+    return {"message": "Job deleted successfully"}
+
+@app.get("/api/available-episodes/{series}/{season}", response_model=List[str])
+async def get_available_episodes(series: str, season: str):
+    """Get list of available episodes for processing"""
+    try:
+        logger.info(f"Fetching available episodes for {series}/{season}")
+        
+        # Use PathHandler to find available episodes
+        episode_folders = PathHandler.list_episode_folders("data", series, season)
+        
+        logger.info(f"Found {len(episode_folders)} episodes: {episode_folders}")
+        
+        # Filter out any invalid episode names and ensure proper format
+        valid_episodes = []
+        for episode in episode_folders:
+            # Ensure episode starts with 'E' and is followed by digits
+            if episode.startswith('E') and episode[1:].isdigit():
+                valid_episodes.append(episode)
+            else:
+                logger.warning(f"Skipping invalid episode folder: {episode}")
+        
+        logger.info(f"Valid episodes: {valid_episodes}")
+        return sorted(valid_episodes)
+        
+    except Exception as e:
+        logger.error(f"Error getting available episodes for {series}/{season}: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/available-series", response_model=List[str])
+async def get_available_series():
+    """Get all series available for processing from filesystem."""
+    try:
+        series_list = []
+        data_dir = "data"
+        
+        if os.path.exists(data_dir):
+            for item in os.listdir(data_dir):
+                item_path = os.path.join(data_dir, item)
+                if os.path.isdir(item_path) and not item.startswith('.'):
+                    # Check if this directory has season subdirectories
+                    has_seasons = False
+                    try:
+                        for subitem in os.listdir(item_path):
+                            if os.path.isdir(os.path.join(item_path, subitem)) and subitem.startswith('S'):
+                                has_seasons = True
+                                break
+                    except:
+                        pass
+                    
+                    if has_seasons:
+                        series_list.append(item)
+        
+        # Always include default series
+        default_series = ["GA", "FIABA"]
+        for series in default_series:
+            if series not in series_list:
+                series_list.append(series)
+        
+        return sorted(series_list)
+        
+    except Exception as e:
+        logger.error(f"Error getting available series: {str(e)}")
+        # Return default series if everything fails
+        return ["GA", "FIABA"]
+
+async def run_episode_processing(job_id: str, series: str, season: str, episodes: List[str]):
+    """Run episode processing in background"""
+    job = processing_jobs[job_id]
+    
+    try:
+        job.status = ProcessingStatus.RUNNING
+        job.started_at = datetime.now()
+        
+        # Process each episode
+        for episode in episodes:
+            job.progress[episode] = "processing"
+            
+            try:
+                # Use the subprocess approach instead of direct function call
+                await asyncio.get_event_loop().run_in_executor(
+                    None, 
+                    run_episode_processing_subprocess, 
+                    series, 
+                    season, 
+                    episode
+                )
+                
+                job.progress[episode] = "completed"
+                logger.info(f"Successfully processed {series} {season} {episode}")
+                
+            except Exception as episode_error:
+                job.progress[episode] = "failed"
+                logger.error(f"Failed to process {series} {season} {episode}: {episode_error}")
+                # Continue with other episodes even if one fails
+        
+        # Check if all episodes completed successfully
+        failed_episodes = [ep for ep, status in job.progress.items() if status == "failed"]
+        if failed_episodes:
+            job.status = ProcessingStatus.FAILED
+            job.error_message = f"Failed to process episodes: {', '.join(failed_episodes)}"
+        else:
+            job.status = ProcessingStatus.COMPLETED
+        
+        job.completed_at = datetime.now()
+        logger.info(f"Processing job {job_id} completed with status: {job.status}")
+        
+    except Exception as e:
+        job.status = ProcessingStatus.FAILED
+        job.error_message = str(e)
+        job.completed_at = datetime.now()
+        logger.error(f"Processing job {job_id} failed: {e}")

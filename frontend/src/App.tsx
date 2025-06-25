@@ -16,6 +16,7 @@ import styles from '@/styles/components/Layout.module.css';
 import { NarrativeArcManager } from './components/narrative/NarrativeArcManager';
 import { VectorStoreTabManager } from './components/vector/VectorStoreTabManager';
 import { CharacterManager } from './components/character/CharacterManager';
+import { ProcessingManager } from './components/processing/ProcessingManager';
 import { ApiClient } from './services/api/ApiClient';
 import type { NarrativeArc, Episode } from './architecture/types';
 
@@ -29,13 +30,24 @@ const App: React.FC = () => {
   useEffect(() => {
     const fetchSeries = async () => {
       try {
-        const response = await api.request<string[]>('/series');
+        const response = await api.request<string[]>('/available-series');
         if (!response.error) {
-          setSeries(response.data);
+          const availableSeries = response.data || [];
+          setSeries(availableSeries);
+          
+          // Auto-select the first series if available
+          if (availableSeries.length > 0 && !selectedSeries) {
+            setSelectedSeries(availableSeries[0]);
+          }
         }
       } catch (error) {
         console.error('Error fetching series:', error);
-        setSeries([]);
+        // Provide default series if API fails
+        const defaultSeries = ['GA', 'FIABA'];
+        setSeries(defaultSeries);
+        if (!selectedSeries) {
+          setSelectedSeries(defaultSeries[0]);
+        }
       }
     };
 
@@ -110,6 +122,7 @@ const App: React.FC = () => {
                   <Tab>Narrative Arcs</Tab>
                   <Tab>Vector Store</Tab>
                   <Tab>Characters</Tab>
+                  <Tab>Processing</Tab>
                 </TabList>
                 <TabPanels>
                   <TabPanel p={0}>
@@ -132,12 +145,43 @@ const App: React.FC = () => {
                       onCharacterUpdated={handleArcUpdated}
                     />
                   </TabPanel>
+                  <TabPanel>
+                    <ProcessingManager 
+                      series={selectedSeries}
+                    />
+                  </TabPanel>
                 </TabPanels>
               </Tabs>
             </Box>
           ) : (
-            <Box textAlign="center" p={8}>
-              <Text>Select a series to view the dashboard.</Text>
+            <Box className={styles.tabContainer}>
+              <Tabs isFitted variant="enclosed" defaultIndex={3}>
+                <TabList>
+                  <Tab isDisabled>Narrative Arcs</Tab>
+                  <Tab isDisabled>Vector Store</Tab>
+                  <Tab isDisabled>Characters</Tab>
+                  <Tab>Processing</Tab>
+                </TabList>
+                <TabPanels>
+                  <TabPanel p={0}>
+                    <Text>Please select a series to view narrative arcs.</Text>
+                  </TabPanel>
+                  <TabPanel>
+                    <Text>Please select a series to explore the vector store.</Text>
+                  </TabPanel>
+                  <TabPanel>
+                    <Text>Please select a series to manage characters.</Text>
+                  </TabPanel>
+                  <TabPanel>
+                    <Box p={4}>
+                      <Text mb={4}>Processing is available for any series. Please select a series above to begin processing episodes.</Text>
+                      <Text fontSize="sm" color="gray.600">
+                        You can process episodes even if no data exists in the database yet. This is where you start to populate your data.
+                      </Text>
+                    </Box>
+                  </TabPanel>
+                </TabPanels>
+              </Tabs>
             </Box>
           )}
         </VStack>

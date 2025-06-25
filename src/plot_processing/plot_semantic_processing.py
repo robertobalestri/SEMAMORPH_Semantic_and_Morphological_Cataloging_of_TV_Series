@@ -1,4 +1,5 @@
 from src.utils.logger_utils import setup_logging
+from src.config import config
 from typing import List
 from langchain_openai import AzureChatOpenAI
 import re
@@ -39,8 +40,12 @@ def split_text(window_text: str, llm: AzureChatOpenAI) -> List[str]:
     
     return segments
 
-def correct_segments(segments: List[str], llm: AzureChatOpenAI, batch_size: int = 3) -> List[str]:
-    logger.info("Starting segment correction")
+def correct_segments(segments: List[str], llm: AzureChatOpenAI, batch_size: int = None) -> List[str]:
+    # Use config value if not provided
+    if batch_size is None:
+        batch_size = config.semantic_correction_batch_size
+    
+    logger.info(f"Starting segment correction with batch size: {batch_size}")
     corrected_segments = []
 
     for i in range(0, len(segments), batch_size):
@@ -78,8 +83,14 @@ def correct_segments(segments: List[str], llm: AzureChatOpenAI, batch_size: int 
     logger.info(f"Segment correction complete. Total segments: {len(corrected_segments)}")
     return corrected_segments
 
-def semantic_split(text: str, llm: AzureChatOpenAI, window_size: int = 20, correction_batch_size: int = 3) -> List[str]:
-    logger.info("Starting semantic split")
+def semantic_split(text: str, llm: AzureChatOpenAI, window_size: int = None, correction_batch_size: int = None) -> List[str]:
+    # Use config values if not provided
+    if window_size is None:
+        window_size = config.semantic_segmentation_window_size
+    if correction_batch_size is None:
+        correction_batch_size = config.semantic_correction_batch_size
+    
+    logger.info(f"Starting semantic split with window size: {window_size}, correction batch size: {correction_batch_size}")
 
     sentences = split_into_sentences(text)
     total_sentences = len(sentences)
