@@ -29,8 +29,8 @@ NARRATIVE_ARC_GUIDELINES = dedent("""
 4. **Progression**: The progression should be specific to the arc in the episode, without speculations about what do the progressions mean for a character or other reasoning or research of meaning. Progressions should be precise key plot points separated by a dot.
 
 5. **Character Lists:**
-    - **Main Characters**: Protagonists driving the arc (typically two for relationship arcs).  An arc should have at least one main character.
-    - **Interfering Characters**: Characters that influence the arc within the episode but are not central.
+    - **Main Characters**: Protagonists driving the arc (typically two for relationship arcs). An arc should have at least one main character.
+    - **Interfering Characters**: Characters that influence the arc within the episode (main characters or others)
 
 6. **Arc Distinctness:**
     - **Clarity**: Each arc should be distinct without overlapping with others.
@@ -262,7 +262,7 @@ CHARACTER_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
 
 **Guidelines:**
 1. **Main Characters**: Drive the arc's development. They are the absolute protagonists of the arc.
-2. **Interfering Characters**: Affect the arc during the specific episode but are not central.
+2. **Interfering Characters**: Affect the arc during the specific episode. They can be both main characters or others.
 3. Ensure relationship arcs include both protagonists as main characters.
 4. Avoid background characters with minimal impact.
 
@@ -343,8 +343,13 @@ SOAP_AND_GENRE_ARC_EXTRACTOR_PROMPT = ChatPromptTemplate.from_template(
     """You are a Narrative Arc Specialist for Soap and Genre arcs. Extract all relevant soap and genre-specific arcs from the episode plot.
 
 **Types of Arcs:**
-- **Soap Arc**: Personal relationships, romances, family dynamics, friendships, personal growth, conflicts.
-- **Genre-Specific Arc**: Professional conflicts, workplace dynamics, missions/objectives, power struggles, institutional challenges, skill development, political maneuvers.
+- **Soap Arc**: Personal relationships, romances, family dynamics, friendships, personal growth, conflicts, character development
+- **Genre-Specific Arc**: Professional conflicts, workplace dynamics, missions/objectives, power struggles, institutional challenges, skill development, political maneuvers, battles, etc.
+
+**Examples of Genre-Specific Arcs:**
+- For a zombie series, a genre-specific arc could be "Building of the new village for the survivors".
+- For a drama series on bank employees, a genre-specific arc could be "The new director's conflict with employees".
+- For Breaking Bad, a genre-specific arc could be "Heisenberg's work for Gus" or "Saul Goodman's criminal activities".
 
 **Exclude**: Anthology Arcs already identified.
 

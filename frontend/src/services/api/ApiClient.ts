@@ -4,17 +4,39 @@ import type {
   Character, 
   VectorStoreEntry, 
   ArcProgression, 
-  ArcCluster 
+  ArcCluster,
+  CreateArcData 
 } from '@/architecture/types';
 
 // Add interface for arc creation data
-interface ArcCreateData extends Partial<NarrativeArc> {
+interface ArcCreateData extends Omit<Partial<NarrativeArc>, 'progressions' | 'main_characters'> {
   initial_progression?: {
     content: string;
     season: string;
     episode: string;
-    interfering_characters: string[];
+    interfering_characters: string;
   };
+  main_characters: string;
+}
+
+interface GenerateProgressionResponse {
+  content: string;
+  interfering_characters: string[];
+}
+
+interface ApiProgressionResponse {
+  data: GenerateProgressionResponse | null;
+  error?: string;
+}
+
+// Update the createProgression interface to match API expectations
+interface CreateProgressionData {
+  arc_id: string;
+  content: string;
+  series: string;
+  season: string;
+  episode: string;
+  interfering_characters: string | string[];  // Accept either format
 }
 
 export class ApiClient {
@@ -58,27 +80,98 @@ export class ApiClient {
     return this.request<NarrativeArc>(`/arcs/${arcId}`);
   }
 
-  async createArc(arcData: ArcCreateData): Promise<ApiResponse<NarrativeArc>> {
-    const formattedData = {
+  async createArc(arcData: CreateArcData): Promise<ApiResponse<NarrativeArc>> {
+    console.log('Received arcData with progressions:', arcData.progressions?.length);
+
+    // Validate required fields
+    if (!arcData.title || !arcData.description || !arcData.arc_type || !arcData.series) {
+      console.error('Missing required fields:', {
+        hasTitle: !!arcData.title,
+        hasDescription: !!arcData.description,
+        hasArcType: !!arcData.arc_type,
+        hasSeries: !!arcData.series
+      });
+      throw new Error('Missing required fields');
+    }
+
+    // Validate and format main_characters
+    const mainCharacters = Array.isArray(arcData.main_characters)
+      ? arcData.main_characters.join(';')
+      : typeof arcData.main_characters === 'string'
+        ? arcData.main_characters
+        : '';
+
+    console.log('Formatted main_characters:', mainCharacters);
+
+    // If we have multiple progressions, use the first one as initial_progression
+    let initialProgression: ArcCreateData['initial_progression'] | undefined;
+    
+    if (arcData.progressions?.[0]) {
+      const firstProgression = arcData.progressions[0];
+      console.log('Using first progression as initial progression:', firstProgression);
+
+      if (firstProgression.content && firstProgression.season && firstProgression.episode) {
+        initialProgression = {
+          content: firstProgression.content,
+          season: firstProgression.season,
+          episode: firstProgression.episode,
+          interfering_characters: Array.isArray(firstProgression.interfering_characters)
+            ? firstProgression.interfering_characters.join(';')
+            : firstProgression.interfering_characters || ''
+        };
+      }
+    }
+
+    const formattedData: ArcCreateData = {
       title: arcData.title,
       description: arcData.description,
       arc_type: arcData.arc_type,
-      main_characters: arcData.main_characters,
+      main_characters: mainCharacters,
       series: arcData.series,
-      initial_progression: arcData.initial_progression && {
-        content: arcData.initial_progression.content,
-        season: arcData.initial_progression.season,
-        episode: arcData.initial_progression.episode,
-        interfering_characters: arcData.initial_progression.interfering_characters
-      }
+      initial_progression: initialProgression
     };
 
-    console.log('Creating arc with data:', formattedData);
+    console.log('Sending formatted data to API:', formattedData);
 
-    return this.request<NarrativeArc>('/arcs', {
+    // Create the arc with initial progression
+    const response = await this.request<NarrativeArc>('/arcs', {
       method: 'POST',
       body: JSON.stringify(formattedData),
     });
+
+    // Check for error response
+    if ('error' in response) {
+      return response;
+    }
+
+    // If we have more progressions, add them to the created arc
+    if (arcData.progressions && arcData.progressions.length > 1) {
+      console.log(`Adding ${arcData.progressions.length - 1} additional progressions`);
+      
+      // Add remaining progressions
+      for (let i = 1; i < arcData.progressions.length; i++) {
+        const prog = arcData.progressions[i];
+        
+        // Skip if missing required fields
+        if (!prog.content || !prog.season || !prog.episode) {
+          console.warn('Skipping progression with missing required fields:', prog);
+          continue;
+        }
+
+        await this.createProgression({
+          arc_id: response.data.id,
+          content: prog.content,
+          series: prog.series || arcData.series,
+          season: prog.season,
+          episode: prog.episode,
+          interfering_characters: Array.isArray(prog.interfering_characters)
+            ? prog.interfering_characters.join(';')
+            : ''
+        });
+      }
+    }
+
+    return response;
   }
 
   async updateArc(
@@ -154,15 +247,15 @@ export class ApiClient {
 
   async mergeCharacters(
     series: string,
-    character1Id: string,
-    character2Id: string
+    data: {
+      character1_id: string;
+      character2_id: string;
+      keep_character: 'character1' | 'character2';
+    }
   ): Promise<ApiResponse<void>> {
     return this.request<void>(`/characters/${series}/merge`, {
       method: 'POST',
-      body: JSON.stringify({
-        character1_id: character1Id,
-        character2_id: character2Id,
-      }),
+      body: JSON.stringify(data),
     });
   }
 
@@ -213,17 +306,18 @@ export class ApiClient {
     });
   }
 
-  async createProgression(data: {
-    arc_id: string;
-    content: string;
-    series: string;
-    season: string;
-    episode: string;
-    interfering_characters: string[];
-  }): Promise<ApiResponse<ArcProgression>> {
+  async createProgression(data: CreateProgressionData): Promise<ApiResponse<ArcProgression>> {
+    // Format the data before sending
+    const formattedData = {
+      ...data,
+      interfering_characters: Array.isArray(data.interfering_characters)
+        ? data.interfering_characters.join(';')
+        : data.interfering_characters
+    };
+
     return this.request<ArcProgression>('/progressions', {
       method: 'POST',
-      body: JSON.stringify(data),
+      body: JSON.stringify(formattedData),
     });
   }
 
@@ -234,5 +328,68 @@ export class ApiClient {
         method: 'DELETE'
       }
     );
+  }
+
+  async generateProgression(
+    arcId: string | null,
+    series: string,
+    season: string,
+    episode: string,
+    title?: string,
+    description?: string
+  ): Promise<ApiProgressionResponse> {
+    try {
+      const response = await this.request<GenerateProgressionResponse>(
+        `/progressions/generate?series=${series}&season=${season}&episode=${episode}`,
+        {
+          method: 'POST',
+          body: JSON.stringify({
+            arc_id: arcId,
+            arc_title: title || null,
+            arc_description: description || null,
+            delete_existing: true
+          }),
+        }
+      );
+
+      // Handle error response
+      if ('error' in response) {
+        console.error('Generation error:', response.error);
+        return {
+          data: null,
+          error: response.error
+        };
+      }
+
+      // Handle NO_PROGRESSION case
+      if (response.data?.content === "NO_PROGRESSION") {
+        return {
+          data: null,
+          error: "No progression found for this arc in this episode"
+        };
+      }
+
+      // Handle missing or invalid content
+      if (!response.data?.content) {
+        return {
+          data: null,
+          error: "Failed to generate progression content"
+        };
+      }
+
+      // Return successful response
+      return {
+        data: {
+          content: response.data.content,
+          interfering_characters: response.data.interfering_characters || []
+        }
+      };
+    } catch (error) {
+      console.error('Generation error:', error);
+      return {
+        data: null,
+        error: error instanceof Error ? error.message : 'Unknown error occurred'
+      };
+    }
   }
 } 

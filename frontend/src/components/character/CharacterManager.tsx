@@ -169,20 +169,27 @@ export const CharacterManager: React.FC<CharacterManagerProps> = ({
     }
   };
 
-  const handleMergeCharacters = async (char1: Character, char2: Character) => {
+  const handleMergeCharacters = async (
+    char1: Character,
+    char2: Character,
+    keepCharacter: 'character1' | 'character2'
+  ) => {
     try {
       await request(() =>
         api.mergeCharacters(
           series,
           {
             character1_id: char1.entity_name,
-            character2_id: char2.entity_name
+            character2_id: char2.entity_name,
+            keep_character: keepCharacter
           }
         )
       );
-      fetchCharacters();
+      
+      fetchCharacters(); // Refresh the character list
       toast({
         title: 'Characters merged',
+        description: `Successfully merged into "${keepCharacter === 'character1' ? char1.best_appellation : char2.best_appellation}"`,
         status: 'success',
         duration: 3000,
       });

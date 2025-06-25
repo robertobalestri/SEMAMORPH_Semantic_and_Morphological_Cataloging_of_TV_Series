@@ -94,7 +94,12 @@ export const CharacterList: React.FC<CharacterListProps> = ({
     keep_character: 'character1' | 'character2';
   }) => {
     try {
-      await request(() => api.mergeCharacters(series, data));
+      const mergeData = {
+        character1_id: data.character1_id,
+        character2_id: data.character2_id,
+        keep_character: data.keep_character
+      };
+      await request(() => api.mergeCharacters(series, mergeData));
       toast({
         title: 'Characters merged successfully',
         status: 'success',

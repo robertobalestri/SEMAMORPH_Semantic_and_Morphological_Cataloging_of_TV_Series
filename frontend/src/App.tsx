@@ -14,7 +14,7 @@ import {
 } from '@chakra-ui/react';
 import styles from '@/styles/components/Layout.module.css';
 import { NarrativeArcManager } from './components/narrative/NarrativeArcManager';
-import { VectorStoreExplorer } from './components/vector/VectorStoreExplorer';
+import { VectorStoreTabManager } from './components/vector/VectorStoreTabManager';
 import { CharacterManager } from './components/character/CharacterManager';
 import { ApiClient } from './services/api/ApiClient';
 import type { NarrativeArc, Episode } from './architecture/types';
@@ -121,7 +121,7 @@ const App: React.FC = () => {
                     />
                   </TabPanel>
                   <TabPanel>
-                    <VectorStoreExplorer 
+                    <VectorStoreTabManager 
                       series={selectedSeries} 
                       onArcUpdated={handleArcUpdated}
                     />

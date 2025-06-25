@@ -2,105 +2,97 @@
   {
     "title": "Medical Case: The Unauthorized Gastric Bypass",
     "arc_type": "Anthology Arc",
-    "description": "Meredith and Bailey handle a complex case involving a teenager who underwent an unauthorized gastric bypass in Mexico. The surgery was poorly executed, leading to severe complications that need urgent correction. Despite their efforts, the reversal procedure fails, resulting in lifelong nutritional challenges for the patient.",
+    "description": "Meredith and Bailey handle a challenging case of a teenager who underwent an unauthorized gastric bypass in Mexico. They attempt to reverse the poorly done surgery, but complications arise, leading to lifelong nutritional challenges for the patient.",
     "main_characters": "Meredith Grey; Miranda Bailey",
-    "interfering_episode_characters": "The Teenager Patient; The Teenager's Mother",
-    "single_episode_progression_string": "Meredith and Bailey receive a teenager who had an unauthorized gastric bypass. They attempt to reverse the poorly done surgery. The procedure fails. The patient's bowel bursts. The patient faces lifelong nutritional challenges."
+    "interfering_episode_characters": "The Teenager; The Teenager's Mother",
+    "single_episode_progression_string": "Meredith and Bailey receive a teenager with complications from an unauthorized gastric bypass. They attempt to reverse the surgery. The procedure fails. The patient's bowel bursts on Meredith. The patient faces lifelong nutritional challenges."
   },
   {
-    "title": "Medical Case: The Swallowed Keys",
+    "title": "Medical Case: The Toddler's Hemispherectomy",
     "arc_type": "Anthology Arc",
-    "description": "Izzie deals with unusual medical cases that highlight the emotional and impulsive actions leading to emergencies.",
-    "main_characters": "Izzie",
-    "interfering_episode_characters": "None",
-    "single_episode_progression_string": "Izzie assists a man who swallowed his girlfriend's keys during a breakup. Izzie retrieves the keys safely."
-  },
-  {
-    "title": "Medical Case: The Hemispherectomy on a Toddler",
-    "arc_type": "Anthology Arc",
-    "description": "George and Derek tackle a challenging medical case involving a toddler with severe tremors. Derek determines that a hemispherectomy is necessary to save the child's life, highlighting the complexities and ethical dilemmas in high-stakes surgeries.",
-    "main_characters": "George; Derek",
-    "interfering_episode_characters": "Dr. Taylor; Cristina",
-    "single_episode_progression_string": "George and Derek assess a toddler with severe tremors. Derek diagnoses rapid brain tissue death. Derek decides a hemispherectomy is necessary. George smells bourbon on Dr. Taylor, the anesthesiologist. George confronts Dr. Taylor about his competence. Derek supports Dr. Taylor, leading to George's removal from the surgery. Cristina replaces George in the surgery. During the procedure, the toddler begins to wake up. Derek removes Dr. Taylor from the surgery. Derek apologizes to George for doubting him."
+    "description": "A challenging medical case involving a toddler with severe tremors leads to a high-stakes hemispherectomy, testing the surgical team's skills and dynamics.",
+    "main_characters": "Derek Shepherd; George O'Malley",
+    "interfering_episode_characters": "Dr. Taylor",
+    "single_episode_progression_string": "George joins Derek for the toddler's surgery. Derek decides a hemispherectomy is necessary. The toddler begins to wake up during surgery. Dr. Taylor is found asleep. Derek removes Dr. Taylor from the surgery."
   },
   {
     "title": "Medical Case: The Tattoo Gunshot Victim",
     "arc_type": "Anthology Arc",
-    "description": "A patient arrives at the hospital with a gunshot wound intended to enhance his tattoos. The stress from the wound exacerbates an existing tattoo infection, leading to his deterioration and eventual death.",
+    "description": "Alex encounters a patient who was intentionally shot to enhance his tattoos. The patient's condition deteriorates due to a tattoo infection exacerbated by the gunshot wound, ultimately leading to his death.",
     "main_characters": "Alex",
-    "interfering_episode_characters": "Burke",
-    "single_episode_progression_string": "Alex notices a gunshot victim in the lobby. The victim explains he was shot to enhance his tattoos. Alex connects with the victim over shared experiences. The victim's condition deteriorates due to a tattoo infection. The infection spreads, and the patient dies."
+    "interfering_episode_characters": "Burke; Gunshot Victim",
+    "single_episode_progression_string": "Alex notices a gunshot victim in the lobby. The patient explains his friend shot him to enhance his tattoos. Alex and the patient bond over shared experiences. The patient's condition worsens due to a tattoo infection. The infection spreads, leading to the patient's death."
   },
   {
-    "title": "Meredith And Derek's Relationship",
+    "title": "Medical Case: The Swallowed Keys",
+    "arc_type": "Anthology Arc",
+    "description": "Izzie navigates unusual medical cases, highlighting the unpredictable and sometimes humorous challenges faced by interns.",
+    "main_characters": "Izzie",
+    "interfering_episode_characters": "George; Derek",
+    "single_episode_progression_string": "Izzie assists a man who swallowed keys during a breakup. She retrieves the keys safely."
+  },
+  {
+    "title": "Meredith Grey's Journey: Balancing Legacy And Love",
     "arc_type": "Soap Arc",
-    "description": "Meredith Grey and Derek Shepherd navigate the complexities of their evolving relationship, balancing personal attraction with professional boundaries at Seattle Grace Hospital. Their interactions are marked by tension and chemistry, impacting both their personal and professional lives as they struggle to maintain professionalism while acknowledging their mutual attraction.",
+    "description": "Meredith Grey navigates her first year as a surgical intern at Seattle Grace Hospital, balancing the challenges of her new job with personal relationships, including a complicated dynamic with Dr. Derek Shepherd. Her journey is marked by her struggle to step out of her mother's shadow, renowned surgeon Ellis Grey, and prove herself in the medical field while dealing with her mother's Alzheimer's diagnosis.",
     "main_characters": "Meredith Grey; Derek Shepherd",
-    "interfering_episode_characters": "George O'Malley; Izzie Stevens",
-    "single_episode_progression_string": "George and Izzie see Derek leaving Meredith's house. Derek admits his feelings for Meredith to George. Izzie confronts Meredith about her relationship with Derek. Izzie realizes Meredith is in love with Derek."
+    "interfering_episode_characters": "George O'Malley; Izzie Stevens; Dr. Taylor",
+    "single_episode_progression_string": "George and Izzie see Derek leaving Meredith's house. Izzie confronts Meredith about her relationship with Derek. Derek admits his feelings about Meredith to George."
   },
   {
-    "title": "Meredith Grey's Journey: Growth And Responsibilities",
+    "title": "Intern Dynamics: Friendship And Rivalry",
     "arc_type": "Soap Arc",
-    "description": "Meredith Grey navigates the pressures of her surgical internship at Seattle Grace Hospital while grappling with the legacy of her mother, Ellis Grey. She faces emotional challenges, self-doubt, and professional hurdles as she strives to establish her own identity and career.",
-    "main_characters": "Meredith Grey; Derek Shepherd",
-    "interfering_episode_characters": "George O'Malley; Izzie Stevens; Miranda Bailey; Cristina Yang; Alex Karev; Dr. Taylor; Dr. Burke",
-    "single_episode_progression_string": "George and Izzie see Meredith with Derek. Izzie accuses Meredith of receiving preferential treatment. Meredith helps Bailey with a challenging case. Izzie confronts Meredith about her relationship with Derek. Meredith admits her feelings for Derek."
+    "description": "The group of new interns, including Meredith Grey, Cristina Yang, George O'Malley, and Isobel Stevens, form bonds and navigate the competitive and high-pressure environment of Seattle Grace Hospital. Their friendships are tested by professional rivalries, personal secrets, and the demands of their medical training, leading to growth and conflict.",
+    "main_characters": "Meredith Grey; George O'Malley; Isobel Stevens",
+    "interfering_episode_characters": "Derek Shepherd; Cristina Yang",
+    "single_episode_progression_string": "George and Izzie see Derek leaving Meredith's house. George feels jealous of Derek. Izzie is upset, thinking Meredith gets better surgeries due to her relationship with Derek. Izzie confronts Meredith about her relationship with Derek. Izzie's anger fades when she realizes Meredith is in love with Derek."
   },
   {
-    "title": "George O'Malley's Quest For Confidence And Belonging",
+    "title": "George O'Malley: Journey Of Self-Discovery And Growth",
     "arc_type": "Soap Arc",
-    "description": "George O'Malley navigates the challenges of being a surgical intern at Seattle Grace Hospital, facing self-doubt and striving to prove his competence. Throughout his journey, he seeks to form closer bonds with his peers, relying on their support and validation to gain confidence and a sense of belonging.",
+    "description": "George O'Malley navigates the challenges of being a surgical intern at Seattle Grace Hospital, often feeling overshadowed by his peers. He faces self-doubt, professional setbacks, and struggles to assert himself and gain respect from his colleagues. His journey involves overcoming insecurities and awkward interactions, striving to prove himself, and ultimately leading to personal growth, resilience, and a stronger sense of identity.",
     "main_characters": "George O'Malley",
     "interfering_episode_characters": "Derek Shepherd; Dr. Taylor; Cristina Yang",
-    "single_episode_progression_string": "George sees Derek leaving Meredith's house and feels jealous. George joins Derek on a toddler's surgery and is impressed by his skills. George suspects Dr. Taylor of drinking on the job. George confronts Dr. Taylor in front of Derek. George is removed from the surgery and replaced by Cristina. Derek later apologizes to George."
+    "single_episode_progression_string": "George sees Derek leaving Meredith's house and feels jealous. George smells bourbon on Dr. Taylor during a surgery. George confronts Dr. Taylor in front of Derek. George is removed from the surgery and replaced by Cristina. Derek later apologizes to George."
   },
   {
-    "title": "Roommate Dynamics: Balancing Friendship, Personal Space, And Legacy",
+    "title": "Cristina Yang: Ambition, Rivalry, And Relationships",
     "arc_type": "Soap Arc",
-    "description": "The living arrangement between Meredith, Izzie, and George creates ongoing conflicts and negotiations over personal space and boundaries. The challenges of cohabitation are highlighted by their differing priorities, Meredith's personal burdens, and the legacy of her mother's belongings, underscoring the complexities of balancing friendship and cohabitation.",
-    "main_characters": "Meredith; Izzie; George",
-    "interfering_episode_characters": "Derek",
-    "single_episode_progression_string": "George and Izzie see Derek leaving Meredith's house. Izzie suspects Meredith receives better surgeries due to her relationship with Derek. Izzie confronts Meredith about her relationship with Derek. George feels sidelined and questions his place in the household."
+    "description": "Cristina Yang is driven by her ambition to excel in surgery, leading to professional success and personal conflicts. Her competitive nature often clashes with fellow interns and superiors, particularly Meredith Grey, as they vie for opportunities and recognition. Simultaneously, Cristina navigates her personal relationships, especially with Dr. Burke, balancing her drive for success with the complexities of her romantic and professional interactions throughout her residency.",
+    "main_characters": "Cristina Yang; Dr. Burke",
+    "interfering_episode_characters": "Meredith Grey; Derek Shepherd",
+    "single_episode_progression_string": "Cristina feels nauseous and blames Dr. Burke. Cristina suspects her flu symptoms might be something else. She takes two pregnancy tests and is unhappy with the results."
   },
   {
-    "title": "Interns' Professional And Personal Rivalries And Alliances",
+    "title": "Dr. Derek Shepherd: Balancing Leadership And Love",
+    "arc_type": "Soap Arc",
+    "description": "Dr. Derek Shepherd, a skilled neurosurgeon, navigates the complexities of his professional responsibilities at Seattle Grace Hospital while dealing with personal entanglements, including his unexpected connection with intern Meredith Grey. His leadership and expertise are tested as he mentors the new interns and faces challenges in his personal life.",
+    "main_characters": "Derek Shepherd; Meredith Grey",
+    "interfering_episode_characters": "George O'Malley; Izzie Stevens; Dr. Taylor",
+    "single_episode_progression_string": "George and Izzie see Derek leaving Meredith's house. Derek performs a hemispherectomy on a toddler. Derek supports Dr. Taylor against George's accusation. Derek removes Dr. Taylor from surgery for incompetence. Derek apologizes to George and admits his feelings for Meredith."
+  },
+  {
+    "title": "Bailey's Mentorship: Shaping Future Surgeons",
     "arc_type": "Genre-Specific Arc",
-    "description": "The surgical interns, including Meredith, Cristina, George, Izzie, and Alex, navigate the complexities of their training, forming professional rivalries and alliances that challenge their personal and professional relationships. They compete for cases and opportunities to prove their skills while facing personal challenges and forming collaborations.",
-    "main_characters": "George; Izzie; Cristina; Meredith; Alex",
-    "interfering_episode_characters": "Derek; Dr. Taylor",
+    "description": "Dr. Miranda Bailey, known as 'The Nazi,' establishes her authority as a resident overseeing the new interns. Her strict yet effective mentorship style challenges the interns to rise to the demands of their roles, shaping their development as future surgeons.",
+    "main_characters": "Miranda Bailey; Meredith Grey",
+    "interfering_episode_characters": "Izzie Stevens; George O'Malley",
+    "single_episode_progression_string": "Bailey oversees Meredith's handling of a complex case involving a teenager with a botched gastric bypass. Bailey guides Meredith through the complications when the patient's bowel bursts. Bailey supports Meredith in managing the patient's lifelong nutritional challenges."
+  },
+  {
+    "title": "Professional Rivalries And Teamwork In The OR",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The interns at Seattle Grace Hospital face professional rivalries and the need for teamwork as they navigate the high-pressure environment of the operating room. The season highlights conflicts between Meredith and Alex over patient care, as well as the collaboration between Izzie and Cristina on challenging cases, reflecting the ongoing theme of balancing competition with cooperation.",
+    "main_characters": "George; Izzie; Cristina",
+    "interfering_episode_characters": "Derek; Meredith; Dr. Taylor",
     "single_episode_progression_string": "George feels jealous of Derek's relationship with Meredith. Izzie suspects Meredith is getting better surgeries due to her relationship with Derek. George confronts Dr. Taylor about smelling bourbon, leading to his removal from surgery. Cristina replaces George in the surgery. Derek apologizes to George and admits his feelings for Meredith."
   },
   {
-    "title": "Cristina Yang's Relentless Ambition",
+    "title": "George O'Malley: Ethical Dilemmas And Professional Integrity",
     "arc_type": "Genre-Specific Arc",
-    "description": "Cristina Yang's ambition drives her to excel in her surgical internship, often leading to conflicts with peers and mentors as she seeks to prove her surgical prowess. Her relentless pursuit of excellence defines her character and professional journey, highlighting both the challenges and triumphs she faces in her quest to become a top surgeon.",
-    "main_characters": "Cristina Yang",
-    "interfering_episode_characters": "Dr. Burke; George O'Malley",
-    "single_episode_progression_string": "Cristina feels nauseous and blames Dr. Burke. She is replaced by George in a major surgery. Cristina suspects her flu symptoms might be something else. She takes two pregnancy tests and is unhappy with the results."
-  },
-  {
-    "title": "Bailey's Leadership And Tough Mentorship",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Miranda Bailey, known for her tough love approach, mentors the interns with a firm hand, guiding them through the rigors of their surgical training and chaotic situations. Her leadership and mentorship are pivotal in shaping the interns' professional and personal growth.",
-    "main_characters": "Miranda Bailey; Meredith Grey",
-    "interfering_episode_characters": "Izzie Stevens; George O'Malley",
-    "single_episode_progression_string": "Bailey assigns Meredith to assist with a complex case involving a teenager's botched gastric bypass. Bailey oversees the surgery and provides guidance. The surgery faces complications, testing Bailey's leadership and Meredith's skills."
-  },
-  {
-    "title": "Alex Karev's Journey To Professional Respect And Growth",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Alex Karev navigates professional challenges with a confrontational approach, often clashing with peers and superiors. His journey involves learning to handle difficult cases and assert his professional judgment while striving to establish himself as a competent surgical intern.",
-    "main_characters": "Alex Karev",
-    "interfering_episode_characters": "Gunshot Victim; Dr. Burke",
-    "single_episode_progression_string": "Alex notices a gunshot victim in the lobby. Alex questions why the gunshot victim isn't in the emergency room. Alex connects with the gunshot victim over their shared wrestling background. Alex witnesses the deterioration of the gunshot victim due to an infection. The gunshot victim dies from the infection."
-  },
-  {
-    "title": "Navigating Power Dynamics And Mentorship At Seattle Grace Hospital",
-    "arc_type": "Genre-Specific Arc",
-    "description": "The interns at Seattle Grace Hospital navigate the complexities of power dynamics and mentorship, learning from senior staff like Miranda Bailey and attending surgeons. These mentors challenge and guide them through their medical and personal growth, shaping their professional and personal development.",
-    "main_characters": "George; Izzie; Meredith; Cristina",
-    "interfering_episode_characters": "Derek; Dr. Taylor; Bailey; Alex; Burke",
-    "single_episode_progression_string": "George witnesses Derek leaving Meredith's house and feels jealous. Izzie suspects Meredith is receiving preferential treatment in surgeries. George confronts Dr. Taylor about suspected intoxication. Derek supports Dr. Taylor, leading to George's removal from surgery. Meredith assists Bailey with a complex case involving a failed gastric bypass."
+    "description": "George O'Malley navigates ethical dilemmas and challenges to his professional integrity as a surgical intern, often prioritizing patient safety over personal gain.",
+    "main_characters": "George O'Malley",
+    "interfering_episode_characters": "Dr. Taylor; Derek Shepherd",
+    "single_episode_progression_string": "George suspects Dr. Taylor of being inebriated during surgery. George confronts Dr. Taylor in front of Derek. Derek supports Dr. Taylor, leading to George's removal from the surgery. Derek later apologizes to George."
   }
 ]

@@ -11,9 +11,8 @@ import json
 import agentops
 from src.langgraph_narrative_arcs_extraction.narrative_arc_graph import extract_narrative_arcs
 from src.ai_models.ai_models import LLMType
-#from src.storage.narrative_arc_manager import NarrativeArcManager
 from src.plot_processing.plot_summarizing import create_season_summary
-from src.narrative_storage.narrative_storage_main import process_suggested_arcs
+from src.plot_processing.process_suggested_arcs import process_suggested_arcs
 
 from dotenv import load_dotenv
 
@@ -218,7 +217,7 @@ if __name__ == "__main__":
 
     logger.info("Starting text processing.")
 
-    ep_number = 9
+    ep_number = 1
     
     # Now process each episode
     for ep in range(ep_number, 10):

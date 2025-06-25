@@ -23,6 +23,12 @@ import {
   Input,
   Textarea,
   Select,
+  AlertDialog,
+  AlertDialogBody,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogContent,
+  AlertDialogOverlay,
 } from '@chakra-ui/react';
 import { AddIcon, DeleteIcon, RepeatIcon } from '@chakra-ui/icons';
 import { ArcTimeline } from './ArcTimeline';
@@ -32,7 +38,14 @@ import { ArcFilters } from '../filters/ArcFilters';
 import { useArcStore } from '@/store/arcStore';
 import { useApi } from '@/hooks/useApi';
 import { ApiClient } from '@/services/api/ApiClient';
-import type { NarrativeArc, Episode, ArcProgression, Character, ProgressionMapping } from '@/architecture/types';
+import type { 
+  NarrativeArc, 
+  Episode, 
+  ArcProgression, 
+  Character, 
+  ProgressionMapping,
+  CreateArcData
+} from '@/architecture/types';
 import { ArcProgressionEditModal } from '../modals/ArcProgressionEditModal';
 import { ArcType } from '@/architecture/types/arc';
 import { ArcEditModal } from '../modals/ArcEditModal';
@@ -67,6 +80,10 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
   const [editArcType, setEditArcType] = useState('');
   const [editMainCharacters, setEditMainCharacters] = useState<string[]>([]);
   const [characters, setCharacters] = useState<Character[]>([]);
+  const [isGenerateAllDialogOpen, setIsGenerateAllDialogOpen] = useState(false);
+  const [selectedArcForGeneration, setSelectedArcForGeneration] = useState<NarrativeArc | null>(null);
+  const cancelRef = React.useRef<HTMLButtonElement>(null);
+  const [isGenerating, setIsGenerating] = useState(false);
 
   // Modal disclosures
   const {
@@ -183,7 +200,7 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
     selectedEpisode
   ]);
 
-  const handleCreateArc = async (arcData: Partial<NarrativeArc>) => {
+  const handleCreateArc = async (arcData: CreateArcData) => {
     try {
       const response = await request(() => api.createArc(arcData));
       if (response) {
@@ -316,7 +333,9 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
       season,
       episode,
       content: existingProgression?.content || '',
-      interfering_characters: existingProgression?.interfering_characters || []
+      interfering_characters: existingProgression?.interfering_characters || [],
+      arc_id: arc.id,
+      series: series
     };
 
     setSelectedProgression(progressionData);
@@ -344,12 +363,12 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
         // Create new progression
         await request(() =>
           api.createProgression({
-            content: updatedProgression.content,
             arc_id: selectedArc.id,
+            content: updatedProgression.content,
             series: series,
             season: updatedProgression.season,
             episode: updatedProgression.episode,
-            interfering_characters: updatedProgression.interfering_characters
+            interfering_characters: updatedProgression.interfering_characters.join(';')
           })
         );
       }
@@ -405,48 +424,6 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
     }
   };
 
-  // Update the renderArcTypeFilters function
-  const renderArcTypeFilters = () => {
-    const arcTypeColors = {
-      'Soap Arc': '#F687B3',
-      'Genre-Specific Arc': '#ED8936',
-      'Anthology Arc': '#48BB78',
-    };
-
-    return (
-      <Box borderWidth={1} borderRadius="md" p={4}>
-        <FormControl>
-          <FormLabel fontWeight="bold">Arc Types</FormLabel>
-          <SimpleGrid columns={3} spacing={2}>
-            {Object.values(ArcType).map((arcType) => (
-              <Checkbox
-                key={arcType}
-                isChecked={selectedArcTypes.includes(arcType)}
-                onChange={(e) => {
-                  if (e.target.checked) {
-                    setSelectedArcTypes([...selectedArcTypes, arcType]);
-                  } else {
-                    setSelectedArcTypes(selectedArcTypes.filter(t => t !== arcType));
-                  }
-                }}
-              >
-                <HStack>
-                  <Box
-                    w="3"
-                    h="3"
-                    borderRadius="full"
-                    bg={arcTypeColors[arcType as keyof typeof arcTypeColors]}
-                  />
-                  <Text fontSize="sm">{arcType}</Text>
-                </HStack>
-              </Checkbox>
-            ))}
-          </SimpleGrid>
-        </FormControl>
-      </Box>
-    );
-  };
-
   const handleUpdateArc = async (updatedArc: Partial<NarrativeArc>) => {
     try {
       await request(() => api.updateArc(updatedArc.id!, updatedArc));
@@ -467,12 +444,134 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
     }
   };
 
+  const handleGenerateAllClick = (arc: NarrativeArc) => {
+    setSelectedArcForGeneration(arc);
+    setIsGenerateAllDialogOpen(true);
+  };
+
+  const handleGenerateAll = async (overwriteExisting: boolean = false) => {
+    if (!selectedArcForGeneration) return;
+    
+    setIsGenerating(true);
+    
+    const arc = selectedArcForGeneration;
+    const allEpisodes = episodes
+      .filter(ep => ep.season === selectedSeason)
+      .sort((a, b) => {
+        const epA = parseInt(a.episode.replace('E', ''));
+        const epB = parseInt(b.episode.replace('E', ''));
+        return epA - epB;
+      });
+
+    try {
+      const loadingToastId = toast({
+        title: `Generating progressions for "${arc.title}"`,
+        description: 'Starting generation...',
+        status: 'info',
+        duration: null,
+        isClosable: true,
+      });
+
+      let generatedCount = 0;
+      let skippedCount = 0;
+      let noProgressionCount = 0;
+
+      console.log(`Starting generation for arc: ${arc.title}`);
+      console.log(`Total episodes to process: ${allEpisodes.length}`);
+
+      for (const ep of allEpisodes) {
+        // Update toast with current episode
+        toast.update(loadingToastId, {
+          description: `Processing S${ep.season.replace('S', '').padStart(2, '0')}E${ep.episode.replace('E', '').padStart(2, '0')} (${generatedCount + skippedCount + noProgressionCount + 1}/${allEpisodes.length})`,
+        });
+        
+        console.log(`Processing S${ep.season}E${ep.episode}`);
+        
+        // Skip if progression already exists and we're not overwriting
+        const existingProgression = arc.progressions.find(
+          p => p.season === ep.season && p.episode === ep.episode
+        );
+        if (existingProgression && !overwriteExisting) {
+          console.log(`Skipping existing progression for S${ep.season}E${ep.episode}`);
+          skippedCount++;
+          continue;
+        }
+
+        // Generate progression
+        console.log(`Generating progression for S${ep.season}E${ep.episode}`);
+        const response = await request(() => 
+          api.generateProgression(
+            arc.id,
+            series,
+            ep.season,
+            ep.episode,
+            arc.title,
+            arc.description
+          )
+        );
+
+        if (response && 'content' in response && response.content !== "NO_PROGRESSION") {
+          try {
+            if (existingProgression) {
+              // Update existing progression
+              await request(() =>
+                api.updateProgression(existingProgression.id, {
+                  content: response.content,
+                  interfering_characters: response.interfering_characters || []
+                })
+              );
+            } else {
+              // Create new progression
+              await request(() =>
+                api.createProgression({
+                  arc_id: arc.id,
+                  content: response.content,
+                  series: series,
+                  season: ep.season,
+                  episode: ep.episode,
+                  interfering_characters: Array.isArray(response.interfering_characters)
+                    ? response.interfering_characters.join(';')
+                    : response.interfering_characters || ''
+                })
+              );
+            }
+            generatedCount++;
+          } catch (error) {
+            console.error(`Error ${existingProgression ? 'updating' : 'creating'} progression for S${ep.season}E${ep.episode}:`, error);
+          }
+        } else if (response && response.content === "NO_PROGRESSION") {
+          noProgressionCount++;
+        }
+      }
+
+      toast.close(loadingToastId);
+      toast({
+        title: 'Generation Complete',
+        description: `Generated ${generatedCount} progressions, skipped ${skippedCount} existing, ${noProgressionCount} episodes had no progression`,
+        status: 'success',
+        duration: 5000,
+      });
+
+      onArcUpdated();
+
+    } catch (error) {
+      console.error('Error in handleGenerateAll:', error);
+      toast({
+        title: 'Error generating progressions',
+        description: error instanceof Error ? error.message : 'Unknown error',
+        status: 'error',
+        duration: 5000,
+      });
+    } finally {
+      setIsGenerating(false);
+      setIsGenerateAllDialogOpen(false);
+      setSelectedArcForGeneration(null);
+    }
+  };
+
   return (
     <Box>
       <VStack spacing={4} align="stretch">
-        {/* Arc Type Filters */}
-        {renderArcTypeFilters()}
-
         {/* Arc Filters */}
         <ArcFilters
           seasons={seasons}
@@ -535,6 +634,7 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
           selectedForMerge={selectedForMerge}
           onToggleMerge={handleToggleMerge}
           onEditArc={handleEditArc}
+          onGenerateAll={handleGenerateAllClick}
         />
 
         {/* Modals */}
@@ -544,6 +644,7 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
           onSubmit={handleCreateArc}
           availableCharacters={characters.map(c => c.best_appellation)}
           series={series}
+          episodes={episodes}
         />
 
         {selectedForMerge.length === 2 && (
@@ -563,6 +664,8 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
           onSave={handleProgressionSave}
           onDelete={handleProgressionDelete}
           availableCharacters={characters.map(c => c.best_appellation)}
+          arcId={selectedArc?.id || ''}
+          series={series}
         />
 
         <ArcEditModal
@@ -573,6 +676,53 @@ export const NarrativeArcManager: React.FC<NarrativeArcManagerProps> = ({
           onDelete={handleDeleteArc}
           availableCharacters={characters.map(c => c.best_appellation)}
         />
+
+        {/* Add the AlertDialog */}
+        <AlertDialog
+          isOpen={isGenerateAllDialogOpen}
+          leastDestructiveRef={cancelRef}
+          onClose={() => setIsGenerateAllDialogOpen(false)}
+        >
+          <AlertDialogOverlay>
+            <AlertDialogContent>
+              <AlertDialogHeader fontSize="lg" fontWeight="bold">
+                Generate All Progressions
+              </AlertDialogHeader>
+
+              <AlertDialogBody>
+                Do you want to overwrite existing progressions? If you choose "No", only missing progressions will be generated.
+              </AlertDialogBody>
+
+              <AlertDialogFooter>
+                <Button 
+                  ref={cancelRef} 
+                  onClick={() => setIsGenerateAllDialogOpen(false)}
+                  isDisabled={isGenerating}
+                >
+                  Cancel
+                </Button>
+                <Button
+                  colorScheme="blue"
+                  onClick={() => handleGenerateAll(false)}
+                  ml={3}
+                  isDisabled={isGenerating}
+                  isLoading={isGenerating}
+                >
+                  No, Skip Existing
+                </Button>
+                <Button
+                  colorScheme="red"
+                  onClick={() => handleGenerateAll(true)}
+                  ml={3}
+                  isDisabled={isGenerating}
+                  isLoading={isGenerating}
+                >
+                  Yes, Overwrite All
+                </Button>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialogOverlay>
+        </AlertDialog>
       </VStack>
     </Box>
   );

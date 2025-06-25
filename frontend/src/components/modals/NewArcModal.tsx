@@ -19,16 +19,26 @@ import {
   Tag,
   TagLabel,
   TagCloseButton,
+  useColorModeValue,
+  useToast,
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
 } from '@chakra-ui/react';
 import { ArcType } from '@/architecture/types';
-import type { NarrativeArc } from '@/architecture/types';
+import type { NarrativeArc, ArcProgression, Episode, CreateArcData } from '@/architecture/types';
+import { StarIcon } from '@chakra-ui/icons';
+import { ApiClient } from '@/services/api/ApiClient';
 
 interface NewArcModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onSubmit: (arcData: Partial<NarrativeArc>) => void;
+  onSubmit: (arcData: CreateArcData) => void;
   availableCharacters: string[];
   series: string;
+  episodes: Episode[];
 }
 
 export const NewArcModal: React.FC<NewArcModalProps> = ({
@@ -37,7 +47,10 @@ export const NewArcModal: React.FC<NewArcModalProps> = ({
   onSubmit,
   availableCharacters,
   series,
+  episodes,
 }) => {
+  const bgColor = useColorModeValue('gray.50', 'gray.700');
+  const toast = useToast();
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [arcType, setArcType] = useState<ArcType>(ArcType.SoapArc);
@@ -46,20 +59,27 @@ export const NewArcModal: React.FC<NewArcModalProps> = ({
   const [progressionSeason, setProgressionSeason] = useState('');
   const [progressionEpisode, setProgressionEpisode] = useState('');
   const [interferingCharacters, setInterferingCharacters] = useState<string[]>([]);
+  const [isGeneratingAll, setIsGeneratingAll] = useState(false);
+  const api = new ApiClient();
+  const [activeTab, setActiveTab] = useState(0);
 
   const handleSubmit = () => {
-    const arcData: Partial<NarrativeArc> = {
+    const initialProgression: Omit<Partial<ArcProgression>, 'id'> = {
+      content: progressionContent,
+      season: `S${progressionSeason.padStart(2, '0')}`,
+      episode: `E${progressionEpisode.padStart(2, '0')}`,
+      interfering_characters: interferingCharacters,
+      series: series,
+      ordinal_position: parseInt(progressionEpisode)
+    };
+
+    const arcData: CreateArcData = {
       title: title.trim(),
       description: description.trim(),
       arc_type: arcType,
-      main_characters: mainCharacters.join(';'),
+      main_characters: mainCharacters,
       series,
-      initial_progression: {
-        content: progressionContent,
-        season: `S${progressionSeason.padStart(2, '0')}`,
-        episode: `E${progressionEpisode.padStart(2, '0')}`,
-        interfering_characters: interferingCharacters.join(';')
-      }
+      progressions: [initialProgression]
     };
 
     onSubmit(arcData);
@@ -98,6 +118,151 @@ export const NewArcModal: React.FC<NewArcModalProps> = ({
     const selectedChar = e.target.value;
     if (selectedChar && !interferingCharacters.includes(selectedChar)) {
       setInterferingCharacters([...interferingCharacters, selectedChar]);
+    }
+  };
+
+  const handleGenerateContent = async () => {
+    if (!progressionSeason || !progressionEpisode || !title || !description || !series) return;
+
+    try {
+      const response = await api.generateProgression(
+        null,
+        series,
+        `S${progressionSeason.padStart(2, '0')}`,
+        `E${progressionEpisode.padStart(2, '0')}`,
+        title,
+        description
+      );
+
+      if (response.data) {
+        setProgressionContent(response.data.content);
+        setInterferingCharacters(response.data.interfering_characters);
+        toast({
+          title: 'Content generated',
+          description: 'AI has generated progression content and characters',
+          status: 'success',
+          duration: 3000,
+        });
+      }
+    } catch (error) {
+      toast({
+        title: 'Error generating content',
+        description: error instanceof Error ? error.message : 'Failed to generate content',
+        status: 'error',
+        duration: 5000,
+      });
+    }
+  };
+
+  const handleGenerateAllProgressions = async () => {
+    if (!title || !description || !progressionSeason) {
+      toast({
+        title: 'Missing Information',
+        description: 'Please fill in the title, description, and season first',
+        status: 'warning',
+        duration: 3000,
+      });
+      return;
+    }
+
+    setIsGeneratingAll(true);
+    const loadingToast = toast({
+      title: 'Generating progressions',
+      description: 'This may take a few minutes...',
+      status: 'info',
+      duration: null,
+      isClosable: true,
+    });
+
+    try {
+      const seasonEpisodes = episodes
+        .filter(ep => ep.season === `S${progressionSeason.padStart(2, '0')}`)
+        .sort((a, b) => parseInt(a.episode.replace('E', '')) - parseInt(b.episode.replace('E', '')));
+
+      console.log('Processing episodes:', seasonEpisodes);
+      const allProgressions: Omit<Partial<ArcProgression>, 'id'>[] = [];
+      let generatedCount = 0;
+      let noProgressionCount = 0;
+      let errorCount = 0;
+
+      for (const ep of seasonEpisodes) {
+        console.log(`Generating for episode ${ep.season}${ep.episode}`);
+        const response = await api.generateProgression(
+          null,
+          series,
+          ep.season,
+          ep.episode,
+          title,
+          description
+        );
+
+        if (response.error) {
+          console.warn(`Error for episode ${ep.episode}:`, response.error);
+          errorCount++;
+          continue;
+        }
+
+        if (response.data) {
+          allProgressions.push({
+            content: response.data.content,
+            season: ep.season,
+            episode: ep.episode,
+            series,
+            ordinal_position: parseInt(ep.episode.replace('E', '')),
+            interfering_characters: response.data.interfering_characters
+          });
+          generatedCount++;
+          console.log(`Added progression for episode ${ep.episode}, total now: ${allProgressions.length}`);
+        } else {
+          noProgressionCount++;
+        }
+
+        toast.update(loadingToast, {
+          description: `Processing episode ${ep.episode}... (${generatedCount} generated, ${noProgressionCount} skipped, ${errorCount} errors)`,
+        });
+      }
+
+      if (allProgressions.length > 0) {
+        console.log(`Creating arc with ${allProgressions.length} progressions`);
+        const arcData: CreateArcData = {
+          title: title.trim(),
+          description: description.trim(),
+          arc_type: arcType,
+          main_characters: mainCharacters,
+          series,
+          progressions: allProgressions
+        };
+
+        console.log('Submitting arc data:', arcData);
+        toast.close(loadingToast);
+        toast({
+          title: 'Generation Complete',
+          description: `Generated ${generatedCount} progressions, ${noProgressionCount} skipped, ${errorCount} errors`,
+          status: 'success',
+          duration: 5000,
+        });
+
+        onSubmit(arcData);
+        resetForm();
+      } else {
+        toast({
+          title: 'No Progressions Generated',
+          description: `No valid progressions found (${noProgressionCount} skipped, ${errorCount} errors)`,
+          status: 'warning',
+          duration: 5000,
+        });
+      }
+
+    } catch (error) {
+      toast.close(loadingToast);
+      toast({
+        title: 'Error generating progressions',
+        description: error instanceof Error ? error.message : 'Unknown error',
+        status: 'error',
+        duration: 5000,
+      });
+    } finally {
+      setIsGeneratingAll(false);
     }
   };
 
@@ -179,80 +344,128 @@ export const NewArcModal: React.FC<NewArcModalProps> = ({
               )}
             </FormControl>
 
-            <Box borderWidth={1} borderRadius="md" p={4}>
-              <VStack spacing={4}>
-                <FormControl isRequired>
-                  <FormLabel>Season</FormLabel>
-                  <Input
-                    placeholder="Enter season number (e.g., 1)"
-                    value={progressionSeason}
-                    onChange={(e) => {
-                      const value = e.target.value.replace(/\D/g, '');
-                      setProgressionSeason(value);
-                    }}
-                  />
-                </FormControl>
+            <Box width="100%" borderWidth={1} borderRadius="md" p={4}>
+              <Tabs onChange={setActiveTab} variant="enclosed">
+                <TabList>
+                  <Tab>Single Progression</Tab>
+                  <Tab>AI Generate All</Tab>
+                </TabList>
 
-                <FormControl isRequired>
-                  <FormLabel>Episode</FormLabel>
-                  <Input
-                    placeholder="Enter episode number (e.g., 1)"
-                    value={progressionEpisode}
-                    onChange={(e) => {
-                      const value = e.target.value.replace(/\D/g, '');
-                      setProgressionEpisode(value);
-                    }}
-                  />
-                </FormControl>
+                <TabPanels>
+                  <TabPanel>
+                    <VStack spacing={4}>
+                      <FormControl isRequired>
+                        <FormLabel>Season</FormLabel>
+                        <Input
+                          placeholder="Enter season number (e.g., 1)"
+                          value={progressionSeason}
+                          onChange={(e) => {
+                            const value = e.target.value.replace(/\D/g, '');
+                            setProgressionSeason(value);
+                          }}
+                        />
+                      </FormControl>
 
-                <FormControl isRequired>
-                  <FormLabel>Content</FormLabel>
-                  <Textarea
-                    value={progressionContent}
-                    onChange={(e) => setProgressionContent(e.target.value)}
-                    placeholder="Enter progression content"
-                    rows={4}
-                  />
-                </FormControl>
+                      <FormControl isRequired>
+                        <FormLabel>Episode</FormLabel>
+                        <Input
+                          placeholder="Enter episode number (e.g., 1)"
+                          value={progressionEpisode}
+                          onChange={(e) => {
+                            const value = e.target.value.replace(/\D/g, '');
+                            setProgressionEpisode(value);
+                          }}
+                        />
+                      </FormControl>
 
-                <FormControl>
-                  <FormLabel>Interfering Characters</FormLabel>
-                  <Select
-                    placeholder="Select characters"
-                    onChange={handleInterferingCharacterSelect}
-                    value=""
-                  >
-                    {availableCharacters.map(char => (
-                      <option key={char} value={char}>
-                        {char}
-                      </option>
-                    ))}
-                  </Select>
-                  {interferingCharacters.length > 0 && (
-                    <HStack mt={2} flexWrap="wrap" spacing={2}>
-                      {interferingCharacters.map(char => (
-                        <Tag 
-                          key={char} 
-                          size="sm"
-                          colorScheme="purple"
-                          cursor="pointer"
-                          onClick={() => setInterferingCharacters(prev => prev.filter(c => c !== char))}
+                      <FormControl isRequired>
+                        <FormLabel>Content</FormLabel>
+                        <VStack width="100%" spacing={2}>
+                          <Textarea
+                            value={progressionContent}
+                            onChange={(e) => setProgressionContent(e.target.value)}
+                            placeholder="Enter progression content"
+                            rows={4}
+                          />
+                          <Button
+                            colorScheme="purple"
+                            width="100%"
+                            leftIcon={<StarIcon />}
+                            isDisabled={!progressionSeason || !progressionEpisode || !title || !description}
+                            onClick={handleGenerateContent}
+                            size="sm"
+                          >
+                            Generate with AI
+                          </Button>
+                        </VStack>
+                      </FormControl>
+
+                      <FormControl>
+                        <FormLabel>Interfering Characters</FormLabel>
+                        <Select
+                          placeholder="Select characters"
+                          onChange={handleInterferingCharacterSelect}
+                          value=""
                         >
-                          <TagLabel>{char}</TagLabel>
-                          <TagCloseButton />
-                        </Tag>
-                      ))}
+                          {availableCharacters.map(char => (
+                            <option key={char} value={char}>
+                              {char}
+                            </option>
+                          ))}
+                        </Select>
+                        {interferingCharacters.length > 0 && (
+                          <Box mt={2}>
+                            <HStack spacing={2} wrap="wrap">
+                              {interferingCharacters.map(char => (
+                                <Tag
+                                  key={char}
+                                  size="md"
+                                  variant="solid"
+                                  colorScheme="purple"
+                                >
+                                  <TagLabel>{char}</TagLabel>
+                                  <TagCloseButton 
+                                    onClick={() => setInterferingCharacters(prev => 
+                                      prev.filter(c => c !== char)
+                                    )}
+                                  />
+                                </Tag>
+                              ))}
+                            </HStack>
+                          </Box>
+                        )}
+                      </FormControl>
+                    </VStack>
+                  </TabPanel>
+
+                  <TabPanel>
+                    <VStack spacing={4}>
+                      <FormControl isRequired>
+                        <FormLabel>Season</FormLabel>
+                        <Input
+                          placeholder="Enter season number (e.g., 1)"
+                          value={progressionSeason}
+                          onChange={(e) => {
+                            const value = e.target.value.replace(/\D/g, '');
+                            setProgressionSeason(value);
+                          }}
+                        />
+                      </FormControl>
+
                       <Button
-                        size="xs"
-                        variant="ghost"
-                        onClick={() => setInterferingCharacters([])}
+                        colorScheme="purple"
+                        width="100%"
+                        leftIcon={<StarIcon />}
+                        isDisabled={!progressionSeason || !title || !description}
+                        onClick={handleGenerateAllProgressions}
+                        isLoading={isGeneratingAll}
                       >
-                        Clear all
+                        Generate All Progressions for Season {progressionSeason}
                       </Button>
-                    </HStack>
-                  )}
-                </FormControl>
-              </VStack>
+                    </VStack>
+                  </TabPanel>
+                </TabPanels>
+              </Tabs>
             </Box>
           </VStack>
         </ModalBody>

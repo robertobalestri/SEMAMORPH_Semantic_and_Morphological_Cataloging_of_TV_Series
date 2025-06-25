@@ -49,4 +49,12 @@ export interface ProgressionMapping {
   episode: string;
   content: string;
   interfering_characters: string[];
+  arc_id?: string;
+  arc_title?: string;
+  series?: string;
+}
+
+// Add a new type for creating arcs
+export interface CreateArcData extends Omit<Partial<NarrativeArc>, 'progressions'> {
+  progressions?: Omit<Partial<ArcProgression>, 'id'>[];
 } 

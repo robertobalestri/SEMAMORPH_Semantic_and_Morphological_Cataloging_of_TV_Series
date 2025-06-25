@@ -1,6 +1,5 @@
 from pydantic import BaseModel
 from typing import List, Dict
-import networkx as nx
 from json import JSONEncoder
 
 class EntityLink(BaseModel):
