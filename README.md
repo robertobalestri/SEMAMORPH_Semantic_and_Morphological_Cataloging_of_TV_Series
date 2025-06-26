@@ -89,7 +89,17 @@ python3 clean_data.py --series GA --season S01
 - `*_plot.txt` (original plot files)
 - `*_full_dialogues.json` (original dialogue files)
 
-All other processed files (entities, semantic segments, narrative arcs, etc.) will be deleted.
+All other processed files (entities, semantic segments, narrative arcs, season plots, etc.) will be deleted.
+
+## Processing Architecture
+
+The system processes TV series episodes independently, without relying on season-level summaries. Each episode is processed through the following pipeline:
+
+1. **Text Simplification** - Simplifies and clarifies the original plot text
+2. **Pronoun Resolution** - Replaces pronouns with character names for clarity
+3. **Entity Extraction** - Identifies and normalizes character and location entities  
+4. **Semantic Segmentation** - Splits episodes into meaningful narrative segments
+5. **Narrative Arc Extraction** - Identifies story arcs within each episode
 
 ## Project Structure
 

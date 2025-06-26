@@ -1,19 +1,24 @@
 from src.utils.logger_utils import setup_logging
-from src.plot_processing.plot_text_processing import replace_pronouns_with_names, simplify_text
+from src.plot_processing.plot_text_processing import replace_pronouns_with_names
 from src.plot_processing.plot_semantic_processing import semantic_split
 from src.plot_processing.plot_ner_entity_extraction import extract_and_refine_entities, substitute_appellations_with_names, normalize_entities_names_to_best_appellation
 from src.plot_processing.plot_processing_models import EntityLink, EntityLinkEncoder
+from src.plot_processing.subtitle_processing import (
+    parse_srt_file, 
+    generate_plot_from_subtitles, 
+    map_scene_to_timestamps, 
+    save_plot_files,
+    save_scene_timestamps,
+    PlotScene
+)
 from src.utils.text_utils import load_text, clean_text
 from src.ai_models.ai_models import get_llm
 from src.path_handler import PathHandler
-from src.config import config
 import os
 import json
-import shutil
 import agentops
 from src.langgraph_narrative_arcs_extraction.narrative_arc_graph import extract_narrative_arcs
 from src.ai_models.ai_models import LLMType
-from src.plot_processing.plot_summarizing import create_season_summary
 from src.plot_processing.process_suggested_arcs import process_suggested_arcs
 
 from dotenv import load_dotenv
@@ -45,7 +50,7 @@ def process_single_episode(series: str, season: str, episode: str) -> None:
 
 def process_text(path_handler: PathHandler, series: str, season: str, episode: str) -> None:
     """
-    Process the input text file, extracting entities and performing semantic analysis.
+    Process the input SRT file to generate plot and perform semantic analysis.
 
     Args:
         path_handler (PathHandler): An instance of PathHandler to manage file paths.
@@ -61,68 +66,87 @@ def process_text(path_handler: PathHandler, series: str, season: str, episode: s
         llm_intelligent = get_llm(LLMType.INTELLIGENT)
         llm_cheap = get_llm(LLMType.CHEAP)
         
-        # Check if season summary needs to be created
-        season_plot_path = path_handler.get_season_plot_file_path()
-        if not os.path.exists(season_plot_path):
-            logger.info("Season summary not found. Creating season summary from episode plots.")
-            
-            # Get all episode folders
-            episode_folders = PathHandler.list_episode_folders(
-                path_handler.base_dir,
-                path_handler.series,
-                path_handler.season
-            )
-            
-            # Collect paths for all episode plots
-            episode_plots = []
-            for ep_folder in episode_folders:
-                ep_plot_path = PathHandler.get_episode_plot_path(
-                    path_handler.base_dir,
-                    path_handler.series,
-                    path_handler.season,
-                    ep_folder
-                )
-                if os.path.exists(ep_plot_path):
-                    episode_plots.append(ep_plot_path)
-            
-            if episode_plots:
-                logger.info(f"Found {len(episode_plots)} episode plots to summarize")
-                create_season_summary(episode_plots, llm_cheap, season_plot_path)
-            else:
-                logger.warning("No episode plots found to create season summary.")
-        else:
-            logger.info(f"Season summary already exists at: {season_plot_path}")
-
-        # Simplify the text if the file does not exist
-        simplified_file_path = path_handler.get_simplified_plot_file_path()
+        # Step 1: Generate plot from SRT file if it doesn't exist
+        raw_plot_path = path_handler.get_raw_plot_file_path()
         
-        if not os.path.exists(simplified_file_path):
-            # Load raw text
-            input_file = path_handler.get_raw_plot_file_path()
-            logger.info(f"Loading raw plot from: {input_file}")
+        if not os.path.exists(raw_plot_path):
+            # Look for SRT file
+            srt_path = path_handler.get_srt_file_path()
+            logger.info(f"Looking for SRT file: {srt_path}")
             
-            if not os.path.exists(input_file):
-                logger.error(f"Raw plot file not found: {input_file}")
+            if not os.path.exists(srt_path):
+                logger.error(f"SRT file not found: {srt_path}")
                 return
             
-            raw_plot = load_text(input_file)
-            logger.debug(f"Raw plot content: {raw_plot[:100]}...")  # Log the first 100 characters for brevity
+            logger.info("Generating plot from SRT subtitles")
             
-            cleaned_plot = clean_text(raw_plot)
-            logger.info("Cleaning plot text completed.")
-            logger.debug(f"cleaned_plot plot content: {cleaned_plot[:100]}...")  # Log the first 100 characters for brevity
-                
-            logger.info(f"Simplifying text and saving to: {simplified_file_path}")
-            simplified_text = simplify_text(cleaned_plot, llm_intelligent)
-            logger.debug(f"Simplified text content: {simplified_text[:100]}...")  # Log the first 100 characters for brevity
-
-            with open(simplified_file_path, "w") as simplified_file:
-                simplified_file.write(simplified_text)
+            # Parse SRT file
+            subtitles = parse_srt_file(srt_path)
+            
+            # Generate plot from subtitles
+            plot_data = generate_plot_from_subtitles(subtitles, llm_intelligent)
+            
+            # Save plot files (TXT and JSON)
+            episode_prefix = f"{series}{season}{episode}"
+            episode_dir = os.path.dirname(raw_plot_path)
+            txt_path, scenes_json_path = save_plot_files(plot_data, episode_dir, episode_prefix)
+            
+            logger.info(f"Generated plot saved to: {txt_path}")
         else:
-            logger.info(f"Loading simplified text from: {simplified_file_path}")
-            with open(simplified_file_path, "r") as simplified_file:
-                simplified_text = simplified_file.read()
-
+            logger.info(f"Plot file already exists: {raw_plot_path}")
+        
+        # Step 2: Map scenes to timestamps (check if timestamps file exists)
+        episode_prefix = f"{series}{season}{episode}"
+        episode_dir = os.path.dirname(raw_plot_path)
+        timestamps_path = path_handler.get_scene_timestamps_path()
+        
+        if not os.path.exists(timestamps_path):
+            logger.info("Mapping scenes to subtitle timestamps")
+            
+            # Parse SRT file for timestamp mapping
+            srt_path = path_handler.get_srt_file_path()
+            if not os.path.exists(srt_path):
+                logger.error(f"SRT file not found for timestamp mapping: {srt_path}")
+            else:
+                subtitles = parse_srt_file(srt_path)
+                
+                # Load plot scenes data
+                scenes_json_path = path_handler.get_plot_scenes_json_path()
+                if os.path.exists(scenes_json_path):
+                    with open(scenes_json_path, 'r') as f:
+                        plot_data = json.load(f)
+                    
+                    scenes = []
+                    for scene_data in plot_data.get("scenes", []):
+                        scene = PlotScene(
+                            scene_number=scene_data.get("scene_number", len(scenes) + 1),
+                            plot_segment=scene_data.get("plot_segment", "")
+                        )
+                        scenes.append(scene)
+                    
+                    # Map each scene to timestamps one by one
+                    mapped_scenes = []
+                    for scene in scenes:
+                        mapped_scene = map_scene_to_timestamps(scene, subtitles, llm_cheap)
+                        mapped_scenes.append(mapped_scene)
+                    
+                    # Save scene timestamps
+                    timestamps_path = save_scene_timestamps(mapped_scenes, episode_dir, episode_prefix)
+                    logger.info(f"Scene timestamps saved to: {timestamps_path}")
+                else:
+                    logger.error(f"Plot scenes JSON not found: {scenes_json_path}")
+        else:
+            logger.info(f"Scene timestamps already exist: {timestamps_path}")
+        
+        # Step 3: Continue with existing processing pipeline 
+        # Use the full generated plot for further processing
+        raw_plot = load_text(raw_plot_path)
+        logger.debug(f"Raw plot content: {raw_plot[:100]}...")
+        
+        # Use the original raw plot directly (no text simplification needed since it's already well-structured)
+        simplified_text = raw_plot
+        logger.info("Using full generated plot for further processing")
+        
         # Named the entities if the file does not exist
         named_file_path = path_handler.get_named_plot_file_path()
         
@@ -198,58 +222,24 @@ def process_text(path_handler: PathHandler, series: str, season: str, episode: s
             with open(semantic_segments_path, "r") as semantic_segments_file:
                 semantic_segments = json.load(semantic_segments_file)          
         
-        # Handle summarized plot creation based on configuration
-        summarized_plot_path = path_handler.get_summarized_plot_path()
-        
-        if not os.path.exists(summarized_plot_path):
-            if config.use_original_plot_as_summary:
-                # Use original plot as summarized plot
-                logger.info("Using original plot as summarized plot (as configured)")
-                original_plot_path = path_handler.get_raw_plot_file_path()
-                if os.path.exists(original_plot_path):
-                    shutil.copy2(original_plot_path, summarized_plot_path)
-                    logger.info(f"Copied original plot to: {summarized_plot_path}")
-                else:
-                    logger.warning(f"Original plot file not found: {original_plot_path}")
-                    # Fall back to using simplified plot if original not found
-                    simplified_plot_path = path_handler.get_simplified_plot_file_path()
-                    if os.path.exists(simplified_plot_path):
-                        shutil.copy2(simplified_plot_path, summarized_plot_path)
-                        logger.info(f"Fallback: Copied simplified plot to: {summarized_plot_path}")
-            else:
-                # Generate summarized plot using LLM (existing behavior)
-                logger.info("Generating summarized plot using LLM")
-                # Note: The actual summarization logic should be implemented here
-                # For now, we'll use the simplified plot as a fallback
-                simplified_plot_path = path_handler.get_simplified_plot_file_path()
-                if os.path.exists(simplified_plot_path):
-                    shutil.copy2(simplified_plot_path, summarized_plot_path)
-                    logger.info(f"Temporary: Using simplified plot as summarized plot: {summarized_plot_path}")
-        else:
-            logger.info(f"Summarized plot already exists: {summarized_plot_path}")
+        # Use the original generated plot (no summarization needed)
+        logger.info("Using full generated plot for narrative arc extraction")
                 
         suggested_episode_arc_path = path_handler.get_suggested_episode_arc_path()
         
         if not os.path.exists(suggested_episode_arc_path):
             # Prepare file paths for narrative arc extraction
             file_paths_for_graph = {
-                "season_plot_path": path_handler.get_season_plot_file_path(),
-                "episode_plot_path": path_handler.get_simplified_plot_file_path(),
+                "episode_plot_path": path_handler.get_raw_plot_file_path(),  # Use the original generated plot
                 "seasonal_narrative_analysis_output_path": path_handler.get_season_narrative_analysis_path(),
                 "episode_narrative_analysis_output_path": path_handler.get_episode_narrative_analysis_path(),
-                "summarized_plot_path": path_handler.get_summarized_plot_path(),
                 "season_entities_path": path_handler.get_season_extracted_refined_entities_path(),
                 "suggested_episode_arc_path": suggested_episode_arc_path
             }
 
             # Extract narrative arcs using LangGraph
-            if config.narrative_arc_extraction_method == "enhanced":
-                logger.info("Extracting narrative arcs using ENHANCED method.")
-                from src.langgraph_narrative_arcs_extraction.enhanced_narrative_arc_graph import extract_enhanced_narrative_arcs
-                extract_enhanced_narrative_arcs(file_paths_for_graph, series, season, episode)
-            else:
-                logger.info("Extracting narrative arcs using ORIGINAL method.")
-                extract_narrative_arcs(file_paths_for_graph, series, season, episode)
+            logger.info("Extracting narrative arcs.")
+            extract_narrative_arcs(file_paths_for_graph, series, season, episode)
 
         # Process the suggested arcs and update the database
         logger.info("Processing suggested arcs and updating database.")

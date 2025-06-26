@@ -70,7 +70,6 @@ class NarrativeArcsExtractionState(TypedDict):
     episode: str
     existing_season_entities: List[EntityLink]
     episode_plot: str
-    summarized_plot: str
     season_plot: str
     optimized_arcs: List[IntermediateNarrativeArc]
 
@@ -94,11 +93,8 @@ def initialize_state(state: NarrativeArcsExtractionState) -> NarrativeArcsExtrac
     if os.path.exists(state['file_paths']['episode_plot_path']):
         state['episode_plot'] = load_text(state['file_paths']['episode_plot_path'])
 
-    if os.path.exists(state['file_paths']['summarized_plot_path']):
-        state['summarized_plot'] = load_text(state['file_paths']['summarized_plot_path'])
-
-    if os.path.exists(state['file_paths']['season_plot_path']):
-        state['season_plot'] = load_text(state['file_paths']['season_plot_path'])
+    # Season plot is no longer used - we process episodes independently
+    state['season_plot'] = ""
 
     if os.path.exists(state['file_paths']['suggested_episode_arc_path']):
         state['suggested_episode_arc'] = load_text(state['file_paths']['suggested_episode_arc_path'])
@@ -192,7 +188,7 @@ def identify_present_season_arcs(state: NarrativeArcsExtractionState) -> Narrati
                 continue
 
             response = llm.invoke(PRESENT_SEASON_ARCS_IDENTIFIER_PROMPT.format_messages(
-                summarized_episode_plot=state['summarized_plot'],
+                summarized_episode_plot=state['episode_plot'],
                 arc_title=arc['title'],
                 arc_description=arc['description']
             ))
@@ -232,7 +228,6 @@ def extract_anthology_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcs
 
     response = llm.invoke(ANTHOLOGY_ARC_EXTRACTOR_PROMPT.format_messages(
         episode_plot=state['episode_plot'],
-        season_plot=state['season_plot'],
         output_json_format=BRIEF_OUTPUT_JSON_FORMAT,
     ))
 
@@ -483,7 +478,6 @@ def verify_arcs(state: NarrativeArcsExtractionState) -> NarrativeArcsExtractionS
 
     response = llm.invoke(ARC_VERIFIER_PROMPT.format_messages(
         episode_plot=state['episode_plot'],
-        season_plot=state['season_plot'],
         arcs_to_verify=json.dumps([arc.model_dump() for arc in state['episode_arcs']], indent=2),
         present_season_arcs_summaries=json.dumps(state['present_season_arcs'], indent=2), 
         guidelines=NARRATIVE_ARC_GUIDELINES,
@@ -541,7 +535,6 @@ def optimize_arcs_with_season_context(state: NarrativeArcsExtractionState) -> Na
         return state
 
     response = llm.invoke(SEASONAL_ARC_OPTIMIZER_PROMPT.format_messages(
-        season_plot=state['season_plot'],
         present_season_arcs=json.dumps(state['present_season_arcs'], indent=2),
         new_arcs=json.dumps([arc.model_dump() for arc in arcs_to_optimize], indent=2),
         output_json_format=EXTRACTOR_OUTPUT_JSON_FORMAT
@@ -631,7 +624,6 @@ def extract_narrative_arcs(file_paths: Dict[str, str], series: str, season: str,
         episode=episode,
         existing_season_entities=[],
         episode_plot="",
-        summarized_plot="",
         season_plot="",
         optimized_arcs=[]
     )

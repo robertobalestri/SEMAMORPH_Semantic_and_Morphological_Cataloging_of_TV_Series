@@ -1,0 +1,3117 @@
+1
+00:00:02,369 --> 00:00:03,413
+<i>Previously on</i> Grey's Anatomy:
+
+2
+00:00:03,437 --> 00:00:05,336
+This is Mary. She
+lost consciousness.
+
+3
+00:00:05,438 --> 00:00:06,939
+How's Shane? My partner?
+
+4
+00:00:07,041 --> 00:00:09,707
+I didn't want her to see.
+She might take offense.
+
+5
+00:00:09,809 --> 00:00:12,227
+- Can you get my wife?
+- Baby?
+
+6
+00:00:12,329 --> 00:00:14,462
+You're gonna
+drill into my skull?
+
+7
+00:00:14,564 --> 00:00:16,181
+The navigational system is dead?
+
+8
+00:00:16,283 --> 00:00:19,284
+Damn it, Stan! Stan. Stan.
+
+9
+00:00:19,386 --> 00:00:21,786
+Can I watch the surgery?
+Can you sneak me in?
+
+10
+00:00:21,839 --> 00:00:23,137
+You're busted.
+
+11
+00:00:23,239 --> 00:00:26,291
+Gonna tell him. Don't want
+him seeing other people.
+
+12
+00:00:26,393 --> 00:00:30,328
+- What?
+- Nothing. I'm gonna be late.
+
+13
+00:00:30,431 --> 00:00:32,113
+We need to talk.
+
+14
+00:00:32,215 --> 00:00:35,450
+- My wife gets panicky.
+- I will keep her updated.
+
+15
+00:00:35,552 --> 00:00:37,069
+You seeing anyone?
+
+16
+00:00:51,885 --> 00:00:53,685
+<i>At the end of the day,</i>
+
+17
+00:00:53,787 --> 00:00:55,654
+<i>the experience of
+practicing medicine</i>
+
+18
+00:00:55,756 --> 00:00:58,923
+<i>bears little resemblance
+to the dream.</i>
+
+19
+00:00:59,025 --> 00:01:01,275
+<i>♪ Got no need for
+the fancy things ♪</i>
+
+20
+00:01:01,378 --> 00:01:05,130
+Hey. Are you... Are
+you... Are you really OK?
+
+21
+00:01:05,232 --> 00:01:06,965
+Yeah. Yeah.
+
+22
+00:01:07,050 --> 00:01:09,362
+Alex. Come on. That was intense.
+
+23
+00:01:09,386 --> 00:01:12,654
+Intense and crazy
+and just awful.
+
+24
+00:01:12,756 --> 00:01:14,868
+How can you be OK
+after a day like that?
+
+25
+00:01:14,892 --> 00:01:18,410
+<i>We go into medicine
+because we want to save lives.</i>
+
+26
+00:01:18,512 --> 00:01:22,214
+You did a good job
+today. That was not easy.
+
+27
+00:01:22,316 --> 00:01:26,368
+What you did was
+not easy. It was brave.
+
+28
+00:01:26,470 --> 00:01:28,804
+<i>We go into medicine
+because we want to do good.</i>
+
+29
+00:01:28,906 --> 00:01:31,373
+<i>♪ Me, I'm a taker Know
+what the stakes are ♪</i>
+
+30
+00:01:31,475 --> 00:01:34,087
+<i>♪ Can't roll it back It's
+understood Got to play our cards ♪</i>
+
+31
+00:01:34,111 --> 00:01:35,911
+<i>We go into
+medicine for the rush,</i>
+
+32
+00:01:36,013 --> 00:01:38,780
+<i>for the high, for the ride.</i>
+
+33
+00:01:38,883 --> 00:01:40,148
+<i>But what we remember,</i>
+
+34
+00:01:40,251 --> 00:01:43,868
+<i>at the end of most
+days, are the losses.</i>
+
+35
+00:01:43,970 --> 00:01:46,154
+<i>What we lie awake at night</i>
+
+36
+00:01:46,256 --> 00:01:48,590
+<i>replaying is the pain we caused.</i>
+
+37
+00:01:48,692 --> 00:01:51,276
+<i>♪ Must hurt real bad Fakin'
+what you wish you had ♪</i>
+
+38
+00:01:51,378 --> 00:01:53,378
+<i>The ills we couldn't cure.</i>
+
+39
+00:01:53,480 --> 00:01:55,830
+I don't want you to
+date other people.
+
+40
+00:01:55,933 --> 00:01:58,700
+It may not be enough
+for you, but I'm trying here.
+
+41
+00:01:58,802 --> 00:02:02,236
+I don't want you to
+date anybody but me.
+
+42
+00:02:02,338 --> 00:02:04,973
+<i>The lives we ruined...</i>
+
+43
+00:02:06,176 --> 00:02:08,844
+<i>or failed to save.</i>
+
+44
+00:02:08,946 --> 00:02:12,147
+Can I get some help?
+
+45
+00:02:12,249 --> 00:02:13,489
+<i>The end of the day,</i>
+
+46
+00:02:13,584 --> 00:02:16,317
+<i>the reality is
+nothing like we hope.</i>
+
+47
+00:02:17,621 --> 00:02:19,721
+<i>The reality is, at
+the end of the day,</i>
+
+48
+00:02:19,823 --> 00:02:23,659
+<i>more often than not, turned
+inside out and upside down.</i>
+
+49
+00:02:25,629 --> 00:02:28,063
+Over here!
+Meredith, get in there!
+
+50
+00:02:28,165 --> 00:02:29,445
+We don't have time to lose!
+
+51
+00:02:29,516 --> 00:02:32,717
+OK! I got the shirt
+open. I'm almost there!
+
+52
+00:02:32,819 --> 00:02:36,871
+Stop! Stop! Stop! Hold still!
+
+53
+00:02:36,974 --> 00:02:41,526
+OK. OK, that's it. I got
+it. It stopped. I got it.
+
+54
+00:02:41,628 --> 00:02:44,712
+Holy crap. My artery blew.
+
+55
+00:02:44,815 --> 00:02:47,699
+- Your artery blew.
+- I didn't think that'd happen.
+
+56
+00:02:47,801 --> 00:02:50,301
+Thought it was something
+they say might happen
+
+57
+00:02:50,404 --> 00:02:53,238
+because they have to,
+but didn't think it'd happen.
+
+58
+00:02:53,340 --> 00:02:54,906
+Me neither.
+
+59
+00:03:00,998 --> 00:03:03,915
+- Their local tech's in Spokane.
+- That's five hours away.
+
+60
+00:03:04,017 --> 00:03:06,017
+Tell them I was in
+somebody's brain?
+
+61
+00:03:06,119 --> 00:03:08,064
+Yes. The tech is
+still in Spokane.
+
+62
+00:03:08,088 --> 00:03:11,423
+You can't just pull the probes
+out and go to a full craniotomy?
+
+63
+00:03:11,508 --> 00:03:15,977
+- No. Why not?
+- The probe is in the tumors.
+
+64
+00:03:16,096 --> 00:03:19,480
+Pulling out without navigation
+system could damage brain tissue.
+
+65
+00:03:19,582 --> 00:03:21,828
+Can't leave the probe
+in without swelling.
+
+66
+00:03:21,852 --> 00:03:23,092
+Good. What's your name?
+
+67
+00:03:23,153 --> 00:03:25,737
+Two. Steve! Steve Mostow.
+
+68
+00:03:25,839 --> 00:03:28,540
+- Dr. Steve Mostow. Intern.
+- Hi, Steve.
+
+69
+00:03:28,642 --> 00:03:31,126
+Run to the nurses.
+Make an announcement.
+
+70
+00:03:31,227 --> 00:03:33,428
+We need computer
+technicians in OR Three.
+
+71
+00:03:33,530 --> 00:03:35,564
+- Go fast and scrub in.
+- Yes, sir.
+
+72
+00:03:35,666 --> 00:03:37,449
+- Dr. Shepherd?
+- Yes.
+
+73
+00:03:37,551 --> 00:03:40,318
+I did three semesters in
+computer science before nursing.
+
+74
+00:03:40,421 --> 00:03:46,324
+I don't know what's wrong, but if
+it's something reasonably basic, I...
+
+75
+00:03:46,426 --> 00:03:48,927
+I'd feel better if your
+voice wasn't shaking.
+
+76
+00:03:49,029 --> 00:03:51,229
+Shakes when I'm
+nervous. I'm imperfect.
+
+77
+00:03:51,331 --> 00:03:52,930
+It doesn't mean I can't fix it.
+
+78
+00:03:53,032 --> 00:03:56,118
+Rose has semesters of
+computer science at what school?
+
+79
+00:03:56,220 --> 00:03:58,069
+- Santa Cruz.
+- That's a party school.
+
+80
+00:03:58,171 --> 00:04:01,439
+Insult my education or want
+me to help you save your patient?
+
+81
+00:04:01,541 --> 00:04:02,741
+Who can beat three semesters
+
+82
+00:04:02,842 --> 00:04:05,977
+of computer science at
+Santa Cruz? Anybody?
+
+83
+00:04:08,364 --> 00:04:12,417
+- OK. Give it a shot.
+- I appreciate the vote
+of confidence.
+
+84
+00:04:14,287 --> 00:04:17,055
+Can you see anything yet?
+
+85
+00:04:17,157 --> 00:04:21,192
+Uh, I see the diaphragm
+moving. Move it up a little more.
+
+86
+00:04:21,295 --> 00:04:23,561
+- Meredith?
+- I'm working on it!
+
+87
+00:04:23,663 --> 00:04:26,348
+You're not doing
+a very good job.
+
+88
+00:04:26,450 --> 00:04:29,968
+I am doing a damn
+fine job. Don't you worry.
+
+89
+00:04:31,922 --> 00:04:34,455
+Can you... Can
+you close his eyes?
+
+90
+00:04:34,557 --> 00:04:39,627
+- What?
+- Stan. Can you close his eyes?
+
+91
+00:04:41,464 --> 00:04:44,399
+I'm sorry. I'm so sorry.
+
+92
+00:04:47,655 --> 00:04:51,506
+Stop. Stop right there. I
+want to freeze that frame.
+
+93
+00:04:51,608 --> 00:04:53,770
+Yeah, his pericardium's
+full of blood.
+
+94
+00:04:53,794 --> 00:04:55,994
+That's not good.
+That's not good at all.
+
+95
+00:04:56,096 --> 00:04:59,564
+Oxygen, IV start
+kits. Arnie, monitor.
+
+96
+00:04:59,666 --> 00:05:03,402
+You, pericardiocentesis kit.
+His anatomy's all screwed up
+
+97
+00:05:03,504 --> 00:05:06,988
+because he's hanging upside
+down. Get someone from cardio!
+
+98
+00:05:10,394 --> 00:05:12,927
+I've got Tucker waiting
+for me and I'm late.
+
+99
+00:05:13,029 --> 00:05:16,198
+Do me a favor and take the
+patient through to post-op.
+
+100
+00:05:16,300 --> 00:05:19,150
+- What?
+- OK, I wanted to say
+
+101
+00:05:19,252 --> 00:05:22,604
+- when you took me
+off Hahn's service...
+- Something's wrong.
+
+102
+00:05:22,706 --> 00:05:26,708
+- Blood pressure's bottomed out.
+- I'll hang it. Here.
+
+103
+00:05:26,810 --> 00:05:29,277
+- Dr. Bailey!
+- O'Malley...
+
+104
+00:05:29,379 --> 00:05:33,581
+OK. Need you to talk to Tucker.
+I need you to ask him to wait.
+
+105
+00:05:33,683 --> 00:05:36,534
+He's not going to be
+inclined to, so ask him nicely.
+
+106
+00:05:36,636 --> 00:05:39,871
+Can you please go and
+ask him nicely to wait?
+
+107
+00:05:39,956 --> 00:05:41,676
+- Yes, ma'am.
+- I won't be long.
+
+108
+00:05:41,775 --> 00:05:45,510
+Do you see this, Stevens?
+Sternum's cleaned out.
+
+109
+00:05:45,612 --> 00:05:47,423
+Which means we're
+almost out of here.
+
+110
+00:05:47,447 --> 00:05:49,214
+Don't want to watch me work?
+
+111
+00:05:49,316 --> 00:05:51,694
+It's offensive,
+Dr. Sloan. Flat out.
+
+112
+00:05:51,718 --> 00:05:54,435
+I asked if you wanted to
+watch me work. Offensive?
+
+113
+00:05:54,537 --> 00:05:57,972
+Play dumb? Does that work for
+you because of the way you look?
+
+114
+00:05:58,074 --> 00:06:00,914
+- What are you talking about?
+- If you were homely,
+
+115
+00:06:00,994 --> 00:06:03,979
+you would have lost
+your job a long time ago.
+
+116
+00:06:04,948 --> 00:06:06,964
+The chief needs you
+in the ambulance bay.
+
+117
+00:06:07,067 --> 00:06:08,778
+Paramedic with
+cardiac tamponade.
+
+118
+00:06:08,802 --> 00:06:12,036
+Alrighty then.
+Let's go, Stevens.
+
+119
+00:06:12,455 --> 00:06:14,789
+OK, um...
+
+120
+00:06:14,891 --> 00:06:18,092
+Nick, can you reach
+your call button?
+
+121
+00:06:18,195 --> 00:06:20,628
+- I think so.
+- No, no! Don't move that much!
+
+122
+00:06:21,915 --> 00:06:23,431
+OK.
+
+123
+00:06:23,533 --> 00:06:25,584
+Uh... just...
+
+124
+00:06:25,686 --> 00:06:30,555
+Can you reach your phone?
+Without moving very much.
+
+125
+00:06:30,657 --> 00:06:32,623
+I think so. I got it.
+
+126
+00:06:32,725 --> 00:06:34,837
+OK. Good. Good, good, good.
+
+127
+00:06:34,861 --> 00:06:39,464
+OK, dial eight, OK? OK.
+
+128
+00:06:39,566 --> 00:06:41,767
+- Is that eight?
+- OK. OK.
+
+129
+00:06:41,869 --> 00:06:43,384
+Put it to my ear, OK?
+
+130
+00:06:44,270 --> 00:06:46,237
+- <i>Nurses Station.</i>
+- Hi.
+
+131
+00:06:46,339 --> 00:06:48,389
+Hi, this is Dr. Grey.
+
+132
+00:06:48,491 --> 00:06:50,731
+Mr. Hanscomb's
+carotid just blew and...
+
+133
+00:06:50,811 --> 00:06:55,997
+Can you page Dr. Sloan for
+me please? And also Dr. Yang?
+
+134
+00:06:56,099 --> 00:06:59,684
+I'm gonna go ahead and call
+this a code blue. Yes. Code blue.
+
+135
+00:06:59,786 --> 00:07:02,186
+Can you announce
+that please? Thank you.
+
+136
+00:07:02,288 --> 00:07:05,539
+- You can put it down.
+- Code blue. That means I'm dead, right?
+
+137
+00:07:05,641 --> 00:07:08,710
+That's what they call when
+people go, like, flatline.
+
+138
+00:07:08,812 --> 00:07:11,412
+I figure we can use
+all the help we can get.
+
+139
+00:07:23,443 --> 00:07:26,277
+I don't care who it is. I
+don't care who it is, Jolene.
+
+140
+00:07:26,379 --> 00:07:28,574
+I am leaving when I am finished.
+
+141
+00:07:28,598 --> 00:07:31,249
+If the patient is on fire,
+I'm not scrubbing in.
+
+142
+00:07:31,351 --> 00:07:33,868
+It's Dr. Yang's. Lexie
+Grey is paging you 911.
+
+143
+00:07:33,970 --> 00:07:37,738
+Your intern called a code
+blue on a patient who's not.
+
+144
+00:07:37,840 --> 00:07:40,241
+What? Why would
+she call a code if...
+
+145
+00:07:40,343 --> 00:07:41,623
+Go find out.
+
+146
+00:07:41,677 --> 00:07:44,929
+You needed me here. That's
+why you pulled me off of cardio.
+
+147
+00:07:45,031 --> 00:07:47,882
+No, I'm fine. Go
+kick some intern butt.
+
+148
+00:07:50,370 --> 00:07:54,873
+- How you doing, Dr. Grey?
+- Lexie. I'm OK. Are you OK?
+
+149
+00:07:54,975 --> 00:07:57,575
+I'm a little freaked
+out, if I'm being honest.
+
+150
+00:07:57,678 --> 00:08:00,344
+Mostly because you look
+like Carrie at the prom.
+
+151
+00:08:00,446 --> 00:08:03,982
+- You're wearing half my blood.
+- Why we're hanging more.
+
+152
+00:08:04,084 --> 00:08:06,534
+- Having trouble getting a vein.
+- Why?
+
+153
+00:08:06,637 --> 00:08:08,403
+Hypovolemic. Is
+veins are flaccid.
+
+154
+00:08:08,505 --> 00:08:10,155
+That's not a nice thing to say.
+
+155
+00:08:10,256 --> 00:08:12,140
+That's not a nice
+thing to say at all.
+
+156
+00:08:12,242 --> 00:08:14,108
+Ow! Ow!
+
+157
+00:08:14,210 --> 00:08:16,050
+- Son of a bitch!
+- It's OK! It's OK!
+
+158
+00:08:16,079 --> 00:08:18,663
+- It's OK!
+- Stop the bleeding!
+
+159
+00:08:18,765 --> 00:08:23,100
+- My hand slipped. I got it.
+- That can't happen anymore.
+
+160
+00:08:23,203 --> 00:08:26,487
+- That can't happen anymore.
+- Apply steady, firm pressure.
+
+161
+00:08:26,589 --> 00:08:29,107
+I called for Sloan. Should
+we take him to an OR?
+
+162
+00:08:29,209 --> 00:08:32,527
+No, there's no OR. I
+was just down there.
+
+163
+00:08:34,331 --> 00:08:37,398
+Tyler? You should run and get
+more blood. Just in case, OK?
+
+164
+00:08:37,501 --> 00:08:40,218
+- Apply pressure. I'll get Sloan.
+- Leaving?
+
+165
+00:08:40,303 --> 00:08:43,054
+I'll be right back.
+You're doing this.
+
+166
+00:08:46,292 --> 00:08:50,078
+You seeing this? How I'm
+tightening the cable by hand?
+
+167
+00:08:50,180 --> 00:08:52,080
+Yeah.
+
+168
+00:08:54,434 --> 00:08:56,151
+- That's my face.
+- What?
+
+169
+00:08:56,253 --> 00:08:58,987
+In the gallery. I built that
+face. That's Jane Doe.
+
+170
+00:08:59,089 --> 00:09:02,140
+The one with the
+amnesia. She a surgeon?
+
+171
+00:09:02,242 --> 00:09:05,209
+- Uh, I don't...
+- You are so busted.
+
+172
+00:09:05,311 --> 00:09:07,295
+Nick Hanscomb's carotid blew.
+
+173
+00:09:07,397 --> 00:09:10,332
+Karev, irrigate thoroughly,
+finish up, pack the wound.
+
+174
+00:09:10,434 --> 00:09:12,366
+- Leaving?
+- Other guy can't survive.
+
+175
+00:09:12,468 --> 00:09:15,102
+- There's no OR available.
+- This one will be.
+
+176
+00:09:15,205 --> 00:09:19,541
+Get this room turned around ASAP.
+I'm bringing down my carotid bleed.
+
+177
+00:09:21,795 --> 00:09:25,030
+Tucker! Hey.
+
+178
+00:09:25,132 --> 00:09:27,665
+She's busy, right?
+She can't make lunch?
+
+179
+00:09:27,767 --> 00:09:30,618
+She can make a slightly
+later lunch. She's in surgery.
+
+180
+00:09:30,720 --> 00:09:32,821
+- Always is.
+- Taking a little longer.
+
+181
+00:09:32,923 --> 00:09:34,472
+Always does.
+
+182
+00:09:35,358 --> 00:09:37,025
+She's having a really bad day.
+
+183
+00:09:37,127 --> 00:09:40,045
+She's saving the life
+of a white supremacist,
+
+184
+00:09:40,147 --> 00:09:42,697
+which is not a good day.
+So she asked me to ask you
+
+185
+00:09:42,799 --> 00:09:45,733
+if you wouldn't mind
+waiting a little while longer.
+
+186
+00:09:45,835 --> 00:09:48,503
+Please? She did said please.
+
+187
+00:09:48,605 --> 00:09:53,758
+Which, as you may know, is not
+a word she uses that frequently.
+
+188
+00:09:53,860 --> 00:09:56,394
+She really is sorry. It
+shouldn't be much longer.
+
+189
+00:09:56,496 --> 00:10:01,566
+Fine. Tell Miranda I said don't
+keep me waiting long. Please.
+
+190
+00:10:01,668 --> 00:10:03,351
+OK.
+
+191
+00:10:05,388 --> 00:10:07,555
+Lucy.
+
+192
+00:10:11,694 --> 00:10:14,429
+If it's all right, I'll update
+Mr. Nolston's family
+
+193
+00:10:14,531 --> 00:10:16,797
+and meet you in
+the ambulance bay.
+
+194
+00:10:19,735 --> 00:10:22,002
+He's your patient. Keep
+the family informed?
+
+195
+00:10:22,105 --> 00:10:25,423
+Think like a surgeon. You're
+thinking like a social worker.
+
+196
+00:10:25,525 --> 00:10:28,392
+If you want to be a social
+worker, save yourself effort
+
+197
+00:10:28,495 --> 00:10:30,729
+because the training
+is two years, not 12.
+
+198
+00:10:30,831 --> 00:10:34,081
+Want to be a surgeon,
+you can update the family
+
+199
+00:10:34,183 --> 00:10:35,950
+when the crisis has passed.
+
+200
+00:10:36,052 --> 00:10:39,537
+You're right.
+Absolutely. I'm sorry. I...
+
+201
+00:10:45,278 --> 00:10:46,689
+- Steve.
+- Yes, sir?
+
+202
+00:10:46,713 --> 00:10:49,197
+- Did you bring
+anybody with you?
+- No.
+
+203
+00:10:49,299 --> 00:10:52,200
+The nurses made an
+announcement. I waited, no one came.
+
+204
+00:10:52,302 --> 00:10:54,819
+- Rose?
+- Damn. Damn it. Damn it.
+
+205
+00:10:54,921 --> 00:10:57,288
+- Rose?
+- I don't have
+the steadiest hand.
+
+206
+00:10:57,390 --> 00:11:01,008
+I need to reconnect wires, and
+when you talk to me, it is less steady.
+
+207
+00:11:01,110 --> 00:11:03,761
+- It's about the wires?
+- I think so. I'm pretty sure.
+
+208
+00:11:03,863 --> 00:11:05,646
+- I'll do it.
+- What?
+
+209
+00:11:05,749 --> 00:11:07,749
+I'll do it. You don't
+have steady hands.
+
+210
+00:11:07,851 --> 00:11:09,650
+- Because I'm nervous.
+- Got that.
+
+211
+00:11:09,752 --> 00:11:11,035
+Let me take care of the wires.
+
+212
+00:11:11,137 --> 00:11:13,170
+I'm a neurosurgeon.
+Steady hands.
+
+213
+00:11:13,272 --> 00:11:15,390
+You're holding the
+leads in the brain.
+
+214
+00:11:15,492 --> 00:11:18,293
+OK. Steve, how's
+your hand? Is it steady?
+
+215
+00:11:18,395 --> 00:11:20,261
+- Hell, yes, sir.
+- Better be,
+
+216
+00:11:20,363 --> 00:11:23,364
+or you kill my patient. I
+need you to hold this very still.
+
+217
+00:11:23,466 --> 00:11:26,550
+- Yes, sir.
+- Very, very still. Good.
+
+218
+00:11:29,889 --> 00:11:33,191
+Sterile sleeves, gloves,
+please. Tell me what I got to do.
+
+219
+00:11:35,978 --> 00:11:37,545
+- You talked to Tucker?
+- Yes.
+
+220
+00:11:37,647 --> 00:11:39,597
+As long as you're
+out soon, he'll wait.
+
+221
+00:11:39,699 --> 00:11:42,767
+Mother of... The
+hepatic vein was injured.
+
+222
+00:11:42,869 --> 00:11:45,686
+- Can you check
+for a new murmur?
+- Checking now.
+
+223
+00:11:45,789 --> 00:11:47,989
+O'Malley, go talk to Tucker.
+
+224
+00:11:48,091 --> 00:11:50,336
+Just ask him to
+wait a little longer.
+
+225
+00:11:50,360 --> 00:11:52,793
+- I just scrubbed in.
+- O'Malley, ask him!
+
+226
+00:11:52,895 --> 00:11:54,746
+Yes, ma'am.
+
+227
+00:12:06,526 --> 00:12:10,428
+A person can only rise so high.
+
+228
+00:12:10,530 --> 00:12:13,831
+I'm rising above, but there's
+a ceiling and I'm about to hit it!
+
+229
+00:12:13,933 --> 00:12:18,302
+Let me guess, air embolus?
+
+230
+00:12:22,809 --> 00:12:25,676
+We're about to start
+the pericardiocentesis,
+
+231
+00:12:25,779 --> 00:12:29,747
+but with the position of his body, the
+blood won't be pooled to the heart...
+
+232
+00:12:29,849 --> 00:12:32,983
+I'd still use the subxiphoid
+rather than the parasternal.
+
+233
+00:12:33,085 --> 00:12:35,464
+Right. OK. Meredith,
+did you hear that?
+
+234
+00:12:35,488 --> 00:12:39,874
+- Yeah. Is the kit ready yet?
+- Getting it ready for you now.
+
+235
+00:12:41,244 --> 00:12:42,821
+How you doing, Ray?
+
+236
+00:12:42,845 --> 00:12:45,207
+You've got to be careful
+with this technique.
+
+237
+00:12:45,231 --> 00:12:47,092
+If you aim the
+needle incorrectly,
+
+238
+00:12:47,116 --> 00:12:50,068
+you could nick the very
+thin-walled right atrium.
+
+239
+00:12:50,170 --> 00:12:51,346
+Cause a cardiac rupture.
+
+240
+00:12:51,370 --> 00:12:53,454
+Rupture, a tension pneumothorax.
+
+241
+00:12:53,556 --> 00:12:56,391
+There's about six different
+ways she could kill him.
+
+242
+00:12:56,493 --> 00:13:00,228
+- Are they talking about me?
+- No. Don't listen to them, Ray.
+
+243
+00:13:00,330 --> 00:13:02,096
+Dr. Hahn?
+
+244
+00:13:02,198 --> 00:13:03,447
+Shut up.
+
+245
+00:13:07,436 --> 00:13:10,571
+Sir, you're gonna be fine.
+
+246
+00:13:10,673 --> 00:13:13,074
+Stevens, go get me
+an 18-gauge needle
+
+247
+00:13:13,176 --> 00:13:15,076
+before this man's
+heart explodes.
+
+248
+00:13:15,178 --> 00:13:16,593
+Got it.
+
+249
+00:13:24,353 --> 00:13:26,905
+- How you doing, Karev?
+- Yeah, good. I'm fine.
+
+250
+00:13:27,007 --> 00:13:30,041
+My nose itches.
+Itches like crazy.
+
+251
+00:13:30,143 --> 00:13:33,111
+That's the anxiety. Can't
+scratch it, so it itches.
+
+252
+00:13:36,165 --> 00:13:38,316
+- Whoa! What did you do?
+- I was irrigating.
+
+253
+00:13:38,418 --> 00:13:39,851
+I need more suction.
+
+254
+00:13:39,936 --> 00:13:41,819
+Coming from the
+side of his chest.
+
+255
+00:13:41,921 --> 00:13:44,255
+I think his heart's
+starting to bleed.
+
+256
+00:13:44,357 --> 00:13:47,074
+Hang a unit of blood!
+Page Hahn and Sloan now!
+
+257
+00:13:47,176 --> 00:13:48,609
+Right away.
+
+258
+00:13:52,982 --> 00:13:55,683
+Tyler, could you get
+me more gauze, please?
+
+259
+00:13:55,785 --> 00:13:58,285
+Why do you need more
+gauze? 'Cause I'm bleeding?
+
+260
+00:13:58,387 --> 00:14:01,456
+- I'm still bleeding?
+- We have blood going in, too.
+
+261
+00:14:01,558 --> 00:14:03,758
+Is it going in as
+fast as it's going out?
+
+262
+00:14:03,860 --> 00:14:08,713
+I'm asking because I'm starting
+to feel, like, queasy. And weak.
+
+263
+00:14:08,815 --> 00:14:11,282
+Maybe like a person
+who's losing a lot of blood.
+
+264
+00:14:11,367 --> 00:14:14,602
+OK, I'm transferring
+now, Nick. You ready?
+
+265
+00:14:14,704 --> 00:14:15,836
+Yeah.
+
+266
+00:14:17,807 --> 00:14:21,276
+Lexie? Should I
+be calling people?
+
+267
+00:14:21,378 --> 00:14:23,645
+Should I be calling my
+family or somebody?
+
+268
+00:14:23,747 --> 00:14:27,415
+I think... I think the
+bleeding's stopped.
+
+269
+00:14:27,517 --> 00:14:31,151
+- How you doing, Nick?
+- Dr. Sloan. It's Dr. Sloan.
+
+270
+00:14:31,253 --> 00:14:33,187
+- I think the bleeding stopped.
+- You OK?
+
+271
+00:14:33,290 --> 00:14:37,425
+- Do I look OK?
+- Actually, you do.
+
+272
+00:14:37,526 --> 00:14:41,078
+- You've got
+bleeding under control.
+- Why would it stop?
+
+273
+00:14:41,180 --> 00:14:44,048
+The herald bleed, which
+means there's a possibility
+
+274
+00:14:44,150 --> 00:14:46,567
+- of it bleeding.
+- I'm gonna get it closed up.
+
+275
+00:14:46,669 --> 00:14:49,703
+- There's no OR.
+- There will be in ten minutes.
+
+276
+00:14:49,805 --> 00:14:51,417
+Get a pressure
+dressing on this wound.
+
+277
+00:14:51,441 --> 00:14:53,635
+Get him prepped
+straight to OR Three.
+
+278
+00:14:53,659 --> 00:14:56,293
+Make sure it's cleared
+out. Good work, Grey.
+
+279
+00:14:56,395 --> 00:14:57,528
+Thank you.
+
+280
+00:14:59,349 --> 00:15:01,032
+Hey.
+
+281
+00:15:01,134 --> 00:15:05,303
+I'm in love with you now. I've
+forgotten entirely about my ex.
+
+282
+00:15:11,344 --> 00:15:13,444
+- Come on! Are you kidding me?
+- What?
+
+283
+00:15:13,546 --> 00:15:15,880
+I have a patient on
+the table... I got to go.
+
+284
+00:15:15,982 --> 00:15:18,216
+- Erica!
+- Page the cardio fellow,
+
+285
+00:15:18,318 --> 00:15:21,685
+then book an OR. Have it
+waiting when they get him free.
+
+286
+00:15:31,481 --> 00:15:32,846
+Why am I not surprised?
+
+287
+00:15:32,948 --> 00:15:35,349
+Dr. Bailey is very sorry.
+She's very, very sorry.
+
+288
+00:15:35,451 --> 00:15:37,819
+- I'm out of here.
+- She just asked me to ask
+
+289
+00:15:37,920 --> 00:15:41,238
+if you could wait longer. She's
+almost done with the surgery.
+
+290
+00:15:41,341 --> 00:15:45,642
+It's more complicated than
+expected, but is almost done.
+
+291
+00:15:45,744 --> 00:15:48,512
+Fine, I'll wait. But
+you tell her I'm tired
+
+292
+00:15:48,614 --> 00:15:51,382
+of her choosing everything
+over our marriage.
+
+293
+00:15:51,484 --> 00:15:52,933
+The last time. I'm finished.
+
+294
+00:15:53,036 --> 00:15:57,888
+Tell her the only reason I'm
+staying is to tell her myself.
+
+295
+00:15:57,990 --> 00:16:01,258
+- What the hell did you do?
+- Nothing. I cut the cable.
+
+296
+00:16:01,360 --> 00:16:04,095
+You cut the cable? Showing
+off for your girlfriend?
+
+297
+00:16:04,196 --> 00:16:05,646
+Any idea how screwed you are?
+
+298
+00:16:05,748 --> 00:16:08,449
+It's not his fault. I'm
+holding this guy's coronary.
+
+299
+00:16:08,551 --> 00:16:11,685
+- Did somebody page Hahn?
+- - What the hell happened?
+
+300
+00:16:11,788 --> 00:16:13,265
+- Graft blew.
+- Damn it!
+
+301
+00:16:13,289 --> 00:16:16,256
+- If you need me to...
+- Need you to stay quiet.
+
+302
+00:16:16,358 --> 00:16:19,493
+- Get more suction in here.
+- Just hold onto that.
+
+303
+00:16:26,152 --> 00:16:28,419
+O'Malley?
+
+304
+00:16:28,521 --> 00:16:31,389
+- Your husband is waiting.
+- Good.
+
+305
+00:16:31,491 --> 00:16:34,508
+- He's waiting and...
+- Look, I heard you.
+
+306
+00:16:34,611 --> 00:16:37,562
+Why aren't you scrubbed
+in? I could use a hand.
+
+307
+00:16:37,664 --> 00:16:43,151
+He said something about you
+choosing everything over your marriage.
+
+308
+00:16:44,320 --> 00:16:46,354
+He said that?
+
+309
+00:16:46,456 --> 00:16:49,423
+- What else did he say?
+- I think that was about it.
+
+310
+00:16:49,525 --> 00:16:51,075
+You think or you know?
+
+311
+00:16:53,062 --> 00:16:56,080
+He said this was the last
+time, and he was finished.
+
+312
+00:16:58,367 --> 00:17:00,868
+I'm in surgery, O'Malley.
+
+313
+00:17:00,970 --> 00:17:03,504
+Did you tell him that I'm
+trying to save a man's life?
+
+314
+00:17:03,606 --> 00:17:06,440
+- Yes.
+- That I want to be there
+
+315
+00:17:06,559 --> 00:17:09,610
+with him now, but if I were
+to leave, this man would die?
+
+316
+00:17:09,712 --> 00:17:11,472
+- Tell him that?
+- Yeah. Yes.
+
+317
+00:17:11,514 --> 00:17:15,433
+You need to go back out there
+and tell him that I took a vow.
+
+318
+00:17:15,535 --> 00:17:17,501
+A vow to save lives.
+
+319
+00:17:17,604 --> 00:17:20,904
+Remember that he also took
+a vow. For better or for worse.
+
+320
+00:17:20,990 --> 00:17:23,657
+You tell him that it's his job,
+
+321
+00:17:23,759 --> 00:17:26,160
+as a husband, to
+understand that.
+
+322
+00:17:26,262 --> 00:17:29,763
+You tell him that I'm standing
+by my vow. For better or worse.
+
+323
+00:17:29,866 --> 00:17:31,577
+Tell him I'm holding
+him to his vow.
+
+324
+00:17:31,601 --> 00:17:35,102
+You tell him if he's thinking
+about leaving right now,
+
+325
+00:17:35,204 --> 00:17:38,138
+that he might find
+himself hurt and wounded
+
+326
+00:17:38,240 --> 00:17:40,107
+and needing an operation.
+
+327
+00:17:40,209 --> 00:17:43,477
+He may not get a surgeon who
+is as married to her vows as I am.
+
+328
+00:17:43,579 --> 00:17:45,312
+You tell him that!
+
+329
+00:17:48,350 --> 00:17:50,384
+- Can I just go do some charts?
+- Go!
+
+330
+00:17:58,811 --> 00:18:00,711
+- It's in.
+- It's in?
+
+331
+00:18:00,813 --> 00:18:02,446
+The wire's in.
+
+332
+00:18:05,134 --> 00:18:07,919
+- Steve, are you still?
+- Yes, sir. Very still.
+
+333
+00:18:11,691 --> 00:18:14,103
+Stop looking at me
+like I killed your patient.
+
+334
+00:18:14,127 --> 00:18:15,526
+I am not a technician.
+
+335
+00:18:15,628 --> 00:18:17,255
+- I did my best.
+- You didn't.
+
+336
+00:18:17,279 --> 00:18:19,074
+Yes, I did do my best, damn it!
+
+337
+00:18:19,098 --> 00:18:21,199
+Calm down. Take a
+deep breath and think.
+
+338
+00:18:21,301 --> 00:18:24,535
+What did you miss?
+What are you forgetting?
+
+339
+00:18:32,544 --> 00:18:36,880
+- You forgot the restart button?
+- I forgot to press restart.
+
+340
+00:18:36,982 --> 00:18:38,949
+Yeah, working. It's working.
+
+341
+00:18:39,051 --> 00:18:41,735
+It's working. It's working.
+
+342
+00:18:41,837 --> 00:18:44,288
+Santa Cruz is not
+just a party school.
+
+343
+00:18:44,390 --> 00:18:46,157
+- Dr. Shepherd?
+- Yes?
+
+344
+00:18:46,259 --> 00:18:47,925
+Your sleeves.
+
+345
+00:18:53,449 --> 00:18:56,683
+This was never my
+plan. To die this way.
+
+346
+00:18:56,786 --> 00:19:00,204
+- You're not dying, Nick.
+- - You're going to the OR.
+
+347
+00:19:00,306 --> 00:19:03,307
+I know. That's what I'm saying.
+
+348
+00:19:03,409 --> 00:19:07,861
+I think we kind of have
+some say. Or at least a feeling.
+
+349
+00:19:07,963 --> 00:19:13,251
+But I never had that
+feeling, so I can't die, right?
+
+350
+00:19:17,189 --> 00:19:20,141
+I don't feel good. I feel...
+
+351
+00:19:20,243 --> 00:19:23,276
+- Oh! Nick? Nick?
+- Can you squeeze my hand?
+
+352
+00:19:23,378 --> 00:19:26,263
+- Oh, my God! What happened?
+- The blood to his brain...
+
+353
+00:19:26,365 --> 00:19:28,732
+It looks like he had
+a stroke. Let's go.
+
+354
+00:19:28,834 --> 00:19:31,051
+Let's move him
+carefully. Let's go.
+
+355
+00:19:33,006 --> 00:19:36,323
+You can't cry, Lexie. This
+isn't over. You can't cry.
+
+356
+00:19:43,182 --> 00:19:46,900
+Hey, you need to find the
+xiphoid process. You feel it?
+
+357
+00:19:48,571 --> 00:19:51,422
+- Got it.
+- Go two finger breadths
+to the left
+
+358
+00:19:51,524 --> 00:19:54,258
+- of the xiphoid.
+- I'm there.
+
+359
+00:19:55,177 --> 00:19:57,027
+Here.
+
+360
+00:19:59,165 --> 00:20:01,498
+- Eighteen-gauge.
+- Yeah.
+
+361
+00:20:01,600 --> 00:20:04,584
+- That is a very big needle.
+- I know. I'm sorry.
+
+362
+00:20:04,687 --> 00:20:08,205
+Angle the needle toward
+the left shoulder. Don't stab.
+
+363
+00:20:08,307 --> 00:20:10,652
+Don't hit the ventricle,
+don't drop the lung.
+
+364
+00:20:10,676 --> 00:20:12,404
+That wouldn't
+help matters either.
+
+365
+00:20:12,428 --> 00:20:14,562
+I changed my mind. I want out.
+
+366
+00:20:14,664 --> 00:20:18,098
+This is gonna help you, Ray.
+I'm gonna go on three, OK?
+
+367
+00:20:18,200 --> 00:20:21,051
+- One, two...
+- No, wait.
+
+368
+00:20:21,153 --> 00:20:25,506
+Tell Stan's wife I'm sorry.
+Tell Sara I'm sorry about Stan.
+
+369
+00:20:25,608 --> 00:20:29,576
+Tell her yourself. One, two...
+
+370
+00:20:29,679 --> 00:20:31,812
+Wait. Wait.
+
+371
+00:20:31,914 --> 00:20:33,663
+We're running out of time.
+
+372
+00:20:33,766 --> 00:20:35,415
+- Just wait.
+- OK.
+
+373
+00:20:35,518 --> 00:20:38,418
+- What's taking so long?
+- He's not ready.
+
+374
+00:20:38,521 --> 00:20:41,571
+I'm trying not to be scared.
+I don't want to die scared.
+
+375
+00:20:41,673 --> 00:20:45,876
+- I want to not be scared.
+- Ray, listen to me.
+
+376
+00:20:45,978 --> 00:20:48,412
+It's good to be scared.
+
+377
+00:20:48,514 --> 00:20:51,215
+It means you still
+have something to lose.
+
+378
+00:20:53,386 --> 00:20:56,971
+Yeah? Are you scared?
+
+379
+00:20:58,908 --> 00:21:00,674
+All the time.
+
+380
+00:21:03,630 --> 00:21:06,297
+OK. That's good.
+
+381
+00:21:06,866 --> 00:21:08,499
+OK, I'm ready.
+
+382
+00:21:08,601 --> 00:21:12,569
+But don't count. Just do
+it. Do it so I don't know it's...
+
+383
+00:21:18,844 --> 00:21:20,844
+The infection went to his heart.
+
+384
+00:21:20,946 --> 00:21:23,046
+His hack of a surgeon
+didn't check grafts.
+
+385
+00:21:23,149 --> 00:21:25,749
+Should've caught it.
+Should've checked. I missed.
+
+386
+00:21:25,851 --> 00:21:29,487
+Damn it, how did I miss
+it? Stupid, stupid, stupid.
+
+387
+00:21:29,589 --> 00:21:31,922
+- That's fascinating.
+- What?
+
+388
+00:21:32,024 --> 00:21:34,775
+You're as unkind to yourself
+as you are to everyone.
+
+389
+00:21:34,877 --> 00:21:36,543
+Sloan.
+
+390
+00:21:38,147 --> 00:21:41,915
+Dr. Sloan, his artery blew and he
+appears to be having a left-sided CVA.
+
+391
+00:21:42,017 --> 00:21:44,435
+- Where is he?
+- You told me bring him here.
+
+392
+00:21:46,839 --> 00:21:50,040
+- Hahn, you close?
+- No.
+
+393
+00:21:50,142 --> 00:21:52,326
+Yang, get him to a sterile
+procedure room. Run!
+
+394
+00:21:52,428 --> 00:21:55,629
+- Let's go.
+- I can help. What do you want me to do?
+
+395
+00:21:55,731 --> 00:21:57,647
+Anesthesiologist,
+nurse, equipment.
+
+396
+00:21:57,749 --> 00:22:00,233
+I'm on it. Stay with Hahn.
+
+397
+00:22:03,589 --> 00:22:07,992
+This man has four children.
+He has four children.
+
+398
+00:22:12,231 --> 00:22:14,509
+I feel like I'm
+going in too far.
+
+399
+00:22:14,533 --> 00:22:15,983
+Pull back! Pull back!
+
+400
+00:22:16,085 --> 00:22:18,852
+- Pull back! Pull back!
+- Chief, what am I doing?
+
+401
+00:22:18,955 --> 00:22:23,123
+Too far in. There's some ST
+elevation. Try angling more forward.
+
+402
+00:22:26,662 --> 00:22:30,914
+I got it! I got it! Ray?
+
+403
+00:22:33,018 --> 00:22:35,853
+That feels good. I can breathe.
+
+404
+00:22:35,954 --> 00:22:38,422
+He's almost stable!
+Get ready to cut him out!
+
+405
+00:22:38,524 --> 00:22:41,308
+All right. All right.
+
+406
+00:22:41,410 --> 00:22:45,395
+We're gonna get you out of here.
+We're getting you out right now.
+
+407
+00:22:46,999 --> 00:22:49,867
+- You're bleeding.
+- It's Ray's blood.
+
+408
+00:22:49,969 --> 00:22:51,802
+I can see that.
+
+409
+00:22:56,876 --> 00:22:59,477
+It could use a
+couple of stitches.
+
+410
+00:22:59,579 --> 00:23:02,580
+But you stayed calm and focused
+
+411
+00:23:02,682 --> 00:23:05,666
+and efficient in a
+very stressful situation.
+
+412
+00:23:05,768 --> 00:23:07,868
+That's impressive.
+
+413
+00:23:08,971 --> 00:23:11,071
+I was scared.
+
+414
+00:23:11,174 --> 00:23:15,642
+You did it anyway.
+Like I said, impressive.
+
+415
+00:23:23,085 --> 00:23:25,418
+Do not tell me that
+there isn't an OR.
+
+416
+00:23:25,520 --> 00:23:28,371
+This is for the chief. A
+paramedic's life is on the line.
+
+417
+00:23:28,474 --> 00:23:30,975
+- You need to find one now.
+- I'll see where we are.
+
+418
+00:23:31,060 --> 00:23:34,077
+Dr. Stevens? Thank
+God. How is he?
+
+419
+00:23:34,179 --> 00:23:37,731
+I... I believe he's
+still in surgery.
+
+420
+00:23:37,833 --> 00:23:40,067
+- But I don't know.
+- You don't know?
+
+421
+00:23:40,169 --> 00:23:41,685
+Why don't you...?
+
+422
+00:23:41,788 --> 00:23:43,988
+You said that you were
+gonna keep me informed...
+
+423
+00:23:44,023 --> 00:23:46,639
+I'm sorry. I'm on another case,
+but I was gonna check back...
+
+424
+00:23:46,759 --> 00:23:50,093
+- You're on another case?
+- I'm sorry.
+
+425
+00:23:50,195 --> 00:23:53,997
+I have four kids. Four
+terrified children who think that
+
+426
+00:23:54,099 --> 00:23:56,617
+their dad's gonna die.
+Did you have instructors
+
+427
+00:23:56,719 --> 00:23:58,730
+who didn't teach you
+how to be a doctor,
+
+428
+00:23:58,754 --> 00:24:03,323
+or bad parents who didn't teach
+you how to be a decent human?
+
+429
+00:24:03,425 --> 00:24:07,311
+- OR Two is clearing out now.
+- Thank you.
+
+430
+00:24:07,413 --> 00:24:10,597
+My husband, Jacob Nolston,
+went into surgery hours ago.
+
+431
+00:24:10,700 --> 00:24:14,017
+Please find someone who
+can tell me if he's dead or alive?
+
+432
+00:24:15,537 --> 00:24:18,505
+- She said that?
+- If you could wait
+a few more minutes,
+
+433
+00:24:18,608 --> 00:24:20,051
+you guys can talk to each other.
+
+434
+00:24:20,075 --> 00:24:22,560
+Because things
+get lost in translation
+
+435
+00:24:22,662 --> 00:24:25,378
+because this is clearly
+not a way to have what is
+
+436
+00:24:25,480 --> 00:24:27,326
+a very, very important
+conversation.
+
+437
+00:24:27,350 --> 00:24:29,733
+It's clearly not very important.
+
+438
+00:24:29,835 --> 00:24:32,486
+Our marriage is falling
+apart and she sends you.
+
+439
+00:24:32,588 --> 00:24:37,857
+Tucker. She's in surgery.
+
+440
+00:24:37,960 --> 00:24:41,111
+She's literally saving a life
+and she's gonna be here soon.
+
+441
+00:24:41,214 --> 00:24:42,958
+She's always
+saving a person's life.
+
+442
+00:24:42,982 --> 00:24:45,049
+She'll always be here soon.
+
+443
+00:24:45,134 --> 00:24:48,969
+You go ask her, when
+exactly is soon gonna come?
+
+444
+00:25:01,067 --> 00:25:05,535
+Excuse me. You're... You're
+the one who came to get me.
+
+445
+00:25:05,637 --> 00:25:09,423
+- Who told me about Stan.
+- Yes.
+
+446
+00:25:09,525 --> 00:25:12,693
+- Is Ray...?
+- He's in surgery.
+
+447
+00:25:13,996 --> 00:25:16,463
+OK. I have to go.
+
+448
+00:25:16,565 --> 00:25:19,399
+I have to get out of here, so...
+
+449
+00:25:21,037 --> 00:25:24,988
+Look, can you tell
+him that I'm sorry?
+
+450
+00:25:25,091 --> 00:25:27,975
+I can't stay here? I just can't
+come back here right now?
+
+451
+00:25:28,093 --> 00:25:31,644
+Ray wanted me to tell
+you that he's sorry too.
+
+452
+00:25:31,746 --> 00:25:33,992
+He's sorry he
+couldn't save Stan.
+
+453
+00:25:34,016 --> 00:25:37,234
+He wanted me to tell you
+that in case he didn't make it.
+
+454
+00:25:40,072 --> 00:25:43,873
+- Think he's not gonna make it?
+- I hope he makes it.
+
+455
+00:25:43,975 --> 00:25:45,942
+But you won't be here, so...
+
+456
+00:25:48,614 --> 00:25:50,614
+My husband is dead.
+
+457
+00:25:51,683 --> 00:25:55,819
+He's dead. Somewhere
+in this hospital.
+
+458
+00:25:56,789 --> 00:25:59,289
+How am I supposed to stay here?
+
+459
+00:25:59,391 --> 00:26:01,891
+<i>♪ Her heart in her throat ♪</i>
+
+460
+00:26:01,993 --> 00:26:04,127
+I don't know.
+
+461
+00:26:04,229 --> 00:26:06,380
+I don't know.
+
+462
+00:26:06,482 --> 00:26:08,960
+But I know that if Ray makes it,
+
+463
+00:26:08,984 --> 00:26:12,352
+he's gonna wake up and
+he's gonna have no one.
+
+464
+00:26:12,454 --> 00:26:16,222
+And you're gonna go home
+and you're gonna have...
+
+465
+00:26:16,324 --> 00:26:17,557
+No one.
+
+466
+00:26:17,659 --> 00:26:22,045
+I think it's better to have
+someone. Even if it hurts.
+
+467
+00:26:22,147 --> 00:26:25,048
+Even if it's the most
+painful thing you have to do.
+
+468
+00:26:25,150 --> 00:26:28,886
+Even if it's the most painful
+thing you've ever had to do.
+
+469
+00:26:28,987 --> 00:26:33,139
+I think it's better
+to have someone.
+
+470
+00:26:33,242 --> 00:26:36,076
+See this skin, O'Malley?
+
+471
+00:26:36,178 --> 00:26:39,146
+It looks a little jagged.
+
+472
+00:26:39,248 --> 00:26:43,883
+Does it look jagged to
+you? Because if it is, jagged,
+
+473
+00:26:43,985 --> 00:26:46,987
+I'm going to have to
+reposition the incision
+
+474
+00:26:47,089 --> 00:26:49,489
+so that it approximates
+more correctly.
+
+475
+00:26:49,591 --> 00:26:53,543
+If I do that, this
+man's swastika tattoo
+
+476
+00:26:53,645 --> 00:26:56,647
+might be unrecognizable.
+
+477
+00:26:59,351 --> 00:27:04,254
+- Yeah, it's a little jagged.
+- I thought so too.
+
+478
+00:27:06,192 --> 00:27:09,793
+- He left, right?
+- Yes, he left.
+
+479
+00:27:12,147 --> 00:27:13,813
+Ten-blade.
+
+480
+00:27:16,435 --> 00:27:19,953
+More lap pads. Pack
+them all around the heart.
+
+481
+00:27:20,055 --> 00:27:26,076
+<i>♪ Take this moment It is safe ♪</i>
+
+482
+00:27:26,178 --> 00:27:27,418
+Suction.
+
+483
+00:27:27,496 --> 00:27:29,713
+<i>♪ It's true pure and beautiful ♪</i>
+
+484
+00:27:29,815 --> 00:27:33,333
+Come on, Ray. Fight.
+
+485
+00:27:33,436 --> 00:27:38,505
+You will not die.
+You will not die.
+
+486
+00:27:38,607 --> 00:27:42,842
+You will not die.
+You will not die.
+
+487
+00:27:42,944 --> 00:27:45,128
+You will not die.
+
+488
+00:27:47,733 --> 00:27:51,602
+<i>♪ Eyes wide and heart warm ♪</i>
+
+489
+00:27:51,704 --> 00:27:55,105
+Don't do this, Mary.
+Come on, don't do this.
+
+490
+00:27:55,207 --> 00:27:57,941
+I need more light.
+Can I get more light?
+
+491
+00:27:59,345 --> 00:28:01,044
+Come on!
+
+492
+00:28:01,130 --> 00:28:03,246
+- He's coding.
+- Come on.
+
+493
+00:28:03,332 --> 00:28:06,050
+Live, please live. Please.
+
+494
+00:28:07,619 --> 00:28:08,852
+Please live.
+
+495
+00:28:24,386 --> 00:28:28,005
+He looks bad. He
+looks really bad.
+
+496
+00:28:28,107 --> 00:28:32,409
+His heart was severely damaged.
+And his lungs were compromised.
+
+497
+00:28:32,511 --> 00:28:36,413
+But he's young and strong
+and our hope is that he'll be fine.
+
+498
+00:28:52,781 --> 00:28:54,514
+Ray?
+
+499
+00:28:56,702 --> 00:28:58,401
+Ray?
+
+500
+00:29:00,956 --> 00:29:02,856
+I'm here.
+
+501
+00:29:14,236 --> 00:29:16,837
+Well, your liver had more
+damage than we saw on the CT
+
+502
+00:29:16,939 --> 00:29:19,472
+and then we found a
+perforation in your bowel.
+
+503
+00:29:19,574 --> 00:29:23,143
+But we took care of it all, and
+you should have a full recovery.
+
+504
+00:29:23,245 --> 00:29:25,462
+Not a full recovery.
+
+505
+00:29:26,849 --> 00:29:31,084
+Dr. Bail... She did
+this on purpose, right?
+
+506
+00:29:31,186 --> 00:29:34,271
+I don't understand. You
+have a black partner, right?
+
+507
+00:29:34,373 --> 00:29:36,240
+- Yeah.
+- Mary?
+
+508
+00:29:36,341 --> 00:29:39,393
+Yeah. Do you know how she is?
+
+509
+00:29:39,495 --> 00:29:41,128
+Are you two are friends?
+
+510
+00:29:42,598 --> 00:29:45,949
+Look, I'm not the devil, OK?
+
+511
+00:29:46,051 --> 00:29:49,069
+I'm just a guy with
+a belief system.
+
+512
+00:29:49,171 --> 00:29:50,887
+Mary's a nice girl.
+
+513
+00:29:50,989 --> 00:29:52,839
+We save lives together.
+That's a good time.
+
+514
+00:29:52,941 --> 00:29:56,310
+If she wanted to marry my
+brother, I'd have a problem with that.
+
+515
+00:29:56,412 --> 00:29:59,213
+But so would a lot of people.
+
+516
+00:29:59,315 --> 00:30:03,133
+I'm not that much different than
+most of the people you know.
+
+517
+00:30:04,987 --> 00:30:07,721
+Well, Dr. Bailey did
+save your life today.
+
+518
+00:30:07,823 --> 00:30:11,057
+A black woman saved your
+life at a great personal cost.
+
+519
+00:30:11,159 --> 00:30:14,394
+Next time you're looking at
+your tattoo and you're thinking
+
+520
+00:30:14,496 --> 00:30:17,864
+how much better white guys are
+than everyone, think about that.
+
+521
+00:30:17,966 --> 00:30:21,919
+Because between you and me?
+If I had been alone in that OR,
+
+522
+00:30:22,021 --> 00:30:23,765
+you'd probably
+be dead right now.
+
+523
+00:30:23,789 --> 00:30:26,723
+And, since we're
+sharing belief systems,
+
+524
+00:30:26,826 --> 00:30:31,111
+I believe if you were dead, the
+world would be a better place.
+
+525
+00:30:42,724 --> 00:30:44,757
+How's he doing?
+
+526
+00:30:44,859 --> 00:30:47,060
+He's OK. Surgery
+was pretty hairy.
+
+527
+00:30:47,162 --> 00:30:49,229
+He blew a graft
+when we were closing.
+
+528
+00:30:49,331 --> 00:30:52,799
+- But he's starting to rally.
+- Good. That's good.
+
+529
+00:30:54,669 --> 00:30:57,554
+- What are you doing here?
+- I was just checking...
+
+530
+00:30:57,656 --> 00:31:00,173
+We did fine without
+your help. Do you mind?
+
+531
+00:31:18,644 --> 00:31:21,144
+You're not heading home?
+
+532
+00:31:21,246 --> 00:31:25,682
+Just easier, at this point, to
+stay here until Tucker's asleep.
+
+533
+00:31:28,304 --> 00:31:31,271
+You know, I rose
+above too today.
+
+534
+00:31:31,373 --> 00:31:33,607
+- Yes, you did.
+- You were having a hard day.
+
+535
+00:31:33,709 --> 00:31:37,377
+You were busy rising
+above. But so was I.
+
+536
+00:31:37,479 --> 00:31:39,646
+Which is why I
+haven't said anything.
+
+537
+00:31:39,748 --> 00:31:42,549
+But now the day is
+over and I'm done.
+
+538
+00:31:42,651 --> 00:31:46,502
+- Excuse me?
+- Pulling me off
+of Hahn's surgery
+
+539
+00:31:46,604 --> 00:31:50,857
+was an abuse of power. You
+know, you needed help, OK.
+
+540
+00:31:50,959 --> 00:31:53,593
+But you used me. Because
+of the color of my skin.
+
+541
+00:31:53,695 --> 00:31:56,646
+I mean, you compromised
+the quality of my education
+
+542
+00:31:56,748 --> 00:32:01,151
+because of my
+color. I resent it.
+
+543
+00:32:14,983 --> 00:32:16,316
+You saved her life.
+
+544
+00:32:16,418 --> 00:32:18,936
+No, I fixed her brain.
+Restored motor skills.
+
+545
+00:32:19,038 --> 00:32:22,355
+A stressful, extremely
+difficult procedure, but no.
+
+546
+00:32:22,457 --> 00:32:24,357
+You saved her life.
+
+547
+00:32:53,905 --> 00:32:56,006
+OK.
+
+548
+00:32:56,108 --> 00:32:58,075
+Thanks. That was...
+
+549
+00:32:59,244 --> 00:33:00,576
+OK.
+
+550
+00:33:00,679 --> 00:33:04,163
+- Your voice is shaking.
+- I'm an imperfect person.
+
+551
+00:33:21,283 --> 00:33:23,149
+Are his parents coming?
+
+552
+00:33:23,251 --> 00:33:27,353
+They're on a plane from
+California. You gonna wait?
+
+553
+00:33:27,456 --> 00:33:29,689
+Yeah. I'm gonna wait.
+
+554
+00:33:50,161 --> 00:33:53,296
+- Hey.
+- I don't want you
+to date other people.
+
+555
+00:33:53,398 --> 00:33:56,032
+It may not be enough
+for you, but I'm trying here.
+
+556
+00:33:56,134 --> 00:34:00,187
+So I don't want you to date
+anybody but me. That's it.
+
+557
+00:34:04,693 --> 00:34:09,496
+Except... I'm scared
+as hell to want you.
+
+558
+00:34:09,598 --> 00:34:11,709
+But here I am
+wanting you anyway.
+
+559
+00:34:11,733 --> 00:34:16,302
+And fear means I have
+something to lose, right?
+
+560
+00:34:16,421 --> 00:34:18,138
+And I don't want to lose you.
+
+561
+00:34:22,977 --> 00:34:26,729
+- Meredith.
+- Don't. Don't say anything.
+
+562
+00:34:26,831 --> 00:34:30,400
+I'm gonna leave and you
+can say something tomorrow.
+
+563
+00:34:31,352 --> 00:34:33,252
+That's progress, right?
+
+564
+00:34:45,750 --> 00:34:50,720
+Hey. Hey. Hey. Are
+you...? Are you really OK?
+
+565
+00:34:50,822 --> 00:34:53,757
+Yeah. Yeah.
+
+566
+00:34:53,859 --> 00:34:56,325
+Alex. Come on. That was intense.
+
+567
+00:34:56,427 --> 00:34:59,095
+Intense and crazy
+and just awful.
+
+568
+00:34:59,197 --> 00:35:03,133
+How can you be OK
+after a day like that?
+
+569
+00:35:03,235 --> 00:35:08,070
+Alex. Alex. Why
+won't you talk to me?
+
+570
+00:35:09,108 --> 00:35:11,341
+What do you want to
+talk about, Rebecca?
+
+571
+00:35:11,443 --> 00:35:13,610
+How a guy almost bled
+out while I watched?
+
+572
+00:35:13,712 --> 00:35:16,045
+How I got suspended
+because you were there?
+
+573
+00:35:16,148 --> 00:35:18,092
+Ava. It's Ava. Not Rebecca.
+
+574
+00:35:18,116 --> 00:35:20,283
+Right. You're playing dress up.
+
+575
+00:35:20,385 --> 00:35:24,120
+You're here playing dress up.
+You have a husband, Rebecca.
+
+576
+00:35:24,222 --> 00:35:26,439
+You have a baby.
+And I have a life.
+
+577
+00:35:26,541 --> 00:35:29,475
+That girl you were talking to
+when playing med student?
+
+578
+00:35:29,578 --> 00:35:32,528
+I'm screwing her. She might
+be a bigger wreck than I am,
+
+579
+00:35:32,630 --> 00:35:35,832
+but she's not married. She's
+not gonna get me suspended.
+
+580
+00:35:35,934 --> 00:35:38,318
+She's not pretending to
+be somebody she's not.
+
+581
+00:35:38,420 --> 00:35:41,187
+- Alex...
+- Ask yourself
+what you're doing here.
+
+582
+00:35:41,289 --> 00:35:43,239
+Because, I think if
+you can get honest,
+
+583
+00:35:43,342 --> 00:35:46,076
+if you could just tell the
+damn truth for one minute,
+
+584
+00:35:46,178 --> 00:35:48,512
+I think you have to admit
+you're not here to talk.
+
+585
+00:36:16,474 --> 00:36:18,758
+You did a good job today.
+
+586
+00:36:18,860 --> 00:36:22,595
+That was not easy. What
+you did was not easy.
+
+587
+00:36:22,697 --> 00:36:24,480
+It was brave.
+
+588
+00:36:27,519 --> 00:36:29,786
+We killed him.
+
+589
+00:36:31,323 --> 00:36:33,022
+The hospital...
+
+590
+00:36:35,727 --> 00:36:38,761
+Sloan, us...
+
+591
+00:36:40,098 --> 00:36:41,965
+We were not prepared.
+
+592
+00:36:46,721 --> 00:36:49,455
+Yeah.
+
+593
+00:36:49,557 --> 00:36:51,857
+Yeah, that happens sometimes.
+
+594
+00:36:51,959 --> 00:36:53,426
+That's...
+
+595
+00:36:55,581 --> 00:36:58,381
+Do you have any idea
+how backwards that is?
+
+596
+00:37:00,352 --> 00:37:02,219
+We help more than we hurt.
+
+597
+00:37:09,728 --> 00:37:11,828
+I have no one.
+
+598
+00:37:38,340 --> 00:37:41,607
+This is gonna sound bizarre.
+
+599
+00:37:41,709 --> 00:37:44,827
+I realize, at this point, that
+this is gonna sound bizarre,
+
+600
+00:37:44,929 --> 00:37:49,566
+but any chance you people
+want to get a drink with me?
+
+601
+00:37:51,102 --> 00:37:52,702
+Why would we want to do that?
+
+602
+00:37:52,804 --> 00:37:55,538
+She's saying she needs a friend.
+
+603
+00:37:55,641 --> 00:37:58,023
+- OK. Fine. Let's drink.
+- You won't hit on me?
+
+604
+00:37:58,125 --> 00:38:00,877
+- I can't promise that.
+- If I say please?
+
+605
+00:38:00,979 --> 00:38:03,096
+He still can't promise that.
+
+606
+00:38:06,434 --> 00:38:07,667
+Fine.
+
+607
+00:38:20,715 --> 00:38:22,682
+Hey. I brought supplies.
+
+608
+00:38:31,192 --> 00:38:35,411
+<i>♪ That's it I'm all better now ♪</i>
+
+609
+00:38:35,513 --> 00:38:38,214
+<i>Some days, the world
+seems upside down.</i>
+
+610
+00:38:38,316 --> 00:38:40,633
+She's got no one.
+
+611
+00:38:42,103 --> 00:38:48,507
+<i>♪ And I feel light
+as a feather now ♪</i>
+
+612
+00:38:49,610 --> 00:38:54,313
+<i>♪ At last I finally
+know my worth ♪</i>
+
+613
+00:38:54,415 --> 00:38:58,818
+I'm drinking.
+
+614
+00:38:58,920 --> 00:39:00,487
+Are you drinking, Lexie?
+
+615
+00:39:02,290 --> 00:39:04,641
+Yeah. A drink would be good.
+
+616
+00:39:08,413 --> 00:39:11,447
+<i>♪ Turn the ringer
+off the phone ♪</i>
+
+617
+00:39:13,585 --> 00:39:17,453
+<i>♪ Light my orange
+candles at night ♪</i>
+
+618
+00:39:17,555 --> 00:39:21,240
+<i>♪ And I'm wishing
+on a new moon ♪</i>
+
+619
+00:39:21,342 --> 00:39:26,179
+- Hey.
+- I was Hahn's right hand today.
+
+620
+00:39:28,583 --> 00:39:30,894
+That's good,
+right? That's great.
+
+621
+00:39:30,918 --> 00:39:33,953
+<i>♪ I feel it coming ♪</i>
+
+622
+00:39:34,055 --> 00:39:35,855
+I think a patient feels better
+
+623
+00:39:35,957 --> 00:39:38,724
+if they know their
+kids aren't terrified.
+
+624
+00:39:38,826 --> 00:39:41,160
+They're more likely
+to pull through surgery
+
+625
+00:39:41,262 --> 00:39:44,063
+if their wives are not
+panicked. Those things matter.
+
+626
+00:39:44,165 --> 00:39:45,242
+Well, they do matter.
+
+627
+00:39:45,266 --> 00:39:46,983
+<i>♪ I close my eyes ♪</i>
+
+628
+00:39:47,085 --> 00:39:49,018
+I'm never gonna be Cristina.
+
+629
+00:39:50,254 --> 00:39:52,789
+Not gonna happen. I'm
+never gonna be Erica Hahn.
+
+630
+00:39:52,891 --> 00:39:56,492
+I am not kick-ass.
+
+631
+00:39:58,296 --> 00:40:00,245
+Thank God for that.
+
+632
+00:40:01,950 --> 00:40:06,219
+<i>♪ But somewhere in
+the air I'll learn to fly ♪</i>
+
+633
+00:40:06,321 --> 00:40:10,323
+<i>♪ And I'm wishing
+on a new moon ♪</i>
+
+634
+00:40:10,425 --> 00:40:12,124
+I love you.
+
+635
+00:40:14,229 --> 00:40:16,229
+I love you.
+
+636
+00:40:19,917 --> 00:40:22,285
+We're not gonna
+make this work, are we?
+
+637
+00:40:22,387 --> 00:40:25,872
+<i>♪ I feel it coming ♪</i>
+
+638
+00:40:25,974 --> 00:40:29,942
+Marriage is hard. I
+mean, even when it's right.
+
+639
+00:40:30,044 --> 00:40:31,284
+It's hard.
+
+640
+00:40:31,346 --> 00:40:32,811
+<i>♪ I feel it coming ♪</i>
+
+641
+00:40:32,914 --> 00:40:37,350
+And... the next time I do it,
+
+642
+00:40:37,451 --> 00:40:39,931
+I just want it to be forever.
+
+643
+00:40:42,757 --> 00:40:46,192
+And I don't think
+it's our chemistry.
+
+644
+00:40:48,029 --> 00:40:50,662
+I think it's our timing.
+
+645
+00:40:52,800 --> 00:40:55,367
+But I don't think
+it's our chemistry.
+
+646
+00:40:57,672 --> 00:40:59,872
+So we're saying maybe someday?
+
+647
+00:40:59,974 --> 00:41:03,292
+<i>♪ It's so easy to complain
+but it'll make you insane ♪</i>
+
+648
+00:41:03,394 --> 00:41:05,662
+<i>♪ That same routine ♪</i>
+
+649
+00:41:05,764 --> 00:41:08,565
+Yeah. Yeah, we're
+saying maybe someday.
+
+650
+00:41:08,667 --> 00:41:12,401
+<i>♪ But the grass
+is oh, so green ♪</i>
+
+651
+00:41:12,504 --> 00:41:15,705
+<i>♪ After winter rain ♪</i>
+
+652
+00:41:15,807 --> 00:41:18,774
+<i>♪ And I feel it coming ♪</i>
+
+653
+00:41:18,877 --> 00:41:21,711
+<i>♪ I feel it coming ♪</i>
+
+654
+00:41:21,813 --> 00:41:26,949
+<i>♪ I feel it coming ♪</i>
+
+655
+00:41:27,051 --> 00:41:30,803
+<i>♪ I feel it coming now ♪</i>
+
+656
+00:41:30,905 --> 00:41:34,106
+<i>♪ I feel it coming now ♪</i>
+
+657
+00:41:34,208 --> 00:41:36,776
+<i>♪ I feel it coming ♪</i>
+
+658
+00:41:36,878 --> 00:41:39,528
+Come on, Izzie.
+
+659
+00:41:39,947 --> 00:41:41,046
+Dance party.
+
+660
+00:41:43,034 --> 00:41:44,400
+You want to dance?
+
+661
+00:41:47,772 --> 00:41:49,873
+I will if you want me to.
+
+662
+00:41:49,975 --> 00:41:53,392
+<i>And then, somehow, improbably</i>
+
+663
+00:41:53,494 --> 00:41:55,995
+<i>and when you least expect it,</i>
+
+664
+00:41:56,097 --> 00:41:58,263
+<i>the world rights itself again.</i>

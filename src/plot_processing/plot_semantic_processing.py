@@ -95,6 +95,11 @@ def semantic_split(text: str, llm: AzureChatOpenAI, window_size: int = None, cor
     sentences = split_into_sentences(text)
     total_sentences = len(sentences)
     
+    # Check if we have any sentences to process
+    if total_sentences == 0:
+        logger.warning("No sentences found in text, returning empty segments")
+        return []
+    
     sentences[0] = '<BOS> ' + sentences[0]
     
     initial_segments = []

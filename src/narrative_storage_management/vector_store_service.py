@@ -241,39 +241,69 @@ class VectorStoreService:
             # Convert embeddings to numpy array
             embeddings = np.array(results['embeddings'])
             
-            # Pre-compute distance matrix using cosine distance
-            distance_matrix = np.zeros((len(embeddings), len(embeddings)))
-            for i in range(len(embeddings)):
-                for j in range(len(embeddings)):
-                    if i != j:
-                        # Calculate cosine distance
-                        dot_product = np.dot(embeddings[i], embeddings[j])
-                        norm_i = np.linalg.norm(embeddings[i])
-                        norm_j = np.linalg.norm(embeddings[j])
-                        if norm_i == 0 or norm_j == 0:
-                            distance_matrix[i, j] = 1.0
-                        else:
-                            cosine_sim = dot_product / (norm_i * norm_j)
-                            # Ensure similarity is within [-1, 1]
-                            cosine_sim = np.clip(cosine_sim, -1.0, 1.0)
-                            distance_matrix[i, j] = 1.0 - cosine_sim
+            # Option 1: Use embeddings directly (recommended - no warnings)
+            # This allows HDBSCAN to work in the original vector space
+            try:
+                # Normalize embeddings for cosine similarity
+                # When embeddings are normalized, euclidean distance = 2 * (1 - cosine_similarity)
+                normalized_embeddings = embeddings / np.linalg.norm(embeddings, axis=1, keepdims=True)
+                
+                clusterer = HDBSCAN(
+                    min_cluster_size=min_cluster_size,
+                    min_samples=min_samples,
+                    cluster_selection_epsilon=cluster_selection_epsilon,
+                    metric='euclidean',  # Use euclidean on normalized embeddings (equivalent to cosine)
+                    core_dist_n_jobs=-1,
+                    cluster_selection_method='leaf',
+                    prediction_data=True,  # Now this works
+                    allow_single_cluster=True
+                )
+                
+                # Fit using the normalized embeddings
+                clusterer.fit(normalized_embeddings)
+                labels = clusterer.labels_
+                probabilities = clusterer.probabilities_
+                
+            except Exception as e:
+                logger.warning(f"Direct embedding clustering failed, falling back to distance matrix: {e}")
+                
+                # Option 2: Fallback to precomputed distance matrix (original approach)
+                # Pre-compute distance matrix using cosine distance
+                distance_matrix = np.zeros((len(embeddings), len(embeddings)))
+                for i in range(len(embeddings)):
+                    for j in range(len(embeddings)):
+                        if i != j:
+                            # Calculate cosine distance
+                            dot_product = np.dot(embeddings[i], embeddings[j])
+                            norm_i = np.linalg.norm(embeddings[i])
+                            norm_j = np.linalg.norm(embeddings[j])
+                            if norm_i == 0 or norm_j == 0:
+                                distance_matrix[i, j] = 1.0
+                            else:
+                                cosine_sim = dot_product / (norm_i * norm_j)
+                                # Ensure similarity is within [-1, 1]
+                                cosine_sim = np.clip(cosine_sim, -1.0, 1.0)
+                                distance_matrix[i, j] = 1.0 - cosine_sim
 
-            # Modify HDBSCAN parameters
-            clusterer = HDBSCAN(
-                min_cluster_size=min_cluster_size,
-                min_samples=min_samples,
-                cluster_selection_epsilon=cluster_selection_epsilon,
-                metric='precomputed',
-                core_dist_n_jobs=-1,
-                cluster_selection_method='leaf',
-                prediction_data=True,
-                allow_single_cluster=True
-            )
-            
-            # Fit using the distance matrix
-            clusterer.fit(distance_matrix)
-            labels = clusterer.labels_
-            probabilities = clusterer.probabilities_
+                # Use precomputed distances (no prediction data available)
+                clusterer = HDBSCAN(
+                    min_cluster_size=min_cluster_size,
+                    min_samples=min_samples,
+                    cluster_selection_epsilon=cluster_selection_epsilon,
+                    metric='precomputed',
+                    core_dist_n_jobs=-1,
+                    cluster_selection_method='leaf',
+                    prediction_data=False,  # Must be False for precomputed distances
+                    allow_single_cluster=True
+                )
+                
+                # Fit using the distance matrix
+                clusterer.fit(distance_matrix)
+                labels = clusterer.labels_
+                
+                # Probabilities are not available when using precomputed distances
+                probabilities = [1.0 if label != -1 else 0.0 for label in labels]
+                logger.info("Using fallback probabilities as prediction data not available with precomputed distances")
 
             # Group arcs by cluster
             clusters = {}
@@ -292,16 +322,39 @@ class VectorStoreService:
             # Format results
             similar_groups = []
             for cluster_id, arcs in clusters.items():
-                # Use the pre-computed distance matrix for average distance
                 cluster_indices = [results['ids'].index(arc['id']) for arc in arcs]
                 distances = []
-                for i, idx1 in enumerate(cluster_indices):
-                    for j, idx2 in enumerate(cluster_indices[i+1:], i+1):
-                        distances.append(distance_matrix[idx1, idx2])
+                
+                # Calculate average distance between arcs in cluster
+                if 'distance_matrix' in locals():
+                    # Use pre-computed distance matrix (fallback approach)
+                    for i, idx1 in enumerate(cluster_indices):
+                        for j, idx2 in enumerate(cluster_indices[i+1:], i+1):
+                            distances.append(distance_matrix[idx1, idx2])
+                else:
+                    # Calculate cosine distances from embeddings directly (preferred approach)
+                    for i, idx1 in enumerate(cluster_indices):
+                        for j, idx2 in enumerate(cluster_indices[i+1:], i+1):
+                            # Calculate cosine distance between embeddings
+                            emb1, emb2 = embeddings[idx1], embeddings[idx2]
+                            dot_product = np.dot(emb1, emb2)
+                            norm1, norm2 = np.linalg.norm(emb1), np.linalg.norm(emb2)
+                            if norm1 == 0 or norm2 == 0:
+                                distances.append(1.0)
+                            else:
+                                cosine_sim = dot_product / (norm1 * norm2)
+                                cosine_sim = np.clip(cosine_sim, -1.0, 1.0)
+                                distances.append(1.0 - cosine_sim)
                 
                 avg_distance = np.mean(distances) if distances else 0
                 avg_probability = np.mean([arc['cluster_probability'] for arc in arcs])
-                cluster_persistence = clusterer.cluster_persistence_[cluster_id]
+                
+                # Handle cluster persistence - may not be available with precomputed distances
+                try:
+                    cluster_persistence = clusterer.cluster_persistence_[cluster_id]
+                except (AttributeError, IndexError):
+                    # Fallback: estimate persistence based on cluster size and avg distance
+                    cluster_persistence = max(0.1, 1.0 - avg_distance)
 
                 similar_groups.append({
                     "cluster_id": int(cluster_id),

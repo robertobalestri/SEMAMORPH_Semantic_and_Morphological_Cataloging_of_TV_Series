@@ -1,19 +1,21 @@
 [
   {
-    "entity_name": "jeremy",
-    "best_appellation": "Jeremy",
+    "entity_name": "izzie_stevens",
+    "best_appellation": "Izzie Stevens",
     "appellations": [
-      "Jeremy"
+      "Izzie Stevens",
+      "Izzie",
+      "Stevens"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "derek_shepherd",
-    "best_appellation": "Derek Shepherd",
+    "entity_name": "cristina_yang",
+    "best_appellation": "Cristina Yang",
     "appellations": [
-      "Derek",
-      "Dr. Shepherd",
-      "Derek Shepherd"
+      "Cristina Yang",
+      "Cristina",
+      "Yang"
     ],
     "entity_type": "PERSON"
   },
@@ -22,57 +24,39 @@
     "best_appellation": "Ellis Grey",
     "appellations": [
       "Ellis Grey",
-      "Meredith's mother"
+      "Ellis",
+      "Dr. Grey"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "alex_karev",
-    "best_appellation": "Alex Karev",
+    "entity_name": "derek_shepherd",
+    "best_appellation": "Derek Shepherd",
     "appellations": [
-      "Alex",
-      "Alex Karev"
+      "Derek Shepherd",
+      "Derek",
+      "Dr. Shepherd",
+      "Shepherd"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "isobel_stevens",
-    "best_appellation": "Isobel Stevens",
+    "entity_name": "meredith_grey",
+    "best_appellation": "Meredith Grey",
     "appellations": [
-      "Isobel",
-      "Isobel Stevens",
-      "Izzie",
-      "Isobel Izzie"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "george_omalley",
-    "best_appellation": "George O'Malley",
-    "appellations": [
-      "George",
-      "George O'Malley",
-      "O'Malley",
-      "007"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "tony_savitch",
-    "best_appellation": "Tony Savitch",
-    "appellations": [
-      "Tony",
-      "Tony Savitch"
+      "Meredith Grey",
+      "Meredith",
+      "Grey"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "miranda_bailey",
-    "best_appellation": "Miranda Bailey",
+    "best_appellation": "Dr. Bailey",
     "appellations": [
+      "Dr. Bailey",
       "Bailey",
-      "Miranda Bailey",
-      "The Nazi"
+      "the Nazi"
     ],
     "entity_type": "PERSON"
   },
@@ -80,77 +64,50 @@
     "entity_name": "katie_bryce",
     "best_appellation": "Katie Bryce",
     "appellations": [
-      "Katie Bryce"
+      "Katie Bryce",
+      "Katie",
+      "Bryce"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "mr_jones",
-    "best_appellation": "Mr. Jones",
+    "entity_name": "george_omalley",
+    "best_appellation": "George O'Malley",
     "appellations": [
-      "Mr. Jones"
+      "George O'Malley",
+      "George",
+      "O'Malley",
+      "007"
+    ],
+    "entity_type": "PERSON"
+  },
+  {
+    "entity_name": "richard_webber",
+    "best_appellation": "Dr. Webber",
+    "appellations": [
+      "Dr. Webber",
+      "Webber",
+      "the chief of surgery",
+      "Chief"
     ],
     "entity_type": "PERSON"
   },
   {
     "entity_name": "preston_burke",
-    "best_appellation": "Preston Burke",
+    "best_appellation": "Dr. Burke",
     "appellations": [
-      "Burke",
-      "Preston Burke",
-      "George Preston Burke"
+      "Dr. Burke",
+      "Burke"
     ],
     "entity_type": "PERSON"
   },
   {
-    "entity_name": "cristina_yang",
-    "best_appellation": "Cristina Yang",
+    "entity_name": "alex_karev",
+    "best_appellation": "Alex Karev",
     "appellations": [
-      "Cristina",
-      "Cristina Yang"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "gloria",
-    "best_appellation": "Gloria",
-    "appellations": [
-      "Gloria"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "tyler",
-    "best_appellation": "Tyler",
-    "appellations": [
-      "Tyler",
-      "Nurse Tyler"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "the_bryce",
-    "best_appellation": "Katie Bryce's parents",
-    "appellations": [
-      "Katie Bryce\u2019s parents",
-      "Katie Bryce's parents"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "god",
-    "best_appellation": "God",
-    "appellations": [
-      "God"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "the_chief",
-    "best_appellation": "The Chief",
-    "appellations": [
-      "The Chief",
-      "chief"
+      "Alex Karev",
+      "Alex",
+      "Karev"
     ],
     "entity_type": "PERSON"
   }

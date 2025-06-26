@@ -35,7 +35,8 @@ NARRATIVE_ARC_GUIDELINES = dedent("""
 6. **Arc Distinctness:**
     - **Clarity**: Each arc should be distinct without overlapping with others.
     - **Main Type**: Even if an arc is a little mix of soap and genre-specific type, choose the most appropriate type.
-
+    - **Non-overlapping**: Ensure arcs do not share key plot points or character developments.
+    
 7. **Key Progression Points:**
     - **Major Events**: Identify turning points that advance the storyline or alter character dynamics during the specific episode.
 
@@ -129,13 +130,10 @@ Determine if this specific season arc continues or develops in this episode. If 
 
 # 2. Arc Verifier
 ARC_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
-    """You are an Expert Narratology Scholar. Verify and finalize narrative arcs based on the episode and season plots.
+    """You are an Expert Narratology Scholar. Verify and finalize narrative arcs based on the episode plot.
 
 **Episode Plot:**
 {episode_plot}
-
-**Season Plot:**
-{season_plot}
 
 **Arcs to Verify:**
 {arcs_to_verify}
@@ -159,7 +157,7 @@ ARC_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
 
 # 3. Arc Deduplicator
 ARC_DEDUPLICATOR_PROMPT = ChatPromptTemplate.from_template(
-    """You are a Narrative Arc Deduplication Expert. Review and deduplicate arcs only when they are truly redundant.
+    """You are a Narrative Arc Synthesizer and Consolidator. Your primary goal is to merge overlapping and fragmented arcs into a smaller set of coherent, distinct, major storylines. Be aggressive and decisive in your consolidation.
 
 **Episode Plot:**
 {episode_plot}
@@ -173,47 +171,22 @@ ARC_DEDUPLICATOR_PROMPT = ChatPromptTemplate.from_template(
 **Guidelines:**
 {guidelines}
 
-**Deduplication Rules:**
-1. Only merge arcs if they describe  the same storyline.
-2. Keep arcs separate if they:
-   - Focus on different aspects of a character's journey
-   - Involve different character relationships
-   - Cover different themes or conflicts
-   - Have different main characters
+**Consolidation Rules:**
+1.  **Merge Thematic Facets into a Single Storyline**: If multiple arcs describe different aspects of the same core story (e.g., one arc about internal team conflict, another about external pressure on the team), **merge them**. Create a single, comprehensive arc that covers all these facets.
 
-3. For character-focused arcs:
-   - Keep personal/emotional arcs separate from professional arcs
-   - Keep relationship arcs separate from individual character arcs
-   - Keep separate any character arc that significantly intersects with an anthology case
-   Example: If there's an anthology case and a character's development arc, keep them separate if the case significantly impacts their growth
+2.  **Combine Individual Journeys into Group Arcs**: If an individual character's arc is primarily a sub-plot of a larger group's story, **merge it into the group arc**. The description of the consolidated arc should then highlight the key individual journeys within it.
+    -   **Exception**: Keep an individual arc separate *only if* it has a major, distinct storyline that exists largely independent of the group's main plot (e.g., a character's secret personal quest, a family drama separate from their professional life).
 
-4. For institutional/group arcs:
-   - Keep specific team dynamics separate from broader organizational challenges
-   - Keep mentor-mentee relationships separate from general group dynamics
-   - Keep separate any group dynamics specifically tied to anthology cases
-   Example: If there's a case-of-the-week and an arc about workplace dynamics, keep them separate if they represent different aspects
+3.  **Synthesize Relationship Dynamics**: If an arc about a specific relationship (e.g., "Character A and B's Rivalry") is a central dynamic of a larger group or institutional arc, **merge it**. The new description should feature that relationship as a key driver of the consolidated storyline.
 
-5. Anthology Arc Considerations:
-   - The anthology arcs provided above are for context only - DO NOT modify or include them in output
-   - When a character's story intersects with an anthology case:
-     * Keep the character's broader arc (e.g., "Character's Personal Growth")
-     * Keep their specific involvement in the case separate (handled by anthology arc)
-   - When organizational challenges relate to anthology cases:
-     * Keep general challenges (e.g., "Workplace Culture Issues")
-     * Keep case-specific challenges separate (handled by anthology arc)
+4.  **Maintain Title but update Description if needed**: When merging, synthesize a new, more comprehensive description that accurately covers the full scope of the new, consolidated storyline. Just remember that what happens in the specific episode is already covered by the "progression". So you only need to update the description if really necessary.
 
-**Examples - Keep Separate:**
-- "Sarah's Leadership Development" (about career growth)
-- "Sarah and Tom's Partnership" (about their relationship)
-- "Sarah's Identity Crisis" (about personal growth)
-- "Sarah's Role in the Henderson Case" (covered by anthology arc)
+5.  **Anthology Arcs are Off-Limits**: The anthology arcs provided are for context only. DO NOT modify, merge, or include them in the final output.
 
-**Examples - Merge:**
-- "Sarah's Journey to Leadership"
-- "Sarah's Leadership Evolution"
-(These describe the same character development storyline)
+**Your Task:**
+Review the "Arcs to Review" and apply the consolidation rules to produce a refined, deduplicated list of major, non-anthology storylines.
 
-**Return ONLY the deduplicated non-anthology arcs as a JSON array:**
+**Return ONLY the consolidated and refined non-anthology arcs as a JSON array:**
 {output_json_format}
 """
 )
@@ -288,9 +261,7 @@ ANTHOLOGY_ARC_EXTRACTOR_PROMPT = ChatPromptTemplate.from_template(
 3. Provide clear descriptions of each case's significance.
 4. DO NOT create arcs that are not about a genre-specific case of the episode.
 
-You must be sure that the arc is self-contained and not a part of a larger arc in the season.
-So here is the season plot:
-{season_plot}
+Each arc should be self-contained within the episode and focus on the specific case or procedure presented.
 
 **Example of titles:**
 - Medical Case: The Heart Attack of Bob Bale
@@ -378,10 +349,7 @@ SOAP_AND_GENRE_ARC_EXTRACTOR_PROMPT = ChatPromptTemplate.from_template(
 
 # 9. Seasonal Arc Optimizer
 SEASONAL_ARC_OPTIMIZER_PROMPT = ChatPromptTemplate.from_template(
-    """You are a Seasonal Arc Optimization Expert. Optimize arc titles/descriptions and merge overlapping arcs based on the season plot.
-
-**Season Plot:**
-{season_plot}
+    """You are a Seasonal Arc Optimization Expert. Optimize arc titles/descriptions and merge overlapping arcs based on the existing seasonal context.
 
 **Present Season Arcs (if any):**
 {present_season_arcs}
@@ -391,7 +359,7 @@ SEASONAL_ARC_OPTIMIZER_PROMPT = ChatPromptTemplate.from_template(
 
 **Guidelines:**
 1. **Title Optimization:**
-    - Reflect the specific arc scope across the season.
+    - Reflect the specific arc scope based on existing seasonal context.
     - Be precise, including key characters, relationships, and themes.
     - Avoid vague or overly broad titles.
     - IF AN ARC IS IN PRESENT SEASON ARCS, DO NOT CHANGE THE TITLE!

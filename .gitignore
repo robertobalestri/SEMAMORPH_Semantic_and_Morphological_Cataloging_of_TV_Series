@@ -15,3 +15,4 @@ agent_logs/
 frontend backup/
 *copy/
 *copy.db
+narrative_storage/*

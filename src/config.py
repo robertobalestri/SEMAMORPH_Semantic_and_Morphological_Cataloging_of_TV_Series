@@ -36,9 +36,11 @@ class Config:
     def _create_default_config(self):
         """Create default configuration file."""
         self.config['processing'] = {
-            'use_original_plot_as_summary': 'false',
-            'max_summary_length': '2000',
-            'summarization_model': 'cheap'
+            'pronoun_replacement_batch_size': '40',
+            'pronoun_replacement_context_size': '40', 
+            'text_simplification_batch_size': '40',
+            'semantic_segmentation_window_size': '40',
+            'semantic_correction_batch_size': '20'
         }
         
         self.config['paths'] = {
@@ -90,24 +92,9 @@ class Config:
     
     # Convenience properties for commonly used settings
     @property
-    def use_original_plot_as_summary(self) -> bool:
-        """Whether to use original plot as summary instead of generating new one."""
-        return self.get_bool('processing', 'use_original_plot_as_summary', False)
-    
-    @property
-    def max_summary_length(self) -> int:
-        """Maximum length for plot summarization."""
-        return self.get_int('processing', 'max_summary_length', 2000)
-    
-    @property
-    def summarization_model(self) -> str:
-        """Model to use for summarization."""
-        return self.get_str('processing', 'summarization_model', 'cheap')
-    
-    @property
     def pronoun_replacement_batch_size(self) -> int:
         """Batch size for pronoun replacement processing."""
-        return self.get_int('processing', 'pronoun_replacement_batch_size', 18)
+        return self.get_int('processing', 'pronoun_replacement_batch_size', 40)
     
     @property
     def pronoun_replacement_context_size(self) -> int:
@@ -128,11 +115,6 @@ class Config:
     def semantic_correction_batch_size(self) -> int:
         """Batch size for semantic segment correction."""
         return self.get_int('processing', 'semantic_correction_batch_size', 3)
-    
-    @property
-    def narrative_arc_extraction_method(self) -> str:
-        """Method to use for narrative arc extraction."""
-        return self.get_str('processing', 'narrative_arc_extraction_method', 'original')
     
     @property
     def data_dir(self) -> str:

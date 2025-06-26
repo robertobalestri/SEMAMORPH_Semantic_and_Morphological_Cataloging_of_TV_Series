@@ -2,61 +2,151 @@
 """
 Data Cleaning Script for SEMAMORPH Project
 
-This script cleans the data folder by removing only the multiagent suggested episode arcs files.
-All other files will be preserved, including:
-- *_plot.txt files (original plot files)
-- *_full_dialogues.json files (original dialogue files)
-- *_plot_simplified.txt (simplified plots)
+This script cleans the data folder while preserving only the original source files:
+- *.srt files (subtitle files)
+- entities.json files (original entity files)
+
+All other processed files will be deleted, including:
+- *_plot.txt (generated plot files)
+- *_plot_scenes.json (plot scenes)
+- *_scene_timestamps.json (scene timestamps)
 - *_plot_named.txt (named plots)
 - *_plot_entities_*.txt (entity-processed plots)
 - *_refined_entities.json (refined entity files)
 - *_raw_spacy_entities.json (raw entity files)
 - *_plot_semantic_segments.json (semantic segments)
-- *_summarized_plot.txt (summarized plots)
-- *_extracted_entities.json (extracted entities)
+- *_multiagent_suggested_episode_arcs.json (narrative arcs)
 
-Only the following files will be deleted:
-- *_multiagent_suggested_episode_arcs.json (multiagent narrative arcs)
+Additionally, this script will:
+- Clean narrative.db database (drop all tables except 'character' and 'character_appellation')
+- Remove the chroma_db folder completely
 
-This allows for regenerating narrative arcs while preserving all other processing results.
+This allows for a fresh reprocessing of the data while maintaining the original source material.
 
 Usage:
-    python clean_data.py [--dry-run] [--series SERIES] [--season SEASON]
+    python clean_data.py [--dry-run] [--series SERIES] [--season SEASON] [--no-db] [--no-chroma]
 
 Options:
     --dry-run    Show what would be deleted without actually deleting
     --series     Clean only specific series (e.g., GA, FIABA)
     --season     Clean only specific season (e.g., S01, S02)
+    --no-db      Skip database cleaning
+    --no-chroma  Skip chroma_db folder removal
 
 Examples:
     python clean_data.py --dry-run                    # Preview all deletions
-    python clean_data.py                              # Clean all data
+    python clean_data.py                              # Clean all data, db, and chroma
     python clean_data.py --series GA                  # Clean only GA series
     python clean_data.py --series GA --season S01     # Clean only GA S01
+    python clean_data.py --no-db --no-chroma          # Clean only file data
 """
 
 import os
 import argparse
 import sys
+import sqlite3
+import shutil
 from pathlib import Path
 from typing import List, Set, Tuple
 
 
 def get_files_to_preserve() -> Set[str]:
     """Get the set of file patterns that should be preserved."""
-    # Note: This function is kept for compatibility, but now we preserve everything 
-    # except multiagent suggested episode arcs
-    return set()  # Empty set since we preserve everything except specific files
+    return {
+        '.srt',
+        'entities.json'
+    }
+
+
+def clean_database(db_path: Path, dry_run: bool = False) -> int:
+    """
+    Clean the narrative.db database by dropping all tables except 'character' and 'character_appellation'.
+    
+    Returns:
+        Number of tables dropped
+    """
+    if not db_path.exists():
+        print(f"Database {db_path} does not exist - skipping database cleanup")
+        return 0
+    
+    tables_dropped = 0
+    tables_to_preserve = {'character', 'character_appellation'}
+    
+    try:
+        conn = sqlite3.connect(str(db_path))
+        cursor = conn.cursor()
+        
+        # Get list of all tables
+        cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+        all_tables = [row[0] for row in cursor.fetchall()]
+        
+        # Determine tables to drop
+        tables_to_drop = [table for table in all_tables if table not in tables_to_preserve]
+        
+        print(f"\nDatabase cleanup for: {db_path}")
+        print(f"Tables to preserve: {', '.join(tables_to_preserve)}")
+        print(f"Tables to drop: {', '.join(tables_to_drop) if tables_to_drop else 'None'}")
+        
+        if dry_run:
+            print(f"[DRY RUN] Would drop {len(tables_to_drop)} tables")
+            tables_dropped = len(tables_to_drop)
+        else:
+            for table in tables_to_drop:
+                try:
+                    cursor.execute(f"DROP TABLE IF EXISTS `{table}`")
+                    print(f"  Dropped table: {table}")
+                    tables_dropped += 1
+                except sqlite3.Error as e:
+                    print(f"  Error dropping table {table}: {e}")
+            
+            conn.commit()
+            print(f"Successfully dropped {tables_dropped} tables")
+        
+        conn.close()
+        
+    except sqlite3.Error as e:
+        print(f"Database error: {e}")
+    except Exception as e:
+        print(f"Error cleaning database: {e}")
+    
+    return tables_dropped
+
+
+def remove_chroma_folder(chroma_path: Path, dry_run: bool = False) -> bool:
+    """
+    Remove the chroma_db folder completely.
+    
+    Returns:
+        True if folder was removed (or would be removed in dry run), False otherwise
+    """
+    if not chroma_path.exists():
+        print(f"Chroma folder {chroma_path} does not exist - skipping")
+        return False
+    
+    print(f"\nChroma folder cleanup: {chroma_path}")
+    
+    if dry_run:
+        print(f"[DRY RUN] Would remove entire chroma_db folder and all contents")
+        return True
+    else:
+        try:
+            shutil.rmtree(chroma_path)
+            print(f"Successfully removed chroma_db folder")
+            return True
+        except Exception as e:
+            print(f"Error removing chroma_db folder: {e}")
+            return False
 
 
 def should_preserve_file(filename: str, preserve_patterns: Set[str]) -> bool:
     """Check if a file should be preserved based on its name."""
-    # Only delete multiagent suggested episode arcs files
-    if filename.endswith('_multiagent_suggested_episode_arcs.json'):
-        return False
+    # Check each preservation pattern
+    for pattern in preserve_patterns:
+        if filename.endswith(pattern):
+            # For file extensions like .srt
+            return True
     
-    # Preserve all other files
-    return True
+    return False
 
 
 def get_files_to_delete(directory: Path, preserve_patterns: Set[str]) -> List[Path]:
@@ -141,30 +231,43 @@ def would_be_empty_after_cleanup(directory: Path, preserve_patterns: Set[str]) -
 
 
 def clean_data_folder(data_dir: Path, series_filter: str = None, season_filter: str = None, 
-                     dry_run: bool = False) -> Tuple[int, int]:
+                     dry_run: bool = False, clean_db: bool = True, clean_chroma: bool = True) -> Tuple[int, int, int, bool]:
     """
     Clean the data folder while preserving source files.
     
     Returns:
-        Tuple of (files_deleted, directories_deleted)
+        Tuple of (files_deleted, directories_deleted, tables_dropped, chroma_removed)
     """
     if not data_dir.exists():
         print(f"Data directory {data_dir} does not exist.")
-        return 0, 0
+        return 0, 0, 0, False
     
     preserve_patterns = get_files_to_preserve()
     files_deleted = 0
     directories_deleted = 0
+    tables_dropped = 0
+    chroma_removed = False
     
     print(f"Cleaning data folder: {data_dir}")
-    print(f"Will delete only: *_multiagent_suggested_episode_arcs.json files")
-    print(f"Will preserve: ALL other files")
+    print(f"Preserving files ending with: {', '.join(preserve_patterns)}")
     if series_filter:
         print(f"Series filter: {series_filter}")
     if season_filter:
         print(f"Season filter: {season_filter}")
+    print(f"Database cleanup: {'Yes' if clean_db else 'No'}")
+    print(f"Chroma cleanup: {'Yes' if clean_chroma else 'No'}")
     print(f"Dry run: {dry_run}")
     print("-" * 50)
+    
+    # Clean database if requested
+    if clean_db:
+        narrative_db_path = Path("narrative_storage/narrative.db")
+        tables_dropped = clean_database(narrative_db_path, dry_run)
+    
+    # Remove chroma_db folder if requested
+    if clean_chroma:
+        chroma_db_path = Path("narrative_storage/chroma_db")
+        chroma_removed = remove_chroma_folder(chroma_db_path, dry_run)
     
     # Iterate through series directories
     for series_dir in data_dir.iterdir():
@@ -224,7 +327,7 @@ def clean_data_folder(data_dir: Path, series_filter: str = None, season_filter: 
                         except Exception as e:
                             print(f"    Error deleting directory {rel_path}: {e}")
     
-    return files_deleted, directories_deleted
+    return files_deleted, directories_deleted, tables_dropped, chroma_removed
 
 
 def main():
@@ -259,6 +362,18 @@ def main():
         help='Path to data directory (default: data)'
     )
     
+    parser.add_argument(
+        '--no-db',
+        action='store_true',
+        help='Skip database cleaning'
+    )
+    
+    parser.add_argument(
+        '--no-chroma',
+        action='store_true',
+        help='Skip chroma_db folder removal'
+    )
+    
     args = parser.parse_args()
     
     # Validate arguments
@@ -281,8 +396,17 @@ def main():
                 filter_info += f", season: {args.season}"
             filter_info += ")"
         
-        response = input(f"\nThis will delete only multiagent suggested episode arcs files in {data_dir}{filter_info}.\n"
-                        f"All other files (*_plot.txt, *_full_dialogues.json, processed files, etc.) will be preserved.\n"
+        cleanup_items = []
+        if not args.no_db:
+            cleanup_items.append("database tables (except character and character_appellation)")
+        if not args.no_chroma:
+            cleanup_items.append("chroma_db folder")
+        cleanup_items.append("processed files")
+        
+        cleanup_text = ", ".join(cleanup_items)
+        
+        response = input(f"\nThis will delete {cleanup_text} in {data_dir}{filter_info}.\n"
+                        f"Original *.srt and entities.json files will be preserved.\n"
                         f"Continue? (y/N): ")
         
         if response.lower() not in ['y', 'yes']:
@@ -290,17 +414,27 @@ def main():
             sys.exit(0)
     
     # Perform cleanup
-    files_deleted, dirs_deleted = clean_data_folder(
+    files_deleted, dirs_deleted, tables_dropped, chroma_removed = clean_data_folder(
         data_dir, 
         args.series, 
         args.season, 
-        args.dry_run
+        args.dry_run,
+        clean_db=not args.no_db,
+        clean_chroma=not args.no_chroma
     )
     
     # Summary
     print("\n" + "=" * 50)
     action = "Would delete" if args.dry_run else "Deleted"
-    print(f"Summary: {action} {files_deleted} files and {dirs_deleted} directories")
+    print(f"Summary:")
+    print(f"  {action} {files_deleted} files and {dirs_deleted} directories")
+    
+    if not args.no_db:
+        print(f"  {action} {tables_dropped} database tables")
+    
+    if not args.no_chroma:
+        chroma_action = "Would remove" if args.dry_run else ("Removed" if chroma_removed else "Failed to remove")
+        print(f"  {chroma_action} chroma_db folder")
     
     if args.dry_run:
         print("\nTo actually perform the cleanup, run without --dry-run")

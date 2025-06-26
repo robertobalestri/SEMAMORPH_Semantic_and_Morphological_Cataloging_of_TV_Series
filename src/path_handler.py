@@ -59,21 +59,25 @@ class PathHandler:
     def get_plot_localized_sentences_path(self) -> str:
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_plot_localized_sentences.json")
     
-    def get_summarized_plot_path(self) -> str:
-        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_summarized_plot.txt")
-    
     def get_suggested_episode_arc_path(self) -> str:
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_multiagent_suggested_episode_arcs.json")
+
+    def get_srt_file_path(self) -> str:
+        """Get the path to the SRT subtitle file for this episode."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}.srt")
+
+    def get_plot_scenes_json_path(self) -> str:
+        """Get the path to the plot scenes JSON file."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_plot_scenes.json")
+    
+    def get_scene_timestamps_path(self) -> str:
+        """Get the path to the scene timestamps JSON file."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_scene_timestamps.json")
 
     @staticmethod
     def get_episode_plot_path(base_dir: str, series: str, season: str, episode: str) -> str:
         """Get the path for an episode's plot file."""
         return os.path.join(base_dir, series, season, episode, f"{series}{season}{episode}_plot.txt")
-    
-    @staticmethod
-    def get_episode_summary_path(base_dir: str, series: str, season: str, episode: str) -> str:
-        """Get the path for an episode's summary file."""
-        return os.path.join(base_dir, series, season, episode, f"{series}{season}{episode}_summarized_plot.txt")
     
     @staticmethod
     def get_season_plot_path(base_dir: str, series: str, season: str) -> str:
