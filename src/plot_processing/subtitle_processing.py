@@ -5,6 +5,7 @@ Handles SRT file parsing and subtitle-to-plot conversion.
 
 import re
 import json
+import os
 from typing import List, Dict, Tuple, Optional
 from dataclasses import dataclass
 from pathlib import Path
@@ -126,43 +127,55 @@ def format_subtitles_for_llm(subtitles: List[SubtitleEntry]) -> str:
     
     return '\n'.join(formatted_lines)
 
-def generate_plot_from_subtitles(subtitles: List[SubtitleEntry], llm: AzureChatOpenAI) -> Dict:
-    """Generate detailed plot from subtitles using LLM."""
+def generate_plot_from_subtitles(subtitles: List[SubtitleEntry], llm: AzureChatOpenAI, previous_season_summary: Optional[str] = None) -> Dict:
+    """Generate detailed plot from subtitles using LLM with optional season context."""
     logger.info("Generating detailed plot from subtitles")
     
     # Format subtitles for LLM
     subtitle_text = format_subtitles_for_llm(subtitles)
     
-    # Your specified prompt
-    prompt = """Instruction:
+    # Base prompt for plot generation
+    base_prompt = """You are a script analyst. Convert the provided subtitles into a detailed plot summary using the exact JSON format below.
 
-Given the following subtitles, write the detailed plot without adding any other words, titles, or reasoning. Output only a JSON object with the following exact structure:
-
+**Output Format (JSON only):**
+```json
 [
-  {{
+  {
     "scene_number": 1,
     "plot_segment": "..."
-  }},
-  {{
+  },
+  {
     "scene_number": 2,
     "plot_segment": "..."
-  }}
-  // Additional scenes as needed
+  }
 ]
+```
 
-Each plot_segment must be:
+**Plot Segment Requirements:**
+- Extract every narrative event from the subtitles in chronological order
+- Use clear, concise sentences (no run-on sentences)
+- Include all dialogue, actions, and story developments
+- Maintain objective tone - report what happens, don't interpret
+- For unidentified speakers, use descriptive terms ("a voice," "someone," "the speaker"). Remember: if you are not totally sure, do not invent the names of the character doing the speaking.
+- Number scenes based on natural story breaks or setting changes"""
 
-    Well-written, clear, and very extensive
+    # Add season context if available
+    if previous_season_summary:
+        context_prompt = f"""
+**Previous Season Context:**
+Use the following summary of previous episodes to better understand character relationships, ongoing storylines, and narrative context. This context helps you interpret the subtitles more accurately but should NOT be included in your plot output - only use it for understanding.
 
-    Written using short, concise sentences
+{previous_season_summary}
 
-    Thorough and detailed, covering every narrative point found in the subtitles
-
-    Based only on the content of the subtitles, without adding extra elements or interpretations
-
-Do not include anything outside the JSON structure in the output."""
+**Important:** Your plot output should ONLY describe what happens in the current episode subtitles. The context is provided to help you better understand character names, relationships, and ongoing storylines when interpreting the subtitles."""
+        
+        full_prompt = f"{base_prompt}\n{context_prompt}\n\n**Critical Rules:**\n- Output ONLY the JSON array - no explanations, titles, or additional text\n- Base content exclusively on subtitle text - add nothing extra\n- Use the context to better understand characters and relationships but don't include previous events\n- If subtitles are unclear about speaker identity, use generic references\n- Ensure each plot_segment is comprehensive yet concise"
+        
+        logger.info("Using previous season context for plot generation")
+    else:
+        full_prompt = f"{base_prompt}\n\n**Critical Rules:**\n- Output ONLY the JSON array - no explanations, titles, or additional text\n- Base content exclusively on subtitle text - add nothing extra\n- If subtitles are unclear about speaker identity, use generic references\n- Ensure each plot_segment is comprehensive yet concise"
     
-    full_prompt = f"{prompt}\n\nSubtitles:\n{subtitle_text}"
+    full_prompt += f"\n\nSubtitles:\n{subtitle_text}"
     
     logger.info(f"Sending plot generation request to LLM (subtitle length: {len(subtitle_text)} chars)")
     
@@ -314,3 +327,123 @@ def save_scene_timestamps(scenes: List[PlotScene], output_dir: str, episode_pref
     
     logger.info(f"Saved scene timestamps: {json_path}")
     return str(json_path)
+
+def create_or_update_season_summary(
+    episode_plot_path: str, 
+    season_summary_path: str, 
+    episode_summary_path: str,
+    llm: AzureChatOpenAI
+) -> str:
+    """
+    Create or update season summary after processing an episode.
+    
+    This function:
+    1. Creates an episode summary from the detailed plot
+    2. Updates the cumulative season summary with the new episode
+    
+    Args:
+        episode_plot_path (str): Path to the current episode's detailed plot
+        season_summary_path (str): Path to the cumulative season summary
+        episode_summary_path (str): Path where episode summary will be saved
+        llm (AzureChatOpenAI): The LLM to use for summarization
+        
+    Returns:
+        str: The updated season summary content
+    """
+    from src.plot_processing.plot_summarizing import create_episode_summary
+    from src.utils.text_utils import load_text
+    
+    try:
+        # Step 1: Create episode summary
+        episode_summary = create_episode_summary(episode_plot_path, llm, episode_summary_path)
+        
+        if not episode_summary:
+            logger.error("Failed to create episode summary")
+            return ""
+        
+        # Step 2: Handle cumulative season summary
+        if Path(season_summary_path).exists():
+            # Load existing season summary
+            existing_summary = load_text(season_summary_path)
+            if existing_summary.strip():
+                # Create cumulative summary with previous context + new episode
+                from textwrap import dedent
+                from langchain_core.messages import HumanMessage
+                from src.utils.llm_utils import clean_llm_text_response
+                
+                prompt = dedent(f"""You are an expert at creating cumulative narrative summaries for TV series.
+
+You will receive TWO types of content that require different treatment:
+
+1. PREVIOUSLY SUMMARIZED CONTENT: Already condensed material from past episodes
+   - Do NOT heavily cut or reduce this content further
+   - Preserve the existing narrative flow and key details
+   - This content should be maintained with minimal changes
+
+2. NEW EPISODE DETAILED SUMMARY: Fresh, summarized content from the latest episode
+   - This should be integrated seamlessly with existing content
+   - Focus on maintaining chronological flow and narrative continuity
+   - Avoid over-summarization of already condensed content
+
+Your task is to create a cumulative summary that:
+- Preserves the narrative continuity from previous episodes
+- Integrates the new episode content seamlessly
+- Maintains chronological order
+- Provides context for future episode generation without replacing detailed plot generation
+
+PREVIOUSLY SUMMARIZED CONTENT (preserve with minimal changes):
+{existing_summary}
+
+NEW EPISODE SUMMARY (integrate seamlessly):
+{episode_summary}
+
+Create a cumulative summary that combines both sections while respecting their different treatment requirements:""")
+                
+                response = llm.invoke([HumanMessage(content=prompt)])
+                cumulative_summary = clean_llm_text_response(response.content.strip())
+                logger.info("Updated cumulative season summary with new episode")
+            else:
+                # Empty existing file, just use new episode summary
+                cumulative_summary = episode_summary
+                logger.info("Created new season summary from episode summary")
+        else:
+            # No existing summary, use episode summary as the initial season summary
+            cumulative_summary = episode_summary
+            logger.info("Created initial season summary from first episode")
+        
+        # Step 3: Save the updated season summary
+        os.makedirs(os.path.dirname(season_summary_path), exist_ok=True)
+        with open(season_summary_path, "w", encoding="utf-8") as output_file:
+            output_file.write(cumulative_summary)
+        
+        logger.info(f"Saved updated season summary to: {season_summary_path}")
+        return cumulative_summary
+        
+    except Exception as e:
+        logger.error(f"Error creating/updating season summary: {e}")
+        return ""
+
+def load_previous_season_summary(season_summary_path: str) -> Optional[str]:
+    """
+    Load the previous season summary if it exists.
+    
+    Args:
+        season_summary_path (str): Path to the season summary file
+        
+    Returns:
+        Optional[str]: The season summary content, or None if not found
+    """
+    try:
+        if Path(season_summary_path).exists():
+            from src.utils.text_utils import load_text
+            summary = load_text(season_summary_path)
+            if summary.strip():
+                logger.info(f"Loaded previous season summary from: {season_summary_path}")
+                return summary
+        
+        logger.info("No previous season summary found")
+        return None
+        
+    except Exception as e:
+        logger.error(f"Error loading previous season summary: {e}")
+        return None

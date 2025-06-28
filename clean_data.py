@@ -54,7 +54,10 @@ def get_files_to_preserve() -> Set[str]:
     """Get the set of file patterns that should be preserved."""
     return {
         '.srt',
-        'entities.json'
+        #'entities.json',
+        #'timestamps.json',
+        #'_plot.txt',
+        #'_plot_scenes.json',
     }
 
 
@@ -70,7 +73,7 @@ def clean_database(db_path: Path, dry_run: bool = False) -> int:
         return 0
     
     tables_dropped = 0
-    tables_to_preserve = {'character', 'character_appellation'}
+    tables_to_preserve = {}# {} #{'character', 'character_appellation'}
     
     try:
         conn = sqlite3.connect(str(db_path))

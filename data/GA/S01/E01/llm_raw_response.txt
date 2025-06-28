@@ -1,0 +1,69 @@
+```json
+[
+    {
+        "entity_name": "ellis_grey",
+        "best_appellation": "Dr. Ellis Grey",
+        "appellations": ["Dr. Ellis Grey", "Ellis Grey", "Meredith's mother"]
+    },
+    {
+        "entity_name": "meredith_grey",
+        "best_appellation": "Dr. Meredith Grey",
+        "appellations": ["Dr. Meredith Grey", "Meredith Grey", "Meredith"]
+    },
+    {
+        "entity_name": "alex_karev",
+        "best_appellation": "Dr. Alex Karev",
+        "appellations": ["Dr. Alex Karev", "Alex Karev", "Alex"]
+    },
+    {
+        "entity_name": "cristina_yang",
+        "best_appellation": "Dr. Cristina Yang",
+        "appellations": ["Dr. Cristina Yang", "Cristina Yang", "Cristina"]
+    },
+    {
+        "entity_name": "preston_burke",
+        "best_appellation": "Dr. Preston Burke",
+        "appellations": ["Dr. Preston Burke", "Dr. Burke", "Burke"]
+    },
+    {
+        "entity_name": "derek_shepherd",
+        "best_appellation": "Dr. Derek Shepherd",
+        "appellations": ["Dr. Derek Shepherd", "Derek Shepherd", "Dr. Shepherd", "Derek"]
+    },
+    {
+        "entity_name": "katie_bryce",
+        "best_appellation": "Katie Bryce",
+        "appellations": ["Katie Bryce", "Katie"]
+    },
+    {
+        "entity_name": "izzie_stevens",
+        "best_appellation": "Dr. Izzie Stevens",
+        "appellations": ["Dr. Izzie Stevens", "Izzie Stevens", "Izzie"]
+    },
+    {
+        "entity_name": "miranda_bailey",
+        "best_appellation": "Dr. Miranda Bailey",
+        "appellations": ["Dr. Miranda Bailey", "Dr. Bailey", "Bailey", "The Nazi"]
+    },
+    {
+        "entity_name": "george_omalley",
+        "best_appellation": "Dr. George O'Malley",
+        "appellations": ["Dr. George O'Malley", "George O'Malley", "George", "007"]
+    },
+    {
+        "entity_name": "gloria",
+        "best_appellation": "Gloria",
+        "appellations": ["Gloria"]
+    },
+    {
+        "entity_name": "mr_bryce",
+        "best_appellation": "Mr. Bryce",
+        "appellations": ["Mr. Bryce", "Katie Bryce's father"]
+    },
+    {
+        "entity_name": "tony",
+        "best_appellation": "Tony",
+        "appellations": ["Tony"]
+    }
+]
+```

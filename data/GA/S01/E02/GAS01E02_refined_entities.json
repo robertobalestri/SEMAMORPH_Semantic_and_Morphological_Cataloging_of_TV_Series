@@ -130,39 +130,5 @@
       "Grey"
     ],
     "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "katie_bryce",
-    "best_appellation": "Katie Bryce",
-    "appellations": [
-      "Katie Bryce",
-      "Katie"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "gloria",
-    "best_appellation": "Gloria",
-    "appellations": [
-      "Gloria"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "mr_bryce",
-    "best_appellation": "Mr. Bryce",
-    "appellations": [
-      "Mr. Bryce",
-      "Katie Bryce's father"
-    ],
-    "entity_type": "PERSON"
-  },
-  {
-    "entity_name": "tony",
-    "best_appellation": "Tony",
-    "appellations": [
-      "Tony"
-    ],
-    "entity_type": "PERSON"
   }
 ]

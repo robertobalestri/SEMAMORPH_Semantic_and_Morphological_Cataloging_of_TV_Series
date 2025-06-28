@@ -115,18 +115,46 @@ class VectorStoreService:
                 include=['metadatas', 'documents', 'embeddings'] if include_embeddings else ['metadatas', 'documents']
             )
 
-            # Format results
-            documents = []
-            for i in range(len(results['ids'])):
-                doc = {
-                    'id': results['ids'][i],
-                    'content': results['documents'][i],
-                    'metadata': results['metadatas'][i],
-                }
-                if include_embeddings and 'embeddings' in results:
-                    doc['embedding'] = results['embeddings'][i]
-                documents.append(doc)
+            # Validate results structure
+            if not results or 'ids' not in results:
+                logger.warning(f"No results found for series: {series}")
+                return []
 
+            # Check array lengths for consistency
+            ids_len = len(results['ids'])
+            docs_len = len(results.get('documents', []))
+            metas_len = len(results.get('metadatas', []))
+            
+            if docs_len != ids_len or metas_len != ids_len:
+                logger.error(f"Array length mismatch: ids={ids_len}, documents={docs_len}, metadatas={metas_len}")
+                return []
+
+            # If embeddings requested, check their length too
+            if include_embeddings and 'embeddings' in results:
+                embeddings_len = len(results['embeddings'])
+                if embeddings_len != ids_len:
+                    logger.error(f"Embeddings length mismatch: embeddings={embeddings_len}, ids={ids_len}")
+                    # Continue without embeddings rather than failing
+                    include_embeddings = False
+                    logger.warning("Disabling embeddings due to length mismatch")
+
+            # Format results with safe indexing
+            documents = []
+            for i in range(ids_len):
+                try:
+                    doc = {
+                        'id': results['ids'][i],
+                        'content': results['documents'][i],
+                        'metadata': results['metadatas'][i],
+                    }
+                    if include_embeddings and 'embeddings' in results and i < len(results['embeddings']):
+                        doc['embedding'] = results['embeddings'][i]
+                    documents.append(doc)
+                except IndexError as ie:
+                    logger.error(f"Index error at position {i}: {ie}")
+                    break  # Stop processing if we hit an index error
+
+            logger.info(f"Successfully retrieved {len(documents)} documents for series {series}")
             return documents
 
         except Exception as e:

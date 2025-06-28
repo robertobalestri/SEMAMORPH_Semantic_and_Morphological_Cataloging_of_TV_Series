@@ -30,7 +30,10 @@ import asyncio
 def run_episode_processing_subprocess(series: str, season: str, episode: str):
     """Run episode processing using subprocess"""
     try:
+        logger.info(f"🚀 Starting subprocess processing for {series} {season} {episode}")
+        
         # Run the main.py script with the episode parameters
+        # Use stdout=None, stderr=None to let output stream directly to console
         result = subprocess.run([
             sys.executable, 'main.py', 
             '--series', series,
@@ -38,15 +41,14 @@ def run_episode_processing_subprocess(series: str, season: str, episode: str):
             '--episode', episode
         ], 
         cwd=os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-        capture_output=True, 
-        text=True, 
         timeout=1800  # 30 minutes timeout
         )
         
         if result.returncode != 0:
-            raise Exception(f"Processing failed with return code {result.returncode}: {result.stderr}")
-            
-        return result.stdout
+            raise Exception(f"Processing failed with return code {result.returncode}")
+        
+        logger.info(f"✅ Subprocess completed successfully for {series} {season} {episode}")
+        return "Processing completed successfully"
         
     except subprocess.TimeoutExpired:
         raise Exception("Processing timed out after 30 minutes")
@@ -281,17 +283,16 @@ async def get_series():
         except Exception as fs_error:
             logger.warning(f"Could not scan filesystem for series: {fs_error}")
         
-        # If no series found, provide default options
+        # If no series found from database, use filesystem only
         if not series_set:
-            series_set = {"GA", "FIABA"}
-            logger.info("No series found, using default options")
+            logger.info("No series found in database, using filesystem only")
         
         return sorted(list(series_set))
         
     except Exception as e:
         logger.error(f"Error getting series: {str(e)}")
-        # Return default series even if everything fails
-        return ["GA", "FIABA"]
+        # Return empty list if everything fails - let the frontend handle it
+        return []
 
 @app.get("/api/arcs/series/{series}", response_model=List[NarrativeArcResponse])
 async def get_arcs_by_series(series: str):
@@ -1178,18 +1179,13 @@ async def get_available_series():
                     if has_seasons:
                         series_list.append(item)
         
-        # Always include default series
-        default_series = ["GA", "FIABA"]
-        for series in default_series:
-            if series not in series_list:
-                series_list.append(series)
-        
+        # No hardcoded defaults - return only what exists in filesystem
         return sorted(series_list)
         
     except Exception as e:
         logger.error(f"Error getting available series: {str(e)}")
-        # Return default series if everything fails
-        return ["GA", "FIABA"]
+        # Return empty list if everything fails
+        return []
 
 async def run_episode_processing(job_id: str, series: str, season: str, episodes: List[str]):
     """Run episode processing in background"""

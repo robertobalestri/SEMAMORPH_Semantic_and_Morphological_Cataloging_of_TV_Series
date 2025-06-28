@@ -8,6 +8,18 @@ class PathHandler:
         self.episode = episode
         self.base_dir = base_dir
 
+    def get_series(self) -> str:
+        """Get the series name."""
+        return self.series
+    
+    def get_season(self) -> str:
+        """Get the season name."""
+        return self.season
+    
+    def get_episode(self) -> str:
+        """Get the episode name."""
+        return self.episode
+
     # Define methods to get file paths
     def get_raw_plot_file_path(self) -> str:
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_plot.txt")
@@ -73,6 +85,14 @@ class PathHandler:
     def get_scene_timestamps_path(self) -> str:
         """Get the path to the scene timestamps JSON file."""
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_scene_timestamps.json")
+
+    def get_season_summary_path(self) -> str:
+        """Get the path to the cumulative season summary file."""
+        return os.path.join(self.base_dir, self.series, self.season, f"{self.series}{self.season}_season_summary.txt")
+    
+    def get_episode_summary_path(self) -> str:
+        """Get the path to the episode summary file."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_episode_summary.txt")
 
     @staticmethod
     def get_episode_plot_path(base_dir: str, series: str, season: str, episode: str) -> str:

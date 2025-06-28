@@ -1,50 +1,66 @@
 [
   {
-    "title": "Medical Case: Katie Bryce's Seizures and Brain Aneurysm",
+    "title": "Medical Case: Katie Bryce's Seizures and Aneurysm",
     "arc_type": "Anthology Arc",
-    "description": "A 15-year-old girl, Katie Bryce, is admitted with unexplained seizures. The new surgical interns are challenged to diagnose and treat her escalating condition. Their investigation leads to the discovery of a ruptured brain aneurysm caused by a minor fall, culminating in a high-stakes brain surgery that tests the interns' skills and teamwork.",
+    "description": "A teenage patient, Katie Bryce, is admitted with unexplained seizures, challenging the new surgical interns to diagnose and treat her. The case tests their medical skills and teamwork as they work through failed treatments and dead ends, ultimately leading to the discovery of a hidden aneurysm caused by a minor fall. The resolution of Katie's case marks a pivotal moment in the interns' first day and establishes their roles within the hospital.",
     "main_characters": "Meredith Grey; Cristina Yang; Katie Bryce",
-    "interfering_episode_characters": "Miranda Bailey; Derek Shepherd; Preston Burke; George O'Malley; Izzie Stevens; Alex Karev; Katie's parents",
-    "single_episode_progression_string": "Katie Bryce is admitted with seizures. Dr. Bailey assigns Meredith responsibility for Katie. Cristina reports Katie's labs are clear. Katie has another seizure and her heart stops; Meredith leads the code and revives her. Dr. Shepherd asks the interns to help diagnose Katie. Meredith and Cristina deduce a minor fall caused a brain aneurysm to burst. Dr. Shepherd confirms the diagnosis with an angiogram. Meredith is chosen to assist in Katie's brain surgery."
+    "interfering_episode_characters": "Derek Shepherd; Miranda Bailey; George O'Malley; Izzie Stevens; Alex Karev; Preston Burke",
+    "single_episode_progression_string": "Katie Bryce is admitted with seizures. Meredith is assigned to Katie's care. Cristina and Meredith discuss possible diagnoses. Katie has additional seizures and requires emergency intervention. Meredith and Cristina review Katie's medical history. Meredith identifies a minor fall as the cause of a subarachnoid hemorrhage from a burst aneurysm. Dr. Shepherd confirms the diagnosis and selects Meredith to assist in surgery. Meredith assists Dr. Shepherd in repairing Katie's aneurysm."
   },
   {
-    "title": "Medical Case: George O'Malley's Failed Appendectomy",
+    "title": "Medical Case: George O'Malley's Appendectomy Complication",
     "arc_type": "Anthology Arc",
-    "description": "George O'Malley is selected for his first solo surgery, an appendectomy, under Dr. Burke's supervision. The case becomes a defining moment for George, testing his technical skills and composure in the operating room, and shaping his reputation among peers and superiors.",
+    "description": "George O'Malley is given his first major surgical opportunity as a new intern when he is selected to perform an appendectomy. The experience tests his skills and confidence, resulting in a significant mistake that shapes his reputation among his peers and sets the tone for his journey as a surgical intern.",
     "main_characters": "George O'Malley",
-    "interfering_episode_characters": "Dr. Preston Burke; Miranda Bailey; Cristina Yang; Izzie Stevens; Meredith Grey; Alex Karev",
-    "single_episode_progression_string": "Dr. Burke selects George to perform the first intern surgery. George scrubs in and begins the appendectomy with the other interns observing. George removes the appendix but accidentally tears the cecum, causing internal bleeding. George hesitates and is unable to control the bleeding. Dr. Burke intervenes, calls George a 'pansy-ass idiot,' and removes him from the operating room. The other interns nickname George '007' for his perceived incompetence."
+    "interfering_episode_characters": "Dr. Preston Burke; Dr. Miranda Bailey; Meredith Grey; Cristina Yang; Izzie Stevens; Alex Karev; Surgical Interns",
+    "single_episode_progression_string": "Dr. Burke selects George O'Malley to perform an appendectomy. George removes the appendix. George accidentally tears the cecum, causing internal bleeding. Dr. Burke takes over and completes the surgery. Dr. Burke criticizes George for his mistake. The interns nickname George '007' after the incident."
   },
   {
-    "title": "Medical Case: Izzie Stevens' Bypass Surgery Patient",
+    "title": "Medical Case: Tony's Coronary Bypass and Death",
     "arc_type": "Anthology Arc",
-    "description": "Izzie Stevens cares for a patient scheduled for bypass surgery, offering reassurance to the patient and his wife. When the surgery reveals the patient's heart is too damaged and he dies, Izzie must deliver the devastating news to the widow, confronting the emotional realities of surgical practice.",
+    "description": "Izzie Stevens participates in the care of Tony, a coronary bypass patient, and faces the harsh realities of surgical outcomes when Tony dies during the operation. Izzie learns the importance of honest communication with patients' families and the emotional toll of delivering tragic news.",
     "main_characters": "Izzie Stevens",
-    "interfering_episode_characters": "Dr. Preston Burke; Patient's Wife",
-    "single_episode_progression_string": "Izzie reassures the patient and his wife before surgery. Izzie is assigned to monitor the patient. Dr. Burke informs Izzie the patient's heart is too damaged for bypass and he dies. Dr. Burke instructs Izzie to inform the widow. Izzie delivers the news of death to the widow, who is devastated and asks Izzie to leave."
+    "interfering_episode_characters": "Tony; Gloria; Dr. Burke",
+    "single_episode_progression_string": "Izzie reassures Gloria that Tony will be fine before surgery. Tony undergoes coronary bypass surgery with Dr. Burke. Tony dies during the operation due to extensive heart damage. Dr. Burke scolds Izzie for making promises to the patient's family. Izzie informs Gloria of Tony's death. Gloria is devastated and asks Izzie to leave."
   },
   {
-    "title": "Meredith Grey's Struggle for Identity Amidst Her Mother's Legacy and Complicated Romance with Derek Shepherd",
+    "title": "Medical Case: Cristina Yang's Post-Operative Diagnosis and Recognition",
+    "arc_type": "Anthology Arc",
+    "description": "Cristina Yang demonstrates her diagnostic abilities by managing a post-operative patient who develops complications, correctly identifying pneumonia and later diagnosing a pulmonary embolism, earning recognition from Dr. Burke.",
+    "main_characters": "Cristina Yang",
+    "interfering_episode_characters": "Dr. Burke; Nurse Tyler; Alex Karev",
+    "single_episode_progression_string": "Cristina is assigned to take lab samples for a post-op patient. Cristina diagnoses the patient with post-op pneumonia and orders antibiotics. A nurse questions Cristina's diagnosis, but Cristina insists. The patient develops a post-op fever. Dr. Burke questions Cristina about the cause of the fever. Cristina lists the five W's of post-op fever and suggests a pulmonary embolism. Dr. Burke removes another intern from the case and tells him to follow Cristina's instructions."
+  },
+  {
+    "title": "Meredith Grey's Struggle with Her Mother's Legacy and Search for Independence",
     "arc_type": "Soap Arc",
-    "description": "Meredith Grey faces the challenge of establishing her own identity as a surgeon under the shadow of her mother Ellis Grey's renowned career. As she begins her residency, Meredith becomes romantically involved with Derek Shepherd, her attending, complicating her efforts to maintain professional boundaries and navigate the expectations tied to her family name.",
+    "description": "Meredith Grey faces the challenge of living in the shadow of her mother Ellis Grey's surgical legacy while coping with Ellis's declining mental health. Throughout her early days as a surgical intern, Meredith grapples with expectations, her mother's reputation, and her own sense of identity, ultimately seeking to establish independence and build a new support system.",
+    "main_characters": "Meredith Grey; Ellis Grey",
+    "interfering_episode_characters": "Derek Shepherd; Cristina Yang; George O'Malley; Izzie Stevens; Preston Burke",
+    "single_episode_progression_string": "Meredith narrates her insecurity about living up to her mother's reputation. Meredith tells Derek she is selling her mother's house. The other interns discuss Meredith's connection to Ellis Grey. Dr. Burke recognizes Meredith as Ellis Grey's daughter. Meredith decides not to sell her mother's house and plans to make it her home. Meredith visits Ellis, who does not recognize her. Meredith tells her mother she is a doctor."
+  },
+  {
+    "title": "Meredith and Derek's Secret Relationship and Professional Boundaries",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey and Derek Shepherd begin a secret romantic relationship after a one-night stand, only to discover they must work together as intern and attending at the same hospital. Their relationship is tested by hospital rules, the need for secrecy, and Meredith's desire to be recognized for her skills rather than her personal connections.",
     "main_characters": "Meredith Grey; Derek Shepherd",
-    "interfering_episode_characters": "Ellis Grey; Cristina Yang; Izzie Stevens; Richard Webber",
-    "single_episode_progression_string": "Meredith wakes up after a one-night stand with Derek Shepherd. Meredith insists Derek leave before she goes to work. Meredith discovers Derek is her attending at the hospital. Meredith avoids discussing her mother Ellis Grey with colleagues. Cristina and Izzie discuss Meredith's connection to Ellis Grey and speculate about her relationship with Derek. Meredith and Derek interact professionally while concealing their prior encounter. Meredith and Derek collaborate on Katie Bryce's case. Meredith confronts Derek about whether she was chosen for surgery because of their night together. Derek assures Meredith she earned her place. Meredith decides to keep her mother's house and seeks roommates."
+    "interfering_episode_characters": "Cristina Yang; Miranda Bailey; George O'Malley; Izzie Stevens",
+    "single_episode_progression_string": "Meredith and Derek wake up together after a one-night stand. Meredith discovers Derek is her new attending at the hospital. They agree to keep their previous night a secret and maintain professionalism. Meredith and Derek interact awkwardly during rounds and patient care. Meredith questions Derek about whether she was chosen for surgery because of their night together. Derek insists Meredith earned the opportunity. Meredith offers to give the surgery to Cristina, but Derek refuses. Meredith and Derek maintain a professional front in front of colleagues."
   },
   {
-    "title": "Formation, Rivalry, and Growth of the Surgical Interns",
-    "arc_type": "Genre-Specific Arc",
-    "description": "A new class of surgical interns—Meredith, Cristina, George, Izzie, and Alex—navigate the intense pressures of residency, forging friendships, rivalries, and alliances as they compete for recognition and survival. Their shared challenges and ambitions shape their relationships, loyalty, and sense of self as they strive to prove themselves in the demanding world of surgery.",
+    "title": "The Interns' Formation of Friendships, Rivalries, and Survival in Surgical Residency",
+    "arc_type": "Soap Arc",
+    "description": "Meredith, Cristina, George, Izzie, and Alex begin their surgical internships together, quickly forming bonds and rivalries as they navigate the pressures of residency. Their relationships are shaped by competition for recognition, personal challenges, and the demands of the hospital, resulting in both camaraderie and conflict as they learn to trust, challenge, and support each other while striving to survive and succeed.",
     "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Izzie Stevens; Alex Karev",
-    "interfering_episode_characters": "Miranda Bailey; Preston Burke; Richard Webber; Derek Shepherd; Katie Bryce",
-    "single_episode_progression_string": "The interns meet at orientation and are assigned to Dr. Bailey. Cristina and George discuss rumors and assess each other as competition. Izzie reveals her modeling background, creating tension. Dr. Bailey sets strict rules for the group. The interns receive their first assignments and respond to an emergency. George is selected for the first surgery and fails, earning the nickname '007.' The interns bond and commiserate over their struggles during breaks. Cristina and Izzie attempt a central line and face difficulty. Alex insults Izzie, increasing rivalry. Meredith and Cristina collaborate to diagnose Katie Bryce. Meredith is chosen to assist in surgery, causing friction with Cristina. Cristina confronts Meredith about favoritism. The interns reflect on their first shift and question their ability to survive."
+    "interfering_episode_characters": "Miranda Bailey; Derek Shepherd; Preston Burke; Katie Bryce",
+    "single_episode_progression_string": "Meredith, Cristina, George, and Izzie meet as new interns and introduce themselves. The group jokes about their resident's nickname and discusses rumors about each other. Cristina and Meredith bond over ambition and frustration with their assignments. George is chosen for surgery, and the others bet on his performance. George fails in surgery and is nicknamed '007' by the group. Cristina and Meredith agree to work together to solve Katie's case and negotiate who will get the surgery if they succeed. Cristina is disappointed when Meredith is chosen for the surgery, causing tension. Cristina accuses Meredith of getting opportunities due to her connections. Meredith offers the surgery to Cristina, but Cristina refuses. Izzie and George bond over insecurities and family expectations. The interns eat together, share frustrations, and begin to form a support system. Meredith decides not to sell her mother's house and invites the others to be her roommates."
   },
   {
-    "title": "Dr. Bailey's Rigorous Mentorship and the Hospital's Power Dynamics",
+    "title": "Dr. Bailey's Mentorship and the Hospital's Hierarchy",
     "arc_type": "Genre-Specific Arc",
-    "description": "Dr. Miranda Bailey establishes her authority over the new interns through strict discipline, high expectations, and unwavering standards. Her tough mentorship style shapes the interns' growth while highlighting the competitive and hierarchical environment of the surgical program, where power dynamics among attendings, residents, and interns constantly shift.",
+    "description": "Dr. Miranda Bailey, known for her strict and demanding approach, oversees the surgical interns as they navigate the hospital's hierarchy. Her tough love, high expectations, and enforcement of discipline shape the interns' growth, opportunities, and challenges, while the power dynamics between residents, attendings, and interns influence their experiences and development throughout their training.",
     "main_characters": "Dr. Miranda Bailey",
-    "interfering_episode_characters": "Meredith Grey; Cristina Yang; George O'Malley; Izzie Stevens; Alex Karev; Dr. Richard Webber; Dr. Preston Burke; Dr. Derek Shepherd",
-    "single_episode_progression_string": "Dr. Bailey introduces herself to the interns with strict rules and expectations. She assigns specific tasks to each intern and monitors their performance. Bailey reprimands George for his surgical error and removes him from the OR. She scolds Meredith for not paging her during Katie's code. Bailey confronts Cristina and Izzie for considering waking her unnecessarily. Bailey oversees the interns' responses to emergencies and enforces discipline throughout their first shift."
+    "interfering_episode_characters": "George O'Malley; Meredith Grey; Cristina Yang; Izzie Stevens; Alex Karev; Dr. Preston Burke; Dr. Derek Shepherd",
+    "single_episode_progression_string": "Dr. Bailey introduces herself to the interns and establishes her five strict rules. She assigns each intern specific tasks and responsibilities. Bailey warns the interns about the competition and difficulty of the program. She scolds George for his surgical mistake and allows the group to nickname him '007.' Bailey reprimands Meredith for not paging her during Katie Bryce's code. She instructs Izzie to inform a patient's wife of his death and warns against making promises. Bailey enforces discipline and sets clear expectations for the interns' conduct and performance."
   }
 ]

@@ -1,7 +1,7 @@
 from src.utils.logger_utils import setup_logging
 from src.plot_processing.plot_text_processing import replace_pronouns_with_names
 from src.plot_processing.plot_semantic_processing import semantic_split
-from src.plot_processing.plot_ner_entity_extraction import extract_and_refine_entities, substitute_appellations_with_names, normalize_entities_names_to_best_appellation
+from src.plot_processing.plot_ner_entity_extraction import extract_and_refine_entities_with_path_handler, force_reextract_entities_with_path_handler, substitute_appellations_with_names, normalize_entities_names_to_best_appellation
 from src.plot_processing.plot_processing_models import EntityLink, EntityLinkEncoder
 from src.plot_processing.subtitle_processing import (
     parse_srt_file, 
@@ -83,8 +83,13 @@ def process_text(path_handler: PathHandler, series: str, season: str, episode: s
             # Parse SRT file
             subtitles = parse_srt_file(srt_path)
             
-            # Generate plot from subtitles
-            plot_data = generate_plot_from_subtitles(subtitles, llm_intelligent)
+            # Load previous season summary for context
+            season_summary_path = path_handler.get_season_summary_path()
+            from src.plot_processing.subtitle_processing import load_previous_season_summary
+            previous_season_summary = load_previous_season_summary(season_summary_path)
+            
+            # Generate plot from subtitles with optional season context
+            plot_data = generate_plot_from_subtitles(subtitles, llm_intelligent, previous_season_summary)
             
             # Save plot files (TXT and JSON)
             episode_prefix = f"{series}{season}{episode}"
@@ -169,14 +174,7 @@ def process_text(path_handler: PathHandler, series: str, season: str, episode: s
         
         if not os.path.exists(episode_extracted_refined_entities_path):
             logger.info("Extracting and refining entities from named plot.")
-            entities = extract_and_refine_entities(
-                named_plot, 
-                series,
-                llm_intelligent, 
-                episode_extracted_refined_entities_path, 
-                path_handler.get_episode_raw_spacy_entities_path(),
-                season_extracted_refined_entities_path  # Pass the season entities path
-            )
+            entities = extract_and_refine_entities_with_path_handler(path_handler, series)
         else:
             logger.info(f"Loading existing entities from: {episode_extracted_refined_entities_path}")
             with open(episode_extracted_refined_entities_path, "r") as episode_extracted_refined_entities_file:
@@ -252,6 +250,34 @@ def process_text(path_handler: PathHandler, series: str, season: str, episode: s
         )
 
         logger.info(f"Updated {len(updated_arcs)} arcs in the database.")
+        
+        # Step: Create/update season summary after episode processing
+        logger.info("Creating/updating season summary.")
+        try:
+            from src.plot_processing.subtitle_processing import create_or_update_season_summary
+            
+            # Define paths for season summary management
+            episode_plot_path = path_handler.get_raw_plot_file_path()
+            season_summary_path = path_handler.get_season_summary_path()
+            episode_summary_path = path_handler.get_episode_summary_path()
+            
+            # Create/update season summary
+            season_summary = create_or_update_season_summary(
+                episode_plot_path,
+                season_summary_path,
+                episode_summary_path,
+                llm_intelligent
+            )
+            
+            if season_summary:
+                logger.info("✅ Season summary updated successfully.")
+            else:
+                logger.warning("⚠️ Season summary creation failed.")
+                
+        except Exception as e:
+            logger.error(f"❌ Error creating season summary: {e}")
+            # Don't fail the entire process if summary creation fails
+        
         logger.info("Processing complete.")
 
     except Exception as e:

@@ -16,3 +16,6 @@ frontend backup/
 *copy/
 *copy.db
 narrative_storage/*
+agent_logs/*
+agent_logs
+llm_surname_conflicts_response.txt

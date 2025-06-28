@@ -42,12 +42,8 @@ const App: React.FC = () => {
         }
       } catch (error) {
         console.error('Error fetching series:', error);
-        // Provide default series if API fails
-        const defaultSeries = ['GA', 'FIABA'];
-        setSeries(defaultSeries);
-        if (!selectedSeries) {
-          setSelectedSeries(defaultSeries[0]);
-        }
+        // No fallback - let the UI handle empty series list
+        setSeries([]);
       }
     };
 

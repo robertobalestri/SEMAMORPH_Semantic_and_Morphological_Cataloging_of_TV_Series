@@ -12,7 +12,8 @@ from src.utils.llm_utils import clean_llm_json_response
 from src.utils.logger_utils import setup_logging
 from src.utils.text_utils import load_text, save_json
 from src.ai_models.ai_models import get_llm, LLMType
-from src.plot_processing.plot_ner_entity_extraction import EntityLink, normalize_names
+from src.plot_processing.plot_processing_models import EntityLink
+from src.plot_processing.plot_ner_entity_extraction import normalize_names
 # Import the new repositories and models
 from src.narrative_storage_management.repositories import (
     DatabaseSessionManager,

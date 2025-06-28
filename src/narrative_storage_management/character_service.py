@@ -269,3 +269,52 @@ class CharacterService:
     def _normalize_name(self, name: str) -> str:
         """Helper method to normalize character names."""
         return name.lower().replace(' ', '_')
+
+    def process_entities(self, entities: List[EntityLink], series: str, plot: str = "", llm = None) -> List[Character]:
+        """
+        Process a list of entities and save them to the database.
+        
+        Args:
+            entities: List of EntityLink objects to process
+            series: The series these entities belong to
+            plot: The plot text for context (used for LLM verification)
+            llm: Optional LLM instance for verification
+            
+        Returns:
+            List of processed Character objects
+        """
+        if not entities:
+            logger.warning("⚠️ No entities to process")
+            return []
+            
+        logger.info(f"🏭 CHARACTER SERVICE: Processing {len(entities)} entities for series {series}")
+        processed_characters = []
+        
+        for entity in entities:
+            try:
+                logger.info(f"🔍 Processing entity: {entity.entity_name} → {entity.best_appellation} ({entity.appellations})")
+                
+                # Skip invalid entities
+                if not entity.entity_name or len(entity.entity_name.strip()) <= 1:
+                    logger.warning(f"⚠️ Skipping invalid entity: {entity.entity_name}")
+                    continue
+                    
+                # Add or update the character
+                result = self.add_or_update_character(entity, series)
+                
+                if result:
+                    if isinstance(result, list):
+                        processed_characters.extend(result)
+                        logger.info(f"✅ Processed entity {entity.entity_name} → {len(result)} characters")
+                    else:
+                        processed_characters.append(result)
+                        logger.info(f"✅ Processed entity {entity.entity_name} → 1 character")
+                else:
+                    logger.warning(f"⚠️ Failed to process entity: {entity.entity_name}")
+            except Exception as e:
+                logger.error(f"❌ Error processing entity {entity.entity_name}: {e}")
+                import traceback
+                logger.error(f"❌ Traceback: {traceback.format_exc()}")
+                
+        logger.info(f"✅ CHARACTER SERVICE: Completed processing. Total characters: {len(processed_characters)}")
+        return processed_characters

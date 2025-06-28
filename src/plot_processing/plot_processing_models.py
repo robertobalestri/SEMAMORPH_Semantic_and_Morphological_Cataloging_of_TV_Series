@@ -18,7 +18,8 @@ class EntityLinkEncoder(JSONEncoder):
     def default(self, obj):
         if isinstance(obj, EntityLink):
             return {
-                "entity_name": obj.entity_name,  # Updated from character to entity_name
+                "entity_name": obj.entity_name,
+                "best_appellation": obj.best_appellation,
                 "appellations": obj.appellations,
                 "entity_type": obj.entity_type
             }
