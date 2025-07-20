@@ -401,3 +401,259 @@ class VectorStoreService:
         except Exception as e:
             logger.error(f"Error finding similar arcs clusters: {e}")
             raise
+
+
+
+class FaceEmbeddingVectorStore:
+    """Dedicated vector store service for face embeddings across episodes."""
+
+    def __init__(self, collection_name: str = "face_embeddings", persist_directory: Optional[str] = None):
+        self.collection_name = collection_name
+        self.persist_directory = persist_directory or os.getenv("PERSIST_DIRECTORY", "./vector_store")
+        self.embedding_model = get_embedding_model()
+        self.collection = self._initialize_collection()
+
+    def _initialize_collection(self) -> Chroma:
+        """Initialize the face embeddings collection."""
+        return Chroma(
+            collection_name=self.collection_name,
+            persist_directory=self.persist_directory,
+            embedding_function=self.embedding_model,
+            collection_metadata={"hnsw:space": "cosine"},
+        )
+
+    def add_face_embeddings(
+        self,
+        embeddings: List[List[float]],
+        metadata_list: List[Dict[str, Any]],
+        ids: List[str]
+    ) -> None:
+        """
+        Add face embeddings with metadata to the vector store.
+        
+        Args:
+            embeddings: List of face embedding vectors
+            metadata_list: List of metadata dicts containing face info
+            ids: List of unique IDs for each face embedding
+        """
+        try:
+            # Convert embeddings to documents (Chroma expects text content)
+            documents = []
+            for i, metadata in enumerate(metadata_list):
+                # Create a text representation of the face metadata for indexing
+                doc_text = f"Face from {metadata.get('series', '')} {metadata.get('season', '')} {metadata.get('episode', '')} " \
+                          f"at {metadata.get('timestamp', '')} - Speaker: {metadata.get('speaker', 'unknown')} " \
+                          f"Confidence: {metadata.get('speaker_confidence', 0)}"
+                documents.append(doc_text)
+            
+            # For face embeddings, we have pre-computed embeddings, so we use the underlying client
+            # since LangChain's add_documents would re-compute embeddings
+            try:
+                # Access the underlying ChromaDB collection
+                chroma_collection = self.collection._collection
+                
+                # Use ChromaDB's native API with pre-computed embeddings
+                chroma_collection.add(
+                    documents=documents,
+                    embeddings=embeddings,
+                    metadatas=metadata_list,
+                    ids=ids
+                )
+            except AttributeError:
+                # Fallback: If the structure changed, try upsert
+                try:
+                    chroma_collection = self.collection._collection
+                    chroma_collection.upsert(
+                        documents=documents,
+                        embeddings=embeddings,
+                        metadatas=metadata_list,
+                        ids=ids
+                    )
+                except Exception as e:
+                    logger.error(f"ChromaDB API error: {e}")
+                    # Final fallback: use LangChain method (will re-compute embeddings)
+                    from langchain_core.documents import Document
+                    langchain_docs = []
+                    for i, doc_text in enumerate(documents):
+                        doc = Document(
+                            page_content=doc_text,
+                            metadata=metadata_list[i]
+                        )
+                        langchain_docs.append(doc)
+                    
+                    self.collection.add_documents(
+                        documents=langchain_docs,
+                        ids=ids
+                    )
+            
+            logger.info(f"✅ Added {len(embeddings)} face embeddings to vector store")
+            
+        except Exception as e:
+            logger.error(f"❌ Failed to add face embeddings: {e}")
+            raise
+
+    def find_similar_faces(
+        self,
+        query_embedding: List[float],
+        n_results: int = 10,
+        series: Optional[str] = None,
+        min_speaker_confidence: float = 0.0
+    ) -> List[Dict[str, Any]]:
+        """
+        Find similar faces based on embedding similarity.
+        
+        Args:
+            query_embedding: Face embedding to search for
+            n_results: Maximum number of results to return
+            series: Optional filter by series
+            min_speaker_confidence: Minimum speaker confidence threshold
+            
+        Returns:
+            List of similar faces with metadata
+        """
+        try:
+            # Build filter criteria
+            filter_criteria = {}
+            if series:
+                filter_criteria["series"] = series
+            if min_speaker_confidence > 0:
+                filter_criteria["speaker_confidence"] = {"$gte": min_speaker_confidence}
+            
+            # Perform similarity search
+            results = self.collection.query(
+                query_embeddings=[query_embedding],
+                n_results=n_results,
+                where=filter_criteria if filter_criteria else None
+            )
+            
+            # Format results
+            similar_faces = []
+            if results["ids"] and results["ids"][0]:
+                for i in range(len(results["ids"][0])):
+                    similar_faces.append({
+                        "id": results["ids"][0][i],
+                        "metadata": results["metadatas"][0][i],
+                        "distance": results["distances"][0][i] if results.get("distances") else None
+                    })
+            
+            logger.info(f"Found {len(similar_faces)} similar faces")
+            return similar_faces
+            
+        except Exception as e:
+            logger.error(f"❌ Error finding similar faces: {e}")
+            return []
+
+    def get_faces_by_speaker(
+        self,
+        speaker_name: str,
+        series: Optional[str] = None,
+        min_confidence: float = 95.0
+    ) -> List[Dict[str, Any]]:
+        """
+        Get all faces associated with a specific speaker.
+        
+        Args:
+            speaker_name: Name of the speaker
+            series: Optional filter by series
+            min_confidence: Minimum speaker confidence threshold
+            
+        Returns:
+            List of faces for the speaker
+        """
+        try:
+            filter_criteria = {
+                "speaker": speaker_name,
+                "speaker_confidence": {"$gte": min_confidence}
+            }
+            if series:
+                filter_criteria["series"] = series
+            
+            results = self.collection.query(
+                query_texts=[f"Speaker: {speaker_name}"],
+                n_results=1000,  # Get all matches
+                where=filter_criteria
+            )
+            
+            speaker_faces = []
+            if results["ids"] and results["ids"][0]:
+                for i in range(len(results["ids"][0])):
+                    speaker_faces.append({
+                        "id": results["ids"][0][i],
+                        "metadata": results["metadatas"][0][i],
+                        "distance": results["distances"][0][i] if results.get("distances") else None
+                    })
+            
+            logger.info(f"Found {len(speaker_faces)} faces for speaker '{speaker_name}'")
+            return speaker_faces
+            
+        except Exception as e:
+            logger.error(f"❌ Error getting faces for speaker '{speaker_name}': {e}")
+            return []
+
+    def update_speaker_associations(
+        self,
+        face_ids: List[str],
+        speaker_name: str,
+        confidence: float
+    ) -> None:
+        """
+        Update speaker associations for a list of face IDs.
+        
+        Args:
+            face_ids: List of face IDs to update
+            speaker_name: New speaker name
+            confidence: Confidence score for the association
+        """
+        try:
+            # Get current metadata for these faces
+            results = self.collection.get(ids=face_ids, include=["metadatas"])
+            
+            if not results["metadatas"]:
+                logger.warning(f"No faces found for IDs: {face_ids}")
+                return
+            
+            # Update metadata
+            updated_metadatas = []
+            for metadata in results["metadatas"]:
+                metadata["speaker"] = speaker_name
+                metadata["speaker_confidence"] = confidence
+                updated_metadatas.append(metadata)
+            
+            # Update in vector store
+            self.collection.update(
+                ids=face_ids,
+                metadatas=updated_metadatas
+            )
+            
+            logger.info(f"✅ Updated speaker associations for {len(face_ids)} faces")
+            
+        except Exception as e:
+            logger.error(f"❌ Error updating speaker associations: {e}")
+            raise
+
+    def delete_episode_faces(self, series: str, season: str, episode: str) -> None:
+        """Delete all faces from a specific episode."""
+        try:
+            filter_criteria = {
+                "series": series,
+                "season": season,
+                "episode": episode
+            }
+            
+            # Get all faces for this episode
+            results = self.collection.query(
+                query_texts=[""],
+                n_results=10000,
+                where=filter_criteria
+            )
+            
+            if results["ids"] and results["ids"][0]:
+                self.collection.delete(ids=results["ids"][0])
+                logger.info(f"🗑️ Deleted {len(results['ids'][0])} faces from {series} {season} {episode}")
+            else:
+                logger.info(f"ℹ️ No faces found to delete for {series} {season} {episode}")
+                
+        except Exception as e:
+            logger.error(f"❌ Error deleting episode faces: {e}")
+            raise
+        

@@ -78,6 +78,10 @@ class PathHandler:
         """Get the path to the SRT subtitle file for this episode."""
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}.srt")
 
+    def get_enhanced_srt_path(self) -> str:
+        """Get the path to the enhanced SRT file with speaker identification for this episode."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_enhanced.srt")
+
     def get_plot_scenes_json_path(self) -> str:
         """Get the path to the plot scenes JSON file."""
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_plot_scenes.json")
@@ -85,6 +89,79 @@ class PathHandler:
     def get_scene_timestamps_path(self) -> str:
         """Get the path to the scene timestamps JSON file."""
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_scene_timestamps.json")
+
+    # Face tracking and speaker identification paths
+    def get_video_file_path(self) -> str:
+        """Get the path to the main video file for this episode."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}.mp4")
+    
+    def get_speaker_analysis_path(self) -> str:
+        """Get the path to the speaker analysis JSON file."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_speaker_analysis.json")
+    
+    def get_dialogue_faces_csv_path(self) -> str:
+        """Get the path to the dialogue faces CSV file."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_dialogue_faces.csv")
+    
+    def get_dialogue_faces_debug_path(self) -> str:
+        """Get the path to the dialogue faces debug JSON file."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_dialogue_faces_debug.json")
+    
+    def get_character_medians_summary_path(self) -> str:
+        """Get the path to the character medians summary JSON file."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_character_medians.json")
+    
+    def get_face_processing_summary_path(self) -> str:
+        """Get the path to the streamlined face processing summary JSON file."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_face_processing_summary.json")
+    
+    def get_dialogue_faces_dir(self) -> str:
+        """Get the directory for storing dialogue face images."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, "dialogue_faces")
+    
+    def get_dialogue_frames_dir(self) -> str:
+        """Get the directory for storing dialogue frame images."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, "dialogue_frames")
+    
+    def get_dialogue_embeddings_dir(self) -> str:
+        """Get the directory for storing dialogue face embeddings."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, "dialogue_embeddings")
+    
+    def get_dialogue_embeddings_metadata_csv_path(self) -> str:
+        """Get the path to the dialogue embeddings metadata CSV."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_dialogue_embeddings_metadata.csv")
+    
+    def get_cluster_visualization_dir(self) -> str:
+        """Get the directory for cluster visualizations."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, "cluster_visualizations")
+    
+    def get_face_clusters_summary_path(self) -> str:
+        """Get the path to the face clusters summary JSON."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_face_clusters_summary.json")
+    
+    def get_face_clusters_assignments_path(self) -> str:
+        """Get the path to the face cluster assignments JSON for multi-face processing."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_face_cluster_assignments.json")
+    
+    def get_speaker_face_associations_path(self) -> str:
+        """Get the path to the speaker-face associations JSON."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_speaker_face_associations.json")
+    
+    def get_llm_checkpoint_path(self) -> str:
+        """Get the path to the LLM speaker assignments checkpoint file."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_llm_checkpoint.json")
+    
+    def get_chroma_db_path(self) -> str:
+        """Get the path to the ChromaDB directory."""
+        return os.path.join("narrative_storage", "chroma_db")
+    
+    def get_dialogue_json_path(self) -> str:
+        """Get the path to the parsed dialogue JSON file."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_dialogue.json")
+    
+    def get_episode_code(self) -> str:
+        """Get the episode code (e.g., GAS01E01)."""
+        return f"{self.series}{self.season}{self.episode}"
 
     def get_season_summary_path(self) -> str:
         """Get the path to the cumulative season summary file."""

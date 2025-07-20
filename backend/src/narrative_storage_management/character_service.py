@@ -1,7 +1,7 @@
 # character_service.py
 
 from sqlite3 import IntegrityError
-from typing import List, Optional, Union
+from typing import List, Optional, Union, Dict
 from ..narrative_storage_management.narrative_models import Character, CharacterAppellation, NarrativeArc, ArcProgression
 from ..narrative_storage_management.repositories import CharacterRepository
 from ..plot_processing.plot_processing_models import EntityLink
@@ -24,11 +24,7 @@ class CharacterService:
             return None
 
         try:
-            # Ensure entity_name is normalized
-            normalized_entity_name = self._normalize_name(entity.entity_name)
-            entity.entity_name = normalized_entity_name
-
-            # Normalize and validate appellations
+            # Normalize and validate appellations first
             validated_appellations = set()
             for appellation in entity.appellations:
                 if appellation and len(appellation.strip()) > 1:
@@ -44,18 +40,38 @@ class CharacterService:
                 logger.warning(f"No valid appellations found for entity: {entity.entity_name}")
                 return None
 
-            # First try to find existing character by normalized entity_name
-            existing_character = self.character_repository.get_by_entity_name(normalized_entity_name, series)
+            # CRITICAL: Find existing character by ANY appellation first to get canonical entity_name
+            existing_character = None
+            canonical_entity_name = None
             
-            # If not found by entity_name, try to find by any appellation
+            # First check if we already have this character by any appellation
+            for appellation in validated_appellations:
+                existing_character = self.character_repository.get_character_by_appellation(
+                    appellation, 
+                    series
+                )
+                if existing_character:
+                    canonical_entity_name = existing_character.entity_name
+                    logger.info(f"🔗 Found existing character by appellation '{appellation}': {canonical_entity_name}")
+                    break
+            
+            # If not found by appellation, try by normalized entity_name
             if not existing_character:
-                for appellation in validated_appellations:
-                    existing_character = self.character_repository.get_character_by_appellation(
-                        appellation, 
-                        series
-                    )
-                    if existing_character:
-                        break
+                normalized_entity_name = self._normalize_name(entity.entity_name)
+                existing_character = self.character_repository.get_by_entity_name(normalized_entity_name, series)
+                if existing_character:
+                    canonical_entity_name = existing_character.entity_name
+                    logger.info(f"🔗 Found existing character by entity_name: {canonical_entity_name}")
+                else:
+                    # No existing character found, use normalized name as canonical
+                    canonical_entity_name = normalized_entity_name
+                    logger.info(f"🆕 Creating new character with canonical entity_name: {canonical_entity_name}")
+            
+            # IMPORTANT: Always use the canonical entity_name for consistency
+            if canonical_entity_name is None:
+                logger.error(f"Failed to determine canonical entity_name for {entity.entity_name}")
+                return None
+            entity.entity_name = canonical_entity_name
 
             if existing_character:
                 # Update existing character
@@ -64,6 +80,9 @@ class CharacterService:
                 
                 # Update best appellation
                 existing_character.best_appellation = entity.best_appellation
+                
+                # Update biological sex
+                existing_character.biological_sex = entity.biological_sex  # NEW: Update biological sex
 
                 # Add all validated appellations
                 for appellation in validated_appellations:
@@ -89,11 +108,12 @@ class CharacterService:
                 )
                 return existing_character
             else:
-                # Create new character
+                # Create new character with canonical entity_name
                 new_character = Character(
-                    entity_name=normalized_entity_name,
+                    entity_name=entity.entity_name,  # Using the validated canonical entity_name
                     best_appellation=entity.best_appellation,
-                    series=series
+                    series=series,
+                    biological_sex=entity.biological_sex  # NEW: Store biological sex
                 )
 
                 # Add all validated appellations
@@ -126,11 +146,11 @@ class CharacterService:
 
         except IntegrityError as e:
             logger.error(f"Database integrity error when processing character {entity.entity_name}: {e}")
-            self.character_repository.session.rollback()
+            # Session rollback is handled by session_scope() context manager
             raise
         except Exception as e:
             logger.error(f"Unexpected error when processing character {entity.entity_name}: {e}")
-            self.character_repository.session.rollback()
+            # Session rollback is handled by session_scope() context manager
             raise
 
     def get_characters_by_appellations(self, appellations: List[str], series: str) -> List[Character]:
@@ -269,6 +289,98 @@ class CharacterService:
     def _normalize_name(self, name: str) -> str:
         """Helper method to normalize character names."""
         return name.lower().replace(' ', '_')
+    
+    def get_canonical_entity_name(self, character_name_or_appellation: str, series: str) -> Optional[str]:
+        """
+        Get the canonical entity_name for any character name or appellation.
+        
+        This is CRITICAL for system consistency - all parts of the system should use this
+        to ensure they reference the same canonical entity_name for character identification.
+        
+        Args:
+            character_name_or_appellation: Any name or appellation for the character
+            series: The series to search in
+            
+        Returns:
+            The canonical entity_name if found, None otherwise
+        """
+        if not character_name_or_appellation or not character_name_or_appellation.strip():
+            return None
+            
+        character_name_or_appellation = character_name_or_appellation.strip()
+        
+        # First try to find by appellation (most reliable)
+        existing_character = self.character_repository.get_character_by_appellation(
+            character_name_or_appellation, 
+            series
+        )
+        if existing_character:
+            logger.debug(f"🔗 Found canonical entity_name by appellation '{character_name_or_appellation}': {existing_character.entity_name}")
+            return existing_character.entity_name
+        
+        # Try by normalized entity_name
+        normalized_name = self._normalize_name(character_name_or_appellation)
+        existing_character = self.character_repository.get_by_entity_name(normalized_name, series)
+        if existing_character:
+            logger.debug(f"🔗 Found canonical entity_name by entity_name '{character_name_or_appellation}': {existing_character.entity_name}")
+            return existing_character.entity_name
+        
+        # Not found in database - return normalized name as potential canonical name
+        logger.debug(f"🆕 Character not found in database, using normalized name as canonical: {normalized_name}")
+        return normalized_name
+    
+    def build_character_name_mapping(self, series: str) -> Dict[str, str]:
+        """
+        Build a comprehensive mapping from any character name/appellation to canonical entity_name.
+        
+        This is essential for ensuring consistent character identification across all systems
+        (face clustering, speaker identification, etc.).
+        
+        Args:
+            series: The series to build mapping for
+            
+        Returns:
+            Dictionary mapping all character names/appellations to canonical entity_names
+        """
+        mapping = {}
+        
+        try:
+            # Get all characters for this series
+            characters = self.character_repository.get_by_series(series)
+            
+            for character in characters:
+                canonical_name = character.entity_name
+                
+                # Map the entity_name itself
+                mapping[canonical_name] = canonical_name
+                
+                # Map the best_appellation
+                if character.best_appellation:
+                    mapping[character.best_appellation.lower()] = canonical_name
+                    mapping[character.best_appellation] = canonical_name  # Case-sensitive version too
+                
+                # Map all appellations
+                for appellation_obj in character.appellations:
+                    if appellation_obj.appellation:
+                        appellation = appellation_obj.appellation
+                        mapping[appellation.lower()] = canonical_name
+                        mapping[appellation] = canonical_name  # Case-sensitive version too
+            
+            logger.info(f"🗺️ Built character name mapping for series '{series}': {len(mapping)} mappings for {len(characters)} characters")
+            
+            # Log sample mappings for debugging
+            for i, (name, canonical) in enumerate(mapping.items()):
+                if i < 5:  # Show first 5 mappings
+                    logger.debug(f"   📝 '{name}' → '{canonical}'")
+                elif i == 5:
+                    logger.debug(f"   📝 ... and {len(mapping) - 5} more mappings")
+                    break
+            
+            return mapping
+            
+        except Exception as e:
+            logger.error(f"❌ Error building character name mapping: {e}")
+            return {}
 
     def process_entities(self, entities: List[EntityLink], series: str, plot: str = "", llm = None) -> List[Character]:
         """
@@ -318,3 +430,22 @@ class CharacterService:
                 
         logger.info(f"✅ CHARACTER SERVICE: Completed processing. Total characters: {len(processed_characters)}")
         return processed_characters
+
+    def get_episode_entities(self, series: str) -> List[Character]:
+        """
+        Get entities/characters for speaker validation.
+        
+        Args:
+            series: The series to get characters for
+            
+        Returns:
+            List of Character objects for the series
+        """
+        try:
+            # Get all characters for this series - they could all potentially appear in any episode
+            characters = self.character_repository.get_by_series(series)
+            logger.info(f"📚 Loaded {len(characters)} characters from database for speaker validation")
+            return characters
+        except Exception as e:
+            logger.warning(f"⚠️ Could not load episode entities from database: {e}")
+            return []

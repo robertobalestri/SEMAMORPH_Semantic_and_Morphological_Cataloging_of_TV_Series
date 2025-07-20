@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List, Dict
+from typing import List, Dict, Optional
 from json import JSONEncoder
 
 class EntityLink(BaseModel):
@@ -7,6 +7,7 @@ class EntityLink(BaseModel):
     best_appellation: str
     appellations: List[str]
     entity_type: str = "PERSON"  # Default to PERSON, but can be ORG, GPE, etc.
+    biological_sex: Optional[str] = None  # NEW: 'M', 'F', or None for unknown/non-person entities
     
 class EntityLinkEncoder(JSONEncoder):
     """
@@ -21,7 +22,8 @@ class EntityLinkEncoder(JSONEncoder):
                 "entity_name": obj.entity_name,
                 "best_appellation": obj.best_appellation,
                 "appellations": obj.appellations,
-                "entity_type": obj.entity_type
+                "entity_type": obj.entity_type,
+                "biological_sex": obj.biological_sex
             }
         return super().default(obj)
     

@@ -20,6 +20,7 @@ from backend.src.plot_processing.subtitle_processing import (
     parse_srt_file, 
     generate_plot_from_subtitles, 
     map_scene_to_timestamps, 
+    map_scenes_to_timestamps_with_boundary_correction,
     save_plot_files,
     save_scene_timestamps,
     load_previous_season_summary,
@@ -28,7 +29,6 @@ from backend.src.plot_processing.subtitle_processing import (
 from backend.src.plot_processing.plot_summarizing import create_or_update_season_summary
 from backend.src.utils.text_utils import load_text
 from backend.src.plot_processing.plot_text_processing import replace_pronouns_with_names
-from backend.src.plot_processing.plot_semantic_processing import semantic_split
 from backend.src.plot_processing.plot_ner_entity_extraction import (
     extract_and_refine_entities_with_path_handler,
     substitute_appellations_with_names,
@@ -156,7 +156,24 @@ class ProcessingPipeline:
                 results["files_created"].append(segments_path)
                 results["steps_completed"].append("SEMANTIC_SEGMENTATION")
             
-            # Step 5: Narrative arc extraction
+            # Step 5: Season summary update (MOVED EARLIER)
+            if progress_callback:
+                progress_callback("SEASON_SUMMARY", "Updating season summary")
+                
+            summary_path = await self._update_season_summary(
+                path_handler, llm_intelligent, progress_callback
+            )
+            if summary_path:
+                results["files_created"].append(summary_path)
+                results["steps_completed"].append("SEASON_SUMMARY")
+            
+            # Step 6: Narrative arc extraction (MOVED TO END WITH DELAY)
+            if progress_callback:
+                progress_callback("NARRATIVE_EXTRACTION", "Waiting before narrative arcs extraction...")
+            
+            import asyncio
+            await asyncio.sleep(100000)  # Almost infinite delay for debugging
+            
             if progress_callback:
                 progress_callback("NARRATIVE_EXTRACTION", "Extracting narrative arcs")
                 
@@ -165,14 +182,6 @@ class ProcessingPipeline:
             )
             results["narrative_arcs_found"] = arcs_count
             results["steps_completed"].append("NARRATIVE_EXTRACTION")
-            
-            # Step 6: Season summary update
-            if progress_callback:
-                progress_callback("SEASON_SUMMARY", "Updating season summary")
-                
-            summary_path = await self._update_season_summary(
-                path_handler, llm_intelligent, progress_callback
-            )
             if summary_path:
                 results["files_created"].append(summary_path)
                 results["steps_completed"].append("SEASON_SUMMARY")
@@ -280,11 +289,8 @@ class ProcessingPipeline:
                 )
                 scenes.append(scene)
             
-            # Map each scene to timestamps
-            mapped_scenes = []
-            for scene in scenes:
-                mapped_scene = map_scene_to_timestamps(scene, subtitles, llm_cheap)
-                mapped_scenes.append(mapped_scene)
+            # Map scenes to timestamps with boundary correction
+            mapped_scenes = map_scenes_to_timestamps_with_boundary_correction(scenes, subtitles, llm_cheap)
             
             # Save scene timestamps
             episode_prefix = f"{path_handler.get_series()}{path_handler.get_season()}{path_handler.get_episode()}"
@@ -401,37 +407,6 @@ class ProcessingPipeline:
             
         except Exception as e:
             raise EntityExtractionError(f"Entity substitution failed: {str(e)}", cause=e)
-    
-    async def _perform_semantic_segmentation(
-        self,
-        path_handler: PathHandler,
-        llm_intelligent,
-        progress_callback: Optional[Callable[[str, str], None]] = None
-    ) -> Optional[str]:
-        """Perform semantic segmentation of the plot."""
-        try:
-            semantic_segments_path = path_handler.get_semantic_segments_path()
-            
-            if os.path.exists(semantic_segments_path):
-                self.logger.info(f"Loading semantic segments from: {semantic_segments_path}")
-                return semantic_segments_path
-            
-            # Load entity normalized plot
-            entity_normalized_plot_path = path_handler.get_entity_normalized_plot_file_path()
-            with open(entity_normalized_plot_path, "r") as file:
-                entity_normalized_plot = file.read()
-            
-            self.logger.info("Performing semantic splitting")
-            semantic_segments = semantic_split(text=entity_normalized_plot, llm=llm_intelligent)
-            
-            with open(semantic_segments_path, "w", encoding='utf-8') as file:
-                json.dump(semantic_segments, file, indent=2, ensure_ascii=False)
-            
-            self.logger.info(f"Semantic splitting complete. Results saved to {semantic_segments_path}")
-            return semantic_segments_path
-            
-        except Exception as e:
-            raise SemanticSegmentationError(str(e), cause=e)
     
     async def _extract_narrative_arcs(
         self,

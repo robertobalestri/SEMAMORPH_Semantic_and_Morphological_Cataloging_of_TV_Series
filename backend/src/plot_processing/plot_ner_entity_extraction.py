@@ -222,6 +222,7 @@ def extract_and_refine_entities(
         1. The standardized entity name (lowercase with underscores)
         2. The best appellation (most complete/formal version of the name)
         3. All possible appellations (variations of the name)
+        4. The biological sex of the character ('M' for male, 'F' for female, or null for unknown/non-person entities)
 
         IMPORTANT GUIDELINES:
         - Be careful with names that share the same surname (like "Derek Shepherd" and "Addison Shepherd"). These are often different characters who are related or married, NOT the same person.
@@ -235,13 +236,16 @@ def extract_and_refine_entities(
         - CRITICAL: NEVER include a common appellation (like just "Johnson") for entities with different gender-specific titles, as this could create confusion between different people with the same surname.
         - List all possible variations of the name as appellations.
         - If you're unsure about an entity, include it anyway with your best guess.
+        - CRITICAL: You MUST include ALL entities from the extracted list. Do not skip or omit any entities.
+        - For biological_sex: Use context clues, titles (Mr./Mrs./Ms./Miss), pronouns (he/she), and character names to determine biological sex. Use 'M' for male, 'F' for female, or null for unknown/unclear cases.
 
         Format your response as a JSON array of objects with the following structure:
         [
             {{
                 "entity_name": "standardized_name",
                 "best_appellation": "Best Formal Name",
-                "appellations": ["Variation 1", "Variation 2", ...]
+                "appellations": ["Variation 1", "Variation 2", ...],
+                "biological_sex": "M" or "F" or null
             }},
             ...
         ]
@@ -278,6 +282,7 @@ def extract_and_refine_entities(
                 entity_name = entity_data.get("entity_name", "").strip()
                 best_appellation = entity_data.get("best_appellation", "").strip()
                 appellations = entity_data.get("appellations", [])
+                biological_sex = entity_data.get("biological_sex")
                 
                 # Skip empty entities
                 if not entity_name:
@@ -287,28 +292,153 @@ def extract_and_refine_entities(
                 entity_link = EntityLink(
                     entity_name=entity_name,
                     best_appellation=best_appellation if best_appellation else entity_name,
-                    appellations=appellations if appellations else [entity_name]
+                    appellations=appellations if appellations else [entity_name],
+                    biological_sex=biological_sex
                 )
                 
                 refined_entities.append(entity_link)
                 
             logger.info(f"✅ LLM refined {len(refined_entities)} entities")
             for entity in refined_entities:
-                logger.info(f"   📋 LLM Result: {entity.entity_name} → {entity.best_appellation} ({entity.appellations})")
+                sex_info = f" [Sex: {entity.biological_sex}]" if entity.biological_sex else " [Sex: Unknown]"
+                logger.info(f"   📋 LLM Result: {entity.entity_name} → {entity.best_appellation} ({entity.appellations}){sex_info}")
+            
+            # Log biological sex assignment summary
+            sex_assignments = {}
+            for entity in refined_entities:
+                sex = entity.biological_sex or "Unknown"
+                sex_assignments[sex] = sex_assignments.get(sex, 0) + 1
+            
+            logger.info(f"🧬 Biological sex assignments: {dict(sex_assignments)}")
+            
+            # Check for entities that spaCy extracted but LLM didn't include in response
+            llm_entity_names = {normalize_entity_name(entity.entity_name) for entity in refined_entities}
+            missing_entities_raw = []
+            
+            for extracted_entity in extracted_entities:
+                normalized_extracted = normalize_entity_name(extracted_entity)
+                if normalized_extracted not in llm_entity_names:
+                    missing_entities_raw.append(extracted_entity)
+                    logger.warning(f"⚠️ LLM missed entity: {extracted_entity}")
+            
+            # If there are missing entities, make a second LLM call to validate them
+            if missing_entities_raw:
+                logger.info(f"🔍 MAKING SECOND LLM CALL: Validating {len(missing_entities_raw)} missed entities")
+                
+                validation_prompt_template = """
+                You are an expert in character identification. I have entities that were extracted by NER but missed in the previous analysis.
+                
+                Your task: Determine which of these entities are ACTUAL CHARACTERS (including minor characters) that should be included in a character database.
+                
+                Here is the text context:
+                ```
+                {named_plot}
+                ```
+                
+                Here are the entities that were missed:
+                {missed_entities}
+                
+                For each entity, determine:
+                1. Is this an ACTUAL CHARACTER in the story? Include main characters, minor characters, background characters, etc.
+                
+                For entities that ARE characters, provide:
+                1. The standardized entity name (lowercase with underscores)
+                2. The best appellation (most complete/formal version of the name)
+                3. All possible appellations (variations of the name)
+                4. The biological sex ('M' for male, 'F' for female, or null for unknown)
+                
+                CRITICAL: Only include entities that are clearly CHARACTERS.
+
+                IMPORTANT GUIDELINES:
+                    - Be careful with names that share the same surname (like "Derek Shepherd" and "Addison Shepherd"). These are often different characters who are related or married, NOT the same person.
+                    - Characters with different titles but the same surname (like "Mr. Johnson" and "Mrs. Johnson") are almost always DIFFERENT people.
+                    - Standardize entity names by removing titles and using lowercase with underscores.
+                    - ALWAYS use the real name for the entity_name, NOT nicknames (e.g., use "miranda_bailey" not "the_nazi").
+                    - For the best_appellation, ALWAYS prefer the most formal version with title if available (e.g., "Dr. Miranda Bailey" is better than "Miranda Bailey" or "The Nazi").
+                    - If a character has a nickname, include it as an appellation but NEVER as the entity_name.
+                    - Split compound appellations like "Mr. and Mrs. Johnson" into separate entities: "mr_johnson" and "mrs_johnson".
+                    - NEVER mix gender-specific titles (Mr./Mrs./Miss/Ms.) for the same entity. If you see "Mr. Johnson" and "Mrs. Johnson", these are different people.
+                    - CRITICAL: NEVER include a common appellation (like just "Johnson") for entities with different gender-specific titles, as this could create confusion between different people with the same surname.
+                    - List all possible variations present in the plot of the name as appellations.
+                    - For biological_sex: Use context clues, titles (Mr./Mrs./Ms./Miss), pronouns (he/she), and character names to determine biological sex. Use 'M' for male, 'F' for female, or null for unknown/unclear cases.
+                
+                Format your response as a JSON array of objects ONLY for entities that are characters:
+                [
+                    {{
+                        "entity_name": "standardized_name",
+                        "best_appellation": "Best Formal Name",
+                        "appellations": ["Variation 1", "Variation 2", ...],
+                        "biological_sex": "M" or "F" or null
+                    }},
+                    ...
+                ]
+                
+                If none of the missed entities are characters, return an empty array: []
+                Only include the JSON array in your response, nothing else.
+                """
+                
+                validation_prompt = PromptTemplate.from_template(validation_prompt_template)
+                formatted_validation_prompt = validation_prompt.format(
+                    named_plot=preprocessed_text[:3000],  # Limit text size for efficiency
+                    missed_entities=", ".join(missing_entities_raw)
+                )
+                
+                try:
+                    validation_response = llm.invoke([HumanMessage(content=formatted_validation_prompt)])
+                    
+                    # Ensure response content is a string
+                    response_content = str(validation_response.content) if validation_response.content else ""
+                    
+                    # Save validation LLM response for debugging
+                    validation_debug_path = os.path.join(os.path.dirname(raw_output_path), "llm_validation_response.txt")
+                    try:
+                        with open(validation_debug_path, "w", encoding="utf-8") as f:
+                            f.write(response_content)
+                        logger.info(f"Saved validation LLM response to {validation_debug_path}")
+                    except Exception as e:
+                        logger.error(f"Error saving validation LLM response: {e}")
+                    
+                    # Parse validation response
+                    validated_entities = clean_llm_json_response(response_content)
+                    
+                    if validated_entities:
+                        logger.info(f"✅ LLM validated {len(validated_entities)} entities as actual characters")
+                        
+                        # Convert validated entities to EntityLink objects
+                        for entity_data in validated_entities:
+                            entity_name = entity_data.get("entity_name", "").strip()
+                            best_appellation = entity_data.get("best_appellation", "").strip()
+                            appellations = entity_data.get("appellations", [])
+                            biological_sex = entity_data.get("biological_sex")
+                            
+                            # Skip empty entities
+                            if not entity_name:
+                                continue
+                                
+                            # Create EntityLink object
+                            validated_entity_link = EntityLink(
+                                entity_name=entity_name,
+                                best_appellation=best_appellation if best_appellation else entity_name,
+                                appellations=appellations if appellations else [entity_name],
+                                biological_sex=biological_sex
+                            )
+                            
+                            refined_entities.append(validated_entity_link)
+                            sex_info = f" [Sex: {validated_entity_link.biological_sex}]" if validated_entity_link.biological_sex else " [Sex: Unknown]"
+                            logger.info(f"   ➕ Validated character: {validated_entity_link.entity_name} → {validated_entity_link.best_appellation} ({validated_entity_link.appellations}){sex_info}")
+                    else:
+                        logger.info("✅ LLM determined no missed entities are actual characters")
+                        
+                except Exception as validation_error:
+                    logger.error(f"❌ Error in second LLM call for validation: {validation_error}")
+                    logger.info("⚠️ Continuing without adding missed entities")
+            
+            logger.info(f"📊 Final entities after validation: {len(refined_entities)} total")
             
         except Exception as e:
             logger.error(f"Error parsing LLM response: {e}")
-            # Fallback: Create basic EntityLink objects for each extracted entity
-            for entity_name in extracted_entities:
-                entity_link = EntityLink(
-                    entity_name=normalize_entity_name(entity_name),
-                    best_appellation=entity_name,
-                    appellations=[entity_name]
-                )
-                refined_entities.append(entity_link)
-            logger.info(f"⚠️ Created {len(refined_entities)} basic entities after LLM parsing failure")
-            for entity in refined_entities:
-                logger.info(f"   📋 Fallback: {entity.entity_name} → {entity.best_appellation} ({entity.appellations})")
+            logger.error(f"⚠️ LLM parsing failed. No entities will be added from this episode.")
+            logger.info("❌ Raw spaCy entities will NOT be added as fallback - only LLM-validated entities are allowed")
 
     # 6. Remove conflicting surname appellations between male and female characters
     logger.info("🔍 STEP 5: CHECKING FOR CONFLICTING SURNAME APPELLATIONS")
@@ -325,18 +455,17 @@ def extract_and_refine_entities(
     else:
         logger.info("⚠️ No entities to check for surname conflicts")
 
-    # 7. Prepare entities for database - Include existing entities for proper merging
+    # 7. Prepare entities for database - ONLY LLM-validated entities
     logger.info("🔍 STEP 6: PREPARING ENTITIES FOR DATABASE PROCESSING")
-    entities_for_database = list(refined_entities)  # Start with new LLM-processed entities
+    entities_for_database = list(refined_entities)  # ONLY new LLM-processed entities
     
-    # Add existing entities to database processing so they can be properly merged
-    entities_for_database.extend(existing_entities)
-    logger.info(f"📊 Entities for database: {len(entities_for_database)} = {len(refined_entities)} new + {len(existing_entities)} existing")
+    # ❌ REMOVED: No longer adding existing entities to database processing
+    # This ensures only LLM-validated entities reach the database
+    logger.info(f"📊 Entities for database: {len(entities_for_database)} (ONLY LLM-validated entities)")
     
-    logger.info("📋 All entities going to database processing:")
+    logger.info("📋 LLM-validated entities going to database:")
     for i, entity in enumerate(entities_for_database):
-        source = "NEW" if i < len(refined_entities) else "EXISTING"
-        logger.info(f"   {source}: {entity.entity_name} → {entity.best_appellation} ({entity.appellations})")
+        logger.info(f"   LLM-VALIDATED: {entity.entity_name} → {entity.best_appellation} ({entity.appellations})")
     
     # 8. Prepare entities for season file (merge with existing to preserve other episodes' data)
     logger.info("🔍 STEP 7: PREPARING ENTITIES FOR SEASON FILE")
@@ -538,7 +667,9 @@ def remove_conflicting_surname_appellations(entities: List[EntityLink], llm: Azu
             updated_entity = EntityLink(
                 entity_name=entity.entity_name,
                 best_appellation=entity.best_appellation,
-                appellations=entity.appellations.copy()
+                appellations=entity.appellations.copy(),
+                entity_type=entity.entity_type,
+                biological_sex=entity.biological_sex
             )
             updated_entities.append(updated_entity)
         
@@ -602,7 +733,9 @@ def merge_duplicate_entities(entities: List[EntityLink], text: str, llm: AzureCh
         current_entity = EntityLink(
             entity_name=entity1.entity_name,
             best_appellation=entity1.best_appellation,
-            appellations=entity1.appellations.copy()
+            appellations=entity1.appellations.copy(),
+            entity_type=entity1.entity_type,
+            biological_sex=entity1.biological_sex
         )
 
         # Gather any near-duplicates that share some textual similarity
@@ -893,7 +1026,9 @@ def merge_duplicate_entities_improved(entities: List[EntityLink], text: str, llm
         current_entity = EntityLink(
             entity_name=entity1.entity_name,
             best_appellation=entity1.best_appellation,
-            appellations=entity1.appellations.copy()
+            appellations=entity1.appellations.copy(),
+            entity_type=entity1.entity_type,
+            biological_sex=entity1.biological_sex
         )
 
         # Look for entities that should definitely be merged

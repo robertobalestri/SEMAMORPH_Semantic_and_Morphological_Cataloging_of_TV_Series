@@ -10,6 +10,79 @@ from sqlalchemy import UniqueConstraint, func
 from ..utils.logger_utils import setup_logging
 logger = setup_logging(__name__)
 
+class DialogueLine:
+    """Model representing a dialogue line from subtitles."""
+    
+    def __init__(self, index: int, start_time: float, end_time: float, text: str):
+        self.index = index
+        self.start_time = start_time
+        self.end_time = end_time
+        self.text = text
+        self.speaker: Optional[str] = None  # Final speaker name (after all processing)
+        self.is_llm_confident: Optional[bool] = None  # Boolean confidence from LLM
+        self.scene_number: Optional[int] = None
+        self.face_image_paths: Optional[List[str]] = None
+        self.frame_image_paths: Optional[List[str]] = None
+        # New fields for tracking speaker assignment history
+        self.original_llm_speaker: Optional[str] = None  # Original LLM assignment
+        self.original_llm_is_confident: Optional[bool] = None  # Original LLM boolean confidence
+        self.resolution_method: Optional[str] = None  # How final speaker was determined
+        self.other_possible_speakers: Optional[List[str]] = None  # Alternative speakers from LLM
+        # Multi-face processing fields
+        self.candidate_speakers: Optional[List[str]] = None  # Multiple speaker candidates from faces (qualified)
+        self.face_similarities: Optional[List[float]] = None  # Similarities for candidate speakers
+        self.face_cluster_ids: Optional[List[int]] = None  # Cluster IDs for candidate speakers
+        
+        # All detected faces (for enhanced SRT display, including low-confidence)
+        self.all_candidate_speakers: Optional[List[str]] = None  # All speaker candidates from faces
+        self.all_face_similarities: Optional[List[float]] = None  # All similarities 
+        self.all_face_cluster_ids: Optional[List[int]] = None  # All cluster IDs
+    
+    def to_dict(self) -> dict:
+        """Convert to dictionary for JSON serialization."""
+        return {
+            "index": self.index,
+            "start_time": self.start_time,
+            "end_time": self.end_time,
+            "text": self.text,
+            "speaker": self.speaker,
+            "is_llm_confident": self.is_llm_confident,
+            "scene_number": self.scene_number,
+            "face_image_paths": self.face_image_paths,
+            "frame_image_paths": self.frame_image_paths,
+            "original_llm_speaker": self.original_llm_speaker,
+            "original_llm_is_confident": self.original_llm_is_confident,
+            "resolution_method": self.resolution_method,
+            "other_possible_speakers": self.other_possible_speakers,
+            "candidate_speakers": self.candidate_speakers,
+            "face_similarities": self.face_similarities,
+            "face_cluster_ids": self.face_cluster_ids,
+            "all_candidate_speakers": self.all_candidate_speakers,
+            "all_face_similarities": self.all_face_similarities,
+            "all_face_cluster_ids": self.all_face_cluster_ids
+        }
+    
+    @classmethod
+    def from_dict(cls, data: dict) -> "DialogueLine":
+        """Create from dictionary."""
+        line = cls(data["index"], data["start_time"], data["end_time"], data["text"])
+        line.speaker = data.get("speaker")
+        line.is_llm_confident = data.get("is_llm_confident")
+        line.scene_number = data.get("scene_number")
+        line.face_image_paths = data.get("face_image_paths")
+        line.frame_image_paths = data.get("frame_image_paths")
+        line.original_llm_speaker = data.get("original_llm_speaker")
+        line.original_llm_is_confident = data.get("original_llm_is_confident")
+        line.resolution_method = data.get("resolution_method")
+        line.other_possible_speakers = data.get("other_possible_speakers")
+        line.candidate_speakers = data.get("candidate_speakers")
+        line.face_similarities = data.get("face_similarities")
+        line.face_cluster_ids = data.get("face_cluster_ids")
+        line.all_candidate_speakers = data.get("all_candidate_speakers")
+        line.all_face_similarities = data.get("all_face_similarities")
+        line.all_face_cluster_ids = data.get("all_face_cluster_ids")
+        return line
+
 class ArcMainCharacterLink(SQLModel, table=True):
     """Junction table for main characters in narrative arcs."""
     __tablename__ = "arc_main_characters"
@@ -43,6 +116,7 @@ class Character(SQLModel, table=True):
     entity_name: str = Field(primary_key=True)
     best_appellation: str
     series: str = Field(index=True)
+    biological_sex: Optional[str] = Field(default=None, index=True)  # NEW: 'M', 'F', or None for unknown
 
     # Relationships
     appellations: List["CharacterAppellation"] = Relationship(

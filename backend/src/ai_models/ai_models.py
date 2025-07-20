@@ -133,7 +133,7 @@ def get_llm(intelligent_or_cheap: LLMType) -> AzureChatOpenAI:
 
 def get_embedding_model():
     return CohereEmbeddings(
-        model="Cohere-embed-v3-english",
+        model="embed-v-4-0",
         cohere_api_key=os.getenv("AZURE_COHERE_EMBEDDING_API_KEY"),
         base_url=os.getenv("AZURE_COHERE_EMBEDDING_API_ENDPOINT"),
     )

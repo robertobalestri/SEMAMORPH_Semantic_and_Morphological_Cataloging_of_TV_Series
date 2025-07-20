@@ -1,3195 +1,3327 @@
 1
-00:00:00,216 --> 00:00:02,124
+00:00:01,116 --> 00:00:03,024
 Previously on "Grey's Anatomy"...
 
 2
-00:00:02,252 --> 00:00:03,225
+00:00:03,152 --> 00:00:04,125
 How hot is the sex?
 
 3
-00:00:03,275 --> 00:00:04,914
+00:00:04,175 --> 00:00:05,814
 Some people would call this a relationship.
 
 4
-00:00:04,966 --> 00:00:07,489
+00:00:05,866 --> 00:00:08,389
 It's just that I hardly know anything about you.
 
 5
-00:00:07,541 --> 00:00:10,311
-We're having sex every night. I think I deserve details.
+00:00:08,441 --> 00:00:11,211
+We're having sex every night.
+I think I deserve details.
 
 6
-00:00:10,357 --> 00:00:11,484
+00:00:11,257 --> 00:00:12,384
 You have more details than most.
 
 7
-00:00:11,539 --> 00:00:13,895
-What makes a hotshot doc leave the big apple for Seattle?
+00:00:12,439 --> 00:00:14,795
+What makes a hotshot doc leave
+the big apple for Seattle?
 
 8
-00:00:13,961 --> 00:00:15,063
+00:00:14,861 --> 00:00:15,963
 Thanks for the coffee.
 
 9
-00:00:18,774 --> 00:00:20,428
+00:00:19,674 --> 00:00:21,328
 Adoption? Keeping the baby?
 
 10
-00:00:20,505 --> 00:00:22,057
+00:00:21,405 --> 00:00:22,957
 I know this is a difficult decision.
 
 11
-00:00:22,101 --> 00:00:22,791
+00:00:23,000 --> 00:00:23,690
 I'm not interested.
 
 12
-00:00:22,870 --> 00:00:24,042
+00:00:23,770 --> 00:00:24,940
 I am not your sister!
 
 13
-00:00:24,108 --> 00:00:25,850
+00:00:25,000 --> 00:00:26,750
 I am a man!
 
 14
-00:00:25,938 --> 00:00:26,869
+00:00:26,838 --> 00:00:27,769
 You need to get laid.
 
 15
-00:00:26,951 --> 00:00:27,960
+00:00:27,851 --> 00:00:28,860
 See that nurse over there?
 
 16
-00:00:28,066 --> 00:00:30,781
+00:00:28,966 --> 00:00:31,681
 She's single. She's got red hair. Go ask her out.
 
 17
-00:00:30,919 --> 00:00:32,389
+00:00:31,819 --> 00:00:33,289
 Smooth moves, doctor.
 
 18
-00:00:33,182 --> 00:00:34,031
+00:00:34,082 --> 00:00:34,931
 Who is that?
 
 19
-00:00:34,100 --> 00:00:34,820
+00:00:35,000 --> 00:00:35,720
 That's dad.
 
 20
-00:00:34,898 --> 00:00:36,085
+00:00:35,798 --> 00:00:36,985
 What's her diagnosis?
 
 21
-00:00:36,151 --> 00:00:37,012
+00:00:37,051 --> 00:00:37,912
 Alzheimer's.
 
 22
-00:00:37,089 --> 00:00:39,055
+00:00:37,989 --> 00:00:39,955
 She doesn't want anyone to know.
 
 23
-00:00:39,161 --> 00:00:41,431
+00:00:40,061 --> 00:00:42,331
 I'm the only person she'll allow to see her.
 
 24
-00:00:47,268 --> 00:00:49,767
+00:00:48,168 --> 00:00:50,667
 Secrets can't hide in science.
 
 25
-00:00:50,159 --> 00:00:53,217
+00:00:51,059 --> 00:00:54,117
 Medicine has a way of exposing the lies.
 
 26
-00:00:54,236 --> 00:00:58,638
-Within the walls of the hospital, the truth is stripped bare.
+00:00:55,136 --> 00:00:59,538
+Within the walls of the hospital,
+the truth is stripped bare.
 
 27
-00:00:59,551 --> 00:01:02,141
-How we keep our secrets outside the hospital --
+00:01:00,451 --> 00:01:03,041
+How we keep our secrets outside the hospital -
 
 28
-00:01:02,340 --> 00:01:04,664
+00:01:03,240 --> 00:01:05,564
 well, that's a little different.
 
 29
-00:01:10,246 --> 00:01:13,181
-George. You locked the door. I need to take a shower.
+00:01:11,146 --> 00:01:14,081
+George. You locked the door.
+I need to take a shower.
 
 30
-00:01:13,247 --> 00:01:15,141
+00:01:14,147 --> 00:01:16,041
 Uh, uh, I'll be out in a minute.
 
 31
-00:01:16,164 --> 00:01:17,174
+00:01:17,064 --> 00:01:18,074
 What are you doing in there?
 
 32
-00:01:17,275 --> 00:01:18,335
+00:01:18,175 --> 00:01:19,235
 It's private.
 
 33
-00:01:19,548 --> 00:01:22,140
+00:01:20,448 --> 00:01:23,040
 Oh. Oh, god. I'm sorry. I get it.
 
 34
-00:01:22,257 --> 00:01:23,690
+00:01:23,157 --> 00:01:24,590
 I don't mean to interrupt.
 
 35
-00:01:23,815 --> 00:01:25,058
+00:01:24,715 --> 00:01:25,958
 No, it's not that!
 
 36
-00:01:25,324 --> 00:01:26,829
+00:01:26,224 --> 00:01:27,729
 It's okay. Take your time.
 
 37
-00:01:27,201 --> 00:01:29,672
+00:01:28,101 --> 00:01:30,572
 I am not doing what you think I'm doing.
 
 38
-00:01:29,728 --> 00:01:34,125
-There's really no need to explain. I'll wait. You just... finish.
+00:01:30,628 --> 00:01:35,025
+There's really no need to explain.
+I'll wait. You just... finish.
 
 39
-00:01:34,202 --> 00:01:36,763
-No, I'm -- I'm coming. I'm coming out!
+00:01:35,102 --> 00:01:37,663
+No, I'm - I'm coming. I'm coming out!
 
 40
-00:01:36,829 --> 00:01:38,585
+00:01:37,729 --> 00:01:39,485
 One thing is certain.
 
 41
-00:01:39,093 --> 00:01:40,997
+00:01:39,993 --> 00:01:41,897
 Whatever it is we're trying to hide,
 
 42
-00:01:41,150 --> 00:01:44,833
-we're never ready for that moment when the truth gets naked.
+00:01:42,050 --> 00:01:45,733
+we're never ready for that moment
+when the truth gets naked.
 
 43
-00:01:45,903 --> 00:01:49,378
+00:01:46,803 --> 00:01:50,278
 Dr. Grey, this is Ms. Henry from the nursing home.
 
 44
-00:01:49,526 --> 00:01:50,925
+00:01:50,426 --> 00:01:51,825
 I'm calling about your mother.
 
 45
-00:01:51,000 --> 00:01:51,882
+00:01:51,900 --> 00:01:52,782
 Is she all right?
 
 46
-00:01:51,943 --> 00:01:53,341
+00:01:52,843 --> 00:01:54,241
 Oh, it's nothing like that.
 
 47
-00:01:53,418 --> 00:01:54,821
+00:01:54,318 --> 00:01:55,721
 Can I call you later then?
 
 48
-00:01:54,902 --> 00:01:57,187
-- Uh, I just wanted to -- 
+00:01:55,802 --> 00:01:58,087
+- Uh, I just wanted to -
 - I have to go.
 
 49
-00:01:59,556 --> 00:02:02,917
+00:02:00,456 --> 00:02:03,817
 Oh, my god. Who is calling you at this hour?
 
 50
-00:02:03,781 --> 00:02:04,688
+00:02:04,681 --> 00:02:05,588
 It's a wrong number.
 
 51
-00:02:10,447 --> 00:02:13,606
-There's no reason to be ashamed. It's normal, healthy even.
+00:02:11,347 --> 00:02:14,506
+There's no reason to be ashamed.
+It's normal, healthy even.
 
 52
-00:02:13,704 --> 00:02:16,228
+00:02:14,604 --> 00:02:17,128
 I'm not ashamed 'cause I wasn't doing anything.
 
 53
-00:02:16,724 --> 00:02:18,455
+00:02:17,624 --> 00:02:19,355
 I don't have to. I have a girlfriend.
 
 54
-00:02:18,665 --> 00:02:20,299
+00:02:19,565 --> 00:02:21,199
 An imaginary girlfriend?
 
 55
-00:02:21,707 --> 00:02:23,324
+00:02:22,607 --> 00:02:24,224
 An actual girlfriend.
 
 56
-00:02:23,482 --> 00:02:24,946
+00:02:24,382 --> 00:02:25,846
 You know what? It's no big deal.
 
 57
-00:02:25,014 --> 00:02:26,771
+00:02:25,914 --> 00:02:27,671
 You don't have to lie. I get it.
 
 58
-00:02:26,878 --> 00:02:27,876
+00:02:27,778 --> 00:02:28,776
 You have needs.
 
 59
-00:02:30,206 --> 00:02:32,019
+00:02:31,106 --> 00:02:32,919
 What is going on out here?
 
 60
-00:02:32,100 --> 00:02:32,714
+00:02:33,000 --> 00:02:33,614
 Nothing.
 
 61
-00:02:34,025 --> 00:02:34,718
+00:02:34,925 --> 00:02:35,618
 Nothing.
 
 62
-00:02:35,341 --> 00:02:36,059
+00:02:36,241 --> 00:02:36,959
 Nothing.
 
 63
-00:02:37,731 --> 00:02:40,559
-He's freaked out 'cause I caught him playing with little jimmy and the twins.
+00:02:38,631 --> 00:02:41,459
+He's freaked out 'cause I caught him
+playing with little jimmy and the twins.
 
 64
-00:02:40,682 --> 00:02:41,710
+00:02:41,582 --> 00:02:42,610
 I have girlfriend.
 
 65
-00:02:42,120 --> 00:02:42,934
+00:02:43,020 --> 00:02:43,834
 Okay.
 
 66
-00:02:47,184 --> 00:02:48,639
+00:02:48,084 --> 00:02:49,539
 This sounds like fun out here.
 
 67
-00:02:54,150 --> 00:02:56,145
-Aren't you gonna get that? It might be the hospital.
+00:02:55,050 --> 00:02:57,045
+Aren't you gonna get that?
+It might be the hospital.
 
 68
-00:02:56,273 --> 00:02:58,110
+00:02:57,173 --> 00:02:59,010
 It's not. Breakfast?
 
 69
-00:03:01,248 --> 00:03:03,041
-That's the problem with secrets --
+00:03:02,148 --> 00:03:03,941
+That's the problem with secrets -
 
 70
-00:03:03,383 --> 00:03:06,667
+00:03:04,283 --> 00:03:07,567
 like misery, they love company.
 
 71
-00:03:06,818 --> 00:03:10,753
-No, look, I told you people -- I'm not coming in for a counseling session.
+00:03:07,718 --> 00:03:11,653
+No, look, I told you people
+- I'm not coming in for a counseling session.
 
 72
-00:03:10,936 --> 00:03:12,671
+00:03:11,836 --> 00:03:13,571
 I know all my options.
 
 73
-00:03:13,179 --> 00:03:17,647
-Uh, well, I made my decision,and I made my appointment.
+00:03:14,079 --> 00:03:18,547
+Uh, well, I made my decision, and
+I made my appointment.
 
 74
-00:03:17,700 --> 00:03:19,275
+00:03:18,600 --> 00:03:20,175
 I'll be there on the 16th.
 
 75
-00:03:19,431 --> 00:03:23,711
-They pile up and up until they take over everything...
+00:03:20,331 --> 00:03:24,611
+They pile up and up until
+they take over everything...
 
 76
-00:03:23,807 --> 00:03:24,929
+00:03:24,707 --> 00:03:25,829
 I paged you last night.
 
 77
-00:03:25,322 --> 00:03:26,402
+00:03:26,222 --> 00:03:27,302
 I wasn't on call.
 
 78
-00:03:28,170 --> 00:03:29,885
+00:03:29,070 --> 00:03:30,785
 That's not why I paged you.
 
 79
-00:03:32,204 --> 00:03:33,669
+00:03:33,104 --> 00:03:34,569
 You could give me your home number.
 
 80
-00:03:36,464 --> 00:03:37,683
+00:03:37,364 --> 00:03:38,583
 Um, Burke...
 
 81
-00:03:41,106 --> 00:03:42,736
+00:03:42,006 --> 00:03:43,636
 Uh, I gotta go.
 
 82
-00:03:43,335 --> 00:03:45,639
+00:03:44,235 --> 00:03:46,539
 ...Until you don't have room for anything else...
 
 83
-00:03:50,928 --> 00:03:55,956
-...until you're so full of secrets, you feel like you're going to burst.
+00:03:51,828 --> 00:03:56,856
+...until you're so full of secrets,
+you feel like you're going to burst.
 
 84
-00:03:56,121 --> 00:03:58,102
+00:03:57,021 --> 00:03:59,002
 I had a really good time the other night.
 
 85
-00:03:58,152 --> 00:03:58,991
+00:03:59,052 --> 00:03:59,891
 Yeah, me too.
 
 86
-00:03:59,662 --> 00:04:02,128
+00:04:00,562 --> 00:04:03,028
 Are you, uh, feeling okay and everything?
 
 87
-00:04:02,208 --> 00:04:03,036
+00:04:03,108 --> 00:04:03,936
 I'm good.
 
 88
-00:04:03,329 --> 00:04:06,062
+00:04:04,229 --> 00:04:06,962
 Great, now that I got to see you. Why?
 
 89
-00:04:06,155 --> 00:04:08,418
+00:04:07,055 --> 00:04:09,318
 Oh, no reason. I'm good, too, you know?
 
 90
-00:04:08,782 --> 00:04:09,672
+00:04:09,682 --> 00:04:10,572
 Really good.
 
 91
-00:04:10,338 --> 00:04:11,085
+00:04:11,238 --> 00:04:11,985
 You know.
 
 92
-00:04:12,094 --> 00:04:14,746
+00:04:12,994 --> 00:04:15,646
 But um... a little itchy.
 
 93
-00:04:14,907 --> 00:04:15,505
+00:04:15,807 --> 00:04:16,405
 George.
 
 94
-00:04:16,461 --> 00:04:16,969
+00:04:17,361 --> 00:04:17,869
 Hey.
 
 95
-00:04:17,066 --> 00:04:17,763
+00:04:17,966 --> 00:04:18,663
 Olivia.
 
 96
-00:04:17,899 --> 00:04:19,232
+00:04:18,799 --> 00:04:20,132
 Hi, Dr. Stevens.
 
 97
-00:04:19,719 --> 00:04:21,336
+00:04:20,619 --> 00:04:22,236
 - I'll see you later.
 - Okay.
 
 98
-00:04:22,354 --> 00:04:23,046
+00:04:23,254 --> 00:04:23,946
 Bye.
 
 99
-00:04:27,695 --> 00:04:28,402
-Y eah.
+00:04:28,595 --> 00:04:29,302
+Yeah.
 
 100
-00:04:29,386 --> 00:04:30,239
+00:04:30,286 --> 00:04:31,139
 She's into me.
 
 101
-00:04:31,044 --> 00:04:33,185
+00:04:32,194 --> 00:04:34,335
 Way to go, George. She's cute.
 
 102
-00:04:33,865 --> 00:04:35,923
+00:04:35,015 --> 00:04:37,073
 So, this morning, you really weren't...
 
 103
-00:04:36,112 --> 00:04:38,421
+00:04:37,162 --> 00:04:39,471
 Anytime you want to apologize.
 
 104
-00:04:39,153 --> 00:04:41,802
-Then what were you doing in the bathroom for so long?
+00:04:40,203 --> 00:04:42,852
+Then what were you doing in
+the bathroom for so long?
 
 105
-00:04:42,328 --> 00:04:43,255
+00:04:43,378 --> 00:04:44,305
 I have to go.
 
 106
-00:05:01,235 --> 00:05:04,083
-I know I'm pretty to look at and all, George, but back up.
+00:05:02,285 --> 00:05:05,133
+I know I'm pretty to look at
+and all, George, but back up.
 
 107
-00:05:04,872 --> 00:05:06,167
+00:05:05,922 --> 00:05:07,217
 I need to ask you something.
 
 108
-00:05:06,652 --> 00:05:07,651
+00:05:07,702 --> 00:05:08,701
 I'm waiting.
 
 109
-00:05:08,148 --> 00:05:14,892
-I seem to be having this skin... thing going on, like a rash, really,
+00:05:09,198 --> 00:05:15,942
+I seem to be having this skin...
+thing going on, like a rash, really,
 
 110
-00:05:14,943 --> 00:05:19,356
-and I think I know what it is, but I can't get close enough to tell for sure.
+00:05:15,993 --> 00:05:20,406
+and I think I know what it is, but I
+can't get close enough to tell for sure.
 
 111
-00:05:19,483 --> 00:05:20,227
-Let's  see it.
+00:05:20,533 --> 00:05:21,277
+Let's see it.
 
 112
-00:05:20,974 --> 00:05:24,864
-It's kind of located in an, um, you know, private --
+00:05:22,024 --> 00:05:25,914
+It's kind of located in an, um, you know, private -
 
 113
-00:05:24,917 --> 00:05:28,634
-You're a doctor, George. It's called a penis. You have a rash on your penis?
+00:05:25,967 --> 00:05:29,684
+You're a doctor, George. It's called a penis.
+You have a rash on your penis?
 
 114
-00:05:30,318 --> 00:05:31,817
+00:05:31,368 --> 00:05:32,867
 I think I can describe it.
 
 115
-00:05:32,136 --> 00:05:34,660
-Um, it's k-- red.
+00:05:33,186 --> 00:05:35,710
+Um, it's k- red.
 
 116
-00:05:34,727 --> 00:05:37,614
-Just come on. Just show me your junk so we can get this over with.
+00:05:35,777 --> 00:05:38,664
+Just come on. Just show me your
+junk so we can get this over with.
 
 117
-00:05:54,915 --> 00:05:55,652
+00:05:55,965 --> 00:05:56,702
 So?
 
 118
-00:05:59,548 --> 00:06:01,488
+00:06:00,598 --> 00:06:02,538
 Dude, you've got syphilis.
 
 119
-00:06:41,239 --> 00:06:45,809
-Once his work-up came back unrevealing, the urologist suggested a cystoscopy.
+00:06:46,063 --> 00:06:48,863
+Patient presented with
+abdominal pain and blood in his urine.
 
 120
-00:06:45,900 --> 00:06:46,582
-Reason?
+00:06:49,189 --> 00:06:53,759
+Once his work-up came back unrevealing,
+the urologist suggested a cystoscopy.
 
 121
-00:06:47,339 --> 00:06:49,402
-To get a look inside the bladder.
+00:06:53,850 --> 00:06:54,532
+Reason?
 
 122
-00:06:49,495 --> 00:06:51,066
-I appreciate you doing this, Preston.
+00:06:55,289 --> 00:06:57,352
+To get a look inside the bladder.
 
 123
-00:06:51,932 --> 00:06:53,949
-I know this is a little out of your field.
+00:06:57,445 --> 00:06:59,016
+I appreciate you doing this, Preston.
 
 124
-00:06:54,062 --> 00:06:54,989
-That's not a problem.
+00:06:59,882 --> 00:07:01,899
+I know this is a little out of your field.
 
 125
-00:06:55,102 --> 00:06:56,822
-It gives my interns something to do.
+00:07:02,012 --> 00:07:02,939
+That's not a problem.
 
 126
-00:06:57,456 --> 00:06:59,238
-I have a feeling you keep them plenty busy.
+00:07:03,052 --> 00:07:04,772
+It gives my interns something to do.
 
 127
-00:06:59,407 --> 00:07:01,250
-We were in the same frat at tulane.
+00:07:05,406 --> 00:07:07,188
+I have a feeling you keep them plenty busy.
 
 128
-00:07:01,548 --> 00:07:05,353
-It's gone from torturing pledges to torturing interns. Am I right?
+00:07:07,357 --> 00:07:09,200
+We were in the same frat at Tulane.
 
 129
-00:07:05,423 --> 00:07:07,905
-Be very careful how you two answer that.
+00:07:09,498 --> 00:07:13,303
+It's gone from torturing pledges
+to torturing interns. Am I right?
 
 130
-00:07:09,412 --> 00:07:10,994
-I could tell some stories.
+00:07:13,373 --> 00:07:15,855
+Be very careful how you two answer that.
 
 131
-00:07:11,064 --> 00:07:13,288
-Bill, you have a camera snaking up your mojo.
+00:07:17,362 --> 00:07:18,944
+I could tell some stories.
 
 132
-00:07:13,385 --> 00:07:14,583
-It's not the time to cross me.
+00:07:19,014 --> 00:07:21,238
+Bill, you have a camera snaking up your mojo.
 
 133
-00:07:14,644 --> 00:07:16,486
-It isn't anything too serious?
+00:07:21,335 --> 00:07:22,533
+It's not the time to cross me.
 
 134
-00:07:16,872 --> 00:07:18,730
-That's what this procedure will tell us.
+00:07:22,594 --> 00:07:24,436
+It isn't anything too serious?
 
 135
-00:07:19,135 --> 00:07:22,520
-You don't worry about anything but growing my godson in there.
+00:07:24,822 --> 00:07:26,680
+That's what this procedure will tell us.
 
 136
-00:07:22,610 --> 00:07:23,974
-He kicks like you wouldn't believe.
+00:07:27,085 --> 00:07:30,470
+You don't worry about anything
+but growing my godson in there.
 
 137
-00:07:24,046 --> 00:07:25,508
-A badass, just like his father.
+00:07:30,560 --> 00:07:31,924
+He kicks like you wouldn't believe.
 
 138
-00:07:26,923 --> 00:07:28,289
-Move a little to the right.
+00:07:31,996 --> 00:07:33,458
+A badass, just like his father.
 
 139
-00:07:28,914 --> 00:07:29,845
-Your other right.
+00:07:34,873 --> 00:07:36,239
+Move a little to the right.
 
 140
-00:07:30,537 --> 00:07:31,366
-There.
+00:07:36,864 --> 00:07:37,795
+Your other right.
 
 141
-00:07:31,658 --> 00:07:32,852
-What do you see? What is it?
+00:07:38,487 --> 00:07:39,316
+There.
 
 142
-00:07:33,700 --> 00:07:35,227
-Could be any number of things.
+00:07:39,608 --> 00:07:40,802
+What do you see? What is it?
 
 143
-00:07:35,310 --> 00:07:37,392
-O'Malley, take a biopsy of the mass.
+00:07:41,650 --> 00:07:43,177
+Could be any number of things.
 
 144
-00:07:37,471 --> 00:07:39,041
-Dr. Karev, schedule a C.T.
+00:07:43,260 --> 00:07:45,342
+O'Malley, take a biopsy of the mass.
 
 145
-00:07:39,140 --> 00:07:40,692
-Let's not worry until we have to.
+00:07:45,420 --> 00:07:46,990
+Dr. Karev, schedule a C.T.
 
 146
-00:07:49,858 --> 00:07:51,020
-There's too much damage.
+00:07:47,090 --> 00:07:48,640
+Let's not worry until we have to.
 
 147
-00:07:52,901 --> 00:07:56,751
-We'll have to remove most of the colon instead of a local resection.
+00:07:57,800 --> 00:07:58,970
+There's too much damage.
 
 148
-00:08:02,435 --> 00:08:03,407
-You gotta push it up.
+00:08:00,851 --> 00:08:04,701
+We'll have to remove most of the
+colon instead of a local resection.
 
 149
-00:08:15,927 --> 00:08:18,870
-More suture. And what's with these damn lights in here?
+00:08:10,385 --> 00:08:11,357
+You gotta push it up.
 
 150
-00:08:27,073 --> 00:08:30,784
-Mr. Franklin, how long has your abdomen been like this?
+00:08:23,877 --> 00:08:26,820
+More suture. And what's with
+these damn lights in here?
 
 151
-00:08:31,174 --> 00:08:33,062
-It's been getting bigger for a while.
+00:08:35,023 --> 00:08:38,734
+Mr. Franklin, how long has
+your abdomen been like this?
 
 152
-00:08:33,247 --> 00:08:35,274
-I told him there was something wrong.
+00:08:39,124 --> 00:08:41,012
+It's been getting bigger for a while.
 
 153
-00:08:35,388 --> 00:08:38,372
-No one gets fat like this so fast. I told him.
+00:08:41,197 --> 00:08:43,224
+I told him there was something wrong.
 
 154
-00:08:38,429 --> 00:08:39,698
-Everybody told him.
+00:08:43,338 --> 00:08:46,322
+No one gets fat like this so fast. I told him.
 
 155
-00:08:39,960 --> 00:08:42,327
-He has dullness to percussion and spider angiomas.
+00:08:46,379 --> 00:08:47,648
+Everybody told him.
 
 156
-00:08:42,392 --> 00:08:43,446
-What's all that mean?
+00:08:47,910 --> 00:08:50,277
+He has dullness to percussion and spider angiomas.
 
 157
-00:08:43,544 --> 00:08:46,084
-We have to run some tests.
+00:08:50,342 --> 00:08:51,396
+What's all that mean?
 
 158
-00:08:46,278 --> 00:08:47,414
-Great.
+00:08:51,494 --> 00:08:54,034
+We have to run some tests.
 
 159
-00:08:47,676 --> 00:08:49,288
-What's that gonna cost us this time?
+00:08:54,228 --> 00:08:55,364
+Great.
 
 160
-00:08:49,482 --> 00:08:51,142
-Alice, don't.
+00:08:55,626 --> 00:08:57,238
+What's that gonna cost us this time?
 
 161
-00:08:57,275 --> 00:08:59,107
-Hi, uh, results for George O'Malley?
+00:08:57,432 --> 00:08:59,092
+Alice, don't.
 
 162
-00:09:02,084 --> 00:09:03,349
-I don't see it here. What's the patient's name?
+00:09:05,225 --> 00:09:07,057
+Hi, uh, results for George O'Malley?
 
 163
-00:09:03,403 --> 00:09:05,801
-O'Malley, George. Look, it's just a simple blood test.
+00:09:10,034 --> 00:09:11,299
+I don't see it here. What's the patient's name?
 
 164
-00:09:06,286 --> 00:09:07,034
-Here you go.
+00:09:11,353 --> 00:09:13,751
+O'Malley, George. Look, it's
+just a simple blood test.
 
 165
-00:09:07,419 --> 00:09:08,165
-Thank you.
+00:09:14,236 --> 00:09:14,984
+Here you go.
 
 166
-00:09:15,293 --> 00:09:17,268
-Franklin, Jordan. I need these back asap.
+00:09:15,369 --> 00:09:16,115
+Thank you.
 
 167
-00:09:17,346 --> 00:09:18,318
-What a shocker.
+00:09:23,243 --> 00:09:25,218
+Franklin, Jordan. I need these back asap.
 
 168
-00:09:19,435 --> 00:09:21,273
-Hey, what did you get, something good?
+00:09:25,296 --> 00:09:26,268
+What a shocker.
 
 169
-00:09:21,405 --> 00:09:23,291
-Syphilis? That's not surgical. Who has syphilis?
+00:09:27,385 --> 00:09:29,223
+Hey, what did you get, something good?
 
 170
-00:09:27,004 --> 00:09:28,077
-Excuse us. Sorry.
+00:09:29,355 --> 00:09:31,241
+Syphilis? That's not surgical. Who has syphilis?
 
 171
-00:09:30,556 --> 00:09:31,707
-You have syphilis?
+00:09:34,954 --> 00:09:36,027
+Excuse us. Sorry.
 
 172
-00:09:40,279 --> 00:09:41,738
-I don't know how this happened.
+00:09:38,506 --> 00:09:39,657
+You have syphilis?
 
 173
-00:09:42,031 --> 00:09:43,060
-Of course you do.
+00:09:48,229 --> 00:09:49,688
+I don't know how this happened.
 
 174
-00:09:43,191 --> 00:09:46,315
+00:09:49,981 --> 00:09:51,010
+Of course you do.
+
+175
+00:09:51,141 --> 00:09:54,265
 - Olivia must really be getting around.
 - She's not like that.
 
-175
-00:09:46,484 --> 00:09:47,734
+176
+00:09:54,434 --> 00:09:55,684
 It's a new millennium, George.
 
-176
-00:09:47,800 --> 00:09:51,153
-The only people who aren't like that are the amish and, apparently, you.
-
 177
-00:09:51,368 --> 00:09:52,250
-You don't know.
+00:09:55,750 --> 00:09:59,103
+The only people who aren't like that
+are the amish and, apparently, you.
 
 178
-00:09:52,833 --> 00:09:54,477
-Maybe I've been sleeping around.
+00:09:59,318 --> 00:10:00,200
+You don't know.
 
 179
-00:09:54,604 --> 00:09:56,177
-Maybe I got ladies.
+00:10:00,783 --> 00:10:02,427
+Maybe I've been sleeping around.
 
 180
-00:09:57,476 --> 00:09:58,414
-Shut up.
+00:10:02,554 --> 00:10:04,127
+Maybe I got ladies.
 
 181
-00:09:59,264 --> 00:10:00,272
-What am I gonna do?
+00:10:05,426 --> 00:10:06,364
+Shut up.
 
 182
-00:10:00,355 --> 00:10:02,919
-It's no biggie. A couple doses of penicillin will knock it right out.
+00:10:07,214 --> 00:10:08,222
+What am I gonna do?
 
 183
-00:10:02,985 --> 00:10:04,368
-What am I gonna do about Olivia?
+00:10:08,305 --> 00:10:10,869
+It's no biggie. A couple doses of
+penicillin will knock it right out.
 
 184
-00:10:04,445 --> 00:10:06,109
-For starters, stop sleeping with her,
+00:10:10,935 --> 00:10:12,318
+What am I gonna do about Olivia?
 
 185
-00:10:06,176 --> 00:10:08,153
-unless you want that thing to fall off.
+00:10:12,395 --> 00:10:14,059
+For starters, stop sleeping with her,
 
 186
-00:10:08,684 --> 00:10:13,031
-Okay, that is twice that you have trash-talked the girl that I could one day potentially --
+00:10:14,126 --> 00:10:16,103
+unless you want that thing to fall off.
 
 187
-00:10:13,236 --> 00:10:15,251
-well, not love, but like a whole lot.
+00:10:16,634 --> 00:10:20,981
+Okay, that is twice that you have trash-talked
+the girl that I could one day potentially -
 
 188
-00:10:16,452 --> 00:10:18,484
-If she gave it to you, you have to tell her.
+00:10:21,186 --> 00:10:23,201
+well, not love, but like a whole lot.
 
 189
-00:10:18,833 --> 00:10:19,709
-Three.
+00:10:24,402 --> 00:10:26,434
+If she gave it to you, you have to tell her.
 
 190
-00:10:19,908 --> 00:10:21,710
-Fine. She didn't give it to you.
+00:10:26,783 --> 00:10:27,659
+Three.
 
 191
-00:10:21,797 --> 00:10:23,686
-She was a virgin when you met.
+00:10:27,858 --> 00:10:29,660
+Fine. She didn't give it to you.
 
 192
-00:10:24,147 --> 00:10:26,072
-You still have to tell her so she can get tested.
+00:10:29,747 --> 00:10:31,636
+She was a virgin when you met.
 
 193
-00:10:26,144 --> 00:10:27,199
-Oh, yeah?
+00:10:32,097 --> 00:10:34,022
+You still have to tell her so she can get tested.
 
 194
-00:10:28,009 --> 00:10:29,021
-How am I gonna tell her?
+00:10:34,094 --> 00:10:35,149
+Oh, yeah?
 
 195
-00:10:29,591 --> 00:10:32,083
-"Uh, hey, Olivia. How you doing?
+00:10:35,959 --> 00:10:36,971
+How am I gonna tell her?
 
 196
-00:10:32,206 --> 00:10:34,566
-By the way, I got the syph. How about you?"
+00:10:37,541 --> 00:10:40,033
+"Uh, hey, Olivia. How you doing?
 
 197
-00:10:34,700 --> 00:10:35,683
-Maybe not quite like that.
+00:10:40,156 --> 00:10:42,516
+By the way, I got the syph. How about you?"
 
 198
-00:10:35,761 --> 00:10:38,524
-No,  it's good advice, really good advice. Thank you very much.
+00:10:42,650 --> 00:10:43,633
+Maybe not quite like that.
 
 199
-00:10:38,943 --> 00:10:39,799
-Retract here.
+00:10:43,711 --> 00:10:46,474
+No, it's good advice, really good advice.
+Thank you very much.
 
 200
-00:10:42,020 --> 00:10:44,142
-Oh! This just isn't holding.
+00:10:46,893 --> 00:10:47,749
+Retract here.
 
 201
-00:10:44,510 --> 00:10:46,173
-Give me a bigger retractor, please.
+00:10:49,970 --> 00:10:52,092
+Oh! This just isn't holding.
 
 202
-00:10:48,231 --> 00:10:50,004
--  Sorry Doctor.
-- It wasn't you.
+00:10:52,460 --> 00:10:54,123
+Give me a bigger retractor, please.
 
 203
-00:10:53,024 --> 00:10:54,990
-Dr. Bailey, you can finish this.
+00:10:56,181 --> 00:10:57,954
+- Sorry Doctor.
+- It wasn't you.
 
 204
-00:10:56,183 --> 00:10:59,297
-Uh, thank you, chief. I appreciate the opportunity.
+00:11:00,974 --> 00:11:02,940
+Dr. Bailey, you can finish this.
 
 205
-00:11:13,112 --> 00:11:16,540
-I gotta say, George, I didn't think you had it in you.
+00:11:04,133 --> 00:11:07,247
+Uh, thank you, chief. I appreciate the opportunity.
 
 206
-00:11:17,172 --> 00:11:18,911
-It's always the quiet ones.
+00:11:21,062 --> 00:11:24,490
+I gotta say, George, I didn't
+think you had it in you.
 
 207
-00:11:19,412 --> 00:11:21,205
+00:11:25,122 --> 00:11:26,861
+It's always the quiet ones.
+
+208
+00:11:27,362 --> 00:11:29,155
 - So, who's the woman?
 - None of your business.
 
-208
-00:11:21,332 --> 00:11:22,331
+209
+00:11:29,282 --> 00:11:30,281
 Oh, come on.
 
-209
-00:11:22,623 --> 00:11:24,590
+210
+00:11:30,573 --> 00:11:32,540
 Who gave you the cooties on the playground?
 
-210
-00:11:24,860 --> 00:11:27,364
-You must have had something like this before, right?
-
 211
-00:11:27,508 --> 00:11:29,760
-I never talk about my penis with other men.
+00:11:32,810 --> 00:11:35,314
+You must have had something
+like this before, right?
 
 212
-00:11:32,576 --> 00:11:35,183
-I don't n--either, normally.
+00:11:35,458 --> 00:11:37,710
+I never talk about my penis with other men.
 
 213
-00:11:39,867 --> 00:11:40,871
-We better get Burke.
+00:11:40,526 --> 00:11:43,133
+I don't n-either, normally.
 
 214
-00:11:47,649 --> 00:11:48,469
-Mr. Franklin?
+00:11:47,817 --> 00:11:48,821
+We better get Burke.
 
 215
-00:11:50,522 --> 00:11:52,929
-You have a condition known as ascites.
+00:11:55,599 --> 00:11:56,419
+Mr. Franklin?
 
 216
-00:11:53,026 --> 00:11:54,849
-Oh, my god. I knew it was terrible.
+00:11:58,472 --> 00:12:00,879
+You have a condition known as ascites.
 
 217
-00:11:54,973 --> 00:11:57,280
-It just means there's fluid in the peritoneal cavity --
+00:12:00,976 --> 00:12:02,799
+Oh, my god. I knew it was terrible.
 
 218
-00:11:58,396 --> 00:11:59,303
-the abdomen.
+00:12:02,923 --> 00:12:05,230
+It just means there's fluid
+in the peritoneal cavity -
 
 219
-00:11:59,697 --> 00:12:02,861
-And the swelling is pressing against your lungs, which is why you're having trouble breathing.
+00:12:06,346 --> 00:12:07,253
+the abdomen.
 
 220
-00:12:02,943 --> 00:12:05,350
-In  your case, it looks like a symptom of liver disease.
+00:12:07,647 --> 00:12:10,811
+And the swelling is pressing against your lungs,
+which is why you're having trouble breathing.
 
 221
-00:12:05,970 --> 00:12:07,838
-And it all comes together.
+00:12:10,893 --> 00:12:13,300
+In your case, it looks like
+a symptom of liver disease.
 
 222
-00:12:07,945 --> 00:12:09,338
-Alice, not now.
+00:12:13,920 --> 00:12:15,788
+And it all comes together.
 
 223
-00:12:10,275 --> 00:12:11,592
-Is there something we should know?
+00:12:15,895 --> 00:12:17,288
+Alice, not now.
 
 224
-00:12:14,816 --> 00:12:16,332
-I drink a bit.
+00:12:18,225 --> 00:12:19,542
+Is there something we should know?
 
 225
-00:12:16,709 --> 00:12:18,463
-That's the understatement of the year.
+00:12:22,766 --> 00:12:24,282
+I drink a bit.
 
 226
-00:12:18,657 --> 00:12:20,238
-That's enough out of you!
+00:12:24,659 --> 00:12:26,413
+That's the understatement of the year.
 
 227
-00:12:20,342 --> 00:12:22,236
-Hey! I'm only here for mom,
+00:12:26,607 --> 00:12:28,188
+That's enough out of you!
 
 228
-00:12:22,442 --> 00:12:24,960
-to make sure you don't pull any of your usual crap.
+00:12:28,292 --> 00:12:30,186
+Hey! I'm only here for mom,
 
 229
-00:12:28,442 --> 00:12:32,174
-There's definitely a growth protruding into the bladder, but look at the edges.
+00:12:30,392 --> 00:12:32,910
+to make sure you don't pull any of your usual crap.
 
 230
-00:12:32,241 --> 00:12:33,332
-I don't think it's a tumor.
+00:12:36,392 --> 00:12:40,124
+There's definitely a growth protruding
+into the bladder, but look at the edges.
 
 231
-00:12:33,551 --> 00:12:35,098
-Kind of shaped like an ovary.
+00:12:40,191 --> 00:12:41,282
+I don't think it's a tumor.
 
 232
-00:12:35,184 --> 00:12:37,929
-That the flip answer you're gonna give your patient, Dr. Karev?
+00:12:41,501 --> 00:12:43,048
+Kind of shaped like an ovary.
 
 233
-00:12:38,329 --> 00:12:41,277
-This is one of my oldest friends. You might want to take this seriously.
+00:12:43,134 --> 00:12:45,879
+That the flip answer you're gonna
+give your patient, Dr. Karev?
 
 234
-00:12:41,360 --> 00:12:42,475
-I'm sorry, sir.
+00:12:46,279 --> 00:12:49,227
+This is one of my oldest friends. You
+might want to take this seriously.
 
 235
-00:12:42,554 --> 00:12:43,464
-You better be.
+00:12:49,310 --> 00:12:50,425
+I'm sorry, sir.
 
 236
-00:12:44,974 --> 00:12:46,372
-I got the rest of the labs back.
+00:12:50,504 --> 00:12:51,414
+You better be.
 
 237
-00:12:46,443 --> 00:12:48,968
-They did a chromosome analysis of the tissue.
+00:12:52,924 --> 00:12:54,322
+I got the rest of the labs back.
 
 238
-00:12:49,433 --> 00:12:50,847
-You won't believe this.
+00:12:54,393 --> 00:12:56,918
+They did a chromosome analysis of the tissue.
 
 239
-00:12:56,648 --> 00:12:58,066
-Bill has an ovary?
+00:12:57,383 --> 00:12:58,797
+You won't believe this.
 
 240
-00:13:05,018 --> 00:13:08,337
-Um, according to his daughter, Mr. Franklin is a heavy drinker.
+00:13:04,598 --> 00:13:06,016
+Bill has an ovary?
 
 241
-00:13:08,408 --> 00:13:11,024
-Six to eight drinks a day, an alcoholic by any standard.
+00:13:14,618 --> 00:13:17,937
+Um, according to his daughter,
+Mr. Franklin is a heavy drinker.
 
 242
-00:13:11,093 --> 00:13:11,833
-Protocol?
+00:13:18,008 --> 00:13:20,624
+Six to eight drinks a day, an
+alcoholic by any standard.
 
 243
-00:13:11,917 --> 00:13:13,026
-Schedule a paracentesis.
+00:13:20,693 --> 00:13:21,433
+Protocol?
 
 244
-00:13:13,083 --> 00:13:13,676
-Reason?
+00:13:21,517 --> 00:13:22,626
+Schedule a paracentesis.
 
 245
-00:13:13,737 --> 00:13:15,652
-Draining the fluid will relieve the pressure.
+00:13:22,683 --> 00:13:23,276
+Reason?
 
 246
-00:13:15,725 --> 00:13:18,028
-Good, but don't schedule it. Do it.
+00:13:23,337 --> 00:13:25,252
+Draining the fluid will relieve the pressure.
 
 247
-00:13:18,680 --> 00:13:20,230
-You want us to do the procedure?
+00:13:25,325 --> 00:13:27,628
+Good, but don't schedule it. Do it.
 
 248
-00:13:20,307 --> 00:13:21,296
-You've seen one, right?
+00:13:28,280 --> 00:13:29,830
+You want us to do the procedure?
 
 249
-00:13:21,372 --> 00:13:22,069
-Absolutely.
+00:13:29,907 --> 00:13:30,896
+You've seen one, right?
 
 250
-00:13:22,155 --> 00:13:23,683
-Well, now do one.
+00:13:30,972 --> 00:13:31,669
+Absolutely.
 
 251
-00:13:26,120 --> 00:13:27,234
-I've never seen one.
+00:13:31,755 --> 00:13:33,283
+Well, now do one.
 
 252
-00:13:27,834 --> 00:13:28,757
-You're about to.
+00:13:35,720 --> 00:13:36,834
+I've never seen one.
 
 253
-00:13:29,423 --> 00:13:30,240
-Oh, my god.
+00:13:37,434 --> 00:13:38,357
+You're about to.
 
 254
-00:13:31,537 --> 00:13:33,119
-God, an ovary.
+00:13:39,023 --> 00:13:39,840
+Oh, my god.
 
 255
-00:13:33,215 --> 00:13:35,668
-It gives new meaning to the term "metrosexual."
+00:13:41,137 --> 00:13:42,719
+God, an ovary.
 
 256
-00:13:37,223 --> 00:13:38,104
-Hi, George.
+00:13:42,815 --> 00:13:45,268
+It gives new meaning to the term "metrosexual."
 
 257
-00:13:38,349 --> 00:13:39,149
-Olivia.
+00:13:46,823 --> 00:13:47,704
+Hi, George.
 
 258
-00:13:39,245 --> 00:13:40,328
-What am I, invisible?
+00:13:47,949 --> 00:13:48,749
+Olivia.
 
 259
-00:13:40,972 --> 00:13:41,730
-Alex.
+00:13:48,845 --> 00:13:49,928
+What am I, invisible?
 
 260
-00:13:42,641 --> 00:13:44,249
-You go ahead. I'll catch up with you later.
+00:13:50,572 --> 00:13:51,330
+Alex.
 
 261
-00:13:53,905 --> 00:13:55,575
-About time I got you alone today.
+00:13:52,241 --> 00:13:53,849
+You go ahead. I'll catch up with you later.
 
 262
-00:14:00,427 --> 00:14:02,593
-- Olivia -- 
-- What time is your shift done?
+00:14:03,505 --> 00:14:05,175
+About time I got you alone today.
 
 263
-00:14:02,655 --> 00:14:05,420
-Because mine's over at 8:00, and I thought maybe you could come over.
+00:14:10,027 --> 00:14:12,193
+- Olivia -
+- What time is your shift done?
 
 264
-00:14:05,548 --> 00:14:07,145
-Olivia! I need to tell you something.
+00:14:12,255 --> 00:14:15,020
+Because mine's over at 8:00, and I
+thought maybe you could come over.
 
 265
-00:14:07,515 --> 00:14:08,338
-What's wrong?
+00:14:15,148 --> 00:14:16,745
+Olivia! I need to tell you something.
 
 266
-00:14:10,391 --> 00:14:11,395
-Are you breaking up with me?
+00:14:17,115 --> 00:14:17,938
+What's wrong?
 
 267
-00:14:11,473 --> 00:14:12,312
-What? No.
+00:14:19,991 --> 00:14:20,995
+Are you breaking up with me?
 
 268
-00:14:12,557 --> 00:14:14,544
-Oh, no, really, no.
+00:14:21,073 --> 00:14:21,912
+What? No.
 
 269
-00:14:14,611 --> 00:14:15,425
-It's just...
+00:14:22,157 --> 00:14:24,144
+Oh, no, really, no.
 
 270
-00:14:17,452 --> 00:14:22,163
-Okay, you're the only person that I've been with in a long time.
+00:14:24,211 --> 00:14:25,025
+It's just...
 
 271
-00:14:22,239 --> 00:14:25,629
-I mean, not unusually long or anything, you know?
+00:14:27,052 --> 00:14:31,763
+Okay, you're the only person that
+I've been with in a long time.
 
 272
-00:14:25,721 --> 00:14:27,720
-Just a normal amount of long time.
+00:14:31,839 --> 00:14:35,229
+I mean, not unusually long or anything, you know?
 
 273
-00:14:27,836 --> 00:14:30,816
-But it wouldn't matter to me if you've been with someone else.
+00:14:35,321 --> 00:14:37,320
+Just a normal amount of long time.
 
 274
-00:14:31,506 --> 00:14:32,664
-Maybe you have?
+00:14:37,436 --> 00:14:40,416
+But it wouldn't matter to me if
+you've been with someone else.
 
 275
-00:14:33,371 --> 00:14:36,580
-I'm not accusing you of anything or, you know, judging you
+00:14:41,106 --> 00:14:42,264
+Maybe you have?
 
 276
-00:14:36,641 --> 00:14:39,739
-or handing out scarlet letters or anything, you know?
+00:14:42,971 --> 00:14:46,180
+I'm not accusing you of anything
+or, you know, judging you
 
 277
-00:14:40,334 --> 00:14:42,622
-You're a woman, you know?
+00:14:46,241 --> 00:14:49,339
+or handing out scarlet letters
+or anything, you know?
 
 278
-00:14:43,017 --> 00:14:44,142
-A very attractive woman.
+00:14:49,934 --> 00:14:52,222
+You're a woman, you know?
 
 279
-00:14:44,224 --> 00:14:46,150
-Of course you've been with other men.
+00:14:52,617 --> 00:14:53,742
+A very attractive woman.
 
 280
-00:14:46,218 --> 00:14:48,234
-I mean, not that you've been with a lot of men.
+00:14:53,824 --> 00:14:55,750
+Of course you've been with other men.
 
 281
-00:14:48,315 --> 00:14:50,579
-- It's not like you're a prostitute or -- 
-- A prostitute?
+00:14:55,818 --> 00:14:57,834
+I mean, not that you've been with a lot of men.
 
 282
-00:14:50,645 --> 00:14:53,575
-No! Not a -- not a prostitute.
+00:14:57,915 --> 00:15:00,179
+- It's not like you're a prostitute or -
+- A prostitute?
 
 283
-00:14:53,917 --> 00:14:57,179
-No, the opposite of a prostitute -- a lady.
+00:15:00,245 --> 00:15:03,175
+No! Not a - not a prostitute.
 
 284
-00:14:57,967 --> 00:14:59,263
-You're very ladylike.
+00:15:03,517 --> 00:15:06,779
+No, the opposite of a prostitute - a lady.
 
 285
-00:14:59,467 --> 00:15:01,623
-I mean, you're very bendy, but...
+00:15:07,567 --> 00:15:08,863
+You're very ladylike.
 
 286
-00:15:01,899 --> 00:15:03,824
+00:15:09,067 --> 00:15:11,223
+I mean, you're very bendy, but...
+
+287
+00:15:11,499 --> 00:15:13,424
 - George, breathe.
 - Okay.
 
-287
-00:15:03,931 --> 00:15:05,698
-It's just -- okay, here's the thing.
-
 288
-00:15:06,538 --> 00:15:08,136
-I really like you, Olivia.
+00:15:13,531 --> 00:15:15,298
+It's just - okay, here's the thing.
 
 289
-00:15:09,103 --> 00:15:10,378
-I like you a lot.
+00:15:16,138 --> 00:15:17,736
+I really like you, Olivia.
 
 290
-00:15:10,716 --> 00:15:12,702
-Well, I like you, too.
+00:15:18,703 --> 00:15:19,978
+I like you a lot.
 
 291
-00:15:16,835 --> 00:15:18,442
-I have syphilis.
+00:15:20,316 --> 00:15:22,302
+Well, I like you, too.
 
 292
-00:15:35,513 --> 00:15:36,893
-That could have gone better.
+00:15:26,435 --> 00:15:28,042
+I have syphilis.
 
 293
-00:15:53,386 --> 00:15:54,667
-You dropped a retractor.
+00:15:45,113 --> 00:15:46,493
+That could have gone better.
 
 294
-00:15:55,758 --> 00:15:56,473
-Fine.
+00:16:02,986 --> 00:16:04,267
+You dropped a retractor.
 
 295
-00:15:58,562 --> 00:16:02,699
-A few weeks ago, I was operating, and the vision in my right eye became blurry.
+00:16:05,358 --> 00:16:06,073
+Fine.
 
 296
-00:16:02,751 --> 00:16:04,363
-After a few hours, it was fine.
+00:16:08,162 --> 00:16:12,299
+A few weeks ago, I was operating, and the
+vision in my right eye became blurry.
 
 297
-00:16:04,446 --> 00:16:05,444
-It's come back again.
+00:16:12,351 --> 00:16:13,963
+After a few hours, it was fine.
 
 298
-00:16:05,531 --> 00:16:06,714
-Did you have it checked out?
+00:16:14,046 --> 00:16:15,044
+It's come back again.
 
 299
-00:16:06,826 --> 00:16:08,413
-The examination was normal.
+00:16:15,131 --> 00:16:16,314
+Did you have it checked out?
 
 300
-00:16:08,491 --> 00:16:11,087
-My ophthalmologist tells me I'm just getting older...
+00:16:16,426 --> 00:16:18,013
+The examination was normal.
 
 301
-00:16:11,931 --> 00:16:14,967
-but you know what a decline in my visual acuity can mean.
+00:16:18,091 --> 00:16:20,687
+My ophthalmologist tells me
+I'm just getting older...
 
 302
-00:16:15,423 --> 00:16:16,805
-I'll set up some tests.
+00:16:21,531 --> 00:16:24,567
+but you know what a decline
+in my visual acuity can mean.
 
 303
-00:16:17,860 --> 00:16:18,670
-Shep...
+00:16:25,023 --> 00:16:26,405
+I'll set up some tests.
 
 304
-00:16:19,580 --> 00:16:21,607
-I know how the rumor mill runs around here.
+00:16:27,460 --> 00:16:28,270
+Shep...
 
 305
-00:16:22,560 --> 00:16:24,101
-Let's just keep this to ourselves.
+00:16:29,180 --> 00:16:31,207
+I know how the rumor mill runs around here.
 
 306
-00:16:24,885 --> 00:16:25,816
-Absolutely.
+00:16:32,160 --> 00:16:33,701
+Let's just keep this to ourselves.
 
 307
-00:16:27,004 --> 00:16:27,666
-Yeah.
+00:16:34,485 --> 00:16:35,416
+Absolutely.
 
 308
-00:16:34,038 --> 00:16:35,558
-Do you think she's talking about me?
+00:16:36,604 --> 00:16:37,266
+Yeah.
 
 309
-00:16:35,622 --> 00:16:37,607
-She's absolutely talking about you.
+00:16:43,638 --> 00:16:45,158
+Do you think she's talking about me?
 
 310
-00:16:38,776 --> 00:16:39,835
-Dude, that's a good thing.
+00:16:45,222 --> 00:16:47,207
+She's absolutely talking about you.
 
 311
-00:16:39,917 --> 00:16:41,335
-No. No, it's not.
+00:16:48,376 --> 00:16:49,435
+Dude, that's a good thing.
 
 312
-00:16:41,449 --> 00:16:42,707
-Georgie, get a clue.
+00:16:49,517 --> 00:16:50,935
+No. No, it's not.
 
 313
-00:16:42,795 --> 00:16:45,283
-Syphilis is the best thing that ever happened to you.
+00:16:51,049 --> 00:16:52,307
+Georgie, get a clue.
 
 314
-00:16:45,646 --> 00:16:47,392
-In their eyes, you're a player.
+00:16:52,395 --> 00:16:54,883
+Syphilis is the best thing
+that ever happened to you.
 
 315
-00:16:50,506 --> 00:16:51,472
-Hey, syph boy.
+00:16:55,246 --> 00:16:56,992
+In their eyes, you're a player.
 
 316
-00:16:52,575 --> 00:16:53,520
-You told her?
+00:17:00,106 --> 00:17:01,072
+Hey, syph boy.
 
 317
-00:16:53,787 --> 00:16:54,729
-Just Cristina.
+00:17:02,175 --> 00:17:03,120
+You told her?
 
 318
-00:16:54,857 --> 00:16:55,740
-"Syph boy."
+00:17:03,387 --> 00:17:04,329
+Just Cristina.
 
 319
-00:16:55,820 --> 00:16:59,328
-It's got a nice ring to it, kind of like superboy, only diseased.
+00:17:04,457 --> 00:17:05,340
+"Syph boy."
 
 320
-00:16:59,439 --> 00:17:01,083
-Izzie didn't have to say a word.
+00:17:05,420 --> 00:17:08,928
+It's got a nice ring to it, kind
+of like superboy, only diseased.
 
 321
-00:17:01,143 --> 00:17:04,387
-Around here, the only thing that spreads faster than disease is gossip.
+00:17:09,039 --> 00:17:10,683
+Izzie didn't have to say a word.
 
 322
-00:17:04,461 --> 00:17:05,522
-That's not true.
+00:17:10,743 --> 00:17:13,987
+Around here, the only thing that
+spreads faster than disease is gossip.
 
 323
-00:17:05,650 --> 00:17:08,206
-Just 'cause Izzie can't keep her mouth shut doesn't mean everyone...
+00:17:14,061 --> 00:17:15,122
+That's not true.
 
 324
-00:17:08,257 --> 00:17:12,014
-Hey George, how are you feeling? Sorry about the syphilis.
+00:17:15,250 --> 00:17:17,806
+Just 'cause Izzie can't keep her
+mouth shut doesn't mean everyone...
 
 325
-00:17:12,306 --> 00:17:14,713
-Everyone in this hospital knows?
+00:17:17,857 --> 00:17:21,614
+Hey George, how are you feeling?
+Sorry about the syphilis.
 
 326
-00:17:15,906 --> 00:17:17,586
-Knows you're a player.
+00:17:21,906 --> 00:17:24,313
+Everyone in this hospital knows?
 
 327
-00:17:17,954 --> 00:17:18,906
-You're disturbed.
+00:17:25,506 --> 00:17:27,186
+Knows you're a player.
 
 328
-00:17:18,983 --> 00:17:19,757
-True.
+00:17:27,554 --> 00:17:28,506
+You're disturbed.
 
 329
-00:17:19,919 --> 00:17:21,614
-Everybody's got a secret.
+00:17:28,583 --> 00:17:29,357
+True.
 
 330
-00:17:21,666 --> 00:17:23,341
-Be glad yours is out in the open.
+00:17:29,519 --> 00:17:31,214
+Everybody's got a secret.
 
 331
-00:17:23,412 --> 00:17:25,101
-Oh, yeah, Alex? What's yours?
+00:17:31,266 --> 00:17:32,941
+Be glad yours is out in the open.
 
 332
-00:17:25,327 --> 00:17:27,222
-You show me yours, and I'll show you mine.
+00:17:33,012 --> 00:17:34,701
+Oh, yeah, Alex? What's yours?
 
 333
-00:17:31,240 --> 00:17:34,665
-I'll bet she's got some serious and kinky skeletons in the closet.
+00:17:34,927 --> 00:17:36,822
+You show me yours, and I'll show you mine.
 
 334
-00:17:34,753 --> 00:17:36,616
-What's in my closet is none of your business.
+00:17:40,840 --> 00:17:44,265
+I'll bet she's got some serious and
+kinky skeletons in the closet.
 
 335
-00:17:37,159 --> 00:17:39,546
-Well, I don't have any secrets. My life is boring.
+00:17:44,353 --> 00:17:46,216
+What's in my closet is none of your business.
 
 336
-00:17:39,734 --> 00:17:41,434
-Everybody's got something to hide.
+00:17:46,759 --> 00:17:49,146
+Well, I don't have any secrets. My life is boring.
 
 337
-00:17:51,196 --> 00:17:53,303
-Well, the mass we found is not a tumor.
+00:17:49,334 --> 00:17:51,034
+Everybody's got something to hide.
 
 338
-00:17:53,487 --> 00:17:56,184
-Well, that's good, right? Anything's got to be better than cancer.
+00:18:00,796 --> 00:18:02,903
+Well, the mass we found is not a tumor.
 
 339
-00:17:56,333 --> 00:17:58,126
-That's where it gets a little tricky.
+00:18:03,087 --> 00:18:05,784
+Well, that's good, right? Anything's
+got to be better than cancer.
 
 340
-00:17:58,699 --> 00:18:03,846
-The chromosomal tests have revealed that your body contains DNA from two different embryos
+00:18:05,933 --> 00:18:07,726
+That's where it gets a little tricky.
 
 341
-00:18:03,902 --> 00:18:06,887
-that merged in the womb at the very beginning of development.
+00:18:08,299 --> 00:18:13,446
+The chromosomal tests have revealed that your
+body contains DNA from two different embryos
 
 342
-00:18:06,957 --> 00:18:08,791
-In rare cases such as yours,
+00:18:13,502 --> 00:18:16,487
+that merged in the womb at the
+very beginning of development.
 
 343
-00:18:08,898 --> 00:18:11,816
-the condition can produce gonadal hermaphroditism.
+00:18:16,557 --> 00:18:18,391
+In rare cases such as yours,
 
 344
-00:18:12,503 --> 00:18:16,097
-I'm hearing scary words here, Preston, you know, pay-cable kind of words.
+00:18:18,498 --> 00:18:21,416
+the condition can produce gonadal hermaphroditism.
 
 345
-00:18:16,174 --> 00:18:17,054
-In english,
+00:18:22,103 --> 00:18:25,697
+I'm hearing scary words here, Preston,
+you know, pay-cable kind of words.
 
 346
-00:18:17,715 --> 00:18:19,718
-the mass in your bladder is an ovary.
+00:18:25,774 --> 00:18:26,654
+In english,
 
 347
-00:18:20,838 --> 00:18:22,650
-Don't worry. We're gonna remove it.
+00:18:27,315 --> 00:18:29,318
+the mass in your bladder is an ovary.
 
 348
-00:18:23,285 --> 00:18:26,666
-We have an excellent gynecological surgeon on staff.
+00:18:30,438 --> 00:18:32,250
+Don't worry. We're gonna remove it.
 
 349
-00:18:26,782 --> 00:18:29,742
-You're telling me I'm a guy with an ovary?
+00:18:32,885 --> 00:18:36,266
+We have an excellent
+gynecological surgeon on staff.
 
 350
-00:18:29,854 --> 00:18:31,907
-It's simply a quirk of nature, man.
+00:18:36,382 --> 00:18:39,342
+You're telling me I'm a guy with an ovary?
 
 351
-00:18:37,814 --> 00:18:39,767
-What am I gonna tell Holly?
+00:18:39,454 --> 00:18:41,507
+It's simply a quirk of nature, man.
 
 352
-00:18:39,849 --> 00:18:41,136
-That you're gonna be fine.
+00:18:47,814 --> 00:18:49,367
+What am I gonna tell Holly?
 
 353
-00:18:42,215 --> 00:18:43,729
-I'm still a man, right?
+00:18:49,449 --> 00:18:50,736
+That you're gonna be fine.
 
 354
-00:18:43,996 --> 00:18:46,326
-A man's man, a kappa man.
+00:18:51,815 --> 00:18:53,329
+I'm still a man, right?
 
 355
-00:18:46,623 --> 00:18:49,910
-I mean... you know, my sex life.
+00:18:53,596 --> 00:18:55,926
+A man's man, a kappa man.
 
 356
-00:18:50,043 --> 00:18:51,625
-Been having any problems?
+00:18:56,223 --> 00:18:59,510
+I mean... you know, my sex life.
 
 357
-00:18:52,537 --> 00:18:55,147
-Was it my very pregnant wife that give it away?
+00:18:59,643 --> 00:19:01,225
+Been having any problems?
 
 358
-00:18:57,050 --> 00:18:58,962
-Come on, man, don't worry.
+00:19:02,137 --> 00:19:04,747
+Was it my very pregnant wife that give it away?
 
 359
-00:18:59,596 --> 00:19:01,935
-You never knew it was there. You won't miss it when it's gone.
+00:19:06,650 --> 00:19:08,562
+Come on, man, don't worry.
 
 360
-00:19:06,048 --> 00:19:07,829
-Are you sure you know what you're doing?
+00:19:09,196 --> 00:19:11,535
+You never knew it was there. You
+won't miss it when it's gone.
 
 361
-00:19:07,936 --> 00:19:10,732
-It's a shot of penicillin, George. Be grateful I'm even doing this.
+00:19:15,648 --> 00:19:17,429
+Are you sure you know what you're doing?
 
 362
-00:19:10,762 --> 00:19:12,806
-I'm about to see more of you than I ever wanted to.
+00:19:17,536 --> 00:19:20,332
+It's a shot of penicillin, George.
+Be grateful I'm even doing this.
 
 363
-00:19:13,206 --> 00:19:14,679
-I'll be fighting nightmares for a week.
+00:19:20,362 --> 00:19:22,406
+I'm about to see more of you than I ever wanted to.
 
 364
-00:19:14,758 --> 00:19:15,771
-Okay, you know what? Forget this.
+00:19:22,806 --> 00:19:24,279
+I'll be fighting nightmares for a week.
 
 365
-00:19:15,846 --> 00:19:17,429
-Do you want to get rid of the syph or not?
+00:19:24,358 --> 00:19:25,371
+Okay, you know what? Forget this.
 
 366
-00:19:17,666 --> 00:19:19,017
-Just shut up and drop them.
+00:19:25,446 --> 00:19:27,029
+Do you want to get rid of the syph or not?
 
 367
-00:19:22,217 --> 00:19:23,450
-I cannot believe this.
+00:19:27,266 --> 00:19:28,617
+Just shut up and drop them.
 
 368
-00:19:24,369 --> 00:19:25,781
-Meredith, go away!
+00:19:31,817 --> 00:19:33,050
+I cannot believe this.
 
 369
-00:19:26,257 --> 00:19:28,966
-Oh, George, I'll give you some moral support.
+00:19:33,969 --> 00:19:35,381
+Meredith, go away!
 
 370
-00:19:29,022 --> 00:19:30,930
-No. No moral support.
+00:19:35,857 --> 00:19:38,566
+Oh, George, I'll give you some moral support.
 
 371
-00:19:31,197 --> 00:19:32,447
-I'm indisposed here.
+00:19:38,622 --> 00:19:40,530
+No. No moral support.
 
 372
-00:19:33,215 --> 00:19:35,682
-George, it's not a big deal.
+00:19:40,797 --> 00:19:42,047
+I'm indisposed here.
 
 373
-00:19:35,923 --> 00:19:37,515
-And you have a cute butt.
+00:19:42,815 --> 00:19:45,282
+George, it's not a big deal.
 
 374
-00:19:37,634 --> 00:19:38,887
-I have a cute butt, too.
+00:19:45,523 --> 00:19:47,115
+And you have a cute butt.
 
 375
-00:19:39,005 --> 00:19:39,630
-You want to see?
+00:19:47,234 --> 00:19:48,487
+I have a cute butt, too.
 
 376
-00:19:39,749 --> 00:19:41,760
-Oh, get out. You're doing it wrong.
+00:19:48,605 --> 00:19:49,230
+You want to see?
 
 377
-00:19:41,888 --> 00:19:42,831
-Be my guest.
+00:19:49,349 --> 00:19:51,360
+Oh, get out. You're doing it wrong.
 
 378
-00:19:42,958 --> 00:19:44,106
-What -- Alex.
+00:19:51,488 --> 00:19:52,431
+Be my guest.
 
 379
-00:19:44,596 --> 00:19:45,319
-Alex.
+00:19:52,558 --> 00:19:53,706
+What - Alex.
 
 380
-00:19:49,598 --> 00:19:50,332
-H ey!
+00:19:54,196 --> 00:19:54,919
+Alex.
 
 381
-00:19:50,579 --> 00:19:51,914
-What are we doing here?
+00:19:59,198 --> 00:19:59,932
+Hey!
 
 382
-00:19:52,538 --> 00:19:54,008
-Breaking George's spirit.
+00:20:00,179 --> 00:20:01,514
+What are we doing here?
 
 383
-00:19:54,105 --> 00:19:55,569
-Curing george's syph.
+00:20:02,138 --> 00:20:03,608
+Breaking George's spirit.
 
 384
-00:19:56,562 --> 00:19:57,744
-I don't like needles.
+00:20:03,705 --> 00:20:05,169
+Curing George’s syph.
 
 385
-00:19:57,828 --> 00:19:59,344
-Good thing you became a doctor.
+00:20:06,162 --> 00:20:07,344
+I don't like needles.
 
 386
-00:19:59,421 --> 00:20:00,331
-Other side.
+00:20:07,428 --> 00:20:08,944
+Good thing you became a doctor.
 
 387
-00:20:00,520 --> 00:20:01,749
+00:20:09,021 --> 00:20:09,931
+Other side.
+
+388
+00:20:10,120 --> 00:20:11,349
 - Izzie?
 - Yeah?
 
-388
-00:20:02,313 --> 00:20:05,072
-Mr. Franklin's procedure's been scheduled for after lunch --
-
 389
-00:20:05,184 --> 00:20:06,168
-What are we doing?
+00:20:11,913 --> 00:20:14,672
+Mr. Franklin's procedure's been
+scheduled for after lunch -
 
 390
-00:20:06,362 --> 00:20:10,582
-We are saving george from a future of festering sores and insanity.
+00:20:14,784 --> 00:20:15,768
+What are we doing?
 
 391
-00:20:10,653 --> 00:20:11,704
-Oh, cute butt.
+00:20:15,962 --> 00:20:20,182
+We are saving George from a future
+of festering sores and insanity.
 
 392
-00:20:11,846 --> 00:20:12,671
-Told you.
+00:20:20,253 --> 00:20:21,304
+Oh, cute butt.
 
 393
-00:20:12,758 --> 00:20:14,330
-It is cute, like a baby's.
+00:20:21,446 --> 00:20:22,271
+Told you.
 
 394
-00:20:17,939 --> 00:20:20,816
-You know, I have spent hours, days, years,
+00:20:22,358 --> 00:20:23,930
+It is cute, like a baby's.
 
 395
-00:20:20,985 --> 00:20:24,887
-imagining myself half-naked in a room with three women.
+00:20:27,539 --> 00:20:30,416
+You know, I have spent hours, days, years,
 
 396
-00:20:26,121 --> 00:20:27,851
-The reality is so much better.
+00:20:30,585 --> 00:20:34,487
+imagining myself half-naked
+in a room with three women.
 
 397
-00:20:28,805 --> 00:20:30,002
-I think he's gonna cry.
+00:20:35,721 --> 00:20:37,451
+The reality is so much better.
 
 398
-00:20:32,709 --> 00:20:34,640
-Hi. It's Ms. Henry again.
+00:20:38,405 --> 00:20:39,602
+I think he's gonna cry.
 
 399
-00:20:34,760 --> 00:20:35,992
-Is this a better time?
+00:20:42,309 --> 00:20:44,240
+Hi. It's Ms. Henry again.
 
 400
-00:20:36,058 --> 00:20:38,527
-Sorry about this morning. I wasn't alone and --
+00:20:44,360 --> 00:20:45,592
+Is this a better time?
 
 401
-00:20:38,614 --> 00:20:39,916
-What were you calling about?
+00:20:45,658 --> 00:20:48,127
+Sorry about this morning. I wasn't alone and -
 
 402
-00:20:40,093 --> 00:20:43,431
-I just wanted to remind you that tonight's our monthly family dinner.
+00:20:48,214 --> 00:20:49,516
+What were you calling about?
 
 403
-00:20:43,723 --> 00:20:46,882
-You know, you haven't been to any of our family functions.
+00:20:49,693 --> 00:20:53,031
+I just wanted to remind you that
+tonight's our monthly family dinner.
 
 404
-00:20:47,328 --> 00:20:51,608
-You have to understand. I'm a surgical intern, so my time isn't my own.
+00:20:53,323 --> 00:20:56,482
+You know, you haven't been to
+any of our family functions.
 
 405
-00:20:51,717 --> 00:20:53,989
-Our residents really respond to these events.
+00:20:56,928 --> 00:21:01,208
+You have to understand. I'm a surgical
+intern, so my time isn't my own.
 
 406
-00:20:54,071 --> 00:20:57,062
-They always enjoy themselves, which is so rare.
+00:21:01,317 --> 00:21:03,589
+Our residents really respond to these events.
 
 407
-00:20:57,134 --> 00:20:58,786
-I think it's important you attend.
+00:21:03,671 --> 00:21:06,662
+They always enjoy themselves, which is so rare.
 
 408
-00:20:59,891 --> 00:21:00,988
-I'll be there.
+00:21:06,734 --> 00:21:08,386
+I think it's important you attend.
 
 409
-00:21:01,750 --> 00:21:03,384
-I'll try to be there.
+00:21:09,491 --> 00:21:10,588
+I'll be there.
 
 410
-00:21:03,589 --> 00:21:05,007
-I'll definitely try.
+00:21:11,350 --> 00:21:12,984
+I'll try to be there.
 
 411
-00:21:06,477 --> 00:21:08,383
-I've cleared some time for your M.R.I.
+00:21:13,189 --> 00:21:14,607
+I'll definitely try.
 
 412
-00:21:08,500 --> 00:21:09,728
+00:21:16,077 --> 00:21:17,983
+I've cleared some time for your M.R.I.
+
+413
+00:21:18,100 --> 00:21:19,328
 - Good. Let's get going.
 - Okay.
 
-413
-00:21:10,128 --> 00:21:13,010
+414
+00:21:19,728 --> 00:21:22,610
 Uh... sorry to bother you with this, chief.
 
-414
-00:21:13,088 --> 00:21:15,765
+415
+00:21:22,688 --> 00:21:25,365
 We've got kind of a situation.
 
-415
-00:21:16,390 --> 00:21:17,326
+416
+00:21:25,990 --> 00:21:26,926
 What now?
 
-416
-00:21:17,724 --> 00:21:21,511
+417
+00:21:27,324 --> 00:21:31,111
 Three interns, four residents, and six nurses
 
-417
-00:21:21,586 --> 00:21:26,982
-on this surgical floor have been diagnosed with... syphilis.
-
 418
-00:21:27,075 --> 00:21:30,679
-There are over 70,000 new cases every year.
+00:21:31,186 --> 00:21:36,582
+on this surgical floor have been
+diagnosed with... syphilis.
 
 419
-00:21:30,833 --> 00:21:35,949
-Undiagnosed, syphilis can lead to blindness, insanity, and death.
+00:21:36,675 --> 00:21:40,279
+There are over 70,000 new cases every year.
 
 420
-00:21:36,010 --> 00:21:42,548
-If you are having unprotected sex with another member of the staff, get tested.
+00:21:40,433 --> 00:21:45,549
+Undiagnosed, syphilis can lead to
+blindness, insanity, and death.
 
 421
-00:21:42,625 --> 00:21:44,592
-This is not a request.
+00:21:45,610 --> 00:21:52,148
+If you are having unprotected sex with
+another member of the staff, get tested.
 
 422
-00:21:49,019 --> 00:21:52,900
-Patricia will now give you a safe-sex demonstration.
+00:21:52,225 --> 00:21:54,192
+This is not a request.
 
 423
-00:21:55,451 --> 00:22:00,053
-When the time is right, and, gentlemen, you'll all know when that time is,
+00:21:58,619 --> 00:22:02,500
+Patricia will now give you
+a safe-sex demonstration.
 
 424
-00:22:00,295 --> 00:22:03,652
-carefully open the condom packet...
+00:22:05,051 --> 00:22:09,653
+When the time is right, and, gentlemen,
+you'll all know when that time is,
 
 425
-00:22:04,380 --> 00:22:06,852
-and roll it onto the banana.
+00:22:09,895 --> 00:22:13,252
+carefully open the condom packet...
 
 426
-00:22:06,966 --> 00:22:09,019
-We should try and get down to do the M.R.I. now.
+00:22:13,980 --> 00:22:16,452
+and roll it onto the banana.
 
 427
-00:22:09,330 --> 00:22:10,995
-This isn't really a good time.
+00:22:16,566 --> 00:22:18,619
+We should try and get down to do the M.R.I. now.
 
 428
-00:22:11,184 --> 00:22:13,006
-If you want to do this without anybody else knowing,
+00:22:18,930 --> 00:22:20,595
+This isn't really a good time.
 
 429
-00:22:13,452 --> 00:22:14,394
-you should do it now.
+00:22:20,784 --> 00:22:22,606
+If you want to do this without
+anybody else knowing,
 
 430
-00:22:21,261 --> 00:22:22,232
-Poor George.
+00:22:23,052 --> 00:22:23,994
+you should do it now.
 
 431
-00:22:22,647 --> 00:22:23,313
-Yeah.
+00:22:30,861 --> 00:22:31,832
+Poor George.
 
 432
-00:22:23,600 --> 00:22:26,084
-You know, I think he really likes typhoid Mary.
-
-433
-00:22:26,872 --> 00:22:30,533
-Well, not many budding relationships survive a good dose of V.D.
-
-434
-00:22:32,258 --> 00:22:32,905
+00:22:32,247 --> 00:22:32,913
 Yeah.
 
+433
+00:22:33,200 --> 00:22:35,684
+You know, I think he really likes typhoid Mary.
+
+434
+00:22:36,472 --> 00:22:40,133
+Well, not many budding relationships
+survive a good dose of V.D.
+
 435
-00:22:35,009 --> 00:22:35,807
+00:22:41,858 --> 00:22:42,505
 Yeah.
 
 436
-00:22:35,903 --> 00:22:40,814
-...gently peel off the condom and dispose of it properly.
+00:22:44,609 --> 00:22:45,407
+Yeah.
 
 437
-00:22:41,397 --> 00:22:45,254
-With every fresh banana, always use a fresh condom.
+00:22:45,503 --> 00:22:50,414
+...gently peel off the condom
+and dispose of it properly.
 
 438
-00:23:16,198 --> 00:23:17,100
-You're avoiding me.
+00:22:50,997 --> 00:22:54,854
+With every fresh banana, always use a fresh condom.
 
 439
-00:23:18,513 --> 00:23:21,259
-I'm busy... at work. I-I'm working.
+00:23:25,798 --> 00:23:26,700
+You're avoiding me.
 
 440
-00:23:23,167 --> 00:23:24,298
-Why are you in this line?
+00:23:28,113 --> 00:23:30,859
+I'm busy... at work. I-I'm working.
 
 441
-00:23:26,110 --> 00:23:27,283
-It's the syphilis line.
+00:23:32,767 --> 00:23:33,898
+Why are you in this line?
 
 442
-00:23:27,744 --> 00:23:29,116
-You don't need to be in this line.
+00:23:35,710 --> 00:23:36,883
+It's the syphilis line.
 
 443
-00:23:29,351 --> 00:23:30,154
-I don't?
+00:23:37,344 --> 00:23:38,716
+You don't need to be in this line.
 
 444
-00:23:31,681 --> 00:23:32,650
-There's no one else.
+00:23:38,951 --> 00:23:39,754
+I don't?
 
 445
-00:23:35,634 --> 00:23:36,617
-That surprises you?
+00:23:41,281 --> 00:23:42,250
+There's no one else.
 
 446
-00:23:38,434 --> 00:23:39,690
-Nothing surprises me.
+00:23:45,234 --> 00:23:46,217
+That surprises you?
 
 447
-00:23:42,428 --> 00:23:43,652
-Do I need to be in this line?
+00:23:48,034 --> 00:23:49,290
+Nothing surprises me.
 
 448
-00:23:46,601 --> 00:23:47,272
-No.
+00:23:52,028 --> 00:23:53,252
+Do I need to be in this line?
 
 449
-00:23:49,827 --> 00:23:50,923
+00:23:56,201 --> 00:23:56,872
+No.
+
+450
+00:23:59,427 --> 00:24:00,523
 - Okay.
 - Okay.
 
-450
-00:23:52,401 --> 00:23:53,744
+451
+00:24:02,001 --> 00:24:03,344
 - Hey.
 - Oh, hey.
 
-451
-00:23:53,918 --> 00:23:55,279
+452
+00:24:03,518 --> 00:24:04,879
 Mr. Franklin's prepped and ready.
 
-452
-00:23:55,397 --> 00:23:56,120
+453
+00:24:04,997 --> 00:24:05,720
 Excellent.
 
-453
-00:23:56,221 --> 00:23:57,440
+454
+00:24:05,821 --> 00:24:07,040
 God, look at this line.
 
-454
-00:23:58,065 --> 00:23:59,592
+455
+00:24:07,665 --> 00:24:09,192
 Well, at least we don't have to stand in line.
 
-455
-00:23:59,779 --> 00:24:02,197
-That's the one good thing about the fact neither of us is getting any, right?
-
 456
-00:24:05,864 --> 00:24:08,360
-Mr. Franklin, we've given you a local anaesthetic,
+00:24:09,379 --> 00:24:11,797
+That's the one good thing about the fact
+neither of us is getting any, right?
 
 457
-00:24:08,449 --> 00:24:09,687
-but you might feel some pressure.
+00:24:15,464 --> 00:24:17,960
+Mr. Franklin, we've given you a local anesthetic,
 
 458
-00:24:14,070 --> 00:24:14,935
-Okay,
+00:24:18,049 --> 00:24:19,287
+but you might feel some pressure.
 
 459
-00:24:16,201 --> 00:24:17,071
-I'm ready.
+00:24:23,670 --> 00:24:24,535
+Okay,
 
 460
-00:24:17,337 --> 00:24:17,936
-Grab the skin.
+00:24:25,801 --> 00:24:26,671
+I'm ready.
 
 461
-00:24:23,507 --> 00:24:24,925
-I'm in the peritoneal cavity.
+00:24:26,937 --> 00:24:27,536
+Grab the skin.
 
 462
-00:24:30,305 --> 00:24:31,320
-That fluid is bloody.
+00:24:33,107 --> 00:24:34,525
+I'm in the peritoneal cavity.
 
 463
-00:24:31,416 --> 00:24:32,399
-Is it supposed to be bloody?
+00:24:39,905 --> 00:24:40,920
+That fluid is bloody.
 
 464
-00:24:32,561 --> 00:24:34,064
-You've done this before, right?
+00:24:41,016 --> 00:24:41,999
+Is it supposed to be bloody?
 
 465
-00:24:34,145 --> 00:24:35,631
-- Of course. 
-- Millions of times.
+00:24:42,161 --> 00:24:43,664
+You've done this before, right?
 
 466
-00:24:37,314 --> 00:24:38,847
-You're doing great, Mr. Franklin.
+00:24:43,745 --> 00:24:45,231
+- Of course.
+- Millions of times.
 
 467
-00:24:40,919 --> 00:24:41,672
-Okay, wait, wait.
+00:24:46,914 --> 00:24:48,447
+You're doing great, Mr. Franklin.
 
 468
-00:24:43,763 --> 00:24:44,699
-Okay, go.
+00:24:50,519 --> 00:24:51,272
+Okay, wait, wait.
 
 469
-00:24:50,772 --> 00:24:51,676
-Good.
+00:24:53,363 --> 00:24:54,299
+Okay, go.
 
 470
-00:24:54,093 --> 00:24:55,333
-Now all we have to do is wait.
+00:25:00,372 --> 00:25:01,276
+Good.
 
 471
-00:24:59,070 --> 00:25:00,247
-You see that right there?
+00:25:03,693 --> 00:25:04,933
+Now all we have to do is wait.
 
 472
-00:25:01,702 --> 00:25:02,592
-It's a tumor,
+00:25:08,670 --> 00:25:09,847
+You see that right there?
 
 473
-00:25:03,217 --> 00:25:05,036
-and it's pressing against your optic nerve.
+00:25:11,302 --> 00:25:12,192
+It's a tumor,
 
 474
-00:25:05,137 --> 00:25:05,975
-Is it operable?
+00:25:12,817 --> 00:25:14,636
+and it's pressing against your optic nerve.
 
 475
-00:25:06,058 --> 00:25:06,985
-Oh, definitely.
+00:25:14,737 --> 00:25:15,575
+Is it operable?
 
 476
-00:25:08,716 --> 00:25:10,605
-It does have its risks.
+00:25:15,658 --> 00:25:16,585
+Oh, definitely.
 
 477
-00:25:11,199 --> 00:25:12,526
-You mean I could lose my sight?
+00:25:18,316 --> 00:25:20,205
+It does have its risks.
 
 478
-00:25:13,288 --> 00:25:16,330
-Just what I need -- a syphilis outbreak and a tumor.
+00:25:20,799 --> 00:25:22,126
+You mean I could lose my sight?
 
 479
-00:25:16,467 --> 00:25:17,776
-Well, it's probably unrelated.
+00:25:22,888 --> 00:25:25,930
+Just what I need - a syphilis outbreak and a tumor.
 
 480
-00:25:19,909 --> 00:25:22,704
-All right, Derek, let's see how good you really are.
+00:25:26,067 --> 00:25:27,376
+Well, it's probably unrelated.
 
 481
-00:25:24,148 --> 00:25:25,929
-All right. I'll put a team together.
+00:25:29,509 --> 00:25:32,304
+All right, Derek, let's see
+how good you really are.
 
 482
-00:25:26,016 --> 00:25:27,215
-All my people only.
+00:25:33,748 --> 00:25:35,529
+All right. I'll put a team together.
 
 483
-00:25:27,748 --> 00:25:29,283
-And I still want this kept under wraps.
+00:25:35,616 --> 00:25:36,815
+All my people only.
 
 484
-00:25:29,340 --> 00:25:31,342
-The vultures will be circling soon enough.
+00:25:37,348 --> 00:25:38,883
+And I still want this kept under wraps.
 
 485
-00:25:31,419 --> 00:25:32,570
-Aren't I one of the vultures?
+00:25:38,940 --> 00:25:40,942
+The vultures will be circling soon enough.
 
 486
-00:25:32,658 --> 00:25:34,486
-Why do you think I want to keep an eye on you?
+00:25:41,019 --> 00:25:42,170
+Aren't I one of the vultures?
 
 487
-00:25:34,916 --> 00:25:36,897
-Get going. We're doing this tonight.
+00:25:42,258 --> 00:25:44,086
+Why do you think I want to keep an eye on you?
 
 488
-00:25:37,147 --> 00:25:37,752
-Right.
+00:25:44,516 --> 00:25:46,497
+Get going. We're doing this tonight.
 
 489
-00:25:44,324 --> 00:25:45,089
-You paged.
+00:25:46,747 --> 00:25:47,352
+Right.
 
 490
-00:25:45,248 --> 00:25:47,572
-Yeah, I need you to help me out on something for the chief.
+00:25:53,924 --> 00:25:54,689
+You paged.
 
 491
-00:25:47,930 --> 00:25:49,041
-Can you keep a secret?
+00:25:54,848 --> 00:25:57,172
+Yeah, I need you to help me out
+on something for the chief.
 
 492
-00:25:49,768 --> 00:25:51,023
-Better than you think.
+00:25:57,530 --> 00:25:58,641
+Can you keep a secret?
 
 493
-00:25:53,922 --> 00:25:55,779
-How much fluid can one body hold?
+00:25:59,368 --> 00:26:00,623
+Better than you think.
 
 494
-00:25:57,412 --> 00:26:00,705
-There's a lot of fluid in there, Mr. Franklin, but we're almost finished.
+00:26:03,522 --> 00:26:05,379
+How much fluid can one body hold?
 
 495
-00:26:02,410 --> 00:26:05,343
-Mr. Franklin, are you sleeping?
+00:26:07,012 --> 00:26:10,305
+There's a lot of fluid in there,
+Mr. Franklin, but we're almost finished.
 
 496
-00:26:06,821 --> 00:26:08,109
-Mr. Franklin?
+00:26:12,010 --> 00:26:14,943
+Mr. Franklin, are you sleeping?
 
 497
-00:26:08,917 --> 00:26:09,925
+00:26:16,421 --> 00:26:17,709
+Mr. Franklin?
+
+498
+00:26:18,517 --> 00:26:19,525
 - He has no pulse.
 - What?
 
-498
-00:26:10,003 --> 00:26:11,079
+499
+00:26:19,603 --> 00:26:20,679
 He has no pulse!
 
-499
-00:26:14,263 --> 00:26:16,259
+500
+00:26:23,863 --> 00:26:25,859
 Code blue. Code blue.
 
-500
-00:26:26,859 --> 00:26:29,265
+501
+00:26:37,509 --> 00:26:39,915
 Nobody die just like that with no warning.
 
-501
-00:26:29,331 --> 00:26:31,236
+502
+00:26:39,981 --> 00:26:41,886
 There was blood in the tube when it first went in.
 
-502
-00:26:31,425 --> 00:26:33,070
-What if it's our fault? What if we did something wrong?
-
 503
-00:26:33,141 --> 00:26:34,143
-We didn't do anything wrong.
+00:26:42,075 --> 00:26:43,720
+What if it's our fault? What
+if we did something wrong?
 
 504
-00:26:34,216 --> 00:26:35,428
-We did a textbook procedure.
+00:26:43,791 --> 00:26:44,793
+We didn't do anything wrong.
 
 505
-00:26:37,763 --> 00:26:39,366
-I checked your chart.
+00:26:44,866 --> 00:26:46,078
+We did a textbook procedure.
 
 506
-00:26:39,464 --> 00:26:40,621
-You did everything by the book.
+00:26:48,713 --> 00:26:49,916
+I checked your chart.
 
 507
-00:26:40,693 --> 00:26:42,643
-He died on our watch. We must have missed something.
+00:26:50,014 --> 00:26:51,171
+You did everything by the book.
 
 508
-00:26:42,746 --> 00:26:45,536
-There was no history of heart problems.
+00:26:51,243 --> 00:26:53,193
+He died on our watch. We
+must have missed something.
 
 509
-00:26:45,625 --> 00:26:46,965
-His death wasn't your fault.
+00:26:53,296 --> 00:26:56,086
+You couldn't have known.
+There was no history of heart problems.
 
 510
-00:26:47,184 --> 00:26:48,209
-When's the autopsy?
+00:26:56,175 --> 00:26:57,515
+His death wasn't your fault.
 
 511
-00:26:48,307 --> 00:26:49,756
-There isn't gonna be an autopsy.
+00:26:57,734 --> 00:26:58,759
+When's the autopsy?
 
 512
-00:26:50,174 --> 00:26:52,607
-What? How are we supposed to know the cause of death?
+00:26:58,857 --> 00:27:00,306
+There isn't gonna be an autopsy.
 
 513
-00:26:52,674 --> 00:26:56,884
-It's going down as cardiopulmonary arrest complicated by liver disease.
+00:27:00,724 --> 00:27:03,157
+What? How are we supposed
+to know the cause of death?
 
 514
-00:26:56,954 --> 00:26:57,844
-But an autopsy would --
+00:27:03,224 --> 00:27:07,434
+It's going down as cardiopulmonary
+arrest complicated by liver disease.
 
 515
-00:26:57,911 --> 00:27:01,746
-The family decided they didn't want an autopsy.
+00:27:07,504 --> 00:27:08,394
+But an autopsy would -
 
 516
-00:27:01,813 --> 00:27:05,141
-- But Dr. Bailey -- 
-- They don't want an autopsy. Let it go.
+00:27:08,461 --> 00:27:12,296
+The family decided they didn't want an autopsy.
 
 517
-00:27:16,656 --> 00:27:20,362
-How goes our special, supersecret, silent, sunset surgery?
+00:27:12,363 --> 00:27:15,691
+- But Dr. Bailey -
+- They don't want an autopsy. Let it go.
 
 518
-00:27:20,995 --> 00:27:22,171
-I've been practicing that.
+00:27:27,206 --> 00:27:30,912
+How goes our special, supersecret,
+silent, sunset surgery?
 
 519
-00:27:22,493 --> 00:27:24,193
-You have too much time on your hands.
+00:27:31,545 --> 00:27:32,721
+I've been practicing that.
 
 520
-00:27:24,274 --> 00:27:27,588
-Uh, tell the chief I'll be there. Just let me know when and where. I'm in.
+00:27:33,043 --> 00:27:34,743
+You have too much time on your hands.
 
 521
-00:27:27,678 --> 00:27:28,334
-Okay.
+00:27:34,824 --> 00:27:38,138
+Uh, tell the chief I'll be there. Just
+let me know when and where. I'm in.
 
 522
-00:27:33,066 --> 00:27:33,931
-Are you nervous?
-
-523
-00:27:34,080 --> 00:27:35,242
-It's a complicated surgery.
-
-524
-00:27:35,554 --> 00:27:38,839
-I make one mistake, I end a fellow surgeon's career, my mentor's career.
-
-525
-00:27:38,902 --> 00:27:40,772
-Oh, no, I'm not nervous.
-
-526
-00:27:42,982 --> 00:27:44,161
-So, just for the record...
-
-527
-00:27:44,534 --> 00:27:46,685
-you'd tell me if I need to get tested, right?
-
-528
-00:27:47,304 --> 00:27:48,732
-You think I have syphilis?
-
-529
-00:27:48,810 --> 00:27:49,741
-No, I don't.
-
-530
-00:27:49,828 --> 00:27:51,830
-It's just -- we never made any rules or anything.
-
-531
-00:27:51,908 --> 00:27:54,466
-I mean, we never said,
-
-532
-00:27:54,656 --> 00:27:57,621
-"we have rules", and I wouldn't hold it against you.
-
-533
-00:27:57,692 --> 00:28:00,443
-When would I have time to go out and get syphilis?
-
-534
-00:28:00,560 --> 00:28:04,594
-You're a handful enough as it is, and besides, we're, like, practically a condom ad.
-
-535
-00:28:04,723 --> 00:28:06,838
-But no more glow-in-the-dark ones.
-
-536
-00:28:06,929 --> 00:28:08,871
-You see? There's nothing to worry about.
-
-537
-00:28:09,683 --> 00:28:12,064
-Maybe we should, you know, make some rules, I mean.
-
-538
-00:28:12,326 --> 00:28:13,130
-We should.
-
-539
-00:28:13,498 --> 00:28:14,221
+00:27:38,228 --> 00:27:38,884
 Okay.
 
+523
+00:27:43,616 --> 00:27:44,481
+Are you nervous?
+
+524
+00:27:44,630 --> 00:27:45,792
+It's a complicated surgery.
+
+525
+00:27:46,104 --> 00:27:49,389
+I make one mistake, I end a fellow
+surgeon's career, my mentor's career.
+
+526
+00:27:49,452 --> 00:27:51,322
+Oh, no, I'm not nervous.
+
+527
+00:27:53,532 --> 00:27:54,711
+So, just for the record...
+
+528
+00:27:55,084 --> 00:27:57,235
+you'd tell me if I need to get tested, right?
+
+529
+00:27:57,854 --> 00:27:59,282
+You think I have syphilis?
+
+530
+00:27:59,360 --> 00:28:00,291
+No, I don't.
+
+531
+00:28:00,378 --> 00:28:02,380
+It's just - we never made any rules or anything.
+
+532
+00:28:02,458 --> 00:28:05,016
+I mean, we never said,
+
+533
+00:28:05,206 --> 00:28:08,171
+"we have rules", and I
+wouldn't hold it against you.
+
+534
+00:28:08,242 --> 00:28:10,993
+When would I have time to go out and get syphilis?
+
+535
+00:28:11,110 --> 00:28:15,144
+You're a handful enough as it is, and besides,
+we're, like, practically a condom ad.
+
+536
+00:28:15,273 --> 00:28:17,388
+But no more glow-in-the-dark ones.
+
+537
+00:28:17,479 --> 00:28:19,421
+You see? There's nothing to worry about.
+
+538
+00:28:20,233 --> 00:28:22,614
+Maybe we should, you know, make some rules, I mean.
+
+539
+00:28:22,876 --> 00:28:23,680
+We should.
+
 540
-00:28:14,517 --> 00:28:15,326
+00:28:24,048 --> 00:28:24,771
 Okay.
 
 541
-00:28:17,948 --> 00:28:18,941
-Just for the record...
+00:28:25,067 --> 00:28:25,876
+Okay.
 
 542
-00:28:19,545 --> 00:28:21,757
-I liked the glow-in-the-dark ones.
+00:28:28,498 --> 00:28:29,491
+Just for the record...
 
 543
-00:28:22,019 --> 00:28:23,272
-I bet you do.
+00:28:30,095 --> 00:28:32,307
+I liked the glow-in-the-dark ones.
 
 544
-00:28:31,280 --> 00:28:33,640
-That's the last of the ovarian material.
+00:28:32,569 --> 00:28:33,822
+I bet you do.
 
 545
-00:28:33,825 --> 00:28:36,898
-I just need to sew up the perforation on the bladder wall.
+00:28:41,830 --> 00:28:44,190
+That's the last of the ovarian material.
 
 546
-00:28:40,175 --> 00:28:41,950
-Is there a problem, Dr. Knox?
+00:28:44,375 --> 00:28:47,448
+I just need to sew up the
+perforation on the bladder wall.
 
 547
-00:28:42,075 --> 00:28:44,413
-Well, you said this man's wife is pregnant?
+00:28:50,725 --> 00:28:52,500
+Is there a problem, Dr. Knox?
 
 548
-00:28:44,638 --> 00:28:45,965
-Due in five weeks. Why?
+00:28:52,625 --> 00:28:54,963
+Well, you said this man's wife is pregnant?
 
 549
-00:28:46,042 --> 00:28:48,550
-Our patient has a blind vas deferens.
+00:28:55,188 --> 00:28:56,515
+Due in five weeks. Why?
 
 550
-00:28:50,587 --> 00:28:51,555
-Bill is sterile?
+00:28:56,592 --> 00:28:59,100
+Our patient has a blind vas deferens.
 
 551
-00:28:51,714 --> 00:28:52,984
-And always has been.
+00:29:01,137 --> 00:29:02,105
+Bill is sterile?
 
 552
-00:28:54,546 --> 00:28:56,644
-Then who got his wife pregnant?
+00:29:02,264 --> 00:29:03,534
+And always has been.
 
 553
-00:29:03,715 --> 00:29:05,252
-Sucks to be Bill right now.
+00:29:05,096 --> 00:29:07,194
+Then who got his wife pregnant?
 
 554
-00:29:05,354 --> 00:29:07,525
-How's Burke gonna tell him the baby's not his?
+00:29:14,265 --> 00:29:15,802
+Sucks to be Bill right now.
 
 555
-00:29:07,623 --> 00:29:08,641
-Burke's not gonna tell him.
+00:29:15,904 --> 00:29:18,075
+How's Burke gonna tell him the baby's not his?
 
 556
-00:29:08,708 --> 00:29:09,966
-He has to. They're friends.
+00:29:18,173 --> 00:29:19,191
+Burke's not gonna tell him.
 
 557
-00:29:10,070 --> 00:29:11,257
-Bill's better off not knowing.
+00:29:19,258 --> 00:29:20,516
+He has to. They're friends.
 
 558
-00:29:11,324 --> 00:29:12,912
-Do you think Holly knows Bill's not the father?
+00:29:20,620 --> 00:29:21,807
+Bill's better off not knowing.
 
 559
-00:29:12,988 --> 00:29:13,770
-Maybe, maybe not.
+00:29:21,874 --> 00:29:23,462
+Do you think Holly knows Bill's not the father?
 
 560
-00:29:13,846 --> 00:29:16,293
-Bill should know his wife's cheating on him.
+00:29:23,538 --> 00:29:24,320
+Maybe, maybe not.
 
 561
-00:29:16,534 --> 00:29:20,156
-I don't remember asking for your opinions, so keep them to yourselves.
+00:29:24,396 --> 00:29:26,843
+Bill should know his wife's cheating on him.
 
 562
-00:29:20,244 --> 00:29:21,262
-Sorry, sir.
+00:29:27,084 --> 00:29:30,706
+I don't remember asking for your
+opinions, so keep them to yourselves.
 
 563
-00:29:22,179 --> 00:29:23,304
-You're such a gossip.
+00:29:30,794 --> 00:29:31,812
+Sorry, sir.
 
 564
-00:29:29,153 --> 00:29:31,184
-We know how confusing this must be,
+00:29:32,729 --> 00:29:33,854
+You're such a gossip.
 
 565
-00:29:31,277 --> 00:29:33,228
-your husband dying so suddenly,
+00:29:39,703 --> 00:29:41,734
+We know how confusing this must be,
 
 566
-00:29:33,595 --> 00:29:35,881
-but an autopsy will tell us why.
+00:29:41,827 --> 00:29:43,778
+your husband dying so suddenly,
 
 567
-00:29:36,397 --> 00:29:39,490
-So, you think we should do the autopsy?
+00:29:44,145 --> 00:29:46,431
+but an autopsy will tell us why.
 
 568
-00:29:39,648 --> 00:29:41,383
-No, we just want this to be over.
+00:29:46,947 --> 00:29:50,040
+So, you think we should do the autopsy?
 
 569
-00:29:41,471 --> 00:29:44,395
-But don't you want to know for certain what killed him?
+00:29:50,198 --> 00:29:51,933
+No, we just want this to be over.
 
 570
-00:29:45,270 --> 00:29:48,042
-My father was a mean drunk who couldn't hold a job.
+00:29:52,021 --> 00:29:54,945
+But don't you want to know
+for certain what killed him?
 
 571
-00:29:48,259 --> 00:29:49,479
-That's what killed him.
+00:29:55,820 --> 00:29:58,592
+My father was a mean drunk who couldn't hold a job.
 
 572
-00:29:49,874 --> 00:29:51,543
-I understand that you're angry,
+00:29:58,809 --> 00:30:00,029
+That's what killed him.
 
 573
-00:29:51,631 --> 00:29:55,469
-but knowing for sure might help give you some closure.
+00:30:00,424 --> 00:30:02,093
+I understand that you're angry,
 
 574
-00:29:55,583 --> 00:29:58,506
-It was awfully sudden, Alice.
+00:30:02,181 --> 00:30:06,019
+but knowing for sure might
+help give you some closure.
 
 575
-00:29:58,679 --> 00:29:59,413
-Sudden?
+00:30:06,133 --> 00:30:09,056
+It was awfully sudden, Alice.
 
 576
-00:30:00,339 --> 00:30:02,627
-He's been killing himself for years.
+00:30:09,229 --> 00:30:09,963
+Sudden?
 
 577
-00:30:02,811 --> 00:30:04,229
-He was a good man.
+00:30:10,889 --> 00:30:13,177
+He's been killing himself for years.
 
 578
-00:30:05,807 --> 00:30:07,219
-Maybe they're right.
+00:30:13,361 --> 00:30:14,779
+He was a good man.
 
 579
-00:30:07,369 --> 00:30:08,920
-Maybe we should do the autopsy.
+00:30:16,357 --> 00:30:17,769
+Maybe they're right.
 
 580
-00:30:08,997 --> 00:30:10,728
-Mom, stop it.
+00:30:17,919 --> 00:30:19,470
+Maybe we should do the autopsy.
 
 581
-00:30:11,136 --> 00:30:12,181
-He's dead.
+00:30:19,547 --> 00:30:21,278
+Mom, stop it.
 
 582
-00:30:12,729 --> 00:30:14,348
-It's finally over.
+00:30:21,686 --> 00:30:22,731
+He's dead.
 
 583
-00:30:14,982 --> 00:30:17,953
-Alice, your father would have wanted --
+00:30:23,279 --> 00:30:24,898
+It's finally over.
 
 584
-00:30:18,013 --> 00:30:19,580
-Who cares what he wanted?
+00:30:25,532 --> 00:30:28,503
+Alice, your father would have wanted -
 
 585
-00:30:20,424 --> 00:30:25,908
-Can't we please just try and get out of this with whatever shred of dignity this family has left?
+00:30:28,563 --> 00:30:30,130
+Who cares what he wanted?
 
 586
-00:30:40,008 --> 00:30:43,281
-You guys want to perform an unauthorized autopsy?
+00:30:30,974 --> 00:30:36,458
+Can't we please just try and get out of this with
+whatever shred of dignity this family has left?
 
 587
-00:30:44,525 --> 00:30:48,032
-I know you, Cristina. You do not want to be known as the new 007.
+00:30:50,558 --> 00:30:53,831
+You guys want to perform an unauthorized autopsy?
 
 588
-00:30:48,114 --> 00:30:49,614
-An autopsy clears your name.
+00:30:55,075 --> 00:30:58,582
+I know you, Cristina. You do not
+want to be known as the new 007.
 
 589
-00:30:50,531 --> 00:30:52,533
-Cristina, no.
+00:30:58,664 --> 00:31:00,164
+An autopsy clears your name.
 
 590
-00:30:52,757 --> 00:30:54,022
-What about Franklin's wife?
+00:31:01,081 --> 00:31:03,083
+Cristina, no.
 
 591
-00:30:54,242 --> 00:30:56,869
-You saw the way she was looking at me. She wants the autopsy.
+00:31:03,307 --> 00:31:04,572
+What about Franklin's wife?
 
 592
-00:30:56,942 --> 00:30:58,600
-She just didn't want to fight with her daughter.
+00:31:04,792 --> 00:31:07,419
+You saw the way she was looking at me.
+She wants the autopsy.
 
 593
-00:30:58,680 --> 00:30:59,906
-She looked so sad.
+00:31:07,492 --> 00:31:09,150
+She just didn't want to fight with her daughter.
 
 594
-00:31:01,821 --> 00:31:04,196
-Okay, Cristina Yang, licensed to kill.
+00:31:09,230 --> 00:31:10,456
+She looked so sad.
 
 595
-00:31:07,893 --> 00:31:08,886
-Okay, I'm in.
+00:31:12,371 --> 00:31:14,746
+Okay, Cristina Yang, licensed to kill.
 
 596
-00:31:09,456 --> 00:31:11,144
-I am so not involved in this.
+00:31:18,443 --> 00:31:19,436
+Okay, I'm in.
 
 597
-00:31:11,215 --> 00:31:12,446
-Meredith, this is fight club.
+00:31:20,006 --> 00:31:21,694
+I am so not involved in this.
 
 598
-00:31:12,511 --> 00:31:13,612
-Nobody talks about it.
+00:31:21,765 --> 00:31:22,996
+Meredith, this is fight club.
 
 599
-00:31:13,704 --> 00:31:14,293
-Fine.
+00:31:23,061 --> 00:31:24,162
+Nobody talks about it.
 
 600
-00:31:15,218 --> 00:31:16,541
-We have to do it when Bailey's not around.
+00:31:24,254 --> 00:31:24,843
+Fine.
 
 601
-00:31:16,617 --> 00:31:18,818
-She's everywhere and knows everything.
+00:31:25,768 --> 00:31:27,091
+We have to do it when Bailey's not around.
 
 602
-00:31:18,880 --> 00:31:20,402
-We have to take our chances.
+00:31:27,167 --> 00:31:29,368
+She's everywhere and knows everything.
 
 603
-00:31:20,548 --> 00:31:23,139
-Bailey's got something tonight from 7:00 to 11:00.
+00:31:29,430 --> 00:31:30,952
+We have to take our chances.
 
 604
-00:31:23,201 --> 00:31:25,090
-You two will be the last thing she's worried about.
+00:31:31,098 --> 00:31:33,689
+Bailey's got something tonight from 7:00 to 11:00.
 
 605
-00:31:25,173 --> 00:31:26,898
+00:31:33,751 --> 00:31:35,640
+You two will be the last thing she's worried about.
+
+606
+00:31:35,723 --> 00:31:37,448
 - How do you know that?
 - What kind of something?
 
-606
-00:31:27,141 --> 00:31:29,960
+607
+00:31:37,691 --> 00:31:40,510
 Oh, I can't tell you that. It's fight club, too.
 
-607
-00:31:33,057 --> 00:31:35,484
-If I'm missing out on a real patient because of this,
-
 608
-00:31:35,567 --> 00:31:38,678
-they're gonna call me 007 because I've killed you.
+00:31:43,607 --> 00:31:46,034
+If I'm missing out on a real
+patient because of this,
 
 609
-00:31:46,256 --> 00:31:47,014
-How we doing?
+00:31:46,117 --> 00:31:49,228
+they're gonna call me 007 because I've killed you.
 
 610
-00:31:47,158 --> 00:31:48,423
-Did you lock up the gallery?
+00:31:56,806 --> 00:31:57,564
+How we doing?
 
 611
-00:31:48,582 --> 00:31:50,310
-Don't worry. We're flying under the radar.
+00:31:57,708 --> 00:31:58,973
+Did you lock up the gallery?
 
 612
-00:31:50,409 --> 00:31:52,647
-What did you put out there, the midas rex?
+00:31:59,132 --> 00:32:00,860
+Don't worry. We're flying under the radar.
 
 613
-00:31:52,755 --> 00:31:53,953
-We've got it, chief.
+00:32:00,959 --> 00:32:03,197
+What did you put out there, the Midas rex?
 
 614
-00:31:54,045 --> 00:31:55,448
-How much vancomycin is there?
+00:32:03,305 --> 00:32:04,503
+We've got it, chief.
 
 615
-00:31:55,534 --> 00:31:57,188
-One gram, as ordered, sir.
+00:32:04,595 --> 00:32:05,998
+How much vancomycin is there?
 
 616
-00:31:57,275 --> 00:31:59,707
-You're not gonna be too liberal with those benzos?
+00:32:06,084 --> 00:32:07,738
+One gram, as ordered, sir.
 
 617
-00:31:59,784 --> 00:32:01,914
-You know, doctors make the worst patients.
+00:32:07,825 --> 00:32:10,257
+You're not gonna be too liberal with those benzos?
 
 618
-00:32:02,002 --> 00:32:03,797
-You should just breathe in the happy gas.
+00:32:10,334 --> 00:32:12,464
+You know, doctors make the worst patients.
 
 619
-00:32:03,891 --> 00:32:05,626
-Stop running my O.R.
+00:32:12,552 --> 00:32:14,347
+You should just breathe in the happy gas.
 
 620
-00:32:07,239 --> 00:32:08,744
-I've got you covered.
+00:32:14,441 --> 00:32:16,176
+Stop running my O.R.
 
 621
-00:32:16,204 --> 00:32:17,106
-We stole a body.
+00:32:17,789 --> 00:32:19,294
+I've got you covered.
 
 622
-00:32:18,687 --> 00:32:19,757
-We're body snatchers.
+00:32:28,504 --> 00:32:29,406
+We stole a body.
 
 623
-00:32:20,607 --> 00:32:22,670
-What if somebody from the morgue comes looking for Franklin?
+00:32:30,987 --> 00:32:32,057
+We're body snatchers.
 
 624
-00:32:22,753 --> 00:32:25,276
-Well, "A" it's in the middle of the night, and "B"
+00:32:32,907 --> 00:32:34,970
+What if somebody from the morgue
+comes looking for Franklin?
 
 625
-00:32:25,349 --> 00:32:28,200
-the thing about being dead is people stop looking for you.
+00:32:35,053 --> 00:32:37,576
+Well, "A" it's in the middle of the night, and "B"
 
 626
-00:32:29,025 --> 00:32:29,803
-Okay.
+00:32:37,649 --> 00:32:40,500
+the thing about being dead is
+people stop looking for you.
 
 627
-00:32:31,755 --> 00:32:33,361
-When's the last time you did an autopsy?
-
-628
-00:32:33,459 --> 00:32:36,321
-I took gross anatomy like you. I'm just trying to remember.
-
-629
-00:32:36,413 --> 00:32:38,133
-You know what? Hold on. Hold on. Wait.
-
-630
-00:32:38,329 --> 00:32:39,163
-Hold on.
-
-631
-00:32:40,473 --> 00:32:41,640
-You brought a textbook?
-
-632
-00:32:41,809 --> 00:32:44,200
-Uh, if we're gonna do this, we're gonna do it right.
-
-633
-00:32:49,238 --> 00:32:50,053
+00:32:41,325 --> 00:32:42,103
 Okay.
 
+628
+00:32:44,055 --> 00:32:45,661
+When's the last time you did an autopsy?
+
+629
+00:32:45,759 --> 00:32:48,621
+I took gross anatomy like you.
+I'm just trying to remember.
+
+630
+00:32:48,713 --> 00:32:50,433
+You know what? Hold on. Hold on. Wait.
+
+631
+00:32:50,629 --> 00:32:51,463
+Hold on.
+
+632
+00:32:52,773 --> 00:32:53,940
+You brought a textbook?
+
+633
+00:32:54,109 --> 00:32:56,500
+Uh, if we're gonna do this,
+we're gonna do it right.
+
 634
-00:32:52,597 --> 00:32:53,504
-Okay, got it.
+00:33:01,538 --> 00:33:02,353
+Okay.
 
 635
-00:32:53,704 --> 00:32:54,522
-You sure?
+00:33:04,897 --> 00:33:05,804
+Okay, got it.
 
 636
-00:32:54,702 --> 00:32:56,653
-It's not like we can kill him twice.
+00:33:06,004 --> 00:33:06,822
+You sure?
 
 637
-00:33:01,275 --> 00:33:02,152
-Let me cut.
+00:33:07,002 --> 00:33:08,953
+It's not like we can kill him twice.
 
 638
-00:33:02,249 --> 00:33:03,621
-You'll get your turn.
+00:33:13,575 --> 00:33:14,452
+Let me cut.
 
 639
-00:33:06,892 --> 00:33:08,413
-You should really be using the 10 blade.
+00:33:14,549 --> 00:33:15,921
+You'll get your turn.
 
 640
-00:33:08,566 --> 00:33:10,190
-Will you stop backseat cutting?
+00:33:19,192 --> 00:33:20,713
+You should really be using the 10 blade.
 
 641
-00:33:10,266 --> 00:33:11,465
-Go get the saw.
+00:33:20,866 --> 00:33:22,490
+Will you stop backseat cutting?
 
 642
-00:33:13,042 --> 00:33:16,211
-Okay, I've sutured the drain in place. The staples look fine.
+00:33:22,566 --> 00:33:23,765
+Go get the saw.
 
 643
-00:33:16,277 --> 00:33:18,259
-All right, we're done here. Dr. Bailey, you want to wrap him?
+00:33:25,342 --> 00:33:28,511
+Okay, I've sutured the drain in place.
+The staples look fine.
 
 644
-00:33:18,670 --> 00:33:20,603
-Nice work, everybody, nicely done.
+00:33:28,577 --> 00:33:30,559
+All right, we're done here.
+Dr. Bailey, you want to wrap him?
 
 645
-00:33:20,685 --> 00:33:21,326
-Thanks.
+00:33:30,970 --> 00:33:32,903
+Nice work, everybody, nicely done.
 
 646
-00:33:21,403 --> 00:33:22,154
-Good.
+00:33:32,985 --> 00:33:33,626
+Thanks.
 
 647
-00:33:27,521 --> 00:33:29,594
-Do you think the optic nerve is damaged?
+00:33:33,703 --> 00:33:34,454
+Good.
 
 648
-00:33:30,172 --> 00:33:33,292
-If it is, when he wakes up, he'll --
+00:33:39,821 --> 00:33:41,894
+Do you think the optic nerve is damaged?
 
 649
-00:33:33,352 --> 00:33:34,259
-He'll be blind?
+00:33:42,472 --> 00:33:45,592
+If it is, when he wakes up, he'll -
 
 650
-00:33:35,254 --> 00:33:36,164
-For how long?
+00:33:45,652 --> 00:33:46,559
+He'll be blind?
 
 651
-00:33:36,702 --> 00:33:37,531
-Forever.
+00:33:47,554 --> 00:33:48,464
+For how long?
 
 652
-00:33:38,397 --> 00:33:39,850
-Page Stevens and Yang.
+00:33:49,002 --> 00:33:49,831
+Forever.
 
 653
-00:33:39,926 --> 00:33:42,063
-Tell them I want them covering your patients.
+00:33:50,697 --> 00:33:52,150
+Page Stevens and Yang.
 
 654
-00:33:42,282 --> 00:33:45,518
-I need you to stay and monitor the chief.
+00:33:52,226 --> 00:33:54,363
+Tell them I want them covering your patients.
 
 655
-00:33:47,678 --> 00:33:52,047
-Cristina and Izzie, um... I think they're already swamped.
+00:33:54,582 --> 00:33:57,818
+I need you to stay and monitor the chief.
 
 656
-00:33:52,195 --> 00:33:53,101
-With what?
+00:33:59,978 --> 00:34:04,347
+Cristina and Izzie, um... I
+think they're already swamped.
 
 657
-00:33:53,229 --> 00:33:56,172
-Labs -- they had to check on some labs.
+00:34:04,495 --> 00:34:05,401
+With what?
 
 658
-00:33:58,364 --> 00:34:00,504
-Oh, you are lying.
+00:34:05,529 --> 00:34:08,472
+Labs - they had to check on some labs.
 
 659
-00:34:01,820 --> 00:34:03,054
-I know you're lying.
+00:34:10,664 --> 00:34:12,804
+Oh, you are lying.
 
 660
-00:34:03,152 --> 00:34:04,032
-You know how I know?
+00:34:14,120 --> 00:34:15,354
+I know you're lying.
 
 661
-00:34:04,079 --> 00:34:05,471
-'Cause you're a bad liar!
+00:34:15,452 --> 00:34:16,332
+You know how I know?
 
 662
-00:34:05,777 --> 00:34:07,314
-I hate a bad liar.
+00:34:16,379 --> 00:34:17,771
+'Cause you're a bad liar!
 
 663
-00:34:12,007 --> 00:34:13,735
-Take over for me.
+00:34:18,077 --> 00:34:19,614
+I hate a bad liar.
 
 664
-00:34:14,062 --> 00:34:16,147
-I know exactly where they are.
+00:34:24,307 --> 00:34:26,035
+Take over for me.
 
 665
-00:34:16,239 --> 00:34:16,976
-Take over.
+00:34:26,362 --> 00:34:28,447
+I know exactly where they are.
 
 666
-00:34:25,310 --> 00:34:27,251
-Your whole relationship is a lie.
+00:34:28,539 --> 00:34:29,276
+Take over.
 
 667
-00:34:28,451 --> 00:34:29,586
-We're happy.
+00:34:37,610 --> 00:34:39,551
+Your whole relationship is a lie.
 
 668
-00:34:29,776 --> 00:34:31,644
-We've wanted a child for a long time.
+00:34:40,751 --> 00:34:41,886
+We're happy.
 
 669
-00:34:31,767 --> 00:34:33,384
-Why do you want to take this away from him?
+00:34:42,076 --> 00:34:43,944
+We've wanted a child for a long time.
 
 670
-00:34:33,447 --> 00:34:34,446
-Does he know you've been cheating on him?
+00:34:44,067 --> 00:34:45,684
+Why do you want to take this away from him?
 
 671
-00:34:34,501 --> 00:34:37,021
-Preston, this is between Bill and me.
+00:34:45,747 --> 00:34:46,746
+Does he know you've been cheating on him?
 
 672
-00:34:37,083 --> 00:34:39,242
-The man has a right to know that this isn't his child.
+00:34:46,801 --> 00:34:49,321
+Preston, this is between Bill and me.
 
 673
-00:34:40,304 --> 00:34:42,642
-Please, just let this go.
+00:34:49,383 --> 00:34:51,542
+The man has a right to know
+that this isn't his child.
 
 674
-00:34:42,735 --> 00:34:43,876
-Why can't you let this go?
+00:34:52,604 --> 00:34:54,942
+Please, just let this go.
 
 675
-00:34:43,968 --> 00:34:45,693
-Because Bill is my best friend. That's why.
+00:34:55,035 --> 00:34:56,176
+Why can't you let this go?
 
 676
-00:34:45,760 --> 00:34:47,937
-If you were really his friend, you wouldn't do this.
+00:34:56,268 --> 00:34:57,993
+Because Bill is my best friend. That's why.
 
 677
-00:34:47,988 --> 00:34:49,401
-Holly, please! Tell him the truth!
+00:34:58,060 --> 00:35:00,237
+If you were really his friend,
+you wouldn't do this.
 
 678
-00:34:49,477 --> 00:34:50,293
-Why?
+00:35:00,288 --> 00:35:01,701
+Holly, please! Tell him the truth!
 
 679
-00:34:50,640 --> 00:34:53,174
-I'm not gonna ruin my life because you think this is wrong.
+00:35:01,777 --> 00:35:02,593
+Why?
 
 680
-00:34:53,221 --> 00:34:54,086
-Your life?
+00:35:02,940 --> 00:35:05,474
+I'm not gonna ruin my life
+because you think this is wrong.
 
 681
-00:34:54,495 --> 00:34:55,606
-What about his life?
+00:35:05,521 --> 00:35:06,386
+Your life?
 
 682
-00:34:55,682 --> 00:34:57,271
-What about this child's life?
+00:35:06,795 --> 00:35:07,906
+What about his life?
 
 683
-00:34:57,895 --> 00:34:59,856
-What Bill doesn't know won't hurt him.
+00:35:07,982 --> 00:35:09,571
+What about this child's life?
 
 684
-00:35:02,626 --> 00:35:03,404
-Fine.
+00:35:10,195 --> 00:35:12,156
+What Bill doesn't know won't hurt him.
 
 685
-00:35:05,073 --> 00:35:06,967
-Maybe his friend won't tell him the truth,
+00:35:14,926 --> 00:35:15,704
+Fine.
 
 686
-00:35:08,013 --> 00:35:09,605
-but I'm also his doctor,
+00:35:17,373 --> 00:35:19,267
+Maybe his friend won't tell him the truth,
 
 687
-00:35:09,917 --> 00:35:12,559
-and his doctor is not going to lie to him.
+00:35:20,313 --> 00:35:21,905
+but I'm also his doctor,
 
 688
-00:35:18,371 --> 00:35:22,353
-I know, but something came up, an important surgery, and I couldn't.
+00:35:22,217 --> 00:35:24,859
+and his doctor is not going to lie to him.
 
 689
-00:35:22,522 --> 00:35:24,549
-I'm just sorry you couldn't be there for your mother.
+00:35:30,671 --> 00:35:34,653
+I know, but something came up, an
+important surgery, and I couldn't.
 
 690
-00:35:24,908 --> 00:35:28,016
-Ms. Henry, if my mother were lucid, she would understand.
+00:35:34,822 --> 00:35:36,849
+I'm just sorry you couldn't
+be there for your mother.
 
 691
-00:35:28,062 --> 00:35:29,076
-She's a surgeon.
+00:35:37,208 --> 00:35:40,316
+Ms. Henry, if my mother were
+lucid, she would understand.
 
 692
-00:35:29,173 --> 00:35:31,221
-She's done this countless times.
+00:35:40,362 --> 00:35:41,376
+She's a surgeon.
 
 693
-00:35:31,498 --> 00:35:34,477
-And besides, she doesn't even know who I am anyway, so...
+00:35:41,473 --> 00:35:43,521
+She's done this countless times.
 
 694
-00:35:34,887 --> 00:35:36,024
-Today she did.
+00:35:43,798 --> 00:35:46,777
+And besides, she doesn't even
+know who I am anyway, so...
 
 695
-00:35:37,027 --> 00:35:37,806
-What?
+00:35:47,187 --> 00:35:48,324
+Today she did.
 
 696
-00:35:38,215 --> 00:35:41,599
-Your mother's been asking when her daughter Meredith gets off from work.
+00:35:49,327 --> 00:35:50,106
+What?
 
 697
-00:35:44,452 --> 00:35:45,085
-Hey.
+00:35:50,515 --> 00:35:53,899
+Your mother's been asking when her
+daughter Meredith gets off from work.
 
 698
-00:35:47,421 --> 00:35:48,235
+00:35:56,752 --> 00:35:57,385
 Hey.
 
 699
-00:35:48,967 --> 00:35:50,565
-A lot of secret phone calls today.
+00:35:59,721 --> 00:36:00,535
+Hey.
 
 700
-00:35:57,174 --> 00:35:58,537
-Yeah, it's my mother.
+00:36:01,267 --> 00:36:02,865
+A lot of secret phone calls today.
 
 701
-00:36:03,268 --> 00:36:04,584
-She isn't traveling.
+00:36:09,474 --> 00:36:10,837
+Yeah, it's my mother.
 
 702
-00:36:05,873 --> 00:36:07,353
-She isn't writing a book.
+00:36:15,568 --> 00:36:16,884
+She isn't traveling.
 
 703
-00:36:08,782 --> 00:36:10,139
-She isn't anything.
+00:36:18,173 --> 00:36:19,653
+She isn't writing a book.
 
 704
-00:36:10,482 --> 00:36:12,064
-I've been lying to everyone.
+00:36:21,082 --> 00:36:22,439
+She isn't anything.
 
 705
-00:36:13,307 --> 00:36:14,131
-Why?
+00:36:22,782 --> 00:36:24,364
+I've been lying to everyone.
 
 706
-00:36:15,796 --> 00:36:17,281
-She has alzheimer's.
+00:36:25,607 --> 00:36:26,431
+Why?
 
 707
-00:36:19,011 --> 00:36:20,543
+00:36:28,096 --> 00:36:29,581
+She has alzheimer's.
+
+708
+00:36:31,311 --> 00:36:32,843
 - How advanced?
 - Very.
 
-708
-00:36:20,906 --> 00:36:24,443
-She's in a home, and I'm the only one who even knows she's sick.
-
 709
-00:36:25,422 --> 00:36:28,074
-I just don't know what to do anymore, you know?
+00:36:33,206 --> 00:36:36,743
+She's in a home, and I'm the only
+one who even knows she's sick.
 
 710
-00:36:48,585 --> 00:36:53,172
-Don't even tell me you're doing what I think you're doing!
+00:36:37,722 --> 00:36:40,374
+I just don't know what to do anymore, you know?
 
 711
-00:37:02,993 --> 00:37:05,522
-Not only did you disregard the family's wishes, you broke the law!
+00:37:00,885 --> 00:37:05,472
+Don't even tell me you're doing
+what I think you're doing!
 
 712
-00:37:05,578 --> 00:37:07,472
-You could be arrested for assault!
+00:37:15,893 --> 00:37:20,722
+Not only did you disregard the
+family's wishes, you broke the law!
 
 713
-00:37:07,554 --> 00:37:09,121
-Do you like jail?
+00:37:21,128 --> 00:37:23,022
+You could be arrested for assault!
 
 714
-00:37:09,310 --> 00:37:13,141
-The hospital could be sued! I could lose my license, my job!
+00:37:23,104 --> 00:37:24,671
+Do you like jail?
 
 715
-00:37:13,192 --> 00:37:14,616
-I like my job!
+00:37:24,860 --> 00:37:28,691
+The hospital could be sued! I
+could lose my license, my job!
 
 716
-00:37:14,687 --> 00:37:18,890
-Did you think about any of this before you started cutting open a poor man's body?
+00:37:28,742 --> 00:37:30,166
+I like my job!
 
 717
-00:37:18,972 --> 00:37:21,590
-I could seriously kick both your asses right now.
+00:37:30,237 --> 00:37:34,440
+Did you think about any of this before you
+started cutting open a poor man's body?
 
 718
-00:37:21,645 --> 00:37:23,217
-Do you have anything to say?
+00:37:34,522 --> 00:37:37,140
+I could seriously kick both your asses right now.
 
 719
-00:37:25,598 --> 00:37:26,724
-Look at his heart.
+00:37:37,195 --> 00:37:38,767
+Do you have anything to say?
 
 720
-00:37:26,929 --> 00:37:28,521
-It's huge!
+00:37:41,148 --> 00:37:42,274
+Look at his heart.
 
 721
-00:37:28,603 --> 00:37:30,084
-It's over 600 grams,
+00:37:42,479 --> 00:37:44,071
+It's huge!
 
 722
-00:37:30,324 --> 00:37:32,249
-and there's some kind of grainy material in it.
+00:37:44,153 --> 00:37:45,634
+It's over 600 grams,
 
 723
-00:37:32,327 --> 00:37:33,534
-We want to run some tests.
+00:37:45,874 --> 00:37:47,799
+and there's some kind of grainy material in it.
 
 724
-00:37:33,639 --> 00:37:35,352
-Oh, now you want to run tests?
+00:37:47,877 --> 00:37:49,084
+We want to run some tests.
 
 725
-00:37:35,567 --> 00:37:37,419
-At this point, what could it hurt?
+00:37:49,189 --> 00:37:50,902
+Oh, now you want to run tests?
 
 726
-00:37:39,115 --> 00:37:41,941
-I hate both of you right now.
+00:37:51,117 --> 00:37:52,969
+At this point, what could it hurt?
 
 727
-00:37:53,256 --> 00:37:54,055
-Meredith...
+00:37:54,665 --> 00:37:57,491
+I hate both of you right now.
 
 728
-00:37:55,269 --> 00:37:56,401
-he's an attending.
+00:38:08,806 --> 00:38:09,605
+Meredith...
 
 729
-00:37:56,850 --> 00:37:58,080
-You're an intern.
+00:38:10,819 --> 00:38:11,951
+he's an attending.
 
 730
-00:37:58,503 --> 00:37:59,538
-You saw us?
+00:38:12,400 --> 00:38:13,630
+You're an intern.
 
 731
-00:38:00,558 --> 00:38:01,811
-You can see.
+00:38:14,053 --> 00:38:15,088
+You saw us?
 
 732
-00:38:03,989 --> 00:38:06,819
-I'm gonna tell you what your mother would say if she were here.
+00:38:16,108 --> 00:38:17,361
+You can see.
 
 733
-00:38:08,550 --> 00:38:10,030
-You're making a mistake --
+00:38:19,539 --> 00:38:22,369
+I'm gonna tell you what your
+mother would say if she were here.
 
 734
-00:38:10,306 --> 00:38:11,293
-a big one.
+00:38:24,100 --> 00:38:25,580
+You're making a mistake -
 
 735
-00:38:13,572 --> 00:38:16,041
-And I would tell my mother it's not a mistake.
+00:38:25,856 --> 00:38:26,843
+a big one.
 
 736
-00:38:19,071 --> 00:38:22,155
-We specifically said no autopsy.
+00:38:29,122 --> 00:38:31,591
+And I would tell my mother it's not a mistake.
 
 737
-00:38:22,645 --> 00:38:25,826
-I understand why you're upset.
+00:38:34,621 --> 00:38:37,705
+We specifically said no autopsy.
 
 738
-00:38:25,901 --> 00:38:27,007
-You understand?
+00:38:38,195 --> 00:38:41,376
+I understand why you're upset.
 
 739
-00:38:27,331 --> 00:38:29,266
-We're gonna get an attorney.
+00:38:41,451 --> 00:38:42,557
+You understand?
 
 740
-00:38:29,409 --> 00:38:30,126
-Come on, mom.
+00:38:42,881 --> 00:38:44,816
+We're gonna get an attorney.
 
 741
-00:38:30,212 --> 00:38:31,693
-We know what killed him.
+00:38:44,959 --> 00:38:45,676
+Come on, mom.
 
 742
-00:38:31,887 --> 00:38:35,318
-He had a blood condition known as hemachromatosis.
+00:38:45,762 --> 00:38:47,243
+We know what killed him.
 
 743
-00:38:35,492 --> 00:38:39,184
-The disease causes an excess amount of iron to build up in the body,
+00:38:47,437 --> 00:38:50,868
+He had a blood condition known as hemachromatosis.
 
 744
-00:38:39,286 --> 00:38:42,962
-and that's what caused the heart failure, not the paracentesis.
+00:38:51,042 --> 00:38:54,734
+The disease causes an excess amount
+of iron to build up in the body,
 
 745
-00:38:43,040 --> 00:38:46,752
-But I thought he was always so sick 'cause of the drinking.
+00:38:54,836 --> 00:38:58,512
+and that's what caused the heart
+failure, not the paracentesis.
 
 746
-00:38:46,868 --> 00:38:49,792
-And you never let him forget it... or me.
+00:38:58,590 --> 00:39:02,302
+But I thought he was always so
+sick 'cause of the drinking.
 
 747
-00:38:49,883 --> 00:38:51,604
+00:39:02,418 --> 00:39:05,342
+And you never let him forget it... or me.
+
+748
+00:39:05,433 --> 00:39:07,154
 - Mom...
 - There's something else.
 
-748
-00:38:51,696 --> 00:38:53,104
+749
+00:39:07,246 --> 00:39:08,654
 The disease is genetic.
 
-749
-00:38:53,207 --> 00:38:54,671
+750
+00:39:08,757 --> 00:39:10,221
 You think Alice could have it, too?
 
-750
-00:38:54,748 --> 00:38:56,509
+751
+00:39:10,298 --> 00:39:12,059
 A simple blood test will tell us.
 
-751
-00:38:56,678 --> 00:39:00,963
-If you have it, we'll have caught it early enough to treat it before the condition becomes critical.
-
 752
-00:39:01,046 --> 00:39:04,884
-Dr. Stevens and Dr. Yang may have saved your life.
+00:39:12,228 --> 00:39:16,513
+If you have it, we'll have caught it early enough
+to treat it before the condition becomes critical.
 
 753
-00:39:10,444 --> 00:39:11,628
-If you could just...
+00:39:16,596 --> 00:39:20,434
+Dr. Stevens and Dr. Yang may have saved your life.
 
 754
-00:39:12,232 --> 00:39:15,531
-sign this consent form for the autopsy --
+00:39:25,994 --> 00:39:27,178
+If you could just...
 
 755
-00:39:15,935 --> 00:39:17,460
-just a formality.
+00:39:27,782 --> 00:39:31,081
+sign this consent form for the autopsy -
 
 756
-00:39:22,556 --> 00:39:28,525
-The thing people forget is how good it can feel when you finally set secrets free.
+00:39:31,485 --> 00:39:33,010
+just a formality.
 
 757
-00:39:31,495 --> 00:39:36,025
-Whether good or bad, at least they're out in the open...
+00:39:38,106 --> 00:39:44,075
+The thing people forget is how good it can
+feel when you finally set secrets free.
 
 758
-00:39:36,502 --> 00:39:38,590
-like it or not.
+00:39:47,045 --> 00:39:51,575
+Whether good or bad, at least
+they're out in the open...
 
 759
-00:39:52,979 --> 00:39:53,896
-About before -- 
+00:39:52,052 --> 00:39:54,140
+like it or not.
 
 760
-00:39:53,979 --> 00:39:57,596
-George, I want you to understand --
+00:40:08,529 --> 00:40:09,446
+About before -
 
 761
-00:39:58,364 --> 00:40:01,794
-when we started dating, I was already kind of seeing someone.
+00:40:09,529 --> 00:40:13,146
+George, I want you to understand -
 
 762
-00:40:02,721 --> 00:40:04,832
-I didn't know how much I'd like you,
+00:40:13,914 --> 00:40:17,344
+when we started dating, I was
+already kind of seeing someone.
 
 763
-00:40:05,091 --> 00:40:07,622
-and when I realized, I broke it off with the other guy --
+00:40:18,271 --> 00:40:20,382
+I didn't know how much I'd like you,
 
 764
-00:40:07,704 --> 00:40:08,546
-Other guy?
+00:40:20,641 --> 00:40:23,172
+and when I realized, I broke
+it off with the other guy -
 
 765
-00:40:10,424 --> 00:40:11,907
-Who's the other guy?
+00:40:23,254 --> 00:40:24,096
+Other guy?
 
 766
-00:40:17,009 --> 00:40:18,066
-You and Alex?
+00:40:25,974 --> 00:40:27,457
+Who's the other guy?
 
 767
-00:40:21,042 --> 00:40:22,440
-You and Alex?!
+00:40:32,559 --> 00:40:33,616
+You and Alex?
 
 768
-00:40:22,987 --> 00:40:24,589
-You gave me syphilis?!
+00:40:36,592 --> 00:40:37,990
+You and Alex?!
 
 769
-00:40:24,789 --> 00:40:25,603
-George!
+00:40:38,537 --> 00:40:40,139
+You gave me syphilis?!
 
 770
-00:40:25,828 --> 00:40:26,780
+00:40:40,339 --> 00:40:41,153
 George!
 
 771
-00:40:27,113 --> 00:40:28,481
-George, back off!
-
-772
-00:40:28,850 --> 00:40:29,740
-Alex!
-
-773
-00:40:29,914 --> 00:40:30,532
+00:40:41,378 --> 00:40:42,330
 George!
 
+772
+00:40:42,663 --> 00:40:44,031
+George, back off!
+
+773
+00:40:44,400 --> 00:40:45,290
+Alex!
+
 774
-00:40:30,816 --> 00:40:31,941
-Back off, Alex.
+00:40:45,464 --> 00:40:46,082
+George!
 
 775
-00:40:35,208 --> 00:40:37,256
-And once your secrets are out in the open,
+00:40:46,366 --> 00:40:47,491
+Back off, Alex.
 
 776
-00:40:37,333 --> 00:40:39,499
-you don't have to hide behind them anymore.
+00:40:50,758 --> 00:40:52,806
+And once your secrets are out in the open,
 
 777
-00:40:43,825 --> 00:40:45,606
+00:40:52,883 --> 00:40:55,049
+you don't have to hide behind them anymore.
+
+778
+00:40:59,375 --> 00:41:01,156
 - Long day.
 - Yeah.
 
-778
-00:40:46,453 --> 00:40:50,481
-Someone out there has a steak with your name on it and maybe a bottle of wine.
-
 779
-00:40:51,029 --> 00:40:53,231
-This is why I keep you around.
+00:41:02,003 --> 00:41:06,031
+Someone out there has a steak with your
+name on it and maybe a bottle of wine.
 
 780
-00:40:53,798 --> 00:40:55,064
-So, we need to talk.
+00:41:06,579 --> 00:41:08,781
+This is why I keep you around.
 
 781
-00:40:55,350 --> 00:40:56,995
-Wine first, talk later.
+00:41:09,348 --> 00:41:10,614
+So, we need to talk.
 
 782
-00:40:57,727 --> 00:41:01,171
-You trying to, uh, get me drunk so you can take advantage of me?
+00:41:10,900 --> 00:41:12,545
+Wine first, talk later.
 
 783
-00:41:02,165 --> 00:41:04,326
-I think I like this rules thing.
+00:41:13,277 --> 00:41:16,721
+You trying to, uh, get me drunk
+so you can take advantage of me?
 
 784
-00:41:05,523 --> 00:41:06,256
-Me too.
+00:41:17,715 --> 00:41:19,876
+I think I like this rules thing.
 
 785
-00:41:20,853 --> 00:41:22,512
-Meredith, I am so sorry.
+00:41:21,073 --> 00:41:21,806
+Me too.
 
 786
-00:41:22,733 --> 00:41:27,454
-The problem with secrets is even when you think you're in control...
+00:41:36,403 --> 00:41:38,062
+Meredith, I am so sorry.
 
 787
-00:41:28,508 --> 00:41:29,501
-Addison.
+00:41:38,283 --> 00:41:43,004
+The problem with secrets is even
+when you think you're in control...
 
 788
-00:41:29,866 --> 00:41:30,823
- ...You're not.
+00:41:44,058 --> 00:41:45,051
+Addison.
 
 789
-00:41:31,083 --> 00:41:32,450
-What are you doing here?
+00:41:45,416 --> 00:41:46,373
+...You're not.
 
 790
-00:41:32,651 --> 00:41:36,168
-You'd know if you'd bothered to return any one of my phone calls.
+00:41:46,633 --> 00:41:48,000
+What are you doing here?
 
 791
-00:41:37,187 --> 00:41:39,275
-Hi. I'm Addison Shepherd.
+00:41:48,201 --> 00:41:51,718
+You'd know if you'd bothered to
+return any one of my phone calls.
 
 792
-00:41:41,861 --> 00:41:42,751
-Shepherd?
+00:41:52,737 --> 00:41:54,825
+Hi. I'm Addison Shepherd.
 
 793
-00:41:43,367 --> 00:41:46,551
-And you must be the woman who's been screwing my husband.
+00:41:57,411 --> 00:41:58,301
+Shepherd?
 
 794
-00:41:49,329 --> 00:41:53,248
-Transcript: RaceMan - Synchro: Amariss
-- www.forom.com -
+00:41:59,167 --> 00:42:02,351
+And you must be the woman who's
+been screwing my husband.
+

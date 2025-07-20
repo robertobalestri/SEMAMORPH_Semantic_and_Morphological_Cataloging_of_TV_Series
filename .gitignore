@@ -19,4 +19,6 @@ narrative_storage/*
 agent_logs/*
 agent_logs
 llm_surname_conflicts_response.txt
-face_tracking_and_analysis/
+*.pkl
+*.png
+*.mp4

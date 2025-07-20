@@ -25,7 +25,7 @@ class NarrativeArcService:
         arc_repository: NarrativeArcRepository,
         progression_repository: ArcProgressionRepository,
         character_service: CharacterService,
-        llm_service: LLMService,
+        llm_service: Optional[LLMService],
         vector_store_service: VectorStoreService,
         session: Session
     ):
@@ -38,13 +38,15 @@ class NarrativeArcService:
 
     @contextmanager
     def transaction(self):
-        """Provide a transactional scope around a series of operations."""
+        """Provide a transactional scope around a series of operations.
+        Note: Session commits and rollbacks are handled by the outer session_scope() context manager.
+        """
         try:
             yield
-            self.session.commit()
+            # Don't commit here - let session_scope() handle it
         except Exception as e:
-            self.session.rollback()
-            logger.error(f"Transaction rollback due to: {e}")
+            # Don't rollback here - let session_scope() handle it
+            logger.error(f"Transaction error (will be handled by session_scope): {e}")
             raise
 
     def add_arc(
@@ -98,7 +100,7 @@ class NarrativeArcService:
                     most_similar = similar_arcs[0]
                     existing_arc = self.arc_repository.get_by_id(most_similar['metadata']['id'])
 
-                    if existing_arc:
+                    if existing_arc and self.llm_service:
                         # Use LLM to decide if arcs should be merged
                         merge_decision = self.llm_service.decide_arc_merging(
                             new_arc=NarrativeArc(
@@ -121,8 +123,10 @@ class NarrativeArcService:
                                 episode,
                                 merge_decision=merge_decision
                             )
+                    elif existing_arc:
+                        logger.warning("LLM service not available for arc merging decision, creating new arc")
 
-                elif existing_arc:
+                elif existing_arc and self.llm_service:
                     # If exact title match, use LLM to merge identical arcs
                     merge_decision = self.llm_service.merge_identical_arcs(
                         new_arc=NarrativeArc(
@@ -142,6 +146,8 @@ class NarrativeArcService:
                         episode,
                         merge_decision=merge_decision
                     )
+                elif existing_arc:
+                    logger.warning("LLM service not available for identical arc merging, creating new arc")
 
                 # If no similar arcs found or LLM decided they're different, create new arc
                 # Create new arc
