@@ -1027,8 +1027,13 @@ class SpeakerIdentificationPipeline:
     
     def _generate_speaker_prefix(self, dialogue) -> str:
         """
-        Generate speaker prefix based on boolean confidence and resolution method.
-        Enhanced to show all face recognition candidates when multiple faces detected.
+        Generate speaker prefix for SRT format based on confidence and resolution method.
+        
+        Handles various confidence levels and resolution methods including:
+        - High confidence LLM assignments
+        - Low confidence LLM assignments
+        - Face clustering resolutions
+        - Multiple faces detected.
         
         Returns speaker prefix with appropriate formatting and metadata.
         """
@@ -1053,179 +1058,38 @@ class SpeakerIdentificationPipeline:
         if resolution_method == "face_clustering_single":
             # Single face candidate from uncertain dialogue
             if original_llm_speaker:
-                return f"{speaker.upper()} (FACE_REC, original_uncertain: {original_llm_speaker}): "
+                return f"{speaker.upper()} (FACE_REC, original_uncertain: {original_llm_speaker.upper()}): "
             else:
                 return f"{speaker.upper()} (FACE_REC): "
-                
-        elif resolution_method == "character_median_direct":
-            # Direct character median comparison from vector store
-            logger.debug(f"🔍 [PREFIX_GEN] Dialogue {dialogue.index}: character_median_direct method, speaker='{speaker}', original_llm_speaker='{original_llm_speaker}'")
-            
-            # Check if we have multiple candidates to show
-            if len(candidate_speakers) > 1:
-                # Show all candidates with similarities if available
-                if len(face_similarities) == len(candidate_speakers):
-                    candidate_parts = []
-                    for candidate, similarity in zip(candidate_speakers, face_similarities):
-                        similarity_pct = int(similarity * 100) if similarity else 0
-                        distance = round((1.0 - similarity) * 100, 1) if similarity else 100.0
-                        candidate_parts.append(f"{candidate.upper()}({similarity_pct}%/d:{distance})")
-                    candidates_str = "/".join(candidate_parts)
-                else:
-                    candidates_str = "/".join([name.upper() for name in candidate_speakers if name])
-                
-                if original_llm_speaker:
-                    return f"{candidates_str} (CHAR_MEDIAN_MULTI, original_uncertain: {original_llm_speaker}): "
-                else:
-                    return f"{candidates_str} (CHAR_MEDIAN_MULTI): "
-            else:
-                # Single candidate
-                if original_llm_speaker:
-                    return f"{speaker.upper()} (CHAR_MEDIAN, original_uncertain: {original_llm_speaker}): "
-                else:
-                    return f"{speaker.upper()} (CHAR_MEDIAN): "
         
         elif resolution_method == "face_clustering_multi":
-            # Multiple face candidates resolved by clustering
-            # Check if we have multiple candidates to show
-            if len(candidate_speakers) > 1:
-                # Show all candidates with similarities if available
-                if len(face_similarities) == len(candidate_speakers):
-                    candidate_parts = []
-                    for candidate, similarity in zip(candidate_speakers, face_similarities):
-                        similarity_pct = int(similarity * 100) if similarity else 0
-                        distance = round((1.0 - similarity) * 100, 1) if similarity else 100.0
-                        candidate_parts.append(f"{candidate.upper()}({similarity_pct}%/d:{distance})")
-                    candidates_str = "/".join(candidate_parts)
-                else:
-                    candidates_str = "/".join([name.upper() for name in candidate_speakers if name])
-                
-                if original_llm_speaker:
-                    return f"{candidates_str} (FACE_REC_MULTI, original_uncertain: {original_llm_speaker}): "
-                else:
-                    return f"{candidates_str} (FACE_REC_MULTI): "
+            # Multi-face resolution
+            if candidate_speakers and len(candidate_speakers) > 1:
+                candidates_str = "/".join([name.upper() for name in candidate_speakers])
+                return f"{speaker.upper()} (MULTI_FACE: {candidates_str}): "
             else:
-                # Single candidate
-                if original_llm_speaker:
-                    return f"{speaker.upper()} (FACE_REC_MULTI, original_uncertain: {original_llm_speaker}): "
-                else:
-                    return f"{speaker.upper()} (FACE_REC_MULTI): "
+                return f"{speaker.upper()} (MULTI_FACE): "
         
-        elif resolution_method == "cluster_assigned":
-            # Face already assigned to cluster with character
+        elif resolution_method == "character_median_direct":
+            # Direct character median matching
             if original_llm_speaker:
-                return f"{speaker.upper()} (CLUSTER_ASSIGNED, original_uncertain: {original_llm_speaker}): "
+                return f"{speaker.upper()} (CHAR_MEDIAN, original: {original_llm_speaker.upper()}): "
             else:
-                return f"{speaker.upper()} (CLUSTER_ASSIGNED): "
+                return f"{speaker.upper()} (CHAR_MEDIAN): "
         
-        elif resolution_method:
-            # Any other resolution method - log it for debugging
-            logger.debug(f"🔍 [PREFIX_GEN] Dialogue {dialogue.index}: unknown resolution_method='{resolution_method}', speaker='{speaker}'")
+        elif resolution_method == "database_validation":
+            # Database validation (LLM speaker corrected)
             if original_llm_speaker:
-                return f"{speaker.upper()} (FACE_REC_{resolution_method.upper()}, original_uncertain: {original_llm_speaker}): "
+                return f"{speaker.upper()} (DB_VALIDATED, original: {original_llm_speaker.upper()}): "
             else:
-                return f"{speaker.upper()} (FACE_REC_{resolution_method.upper()}): "
+                return f"{speaker.upper()} (DB_VALIDATED): "
         
-        # Check for multiple face candidates that weren't resolved by LLM
-        elif len(candidate_speakers) > 1:
-            # Multiple faces detected but LLM disambiguation failed or wasn't used
-            # Show all candidates with similarities if available
-            if len(face_similarities) == len(candidate_speakers):
-                # Create candidates string with similarities and distances
-                candidate_parts = []
-                for i, (candidate, similarity) in enumerate(zip(candidate_speakers, face_similarities)):
-                    similarity_pct = int(similarity * 100) if similarity else 0
-                    distance = round((1.0 - similarity) * 100, 1) if similarity else 100.0
-                    candidate_parts.append(f"{candidate.upper()}({similarity_pct}%/d:{distance})")
-                candidates_str = "/".join(candidate_parts)
-            else:
-                # No similarities available, just show names
-                candidates_str = "/".join([name.upper() for name in candidate_speakers if name])
-            
+        elif resolution_method == "llm_direct":
+            # Direct LLM assignment (no face processing)
             if original_llm_speaker:
-                return f"{candidates_str} (FACE_REC_MULTI, original_uncertain: {original_llm_speaker}): "
-            else:
-                return f"{candidates_str} (FACE_REC_MULTI): "
-        
-        # Check if we have ALL candidate data (including low-confidence faces)
-        all_candidates = getattr(dialogue, 'all_candidate_speakers', None) or []
-        all_similarities = getattr(dialogue, 'all_face_similarities', None) or []
-        
-        # Only show all candidates if configured to do so
-        if (config.show_all_face_candidates_in_srt and 
-            len(all_candidates) > 1 and 
-            len(all_candidates) != len(candidate_speakers)):
-            # We have more detected faces than qualified candidates - show all for transparency
-            if len(all_similarities) == len(all_candidates):
-                # Create candidates string with similarities and distances
-                candidate_parts = []
-                for candidate, similarity in zip(all_candidates, all_similarities):
-                    similarity_pct = int(similarity * 100) if similarity else 0
-                    distance = round((1.0 - similarity) * 100, 1) if similarity else 100.0
-                    candidate_parts.append(f"{candidate.upper()}({similarity_pct}%/d:{distance})")
-                candidates_str = "/".join(candidate_parts)
-            else:
-                # No similarities available, just show names
-                candidates_str = "/".join([name.upper() for name in all_candidates if name])
-            
-            if original_llm_speaker:
-                return f"{candidates_str} (FACE_REC_ALL, original_uncertain: {original_llm_speaker}): "
-            else:
-                return f"{candidates_str} (FACE_REC_ALL): "
-        
-        # Single face candidate that didn't meet threshold or other issues
-        elif len(candidate_speakers) == 1:
-            candidate = candidate_speakers[0]
-            similarity = face_similarities[0] if face_similarities else 0
-            similarity_pct = int(similarity * 100) if similarity else 0
-            distance = round((1.0 - similarity) * 100, 1) if similarity else 100.0
-            
-            if original_llm_speaker:
-                return f"{candidate.upper()}({similarity_pct}%/d:{distance}) (FACE_REC_LOW, original_uncertain: {original_llm_speaker}): "
-            else:
-                return f"{candidate.upper()}({similarity_pct}%/d:{distance}) (FACE_REC_LOW): "
-        
-        # Check if we have a single face from all candidates (including low-confidence)
-        elif (config.show_all_face_candidates_in_srt and 
-              len(all_candidates) == 1 and 
-              len(candidate_speakers) == 0):
-            # Single face detected but below qualification threshold
-            candidate = all_candidates[0] 
-            similarity = all_similarities[0] if all_similarities else 0
-            similarity_pct = int(similarity * 100) if similarity else 0
-            distance = round((1.0 - similarity) * 100, 1) if similarity else 100.0
-            
-            if original_llm_speaker:
-                return f"{candidate.upper()}({similarity_pct}%/d:{distance}) (FACE_REC_WEAK, original_uncertain: {original_llm_speaker}): "
-            else:
-                return f"{candidate.upper()}({similarity_pct}%/d:{distance}) (FACE_REC_WEAK): "
-        
-        # Check if this is a spatial outlier or uncertain assignment
-        elif speaker == "Unknown" or resolution_method in ["spatial_outlier", "ambiguous"]:
-            if original_llm_speaker:
-                return f"Unknown (FACE_REC_UNCERTAIN, original_uncertain: {original_llm_speaker}): "
-            else:
-                return f"Unknown (FACE_REC_UNCERTAIN): "
-        
-        # Check if no assignment was made due to similarity threshold
-        elif (not is_llm_confident and 
-              resolution_method in ["character_median_direct", "face_clustering_multi"] and
-              speaker == "Unknown"):
-            if original_llm_speaker:
-                return f"Unknown (FACE_REC_BELOW_THRESHOLD, original_uncertain: {original_llm_speaker}): "
-            else:
-                return f"Unknown (FACE_REC_BELOW_THRESHOLD): "
-        
-        # Check if LLM provided alternative speakers
-        elif (not is_llm_confident and 
-              original_llm_speaker and
-              getattr(dialogue, 'other_possible_speakers', None)):
-            other_speakers = dialogue.other_possible_speakers
-            if other_speakers and len(other_speakers) > 0:
-                alternatives_str = "/".join([name.upper() for name in other_speakers])
-                return f"{original_llm_speaker.upper()}/{alternatives_str} (LLM_ALTERNATIVES): "
-            else:
                 return f"{original_llm_speaker.upper()} (LLM_UNCERTAIN): "
+            else:
+                return f"{speaker.upper()} (LLM_UNCERTAIN): "
         
         # Fallback - low confidence LLM without face processing
         elif not is_llm_confident:
@@ -1325,14 +1189,94 @@ class SpeakerIdentificationPipeline:
                 for dialogue_dict in checkpoint_data['dialogue_lines']
             ]
             
-            logger.info(f"📂 Loaded LLM checkpoint with {len(dialogue_lines)} dialogue lines")
+            # Validate checkpoint data and count issues
+            total_lines = len(dialogue_lines)
+            null_speaker_count = sum(1 for line in dialogue_lines if line.speaker is None)
+            null_confident_count = sum(1 for line in dialogue_lines if line.is_llm_confident is None)
+            
+            logger.info(f"📂 Loaded LLM checkpoint with {total_lines} dialogue lines")
             logger.info(f"📊 LLM Stats: {checkpoint_data.get('llm_stats', {})}")
+            
+            if null_speaker_count > 0:
+                logger.warning(f"⚠️ Found {null_speaker_count}/{total_lines} dialogue lines with null speakers")
+            
+            if null_confident_count > 0:
+                logger.warning(f"⚠️ Found {null_confident_count}/{total_lines} dialogue lines with null confidence")
+            
+            # If more than 50% have null speakers, checkpoint might be corrupted
+            if null_speaker_count > total_lines * 0.5:
+                logger.error(f"❌ LLM checkpoint appears corrupted: {null_speaker_count}/{total_lines} have null speakers")
+                logger.info("🔧 Consider regenerating LLM assignments with force_regenerate=True")
             
             return dialogue_lines
             
         except Exception as e:
             logger.error(f"❌ Error loading LLM checkpoint: {e}")
             return None
+    
+    def validate_and_fix_llm_checkpoint(self) -> bool:
+        """
+        Validate and potentially fix issues with the LLM checkpoint.
+        
+        Returns:
+            True if checkpoint is valid or was fixed, False if it needs regeneration
+        """
+        checkpoint_path = self.path_handler.get_llm_checkpoint_path()
+        
+        if not os.path.exists(checkpoint_path):
+            logger.info("📂 No LLM checkpoint found - will need to run full LLM processing")
+            return False
+        
+        try:
+            dialogue_lines = self._load_llm_checkpoint()
+            if not dialogue_lines:
+                logger.error("❌ Could not load dialogue lines from checkpoint")
+                return False
+            
+            total_lines = len(dialogue_lines)
+            null_speaker_count = sum(1 for line in dialogue_lines if line.speaker is None)
+            null_confident_count = sum(1 for line in dialogue_lines if line.is_llm_confident is None)
+            
+            logger.info(f"🔍 Checkpoint validation:")
+            logger.info(f"   Total lines: {total_lines}")
+            logger.info(f"   Null speakers: {null_speaker_count} ({null_speaker_count/total_lines*100:.1f}%)")
+            logger.info(f"   Null confidence: {null_confident_count} ({null_confident_count/total_lines*100:.1f}%)")
+            
+            # Fix null confidence values
+            fixed_confidence_count = 0
+            for line in dialogue_lines:
+                if line.is_llm_confident is None:
+                    line.is_llm_confident = False
+                    fixed_confidence_count += 1
+            
+            if fixed_confidence_count > 0:
+                logger.info(f"🔧 Fixed {fixed_confidence_count} null confidence values")
+                
+                # Save the fixed checkpoint
+                self._save_llm_checkpoint(dialogue_lines, {
+                    'status': 'success',
+                    'total_dialogue': total_lines,
+                    'confident_speakers': sum(1 for line in dialogue_lines if line.is_llm_confident),
+                    'confidence_rate': sum(1 for line in dialogue_lines if line.is_llm_confident) / total_lines * 100
+                })
+                logger.info("💾 Saved fixed checkpoint")
+            
+            # Determine if checkpoint is usable
+            usable_threshold = 0.3  # At least 30% should have speaker assignments
+            assigned_count = sum(1 for line in dialogue_lines if line.speaker is not None)
+            assignment_rate = assigned_count / total_lines
+            
+            if assignment_rate >= usable_threshold:
+                logger.info(f"✅ Checkpoint is usable: {assigned_count}/{total_lines} ({assignment_rate*100:.1f}%) have speaker assignments")
+                return True
+            else:
+                logger.warning(f"⚠️ Checkpoint has low assignment rate: {assigned_count}/{total_lines} ({assignment_rate*100:.1f}%)")
+                logger.info("💡 Consider regenerating LLM assignments for better results")
+                return True  # Still usable, but user should consider regenerating
+                
+        except Exception as e:
+            logger.error(f"❌ Error validating checkpoint: {e}")
+            return False
     
     def _identify_speakers_or_load_checkpoint(
         self, 

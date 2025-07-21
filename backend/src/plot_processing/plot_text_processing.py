@@ -56,7 +56,9 @@ def replace_pronouns_with_names(text: str, intelligent_llm: AzureChatOpenAI, che
             "6. Separate each sentence with a newline character.\n"
             "7. You will be given the previous context (if any) of the text you are modifying.\n"
             "8. You should only output the rewritten [TEXT TO MODIFY] text. You should never output the text included in the [PREVIOUS CONTEXT] tags.\n\n"
-            "9. IMPORTANT: Do not make up character names. Only replace names that are explicitly mentioned in the text provided. If you don't read the name of a character in the text, do not replace it."
+            "9. CRITICAL: Do not make up character names. Only replace names that are explicitly mentioned in the text provided. If you don't read the name of a character in the text, do not replace it.\n"
+            "10. If you cannot determine who a pronoun refers to with certainty, keep the pronoun or use a generic reference like 'the speaker' or 'a character' rather than guessing a specific name.\n"
+            "11. When multiple characters are present but the referent is unclear, use generic references like 'one of the characters' or 'a character' instead of assuming a specific name."
         )
         
         if i > 0:

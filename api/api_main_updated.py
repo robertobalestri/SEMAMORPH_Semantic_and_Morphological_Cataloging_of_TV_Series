@@ -396,6 +396,7 @@ class CharacterResponse(BaseModel):
     best_appellation: str
     series: str
     appellations: List[str]
+    biological_sex: Optional[str] = None  # 'M', 'F', or None for unknown
 
     class Config:
         from_attributes = True
@@ -406,7 +407,8 @@ class CharacterResponse(BaseModel):
             entity_name=character.entity_name,
             best_appellation=character.best_appellation,
             series=character.series,
-            appellations=[app.appellation for app in character.appellations]
+            appellations=[app.appellation for app in character.appellations],
+            biological_sex=character.biological_sex
         )
 
 class CharacterCreateRequest(BaseModel):
@@ -414,6 +416,7 @@ class CharacterCreateRequest(BaseModel):
     best_appellation: str
     series: str
     appellations: List[str]
+    biological_sex: Optional[str] = None  # 'M', 'F', or None for unknown
 
     class Config:
         from_attributes = True
@@ -1493,7 +1496,8 @@ async def get_characters(series: str):
                     entity_name=char.entity_name,
                     best_appellation=char.best_appellation,
                     series=char.series,
-                    appellations=[app.appellation for app in char.appellations]
+                    appellations=[app.appellation for app in char.appellations],
+                    biological_sex=char.biological_sex
                 )
                 for char in characters
             ]
@@ -1511,7 +1515,9 @@ async def create_character(series: str, character_data: CharacterCreateRequest):
                 EntityLink(
                     entity_name=character_data.entity_name,
                     best_appellation=character_data.best_appellation,
-                    appellations=character_data.appellations
+                    appellations=character_data.appellations,
+                    entity_type="PERSON",  # Default type for characters
+                    biological_sex=character_data.biological_sex  # Include biological sex
                 ),
                 series=series
             )
@@ -1521,7 +1527,8 @@ async def create_character(series: str, character_data: CharacterCreateRequest):
                 entity_name=character.entity_name,
                 best_appellation=character.best_appellation,
                 series=character.series,
-                appellations=[app.appellation for app in character.appellations]
+                appellations=[app.appellation for app in character.appellations],
+                biological_sex=character.biological_sex
             )
     except Exception as e:
         logger.error(f"Error creating character: {str(e)}")
@@ -1539,7 +1546,8 @@ async def update_character(series: str, character_data: CharacterCreateRequest):
                 entity_name=character_data.entity_name,
                 best_appellation=character_data.best_appellation,
                 appellations=character_data.appellations,
-                entity_type="PERSON"  # Default type for characters
+                entity_type="PERSON",  # Default type for characters
+                biological_sex=character_data.biological_sex  # Include biological sex
             )
             
             # Update character
@@ -1554,7 +1562,8 @@ async def update_character(series: str, character_data: CharacterCreateRequest):
                 entity_name=character.entity_name,
                 best_appellation=character.best_appellation,
                 series=character.series,
-                appellations=[app.appellation for app in character.appellations]
+                appellations=[app.appellation for app in character.appellations],
+                biological_sex=character.biological_sex
             )
     except Exception as e:
         logger.error(f"Error updating character: {str(e)}")

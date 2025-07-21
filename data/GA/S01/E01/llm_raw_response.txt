@@ -1,75 +1,45 @@
 ```json
 [
     {
-        "entity_name": "george_omalley",
-        "best_appellation": "Dr. George O'Malley",
-        "appellations": ["George O'Malley", "George", "Dr. O'Malley", "Dr. George O'Malley", "007"],
+        "entity_name": "alex_karev",
+        "best_appellation": "Dr. Alex Karev",
+        "appellations": ["Alex Karev", "Dr. Karev", "Karev", "Alex"],
         "biological_sex": "M"
     },
     {
-        "entity_name": "meredith_grey",
-        "best_appellation": "Dr. Meredith Grey",
-        "appellations": ["Meredith Grey", "Meredith", "Dr. Grey", "Dr. Meredith Grey"],
-        "biological_sex": "F"
+        "entity_name": "preston_burke",
+        "best_appellation": "Dr. Preston Burke",
+        "appellations": ["Dr. Burke", "Preston Burke", "Burke", "Preston"],
+        "biological_sex": "M"
     },
     {
-        "entity_name": "cristina_yang",
-        "best_appellation": "Dr. Cristina Yang",
-        "appellations": ["Cristina Yang", "Cristina", "Dr. Yang", "Dr. Cristina Yang"],
-        "biological_sex": "F"
+        "entity_name": "george_omalley",
+        "best_appellation": "Dr. George O'Malley",
+        "appellations": ["George O'Malley", "Dr. O'Malley", "O'Malley", "George", "007"],
+        "biological_sex": "M"
     },
     {
         "entity_name": "derek_shepherd",
         "best_appellation": "Dr. Derek Shepherd",
-        "appellations": ["Dr. Shepherd", "Derek Shepherd", "Derek", "Dr. Derek Shepherd"],
+        "appellations": ["Dr. Shepherd", "Derek Shepherd", "Shepherd", "Derek"],
         "biological_sex": "M"
     },
     {
-        "entity_name": "richard_webber",
-        "best_appellation": "Dr. Richard Webber",
-        "appellations": ["Dr. Webber", "Richard Webber", "Dr. Richard Webber"],
-        "biological_sex": "M"
-    },
-    {
-        "entity_name": "ellis_grey",
-        "best_appellation": "Dr. Ellis Grey",
-        "appellations": ["Ellis Grey", "Dr. Grey", "Dr. Ellis Grey"],
-        "biological_sex": "F"
-    },
-    {
-        "entity_name": "alex_karev",
-        "best_appellation": "Dr. Alex Karev",
-        "appellations": ["Alex", "Alex Karev", "Dr. Karev", "Dr. Alex Karev"],
-        "biological_sex": "M"
-    },
-    {
-        "entity_name": "mr_bryce",
-        "best_appellation": "Mr. Bryce",
-        "appellations": ["Mr. Bryce"],
-        "biological_sex": "M"
-    },
-    {
-        "entity_name": "mr_savitch",
-        "best_appellation": "Mr. Tony Savitch",
-        "appellations": ["Mr. Savitch", "Tony Savitch"],
-        "biological_sex": "M"
-    },
-    {
-        "entity_name": "izzie_stevens",
-        "best_appellation": "Dr. Izzie Stevens",
-        "appellations": ["Izzie", "Izzie Stevens", "Dr. Stevens", "Dr. Izzie Stevens"],
+        "entity_name": "cristina_yang",
+        "best_appellation": "Dr. Cristina Yang",
+        "appellations": ["Cristina Yang", "Dr. Yang", "Yang", "Cristina"],
         "biological_sex": "F"
     },
     {
         "entity_name": "katie_bryce",
         "best_appellation": "Katie Bryce",
-        "appellations": ["Katie", "Katie Bryce"],
+        "appellations": ["Katie Bryce", "Katie"],
         "biological_sex": "F"
     },
     {
-        "entity_name": "miranda_bailey",
-        "best_appellation": "Dr. Miranda Bailey",
-        "appellations": ["Dr. Bailey", "Miranda Bailey", "Dr. Miranda Bailey", "Miranda"],
+        "entity_name": "isobel_stevens",
+        "best_appellation": "Dr. Isobel Stevens",
+        "appellations": ["Isobel Stevens", "Dr. Stevens", "Stevens", "Izzie Stevens", "Izzie"],
         "biological_sex": "F"
     },
     {
@@ -79,10 +49,28 @@
         "biological_sex": "F"
     },
     {
-        "entity_name": "dr_burke",
-        "best_appellation": "Dr. Preston Burke",
-        "appellations": ["Dr. Burke", "Preston Burke", "Dr. Preston Burke"],
+        "entity_name": "miranda_bailey",
+        "best_appellation": "Dr. Miranda Bailey",
+        "appellations": ["Dr. Bailey", "Miranda Bailey", "Bailey", "Miranda", "The Nazi"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "mr_savitch",
+        "best_appellation": "Mr. Tony Savitch",
+        "appellations": ["Mr. Savitch", "Tony Savitch", "Tony"],
         "biological_sex": "M"
+    },
+    {
+        "entity_name": "ellis_grey",
+        "best_appellation": "Dr. Ellis Grey",
+        "appellations": ["Ellis Grey", "Dr. Grey", "Grey", "Ellis"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "meredith_grey",
+        "best_appellation": "Dr. Meredith Grey",
+        "appellations": ["Meredith Grey", "Dr. Grey", "Grey", "Meredith"],
+        "biological_sex": "F"
     }
 ]
 ```

@@ -1,0 +1,214 @@
+{
+  "episode_code": "GAS01E01",
+  "timestamp": "2025-07-21T15:03:26.867160",
+  "assignment_method": "multi_face_probability",
+  "configuration": {
+    "enable_multiface_processing": true,
+    "multiface_equal_probability_distribution": true,
+    "multiface_max_faces_per_dialogue": 6
+  },
+  "cluster_assignments": {
+    "12": {
+      "assigned_character": "Dr. Meredith Grey",
+      "confidence": 100.0,
+      "total_occurrences": 3.0,
+      "total_cluster_probability": 3.0,
+      "dialogue_count": 3,
+      "assignment_method": "multi_face_probability",
+      "speaker_breakdown": {
+        "Dr. Meredith Grey": 3.0
+      },
+      "face_count_breakdown": {
+        "Dr. Meredith Grey": 3
+      },
+      "total_actual_faces": 3
+    },
+    "18": {
+      "assigned_character": "Dr. Miranda Bailey",
+      "confidence": 23.52941176470588,
+      "total_occurrences": 2.0,
+      "total_cluster_probability": 8.5,
+      "dialogue_count": 3,
+      "assignment_method": "multi_face_probability",
+      "speaker_breakdown": {
+        "Dr. Meredith Grey": 1.5,
+        "Dr. Derek Shepherd": 1.0,
+        "Dr. George O'Malley": 1.0,
+        "Dr. Miranda Bailey": 2.0,
+        "Dr. Preston Burke": 1.0,
+        "Dr. Cristina Yang": 2.0
+      },
+      "face_count_breakdown": {
+        "Dr. Meredith Grey": 2,
+        "Dr. Derek Shepherd": 1,
+        "Dr. George O'Malley": 1,
+        "Dr. Miranda Bailey": 3,
+        "Dr. Preston Burke": 1,
+        "Dr. Cristina Yang": 3
+      },
+      "total_actual_faces": 11
+    },
+    "235": {
+      "assigned_character": "Dr. Meredith Grey",
+      "confidence": 93.75,
+      "total_occurrences": 7.5,
+      "total_cluster_probability": 8.0,
+      "dialogue_count": 8,
+      "assignment_method": "multi_face_probability",
+      "speaker_breakdown": {
+        "Dr. Meredith Grey": 7.5,
+        "Dr. Cristina Yang": 0.5
+      },
+      "face_count_breakdown": {
+        "Dr. Meredith Grey": 8,
+        "Dr. Cristina Yang": 1
+      },
+      "total_actual_faces": 9
+    },
+    "243": {
+      "assigned_character": "Dr. Cristina Yang",
+      "confidence": 66.66666666666666,
+      "total_occurrences": 2.0,
+      "total_cluster_probability": 3.0,
+      "dialogue_count": 2,
+      "assignment_method": "multi_face_probability",
+      "speaker_breakdown": {
+        "Dr. Meredith Grey": 1.0,
+        "Dr. Cristina Yang": 2.0
+      },
+      "face_count_breakdown": {
+        "Dr. Meredith Grey": 1,
+        "Dr. Cristina Yang": 2
+      },
+      "total_actual_faces": 3
+    },
+    "255": {
+      "assigned_character": "Dr. Meredith Grey",
+      "confidence": 66.66666666666666,
+      "total_occurrences": 2.0,
+      "total_cluster_probability": 3.0,
+      "dialogue_count": 2,
+      "assignment_method": "multi_face_probability",
+      "speaker_breakdown": {
+        "Dr. Meredith Grey": 2.0,
+        "Dr. Cristina Yang": 1.0
+      },
+      "face_count_breakdown": {
+        "Dr. Meredith Grey": 2,
+        "Dr. Cristina Yang": 1
+      },
+      "total_actual_faces": 3
+    },
+    "302": {
+      "assigned_character": "Dr. Ellis Grey",
+      "confidence": 66.66666666666666,
+      "total_occurrences": 2.0,
+      "total_cluster_probability": 3.0,
+      "dialogue_count": 2,
+      "assignment_method": "multi_face_probability",
+      "speaker_breakdown": {
+        "Dr. Meredith Grey": 1.0,
+        "Dr. Ellis Grey": 2.0
+      },
+      "face_count_breakdown": {
+        "Dr. Meredith Grey": 1,
+        "Dr. Ellis Grey": 2
+      },
+      "total_actual_faces": 3
+    },
+    "140": {
+      "assigned_character": "Dr. George O'Malley",
+      "confidence": 100.0,
+      "total_occurrences": 2.0,
+      "total_cluster_probability": 2.0,
+      "dialogue_count": 2,
+      "assignment_method": "multi_face_probability",
+      "speaker_breakdown": {
+        "Dr. George O'Malley": 2.0
+      },
+      "face_count_breakdown": {
+        "Dr. George O'Malley": 2
+      },
+      "total_actual_faces": 2
+    },
+    "44": {
+      "assigned_character": "Dr. Miranda Bailey",
+      "confidence": 100.0,
+      "total_occurrences": 3.0,
+      "total_cluster_probability": 3.0,
+      "dialogue_count": 3,
+      "assignment_method": "multi_face_probability",
+      "speaker_breakdown": {
+        "Dr. Miranda Bailey": 3.0
+      },
+      "face_count_breakdown": {
+        "Dr. Miranda Bailey": 3
+      },
+      "total_actual_faces": 3
+    },
+    "75": {
+      "assigned_character": "Katie Bryce",
+      "confidence": 100.0,
+      "total_occurrences": 4.0,
+      "total_cluster_probability": 4.0,
+      "dialogue_count": 4,
+      "assignment_method": "multi_face_probability",
+      "speaker_breakdown": {
+        "Katie Bryce": 4.0
+      },
+      "face_count_breakdown": {
+        "Katie Bryce": 4
+      },
+      "total_actual_faces": 4
+    },
+    "123": {
+      "assigned_character": "Dr. Preston Burke",
+      "confidence": 100.0,
+      "total_occurrences": 3.0,
+      "total_cluster_probability": 3.0,
+      "dialogue_count": 3,
+      "assignment_method": "multi_face_probability",
+      "speaker_breakdown": {
+        "Dr. Preston Burke": 3.0
+      },
+      "face_count_breakdown": {
+        "Dr. Preston Burke": 3
+      },
+      "total_actual_faces": 3
+    },
+    "271": {
+      "assigned_character": "Dr. Preston Burke",
+      "confidence": 100.0,
+      "total_occurrences": 3.0,
+      "total_cluster_probability": 3.0,
+      "dialogue_count": 3,
+      "assignment_method": "multi_face_probability",
+      "speaker_breakdown": {
+        "Dr. Preston Burke": 3.0
+      },
+      "face_count_breakdown": {
+        "Dr. Preston Burke": 3
+      },
+      "total_actual_faces": 3
+    },
+    "246": {
+      "assigned_character": "Dr. Cristina Yang",
+      "confidence": 100.0,
+      "total_occurrences": 2.0,
+      "total_cluster_probability": 2.0,
+      "dialogue_count": 2,
+      "assignment_method": "multi_face_probability",
+      "speaker_breakdown": {
+        "Dr. Cristina Yang": 2.0
+      },
+      "face_count_breakdown": {
+        "Dr. Cristina Yang": 2
+      },
+      "total_actual_faces": 2
+    }
+  },
+  "assignment_statistics": {
+    "total_clusters_assigned": 12,
+    "assignment_method": "multi_face_probability"
+  }
+}

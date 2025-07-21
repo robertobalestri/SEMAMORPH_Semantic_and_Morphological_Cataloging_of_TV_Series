@@ -203,7 +203,7 @@ class SpeakerCharacterValidator:
 4. If it's a new character, decide if it should be added to the database:
    - Add named characters (e.g., "John", "Mary Smith", "Dr. Wilson")
    - Do NOT add generic characters (e.g., "Nurse 1", "Guard", "Waitress", "Man in suit")
-5. For new named characters, suggest entity_name, best_appellation, and appellations
+5. For new named characters, suggest entity_name, best_appellation, appellations, and biological_sex
 
 **Output Format (JSON only):**
 Return a single JSON object (not an array) with this exact structure:
@@ -214,13 +214,19 @@ Return a single JSON object (not an array) with this exact structure:
   "character_data": {{
     "entity_name": "normalized_name",
     "best_appellation": "display_name", 
-    "appellations": ["name1", "name2"]
+    "appellations": ["name1", "name2"],
+    "biological_sex": "M" or "F" or null
   }}
 }}
 
 For "associate": include entity_name of existing character
-For "create": include character_data for new character  
+For "create": include character_data for new character (including biological_sex)
 For "ignore": neither entity_name nor character_data needed
+
+**Biological Sex Guidelines:**
+- Use context clues, titles (Mr./Mrs./Ms./Miss), pronouns (he/she), and character names to determine biological sex
+- Use 'M' for male, 'F' for female, or null for unknown/unclear cases
+- If you're unsure, use null rather than guessing
 
 **IMPORTANT:** Return ONLY a single JSON object, no additional text, no arrays."""
 

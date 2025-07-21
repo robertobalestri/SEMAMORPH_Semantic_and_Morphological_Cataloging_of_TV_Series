@@ -135,8 +135,25 @@ def generate_plot_from_subtitles(subtitles: List[SubtitleEntry], llm: AzureChatO
     subtitle_text = format_subtitles_for_llm(subtitles)
     
     # Base prompt for plot generation
-    base_prompt = """You are a script analyst. Convert the provided subtitles into a detailed plot summary using the exact JSON format below.
+    base_prompt = """You are a script analyst that understands character names, relationships, and storylines from subtitles. You are also trained in ambiguity handling and know how to recognize when attribution is uncertain. 
 
+Your task is to convert the provided subtitles into a detailed, scene-based plot summary in JSON. Be conservative in speaker attribution — never rely on stereotypes, character tropes, or assumed patterns.
+
+**CRITICAL SPEAKER IDENTIFICATION RULES:**
+- Only use specific names when the speaker is clear from the dialogue or the context and you feel confident.
+- If the speaker is not clear in the text, use generic references like "a character", "someone", or "a voice".
+- Do not assign actions based on behavior typical of a character.
+
+**Bias Avoidance Principles:**
+- Do not infer character behavior based on prior knowledge, stereotypes, or training corpus frequency.
+- Do not assume that humiliating, comic, or dramatic actions belong to characters who often fill those roles unless **clearly** stated in the text.
+- When multiple characters are present and the speaker isn’t identified, use:  
+  - "one of the group of footballers"  
+  - "a male character"  
+  - "an unidentified person"  
+  as needed.
+
+**If unsure, you MUST default to generic labeling** — uncertainty is better than incorrect confidence.
 **Output Format (JSON only):**
 [
   {{
@@ -155,9 +172,10 @@ def generate_plot_from_subtitles(subtitles: List[SubtitleEntry], llm: AzureChatO
 - Include all dialogue, actions, and story developments
 - Maintain objective tone - report what happens, don't interpret
 - Number scenes based on natural story breaks or setting changes
+- Correctly separate scenes, trying to not make big large sequences of scenes but rather smaller and focused scenes.
+- Make the plot segment detailed and specific, indicating also the character present in the scene.
 
-Important: If you're not reasonably certain about who is speaking, avoid attributing the dialogue to a specific character. Use generic references like "a character" or "the speaker" instead of guessing names.
-When the surname of a character is present, use it along the name of the character.
+REMEMBER ALWAYS: Don't be overly confident, if you are not certain about the speaker, use generic references. 
 
 """
 
@@ -166,18 +184,19 @@ When the surname of a character is present, use it along the name of the charact
     # Add season context if available
     if previous_season_summary:
         context_prompt = f"""
-**Previous Season Context:**
-Use the following summary of previous episodes to better understand character relationships, ongoing storylines, and narrative context. This context helps you interpret the subtitles more accurately but should NOT be included in your plot output - only use it for understanding.
+                                **Previous Season Context:**
+                                Use the following summary of previous episodes to better understand character relationships, ongoing storylines, and narrative context. This context helps you interpret the subtitles more accurately but should NOT be included in your plot output - only use it for understanding.
 
-{previous_season_summary}
+                                {previous_season_summary}
 
-**Important:** Your plot output should ONLY describe what happens in the current episode subtitles. The context is provided to help you better understand character names, relationships, and ongoing storylines when interpreting the subtitles."""
+                                **Important:** Your plot output should ONLY describe what happens in the current episode subtitles. The context is provided to help you better understand character names, relationships, and ongoing storylines when interpreting the subtitles.
+                                """
         
-        full_prompt = f"{base_prompt}\n{context_prompt}\n\n**Critical Rules:**\n- Output ONLY the JSON array - no explanations, titles, or additional text\n- Base content exclusively on subtitle text - add nothing extra\n- Use the context to better understand characters and relationships but don't include previous events\n- If subtitles are unclear about speaker identity, use generic references\n- Ensure each plot_segment is comprehensive yet concise"
+        full_prompt = f"{base_prompt}\n{context_prompt}"
         
         logger.info("Using previous season context for plot generation")
     else:
-        full_prompt = f"{base_prompt}\n\n**Critical Rules:**\n- Output ONLY the JSON array - no explanations, titles, or additional text\n- Base content exclusively on subtitle text - add nothing extra\n- If subtitles are unclear about speaker identity, use generic references\n- Ensure each plot_segment is comprehensive yet concise"
+        full_prompt = base_prompt
     
     full_prompt += f"\n\nSubtitles:\n{subtitle_text}"
     

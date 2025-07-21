@@ -27,7 +27,6 @@ class DialogueLine:
         self.original_llm_speaker: Optional[str] = None  # Original LLM assignment
         self.original_llm_is_confident: Optional[bool] = None  # Original LLM boolean confidence
         self.resolution_method: Optional[str] = None  # How final speaker was determined
-        self.other_possible_speakers: Optional[List[str]] = None  # Alternative speakers from LLM
         # Multi-face processing fields
         self.candidate_speakers: Optional[List[str]] = None  # Multiple speaker candidates from faces (qualified)
         self.face_similarities: Optional[List[float]] = None  # Similarities for candidate speakers
@@ -53,7 +52,6 @@ class DialogueLine:
             "original_llm_speaker": self.original_llm_speaker,
             "original_llm_is_confident": self.original_llm_is_confident,
             "resolution_method": self.resolution_method,
-            "other_possible_speakers": self.other_possible_speakers,
             "candidate_speakers": self.candidate_speakers,
             "face_similarities": self.face_similarities,
             "face_cluster_ids": self.face_cluster_ids,
@@ -74,7 +72,6 @@ class DialogueLine:
         line.original_llm_speaker = data.get("original_llm_speaker")
         line.original_llm_is_confident = data.get("original_llm_is_confident")
         line.resolution_method = data.get("resolution_method")
-        line.other_possible_speakers = data.get("other_possible_speakers")
         line.candidate_speakers = data.get("candidate_speakers")
         line.face_similarities = data.get("face_similarities")
         line.face_cluster_ids = data.get("face_cluster_ids")

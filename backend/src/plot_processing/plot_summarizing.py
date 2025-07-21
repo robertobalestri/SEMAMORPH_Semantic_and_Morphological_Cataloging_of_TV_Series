@@ -26,7 +26,7 @@ def summarize_plot(text: str, llm: AzureChatOpenAI, output_path: str) -> str:
 Create a plot summary that reads like a coherent story narrative.
 
 CRITICAL REQUIREMENTS:
-- Always use explicit character names (e.g., "Meredith Grey", "Derek Shepherd") instead of pronouns or assumed context
+- Always use explicit character names (e.g., "Dr. Smith", "Detective Johnson") instead of pronouns or assumed context
 - Write as a flowing narrative plot, NOT as a list or analysis with headers/sections
 - Focus purely on what happens in the story, in chronological order
 - Include character full names when first mentioned, then use their common names consistently
@@ -34,6 +34,7 @@ CRITICAL REQUIREMENTS:
 - Write in past tense as if recounting the story
 - Do NOT include meta-commentary, analysis sections, or structural headers
 - Make the summary self-contained - someone should understand the story without prior knowledge
+- IMPORTANT: Only use character names that are explicitly mentioned in the source text. Do not invent or assume character names that are not present in the original material.
 
 The summary should read like: "In this story, [Character Name] does X while [Character Name] faces Y. When Z happens, [Character Name] must decide..." etc.
 
@@ -112,7 +113,7 @@ You will receive TWO types of content:
    - Focus on key story events and character actions
 
 CRITICAL REQUIREMENTS:
-- Always use explicit character names (e.g., "Meredith Grey", "Derek Shepherd") instead of pronouns
+- Always use explicit character names (e.g., "Dr. Smith", "Detective Johnson") instead of pronouns
 - Write as a single, flowing narrative plot - NOT as sections, lists, or analysis
 - Combine both parts into one coherent story progression
 - Use past tense throughout as if recounting the story
@@ -120,6 +121,7 @@ CRITICAL REQUIREMENTS:
 - Focus purely on plot events and character actions in chronological order
 - Do NOT include headers, sections, meta-commentary, or analysis like "Episode Summary:", "Continuity Context:", etc.
 - Make the summary self-contained and story-focused
+- IMPORTANT: Only use character names that are explicitly mentioned in the source text. Do not invent or assume character names that are not present in the original material.
 
 The result should read like: "In previous episodes, [Character Name] did X. When Y happened, [Character Name] responded by Z. In the latest episode, [Character Name] faces A while [Character Name] deals with B..." etc.
 
@@ -191,6 +193,7 @@ CRITICAL REQUIREMENTS:
 - Write in past tense as if recounting the story
 - Do NOT include meta-commentary, analysis sections, or structural headers like "Episode Summary:", "Continuity Context:", etc.
 - Make the summary self-contained - someone should understand the story without prior knowledge
+- IMPORTANT: Only use character names that are explicitly mentioned in the source text. Do not invent or assume character names that are not present in the original material.
 
 
 Episode Plot to Summarize:

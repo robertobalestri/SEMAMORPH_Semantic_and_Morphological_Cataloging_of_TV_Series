@@ -41,7 +41,8 @@ class SpeakerCharacterService:
                     'entity_name': char.entity_name,
                     'best_appellation': char.best_appellation,
                     'appellations': appellations_data,
-                    'series': char.series
+                    'series': char.series,
+                    'biological_sex': char.biological_sex  # Include biological sex
                 }
                 characters_data.append(char_data)
         
@@ -115,7 +116,8 @@ class SpeakerCharacterService:
                 entity_link = EntityLink(
                     entity_name=character.entity_name,
                     best_appellation=character.best_appellation,
-                    appellations=appellations
+                    appellations=appellations,
+                    biological_sex=character.biological_sex  # Preserve biological sex
                 )
                 
                 result = character_service.add_or_update_character(entity_link, self.series)
@@ -152,7 +154,8 @@ class SpeakerCharacterService:
                     entity_link = EntityLink(
                         entity_name=char_data["entity_name"],
                         best_appellation=char_data["best_appellation"],
-                        appellations=char_data["appellations"]
+                        appellations=char_data["appellations"],
+                        biological_sex=char_data.get("biological_sex")  # Include biological sex
                     )
                     
                     result = character_service.add_or_update_character(entity_link, self.series)
@@ -184,6 +187,7 @@ class SpeakerCharacterService:
             characters_info.append({
                 "entity_name": char_data["entity_name"],
                 "best_appellation": char_data["best_appellation"],
-                "appellations": char_data["appellations"]
+                "appellations": char_data["appellations"],
+                "biological_sex": char_data.get("biological_sex")  # Include biological sex
             })
         return characters_info

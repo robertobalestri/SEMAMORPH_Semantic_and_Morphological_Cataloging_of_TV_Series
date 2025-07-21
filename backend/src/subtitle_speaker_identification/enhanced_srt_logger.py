@@ -71,7 +71,7 @@ class EnhancedSRTLogger:
             series: Series name
             season: Season number
             episode: Episode number
-            log_dir: Directory for log files (defaults to data/{series}/S{season}/E{episode}/logs/)
+            log_dir: Directory for log files (defaults to data/{series}/{season}/{episode}/logs/)
         """
         self.series = series
         self.season = season
@@ -80,7 +80,7 @@ class EnhancedSRTLogger:
         
         # Setup log directory
         if log_dir is None:
-            log_dir = f"data/{series}/S{season}/E{episode}/logs"
+            log_dir = f"data/{series}/{season}/{episode}/logs"
         
         self.log_dir = Path(log_dir)
         self.log_dir.mkdir(parents=True, exist_ok=True)

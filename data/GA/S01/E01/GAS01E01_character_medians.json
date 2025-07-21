@@ -1,0 +1,233 @@
+{
+  "episode_code": "GAS01E01",
+  "timestamp": "2025-07-21T15:03:26.870005",
+  "total_characters": 7,
+  "total_validated_clusters": 7,
+  "characters": {
+    "Dr. Meredith Grey": {
+      "character_median_id": "GAS01E01_character_Dr._Meredith_Grey_median",
+      "cluster_count": 1,
+      "face_count": 8.0,
+      "avg_cluster_confidence": 93.75,
+      "validated_clusters": [
+        {
+          "cluster_id": 235,
+          "status": "VALID",
+          "confidence": 93.75,
+          "face_count": 8,
+          "assignment_method": "multi_face_probability",
+          "distance_to_character_median": 0.0,
+          "similarity_to_character_median": 1.0,
+          "outlier_detected": false
+        }
+      ],
+      "cross_episode_ready": true,
+      "median_quality": "low",
+      "suspicious_assignment": false,
+      "outlier_clusters_detected": 0,
+      "outlier_details": null,
+      "avg_distance_to_character_median": 0.0,
+      "max_distance_to_character_median": 0.0,
+      "min_distance_to_character_median": 0.0,
+      "avg_similarity_to_character_median": 1.0,
+      "cluster_cohesion": "high"
+    },
+    "Dr. Cristina Yang": {
+      "character_median_id": "GAS01E01_character_Dr._Cristina_Yang_median",
+      "cluster_count": 2,
+      "face_count": 4.0,
+      "avg_cluster_confidence": 83.33,
+      "validated_clusters": [
+        {
+          "cluster_id": 243,
+          "status": "VALID",
+          "confidence": 66.67,
+          "face_count": 2,
+          "assignment_method": "multi_face_probability",
+          "distance_to_character_median": 0.2928,
+          "similarity_to_character_median": 0.7072,
+          "outlier_detected": false
+        },
+        {
+          "cluster_id": 246,
+          "status": "VALID",
+          "confidence": 100.0,
+          "face_count": 2,
+          "assignment_method": "multi_face_probability",
+          "distance_to_character_median": 0.2928,
+          "similarity_to_character_median": 0.7072,
+          "outlier_detected": false
+        }
+      ],
+      "cross_episode_ready": true,
+      "median_quality": "low",
+      "suspicious_assignment": false,
+      "outlier_clusters_detected": 0,
+      "outlier_details": null,
+      "avg_distance_to_character_median": 0.2928,
+      "max_distance_to_character_median": 0.2928,
+      "min_distance_to_character_median": 0.2928,
+      "avg_similarity_to_character_median": 0.7072,
+      "cluster_cohesion": "medium"
+    },
+    "Dr. Ellis Grey": {
+      "character_median_id": "GAS01E01_character_Dr._Ellis_Grey_median",
+      "cluster_count": 1,
+      "face_count": 2.0,
+      "avg_cluster_confidence": 66.67,
+      "validated_clusters": [
+        {
+          "cluster_id": 302,
+          "status": "VALID",
+          "confidence": 66.67,
+          "face_count": 2,
+          "assignment_method": "multi_face_probability",
+          "distance_to_character_median": -0.0,
+          "similarity_to_character_median": 1.0,
+          "outlier_detected": false
+        }
+      ],
+      "cross_episode_ready": true,
+      "median_quality": "low",
+      "suspicious_assignment": false,
+      "outlier_clusters_detected": 0,
+      "outlier_details": null,
+      "avg_distance_to_character_median": 0.0,
+      "max_distance_to_character_median": -0.0,
+      "min_distance_to_character_median": -0.0,
+      "avg_similarity_to_character_median": 1.0,
+      "cluster_cohesion": "high"
+    },
+    "Dr. George O'Malley": {
+      "character_median_id": "GAS01E01_character_Dr._George_O'Malley_median",
+      "cluster_count": 1,
+      "face_count": 2.0,
+      "avg_cluster_confidence": 100.0,
+      "validated_clusters": [
+        {
+          "cluster_id": 140,
+          "status": "VALID",
+          "confidence": 100.0,
+          "face_count": 2,
+          "assignment_method": "multi_face_probability",
+          "distance_to_character_median": 0.0,
+          "similarity_to_character_median": 1.0,
+          "outlier_detected": false
+        }
+      ],
+      "cross_episode_ready": true,
+      "median_quality": "low",
+      "suspicious_assignment": false,
+      "outlier_clusters_detected": 0,
+      "outlier_details": null,
+      "avg_distance_to_character_median": 0.0,
+      "max_distance_to_character_median": 0.0,
+      "min_distance_to_character_median": 0.0,
+      "avg_similarity_to_character_median": 1.0,
+      "cluster_cohesion": "high"
+    },
+    "Dr. Miranda Bailey": {
+      "character_median_id": "GAS01E01_character_Dr._Miranda_Bailey_median",
+      "cluster_count": 2,
+      "face_count": 6.0,
+      "avg_cluster_confidence": 50.0,
+      "validated_clusters": [
+        {
+          "cluster_id": 18,
+          "status": "AMBIGUOUS",
+          "confidence": 0.0,
+          "face_count": 3,
+          "assignment_method": "parity_detected",
+          "distance_to_character_median": null,
+          "similarity_to_character_median": null
+        },
+        {
+          "cluster_id": 44,
+          "status": "SEX_VALIDATION_FAILED",
+          "confidence": 100.0,
+          "face_count": 3,
+          "assignment_method": "multi_face_probability",
+          "distance_to_character_median": -0.0,
+          "similarity_to_character_median": 1.0,
+          "outlier_detected": false
+        }
+      ],
+      "cross_episode_ready": true,
+      "median_quality": "low",
+      "suspicious_assignment": false,
+      "outlier_clusters_detected": 0,
+      "outlier_details": null,
+      "avg_distance_to_character_median": 0.0,
+      "max_distance_to_character_median": -0.0,
+      "min_distance_to_character_median": -0.0,
+      "avg_similarity_to_character_median": 1.0,
+      "cluster_cohesion": "high"
+    },
+    "Katie Bryce": {
+      "character_median_id": "GAS01E01_character_Katie_Bryce_median",
+      "cluster_count": 1,
+      "face_count": 4.0,
+      "avg_cluster_confidence": 100.0,
+      "validated_clusters": [
+        {
+          "cluster_id": 75,
+          "status": "SEX_VALIDATION_FAILED",
+          "confidence": 100.0,
+          "face_count": 4,
+          "assignment_method": "multi_face_probability",
+          "distance_to_character_median": 0.0,
+          "similarity_to_character_median": 1.0,
+          "outlier_detected": false
+        }
+      ],
+      "cross_episode_ready": true,
+      "median_quality": "low",
+      "suspicious_assignment": false,
+      "outlier_clusters_detected": 0,
+      "outlier_details": null,
+      "avg_distance_to_character_median": 0.0,
+      "max_distance_to_character_median": 0.0,
+      "min_distance_to_character_median": 0.0,
+      "avg_similarity_to_character_median": 1.0,
+      "cluster_cohesion": "high"
+    },
+    "Dr. Preston Burke": {
+      "character_median_id": "GAS01E01_character_Dr._Preston_Burke_median",
+      "cluster_count": 2,
+      "face_count": 6.0,
+      "avg_cluster_confidence": 100.0,
+      "validated_clusters": [
+        {
+          "cluster_id": 123,
+          "status": "VALID",
+          "confidence": 100.0,
+          "face_count": 3,
+          "assignment_method": "multi_face_probability",
+          "distance_to_character_median": 0.2703,
+          "similarity_to_character_median": 0.7297,
+          "outlier_detected": false
+        },
+        {
+          "cluster_id": 271,
+          "status": "VALID",
+          "confidence": 100.0,
+          "face_count": 3,
+          "assignment_method": "multi_face_probability",
+          "distance_to_character_median": 0.2703,
+          "similarity_to_character_median": 0.7297,
+          "outlier_detected": false
+        }
+      ],
+      "cross_episode_ready": true,
+      "median_quality": "low",
+      "suspicious_assignment": false,
+      "outlier_clusters_detected": 0,
+      "outlier_details": null,
+      "avg_distance_to_character_median": 0.2703,
+      "max_distance_to_character_median": 0.2703,
+      "min_distance_to_character_median": 0.2703,
+      "avg_similarity_to_character_median": 0.7297,
+      "cluster_cohesion": "medium"
+    }
+  }
+}
