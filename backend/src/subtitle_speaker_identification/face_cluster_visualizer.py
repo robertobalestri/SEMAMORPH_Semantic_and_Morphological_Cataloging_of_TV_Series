@@ -8,7 +8,6 @@ import cv2
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 from typing import List, Dict, Optional, Tuple
 from sklearn.manifold import TSNE
 from sklearn.decomposition import PCA
@@ -17,9 +16,6 @@ from sklearn.cluster import HDBSCAN
 from sklearn.metrics.pairwise import cosine_similarity
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 from tqdm import tqdm
-import plotly.express as px
-import plotly.graph_objects as go
-import plotly.offline as pyo
 
 from .face_embedding_vector_store import FaceEmbeddingVectorStore
 from .face_clustering_system import FaceClusteringSystem

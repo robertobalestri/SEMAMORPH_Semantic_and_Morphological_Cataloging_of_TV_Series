@@ -18,34 +18,43 @@ class CharacterService:
 
     def add_or_update_character(self, entity: EntityLink, series: str) -> Optional[Union[Character, List[Character]]]:
         """Add a new character or update an existing one based on the EntityLink."""
+        logger.info(f"🔧 ADD_OR_UPDATE_CHARACTER: Starting for entity '{entity.entity_name}' in series '{series}'")
+        
         # Skip invalid entity names
         if len(entity.entity_name.strip()) <= 1:
             logger.warning(f"Skipping invalid entity name: '{entity.entity_name}'")
             return None
 
         try:
+            logger.info(f"🔍 Validating appellations for entity: {entity.entity_name}")
             # Normalize and validate appellations first
             validated_appellations = set()
             for appellation in entity.appellations:
                 if appellation and len(appellation.strip()) > 1:
                     validated_appellations.add(appellation.strip())
             
+            logger.info(f"📊 Validated appellations: {validated_appellations}")
+            
             # Ensure best_appellation is valid and included
             if entity.best_appellation and len(entity.best_appellation.strip()) > 1:
                 validated_appellations.add(entity.best_appellation.strip())
+                logger.info(f"✅ Best appellation '{entity.best_appellation}' is valid")
             elif validated_appellations:
                 # If no valid best_appellation, use the first valid appellation
                 entity.best_appellation = next(iter(validated_appellations))
+                logger.info(f"🔄 Using first appellation as best: '{entity.best_appellation}'")
             else:
                 logger.warning(f"No valid appellations found for entity: {entity.entity_name}")
                 return None
 
+            logger.info(f"🔍 Looking for existing character by appellations...")
             # CRITICAL: Find existing character by ANY appellation first to get canonical entity_name
             existing_character = None
             canonical_entity_name = None
             
             # First check if we already have this character by any appellation
             for appellation in validated_appellations:
+                logger.info(f"🔍 Checking appellation: '{appellation}'")
                 existing_character = self.character_repository.get_character_by_appellation(
                     appellation, 
                     series
@@ -54,10 +63,14 @@ class CharacterService:
                     canonical_entity_name = existing_character.entity_name
                     logger.info(f"🔗 Found existing character by appellation '{appellation}': {canonical_entity_name}")
                     break
+                else:
+                    logger.info(f"❌ No existing character found for appellation: '{appellation}'")
             
             # If not found by appellation, try by normalized entity_name
             if not existing_character:
+                logger.info(f"🔍 No existing character found by appellations, checking by entity_name...")
                 normalized_entity_name = self._normalize_name(entity.entity_name)
+                logger.info(f"🔍 Normalized entity_name: '{entity.entity_name}' → '{normalized_entity_name}'")
                 existing_character = self.character_repository.get_by_entity_name(normalized_entity_name, series)
                 if existing_character:
                     canonical_entity_name = existing_character.entity_name
@@ -72,20 +85,26 @@ class CharacterService:
                 logger.error(f"Failed to determine canonical entity_name for {entity.entity_name}")
                 return None
             entity.entity_name = canonical_entity_name
+            logger.info(f"✅ Using canonical entity_name: '{canonical_entity_name}'")
 
             if existing_character:
+                logger.info(f"🔄 Updating existing character: {existing_character.entity_name}")
                 # Update existing character
                 # Clear existing appellations to avoid duplicates
                 existing_character.appellations.clear()
+                logger.info(f"🧹 Cleared existing appellations")
                 
                 # Update best appellation
                 existing_character.best_appellation = entity.best_appellation
+                logger.info(f"📝 Updated best_appellation to: '{entity.best_appellation}'")
                 
                 # Update biological sex
                 existing_character.biological_sex = entity.biological_sex  # NEW: Update biological sex
+                logger.info(f"📝 Updated biological_sex to: '{entity.biological_sex}'")
 
                 # Add all validated appellations
                 for appellation in validated_appellations:
+                    logger.info(f"🔍 Checking if appellation '{appellation}' is used by another character...")
                     # Check if appellation is used by another character
                     other_character = self.character_repository.get_character_by_appellation(appellation, series)
                     if other_character and other_character.entity_name != existing_character.entity_name:
@@ -95,29 +114,32 @@ class CharacterService:
                         )
                         continue
                     
+                    logger.info(f"✅ Adding appellation '{appellation}' to existing character")
                     new_appellation = CharacterAppellation(
                         appellation=appellation,
                         character_id=existing_character.entity_name
                     )
                     existing_character.appellations.append(new_appellation)
-
+                
+                logger.info(f"💾 Saving updated character to database...")
                 self.character_repository.update(existing_character)
-                logger.info(
-                    f"Updated existing character: {existing_character.entity_name} "
-                    f"with appellations: {[app.appellation for app in existing_character.appellations]}"
-                )
+                logger.info(f"✅ Successfully updated character: {existing_character.entity_name}")
                 return existing_character
             else:
                 # Create new character with canonical entity_name
+                logger.info(f"🆕 Creating new character: {entity.entity_name}")
                 new_character = Character(
                     entity_name=entity.entity_name,  # Using the validated canonical entity_name
                     best_appellation=entity.best_appellation,
                     series=series,
                     biological_sex=entity.biological_sex  # NEW: Store biological sex
                 )
+                logger.info(f"📝 Created Character object: entity_name='{new_character.entity_name}', best_appellation='{new_character.best_appellation}', series='{new_character.series}', biological_sex='{new_character.biological_sex}'")
 
                 # Add all validated appellations
+                logger.info(f"🔍 Adding {len(validated_appellations)} appellations to new character...")
                 for appellation in validated_appellations:
+                    logger.info(f"🔍 Checking if appellation '{appellation}' is already used...")
                     # Check if appellation is already used
                     existing_char = self.character_repository.get_character_by_appellation(appellation, series)
                     if existing_char:
@@ -127,6 +149,7 @@ class CharacterService:
                         )
                         continue
 
+                    logger.info(f"✅ Adding appellation '{appellation}' to new character")
                     new_appellation = CharacterAppellation(
                         appellation=appellation,
                         character_id=new_character.entity_name
@@ -137,11 +160,9 @@ class CharacterService:
                     logger.warning(f"No valid appellations for character: {entity.entity_name}")
                     return None
 
+                logger.info(f"💾 Saving new character to database...")
                 self.character_repository.add(new_character)
-                logger.info(
-                    f"Added new character: {new_character.entity_name} "
-                    f"with appellations: {[app.appellation for app in new_character.appellations]}"
-                )
+                logger.info(f"✅ Successfully created new character: {new_character.entity_name} with appellations: {[app.appellation for app in new_character.appellations]}")
                 return new_character
 
         except IntegrityError as e:
@@ -395,6 +416,9 @@ class CharacterService:
         Returns:
             List of processed Character objects
         """
+        logger.info(f"🏭 CHARACTER SERVICE: Starting process_entities")
+        logger.info(f"📊 DEBUG: Input parameters - entities_count={len(entities)}, series='{series}', plot_length={len(plot)}, llm={llm is not None}")
+        
         if not entities:
             logger.warning("⚠️ No entities to process")
             return []
@@ -402,15 +426,16 @@ class CharacterService:
         logger.info(f"🏭 CHARACTER SERVICE: Processing {len(entities)} entities for series {series}")
         processed_characters = []
         
-        for entity in entities:
+        for i, entity in enumerate(entities):
             try:
-                logger.info(f"🔍 Processing entity: {entity.entity_name} → {entity.best_appellation} ({entity.appellations})")
+                logger.info(f"🔍 [{i+1}/{len(entities)}] Processing entity: {entity.entity_name} → {entity.best_appellation} ({entity.appellations})")
                 
                 # Skip invalid entities
                 if not entity.entity_name or len(entity.entity_name.strip()) <= 1:
                     logger.warning(f"⚠️ Skipping invalid entity: {entity.entity_name}")
                     continue
                     
+                logger.info(f"🔧 Calling add_or_update_character for entity: {entity.entity_name}")
                 # Add or update the character
                 result = self.add_or_update_character(entity, series)
                 
@@ -429,6 +454,7 @@ class CharacterService:
                 logger.error(f"❌ Traceback: {traceback.format_exc()}")
                 
         logger.info(f"✅ CHARACTER SERVICE: Completed processing. Total characters: {len(processed_characters)}")
+        logger.info(f"📊 DEBUG: Returning {len(processed_characters)} processed characters")
         return processed_characters
 
     def get_episode_entities(self, series: str) -> List[Character]:

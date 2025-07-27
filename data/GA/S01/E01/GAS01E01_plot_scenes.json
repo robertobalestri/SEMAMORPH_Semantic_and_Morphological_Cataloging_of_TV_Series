@@ -2,123 +2,167 @@
   "scenes": [
     {
       "scene_number": 1,
-      "plot_segment": "A character narrates about 'the game', stating that people either have what it takes to play or they don't. The narrator reveals their mother was one of the greats, but feels personally unprepared."
+      "plot_segment": "A character narrates about 'the game' of surgery, stating that people either have what it takes or they don't. The narrator mentions their mother was one of the greats, but feels personally unprepared."
     },
     {
       "scene_number": 2,
-      "plot_segment": "In a house, two people interact after what appears to be a one-night stand. One character expresses embarrassment and insists the other leave because they are late for their first day of work. The two exchange names: Derek and Meredith. Meredith clarifies she recently moved from Boston, is staying in her mother's house, and is selling it. Derek leaves after their awkward conversation."
+      "plot_segment": "In a house, two people wake up together after what appears to be a one-night stand. One character finds the situation humiliating. The other insists the first must leave because they are late for their first day of work. They discuss whether one of them lives there; it is revealed that the house belonged to the second character's mother and is being sold. The second character clarifies their mother is not dead. They agree not to exchange personal details. As the second character goes to shower, the first is told to be gone when they return. Before leaving, the names 'Derek' and 'Meredith' are exchanged. Both characters are present."
     },
     {
       "scene_number": 3,
-      "plot_segment": "A group of new surgical interns, including Meredith, gather at a hospital. An unidentified person gives an orientation speech, explaining the challenges of the surgical residency and warning that not all will make it. The speaker tells them to look at their competition and describes the pressures ahead."
+      "plot_segment": "A group of new surgical interns gathers at a hospital. An authoritative figure addresses them, explaining that they are now doctors, not students, and that their residency will be both the best and worst time of their lives. The speaker warns that many will not make it through the program. The narrator again expresses self-doubt."
     },
     {
       "scene_number": 4,
-      "plot_segment": "In a hospital hallway, several interns, including Cristina, George O'Malley, Meredith, and Izzie Stevens, discuss their assignments. They talk about being assigned to a resident called 'the Nazi', speculate about her, and introduce themselves. Izzie clarifies her nickname is 'Izzie'."
+      "plot_segment": "In a hospital corridor, several interns, including Christina, George, and others, discuss the gender ratio among the new interns and rumors about one being a model. They talk about which resident they are assigned to, referring to one as 'the Nazi.' George introduces himself, referencing a previous meeting with a female intern. The group is called to attention as names are read off."
     },
     {
       "scene_number": 5,
-      "plot_segment": "A resident, later identified as Dr. Bailey, addresses the group of interns (including George, Cristina, Meredith, and Izzie). She lays out five strict rules for their conduct, emphasizing her authority and the demands of the job. She instructs them to follow her and not to wake her unless a patient is dying."
+      "plot_segment": "A female resident, later identified as Dr. Bailey, introduces herself to the group of interns and lays out five strict rules for their conduct, including not waking her unless a patient is dying and always running to answer pages. She makes it clear she dislikes them and expects them to memorize her rules. The group responds affirmatively."
     },
     {
       "scene_number": 6,
-      "plot_segment": "In the emergency room, a team including Dr. Bailey, Dr. Burke, and the interns receive a patient: Katie Bryce, a 15-year-old girl with seizures. Dr. Bailey assigns tasks to the interns: Cristina on labs, George on patient work-ups, Meredith to take Katie for a CT scan, and Izzie to perform rectal exams."
+      "plot_segment": "A medical emergency is called: a 15-year-old girl named Katie Bryce is brought in with seizures. Dr. Bailey and Dr. Burke are present, along with several interns including Izzy, Christina, George, and Meredith. Orders are given for medication and tests. Meredith is assigned responsibility for Katie and told to take her for a CT scan. Izzy is assigned to perform rectal exams."
     },
     {
       "scene_number": 7,
-      "plot_segment": "Cristina reports to Dr. Bailey that Katie Bryce's labs are clear and wonders about a rumored opportunity for the best intern to perform a procedure. Dr. Bailey dismisses her. In another area, a patient jokes about not being able to eat bacon after surgery, and an intern reassures him. Meredith checks on Katie, who is upset about missing a beauty pageant. George awkwardly prepares to perform a rectal exam on a patient."
+      "plot_segment": "In a hospital area, Dr. Bailey is approached by an intern (likely Christina) who reports that Katie Bryce's labs are clear. The intern mentions a rumor that the best intern will be allowed to perform a procedure on the first shift. Dr. Bailey dismisses the intern."
     },
     {
       "scene_number": 8,
-      "plot_segment": "In the hospital cafeteria, George, Cristina, and Izzie discuss their difficult first shift. They gossip about Meredith's mother, Ellis Grey, and her reputation. Meredith arrives, and the group discusses their cases. An attending announces that George O'Malley has been chosen to perform an appendectomy, surprising the group."
+      "plot_segment": "In a patient room, an intern (likely Izzy) talks with a patient about missing bacon after surgery. Another intern (likely George) is told he is lost, but he denies it. The patient, Katie Bryce, complains about missing her pageant and discusses her talent, rhythmic gymnastics. Izzy prepares to perform a rectal exam on Katie."
     },
     {
       "scene_number": 9,
-      "plot_segment": "Two doctors discuss George's selection for surgery, with one expressing skepticism about his abilities. Katie Bryce's parents ask an intern about her condition, but the intern defers to Dr. Shepherd, who is now in charge of Katie's case."
+      "plot_segment": "In a break area, several interns discuss their difficulties. One complains about performing 17 rectal exams and feeling disliked by Dr. Bailey. The group gossips about Meredith, revealing her mother is Ellis Gray, a famous surgeon. They express envy and discuss the pressure of living up to such a legacy. Katie Bryce is described as a difficult patient."
     },
     {
       "scene_number": 10,
-      "plot_segment": "Meredith approaches Dr. Shepherd, who is revealed to be Derek from the earlier scene. They awkwardly discuss their previous night together and agree to keep it professional. Meredith insists their personal relationship cannot continue."
+      "plot_segment": "Dr. Burke gathers the interns and announces that the honor of performing the first surgery goes to George O'Malley, who will scrub in for an appendectomy. George is surprised and congratulated."
     },
     {
       "scene_number": 11,
-      "plot_segment": "In an observation area, several interns watch as George prepares for his appendectomy. They place bets on his performance. In the operating room, George begins the surgery under Dr. Burke's supervision. He successfully removes the appendix but then makes a mistake, causing a complication. Dr. Burke takes over, and George is removed from the surgery. Other interns nickname him '007' (license to kill)."
+      "plot_segment": "Two doctors discuss George O'Malley's selection for surgery. One doubts George's abilities, noting he barely made the cut for the program. The other insists on choosing George, suggesting it is a tradition to pick one intern to 'terrorize' so the others fall in line. Katie Bryce's status is briefly updated."
     },
     {
       "scene_number": 12,
-      "plot_segment": "George is upset about being called '007' by the other interns. Cristina and Izzie try to reassure him, but he remains insecure. Suddenly, there is an emergency with Katie Bryce, and Meredith rushes to respond."
+      "plot_segment": "Katie Bryce's parents arrive and ask about her condition. An intern (likely Meredith) is unable to answer their questions and goes to find the attending doctor. Dr. Shepherd is identified as the new attending on Katie's case."
     },
     {
       "scene_number": 13,
-      "plot_segment": "Meredith finds Katie Bryce having another seizure. Nurses and other staff urge her to make decisions, but Meredith hesitates. The team attempts to treat Katie, but her heart stops. They perform resuscitation and eventually restore her heartbeat. Dr. Bailey scolds Meredith for not paging her immediately."
+      "plot_segment": "Meredith approaches Dr. Shepherd, who is revealed to be the same Derek from the earlier scene. They awkwardly discuss their previous encounter and agree to keep it secret. Meredith insists their relationship must remain professional now that he is her attending."
     },
     {
       "scene_number": 14,
-      "plot_segment": "Dr. Shepherd and Dr. Bailey discuss Katie's unclear diagnosis with her parents. Katie's father becomes angry at the lack of answers and demands another doctor."
+      "plot_segment": "In the operating gallery, a group of interns watches George O'Malley's surgery. They place bets on whether he will succeed or fail. George begins the appendectomy under supervision. He successfully removes the appendix but then makes a mistake, causing a complication. Dr. Burke takes over, and George is removed from the OR. The other interns refer to George as '007,' meaning 'license to kill.'"
     },
     {
       "scene_number": 15,
-      "plot_segment": "Elsewhere in the hospital, Dr. Burke discusses an upcoming bypass surgery with a patient named Mr. Savitch and his wife, Gloria. An intern reassures Gloria that her husband will be fine, despite the risks."
+      "plot_segment": "George, distressed, asks other interns if people are calling him 007. They deny it, but he suspects otherwise. A code is called for Katie Bryce, and the interns rush away."
     },
     {
       "scene_number": 16,
-      "plot_segment": "Cristina practices suturing on a banana. She and George discuss their difficult day. Dr. Shepherd gathers the interns and asks for their help in diagnosing Katie Bryce, offering the chance to assist in surgery as a reward. Dr. Bailey distributes Katie's chart to the interns."
+      "plot_segment": "In a hospital corridor, an intern laments that surgery is a tough specialty and jokes about geriatrics being easier. The intern expresses a desire to move out of their mother's house."
     },
     {
       "scene_number": 17,
-      "plot_segment": "Izzie pages Alex Karev about a patient, 4-B, who is still short of breath. Alex dismisses her concerns, preferring to focus on a more exciting case. Alex makes a sexist remark, mistaking Izzie for a nurse, which she confronts him about."
+      "plot_segment": "An intern arrives at Katie Bryce's room after a 911 page, only to find Katie is fine but bored and wants to watch her pageant on TV. The intern is frustrated and tells Katie to go to sleep."
     },
     {
       "scene_number": 18,
-      "plot_segment": "Cristina and Meredith agree to work together to solve Katie's case, with Meredith declining the chance to assist in surgery if they succeed. Cristina presses Meredith about her reluctance to work with Dr. Shepherd, and Meredith confesses that she slept with him. They continue to brainstorm possible diagnoses for Katie."
+      "plot_segment": "An intern (likely Meredith) asks another intern for help starting a central line on a patient with difficult veins. The intern admits never having done one before. They consider asking Dr. Bailey for help."
     },
     {
       "scene_number": 19,
-      "plot_segment": "Cristina and Meredith realize that Katie's minor fall during rhythmic gymnastics practice could have caused a rare aneurysm. They present their theory to Dr. Shepherd, who orders an angiogram. The test reveals a subarachnoid hemorrhage, confirming their diagnosis."
+      "plot_segment": "The intern approaches Dr. Bailey, who is sleeping, to ask for help with a central line. Dr. Bailey is annoyed and tells the intern not to wake her unless the patient is near death."
     },
     {
       "scene_number": 20,
-      "plot_segment": "Dr. Shepherd praises Meredith and Cristina for their work but selects Meredith to scrub in for Katie's surgery. Cristina is disappointed."
+      "plot_segment": "In a patient care area, an intern suggests starting antibiotics for a patient with post-op pneumonia. A nurse questions the diagnosis, suggesting alternative possibilities. The intern is dismissive. Another intern, Alex, introduces himself and makes a derogatory comment about nurses. The group discusses another intern, Katie, and relationships."
     },
     {
       "scene_number": 21,
-      "plot_segment": "Dr. Burke informs an intern that Mr. Savitch's heart was too damaged for bypass surgery and that he died. The intern is distraught, having promised Gloria Savitch that her husband would be fine. Dr. Burke admonishes the intern for making promises to patients' families."
+      "plot_segment": "Katie Bryce begins having multiple grand mal seizures. Dr. Bailey asks Meredith how to proceed. Meredith gives medication orders but the seizures continue. Dr. Bailey and the team attempt various interventions, including phenobarbital. Katie's heart stops, and the team performs resuscitation. After several attempts, Katie's heart rhythm returns. Dr. Bailey reprimands the team for not paging her immediately."
     },
     {
       "scene_number": 22,
-      "plot_segment": "Cristina confronts Meredith about being chosen for the surgery, accusing her of benefiting from her relationship with Dr. Shepherd and her famous mother. Meredith tries to apologize, but Cristina rebuffs her."
+      "plot_segment": "Katie's parents confront Dr. Shepherd about their daughter's condition, frustrated by the lack of answers. Dr. Shepherd assures them he is working hard but cannot yet provide a diagnosis. The parents demand another doctor."
     },
     {
       "scene_number": 23,
-      "plot_segment": "An intern informs Gloria Savitch that her husband, Tony, died during surgery. Gloria is devastated and asks the intern to leave."
+      "plot_segment": "Dr. Burke discusses an upcoming bypass surgery with a patient named Mr. Savage and his wife, Gloria. He explains the procedure and risks. An intern reassures Gloria, promising her husband will be fine. Dr. Burke admonishes the intern for making promises to patients' families."
     },
     {
       "scene_number": 24,
-      "plot_segment": "Izzie prepares Katie Bryce for surgery, trying to make her feel better about losing her hair. Meredith asks Dr. Shepherd if she was chosen for the surgery because of their personal relationship. He jokes but then assures her she earned the opportunity."
+      "plot_segment": "In a break room, Meredith is suturing a banana to stay awake. Christina confronts her about getting to scrub in on Katie's surgery. Meredith apologizes for being mean when tired. Dr. Shepherd enters and asks the interns for help diagnosing Katie Bryce, explaining her condition is a mystery. He offers the incentive that whoever finds the answer can scrub in on the surgery."
     },
     {
       "scene_number": 25,
-      "plot_segment": "George and another intern reflect on their career choices and the pressures of being a surgeon. George reveals his parents are proud of him, while the other intern shares that her mother doubted her abilities."
+      "plot_segment": "An intern pages Dr. Bailey about the patient in 4B, who is still short of breath. Dr. Bailey dismisses the concern, attributing it to the patient's age and tells the intern not to page her again."
     },
     {
       "scene_number": 26,
-      "plot_segment": "Dr. Burke quizzes Izzie about a patient with post-op fever. Izzie correctly identifies the five W's of post-op fever and suggests a pulmonary embolus as the diagnosis. Dr. Burke instructs her to follow up and notes her resemblance to her mother, welcoming her to the profession."
+      "plot_segment": "Christina approaches Meredith and proposes working together to solve Katie's case, offering Meredith the chance to scrub in if they succeed. Meredith agrees. They review Katie's symptoms and rule out various causes. Meredith reveals to Christina that she had sex with Dr. Shepherd. Christina asks if it was good. They continue brainstorming possible diagnoses."
     },
     {
       "scene_number": 27,
-      "plot_segment": "Dr. Shepherd prepares for Katie Bryce's surgery, telling the team it's a beautiful night to save lives. Meredith narrates about the challenges and responsibilities of being a surgeon."
+      "plot_segment": "Christina and Meredith discuss the implications if no one can diagnose Katie and she dies. They reflect on Katie's life and her pageant talent, rhythmic gymnastics. Meredith suddenly has an idea related to Katie's fall during pageant practice."
     },
     {
       "scene_number": 28,
-      "plot_segment": "After the surgery, Meredith and Cristina have a brief, non-emotional exchange, agreeing not to have a dramatic moment. They joke about each other's appearance and suggest getting some sleep."
+      "plot_segment": "Meredith and Christina approach Dr. Shepherd with their theory that Katie's seizures are due to a subarachnoid hemorrhage caused by a minor fall during rhythmic gymnastics. Dr. Shepherd is initially skeptical but orders further investigation."
     },
     {
       "scene_number": 29,
-      "plot_segment": "George and another intern express excitement after participating in surgery, describing the experience as exhilarating and better than drugs. They part ways, satisfied with their work."
+      "plot_segment": "Dr. Shepherd and the interns confirm that Katie has a minute subarachnoid hemorrhage. Dr. Shepherd praises Meredith and Christina for their work and tells Meredith she will scrub in on the surgery."
     },
     {
       "scene_number": 30,
-      "plot_segment": "Meredith narrates about surviving the first shift. She decides not to sell her mother's house and plans to get roommates. She visits her mother, who is in a care facility and does not recognize her. Meredith reminds her mother that she was a surgeon."
+      "plot_segment": "Christina is disappointed about not being chosen for the surgery. Meredith reflects on the competitive nature of the program and the unpredictability of outcomes."
+    },
+    {
+      "scene_number": 31,
+      "plot_segment": "Dr. Burke informs Gloria that her husband, Tony, died during surgery due to extensive heart damage. Gloria is devastated. Dr. Burke tells the intern who promised Gloria a good outcome that only God can make such promises and instructs the intern to deliver the bad news."
+    },
+    {
+      "scene_number": 32,
+      "plot_segment": "Christina confronts Meredith about being chosen for the surgery, accusing her of getting ahead because of her relationship with Dr. Shepherd and her famous mother. Meredith insists she earned her place. Christina tells her to deal with the consequences of her actions."
+    },
+    {
+      "scene_number": 33,
+      "plot_segment": "The intern delivers the news to Gloria that Tony has died. Gloria is distraught and asks for privacy."
+    },
+    {
+      "scene_number": 34,
+      "plot_segment": "In a hospital room, Meredith helps prepare Katie Bryce for surgery, promising to make her look 'cool' despite having to shave her head. Meredith asks Dr. Shepherd if she was chosen for the surgery because they slept together. Dr. Shepherd jokes but assures her she earned it. He encourages her not to let their personal history interfere with her opportunity."
+    },
+    {
+      "scene_number": 35,
+      "plot_segment": "In a quiet moment, George and another intern discuss their doubts about being surgeons. George reflects on his parents' pride and his own insecurities. Meredith shares that her mother tried to talk her out of medical school. They agree that being seen as a 'superhero' sounds good and hope they will survive the program."
+    },
+    {
+      "scene_number": 36,
+      "plot_segment": "A senior doctor quizzes an intern about a patient with post-op fever. The intern struggles to answer. Another intern correctly lists the five Ws of post-op fever and suggests the patient may have a pulmonary embolus. The senior doctor instructs the team to follow the correct diagnostic steps and requests the intern be removed from the case. The senior doctor recognizes Meredith as Ellis Gray's daughter and welcomes her."
+    },
+    {
+      "scene_number": 37,
+      "plot_segment": "Dr. Shepherd gathers the surgical team and declares it a 'beautiful night to save lives.' He encourages the team to have fun. Meredith narrates about the challenges of being a surgeon and the reasons to quit, but concludes that she loves the work."
+    },
+    {
+      "scene_number": 38,
+      "plot_segment": "In a break area, Meredith and Christina agree not to have an emotional conversation. Christina tells Meredith to get some sleep, and they exchange banter about who looks worse."
+    },
+    {
+      "scene_number": 39,
+      "plot_segment": "After surgery, an intern expresses amazement at the experience, describing it as a high better than drugs. Another intern agrees. One says they should go do something, and the other encourages them. They part ways, saying 'see you around.'"
+    },
+    {
+      "scene_number": 40,
+      "plot_segment": "Meredith narrates that she and the other interns survived their first shift. She reflects that the other interns are good people and decides not to sell her mother's house, planning to get roommates instead."
+    },
+    {
+      "scene_number": 41,
+      "plot_segment": "Meredith visits her mother, who is in a care facility and does not recognize her. Meredith introduces herself. Her mother, Ellis, vaguely recalls being a doctor. Meredith confirms that her mother was a surgeon."
     }
   ]
 }

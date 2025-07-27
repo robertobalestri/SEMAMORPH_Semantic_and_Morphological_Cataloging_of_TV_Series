@@ -18,7 +18,7 @@ class SpeakerCharacterValidator:
     def __init__(self, series: str, llm: AzureChatOpenAI):
         self.series = series
         self.llm = llm
-        self.speaker_character_service = SpeakerCharacterService(series)
+        self.speaker_character_service = SpeakerCharacterService()
         
     def validate_and_process_speakers(
         self, 
@@ -40,7 +40,7 @@ class SpeakerCharacterValidator:
         logger.info(f"🔍 Validating {len(proposed_speakers)} proposed speakers against database")
         
         # Get existing characters from database as plain data (no session dependencies)
-        existing_characters = self.speaker_character_service.get_all_characters_as_data()
+        existing_characters = self.speaker_character_service.get_all_characters_as_data(self.series)
         
         # Build mapping using the plain data
         appellation_to_character = self.speaker_character_service.build_appellation_mapping(existing_characters)
@@ -100,7 +100,7 @@ class SpeakerCharacterValidator:
                         
                         # Add this speaker as a new appellation to the existing character
                         success = self.speaker_character_service.add_appellation_to_character(
-                            target_character['entity_name'], speaker
+                            target_character['entity_name'], speaker, self.series
                         )
                         if success:
                             logger.info(f"🔗 Associated {speaker} with existing character {target_character['best_appellation']}")
@@ -127,7 +127,7 @@ class SpeakerCharacterValidator:
         
         # Create new characters in database
         if new_characters_to_create:
-            success = self.speaker_character_service.create_new_characters(new_characters_to_create)
+            success = self.speaker_character_service.create_new_characters(new_characters_to_create, self.series)
             if not success:
                 logger.warning("⚠️ Some new characters failed to be created")
         

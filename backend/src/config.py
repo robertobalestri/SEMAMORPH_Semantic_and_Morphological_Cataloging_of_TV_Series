@@ -9,7 +9,9 @@ import configparser
 import os
 from pathlib import Path
 from typing import Any, Optional
+from dotenv import load_dotenv
 
+load_dotenv(override=True)
 
 class Config:
     """Configuration manager for SEMAMORPH project."""
@@ -358,6 +360,47 @@ class Config:
         """Enable detailed logging of sex validation decisions."""
         return self.get_bool('sex_validation', 'enable_sex_validation_logging', fallback=True)
 
+    # Diarization configuration properties
+    @property
+    def diarization_min_speakers(self) -> int:
+        """Minimum number of speakers to detect in diarization."""
+        return self.get_int('diarization', 'min_speakers', fallback=2)
+    
+    @property
+    def diarization_max_speakers(self) -> int:
+        """Maximum number of speakers to detect in diarization."""
+        return self.get_int('diarization', 'max_speakers', fallback=10)
+    
+    @property
+    def diarization_min_duration_on(self) -> float:
+        """Minimum duration for a speaker turn in seconds."""
+        return self.get_float('diarization', 'min_duration_on', fallback=0.3)
+    
+    @property
+    def diarization_min_duration_off(self) -> float:
+        """Minimum duration of silence between speakers in seconds."""
+        return self.get_float('diarization', 'min_duration_off', fallback=0.05)
+    
+    @property
+    def diarization_onset(self) -> float:
+        """Onset threshold for speaker change detection (0.0-1.0)."""
+        return self.get_float('diarization', 'onset', fallback=0.3)
+    
+    @property
+    def diarization_offset(self) -> float:
+        """Offset threshold for speaker change detection (0.0-1.0)."""
+        return self.get_float('diarization', 'offset', fallback=0.3)
+    
+    @property
+    def diarization_min_duration(self) -> float:
+        """Minimum duration for any segment in seconds."""
+        return self.get_float('diarization', 'min_duration', fallback=0.1)
+    
+    @property
+    def diarization_threshold(self) -> float:
+        """Clustering threshold for diarization (0.0-1.0)."""
+        return self.get_float('diarization', 'threshold', fallback=0.4)
+
     # Character median comparison thresholds
     @property
     def character_median_similarity_threshold(self) -> float:
@@ -368,6 +411,87 @@ class Config:
     def character_median_assignment_threshold(self) -> float:
         """Minimum similarity threshold for direct character median assignment."""
         return self.get_float('character_median_matching', 'assignment_threshold', fallback=0.70)
+
+    # Speaker identification pipeline properties
+    @property
+    def speaker_identification_mode(self) -> str:
+        """Pipeline mode: audio_only, face_only, complete."""
+        return self.get_str('speaker_identification', 'mode', fallback='complete')
+    
+    @property
+    def audio_enabled(self) -> bool:
+        """Enable audio processing for speaker identification."""
+        return self.get_bool('speaker_identification', 'audio_enabled', fallback=True)
+    
+    @property
+    def face_enabled(self) -> bool:
+        """Enable face processing for speaker identification."""
+        return self.get_bool('speaker_identification', 'face_enabled', fallback=True)
+    
+    @property
+    def character_mapping_enabled(self) -> bool:
+        """Enable character mapping for speaker identification."""
+        return self.get_bool('speaker_identification', 'character_mapping_enabled', fallback=True)
+    
+    @property
+    def audio_confidence_threshold(self) -> float:
+        """Confidence threshold for audio-based speaker assignments."""
+        return self.get_float('audio', 'confidence_threshold', fallback=0.8)
+    
+    @property
+    def whisperx_auth_token(self) -> str:
+        """HuggingFace authentication token for WhisperX."""
+        return self.get_str('audio', 'auth_token', fallback='')
+    
+    @property
+    def whisperx_model(self) -> str:
+        """WhisperX model name for speaker diarization."""
+        return self.get_str('audio', 'model', fallback='large-v2')
+    
+    @property
+    def whisperx_device(self) -> str:
+        """Device to use for WhisperX transcription (cuda, cpu)."""
+        return self.get_str('audio', 'device', fallback='cuda')
+    
+    @property
+    def whisperx_batch_size(self) -> int:
+        """Batch size for WhisperX transcription."""
+        return self.get_int('audio', 'batch_size', fallback=16)
+    
+    @property
+    def whisperx_compute_type(self) -> str:
+        """Compute type for WhisperX CUDA operations."""
+        return self.get_str('audio', 'compute_type', fallback='float16')
+    
+    @property
+    def whisperx_language(self) -> str:
+        """Language code for WhisperX transcription."""
+        return self.get_str('audio', 'language', fallback='en')
+    
+    @property
+    def whisperx_enable_speaker_diarization(self) -> bool:
+        """Whether to enable speaker diarization in WhisperX."""
+        return self.get_bool('audio', 'enable_speaker_diarization', fallback=True)
+    
+    @property
+    def whisperx_min_speakers(self) -> int:
+        """Minimum number of speakers for WhisperX diarization."""
+        return self.get_int('audio', 'min_speakers', fallback=1)
+    
+    @property
+    def whisperx_max_speakers(self) -> int:
+        """Maximum number of speakers for WhisperX diarization (0 for auto-detect)."""
+        return self.get_int('audio', 'max_speakers', fallback=0)
+    
+    @property
+    def whisperx_return_char_alignments(self) -> bool:
+        """Whether to return character-level alignments in WhisperX."""
+        return self.get_bool('audio', 'return_char_alignments', fallback=False)
+    
+    @property
+    def whisperx_enable_debug_output(self) -> bool:
+        """Whether to enable debug output for WhisperX transcription."""
+        return self.get_bool('audio', 'enable_debug_output', fallback=False)
 
 
 # Global configuration instance

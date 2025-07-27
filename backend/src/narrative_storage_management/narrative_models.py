@@ -18,7 +18,8 @@ class DialogueLine:
         self.start_time = start_time
         self.end_time = end_time
         self.text = text
-        self.speaker: Optional[str] = None  # Final speaker name (after all processing)
+        self.speaker: Optional[str] = None  # Final speaker name (after all processing) - kept for backward compatibility
+        self.characters: Optional[List[str]] = None  # List of character names (multiple speakers)
         self.is_llm_confident: Optional[bool] = None  # Boolean confidence from LLM
         self.scene_number: Optional[int] = None
         self.face_image_paths: Optional[List[str]] = None
@@ -36,6 +37,7 @@ class DialogueLine:
         self.all_candidate_speakers: Optional[List[str]] = None  # All speaker candidates from faces
         self.all_face_similarities: Optional[List[float]] = None  # All similarities 
         self.all_face_cluster_ids: Optional[List[int]] = None  # All cluster IDs
+        self.audio_cluster_assignments: Optional[List[Dict]] = None # New field for audio cluster assignments (N-to-N)
     
     def to_dict(self) -> dict:
         """Convert to dictionary for JSON serialization."""
@@ -45,6 +47,7 @@ class DialogueLine:
             "end_time": self.end_time,
             "text": self.text,
             "speaker": self.speaker,
+            "characters": self.characters,
             "is_llm_confident": self.is_llm_confident,
             "scene_number": self.scene_number,
             "face_image_paths": self.face_image_paths,
@@ -57,7 +60,8 @@ class DialogueLine:
             "face_cluster_ids": self.face_cluster_ids,
             "all_candidate_speakers": self.all_candidate_speakers,
             "all_face_similarities": self.all_face_similarities,
-            "all_face_cluster_ids": self.all_face_cluster_ids
+            "all_face_cluster_ids": self.all_face_cluster_ids,
+            "audio_cluster_assignments": self.audio_cluster_assignments
         }
     
     @classmethod
@@ -65,6 +69,7 @@ class DialogueLine:
         """Create from dictionary."""
         line = cls(data["index"], data["start_time"], data["end_time"], data["text"])
         line.speaker = data.get("speaker")
+        line.characters = data.get("characters")
         line.is_llm_confident = data.get("is_llm_confident")
         line.scene_number = data.get("scene_number")
         line.face_image_paths = data.get("face_image_paths")
@@ -78,6 +83,7 @@ class DialogueLine:
         line.all_candidate_speakers = data.get("all_candidate_speakers")
         line.all_face_similarities = data.get("all_face_similarities")
         line.all_face_cluster_ids = data.get("all_face_cluster_ids")
+        line.audio_cluster_assignments = data.get("audio_cluster_assignments")
         return line
 
 class ArcMainCharacterLink(SQLModel, table=True):

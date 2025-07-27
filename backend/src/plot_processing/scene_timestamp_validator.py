@@ -12,7 +12,8 @@ from ..utils.logger_utils import setup_logging
 from ..ai_models.ai_models import AzureChatOpenAI
 from langchain_core.messages import HumanMessage
 from ..utils.llm_utils import clean_llm_json_response
-from .subtitle_processing import SubtitleEntry, PlotScene, parse_srt_file
+from .subtitle_processing import PlotScene
+from ..utils.subtitle_utils import SubtitleEntry, parse_srt_file
 
 logger = setup_logging(__name__)
 

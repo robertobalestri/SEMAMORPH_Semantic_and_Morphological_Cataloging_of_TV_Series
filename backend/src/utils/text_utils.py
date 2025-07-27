@@ -2,7 +2,7 @@ import json
 import re
 import os
 from typing import List
-from nltk.tokenize import sent_tokenize
+import nltk
 from functools import lru_cache
 from difflib import SequenceMatcher
 from typing import Dict
@@ -60,7 +60,8 @@ def split_into_sentences(text: str) -> List[str]:
     Returns:
         List[str]: A list of sentences.
     """
-    return sent_tokenize(text)
+    nltk.download('punkt_tab')
+    return nltk.sent_tokenize(text)
 
 def remove_duplicates(sentences):
     """

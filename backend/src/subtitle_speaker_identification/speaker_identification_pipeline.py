@@ -10,7 +10,8 @@ from typing import List, Optional, Dict
 from pathlib import Path
 
 from ..path_handler import PathHandler
-from ..plot_processing.subtitle_processing import load_previous_season_summary, map_scene_to_timestamps, map_scenes_to_timestamps_with_boundary_correction, SubtitleEntry, PlotScene
+from ..utils.subtitle_utils import SubtitleEntry
+from ..plot_processing.subtitle_processing import load_previous_season_summary, map_scene_to_timestamps, map_scenes_to_timestamps_with_boundary_correction, PlotScene
 from ..ai_models.ai_models import get_llm, LLMType
 from ..narrative_storage_management.repositories import DatabaseSessionManager, CharacterRepository
 from ..narrative_storage_management.character_service import CharacterService

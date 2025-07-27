@@ -8,6 +8,9 @@ Run this instead of api_main.py to eliminate subprocess overhead.
 import sys
 from pathlib import Path
 import os
+from dotenv import load_dotenv
+
+load_dotenv(override=True) # Load environment variables from .env file
 
 # Add the backend directory to Python path to ensure imports work correctly
 backend_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'backend')
@@ -47,7 +50,6 @@ from backend.src.plot_processing.plot_ner_entity_extraction import (
     normalize_entities_names_to_best_appellation
 )
 from backend.src.plot_processing.subtitle_processing import (
-    parse_srt_file, 
     generate_plot_from_subtitles, 
     save_plot_files,
     load_previous_season_summary,
@@ -55,6 +57,7 @@ from backend.src.plot_processing.subtitle_processing import (
     save_scene_timestamps,
     PlotScene
 )
+from backend.src.utils.subtitle_utils import parse_srt_file
 from backend.src.plot_processing.scene_timestamp_validator import (
     validate_and_fix_scene_timestamps,
     get_scene_coverage_report
@@ -71,6 +74,9 @@ from backend.src.ai_models.ai_models import get_llm, LLMType
 from backend.src.subtitle_speaker_identification import run_speaker_identification_pipeline
 from backend.src.config import config
 
+# TRANSCRIPTION WORKFLOW IMPORTS
+from backend.src.subtitle_speaker_identification.transcription_workflow import TranscriptionWorkflow
+
 # DIRECT PROCESSING FUNCTION (replaces subprocess)
 async def process_episode_directly(series: str, season: str, episode: str, include_speaker_identification: bool = True) -> str:
     """
@@ -84,13 +90,49 @@ async def process_episode_directly(series: str, season: str, episode: str, inclu
         llm_intelligent = get_llm(LLMType.INTELLIGENT)
         llm_cheap = get_llm(LLMType.CHEAP)
         
+        # Step 0: Handle transcription and alignment if SRT doesn't exist
+        srt_path = path_handler.get_srt_file_path()
+        if not os.path.exists(srt_path):
+            logger.info("🎤 SRT file not found, starting transcription and alignment workflow")
+            try:
+                # Initialize transcription workflow with path handler
+                transcription_workflow = TranscriptionWorkflow(
+                    series=series,
+                    season=season,
+                    episode=episode,
+                    base_dir="data",
+                    path_handler=path_handler
+                )
+                
+                # Check prerequisites
+                prerequisites = transcription_workflow.check_prerequisites()
+                if not prerequisites['checks']['audio_or_video_available']:
+                    raise Exception(f"Neither audio file nor video file found for extraction: {path_handler.get_audio_file_path()}")
+                
+                if not prerequisites['checks']['whisperx_available']:
+                    raise Exception("WhisperX not available. Please install WhisperX first.")
+                
+                # Run transcription and alignment
+                logger.info("🎤 Running transcription and alignment...")
+                result = transcription_workflow.run_transcription_and_alignment(
+                    language=config.whisperx_language,
+                    model_size=config.whisperx_model,
+                    compute_type=config.whisperx_compute_type,
+                    force_regenerate=False
+                )
+                
+                if result['status'] == 'success':
+                    logger.info(f"✅ Transcription completed: {result['transcription_lines']} lines, {result['alignment_accuracy']:.1f}% accuracy")
+                else:
+                    raise Exception(f"Transcription failed: {result.get('error', 'Unknown error')}")
+                    
+            except Exception as e:
+                logger.error(f"❌ Transcription workflow failed: {e}")
+                raise Exception(f"Failed to generate SRT file: {e}")
+        
         # Step 1: Generate plot from SRT if needed
         raw_plot_path = path_handler.get_raw_plot_file_path()
         if not os.path.exists(raw_plot_path):
-            srt_path = path_handler.get_srt_file_path()
-            if not os.path.exists(srt_path):
-                raise Exception(f"SRT file not found: {srt_path}")
-            
             logger.info("📝 Generating plot from SRT")
             subtitles = parse_srt_file(srt_path)
             season_summary_path = path_handler.get_season_summary_path()
@@ -109,7 +151,10 @@ async def process_episode_directly(series: str, season: str, episode: str, inclu
                 # Load or parse SRT and plot data
                 srt_path = path_handler.get_srt_file_path()
                 if not os.path.exists(srt_path):
-                    raise Exception(f"SRT file not found: {srt_path}")
+                    logger.warning(f"SRT file still not found after transcription step: {srt_path}")
+                    # Skip this step if SRT is not available
+                    logger.info("⏭️ Skipping scene timestamp mapping due to missing SRT")
+                    raise Exception(f"SRT file not available for scene timestamp mapping: {srt_path}")
                 
                 subtitles = parse_srt_file(srt_path)
                 
@@ -283,6 +328,7 @@ app.add_middleware(
     max_age=3600,
 )
 
+# Determine the project root directory dynamically
 db_manager = DatabaseSessionManager()
 
 
@@ -916,6 +962,35 @@ async def run_speaker_identification(request: SpeakerIdentificationRequest):
         start_time = time.time()
         
         logger.info(f"🎭 Starting speaker identification for {request.series}{request.season}{request.episode}")
+        logger.info(f"📋 Request parameters: force_regenerate={request.force_regenerate}, face_similarity_threshold={request.face_similarity_threshold}, embedding_model={request.embedding_model}, face_detector={request.face_detector}")
+        
+        # Import and check configuration
+        from backend.src.config import config
+        logger.info(f"🔧 Current speaker identification mode: {config.speaker_identification_mode}")
+        logger.info(f"🔧 Audio enabled: {config.audio_enabled}")
+        logger.info(f"🔧 Face enabled: {config.face_enabled}")
+        logger.info(f"🔧 Character mapping enabled: {config.character_mapping_enabled}")
+        
+        # Check if required files exist
+        from backend.src.path_handler import PathHandler
+        path_handler = PathHandler(request.series, request.season, request.episode)
+        
+        # Check for video file
+        video_path = path_handler.get_video_file_path()
+        logger.info(f"🎬 Video file path: {video_path}")
+        logger.info(f"🎬 Video file exists: {os.path.exists(video_path) if video_path else False}")
+        
+        # Check for SRT file
+        srt_path = path_handler.get_srt_file_path()
+        logger.info(f"📝 SRT file path: {srt_path}")
+        logger.info(f"📝 SRT file exists: {os.path.exists(srt_path) if srt_path else False}")
+        
+        # Check for dialogue file
+        dialogue_path = path_handler.get_dialogue_json_path()
+        logger.info(f"💬 Dialogue file path: {dialogue_path}")
+        logger.info(f"💬 Dialogue file exists: {os.path.exists(dialogue_path) if dialogue_path else False}")
+        
+        logger.info("🚀 About to call run_speaker_identification_pipeline...")
         
         # Run the speaker identification pipeline
         results = run_speaker_identification_pipeline(
@@ -929,11 +1004,18 @@ async def run_speaker_identification(request: SpeakerIdentificationRequest):
             face_detector=request.face_detector
         )
         
+        logger.info(f"✅ Pipeline completed. Results type: {type(results)}")
+        logger.info(f"✅ Results keys: {list(results.keys()) if isinstance(results, dict) else 'Not a dict'}")
+        
         processing_time = time.time() - start_time
+        logger.info(f"⏱️ Total processing time: {processing_time:.2f} seconds")
         
         # Extract relevant stats
         overall_stats = results.get('overall_stats', {})
         pipeline_steps = results.get('pipeline_steps', {})
+        
+        logger.info(f"📊 Overall stats: {overall_stats}")
+        logger.info(f"📊 Pipeline steps: {list(pipeline_steps.keys()) if isinstance(pipeline_steps, dict) else 'Not a dict'}")
         
         # Check for errors
         failed_steps = [step for step, data in pipeline_steps.items() 
@@ -941,6 +1023,7 @@ async def run_speaker_identification(request: SpeakerIdentificationRequest):
         
         if failed_steps:
             error_msg = f"Failed steps: {', '.join(failed_steps)}"
+            logger.error(f"❌ Pipeline failed steps: {failed_steps}")
             return SpeakerIdentificationResponse(
                 episode_code=results.get('episode_code', f"{request.series}{request.season}{request.episode}"),
                 status="failed",
@@ -953,6 +1036,7 @@ async def run_speaker_identification(request: SpeakerIdentificationRequest):
                 error_message=error_msg
             )
         
+        logger.info("🎉 Pipeline completed successfully!")
         return SpeakerIdentificationResponse(
             episode_code=results.get('episode_code', f"{request.series}{request.season}{request.episode}"),
             status="success",
@@ -966,6 +1050,10 @@ async def run_speaker_identification(request: SpeakerIdentificationRequest):
         
     except Exception as e:
         logger.error(f"❌ Speaker identification failed: {e}")
+        logger.error(f"❌ Exception type: {type(e)}")
+        logger.error(f"❌ Exception args: {e.args}")
+        import traceback
+        logger.error(f"❌ Full traceback: {traceback.format_exc()}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/api/speaker-identification/dialogue/{series}/{season}/{episode}", response_model=List[DialogueLineResponse])
@@ -1010,9 +1098,13 @@ async def get_dialogue_with_speakers(series: str, season: str, episode: str):
 
 @app.get("/api/speaker-identification/faces/{series}/{season}/{episode}", response_model=List[FaceDataResponse])
 async def get_face_data(series: str, season: str, episode: str):
-    """Get face detection data for an episode."""
+    """Get face data for an episode."""
     try:
-        import pandas as pd
+        from backend.src.config import config
+        
+        # Check if we're in audio_only mode
+        if config.speaker_identification_mode == "audio_only":
+            return []
         
         path_handler = PathHandler(series, season, episode)
         faces_csv_path = path_handler.get_dialogue_faces_csv_path()
@@ -1021,21 +1113,27 @@ async def get_face_data(series: str, season: str, episode: str):
             raise HTTPException(status_code=404, detail="Face data not found. Run speaker identification first.")
         
         # Load face data
+        import pandas as pd
         df_faces = pd.read_csv(faces_csv_path)
         
-        return [
-            FaceDataResponse(
-                dialogue_index=int(row['dialogue_index']),
-                face_index=int(row['face_index']),
-                timestamp_seconds=float(row['timestamp_seconds']),
-                speaker=row.get('speaker') if pd.notna(row.get('speaker')) else None,
-                speaker_confidence=float(row['speaker_confidence']) if pd.notna(row.get('speaker_confidence')) else None,
-                detection_confidence=float(row['detection_confidence']),
-                blur_score=float(row['blur_score']),
-                image_path=str(row['image_path'])
-            )
-            for _, row in df_faces.iterrows()
-        ]
+        if df_faces.empty:
+            return []
+        
+        # Convert to response format
+        face_data = []
+        for _, row in df_faces.iterrows():
+            face_data.append(FaceDataResponse(
+                dialogue_index=row.get('dialogue_index', 0),
+                face_index=row.get('face_index', 0),
+                timestamp_seconds=row.get('timestamp_seconds', 0.0),
+                speaker=row.get('speaker'),
+                speaker_confidence=row.get('speaker_confidence'),
+                detection_confidence=row.get('detection_confidence', 0.0),
+                blur_score=row.get('blur_score', 0.0),
+                image_path=row.get('image_path', '')
+            ))
+        
+        return face_data
         
     except Exception as e:
         logger.error(f"❌ Error getting face data: {e}")
@@ -1045,81 +1143,66 @@ async def get_face_data(series: str, season: str, episode: str):
 async def get_speaker_stats(series: str, season: str, episode: str):
     """Get speaker identification statistics for an episode."""
     try:
-        import pandas as pd
-        from collections import Counter
+        from backend.src.config import config
         
         path_handler = PathHandler(series, season, episode)
-        episode_code = f"{series}{season}{episode}"
-        
-        # Load dialogue data
         dialogue_json_path = path_handler.get_dialogue_json_path().replace('.json', '_final.json')
+        
+        # Check if final dialogue file exists
         if not os.path.exists(dialogue_json_path):
+            # Fall back to regular dialogue file
             dialogue_json_path = path_handler.get_dialogue_json_path()
             
         if not os.path.exists(dialogue_json_path):
-            raise HTTPException(status_code=404, detail="Dialogue data not found")
+            raise HTTPException(status_code=404, detail="Dialogue data not found. Run speaker identification first.")
         
+        # Load dialogue data
         with open(dialogue_json_path, 'r', encoding='utf-8') as f:
             dialogue_data = json.load(f)
         
         dialogue_lines = dialogue_data.get('dialogue_lines', [])
         
-        # Calculate statistics
-        total_lines = len(dialogue_lines)
-        speakers_found = list(set(
-            line.get('speaker') for line in dialogue_lines 
-            if line.get('speaker') and line.get('speaker_confidence', 0) >= 50
-        ))
+        if not dialogue_lines:
+            raise HTTPException(status_code=404, detail="No dialogue lines found")
         
-        # Confidence distribution
-        confidence_ranges = {
-            "95-100%": 0,
-            "90-95%": 0, 
-            "80-90%": 0,
-            "50-80%": 0,
-            "0-50%": 0,
-            "No speaker": 0
-        }
+        # Calculate basic statistics
+        total_dialogue_lines = len(dialogue_lines)
+        speakers_found = list(set([line.get('speaker') for line in dialogue_lines if line.get('speaker')]))
+        
+        # Calculate confidence distribution
+        confidence_distribution = {}
+        confident_dialogue = 0
         
         for line in dialogue_lines:
-            conf = line.get('speaker_confidence', 0)
-            if conf >= 95:
-                confidence_ranges["95-100%"] += 1
-            elif conf >= 90:
-                confidence_ranges["90-95%"] += 1
-            elif conf >= 80:
-                confidence_ranges["80-90%"] += 1
-            elif conf >= 50:
-                confidence_ranges["50-80%"] += 1
-            elif conf > 0:
-                confidence_ranges["0-50%"] += 1
-            else:
-                confidence_ranges["No speaker"] += 1
+            is_confident = line.get('is_llm_confident', False)
+            if is_confident:
+                confident_dialogue += 1
         
-        # Face cluster stats
+        # Calculate confidence rate
+        final_confidence_rate = (confident_dialogue / total_dialogue_lines * 100) if total_dialogue_lines > 0 else 0.0
+        
+        # Face cluster stats (only for non-audio_only modes)
         face_cluster_stats = {}
-        faces_csv_path = path_handler.get_dialogue_faces_csv_path()
-        if os.path.exists(faces_csv_path):
-            df_faces = pd.read_csv(faces_csv_path)
-            for speaker in speakers_found:
-                speaker_faces = df_faces[
-                    (df_faces['speaker'] == speaker) & 
-                    (df_faces['is_llm_confident'] == True)
-                ]
-                face_cluster_stats[speaker] = len(speaker_faces)
+        total_faces_extracted = 0
         
-        total_faces = 0
-        faces_csv_path = path_handler.get_dialogue_faces_csv_path()
-        if os.path.exists(faces_csv_path):
-            df_faces = pd.read_csv(faces_csv_path)
-            total_faces = len(df_faces)
+        if config.speaker_identification_mode != "audio_only":
+            faces_csv_path = path_handler.get_dialogue_faces_csv_path()
+            if os.path.exists(faces_csv_path):
+                import pandas as pd
+                df_faces = pd.read_csv(faces_csv_path)
+                total_faces_extracted = len(df_faces)
+                
+                # Calculate face cluster stats
+                if not df_faces.empty and 'speaker' in df_faces.columns:
+                    speaker_counts = df_faces['speaker'].value_counts()
+                    face_cluster_stats = speaker_counts.to_dict()
         
         return SpeakerStatsResponse(
-            episode_code=episode_code,
-            total_dialogue_lines=total_lines,
-            total_faces_extracted=total_faces,
+            episode_code=f"{series}{season}{episode}",
+            total_dialogue_lines=total_dialogue_lines,
+            total_faces_extracted=total_faces_extracted,
             speakers_found=speakers_found,
-            confidence_distribution=confidence_ranges,
+            confidence_distribution={"confident": confident_dialogue, "uncertain": total_dialogue_lines - confident_dialogue},
             face_cluster_stats=face_cluster_stats
         )
         
@@ -1188,19 +1271,32 @@ async def delete_speaker_data(series: str, season: str, episode: str):
 
 @app.get("/api/speaker-identification/vector-store/stats")
 async def get_face_vector_store_stats():
-    """Get statistics about the face embeddings vector store."""
+    """Get face vector store statistics."""
     try:
+        from backend.src.config import config
+        
+        # Check if we're in audio_only mode
+        if config.speaker_identification_mode == "audio_only":
+            return {
+                "mode": "audio_only",
+                "message": "Face vector store not available in audio_only mode",
+                "total_embeddings": 0,
+                "series_count": 0,
+                "episode_count": 0
+            }
+        
         from backend.src.narrative_storage_management.vector_store_service import FaceEmbeddingVectorStore
         
         face_vector_store = FaceEmbeddingVectorStore()
-        stats = face_vector_store.get_collection_stats()
+        stats = face_vector_store.get_statistics()
         
         return {
-            "total_faces": stats.get('total_faces', 0),
-            "episodes_processed": stats.get('episodes', 0),
-            "speakers_identified": stats.get('speakers', 0),
-            "high_confidence_faces": stats.get('high_confidence_faces', 0),
-            "confidence_rate": round(stats.get('confidence_rate', 0.0), 2)
+            "mode": config.speaker_identification_mode,
+            "total_embeddings": stats.get('total_embeddings', 0),
+            "series_count": stats.get('series_count', 0),
+            "episode_count": stats.get('episode_count', 0),
+            "embedding_model": stats.get('embedding_model', 'Unknown'),
+            "collection_name": stats.get('collection_name', 'Unknown')
         }
         
     except Exception as e:
@@ -1211,59 +1307,66 @@ async def get_face_vector_store_stats():
 
 @app.post("/api/face-processing/visualizations")
 async def generate_cluster_visualizations(request: FaceExtractionRequest):
-    """Generate 2D PCA cluster visualizations for face embeddings."""
-    episode_code = f"{request.series}{request.season}{request.episode}"
-    
-    logger.info(f"📊 Generating cluster visualizations for {episode_code}")
-    
+    """Generate cluster visualizations for an episode."""
     try:
-        # Initialize components
-        path_handler = PathHandler(request.series, request.season, request.episode)
+        from backend.src.config import config
         
-        # Check if face embeddings exist
-        faces_csv_path = path_handler.get_dialogue_faces_csv_path()
-        if not os.path.exists(faces_csv_path):
-            raise HTTPException(status_code=404, detail="Face data not found. Run face extraction first.")
+        # Check if we're in audio_only mode
+        if config.speaker_identification_mode == "audio_only":
+            return {
+                "episode_code": f"{request.series}{request.season}{request.episode}",
+                "status": "skipped",
+                "message": "Face visualizations skipped in audio_only mode",
+                "mode": "audio_only"
+            }
         
-        # Load face data
-        df_faces = pd.read_csv(faces_csv_path)
-        if df_faces.empty:
-            raise HTTPException(status_code=404, detail="No face data available")
-        
-        # Check if embeddings exist in vector store
-        from backend.src.narrative_storage_management.vector_store_service import FaceEmbeddingVectorStore
-        face_vector_store = FaceEmbeddingVectorStore()
-        
-        # Load embeddings from vector store (simplified approach)
-        # For visualization, we need the embeddings as numpy arrays
-        # This would need to be implemented in the vector store service
-        
-        # Generate visualizations
         from backend.src.subtitle_speaker_identification.face_cluster_visualizer import FaceClusterVisualizer
         
+        path_handler = PathHandler(request.series, request.season, request.episode)
         visualizer = FaceClusterVisualizer(path_handler)
-        viz_paths = visualizer.create_cluster_visualizations(
-            df_faces=df_faces,
-            output_format=request.detector if hasattr(request, 'output_format') else "both",
-            save_plots=True
-        )
+        
+        # Get existing visualization files
+        viz_files = visualizer.get_visualization_urls()
+        
+        if not viz_files:
+            raise HTTPException(status_code=404, detail="No visualizations found. Run speaker identification first.")
+        
+        # Convert absolute paths to relative paths for API response
+        relative_paths = {}
+        for viz_type, file_path in viz_files.items():
+            # Make path relative to data directory for serving
+            if os.path.exists(file_path):
+                relative_path = os.path.relpath(file_path, "data")
+                relative_paths[viz_type] = f"/data/{relative_path}"
         
         return {
-            "episode_code": episode_code,
-            "status": "success",
-            "visualizations_generated": len(viz_paths),
-            "visualization_paths": viz_paths
+            "episode_code": f"{request.series}{request.season}{request.episode}",
+            "visualizations": relative_paths,
+            "total_files": len(relative_paths),
+            "mode": config.speaker_identification_mode
         }
         
     except Exception as e:
-        logger.error(f"❌ Cluster visualization generation failed: {e}")
-        raise HTTPException(status_code=500, detail=f"Visualization generation failed: {str(e)}")
+        logger.error(f"❌ Error getting visualizations: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 @app.get("/api/speaker-identification/visualizations/{series}/{season}/{episode}")
 async def get_cluster_visualizations(series: str, season: str, episode: str):
     """Get cluster visualization file paths for an episode."""
     try:
+        from backend.src.config import config
+        
+        # Check if we're in audio_only mode
+        if config.speaker_identification_mode == "audio_only":
+            return {
+                "episode_code": f"{series}{season}{episode}",
+                "visualization_directory": None,
+                "visualizations": [],
+                "mode": "audio_only",
+                "message": "No face visualizations available in audio_only mode"
+            }
+        
         path_handler = PathHandler(series, season, episode)
         viz_dir = path_handler.get_cluster_visualization_dir()
         
@@ -1282,7 +1385,8 @@ async def get_cluster_visualizations(series: str, season: str, episode: str):
         return {
             "episode_code": f"{series}{season}{episode}",
             "visualization_directory": viz_dir,
-            "visualizations": viz_files
+            "visualizations": viz_files,
+            "mode": config.speaker_identification_mode
         }
         
     except Exception as e:
@@ -1297,6 +1401,18 @@ async def get_cluster_visualizations(series: str, season: str, episode: str):
 async def generate_face_embeddings(request: FaceEmbeddingRequest):
     """Generate embeddings for extracted faces."""
     try:
+        from backend.src.config import config
+        
+        # Check if we're in audio_only mode
+        if config.speaker_identification_mode == "audio_only":
+            return FaceProcessingResponse(
+                episode_code=f"{request.series}{request.season}{request.episode}",
+                status="skipped",
+                faces_extracted=0,
+                embeddings_generated=0,
+                error_message="Face processing skipped in audio_only mode"
+            )
+        
         import time
         import pandas as pd
         from backend.src.subtitle_speaker_identification.subtitle_face_embedder import SubtitleFaceEmbedder
@@ -1359,35 +1475,57 @@ async def generate_face_embeddings(request: FaceEmbeddingRequest):
 async def extract_faces_and_generate_embeddings(request: FaceExtractionRequest):
     """Complete face processing: extract faces and generate embeddings."""
     try:
+        from backend.src.config import config
+        
+        # Check if we're in audio_only mode
+        if config.speaker_identification_mode == "audio_only":
+            return FaceProcessingResponse(
+                episode_code=f"{request.series}{request.season}{request.episode}",
+                status="skipped",
+                faces_extracted=0,
+                embeddings_generated=0,
+                error_message="Face processing skipped in audio_only mode"
+            )
+        
         import time
         import pandas as pd
         from backend.src.subtitle_speaker_identification.subtitle_face_extractor import SubtitleFaceExtractor
         from backend.src.subtitle_speaker_identification.subtitle_face_embedder import SubtitleFaceEmbedder
-        from backend.src.subtitle_speaker_identification.srt_parser import SRTParser
         from backend.src.narrative_storage_management.vector_store_service import FaceEmbeddingVectorStore
         from backend.src.path_handler import PathHandler
         
         start_time = time.time()
         episode_code = f"{request.series}{request.season}{request.episode}"
         
-        logger.info(f"🎬 Starting complete face processing for {episode_code}")
+        logger.info(f"👤 Starting complete face processing for {episode_code}")
         
         # Initialize components
         path_handler = PathHandler(request.series, request.season, request.episode)
-        srt_parser = SRTParser()
         face_extractor = SubtitleFaceExtractor(path_handler)
         face_embedder = SubtitleFaceEmbedder(path_handler)
         face_vector_store = FaceEmbeddingVectorStore()
         
-        # Step 1: Parse SRT and extract faces
-        srt_path = path_handler.get_srt_file_path()
-        if not os.path.exists(srt_path):
-            raise HTTPException(status_code=404, detail=f"SRT file not found: {srt_path}")
+        # Step 1: Extract faces
+        logger.info("📸 Step 1: Extracting faces from video")
+        video_path = path_handler.get_video_file_path()
+        if not os.path.exists(video_path):
+            raise HTTPException(status_code=404, detail="Video file not found")
         
+        # Load dialogue data for face extraction
         dialogue_json_path = path_handler.get_dialogue_json_path()
-        dialogue_lines = srt_parser.parse(srt_path, dialogue_json_path)
+        if not os.path.exists(dialogue_json_path):
+            raise HTTPException(status_code=404, detail="Dialogue data not found. Run transcription first.")
         
-        df_faces = face_extractor.extract_faces_from_subtitles(
+        with open(dialogue_json_path, 'r', encoding='utf-8') as f:
+            dialogue_data = json.load(f)
+        
+        dialogue_lines = dialogue_data.get('dialogue_lines', [])
+        if not dialogue_lines:
+            raise HTTPException(status_code=400, detail="No dialogue lines found")
+        
+        # Extract faces
+        df_faces = face_extractor.extract_faces_from_video(
+            video_path=video_path,
             dialogue_lines=dialogue_lines,
             detector=request.detector,
             min_confidence=request.min_confidence,
@@ -1395,46 +1533,36 @@ async def extract_faces_and_generate_embeddings(request: FaceExtractionRequest):
             blur_threshold=request.blur_threshold,
             enable_eye_validation=request.enable_eye_validation,
             eye_alignment_threshold=request.eye_alignment_threshold,
-            eye_distance_threshold=request.eye_distance_threshold,
-            force_extract=request.force_extract
+            eye_distance_threshold=request.eye_distance_threshold
         )
         
-        faces_extracted = len(df_faces) if not df_faces.empty else 0
-        
-        # Step 2: Generate embeddings if faces were extracted
-        embeddings_generated = 0
-        if not df_faces.empty:
-            df_faces_with_embeddings = face_embedder.generate_embeddings(
-                df_faces=df_faces,
-                model="Facenet512",  # Default model for complete processing
-                force_regenerate=request.force_extract  # Use same force flag
+        if df_faces.empty:
+            logger.warning("⚠️ No faces extracted from video")
+            return FaceProcessingResponse(
+                episode_code=episode_code,
+                status="warning",
+                faces_extracted=0,
+                embeddings_generated=0,
+                error_message="No faces detected in video"
             )
-            
-            # Save to vector store
-            face_embedder.save_embeddings_to_vector_store(df_faces_with_embeddings, face_vector_store)
-            embeddings_generated = len(df_faces_with_embeddings) if not df_faces_with_embeddings.empty else 0
-            
-            # Step 3: Generate cluster visualizations with PCA
-            logger.info("📊 Generating face cluster visualizations...")
-            try:
-                from backend.src.subtitle_speaker_identification.face_cluster_visualizer import FaceClusterVisualizer
-                
-                visualizer = FaceClusterVisualizer(path_handler)
-                viz_paths = visualizer.create_cluster_visualizations(
-                    df_faces=df_faces_with_embeddings,
-                    output_format="both",  # Both matplotlib and plotly
-                    save_plots=True
-                )
-                
-                logger.info(f"✅ Generated {len(viz_paths)} cluster visualizations")
-                
-            except Exception as viz_error:
-                logger.warning(f"⚠️ Visualization generation failed: {viz_error}")
-                # Don't fail the entire pipeline for visualization errors
+        
+        # Step 2: Generate embeddings
+        logger.info("🧠 Step 2: Generating face embeddings")
+        df_faces_with_embeddings = face_embedder.generate_embeddings(
+            df_faces=df_faces,
+            model=request.embedding_model if hasattr(request, 'embedding_model') else "Facenet512",
+            force_regenerate=True
+        )
+        
+        # Step 3: Save to vector store
+        logger.info("💾 Step 3: Saving embeddings to vector store")
+        face_embedder.save_embeddings_to_vector_store(df_faces_with_embeddings, face_vector_store)
         
         processing_time = time.time() - start_time
+        faces_extracted = len(df_faces)
+        embeddings_generated = len(df_faces_with_embeddings) if not df_faces_with_embeddings.empty else 0
         
-        logger.info(f"✅ Complete face processing finished: {faces_extracted} faces, {embeddings_generated} embeddings in {processing_time:.1f}s")
+        logger.info(f"✅ Complete face processing completed: {faces_extracted} faces, {embeddings_generated} embeddings in {processing_time:.1f}s")
         
         return FaceProcessingResponse(
             episode_code=episode_code,
@@ -1453,35 +1581,6 @@ async def extract_faces_and_generate_embeddings(request: FaceExtractionRequest):
             embeddings_generated=0,
             error_message=str(e)
         )
-    try:
-        from backend.src.subtitle_speaker_identification.face_cluster_visualizer import FaceClusterVisualizer
-        
-        path_handler = PathHandler(series, season, episode)
-        visualizer = FaceClusterVisualizer(path_handler)
-        
-        # Get existing visualization files
-        viz_files = visualizer.get_visualization_urls()
-        
-        if not viz_files:
-            raise HTTPException(status_code=404, detail="No visualizations found. Run speaker identification first.")
-        
-        # Convert absolute paths to relative paths for API response
-        relative_paths = {}
-        for viz_type, file_path in viz_files.items():
-            # Make path relative to data directory for serving
-            if os.path.exists(file_path):
-                relative_path = os.path.relpath(file_path, "data")
-                relative_paths[viz_type] = f"/data/{relative_path}"
-        
-        return {
-            "episode_code": f"{series}{season}{episode}",
-            "visualizations": relative_paths,
-            "total_files": len(relative_paths)
-        }
-        
-    except Exception as e:
-        logger.error(f"❌ Error getting visualizations: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
 
 # MISSING CHARACTER ENDPOINTS
 @app.get("/api/characters/{series}", response_model=List[CharacterResponse])

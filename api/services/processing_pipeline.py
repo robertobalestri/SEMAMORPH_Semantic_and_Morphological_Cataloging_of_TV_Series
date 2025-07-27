@@ -17,7 +17,6 @@ from backend.src.path_handler import PathHandler
 from backend.src.ai_models.ai_models import get_llm, LLMType
 from backend.src.plot_processing.plot_processing_models import EntityLink, EntityLinkEncoder
 from backend.src.plot_processing.subtitle_processing import (
-    parse_srt_file, 
     generate_plot_from_subtitles, 
     map_scene_to_timestamps, 
     map_scenes_to_timestamps_with_boundary_correction,
@@ -26,6 +25,7 @@ from backend.src.plot_processing.subtitle_processing import (
     load_previous_season_summary,
     PlotScene
 )
+from backend.src.utils.subtitle_utils import parse_srt_file
 from backend.src.plot_processing.plot_summarizing import create_or_update_season_summary
 from backend.src.utils.text_utils import load_text
 from backend.src.plot_processing.plot_text_processing import replace_pronouns_with_names
@@ -114,6 +114,15 @@ class ProcessingPipeline:
                 "narrative_arcs_found": 0
             }
             
+            # Step 0: Transcription and alignment (if SRT is provided)
+            if progress_callback:
+                progress_callback("TRANSCRIPTION", "Checking for transcription and alignment needs")
+            
+            transcription_result = await self._handle_transcription_and_alignment(path_handler, progress_callback)
+            if transcription_result:
+                results["files_created"].append(transcription_result.get("srt_path", ""))
+                results["steps_completed"].append("TRANSCRIPTION_ALIGNMENT")
+            
             # Step 1: Generate plot from SRT
             if progress_callback:
                 progress_callback("PLOT_GENERATION", "Generating plot from SRT subtitles")
@@ -199,13 +208,124 @@ class ProcessingPipeline:
                 progress_callback("ERROR", error_msg)
             raise ProcessingError(error_msg, step="COMPLETE_PROCESSING", cause=e)
     
+    async def _handle_transcription_and_alignment(
+        self,
+        path_handler: PathHandler,
+        progress_callback: Optional[Callable[[str, str], None]] = None
+    ) -> Optional[Dict]:
+        """
+        Handle transcription and alignment if needed.
+        
+        This method checks if an SRT file exists and if transcription/alignment is needed.
+        If an aligned SRT already exists, it uses that. Otherwise, it runs transcription.
+        
+        Args:
+            path_handler: Path handler for the episode
+            progress_callback: Optional progress callback
+            
+        Returns:
+            Dictionary with transcription results or None if not needed
+        """
+        try:
+            # Check if SRT already exists (now tautologically aligned since transcription and alignment are done during initial step)
+            srt_path = path_handler.get_srt_file_path()
+            if os.path.exists(srt_path):
+                self.logger.info(f"✅ SRT already exists: {srt_path}")
+                if progress_callback:
+                    progress_callback("TRANSCRIPTION", "Using existing SRT")
+                return {
+                    "status": "success",
+                    "message": "Using existing SRT",
+                    "srt_path": srt_path
+                }
+            
+            # Check if SRT exists
+            if not os.path.exists(srt_path):
+                self.logger.info("📝 No SRT file found - skipping transcription")
+                if progress_callback:
+                    progress_callback("TRANSCRIPTION", "No SRT file found - skipping transcription")
+                return None
+            
+            # Check if audio file exists for transcription
+            audio_path = path_handler.get_audio_file_path()
+            video_path = path_handler.get_video_file_path()
+            
+            # If neither audio nor video exists, we can't do transcription
+            if not os.path.exists(audio_path) and not os.path.exists(video_path):
+                self.logger.info("🎵 No audio or video file found - using existing SRT")
+                if progress_callback:
+                    progress_callback("TRANSCRIPTION", "No audio or video file found - using existing SRT")
+                return {
+                    "status": "success",
+                    "message": "Using existing SRT (no audio or video for transcription)",
+                    "srt_path": srt_path
+                }
+            
+            # Run transcription and alignment
+            if progress_callback:
+                progress_callback("TRANSCRIPTION", "Running WhisperX transcription and alignment")
+            
+            # Import transcription workflow
+            from backend.src.subtitle_speaker_identification.transcription_workflow import TranscriptionWorkflow
+            
+            transcription_workflow = TranscriptionWorkflow(
+                path_handler.get_series(),
+                path_handler.get_season(),
+                path_handler.get_episode(),
+                path_handler.base_dir,
+                path_handler=path_handler
+            )
+            
+            # Check prerequisites
+            prerequisites = transcription_workflow.check_prerequisites()
+            if not prerequisites["all_passed"]:
+                self.logger.warning("⚠️ Prerequisites not met for transcription - using existing SRT")
+                if progress_callback:
+                    progress_callback("TRANSCRIPTION", "Prerequisites not met - using existing SRT")
+                return {
+                    "status": "warning",
+                    "message": "Prerequisites not met - using existing SRT",
+                    "srt_path": original_srt_path,
+                    "prerequisites": prerequisites
+                }
+            
+            # Run transcription workflow
+            result = transcription_workflow.run_transcription_and_alignment(
+                language="en",
+                model_size="base",
+                compute_type="float16",
+                force_regenerate=False
+            )
+            
+            if result["status"] == "success":
+                self.logger.info("✅ Transcription and alignment completed successfully")
+                if progress_callback:
+                    progress_callback("TRANSCRIPTION", "Transcription and alignment completed")
+                return result
+            else:
+                self.logger.warning(f"⚠️ Transcription failed: {result['message']} - using existing SRT")
+                if progress_callback:
+                    progress_callback("TRANSCRIPTION", "Transcription failed - using existing SRT")
+                return {
+                    "status": "warning",
+                    "message": f"Transcription failed: {result['message']} - using existing SRT",
+                    "srt_path": srt_path,
+                    "transcription_error": result
+                }
+                
+        except Exception as e:
+            self.logger.error(f"❌ Transcription handling failed: {e}")
+            if progress_callback:
+                progress_callback("TRANSCRIPTION", f"Transcription failed: {str(e)}")
+            return None
+
     async def _generate_plot_from_srt(
         self,
         path_handler: PathHandler, 
         llm_intelligent,
         progress_callback: Optional[Callable[[str, str], None]] = None
     ) -> Optional[str]:
-        """Generate plot from SRT file if it doesn't exist."""
+        """Generate plot from SRT file if it doesn't exist (preferring aligned SRT)."""
         try:
             raw_plot_path = path_handler.get_raw_plot_file_path()
             
@@ -213,9 +333,12 @@ class ProcessingPipeline:
                 self.logger.info(f"Plot file already exists: {raw_plot_path}")
                 return raw_plot_path
                 
-            # Look for SRT file
+            # Use SRT file (now tautologically aligned since transcription and alignment are done during initial step)
             srt_path = path_handler.get_srt_file_path()
-            if not os.path.exists(srt_path):
+            
+            if os.path.exists(srt_path):
+                self.logger.info(f"Using SRT: {srt_path}")
+            else:
                 raise SRTFileNotFoundError(
                     srt_path, 
                     path_handler.get_series(), 

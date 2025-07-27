@@ -1,14 +1,9 @@
 import re
-from typing import List
-from nltk.tokenize import sent_tokenize
-from functools import lru_cache
 from langchain_openai import AzureChatOpenAI  # Updated import
 from ..utils.logger_utils import setup_logging
 from ..utils.text_utils import split_into_sentences, remove_duplicates
 from ..config import config
-import json
 from textwrap import dedent
-from ..utils.llm_utils import clean_llm_text_response
 from langchain_core.messages import HumanMessage
 
 # Set up colored logging

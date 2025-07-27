@@ -18,7 +18,8 @@ from .speaker_character_validator import SpeakerCharacterValidator
 from .subtitle_face_extractor import SubtitleFaceExtractor
 from .subtitle_face_embedder import SubtitleFaceEmbedder
 from .face_clustering_system import FaceClusteringSystem
-from .speaker_identification_pipeline import SpeakerIdentificationPipeline, run_speaker_identification_pipeline, run_face_clustering_only
+from .speaker_identification_pipeline import SpeakerIdentificationPipeline, run_face_clustering_only
+from .pipeline_factory import run_speaker_identification_pipeline_compat as run_speaker_identification_pipeline
 
 __all__ = [
     'SRTParser',

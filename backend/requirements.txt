@@ -1,0 +1,47 @@
+fastapi
+
+# Core AI and LangChain
+langchain
+langchain-core
+langchain-openai
+langchain-cohere
+langchain-chroma
+langgraph
+pydantic
+
+cohere==5.15.0
+
+# Database and ORM
+sqlalchemy
+sqlmodel
+
+# Audio Processing
+srt
+whisperx
+pyannote.audio
+
+# NLP and Machine Learning
+spacy
+nltk
+numpy>=1.24.0
+scikit-learn
+pandas
+hdbscan
+tensorflow
+tf-keras
+
+# Face Recognition
+deepface
+opencv-python
+Pillow
+
+# Utilities
+python-dotenv
+tqdm
+colorlog
+
+# Visualization
+matplotlib
+
+
+ctranslate2==4.5.0

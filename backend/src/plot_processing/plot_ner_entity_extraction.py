@@ -79,7 +79,8 @@ def extract_and_refine_entities(
     llm: AzureChatOpenAI,
     refined_output_path: str,
     raw_output_path: str,
-    season_entities_path: str
+    season_entities_path: str,
+    db_manager: DatabaseSessionManager  # Add this parameter
 ) -> List[EntityLink]:
     """
     Main pipeline:
@@ -500,25 +501,44 @@ def extract_and_refine_entities(
     
     # 11. Save ONLY LLM-processed entities to the database
     logger.info("🔍 STEP 10: SAVING TO DATABASE")
+    logger.info(f"📊 DEBUG: series parameter = '{series}'")
+    logger.info(f"📊 DEBUG: final_entities_for_database count = {len(final_entities_for_database)}")
+    
     if series:
+        logger.info("✅ Series is provided, proceeding with database save")
         try:
-            db_manager = DatabaseSessionManager()
+            # Use the provided db_manager
             with db_manager.session_scope() as session:
+                logger.info("✅ Session scope created successfully")
+                
+                logger.info("🔧 Creating CharacterRepository...")
                 character_repository = CharacterRepository(session)
+                logger.info("✅ CharacterRepository created successfully")
+                
+                logger.info("🔧 Creating CharacterService...")
                 character_service = CharacterService(character_repository)
+                logger.info("✅ CharacterService created successfully")
                 
                 # Store ONLY LLM-processed entities in the database
                 logger.info(f"📊 FINAL ENTITIES GOING TO DATABASE: {len(final_entities_for_database)}")
-                for entity in final_entities_for_database:
-                    logger.info(f"   → {entity.entity_name}: {entity.best_appellation} (appellations: {entity.appellations})")
+                for i, entity in enumerate(final_entities_for_database):
+                    logger.info(f"   [{i+1}] → {entity.entity_name}: {entity.best_appellation} (appellations: {entity.appellations})")
+                
+                logger.info("🔧 Calling character_service.process_entities...")
+                logger.info(f"📋 Parameters: entities_count={len(final_entities_for_database)}, series='{series}', plot_length={len(named_plot)}, llm={llm is not None}")
                 
                 processed_characters = character_service.process_entities(final_entities_for_database, series, named_plot, llm)
-                logger.info(f"✅ Saved {len(processed_characters)} characters to the database")
+                logger.info(f"✅ character_service.process_entities completed")
+                logger.info(f"📊 DEBUG: processed_characters returned: {len(processed_characters)} characters")
                 
                 # Log what was actually saved
-                for char in processed_characters:
-                    appellations_list = [app.appellation for app in char.appellations] if hasattr(char, 'appellations') else []
-                    logger.info(f"   💾 SAVED: {char.entity_name} → {char.best_appellation} ({appellations_list})")
+                if processed_characters:
+                    logger.info("💾 DETAILED SAVED CHARACTERS:")
+                    for i, char in enumerate(processed_characters):
+                        appellations_list = [app.appellation for app in char.appellations] if hasattr(char, 'appellations') else []
+                        logger.info(f"   [{i+1}] 💾 SAVED: {char.entity_name} → {char.best_appellation} ({appellations_list})")
+                else:
+                    logger.warning("⚠️ No characters were processed/saved!")
                     
         except Exception as e:
             logger.error(f"❌ Error saving to database: {e}")
@@ -550,7 +570,8 @@ def extract_and_refine_entities(
 
 def extract_and_refine_entities_with_path_handler(
     path_handler,
-    series: str = None
+    series: str = None,
+    db_manager: DatabaseSessionManager = None  # Add db_manager parameter
 ) -> List[EntityLink]:
     """
     Enhanced pipeline that uses PathHandler to manage all file paths.
@@ -588,7 +609,8 @@ def extract_and_refine_entities_with_path_handler(
         llm,
         path_handler.get_episode_refined_entities_path(),
         path_handler.get_episode_raw_spacy_entities_path(),
-        path_handler.get_season_extracted_refined_entities_path()
+        path_handler.get_season_extracted_refined_entities_path(),
+        db_manager=db_manager  # Pass db_manager
     )
 
 def remove_conflicting_surname_appellations(entities: List[EntityLink], llm: AzureChatOpenAI) -> List[EntityLink]:

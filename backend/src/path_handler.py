@@ -94,6 +94,10 @@ class PathHandler:
     def get_video_file_path(self) -> str:
         """Get the path to the main video file for this episode."""
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}.mp4")
+
+    def get_audio_file_path(self) -> str:
+        """Get the path to the extracted audio file for this episode."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}.wav")
     
     def get_speaker_analysis_path(self) -> str:
         """Get the path to the speaker analysis JSON file."""
@@ -150,6 +154,14 @@ class PathHandler:
     def get_llm_checkpoint_path(self) -> str:
         """Get the path to the LLM speaker assignments checkpoint file."""
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_llm_checkpoint.json")
+    
+    def get_speaker_identification_checkpoint_dir(self) -> str:
+        """Get the directory for speaker identification checkpoints."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, "speaker_identification_checkpoints")
+
+    def get_speaker_identification_checkpoint_path(self, mode: str) -> str:
+        """Get the path to the speaker identification checkpoint file for a specific mode."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_speaker_id_{mode}_checkpoint.json")
     
     def get_chroma_db_path(self) -> str:
         """Get the path to the ChromaDB directory."""

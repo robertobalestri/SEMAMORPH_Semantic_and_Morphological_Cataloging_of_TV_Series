@@ -16,7 +16,16 @@ logger = setup_logging(__name__)
 class DatabaseSessionManager:
     """Manages the database session."""
 
-    def __init__(self, db_url: str = f'sqlite:///{os.getenv("DATABASE_NAME", "narrative_db.sqlite")}'):
+    def __init__(self, db_url: str = None):
+        # If no db_url provided, try to get it from environment
+        if db_url is None:
+            db_url = self._get_database_url_from_env()
+        
+        if db_url is None:
+            raise ValueError("No database URL provided and could not find DATABASE_NAME in environment variables")
+        
+        logger.info(f"🔗 Initializing DatabaseSessionManager with URL: {db_url}")
+        
         self.engine = create_engine(
             db_url,
             echo=False,
@@ -25,6 +34,38 @@ class DatabaseSessionManager:
             max_overflow=10
         )
         self.create_tables()
+
+    def _get_database_url_from_env(self) -> str:
+        """Get database URL from environment variables."""
+        try:
+            from dotenv import load_dotenv
+            
+            # Try to load .env file from project root
+            import os
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+            project_root = os.path.abspath(os.path.join(current_dir, '..', '..', '..'))
+            env_path = os.path.join(project_root, '.env')
+            
+            if os.path.exists(env_path):
+                load_dotenv(env_path)
+                logger.info(f"📄 Loaded environment from: {env_path}")
+            
+            # Get database name from environment variable
+            database_name = os.getenv('DATABASE_NAME', 'narrative_storage/narrative.db')
+            
+            # Construct the full database path
+            db_path = os.path.join(project_root, database_name)
+            
+            # Ensure the directory exists
+            os.makedirs(os.path.dirname(db_path), exist_ok=True)
+            
+            db_url = f'sqlite:///{db_path}'
+            logger.info(f"🔗 Constructed database URL from environment: {db_url}")
+            return db_url
+            
+        except Exception as e:
+            logger.error(f"❌ Error getting database URL from environment: {e}")
+            return None
 
     def create_tables(self):
         """Create database tables if they don't exist."""

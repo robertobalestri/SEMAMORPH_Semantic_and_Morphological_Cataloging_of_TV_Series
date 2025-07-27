@@ -196,7 +196,7 @@ class BaseSpeakerIdentificationPipeline:
 
 ```python
 class AudioOnlyPipeline(BaseSpeakerIdentificationPipeline):
-    """Audio-only speaker identification using Pyannote"""
+    """Audio-only speaker identification using Pyannote and LLM confidence mapping"""
     
     def run_pipeline(
         self,
@@ -211,27 +211,37 @@ class AudioOnlyPipeline(BaseSpeakerIdentificationPipeline):
         
         logger.info("🎵 Running audio-only speaker identification")
         
-        # 1. Extract audio from video
+        # 1. Initial LLM pass for confidence tagging
+        llm_speaker_identifier = SpeakerIdentifier(self.llm, self.series)
+        dialogue_lines_with_confidence = llm_speaker_identifier.identify_speakers_for_episode(self.plot_scenes, dialogue_lines)
+
+        # 2. Extract audio from video
         audio_path = self.components.audio_processor.extract_audio_from_video(video_path)
         
-        # 2. Run Pyannote diarization
+        # 3. Run Pyannote diarization
         diarization_result = self.components.audio_processor.diarize_speakers(audio_path)
         
-        # 3. Align speaker segments with dialogue lines
-        aligned_dialogues = self.components.timeline_aligner.align_audio_with_dialogues(
+        # 4. Align speaker segments with dialogue lines to get audio_cluster_id
+        dialogue_lines_with_audio_clusters = self.components.timeline_aligner.align_audio_with_dialogues(
             diarization_result['speaker_segments'],
-            dialogue_lines
+            dialogue_lines_with_confidence
         )
         
-        # 4. Calculate confidence scores
-        for dialogue in aligned_dialogues:
-            dialogue.is_llm_confident = self.components.confidence_scorer.calculate_audio_confidence(dialogue)
-            dialogue.resolution_method = "audio_only"
+        # 5. Map audio clusters to confident character names
+        audio_cluster_to_character_mapping = self.components.character_mapper.map_audio_clusters_to_characters(
+            dialogue_lines_with_audio_clusters
+        )
+
+        # 6. Propagate confident assignments to all dialogues in the same cluster
+        final_dialogues = self.components.character_mapper.propagate_assignments(
+            dialogue_lines_with_audio_clusters,
+            audio_cluster_to_character_mapping
+        )
+
+        # 7. Save results
+        self._save_results(final_dialogues, "audio_only")
         
-        # 5. Save results
-        self._save_results(aligned_dialogues, "audio_only")
-        
-        return aligned_dialogues
+        return final_dialogues
 ```
 
 ### **4.3 Face-Only Pipeline**
@@ -441,37 +451,33 @@ class TimelineAligner:
 #### **4.5.3 Character Mapper**
 ```python
 class CharacterMapper:
-    """Shared character mapping component"""
+    """Shared character mapping component for audio and face clusters"""
     
-    def map_speakers_to_characters(
+    def map_audio_clusters_to_characters(
+        self,
+        dialogue_lines: List[DialogueLine]
+    ) -> Dict[str, str]:
+        """Create a mapping from audio cluster IDs to character names based on confident LLM assignments."""
+        
+        mapping = {}
+        for dialogue in dialogue_lines:
+            if dialogue.is_llm_confident and dialogue.speaker and dialogue.audio_cluster_id:
+                # If the LLM is confident about a speaker, we can map the corresponding audio cluster
+                mapping[dialogue.audio_cluster_id] = dialogue.speaker
+        
+        return mapping
+
+    def propagate_assignments(
         self,
         dialogue_lines: List[DialogueLine],
-        episode_entities: List[Dict]
+        cluster_mapping: Dict[str, str]
     ) -> List[DialogueLine]:
-        """Map speaker IDs to character names"""
-        
-        # Group dialogues by speaker ID
-        speaker_groups = {}
+        """Propagate confident speaker assignments to all dialogues within the same cluster."""
+
         for dialogue in dialogue_lines:
-            if dialogue.speaker and dialogue.speaker.startswith('Speaker_'):
-                speaker_id = dialogue.speaker
-                if speaker_id not in speaker_groups:
-                    speaker_groups[speaker_id] = []
-                speaker_groups[speaker_id].append(dialogue)
-        
-        # Analyze speaking patterns for each speaker ID
-        speaker_character_mapping = {}
-        for speaker_id, dialogues in speaker_groups.items():
-            character_name = self._identify_character_from_patterns(dialogues, episode_entities)
-            if character_name:
-                speaker_character_mapping[speaker_id] = character_name
-        
-        # Apply mapping to all dialogues
-        for dialogue in dialogue_lines:
-            if dialogue.speaker in speaker_character_mapping:
-                dialogue.speaker = speaker_character_mapping[dialogue.speaker]
-                dialogue.resolution_method += "_character_mapped"
-        
+            if dialogue.audio_cluster_id in cluster_mapping:
+                dialogue.speaker = cluster_mapping[dialogue.audio_cluster_id]
+
         return dialogue_lines
 ```
 

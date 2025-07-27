@@ -61,8 +61,8 @@ def setup_logging(name: str) -> logging.Logger:
     # Suppress `openai._base_client` logs
     logging.getLogger("openai._base_client").setLevel(logging.WARNING)
     logging.getLogger("urllib3.connectionpool").setLevel(logging.WARNING)
-    logging.getLogger("chromadb.config").setLevel(logging.WARNING)
-    logging.getLogger("chromadb.api.segment").setLevel(logging.WARNING)
+    # logging.getLogger("chromadb.config").setLevel(logging.WARNING)
+    # logging.getLogger("chromadb.api.segment").setLevel(logging.WARNING)
     # Suppress matplotlib debug logs
     logging.getLogger("matplotlib").setLevel(logging.WARNING)
     logging.getLogger("matplotlib.font_manager").setLevel(logging.WARNING)

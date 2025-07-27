@@ -1,34 +1,36 @@
 """
-Speaker Character Service for SEMAMORPH.
-Handles database operations for speaker-character validation and management.
+Speaker character service for managing speaker-character database operations.
 """
+
+import logging
 from typing import List, Dict, Optional
 from .repositories import DatabaseSessionManager, CharacterRepository
 from .character_service import CharacterService
 from .narrative_models import Character
 from ..plot_processing.plot_processing_models import EntityLink
-from ..utils.logger_utils import setup_logging
 
-logger = setup_logging(__name__)
+logger = logging.getLogger(__name__)
 
 class SpeakerCharacterService:
-    """Service for managing speaker-character database operations."""
-    
-    def __init__(self, series: str):
-        self.series = series
+    """Service for managing speaker-character relationships."""
+
+    def __init__(self):
         self.db_manager = DatabaseSessionManager()
     
-    def get_all_characters_as_data(self) -> List[Dict]:
+    def get_all_characters_as_data(self, series: str) -> List[Dict]:
         """
         Get all characters from database as plain data (no ORM objects).
         This avoids session binding issues.
         
+        Args:
+            series: The series to get characters for
+            
         Returns:
             List of character data dictionaries with entity_name, best_appellation, appellations
         """
         with self.db_manager.session_scope() as session:
             character_service = CharacterService(CharacterRepository(session))
-            db_characters = character_service.get_episode_entities(self.series)
+            db_characters = character_service.get_episode_entities(series)
             
             # Convert to plain data while session is active
             characters_data = []
@@ -88,13 +90,14 @@ class SpeakerCharacterService:
                 return char_data
         return None
     
-    def add_appellation_to_character(self, entity_name: str, new_appellation: str) -> bool:
+    def add_appellation_to_character(self, entity_name: str, new_appellation: str, series: str) -> bool:
         """
         Add a new appellation to an existing character by entity name.
         
         Args:
             entity_name: The entity name of the character to update
             new_appellation: The new appellation to add
+            series: The series the character belongs to
             
         Returns:
             True if successful, False otherwise
@@ -104,7 +107,7 @@ class SpeakerCharacterService:
                 character_service = CharacterService(CharacterRepository(session))
                 
                 # Get the character fresh from the database within this session
-                character = character_service.character_repository.get_by_entity_name(entity_name, self.series)
+                character = character_service.character_repository.get_by_entity_name(entity_name, series)
                 if not character:
                     logger.error(f"❌ Character {entity_name} not found in database")
                     return False
@@ -120,7 +123,7 @@ class SpeakerCharacterService:
                     biological_sex=character.biological_sex  # Preserve biological sex
                 )
                 
-                result = character_service.add_or_update_character(entity_link, self.series)
+                result = character_service.add_or_update_character(entity_link, series)
                 if result:
                     logger.info(f"✅ Added appellation '{new_appellation}' to character {entity_name}")
                     return True
@@ -132,12 +135,13 @@ class SpeakerCharacterService:
             logger.error(f"❌ Error adding appellation to character: {e}")
             return False
     
-    def create_new_characters(self, characters_data: List[Dict]) -> bool:
+    def create_new_characters(self, characters_data: List[Dict], series: str) -> bool:
         """
         Create new characters in the database.
         
         Args:
             characters_data: List of character data dictionaries to create
+            series: The series these characters belong to
             
         Returns:
             True if all characters created successfully, False otherwise
@@ -158,7 +162,7 @@ class SpeakerCharacterService:
                         biological_sex=char_data.get("biological_sex")  # Include biological sex
                     )
                     
-                    result = character_service.add_or_update_character(entity_link, self.series)
+                    result = character_service.add_or_update_character(entity_link, series)
                     if result:
                         logger.info(f"✅ Created new character: {char_data['best_appellation']}")
                         success_count += 1
