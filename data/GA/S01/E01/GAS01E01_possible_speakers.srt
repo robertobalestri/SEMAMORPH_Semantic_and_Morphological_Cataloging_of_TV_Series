@@ -1,154 +1,154 @@
 1
 00:00:04,097 --> 00:00:04,679
-Meredith Grey: The game.
+Dr. Meredith Grey: The game.
 
 2
 00:00:06,144 --> 00:00:09,413
-Meredith Grey: They say a person either has what it takes to play or they don't.
+Dr. Meredith Grey: They say a person either has what it takes to play or they don't.
 
 3
 00:00:10,637 --> 00:00:12,903
-Meredith Grey: My mother was one of the greats.
+Dr. Meredith Grey: My mother was one of the greats.
 
 4
 00:00:14,208 --> 00:00:18,140
-Meredith Grey: Me, on the other hand, I'm kind of screwed.
+Dr. Meredith Grey: Me, on the other hand, I'm kind of screwed.
 
 5
 00:00:37,173 --> 00:00:41,655
-Meredith Grey / Meredith Grey OR Meredith Grey (PVM): This is, uh... Humiliating on so many levels.
+Main Character (likely female) / Dr. Meredith Grey OR Dr. Derek Shepherd (PVM): This is, uh... Humiliating on so many levels.
 
 6
 00:00:41,996 --> 00:00:42,578
-Meredith Grey / Meredith Grey (PVM): You have to go.
+Main Character (likely female) / Dr. Meredith Grey (PVM): You have to go.
 
 7
 00:00:42,618 --> 00:00:45,960
-Derek Shepherd / Meredith Grey (PVM): Why don't you just come back down here and we'll pick up where we left off?
+Male Companion/Love Interest / Dr. Meredith Grey (PVM): Why don't you just come back down here and we'll pick up where we left off?
 
 8
 00:00:46,100 --> 00:00:46,801
-Meredith Grey / Meredith Grey (PVM): No, seriously.
+Main Character (likely female) / Dr. Meredith Grey (PVM): No, seriously.
 
 9
 00:00:46,822 --> 00:00:47,621
-Meredith Grey / Meredith Grey (PVM): You have to go.
+Main Character (likely female) / Dr. Meredith Grey (PVM): You have to go.
 
 10
 00:00:47,661 --> 00:00:48,161
-Meredith Grey / Meredith Grey (PVM): I'm late.
+Main Character (likely female) / Dr. Meredith Grey (PVM): I'm late.
 
 11
 00:00:48,301 --> 00:00:53,408
-Meredith Grey / Meredith Grey OR Dr. Derek Shepherd (PVM): Which isn't what you want to be on your first day of work, so... So, uh, you actually live here?
+Male Companion/Love Interest / Dr. Derek Shepherd OR Dr. Meredith Grey (PVM): Which isn't what you want to be on your first day of work, so... So, uh, you actually live here?
 
 12
 00:00:54,088 --> 00:00:54,307
-Meredith Grey / Meredith Grey (PVM): No.
+Main Character (likely female) / Dr. Meredith Grey (PVM): No.
 
 13
 00:00:55,368 --> 00:00:55,810
-Derek Shepherd / Meredith Grey (PVM): Oh.
+Male Companion/Love Interest / Dr. Meredith Grey (PVM): Oh.
 
 14
 00:00:55,829 --> 00:00:56,070
-Meredith Grey / Dr. Derek Shepherd (PVM): Yes.
+Main Character (likely female) / Dr. Derek Shepherd (PVM): Yes.
 
 15
 00:00:56,811 --> 00:00:57,250
-Meredith Grey / Meredith Grey (PVM): Kind of.
+Main Character (likely female) / Dr. Meredith Grey (PVM): Kind of.
 
 16
 00:00:58,832 --> 00:00:58,972
-Derek Shepherd / Meredith Grey (PVM): Oh.
+Male Companion/Love Interest / Dr. Meredith Grey (PVM): Oh.
 
 17
 00:01:00,993 --> 00:01:01,375
-Derek Shepherd / Dr. Derek Shepherd (PVM): It's nice.
+Male Companion/Love Interest / Dr. Derek Shepherd (PVM): It's nice.
 
 18
 00:01:01,875 --> 00:01:02,414
-Derek Shepherd / Dr. Derek Shepherd (PVM): A little dusty.
+Male Companion/Love Interest / Dr. Derek Shepherd (PVM): A little dusty.
 
 19
 00:01:03,317 --> 00:01:04,215
-Derek Shepherd / Dr. Derek Shepherd (PVM): Odd, but it's nice.
+Male Companion/Love Interest / Dr. Derek Shepherd (PVM): Odd, but it's nice.
 
 20
 00:01:04,236 --> 00:01:07,180
-Derek Shepherd / Dr. Derek Shepherd (PVM): So how do you kind of live here?
+Male Companion/Love Interest / Dr. Derek Shepherd (PVM): So how do you kind of live here?
 
 21
 00:01:07,801 --> 00:01:09,423
-Meredith Grey: I moved two weeks ago from Boston.
+Main Character (likely female): I moved two weeks ago from Boston.
 
 22
 00:01:09,503 --> 00:01:10,462
-Meredith Grey: It was my mother's house.
+Main Character (likely female): It was my mother's house.
 
 23
 00:01:10,524 --> 00:01:11,084
-Meredith Grey: I'm selling it.
+Main Character (likely female): I'm selling it.
 
 24
 00:01:11,424 --> 00:01:11,965
-Derek Shepherd / Dr. Derek Shepherd (PVM): Oh, I'm sorry.
+Male Companion/Love Interest / Dr. Derek Shepherd (PVM): Oh, I'm sorry.
 
 25
 00:01:12,006 --> 00:01:13,426
-Meredith Grey / Meredith Grey OR Dr. Derek Shepherd (PVM): For what?
+Main Character (likely female) / Dr. Derek Shepherd OR Dr. Meredith Grey (PVM): For what?
 
 26
 00:01:14,307 --> 00:01:14,929
-Derek Shepherd / Dr. Derek Shepherd (PVM): You said was.
+Male Companion/Love Interest / Dr. Derek Shepherd (PVM): You said was.
 
 27
 00:01:15,608 --> 00:01:16,971
-Meredith / Meredith Grey (PVM): Oh, my mother's not dead.
+Main Character (likely female): Oh, my mother's not dead.
 
 28
 00:01:17,390 --> 00:01:18,793
-Meredith / Meredith Grey (PVM): She's... You know what?
+Main Character (likely female): She's... You know what?
 
 29
 00:01:18,813 --> 00:01:19,655
-Meredith / Meredith Grey (PVM): We don't have to do the thing.
+Main Character (likely female) / Dr. Meredith Grey (PVM): We don't have to do the thing.
 
 30
 00:01:19,715 --> 00:01:20,234
-Derek / Meredith Grey (PVM): Oh.
+Male Companion/Love Interest / Dr. Meredith Grey (PVM): Oh.
 
 31
 00:01:21,137 --> 00:01:21,917
-Derek / Dr. Derek Shepherd OR Dr. Derek Shepherd (PVM): We can do anything you want.
+Male Companion/Love Interest / Dr. Derek Shepherd (PVM): We can do anything you want.
 
 32
 00:01:22,658 --> 00:01:23,179
-Meredith / Meredith Grey (PVM): No, the thing.
+Main Character (likely female) / Dr. Meredith Grey (PVM): No, the thing.
 
 33
 00:01:23,239 --> 00:01:24,280
-Meredith / Meredith Grey (PVM): Exchange the details.
+Meredith / Dr. Meredith Grey (PVM): Exchange the details.
 
 34
 00:01:24,379 --> 00:01:25,161
-Meredith / Meredith Grey (PVM): Pretend we care.
+Meredith / Dr. Meredith Grey (PVM): Pretend we care.
 
 35
 00:01:25,662 --> 00:01:27,664
-Meredith / Meredith Grey (PVM): Look, I'm gonna go upstairs and take a shower, okay?
+Dr. Meredith Gray: Look, I'm gonna go upstairs and take a shower, okay?
 
 36
 00:01:28,025 --> 00:01:29,906
-Meredith / Meredith Grey (PVM): And when I get back down here, you won't be here.
+Dr. Meredith Gray: And when I get back down here, you won't be here.
 
 37
 00:01:29,986 --> 00:01:33,030
-Meredith / Meredith Grey (PVM): So, um... Goodbye.
+Dr. Meredith Gray: So, um... Goodbye.
 
 38
 00:01:33,049 --> 00:01:35,293
-Derek / Meredith Grey (PVM): Um...
+Derek / Dr. Meredith Grey (PVM): Um...
 
 39
 00:01:37,989 --> 00:01:38,371
@@ -156,7 +156,7 @@ Dr. Derek Shepherd: Derek.
 
 40
 00:01:38,953 --> 00:01:39,354
-Meredith Grey: Derek.
+Meredith / Dr. Meredith Grey (PVM): Derek.
 
 41
 00:01:40,078 --> 00:01:40,783
@@ -164,15 +164,15 @@ Dr. Derek Shepherd: Right, Meredith.
 
 42
 00:01:41,003 --> 00:01:41,405
-Dr. Derek Shepherd: Meredith?
+Derek / Dr. Derek Shepherd (PVM): Meredith?
 
 43
 00:01:41,686 --> 00:01:41,926
-Meredith Grey: Yeah.
+Dr. Meredith Gray: Yeah.
 
 44
 00:01:44,138 --> 00:01:44,277
-Meredith Grey: Mm-hmm.
+Meredith / Dr. Derek Shepherd OR Dr. Meredith Grey (PVM): Mm-hmm.
 
 45
 00:01:44,298 --> 00:01:44,881
@@ -180,167 +180,167 @@ Dr. Derek Shepherd: Nice meeting you.
 
 46
 00:01:44,900 --> 00:01:45,603
-Meredith Grey: Bye, Derek.
+Dr. Meredith Gray: Bye, Derek.
 
 47
 00:02:06,155 --> 00:02:09,699
-Meredith Grey: Each of you comes here today hopeful, wanting in on the game.
+Dr. Meredith Grey: Each of you comes here today hopeful, wanting in on the game.
 
 48
 00:02:10,562 --> 00:02:13,287
-Meredith Grey: A month ago, you were in med school being taught by doctors.
+Dr. Meredith Grey: A month ago, you were in med school being taught by doctors.
 
 49
 00:02:15,110 --> 00:02:18,216
-Meredith Grey: Today, you are the doctors.
+Dr. Meredith Grey: Today, you are the doctors.
 
 50
 00:02:21,020 --> 00:02:24,966
-Meredith Grey: The seven years you spend here as a surgical resident will be the best and worst of your life.
+Dr. Meredith Grey: The seven years you spend here as a surgical resident will be the best and worst of your life.
 
 51
 00:02:25,328 --> 00:02:26,949
-Meredith Grey: You will be pushed to the breaking point.
+Dr. Meredith Grey: You will be pushed to the breaking point.
 
 52
 00:02:28,211 --> 00:02:28,734
-Meredith Grey: Look around you.
+Dr. Meredith Grey: Look around you.
 
 53
 00:02:29,615 --> 00:02:31,318
-Dr. Richard Webber / Meredith Grey (PVM): Say hello to your competition.
+Dr. Meredith Grey: Say hello to your competition.
 
 54
 00:02:31,973 --> 00:02:34,417
-Dr. Richard Webber / Meredith Grey (PVM): Eight of you will switch to an easier specialty.
+Dr. Meredith Grey: Eight of you will switch to an easier specialty.
 
 55
 00:02:34,676 --> 00:02:36,501
-Dr. Richard Webber / Meredith Grey (PVM): Five of you will crack under the pressure.
+Dr. Meredith Grey: Five of you will crack under the pressure.
 
 56
 00:02:36,520 --> 00:02:37,763
-Dr. Richard Webber / Meredith Grey (PVM): Two of you will be asked to leave.
+Dr. Meredith Grey: Two of you will be asked to leave.
 
 57
 00:02:38,884 --> 00:02:40,668
-Dr. Richard Webber / Meredith Grey (PVM): This is your starting line.
+Dr. Meredith Grey: This is your starting line.
 
 58
 00:02:40,687 --> 00:02:41,870
-Dr. Richard Webber / Meredith Grey (PVM): This is your arena.
+Dr. Meredith Grey: This is your arena.
 
 59
 00:02:42,990 --> 00:02:46,896
-Dr. Richard Webber / Meredith Grey (PVM): How well you play, that's up to you.
+Dr. Meredith Grey: How well you play, that's up to you.
 
 60
 00:02:48,661 --> 00:02:52,007
-Meredith Grey: Like I said, I'm screwed.
+Dr. Meredith Gray: Like I said, I'm screwed.
 
 61
 00:03:03,545 --> 00:03:10,193
-Dr. Miranda Bailey / Meredith Grey OR Dr. Miranda Bailey OR Meredith Grey OR George O'Malley (PVM): OK, Martin, Robinson, Vaughn, Hawkins, Vaughn.
+Richard Webber / Dr. Meredith Grey OR Dr. George O'Malley OR Dr. Ellis Grey OR Dr. Meredith Grey (PVM): OK, Martin, Robinson, Vaughn, Hawkins, Vaughn.
 
 62
 00:03:11,593 --> 00:03:12,854
-Unknown Intern / Meredith Grey (PVM): Only six women out of 20.
+Cristina Yang / Dr. Meredith Grey (PVM): Only six women out of 20.
 
 63
 00:03:13,256 --> 00:03:15,018
-Unknown Intern / Meredith Grey (PVM): Yeah, I hear one of them's a model.
+George O'Malley / Dr. Meredith Grey (PVM): Yeah, I hear one of them's a model.
 
 64
 00:03:15,818 --> 00:03:18,121
-Unknown Intern / Meredith Grey (PVM): Seriously, that's going to help with the respect thing?
+Cristina Yang / Dr. Meredith Grey (PVM): Seriously, that's going to help with the respect thing?
 
 65
 00:03:19,262 --> 00:03:20,223
-Unknown Intern / Meredith Grey OR George O'Malley (PVM): You're Christina, right?
+Unknown Intern / Dr. Meredith Grey OR Dr. George O'Malley (PVM): You're Christina, right?
 
 66
 00:03:20,742 --> 00:03:22,264
-Dr. Miranda Bailey / George O'Malley (PVM): Hutton, Monroe, Krug, Osborne.
+Senior Doctor / Dr. George O'Malley (PVM): Hutton, Monroe, Krug, Osborne.
 
 67
 00:03:22,305 --> 00:03:23,306
-Unknown Intern / Meredith Grey OR George O'Malley (PVM): Here we go.
+Unknown Intern / Dr. George O'Malley OR Dr. Meredith Grey (PVM): Here we go.
 
 68
 00:03:23,324 --> 00:03:24,287
-Unknown Intern / Meredith Grey (PVM): Which resident are you assigned to?
+Unknown Intern / Dr. Meredith Grey (PVM): Which resident are you assigned to?
 
 69
 00:03:24,407 --> 00:03:25,568
-Meredith Grey / Meredith Grey (PVM): I got Bailey.
+Unknown Intern / Dr. Meredith Grey (PVM): I got Bailey.
 
 70
 00:03:25,586 --> 00:03:26,027
-Cristina Yang / Meredith Grey (PVM): Nazi?
+Unknown Intern / Dr. Meredith Grey (PVM): Nazi?
 
 71
 00:03:26,307 --> 00:03:26,728
-Unknown Intern / Meredith Grey (PVM): Me too.
+Unknown Intern / Dr. Meredith Grey (PVM): Me too.
 
 72
 00:03:26,968 --> 00:03:27,788
-Unknown Intern / Meredith Grey (PVM): You got the Nazi?
+Unknown Intern / Dr. Meredith Grey (PVM): You got the Nazi?
 
 73
 00:03:28,031 --> 00:03:30,453
-Unknown Intern / Meredith Grey (PVM): So did I. At least we'll be tortured together, right?
+Unknown Intern / Dr. Meredith Grey (PVM): So did I. At least we'll be tortured together, right?
 
 74
 00:03:31,514 --> 00:03:32,574
-George O'Malley: I'm George.
+Dr. George O'Malley: I'm George.
 
 75
 00:03:32,789 --> 00:03:43,104
-George O'Malley: O'Malley, we met at the mixer you had on a black dress with a slit at the side, strappy sandals.
+Dr. George O'Malley: O'Malley, we met at the mixer you had on a black dress with a slit at the side, strappy sandals.
 
 76
 00:03:43,126 --> 00:03:44,045
-George O'Malley: Now you think I'm gay.
+Dr. George O'Malley: Now you think I'm gay.
 
 77
 00:03:44,508 --> 00:03:46,030
-George O'Malley: No, I'm not gay.
+Dr. George O'Malley: No, I'm not gay.
 
 78
 00:03:46,050 --> 00:03:51,015
-George O'Malley: It's just that you were very unforgettable.
+Dr. George O'Malley: It's just that you were very unforgettable.
 
 79
 00:03:51,037 --> 00:03:53,599
-Unidentified Announcer or Resident / George O'Malley (PVM): O'Malley, Yang, Gray, Steven.
+Senior Doctor / Dr. George O'Malley (PVM): O'Malley, Yang, Gray, Steven.
 
 80
 00:04:00,584 --> 00:04:01,544
-George O'Malley / Meredith Grey (PVM): That's the Nazi?
+Unknown Intern / Dr. Meredith Grey (PVM): That's the Nazi?
 
 81
 00:04:02,467 --> 00:04:03,631
-Cristina Yang / George O'Malley (PVM): I thought the Nazi would be a guy.
+Unknown Intern / Dr. George O'Malley (PVM): I thought the Nazi would be a guy.
 
 82
 00:04:03,651 --> 00:04:07,520
-Meredith Grey / Meredith Grey OR George O'Malley (PVM): I thought the Nazi would be... a Nazi.
+Unknown Intern / Dr. George O'Malley OR Dr. Meredith Grey OR Dr. Meredith Grey OR Dr. Izzie Stevens (PVM): I thought the Nazi would be... a Nazi.
 
 83
 00:04:07,538 --> 00:04:08,700
-Izzie Stevens / Meredith Grey (PVM): Maybe it's professional jealousy.
+Unknown Intern / Dr. Izzie Stevens (PVM): Maybe it's professional jealousy.
 
 84
 00:04:09,223 --> 00:04:11,848
-Izzie Stevens / Meredith Grey OR Dr. Izzie Stevens OR Dr. Miranda Bailey (PVM): Maybe she's brilliant and they call her a Nazi because they're jealous.
+Unknown Intern / Dr. Izzie Stevens (PVM): Maybe she's brilliant and they call her a Nazi because they're jealous.
 
 85
 00:04:12,550 --> 00:04:13,072
-George O'Malley / Dr. Izzie Stevens (PVM): Maybe she's nice.
+Unknown Intern / Dr. Izzie Stevens (PVM): Maybe she's nice.
 
 86
 00:04:13,453 --> 00:04:14,556
-Cristina Yang / Dr. Izzie Stevens (PVM): Let me guess, you're the model.
+Unknown Intern / Dr. Izzie Stevens (PVM): Let me guess, you're the model.
 
 87
 00:04:16,278 --> 00:04:18,745
@@ -432,11 +432,11 @@ Interns / Dr. Derek Shepherd (PVM): Yes.
 
 109
 00:05:06,220 --> 00:05:07,120
-Cristina Yang / Meredith Grey (PVM): You said five rules.
+Cristina Yang / Dr. Meredith Grey OR Dr. Miranda Bailey (PVM): You said five rules.
 
 110
 00:05:07,180 --> 00:05:08,242
-George O'Malley / Meredith Grey (PVM): That was only four.
+George O'Malley / Dr. Meredith Grey OR Dr. Miranda Bailey (PVM): That was only four.
 
 111
 00:05:09,867 --> 00:05:12,170
@@ -444,19 +444,19 @@ Dr. Miranda Bailey: Rule number five, when I move, you move.
 
 112
 00:05:30,511 --> 00:05:31,752
-Dr. Miranda Bailey: What do we got?
+Dr. Miranda Bailey / Dr. Derek Shepherd (PVM): What do we got?
 
 113
 00:05:32,033 --> 00:05:36,442
-Paramedic / Dr. Derek Shepherd (PVM): Katie Bryce, 15-year-old female, new onset seizures, intermittent for the past week.
+George O'Malley / Dr. Meredith Grey OR Dr. Derek Shepherd (PVM): Katie Bryce, 15-year-old female, new onset seizures, intermittent for the past week.
 
 114
 00:05:36,622 --> 00:05:39,588
-Paramedic / Meredith Grey OR Dr. Derek Shepherd (PVM): IV lost in root, started grandma seizing as we descended.
+Paramedic / Dr. Meredith Grey (PVM): IV lost in root, started grandma seizing as we descended.
 
 115
 00:05:40,048 --> 00:05:41,091
-Dr. Miranda Bailey: All right, get on her side.
+Dr. Miranda Bailey / Dr. Meredith Grey (PVM): All right, get on her side.
 
 116
 00:05:42,252 --> 00:05:44,196
@@ -464,11 +464,11 @@ Dr. Miranda Bailey: Izzy, 10 milligrams diazepam IM.
 
 117
 00:05:45,338 --> 00:05:47,341
-Dr. Miranda Bailey: No, no, the white lead is on the right.
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): No, no, the white lead is on the right.
 
 118
 00:05:47,582 --> 00:05:49,425
-Dr. Miranda Bailey: Righty, whitey, smoke over fire.
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): Righty, whitey, smoke over fire.
 
 119
 00:05:49,887 --> 00:05:51,990
@@ -476,19 +476,19 @@ Dr. Miranda Bailey: A large bore IV, don't let the blood hemolyze.
 
 120
 00:05:52,011 --> 00:05:53,093
-Dr. Miranda Bailey: Let's go.
+Dr. Miranda Bailey / Dr. Derek Shepherd (PVM): Let's go.
 
 121
 00:05:58,625 --> 00:06:00,047
-Dr. Preston Burke: We got no wet fish on dry land.
+Dr. Preston Burke / Dr. Miranda Bailey (PVM): We got no wet fish on dry land.
 
 122
 00:06:00,387 --> 00:06:03,511
-Intern / Dr. Miranda Bailey OR Dr. Miranda Bailey (PVM): Absolutely, Dr. Burke.
+George O'Malley / Dr. Miranda Bailey OR Dr. Miranda Bailey (PVM): Absolutely, Dr. Burke.
 
 123
 00:06:03,531 --> 00:06:04,992
-Dr. Preston Burke: Dr. Bailey, no shotgun.
+Dr. Miranda Bailey: Dr. Bailey, no shotgun.
 
 124
 00:06:05,552 --> 00:06:09,658
@@ -512,7 +512,7 @@ Dr. Miranda Bailey: She's your responsibility now.
 
 129
 00:06:17,427 --> 00:06:18,067
-Izzie Stevens / Dr. Miranda Bailey (PVM): Wait, what about me?
+Izzie Stevens / Dr. Izzie Stevens (PVM): Wait, what about me?
 
 130
 00:06:20,250 --> 00:06:22,252
@@ -520,23 +520,23 @@ Dr. Miranda Bailey: Honey, you get to do rectal exams.
 
 131
 00:06:38,584 --> 00:06:39,646
-Meredith Grey / Meredith Grey (PVM): What are you doing here?
+Cristina Yang / Dr. Meredith Grey (PVM): What are you doing here?
 
 132
 00:06:39,665 --> 00:06:40,728
-Dr. Bailey / Dr. Derek Shepherd (PVM): Good morning.
+Meredith Grey / Dr. Derek Shepherd (PVM): Good morning.
 
 133
 00:06:40,749 --> 00:06:42,211
-Christina Yang / Meredith Grey (PVM): Katie, Bryce's labs came out clear.
+Cristina Yang / Dr. Meredith Grey (PVM): Katie, Bryce's labs came out clear.
 
 134
 00:06:42,252 --> 00:06:44,175
-Christina Yang / Meredith Grey (PVM): There's nothing in the results that explain her seizures.
+Cristina Yang / Dr. Meredith Grey (PVM): There's nothing in the results that explain her seizures.
 
 135
 00:06:44,235 --> 00:06:45,057
-Christina Yang / Meredith Grey (PVM): I just thought you'd want to know.
+Cristina Yang / Dr. Meredith Grey (PVM): I just thought you'd want to know.
 
 136
 00:06:45,177 --> 00:06:45,478
@@ -544,67 +544,67 @@ Meredith Grey / Unknown (PVM): OK.
 
 137
 00:06:46,379 --> 00:06:52,610
-George O'Malley / Meredith Grey (PVM): I heard every year the attending on-call picks the best intern and lets them perform a procedure during the first shift.
+George O'Malley / Dr. Meredith Grey (PVM): I heard every year the attending on-call picks the best intern and lets them perform a procedure during the first shift.
 
 138
 00:06:56,076 --> 00:06:57,740
-George O'Malley / Meredith Grey (PVM): I'm just saying it's what I heard.
+George O'Malley / Dr. Meredith Grey (PVM): I'm just saying it's what I heard.
 
 139
 00:06:57,800 --> 00:06:58,161
-Christina Yang / Meredith Grey (PVM): Get away.
+Cristina Yang / Dr. Meredith Grey (PVM): Get away.
 
 140
 00:06:58,201 --> 00:06:59,343
-Christina Yang / Meredith Grey (PVM): Now.
+Cristina Yang / Katie Bryce OR Dr. Meredith Grey (PVM): Now.
 
 141
 00:07:01,298 --> 00:07:02,540
-Izzy Stevens / Meredith Grey OR Alex Karev (PVM): Yeah, sounds good.
+George O'Malley / Dr. Meredith Grey OR Dr. Meredith Grey (PVM): Yeah, sounds good.
 
 142
 00:07:02,660 --> 00:07:03,221
-Izzy Stevens / Alex Karev (PVM): You'll be fine.
+Izzie Stevens / Katie Bryce (PVM): You'll be fine.
 
 143
 00:07:03,661 --> 00:07:04,141
-Izzy Stevens / Alex Karev (PVM): You'll be fine.
+George O'Malley / Katie Bryce (PVM): You'll be fine.
 
 144
 00:07:04,583 --> 00:07:07,185
-Patient (Katie Bryce) / Meredith Grey OR George O'Malley OR Alex Karev (PVM): If you don't count the fact that my bacon days are over, sure.
+Katie Bryce: If you don't count the fact that my bacon days are over, sure.
 
 145
 00:07:07,766 --> 00:07:09,689
-Patient (Katie Bryce) / George O'Malley (PVM): Should I bypass surgery tomorrow with Dr. Burke?
+Katie Bryce: Should I bypass surgery tomorrow with Dr. Burke?
 
 146
 00:07:09,730 --> 00:07:10,310
-Izzy Stevens / George O'Malley (PVM): I hear he's good.
+Meredith Grey / Dr. George O'Malley (PVM): I hear he's good.
 
 147
 00:07:10,891 --> 00:07:14,415
-Izzy Stevens / George O'Malley OR Dr. Derek Shepherd (PVM): And after that, you can have all the bacon-flavored soy product you can eat.
+Meredith Grey / Dr. George O'Malley (PVM): And after that, you can have all the bacon-flavored soy product you can eat.
 
 148
 00:07:14,637 --> 00:07:15,819
-Patient (Katie Bryce) / George O'Malley (PVM): Mm, kill me now.
+Katie Bryce: Mm, kill me now.
 
 149
 00:07:16,298 --> 00:07:18,723
-Izzy Stevens / George O'Malley OR George O'Malley (PVM): I wish I could, but I'm a healer.
+Meredith Grey / Dr. George O'Malley (PVM): I wish I could, but I'm a healer.
 
 150
 00:07:22,247 --> 00:07:22,968
-Dr. Bailey / Meredith Grey (PVM): You're lost.
+Cristina Yang / Dr. Meredith Grey (PVM): You're lost.
 
 151
 00:07:24,434 --> 00:07:25,375
-Meredith Grey / Meredith Grey (PVM): I'm not lost.
+Meredith Grey / Dr. Meredith Grey (PVM): I'm not lost.
 
 152
 00:07:25,795 --> 00:07:26,536
-Meredith Grey / Meredith Grey (PVM): How are you feeling?
+Meredith Grey / Dr. Meredith Grey OR Katie Bryce (PVM): How are you feeling?
 
 153
 00:07:26,896 --> 00:07:28,319
@@ -624,19 +624,19 @@ Katie Bryce: The Spokane Teen Miss.
 
 157
 00:07:33,185 --> 00:07:35,389
-Katie Bryce / Katie Bryce (PVM): I was in the top ten after the first two rounds.
+Katie Bryce: I was in the top ten after the first two rounds.
 
 158
 00:07:35,850 --> 00:07:36,629
-Katie Bryce / Katie Bryce (PVM): This is my year.
+Katie Bryce: This is my year.
 
 159
 00:07:37,192 --> 00:07:38,913
-Katie Bryce / Katie Bryce OR Meredith Grey (PVM): I could have won.
+Katie Bryce: I could have won.
 
 160
 00:07:38,933 --> 00:07:40,697
-Meredith Grey / Katie Bryce OR Meredith Grey (PVM): Hello?
+Meredith Grey / Katie Bryce OR Katie Bryce OR Katie Bryce (PVM): Hello?
 
 161
 00:07:40,716 --> 00:07:41,497
@@ -644,159 +644,159 @@ Katie Bryce / Katie Bryce (PVM): You're so lost.
 
 162
 00:07:41,576 --> 00:07:42,538
-Katie Bryce / Katie Bryce OR Meredith Grey OR Dr. Miranda Bailey (PVM): What are you, like, new?
+Katie Bryce / Dr. Izzie Stevens OR Katie Bryce (PVM): What are you, like, new?
 
 163
 00:07:45,103 --> 00:07:49,427
-Meredith Grey / Dr. Miranda Bailey (PVM): Okay, so I'm just gonna insert my fingers into your rectum.
+Izzie Stevens / Dr. Izzie Stevens (PVM): Okay, so I'm just gonna insert my fingers into your rectum.
 
 164
 00:08:05,187 --> 00:08:06,889
-Katie Bryce / George O'Malley OR Meredith Grey (PVM): I bet you missed a lot when you first started out.
+Katie Bryce / Gloria OR Dr. George O'Malley (PVM): I bet you missed a lot when you first started out.
 
 165
 00:08:10,833 --> 00:08:12,774
-Katie Bryce / Katie Bryce (PVM): I twisted my ankle in talent rehearsal.
+Katie Bryce: I twisted my ankle in talent rehearsal.
 
 166
 00:08:12,795 --> 00:08:15,557
-Katie Bryce / Katie Bryce (PVM): I do rhythmic gymnastics, which is, like, really cool.
+Katie Bryce: I do rhythmic gymnastics, which is, like, really cool.
 
 167
 00:08:15,858 --> 00:08:16,699
-Katie Bryce / Katie Bryce (PVM): Nobody else does it.
+Katie Bryce: Nobody else does it.
 
 168
 00:08:17,459 --> 00:08:21,084
-Katie Bryce / Katie Bryce (PVM): And I tripped over my ribbon, and I didn't get stuck with someone this clueless.
+Katie Bryce: And I tripped over my ribbon, and I didn't get stuck with someone this clueless.
 
 169
 00:08:21,985 --> 00:08:23,706
-Katie Bryce / Katie Bryce OR Dr. Miranda Bailey (PVM): And that was, like, a nurse.
+Katie Bryce: And that was, like, a nurse.
 
 170
 00:08:24,408 --> 00:08:33,758
-Katie Bryce / Dr. Miranda Bailey (PVM): You and I are going to have so much fun together.
+Izzie Stevens / Dr. Miranda Bailey (PVM): You and I are going to have so much fun together.
 
 171
 00:08:33,778 --> 00:08:33,878
-Meredith Grey / Meredith Grey OR Meredith Grey OR Meredith Grey (PVM): Yeah.
+Patient / Dr. Derek Shepherd OR Dr. Meredith Gray (PVM): Yeah.
 
 172
 00:08:34,716 --> 00:08:36,540
-Miranda Bailey / Alex Karev (PVM): A shift is a marathon, not a sprint.
+George O'Malley / Dr. George O'Malley (PVM): A shift is a marathon, not a sprint.
 
 173
 00:08:36,561 --> 00:08:36,639
-Miranda Bailey / Alex Karev (PVM): Eat.
+George O'Malley / Dr. George O'Malley (PVM): Eat.
 
 174
 00:08:37,181 --> 00:08:37,662
-Meredith Grey / Meredith Grey OR Alex Karev (PVM): I can't.
+Izzie Stevens / Dr. George O'Malley OR Dr. Meredith Grey (PVM): I can't.
 
 175
 00:08:37,822 --> 00:08:38,644
-Miranda Bailey / Alex Karev (PVM): You should eat something.
+George O'Malley / Dr. George O'Malley (PVM): You should eat something.
 
 176
 00:08:39,465 --> 00:08:41,966
-Meredith Grey / Dr. Miranda Bailey (PVM): You try eating after performing 17 rectal exams.
+Izzie Stevens / Dr. Izzie Stevens (PVM): You try eating after performing 17 rectal exams.
 
 177
 00:08:41,988 --> 00:08:42,908
-George O'Malley / Dr. Miranda Bailey (PVM): The Nazi hates me.
+Izzie Stevens / Dr. Izzie Stevens (PVM): The Nazi hates me.
 
 178
 00:08:43,450 --> 00:08:44,451
-Cristina Yang / Alex Karev (PVM): The Nazi's a resident.
+Cristina Yang / Dr. George O'Malley (PVM): The Nazi's a resident.
 
 179
 00:08:44,532 --> 00:08:46,474
-Cristina Yang / Alex Karev OR Dr. Miranda Bailey (PVM): I have attendings hating me.
+Cristina Yang / Dr. George O'Malley OR Dr. Izzie Stevens (PVM): I have attendings hating me.
 
 180
 00:08:46,495 --> 00:08:47,475
-Izzie Stevens / Dr. Miranda Bailey (PVM): You know Meredith is inbred?
+Cristina Yang / Dr. Izzie Stevens (PVM): You know Meredith is inbred?
 
 181
 00:08:48,076 --> 00:08:50,340
-Cristina Yang / Alex Karev OR Dr. Miranda Bailey (PVM): Like it's uncommon around here to be a doctor's parent.
+Izzie Stevens / Dr. George O'Malley OR Dr. Izzie Stevens (PVM): Like it's uncommon around here to be a doctor's parent.
 
 182
 00:08:50,360 --> 00:08:51,461
-Izzie Stevens / Meredith Grey OR Alex Karev OR Dr. Miranda Bailey (PVM): No, royally inbred.
+Cristina Yang / Dr. George O'Malley OR Dr. Meredith Grey OR Dr. Izzie Stevens (PVM): No, royally inbred.
 
 183
 00:08:51,562 --> 00:08:52,503
-Cristina Yang / Dr. Miranda Bailey (PVM): Her mother is Alice Gray.
+Cristina Yang / Dr. Izzie Stevens (PVM): Her mother is Alice Gray.
 
 184
 00:08:52,523 --> 00:08:53,965
-Izzie Stevens / Meredith Grey OR Dr. Izzie Stevens OR Dr. Miranda Bailey (PVM): Shut up, the Alice Gray.
+Izzie Stevens / Dr. Meredith Grey OR Dr. Izzie Stevens OR Dr. Izzie Stevens (PVM): Shut up, the Alice Gray.
 
 185
 00:08:54,245 --> 00:08:54,926
-George O'Malley / Meredith Grey (PVM): Who's Alice Gray?
+George O'Malley / Dr. Meredith Grey (PVM): Who's Alice Gray?
 
 186
 00:08:54,946 --> 00:08:55,427
-Cristina Yang / Meredith Grey OR Dr. Miranda Bailey (PVM): Alice.
+Cristina Yang / Dr. Meredith Grey OR Dr. Cristina Yang (PVM): Alice.
 
 187
 00:08:56,369 --> 00:08:58,350
-Alex Karev / Dr. Izzie Stevens (PVM): Where'd you go to med school, Mexico?
+Cristina Yang / Dr. Izzie Stevens (PVM): Where'd you go to med school, Mexico?
 
 188
 00:08:58,389 --> 00:08:59,913
-Cristina Yang / Dr. Izzie Stevens (PVM): She was one of the first big chick surgeons.
+Izzie Stevens / Dr. Izzie Stevens (PVM): She was one of the first big chick surgeons.
 
 189
 00:08:59,932 --> 00:09:01,552
-Cristina Yang / Meredith Grey OR Dr. Izzie Stevens (PVM): I mean, she practically invented the pep double.
+Cristina Yang / Dr. Meredith Grey OR Dr. Izzie Stevens (PVM): I mean, she practically invented the pep double.
 
 190
 00:09:01,572 --> 00:09:02,293
-Izzie Stevens / Meredith Grey OR Dr. Izzie Stevens (PVM): She's a living legend.
+Izzie Stevens / Dr. Meredith Grey OR Dr. Izzie Stevens (PVM): She's a living legend.
 
 191
 00:09:02,315 --> 00:09:03,937
-Cristina Yang / Meredith Grey (PVM): You know, she won the Harper Avery twice.
+Cristina Yang / Dr. Meredith Grey (PVM): You know, she won the Harper Avery twice.
 
 192
 00:09:04,096 --> 00:09:05,258
-George O'Malley / Meredith Grey (PVM): So I didn't know one thing.
+George O'Malley / Dr. Meredith Grey (PVM): So I didn't know one thing.
 
 193
 00:09:05,738 --> 00:09:06,839
-Alex Karev / Meredith Grey (PVM): Talk about points of pressure.
+Cristina Yang / Dr. Meredith Grey (PVM): Talk about points of pressure.
 
 194
 00:09:06,940 --> 00:09:08,740
-Cristina Yang / Meredith Grey (PVM): God, I would kill to have Ellis Gray as a mother.
+Cristina Yang / Dr. Meredith Grey (PVM): God, I would kill to have Ellis Gray as a mother.
 
 195
 00:09:08,759 --> 00:09:10,682
-Cristina Yang / Meredith Grey (PVM): I'd kill to be Ellis Gray.
+Izzie Stevens / Dr. Meredith Grey (PVM): I'd kill to be Ellis Gray.
 
 196
 00:09:11,244 --> 00:09:12,403
-Alex Karev / Meredith Grey (PVM): All I need is one big kiss.
+Alex Karev / Dr. Meredith Grey (PVM): All I need is one big kiss.
 
 197
 00:09:13,284 --> 00:09:13,524
-Cristina Yang / Meredith Grey (PVM): Come on.
+Meredith Grey / Dr. Meredith Grey (PVM): Come on.
 
 198
 00:09:14,586 --> 00:09:16,307
-Cristina Yang / Meredith Grey (PVM): Katie Bryce is a pain in the ass.
+Izzie Stevens / Dr. Meredith Grey (PVM): Katie Bryce is a pain in the ass.
 
 199
 00:09:16,649 --> 00:09:19,892
-Cristina Yang / Meredith Grey (PVM): If I hadn't checked in the Hippocratic Oath, I could work in her with my bare hands.
+Izzie Stevens / Dr. Meredith Grey (PVM): If I hadn't checked in the Hippocratic Oath, I could work in her with my bare hands.
 
 200
 00:09:22,134 --> 00:09:22,355
-George O'Malley / Meredith Grey OR Dr. Miranda Bailey (PVM): What?
+George O'Malley / Dr. Cristina Yang (PVM): What?
 
 201
 00:09:23,875 --> 00:09:25,498
@@ -820,7 +820,7 @@ Dr. Miranda Bailey: George O'Malley.
 
 206
 00:09:44,471 --> 00:09:44,653
-George O'Malley: Me?
+Dr. George O'Malley: Me?
 
 207
 00:09:45,375 --> 00:09:47,298
@@ -832,35 +832,35 @@ Dr. Miranda Bailey: Congratulations.
 
 209
 00:09:49,159 --> 00:09:49,461
-Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): Enjoy.
+Dr. Miranda Bailey: Enjoy.
 
 210
 00:09:56,543 --> 00:09:57,225
-Dr. Miranda Bailey / Alex Karev (PVM): Did he say me?
+George O'Malley / Dr. George O'Malley (PVM): Did he say me?
 
 211
 00:09:58,206 --> 00:09:59,388
-Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): I've seen his file.
+Cristina Yang / Dr. Miranda Bailey (PVM): I've seen his file.
 
 212
 00:09:59,408 --> 00:10:01,908
-Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): George O'Malley barely made the cut to get in this program.
+Cristina Yang / Dr. Miranda Bailey (PVM): George O'Malley barely made the cut to get in this program.
 
 213
 00:10:01,990 --> 00:10:02,909
-Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): He's not your guy.
+Alex Karev / Dr. Miranda Bailey (PVM): He's not your guy.
 
 214
 00:10:03,149 --> 00:10:04,490
-Dr. Richard Webber / Dr. Miranda Bailey OR Dr. Miranda Bailey (PVM): Oh, he's my guy, all right.
+Dr. Miranda Bailey / Dr. Miranda Bailey OR Dr. Miranda Bailey (PVM): Oh, he's my guy, all right.
 
 215
 00:10:04,591 --> 00:10:05,893
-Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): Every year, you pick your guy.
+Dr. Richard Webber / Dr. Miranda Bailey (PVM): Every year, you pick your guy.
 
 216
 00:10:05,913 --> 00:10:08,556
-Dr. Miranda Bailey / Dr. Miranda Bailey OR Dr. Miranda Bailey (PVM): And every year, your guy suffers more than any other internal search.
+Dr. Richard Webber / Dr. Miranda Bailey OR Dr. Miranda Bailey (PVM): And every year, your guy suffers more than any other internal search.
 
 217
 00:10:08,596 --> 00:10:10,297
@@ -876,11 +876,11 @@ Dr. Richard Webber / Dr. Miranda Bailey (PVM): I respect it.
 
 220
 00:10:12,437 --> 00:10:14,600
-Dr. Miranda Bailey / Dr. Izzie Stevens OR Dr. Miranda Bailey OR Meredith Grey (PVM): But George O'Malley's a puppy.
+Dr. Richard Webber / Gloria OR Dr. Meredith Grey OR Dr. Miranda Bailey (PVM): But George O'Malley's a puppy.
 
 221
 00:10:14,620 --> 00:10:16,042
-Nurse / Meredith Grey OR Dr. Miranda Bailey OR Dr. Izzie Stevens (PVM): Katie Bryce, 36 and 4.
+Nurse / Gloria OR Dr. Meredith Grey OR Dr. Miranda Bailey (PVM): Katie Bryce, 36 and 4.
 
 222
 00:10:16,523 --> 00:10:16,883
@@ -888,79 +888,79 @@ Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): Thank you.
 
 223
 00:10:17,624 --> 00:10:19,706
-Nurse / Meredith Grey (PVM): Katie, honey, mom and dad are here.
+Nurse / Dr. Meredith Grey (PVM): Katie, honey, mom and dad are here.
 
 224
 00:10:20,046 --> 00:10:23,109
-Dr. Isobel 'Izzie' Stevens / Meredith Grey (PVM): They gave her a sedative for the CT scan, so she's a little groggy.
+Dr. Miranda Bailey / Dr. Meredith Grey (PVM): They gave her a sedative for the CT scan, so she's a little groggy.
 
 225
 00:10:23,548 --> 00:10:24,730
-Katie's Mom / Meredith Grey (PVM): Will she be all right?
+Katie's Parent / Dr. Meredith Grey (PVM): Will she be all right?
 
 226
 00:10:24,946 --> 00:10:28,048
-Katie's Dad / Mr. Bryce (PVM): Our doctor at home said that she might need an operation.
+Katie's Parent / Dr. Derek Shepherd (PVM): Our doctor at home said that she might need an operation.
 
 227
 00:10:28,229 --> 00:10:28,750
-Katie's Mom / Mr. Bryce (PVM): Is that true?
+Katie's Parent / Dr. Derek Shepherd (PVM): Is that true?
 
 228
 00:10:29,168 --> 00:10:30,191
-Katie's Dad / Meredith Grey (PVM): What kind of operation?
+Katie's Parent / Dr. Meredith Grey (PVM): What kind of operation?
 
 229
 00:10:30,532 --> 00:10:34,053
-Dr. Isobel Stevens: She's, um, well, you know what?
+George O'Malley / Dr. Meredith Grey (PVM): She's, um, well, you know what?
 
 230
 00:10:34,115 --> 00:10:35,456
-Dr. Isobel Stevens: I'm not the doctor.
+George O'Malley / Dr. Meredith Grey (PVM): I'm not the doctor.
 
 231
 00:10:35,836 --> 00:10:39,139
-Dr. Isobel Stevens: I'm a doctor, but I'm not Katie's doctor.
+George O'Malley / Dr. Meredith Grey (PVM): I'm a doctor, but I'm not Katie's doctor.
 
 232
 00:10:39,158 --> 00:10:40,600
-Dr. Isobel Stevens: So I'll go get him for you.
+George O'Malley / Dr. Meredith Grey (PVM): So I'll go get him for you.
 
 233
 00:10:45,167 --> 00:10:45,427
-Dr. Isobel 'Izzie' Stevens / Meredith Grey OR Dr. Miranda Bailey (PVM): What?
+Meredith Grey / Dr. Cristina Yang (PVM): What?
 
 234
 00:10:45,846 --> 00:10:47,086
-Dr. Isobel 'Izzie' Stevens / Meredith Grey (PVM): Katie's parents have questions.
+George O'Malley / Dr. Meredith Grey (PVM): Katie's parents have questions.
 
 235
 00:10:47,129 --> 00:10:48,870
-Meredith Grey / Meredith Grey (PVM): Do you talk to them, or do I ask Burke?
+George O'Malley / Dr. Meredith Grey (PVM): Do you talk to them, or do I ask Burke?
 
 236
 00:10:49,290 --> 00:10:50,392
-Cristina Yang / Meredith Grey (PVM): No, Burke's off the case.
+Meredith Grey / Dr. Meredith Grey (PVM): No, Burke's off the case.
 
 237
 00:10:50,652 --> 00:10:52,072
-Izzie Stevens / Meredith Grey (PVM): Katie belongs to the new attending now.
+Meredith Grey / Dr. Meredith Grey OR Dr. Miranda Bailey (PVM): Katie belongs to the new attending now.
 
 238
 00:10:52,094 --> 00:10:53,533
-George O'Malley / Meredith Grey OR Dr. Miranda Bailey (PVM): Dr. Shepherd, he's over there.
+Meredith Grey / Dr. Miranda Bailey (PVM): Dr. Shepherd, he's over there.
 
 239
 00:10:57,346 --> 00:11:12,201
-Meredith Grey / Meredith Grey OR Meredith Grey (PVM): Eric, can I talk to you for a second?
+Meredith Grey / Dr. Meredith Grey OR Dr. Meredith Grey OR Dr. Ellis Grey (PVM): Eric, can I talk to you for a second?
 
 240
 00:11:12,341 --> 00:11:17,249
-Eric (intern) / Meredith Grey (PVM): Actually, I was... Dr. Shepard?
+Meredith Grey / Dr. Meredith Grey (PVM): Actually, I was... Dr. Shepard?
 
 241
 00:11:17,269 --> 00:11:17,849
-Meredith Grey / Meredith Grey (PVM): Dr. Shepard?
+Meredith Grey / Dr. Meredith Grey (PVM): Dr. Shepard?
 
 242
 00:11:18,450 --> 00:11:20,230
@@ -972,7 +972,7 @@ Dr. Derek Shepherd: Now it's Dr. Shepherd.
 
 244
 00:11:22,423 --> 00:11:24,346
-Meredith Grey: Dr. Shepherd, we should pretend it never happened.
+Dr. Meredith Grey: Dr. Shepherd, we should pretend it never happened.
 
 245
 00:11:24,365 --> 00:11:25,168
@@ -980,7 +980,7 @@ Dr. Derek Shepherd: What never happened?
 
 246
 00:11:25,349 --> 00:11:26,490
-Meredith Grey: You sleeping with me last night?
+Dr. Meredith Grey: You sleeping with me last night?
 
 247
 00:11:26,889 --> 00:11:28,052
@@ -992,23 +992,23 @@ Dr. Derek Shepherd: Because both are fond memories I like to hold on to.
 
 249
 00:11:30,739 --> 00:11:30,937
-Meredith Grey: No.
+Dr. Meredith Grey: No.
 
 250
 00:11:31,538 --> 00:11:32,542
-Meredith Grey: There will be no memories.
+Dr. Meredith Grey: There will be no memories.
 
 251
 00:11:33,461 --> 00:11:35,505
-Meredith Grey: I'm not the girl in the bar anymore, and you're not the guy.
+Dr. Meredith Grey: I'm not the girl in the bar anymore, and you're not the guy.
 
 252
 00:11:35,527 --> 00:11:37,070
-Meredith Grey: This can't exist.
+Dr. Meredith Grey: This can't exist.
 
 253
 00:11:37,610 --> 00:11:38,692
-Meredith Grey: You get that, right?
+Dr. Meredith Grey: You get that, right?
 
 254
 00:11:39,196 --> 00:11:41,158
@@ -1016,31 +1016,31 @@ Dr. Derek Shepherd: You took advantage of me, and now you want to forget about i
 
 255
 00:11:41,177 --> 00:11:44,120
-Meredith Grey: I did not take... I was drunk, vulnerable, and good-looking, and you took advantage.
+Dr. Derek Shepherd: I did not take... I was drunk, vulnerable, and good-looking, and you took advantage.
 
 256
 00:11:44,142 --> 00:11:47,186
-Dr. Derek Shepherd: Okay, I was the one who was drunk, and you are not that good-looking.
+Dr. Meredith Grey: Okay, I was the one who was drunk, and you are not that good-looking.
 
 257
 00:11:47,365 --> 00:11:48,047
-Meredith Grey: Maybe not today.
+Meredith Grey / Dr. Derek Shepherd (PVM): Maybe not today.
 
 258
 00:11:48,648 --> 00:11:49,048
-Dr. Derek Shepherd: Last night?
+Derek Shepherd / Dr. Derek Shepherd (PVM): Last night?
 
 259
 00:11:49,129 --> 00:11:49,950
-Meredith Grey: Last night I was very good-looking.
+Derek Shepherd / Dr. Derek Shepherd (PVM): Last night I was very good-looking.
 
 260
 00:11:49,970 --> 00:11:52,033
-Dr. Derek Shepherd: I had my red shirt on, my good-looking shirt, and you took advantage.
+Derek Shepherd / Dr. Derek Shepherd (PVM): I had my red shirt on, my good-looking shirt, and you took advantage.
 
 261
 00:11:52,373 --> 00:11:53,033
-Meredith Grey / Meredith Grey OR Dr. Derek Shepherd (PVM): I did not take advantage.
+Meredith Grey / Dr. Meredith Grey (PVM): I did not take advantage.
 
 262
 00:11:53,052 --> 00:11:53,875
@@ -1052,239 +1052,239 @@ Derek Shepherd / Dr. Derek Shepherd (PVM): Say Friday night.
 
 264
 00:11:57,700 --> 00:11:57,940
-Meredith Grey / Meredith Grey (PVM): No.
+Meredith Grey / Dr. Meredith Grey (PVM): No.
 
 265
 00:11:59,783 --> 00:12:01,825
-Meredith Grey / Meredith Grey (PVM): You're an attending, and I'm your intern.
+Dr. Meredith Grey: You're an attending, and I'm your intern.
 
 266
 00:12:03,105 --> 00:12:04,668
-Meredith Grey / Meredith Grey (PVM): Stop looking at me like that.
+Meredith Grey / Dr. Meredith Grey (PVM): Stop looking at me like that.
 
 267
 00:12:04,827 --> 00:12:05,370
-Derek Shepherd / Meredith Grey (PVM): Like what?
+Derek Shepherd / Dr. Meredith Grey (PVM): Like what?
 
 268
 00:12:05,730 --> 00:12:06,990
-Meredith Grey / Meredith Grey (PVM): Like you've seen me naked.
+Meredith Grey / Dr. Meredith Grey (PVM): Like you've seen me naked.
 
 269
 00:12:08,508 --> 00:12:11,649
-Meredith Grey / Meredith Grey (PVM): Dr. Shepherd, this is inappropriate.
+Dr. Meredith Grey: Dr. Shepherd, this is inappropriate.
 
 270
 00:12:12,850 --> 00:12:13,793
-Derek Shepherd / Meredith Grey (PVM): Has that ever occurred to you?
+Dr. Derek Shepherd: Has that ever occurred to you?
 
 271
 00:12:16,076 --> 00:12:22,620
-George O'Malley / Meredith Grey (PVM): Open, identify, ligate, remove, irrigate, close.
+Dr. George O'Malley: Open, identify, ligate, remove, irrigate, close.
 
 272
 00:12:22,642 --> 00:12:25,225
-George O'Malley / Meredith Grey (PVM): Open, identify, ligate, remove, irrigate, close.
+Dr. George O'Malley: Open, identify, ligate, remove, irrigate, close.
 
 273
 00:12:25,423 --> 00:12:26,086
-Alex Karev / Meredith Grey (PVM): He's going to faint.
+Cristina Yang / Dr. Meredith Grey OR Dr. Meredith Grey (PVM): He's going to faint.
 
 274
 00:12:26,105 --> 00:12:26,745
-Cristina Yang / Meredith Grey OR George O'Malley (PVM): He's a fainter.
+Alex Karev / Dr. Meredith Grey OR Dr. Meredith Grey OR Dr. George O'Malley (PVM): He's a fainter.
 
 275
 00:12:26,926 --> 00:12:28,807
-Alex Karev / Meredith Grey OR George O'Malley (PVM): No, code brown right in his pants.
+Cristina Yang / Dr. George O'Malley (PVM): No, code brown right in his pants.
 
 276
 00:12:28,846 --> 00:12:30,129
-Izzie Stevens / Meredith Grey OR George O'Malley (PVM): He's all about the flop sweat.
+Izzie Stevens / Dr. George O'Malley OR Dr. Meredith Grey (PVM): He's all about the flop sweat.
 
 277
 00:12:30,149 --> 00:12:31,451
-Cristina Yang / Meredith Grey (PVM): He's going to sweat himself unsterile.
+Cristina Yang / Dr. Meredith Grey (PVM): He's going to sweat himself unsterile.
 
 278
 00:12:31,610 --> 00:12:33,173
-Alex Karev / Meredith Grey OR Dr. Derek Shepherd (PVM): $10 says he messes up the McBurney.
+Alex Karev / Dr. Derek Shepherd OR Dr. Meredith Grey (PVM): $10 says he messes up the McBurney.
 
 279
 00:12:33,192 --> 00:12:33,913
-Cristina Yang / Meredith Grey OR Dr. Derek Shepherd (PVM): $15 says he cries.
+Cristina Yang / Dr. Derek Shepherd OR Dr. Meredith Grey (PVM): $15 says he cries.
 
 280
 00:12:33,971 --> 00:12:35,553
-Izzie Stevens / Meredith Grey OR Dr. Derek Shepherd (PVM): I'll put $20 on a total meltdown.
+Izzie Stevens / Dr. Derek Shepherd OR Dr. Meredith Grey (PVM): I'll put $20 on a total meltdown.
 
 281
 00:12:35,595 --> 00:12:37,635
-Meredith Grey / Meredith Grey (PVM): $50 says he pulls the whole thing off.
+Meredith Grey / Dr. Meredith Grey (PVM): $50 says he pulls the whole thing off.
 
 282
 00:12:39,961 --> 00:12:41,303
-Meredith Grey / Meredith Grey (PVM): That's one of us down there.
+Meredith Grey / Dr. Meredith Grey (PVM): That's one of us down there.
 
 283
 00:12:41,365 --> 00:12:43,349
-Izzie Stevens / Meredith Grey (PVM): The first one of us.
+Meredith Grey / Dr. Meredith Grey (PVM): The first one of us.
 
 284
 00:12:43,830 --> 00:12:44,812
-Cristina Yang / Meredith Grey (PVM): Where's your loyalty?
+Cristina Yang / Dr. Meredith Grey (PVM): Where's your loyalty?
 
 285
 00:12:44,831 --> 00:12:49,580
-Alex Karev / Meredith Grey (PVM): 75 says he can't even ID the appendix.
+Alex Karev / Dr. Meredith Grey (PVM): 75 says he can't even ID the appendix.
 
 286
 00:12:49,620 --> 00:12:51,182
-Cristina Yang / Meredith Grey OR Dr. Miranda Bailey (PVM): I'll take that, actually.
+Cristina Yang / Dr. Meredith Grey OR Dr. Miranda Bailey (PVM): I'll take that, actually.
 
 287
 00:12:51,243 --> 00:12:53,047
-Dr. Bailey / Dr. Miranda Bailey (PVM): OK, O'Malley, let's see what you can do.
+Dr. Miranda Bailey: OK, O'Malley, let's see what you can do.
 
 288
 00:12:53,086 --> 00:12:55,451
-George O'Malley / Meredith Grey OR Dr. Miranda Bailey (PVM): Here it comes.
+Dr. Miranda Bailey: Here it comes.
 
 289
 00:12:59,937 --> 00:13:00,519
-George O'Malley / Alex Karev OR Alex Karev (PVM): Scalpel.
+Unknown (likely surgeon, possibly Dr. Shepherd or Dr. Bailey) / Dr. Meredith Grey OR Katie Bryce OR Dr. Ellis Grey (PVM): Scalpel.
 
 290
 00:13:13,255 --> 00:13:14,677
-Dr. Bailey / Dr. Miranda Bailey (PVM): More pressure.
+Unknown (likely surgeon or surgical assistant) / Dr. Miranda Bailey (PVM): More pressure.
 
 291
 00:13:14,697 --> 00:13:16,178
-Dr. Bailey / Meredith Grey OR Dr. Miranda Bailey (PVM): Human flesh is a tough shell.
+Unknown (possibly Dr. Shepherd or Dr. Bailey) / Dr. Miranda Bailey (PVM): Human flesh is a tough shell.
 
 292
 00:13:16,259 --> 00:13:20,926
-Dr. Bailey / Meredith Grey OR Meredith Grey (PVM): Dig in.
+Unknown (possibly Dr. Shepherd or Dr. Bailey) / Dr. Meredith Grey OR Dr. Miranda Bailey (PVM): Dig in.
 
 293
 00:13:20,946 --> 00:13:21,264
-George O'Malley / Meredith Grey OR Meredith Grey (PVM): Pickups?
+Unknown (possibly surgical assistant or Meredith Grey) / Dr. Meredith Grey (PVM): Pickups?
 
 294
 00:13:22,326 --> 00:13:26,010
-Nurse (Bokhee or scrub nurse) / Dr. Miranda Bailey OR Meredith Grey OR Meredith Grey (PVM): Pickups.
+Unknown (possibly scrub nurse or another surgeon) / Dr. Meredith Grey OR Dr. Ellis Grey OR Dr. Miranda Bailey (PVM): Pickups.
 
 295
 00:13:26,032 --> 00:13:27,432
-George O'Malley / Meredith Grey OR Dr. Miranda Bailey OR Meredith Grey (PVM): Clamps?
+Unknown (possibly surgeon or assistant) / Dr. Meredith Grey (PVM): Clamps?
 
 296
 00:13:27,452 --> 00:13:33,221
-Nurse (Bokhee or scrub nurse) / Meredith Grey OR Meredith Grey (PVM): Clamps.
+Unknown (possibly scrub nurse or another surgeon) / Dr. Meredith Grey OR Dr. Derek Shepherd OR Dr. Meredith Grey OR Dr. George O'Malley (PVM): Clamps.
 
 297
 00:13:33,240 --> 00:13:33,740
-Dr. Bailey / Meredith Grey (PVM): Let's move.
+Unknown (possibly Dr. Bailey or Dr. Shepherd) / Dr. Meredith Grey (PVM): Let's move.
 
 298
 00:13:37,826 --> 00:13:38,466
-George O'Malley / Meredith Grey (PVM): I'm there.
+Unknown (possibly Meredith Grey or George O'Malley) / Dr. Meredith Grey (PVM): I'm there.
 
 299
 00:13:38,485 --> 00:13:40,769
-Cristina Yang / Meredith Grey (PVM): Damn, he got the first knee in my mouth.
+Unknown (possibly George O'Malley) / Dr. Meredith Grey (PVM): Damn, he got the first knee in my mouth.
 
 300
 00:13:40,788 --> 00:13:42,792
-Izzie Stevens / Meredith Grey OR George O'Malley OR Katie Bryce (PVM): I told you, he's gonna pull it off.
+Unknown (possibly Alex Karev or Cristina Yang) / Dr. Meredith Grey OR Dr. Ellis Grey (PVM): I told you, he's gonna pull it off.
 
 301
 00:13:51,629 --> 00:13:56,798
-George O'Malley / Alex Karev OR Alex Karev (PVM): Scalpel.
+Unknown (likely surgeon, possibly Dr. Bailey or Dr. Shepherd) / Dr. Meredith Grey OR Katie Bryce OR Dr. Ellis Grey (PVM): Scalpel.
 
 302
 00:13:56,817 --> 00:13:59,100
-Dr. Bailey / Mr. Bryce OR Dr. Miranda Bailey OR Alex Karev OR Alex Karev (PVM): Appendix is out.
+Unknown (possibly George O'Malley) / Dr. Miranda Bailey OR Dr. Ellis Grey OR Dr. Meredith Grey OR Dr. Meredith Grey OR Dr. George O'Malley (PVM): Appendix is out.
 
 303
 00:13:59,841 --> 00:14:00,442
-Dr. Bailey / Dr. Miranda Bailey OR Alex Karev (PVM): Not bad.
+Unknown (possibly Dr. Bailey or Dr. Shepherd) / Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): Not bad.
 
 304
 00:14:01,325 --> 00:14:02,466
-George O'Malley: Thank you.
+Unknown (possibly George O'Malley or Meredith Grey) / Dr. Miranda Bailey (PVM): Thank you.
 
 305
 00:14:02,485 --> 00:14:15,225
-Dr. Bailey / Dr. Miranda Bailey (PVM): Now all you have to do is invert the stump into the sequel and simultaneously pull up on the purse strings, but be careful not to break them.
+Unknown (likely Dr. Bailey) / Dr. Miranda Bailey (PVM): Now all you have to do is invert the stump into the sequel and simultaneously pull up on the purse strings, but be careful not to break them.
 
 306
 00:14:16,471 --> 00:14:17,793
-Dr. Bailey / Dr. Miranda Bailey (PVM): You ripped a seagum.
+Unknown (possibly Dr. Bailey or Dr. Shepherd) / Dr. Miranda Bailey (PVM): You ripped a seagum.
 
 307
 00:14:17,812 --> 00:14:19,534
-Dr. Bailey / Dr. Miranda Bailey (PVM): You've got a bleeding.
+Unknown (possibly Dr. Bailey or Dr. Shepherd) / Dr. Miranda Bailey (PVM): You've got a bleeding.
 
 308
 00:14:19,556 --> 00:14:20,397
-Dr. Bailey / Dr. Miranda Bailey (PVM): You're filling with stool.
+Unknown (possibly Dr. Bailey or Dr. Shepherd) / Dr. Miranda Bailey (PVM): You're filling with stool.
 
 309
 00:14:20,456 --> 00:14:21,817
-Dr. Bailey / Dr. Miranda Bailey (PVM): What do you do now?
+Unknown (possibly Dr. Bailey or Dr. Shepherd) / Dr. Miranda Bailey (PVM): What do you do now?
 
 310
 00:14:21,838 --> 00:14:24,764
-George O'Malley: Uh, think.
+Unknown (possibly George O'Malley) / Dr. Miranda Bailey (PVM): Uh, think.
 
 311
 00:14:24,783 --> 00:14:28,548
-Dr. Bailey / Dr. Miranda Bailey (PVM): You start the suction, and you start digging for those purse strings before she bleeds to death.
+Unknown (likely Dr. Bailey) / Dr. Miranda Bailey (PVM): You start the suction, and you start digging for those purse strings before she bleeds to death.
 
 312
 00:14:29,471 --> 00:14:30,793
-Dr. Bailey / Dr. Miranda Bailey OR Dr. Izzie Stevens (PVM): Bucky, give him a clamp.
+Unknown (possibly Dr. Bailey) / Dr. Miranda Bailey OR Dr. Derek Shepherd (PVM): Bucky, give him a clamp.
 
 313
 00:14:30,812 --> 00:14:32,216
-Nurse / Dr. Izzie Stevens (PVM): BP's dropping.
+Unknown (possibly nurse or resident) / Dr. Derek Shepherd (PVM): BP's dropping.
 
 314
 00:14:32,235 --> 00:14:32,774
-Nurse / Dr. Izzie Stevens (PVM): He's choking.
+Unknown (possibly nurse or resident) / Dr. Derek Shepherd (PVM): He's choking.
 
 315
 00:14:33,317 --> 00:14:34,338
-Intern (likely Cristina or Izzie) / Dr. Preston Burke OR Dr. Miranda Bailey OR Dr. Izzie Stevens (PVM): Come on, George.
+Unknown (possibly Dr. Bailey) / Dr. Miranda Bailey OR Dr. Derek Shepherd (PVM): Come on, George.
 
 316
 00:14:34,359 --> 00:14:35,038
-Intern (likely Cristina or Alex) / Dr. Preston Burke (PVM): Today.
+Unknown (possibly Dr. Bailey) / Dr. Miranda Bailey (PVM): Today.
 
 317
 00:14:35,600 --> 00:14:36,783
-Dr. Burke / Dr. Preston Burke (PVM): Pull your balls out of your back pocket.
+Unknown (possibly Dr. Bailey) / Dr. Miranda Bailey (PVM): Pull your balls out of your back pocket.
 
 318
 00:14:36,802 --> 00:14:37,163
-Dr. Burke / Dr. Derek Shepherd (PVM): Let's go.
+Unknown (possibly Dr. Bailey or Dr. Shepherd) / Dr. Derek Shepherd (PVM): Let's go.
 
 319
 00:14:38,105 --> 00:14:38,764
-Dr. Burke / Dr. Preston Burke (PVM): What are you waiting for?
+Unknown (possibly Dr. Bailey or Dr. Shepherd) / Dr. Miranda Bailey (PVM): What are you waiting for?
 
 320
 00:14:38,784 --> 00:14:41,590
-George O'Malley / Meredith Grey OR Dr. Preston Burke (PVM): Suction?
+Unknown (possibly George O'Malley or Meredith Grey) / Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): Suction?
 
 321
 00:14:41,610 --> 00:14:42,730
-Nurse / Meredith Grey (PVM): Getting too low, folks.
+Dr. Burke / Dr. Meredith Grey (PVM): Getting too low, folks.
 
 322
 00:14:44,432 --> 00:14:45,715
-Nurse / Meredith Grey OR Dr. Preston Burke (PVM): Dr. Burke.
+Intern (possibly George or another intern) / Dr. Miranda Bailey OR Dr. Meredith Grey OR Dr. Miranda Bailey (PVM): Dr. Burke.
 
 323
 00:14:45,735 --> 00:14:47,557
@@ -1292,7 +1292,7 @@ Dr. Preston Burke: Get out of the way.
 
 324
 00:14:47,576 --> 00:14:48,519
-Dr. Preston Burke: Pansy-ass idiot.
+Alex Karev / Dr. Miranda Bailey (PVM): Pansy-ass idiot.
 
 325
 00:14:48,817 --> 00:14:50,302
@@ -1300,139 +1300,139 @@ Dr. Preston Burke: Get him out of here.
 
 326
 00:14:50,322 --> 00:14:55,149
-Dr. Burke / Dr. Preston Burke OR Alex Karev (PVM): Suction.
+Dr. Burke / Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): Suction.
 
 327
 00:14:55,207 --> 00:14:56,168
-Dr. Burke / Alex Karev (PVM): Clamp.
+Dr. Burke / Dr. Meredith Grey (PVM): Clamp.
 
 328
 00:14:56,190 --> 00:14:56,551
-Intern (likely Alex Karev) / Alex Karev (PVM): It's 007.
+Alex Karev / Dr. Meredith Grey (PVM): It's 007.
 
 329
 00:14:56,571 --> 00:14:56,831
-Intern (likely Cristina Yang) / Alex Karev (PVM): 007, yep.
+Cristina Yang / Dr. Meredith Grey (PVM): 007, yep.
 
 330
 00:14:56,850 --> 00:14:57,711
-Intern (likely Izzie Stevens) / Alex Karev (PVM): A total 007.
+Izzie Stevens / Dr. Meredith Grey (PVM): A total 007.
 
 331
 00:14:57,750 --> 00:14:59,254
-Intern (likely Meredith Grey) / Alex Karev OR Dr. Miranda Bailey (PVM): What's 007 mean?
+Meredith Grey / Dr. Ellis Grey OR Dr. Meredith Grey OR Dr. Izzie Stevens (PVM): What's 007 mean?
 
 332
 00:14:59,894 --> 00:15:00,716
-Intern (likely Alex Karev) / Meredith Grey OR Dr. Miranda Bailey (PVM): License to kill.
+Cristina Yang / Dr. Izzie Stevens (PVM): License to kill.
 
 333
 00:15:02,840 --> 00:15:11,851
-Interns (group, likely Alex, Cristina, Izzie) / George O'Malley (PVM): 007.
+Interns (group, possibly Alex or Cristina) / Dr. George O'Malley (PVM): 007.
 
 334
 00:15:12,331 --> 00:15:14,134
-George O'Malley: They're calling me 007, aren't they?
+Dr. George O'Malley: They're calling me 007, aren't they?
 
 335
 00:15:14,268 --> 00:15:15,908
-Izzie Stevens / Meredith Grey (PVM): No one was calling you 007.
+Izzie Stevens / Dr. Meredith Grey (PVM): No one was calling you 007.
 
 336
 00:15:16,149 --> 00:15:17,951
-George O'Malley: I was on the elevator and Murphy whispered 007.
+Dr. George O'Malley: I was on the elevator and Murphy whispered 007.
 
 337
 00:15:17,971 --> 00:15:19,995
-Izzie Stevens / Meredith Grey OR George O'Malley (PVM): How many times do we have to go through this, George?
+Izzie Stevens / Dr. Meredith Grey OR Dr. George O'Malley (PVM): How many times do we have to go through this, George?
 
 338
 00:15:20,115 --> 00:15:20,437
-George O'Malley: Five?
+Dr. George O'Malley: Five?
 
 339
 00:15:20,475 --> 00:15:20,855
-Izzie Stevens / Meredith Grey (PVM): Ten?
+Dr. George O'Malley: Ten?
 
 340
 00:15:21,258 --> 00:15:22,538
-Cristina Yang / Meredith Grey OR George O'Malley (PVM): Give me a number or else I'm gonna hit you.
+Izzie Stevens / Dr. Meredith Grey OR Dr. George O'Malley (PVM): Give me a number or else I'm gonna hit you.
 
 341
 00:15:22,558 --> 00:15:24,623
-George O'Malley / Meredith Grey OR George O'Malley (PVM): Murphy whispered 007 and everyone laughed.
+Dr. George O'Malley: Murphy whispered 007 and everyone laughed.
 
 342
 00:15:24,822 --> 00:15:25,903
-Meredith Grey / Meredith Grey (PVM): He wasn't talking about you.
+Izzie Stevens / Dr. Meredith Grey (PVM): He wasn't talking about you.
 
 343
 00:15:26,384 --> 00:15:26,926
-George O'Malley / George O'Malley (PVM): Are you sure?
+Dr. George O'Malley: Are you sure?
 
 344
 00:15:27,105 --> 00:15:27,907
-Cristina Yang / Meredith Grey (PVM): Would we lie to you?
+Izzie Stevens / Dr. Meredith Grey (PVM): Would we lie to you?
 
 345
 00:15:28,846 --> 00:15:29,168
-George O'Malley / Dr. Derek Shepherd (PVM): Yes.
+Dr. George O'Malley: Yes.
 
 346
 00:15:29,187 --> 00:15:31,312
-Cristina Yang / Meredith Grey OR George O'Malley (PVM): 007 is a state of mind.
+Cristina Yang / Dr. Meredith Grey OR Dr. George O'Malley (PVM): 007 is a state of mind.
 
 347
 00:15:31,331 --> 00:15:34,014
-Meredith Grey / Meredith Grey OR George O'Malley (PVM): Well, it says the girl finished first in her class at Stanford.
+Meredith Grey / Dr. Meredith Grey OR Dr. George O'Malley (PVM): Well, it says the girl finished first in her class at Stanford.
 
 348
 00:15:38,240 --> 00:15:38,721
-George O'Malley / Meredith Grey (PVM): Oh, man.
+Dr. George O'Malley: Oh, man.
 
 349
 00:15:39,163 --> 00:15:40,565
-Cristina Yang / Meredith Grey (PVM): It's 911 for Katie Bryce.
+Cristina Yang / Dr. Meredith Grey (PVM): It's 911 for Katie Bryce.
 
 350
 00:15:42,846 --> 00:15:43,548
-George O'Malley / Meredith Grey (PVM): I gotta go.
+Meredith Grey / Dr. Meredith Grey (PVM): I gotta go.
 
 351
 00:15:48,606 --> 00:15:52,913
-Cristina Yang / Meredith Grey OR Alex Karev (PVM): They should have gone into geriatrics.
+Alex Karev / Dr. Meredith Grey (PVM): They should have gone into geriatrics.
 
 352
 00:15:52,932 --> 00:15:54,774
-Alex Karev / Meredith Grey (PVM): No one minds when you kill an old person.
+Alex Karev / Dr. Meredith Grey (PVM): No one minds when you kill an old person.
 
 353
 00:15:55,076 --> 00:15:56,197
-Cristina Yang / Meredith Grey (PVM): Surgery is hot.
+Alex Karev / Dr. Meredith Grey (PVM): Surgery is hot.
 
 354
 00:15:56,238 --> 00:15:57,038
-Alex Karev / Meredith Grey (PVM): It's the Marines.
+Alex Karev / Dr. Meredith Grey (PVM): It's the Marines.
 
 355
 00:15:57,158 --> 00:15:58,200
-Cristina Yang / Meredith Grey (PVM): It's macho.
+Cristina Yang / Dr. Meredith Grey (PVM): It's macho.
 
 356
 00:15:58,278 --> 00:15:59,040
-Alex Karev / Meredith Grey OR Dr. Miranda Bailey (PVM): It's hostile.
+Cristina Yang / Dr. Meredith Grey (PVM): It's hostile.
 
 357
 00:15:59,081 --> 00:15:59,841
-Cristina Yang / Dr. Miranda Bailey (PVM): It's hardcore.
+Cristina Yang / Dr. Meredith Grey (PVM): It's hardcore.
 
 358
 00:16:00,724 --> 00:16:07,192
-Alex Karev / George O'Malley OR Dr. Miranda Bailey (PVM): Geriatrics is for freaks who live with their mothers and never have sex.
+Cristina Yang / Dr. Meredith Grey OR Dr. George O'Malley OR Dr. Izzie Stevens (PVM): Geriatrics is for freaks who live with their mothers and never have sex.
 
 359
 00:16:07,211 --> 00:16:08,673
-George O'Malley / George O'Malley (PVM): I've got to get my own place.
+George O'Malley / Dr. George O'Malley (PVM): I've got to get my own place.
 
 360
 00:16:16,264 --> 00:16:16,865
@@ -1444,7 +1444,7 @@ Cristina Yang / Katie Bryce (PVM): Excuse me.
 
 362
 00:16:20,485 --> 00:16:21,346
-Dr. Derek Shepherd / Katie Bryce (PVM): Took you long enough.
+Katie Bryce: Took you long enough.
 
 363
 00:16:22,167 --> 00:16:22,668
@@ -1452,19 +1452,19 @@ Meredith Grey / Katie Bryce (PVM): You're OK?
 
 364
 00:16:22,687 --> 00:16:23,427
-Katie Bryce / Katie Bryce (PVM): The nurse paged me 911.
+Meredith Grey / Katie Bryce (PVM): The nurse paged me 911.
 
 365
 00:16:23,489 --> 00:16:29,398
-Meredith Grey / Meredith Grey OR Katie Bryce (PVM): I had to go all exorcist to get her to even pick up the phone.
+Katie Bryce: I had to go all exorcist to get her to even pick up the phone.
 
 366
 00:16:29,418 --> 00:16:29,638
-Meredith Grey / Meredith Grey (PVM): Wait.
+Meredith Grey / Dr. Meredith Grey (PVM): Wait.
 
 367
 00:16:30,499 --> 00:16:31,360
-Meredith Grey / Meredith Grey (PVM): There's nothing wrong with you?
+Meredith Grey / Dr. Meredith Grey (PVM): There's nothing wrong with you?
 
 368
 00:16:31,740 --> 00:16:32,182
@@ -1472,11 +1472,11 @@ Katie Bryce: I'm bored.
 
 369
 00:16:34,783 --> 00:16:35,365
-Meredith Grey / Meredith Grey (PVM): You little.
+Cristina Yang / Dr. Meredith Grey (PVM): You little.
 
 370
 00:16:36,748 --> 00:16:37,850
-Meredith Grey / Meredith Grey OR Katie Bryce (PVM): I'm not a cruise director.
+Cristina Yang / Dr. Meredith Grey (PVM): I'm not a cruise director.
 
 371
 00:16:37,870 --> 00:16:38,850
@@ -1504,15 +1504,15 @@ Meredith Grey / Katie Bryce (PVM): Okay.
 
 377
 00:16:51,442 --> 00:16:53,566
-Meredith Grey / Meredith Grey (PVM): This is an actual hospital.
+Cristina Yang / Dr. Meredith Grey (PVM): This is an actual hospital.
 
 378
 00:16:54,267 --> 00:16:55,369
-Meredith Grey / Meredith Grey (PVM): There are sick people here.
+Cristina Yang / Dr. Meredith Grey (PVM): There are sick people here.
 
 379
 00:16:56,129 --> 00:16:58,272
-Meredith Grey / Meredith Grey (PVM): Go to sleep and stop wasting my time.
+Cristina Yang / Dr. Meredith Grey (PVM): Go to sleep and stop wasting my time.
 
 380
 00:16:58,653 --> 00:16:59,514
@@ -1524,55 +1524,55 @@ Katie Bryce: My head's all full.
 
 382
 00:17:01,475 --> 00:17:02,456
-Meredith Grey / Meredith Grey (PVM): That's called thinking.
+Cristina Yang / Dr. Meredith Grey (PVM): That's called thinking.
 
 383
 00:17:02,817 --> 00:17:03,336
-Meredith Grey / Meredith Grey (PVM): Go with it.
+Cristina Yang / Dr. Meredith Grey (PVM): Go with it.
 
 384
 00:17:17,115 --> 00:17:17,796
-Cristina Yang / Dr. Derek Shepherd (PVM): What do you need?
+Nurse / Dr. Miranda Bailey (PVM): What do you need?
 
 385
 00:17:19,615 --> 00:17:22,320
-Izzie Stevens / Dr. Miranda Bailey (PVM): Mr. Jones has junky veins and he really needs antibiotics.
+Intern (likely George O'Malley) / Dr. Izzie Stevens (PVM): Mr. Jones has junky veins and he really needs antibiotics.
 
 386
 00:17:22,382 --> 00:17:23,585
-Izzie Stevens / Dr. Miranda Bailey (PVM): I should start a central line.
+Intern (likely George O'Malley) / Dr. Izzie Stevens (PVM): I should start a central line.
 
 387
 00:17:24,164 --> 00:17:24,708
-Cristina Yang / Dr. Preston Burke OR Dr. Miranda Bailey (PVM): So start one.
+Intern (likely Alex Karev) / Dr. Miranda Bailey OR Dr. Izzie Stevens (PVM): So start one.
 
 388
 00:17:26,250 --> 00:17:26,913
-Cristina Yang / Dr. Preston Burke (PVM): You don't know how.
+Intern (likely Cristina Yang) / Dr. Miranda Bailey (PVM): You don't know how.
 
 389
 00:17:27,934 --> 00:17:28,616
-Izzie Stevens / Gloria (PVM): I've never done one.
+Intern (likely George O'Malley) / Dr. Miranda Bailey OR Dr. Izzie Stevens (PVM): I've never done one.
 
 390
 00:17:30,520 --> 00:17:31,663
-Cristina Yang / Dr. Preston Burke (PVM): Well, you know what that means.
+Intern (likely Alex Karev) / Dr. Miranda Bailey (PVM): Well, you know what that means.
 
 391
 00:17:34,171 --> 00:17:35,575
-Intern 1 (likely George or Izzie) / Meredith Grey (PVM): Can't we just pinch someone else?
+Intern (likely Izzie Stevens) / Dr. Miranda Bailey (PVM): Can't we just pinch someone else?
 
 392
 00:17:35,934 --> 00:17:37,219
-Intern 2 (likely Izzie or George) / Meredith Grey (PVM): She's the on-call resident.
+Intern (likely Cristina Yang) / Dr. Miranda Bailey (PVM): She's the on-call resident.
 
 393
 00:17:49,332 --> 00:17:51,394
-Intern (likely George or Izzie) / Meredith Grey (PVM): Dr. Bailey, I don't mean to bother you, but... Then don't.
+Intern (likely George O'Malley) / Dr. Meredith Grey (PVM): Dr. Bailey, I don't mean to bother you, but... Then don't.
 
 394
 00:17:51,875 --> 00:17:52,675
-Intern (likely George or Izzie) / Meredith Grey (PVM): It's Mr. Jones.
+Intern (likely George O'Malley) / Dr. Meredith Grey (PVM): It's Mr. Jones.
 
 395
 00:17:52,797 --> 00:17:53,817
@@ -1580,7 +1580,7 @@ Dr. Miranda Bailey: Is he dying?
 
 396
 00:17:54,980 --> 00:17:55,039
-Intern (likely George or Izzie) / Meredith Grey (PVM): No.
+Intern (likely George O'Malley) / Dr. Meredith Grey (PVM): No.
 
 397
 00:17:55,059 --> 00:17:56,481
@@ -1588,7 +1588,7 @@ Dr. Miranda Bailey: Then stop talking to me.
 
 398
 00:18:08,059 --> 00:18:08,701
-Dr. Miranda Bailey: What is it?
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): What is it?
 
 399
 00:18:12,906 --> 00:18:17,413
@@ -1596,51 +1596,51 @@ Dr. Miranda Bailey: Next time you wake me, he better be so close to dead there's
 
 400
 00:18:34,403 --> 00:18:36,268
-Intern (likely George or Izzie) / Dr. Miranda Bailey (PVM): 4B's got post-op pneumonia.
+Nurse / Alex Karev (PVM): 4B's got post-op pneumonia.
 
 401
 00:18:36,468 --> 00:18:37,690
-Dr. Miranda Bailey: Let's start antibiotics.
+Intern (likely Meredith Grey) / Dr. Meredith Grey OR Alex Karev (PVM): Let's start antibiotics.
 
 402
 00:18:37,710 --> 00:18:39,750
-Intern (likely George or Izzie) / Dr. Miranda Bailey (PVM): Are you sure that's the right diagnosis?
+Nurse / Dr. Meredith Grey (PVM): Are you sure that's the right diagnosis?
 
 403
 00:18:40,211 --> 00:18:40,634
-Intern (likely George or Izzie) / Dr. Miranda Bailey (PVM): Well, I don't know.
+Intern (likely Meredith Grey) / Alex Karev (PVM): Well, I don't know.
 
 404
 00:18:40,653 --> 00:18:41,555
-Intern (likely George or Izzie) / Dr. Miranda Bailey (PVM): I'm only an intern.
+Intern (likely Meredith Grey) / Alex Karev (PVM): I'm only an intern.
 
 405
 00:18:41,996 --> 00:18:42,516
-Dr. Miranda Bailey: Here's an idea.
+Nurse / Alex Karev (PVM): Here's an idea.
 
 406
 00:18:42,536 --> 00:18:46,201
-Dr. Miranda Bailey: Why don't you go spend four years in med school and then let me know if it's the right diagnosis?
+Intern (likely Cristina Yang) / Alex Karev (PVM): Why don't you go spend four years in med school and then let me know if it's the right diagnosis?
 
 407
 00:18:47,281 --> 00:18:47,884
-Intern (likely George or Izzie) / Dr. Miranda Bailey (PVM): She's short of breath.
+Intern (likely Izzie Stevens) / Alex Karev (PVM): She's short of breath.
 
 408
 00:18:47,903 --> 00:18:48,505
-Intern (likely George or Izzie) / Dr. Miranda Bailey (PVM): She's got fever.
+Intern (likely Meredith Grey) / Alex Karev (PVM): She's got fever.
 
 409
 00:18:48,525 --> 00:18:49,546
-Intern (likely George or Izzie) / Dr. Miranda Bailey (PVM): She's post-op.
+Intern (likely George O'Malley) / Alex Karev (PVM): She's post-op.
 
 410
 00:18:50,346 --> 00:18:51,048
-Dr. Miranda Bailey: Start the antibiotics.
+Intern (likely Cristina Yang) / Alex Karev (PVM): Start the antibiotics.
 
 411
 00:18:53,151 --> 00:18:53,912
-Intern (likely Alex Karev) / Dr. Miranda Bailey (PVM): God, I hate nurses.
+Intern (likely Alex Karev) / Alex Karev (PVM): God, I hate nurses.
 
 412
 00:18:56,836 --> 00:18:57,477
@@ -1648,383 +1648,383 @@ Alex Karev: I'm Alex.
 
 413
 00:18:59,177 --> 00:19:00,038
-Jeremy's Partner (likely another intern, possibly Izzie or George) / Dr. Miranda Bailey (PVM): I'm with Jeremy.
+Intern (likely Izzie Stevens) / Alex Karev (PVM): I'm with Jeremy.
 
 414
 00:19:00,440 --> 00:19:01,402
-Alex Karev / Dr. Miranda Bailey (PVM): You're with the Nazi, right?
+Alex Karev / Alex Karev (PVM): You're with the Nazi, right?
 
 415
 00:19:01,540 --> 00:19:02,844
-Alex Karev / Meredith Grey (PVM): She may not have pneumonia, you know.
+Intern (likely Cristina Yang) / Dr. Meredith Grey (PVM): She may not have pneumonia, you know.
 
 416
 00:19:02,884 --> 00:19:04,866
-Alex Karev / Meredith Grey (PVM): She could be splinting or have a PE.
+Intern (likely Cristina Yang) / Dr. Meredith Grey (PVM): She could be splinting or have a PE.
 
 417
 00:19:05,367 --> 00:19:08,432
-Alex Karev: Like I said, I hate nurses.
+Alex Karev / Dr. Meredith Grey OR Alex Karev (PVM): Like I said, I hate nurses.
 
 418
 00:19:08,452 --> 00:19:09,193
-Izzie Stevens / Meredith Grey (PVM): What did you just say?
+Izzie Stevens / Dr. Meredith Grey (PVM): What did you just say?
 
 419
 00:19:11,137 --> 00:19:12,259
-Izzie Stevens / Meredith Grey (PVM): Did you just call me a nurse?
+Izzie Stevens / Dr. Meredith Grey (PVM): Did you just call me a nurse?
 
 420
 00:19:12,799 --> 00:19:17,868
-Alex Karev: Well, if the white cat fits.
+Alex Karev / Dr. Meredith Grey OR Alex Karev (PVM): Well, if the white cat fits.
 
 421
 00:19:17,890 --> 00:19:18,990
-Izzie Stevens / Meredith Grey (PVM): Damn it, Katie.
+Dr. Bailey / Dr. Meredith Grey (PVM): Damn it, Katie.
 
 422
 00:19:20,607 --> 00:19:21,451
-Alex Karev: She's seeing anybody?
+Alex Karev / Dr. George O'Malley (PVM): She's seeing anybody?
 
 423
 00:19:22,232 --> 00:19:22,555
-George O'Malley / Meredith Grey (PVM): I don't know.
+George O'Malley / Dr. Meredith Grey (PVM): I don't know.
 
 424
 00:19:23,518 --> 00:19:23,939
-Alex Karev: She's hot.
+Alex Karev / Dr. George O'Malley (PVM): She's hot.
 
 425
 00:19:24,559 --> 00:19:25,201
-George O'Malley / Alex Karev (PVM): I'm friends with her.
+George O'Malley / Dr. George O'Malley (PVM): I'm friends with her.
 
 426
 00:19:26,005 --> 00:19:26,807
-George O'Malley / Alex Karev (PVM): I mean, kind of friends.
+George O'Malley / Dr. George O'Malley (PVM): I mean, kind of friends.
 
 427
 00:19:26,846 --> 00:19:28,510
-George O'Malley / Alex Karev (PVM): Not, you know, actually friends.
+George O'Malley / Dr. George O'Malley (PVM): Not, you know, actually friends.
 
 428
 00:19:28,992 --> 00:19:30,175
-George O'Malley / Meredith Grey OR Alex Karev (PVM): Not exactly, but we're tight.
+George O'Malley / Dr. Meredith Grey (PVM): Not exactly, but we're tight.
 
 429
 00:19:30,739 --> 00:19:31,299
-George O'Malley / Meredith Grey OR Alex Karev (PVM): And we hang out.
+George O'Malley / Dr. Meredith Grey (PVM): And we hang out.
 
 430
 00:19:31,319 --> 00:19:33,385
-George O'Malley / Meredith Grey OR Alex Karev (PVM): I mean, really, only, like, just today.
+George O'Malley / Dr. Meredith Grey (PVM): I mean, really, only, like, just today.
 
 431
 00:19:33,866 --> 00:19:34,009
-Alex Karev / Meredith Grey (PVM): Dude.
+Alex Karev / Dr. Meredith Grey (PVM): Dude.
 
 432
 00:19:34,028 --> 00:19:34,169
-Other Male Intern / Meredith Grey (PVM): Dude.
+George O'Malley / Dr. Meredith Grey (PVM): Dude.
 
 433
 00:19:34,769 --> 00:19:35,511
-Alex Karev / Meredith Grey (PVM): Stop talking.
+Alex Karev / Dr. Meredith Grey (PVM): Stop talking.
 
 434
 00:19:47,997 --> 00:19:52,343
-Miranda Bailey / Meredith Grey OR Mr. Bryce (PVM): What took you so long?
+Dr. Bailey / Dr. Meredith Grey OR Dr. Meredith Grey (PVM): What took you so long?
 
 435
 00:19:52,363 --> 00:19:54,444
-Nurse / Mr. Bryce (PVM): She's having multiple grand mal seizures.
+Dr. Bailey / Dr. Meredith Grey (PVM): She's having multiple grand mal seizures.
 
 436
 00:19:55,528 --> 00:19:57,471
-Miranda Bailey / Mr. Bryce (PVM): Now, how do you want to proceed?
+Dr. Bailey / Dr. Meredith Grey (PVM): Now, how do you want to proceed?
 
 437
 00:19:57,490 --> 00:20:00,595
-Miranda Bailey / Mr. Bryce (PVM): Dr. Gray, are you listening to me?
+Dr. Bailey / Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): Dr. Gray, are you listening to me?
 
 438
 00:20:00,615 --> 00:20:02,896
-Nurse / Mr. Bryce OR Meredith Grey (PVM): She's got diazepam, two milligrams of diazepam.
+Meredith Gray / Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): She's got diazepam, two milligrams of diazepam.
 
 439
 00:20:02,958 --> 00:20:04,180
-Nurse / Mr. Bryce (PVM): I just gave the second dose.
+Meredith Gray / Dr. Miranda Bailey (PVM): I just gave the second dose.
 
 440
 00:20:05,122 --> 00:20:07,525
-Miranda Bailey / Dr. Preston Burke OR Mr. Bryce (PVM): Dr. Gray, you need to tell us what you want to do.
+Dr. Bailey / Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): Dr. Gray, you need to tell us what you want to do.
 
 441
 00:20:15,636 --> 00:20:17,221
-Nurse / Meredith Grey (PVM): Okay, she's full on lorazepam.
+Meredith Gray / Dr. Meredith Grey (PVM): Okay, she's full on lorazepam.
 
 442
 00:20:17,240 --> 00:20:18,843
-Nurse / Meredith Grey (PVM): She's had four milligrams.
+Cristina Yang / Dr. Meredith Grey (PVM): She's had four milligrams.
 
 443
 00:20:18,863 --> 00:20:20,486
-Meredith Grey / Meredith Grey (PVM): You page Dr. Bailey and Dr. Shepherd.
+Dr. Bailey / Dr. Meredith Grey (PVM): You page Dr. Bailey and Dr. Shepherd.
 
 444
 00:20:20,506 --> 00:20:21,488
-Meredith Grey / Meredith Grey (PVM): Lorazepam's not working.
+Cristina Yang / Dr. Meredith Grey (PVM): Lorazepam's not working.
 
 445
 00:20:22,009 --> 00:20:22,608
-Cristina Yang / Meredith Grey (PVM): Phenobarbital.
+Dr. Bailey / Dr. Meredith Grey (PVM): Phenobarbital.
 
 446
 00:20:22,650 --> 00:20:23,770
-Dr. Miranda Bailey / Meredith Grey (PVM): Load her with phenobarbital.
+Dr. Bailey / Dr. Meredith Grey (PVM): Load her with phenobarbital.
 
 447
 00:20:26,434 --> 00:20:26,915
-Izzie Stevens / Dr. Preston Burke (PVM): Pheno's in.
+Cristina Yang / Dr. Miranda Bailey (PVM): Pheno's in.
 
 448
 00:20:27,438 --> 00:20:28,038
-Cristina Yang / Meredith Grey (PVM): No change.
+Cristina Yang / Dr. Meredith Grey (PVM): No change.
 
 449
 00:20:28,557 --> 00:20:29,339
-Dr. Miranda Bailey / Meredith Grey (PVM): You page Dr. Shepherd.
+Dr. Bailey / Dr. Meredith Grey (PVM): You page Dr. Shepherd.
 
 450
 00:20:29,381 --> 00:20:30,142
-Meredith Grey / Meredith Grey (PVM): I just told you.
+Intern (possibly George or Izzie) / Dr. Meredith Grey (PVM): I just told you.
 
 451
 00:20:31,683 --> 00:20:32,404
-Dr. Miranda Bailey / Meredith Grey (PVM): Well, page him again.
+Dr. Bailey / Dr. Meredith Grey (PVM): Well, page him again.
 
 452
 00:20:32,444 --> 00:20:33,267
-Unknown / Meredith Grey (PVM): It's Dad.
+Intern (possibly Meredith or George) / Dr. Meredith Grey (PVM): It's Dad.
 
 453
 00:20:33,365 --> 00:20:33,906
-Cristina Yang / Mr. Bryce (PVM): What do you want to do?
+Intern (possibly George or Izzie) / Dr. Meredith Grey (PVM): What do you want to do?
 
 454
 00:20:35,832 --> 00:20:38,957
-Meredith Grey / Mr. Bryce (PVM): Dr. Bailey, you need to tell us what you want to do.
+Intern (possibly Meredith, George, or Izzie) / Dr. Meredith Grey (PVM): Dr. Bailey, you need to tell us what you want to do.
 
 455
 00:20:38,977 --> 00:20:39,355
-Cristina Yang / Mr. Bryce (PVM): Heart stop.
+Dr. Bailey / Dr. Meredith Grey (PVM): Heart stop.
 
 456
 00:20:39,375 --> 00:20:40,720
-Izzie Stevens / Unknown (PVM): Oh, look!
+Intern (possibly Izzie or George) / Unknown (PVM): Oh, look!
 
 457
 00:20:40,740 --> 00:20:40,920
-Cristina Yang / Unknown (PVM): Oh, look!
+Another intern (possibly Meredith or Cristina) / Unknown (PVM): Oh, look!
 
 458
 00:20:51,498 --> 00:20:52,699
-Dr. Miranda Bailey / Meredith Grey (PVM): Charge of pounds to 200.
+Dr. Bailey / Dr. Meredith Grey (PVM): Charge of pounds to 200.
 
 459
 00:20:52,960 --> 00:20:54,279
-Cristina Yang / Meredith Grey (PVM): Charge.
+Intern (possibly George or Izzie) / Dr. Meredith Grey (PVM): Charge.
 
 460
 00:20:54,299 --> 00:20:54,480
-Cristina Yang / Meredith Grey (PVM): Clear.
+Dr. Bailey / Dr. Meredith Grey (PVM): Clear.
 
 461
 00:20:57,625 --> 00:20:59,287
-Cristina Yang / Dr. Izzie Stevens OR Dr. Preston Burke (PVM): Still beef, if nothing.
+Intern (possibly Cristina) / Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): Still beef, if nothing.
 
 462
 00:20:59,748 --> 00:20:59,988
-Izzie Stevens / Meredith Grey (PVM): Charging.
+Intern (possibly George or Izzie) / Dr. Meredith Grey (PVM): Charging.
 
 463
 00:21:00,008 --> 00:21:00,469
-Cristina Yang / Meredith Grey (PVM): 19 seconds.
+Intern (possibly Cristina or Meredith) / Dr. Meredith Grey (PVM): 19 seconds.
 
 464
 00:21:00,807 --> 00:21:01,230
-Dr. Miranda Bailey / Meredith Grey (PVM): Charge to 300.
+Dr. Bailey / Dr. Meredith Grey (PVM): Charge to 300.
 
 465
 00:21:01,250 --> 00:21:01,730
-Cristina Yang / Meredith Grey (PVM): 300.
+Intern (possibly George or Izzie) / Dr. Meredith Grey (PVM): 300.
 
 466
 00:21:03,592 --> 00:21:04,251
-Izzie Stevens / Meredith Grey (PVM): Anything?
+Dr. Bailey / Dr. Meredith Grey (PVM): Anything?
 
 467
 00:21:04,271 --> 00:21:04,894
-Cristina Yang / Meredith Grey (PVM): 27 seconds.
+Intern (possibly Cristina or Meredith) / Dr. Meredith Grey (PVM): 27 seconds.
 
 468
 00:21:05,515 --> 00:21:06,434
-Dr. Miranda Bailey / Meredith Grey (PVM): Charge to 360.
+Dr. Bailey / Dr. Meredith Grey (PVM): Charge to 360.
 
 469
 00:21:08,116 --> 00:21:08,857
-Unknown (likely a doctor or intern) / Meredith Grey (PVM): Come on, Katie.
+Intern (possibly George or Izzie) / Dr. Meredith Grey (PVM): Come on, Katie.
 
 470
 00:21:08,877 --> 00:21:09,960
-Unknown (likely a nurse or intern monitoring time) / Meredith Grey OR Dr. Preston Burke OR Mr. Bryce (PVM): 49 seconds.
+Intern (possibly Cristina or Meredith) / Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): 49 seconds.
 
 471
 00:21:10,338 --> 00:21:14,663
-Unknown (likely a doctor or intern) / Meredith Grey OR Dr. Preston Burke OR Mr. Bryce (PVM): At 60 seconds, you're supposed to admit or nothing's wrong.
+Intern (possibly Cristina or Meredith) / Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): At 60 seconds, you're supposed to admit or nothing's wrong.
 
 472
 00:21:14,683 --> 00:21:14,944
-Unknown (likely a doctor or intern) / Meredith Grey (PVM): Charge again.
+Dr. Bailey / Dr. Meredith Grey (PVM): Charge again.
 
 473
 00:21:14,964 --> 00:21:15,987
-Unknown (likely a nurse or another doctor) / Meredith Grey (PVM): Charge again.
+Intern (possibly George or Izzie) / Dr. Meredith Grey (PVM): Charge again.
 
 474
 00:21:21,198 --> 00:21:21,557
-Unknown (likely a doctor) / Meredith Grey (PVM): Anything?
+Dr. Bailey / Dr. Meredith Grey (PVM): Anything?
 
 475
 00:21:22,159 --> 00:21:23,000
-Unknown (likely a nurse or intern monitoring the patient) / Meredith Grey (PVM): I see sinus rhythm.
+Intern (possibly Cristina or Meredith) / Dr. Meredith Grey (PVM): I see sinus rhythm.
 
 476
 00:21:23,961 --> 00:21:24,883
-Unknown (likely a nurse or intern) / Meredith Grey (PVM): Blood pressure's coming up.
+Intern (possibly George or Izzie) / Dr. Miranda Bailey (PVM): Blood pressure's coming up.
 
 477
 00:21:25,462 --> 00:21:25,804
-Unknown (likely a doctor) / Meredith Grey (PVM): Right.
+Dr. Bailey / Dr. Meredith Grey (PVM): Right.
 
 478
 00:21:27,164 --> 00:21:27,885
-Unknown (likely a nurse or intern) / Meredith Grey (PVM): Pressure's returning.
+Intern (possibly George or Izzie) / Dr. Meredith Grey (PVM): Pressure's returning.
 
 479
 00:21:28,468 --> 00:21:29,169
-Unknown (likely a nurse or intern) / Meredith Grey (PVM): Rate's coming back.
+Intern (possibly Cristina or Meredith) / Dr. Meredith Grey (PVM): Rate's coming back.
 
 480
 00:21:30,088 --> 00:21:31,030
-Unknown (likely Dr. Shepherd or Dr. Burke) / Dr. Derek Shepherd (PVM): What the hell happened?
+Dr. Derek Shepherd / Dr. Derek Shepherd (PVM): What the hell happened?
 
 481
 00:21:31,530 --> 00:21:33,173
-Unknown (likely an intern or nurse) / Meredith Grey OR Dr. Derek Shepherd (PVM): She had a seizure and her heart stopped.
+Meredith Grey / Dr. Derek Shepherd OR Dr. Meredith Grey (PVM): She had a seizure and her heart stopped.
 
 482
 00:21:33,413 --> 00:21:34,615
-Unknown (likely Dr. Shepherd or Dr. Burke) / Dr. Derek Shepherd (PVM): You were supposed to be monitoring her.
+Dr. Derek Shepherd / Dr. Derek Shepherd (PVM): You were supposed to be monitoring her.
 
 483
 00:21:35,037 --> 00:21:36,317
-Unknown (likely Meredith Grey or Cristina Yang) / Meredith Grey OR Dr. Derek Shepherd (PVM): I checked on her and she... I got her.
+Meredith Grey / Dr. Derek Shepherd OR Dr. Meredith Grey (PVM): I checked on her and she... I got her.
 
 484
 00:21:36,337 --> 00:21:37,058
-Unknown (likely Dr. Shepherd or Dr. Burke) / Dr. Derek Shepherd (PVM): Just go.
+Dr. Derek Shepherd / Dr. Derek Shepherd (PVM): Just go.
 
 485
 00:21:41,105 --> 00:21:41,905
-Unknown (likely Dr. Shepherd or Dr. Burke) / Dr. Derek Shepherd (PVM): Somebody get me her.
+Dr. Derek Shepherd / Dr. Meredith Grey OR Dr. Derek Shepherd (PVM): Somebody get me her.
 
 486
 00:21:43,049 --> 00:21:43,972
-Unknown (likely Dr. Shepherd or Dr. Burke) / Dr. Derek Shepherd (PVM): Give me a chart, please.
+Dr. Derek Shepherd / Dr. Miranda Bailey (PVM): Give me a chart, please.
 
 487
 00:21:44,576 --> 00:21:47,086
-Dr. Burke / Dr. Miranda Bailey OR Dr. Miranda Bailey (PVM): You get a 911, you page me immediately.
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): You get a 911, you page me immediately.
 
 488
 00:21:47,125 --> 00:21:49,252
-Dr. Burke / Dr. Miranda Bailey (PVM): Not in the five minutes it takes you to get to the emergency.
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): Not in the five minutes it takes you to get to the emergency.
 
 489
 00:21:49,354 --> 00:21:49,855
-Dr. Burke / Dr. Miranda Bailey (PVM): Immediately.
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): Immediately.
 
 490
 00:21:50,017 --> 00:21:52,345
-Dr. Burke / Dr. Miranda Bailey (PVM): You on my team, and if somebody dies, it's my ass.
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): You on my team, and if somebody dies, it's my ass.
 
 491
 00:21:52,365 --> 00:21:52,605
-Dr. Burke / Dr. Miranda Bailey (PVM): You hear me?
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): You hear me?
 
 492
 00:21:53,007 --> 00:21:53,449
-Unknown (likely intern being addressed) / Dr. Miranda Bailey (PVM): Right?
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): Right?
 
 493
 00:22:09,173 --> 00:22:32,163
-Unknown (likely Dr. Burke) / Meredith Grey OR Meredith Grey OR Mr. Bryce OR Katie Bryce (PVM): You tell anyone ever.
+Cristina Yang / Dr. Meredith Grey OR Dr. Ellis Grey OR Dr. Meredith Grey OR Dr. Derek Shepherd OR Gloria (PVM): You tell anyone ever.
 
 494
 00:22:32,182 --> 00:22:34,203
-Unknown (likely intern, possibly Meredith Grey) / Mr. Bryce (PVM): You said it was a seizure disorder.
+Katie Bryce's Mother / Dr. Derek Shepherd (PVM): You said it was a seizure disorder.
 
 495
 00:22:34,806 --> 00:22:35,787
-Mr. Bryce / Mr. Bryce (PVM): Now you're saying it isn't?
+Katie Bryce's Mother / Dr. Derek Shepherd (PVM): Now you're saying it isn't?
 
 496
 00:22:35,807 --> 00:22:37,189
-Dr. Shepherd / Mr. Bryce (PVM): I'm saying that I don't know.
+Dr. Derek Shepherd / Dr. Derek Shepherd (PVM): I'm saying that I don't know.
 
 497
 00:22:37,287 --> 00:22:38,769
-Mr. Bryce / Meredith Grey OR Mr. Bryce (PVM): Well, what do you think it could be?
+Katie Bryce's Mother / Dr. Meredith Grey OR Dr. Derek Shepherd (PVM): Well, what do you think it could be?
 
 498
 00:22:38,788 --> 00:22:39,509
-Dr. Shepherd / Meredith Grey (PVM): I don't know.
+Dr. Derek Shepherd / Dr. Meredith Grey (PVM): I don't know.
 
 499
 00:22:39,529 --> 00:22:40,230
-Mr. Bryce / Mr. Bryce (PVM): When will you know?
+Katie Bryce's Mother / Dr. Derek Shepherd (PVM): When will you know?
 
 500
 00:22:40,573 --> 00:22:42,296
-Dr. Shepherd / Mr. Bryce (PVM): I don't have an answer for you for now.
+Dr. Derek Shepherd / Dr. Derek Shepherd (PVM): I don't have an answer for you for now.
 
 501
 00:22:43,458 --> 00:22:44,838
-Dr. Shepherd / Meredith Grey OR Mr. Bryce OR Mr. Bryce (PVM): Katie is stable and everything.
+Meredith Grey / Dr. Derek Shepherd OR Dr. Meredith Grey (PVM): Katie is stable and everything.
 
 502
 00:22:45,039 --> 00:22:45,780
-Mr. Bryce: Wait one damn minute.
+Katie Bryce's Father (Mr. Bryce) / Dr. Derek Shepherd (PVM): Wait one damn minute.
 
 503
 00:22:46,383 --> 00:22:51,471
-Mr. Bryce: We came here because this hospital is supposed to be the best in Washington.
+Katie Bryce's Father (Mr. Bryce) / Dr. Derek Shepherd (PVM): We came here because this hospital is supposed to be the best in Washington.
 
 504
 00:22:51,490 --> 00:22:52,472
-Mr. Bryce / Mr. Bryce (PVM): That's my kid in there.
+Katie Bryce's Father (Mr. Bryce) / Dr. Derek Shepherd (PVM): That's my kid in there.
 
 505
 00:22:53,315 --> 00:22:54,317
-Mr. Bryce / Mr. Bryce (PVM): My kid.
+Katie Bryce's Father (Mr. Bryce) / Dr. Derek Shepherd (PVM): My kid.
 
 506
 00:22:54,481 --> 00:22:57,027
-Mr. Bryce: And you have the audacity to stand here and tell me I don't know.
+Katie Bryce's Father (Mr. Bryce) / Dr. Derek Shepherd (PVM): And you have the audacity to stand here and tell me I don't know.
 
 507
 00:22:57,125 --> 00:22:57,666
-Dr. Shepherd / Mr. Bryce (PVM): Mr. Bryce.
+Dr. Derek Shepherd: Mr. Bryce.
 
 508
 00:22:57,708 --> 00:23:01,050
@@ -2036,51 +2036,51 @@ Mr. Bryce: You get me someone else, someone better than you.
 
 510
 00:23:03,894 --> 00:23:06,038
-Dr. Shepherd / Dr. Preston Burke OR Mr. Bryce (PVM): Mr. Bryce, I assure you that I am working hard on Katie's case.
+Dr. Derek Shepherd: Mr. Bryce, I assure you that I am working hard on Katie's case.
 
 511
 00:23:06,057 --> 00:23:06,558
-Mr. Bryce: No, you're not.
+Patient (Mr. Savage) / Dr. Derek Shepherd OR Dr. Miranda Bailey (PVM): No, you're not.
 
 512
 00:23:07,000 --> 00:23:08,781
-Mr. Bryce: If you were, you'd be able to give me some answers.
+Patient (Mr. Savage) / Dr. Miranda Bailey (PVM): If you were, you'd be able to give me some answers.
 
 513
 00:23:10,125 --> 00:23:13,410
-Dr. Burke / Dr. Preston Burke OR Dr. Miranda Bailey (PVM): I put you on a bypass machine, which pumps blood for your heart.
+Preston Burke / Dr. Miranda Bailey (PVM): I put you on a bypass machine, which pumps blood for your heart.
 
 514
 00:23:13,430 --> 00:23:15,211
-Dr. Burke / Dr. Preston Burke OR Dr. Miranda Bailey (PVM): Fix your ticker, take you off the machine.
+Preston Burke / Dr. Miranda Bailey (PVM): Fix your ticker, take you off the machine.
 
 515
 00:23:15,291 --> 00:23:15,633
-Dr. Burke / Dr. Miranda Bailey (PVM): I'm done.
+Preston Burke / Dr. Miranda Bailey (PVM): I'm done.
 
 516
 00:23:15,873 --> 00:23:17,996
-Dr. Burke / Dr. Izzie Stevens OR Dr. Miranda Bailey (PVM): Simple procedure.
+Preston Burke / Dr. Miranda Bailey OR Dr. Izzie Stevens (PVM): Simple procedure.
 
 517
 00:23:18,016 --> 00:23:19,376
-Patient's family member / Dr. Izzie Stevens (PVM): So I shouldn't worry?
+Mr. Savage / Dr. Izzie Stevens (PVM): So I shouldn't worry?
 
 518
 00:23:20,240 --> 00:23:21,942
-Dr. Burke / Dr. Miranda Bailey (PVM): I'm very good at what I do.
+Preston Burke / Dr. Miranda Bailey (PVM): I'm very good at what I do.
 
 519
 00:23:22,173 --> 00:23:23,036
-Dr. Burke / Dr. Miranda Bailey (PVM): It still is surgery.
+Preston Burke / Dr. Miranda Bailey (PVM): It still is surgery.
 
 520
 00:23:23,414 --> 00:23:24,155
-Dr. Burke / Dr. Miranda Bailey (PVM): There are some risks.
+Preston Burke / Dr. Miranda Bailey (PVM): There are some risks.
 
 521
 00:23:24,777 --> 00:23:26,659
-Dr. Burke / Dr. Miranda Bailey (PVM): I'll see you in the OR this afternoon, Mr. Savage.
+Preston Burke / Dr. Miranda Bailey (PVM): I'll see you in the OR this afternoon, Mr. Savage.
 
 522
 00:23:29,902 --> 00:23:29,961
@@ -2088,179 +2088,179 @@ Mr. Savage / Unknown (PVM): OK.
 
 523
 00:23:29,980 --> 00:23:34,326
-Tony (patient's family) / George O'Malley OR Alex Karev (PVM): You're not going to leave me here alone with that guy, are you?
+Mr. Savage / Katie Bryce OR Dr. George O'Malley (PVM): You're not going to leave me here alone with that guy, are you?
 
 524
 00:23:34,346 --> 00:23:35,925
-Dr. Bailey / George O'Malley (PVM): Oh, I'll be outside the OR the whole time.
+Cristina Yang / Dr. George O'Malley (PVM): Oh, I'll be outside the OR the whole time.
 
 525
 00:23:37,126 --> 00:23:38,769
-Dr. Bailey / George O'Malley (PVM): Dr. Burke is very good.
+Cristina Yang / Dr. George O'Malley (PVM): Dr. Burke is very good.
 
 526
 00:23:39,670 --> 00:23:40,131
-Dr. Bailey / George O'Malley (PVM): Don't worry.
+Cristina Yang / Dr. George O'Malley (PVM): Don't worry.
 
 527
 00:23:41,250 --> 00:23:41,810
-Dr. Bailey / Meredith Grey OR George O'Malley OR Alex Karev (PVM): I'll see you after.
+Cristina Yang / Dr. George O'Malley OR Gloria OR Dr. Meredith Grey (PVM): I'll see you after.
 
 528
 00:23:42,451 --> 00:23:43,673
-Tony (patient's family) / Dr. Izzie Stevens (PVM): He'll be fine, right?
+Patient's family member / Gloria (PVM): He'll be fine, right?
 
 529
 00:23:43,952 --> 00:23:44,894
-Dr. Bailey / Alex Karev (PVM): Tony's going to sail through.
+Cristina Yang / Katie Bryce (PVM): Tony's going to sail through.
 
 530
 00:23:48,458 --> 00:23:49,439
-Dr. Bailey / Alex Karev (PVM): You have nothing to worry about.
+Cristina Yang / Dr. Meredith Grey (PVM): You have nothing to worry about.
 
 531
 00:23:49,459 --> 00:23:50,680
-Dr. Bailey / Alex Karev (PVM): I promise.
+Cristina Yang / Dr. Meredith Grey (PVM): I promise.
 
 532
 00:23:54,625 --> 00:23:55,286
-Cristina Yang / Dr. Miranda Bailey (PVM): What are you doing?
+Cristina Yang / Dr. Izzie Stevens (PVM): What are you doing?
 
 533
 00:23:55,884 --> 00:23:59,410
-George O'Malley / Dr. Miranda Bailey (PVM): I'm suturing a banana with the vain hope that it wakes up my brain.
+Meredith Grey / Dr. Izzie Stevens (PVM): I'm suturing a banana with the vain hope that it wakes up my brain.
 
 534
 00:24:00,652 --> 00:24:02,393
-Cristina Yang / Dr. Miranda Bailey (PVM): Why are you smiling at 007?
+Cristina Yang / Dr. Meredith Grey OR Dr. Izzie Stevens (PVM): Why are you smiling at 007?
 
 535
 00:24:03,835 --> 00:24:05,497
-Cristina Yang / Meredith Grey OR Dr. Miranda Bailey (PVM): I'm sorry I get mean when I'm tired.
+Cristina Yang / Dr. Meredith Grey (PVM): I'm sorry I get mean when I'm tired.
 
 536
 00:24:05,695 --> 00:24:06,116
-Cristina Yang / Dr. Miranda Bailey (PVM): You know what?
+Cristina Yang / Dr. Izzie Stevens (PVM): You know what?
 
 537
 00:24:07,377 --> 00:24:07,877
-George O'Malley / Meredith Grey (PVM): I don't care.
+Cristina Yang / Dr. Meredith Grey (PVM): I don't care.
 
 538
 00:24:07,897 --> 00:24:11,702
-George O'Malley / Dr. Derek Shepherd OR Meredith Grey (PVM): I comforted the family, and I got to hang out in the OR today.
+Cristina Yang / Dr. Meredith Grey OR Dr. Derek Shepherd (PVM): I comforted the family, and I got to hang out in the OR today.
 
 539
 00:24:12,545 --> 00:24:13,085
-George O'Malley / Dr. Derek Shepherd OR Dr. Miranda Bailey (PVM): All is well.
+Cristina Yang / Dr. Izzie Stevens OR Dr. Derek Shepherd (PVM): All is well.
 
 540
 00:24:13,163 --> 00:24:14,105
-Cristina Yang / Dr. Derek Shepherd OR Dr. Miranda Bailey (PVM): Does anybody know why we're here?
+George O'Malley / Dr. Izzie Stevens OR Dr. Derek Shepherd (PVM): Does anybody know why we're here?
 
 541
 00:24:14,164 --> 00:24:15,968
-Dr. Shepherd / Dr. Derek Shepherd OR Dr. Derek Shepherd OR Dr. Miranda Bailey (PVM): Well, good morning.
+Miranda Bailey / Dr. Izzie Stevens OR Dr. Derek Shepherd (PVM): Well, good morning.
 
 542
 00:24:17,368 --> 00:24:17,630
-Meredith Grey / Dr. Derek Shepherd (PVM): Good morning.
+Dr. Derek Shepherd / Dr. Derek Shepherd (PVM): Good morning.
 
 543
 00:24:18,069 --> 00:24:19,810
-Dr. Shepherd / Dr. Derek Shepherd OR Dr. Derek Shepherd (PVM): I'm going to do something pretty rare for a surgeon.
+Dr. Derek Shepherd / Dr. Derek Shepherd (PVM): I'm going to do something pretty rare for a surgeon.
 
 544
 00:24:20,491 --> 00:24:22,134
-Dr. Shepherd / Dr. Derek Shepherd (PVM): I'm going to ask interns for help.
+Dr. Derek Shepherd / Dr. Derek Shepherd (PVM): I'm going to ask interns for help.
 
 545
 00:24:22,891 --> 00:24:24,211
-Dr. Shepherd / Dr. Derek Shepherd (PVM): I've got this kid, Katie Bryce.
+Dr. Derek Shepherd: I've got this kid, Katie Bryce.
 
 546
 00:24:24,653 --> 00:24:26,276
-Dr. Shepherd / Dr. Derek Shepherd (PVM): Right now, she's a mystery.
+Dr. Derek Shepherd: Right now, she's a mystery.
 
 547
 00:24:27,679 --> 00:24:28,720
-Dr. Shepherd / Dr. Derek Shepherd (PVM): She doesn't respond to our meds.
+Dr. Derek Shepherd: She doesn't respond to our meds.
 
 548
 00:24:29,259 --> 00:24:34,808
-Dr. Shepherd / Dr. Derek Shepherd (PVM): Her labs are clean, scans are pure, but she's having seizures, grand mal seizures with no visible cause.
+Dr. Derek Shepherd: Her labs are clean, scans are pure, but she's having seizures, grand mal seizures with no visible cause.
 
 549
 00:24:35,871 --> 00:24:36,653
-Dr. Shepherd / Dr. Derek Shepherd (PVM): She's a ticking clock.
+Dr. Derek Shepherd: She's a ticking clock.
 
 550
 00:24:37,374 --> 00:24:40,377
-Dr. Shepherd / Dr. Derek Shepherd (PVM): She's gonna die if I don't make a diagnosis, which is where you come in.
+Dr. Derek Shepherd: She's gonna die if I don't make a diagnosis, which is where you come in.
 
 551
 00:24:41,500 --> 00:24:42,161
-Dr. Shepherd / Dr. Derek Shepherd (PVM): I can't do it alone.
+Dr. Derek Shepherd: I can't do it alone.
 
 552
 00:24:43,241 --> 00:24:45,105
-Dr. Shepherd / Dr. Derek Shepherd (PVM): I need your extra minds, extra eyes.
+Dr. Derek Shepherd: I need your extra minds, extra eyes.
 
 553
 00:24:45,707 --> 00:24:46,646
-Dr. Shepherd / Dr. Derek Shepherd (PVM): I need you to play detective.
+Dr. Derek Shepherd: I need you to play detective.
 
 554
 00:24:46,788 --> 00:24:48,932
-Dr. Shepherd / Dr. Derek Shepherd (PVM): I need you to find out why Katie is having seizures.
+Dr. Derek Shepherd: I need you to find out why Katie is having seizures.
 
 555
 00:24:50,041 --> 00:24:52,865
-Dr. Shepherd / Dr. Derek Shepherd (PVM): I know you're tired, you're busy, you got more work than you could possibly handle.
+Dr. Derek Shepherd: I know you're tired, you're busy, you got more work than you could possibly handle.
 
 556
 00:24:53,548 --> 00:24:54,169
-Dr. Shepherd / Dr. Derek Shepherd (PVM): I understand.
+Dr. Derek Shepherd: I understand.
 
 557
 00:24:54,489 --> 00:24:56,069
-Dr. Shepherd / Dr. Derek Shepherd (PVM): So I'm gonna give you an incentive.
+Dr. Derek Shepherd: So I'm gonna give you an incentive.
 
 558
 00:24:56,852 --> 00:24:58,795
-Dr. Shepherd / Dr. Derek Shepherd (PVM): Whoever finds the answer rides with me.
+Dr. Derek Shepherd: Whoever finds the answer rides with me.
 
 559
 00:24:59,796 --> 00:25:00,635
-Dr. Shepherd / Dr. Derek Shepherd (PVM): Katie needs surgery.
+Dr. Derek Shepherd: Katie needs surgery.
 
 560
 00:25:01,959 --> 00:25:05,482
-Dr. Shepherd / Dr. Derek Shepherd (PVM): You get to do what no interns get to do, scrub in to assist on an advanced procedure.
+Dr. Derek Shepherd: You get to do what no interns get to do, scrub in to assist on an advanced procedure.
 
 561
 00:25:06,585 --> 00:25:08,145
-Dr. Shepherd / Dr. Derek Shepherd (PVM): Dr. Bailey's gonna hand you Katie's chart.
+Dr. Derek Shepherd: Dr. Bailey's gonna hand you Katie's chart.
 
 562
 00:25:08,386 --> 00:25:09,587
-Dr. Shepherd / Dr. Derek Shepherd (PVM): The clock is ticking fast, people.
+Dr. Derek Shepherd: The clock is ticking fast, people.
 
 563
 00:25:10,348 --> 00:25:12,251
-Dr. Shepherd / Dr. Derek Shepherd (PVM): If we're gonna save Katie's life, we have to do it soon.
+Dr. Derek Shepherd: If we're gonna save Katie's life, we have to do it soon.
 
 564
 00:25:19,336 --> 00:25:20,219
-Dr. Bailey / Dr. Miranda Bailey (PVM): Did you just page me?
+Dr. Miranda Bailey / Alex Karev (PVM): Did you just page me?
 
 565
 00:25:20,380 --> 00:25:22,020
-Meredith Grey / Meredith Grey OR Katie Bryce (PVM): Yes, 4B's still short of breath.
+Meredith Grey / Dr. Meredith Grey (PVM): Yes, 4B's still short of breath.
 
 566
 00:25:23,044 --> 00:25:24,404
-Dr. Bailey / Dr. Miranda Bailey (PVM): Look, give the antibiotics time to work.
+Dr. Miranda Bailey / Alex Karev (PVM): Look, give the antibiotics time to work.
 
 567
 00:25:24,644 --> 00:25:26,087
@@ -2268,339 +2268,339 @@ Meredith Grey / Katie Bryce (PVM): The antibiotics should have worked by now.
 
 568
 00:25:26,788 --> 00:25:27,190
-Cristina Yang / Dr. Miranda Bailey (PVM): She's old.
+Dr. Miranda Bailey / Alex Karev (PVM): She's old.
 
 569
 00:25:27,210 --> 00:25:28,092
-Cristina Yang / Dr. Miranda Bailey (PVM): She's freaking ancient.
+Dr. Miranda Bailey / Alex Karev (PVM): She's freaking ancient.
 
 570
 00:25:28,553 --> 00:25:29,732
-Cristina Yang / Dr. Miranda Bailey (PVM): She's lucky she's still breathing.
+Dr. Miranda Bailey / Alex Karev (PVM): She's lucky she's still breathing.
 
 571
 00:25:31,017 --> 00:25:34,701
-George O'Malley / Dr. Miranda Bailey (PVM): I got a shot to scrub in downstairs on a patient who wasn't alive during the Civil War.
+Cristina Yang / Alex Karev (PVM): I got a shot to scrub in downstairs on a patient who wasn't alive during the Civil War.
 
 572
 00:25:35,123 --> 00:25:36,384
-Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): Don't page me again.
+Dr. Miranda Bailey / Alex Karev (PVM): Don't page me again.
 
 573
 00:25:41,630 --> 00:25:43,313
-Cristina Yang / Meredith Grey (PVM): Hey, I want in on Shepard's surgery.
+Dr. Cristina Yang: Hey, I want in on Shepard's surgery.
 
 574
 00:25:43,471 --> 00:25:44,894
-Meredith Grey / Meredith Grey (PVM): You've been the intern on Kitty since the start.
+Dr. Meredith Gray: You've been the intern on Kitty since the start.
 
 575
 00:25:45,173 --> 00:25:45,997
-Cristina Yang / Meredith Grey (PVM): You want to work together?
+Dr. Cristina Yang: You want to work together?
 
 576
 00:25:46,596 --> 00:25:48,740
-Cristina Yang / Meredith Grey (PVM): If we find the answer, we have a 50-50 chance of scrubbing in.
+Dr. Cristina Yang: If we find the answer, we have a 50-50 chance of scrubbing in.
 
 577
 00:25:49,079 --> 00:25:51,002
-Meredith Grey / Meredith Grey (PVM): I'll work with you, but I don't want in on the surgery.
+Dr. Meredith Gray: I'll work with you, but I don't want in on the surgery.
 
 578
 00:25:51,163 --> 00:25:51,765
-Meredith Grey / Meredith Grey (PVM): You can have it.
+Dr. Meredith Gray: You can have it.
 
 579
 00:25:52,326 --> 00:25:52,645
-Cristina Yang / Meredith Grey (PVM): Are you kidding?
+Dr. Cristina Yang: Are you kidding?
 
 580
 00:25:52,665 --> 00:25:54,568
-Cristina Yang / Meredith Grey (PVM): It's the biggest opportunity any intern will ever get.
+Dr. Cristina Yang: It's the biggest opportunity any intern will ever get.
 
 581
 00:25:54,630 --> 00:25:56,593
-Meredith Grey / Meredith Grey (PVM): I don't want to spend any more time with Shepard than I have to.
+Dr. Meredith Gray: I don't want to spend any more time with Shepard than I have to.
 
 582
 00:25:56,731 --> 00:25:57,574
-Cristina Yang / Meredith Grey (PVM): What do you have against Shepard?
+Dr. Cristina Yang: What do you have against Shepard?
 
 583
 00:25:58,153 --> 00:25:59,817
-Meredith Grey / Meredith Grey (PVM): If we find the answer, the surgery's yours.
+Dr. Meredith Gray: If we find the answer, the surgery's yours.
 
 584
 00:25:59,836 --> 00:26:01,097
-Cristina Yang / Meredith Grey (PVM): Do you want to work together or not?
+Dr. Cristina Yang: Do you want to work together or not?
 
 585
 00:26:02,421 --> 00:26:02,740
-Meredith Grey / Meredith Grey (PVM): Deal.
+Dr. Meredith Gray: Deal.
 
 586
 00:26:02,922 --> 00:26:06,227
-Cristina Yang / Meredith Grey (PVM): So she doesn't have anoxia, chronic renal failure, or acidosis.
+Cristina / Dr. Meredith Grey OR Dr. Cristina Yang (PVM): So she doesn't have anoxia, chronic renal failure, or acidosis.
 
 587
 00:26:06,247 --> 00:26:08,108
-Meredith Grey / Meredith Grey (PVM): It's not a tumor because her CT's clean.
+Meredith / Dr. Meredith Grey (PVM): It's not a tumor because her CT's clean.
 
 588
 00:26:09,305 --> 00:26:11,385
-Cristina Yang / Meredith Grey (PVM): Are you seriously not going to tell me why you won't work with Shepard?
+Dr. Cristina Yang: Are you seriously not going to tell me why you won't work with Shepard?
 
 589
 00:26:11,665 --> 00:26:11,866
-Meredith Grey / Meredith Grey (PVM): No.
+Dr. Meredith Gray: No.
 
 590
 00:26:12,386 --> 00:26:13,209
-Cristina Yang / Meredith Grey (PVM): What about infection?
+Cristina / Dr. Meredith Grey (PVM): What about infection?
 
 591
 00:26:13,489 --> 00:26:15,029
-Meredith Grey / Meredith Grey (PVM): No, there's no white count.
+Meredith / Dr. Meredith Grey (PVM): No, there's no white count.
 
 592
 00:26:15,049 --> 00:26:18,794
-Cristina Yang / Meredith Grey OR Dr. Miranda Bailey (PVM): She has no CT lesions, no fevers, nothing in her spinal tap.
+Meredith / Dr. Meredith Grey OR Dr. Cristina Yang (PVM): She has no CT lesions, no fevers, nothing in her spinal tap.
 
 593
 00:26:18,854 --> 00:26:19,375
-Cristina Yang / Dr. Miranda Bailey (PVM): Just tell me.
+Dr. Cristina Yang: Just tell me.
 
 594
 00:26:21,655 --> 00:26:26,902
-Meredith Grey / Meredith Grey (PVM): You can't comment, make a face, or react in any way.
+Dr. Meredith Gray: You can't comment, make a face, or react in any way.
 
 595
 00:26:26,922 --> 00:26:27,501
-Meredith Grey: We had sex.
+Dr. Meredith Gray: We had sex.
 
 596
 00:26:31,945 --> 00:26:32,866
-Cristina Yang / Meredith Grey OR Dr. Miranda Bailey (PVM): What about an aneurysm?
+Dr. Cristina Yang: What about an aneurysm?
 
 597
 00:26:33,807 --> 00:26:35,750
-Meredith Grey / Meredith Grey (PVM): No blood on the CT and no headaches.
+Dr. Meredith Gray: No blood on the CT and no headaches.
 
 598
 00:26:36,741 --> 00:26:39,807
-Cristina Yang / Dr. Miranda Bailey (PVM): There's no drug use, no pregnancy, no trauma.
+Meredith / Dr. Izzie Stevens (PVM): There's no drug use, no pregnancy, no trauma.
 
 599
 00:26:42,672 --> 00:26:43,231
-Cristina Yang / Meredith Grey (PVM): Was he good?
+Dr. Cristina Yang: Was he good?
 
 600
 00:26:43,251 --> 00:26:45,154
-Cristina Yang / Meredith Grey (PVM): I mean, he looks like he'd be good.
+Dr. Cristina Yang: I mean, he looks like he'd be good.
 
 601
 00:26:45,174 --> 00:26:45,836
-Cristina Yang / Meredith Grey (PVM): Was it any good?
+Dr. Cristina Yang: Was it any good?
 
 602
 00:26:45,855 --> 00:26:49,864
-Meredith Grey / Meredith Grey (PVM): A lot of answers.
+Dr. Meredith Gray: A lot of answers.
 
 603
 00:26:52,386 --> 00:26:53,588
-Cristina Yang / Meredith Grey (PVM): What if no one comes up with anything?
+Cristina / Dr. Meredith Grey (PVM): What if no one comes up with anything?
 
 604
 00:26:53,950 --> 00:26:54,932
-Meredith Grey / Meredith Grey (PVM): You mean what if she dies?
+Cristina Yang / Dr. Meredith Grey (PVM): You mean what if she dies?
 
 605
 00:26:55,332 --> 00:26:55,593
-Cristina Yang / Meredith Grey OR Meredith Grey OR Meredith Grey (PVM): Yeah.
+Izzie Stevens / Dr. Derek Shepherd OR Dr. Meredith Gray (PVM): Yeah.
 
 606
 00:26:57,736 --> 00:27:00,861
-Cristina Yang / Meredith Grey (PVM): This is gonna sound really bad, but I really wanted that surgery.
+Cristina Yang / Dr. Meredith Grey (PVM): This is gonna sound really bad, but I really wanted that surgery.
 
 607
 00:27:02,950 --> 00:27:05,310
-Meredith Grey / Meredith Grey (PVM): She's just never going to get the chance to turn into a person.
+Izzie Stevens / Dr. Meredith Grey (PVM): She's just never going to get the chance to turn into a person.
 
 608
 00:27:05,711 --> 00:27:09,934
-Meredith Grey / Meredith Grey (PVM): Some total of her existence will be almost winning Miss Teen whatever.
+Izzie Stevens / Dr. Meredith Grey (PVM): Some total of her existence will be almost winning Miss Teen whatever.
 
 609
 00:27:09,954 --> 00:27:14,140
-Meredith Grey / Meredith Grey (PVM): You know what her pageant talent is?
+Izzie Stevens / Dr. Meredith Grey (PVM): You know what her pageant talent is?
 
 610
 00:27:14,539 --> 00:27:15,101
-Cristina Yang / Meredith Grey OR Dr. Miranda Bailey (PVM): They have talent?
+Cristina Yang / Dr. Cristina Yang OR Dr. Meredith Grey (PVM): They have talent?
 
 611
 00:27:16,320 --> 00:27:17,501
-Meredith Grey / Meredith Grey (PVM): Rhythmic gymnastics.
+Izzie Stevens / Dr. Meredith Grey (PVM): Rhythmic gymnastics.
 
 612
 00:27:18,324 --> 00:27:19,746
-Cristina Yang / Meredith Grey (PVM): Oh, come on.
+Cristina Yang / Dr. Meredith Grey (PVM): Oh, come on.
 
 613
 00:27:20,846 --> 00:27:22,326
-Cristina Yang / Meredith Grey (PVM): What is rhythmic gymnastics?
+Alex Karev / Dr. Meredith Grey (PVM): What is rhythmic gymnastics?
 
 614
 00:27:22,448 --> 00:27:22,989
-Meredith Grey / Meredith Grey (PVM): I don't know.
+Izzie Stevens / Dr. Meredith Grey (PVM): I don't know.
 
 615
 00:27:23,009 --> 00:27:23,769
-Cristina Yang / Meredith Grey (PVM): I can't even say it.
+Cristina Yang / Dr. Meredith Grey (PVM): I can't even say it.
 
 616
 00:27:23,807 --> 00:27:24,568
-Meredith Grey / Meredith Grey (PVM): I don't know what it is.
+Alex Karev / Dr. Meredith Grey (PVM): I don't know what it is.
 
 617
 00:27:27,971 --> 00:27:32,096
-Cristina Yang / Meredith Grey OR Dr. Miranda Bailey (PVM): I think it's something with, like, a ball and a...
+Izzie Stevens / Dr. Cristina Yang OR Dr. Meredith Grey (PVM): I think it's something with, like, a ball and a...
 
 618
 00:27:32,243 --> 00:27:34,659
-Meredith Grey / Meredith Grey OR Dr. Miranda Bailey (PVM): What?
+Cristina Yang / Dr. Cristina Yang (PVM): What?
 
 619
 00:27:34,679 --> 00:27:35,343
-Cristina Yang / Meredith Grey OR Dr. Miranda Bailey (PVM): Meredith, what?
+Alex Karev / Dr. Cristina Yang OR Dr. Meredith Grey (PVM): Meredith, what?
 
 620
 00:27:35,945 --> 00:27:36,249
-Meredith Grey / Meredith Grey (PVM): Get up.
+Meredith Grey / Dr. Meredith Grey (PVM): Get up.
 
 621
 00:27:36,549 --> 00:27:36,971
-Unknown / Meredith Grey (PVM): Come on.
+Meredith Grey / Dr. Meredith Grey (PVM): Come on.
 
 622
 00:27:38,336 --> 00:27:43,464
-Unknown / Meredith Grey (PVM): Oh, Dr. Shepherd, just one moment.
+Meredith Grey / Dr. Meredith Grey (PVM): Oh, Dr. Shepherd, just one moment.
 
 623
 00:27:44,768 --> 00:27:46,108
-Unknown / Meredith Grey (PVM): Katie competes in beauty pageants.
+Izzie Stevens / Dr. Meredith Grey (PVM): Katie competes in beauty pageants.
 
 624
 00:27:46,328 --> 00:27:48,232
-Dr. Shepherd / Meredith Grey OR Dr. Derek Shepherd (PVM): I know that, but we have to save her life anyway.
+Derek Shepherd / Dr. Derek Shepherd OR Dr. Meredith Grey (PVM): I know that, but we have to save her life anyway.
 
 625
 00:27:48,252 --> 00:27:50,115
-Unknown / Meredith Grey (PVM): Okay, she has no headaches, no neck pain.
+Meredith Grey / Dr. Meredith Grey (PVM): Okay, she has no headaches, no neck pain.
 
 626
 00:27:50,175 --> 00:27:50,978
-Unknown / Meredith Grey (PVM): Her CT is clean.
+Derek Shepherd / Dr. Meredith Grey (PVM): Her CT is clean.
 
 627
 00:27:51,499 --> 00:27:53,583
-Unknown / Meredith Grey (PVM): There's no medical proof of an aneurysm.
+Meredith Grey / Dr. Meredith Grey (PVM): There's no medical proof of an aneurysm.
 
 628
 00:27:53,603 --> 00:27:53,942
-Dr. Shepherd / Meredith Grey (PVM): Right.
+Derek Shepherd / Dr. Meredith Grey (PVM): Right.
 
 629
 00:27:54,284 --> 00:27:55,786
-Unknown / Meredith Grey (PVM): But what if she has an aneurysm anyway?
+Meredith Grey / Dr. Meredith Grey (PVM): But what if she has an aneurysm anyway?
 
 630
 00:27:56,207 --> 00:27:56,988
-Dr. Shepherd / Meredith Grey OR Dr. Derek Shepherd (PVM): There are no indicators.
+Derek Shepherd / Dr. Meredith Grey OR Dr. Derek Shepherd (PVM): There are no indicators.
 
 631
 00:27:57,008 --> 00:27:59,853
-Unknown / Meredith Grey (PVM): Oh, but she twisted her ankle a few weeks ago when she was practicing for the pageant.
+Izzie Stevens / Dr. Meredith Grey (PVM): Oh, but she twisted her ankle a few weeks ago when she was practicing for the pageant.
 
 632
 00:28:00,054 --> 00:28:01,714
-Dr. Shepherd / Meredith Grey OR Dr. Derek Shepherd (PVM): Look, I appreciate you trying to help me.
+Derek Shepherd / Dr. Meredith Grey OR Dr. Derek Shepherd (PVM): Look, I appreciate you trying to help me.
 
 633
 00:28:01,736 --> 00:28:01,915
-Unknown / Meredith Grey (PVM): She fell.
+Izzie Stevens / Dr. Meredith Grey (PVM): She fell.
 
 634
 00:28:01,935 --> 00:28:03,940
-Unknown / Meredith Grey (PVM): When she twisted her ankle, she fell.
+Izzie Stevens / Dr. Meredith Grey (PVM): When she twisted her ankle, she fell.
 
 635
 00:28:04,154 --> 00:28:06,178
-Unknown / Meredith Grey (PVM): It was no big deal, not even a bump on the head.
+Meredith Grey / Dr. Meredith Grey (PVM): It was no big deal, not even a bump on the head.
 
 636
 00:28:06,198 --> 00:28:08,759
-Unknown / Meredith Grey (PVM): You know, she got right back up, iced her ankle, and everything was fine.
+Meredith Grey / Dr. Meredith Grey (PVM): You know, she got right back up, iced her ankle, and everything was fine.
 
 637
 00:28:09,101 --> 00:28:10,102
-Dr. Shepherd / Meredith Grey (PVM): It was a false cell minor.
+Cristina Yang / Dr. Meredith Grey (PVM): It was a false cell minor.
 
 638
 00:28:10,122 --> 00:28:13,183
-Unknown / Meredith Grey (PVM): Her doctor didn't even think to mention it when I was taking her history, but she did.
+Meredith Grey / Dr. Meredith Grey (PVM): Her doctor didn't even think to mention it when I was taking her history, but she did.
 
 639
 00:28:13,605 --> 00:28:14,486
-Unknown / Meredith Grey OR Dr. Derek Shepherd (PVM): She did fall.
+Cristina Yang / Dr. Derek Shepherd OR Dr. Meredith Grey (PVM): She did fall.
 
 640
 00:28:14,967 --> 00:28:17,107
-Dr. Shepherd / Dr. Derek Shepherd (PVM): Well, you know what the chances that a minor fall could burst an aneurysm?
+Dr. Derek Shepherd / Dr. Derek Shepherd (PVM): Well, you know what the chances that a minor fall could burst an aneurysm?
 
 641
 00:28:17,127 --> 00:28:18,430
-Unknown / Dr. Derek Shepherd (PVM): One in a million, literally.
+Dr. Derek Shepherd: One in a million, literally.
 
 642
 00:28:26,979 --> 00:28:27,459
-Dr. Shepherd / Dr. Derek Shepherd (PVM): Let's go.
+Dr. Derek Shepherd: Let's go.
 
 643
 00:28:27,940 --> 00:28:28,358
-Unknown / Meredith Grey (PVM): Where?
+Meredith Grey / Dr. Meredith Grey (PVM): Where?
 
 644
 00:28:28,598 --> 00:28:30,280
-Dr. Shepherd / Dr. Derek Shepherd (PVM): Mine out of Katie's one in a million.
+Dr. Derek Shepherd: Mine out of Katie's one in a million.
 
 645
 00:28:48,366 --> 00:28:49,087
-Dr. Shepherd / Dr. Preston Burke (PVM): I'll be damned.
+Dr. Derek Shepherd: I'll be damned.
 
 646
 00:28:50,510 --> 00:28:50,892
-Meredith Grey / Meredith Grey (PVM): Here it is.
+Dr. Derek Shepherd: Here it is.
 
 647
 00:28:53,915 --> 00:28:54,999
-Cristina Yang / Meredith Grey (PVM): It's minute, but it's there.
+Dr. Derek Shepherd: It's minute, but it's there.
 
 648
 00:28:56,961 --> 00:28:59,987
-Dr. Derek Shepherd / Meredith Grey (PVM): It's a subarachnoid hemorrhage.
+Dr. Derek Shepherd: It's a subarachnoid hemorrhage.
 
 649
 00:29:00,007 --> 00:29:01,269
-Dr. Derek Shepherd / Meredith Grey (PVM): She's bleeding into her brain.
+Meredith Grey / Dr. Derek Shepherd (PVM): She's bleeding into her brain.
 
 650
 00:29:07,137 --> 00:29:09,784
-Dr. Derek Shepherd / Dr. Derek Shepherd (PVM): She could have gone through her entire life without it ever being a problem.
+Dr. Derek Shepherd: She could have gone through her entire life without it ever being a problem.
 
 651
 00:29:10,262 --> 00:29:11,306
-Dr. Derek Shepherd / Dr. Derek Shepherd (PVM): One tap in the right spot.
+Dr. Derek Shepherd: One tap in the right spot.
 
 652
 00:29:11,326 --> 00:29:11,787
@@ -2608,15 +2608,15 @@ Cristina Yang / Dr. Derek Shepherd (PVM): Exploded.
 
 653
 00:29:11,826 --> 00:29:12,326
-Dr. Derek Shepherd / Dr. Derek Shepherd (PVM): Exactly.
+Dr. Derek Shepherd: Exactly.
 
 654
 00:29:12,406 --> 00:29:13,650
-Dr. Derek Shepherd / Dr. Derek Shepherd (PVM): Now I get to fix it.
+Dr. Derek Shepherd: Now I get to fix it.
 
 655
 00:29:13,968 --> 00:29:15,347
-Dr. Derek Shepherd / Dr. Derek Shepherd (PVM): You two did great work.
+Dr. Derek Shepherd: You two did great work.
 
 656
 00:29:15,828 --> 00:29:18,692
@@ -2624,15 +2624,15 @@ Dr. Derek Shepherd: I'd love to stay and kiss your asses, but I gotta tell Katie
 
 657
 00:29:18,991 --> 00:29:19,932
-Dr. Derek Shepherd: Katie Bryce's chart, please.
+Cristina Yang / Dr. Derek Shepherd (PVM): Katie Bryce's chart, please.
 
 658
 00:29:20,094 --> 00:29:22,777
-Cristina Yang / Dr. Miranda Bailey (PVM): Here you go.
+Meredith Grey / Dr. Ellis Grey OR Dr. Izzie Stevens (PVM): Here you go.
 
 659
 00:29:22,797 --> 00:29:26,400
-Cristina Yang / Dr. Miranda Bailey (PVM): Uh, Dr. Shepard, you said that you'd pick someone to scrub in if we helped?
+Cristina Yang / Dr. Izzie Stevens (PVM): Uh, Dr. Shepard, you said that you'd pick someone to scrub in if we helped?
 
 660
 00:29:26,839 --> 00:29:27,500
@@ -2652,179 +2652,179 @@ Dr. Derek Shepherd: Meredith, I'll see you in O.R.
 
 664
 00:29:40,314 --> 00:29:40,413
-Meredith Grey / Katie Bryce (PVM): Okay.
+Dr. Meredith Grey: Okay.
 
 665
 00:29:50,688 --> 00:29:51,308
-Meredith Grey / Meredith Grey OR Dr. Miranda Bailey (PVM): Christina.
+Dr. Cristina Yang: Christina.
 
 666
 00:29:51,630 --> 00:29:54,057
-Cristina Yang / Meredith Grey OR Dr. Miranda Bailey (PVM): When it doesn't rain, it snores.
+George O'Malley / Gloria (PVM): When it doesn't rain, it snores.
 
 667
 00:29:56,060 --> 00:29:59,391
-Meredith Grey / Dr. Miranda Bailey (PVM): Yeah, the cookie crumbles, but in whose hand?
+Cristina Yang / Gloria (PVM): Yeah, the cookie crumbles, but in whose hand?
 
 668
 00:30:00,313 --> 00:30:03,820
-Cristina Yang / Dr. Miranda Bailey (PVM): All things said and all things done.
+Izzie Stevens / Gloria (PVM): All things said and all things done.
 
 669
 00:30:04,644 --> 00:30:06,146
-Meredith Grey / Dr. Miranda Bailey (PVM): Life is short.
+George O'Malley / Gloria (PVM): Life is short.
 
 670
 00:30:19,289 --> 00:30:24,945
-Meredith Grey / Gloria (PVM): And plenty done, life's too short, oh
+Izzie Stevens / Gloria (PVM): And plenty done, life's too short, oh
 
 671
 00:30:54,406 --> 00:30:55,288
-George O'Malley / Dr. Miranda Bailey OR Alex Karev (PVM): Wow, that was quick.
+Cristina Yang / Dr. Derek Shepherd (PVM): Wow, that was quick.
 
 672
 00:30:55,469 --> 00:30:57,652
-Cristina Yang / Dr. Miranda Bailey (PVM): His heart had too much damage to get him off the bypass.
+Attending Surgeon (e.g., Dr. Burke) / Dr. Derek Shepherd OR Dr. Miranda Bailey (PVM): His heart had too much damage to get him off the bypass.
 
 673
 00:30:57,672 --> 00:30:59,973
-Cristina Yang / Dr. Miranda Bailey (PVM): I had to let him go.
+Attending Surgeon (e.g., Dr. Burke) / Dr. Miranda Bailey (PVM): I had to let him go.
 
 674
 00:31:01,537 --> 00:31:03,720
-Preston Burke / Dr. Preston Burke OR Dr. Miranda Bailey (PVM): It happens rarely, but it does happen.
+Miranda Bailey / Dr. Miranda Bailey (PVM): It happens rarely, but it does happen.
 
 675
 00:31:04,421 --> 00:31:05,280
-Preston Burke / Alex Karev (PVM): The worst part of the game.
+Miranda Bailey / Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): The worst part of the game.
 
 676
 00:31:08,105 --> 00:31:12,411
-George O'Malley / Alex Karev (PVM): But I... I told... I told Gloria that he would be fine.
+George O'Malley / Dr. Meredith Grey (PVM): But I... I told... I told Gloria that he would be fine.
 
 677
 00:31:12,431 --> 00:31:15,894
-Cristina Yang / Dr. Miranda Bailey OR Alex Karev (PVM): I promised her that... You what?
+Miranda Bailey / Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): I promised her that... You what?
 
 678
 00:31:16,694 --> 00:31:17,517
-George O'Malley / Dr. Preston Burke OR Dr. Miranda Bailey (PVM): They have four little girls.
+George O'Malley / Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): They have four little girls.
 
 679
 00:31:17,537 --> 00:31:18,597
-Cristina Yang / Dr. Preston Burke OR Dr. Miranda Bailey (PVM): I don't want you to promise anything.
+Miranda Bailey / Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): I don't want you to promise anything.
 
 680
 00:31:18,637 --> 00:31:19,420
-Cristina Yang / Dr. Miranda Bailey (PVM): This is my case.
+Miranda Bailey / Dr. Miranda Bailey (PVM): This is my case.
 
 681
 00:31:19,940 --> 00:31:21,240
-Cristina Yang / Dr. Miranda Bailey (PVM): Did you hear me promise?
+George O'Malley / Dr. Miranda Bailey (PVM): Did you hear me promise?
 
 682
 00:31:22,520 --> 00:31:26,428
-Cristina Yang / Dr. Miranda Bailey (PVM): The only one that can keep a promise like that is God, and I haven't seen him holding a scalpel lately.
+Miranda Bailey / Dr. Meredith Grey OR Dr. Miranda Bailey (PVM): The only one that can keep a promise like that is God, and I haven't seen him holding a scalpel lately.
 
 683
 00:31:26,666 --> 00:31:28,951
-Cristina Yang / Dr. Preston Burke OR Dr. Miranda Bailey (PVM): You never promise a patient's family a good outcome.
+Miranda Bailey / Dr. Meredith Grey (PVM): You never promise a patient's family a good outcome.
 
 684
 00:31:31,255 --> 00:31:34,961
-Cristina Yang / Dr. Miranda Bailey (PVM): I thought you were important enough to make promises to Mrs. Savage.
+Miranda Bailey / Dr. Miranda Bailey (PVM): I thought you were important enough to make promises to Mrs. Savage.
 
 685
 00:31:34,980 --> 00:31:36,761
-Cristina Yang / Dr. Miranda Bailey (PVM): You get to be the one to tell her that she's a widow.
+Miranda Bailey / Dr. Miranda Bailey (PVM): You get to be the one to tell her that she's a widow.
 
 686
 00:31:46,478 --> 00:31:49,961
-Izzie Stevens / Dr. Miranda Bailey (PVM): Is he?
+Izzie Stevens / Gloria OR Dr. Cristina Yang OR Dr. Izzie Stevens (PVM): Is he?
 
 687
 00:31:53,807 --> 00:31:54,868
-George O'Malley / Dr. Miranda Bailey (PVM): Maybe Meredith couldn't see.
+Cristina Yang / Dr. Meredith Grey OR Dr. Izzie Stevens (PVM): Maybe Meredith couldn't see.
 
 688
 00:31:54,890 --> 00:31:55,150
-George O'Malley / Dr. Miranda Bailey (PVM): Izzy.
+Cristina Yang / Dr. Meredith Grey (PVM): Izzy.
 
 689
 00:32:00,419 --> 00:32:01,721
-Izzie Stevens / Meredith Grey (PVM): I'll tell him I changed my mind.
+Izzie Stevens / Dr. Meredith Grey (PVM): I'll tell him I changed my mind.
 
 690
 00:32:01,881 --> 00:32:03,702
-George O'Malley / Meredith Grey OR Dr. Miranda Bailey (PVM): You know, don't do me any favors.
+Cristina Yang / Dr. Meredith Grey OR Dr. Izzie Stevens (PVM): You know, don't do me any favors.
 
 691
 00:32:03,722 --> 00:32:04,183
-Izzie Stevens / Meredith Grey (PVM): It's fine.
+Cristina Yang / Dr. Meredith Grey (PVM): It's fine.
 
 692
 00:32:05,425 --> 00:32:05,948
-Izzie Stevens / Meredith Grey OR Dr. Miranda Bailey (PVM): Christina.
+Izzie Stevens / Dr. Meredith Grey OR Dr. Izzie Stevens (PVM): Christina.
 
 693
 00:32:05,968 --> 00:32:06,248
-Cristina Yang / Dr. Miranda Bailey (PVM): You know what?
+Cristina Yang / Dr. Izzie Stevens (PVM): You know what?
 
 694
 00:32:06,268 --> 00:32:07,150
-Cristina Yang / Dr. Miranda Bailey (PVM): You did a cutthroat thing.
+Cristina Yang / Dr. Izzie Stevens (PVM): You did a cutthroat thing.
 
 695
 00:32:07,190 --> 00:32:07,651
-Cristina Yang / Dr. Miranda Bailey (PVM): Deal with it.
+Cristina Yang / Dr. Izzie Stevens (PVM): Deal with it.
 
 696
 00:32:08,211 --> 00:32:09,393
-Cristina Yang / Dr. Miranda Bailey (PVM): Don't come to me for absolution.
+Cristina Yang / Dr. Izzie Stevens (PVM): Don't come to me for absolution.
 
 697
 00:32:09,413 --> 00:32:10,634
-Cristina Yang / Dr. Miranda Bailey (PVM): You want to be a shark, be a shark.
+Cristina Yang / Dr. Izzie Stevens (PVM): You want to be a shark, be a shark.
 
 698
 00:32:11,695 --> 00:32:12,218
-Izzie Stevens / Dr. Miranda Bailey (PVM): I'm not.
+George O'Malley / Dr. Izzie Stevens (PVM): I'm not.
 
 699
 00:32:12,376 --> 00:32:13,117
-Cristina Yang / Meredith Grey OR Dr. Miranda Bailey (PVM): Oh, yes, you are.
+Cristina Yang / Dr. Meredith Grey OR Dr. Izzie Stevens (PVM): Oh, yes, you are.
 
 700
 00:32:13,799 --> 00:32:16,144
-Cristina Yang / Meredith Grey OR Dr. Miranda Bailey (PVM): Only it makes you feel all bad in your warm, gooey places.
+Cristina Yang / Dr. Meredith Grey OR Dr. Izzie Stevens (PVM): Only it makes you feel all bad in your warm, gooey places.
 
 701
 00:32:17,105 --> 00:32:17,807
-Izzie Stevens / Meredith Grey (PVM): Now, screw you.
+George O'Malley / Dr. Meredith Grey (PVM): Now, screw you.
 
 702
 00:32:18,192 --> 00:32:22,396
-Izzie Stevens / Meredith Grey OR Dr. Miranda Bailey (PVM): I don't get picked for surgeries because I slept with my boss and I didn't get into med school because I have a famous mother.
+Cristina Yang / Dr. Meredith Grey OR Dr. Izzie Stevens (PVM): I don't get picked for surgeries because I slept with my boss and I didn't get into med school because I have a famous mother.
 
 703
 00:32:22,458 --> 00:32:24,118
-Izzie Stevens / Dr. Miranda Bailey (PVM): You know, some of us have to earn what we get.
+Cristina Yang / Dr. Izzie Stevens (PVM): You know, some of us have to earn what we get.
 
 704
 00:32:37,356 --> 00:32:39,862
-Dr. Miranda Bailey / George O'Malley (PVM): Gloria, there were complications in the surgery.
+Dr. Burke / Dr. George O'Malley (PVM): Gloria, there were complications in the surgery.
 
 705
 00:32:39,922 --> 00:32:44,528
-Dr. Miranda Bailey / George O'Malley (PVM): Tony's heart had a lot of damage.
+Dr. Burke / Dr. George O'Malley OR Dr. George O'Malley OR Dr. George O'Malley (PVM): Tony's heart had a lot of damage.
 
 706
 00:32:46,068 --> 00:32:48,011
-Dr. Miranda Bailey / George O'Malley (PVM): We tried to take him off bypass.
+Dr. Burke / Dr. George O'Malley (PVM): We tried to take him off bypass.
 
 707
 00:32:52,111 --> 00:32:53,412
-Dr. Miranda Bailey / George O'Malley (PVM): There wasn't anything we could have done.
+Dr. Burke / Dr. George O'Malley (PVM): There wasn't anything we could have done.
 
 708
 00:32:56,954 --> 00:32:57,895
@@ -2832,15 +2832,15 @@ Gloria: What are you talking about?
 
 709
 00:33:02,800 --> 00:33:03,461
-Dr. Miranda Bailey / Alex Karev (PVM): He... Tony died.
+Dr. Burke / Dr. George O'Malley (PVM): He... Tony died.
 
 710
 00:33:04,604 --> 00:33:05,022
-Dr. Miranda Bailey / Alex Karev (PVM): He's dead.
+Dr. Burke / Dr. George O'Malley (PVM): He's dead.
 
 711
 00:33:07,365 --> 00:33:10,067
-Dr. Miranda Bailey / Alex Karev (PVM): Gloria, I'm so sorry.
+Dr. Burke / Dr. George O'Malley (PVM): Gloria, I'm so sorry.
 
 712
 00:33:16,295 --> 00:33:16,836
@@ -2860,7 +2860,7 @@ Izzie Stevens / Dr. Derek Shepherd (PVM): Apparently being a bald beauty queen i
 
 716
 00:33:58,546 --> 00:34:00,969
-Meredith Grey: Did you choose me for the surgery because I slept with you?
+Dr. Meredith Grey: Did you choose me for the surgery because I slept with you?
 
 717
 00:34:02,151 --> 00:34:02,391
@@ -2872,27 +2872,27 @@ Dr. Derek Shepherd: I'm kidding.
 
 719
 00:34:08,119 --> 00:34:09,521
-Meredith Grey: I'm not going to scrub in for surgery.
+Dr. Meredith Grey: I'm not going to scrub in for surgery.
 
 720
 00:34:09,862 --> 00:34:10,802
-Meredith Grey: You should ask Christina.
+Dr. Meredith Grey: You should ask Christina.
 
 721
 00:34:10,842 --> 00:34:11,664
-Dr. Derek Shepherd / Meredith Grey (PVM): She really wants it.
+Dr. Meredith Grey: She really wants it.
 
 722
 00:34:11,684 --> 00:34:12,565
-Dr. Derek Shepherd / Meredith Grey OR Dr. Derek Shepherd (PVM): You're Katie's doctor.
+Dr. Derek Shepherd: You're Katie's doctor.
 
 723
 00:34:13,407 --> 00:34:16,530
-Dr. Derek Shepherd / Dr. Derek Shepherd (PVM): And on your first day, with very little training, you helped save her life.
+Dr. Derek Shepherd: And on your first day, with very little training, you helped save her life.
 
 724
 00:34:17,052 --> 00:34:20,016
-Dr. Derek Shepherd / Dr. Derek Shepherd (PVM): You earned the right to follow her case through to the finish.
+Dr. Derek Shepherd: You earned the right to follow her case through to the finish.
 
 725
 00:34:22,072 --> 00:34:25,096
@@ -2900,159 +2900,159 @@ Dr. Derek Shepherd: You shouldn't let the fact that we had sex get in the way of
 
 726
 00:34:39,793 --> 00:34:44,699
-Dr. George O'Malley / Meredith Grey (PVM): I wish I wanted to be a chef, or a ski instructor, or a kindergarten teacher.
+Dr. Meredith Grey: I wish I wanted to be a chef, or a ski instructor, or a kindergarten teacher.
 
 727
 00:34:46,481 --> 00:34:48,565
-Dr. George O'Malley / Alex Karev (PVM): You know, I would have been a really good postal worker.
+Dr. Meredith Grey: You know, I would have been a really good postal worker.
 
 728
 00:34:50,186 --> 00:34:50,947
-Dr. George O'Malley / George O'Malley (PVM): I'm dependable.
+Alex Karev / Dr. George O'Malley (PVM): I'm dependable.
 
 729
 00:34:53,340 --> 00:34:56,646
-Dr. George O'Malley / George O'Malley (PVM): You know, my parents tell everyone they meet that their son's a surgeon.
+George O'Malley / Dr. George O'Malley (PVM): You know, my parents tell everyone they meet that their son's a surgeon.
 
 730
 00:34:57,447 --> 00:34:58,849
-Dr. George O'Malley / George O'Malley (PVM): As if it's a big accomplishment.
+George O'Malley / Dr. George O'Malley (PVM): As if it's a big accomplishment.
 
 731
 00:35:00,331 --> 00:35:01,753
-Dr. George O'Malley / George O'Malley (PVM): Superhero or something.
+George O'Malley / Dr. George O'Malley (PVM): Superhero or something.
 
 732
 00:35:04,677 --> 00:35:05,657
-Dr. George O'Malley / George O'Malley (PVM): If they could see me now.
+George O'Malley / Dr. George O'Malley (PVM): If they could see me now.
 
 733
 00:35:09,543 --> 00:35:14,170
-Dr. Cristina Yang / Meredith Grey (PVM): When I told my mother I wanted to go to medical school, she tried to talk me out of it.
+Alex Karev / Dr. Meredith Grey (PVM): When I told my mother I wanted to go to medical school, she tried to talk me out of it.
 
 734
 00:35:16,231 --> 00:35:18,094
-Dr. Cristina Yang / Meredith Grey (PVM): Said I didn't have what it takes to be a surgeon.
+Alex Karev / Dr. Meredith Grey (PVM): Said I didn't have what it takes to be a surgeon.
 
 735
 00:35:19,376 --> 00:35:20,358
-Dr. Cristina Yang / Meredith Grey OR Meredith Grey (PVM): That I'd never make it.
+Alex Karev / Dr. Meredith Grey (PVM): That I'd never make it.
 
 736
 00:35:22,039 --> 00:35:22,521
-Dr. Cristina Yang / Meredith Grey (PVM): So...
+Alex Karev / Dr. Meredith Grey (PVM): So...
 
 737
 00:35:23,411 --> 00:35:26,135
-Dr. Cristina Yang / Meredith Grey (PVM): The way I see it, superhero sounds pretty damn good.
+Alex Karev / Dr. Meredith Grey (PVM): The way I see it, superhero sounds pretty damn good.
 
 738
 00:35:31,161 --> 00:35:32,523
-Dr. Meredith Grey / George O'Malley (PVM): We're going to survive this, right?
+Izzie Stevens / Dr. George O'Malley (PVM): We're going to survive this, right?
 
 739
 00:35:40,414 --> 00:35:41,434
-Dr. Miranda Bailey / Meredith Grey (PVM): She's still short of breath.
+Cristina Yang / Dr. Meredith Grey (PVM): She's still short of breath.
 
 740
 00:35:41,516 --> 00:35:43,137
-Dr. Miranda Bailey / Meredith Grey (PVM): Did you get an ABG or a chest film?
+Dr. Derek Shepherd / Dr. Meredith Grey (PVM): Did you get an ABG or a chest film?
 
 741
 00:35:43,197 --> 00:35:44,438
-Dr. George O'Malley / Meredith Grey (PVM): Oh, yes, sir, I did.
+Intern (likely George O'Malley) / Alex Karev OR Dr. Meredith Grey OR Dr. Meredith Grey (PVM): Oh, yes, sir, I did.
 
 742
 00:35:44,458 --> 00:35:45,739
-Dr. Miranda Bailey / Meredith Grey OR Meredith Grey (PVM): And what did you see?
+Dr. Derek Shepherd / Dr. Meredith Grey OR Alex Karev OR Dr. Meredith Grey (PVM): And what did you see?
 
 743
 00:35:46,327 --> 00:35:48,811
-Dr. George O'Malley / Meredith Grey (PVM): Oh, well, I, uh, I had a lot of patients last night.
+Intern (likely George O'Malley) / Dr. Meredith Grey (PVM): Oh, well, I, uh, I had a lot of patients last night.
 
 744
 00:35:48,831 --> 00:35:50,652
-Dr. Miranda Bailey / Meredith Grey OR Dr. Miranda Bailey (PVM): Name the common causes of post-op fever.
+Dr. Miranda Bailey / Dr. Meredith Grey OR Alex Karev (PVM): Name the common causes of post-op fever.
 
 745
 00:35:52,076 --> 00:35:52,235
-Dr. George O'Malley / Meredith Grey (PVM): Uh, yes.
+Intern (likely George O'Malley) / Dr. Meredith Grey (PVM): Uh, yes.
 
 746
 00:35:52,255 --> 00:35:54,099
-Miranda Bailey / Meredith Grey OR Dr. Miranda Bailey (PVM): From your head, not from a book.
+Dr. Miranda Bailey / Dr. Meredith Grey OR Dr. Meredith Grey (PVM): From your head, not from a book.
 
 747
 00:35:54,438 --> 00:35:55,099
-Miranda Bailey / Meredith Grey (PVM): Don't look it up.
+Dr. Miranda Bailey / Dr. Meredith Grey (PVM): Don't look it up.
 
 748
 00:35:55,159 --> 00:35:55,581
-Miranda Bailey / Meredith Grey (PVM): Learn it.
+Dr. Miranda Bailey / Dr. Meredith Grey (PVM): Learn it.
 
 749
 00:35:55,621 --> 00:35:56,601
-Miranda Bailey / Meredith Grey (PVM): It should be in your head.
+Dr. Miranda Bailey / Dr. Meredith Grey (PVM): It should be in your head.
 
 750
 00:35:56,621 --> 00:35:59,887
-Miranda Bailey / Meredith Grey OR Dr. Miranda Bailey (PVM): Name the common causes of post-op fever.
+Dr. Miranda Bailey / Dr. Meredith Grey OR Alex Karev (PVM): Name the common causes of post-op fever.
 
 751
 00:35:59,907 --> 00:36:06,074
-Intern (likely George O'Malley) / Meredith Grey OR Dr. Miranda Bailey (PVM): Uh, the common causes of post-caus... Can anybody name the common causes of post-op fever?
+Intern (likely George O'Malley) / Dr. Meredith Grey OR Alex Karev (PVM): Uh, the common causes of post-caus... Can anybody name the common causes of post-op fever?
 
 752
 00:36:08,012 --> 00:36:12,657
-Cristina Yang / Meredith Grey (PVM): Wind, water, wound, walking, wonder drugs, the five Ws.
+Cristina Yang / Dr. Meredith Grey (PVM): Wind, water, wound, walking, wonder drugs, the five Ws.
 
 753
 00:36:13,597 --> 00:36:16,601
-Miranda Bailey / Meredith Grey (PVM): Most of the time, it's wind, splinting, or pneumonia.
+Cristina Yang / Dr. Meredith Grey (PVM): Most of the time, it's wind, splinting, or pneumonia.
 
 754
 00:36:18,123 --> 00:36:21,864
-Miranda Bailey / Meredith Grey (PVM): Pneumonia is easy to assume, especially if you're too busy to do the tests.
+Cristina Yang / Dr. Meredith Grey (PVM): Pneumonia is easy to assume, especially if you're too busy to do the tests.
 
 755
 00:36:27,572 --> 00:36:28,853
-Cristina Yang / Meredith Grey (PVM): What do you think's wrong with 4B?
+Dr. Derek Shepherd / Dr. Meredith Grey (PVM): What do you think's wrong with 4B?
 
 756
 00:36:29,652 --> 00:36:30,994
-Meredith Grey / Meredith Grey (PVM): The fourth W, walking.
+Cristina Yang / Dr. Meredith Grey (PVM): The fourth W, walking.
 
 757
 00:36:31,235 --> 00:36:33,498
-Cristina Yang / Meredith Grey (PVM): I think she's a prime candidate for a pulmonary embolus.
+Cristina Yang / Dr. Meredith Grey (PVM): I think she's a prime candidate for a pulmonary embolus.
 
 758
 00:36:33,998 --> 00:36:34,998
-Meredith Grey / Meredith Grey (PVM): How would you diagnose?
+Dr. Derek Shepherd / Dr. Meredith Grey (PVM): How would you diagnose?
 
 759
 00:36:37,492 --> 00:36:44,724
-Cristina Yang / Meredith Grey (PVM): Spiral CT, VQ scan, provide O2, dose with heparin, and consult for an IVC filter.
+Meredith Grey / Dr. Meredith Grey (PVM): Spiral CT, VQ scan, provide O2, dose with heparin, and consult for an IVC filter.
 
 760
 00:36:46,849 --> 00:36:50,635
-Miranda Bailey / Meredith Grey (PVM): Do exactly as she says, then tell your resident that I want you off this case.
+Miranda Bailey / Dr. Meredith Grey OR Dr. Meredith Grey (PVM): Do exactly as she says, then tell your resident that I want you off this case.
 
 761
 00:36:52,777 --> 00:36:53,579
-Richard Webber / Meredith Grey (PVM): I'd know you anywhere.
+Ellis Grey / Dr. Meredith Grey (PVM): I'd know you anywhere.
 
 762
 00:36:53,820 --> 00:36:55,143
-Richard Webber / Meredith Grey OR Meredith Grey (PVM): You're the spitting image of your mother.
+Richard Webber / Dr. Meredith Grey (PVM): You're the spitting image of your mother.
 
 763
 00:36:56,646 --> 00:36:57,527
-Richard Webber / Meredith Grey (PVM): Welcome to the gang.
+Cristina Yang / Dr. Meredith Grey (PVM): Welcome to the gang.
 
 764
 00:37:15,849 --> 00:37:16,570
-Derek Shepherd / Meredith Grey (PVM): All right, everybody.
+Derek Shepherd / Dr. Meredith Grey OR Dr. Derek Shepherd (PVM): All right, everybody.
 
 765
 00:37:16,630 --> 00:37:18,353
@@ -3060,221 +3060,221 @@ Dr. Derek Shepherd: It's a beautiful night to save lives.
 
 766
 00:37:19,554 --> 00:37:30,311
-Derek Shepherd / Meredith Grey (PVM): Let's have some fun.
+Derek Shepherd / Dr. Meredith Grey OR Dr. Derek Shepherd (PVM): Let's have some fun.
 
 767
 00:37:30,331 --> 00:37:33,255
-Meredith Grey: I can't think of any one reason why I want to be a surgeon.
+Meredith Grey / Dr. Meredith Grey (PVM): I can't think of any one reason why I want to be a surgeon.
 
 768
 00:37:35,838 --> 00:37:38,262
-Meredith Grey: But I can think of a thousand reasons why I should quit.
+Meredith Grey / Dr. Meredith Grey (PVM): But I can think of a thousand reasons why I should quit.
 
 769
 00:37:39,509 --> 00:37:53,146
-Meredith Grey: They make it hard on purpose.
+Meredith Grey / Dr. Meredith Grey OR Dr. Meredith Grey (PVM): They make it hard on purpose.
 
 770
 00:37:54,126 --> 00:38:07,204
-Meredith Grey: There are lives in our hands.
+Meredith Grey / Gloria OR Dr. Meredith Grey OR Dr. Miranda Bailey OR Dr. Ellis Grey (PVM): There are lives in our hands.
 
 771
 00:38:11,318 --> 00:38:14,523
-Meredith Grey: There comes a moment when it's more than just a game.
+Meredith Grey / Dr. Meredith Grey (PVM): There comes a moment when it's more than just a game.
 
 772
 00:38:26,362 --> 00:38:36,717
-Meredith Grey: And you either take that step forward or turn around and walk away.
+Meredith Grey / Dr. Meredith Grey OR Dr. Meredith Grey (PVM): And you either take that step forward or turn around and walk away.
 
 773
 00:38:49,320 --> 00:38:51,927
-Meredith Grey: I could quit.
+Meredith Grey / Dr. Meredith Grey OR Dr. Meredith Grey OR Dr. Meredith Grey (PVM): I could quit.
 
 774
 00:38:53,027 --> 00:38:57,699
-Meredith Grey: But here's the thing.
+Meredith Grey / Dr. Meredith Grey OR Dr. Meredith Grey OR Dr. Meredith Grey (PVM): But here's the thing.
 
 775
 00:38:57,719 --> 00:39:03,030
-Meredith Grey: I love the playing field.
+Meredith Grey / Dr. Meredith Grey OR Dr. Meredith Grey (PVM): I love the playing field.
 
 776
 00:39:03,451 --> 00:39:08,481
-Derek Shepherd / Meredith Grey OR Gloria (PVM): That's good surgery.
+Derek Shepherd / Dr. Meredith Grey OR Gloria (PVM): That's good surgery.
 
 777
 00:39:08,983 --> 00:39:09,304
-Meredith Grey / Meredith Grey OR Meredith Grey OR Meredith Grey (PVM): Yeah.
+Meredith Grey / Dr. Derek Shepherd OR Dr. Meredith Gray (PVM): Yeah.
 
 778
 00:39:19,072 --> 00:39:26,001
-Cristina Yang / Meredith Grey OR Dr. Miranda Bailey OR Dr. Miranda Bailey (PVM): We don't have to do that thing where, you know, I say something, and then you say something, and then somebody cries, and there's, like, a moment.
+Meredith Grey / Dr. Cristina Yang OR Dr. Meredith Grey (PVM): We don't have to do that thing where, you know, I say something, and then you say something, and then somebody cries, and there's, like, a moment.
 
 779
 00:39:26,021 --> 00:39:26,121
-Meredith Grey / Meredith Grey OR Meredith Grey OR Meredith Grey (PVM): Yeah.
+Derek Shepherd / Dr. Derek Shepherd OR Dr. Meredith Gray (PVM): Yeah.
 
 780
 00:39:26,320 --> 00:39:26,501
-Cristina Yang / Meredith Grey OR Dr. Miranda Bailey (PVM): Good.
+Meredith Grey / Gloria OR Dr. Meredith Grey OR Dr. Cristina Yang (PVM): Good.
 
 781
 00:39:28,023 --> 00:39:33,451
-Cristina Yang / Meredith Grey OR Dr. Miranda Bailey (PVM): You should get some sleep.
+Cristina Yang / Dr. Cristina Yang OR Dr. Meredith Grey (PVM): You should get some sleep.
 
 782
 00:39:33,891 --> 00:39:36,114
-Cristina Yang / Meredith Grey (PVM): You look like crap.
+Cristina Yang / Dr. Cristina Yang OR Dr. Meredith Grey (PVM): You look like crap.
 
 783
 00:39:36,134 --> 00:39:37,094
-Meredith Grey / Meredith Grey (PVM): I look better than you.
+Meredith Grey / Dr. Meredith Grey (PVM): I look better than you.
 
 784
 00:39:37,114 --> 00:39:39,038
-Cristina Yang / Meredith Grey (PVM): It's not possible.
+Cristina Yang / Dr. Meredith Grey OR Gloria (PVM): It's not possible.
 
 785
 00:39:57,125 --> 00:39:57,985
-Izzie Stevens / Meredith Grey (PVM): That was amazing.
+Izzie Stevens / Dr. Meredith Grey (PVM): That was amazing.
 
 786
 00:40:03,431 --> 00:40:04,775
-George O'Malley / Meredith Grey (PVM): You practice on cadavers.
+Izzie Stevens / Dr. Meredith Grey (PVM): You practice on cadavers.
 
 787
 00:40:07,077 --> 00:40:07,697
-Izzie Stevens / Meredith Grey (PVM): You observe.
+Izzie Stevens / Dr. Meredith Grey (PVM): You observe.
 
 788
 00:40:09,260 --> 00:40:15,248
-Izzie Stevens / Meredith Grey (PVM): And you think you know what you're going to feel like standing over that table, but that was such a high.
+Izzie Stevens / Dr. Meredith Grey (PVM): And you think you know what you're going to feel like standing over that table, but that was such a high.
 
 789
 00:40:15,268 --> 00:40:22,114
-Izzie Stevens / Meredith Grey (PVM): I don't know why anybody does drugs.
+Izzie Stevens / Dr. Meredith Grey (PVM): I don't know why anybody does drugs.
 
 790
 00:40:25,681 --> 00:40:26,001
-George O'Malley / Meredith Grey OR Meredith Grey OR Meredith Grey (PVM): Yeah.
+Meredith Grey / Dr. Derek Shepherd OR Dr. Meredith Gray (PVM): Yeah.
 
 791
 00:40:31,717 --> 00:40:32,097
-Izzie Stevens / Meredith Grey OR Meredith Grey OR Meredith Grey (PVM): Yeah.
+Derek Shepherd / Dr. Derek Shepherd OR Dr. Meredith Gray (PVM): Yeah.
 
 792
 00:40:36,262 --> 00:40:37,902
-George O'Malley / Meredith Grey (PVM): I should go do this.
+Meredith Grey / Dr. Derek Shepherd (PVM): I should go do this.
 
 793
 00:40:40,786 --> 00:40:41,208
-Izzie Stevens / Meredith Grey (PVM): You should.
+Derek Shepherd / Dr. Meredith Grey (PVM): You should.
 
 794
 00:40:45,952 --> 00:40:48,454
-George O'Malley / Meredith Grey OR Meredith Grey (PVM): I'll see you around.
+Derek Shepherd / Dr. Meredith Grey OR Dr. Derek Shepherd (PVM): I'll see you around.
 
 795
 00:40:48,474 --> 00:40:49,155
-Izzie Stevens / Meredith Grey (PVM): See you around.
+Meredith Grey / Dr. Meredith Grey (PVM): See you around.
 
 796
 00:40:50,777 --> 00:40:56,922
-Intern (possibly George or Cristina) / Meredith Grey OR Meredith Grey (PVM): See ya.
+Derek Shepherd / Dr. Meredith Grey (PVM): See ya.
 
 797
 00:40:56,943 --> 00:40:59,987
-Meredith Grey / Meredith Grey OR Meredith Grey (PVM): So I made it through my first shift.
+Dr. Meredith Grey: So I made it through my first shift.
 
 798
 00:41:01,266 --> 00:41:01,907
-Meredith Grey / Meredith Grey (PVM): We all did.
+Dr. Meredith Grey: We all did.
 
 799
 00:41:01,927 --> 00:41:05,974
-Meredith Grey: The other interns are all good people.
+Dr. Meredith Grey: The other interns are all good people.
 
 800
 00:41:06,034 --> 00:41:06,675
-Meredith Grey: You'd like them.
+Dr. Meredith Grey: You'd like them.
 
 801
 00:41:08,556 --> 00:41:11,141
-Meredith Grey: I think.
+Dr. Meredith Grey: I think.
 
 802
 00:41:11,161 --> 00:41:11,541
-Meredith Grey: I don't know.
+Dr. Meredith Grey: I don't know.
 
 803
 00:41:12,143 --> 00:41:12,483
-Meredith Grey: Maybe.
+Dr. Meredith Grey: Maybe.
 
 804
 00:41:12,503 --> 00:41:21,536
-Meredith Grey: I like them.
+Dr. Meredith Grey: I like them.
 
 805
 00:41:21,556 --> 00:41:22,900
-Meredith Grey: Oh, and I changed my mind.
+Dr. Meredith Grey: Oh, and I changed my mind.
 
 806
 00:41:23,581 --> 00:41:24,702
-Meredith Grey: I'm not going to sell the house.
+Dr. Meredith Grey: I'm not going to sell the house.
 
 807
 00:41:25,922 --> 00:41:26,605
-Meredith Grey: I'm going to keep it.
+Dr. Meredith Grey: I'm going to keep it.
 
 808
 00:41:28,847 --> 00:41:30,530
-Meredith Grey: I'll have to get a couple of roommates, but...
+Dr. Meredith Grey: I'll have to get a couple of roommates, but...
 
 809
 00:41:31,726 --> 00:41:32,585
-Meredith Grey: It's home, you know?
+Dr. Meredith Grey: It's home, you know?
 
 810
 00:41:37,253 --> 00:41:37,914
-Meredith Grey: Are you the doctor?
+Dr. Ellis Grey: Are you the doctor?
 
 811
 00:41:39,418 --> 00:41:39,617
-Meredith Grey: No.
+Dr. Meredith Grey: No.
 
 812
 00:41:41,521 --> 00:41:42,362
-Meredith Grey: I'm not your doctor.
+Dr. Meredith Grey: I'm not your doctor.
 
 813
 00:41:43,603 --> 00:41:44,565
-Meredith Grey: But I am a doctor.
+Dr. Meredith Grey: But I am a doctor.
 
 814
 00:41:51,695 --> 00:41:52,257
-Meredith Grey: What's your name?
+Dr. Ellis Grey: What's your name?
 
 815
 00:41:55,842 --> 00:41:56,922
-Meredith Grey: It's me, Mom.
+Dr. Meredith Grey: It's me, Mom.
 
 816
 00:41:56,943 --> 00:41:57,344
-Meredith Grey: Meredith.
+Dr. Meredith Grey: Meredith.
 
 817
 00:42:01,358 --> 00:42:09,369
-Meredith Grey: All right.
+Dr. Ellis Grey: All right.
 
 818
 00:42:09,389 --> 00:42:10,570
-Meredith Grey: I used to be a doctor, I think.
+Dr. Ellis Grey: I used to be a doctor, I think.
 
 819
 00:42:22,367 --> 00:42:24,570
-Meredith Grey: You were a doctor, Mom.
+Dr. Meredith Grey: You were a doctor, Mom.
 
 820
 00:42:24,590 --> 00:42:25,391
-Meredith Grey: You were a surgeon.
+Dr. Meredith Grey: You were a surgeon.
 

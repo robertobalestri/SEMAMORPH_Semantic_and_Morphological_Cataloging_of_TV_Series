@@ -40,7 +40,7 @@ class ArcProgressionService:
                 existing_progression.content = progression.content
                 existing_progression.interfering_characters = progression.interfering_characters
                 self.progression_repository.add_or_update(existing_progression)
-                logger.info(f"Updated progression for arc '{arc.title}' in S{season}E{episode}")
+                logger.info(f"Updated progression for arc '{arc.title}' in {season}{episode}")
                 return existing_progression
             else:
                 # Create new progression
@@ -85,7 +85,7 @@ class ArcProgressionService:
                     arc.progressions.append(progression)
                     self.progression_repository.add_or_update(progression)
                     
-                    logger.info(f"Added new progression for arc '{arc.title}' in S{season}E{episode} with position {progression.ordinal_position}")
+                    logger.info(f"Added new progression for arc '{arc.title}' in {season}{episode} with position {progression.ordinal_position}")
                     return progression
 
         except Exception as e:

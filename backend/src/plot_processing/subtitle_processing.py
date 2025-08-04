@@ -23,6 +23,7 @@ class PlotScene:
     """Represents a plot scene with content and timing."""
     scene_number: int
     plot_segment: str
+    is_recap: bool = False  # NEW: Flag to identify recap/summary scenes
     start_time: Optional[str] = None
     end_time: Optional[str] = None
     start_seconds: Optional[float] = None
@@ -77,16 +78,29 @@ Your task is to convert the provided subtitles into a detailed, scene-based plot
   - "an unidentified person"  
   as needed.
 
+**RECAP DETECTION (VERY IMPORTANT):**
+- **FIRST PRIORITY**: Identify if the first 1-3 scenes contain "Previously on" or recap content
+- Recap scenes typically:
+  - Start with phrases like "Previously on [series name]", "Last time", "Before"
+  - Summarize events from previous episodes (not new content)
+  - May have narrator voice-over or montage-style editing
+  - Show flashbacks or quick cuts from past episodes
+  - Do NOT contain new narrative developments for the current episode
+- Mark ANY scene containing recap/summary content as `"is_recap": true`
+- Be very careful: only NEW episode content should have `"is_recap": false`
+
 **If unsure, you MUST default to generic labeling** — uncertainty is better than incorrect confidence.
 **Output Format (JSON only):**
 [
   {{
     "scene_number": 1,
-    "plot_segment": "..."
+    "plot_segment": "...",
+    "is_recap": true
   }},
   {{
     "scene_number": 2,
-    "plot_segment": "..."
+    "plot_segment": "...",
+    "is_recap": false
   }}
 ]
 
@@ -98,6 +112,7 @@ Your task is to convert the provided subtitles into a detailed, scene-based plot
 - Number scenes based on natural story breaks or setting changes
 - Correctly separate scenes, trying to not make big large sequences of scenes but rather smaller and focused scenes.
 - Make the plot segment detailed and specific, indicating also the character present in the scene.
+- **CRITICAL**: Accurately identify recap vs new episode content using the `is_recap` flag
 
 REMEMBER ALWAYS: Don't be overly confident, if you are not certain about the speaker, use generic references. 
 
@@ -160,7 +175,21 @@ REMEMBER ALWAYS: Don't be overly confident, if you are not certain about the spe
             # Assume the dict itself contains scenes
             scenes_dict = {"scenes": list(plot_data.values()) if isinstance(plot_data, dict) else plot_data}
         
-        logger.info(f"Generated plot with {len(scenes_dict.get('scenes', []))} scenes")
+        # Ensure all scenes have the is_recap field (default to False for backward compatibility)
+        scenes = scenes_dict.get("scenes", [])
+        for scene in scenes:
+            if "is_recap" not in scene:
+                scene["is_recap"] = False
+        
+        logger.info(f"Generated plot with {len(scenes)} scenes")
+        
+        # Log recap detection results
+        recap_scenes = [s for s in scenes if s.get("is_recap", False)]
+        if recap_scenes:
+            logger.info(f"🔄 Detected {len(recap_scenes)} recap scene(s): {[s.get('scene_number', 'unknown') for s in recap_scenes]}")
+        else:
+            logger.info("ℹ️ No recap scenes detected in this episode")
+        
         return scenes_dict
         
     except Exception as e:
@@ -183,22 +212,36 @@ def save_plot_files(plot_data: Dict, path_handler) -> Tuple[str, str]:
     # Extract scenes from the data structure
     scenes = plot_data.get("scenes", [])
     
-    # Generate text format
+    # Separate recap and non-recap scenes
+    non_recap_scenes = [scene for scene in scenes if not scene.get("is_recap", False)]
+    recap_scenes = [scene for scene in scenes if scene.get("is_recap", False)]
+    
+    # Log filtering results
+    if recap_scenes:
+        logger.info(f"🔄 Filtering {len(recap_scenes)} recap scene(s) from _plot.txt file")
+        logger.info(f"📝 Including {len(non_recap_scenes)} non-recap scene(s) in _plot.txt file")
+    else:
+        logger.info(f"📝 No recap scenes to filter. Including all {len(scenes)} scene(s) in _plot.txt file")
+    
+    # Generate text format (ONLY non-recap scenes)
     txt_content = []
-    for scene in scenes:
+    for scene in non_recap_scenes:
         scene_number = scene.get("scene_number", "Unknown")
         plot_segment = scene.get("plot_segment", "")
         txt_content.append(f"Scene {scene_number}: {plot_segment}")
     
-    # Save TXT file
+    # Save TXT file (non-recap content only)
     with open(txt_path, 'w', encoding='utf-8') as f:
         f.write('\n\n'.join(txt_content))
     
-    # Save JSON file
+    # Save JSON file (ALL scenes with recap flags for complete data preservation)
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(plot_data, f, indent=2, ensure_ascii=False)
     
-    logger.info(f"Saved plot files: {txt_path} and {json_path}")
+    logger.info(f"📝 Saved plot files:")
+    logger.info(f"   TXT (non-recap only): {txt_path}")
+    logger.info(f"   JSON (all scenes): {json_path}")
+    
     return str(txt_path), str(json_path)
 
 def save_scene_timestamps(scenes: List[PlotScene], path_handler) -> str:
@@ -215,6 +258,7 @@ def save_scene_timestamps(scenes: List[PlotScene], path_handler) -> str:
             {
                 "scene_number": scene.scene_number,
                 "plot_segment": scene.plot_segment,
+                "is_recap": scene.is_recap,  # NEW: Include recap flag
                 "start_time": scene.start_time,
                 "end_time": scene.end_time,
                 "start_seconds": scene.start_seconds,
@@ -225,6 +269,11 @@ def save_scene_timestamps(scenes: List[PlotScene], path_handler) -> str:
             for scene in scenes
         ]
     }
+    
+    # Log recap information
+    recap_scenes = [scene for scene in scenes if scene.is_recap]
+    if recap_scenes:
+        logger.info(f"🔄 Saved timestamps for {len(recap_scenes)} recap scene(s) and {len(scenes) - len(recap_scenes)} regular scene(s)")
     
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(timestamp_data, f, indent=2, ensure_ascii=False)

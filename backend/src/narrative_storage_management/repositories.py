@@ -169,10 +169,10 @@ class ArcProgressionRepository(BaseRepository):
         if existing_progression:
             existing_progression.content = progression.content
             existing_progression.ordinal_position = progression.ordinal_position
-            logger.info(f"Updated ArcProgression in S{progression.season}E{progression.episode}")
+            logger.info(f"Updated ArcProgression in {progression.season}{progression.episode}")
         else:
             self.session.add(progression)
-            logger.info(f"Added new ArcProgression in S{progression.season}E{progression.episode}")
+            logger.info(f"Added new ArcProgression in {progression.season}{progression.episode}")
 
     def get_by_arc_id(self, arc_id: str) -> List[ArcProgression]:
         query = select(ArcProgression).where(

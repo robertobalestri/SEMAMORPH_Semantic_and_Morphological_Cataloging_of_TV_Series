@@ -193,9 +193,15 @@ async def process_episode_directly(series: str, season: str, episode: str, inclu
                 for scene_data in plot_data.get("scenes", []):
                     scene = PlotScene(
                         scene_number=scene_data.get("scene_number", len(scenes) + 1),
-                        plot_segment=scene_data.get("plot_segment", "")
+                        plot_segment=scene_data.get("plot_segment", ""),
+                        is_recap=scene_data.get("is_recap", False)  # NEW: Handle recap flag
                     )
                     scenes.append(scene)
+                
+                # Log recap information
+                recap_scenes = [scene for scene in scenes if scene.is_recap]
+                if recap_scenes:
+                    logger.info(f"🔄 Loaded {len(recap_scenes)} recap scene(s) and {len(scenes) - len(recap_scenes)} regular scene(s)")
                 
                 # Map scenes to timestamps using new simplified boundary detection
                 mapped_scenes = map_scenes_to_timestamps(scenes, subtitles, llm_cheap)
@@ -284,21 +290,7 @@ async def process_episode_directly(series: str, season: str, episode: str, inclu
 
         #time.sleep(10000000)  # Removed long sleep
         
-        # Step 6: Update season summary
-        logger.info("📖 Updating season summary")
-        # Use speaker-identified plot if available, fallback to raw plot
-        if os.path.exists(path_handler.get_plot_possible_speakers_path()):
-            episode_plot_path = path_handler.get_plot_possible_speakers_path()
-            logger.info("📝 Using speaker-identified plot for season summary")
-        else:
-            episode_plot_path = path_handler.get_raw_plot_file_path()
-            logger.info("📝 Using raw plot for season summary (speaker identification not available)")
-        
-        season_summary_path = path_handler.get_season_summary_path()
-        episode_summary_path = path_handler.get_episode_summary_path()
-        create_or_update_season_summary(episode_plot_path, season_summary_path, episode_summary_path, llm_intelligent)
-        
-        # Step 7: Extract narrative arcs (MOVED TO END)
+        # Step 6: Extract narrative arcs (MOVED EARLIER)
         logger.info("📚 Starting narrative arcs extraction...")
         
         suggested_arc_path = path_handler.get_suggested_episode_arc_path()
@@ -316,9 +308,25 @@ async def process_episode_directly(series: str, season: str, episode: str, inclu
             }
             extract_narrative_arcs(file_paths_for_graph, series, season, episode)
         
-        # Step 8: Process arcs and update database
+        # Step 7: Process arcs and update database
         logger.info("💾 Updating database")
         updated_arcs = process_suggested_arcs(suggested_arc_path, series, season, episode)
+        
+        # Step 8: Update season summary (FINAL STEP - uses speaker-identified content)
+        logger.info("📖 Updating season summary with final processed content")
+        # Always use speaker-identified plot if available (should be available by now after speaker identification)
+        if os.path.exists(path_handler.get_plot_possible_speakers_path()):
+            episode_plot_path = path_handler.get_plot_possible_speakers_path()
+            logger.info("📝 Using final speaker-identified plot for season summary")
+        else:
+            # Fallback to raw plot if speaker identification failed
+            episode_plot_path = path_handler.get_raw_plot_file_path()
+            logger.warning("⚠️ Speaker identification file not found, using raw plot for season summary")
+        
+        season_summary_path = path_handler.get_season_summary_path()
+        episode_summary_path = path_handler.get_episode_summary_path()
+        create_or_update_season_summary(episode_plot_path, season_summary_path, episode_summary_path, llm_intelligent)
+        logger.info("✅ Season summary updated as final step of processing")
         
         logger.info(f"✅ COMPLETED: {series} {season} {episode}")
         return f"Successfully processed {len(updated_arcs)} arcs"
@@ -696,6 +704,24 @@ class SpeakerStatsResponse(BaseModel):
     confidence_distribution: Dict[str, int]  # ranges like "90-95%": count
     face_cluster_stats: Dict[str, int]  # speaker -> face count
 
+# RECAP VALIDATION MODELS
+class RecapValidationResponse(BaseModel):
+    has_scenes_json: bool
+    has_plot_txt: bool
+    total_scenes: int
+    recap_scenes: int
+    non_recap_scenes: int
+    plot_txt_scenes: int
+    recap_filtered_correctly: bool
+    validation_passed: bool
+    issues: List[str]
+
+class RecapSummaryResponse(BaseModel):
+    series: str
+    episodes_processed: int
+    episodes_with_recaps: int
+    total_recap_scenes: int
+    validation_issues: List[str]
 # SCENE VALIDATION MODELS
 class SceneValidationRequest(BaseModel):
     series: str
@@ -3097,4 +3123,71 @@ async def get_events_in_timestamp_range(
         
     except Exception as e:
         logger.error(f"❌ Failed to get events in timestamp range: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# ========================================
+# NEW: Recap Detection and Validation Endpoints
+# ========================================
+
+@app.get("/api/recap-validation/{series}/{season}/{episode}", response_model=RecapValidationResponse)
+async def validate_recap_detection(series: str, season: str, episode: str):
+    """Validate that recap detection is working properly for an episode"""
+    try:
+        from backend.src.path_handler import PathHandler
+        from backend.src.utils.recap_validation import validate_recap_detection
+        
+        path_handler = PathHandler(series, season, episode)
+        results = validate_recap_detection(series, season, episode, path_handler)
+        
+        return RecapValidationResponse(**results)
+        
+    except Exception as e:
+        logger.error(f"Error validating recap detection: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/recap-summary/{series}", response_model=RecapSummaryResponse) 
+async def get_recap_summary(series: str):
+    """Get a summary of recap detection across all episodes in a series"""
+    try:
+        from backend.src.utils.recap_validation import get_recap_summary_for_series
+        
+        summary = get_recap_summary_for_series(series)
+        return RecapSummaryResponse(**summary)
+        
+    except Exception as e:
+        logger.error(f"Error generating recap summary: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/recap-scenes/{series}/{season}/{episode}")
+async def get_recap_scenes(series: str, season: str, episode: str):
+    """Get detailed information about recap scenes in an episode"""
+    try:
+        from backend.src.path_handler import PathHandler
+        from backend.src.utils.recap_utils import get_non_recap_scenes_from_json
+        
+        path_handler = PathHandler(series, season, episode)
+        scenes_json_path = path_handler.get_plot_scenes_json_path()
+        
+        if not os.path.exists(scenes_json_path):
+            raise HTTPException(status_code=404, detail="Scenes JSON file not found")
+        
+        with open(scenes_json_path, 'r') as f:
+            data = json.load(f)
+        
+        scenes = data.get("scenes", [])
+        recap_scenes = [scene for scene in scenes if scene.get("is_recap", False)]
+        non_recap_scenes = [scene for scene in scenes if not scene.get("is_recap", False)]
+        
+        return {
+            "episode_code": f"{series}_{season}_{episode}",
+            "total_scenes": len(scenes),
+            "recap_scenes": recap_scenes,
+            "non_recap_scenes": non_recap_scenes,
+            "recap_count": len(recap_scenes),
+            "non_recap_count": len(non_recap_scenes)
+        }
+        
+    except Exception as e:
+        logger.error(f"Error getting recap scenes: {e}")
         raise HTTPException(status_code=500, detail=str(e))

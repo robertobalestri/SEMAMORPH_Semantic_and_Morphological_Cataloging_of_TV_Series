@@ -226,11 +226,11 @@ def create_or_update_season_summary(
     Create or update season summary after processing an episode.
     
     This function:
-    1. Creates an episode summary from the detailed plot
+    1. Creates an episode summary from the detailed plot (recap content already filtered)
     2. Updates the cumulative season summary with the new episode
     
     Args:
-        episode_plot_path (str): Path to the detailed episode plot file
+        episode_plot_path (str): Path to the detailed episode plot file (should be recap-filtered)
         season_summary_path (str): Path to the cumulative season summary file
         episode_summary_path (str): Path where episode summary will be saved
         llm (AzureChatOpenAI): The LLM to use for summarization
@@ -239,6 +239,14 @@ def create_or_update_season_summary(
         str: The updated season summary
     """
     try:
+        logger.info("📖 Creating/updating season summary")
+        
+        # Verify that we're using a recap-filtered plot file
+        if "_plot.txt" in episode_plot_path or "possible_speakers" in episode_plot_path:
+            logger.info("✅ Using recap-filtered plot content for season summary")
+        else:
+            logger.warning("⚠️ Episode plot path may contain recap content - consider using filtered version")
+        
         # Step 1: Create episode summary
         episode_summary = create_episode_summary(episode_plot_path, llm, episode_summary_path)
         

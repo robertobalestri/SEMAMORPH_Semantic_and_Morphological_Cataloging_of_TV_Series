@@ -39,7 +39,7 @@ class VectorStoreService:
             unique_ids = list(dict.fromkeys(ids))  # Preserves order while removing duplicates
             
             if len(ids) != len(unique_ids):
-                logger.warning(f"Found {len(ids) - len(unique_ids)} duplicate IDs when adding documents, using {len(unique_ids)} unique documents")
+                logger.info(f"Found {len(ids) - len(unique_ids)} duplicate IDs when adding documents (handling gracefully), using {len(unique_ids)} unique documents")
                 # Create a mapping to get the last document for each unique ID
                 id_to_doc = {}
                 for doc, id_val in zip(documents, ids):
@@ -229,7 +229,7 @@ class VectorStoreService:
             unique_ids_to_delete = list(dict.fromkeys(ids_to_delete))  # Preserves order while removing duplicates
             
             if len(ids_to_delete) != len(unique_ids_to_delete):
-                logger.warning(f"Found {len(ids_to_delete) - len(unique_ids_to_delete)} duplicate IDs when deleting arc {arc_id}, using {len(unique_ids_to_delete)} unique IDs")
+                logger.info(f"Found {len(ids_to_delete) - len(unique_ids_to_delete)} overlapping IDs when deleting arc {arc_id} (expected due to document metadata overlap), using {len(unique_ids_to_delete)} unique IDs")
 
             if unique_ids_to_delete:
                 self.collection.delete(ids=unique_ids_to_delete)

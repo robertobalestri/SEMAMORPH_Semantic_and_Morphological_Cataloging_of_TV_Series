@@ -95,7 +95,6 @@ def initialize_state(state: NarrativeArcsExtractionState) -> NarrativeArcsExtrac
     """Initialize the state by loading necessary data from files."""
     logger.info("Initializing state with data from files.")
 
-
     # Load existing season entities
     if os.path.exists(state['file_paths']['season_entities_path']):
         with open(state['file_paths']['season_entities_path'], 'r') as f:
@@ -103,7 +102,29 @@ def initialize_state(state: NarrativeArcsExtractionState) -> NarrativeArcsExtrac
             state['existing_season_entities'] = [EntityLink(**entity) for entity in season_entities_data]
 
     if os.path.exists(state['file_paths']['episode_plot_path']):
-        state['episode_plot'] = load_text(state['file_paths']['episode_plot_path'])
+        with open(state['file_paths']['episode_plot_path'], 'r') as f:
+            state['episode_plot'] = f.read()
+        
+        # Log recap filtering status for narrative arc extraction
+        logger.info("📚 Episode plot loaded for narrative arc extraction")
+        logger.info("ℹ️ Note: _plot.txt files already have recap content filtered out automatically")
+        
+        # Double-check if we need additional recap filtering
+        from ..utils.recap_utils import get_recap_scene_count
+        try:
+            # Check if there are recap scenes in the original data
+            from ..path_handler import PathHandler
+            path_handler = PathHandler(state['series'], state['season'], state['episode'])
+            scenes_json_path = path_handler.get_plot_scenes_json_path()
+            
+            if os.path.exists(scenes_json_path):
+                recap_count = get_recap_scene_count(scenes_json_path)
+                if recap_count > 0:
+                    logger.info(f"🔄 Original episode had {recap_count} recap scene(s) that were filtered out for narrative analysis")
+                else:
+                    logger.info("ℹ️ No recap scenes detected in this episode")
+        except Exception as e:
+            logger.warning(f"Could not check recap status: {e}")
 
     # Season plot is no longer used - we process episodes independently
     state['season_plot'] = ""

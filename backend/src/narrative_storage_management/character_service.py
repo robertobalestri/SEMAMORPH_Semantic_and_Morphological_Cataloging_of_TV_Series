@@ -221,7 +221,7 @@ class CharacterService:
             for character in new_characters:
                 if progression not in character.interfering_progressions:
                     character.interfering_progressions.append(progression)
-            logger.info(f"Linked {len(new_characters)} characters to progression in S{progression.season}E{progression.episode}")
+            logger.info(f"Linked {len(new_characters)} characters to progression in {progression.season}{progression.episode}")
 
     def delete_character(self, entity_name: str, series: str) -> bool:
         """

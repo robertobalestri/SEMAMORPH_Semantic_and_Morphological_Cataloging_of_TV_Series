@@ -588,11 +588,21 @@ class ProcessingPipeline:
         llm_intelligent,
         progress_callback: Optional[Callable[[str, str], None]] = None
     ) -> Optional[str]:
-        """Create or update season summary."""
+        """Create or update season summary using speaker-identified content when available."""
         try:
             self.logger.info("Creating/updating season summary")
             
-            episode_plot_path = path_handler.get_raw_plot_file_path()
+            # Prefer speaker-identified plot, fallback to raw plot
+            speaker_plot_path = path_handler.get_plot_possible_speakers_path()
+            raw_plot_path = path_handler.get_raw_plot_file_path()
+            
+            if os.path.exists(speaker_plot_path):
+                episode_plot_path = speaker_plot_path
+                self.logger.info("✅ Using speaker-identified plot for season summary")
+            else:
+                episode_plot_path = raw_plot_path
+                self.logger.warning("⚠️ Speaker-identified plot not available, using raw plot for season summary")
+            
             season_summary_path = path_handler.get_season_summary_path()
             episode_summary_path = path_handler.get_episode_summary_path()
             
