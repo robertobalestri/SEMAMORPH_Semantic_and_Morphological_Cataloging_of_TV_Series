@@ -482,7 +482,11 @@ class Config:
     @property
     def whisperx_auth_token(self) -> str:
         """HuggingFace authentication token for WhisperX."""
-        return self.get_str('audio', 'auth_token', fallback='')
+        # Try to get from environment variable first, then fallback to config.ini
+        env_token = os.getenv('huggingface_auth_token', '').strip()
+        if env_token:
+            return env_token
+
     
     @property
     def whisperx_model(self) -> str:

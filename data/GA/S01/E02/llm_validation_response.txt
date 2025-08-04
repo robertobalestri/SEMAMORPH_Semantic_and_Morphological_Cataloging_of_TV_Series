@@ -1,0 +1,26 @@
+[
+    {
+        "entity_name": "meredith_grey",
+        "best_appellation": "Meredith Grey",
+        "appellations": ["Meredith", "Meredith Grey"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "derek_shepherd",
+        "best_appellation": "Dr. Derek Shepherd",
+        "appellations": ["Dr. Shepherd", "Derek Shepherd", "Derek"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "george_omalley",
+        "best_appellation": "George O'Malley",
+        "appellations": ["George", "George O'Malley"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "preston_burke",
+        "best_appellation": "Dr. Preston Burke",
+        "appellations": ["Dr. Burke", "Preston Burke"],
+        "biological_sex": "M"
+    }
+]

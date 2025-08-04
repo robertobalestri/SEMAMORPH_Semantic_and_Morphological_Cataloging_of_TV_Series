@@ -139,95 +139,44 @@
     "biological_sex": "M"
   },
   {
-    "entity_name": "mr_jones",
-    "best_appellation": "Mr. Jones",
-    "appellations": [
-      "Mr. Jones",
-      "Jones"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "ellis_gray",
-    "best_appellation": "Dr. Ellis Gray",
-    "appellations": [
-      "Ellis Gray",
-      "Dr. Gray",
-      "Gray",
-      "Dr. Ellis Gray"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "F"
-  },
-  {
-    "entity_name": "mr_bryce",
-    "best_appellation": "Mr. Bryce",
-    "appellations": [
-      "Mr. Bryce"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "katie_bryce",
-    "best_appellation": "Katie Bryce",
-    "appellations": [
-      "Katie",
-      "Katie Bryce"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "F"
-  },
-  {
-    "entity_name": "meredith_gray",
-    "best_appellation": "Dr. Meredith Gray",
+    "entity_name": "meredith_grey",
+    "best_appellation": "Meredith Grey",
     "appellations": [
       "Meredith",
-      "Gray",
-      "Meredith Gray",
-      "Dr. Gray",
-      "Dr. Meredith Gray"
+      "Meredith Grey"
     ],
     "entity_type": "PERSON",
     "biological_sex": "F"
   },
   {
-    "entity_name": "steven",
-    "best_appellation": "Steven",
+    "entity_name": "derek_shepherd",
+    "best_appellation": "Dr. Derek Shepherd",
     "appellations": [
-      "Steven"
+      "Dr. Shepherd",
+      "Derek Shepherd",
+      "Derek"
     ],
     "entity_type": "PERSON",
-    "biological_sex": null
+    "biological_sex": "M"
   },
   {
-    "entity_name": "gloria",
-    "best_appellation": "Gloria",
+    "entity_name": "george_omalley",
+    "best_appellation": "George O'Malley",
     "appellations": [
-      "Gloria"
+      "George",
+      "George O'Malley"
     ],
     "entity_type": "PERSON",
-    "biological_sex": "F"
+    "biological_sex": "M"
   },
   {
-    "entity_name": "katie_meredith",
-    "best_appellation": "Katie Meredith",
+    "entity_name": "preston_burke",
+    "best_appellation": "Dr. Preston Burke",
     "appellations": [
-      "Katie Meredith"
+      "Dr. Burke",
+      "Preston Burke"
     ],
     "entity_type": "PERSON",
-    "biological_sex": null
-  },
-  {
-    "entity_name": "isobel_stevens",
-    "best_appellation": "Dr. Isobel Stevens",
-    "appellations": [
-      "Isabelle Stevens",
-      "Izzy",
-      "Stevens"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "F"
+    "biological_sex": "M"
   }
 ]
