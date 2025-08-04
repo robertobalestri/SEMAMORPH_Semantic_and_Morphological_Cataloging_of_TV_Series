@@ -3,7 +3,7 @@
 from typing import List, Optional, Dict
 from sqlmodel import SQLModel, Session, select
 from sqlalchemy.orm import selectinload
-from ..narrative_storage_management.narrative_models import NarrativeArc, ArcProgression, Character, CharacterAppellation
+from ..narrative_storage_management.narrative_models import NarrativeArc, ArcProgression, Character, CharacterAppellation, Event
 from contextlib import contextmanager
 import os
 from sqlmodel import create_engine
@@ -37,35 +37,25 @@ class DatabaseSessionManager:
 
     def _get_database_url_from_env(self) -> str:
         """Get database URL from environment variables."""
-        try:
-            from dotenv import load_dotenv
-            
-            # Try to load .env file from project root
-            import os
+        # Note: Environment variables should be loaded by the main application
+        # (api_main_updated.py) before this is called
+        
+        # Get database name from environment variable
+        database_name = os.getenv('DATABASE_NAME', 'narrative_storage/narrative.db')
+        
+        # Convert relative path to absolute path
+        if not os.path.isabs(database_name):
             current_dir = os.path.dirname(os.path.abspath(__file__))
             project_root = os.path.abspath(os.path.join(current_dir, '..', '..', '..'))
-            env_path = os.path.join(project_root, '.env')
-            
-            if os.path.exists(env_path):
-                load_dotenv(env_path)
-                logger.info(f"📄 Loaded environment from: {env_path}")
-            
-            # Get database name from environment variable
-            database_name = os.getenv('DATABASE_NAME', 'narrative_storage/narrative.db')
-            
-            # Construct the full database path
-            db_path = os.path.join(project_root, database_name)
-            
-            # Ensure the directory exists
-            os.makedirs(os.path.dirname(db_path), exist_ok=True)
-            
-            db_url = f'sqlite:///{db_path}'
-            logger.info(f"🔗 Constructed database URL from environment: {db_url}")
-            return db_url
-            
-        except Exception as e:
-            logger.error(f"❌ Error getting database URL from environment: {e}")
-            return None
+            database_name = os.path.join(project_root, database_name)
+        
+        # Ensure the directory exists
+        os.makedirs(os.path.dirname(database_name), exist_ok=True)
+        
+        db_url = f'sqlite:///{database_name}'
+        logger.info(f"🔗 Constructed database URL from environment: {db_url}")
+        logger.info(f"🔗 Initializing DatabaseSessionManager with URL: {db_url}")
+        return db_url
 
     def create_tables(self):
         """Create database tables if they don't exist."""
@@ -147,6 +137,21 @@ class NarrativeArcRepository(BaseRepository):
         if arc:
             self.session.delete(arc)
             logger.info(f"Deleted NarrativeArc: {arc.title}")
+
+    def get_arcs_by_episode(self, series: str, season: str, episode: str) -> List[NarrativeArc]:
+        """Get all narrative arcs that have progressions in a specific episode."""
+        query = select(NarrativeArc)\
+            .join(ArcProgression)\
+            .where(
+                NarrativeArc.series == series,
+                ArcProgression.season == season,
+                ArcProgression.episode == episode
+            )\
+            .options(
+                selectinload(NarrativeArc.main_characters),
+                selectinload(NarrativeArc.progressions)
+            )
+        return self.session.exec(query).all()
 
 class ArcProgressionRepository(BaseRepository):
     """Repository for ArcProgression operations."""
@@ -279,3 +284,156 @@ class CharacterRepository(BaseRepository):
         except Exception as e:
             logger.error(f"Error deleting character {character.entity_name}: {e}")
             raise
+
+class EventRepository:
+    """Repository for Event objects."""
+
+    def __init__(self, session: Session):
+        self.session = session
+
+    def get_by_id(self, event_id: str) -> Optional[Event]:
+        """Get an event by its ID."""
+        query = select(Event).where(Event.id == event_id).options(
+            selectinload(Event.progression)
+        )
+        return self.session.exec(query).first()
+
+    def get_by_progression_id(self, progression_id: str) -> List[Event]:
+        """Get all events for a specific progression, ordered by ordinal_position."""
+        query = select(Event).where(
+            Event.progression_id == progression_id
+        ).order_by(Event.ordinal_position)
+        return self.session.exec(query).all()
+
+    def get_by_episode(self, series: str, season: str, episode: str, include_context: bool = False) -> List[Event]:
+        """Get all events for a specific episode."""
+        query = select(Event).where(
+            Event.series == series,
+            Event.season == season,
+            Event.episode == episode
+        )
+        
+        if include_context:
+            # Load progression and narrative arc relationships
+            query = query.options(
+                selectinload(Event.progression).selectinload(ArcProgression.narrative_arc)
+            )
+        
+        query = query.order_by(Event.ordinal_position)
+        return self.session.exec(query).all()
+
+    def get_by_timestamp_range(self, series: str, season: str, episode: str, 
+                              start_time: str, end_time: str) -> List[Event]:
+        """Get events within a specific timestamp range."""
+        # Convert timestamp strings to seconds for comparison
+        def timestamp_to_seconds(timestamp_str: str) -> float:
+            if not timestamp_str:
+                return 0.0
+            try:
+                time_part, ms_part = timestamp_str.split(',')
+                hours, minutes, seconds = map(int, time_part.split(':'))
+                milliseconds = int(ms_part)
+                return hours * 3600 + minutes * 60 + seconds + milliseconds / 1000
+            except:
+                return 0.0
+        
+        start_seconds = timestamp_to_seconds(start_time)
+        end_seconds = timestamp_to_seconds(end_time)
+        
+        # Get all events for the episode and filter by timestamp range
+        all_events = self.session.exec(select(Event).where(
+            Event.series == series,
+            Event.season == season,
+            Event.episode == episode
+        )).all()
+        
+        # Filter events that fall within the timestamp range
+        filtered_events = []
+        for event in all_events:
+            if event.start_timestamp and event.end_timestamp:
+                event_start_seconds = timestamp_to_seconds(event.start_timestamp)
+                event_end_seconds = timestamp_to_seconds(event.end_timestamp)
+                
+                # Check if event overlaps with the requested time range
+                if (event_start_seconds >= start_seconds and event_start_seconds <= end_seconds) or \
+                   (event_end_seconds >= start_seconds and event_end_seconds <= end_seconds) or \
+                   (event_start_seconds <= start_seconds and event_end_seconds >= end_seconds):
+                    filtered_events.append(event)
+        
+        # Sort by start timestamp
+        filtered_events.sort(key=lambda e: timestamp_to_seconds(e.start_timestamp) if e.start_timestamp else 0)
+        return filtered_events
+
+    def create(self, event: Event) -> Event:
+        """Create a new event."""
+        self.session.add(event)
+        self.session.flush()
+        return event
+
+    def update(self, event: Event) -> Event:
+        """Update an existing event."""
+        self.session.add(event)
+        self.session.flush()
+        return event
+
+    def delete(self, event: Event):
+        """Delete an event."""
+        self.session.delete(event)
+        self.session.flush()
+
+    def delete_by_progression_id(self, progression_id: str):
+        """Delete all events for a specific progression."""
+        events = self.get_by_progression_id(progression_id)
+        for event in events:
+            self.session.delete(event)
+        self.session.flush()
+
+    def get_events_with_low_confidence(self, threshold: float = 0.5) -> List[Event]:
+        """Get events with confidence scores below threshold."""
+        query = select(Event).where(
+            Event.confidence_score < threshold
+        ).order_by(Event.confidence_score)
+        return self.session.exec(query).all()
+
+    def get_events_by_character(self, character_name: str, series: str) -> List[Event]:
+        """Get all events involving a specific character."""
+        # This would require joining with the event_characters table
+        # For now, we'll use a simple text search in content
+        query = select(Event).where(
+            Event.series == series,
+            Event.content.ilike(f"%{character_name}%")
+        ).order_by(Event.start_timestamp)
+        return self.session.exec(query).all()
+
+    def get_statistics_by_episode(self, series: str, season: str, episode: str) -> Dict:
+        """Get statistics about events for an episode."""
+        events = self.get_by_episode(series, season, episode)
+        
+        if not events:
+            return {
+                "total_events": 0,
+                "average_confidence": 0.0,
+                "extraction_methods": {},
+                "total_duration": 0.0
+            }
+        
+        total_duration = 0.0
+        extraction_methods = {}
+        confidence_scores = []
+        
+        for event in events:
+            if event.confidence_score:
+                confidence_scores.append(event.confidence_score)
+            
+            if event.extraction_method:
+                extraction_methods[event.extraction_method] = extraction_methods.get(event.extraction_method, 0) + 1
+            
+            if event.start_timestamp and event.end_timestamp:
+                total_duration += (event.end_timestamp - event.start_timestamp)
+        
+        return {
+            "total_events": len(events),
+            "average_confidence": sum(confidence_scores) / len(confidence_scores) if confidence_scores else 0.0,
+            "extraction_methods": extraction_methods,
+            "total_duration": total_duration
+        }

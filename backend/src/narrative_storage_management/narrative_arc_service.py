@@ -2,7 +2,7 @@
 
 from typing import List, Optional, Dict, Union
 from ..narrative_storage_management.narrative_models import NarrativeArc, ArcProgression, Character
-from ..narrative_storage_management.repositories import NarrativeArcRepository, ArcProgressionRepository, CharacterRepository
+from ..narrative_storage_management.repositories import NarrativeArcRepository, ArcProgressionRepository, CharacterRepository, EventRepository
 from ..narrative_storage_management.llm_service import LLMService
 from ..narrative_storage_management.vector_store_service import VectorStoreService
 from ..narrative_storage_management.character_service import CharacterService
@@ -16,6 +16,27 @@ from ..plot_processing.plot_processing_models import EntityLink
 
 from ..utils.logger_utils import setup_logging
 logger = setup_logging(__name__)
+
+def _timestamp_to_seconds(timestamp_str: str) -> Optional[float]:
+    """Convert HH:MM:SS,mmm timestamp to seconds."""
+    if not timestamp_str or not isinstance(timestamp_str, str):
+        return None
+    try:
+        # Parse HH:MM:SS,mmm format
+        time_part, ms_part = timestamp_str.split(',')
+        hours, minutes, seconds = map(int, time_part.split(':'))
+        milliseconds = int(ms_part)
+        return hours * 3600 + minutes * 60 + seconds + milliseconds / 1000
+    except:
+        return None
+
+def _calculate_duration(start_timestamp: str, end_timestamp: str) -> Optional[float]:
+    """Calculate duration in seconds between two timestamps."""
+    start_seconds = _timestamp_to_seconds(start_timestamp)
+    end_seconds = _timestamp_to_seconds(end_timestamp)
+    if start_seconds is not None and end_seconds is not None:
+        return end_seconds - start_seconds
+    return None
 
 class NarrativeArcService:
     """Service to manage narrative arcs."""
@@ -166,9 +187,11 @@ class NarrativeArcService:
                     else:
                         logger.warning(f"No existing characters found for main characters: {main_character_names}")
 
-                # Handle progression
+                # Handle progression - NEW: Support both old string format and new events format
                 progression_data = arc_data.get('single_episode_progression_string')
-                if progression_data:
+                progression_events = arc_data.get('single_episode_progression_events', [])
+                
+                if progression_data or progression_events:
                     # Get interfering characters from the database
                     interfering_chars = []
                     if 'interfering_episode_characters' in arc_data:
@@ -178,11 +201,26 @@ class NarrativeArcService:
                             if name.strip()
                         ]
 
+                    # Create progression content from events or use string
+                    if progression_events:
+                        # NEW: Create content from events list
+                        content_parts = []
+                        for event in progression_events:
+                            if isinstance(event, dict):
+                                content_parts.append(event.get('content', ''))
+                            else:
+                                content_parts.append(str(event))
+                        progression_content = '. '.join(content_parts)
+                        logger.info(f"Created progression content from {len(progression_events)} events")
+                    else:
+                        # LEGACY: Use string format
+                        progression_content = progression_data
+
                     # Create and add progression
                     progression = ArcProgression(
                         id=str(uuid.uuid4()),
                         main_arc_id=new_arc.id,
-                        content=progression_data,
+                        content=progression_content,
                         series=series,
                         season=season,
                         episode=episode
@@ -211,6 +249,17 @@ class NarrativeArcService:
                         season=season,
                         episode=episode
                     )
+                    
+                    # NEW: If we have events, create Event objects in database
+                    if progression_events:
+                        self._create_events_from_progression_events(
+                            progression=progression,
+                            events_data=progression_events,
+                            series=series,
+                            season=season,
+                            episode=episode
+                        )
+                    
                     logger.info(f"Added progression to arc '{new_arc.title}'")
 
                 # Update embeddings
@@ -316,11 +365,29 @@ class NarrativeArcService:
         episode: str
     ):
         """Handle adding or updating arc progressions."""
+        # NEW: Support both old string format and new events format
         progression_data = arc_data.get('single_episode_progression_string')
-        if progression_data:
+        progression_events = arc_data.get('single_episode_progression_events', [])
+        
+        if progression_data or progression_events:
+            # Create progression content from events or use string
+            if progression_events:
+                # NEW: Create content from events list
+                content_parts = []
+                for event in progression_events:
+                    if isinstance(event, dict):
+                        content_parts.append(event.get('content', ''))
+                    else:
+                        content_parts.append(str(event))
+                progression_content = '. '.join(content_parts)
+                logger.info(f"Created progression content from {len(progression_events)} events")
+            else:
+                # LEGACY: Use string format
+                progression_content = progression_data
+
             progression = ArcProgression(
                 id=str(uuid.uuid4()),
-                content=progression_data,
+                content=progression_content,
                 series=series,
                 season=season,
                 episode=episode
@@ -355,9 +422,21 @@ class NarrativeArcService:
                 season=season,
                 episode=episode
             )
+            
+            # NEW: If we have events, create Event objects in database
+            if progression_events:
+                self._create_events_from_progression_events(
+                    progression=progression,
+                    events_data=progression_events,
+                    series=series,
+                    season=season,
+                    episode=episode
+                )
 
     def update_embeddings(self, arc: NarrativeArc):
-        """Update the vector store embeddings for the arc."""
+        """Update the vector store embeddings for the arc, progressions, and events."""
+        logger.info(f"🔍 Updating embeddings for arc '{arc.title}'")
+        
         main_characters_str = ', '.join([char.best_appellation for char in arc.main_characters])
 
         # Create main document for the arc itself
@@ -374,10 +453,15 @@ class NarrativeArcService:
             }
         )
 
-        # Create documents for each progression
+        # Create documents for each progression and their events
         docs = [main_doc]
         ids = [arc.id]
-        for progression in arc.progressions:
+        
+        logger.info(f"   Processing {len(arc.progressions)} progressions")
+        
+        for prog_idx, progression in enumerate(arc.progressions):
+            logger.info(f"   Processing progression {prog_idx + 1}: {progression.id}")
+            
             # Get interfering characters for this progression
             interfering_chars_str = ', '.join([
                 char.best_appellation 
@@ -409,15 +493,92 @@ class NarrativeArcService:
             docs.append(prog_doc)
             ids.append(progression.id)
 
+            # Load events if they're not already loaded
+            if not hasattr(progression, 'events') or progression.events is None:
+                logger.info(f"     Loading events for progression {progression.id}")
+                self.session.refresh(progression, ['events'])
+            
+            # Create event documents for each event in this progression
+            events_count = len(progression.events) if progression.events else 0
+            logger.info(f"     Processing {events_count} events")
+            
+            if progression.events:
+                for event_idx, event in enumerate(progression.events):
+                    logger.info(f"       Creating embedding for event {event_idx + 1}: {event.id}")
+                    
+                    # Get characters involved in this event
+                    event_characters = []
+                    if hasattr(event, 'character_links') and event.character_links:
+                        event_characters = [link.character.best_appellation for link in event.character_links]
+                    event_characters_str = ', '.join(event_characters)
+                    
+                    # Create event title with timing information
+                    event_title = f"{arc.series} | {arc.title} | S{progression.season.replace('S', '')}E{progression.episode.replace('E', '')}"
+                    if event.start_timestamp is not None:
+                        # Use the timestamp string directly for display
+                        event_title += f" | {event.start_timestamp}"
+                    if event_characters_str:
+                        event_title += f" | {event_characters_str}"
+                    
+                    # Create event document with comprehensive metadata
+                    event_doc = Document(
+                        page_content=event.content,
+                        metadata={
+                            "event_title": event_title,
+                            "arc_type": arc.arc_type,
+                            "event_characters": event_characters_str,
+                            "series": arc.series,
+                            "season": progression.season,
+                            "episode": progression.episode,
+                            "doc_type": "event",
+                            "id": event.id,
+                            "progression_id": progression.id,
+                            "main_arc_id": arc.id,
+                            "parent_arc_title": arc.title,
+                            "parent_progression_title": progression_title,
+                            "ordinal_position": event.ordinal_position,
+                            "start_timestamp": event.start_timestamp,
+                            "end_timestamp": event.end_timestamp,
+                            "confidence_score": event.confidence_score,
+                            "extraction_method": event.extraction_method,
+                            "duration": _calculate_duration(event.start_timestamp, event.end_timestamp) if (event.start_timestamp is not None and event.end_timestamp is not None) else None
+                        }
+                    )
+                    docs.append(event_doc)
+                    ids.append(event.id)
+                    
+                    logger.info(f"         Event content: {event.content[:50]}...")
+                    logger.info(f"         Event timestamps: {event.start_timestamp} - {event.end_timestamp}")
+
         # Update vector store
         try:
-            # First delete existing documents
+            # Ensure all IDs are unique before proceeding
+            unique_ids = list(dict.fromkeys(ids))  # Preserves order while removing duplicates
+            
+            if len(ids) != len(unique_ids):
+                logger.warning(f"⚠️ Found {len(ids) - len(unique_ids)} duplicate IDs, using {len(unique_ids)} unique IDs")
+                # Filter docs to match unique IDs
+                id_to_doc = {id_val: doc for id_val, doc in zip(ids, docs)}
+                docs = [id_to_doc[id_val] for id_val in unique_ids]
+                ids = unique_ids
+            
+            # First delete existing documents (main, progressions, and events)
             self.vector_store_service.delete_documents_by_arc(arc.id)
             # Then add new/updated documents
             self.vector_store_service.add_documents(docs, ids)
-            logger.info(f"Updated vector store entries for arc '{arc.title}' with {len(docs)} documents")
+            
+            # Count document types for logging
+            main_count = len([d for d in docs if d.metadata.get('doc_type') == 'main'])
+            prog_count = len([d for d in docs if d.metadata.get('doc_type') == 'progression'])
+            event_count = len([d for d in docs if d.metadata.get('doc_type') == 'event'])
+            
+            logger.info(f"✅ Updated vector store entries for arc '{arc.title}' with {len(docs)} documents:")
+            logger.info(f"   Main documents: {main_count}")
+            logger.info(f"   Progression documents: {prog_count}")
+            logger.info(f"   Event documents: {event_count}")
+            
         except Exception as e:
-            logger.error(f"Error updating vector store for arc {arc.id}: {e}")
+            logger.error(f"❌ Error updating vector store for arc {arc.id}: {e}")
             raise
 
     def add_arc_to_vector_store(self, arc: NarrativeArc):
@@ -707,3 +868,135 @@ class NarrativeArcService:
             except Exception as e:
                 logger.error(f"Error merging arcs: {e}")
                 raise
+
+    def _create_events_from_progression_events(
+        self,
+        progression: "ArcProgression",
+        events_data: List,
+        series: str,
+        season: str,
+        episode: str
+    ):
+        """Create Event objects from progression events data."""
+        try:
+            from .narrative_models import Event, EventCharacterLink
+            
+            logger.info(f"🔍 Creating {len(events_data)} Event objects for progression {progression.id}")
+            
+            event_repository = EventRepository(self.session)
+            created_events = []
+            
+            for i, event_data in enumerate(events_data):
+                logger.info(f"   Creating event {i+1}/{len(events_data)}")
+                
+                if isinstance(event_data, dict):
+                    # Create event from dict data
+                    event = Event(
+                        progression_id=progression.id,
+                        content=event_data.get('content', ''),
+                        series=series,
+                        season=season,
+                        episode=episode,
+                        ordinal_position=event_data.get('ordinal_position', i + 1),
+                        start_timestamp=event_data.get('start_timestamp'),
+                        end_timestamp=event_data.get('end_timestamp'),
+                        confidence_score=event_data.get('confidence_score'),
+                        extraction_method=event_data.get('extraction_method', 'multiagent_extraction')
+                    )
+                    characters_involved = event_data.get('characters_involved', [])
+                else:
+                    # Handle event object with timestamp attributes
+                    event = Event(
+                        progression_id=progression.id,
+                        content=event_data.content,
+                        series=series,
+                        season=season,
+                        episode=episode,
+                        ordinal_position=getattr(event_data, 'ordinal_position', i + 1),
+                        start_timestamp=getattr(event_data, 'start_timestamp', None),
+                        end_timestamp=getattr(event_data, 'end_timestamp', None),
+                        confidence_score=getattr(event_data, 'confidence_score', None),
+                        extraction_method=getattr(event_data, 'extraction_method', 'multiagent_extraction')
+                    )
+                    characters_involved = getattr(event_data, 'characters_involved', [])
+                
+                # Create the event in database
+                created_event = event_repository.create(event)
+                created_events.append(created_event)
+                
+                logger.info(f"     ✅ Created event: {created_event.content[:50]}...")
+                logger.info(f"       ID: {created_event.id}")
+                logger.info(f"       Timestamps: {created_event.start_timestamp} - {created_event.end_timestamp}")
+                
+                # Link characters to event if specified
+                if characters_involved:
+                    # Get characters from database
+                    characters = self.character_service.get_characters_by_appellations(
+                        characters_involved, 
+                        series
+                    )
+                    if characters:
+                        # Link characters to event using EventCharacterLink
+                        for character in characters:
+                            link = EventCharacterLink(
+                                event_id=created_event.id,
+                                character_id=character.entity_name  # Use entity_name, not id
+                            )
+                            self.session.add(link)
+                        logger.info(f"       Linked {len(characters)} characters to event")
+            
+            # Validate for duplicate timestamps in the created events
+            self._validate_event_timestamps(created_events, logger)
+            
+            # Important: Make sure the progression is attached to the session and then refresh
+            # Use the progression service's repository to re-query from the database
+            if hasattr(self.progression_service, 'progression_repository'):
+                progression_from_db = self.progression_service.progression_repository.get_by_id(progression.id)
+                if progression_from_db:
+                    # Now refresh to load the new events
+                    self.session.refresh(progression_from_db, ['events'])
+                    logger.info(f"✅ Created {len(created_events)} Event objects for progression {progression.id}")
+                    logger.info(f"   Progression now has {len(progression_from_db.events)} events loaded")
+                    
+                    # Update the original progression's events list
+                    progression.events = progression_from_db.events
+                else:
+                    logger.warning(f"   Could not reload progression {progression.id} from database")
+            else:
+                logger.warning("   Cannot refresh progression - no progression_repository available")
+                logger.info(f"✅ Created {len(created_events)} Event objects for progression {progression.id}")
+            
+            return created_events
+            
+        except Exception as e:
+            logger.error(f"❌ Error creating events from progression events: {e}")
+            logger.error(f"❌ Exception type: {type(e).__name__}")
+            import traceback
+            logger.error(f"❌ Traceback: {traceback.format_exc()}")
+            # Don't raise - we can continue without events
+            return []
+
+    def _validate_event_timestamps(self, events, logger):
+        """Validate that events don't have duplicate timestamps."""
+        if len(events) <= 1:
+            return
+        
+        timestamp_map = {}
+        duplicates_found = []
+        
+        for event in events:
+            if event.start_timestamp is not None and event.end_timestamp is not None:
+                key = (event.start_timestamp, event.end_timestamp)
+                if key in timestamp_map:
+                    duplicates_found.append((event, timestamp_map[key]))
+                    logger.warning(f"⚠️ DUPLICATE TIMESTAMPS DETECTED:")
+                    logger.warning(f"   Event 1: {timestamp_map[key].content[:50]}... ({key})")
+                    logger.warning(f"   Event 2: {event.content[:50]}... ({key})")
+                else:
+                    timestamp_map[key] = event
+        
+        if duplicates_found:
+            logger.error(f"❌ CRITICAL: Found {len(duplicates_found)} timestamp duplicates in progression!")
+            logger.error(f"❌ This indicates a flaw in the timestamp assignment logic")
+        else:
+            logger.info(f"✅ Timestamp validation passed - no duplicates found")

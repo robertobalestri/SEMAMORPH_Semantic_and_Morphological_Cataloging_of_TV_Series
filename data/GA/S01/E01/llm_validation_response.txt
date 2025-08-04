@@ -1,80 +1,68 @@
 [
     {
-        "entity_name": "george_omalley",
-        "best_appellation": "George O'Malley",
-        "appellations": ["George", "George O'Malley", "O'Malley"],
+        "entity_name": "mr_jones",
+        "best_appellation": "Mr. Jones",
+        "appellations": ["Mr. Jones"],
         "biological_sex": "M"
-    },
-    {
-        "entity_name": "mr_savage",
-        "best_appellation": "Mr. Savage",
-        "appellations": ["Mr. Savage"],
-        "biological_sex": "M"
-    },
-    {
-        "entity_name": "katie_bryce",
-        "best_appellation": "Katie Bryce",
-        "appellations": ["Katie", "Katie Bryce"],
-        "biological_sex": "F"
-    },
-    {
-        "entity_name": "gloria",
-        "best_appellation": "Gloria",
-        "appellations": ["Gloria"],
-        "biological_sex": "F"
-    },
-    {
-        "entity_name": "miranda_bailey",
-        "best_appellation": "Dr. Miranda Bailey",
-        "appellations": ["Dr. Bailey", "Miranda Bailey", "Bailey"],
-        "biological_sex": "F"
-    },
-    {
-        "entity_name": "meredith_gray",
-        "best_appellation": "Dr. Meredith Gray",
-        "appellations": ["Meredith", "Meredith Gray", "Dr. Gray", "Dr. Meredith Gray"],
-        "biological_sex": "F"
     },
     {
         "entity_name": "preston_burke",
         "best_appellation": "Dr. Preston Burke",
-        "appellations": ["Dr. Burke", "Preston Burke", "Burke"],
+        "appellations": ["Dr. Burke", "Burke"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "miranda_bailey",
+        "best_appellation": "Dr. Miranda Bailey",
+        "appellations": ["Dr. Bailey", "Bailey", "the Nazi"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "alex_karev",
+        "best_appellation": "Alex Karev",
+        "appellations": ["Alex"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "mr_bryce",
+        "best_appellation": "Mr. Bryce",
+        "appellations": ["Mr. Bryce"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "george_omalley",
+        "best_appellation": "George O'Malley",
+        "appellations": ["George", "O'Malley", "007"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "derek_shepherd",
+        "best_appellation": "Dr. Derek Shepherd",
+        "appellations": ["Dr. Shepherd", "Derek"],
         "biological_sex": "M"
     },
     {
         "entity_name": "cristina_yang",
-        "best_appellation": "Dr. Cristina Yang",
-        "appellations": ["Christina", "Cristina Yang", "Dr. Yang", "Dr. Cristina Yang"],
+        "best_appellation": "Cristina Yang",
+        "appellations": ["Yang", "Christina", "Cristina"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "katie_bryce",
+        "best_appellation": "Katie Bryce",
+        "appellations": ["Katie Bryce", "Katie"],
         "biological_sex": "F"
     },
     {
         "entity_name": "isobel_stevens",
         "best_appellation": "Dr. Isobel Stevens",
-        "appellations": ["Izzy", "Isobel Stevens", "Dr. Stevens", "Dr. Isobel Stevens", "Izzie"],
+        "appellations": ["Isabelle Stevens", "Izzy", "Stevens"],
         "biological_sex": "F"
     },
     {
-        "entity_name": "tony",
-        "best_appellation": "Tony",
-        "appellations": ["Tony"],
-        "biological_sex": "M"
-    },
-    {
-        "entity_name": "ellis_gray",
-        "best_appellation": "Dr. Ellis Gray",
-        "appellations": ["Ellis", "Ellis Gray", "Dr. Gray", "Dr. Ellis Gray"],
+        "entity_name": "meredith_grey",
+        "best_appellation": "Meredith Grey",
+        "appellations": ["Meredith", "Gray"],
         "biological_sex": "F"
-    },
-    {
-        "entity_name": "derek_shepherd",
-        "best_appellation": "Dr. Derek Shepherd",
-        "appellations": ["Dr. Shepherd", "Derek", "Derek Shepherd", "Dr. Derek Shepherd"],
-        "biological_sex": "M"
-    },
-    {
-        "entity_name": "alex_karev",
-        "best_appellation": "Dr. Alex Karev",
-        "appellations": ["Alex", "Alex Karev", "Dr. Karev", "Dr. Alex Karev"],
-        "biological_sex": "M"
     }
 ]

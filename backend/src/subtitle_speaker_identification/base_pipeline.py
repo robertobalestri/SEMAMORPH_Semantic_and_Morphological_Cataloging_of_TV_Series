@@ -77,6 +77,47 @@ class SpeakerIdentificationConfig:
         """Clustering threshold for diarization (0.0-1.0)."""
         return self._config.diarization_threshold
 
+    # Demucs vocal extraction properties
+    @property
+    def demucs_enable_vocal_extraction(self) -> bool:
+        """Enable vocal extraction for improved diarization."""
+        return self._config.demucs_enable_vocal_extraction
+    
+    @property
+    def demucs_model(self) -> str:
+        """Demucs model to use for vocal extraction."""
+        return self._config.demucs_model
+    
+    @property
+    def demucs_device(self) -> str:
+        """Device to use for Demucs (cuda, cpu)."""
+        return self._config.demucs_device
+    
+    @property
+    def demucs_segment_length(self) -> int:
+        """Segment length in seconds for Demucs processing."""
+        return self._config.demucs_segment_length
+    
+    @property
+    def demucs_overlap(self) -> float:
+        """Overlap between segments for Demucs (0.0-1.0)."""
+        return self._config.demucs_overlap
+    
+    @property
+    def demucs_shifts(self) -> int:
+        """Number of shifts for ensemble processing."""
+        return self._config.demucs_shifts
+    
+    @property
+    def demucs_output_format(self) -> str:
+        """Output format for Demucs (wav, mp3)."""
+        return self._config.demucs_output_format
+    
+    @property
+    def demucs_mp3_bitrate(self) -> int:
+        """MP3 bitrate for Demucs output."""
+        return self._config.demucs_mp3_bitrate
+
 class BaseSpeakerIdentificationPipeline(ABC):
     """Abstract base class for speaker identification pipelines."""
     

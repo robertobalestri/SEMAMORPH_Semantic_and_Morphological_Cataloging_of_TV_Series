@@ -26,7 +26,12 @@ NARRATIVE_ARC_GUIDELINES = dedent("""
     - **Overview**: Summarize what the arc is about (e.g., "Jane and Mark's romantic relationship").
     - **Avoid useless phrases**: E.g., "in this arc".
                                   
-4. **Progression**: The progression should be specific to the arc in the episode, without speculations about what do the progressions mean for a character or other reasoning or research of meaning. Progressions should be precise key plot points separated by a dot.
+4. **Progression**: The progression should be a list of discrete events specific to the arc in the episode, without speculations about what the progressions mean for a character or other reasoning or research of meaning. Each event should be:
+    - **Specific**: A single, discrete narrative action or development
+    - **Temporal**: Something that happens at a specific moment or time period
+    - **Self-contained**: Complete description of what occurs
+    - **Character-aware**: Include which characters are involved in each event
+    - **Chronological**: Events should be in the order they occur in the episode
 
 5. **Character Lists:**
     - **Main Characters**: Protagonists driving the arc (typically two for relationship arcs). An arc should have at least one main character.
@@ -46,7 +51,12 @@ NARRATIVE_ARC_GUIDELINES = dedent("""
 - **Description**: Jane's extramarital affair surfaces, causing tension with Mark and their children, leading to separation.
 - **Main Characters**: Jane, Mark
 - **Interfering Characters**: Karla, Bob, Julie
-- **Progression**: The affair of Jane with her boss is revealed to Mark. Mark decides to separate from Jane. Karla, the judge, confirms the separation. The children, Bob and Julie, become distant.
+- **Progression**: List of discrete events:
+  1. The affair of Jane with her boss is revealed to Mark (Characters: Jane, Mark, Boss)
+  2. Mark confronts Jane about the affair (Characters: Jane, Mark)
+  3. Mark decides to separate from Jane (Characters: Mark, Jane)
+  4. Karla, the judge, confirms the separation (Characters: Karla, Mark, Jane)
+  5. The children become distant from both parents (Characters: Bob, Julie, Jane, Mark)
 """)
 
 # ==============================
@@ -60,7 +70,18 @@ DETAILED_OUTPUT_JSON_FORMAT = dedent("""
         "title": "Specific Arc title",
         "arc_type": "Soap Arc/Genre-Specific Arc/Anthology Arc",
         "description": "Brief season-wide description of the arc",
-        "single_episode_progression_string": "Arc progression in this episode with key plot points.",
+        "single_episode_progression_events": [
+            {
+                "content": "Description of the first event that happens",
+                "ordinal_position": 1,
+                "characters_involved": ["Character1", "Character2"]
+            },
+            {
+                "content": "Description of the second event that happens",
+                "ordinal_position": 2,
+                "characters_involved": ["Character1", "Character3"]
+            }
+        ],
         "main_characters": "Character 1; Character 2; ...",
         "interfering_episode_characters": "Character 1; Character 2; ..."
     },
@@ -193,7 +214,7 @@ Review the "Arcs to Review" and apply the consolidation rules to produce a refin
 
 # 4. Arc Progression Verifier
 ARC_PROGRESSION_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
-    """You are a Narrative Arc Progression Specialist. Refine the arc's description and progression based on the episode plot.
+    """You are a Narrative Arc Progression Specialist. Refine the arc's description and progression events based on the episode plot.
 
 **Episode Plot:**
 {episode_plot}
@@ -203,20 +224,34 @@ ARC_PROGRESSION_VERIFIER_PROMPT = ChatPromptTemplate.from_template(
 
 **Guidelines:**
 1. **Description**: Provide an overview of the entire arc across episodes.
-2. **Progression**: 
+2. **Progression Events**: 
    - Focus ONLY on key plot points specific to this arc in this episode
-   - Write brief, focused points separated by dots
+   - Break down the progression into discrete, individual events
+   - Each event should be a single action or development
+   - Include characters involved in each event
+   - Use present tense, active voice
+   - Events should be chronologically ordered
    - Include ONLY events directly related to this arc's development
    - Avoid any analysis, speculation, or character motivations
-   - Exclude events from other arcs or general episode events
-   - Use simple present tense, active voice
-   - Omit phrases like "in this episode" or "we see that"
 
-**Example Good Progression:**
-"Jane discovers Mark's affair with his secretary. Mark moves out of the house. Their children choose to stay with Jane."
-
-**Example Bad Progression:**
-"In this episode, we see Jane struggling with her emotions when she finds out about Mark's affair, which leads to a confrontation where Mark decides to leave, showing how their relationship has deteriorated, and interestingly their children, who are also affected by this situation, decide to stay with their mother."
+**Example Good Progression Events:**
+[
+    {{
+        "content": "Jane discovers Mark's affair with his secretary",
+        "ordinal_position": 1,
+        "characters_involved": ["Jane", "Mark"]
+    }},
+    {{
+        "content": "Jane confronts Mark about the affair",
+        "ordinal_position": 2,
+        "characters_involved": ["Jane", "Mark"]
+    }},
+    {{
+        "content": "Mark moves out of the house",
+        "ordinal_position": 3,
+        "characters_involved": ["Mark"]
+    }}
+]
 
 **Return the verified arc as a JSON object:**
 {output_json_format}
@@ -275,7 +310,7 @@ Each arc should be self-contained within the episode and focus on the specific c
 
 # 7. Arc Enhancer
 ARC_ENHANCER_PROMPT = ChatPromptTemplate.from_template(
-    """You are an Arc Detail Enhancement Specialist. Enrich the arc with characters and progression details.
+    """You are an Arc Detail Enhancement Specialist. Enrich the arc with characters and progression event details.
 
 **Episode Plot:**
 {episode_plot}
@@ -289,20 +324,33 @@ ARC_ENHANCER_PROMPT = ChatPromptTemplate.from_template(
 **Enhancements Needed:**
 1. **Main Characters**: List protagonists driving the arc.
 2. **Interfering Episode Characters**: List characters affecting the arc in this specific episode.
-3. **Single Episode Progression**: 
-   - Write ONLY key plot points specific to this arc
-   - Use brief, focused statements separated by dots
+3. **Single Episode Progression Events**: 
+   - Break down the progression into discrete, individual events
+   - Each event should be a single action or development
+   - Include characters involved in each event
+   - Use present tense, active voice
+   - Events should be chronologically ordered
    - Include ONLY events that directly advance this arc
    - Exclude background events or other arcs' developments
-   - Use simple present tense
-   - Focus on actions and concrete events
-   - Avoid analysis or speculation
 
-**Example Good Progression:**
-"Detective Smith finds the murder weapon. The forensic team links it to the suspect. Smith arrests the suspect."
-
-**Example Bad Progression:**
-"Detective Smith continues his investigation and makes progress when he discovers the important murder weapon, which leads to a breakthrough in the case as the forensic team does their analysis, ultimately resulting in the arrest of the suspect who had been under surveillance."
+**Example Good Progression Events:**
+[
+    {{
+        "content": "Detective Smith finds the murder weapon in the alley",
+        "ordinal_position": 1,
+        "characters_involved": ["Detective Smith"]
+    }},
+    {{
+        "content": "The forensic team links the weapon to the suspect",
+        "ordinal_position": 2,
+        "characters_involved": ["Forensic Team", "Detective Smith"]
+    }},
+    {{
+        "content": "Smith arrests the suspect at his apartment",
+        "ordinal_position": 3,
+        "characters_involved": ["Detective Smith", "Suspect"]
+    }}
+]
 
 **Return the enhanced details as a JSON object:**
 {output_json_format}

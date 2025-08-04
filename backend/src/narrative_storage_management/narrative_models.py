@@ -13,12 +13,12 @@ logger = setup_logging(__name__)
 class DialogueLine:
     """Model representing a dialogue line from subtitles."""
     
-    def __init__(self, index: int, start_time: float, end_time: float, text: str):
+    def __init__(self, index: int, start_time: float, end_time: float, text: str, speaker: Optional[str] = None):
         self.index = index
         self.start_time = start_time
         self.end_time = end_time
         self.text = text
-        self.speaker: Optional[str] = None  # Final speaker name (after all processing) - kept for backward compatibility
+        self.speaker: Optional[str] = speaker  # Final speaker name (after all processing)
         self.characters: Optional[List[str]] = None  # List of character names (multiple speakers)
         self.is_llm_confident: Optional[bool] = None  # Boolean confidence from LLM
         self.scene_number: Optional[int] = None
@@ -38,6 +38,8 @@ class DialogueLine:
         self.all_face_similarities: Optional[List[float]] = None  # All similarities 
         self.all_face_cluster_ids: Optional[List[int]] = None  # All cluster IDs
         self.audio_cluster_assignments: Optional[List[Dict]] = None # New field for audio cluster assignments (N-to-N)
+        self.is_self_presentation: Optional[bool] = None  # Whether this is a self-presentation dialogue
+        self.llm_reasoning: Optional[str] = None  # LLM's reasoning for speaker assignment
     
     def to_dict(self) -> dict:
         """Convert to dictionary for JSON serialization."""
@@ -61,14 +63,15 @@ class DialogueLine:
             "all_candidate_speakers": self.all_candidate_speakers,
             "all_face_similarities": self.all_face_similarities,
             "all_face_cluster_ids": self.all_face_cluster_ids,
-            "audio_cluster_assignments": self.audio_cluster_assignments
+            "audio_cluster_assignments": self.audio_cluster_assignments,
+            "is_self_presentation": self.is_self_presentation,
+            "llm_reasoning": self.llm_reasoning
         }
     
     @classmethod
     def from_dict(cls, data: dict) -> "DialogueLine":
         """Create from dictionary."""
-        line = cls(data["index"], data["start_time"], data["end_time"], data["text"])
-        line.speaker = data.get("speaker")
+        line = cls(data["index"], data["start_time"], data["end_time"], data["text"], speaker=data.get("speaker"))
         line.characters = data.get("characters")
         line.is_llm_confident = data.get("is_llm_confident")
         line.scene_number = data.get("scene_number")
@@ -84,6 +87,8 @@ class DialogueLine:
         line.all_face_similarities = data.get("all_face_similarities")
         line.all_face_cluster_ids = data.get("all_face_cluster_ids")
         line.audio_cluster_assignments = data.get("audio_cluster_assignments")
+        line.is_self_presentation = data.get("is_self_presentation", False)  # Default to False if not present
+        line.llm_reasoning = data.get("llm_reasoning")
         return line
 
 class ArcMainCharacterLink(SQLModel, table=True):
@@ -151,6 +156,14 @@ class Character(SQLModel, table=True):
         )
     )
 
+    events: List["Event"] = Relationship(
+        sa_relationship=relationship(
+            "Event",
+            secondary="event_characters",
+            lazy="selectin"
+        )
+    )
+
 class NarrativeArc(SQLModel, table=True):
     """Model representing a narrative arc."""
     __tablename__ = "narrativearc"
@@ -182,13 +195,46 @@ class NarrativeArc(SQLModel, table=True):
         )
     )
 
+class Event(SQLModel, table=True):
+    """Model representing an individual timestamped event within a progression."""
+    __tablename__ = "event"
+
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()), primary_key=True)
+    progression_id: str = Field(foreign_key="arcprogression.id")
+    content: str
+    series: str
+    season: str
+    episode: str
+    start_timestamp: Optional[str] = Field(default=None, description="Start time in HH:MM:SS,mmm format")
+    end_timestamp: Optional[str] = Field(default=None, description="End time in HH:MM:SS,mmm format")
+    ordinal_position: int = Field(default=1, description="Order within progression")
+    confidence_score: Optional[float] = Field(default=None, description="LLM confidence in timestamp assignment (0.0-1.0)")
+    extraction_method: Optional[str] = Field(default=None, description="Method used for timestamp extraction")
+
+    # Relationships
+    progression: Optional["ArcProgression"] = Relationship(
+        back_populates="events",
+        sa_relationship=relationship(
+            "ArcProgression", 
+            back_populates="events",
+            lazy="selectin"
+        )
+    )
+
+class EventCharacterLink(SQLModel, table=True):
+    """Junction table for characters involved in events."""
+    __tablename__ = "event_characters"
+
+    event_id: str = Field(foreign_key="event.id", primary_key=True)
+    character_id: str = Field(foreign_key="character.entity_name", primary_key=True)
+
 class ArcProgression(SQLModel, table=True):
     """Model representing a progression within a narrative arc."""
     __tablename__ = "arcprogression"
 
     id: Optional[str] = Field(default_factory=lambda: str(uuid.uuid4()), primary_key=True)
     main_arc_id: str = Field(foreign_key="narrativearc.id")
-    content: str
+    content: str = Field(description="Legacy content field - use events for new data")
     series: str
     season: str
     episode: str
@@ -210,6 +256,16 @@ class ArcProgression(SQLModel, table=True):
         sa_relationship=relationship(
             "NarrativeArc",
             back_populates="progressions",
+            lazy="selectin"
+        )
+    )
+
+    events: List["Event"] = Relationship(
+        back_populates="progression",
+        sa_relationship=relationship(
+            "Event",
+            back_populates="progression",
+            cascade="all, delete-orphan",
             lazy="selectin"
         )
     )

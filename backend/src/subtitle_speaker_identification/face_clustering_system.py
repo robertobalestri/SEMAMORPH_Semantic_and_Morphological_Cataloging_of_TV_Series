@@ -11,6 +11,7 @@ from collections import defaultdict, Counter
 from sklearn.metrics.pairwise import cosine_similarity
 from tqdm import tqdm
 import logging
+from datetime import datetime
 
 from ..utils.logger_utils import setup_logging
 from ..config import config
@@ -42,6 +43,9 @@ class FaceClusteringSystem:
         
         # NEW: Initialize sex validator
         self.sex_validator = SexValidator(path_handler)
+        
+        # Initialize debug tracker
+        self.debug_tracker = SpeakerDebugTracker(path_handler)
         
         # Load validated clusters from previous episodes in the same series
         self._initialize_with_validated_clusters()
@@ -200,6 +204,9 @@ class FaceClusteringSystem:
         # Return results
         cluster_info = self.clusters
         character_clusters = self.get_character_clusters()
+        
+        # Track final clustering results for debug
+        self.debug_tracker.track_final_clustering_results(cluster_info, character_clusters, clustered_faces)
         
         logger.info(f"✅ Face clustering pipeline completed: {len(cluster_info)} clusters, {len(character_clusters)} character assignments")
         
@@ -696,6 +703,24 @@ class FaceClusteringSystem:
             self._associate_characters_with_clusters_multiface(df_faces, min_cluster_size)
         else:
             self._associate_characters_with_clusters_singleface(df_faces, min_cluster_size)
+        
+        # Log cluster assignment summary for debugging
+        assigned_clusters = [c for c in self.clusters.values() if c.get('character_name')]
+        valid_clusters = [c for c in self.clusters.values() if c.get('cluster_status') == 'VALID']
+        logger.info(f"🔍 Cluster assignment summary: {len(assigned_clusters)} assigned, {len(valid_clusters)} valid out of {len(self.clusters)} total clusters")
+        
+        # Log character distribution
+        character_distribution = {}
+        for cluster_info in self.clusters.values():
+            character = cluster_info.get('character_name')
+            if character:
+                character_distribution[character] = character_distribution.get(character, 0) + cluster_info.get('face_count', 0)
+        
+        if character_distribution:
+            logger.info(f"📊 Character distribution: {character_distribution}")
+        
+        # Track cluster assignments for debug
+        self.debug_tracker.track_cluster_assignments(self.clusters, character_distribution)
     
     def _associate_characters_with_clusters_singleface(self, df_faces: pd.DataFrame, min_cluster_size: int) -> None:
         """
@@ -1406,7 +1431,8 @@ class FaceClusteringSystem:
                                 dialogue.original_llm_is_confident = dialogue.is_llm_confident
                             
                             dialogue.speaker = best_character
-                            dialogue.is_llm_confident = True  # Now confident after face assignment
+                            # Preserve original LLM confidence - don't change it based on face assignment
+                            # dialogue.is_llm_confident remains as originally set by LLM
                             dialogue.resolution_method = "face_clustering_single"
                             
                             assigned_count += 1
@@ -1543,7 +1569,8 @@ class FaceClusteringSystem:
                         if best:
                             # Assign the character
                             dialogue.speaker = best['character']
-                            dialogue.is_llm_confident = True  # Now confident after face assignment
+                            # Preserve original LLM confidence - don't change it based on face assignment
+                            # dialogue.is_llm_confident remains as originally set by LLM
                             dialogue.resolution_method = best['method']
                             
                             assigned_count += 1

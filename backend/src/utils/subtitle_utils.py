@@ -15,6 +15,27 @@ class SubtitleEntry:
     text: str
     start_seconds: float
     end_seconds: float
+    speaker: str = "Unknown"  # Add speaker field for speaker-identified subtitles
+
+def extract_speaker_from_text(text: str) -> tuple[str, str]:
+    """Extract speaker and clean text from speaker-identified subtitle text.
+    
+    Args:
+        text: Text like "Meredith Grey: The game." or "The game."
+    
+    Returns:
+        Tuple of (speaker, clean_text)
+    """
+    # Pattern to match "Speaker Name: dialogue"
+    speaker_pattern = r'^([^:]+):\s*(.*)$'
+    match = re.match(speaker_pattern, text.strip())
+    
+    if match:
+        speaker = match.group(1).strip()
+        clean_text = match.group(2).strip()
+        return speaker, clean_text
+    else:
+        return "Unknown", text.strip()
 
 def parse_srt_time_to_seconds(time_str: str) -> float:
     """Convert SRT time format (HH:MM:SS,mmm) to seconds."""
@@ -65,6 +86,9 @@ def parse_srt_file(srt_path: str) -> List[SubtitleEntry]:
             # Parse subtitle text (may span multiple lines)
             text = '\n'.join(lines[2:]).strip()
             
+            # Extract speaker information if available
+            speaker, clean_text = extract_speaker_from_text(text)
+            
             # Convert times to seconds
             start_seconds = parse_srt_time_to_seconds(start_time)
             end_seconds = parse_srt_time_to_seconds(end_time)
@@ -73,9 +97,10 @@ def parse_srt_file(srt_path: str) -> List[SubtitleEntry]:
                 index=index,
                 start_time=start_time,
                 end_time=end_time,
-                text=text,
+                text=clean_text,  # Use clean text without speaker prefix
                 start_seconds=start_seconds,
-                end_seconds=end_seconds
+                end_seconds=end_seconds,
+                speaker=speaker
             ))
             
         except (ValueError, IndexError) as e:

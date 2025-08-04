@@ -4,6 +4,21 @@ export enum ArcType {
   AnthologyArc = 'Anthology Arc'
 }
 
+export interface Event {
+  id: string;
+  progression_id: string;
+  content: string;
+  series: string;
+  season: string;
+  episode: string;
+  start_timestamp?: number;
+  end_timestamp?: number;
+  ordinal_position: number;
+  confidence_score?: number;
+  extraction_method?: string;
+  characters_involved: string[];
+}
+
 export interface ArcProgression {
   id: string;
   content: string;
@@ -12,6 +27,7 @@ export interface ArcProgression {
   episode: string;
   ordinal_position: number;
   interfering_characters: string[];
+  events?: Event[];  // New: array of individual events
 }
 
 export interface NarrativeArc {
@@ -57,4 +73,52 @@ export interface ProgressionMapping {
 // Add a new type for creating arcs
 export interface CreateArcData extends Omit<Partial<NarrativeArc>, 'progressions'> {
   progressions?: Omit<Partial<ArcProgression>, 'id'>[];
+}
+
+// Event-related interfaces
+export interface EventCreateRequest {
+  progression_id: string;
+  content: string;
+  series: string;
+  season: string;
+  episode: string;
+  start_timestamp?: number;
+  end_timestamp?: number;
+  ordinal_position: number;
+  confidence_score?: number;
+  extraction_method?: string;
+}
+
+export interface EventUpdateRequest {
+  content?: string;
+  start_timestamp?: number;
+  end_timestamp?: number;
+  ordinal_position?: number;
+  confidence_score?: number;
+  extraction_method?: string;
+}
+
+export interface EventExtractionRequest {
+  force_reextraction: boolean;
+}
+
+export interface EventExtractionResult {
+  message: string;
+  success: boolean;
+  events_extracted: number;
+  error_message?: string;
+  validation_results?: {
+    is_valid: boolean;
+    issues: string[];
+    suggestions: string[];
+    overall_quality_score: number;
+  };
+  extracted_events?: Event[];
+}
+
+export interface EventStatistics {
+  total_events: number;
+  average_confidence: number;
+  extraction_methods: Record<string, number>;
+  total_duration: number;
 } 

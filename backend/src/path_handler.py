@@ -82,6 +82,18 @@ class PathHandler:
         """Get the path to the enhanced SRT file with speaker identification for this episode."""
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_enhanced.srt")
 
+    def get_possible_speakers_srt_path(self) -> str:
+        """Get the path to the SRT file with possible speakers for this episode."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_possible_speakers.srt")
+
+    def get_plot_possible_speakers_path(self) -> str:
+        """Get the path to the plot file generated from possible speakers SRT."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_plot_possible_speakers.txt")
+
+    def get_corrected_scene_timestamps_path(self) -> str:
+        """Get the path to the corrected scene timestamps file."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_corrected_scene_timestamps.json")
+
     def get_plot_scenes_json_path(self) -> str:
         """Get the path to the plot scenes JSON file."""
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_plot_scenes.json")
@@ -98,6 +110,29 @@ class PathHandler:
     def get_audio_file_path(self) -> str:
         """Get the path to the extracted audio file for this episode."""
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}.wav")
+
+    def get_vocals_file_path(self, audio_path: str = None) -> str:
+        """
+        Get the path to the vocals file extracted from the audio.
+        
+        Args:
+            audio_path: Path to the original audio file. If None, uses the default audio path.
+            
+        Returns:
+            Path to the vocals file
+        """
+        if audio_path is None:
+            audio_path = self.get_audio_file_path()
+        
+        # Get the directory and filename from the audio path
+        audio_dir = os.path.dirname(audio_path)
+        audio_name = os.path.splitext(os.path.basename(audio_path))[0]
+        
+        # Create vocals directory
+        vocals_dir = os.path.join(audio_dir, "vocals")
+        
+        # Return the vocals file path
+        return os.path.join(vocals_dir, f"{audio_name}_vocals.wav")
     
     def get_speaker_analysis_path(self) -> str:
         """Get the path to the speaker analysis JSON file."""
@@ -182,6 +217,11 @@ class PathHandler:
     def get_episode_summary_path(self) -> str:
         """Get the path to the episode summary file."""
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_episode_summary.txt")
+
+    def get_present_running_plotlines_path(self) -> str:
+        """Get the path to the present running plotlines file."""
+        recap_dir = os.path.join(self.base_dir, self.series, self.season, self.episode, "recap_files")
+        return os.path.join(recap_dir, f"{self.series}{self.season}{self.episode}_present_running_plotlines.json")
 
     @staticmethod
     def get_episode_plot_path(base_dir: str, series: str, season: str, episode: str) -> str:

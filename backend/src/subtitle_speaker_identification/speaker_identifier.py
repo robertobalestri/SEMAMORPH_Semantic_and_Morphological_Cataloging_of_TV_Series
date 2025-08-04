@@ -4,7 +4,7 @@ Uses LLM to identify speakers in dialogue based on plot context.
 """
 import json
 from typing import List, Dict, Optional
-from ..narrative_storage_management.narrative_models import DialogueLine
+from ..narrative_storage_management.narrative_models import DialogueLine, Character
 from ..ai_models.ai_models import AzureChatOpenAI
 from ..utils.llm_utils import clean_llm_json_response
 from ..utils.logger_utils import setup_logging
@@ -54,14 +54,26 @@ class SpeakerIdentifier:
         # Format dialogue for LLM
         dialogue_text = self._format_dialogue_for_llm(scene_dialogue_lines)
         
+        # Log what we're sending to the LLM
+        logger.info(f"🔍 DEBUG: Sending {len(scene_dialogue_lines)} dialogue lines to LLM")
+        logger.info(f"🔍 DEBUG: Dialogue line indices: {[line.index for line in scene_dialogue_lines]}")
+        logger.info(f"🔍 DEBUG: First few dialogue lines:")
+        for i, line in enumerate(scene_dialogue_lines[:5]):
+            logger.info(f"   [{line.index}] {line.text[:50]}...")
+        
         # Create prompt
         prompt = self._create_speaker_identification_prompt(
             scene_plot, 
-            dialogue_text, 
+            dialogue_text,
             character_context,
             episode_summary
         )
         
+        # Log the actual dialogue text being sent to LLM
+        logger.info(f"🔍 DEBUG: Dialogue text being sent to LLM:")
+        logger.info(f"🔍 DEBUG: {dialogue_text[:500]}...")
+        logger.info(f"🔍 DEBUG: Total dialogue text length: {len(dialogue_text)} characters")
+            
         logger.info(f"📤 Sending speaker identification request to LLM")
         logger.debug(f"Prompt length: {len(prompt)} characters")
         logger.info(f"🔧 LLM instance: {type(self.llm)} - {self.llm}")
@@ -79,6 +91,40 @@ class SpeakerIdentifier:
             # Parse response
             speaker_data = self._parse_speaker_response(response_content)
             
+            logger.info(f"🔍 DEBUG: LLM returned {len(speaker_data)} speaker entries")
+            logger.info(f"🔍 DEBUG: Expected {len(scene_dialogue_lines)} dialogue lines")
+            
+            # Log detailed comparison
+            logger.info(f"🔍 DEBUG: Expected line indices: {[line.index for line in scene_dialogue_lines]}")
+            logger.info(f"🔍 DEBUG: LLM returned line indices: {[entry.get('line_index') for entry in speaker_data]}")
+            
+            # Check for potential LLM truncation
+            if len(speaker_data) < len(scene_dialogue_lines):
+                logger.warning(f"⚠️ WARNING: LLM only returned {len(speaker_data)} entries for {len(scene_dialogue_lines)} dialogue lines!")
+                logger.warning(f"⚠️ This suggests LLM response was truncated - consider processing smaller scenes")
+                
+                # Log the missing line indices
+                returned_indices = set(entry.get('line_index') for entry in speaker_data)
+                expected_indices = set(line.index for line in scene_dialogue_lines)
+                missing_indices = expected_indices - returned_indices
+                if missing_indices:
+                    logger.warning(f"⚠️ Missing line indices: {sorted(missing_indices)}")
+            
+            # Check for indexing mismatch
+            if speaker_data:
+                returned_indices = set(entry.get('line_index') for entry in speaker_data)
+                expected_indices = set(line.index for line in scene_dialogue_lines)
+                
+                if returned_indices != expected_indices:
+                    logger.error(f"❌ INDEXING MISMATCH!")
+                    logger.error(f"❌ Expected indices: {sorted(expected_indices)}")
+                    logger.error(f"❌ LLM returned indices: {sorted(returned_indices)}")
+                    
+                    # Check if LLM is using 0-based indexing for a subset
+                    if min(returned_indices) == 0 and len(returned_indices) == len(speaker_data):
+                        logger.error(f"❌ LLM is using 0-based indexing for the first {len(speaker_data)} lines!")
+                        logger.error(f"❌ This means the LLM is re-indexing the lines instead of using original indices!")
+            
             if not speaker_data:
                 logger.warning("⚠️ No speaker data parsed from LLM response, returning original lines")
                 # Return original lines with default values
@@ -87,6 +133,12 @@ class SpeakerIdentifier:
                         line.speaker = None
                     if line.is_llm_confident is None:
                         line.is_llm_confident = False
+                    if line.original_llm_speaker is None:
+                        line.original_llm_speaker = None  # Explicitly set to None
+                    if line.original_llm_is_confident is None:
+                        line.original_llm_is_confident = None  # Explicitly set to None
+                    if line.resolution_method is None:
+                        line.resolution_method = "missing_llm_assignment"  # Track why it's missing
                 return scene_dialogue_lines
             
             # Validate speakers against database and get corrected names
@@ -106,40 +158,25 @@ class SpeakerIdentifier:
                 speaker_mapping
             )
             
-            # Validate that all lines were processed
-            processed_indices = {line.index for line in updated_lines}
-            original_indices = {line.index for line in scene_dialogue_lines}
-            missing_indices = original_indices - processed_indices
-            
-            if missing_indices:
-                logger.warning(f"⚠️ LLM didn't process {len(missing_indices)} dialogue lines, adding them back")
-                for line in scene_dialogue_lines:
-                    if line.index in missing_indices:
-                        # Add missing lines with default values
-                        line.speaker = None
-                        line.is_llm_confident = False
-                        updated_lines.append(line)
-            
-            # Log results
-            confident_count = sum(
-                1 for line in updated_lines 
-                if line.is_llm_confident
-            )
-            
-            logger.info(f"✅ Speaker identification complete: {confident_count}/{len(updated_lines)} with confident LLM assignments")
-            
             return updated_lines
             
         except Exception as e:
             logger.error(f"❌ Error in speaker identification: {e}")
-            logger.warning("⚠️ Returning original dialogue lines with default speaker assignments")
+            import traceback
+            logger.error(f"Traceback: {traceback.format_exc()}")
             
-            # Ensure all lines have proper default values
+            # Return original lines with error fallback
             for line in scene_dialogue_lines:
                 if line.speaker is None:
                     line.speaker = None
                 if line.is_llm_confident is None:
                     line.is_llm_confident = False
+                if line.original_llm_speaker is None:
+                    line.original_llm_speaker = None  # Explicitly set to None
+                if line.original_llm_is_confident is None:
+                    line.original_llm_is_confident = None  # Explicitly set to None
+                if line.resolution_method is None:
+                    line.resolution_method = "error_fallback"  # Track why it failed
             
             return scene_dialogue_lines
     
@@ -171,12 +208,15 @@ class SpeakerIdentifier:
         """Create prompt for speaker identification."""
         base_prompt = """You are an expert at identifying speakers in TV show dialogue. Analyze the following dialogue and identify the most likely speaker for each line.
 
-{episode_summary_section}**Scene Plot:**
+{episode_summary_section}
+**Scene Plot:**
 {scene_plot}
 
 {character_context_section}
 **Dialogue to Analyze:**
 {dialogue_text}
+
+**IMPORTANT: The dialogue lines show their original indices (e.g., [283], [284], [285]). Use these exact indices in your response - do NOT re-index from 0.**
 
 **Instructions:**
 1. For each dialogue line, identify the most likely speaker
@@ -186,36 +226,42 @@ class SpeakerIdentifier:
 5. Be very conservative - it's better to be uncertain than wrong
 6. Consider dialogue content, context, speaking patterns, and character relationships
 7. If the dialogue could reasonably be spoken by multiple characters, set is_llm_confident to false
+8. **IMPORTANT: Use the exact line_index numbers shown in the dialogue (e.g., [283], [284], etc.) - do NOT re-index from 0**
+9. **IMPORTANT: If a dialogue line is a first-person self-introduction (e.g., "Hi, I'm Bob", "My name is Alice", "I am Dr. Smith"), set `is_self_presentation` to `true`. Otherwise, even in cases where the dialogue doesn't mention the name, but says things like "I'm the mechanic" or "I'm the doctor", set it to `false`.****
 
 
 **Confidence Guidelines:**
 - Set to true ONLY if: The speaker is clear and unambiguous
 - Set to false if: Any ambiguity, multiple possible speakers, unclear context, or general uncertainty
 
-**Output Format (JSON only):**
+  **Output Format (JSON only):**
 [
   {{
-    "line_index": 1,
+    "line_index": 283,
     "speaker": "Character Name",
     "other_possible_speakers": ["Alternative Character 1"],
-    "reasoning": "Could be multiple characters, not 100 percent certain"
+    "reasoning": "Could be multiple characters, not 100 percent certain",
     "is_llm_confident": false,
+    "is_self_presentation": false
   }},
   {{
-    "line_index": 2,
+    "line_index": 284,
     "speaker": "Another Character",
     "other_possible_speakers": ["Alternative Character 2"],
     "reasoning": "Ambiguous context, multiple possible speakers",
     "is_llm_confident": false,
+    "is_self_presentation": false
   }},
   {{
-    "line_index": 3,
+    "line_index": 285,
     "speaker": "Clear Speaker",
     "other_possible_speakers": [],
-    "reasoning": "Speaker clearly identified by name in dialogue"
+    "reasoning": "Speaker clearly identified by name in dialogue",
     "is_llm_confident": true,
+    "is_self_presentation": true
   }}
 ]
+
 
 Return only the JSON array, no additional text."""
 
@@ -269,6 +315,8 @@ Return only the JSON array, no additional text."""
             # Validate each entry and fix common issues
             valid_data = []
             for i, entry in enumerate(speaker_data):
+                logger.debug(f"🔍 DEBUG: Processing entry {i}: {entry}")
+                
                 if not isinstance(entry, dict):
                     logger.warning(f"⚠️ Entry {i} is not a dictionary: {type(entry)}")
                     continue
@@ -291,6 +339,10 @@ Return only the JSON array, no additional text."""
                     if speaker is not None and not isinstance(speaker, str):
                         speaker = str(speaker)
                     
+                    # Log null speakers for debugging
+                    if speaker is None:
+                        logger.debug(f"⚠️ Entry {i}: LLM returned null speaker for line {line_index}")
+                    
                     # Ensure is_llm_confident is a boolean
                     is_confident = entry["is_llm_confident"]
                     if isinstance(is_confident, str):
@@ -298,17 +350,28 @@ Return only the JSON array, no additional text."""
                     else:
                         is_confident = bool(is_confident)
                     
+                    # Ensure is_self_presentation is a boolean
+                    is_self_presentation = entry.get("is_self_presentation", False)
+                    if isinstance(is_self_presentation, str):
+                        is_self_presentation = is_self_presentation.lower() in ['true', '1', 'yes']
+                    else:
+                        is_self_presentation = bool(is_self_presentation)
+
                     # Create cleaned entry
                     cleaned_entry = {
                         "line_index": line_index,
-                        "speaker": speaker,
-                        "is_llm_confident": is_confident
+                        "speaker": speaker,  # This can be None
+                        "is_llm_confident": is_confident,
+                        "is_self_presentation": is_self_presentation
                     }
                     
                     # Add optional fields if present
                     for optional_field in ["reasoning", "other_possible_speakers"]:
                         if optional_field in entry:
                             cleaned_entry[optional_field] = entry[optional_field]
+                    
+                    # Log the new field
+                    logger.debug(f"🔍 DEBUG: Entry {i}: is_self_presentation={is_self_presentation}")
                     
                     valid_data.append(cleaned_entry)
                     logger.debug(f"✅ Valid entry {i}: line {line_index} → {speaker} (confident: {is_confident})")
@@ -322,6 +385,10 @@ Return only the JSON array, no additional text."""
             if len(valid_data) == 0 and len(speaker_data) > 0:
                 logger.error("❌ No valid speaker identifications parsed despite having data entries")
                 logger.error(f"Sample entry: {speaker_data[0] if speaker_data else 'None'}")
+            
+            # Log the final valid data for debugging
+            logger.info(f"🔍 DEBUG: Final valid data line indices: {[entry.get('line_index') for entry in valid_data]}")
+            logger.info(f"🔍 DEBUG: Final valid data speakers: {[entry.get('speaker') for entry in valid_data]}")
             
             return valid_data
             
@@ -355,7 +422,9 @@ Return only the JSON array, no additional text."""
                 speaker_info = speaker_map[line.index]
                 line.speaker = speaker_info["speaker"]
                 line.is_llm_confident = bool(speaker_info["is_llm_confident"])
+                line.llm_reasoning = speaker_info.get("reasoning", "")
                 logger.debug(f"📝 Line {line.index}: {line.speaker} (confident: {line.is_llm_confident})")
+                logger.debug(f"📝 Line {line.index} reasoning: {line.llm_reasoning}")
             else:
                 logger.debug(f"⚠️ No speaker info for line {line.index}")
             
@@ -377,39 +446,71 @@ Return only the JSON array, no additional text."""
             for entry in speaker_data
         }
         
+        # Log detailed debugging information
+        logger.info(f"🔍 DEBUG: Processing {len(dialogue_lines)} dialogue lines with {len(speaker_data)} speaker entries")
+        logger.info(f"🔍 DEBUG: Speaker data line indices: {[entry.get('line_index') for entry in speaker_data]}")
+        logger.info(f"🔍 DEBUG: Dialogue line indices: {[line.index for line in dialogue_lines]}")
+        logger.info(f"🔍 DEBUG: Speaker map keys: {list(speaker_map.keys())}")
+        
         updated_lines = []
         for line in dialogue_lines:
+            logger.debug(f"🔍 DEBUG: Processing dialogue line {line.index}")
+            
             if line.index in speaker_map:
                 speaker_info = speaker_map[line.index]
                 original_speaker = speaker_info["speaker"]
                 original_is_confident = bool(speaker_info["is_llm_confident"])
+                is_self_presentation = bool(speaker_info.get("is_self_presentation", False))
+                llm_reasoning = speaker_info.get("reasoning", "")
                 
-                # Store original LLM assignment
+                logger.debug(f"✅ DEBUG: Found speaker info for line {line.index}: {original_speaker}, self_presentation: {is_self_presentation}")
+                
+                # Store original LLM assignment (even if null)
                 line.original_llm_speaker = original_speaker
                 line.original_llm_is_confident = original_is_confident
+                line.is_self_presentation = is_self_presentation
+                line.llm_reasoning = llm_reasoning
                 
-                # Use validated speaker name from database
-                validated_speaker = speaker_mapping.get(original_speaker, original_speaker)
-                
-                line.speaker = validated_speaker
-                line.is_llm_confident = original_is_confident
-                
-                # Track resolution method based on boolean confidence
-                if original_speaker != validated_speaker:
-                    line.resolution_method = "database_validation"
-                    logger.debug(f"📝 Line {line.index}: {original_speaker} → {validated_speaker} (confident: {original_is_confident})")
-                elif original_is_confident:
-                    line.resolution_method = "llm_direct"
-                    logger.debug(f"📝 Line {line.index}: {validated_speaker} (confident: {original_is_confident}) - HIGH CONFIDENCE")
+                # Handle null speaker case
+                if original_speaker is None:
+                    line.speaker = None
+                    line.is_llm_confident = original_is_confident
+                    line.resolution_method = "llm_null_speaker"
+                    logger.debug(f"📝 Line {line.index}: LLM returned null speaker (confident: {original_is_confident})")
+                elif is_self_presentation:
+                    # Direct assignment if it's a self-presentation
+                    validated_speaker = speaker_mapping.get(original_speaker, original_speaker)
+                    line.speaker = validated_speaker
+                    line.is_llm_confident = True  # Self-presentation implies high confidence
+                    line.resolution_method = "self_presentation"
+                    logger.info(f"📝 Line {line.index}: Self-presentation detected, assigned speaker {validated_speaker} (confident: True)")
                 else:
-                    line.resolution_method = "llm_direct"  # Will be updated to face_clustering if resolved later
-                    logger.debug(f"📝 Line {line.index}: {validated_speaker} (confident: {original_is_confident}) - LOW CONFIDENCE (may be updated by face clustering)")
+                    # Use validated speaker name from database
+                    validated_speaker = speaker_mapping.get(original_speaker, original_speaker)
                     
-                # Log alternative speakers if present
-                # The other_possible_speakers field is removed from the prompt and parsing,
-                # so we don't log it here.
+                    line.speaker = validated_speaker
+                    line.is_llm_confident = original_is_confident
+                    
+                    # Track resolution method based on boolean confidence
+                    if original_speaker != validated_speaker:
+                        line.resolution_method = "database_validation"
+                        logger.debug(f"📝 Line {line.index}: {original_speaker} → {validated_speaker} (confident: {original_is_confident})")
+                    elif original_is_confident:
+                        line.resolution_method = "llm_direct"
+                        logger.debug(f"📝 Line {line.index}: {validated_speaker} (confident: {original_is_confident}) - HIGH CONFIDENCE")
+                        logger.debug(f"📝 Line {line.index} reasoning: {llm_reasoning}")
+                    else:
+                        line.resolution_method = "llm_direct"  # Will be updated to face_clustering if resolved later
+                        logger.debug(f"📝 Line {line.index}: {validated_speaker} (confident: {original_is_confident}) - LOW CONFIDENCE (may be updated by face clustering)")
+                        logger.debug(f"📝 Line {line.index} reasoning: {llm_reasoning}")
+                    
+                    # Log alternative speakers if present
+                    # The other_possible_speakers field is removed from the prompt and parsing,
+                    # so we don't log it here.
             else:
-                logger.debug(f"⚠️ No speaker info for line {line.index}")
+                logger.warning(f"❌ DEBUG: No speaker info for line {line.index} - this line was not processed by LLM")
+                logger.warning(f"❌ DEBUG: Available speaker map keys: {list(speaker_map.keys())}")
+                logger.warning(f"❌ DEBUG: Line {line.index} not found in speaker data")
             
             updated_lines.append(line)
         
@@ -440,6 +541,27 @@ Return only the JSON array, no additional text."""
         
         # Group dialogue lines by scene timestamps
         scene_dialogue_map = self._group_dialogue_by_scenes(plot_scenes, dialogue_lines)
+        
+        # Log scene grouping results
+        logger.info(f"🔍 DEBUG: Scene grouping results:")
+        total_grouped_lines = 0
+        for scene_num, lines in scene_dialogue_map.items():
+            logger.info(f"   Scene {scene_num}: {len(lines)} dialogue lines")
+            total_grouped_lines += len(lines)
+            if lines:
+                logger.info(f"     Line indices: {[line.index for line in lines[:5]]}...")
+        
+        logger.info(f"🔍 DEBUG: Total grouped lines: {total_grouped_lines}, Original lines: {len(dialogue_lines)}")
+        
+        if total_grouped_lines != len(dialogue_lines):
+            logger.warning(f"⚠️ DEBUG: Line count mismatch! {total_grouped_lines} grouped vs {len(dialogue_lines)} original")
+            original_indices = set(line.index for line in dialogue_lines)
+            grouped_indices = set()
+            for lines in scene_dialogue_map.values():
+                grouped_indices.update(line.index for line in lines)
+            missing_indices = original_indices - grouped_indices
+            if missing_indices:
+                logger.warning(f"⚠️ DEBUG: Missing line indices: {sorted(missing_indices)}")
         
         updated_lines = []
         failed_scenes = []
@@ -516,6 +638,9 @@ Return only the JSON array, no additional text."""
                     line.speaker = None
                     line.is_llm_confident = False
                     line.scene_number = 1  # Default scene
+                    line.original_llm_speaker = None  # Explicitly set to None
+                    line.original_llm_is_confident = None  # Explicitly set to None
+                    line.resolution_method = "missing_episode_assignment"  # Track why it's missing
                     updated_lines.append(line)
             
             # Sort again after adding missing lines
@@ -529,7 +654,7 @@ Return only the JSON array, no additional text."""
         logger.info(f"📊 Results: {confident_count} confident assignments, {assigned_count} total assignments, {len(updated_lines) - assigned_count} unassigned")
         
         return updated_lines
-    
+
     def _identify_speakers_for_scene_with_retry(
         self,
         scene_plot: str,
@@ -634,6 +759,9 @@ Return only the JSON array, no additional text."""
                         line.scene_number = scene_num
                         line.speaker = None
                         line.is_llm_confident = False
+                        line.original_llm_speaker = None  # Explicitly set to None
+                        line.original_llm_is_confident = None  # Explicitly set to None
+                        line.resolution_method = "individual_fallback"  # Track why it failed
                         updated_lines.append(line)
                         logger.debug(f"⚠️ Individual dialogue {line.index} fallback (no assignment)")
                         
@@ -643,6 +771,9 @@ Return only the JSON array, no additional text."""
                     line.scene_number = scene_num
                     line.speaker = None
                     line.is_llm_confident = False
+                    line.original_llm_speaker = None  # Explicitly set to None
+                    line.original_llm_is_confident = None  # Explicitly set to None
+                    line.resolution_method = "individual_error"  # Track why it failed
                     updated_lines.append(line)
         
         return updated_lines
@@ -663,6 +794,9 @@ Return only the JSON array, no additional text."""
                 # Add missing line with no speaker assignment
                 line.speaker = None
                 line.is_llm_confident = False
+                line.original_llm_speaker = None  # Explicitly set to None
+                line.original_llm_is_confident = None  # Explicitly set to None
+                line.resolution_method = "missing_llm_assignment"  # Track why it's missing
                 result_lines.append(line)
                 logger.debug(f"🔧 Added missing dialogue line {line.index}")
         
@@ -673,7 +807,7 @@ Return only the JSON array, no additional text."""
         plot_scenes: List[Dict], 
         dialogue_lines: List[DialogueLine]
     ) -> Dict[int, List[DialogueLine]]:
-        """Group dialogue lines by scene based on timestamps or equal distribution."""
+        """Group dialogue lines by scene based on timestamps or equal distribution with forced gap filling."""
         scene_dialogue_map = {}
         
         # Check if scenes have timestamp information
@@ -683,21 +817,57 @@ Return only the JSON array, no additional text."""
         )
         
         if has_timestamps:
-            logger.info("📍 Using timestamp-based scene grouping")
-            # Use timestamp-based grouping
+            logger.info("📍 Using timestamp-based scene grouping with forced gap filling")
+            # Use timestamp-based grouping with enhanced boundary handling
             for scene in plot_scenes:
                 scene_num = scene.get("scene_number", 0)
                 start_seconds = scene.get("start_seconds", 0)
                 end_seconds = scene.get("end_seconds", float('inf'))
                 
-                # Find dialogue lines that fall within this scene's timeframe
-                scene_lines = [
-                    line for line in dialogue_lines
-                    if start_seconds <= line.start_time < end_seconds
-                ]
+                # Find dialogue lines that fall within this scene's timeframe with more flexible boundary matching
+                scene_lines = []
+                for line in dialogue_lines:
+                    # Check if line overlaps with scene (more flexible than exact range)
+                    line_overlaps = (
+                        (start_seconds <= line.start_time < end_seconds) or
+                        (start_seconds < line.end_time <= end_seconds) or
+                        (line.start_time <= start_seconds and line.end_time >= end_seconds)
+                    )
+                    
+                    if line_overlaps:
+                        scene_lines.append(line)
                 
                 scene_dialogue_map[scene_num] = scene_lines
                 logger.debug(f"Scene {scene_num}: {len(scene_lines)} dialogue lines ({start_seconds:.1f}s - {end_seconds:.1f}s)")
+            
+            # Handle any remaining unassigned lines
+            all_assigned_indices = set()
+            for lines in scene_dialogue_map.values():
+                all_assigned_indices.update(line.index for line in lines)
+            
+            unassigned_lines = [line for line in dialogue_lines if line.index not in all_assigned_indices]
+            
+            if unassigned_lines:
+                logger.warning(f"⚠️ Found {len(unassigned_lines)} unassigned dialogue lines - forcing assignment")
+                
+                # Group consecutive unassigned lines
+                gaps = self._group_consecutive_lines(unassigned_lines)
+                
+                for gap_lines in gaps:
+                    # Force assignment to nearest scene
+                    assigned_scene = self._force_assign_gap_to_nearest_scene(gap_lines, plot_scenes)
+                    if assigned_scene:
+                        scene_num = assigned_scene.get("scene_number")
+                        if scene_num not in scene_dialogue_map:
+                            scene_dialogue_map[scene_num] = []
+                        scene_dialogue_map[scene_num].extend(gap_lines)
+                        logger.info(f"🔧 FORCED: Assigned {len(gap_lines)} dialogue lines to scene {scene_num}")
+                    else:
+                        # Fallback: assign to scene 1
+                        if 1 not in scene_dialogue_map:
+                            scene_dialogue_map[1] = []
+                        scene_dialogue_map[1].extend(gap_lines)
+                        logger.warning(f"⚠️ Assigned {len(gap_lines)} dialogue lines to scene 1 (fallback)")
         else:
             logger.info("⚖️ No timestamps found, using equal distribution scene grouping")
             # Distribute dialogue lines equally among scenes
@@ -728,3 +898,59 @@ Return only the JSON array, no additional text."""
                     start_idx = end_idx
         
         return scene_dialogue_map
+    
+    def _group_consecutive_lines(self, lines: List[DialogueLine]) -> List[List[DialogueLine]]:
+        """Group consecutive dialogue lines into gaps."""
+        if not lines:
+            return []
+        
+        gaps = []
+        current_gap = [lines[0]]
+        
+        for i in range(1, len(lines)):
+            if lines[i].index == current_gap[-1].index + 1:
+                current_gap.append(lines[i])
+            else:
+                gaps.append(current_gap)
+                current_gap = [lines[i]]
+        
+        gaps.append(current_gap)
+        return gaps
+    
+    def _force_assign_gap_to_nearest_scene(
+        self, 
+        gap_lines: List[DialogueLine], 
+        plot_scenes: List[Dict]
+    ) -> Optional[Dict]:
+        """Force assignment of gap lines to the nearest scene."""
+        
+        if not gap_lines:
+            return None
+        
+        gap_start = gap_lines[0].start_time
+        gap_end = gap_lines[-1].end_time
+        
+        # Find scenes with timestamps
+        scenes_with_times = [s for s in plot_scenes if s.get("start_seconds") and s.get("end_seconds")]
+        
+        # Find nearest scene by temporal proximity
+        nearest_scene = None
+        min_distance = float('inf')
+        
+        for scene in scenes_with_times:
+            scene_start = scene.get("start_seconds", 0)
+            scene_end = scene.get("end_seconds", float('inf'))
+            
+            # Calculate distance to scene
+            if gap_end < scene_start:
+                distance = scene_start - gap_end
+            elif gap_start > scene_end:
+                distance = gap_start - scene_end
+            else:
+                distance = 0  # Overlap
+            
+            if distance < min_distance:
+                min_distance = distance
+                nearest_scene = scene
+        
+        return nearest_scene

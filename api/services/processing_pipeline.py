@@ -18,8 +18,7 @@ from backend.src.ai_models.ai_models import get_llm, LLMType
 from backend.src.plot_processing.plot_processing_models import EntityLink, EntityLinkEncoder
 from backend.src.plot_processing.subtitle_processing import (
     generate_plot_from_subtitles, 
-    map_scene_to_timestamps, 
-    map_scenes_to_timestamps_with_boundary_correction,
+    map_scenes_to_timestamps,
     save_plot_files,
     save_scene_timestamps,
     load_previous_season_summary,
@@ -66,6 +65,16 @@ class ProcessingPipeline:
         """
         self.config = config or Config()
         self.logger = setup_logging(self.__class__.__name__)
+        
+        # Initialize database manager
+        try:
+            from backend.src.narrative_storage_management.repositories import DatabaseSessionManager
+            self.db_manager = DatabaseSessionManager()
+            self.logger.info("✅ Database connection initialized successfully")
+        except Exception as e:
+            self.logger.error(f"❌ Failed to initialize database connection: {e}")
+            self.logger.error("This will cause database operations to fail. Please check your .env file and database configuration.")
+            self.db_manager = None
         
     async def process_episode_complete(
         self,
@@ -359,9 +368,7 @@ class ProcessingPipeline:
             plot_data = generate_plot_from_subtitles(subtitles, llm_intelligent, previous_season_summary)
             
             # Save plot files
-            episode_prefix = f"{path_handler.get_series()}{path_handler.get_season()}{path_handler.get_episode()}"
-            episode_dir = os.path.dirname(raw_plot_path)
-            txt_path, scenes_json_path = save_plot_files(plot_data, episode_dir, episode_prefix)
+            txt_path, scenes_json_path = save_plot_files(plot_data, path_handler)
             
             self.logger.info(f"Generated plot saved to: {txt_path}")
             return txt_path
@@ -412,13 +419,11 @@ class ProcessingPipeline:
                 )
                 scenes.append(scene)
             
-            # Map scenes to timestamps with boundary correction
-            mapped_scenes = map_scenes_to_timestamps_with_boundary_correction(scenes, subtitles, llm_cheap)
+            # Map scenes to timestamps using new simplified boundary detection
+            mapped_scenes = map_scenes_to_timestamps(scenes, subtitles, llm_cheap)
             
             # Save scene timestamps
-            episode_prefix = f"{path_handler.get_series()}{path_handler.get_season()}{path_handler.get_episode()}"
-            episode_dir = os.path.dirname(timestamps_path)
-            saved_path = save_scene_timestamps(mapped_scenes, episode_dir, episode_prefix)
+            saved_path = save_scene_timestamps(mapped_scenes, path_handler)
             
             self.logger.info(f"Scene timestamps saved to: {saved_path}")
             return saved_path
@@ -484,7 +489,8 @@ class ProcessingPipeline:
                 self.logger.info("Extracting and refining entities from named plot")
                 entities = extract_and_refine_entities_with_path_handler(
                     path_handler, 
-                    path_handler.get_series()
+                    path_handler.get_series(),
+                    self.db_manager  # Add db_manager parameter
                 )
             else:
                 self.logger.info(f"Loading existing entities from: {episode_entities_path}")

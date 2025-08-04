@@ -1,0 +1,962 @@
+[
+  {
+    "title": "Medical Case: Katie Bryce's Unexplained Seizures",
+    "arc_type": "Anthology Arc",
+    "description": "The new surgical interns at Seattle Grace Hospital are challenged to diagnose and treat Katie Bryce, a teenage pageant contestant suffering from unexplained seizures and a sudden cardiac arrest. The case tests the interns' clinical skills, teamwork, and ability to handle pressure, culminating in the discovery of a rare brain aneurysm. The successful diagnosis and surgery mark a formative experience for the interns, especially Meredith Grey, as they begin their medical careers.",
+    "main_characters": "Meredith Grey; Cristina Yang; Katie Bryce",
+    "interfering_episode_characters": "Dr. Miranda Bailey; Dr. Derek Shepherd; Dr. Preston Burke; George O'Malley; Izzie Stevens",
+    "single_episode_progression_events": [
+      {
+        "content": "Dr. Miranda Bailey assigns Meredith Grey to care for Katie Bryce, who is admitted with unexplained seizures.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Meredith Grey",
+          "Katie Bryce"
+        ],
+        "start_timestamp": "00:05:32,033",
+        "end_timestamp": "00:06:14,862",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith Grey gathers Katie Bryce's medical history and attempts to connect with her.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Katie Bryce"
+        ],
+        "start_timestamp": "00:07:24,434",
+        "end_timestamp": "00:08:24,408",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina Yang runs lab tests on Katie Bryce.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Cristina Yang",
+          "Katie Bryce"
+        ],
+        "start_timestamp": "00:06:09,658",
+        "end_timestamp": "00:06:11,259",
+        "confidence_score": 0.85,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Katie Bryce suffers a cardiac arrest; Meredith Grey, George O'Malley, Cristina Yang, and Izzie Stevens work together to resuscitate her.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Meredith Grey",
+          "George O'Malley",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Katie Bryce"
+        ],
+        "start_timestamp": "00:19:47,997",
+        "end_timestamp": "00:21:29,169",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Derek Shepherd and Dr. Preston Burke reprimand the interns for not paging them after Katie's cardiac arrest.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "Dr. Preston Burke",
+          "Meredith Grey",
+          "George O'Malley",
+          "Cristina Yang",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:21:30,088",
+        "end_timestamp": "00:21:53,449",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Derek Shepherd asks the interns to help diagnose Katie Bryce, offering the chance to assist in surgery to whoever finds the answer.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "Meredith Grey",
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:24:14,164",
+        "end_timestamp": "00:25:12,251",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith Grey and Cristina Yang review Katie Bryce's history and identify a possible brain aneurysm caused by a recent fall.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:26:02,922",
+        "end_timestamp": "00:27:36,249",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith Grey and Cristina Yang present their findings to Dr. Derek Shepherd, who confirms the diagnosis of a subarachnoid hemorrhage.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "Dr. Derek Shepherd"
+        ],
+        "start_timestamp": "00:27:38,336",
+        "end_timestamp": "00:29:15,828",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Derek Shepherd selects Meredith Grey to assist in Katie Bryce's brain surgery.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "Meredith Grey",
+          "Katie Bryce"
+        ],
+        "start_timestamp": "00:29:31,223",
+        "end_timestamp": "00:29:32,226",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith Grey assists Dr. Derek Shepherd in successfully operating on Katie Bryce to repair the aneurysm.",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "Meredith Grey",
+          "Dr. Derek Shepherd",
+          "Katie Bryce"
+        ],
+        "start_timestamp": "00:37:15,849",
+        "end_timestamp": "00:39:08,481",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Medical Case: Tony Savage's Failed Heart Surgery",
+    "arc_type": "Anthology Arc",
+    "description": "When Dr. Burke leads heart surgery on Tony Savage, a patient with severe cardiac damage, the operation ends in the patient's death. The case exposes the interns, especially Cristina and George, to the realities of surgical loss and the importance of honest communication with patients' families.",
+    "main_characters": "Dr. Burke; Cristina Yang; George O'Malley",
+    "interfering_episode_characters": "Dr. Bailey; Tony Savage; Tony Savage's Family",
+    "single_episode_progression_events": [
+      {
+        "content": "Dr. Burke assigns Cristina and George to assist with Tony Savage's heart surgery case",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Dr. Burke",
+          "Cristina Yang",
+          "George O'Malley",
+          "Tony Savage"
+        ],
+        "start_timestamp": "00:23:10,125",
+        "end_timestamp": "00:23:26,659",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina and George meet Tony Savage and his family before the surgery",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Cristina Yang",
+          "George O'Malley",
+          "Tony Savage",
+          "Tony Savage's Family"
+        ],
+        "start_timestamp": "00:23:29,902",
+        "end_timestamp": "00:23:50,680",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Burke, Cristina, and George perform heart surgery on Tony Savage",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Dr. Burke",
+          "Cristina Yang",
+          "George O'Malley",
+          "Tony Savage"
+        ],
+        "start_timestamp": "00:30:54,406",
+        "end_timestamp": "00:30:57,652",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Tony Savage dies during the surgery due to extensive heart damage",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Dr. Burke",
+          "Cristina Yang",
+          "George O'Malley",
+          "Tony Savage"
+        ],
+        "start_timestamp": "00:30:57,672",
+        "end_timestamp": "00:31:05,280",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina and George inform Tony Savage's family of his death",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Cristina Yang",
+          "George O'Malley",
+          "Tony Savage's Family"
+        ],
+        "start_timestamp": "00:31:34,980",
+        "end_timestamp": "00:33:16,295",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey reminds Cristina and George not to promise good outcomes to patients' families",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Dr. Bailey",
+          "Cristina Yang",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:31:16,694",
+        "end_timestamp": "00:31:28,951",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Medical Case: George O'Malley's First Appendectomy",
+    "arc_type": "Anthology Arc",
+    "description": "George O'Malley faces the challenges and pressures of being a surgical intern when he is selected to perform an appendectomy. The experience, marked by complications and public humiliation, becomes a defining moment in his early career and shapes his relationships with his peers and mentors.",
+    "main_characters": "George O'Malley",
+    "interfering_episode_characters": "Dr. Miranda Bailey; Dr. Preston Burke; Cristina Yang; Meredith Grey; Izzie Stevens",
+    "single_episode_progression_events": [
+      {
+        "content": "Dr. Bailey announces that George O'Malley is selected to perform the first surgery, an appendectomy, as a test of his abilities.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "George O'Malley",
+          "Cristina Yang",
+          "Meredith Grey",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:09:23,875",
+        "end_timestamp": "00:09:49,159",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George prepares for the appendectomy while his fellow interns place bets on his performance.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "George O'Malley",
+          "Cristina Yang",
+          "Meredith Grey",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:12:16,076",
+        "end_timestamp": "00:12:35,595",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George begins the appendectomy in the operating room under the supervision of Dr. Burke and Dr. Bailey.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "George O'Malley",
+          "Dr. Preston Burke",
+          "Dr. Miranda Bailey"
+        ],
+        "start_timestamp": "00:12:53,047",
+        "end_timestamp": "00:13:14,697",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "A complication arises during the surgery, causing George to panic and freeze.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "George O'Malley",
+          "Dr. Preston Burke",
+          "Dr. Miranda Bailey"
+        ],
+        "start_timestamp": "00:14:15,225",
+        "end_timestamp": "00:14:41,590",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Burke takes over and completes the appendectomy while George watches.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Dr. Preston Burke",
+          "George O'Malley",
+          "Dr. Miranda Bailey"
+        ],
+        "start_timestamp": "00:14:45,715",
+        "end_timestamp": "00:14:56,190",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "After the surgery, George's peers give him the nickname '007' in response to his performance.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "George O'Malley",
+          "Cristina Yang",
+          "Meredith Grey",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:14:56,551",
+        "end_timestamp": "00:15:31,331",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Meredith and Derek's Secret Romance and Professional Boundaries",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey and Derek Shepherd begin a secret romantic relationship that complicates their professional lives at Seattle Grace Hospital. As they navigate the challenges of working together, they struggle to maintain professional boundaries and keep their personal connection hidden from colleagues, setting the stage for ongoing tension and secrecy throughout the season.",
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "Cristina Yang",
+    "single_episode_progression_events": [
+      {
+        "content": "Meredith wakes up after a one-night stand with Derek and urges him to leave her house before her first day at work.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:00:37,173",
+        "end_timestamp": "00:00:47,661",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek tries to engage Meredith in friendly conversation about her living situation, but Meredith insists on keeping things impersonal and says goodbye.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:00:47,661",
+        "end_timestamp": "00:01:46,900",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith and Derek encounter each other at the hospital and realize they are now colleagues.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:11:12,341",
+        "end_timestamp": "00:11:41,686",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith avoids personal interaction with Derek during rounds and group meetings, maintaining a strictly professional demeanor.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:11:41,686",
+        "end_timestamp": "00:12:12,850",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith confides in Cristina that she slept with Derek and expresses her discomfort about working with him.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:25:43,471",
+        "end_timestamp": "00:26:45,864",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek selects Meredith to assist in Katie Bryce's brain surgery, citing her medical contribution, while both maintain a professional front in the operating room.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:29:31,223",
+        "end_timestamp": "00:29:32,226",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Meredith Grey and Ellis Grey: Legacy, Illness, and Identity",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey confronts the legacy of her mother, Ellis Grey, a renowned surgeon now living with Alzheimer's disease. The arc follows Meredith as she navigates the expectations attached to her mother's reputation, copes with Ellis's illness, and strives to establish her own identity and career in medicine.",
+    "main_characters": "Meredith Grey; Ellis Grey",
+    "interfering_episode_characters": "Cristina Yang; George O'Malley; Izzie Stevens",
+    "single_episode_progression_events": [
+      {
+        "content": "Meredith reflects on her mother's reputation as a great surgeon and her own feelings of unpreparedness",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Meredith Grey",
+          "Ellis Grey"
+        ],
+        "start_timestamp": "00:00:10,637",
+        "end_timestamp": "00:00:18,140",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns discuss Ellis Grey's fame, making Meredith uncomfortable",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:08:44,532",
+        "end_timestamp": "00:09:10,682",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina expresses envy about Meredith's connection to Ellis Grey",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:09:10,682",
+        "end_timestamp": "00:09:12,403",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith mentions selling her mother's house",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:01:09,503",
+        "end_timestamp": "00:01:11,084",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith visits Ellis Grey, who does not recognize her due to Alzheimer's disease",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Meredith Grey",
+          "Ellis Grey"
+        ],
+        "start_timestamp": "00:41:37,253",
+        "end_timestamp": "00:41:57,344",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith reminds Ellis of her past as a surgeon",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Meredith Grey",
+          "Ellis Grey"
+        ],
+        "start_timestamp": "00:42:22,367",
+        "end_timestamp": "00:42:25,391",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Interns' Friendships, Rivalries, and Survival at Seattle Grace",
+    "arc_type": "Soap Arc",
+    "description": "The core group of surgical interns—Meredith, Cristina, George, and Izzie—navigate the intense pressures of their first year at Seattle Grace Hospital. As they face demanding cases, grueling shifts, and high expectations, they form evolving friendships and rivalries. Their journey is marked by moments of competition, mutual support, and personal struggle for acceptance and respect, both within the group and from the hospital staff.",
+    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Izzie Stevens",
+    "interfering_episode_characters": "Dr. Miranda Bailey; Dr. Richard Webber; Dr. Preston Burke; Dr. Derek Shepherd; Katie Bryce",
+    "single_episode_progression_events": [
+      {
+        "content": "Meredith, Cristina, George, and Izzie meet for the first time as surgical interns and introduce themselves.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:03:24,407",
+        "end_timestamp": "00:03:51,015",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George tries to befriend the group, Cristina asserts her competitiveness, and Izzie faces skepticism about her modeling background.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "George O'Malley",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:03:51,037",
+        "end_timestamp": "00:03:53,599",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns discuss Meredith's mother, Ellis Grey, creating tension and curiosity within the group.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:08:41,988",
+        "end_timestamp": "00:09:10,682",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The group places bets on George's chances of success in his first surgery.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:12:22,159",
+        "end_timestamp": "00:12:37,635",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George fails his first surgery and receives the nickname '007' from the other interns.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "George O'Malley",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:14:01,325",
+        "end_timestamp": "00:15:34,014",
+        "confidence_score": 0.97,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina and Meredith work together to solve Katie Bryce's case.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:25:43,471",
+        "end_timestamp": "00:28:28,358",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith confides in Cristina about her one-night stand with Dr. Shepherd.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:26:21,655",
+        "end_timestamp": "00:26:26,922",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina is disappointed but supportive when Meredith is chosen to assist in Katie's surgery.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:29:22,797",
+        "end_timestamp": "00:29:32,226",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns regroup after their first shift, share their failures and doubts, and begin to bond over their shared exhaustion.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:39:19,072",
+        "end_timestamp": "00:41:32,585",
+        "confidence_score": 0.96,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Interns' Professional Initiation and Skill Development at Seattle Grace",
+    "arc_type": "Genre-Specific Arc",
+    "description": "A group of new surgical interns begin their demanding training at Seattle Grace Hospital, facing intense pressure, strict supervision, and the realities of surgical practice. The arc follows their collective and individual journeys as they adapt to the hospital's expectations, develop their medical skills, and strive to prove themselves as capable surgeons.",
+    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Izzie Stevens",
+    "interfering_episode_characters": "Dr. Miranda Bailey; Dr. Richard Webber; Dr. Derek Shepherd; Dr. Preston Burke; Katie Bryce; Tony Savage",
+    "single_episode_progression_events": [
+      {
+        "content": "Dr. Richard Webber addresses the new interns and warns them about the difficulty and high attrition rate of the surgical program.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Dr. Richard Webber",
+          "Meredith Grey",
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:02:53,615",
+        "end_timestamp": "00:02:59,896",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Miranda Bailey introduces herself to the interns, establishes her authority, and outlines her five strict rules.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:03:20,884",
+        "end_timestamp": "00:03:12,170",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns receive their first patient assignments from Dr. Bailey and discuss their roles and backgrounds.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:05:32,033",
+        "end_timestamp": "00:05:16,485",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George O'Malley is selected to perform the first surgery, an appendectomy, as a test of his abilities.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "George O'Malley",
+          "Dr. Miranda Bailey",
+          "Dr. Preston Burke",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:12:23,875",
+        "end_timestamp": "00:12:49,209",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George panics during the appendectomy when a complication arises, and Dr. Burke takes over, resulting in George's humiliation and the interns giving him the nickname '007.'",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "George O'Malley",
+          "Dr. Preston Burke",
+          "Dr. Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:14:15,225",
+        "end_timestamp": "00:15:14,134",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns work together to manage Katie Bryce's deteriorating condition and perform emergency resuscitation.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens",
+          "Katie Bryce"
+        ],
+        "start_timestamp": "00:19:47,997",
+        "end_timestamp": "00:21:29,169",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Shepherd and Dr. Burke criticize the interns for not paging them sooner after Katie's cardiac arrest.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "Dr. Preston Burke",
+          "Meredith Grey",
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:21:30,088",
+        "end_timestamp": "00:21:53,449",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey reminds the interns never to promise positive outcomes to patients' families after a patient dies during surgery.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Cristina Yang",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:31:16,694",
+        "end_timestamp": "00:31:28,951",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Shepherd challenges the interns to diagnose Katie Bryce, offering the reward of scrubbing in on her surgery.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "Meredith Grey",
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:24:18,069",
+        "end_timestamp": "00:25:12,251",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith and Cristina collaborate to review Katie's case and identify a rare brain aneurysm as the cause of her seizures.",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:25:43,471",
+        "end_timestamp": "00:28:28,358",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Shepherd selects Meredith to assist in Katie's brain surgery as a reward for her diagnostic skills.",
+        "ordinal_position": 11,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "Meredith Grey",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:29:26,839",
+        "end_timestamp": "00:29:32,226",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "After their first shift, the interns reflect on their experiences and begin to form a sense of camaraderie.",
+        "ordinal_position": 12,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:39:19,072",
+        "end_timestamp": "00:41:32,585",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Hospital Hierarchy, Power Struggles, and Mentorship",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The strict hierarchy at Seattle Grace Hospital—enforced by senior staff like Dr. Webber, Dr. Bailey, Dr. Burke, and Dr. Shepherd—shapes the interns' experiences. The arc follows the interns as they navigate rigid protocols, compete for recognition, and learn through mentorship, all while facing the realities of medical politics and institutional power dynamics. Advancement and survival depend on their ability to adapt to the hospital's demanding structure and expectations.",
+    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Izzie Stevens",
+    "interfering_episode_characters": "Dr. Miranda Bailey; Dr. Richard Webber; Dr. Preston Burke; Dr. Derek Shepherd; Other Interns",
+    "single_episode_progression_events": [
+      {
+        "content": "Dr. Webber addresses the new interns and warns them about the hospital's demanding program and high attrition rate.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Dr. Richard Webber",
+          "Meredith Grey",
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens",
+          "Other Interns"
+        ],
+        "start_timestamp": "00:02:53,615",
+        "end_timestamp": "00:02:59,990",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Miranda Bailey introduces herself to the interns, establishes her authority, and outlines her five strict rules for their conduct.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens",
+          "Other Interns"
+        ],
+        "start_timestamp": "00:04:20,884",
+        "end_timestamp": "00:05:12,170",
+        "confidence_score": 0.98,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey assigns specific tasks to each intern, demonstrating the division of labor and the importance of following orders within the hierarchy.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:05:32,033",
+        "end_timestamp": "00:05:47,341",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey selects George O'Malley to perform the first surgery, using the opportunity to test and publicly evaluate an intern's abilities.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "George O'Malley",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Dr. Preston Burke"
+        ],
+        "start_timestamp": "00:12:23,875",
+        "end_timestamp": "00:12:49,461",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Burke intervenes during George's surgery after a complication, taking over and reinforcing the hierarchy between attendings and interns.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Dr. Preston Burke",
+          "George O'Malley",
+          "Dr. Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:14:16,471",
+        "end_timestamp": "00:14:50,017",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey and Dr. Burke criticize the interns for procedural mistakes and reinforce the importance of protocol.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Dr. Preston Burke",
+          "Meredith Grey",
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:21:44,576",
+        "end_timestamp": "00:21:53,007",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Shepherd offers the interns a chance to diagnose Katie Bryce, incentivizing competition by promising a surgical opportunity to whoever finds the answer.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "Meredith Grey",
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:24:14,164",
+        "end_timestamp": "00:25:12,251",
+        "confidence_score": 0.97,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith and Cristina present their diagnosis to Dr. Shepherd, demonstrating initiative and the value of collaboration within the competitive environment.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "Dr. Derek Shepherd"
+        ],
+        "start_timestamp": "00:27:27,971",
+        "end_timestamp": "00:29:18,692",
+        "confidence_score": 0.96,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Shepherd selects Meredith to assist in surgery, rewarding her for her contribution and reinforcing the link between merit and advancement.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "Meredith Grey",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:29:22,797",
+        "end_timestamp": "00:29:32,226",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey reminds the interns not to promise outcomes to patients' families, reinforcing the boundaries and responsibilities dictated by the hospital hierarchy.",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Cristina Yang",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:31:16,694",
+        "end_timestamp": "00:31:28,951",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  }
+]

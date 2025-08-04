@@ -1,0 +1,404 @@
+{
+  "scenes": [
+    {
+      "scene_number": 1,
+      "plot_segment": "A montage of scenes recaps previous events: a senior doctor warns new surgical interns about the challenges ahead; Meredith Grey and Derek Shepherd discuss their one-night stand and the need to keep things professional; Meredith is reminded that Derek is her attending. Dr. Miranda Bailey assigns duties to the interns, emphasizing her authority. The group gossips about Meredith's mother, Ellis Grey, a legendary surgeon. Meredith visits her mother, who does not recognize her.",
+      "start_time": "00:00:01,246",
+      "end_time": "00:01:15,382",
+      "start_seconds": 1.246,
+      "end_seconds": 75.382,
+      "start_subtitle_index": 0,
+      "end_subtitle_index": 28
+    },
+    {
+      "scene_number": 2,
+      "plot_segment": "Meredith narrates about the importance of boundaries in the hospital. She reflects on the need to keep personal and professional lives separate, and the risks of becoming too close to colleagues.",
+      "start_time": "00:01:15,403",
+      "end_time": "00:02:08,000",
+      "start_seconds": 75.403,
+      "end_seconds": 128.0,
+      "start_subtitle_index": 29,
+      "end_subtitle_index": 40
+    },
+    {
+      "scene_number": 3,
+      "plot_segment": "Meredith interviews potential roommates at her house. Izzie Stevens and George O'Malley both express interest in moving in, but Meredith is hesitant, wanting only strangers as roommates. Izzie tries to convince Meredith by offering a mocha latte and promising to be a good roommate. George also tries to persuade Meredith, mentioning his mother irons his scrubs.",
+      "start_time": "00:02:09,222",
+      "end_time": "00:02:55,377",
+      "start_seconds": 129.222,
+      "end_seconds": 175.377,
+      "start_subtitle_index": 41,
+      "end_subtitle_index": 70
+    },
+    {
+      "scene_number": 4,
+      "plot_segment": "Dr. Bailey gives the interns their assignments: George is to run the code team, Meredith takes the trauma pager, Cristina Yang delivers labs, and Izzie is on sutures. Cristina tries to bribe Dr. Bailey with a mocha latte, but Dr. Bailey rebuffs her and reminds everyone that their job is to make her happy, not to perform surgeries. She tells them no one will hold a scalpel until she is satisfied with their work.",
+      "start_time": "00:02:55,957",
+      "end_time": "00:03:49,069",
+      "start_seconds": 175.957,
+      "end_seconds": 229.06900000000002,
+      "start_subtitle_index": 71,
+      "end_subtitle_index": 96
+    },
+    {
+      "scene_number": 5,
+      "plot_segment": "Cristina and Meredith talk about Seattle's ferry boats. Cristina, who is from New York, admits she wasn't planning on liking Seattle but is charmed by the ferries. Derek Shepherd joins Meredith in the elevator and flirts with her, but Meredith insists on drawing a line between them, emphasizing their professional relationship.",
+      "start_time": "00:03:59,205",
+      "end_time": "00:05:28,023",
+      "start_seconds": 239.20499999999998,
+      "end_seconds": 328.023,
+      "start_subtitle_index": 97,
+      "end_subtitle_index": 124
+    },
+    {
+      "scene_number": 6,
+      "plot_segment": "A trauma case arrives at the hospital: a 25-year-old female rape victim named Allison is brought in with severe injuries. Medical staff discuss her condition and the fact that she fought back against her attacker. During an examination, Meredith realizes that Allison bit off her attacker's penis, which is confirmed by the team.",
+      "start_time": "00:05:34,232",
+      "end_time": "00:07:57,903",
+      "start_seconds": 334.23199999999997,
+      "end_seconds": 477.903,
+      "start_subtitle_index": 125,
+      "end_subtitle_index": 167
+    },
+    {
+      "scene_number": 7,
+      "plot_segment": "Doctors discuss Allison's prognosis, noting that her survival depends on whether she wakes up in the next 72 hours. Two doctors discuss why one of them moved from New York to Seattle, revealing that the chief of surgery, Richard, recruited him.",
+      "start_time": "00:07:57,923",
+      "end_time": "00:08:19,303",
+      "start_seconds": 477.923,
+      "end_seconds": 499.303,
+      "start_subtitle_index": 168,
+      "end_subtitle_index": 176
+    },
+    {
+      "scene_number": 8,
+      "plot_segment": "George O'Malley is briefed on the code team and expresses optimism about saving lives. Cristina, unimpressed, mocks his attitude. Cristina complains about her qualifications being wasted on delivering labs. Dr. Bailey assigns Alex Karev, a new intern, to shadow Cristina. Cristina and Alex exchange mutual dislike.",
+      "start_time": "00:08:22,327",
+      "end_time": "00:09:16,655",
+      "start_seconds": 502.327,
+      "end_seconds": 556.655,
+      "start_subtitle_index": 177,
+      "end_subtitle_index": 202
+    },
+    {
+      "scene_number": 9,
+      "plot_segment": "George runs a code on a 57-year-old male patient. Meanwhile, Izzie attempts to suture a patient, Mrs. Liu, but encounters a language barrier and seeks someone who speaks Chinese. Cristina reveals she cannot help because she is Korean.",
+      "start_time": "00:09:20,821",
+      "end_time": "00:10:07,230",
+      "start_seconds": 560.821,
+      "end_seconds": 607.23,
+      "start_subtitle_index": 203,
+      "end_subtitle_index": 216
+    },
+    {
+      "scene_number": 10,
+      "plot_segment": "Meredith is given custody of the severed penis as evidence, due to chain of custody rules in rape cases. She is told she must keep it until the police arrive. Meredith is confused and uncomfortable about what to do with it.",
+      "start_time": "00:10:16,491",
+      "end_time": "00:11:06,808",
+      "start_seconds": 616.491,
+      "end_seconds": 666.808,
+      "start_subtitle_index": 217,
+      "end_subtitle_index": 243
+    },
+    {
+      "scene_number": 11,
+      "plot_segment": "A doctor informs a patient that she has a rare but minor disorder and will be discharged without surgery. The patient is relieved.",
+      "start_time": "00:11:10,793",
+      "end_time": "00:11:27,471",
+      "start_seconds": 670.793,
+      "end_seconds": 687.471,
+      "start_subtitle_index": 244,
+      "end_subtitle_index": 252
+    },
+    {
+      "scene_number": 12,
+      "plot_segment": "Cristina and Izzie discuss Meredith carrying the severed penis, joking about the situation. Meredith is visibly upset and tired, reflecting on the coincidence that she and Allison own the same shoes. Izzie tries to comfort her.",
+      "start_time": "00:11:33,509",
+      "end_time": "00:12:57,235",
+      "start_seconds": 693.509,
+      "end_seconds": 777.235,
+      "start_subtitle_index": 253,
+      "end_subtitle_index": 286
+    },
+    {
+      "scene_number": 13,
+      "plot_segment": "Cristina and Meredith sneak away to indulge in a secret activity, which is implied to be watching surgeries from a gallery. Cristina jokes about their behavior. George is called away to a code.",
+      "start_time": "00:13:00,078",
+      "end_time": "00:13:55,379",
+      "start_seconds": 780.078,
+      "end_seconds": 835.379,
+      "start_subtitle_index": 287,
+      "end_subtitle_index": 299
+    },
+    {
+      "scene_number": 14,
+      "plot_segment": "Cristina is caught in the nursery by a pediatrician after examining a baby with a heart murmur. She is told she is not authorized to be there and is questioned about her actions. Cristina insists the murmur might not be benign, but the pediatrician dismisses her concerns.",
+      "start_time": "00:14:20,302",
+      "end_time": "00:14:59,592",
+      "start_seconds": 860.302,
+      "end_seconds": 899.592,
+      "start_subtitle_index": 300,
+      "end_subtitle_index": 314
+    },
+    {
+      "scene_number": 15,
+      "plot_segment": "Izzie is still unable to communicate with Mrs. Liu due to the language barrier. Cristina clarifies that she cannot help, as she grew up in Beverly Hills and only knows Chinese from a restaurant menu.",
+      "start_time": "00:15:00,134",
+      "end_time": "00:15:38,503",
+      "start_seconds": 900.134,
+      "end_seconds": 938.503,
+      "start_subtitle_index": 315,
+      "end_subtitle_index": 325
+    },
+    {
+      "scene_number": 16,
+      "plot_segment": "A doctor confronts the chief of surgery, Richard, about bringing Dr. Shepherd to the hospital. Richard explains that Shepherd is a former student. The doctor is concerned about losing surgical opportunities to Shepherd. Richard challenges the doctor's commitment and performance.",
+      "start_time": "00:15:47,950",
+      "end_time": "00:16:15,460",
+      "start_seconds": 947.95,
+      "end_seconds": 975.46,
+      "start_subtitle_index": 326,
+      "end_subtitle_index": 340
+    },
+    {
+      "scene_number": 17,
+      "plot_segment": "Cristina and Alex compete to deliver lab results quickly, each accusing the other of being slow. They bet on who can finish first.",
+      "start_time": "00:16:18,460",
+      "end_time": "00:16:52,440",
+      "start_seconds": 978.46,
+      "end_seconds": 1012.44,
+      "start_subtitle_index": 341,
+      "end_subtitle_index": 354
+    },
+    {
+      "scene_number": 18,
+      "plot_segment": "Cristina and Alex deliver good news to a patient, telling him he will not need an amputation and can go home. They congratulate him, though without much enthusiasm.",
+      "start_time": "00:16:54,662",
+      "end_time": "00:17:22,627",
+      "start_seconds": 1014.662,
+      "end_seconds": 1042.627,
+      "start_subtitle_index": 355,
+      "end_subtitle_index": 373
+    },
+    {
+      "scene_number": 19,
+      "plot_segment": "Izzie is recognized by a patient as a former model from a magazine. She finishes suturing his wound and dismisses him. Another patient, Mrs. Liu, continues to wait for help.",
+      "start_time": "00:17:27,796",
+      "end_time": "00:20:00,240",
+      "start_seconds": 1047.796,
+      "end_seconds": 1200.24,
+      "start_subtitle_index": 374,
+      "end_subtitle_index": 426
+    },
+    {
+      "scene_number": 20,
+      "plot_segment": "Meredith and Izzie talk in a quiet area. Meredith confides that she kissed Derek Shepherd in the elevator because she was having a bad day. Izzie jokes about Meredith's situation. They discuss Allison's shoes and how it affects Meredith.",
+      "start_time": "00:20:05,086",
+      "end_time": "00:21:04,967",
+      "start_seconds": 1205.086,
+      "end_seconds": 1264.967,
+      "start_subtitle_index": 427,
+      "end_subtitle_index": 446
+    },
+    {
+      "scene_number": 21,
+      "plot_segment": "Security is called as a new trauma patient arrives. The staff realize the patient is Allison's rapist. Meredith is instructed to notify the chief.",
+      "start_time": "00:21:30,512",
+      "end_time": "00:21:48,015",
+      "start_seconds": 1290.512,
+      "end_seconds": 1308.015,
+      "start_subtitle_index": 447,
+      "end_subtitle_index": 451
+    },
+    {
+      "scene_number": 22,
+      "plot_segment": "Doctors discuss the rapist's injuries and the impossibility of reattaching his severed penis. They explain the medical reasons and the consequences for the patient. The chief of surgery is informed that the rapist has been caught.",
+      "start_time": "00:22:02,575",
+      "end_time": "00:22:47,736",
+      "start_seconds": 1322.575,
+      "end_seconds": 1367.736,
+      "start_subtitle_index": 452,
+      "end_subtitle_index": 474
+    },
+    {
+      "scene_number": 23,
+      "plot_segment": "A doctor confronts Richard about being replaced as his number one surgeon. Richard criticizes the doctor's lack of extra effort and tells him to earn the position of chief.",
+      "start_time": "00:22:50,855",
+      "end_time": "00:23:13,942",
+      "start_seconds": 1370.855,
+      "end_seconds": 1393.942,
+      "start_subtitle_index": 475,
+      "end_subtitle_index": 485
+    },
+    {
+      "scene_number": 24,
+      "plot_segment": "Izzie continues to struggle with Mrs. Liu, unable to communicate or treat her due to the language barrier and time constraints. Izzie is frustrated and apologizes.",
+      "start_time": "00:23:44,752",
+      "end_time": "00:23:52,521",
+      "start_seconds": 1424.752,
+      "end_seconds": 1432.521,
+      "start_subtitle_index": 486,
+      "end_subtitle_index": 490
+    },
+    {
+      "scene_number": 25,
+      "plot_segment": "The interns gather and commiserate about their struggles. Meredith complains about having to keep the severed penis overnight. Alex makes a joke, but is told not to. The group admits to feeling lost and unsure about their roles as interns.",
+      "start_time": "00:23:52,541",
+      "end_time": "00:25:11,577",
+      "start_seconds": 1432.541,
+      "end_seconds": 1511.577,
+      "start_subtitle_index": 491,
+      "end_subtitle_index": 514
+    },
+    {
+      "scene_number": 26,
+      "plot_segment": "Cristina returns to the nursery and speaks with the baby's parents. The pediatrician confronts Cristina for overstepping her authority. Dr. Burke arrives, reviews the case, and decides to run tests on the baby. He tells Cristina that, as an attending, he can do what he wants.",
+      "start_time": "00:25:36,230",
+      "end_time": "00:27:31,352",
+      "start_seconds": 1536.23,
+      "end_seconds": 1651.352,
+      "start_subtitle_index": 515,
+      "end_subtitle_index": 564
+    },
+    {
+      "scene_number": 27,
+      "plot_segment": "Izzie finds Mrs. Liu outside the hospital, hiding from authorities because she is undocumented. Mrs. Liu is afraid of being arrested. Izzie promises to help her without reporting her status and treats her wound outside, giving her instructions to return in five days.",
+      "start_time": "00:27:31,392",
+      "end_time": "00:32:12,406",
+      "start_seconds": 1651.392,
+      "end_seconds": 1932.406,
+      "start_subtitle_index": 565,
+      "end_subtitle_index": 647
+    },
+    {
+      "scene_number": 28,
+      "plot_segment": "Mrs. Liu's companion thanks Izzie for her help, calling her a good person and doctor. Izzie asks Mrs. Liu to keep their arrangement secret to protect her job.",
+      "start_time": "00:32:22,006",
+      "end_time": "00:32:36,183",
+      "start_seconds": 1942.006,
+      "end_seconds": 1956.183,
+      "start_subtitle_index": 648,
+      "end_subtitle_index": 652
+    },
+    {
+      "scene_number": 29,
+      "plot_segment": "Dr. Burke and Cristina discuss confidence. Burke asks Cristina for honest feedback, giving her 30 seconds of 'free' speech. Cristina tells him he is cocky, arrogant, and has a God complex, but is cut off before she can finish.",
+      "start_time": "00:32:57,123",
+      "end_time": "00:33:36,967",
+      "start_seconds": 1977.123,
+      "end_seconds": 2016.967,
+      "start_subtitle_index": 653,
+      "end_subtitle_index": 665
+    },
+    {
+      "scene_number": 30,
+      "plot_segment": "George laments losing five patients on the code team and feels like the angel of death. Izzie reassures him that most code patients cannot be revived, and that his experience is normal.",
+      "start_time": "00:33:39,729",
+      "end_time": "00:34:12,371",
+      "start_seconds": 2019.729,
+      "end_seconds": 2052.371,
+      "start_subtitle_index": 666,
+      "end_subtitle_index": 675
+    },
+    {
+      "scene_number": 31,
+      "plot_segment": "Cristina and Meredith discuss the baby's heart surgery, which is scheduled for the morning. Cristina admits she thought she was right about the diagnosis, and Meredith agrees that interns are rarely right and often terrified.",
+      "start_time": "00:34:24,146",
+      "end_time": "00:35:02,307",
+      "start_seconds": 2064.146,
+      "end_seconds": 2102.307,
+      "start_subtitle_index": 676,
+      "end_subtitle_index": 687
+    },
+    {
+      "scene_number": 32,
+      "plot_segment": "Meredith visits Allison, who remains unconscious. George has been sitting with Allison all night. He reflects on his own family and how he would want them by his side if he were in a coma. Meredith admits her mother would be present and in control if she were in Allison's place.",
+      "start_time": "00:35:21,447",
+      "end_time": "00:35:59,018",
+      "start_seconds": 2121.447,
+      "end_seconds": 2159.018,
+      "start_subtitle_index": 688,
+      "end_subtitle_index": 705
+    },
+    {
+      "scene_number": 33,
+      "plot_segment": "Meredith and Derek discuss their relationship. Derek jokes about their kissing but Meredith is noncommittal. Meredith reflects on Allison's situation, feeling empathy for her isolation.",
+      "start_time": "00:35:59,277",
+      "end_time": "00:36:42,222",
+      "start_seconds": 2159.277,
+      "end_seconds": 2202.222,
+      "start_subtitle_index": 706,
+      "end_subtitle_index": 720
+    },
+    {
+      "scene_number": 34,
+      "plot_segment": "Allison's condition worsens, and the doctors prepare for emergency surgery. A doctor explains that they had to leave her skull flap off to relieve brain pressure. Meredith asks if Allison will survive, and is told she will be fine if she wakes up.",
+      "start_time": "00:36:49,204",
+      "end_time": "00:37:40,135",
+      "start_seconds": 2209.204,
+      "end_seconds": 2260.135,
+      "start_subtitle_index": 721,
+      "end_subtitle_index": 733
+    },
+    {
+      "scene_number": 35,
+      "plot_segment": "A female doctor asks Dr. Burke out for a drink, but he declines. She warns Shepherd that the chief promised both of them the position of chief of surgery. Shepherd acknowledges the competition.",
+      "start_time": "00:37:40,175",
+      "end_time": "00:38:05,786",
+      "start_seconds": 2260.175,
+      "end_seconds": 2285.786,
+      "start_subtitle_index": 734,
+      "end_subtitle_index": 742
+    },
+    {
+      "scene_number": 36,
+      "plot_segment": "Meredith hands over the severed penis to a police officer, completing the chain of custody. She jokes about the awkwardness of the situation.",
+      "start_time": "00:38:12,414",
+      "end_time": "00:38:38,625",
+      "start_seconds": 2292.414,
+      "end_seconds": 2318.625,
+      "start_subtitle_index": 743,
+      "end_subtitle_index": 752
+    },
+    {
+      "scene_number": 37,
+      "plot_segment": "Dr. Burke prepares to operate on the baby with the heart defect. He invites Meredith to scrub in and promises to let her hold the clamp during surgery.",
+      "start_time": "00:38:42,166",
+      "end_time": "00:39:06,199",
+      "start_seconds": 2322.166,
+      "end_seconds": 2346.199,
+      "start_subtitle_index": 753,
+      "end_subtitle_index": 762
+    },
+    {
+      "scene_number": 38,
+      "plot_segment": "A doctor informs the rapist that his bleeding has been stopped and that his penis will be given to the police. Another patient is told that his tumor is benign and he can go home.",
+      "start_time": "00:39:14,514",
+      "end_time": "00:39:37,079",
+      "start_seconds": 2354.514,
+      "end_seconds": 2377.079,
+      "start_subtitle_index": 763,
+      "end_subtitle_index": 769
+    },
+    {
+      "scene_number": 39,
+      "plot_segment": "Meredith reflects on boundaries and the importance of letting people in. She tells George and Izzie they can move into her house. They celebrate. Meredith jokes that she blames the babies for her decision.",
+      "start_time": "00:39:40,503",
+      "end_time": "00:40:53,855",
+      "start_seconds": 2380.503,
+      "end_seconds": 2453.855,
+      "start_subtitle_index": 770,
+      "end_subtitle_index": 785
+    },
+    {
+      "scene_number": 40,
+      "plot_segment": "Meredith and Derek meet again in the elevator. Meredith jokes about her lack of self-control and insists on taking the stairs to avoid temptation. Meredith narrates about the risks and rewards of crossing boundaries, ending with the idea that the view from the other side is spectacular.",
+      "start_time": "00:40:56,619",
+      "end_time": "00:42:08,753",
+      "start_seconds": 2456.619,
+      "end_seconds": 2528.753,
+      "start_subtitle_index": 786,
+      "end_subtitle_index": 795
+    }
+  ]
+}

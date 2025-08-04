@@ -11,10 +11,11 @@ import srt
 import pandas as pd
 import subprocess
 import json
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
 
 from ..utils.logger_utils import setup_logging
 from ..path_handler import PathHandler
+from ..audio_processing.demucs_vocal_extractor import DemucsVocalExtractor
 
 logger = setup_logging(__name__)
 
@@ -36,6 +37,15 @@ class AudioProcessor:
         self.config = config
         self.path_handler = path_handler
         self.pyannote_pipeline = None
+        
+        # Initialize Demucs vocal extractor if enabled
+        self.demucs_extractor = None
+        if getattr(self.config, 'demucs_enable_vocal_extraction', False):
+            self.demucs_extractor = DemucsVocalExtractor(config)
+            logger.info("✅ Demucs vocal extraction enabled")
+        else:
+            logger.info("⚠️ Demucs vocal extraction disabled")
+        
         self._init_pyannote_pipeline()
 
     def _init_pyannote_pipeline(self):
@@ -135,10 +145,43 @@ class AudioProcessor:
             logger.error(f"❌ Failed to initialize and tune Pyannote pipeline: {e}", exc_info=True)
             self.pyannote_pipeline = None
 
+    def _get_vocals_path(self, audio_path: str) -> Optional[str]:
+        """
+        Get the path to the vocals file, extracting it if necessary.
+        
+        Args:
+            audio_path: Path to the original audio file
+            
+        Returns:
+            Path to the vocals file, or None if extraction failed
+        """
+        if not self.demucs_extractor:
+            logger.info("🎵 Using original audio for diarization (no vocal extraction)")
+            return audio_path
+        
+        # Get vocals path using PathHandler
+        vocals_path = self.path_handler.get_vocals_file_path(audio_path)
+        
+        # Check if vocals file already exists
+        if os.path.exists(vocals_path):
+            logger.info(f"🎵 Using existing vocals file: {vocals_path}")
+            return vocals_path
+        
+        # Extract vocals
+        logger.info("🎵 Extracting vocals for improved diarization...")
+        vocals_path = self.demucs_extractor.extract_vocals(audio_path, path_handler=self.path_handler)
+        
+        if vocals_path and os.path.exists(vocals_path):
+            logger.info(f"✅ Vocals extracted successfully: {vocals_path}")
+            return vocals_path
+        else:
+            logger.warning("⚠️ Vocal extraction failed, using original audio")
+            return audio_path
+    
     def diarize_speakers_with_pyannote(self, audio_path: str, srt_path: str) -> Dict | None:
         """
         Performs speaker diarization using the customized pipeline by assigning speakers 
-        to existing aligned SRT segments.
+        to existing aligned SRT segments. Uses vocals extraction if enabled.
 
         Args:
             audio_path: Path to the audio file (must be 16kHz mono WAV).
@@ -169,7 +212,11 @@ class AudioProcessor:
             } for sub in loaded_subs]
             logger.info(f"✅ Loaded {len(segments)} segments from SRT file.")
 
-            # 2. Define runtime parameters (these constrain the final speaker count)
+            # 2. Get vocals file for diarization
+            diarization_audio_path = self._get_vocals_path(audio_path)
+            logger.info(f"🎤 Using audio for diarization: {diarization_audio_path}")
+
+            # 3. Define runtime parameters (these constrain the final speaker count)
             runtime_params = {
                 "min_speakers": getattr(self.config, 'diarization_min_speakers', None),
                 "max_speakers": getattr(self.config, 'diarization_max_speakers', None)
@@ -179,8 +226,8 @@ class AudioProcessor:
 
             logger.info(f"🎤 Running diarization with runtime constraints: {runtime_params}")
 
-            # 3. Run diarization on the audio file
-            diarization = self.pyannote_pipeline(audio_path, **runtime_params)
+            # 4. Run diarization on the vocals file
+            diarization, embeddings = self.pyannote_pipeline(diarization_audio_path, **runtime_params, return_embeddings=True)
             
             if not diarization:
                 logger.error("❌ Diarization returned no result.")
@@ -192,12 +239,8 @@ class AudioProcessor:
             # 5. Assign speakers to the text segments based on time overlap
             result_segments = self._assign_speakers_by_overlap(segments, diarization)
 
-            # 6. Clean up memory
-            del diarization
-            gc.collect()
-
             logger.info("✅ Speaker diarization completed successfully.")
-            return {"segments": result_segments}
+            return {"segments": result_segments, "embeddings": embeddings, "diarization": diarization}
 
         except Exception as e:
             logger.error(f"❌ An error occurred during speaker diarization: {e}", exc_info=True)

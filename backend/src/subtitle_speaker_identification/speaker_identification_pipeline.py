@@ -11,7 +11,7 @@ from pathlib import Path
 
 from ..path_handler import PathHandler
 from ..utils.subtitle_utils import SubtitleEntry
-from ..plot_processing.subtitle_processing import load_previous_season_summary, map_scene_to_timestamps, map_scenes_to_timestamps_with_boundary_correction, PlotScene
+from ..plot_processing.subtitle_processing import load_previous_season_summary, map_scenes_to_timestamps, PlotScene
 from ..ai_models.ai_models import get_llm, LLMType
 from ..narrative_storage_management.repositories import DatabaseSessionManager, CharacterRepository
 from ..narrative_storage_management.character_service import CharacterService
@@ -47,6 +47,9 @@ class SpeakerIdentificationPipeline:
         self.face_extractor = SubtitleFaceExtractor(self.path_handler)
         self.face_embedder = SubtitleFaceEmbedder(self.path_handler)
         self.face_clustering_system = FaceClusteringSystem(self.path_handler, self.face_vector_store)
+        
+        # Initialize debug tracker
+        self.debug_tracker = SpeakerDebugTracker(self.path_handler)
     
     def run_complete_pipeline(
         self,
@@ -162,6 +165,9 @@ class SpeakerIdentificationPipeline:
                 force_regenerate
             )
             
+            # Track LLM assignments for debug
+            self.debug_tracker.track_llm_assignments(dialogue_with_speakers)
+            
             confident_count = sum(
                 1 for line in dialogue_with_speakers 
                 if line.is_llm_confident
@@ -212,6 +218,9 @@ class SpeakerIdentificationPipeline:
                 dialogue_with_speakers,
                 expected_embedding_dim=config.face_embedding_dimension
             )
+            
+            # Track face clustering results for debug
+            self.debug_tracker.track_face_clusters(cluster_info, df_faces_clustered)
             
             # Calculate final statistics
             final_confident_count = sum(
@@ -284,6 +293,14 @@ class SpeakerIdentificationPipeline:
                 'enhanced_srt_path': enhanced_srt_path
             }
             
+            # Track final resolution methods and confidence stats for debug
+            self.debug_tracker.track_resolution_methods(final_dialogue_with_faces)
+            self.debug_tracker.track_confidence_stats(final_dialogue_with_faces)
+            
+            # Save debug file
+            debug_file_path = self.debug_tracker.save_debug_file()
+            logger.info(f"📄 Debug file saved to: {debug_file_path}")
+            
             # Overall pipeline statistics
             results['overall_stats'] = {
                 'total_dialogue_lines': len(final_dialogue_with_faces),
@@ -292,6 +309,9 @@ class SpeakerIdentificationPipeline:
                 'confident_dialogue': final_confident_count,
                 'final_confidence_rate': results['pipeline_steps']['face_clustering']['final_confidence_rate']
             }
+            
+            # Add debug file path to results
+            results['debug_file_path'] = debug_file_path
             
             logger.info(f"✅ Pipeline completed successfully!")
             logger.info(f"📊 Final stats: {final_confident_count}/{len(final_dialogue_with_faces)} dialogue lines with confident speakers ({results['overall_stats']['final_confidence_rate']:.1f}%)")
@@ -521,8 +541,8 @@ class SpeakerIdentificationPipeline:
             except Exception as e:
                 logger.warning(f"⚠️ Error loading scene timestamps: {e}, regenerating...")
         
-        # Generate timestamps using LLM
-        logger.info("🤖 Generating scene timestamps using LLM")
+        # Generate timestamps using LLM with FORCED gap closure
+        logger.info("🤖 Generating scene timestamps using LLM with FORCED gap closure")
         
         # Convert dialogue lines to SubtitleEntry format for mapping
         subtitle_entries = [
@@ -548,10 +568,13 @@ class SpeakerIdentificationPipeline:
             )
             plot_scene_objects.append(plot_scene)
         
-        # Map all scenes to timestamps with boundary correction
-        logger.info(f"🕒 Mapping {len(plot_scene_objects)} scenes to timestamps with boundary correction")
+        # Map all scenes to timestamps with FORCED gap closure
+        logger.info(f"🕒 Mapping {len(plot_scene_objects)} scenes to timestamps with FORCED gap closure")
         try:
-            mapped_scenes = map_scenes_to_timestamps_with_boundary_correction(
+            # Import the new forced gap closure function
+            from backend.src.plot_processing.subtitle_processing import map_scenes_to_timestamps
+            
+            mapped_scenes = map_scenes_to_timestamps(
                 plot_scene_objects, subtitle_entries, self.llm
             )
             
@@ -567,10 +590,10 @@ class SpeakerIdentificationPipeline:
                 }
                 scenes_with_timestamps.append(scene_with_timestamps)
                 
-            logger.info(f"✅ Successfully mapped all scenes with boundary correction")
+            logger.info(f"✅ Successfully mapped all scenes with FORCED gap closure")
             
         except Exception as e:
-            logger.error(f"❌ Failed to map scenes with boundary correction: {e}")
+            logger.error(f"❌ Failed to map scenes with forced gap closure: {e}")
             # Fallback to individual mapping without correction
             logger.info("🔄 Falling back to individual scene mapping")
             scenes_with_timestamps = []
@@ -583,7 +606,10 @@ class SpeakerIdentificationPipeline:
                 )
                 
                 try:
-                    mapped_scene = map_scene_to_timestamps(plot_scene, subtitle_entries, self.llm)
+                    from backend.src.plot_processing.subtitle_processing import map_scenes_to_timestamps
+                    # For single scene, use the new simplified approach
+                    mapped_scenes = map_scenes_to_timestamps([plot_scene], subtitle_entries, self.llm)
+                    mapped_scene = mapped_scenes[0] if mapped_scenes else plot_scene
                     scene_with_timestamps = {
                         **scene,
                         'start_seconds': mapped_scene.start_seconds,

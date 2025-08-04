@@ -31,6 +31,24 @@ class VectorStoreService:
 
     def add_documents(self, documents: List[Document], ids: List[str]):
         try:
+            # Ensure we have the same number of documents and IDs
+            if len(documents) != len(ids):
+                raise ValueError(f"Number of documents ({len(documents)}) must match number of IDs ({len(ids)})")
+            
+            # Check for and handle duplicate IDs
+            unique_ids = list(dict.fromkeys(ids))  # Preserves order while removing duplicates
+            
+            if len(ids) != len(unique_ids):
+                logger.warning(f"Found {len(ids) - len(unique_ids)} duplicate IDs when adding documents, using {len(unique_ids)} unique documents")
+                # Create a mapping to get the last document for each unique ID
+                id_to_doc = {}
+                for doc, id_val in zip(documents, ids):
+                    id_to_doc[id_val] = doc  # This will keep the last document for duplicate IDs
+                
+                # Rebuild the lists with unique IDs
+                documents = [id_to_doc[id_val] for id_val in unique_ids]
+                ids = unique_ids
+            
             self.collection.add_documents(documents, ids=ids)
             logger.info(f"Added {len(documents)} documents to the vector store.")
         except Exception as e:
@@ -62,8 +80,119 @@ class VectorStoreService:
             logger.error(f"Error during similarity search: {e}")
             return []
 
+    def find_similar_progressions(
+        self,
+        query: str,
+        n_results: int = 5,
+        series: Optional[str] = None,
+        season: Optional[str] = None,
+        episode: Optional[str] = None
+    ) -> List[Dict[str, Any]]:
+        """Find similar progressions to a query."""
+        filter_criteria = {"$and": [{"doc_type": "progression"}]}
+        if series:
+            filter_criteria["$and"].append({"series": series})
+        if season:
+            filter_criteria["$and"].append({"season": season})
+        if episode:
+            filter_criteria["$and"].append({"episode": episode})
+
+        try:
+            results = self.collection.similarity_search_with_score(
+                query,
+                k=n_results,
+                filter=filter_criteria
+            )
+            return [{"metadata": result[0].metadata, "cosine_distance": result[1], "page_content": result[0].page_content} for result in results]
+        except Exception as e:
+            logger.error(f"Error during progression similarity search: {e}")
+            return []
+
+    def find_similar_events(
+        self,
+        query: str,
+        n_results: int = 5,
+        series: Optional[str] = None,
+        season: Optional[str] = None,
+        episode: Optional[str] = None,
+        timestamp_range: Optional[tuple] = None,
+        min_confidence: Optional[float] = None
+    ) -> List[Dict[str, Any]]:
+        """Find similar events to a query with optional temporal and quality filtering."""
+        filter_criteria = {"$and": [{"doc_type": "event"}]}
+        if series:
+            filter_criteria["$and"].append({"series": series})
+        if season:
+            filter_criteria["$and"].append({"season": season})
+        if episode:
+            filter_criteria["$and"].append({"episode": episode})
+        if timestamp_range:
+            start_time, end_time = timestamp_range
+            filter_criteria["$and"].append({"start_timestamp": {"$gte": start_time}})
+            filter_criteria["$and"].append({"end_timestamp": {"$lte": end_time}})
+        if min_confidence:
+            filter_criteria["$and"].append({"confidence_score": {"$gte": min_confidence}})
+
+        try:
+            results = self.collection.similarity_search_with_score(
+                query,
+                k=n_results,
+                filter=filter_criteria
+            )
+            return [{"metadata": result[0].metadata, "cosine_distance": result[1], "page_content": result[0].page_content} for result in results]
+        except Exception as e:
+            logger.error(f"Error during event similarity search: {e}")
+            return []
+
+    def get_events_by_timestamp_range(
+        self,
+        series: str,
+        season: str,
+        episode: str,
+        start_time: float,
+        end_time: float,
+        n_results: int = 50
+    ) -> List[Dict[str, Any]]:
+        """Get events within a specific timestamp range, ordered by start time."""
+        filter_criteria = {
+            "$and": [
+                {"doc_type": "event"},
+                {"series": series},
+                {"season": season},
+                {"episode": episode},
+                {"start_timestamp": {"$gte": start_time}},
+                {"end_timestamp": {"$lte": end_time}}
+            ]
+        }
+
+        try:
+            # Get all events in range
+            results = self.collection.get(
+                where=filter_criteria,
+                include=["metadatas", "documents"],
+                limit=n_results
+            )
+            
+            # Convert to consistent format and sort by timestamp
+            events = []
+            if results.get('metadatas') and results.get('documents'):
+                for metadata, content in zip(results['metadatas'], results['documents']):
+                    events.append({
+                        "metadata": metadata,
+                        "page_content": content,
+                        "cosine_distance": 0.0  # No similarity score for direct retrieval
+                    })
+                
+                # Sort by start_timestamp
+                events.sort(key=lambda x: x['metadata'].get('start_timestamp', 0))
+            
+            return events
+        except Exception as e:
+            logger.error(f"Error retrieving events by timestamp range: {e}")
+            return []
+
     def delete_documents_by_arc(self, arc_id: str):
-        """Delete all documents related to a specific arc."""
+        """Delete all documents related to a specific arc (main, progressions, and events)."""
         try:
             # Retrieve main document IDs where metadata 'id' matches arc_id
             main_docs_response = self.collection.get(
@@ -73,6 +202,11 @@ class VectorStoreService:
             # Retrieve progression document IDs where metadata 'main_arc_id' matches arc_id
             prog_docs_response = self.collection.get(
                 where={"main_arc_id": arc_id},
+                include=["metadatas"]
+            )
+            # NEW: Retrieve event document IDs where metadata 'main_arc_id' matches arc_id
+            event_docs_response = self.collection.get(
+                where={"$and": [{"doc_type": "event"}, {"main_arc_id": arc_id}]},
                 include=["metadatas"]
             )
 
@@ -86,6 +220,45 @@ class VectorStoreService:
             # Safely extract 'ids' from prog_docs_response
             prog_ids = prog_docs_response.get('ids', [])
             ids_to_delete.extend(prog_ids)
+
+            # NEW: Safely extract 'ids' from event_docs_response
+            event_ids = event_docs_response.get('ids', [])
+            ids_to_delete.extend(event_ids)
+
+            # Ensure unique IDs to prevent duplicate deletion errors
+            unique_ids_to_delete = list(dict.fromkeys(ids_to_delete))  # Preserves order while removing duplicates
+            
+            if len(ids_to_delete) != len(unique_ids_to_delete):
+                logger.warning(f"Found {len(ids_to_delete) - len(unique_ids_to_delete)} duplicate IDs when deleting arc {arc_id}, using {len(unique_ids_to_delete)} unique IDs")
+
+            if unique_ids_to_delete:
+                self.collection.delete(ids=unique_ids_to_delete)
+                logger.info(f"Deleted {len(unique_ids_to_delete)} documents for arc ID {arc_id} (main: {len(main_ids)}, progressions: {len(prog_ids)}, events: {len(event_ids)}).")
+            else:
+                logger.info(f"No documents found for arc ID {arc_id}.")
+
+        except Exception as e:
+            logger.error(f"Error deleting documents for arc ID {arc_id}: {e}")
+            raise
+
+    def delete_events_by_progression(self, progression_id: str):
+        """Delete all event documents related to a specific progression."""
+        try:
+            event_docs_response = self.collection.get(
+                where={"$and": [{"doc_type": "event"}, {"progression_id": progression_id}]},
+                include=["metadatas"]
+            )
+
+            event_ids = event_docs_response.get('ids', [])
+            if event_ids:
+                self.collection.delete(ids=event_ids)
+                logger.info(f"Deleted {len(event_ids)} event documents for progression ID {progression_id}.")
+            else:
+                logger.info(f"No event documents found for progression ID {progression_id}.")
+
+        except Exception as e:
+            logger.error(f"Error deleting event documents for progression ID {progression_id}: {e}")
+            raise
 
             if ids_to_delete:
                 self.collection.delete(ids=ids_to_delete)

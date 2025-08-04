@@ -22,3 +22,4 @@ llm_surname_conflicts_response.txt
 *.pkl
 *.png
 *.mp4
+*.wav

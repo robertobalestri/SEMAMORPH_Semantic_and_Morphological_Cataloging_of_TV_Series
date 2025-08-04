@@ -7,7 +7,10 @@ from enum import Enum
 
 try:
     from backend.src.utils.logger_utils import setup_logging
-    load_dotenv(override=True)
+    
+    # Load environment variables from backend/.env file
+    backend_env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), '.env')
+    load_dotenv(backend_env_path, override=True)
 
     # Set up logging
     logger = setup_logging(__name__)
@@ -17,13 +20,17 @@ try:
     logger.debug(f"🔧 ONLY_CHEAP_LLM: {os.getenv('ONLY_CHEAP_LLM', 'not set')}")
     logger.debug(f"🔧 Azure endpoint configured: {'Yes' if os.getenv('AZURE_OPENAI_API_ENDPOINT') else 'No'}")
     logger.debug(f"🔧 API key configured: {'Yes' if os.getenv('AZURE_OPENAI_API_KEY') else 'No'}")
+    logger.debug(f"🔧 Cohere API key configured: {'Yes' if os.getenv('AZURE_COHERE_EMBEDDING_API_KEY') else 'No'}")
+    logger.debug(f"🔧 Cohere endpoint configured: {'Yes' if os.getenv('AZURE_COHERE_EMBEDDING_API_ENDPOINT') else 'No'}")
     
 except:
     import logging
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)
     logger.addHandler(logging.StreamHandler())
-    load_dotenv(override=True)
+    # Load environment variables from backend/.env file as fallback
+    backend_env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), '.env')
+    load_dotenv(backend_env_path, override=True)
 
 
 

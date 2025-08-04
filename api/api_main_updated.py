@@ -10,7 +10,9 @@ from pathlib import Path
 import os
 from dotenv import load_dotenv
 
-load_dotenv(override=True) # Load environment variables from .env file
+# Load environment variables from backend/.env file
+backend_env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'backend', '.env')
+load_dotenv(backend_env_path, override=True)
 
 # Add the backend directory to Python path to ensure imports work correctly
 backend_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'backend')
@@ -23,10 +25,10 @@ from typing import List, Optional, Dict, Union
 from pydantic import BaseModel, ValidationError
 from backend.src.narrative_storage_management.repositories import DatabaseSessionManager
 from backend.src.narrative_storage_management.narrative_arc_service import NarrativeArcService
-from backend.src.narrative_storage_management.repositories import NarrativeArcRepository, ArcProgressionRepository, CharacterRepository
+from backend.src.narrative_storage_management.repositories import NarrativeArcRepository, ArcProgressionRepository, CharacterRepository, EventRepository
 from backend.src.narrative_storage_management.character_service import CharacterService
 from backend.src.narrative_storage_management.vector_store_service import VectorStoreService
-from backend.src.narrative_storage_management.narrative_models import NarrativeArc, ArcProgression, Character
+from backend.src.narrative_storage_management.narrative_models import NarrativeArc, ArcProgression, Character, Event
 from backend.src.utils.logger_utils import setup_logging
 from sqlmodel import Session, select
 from backend.src.plot_processing.plot_processing_models import EntityLink
@@ -53,7 +55,7 @@ from backend.src.plot_processing.subtitle_processing import (
     generate_plot_from_subtitles, 
     save_plot_files,
     load_previous_season_summary,
-    map_scenes_to_timestamps_with_boundary_correction,
+    map_scenes_to_timestamps,  # Now uses the new simplified approach
     save_scene_timestamps,
     PlotScene
 )
@@ -76,6 +78,28 @@ from backend.src.config import config
 
 # TRANSCRIPTION WORKFLOW IMPORTS
 from backend.src.subtitle_speaker_identification.transcription_workflow import TranscriptionWorkflow
+
+# Timestamp helper functions for handling HH:MM:SS,mmm format
+def _timestamp_to_seconds(timestamp_str: str) -> Optional[float]:
+    """Convert HH:MM:SS,mmm timestamp to seconds."""
+    if not timestamp_str or not isinstance(timestamp_str, str):
+        return None
+    try:
+        # Parse HH:MM:SS,mmm format
+        time_part, ms_part = timestamp_str.split(',')
+        hours, minutes, seconds = map(int, time_part.split(':'))
+        milliseconds = int(ms_part)
+        return hours * 3600 + minutes * 60 + seconds + milliseconds / 1000
+    except:
+        return None
+
+def _calculate_duration(start_timestamp: str, end_timestamp: str) -> Optional[float]:
+    """Calculate duration in seconds between two timestamps."""
+    start_seconds = _timestamp_to_seconds(start_timestamp)
+    end_seconds = _timestamp_to_seconds(end_timestamp)
+    if start_seconds is not None and end_seconds is not None:
+        return end_seconds - start_seconds
+    return None
 
 # DIRECT PROCESSING FUNCTION (replaces subprocess)
 async def process_episode_directly(series: str, season: str, episode: str, include_speaker_identification: bool = True) -> str:
@@ -139,9 +163,7 @@ async def process_episode_directly(series: str, season: str, episode: str, inclu
             previous_season_summary = load_previous_season_summary(season_summary_path)
             plot_data = generate_plot_from_subtitles(subtitles, llm_intelligent, previous_season_summary)
             
-            episode_prefix = f"{series}{season}{episode}"
-            episode_dir = os.path.dirname(raw_plot_path)
-            save_plot_files(plot_data, episode_dir, episode_prefix)
+            save_plot_files(plot_data, path_handler)
         
         # Step 1.2: Map scenes to timestamps with boundary correction
         timestamps_path = path_handler.get_scene_timestamps_path()
@@ -175,15 +197,13 @@ async def process_episode_directly(series: str, season: str, episode: str, inclu
                     )
                     scenes.append(scene)
                 
-                # Map scenes to timestamps with boundary correction
-                mapped_scenes = map_scenes_to_timestamps_with_boundary_correction(scenes, subtitles, llm_cheap)
+                # Map scenes to timestamps using new simplified boundary detection
+                mapped_scenes = map_scenes_to_timestamps(scenes, subtitles, llm_cheap)
                 
                 # Save scene timestamps
-                episode_prefix = f"{series}{season}{episode}"
-                episode_dir = os.path.dirname(timestamps_path)
-                saved_path = save_scene_timestamps(mapped_scenes, episode_dir, episode_prefix)
+                saved_path = save_scene_timestamps(mapped_scenes, path_handler)
                 
-                logger.info(f"✅ Scene timestamps with boundary correction saved to: {saved_path}")
+                logger.info(f"✅ Scene timestamps using simplified boundary detection saved to: {saved_path}")
                 
             except Exception as e:
                 logger.error(f"❌ Scene timestamp mapping failed: {e}")
@@ -208,7 +228,7 @@ async def process_episode_directly(series: str, season: str, episode: str, inclu
         episode_entities_path = path_handler.get_episode_refined_entities_path()
         if not os.path.exists(episode_entities_path):
             logger.info("🎭 Extracting entities")
-            entities = extract_and_refine_entities_with_path_handler(path_handler, series)
+            entities = extract_and_refine_entities_with_path_handler(path_handler, series, db_manager)
         else:
             with open(episode_entities_path, "r") as f:
                 entities_data = json.load(f)
@@ -262,11 +282,18 @@ async def process_episode_directly(series: str, season: str, episode: str, inclu
                 # Continue processing even if speaker identification fails
 
 
-        time.sleep(10000000)
+        #time.sleep(10000000)  # Removed long sleep
         
         # Step 6: Update season summary
         logger.info("📖 Updating season summary")
-        episode_plot_path = path_handler.get_raw_plot_file_path()
+        # Use speaker-identified plot if available, fallback to raw plot
+        if os.path.exists(path_handler.get_plot_possible_speakers_path()):
+            episode_plot_path = path_handler.get_plot_possible_speakers_path()
+            logger.info("📝 Using speaker-identified plot for season summary")
+        else:
+            episode_plot_path = path_handler.get_raw_plot_file_path()
+            logger.info("📝 Using raw plot for season summary (speaker identification not available)")
+        
         season_summary_path = path_handler.get_season_summary_path()
         episode_summary_path = path_handler.get_episode_summary_path()
         create_or_update_season_summary(episode_plot_path, season_summary_path, episode_summary_path, llm_intelligent)
@@ -281,7 +308,7 @@ async def process_episode_directly(series: str, season: str, episode: str, inclu
             from backend.src.langgraph_narrative_arcs_extraction.narrative_arc_graph import extract_narrative_arcs
             
             file_paths_for_graph = {
-                "episode_plot_path": path_handler.get_raw_plot_file_path(),
+                "episode_plot_path": path_handler.get_plot_possible_speakers_path(),
                 "seasonal_narrative_analysis_output_path": path_handler.get_season_narrative_analysis_path(),
                 "episode_narrative_analysis_output_path": path_handler.get_episode_narrative_analysis_path(),
                 "season_entities_path": path_handler.get_season_extracted_refined_entities_path(),
@@ -329,8 +356,21 @@ app.add_middleware(
 )
 
 # Determine the project root directory dynamically
-db_manager = DatabaseSessionManager()
+try:
+    db_manager = DatabaseSessionManager()
+    logger.info("✅ Database connection initialized successfully")
+except Exception as e:
+    logger.error(f"❌ Failed to initialize database connection: {e}")
+    logger.error("This will cause database operations to fail. Please check your .env file and database configuration.")
+    db_manager = None
 
+def check_database_connection():
+    """Check if database connection is available."""
+    if db_manager is None:
+        raise HTTPException(
+            status_code=500, 
+            detail="Database connection not available. Please check your configuration and restart the server."
+        )
 
 class ArcProgressionResponse(BaseModel):
     id: str
@@ -340,12 +380,18 @@ class ArcProgressionResponse(BaseModel):
     episode: str
     ordinal_position: int
     interfering_characters: List[str]
+    events: Optional[List["EventResponse"]] = None  # Include events for new data structure
 
     class Config:
         from_attributes = True
 
     @classmethod
     def from_progression(cls, prog: ArcProgression):
+        # Include events if available
+        events = None
+        if hasattr(prog, 'events') and prog.events:
+            events = [EventResponse.from_event(event) for event in prog.events]
+        
         return cls(
             id=prog.id,
             content=prog.content,
@@ -353,8 +399,85 @@ class ArcProgressionResponse(BaseModel):
             season=prog.season,
             episode=prog.episode,
             ordinal_position=prog.ordinal_position,
-            interfering_characters=[char.best_appellation for char in prog.interfering_characters]
+            interfering_characters=[char.best_appellation for char in prog.interfering_characters],
+            events=events
         )
+
+class EventResponse(BaseModel):
+    id: str
+    progression_id: str
+    content: str
+    series: str
+    season: str
+    episode: str
+    start_timestamp: Optional[str] = None  # Changed from float to str for HH:MM:SS,mmm format
+    end_timestamp: Optional[str] = None    # Changed from float to str for HH:MM:SS,mmm format
+    ordinal_position: int
+    confidence_score: Optional[float] = None
+    extraction_method: Optional[str] = None
+    characters_involved: List[str] = []
+    # Progression and arc context
+    progression_content: Optional[str] = None
+    arc_title: Optional[str] = None
+    arc_id: Optional[str] = None
+
+    class Config:
+        from_attributes = True
+
+    @classmethod
+    def from_event(cls, event, include_context: bool = False):
+        from backend.src.narrative_storage_management.narrative_models import Event
+        if isinstance(event, Event):
+            # For database Event objects
+            response = cls(
+                id=event.id,
+                progression_id=event.progression_id,
+                content=event.content,
+                series=event.series,
+                season=event.season,
+                episode=event.episode,
+                start_timestamp=event.start_timestamp,
+                end_timestamp=event.end_timestamp,
+                ordinal_position=event.ordinal_position,
+                confidence_score=event.confidence_score,
+                extraction_method=event.extraction_method,
+                characters_involved=[]  # TODO: Implement character relationship
+            )
+            
+            # Add progression and arc context if requested
+            if include_context and hasattr(event, 'progression') and event.progression:
+                response.progression_content = event.progression.content
+                if hasattr(event.progression, 'narrative_arc') and event.progression.narrative_arc:
+                    response.arc_title = event.progression.narrative_arc.title
+                    response.arc_id = event.progression.narrative_arc.id
+            
+            return response
+        else:
+            # For dict/JSON objects
+            return cls(**event)
+
+class EventCreateRequest(BaseModel):
+    progression_id: str
+    content: str
+    series: str
+    season: str
+    episode: str
+    start_timestamp: Optional[str] = None  # Changed from float to str for HH:MM:SS,mmm format
+    end_timestamp: Optional[str] = None    # Changed from float to str for HH:MM:SS,mmm format
+    ordinal_position: int
+    confidence_score: Optional[float] = None
+    extraction_method: Optional[str] = None
+
+class EventUpdateRequest(BaseModel):
+    content: Optional[str] = None
+    start_timestamp: Optional[str] = None  # Changed from float to str for HH:MM:SS,mmm format
+    end_timestamp: Optional[str] = None    # Changed from float to str for HH:MM:SS,mmm format
+    ordinal_position: Optional[int] = None
+    confidence_score: Optional[float] = None
+    extraction_method: Optional[str] = None
+
+class EventExtractionRequest(BaseModel):
+    force_reextraction: bool = False
 
 class NarrativeArcResponse(BaseModel):
     id: str
@@ -624,6 +747,7 @@ async def get_series():
         
         # Get series from database
         try:
+            check_database_connection()  # Check if database is available
             with db_manager.session_scope() as session:
                 db_result = session.exec(select(NarrativeArc.series).distinct())
                 series_set.update(db_result)
@@ -705,7 +829,8 @@ async def get_episodes(series: str):
 async def get_arcs_by_episode(series: str, season: str, episode: str):
     """Get all narrative arcs that have progressions in a specific episode."""
     try:
-        normalized_episode = f"E{episode.zfill(2)}"
+        # Use the existing normalization function
+        _, normalized_episode = normalize_season_episode(season, episode)
         logger.debug(f"Fetching arcs for {series} {season} {normalized_episode}")
         
         with db_manager.session_scope() as session:
@@ -2225,6 +2350,243 @@ async def get_arc_by_id(arc_id: str):
         logger.error(f"Error getting arc by ID {arc_id}: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
+# EVENT MANAGEMENT ENDPOINTS
+
+@app.get("/api/events/progression/{progression_id}", response_model=List[EventResponse])
+async def get_events_by_progression(progression_id: str):
+    """Get all events for a specific progression."""
+    try:
+        check_database_connection()
+        
+        with db_manager.session_scope() as session:
+            event_repository = EventRepository(session)
+            events = event_repository.get_by_progression_id(progression_id)
+            
+            return [EventResponse.from_event(event) for event in events]
+            
+    except Exception as e:
+        logger.error(f"Error getting events for progression {progression_id}: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/events/episode/{series}/{season}/{episode}", response_model=List[EventResponse])
+async def get_events_by_episode(
+    series: str, 
+    season: str, 
+    episode: str,
+    include_context: bool = Query(False, description="Include progression and arc context")
+):
+    """Get all events for a specific episode."""
+    try:
+        check_database_connection()
+        
+        with db_manager.session_scope() as session:
+            event_repository = EventRepository(session)
+            events = event_repository.get_by_episode(series, season, episode, include_context=include_context)
+            
+            return [EventResponse.from_event(event, include_context=include_context) for event in events]
+            
+    except Exception as e:
+        logger.error(f"Error getting events for episode {series} {season} {episode}: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/events/timestamp-range/{series}/{season}/{episode}")
+async def get_events_by_timestamp_range(
+    series: str, 
+    season: str, 
+    episode: str,
+    start_time: float = Query(..., description="Start time in seconds"),
+    end_time: float = Query(..., description="End time in seconds")
+):
+    """Get events within a specific timestamp range."""
+    def seconds_to_timestamp(seconds: float) -> str:
+        """Convert seconds to HH:MM:SS,mmm format."""
+        hours = int(seconds // 3600)
+        minutes = int((seconds % 3600) // 60)
+        secs = int(seconds % 60)
+        milliseconds = int((seconds % 1) * 1000)
+        return f"{hours:02d}:{minutes:02d}:{secs:02d},{milliseconds:03d}"
+    
+    try:
+        check_database_connection()
+        
+        # Convert float seconds to timestamp strings
+        start_timestamp = seconds_to_timestamp(start_time)
+        end_timestamp = seconds_to_timestamp(end_time)
+        
+        with db_manager.session_scope() as session:
+            event_repository = EventRepository(session)
+            events = event_repository.get_by_timestamp_range(series, season, episode, start_timestamp, end_timestamp)
+            
+            return [EventResponse.from_event(event) for event in events]
+            
+    except Exception as e:
+        logger.error(f"Error getting events for timestamp range: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/api/events", response_model=EventResponse)
+async def create_event(event_data: EventCreateRequest):
+    """Create a new event."""
+    try:
+        check_database_connection()
+        
+        with db_manager.session_scope() as session:
+            event_repository = EventRepository(session)
+            
+            # Create new event
+            event = Event(
+                progression_id=event_data.progression_id,
+                content=event_data.content,
+                series=event_data.series,
+                season=event_data.season,
+                episode=event_data.episode,
+                start_timestamp=event_data.start_timestamp,
+                end_timestamp=event_data.end_timestamp,
+                ordinal_position=event_data.ordinal_position,
+                confidence_score=event_data.confidence_score,
+                extraction_method=event_data.extraction_method
+            )
+            
+            created_event = event_repository.create(event)
+            session.commit()
+            
+            return EventResponse.from_event(created_event)
+            
+    except Exception as e:
+        logger.error(f"Error creating event: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.patch("/api/events/{event_id}", response_model=EventResponse)
+async def update_event(event_id: str, event_data: EventUpdateRequest):
+    """Update an existing event."""
+    try:
+        check_database_connection()
+        
+        with db_manager.session_scope() as session:
+            event_repository = EventRepository(session)
+            
+            # Get existing event
+            event = event_repository.get_by_id(event_id)
+            if not event:
+                raise HTTPException(status_code=404, detail="Event not found")
+            
+            # Update fields
+            if event_data.content is not None:
+                event.content = event_data.content
+            if event_data.start_timestamp is not None:
+                event.start_timestamp = event_data.start_timestamp
+            if event_data.end_timestamp is not None:
+                event.end_timestamp = event_data.end_timestamp
+            if event_data.ordinal_position is not None:
+                event.ordinal_position = event_data.ordinal_position
+            if event_data.confidence_score is not None:
+                event.confidence_score = event_data.confidence_score
+            if event_data.extraction_method is not None:
+                event.extraction_method = event_data.extraction_method
+            
+            updated_event = event_repository.update(event)
+            session.commit()
+            
+            return EventResponse.from_event(updated_event)
+            
+    except Exception as e:
+        logger.error(f"Error updating event {event_id}: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.delete("/api/events/{event_id}")
+async def delete_event(event_id: str):
+    """Delete an event."""
+    try:
+        check_database_connection()
+        
+        with db_manager.session_scope() as session:
+            event_repository = EventRepository(session)
+            
+            event = event_repository.get_by_id(event_id)
+            if not event:
+                raise HTTPException(status_code=404, detail="Event not found")
+            
+            event_repository.delete(event)
+            session.commit()
+            
+            return {"message": "Event deleted successfully"}
+            
+    except Exception as e:
+        logger.error(f"Error deleting event {event_id}: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/api/progressions/{progression_id}/extract-events")
+async def extract_events_from_progression_endpoint(
+    progression_id: str, 
+    request: EventExtractionRequest = Body(...)
+):
+    """Extract timestamped events from a progression using LangGraph agent."""
+    try:
+        check_database_connection()
+        
+        with db_manager.session_scope() as session:
+            progression_repository = ArcProgressionRepository(session)
+            event_repository = EventRepository(session)
+            
+            # Get the progression
+            progression = progression_repository.get_by_id(progression_id)
+            if not progression:
+                raise HTTPException(status_code=404, detail="Progression not found")
+            
+            # Check if events already exist and whether to force re-extraction
+            existing_events = event_repository.get_by_progression_id(progression_id)
+            if existing_events and not request.force_reextraction:
+                return {
+                    "message": "Events already exist for this progression. Use force_reextraction=true to re-extract.",
+                    "existing_events_count": len(existing_events)
+                }
+            
+            # Delete existing events if force re-extraction
+            if request.force_reextraction and existing_events:
+                event_repository.delete_by_progression_id(progression_id)
+                session.commit()
+                logger.info(f"Deleted {len(existing_events)} existing events for re-extraction")
+            
+            # Import the extraction function
+            from backend.src.langgraph_narrative_arcs_extraction.narrative_arc_graph import extract_events_from_progression
+            
+            # Run the LangGraph extraction
+            result = extract_events_from_progression(
+                progression_id=progression_id,
+                series=progression.series,
+                season=progression.season,
+                episode=progression.episode,
+                progression_content=progression.content
+            )
+            
+            return {
+                "message": "Event extraction completed",
+                "success": result["success"],
+                "events_extracted": result["events_extracted"],
+                "error_message": result.get("error_message"),
+                "validation_results": result.get("validation_results", {}),
+                "extracted_events": result.get("extracted_events", [])
+            }
+            
+    except Exception as e:
+        logger.error(f"Error extracting events from progression {progression_id}: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/events/statistics/{series}/{season}/{episode}")
+async def get_event_statistics(series: str, season: str, episode: str):
+    """Get statistics about events for an episode."""
+    try:
+        check_database_connection()
+        
+        with db_manager.session_scope() as session:
+            event_repository = EventRepository(session)
+            stats = event_repository.get_statistics_by_episode(series, season, episode)
+            
+            return stats
+            
+    except Exception as e:
+        logger.error(f"Error getting event statistics: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
 # SCENE TIMESTAMP VALIDATION ENDPOINTS
 
 @app.post("/api/scene-validation/validate", response_model=SceneValidationResponse)
@@ -2443,4 +2805,296 @@ async def fix_scene_timestamps_endpoint(series: str, season: str, episode: str):
         raise
     except Exception as e:
         logger.error(f"❌ Failed to fix scene timestamps: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# ========================================
+# NEW: Vector Search Endpoints
+# ========================================
+
+@app.get("/api/search/similar-events", response_model=List[dict])
+async def search_similar_events(
+    query: str,
+    series: Optional[str] = None,
+    season: Optional[str] = None,
+    episode: Optional[str] = None,
+    n_results: int = 5,
+    min_confidence: Optional[float] = None,
+    start_time: Optional[float] = None,
+    end_time: Optional[float] = None
+):
+    """Search for events similar to a query using vector embeddings."""
+    try:
+        from backend.src.narrative_storage_management.vector_store_service import VectorStoreService
+        
+        vector_store = VectorStoreService(collection_name="narrative_arcs")
+        
+        # Prepare timestamp range if provided
+        timestamp_range = None
+        if start_time is not None and end_time is not None:
+            timestamp_range = (start_time, end_time)
+        
+        # Search for similar events
+        results = vector_store.find_similar_events(
+            query=query,
+            n_results=n_results,
+            series=series,
+            season=season,
+            episode=episode,
+            timestamp_range=timestamp_range,
+            min_confidence=min_confidence
+        )
+        
+        # Format results for frontend
+        formatted_results = []
+        for result in results:
+            metadata = result.get('metadata', {})
+            formatted_results.append({
+                "event_id": metadata.get('id'),
+                "content": result.get('page_content', ''),
+                "similarity_score": 1 - result.get('cosine_distance', 0),
+                "series": metadata.get('series'),
+                "season": metadata.get('season'),
+                "episode": metadata.get('episode'),
+                "start_timestamp": metadata.get('start_timestamp'),
+                "end_timestamp": metadata.get('end_timestamp'),
+                "confidence_score": metadata.get('confidence_score'),
+                "characters": metadata.get('event_characters', '').split(', ') if metadata.get('event_characters') else [],
+                "arc_title": metadata.get('parent_arc_title'),
+                "extraction_method": metadata.get('extraction_method')
+            })
+        
+        return formatted_results
+        
+    except Exception as e:
+        logger.error(f"❌ Failed to search similar events: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/api/search/similar-progressions", response_model=List[dict])
+async def search_similar_progressions(
+    query: str,
+    series: Optional[str] = None,
+    season: Optional[str] = None,
+    episode: Optional[str] = None,
+    n_results: int = 5
+):
+    """Search for progressions similar to a query using vector embeddings."""
+    try:
+        from backend.src.narrative_storage_management.vector_store_service import VectorStoreService
+        
+        vector_store = VectorStoreService(collection_name="narrative_arcs")
+        
+        # Search for similar progressions
+        results = vector_store.find_similar_progressions(
+            query=query,
+            n_results=n_results,
+            series=series,
+            season=season,
+            episode=episode
+        )
+        
+        # Format results for frontend
+        formatted_results = []
+        for result in results:
+            metadata = result.get('metadata', {})
+            formatted_results.append({
+                "progression_id": metadata.get('id'),
+                "content": result.get('page_content', ''),
+                "similarity_score": 1 - result.get('cosine_distance', 0),
+                "series": metadata.get('series'),
+                "season": metadata.get('season'),
+                "episode": metadata.get('episode'),
+                "arc_title": metadata.get('parent_arc_title'),
+                "arc_type": metadata.get('arc_type'),
+                "interfering_characters": metadata.get('interfering_characters', '').split(', ') if metadata.get('interfering_characters') else []
+            })
+        
+        return formatted_results
+        
+    except Exception as e:
+        logger.error(f"❌ Failed to search similar progressions: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# ========================================
+# NEW: Temporal Visualization Endpoints
+# ========================================
+
+@app.get("/api/temporal/timeline/{series}/{season}/{episode}", response_model=dict)
+async def get_episode_timeline(series: str, season: str, episode: str):
+    """Get a complete temporal timeline for an episode with events, arcs, and metadata."""
+    try:
+        db_manager = DatabaseSessionManager()
+        
+        with db_manager.session_scope() as session:
+            event_repo = EventRepository(session)
+            arc_repo = NarrativeArcRepository(session)
+            
+            # Get all events for the episode
+            events = event_repo.get_by_episode(series, season, episode)
+            
+            # Get all arcs for the episode
+            arcs = arc_repo.get_arcs_by_episode(series, season, episode)
+            
+            # Create timeline data structure
+            timeline_events = []
+            for event in events:
+                # Get characters involved
+                characters = []
+                if hasattr(event, 'character_links'):
+                    characters = [link.character.best_appellation for link in event.character_links]
+                
+                # Get progression and arc info
+                progression = session.get(ArcProgression, event.progression_id) if event.progression_id else None
+                arc = session.get(NarrativeArc, progression.main_arc_id) if progression and progression.main_arc_id else None
+                
+                timeline_events.append({
+                    "id": event.id,
+                    "content": event.content,
+                    "start_timestamp": event.start_timestamp,
+                    "end_timestamp": event.end_timestamp,
+                    "duration": _calculate_duration(event.start_timestamp, event.end_timestamp) if (event.start_timestamp and event.end_timestamp) else None,
+                    "confidence_score": event.confidence_score,
+                    "extraction_method": event.extraction_method,
+                    "characters": characters,
+                    "ordinal_position": event.ordinal_position,
+                    "arc_id": arc.id if arc else None,
+                    "arc_title": arc.title if arc else None,
+                    "arc_type": arc.arc_type if arc else None,
+                    "progression_id": event.progression_id
+                })
+            
+            # Sort events by timestamp (convert to seconds for proper sorting)
+            timeline_events.sort(key=lambda x: _timestamp_to_seconds(x['start_timestamp']) if x['start_timestamp'] is not None else 0)
+            
+            # Calculate episode statistics
+            timestamped_events = [e for e in timeline_events if e['start_timestamp'] is not None]
+            # Calculate total duration as max end timestamp in seconds
+            end_timestamps_seconds = [_timestamp_to_seconds(e['end_timestamp']) for e in timestamped_events if e['end_timestamp']]
+            total_duration = max(end_timestamps_seconds) if end_timestamps_seconds else 0
+            
+            # Group events by arc
+            arcs_data = {}
+            for arc in arcs:
+                arc_events = [e for e in timeline_events if e['arc_id'] == arc.id]
+                durations = [e['duration'] for e in arc_events if e['duration']]
+                arcs_data[arc.id] = {
+                    "id": arc.id,
+                    "title": arc.title,
+                    "arc_type": arc.arc_type,
+                    "description": arc.description,
+                    "event_count": len(arc_events),
+                    "total_duration": sum(durations) if durations else 0,
+                    "events": arc_events
+                }
+            
+            return {
+                "episode_info": {
+                    "series": series,
+                    "season": season,
+                    "episode": episode,
+                    "total_events": len(timeline_events),
+                    "timestamped_events": len(timestamped_events),
+                    "total_duration": total_duration,
+                    "arcs_count": len(arcs_data)
+                },
+                "timeline_events": timeline_events,
+                "arcs": arcs_data,
+                "statistics": {
+                    "events_per_minute": len(timestamped_events) / (total_duration / 60) if total_duration > 0 else 0,
+                    "average_event_duration": (sum([e['duration'] for e in timestamped_events if e['duration']]) / len(timestamped_events)) if timestamped_events else 0,
+                    "confidence_distribution": {
+                        "high": len([e for e in timestamped_events if e['confidence_score'] and e['confidence_score'] >= 0.8]),
+                        "medium": len([e for e in timestamped_events if e['confidence_score'] and 0.5 <= e['confidence_score'] < 0.8]),
+                        "low": len([e for e in timestamped_events if e['confidence_score'] and e['confidence_score'] < 0.5])
+                    }
+                }
+            }
+        
+    except Exception as e:
+        logger.error(f"❌ Failed to get episode timeline: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/api/temporal/events-in-range/{series}/{season}/{episode}", response_model=List[dict])
+async def get_events_in_timestamp_range(
+    series: str, 
+    season: str, 
+    episode: str,
+    start_time: float,
+    end_time: float,
+    include_vector_data: bool = False
+):
+    """Get events within a specific timestamp range, optionally including vector store data."""
+    def seconds_to_timestamp(seconds: float) -> str:
+        """Convert seconds to HH:MM:SS,mmm format."""
+        hours = int(seconds // 3600)
+        minutes = int((seconds % 3600) // 60)
+        secs = int(seconds % 60)
+        milliseconds = int((seconds % 1) * 1000)
+        return f"{hours:02d}:{minutes:02d}:{secs:02d},{milliseconds:03d}"
+    
+    try:
+        # Convert float seconds to timestamp strings
+        start_timestamp = seconds_to_timestamp(start_time)
+        end_timestamp = seconds_to_timestamp(end_time)
+        
+        if include_vector_data:
+            # Use vector store for richer metadata
+            from backend.src.narrative_storage_management.vector_store_service import VectorStoreService
+            vector_store = VectorStoreService(collection_name="narrative_arcs")
+            
+            results = vector_store.get_events_by_timestamp_range(
+                series=series,
+                season=season,
+                episode=episode,
+                start_time=start_time,
+                end_time=end_time
+            )
+            
+            formatted_results = []
+            for result in results:
+                metadata = result.get('metadata', {})
+                formatted_results.append({
+                    "event_id": metadata.get('id'),
+                    "content": result.get('page_content', ''),
+                    "start_timestamp": metadata.get('start_timestamp'),
+                    "end_timestamp": metadata.get('end_timestamp'),
+                    "duration": metadata.get('duration'),
+                    "confidence_score": metadata.get('confidence_score'),
+                    "characters": metadata.get('event_characters', '').split(', ') if metadata.get('event_characters') else [],
+                    "arc_title": metadata.get('parent_arc_title'),
+                    "arc_type": metadata.get('arc_type'),
+                    "extraction_method": metadata.get('extraction_method'),
+                    "ordinal_position": metadata.get('ordinal_position')
+                })
+            
+            return formatted_results
+        else:
+            # Use database for standard query
+            db_manager = DatabaseSessionManager()
+            
+            with db_manager.session_scope() as session:
+                event_repo = EventRepository(session)
+                events = event_repo.get_by_timestamp_range(series, season, episode, start_timestamp, end_timestamp)
+                
+                formatted_results = []
+                for event in events:
+                    formatted_results.append({
+                        "event_id": event.id,
+                        "content": event.content,
+                        "start_timestamp": event.start_timestamp,
+                        "end_timestamp": event.end_timestamp,
+                        "duration": _calculate_duration(event.start_timestamp, event.end_timestamp) if (event.start_timestamp and event.end_timestamp) else None,
+                        "confidence_score": event.confidence_score,
+                        "extraction_method": event.extraction_method,
+                        "ordinal_position": event.ordinal_position,
+                        "progression_id": event.progression_id
+                    })
+                
+                return formatted_results
+        
+    except Exception as e:
+        logger.error(f"❌ Failed to get events in timestamp range: {e}")
         raise HTTPException(status_code=500, detail=str(e))

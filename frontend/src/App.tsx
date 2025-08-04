@@ -17,6 +17,7 @@ import { NarrativeArcManager } from './components/narrative/NarrativeArcManager'
 import { VectorStoreTabManager } from './components/vector/VectorStoreTabManager';
 import { CharacterManager } from './components/character/CharacterManager';
 import { ProcessingManager } from './components/processing/ProcessingManager';
+import { EventsTabManager } from './components/events/EventsTabManager';
 import { ApiClient } from './services/api/ApiClient';
 import type { NarrativeArc, Episode } from './architecture/types';
 
@@ -116,6 +117,7 @@ const App: React.FC = () => {
               <Tabs isFitted variant="enclosed">
                 <TabList>
                   <Tab>Narrative Arcs</Tab>
+                  <Tab>Events</Tab>
                   <Tab>Vector Store</Tab>
                   <Tab>Characters</Tab>
                   <Tab>Processing</Tab>
@@ -127,6 +129,12 @@ const App: React.FC = () => {
                       arcs={arcs}
                       episodes={episodes}
                       onArcUpdated={handleArcUpdated}
+                    />
+                  </TabPanel>
+                  <TabPanel p={0}>
+                    <EventsTabManager 
+                      series={selectedSeries}
+                      episodes={episodes}
                     />
                   </TabPanel>
                   <TabPanel>
@@ -154,6 +162,7 @@ const App: React.FC = () => {
               <Tabs isFitted variant="enclosed" defaultIndex={3}>
                 <TabList>
                   <Tab isDisabled>Narrative Arcs</Tab>
+                  <Tab isDisabled>Events</Tab>
                   <Tab isDisabled>Vector Store</Tab>
                   <Tab isDisabled>Characters</Tab>
                   <Tab>Processing</Tab>
@@ -161,6 +170,9 @@ const App: React.FC = () => {
                 <TabPanels>
                   <TabPanel p={0}>
                     <Text>Please select a series to view narrative arcs.</Text>
+                  </TabPanel>
+                  <TabPanel p={0}>
+                    <Text>Please select a series to view events.</Text>
                   </TabPanel>
                   <TabPanel>
                     <Text>Please select a series to explore the vector store.</Text>
