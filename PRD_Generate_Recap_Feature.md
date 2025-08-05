@@ -70,12 +70,13 @@ The "Generate Recap" feature will automatically create concise, contextually rel
 | `{EPISODE}_plot_possible_speakers.txt` | Episode root directory | Current episode narrative content |
 | `{EPISODE}_present_running_plotlines.json` | `recap_files/` folder | Ongoing narrative arcs for current episode |
 | `{SERIES}{SEASON}_plot.txt` | Season directory | Broader narrative context (optional) |
-| `{EPISODE}.srt` | Episode root directory | Subtitle file for dialogue extraction |
+| `{EPISODE}_possible_speakers.srt` | Episode root directory | Enhanced subtitle file with speaker identification for dialogue extraction |
 | `{EPISODE}.mp4` | Episode root directory | Source video file for clip extraction |
 | Vector Database | ChromaDB collection | Historical events with timestamp metadata |
 
 ### Data Quality Requirements
-- **Subtitle Sync**: SRT files must be accurately synchronized with video content
+- **Subtitle Sync**: Enhanced SRT files with speaker identification must be accurately synchronized with video content
+- **Speaker Identification**: SRT files should include speaker attribution for better dialogue context
 - **Timestamp Precision**: Vector DB entries must include precise start/end timestamps
 - **Arc Completeness**: Running plotlines JSON must contain all active narrative threads
 - **Video Quality**: Source MP4 files must be in standard format compatible with FFmpeg
