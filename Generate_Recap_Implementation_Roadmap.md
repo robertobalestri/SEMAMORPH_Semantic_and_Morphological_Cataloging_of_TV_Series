@@ -2,70 +2,92 @@
 
 ## Phase 1: Foundation & Data Models 🏗️
 
-### [✅] 1.1 Create Core Directory Structure - **ALREADY EXISTS**
+### [✅] 1.1 Create Core Directory Structure - **COMPLETED**
 - [✅] `backend/src/narrative_storage_management/` directory exists
 - [✅] `src/` directory structure exists
-- [ ] Create `backend/src/recap_generator/` directory
-- [ ] Create subdirectories: `models/`, `utils/`, `exceptions/`
-- [ ] Add `__init__.py` files to all directories
-- [ ] Create basic module structure files
+- [✅] Create `backend/src/recap_generator/` directory
+- [✅] Create subdirectories: `models/`, `utils/`, `exceptions/`
+- [✅] Add `__init__.py` files to all directories
+- [✅] Create basic module structure files
 
-### [✅] 1.2 Define Data Models - **PARTIALLY EXISTS**
+### [✅] 1.2 Define Data Models - **COMPLETED**
 - [✅] **EXISTING**: `NarrativeArc` class in `backend/src/narrative_storage_management/narrative_models.py`
 - [✅] **EXISTING**: `ArcProgression` class in `backend/src/narrative_storage_management/narrative_models.py`
 - [✅] **EXISTING**: `Character` class in `backend/src/narrative_storage_management/narrative_models.py`
 - [✅] **EXISTING**: `DialogueLine` class in `backend/src/narrative_storage_management/narrative_models.py`
 - [✅] **EXISTING**: `IntermediateNarrativeArc` (Pydantic) in `src/langgraph_narrative_arcs_extraction/narrative_arc_graph.py`
-- [ ] Create `models/recap_models.py` with additional Pydantic models:
-  - [ ] `RecapEvent` class
-  - [ ] `RecapClip` class  
-  - [ ] `RecapConfiguration` class
-  - [ ] `RecapMetadata` class
-- [ ] Create `models/event_models.py` with:
-  - [ ] `VectorEvent` class
-  - [ ] `SubtitleSequence` class
-  - [ ] `EventRanking` class
+- [✅] Create `models/recap_models.py` with additional Pydantic models:
+  - [✅] `RecapEvent` class
+  - [✅] `RecapClip` class  
+  - [✅] `RecapConfiguration` class
+  - [✅] `RecapMetadata` class
+- [✅] Create `models/event_models.py` with:
+  - [✅] `VectorEvent` class
+  - [✅] `SubtitleSequence` class
+  - [✅] `EventRanking` class
 
-### [ ] 1.3 Create Exception Classes
-- [ ] Create `exceptions/recap_exceptions.py` with:
-  - [ ] `RecapGenerationError`
-  - [ ] `MissingInputFilesError`
-  - [ ] `VideoProcessingError`
-  - [ ] `SubtitleProcessingError`
+### [✅] 1.3 Create Exception Classes - **COMPLETED**
+- [✅] Create `exceptions/recap_exceptions.py` with:
+  - [✅] `RecapGenerationError`
+  - [✅] `MissingInputFilesError`
+  - [✅] `VideoProcessingError`
+  - [✅] `SubtitleProcessingError`
 
-### [✅] 1.4 Create Utility Modules - **PARTIALLY EXISTS**
+### [✅] 1.4 Create Utility Modules - **COMPLETED**
 - [✅] **EXISTING**: FFmpeg utilities in `backend/src/subtitle_speaker_identification/transcription_workflow.py`
 - [✅] **EXISTING**: Path handling in `src/path_handler.py` (PathHandler class)
-- [ ] Create `utils/ffmpeg_utils.py` with:
-  - [ ] FFmpeg command builders (extend existing)
-  - [ ] Video validation functions
-  - [ ] Clip extraction utilities
-- [ ] Create `utils/subtitle_utils.py` with:
-  - [ ] SRT parsing functions
-  - [ ] Timestamp conversion utilities
-  - [ ] Subtitle sequence extraction
-- [ ] Create `utils/validation_utils.py` with:
-  - [ ] Input file validation
-  - [ ] JSON schema validation
-  - [ ] Output quality checks
+- [✅] Create `utils/ffmpeg_utils.py` with:
+  - [✅] FFmpeg command builders (extend existing)
+  - [✅] Video validation functions
+  - [✅] Clip extraction utilities
+- [✅] Create `utils/subtitle_utils.py` with:
+  - [✅] SRT parsing functions
+  - [✅] Timestamp conversion utilities
+  - [✅] Subtitle sequence extraction
+- [✅] Create `utils/validation_utils.py` with:
+  - [✅] Input file validation
+  - [✅] JSON schema validation
+  - [✅] Output quality checks
 
 ---
 
 ## Phase 2: LLM Services Implementation 🤖
 
-### [✅] 2.1 Query Generator Service (LLM #1) - **INFRASTRUCTURE EXISTS**
+### [✅] 2.1 Query Generator Service (LLM #1) - **COMPLETED**
 - [✅] **EXISTING**: LLM infrastructure in `src/ai_models/ai_models.py` with `get_llm()` function
 - [✅] **EXISTING**: LLM prompt templates in `src/langgraph_narrative_arcs_extraction/prompts.py`
 - [✅] **EXISTING**: LLM utilities in `src/utils/llm_utils.py`
-- [ ] Create `query_generator.py`
-- [ ] Implement functions:
-  - [ ] `analyze_current_episode()` - Parse plot and running plotlines
-  - [ ] `extract_key_themes()` - Identify main narrative themes
-  - [ ] `generate_vector_queries()` - Create semantic search queries
-  - [ ] `weight_queries_by_arc()` - Assign importance weights
-- [ ] Create prompt templates for query generation
-- [ ] Add logging and error handling
-- [ ] Write unit tests for query generation logic
+- [✅] Create `query_generator.py`
+- [✅] Implement functions:
+  - [✅] `analyze_current_episode()` - Parse plot and running plotlines
+  - [✅] `generate_vector_queries()` - Create targeted database queries
+  - [✅] `weight_queries_by_arc()` - Assign importance weights
+- [✅] Create prompt templates for query generation
+- [✅] Add logging and error handling
+- [✅] Write unit tests for query generation logic
+
+### [✅] 2.2 Event Retrieval Service (LLM #2) - **COMPLETED**
+- [✅] **EXISTING**: Vector database service in `backend/src/narrative_storage_management/vector_store_service.py`
+- [✅] **EXISTING**: Existing ranking algorithms in `src/narrative_storage_management/narrative_arc_service.py`
+- [✅] Create `event_retrieval_service.py`
+- [✅] Implement functions:
+  - [✅] `search_vector_database()` - Execute queries against ChromaDB (extend existing)
+  - [✅] `rank_events_by_relevance()` - Comprehensive event ranking
+  - [✅] `select_final_events()` - Choose optimal event set
+- [✅] Create ranking algorithm with weighted scoring
+- [✅] Add arc balancing logic
+- [✅] Write unit tests for ranking and filtering
+
+### [✅] 2.3 Subtitle Processor Service (LLM #3) - **COMPLETED**
+- [✅] **EXISTING**: Subtitle parsing in `src/dialogues_helper.py` with `DialogueLine` class
+- [✅] **EXISTING**: SRT pattern matching and time conversion utilities
+- [✅] Create `subtitle_processor.py`
+- [✅] Implement functions:
+  - [✅] `process_event_subtitles()` - Extract subtitles for event timespan (extend existing)
+  - [✅] `optimize_sequence_timing()` - Adjust for natural boundaries
+- [✅] Create prompt templates for subtitle selection
+- [✅] Add sequence validation logic
+- [✅] Write unit tests for subtitle processing
 
 ### [✅] 2.2 Event Retrieval Service (LLM #2) - **INFRASTRUCTURE EXISTS**
 - [✅] **EXISTING**: Vector database service in `backend/src/narrative_storage_management/vector_store_service.py`
@@ -97,55 +119,55 @@
 
 ---
 
-## Phase 3: Core Processing Components ⚙️
+## Phase 3: Core Processing Components ⚙️ - **COMPLETED**
 
-### [ ] 3.1 Video Clip Extractor
-- [ ] Create `video_clip_extractor.py`
-- [ ] Implement functions:
-  - [ ] `extract_clip_by_timestamps()` - Use FFmpeg to cut video segments
-  - [ ] `apply_subtitle_overlay()` - Add selected subtitles to clips
-  - [ ] `validate_clip_quality()` - Check audio/video sync and quality
-  - [ ] `normalize_audio_levels()` - Ensure consistent audio
-- [ ] Add FFmpeg command validation
-- [ ] Implement clip quality checks
-- [ ] Add progress tracking for long operations
+### [✅] 3.1 Video Clip Extractor - **COMPLETED**
+- [✅] Create `video_clip_extractor.py`
+- [✅] Implement functions:
+  - [✅] `extract_clips_for_events()` - Use FFmpeg to cut video segments
+  - [✅] `apply_subtitle_overlay()` - Add selected subtitles to clips
+  - [✅] `validate_clip_quality()` - Check audio/video sync and quality
+  - [✅] `normalize_audio_levels()` - Ensure consistent audio
+- [✅] Add FFmpeg command validation
+- [✅] Implement clip quality checks
+- [✅] Add progress tracking for long operations
 
-### [ ] 3.2 Recap Assembler
-- [ ] Create `recap_assembler.py`
-- [ ] Implement functions:
-  - [ ] `order_clips_by_narrative()` - Arrange clips logically
-  - [ ] `add_transitions()` - Insert fade effects between clips
-  - [ ] `generate_title_cards()` - Create arc identification cards
-  - [ ] `assemble_final_video()` - Merge all components
-  - [ ] `optimize_final_output()` - Compress and format final video
-- [ ] Add transition effect generation
-- [ ] Implement duration validation
-- [ ] Add final quality control checks
+### [✅] 3.2 Recap Assembler - **COMPLETED**
+- [✅] Create `recap_assembler.py`
+- [✅] Implement functions:
+  - [✅] `order_clips_by_narrative()` - Arrange clips logically
+  - [✅] `add_transitions()` - Insert fade effects between clips
+  - [✅] `generate_title_cards()` - Create arc identification cards
+  - [✅] `assemble_final_video()` - Merge all components
+  - [✅] `optimize_final_output()` - Compress and format final video
+- [✅] Add transition effect generation
+- [✅] Implement duration validation
+- [✅] Add final quality control checks
 
-### [ ] 3.3 Main Orchestrator
-- [ ] Create `recap_orchestrator.py`
-- [ ] Implement functions:
-  - [ ] `validate_input_files()` - Check all required files exist
-  - [ ] `coordinate_llm_services()` - Manage three-stage LLM pipeline
-  - [ ] `generate_recap_json()` - Create JSON specifications file
-  - [ ] `process_video_clips()` - Coordinate video processing
-  - [ ] `finalize_recap()` - Complete assembly and storage
-- [ ] Add comprehensive error handling
-- [ ] Implement progress tracking and logging
-- [ ] Add configuration management
+### [✅] 3.3 Main Orchestrator - **COMPLETED**
+- [✅] Create `recap_orchestrator.py`
+- [✅] Implement functions:
+  - [✅] `validate_input_files()` - Check all required files exist
+  - [✅] `coordinate_llm_services()` - Manage three-stage LLM pipeline
+  - [✅] `generate_recap_json()` - Create JSON specifications file
+  - [✅] `process_video_clips()` - Coordinate video processing
+  - [✅] `finalize_recap()` - Complete assembly and storage
+- [✅] Add comprehensive error handling
+- [✅] Implement progress tracking and logging
+- [✅] Add configuration management
 
 ---
 
 ## Phase 4: Integration & File Management 📁
 
-### [✅] 4.1 Path Handler Integration - **ALREADY EXISTS**
+### [✅] 4.1 Path Handler Integration - **COMPLETED**
 - [✅] **EXISTING**: `PathHandler` class in `src/path_handler.py` with comprehensive path management
 - [✅] **EXISTING**: Methods like `get_episode_plot_path()`, `get_season_plot_path()`, etc.
-- [ ] Extend existing `PathHandler` class with:
-  - [ ] `get_recap_files_dir()` - Get recap_files directory path
-  - [ ] `get_recap_clips_json_path()` - Get JSON specifications path
-  - [ ] `get_final_recap_video_path()` - Get final video output path
-  - [ ] `validate_episode_processed()` - Check processing prerequisites
+- [✅] Extend existing `PathHandler` class with:
+  - [✅] `get_recap_files_dir()` - Get recap_files directory path
+  - [✅] `get_recap_clips_json_path()` - Get JSON specifications path
+  - [✅] `get_final_recap_video_path()` - Get final video output path
+  - [✅] `validate_episode_processed()` - Check processing prerequisites
 
 ### [ ] 4.2 JSON File Management
 - [ ] Create JSON schema validation

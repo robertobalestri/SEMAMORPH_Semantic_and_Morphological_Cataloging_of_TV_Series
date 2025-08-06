@@ -1,0 +1,189 @@
+{
+  "scenes": [
+    {
+      "scene_number": 1,
+      "plot_segment": "A voice says, 'Previously on Grey's Anatomy.' Scenes from earlier episodes are shown: two people discuss having had sex once; one asks the other to go out with them, and the issue of being boss and subordinate is raised. Someone asks if another likes Izzy, which is denied, and the speaker says Izzy is not the one they're attracted to. The name Meredith is mentioned, and there is talk of just having coffee. A doctor tells someone that their mother's Alzheimer's is advancing and that legal paperwork needs to be signed. There are brief scenes of personal and professional interactions, including a comment about being blown off for tequila and a request to move a car.",
+      "is_recap": true
+    },
+    {
+      "scene_number": 2,
+      "plot_segment": "A character narrates about Benjamin Franklin's advice to not put off tasks, discussing fear as a reason for procrastination. Various fears are listed, including fear of failure, pain, and rejection. In a hospital setting, a group of interns discuss waiting for someone who is late. One intern insists they should not wait, and another jokes about not being the person's boyfriend yet. The conversation turns to whether one of the interns wants to ask another out, which is denied. The narrator continues about fear of making decisions and mistakes.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 3,
+      "plot_segment": "A character named Meredith arrives late and is told by another that she is avoiding them. Meredith confirms she is both late and avoiding the person. They briefly discuss whether to talk about a situation involving Bailey and what she saw. Meredith expresses discomfort about being the intern sleeping with the attending, and that Bailey is not speaking to her. The attending says if he were a better guy, he'd walk away, and asks if Meredith wants that. She is unsure. Meredith leaves, saying she is late, and the attending tells her to take her time and think about it.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 4,
+      "plot_segment": "Meredith and another intern (Cristina) discuss being late and whether Bailey has told anyone about Meredith's relationship with 'McDreamy.' Cristina reassures her that Bailey has not told anyone, but warns that if the relationship is discovered, the attending could face professional consequences. Meredith decides she has to end the relationship. Cristina tells Meredith to stop whining and says no good can come from sleeping with a boss. Bailey enters and notes both Cristina and Meredith are late.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 5,
+      "plot_segment": "Bailey instructs the interns to maintain decorum before entering a patient's room, warning them not to laugh or react. The group enters and greets Miss Connors, who has a visible large tumor. The patient prefers to be called Annie. Dr. Burke is introduced as an attending surgeon. Alex Karev presents Annie's case: a 43-year-old woman with a large tumor pressing on her diaphragm, scheduled for a CT scan. Annie jokes about Alex taking her for the scan because he's fun to look at. Bailey assigns tasks, and the interns discuss the size of Annie's tumor after leaving the room.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 6,
+      "plot_segment": "Bailey tells the interns that Annie Connors's surgery will occupy most of the surgeons, so the interns must work extra hard and avoid mistakes. Cristina expresses interest in being involved in the surgery. Bailey instructs Meredith to find Annie's mother and get a family history. A trauma call is heard over the intercom. Cristina and Bailey have a brief exchange about not talking.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 7,
+      "plot_segment": "Meredith presents Mr. Harper's case to an attending: he had a coronary bypass, his blood pressure was low overnight but responded to medication, and his chest tube output has stopped. Meredith suggests a chest X-ray and checking the tube for occlusion. The attending approves the plan and says the patient is doing fine.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 8,
+      "plot_segment": "George tells another intern that he does not have romantic feelings for Meredith, despite what others may think. He asks that nothing be said to Meredith to avoid awkwardness since they live together. The other intern tells George to stop talking.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 9,
+      "plot_segment": "A group of interns and Dr. Bailey visit Mr. LaVangie, a 63-year-old man admitted for pain management for dyskinesia. An intern presents his case, mentioning possible treatments for Parkinson's disease and spinal pain. The attending assigns Meredith to prep Mr. LaVangie for a procedure and assist.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 10,
+      "plot_segment": "An attending (likely Dr. Shepherd) is approached by Bailey, who warns him not to show favoritism toward Meredith Grey. Bailey threatens that if she sees any favoritism, Meredith will be kept out of the operating room for a month. Bailey says she will not advertise the attending's relationship with Meredith but insists on fairness.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 11,
+      "plot_segment": "Annie is prepared for her CT scan. An intern reassures her that there is a microphone in the scanner in case she gets scared. Annie says she will be fine. The intern promises to be nearby. Annie is moved into the scanner.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 12,
+      "plot_segment": "Two interns discuss Annie's tumor while watching the scan. They are surprised by its size and question how someone could let it get that bad. One suggests Annie might be afraid of doctors, while another is unsympathetic, calling her 'warped.'",
+      "is_recap": false
+    },
+    {
+      "scene_number": 13,
+      "plot_segment": "Annie's mother explains that they initially thought Annie was gaining weight, but when they realized it was a tumor, Annie was too scared to see a doctor. The larger the tumor grew, the less Annie wanted to seek help. Annie only felt sick the previous night when she couldn't breathe, prompting her mother to call 911.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 14,
+      "plot_segment": "Meredith checks on Mr. LaVangie and is approached by his daughter, who asks Meredith to talk to her father about brain surgery. The daughter is getting married soon and wants her father to be present. Meredith relates to having a sick parent and agrees to try to help.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 15,
+      "plot_segment": "A group of surgeons discuss Annie's CT results. The tumor is displacing her lung and infiltrating her spinal canal. The surgeons debate the best approach for surgery, weighing the risks of paralysis and death. One surgeon questions whether Annie wants to live, given how long she waited to seek help. Another argues that people do risky things every day and that Annie is only 43, so surgery is worth a try.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 16,
+      "plot_segment": "Meredith asks Dr. Shepherd about Mr. LaVangie and whether he is a candidate for deep brain stimulation (DBS). Dr. Shepherd says the patient is a candidate but is not interested in the procedure. Meredith suggests pushing the patient, but Dr. Shepherd refuses and removes Meredith from the case for questioning his decision.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 17,
+      "plot_segment": "Bailey speaks to Annie about her upcoming surgery, explaining the risks. Annie's mother insists Annie will have the surgery, but Annie says she will only do it if Alex Karev is not present. Bailey agrees to Annie's condition and bans Alex from the operating room for the week after learning he offended Annie by speaking negatively about her while the microphone was on during the scan.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 18,
+      "plot_segment": "An intern (likely Izzie) prepares Annie for surgery, taking blood and reassuring her. Annie calls herself the 'fat, nasty tumor lady' and says she doesn't deserve sympathy. The intern asks why Annie let it get so bad. Annie explains that she avoided hospitals because everyone she knew who went in died. The intern relates by admitting to putting off telling a roommate about romantic feelings, comparing it to Annie's avoidance. Annie jokes about the comparison.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 19,
+      "plot_segment": "Cristina complains to Bailey about being treated unfairly because of Meredith's relationship with Dr. Shepherd. Bailey tells Cristina that Meredith earned her opportunities and that Cristina should not blame Meredith. Meredith decides she has to end the relationship. Another intern asks Cristina about scrubbing in on Annie's surgery, and the group jokes about Burke's intentions. Alex tries to join the conversation but is rebuffed.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 20,
+      "plot_segment": "Cristina tells the group that Dr. Shepherd is a jackass for reprimanding her. Another intern disagrees, saying Dr. Shepherd is great. The group discusses having a bad day and considers going out for drinks together. Someone gives another intern a drink, and there is a brief, awkward exchange.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 21,
+      "plot_segment": "An intern checks on Mr. LaVangie, who is still refusing brain surgery. His daughter pleads with him to reconsider, but he insists it is his life and his decision. Meredith tells him that it is also his daughter's life and asks him to try for her sake.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 22,
+      "plot_segment": "In the operating room, the surgeons prepare for Annie's surgery. They warn the interns that retracting the tumor will be physically demanding. Meanwhile, Meredith informs Dr. Shepherd that Mr. LaVangie has agreed to DBS if it is done that day. Dr. Shepherd prepares for the procedure.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 23,
+      "plot_segment": "Bailey confronts Meredith about her relationship with Dr. Shepherd, saying she doesn't care about the details but is concerned about how it affects the work environment and the other interns. Bailey warns Meredith about the consequences for everyone involved.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 24,
+      "plot_segment": "Two interns are assigned to less desirable tasks while others are in surgery. One complains about being left out, and the other jokes about doing the work in the stairwell. They part ways.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 25,
+      "plot_segment": "In the operating room, the surgeons and interns begin Annie's surgery. They discuss the need for more blood due to the tumor's size and the risk of bleeding. George is chastised for losing focus while retracting the tumor.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 26,
+      "plot_segment": "Dr. Shepherd performs the DBS procedure on Mr. LaVangie, who is awake. Meredith is present to reassure the patient. The procedure involves drilling into the skull and finding the correct spot in the brain. The patient jokes with Meredith. The procedure is successful.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 27,
+      "plot_segment": "Izzie is called away from her tasks to check on another patient. She asks a nurse to page Alex again, as he is not responding. The nurse says she already paged him. Izzie insists.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 28,
+      "plot_segment": "In the operating room, the surgeons continue working on Annie's tumor. They are surprised by the size of an artery feeding the tumor and request more O negative blood. George is asked to assist by applying pressure.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 29,
+      "plot_segment": "Dr. Shepherd and Meredith discuss the professional boundaries of their relationship. Meredith insists she can take care of herself and does not want special treatment. Dr. Shepherd acknowledges this. Meredith is praised for her work.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 30,
+      "plot_segment": "Cristina apologizes to Dr. Shepherd for calling him a jackass. He jokes that if Meredith does not marry him, he will. The mood is light.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 31,
+      "plot_segment": "A crisis occurs with Mr. Harper, whose blood pressure drops and who goes into a dangerous heart rhythm. Izzie is present and is told to open his chest at the bedside, despite never having done it before. She is coached through the procedure by another person. Izzie removes a clot by hand and massages the heart until a pulse returns.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 32,
+      "plot_segment": "The surgeons continue Annie's surgery, struggling with blood loss and the complexity of the tumor. They request more blood and work to control the bleeding. George assists by applying pressure. Despite their efforts, Annie's condition worsens.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 33,
+      "plot_segment": "Annie Connors dies in the operating room. The time of death is called.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 34,
+      "plot_segment": "The narrator reflects on proverbs about time and seizing the day. Izzie apologizes for the loss of Annie, but is told not to be sorry because she saved a life. The narrator continues about learning from experience.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 35,
+      "plot_segment": "Cristina tells Burke she will not do him any more favors, complaining about the physical toll of the surgery and the patient's death. Burke asks what their relationship is, and Cristina questions if he really wants a definition. They share a moment, and Cristina tells him to lock the door.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 36,
+      "plot_segment": "Alex asks if anyone has seen Meredith. Another intern tells him Meredith is 'off the market.' George insists he and Meredith are just friends and would know if she were seeing someone.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 37,
+      "plot_segment": "The narrator reflects on the importance of acting rather than wondering. Meredith and Dr. Shepherd meet and discuss a place with a view of the sunrise over the ferry boats. Meredith says she has a thing for ferry boats, and Dr. Shepherd remembers. The narrator concludes that even the biggest failure is better than never trying. Someone says, 'Thank you.'",
+      "is_recap": false
+    }
+  ]
+}

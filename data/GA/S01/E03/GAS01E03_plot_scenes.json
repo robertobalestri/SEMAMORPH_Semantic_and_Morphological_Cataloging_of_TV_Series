@@ -1,0 +1,169 @@
+{
+  "scenes": [
+    {
+      "scene_number": 1,
+      "plot_segment": "A character reflects on life as a surgical resident, describing the long hours and close quarters with fellow interns. In Meredith's house, George and Izzie argue about who should get the bigger room, citing reasons like closet space and who arrived first. Meredith is asked about her mother's belongings and whether they can unpack or store them. Izzie mentions finding tapes of Meredith's mother performing surgeries and suggests watching them together. Meredith is asked if she wants privacy.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 2,
+      "plot_segment": "At the hospital, a character greets Dr. Bailey, who curtly tells them to be quiet. Dr. Bailey is reminded by another character that she is an attending and they are a resident. Dr. Bailey seems distracted, trying to remember something important happening that day. The other character leaves, and Dr. Bailey continues to try to recall what she is forgetting.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 3,
+      "plot_segment": "In the emergency room, staff prepare for the aftermath of the 'dead baby bike race,' an annual, illegal, and dangerous event involving bike messengers. Characters discuss the nature of the race and the types of injuries it causes. Dr. Bailey gives instructions to the interns, emphasizing the rules of trauma care and warning them not to fight over patients. The interns are told to avoid mingling with ER interns and to discharge patients quickly.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 4,
+      "plot_segment": "The trauma bay fills with injured bike racers. Two interns argue over who gets to treat a particular patient, flipping a coin to decide. The patient, eager to return to the race, asks to have his injuries treated quickly. Another trauma patient, an unidentified man hit by a car, is brought in with severe injuries and a poor prognosis. Dr. Shepherd instructs the team to perform tests to confirm brain death if there is no response in six hours.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 5,
+      "plot_segment": "George is sent by Dr. Bailey to assist an attending but is told to stay on the floor and monitor pre- and post-op patients instead of scrubbing in. The attending asks George to look after his friend, Lloyd Mackey, and give him whatever he needs.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 6,
+      "plot_segment": "George finds Mr. Mackey smoking in his hospital room. George tells him smoking is not allowed and tries to convince him to stop, mentioning that Mackey is at the top of the liver donor list. Mackey is cynical about his chances, having waited eight months. He jokes with George about baseball and mentions his long friendship with the chief of surgery.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 7,
+      "plot_segment": "A group of interns monitor the unidentified trauma patient. They discuss the process of declaring brain death and the lack of hope for recovery. One intern, Izzy, holds out hope for a miracle, but another explains the medical reality. They note personal details about the patient, such as new sneakers and a sewn shirt, and discuss the potential for organ donation if his family can be found.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 8,
+      "plot_segment": "An intern flirts with a bike race patient while treating his injuries. The patient refuses further tests and insists on leaving to finish the race. The intern warns him about leaving against medical advice and has him sign a form. The patient kisses the intern for luck before leaving.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 9,
+      "plot_segment": "Two characters discuss their past romantic encounters, including having sex and kissing in an elevator. One asks the other out, but is refused. The conversation turns to the idea of 'the chase' and whether pursuing a relationship is just a game. The female character insists she has something to prove and that it's not a game for her.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 10,
+      "plot_segment": "A group of interns approach Dr. Burke in the OR to ask about performing a harvest surgery on the brain-dead John Doe. Burke is skeptical, explaining that without family consent, organ donation is unlikely. The interns resolve to try to find the patient's family.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 11,
+      "plot_segment": "George confides in another intern that a VIP patient, Mackey, is interested in him. The other intern jokes about George's sexuality, and George clarifies he is not gay. Another intern brings news that the John Doe's key card is from a hotel, and the police have been called to help identify him. The group discusses the urgency of finding the family for organ donation consent.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 12,
+      "plot_segment": "An intern speaks to the unconscious John Doe, encouraging him to recover for the sake of his family. The intern asks him to try to live.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 13,
+      "plot_segment": "The John Doe begins to crash before the six-hour mark. Izzy insists he deserves the full time before being declared dead. Another intern agrees to help, and they begin transfusing blood and administering dopamine to keep him alive until the deadline.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 14,
+      "plot_segment": "George examines Mackey, who flirts with him and compliments his eyes. George is flustered by the attention. Mackey continues to joke and enjoy the interaction.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 15,
+      "plot_segment": "The John Doe is stabilized for now. The interns learn from a radiologist that he has a traumatic aortic injury and will need surgery to remain a viable organ donor. The group decides to try to get him into surgery and to continue searching for his family. They discuss which attending to approach for the surgery and decide to go over Dr. Bailey's head.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 16,
+      "plot_segment": "The interns approach Dr. Burke in the men's room to ask him to perform the aortic repair on the brain-dead John Doe. Burke is annoyed that they gave the patient a transfusion without consulting anyone and refuses to operate, stating that the patient is already dead.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 17,
+      "plot_segment": "One intern seeks advice from another about how to get around Dr. Burke's refusal. The advice is to get the chief of surgery involved. The interns discuss the potential for a liver transplant for Mackey if the John Doe is a match. George is told to ask the chief directly.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 18,
+      "plot_segment": "George approaches the chief of surgery and, after some hesitation, tells him that a liver has been found for Mackey. The interns are nervous about going over Burke's head but proceed with their plan.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 19,
+      "plot_segment": "Dr. Burke performs the aortic repair on the John Doe. Another intern praises Burke's surgical skill, while others express frustration that they did not get to participate in the surgery. The police call to inform the interns that the John Doe has been identified and his wife is on the way.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 20,
+      "plot_segment": "The John Doe's wife arrives at the hospital and is devastated to see her husband, Kevin. Dr. Stevens introduces herself and offers support. The wife asks if there is still hope, and is told they can wait until morning before discussing organ donation if there is no change.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 21,
+      "plot_segment": "The chief visits Mackey, who jokes about George not letting him smoke. The chief tells Mackey that George may have found him a liver.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 22,
+      "plot_segment": "A group of interns celebrate after surgery, joking about the smell of open-heart surgery. Meredith confronts another intern about his behavior, telling him to stay out of her way and criticizing him for taking credit for others' work. The intern complains to others that Meredith attacked him.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 23,
+      "plot_segment": "Cristina and Meredith discuss the challenges of living with roommates. Cristina suggests Meredith could kick them out, but Meredith says she can't because she invited them. They joke about repressing feelings and the difficulties of sharing space. Cristina complains about being assigned to the pit again while others get to participate in an organ harvest.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 24,
+      "plot_segment": "Dr. Stevens discusses organ donation with Mrs. Davidson, asking for consent to donate Kevin's corneas and skin. Mrs. Davidson is distressed by the idea of her husband being disfigured for the funeral and hesitates to consent to skin donation.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 25,
+      "plot_segment": "Cristina admits to another intern that she is not good at talking to patients' families. She is reminded to refer to the patient by name, Kevin Davidson, rather than as John Doe or by his condition. The importance of remembering the patient's humanity is emphasized.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 26,
+      "plot_segment": "Mackey thanks George for finding him a liver and jokes about taking George out to celebrate. George clarifies that he is not interested in men, and Mackey says he never thought George was gay. Mackey explains that being terminally ill allows him to be bold and flirtatious. He asks George if he has ever been attracted to someone he can't have, and George reluctantly admits he likes Meredith.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 27,
+      "plot_segment": "Dr. Burke and another surgeon prepare for the organ harvest. Burke expresses his dislike for harvesting, saying he prefers to save lives. The harvest proceeds.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 28,
+      "plot_segment": "Izzy is told she can sew up Kevin for his family. Another character encourages her to do it herself. Izzy prepares the body for the family to see.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 29,
+      "plot_segment": "Mrs. Davidson is told that her husband is ready if she would like to see him. She is brought in to say goodbye.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 30,
+      "plot_segment": "A group of friends of the bike racer known as Viper arrive at the hospital to check on him. Dr. Bailey scolds them for their reckless behavior, blaming the race for causing harm to others. Another intern reassures the group that Viper will survive.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 31,
+      "plot_segment": "A male character tells a female character that his interest in her is not about the thrill of the chase or a game. He mentions her hair and bossiness as things he likes. She insists she still won't go out with him.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 32,
+      "plot_segment": "The liver transplant for Mackey goes smoothly. Mackey jokes that he will have to quit smoking now.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 33,
+      "plot_segment": "A character reflects on the lessons of residency, concluding that success is measured by lives saved, not competition. The interns gather at Meredith's house and watch one of Ellis Grey's surgical tapes together, sharing a moment of camaraderie.",
+      "is_recap": false
+    }
+  ]
+}

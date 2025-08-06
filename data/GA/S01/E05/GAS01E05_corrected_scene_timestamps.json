@@ -1,0 +1,268 @@
+{
+  "scenes": [
+    {
+      "scene_number": 1,
+      "plot_segment": "Meredith Grey lies in bed as her alarm goes off, and her internal monologue contrasts the simple fears of childhood with the overwhelming responsibilities of adulthood. She reflects on her exhaustion, having not slept in 48 hours, and the immense pressure of being a surgical intern, including the daunting task of holding a human heart during surgery. As Meredith prepares for her day, a lawyer meets with her to discuss her mother, Ellis Grey\u2019s, advancing Alzheimer\u2019s. The lawyer explains that Ellis must sign over her estate while she is still lucid. Meredith, visibly drained and reluctant, questions why she has to handle these legal and emotional burdens, but the lawyer insists it is her responsibility as Ellis\u2019s daughter.",
+      "is_recap": false,
+      "start_time": "00:00:02,596",
+      "end_time": "00:01:13,996",
+      "start_seconds": 2.596,
+      "end_seconds": 73.996,
+      "start_subtitle_index": 0,
+      "end_subtitle_index": 9
+    },
+    {
+      "scene_number": 2,
+      "plot_segment": "Meredith Grey\u2019s internal monologue reflects on the daunting responsibilities of adulthood, contrasting them with the simpler fears of childhood. In the operating room, Meredith, under Dr. Burke\u2019s supervision, participates in heart surgery on Mrs. Patterson. As she carefully holds the patient\u2019s heart, Meredith accidentally lets it slip and apologizes, but Dr. Burke reassures her and instructs her to gently release the heart from bypass. The surgical team prepares to take Mrs. Patterson off bypass, working together to stabilize her. Meredith\u2019s thoughts underscore the immense weight of holding a human life in her hands, making her childhood worries seem insignificant by comparison.",
+      "is_recap": false,
+      "start_time": "00:01:15,715",
+      "end_time": "00:01:55,087",
+      "start_seconds": 75.715,
+      "end_seconds": 115.087,
+      "start_subtitle_index": 10,
+      "end_subtitle_index": 22
+    },
+    {
+      "scene_number": 3,
+      "plot_segment": "In the hospital lounge, George O'Malley tells Meredith Grey how jealous he is that she got to hold a human heart during surgery. Cristina Yang jokes that even a monkey could do it, downplaying the significance. Izzie Stevens enters and asks George to get more ice and chips for a party, revealing she has invited people from Pediatrics, which irritates Cristina, who wanted only \"jocks\" at the event. Izzie says she\u2019ll check with Meredith about the guest list, but Meredith is confused and denies knowing anything about a party at her house. The conversation shifts as the interns discuss the logistics of the party and tease each other about their social lives. Meanwhile, in the operating room, Dr. Preston Burke leads Meredith and the surgical team as they work to stabilize Mrs. Patterson after heart surgery. Meredith is instructed to gently release the heart from bypass, and the team anxiously monitors the patient\u2019s vitals. When Mrs. Patterson\u2019s heart rhythm falters, Dr. Burke and the team perform compressions and use the defibrillator until Cristina announces they have a rhythm. Dr. Burke commends the team\u2019s work as they close up, while Meredith reflects internally on the weight of responsibility that comes with being a surgeon.",
+      "is_recap": false,
+      "start_time": "00:01:55,929",
+      "end_time": "00:03:42,688",
+      "start_seconds": 115.929,
+      "end_seconds": 222.688,
+      "start_subtitle_index": 23,
+      "end_subtitle_index": 76
+    },
+    {
+      "scene_number": 4,
+      "plot_segment": "Meredith Grey internally reflects on the overwhelming responsibilities of adulthood, especially as a surgical intern, comparing them to the simpler fears of childhood. In the hospital corridor, George O'Malley congratulates Meredith on assisting Dr. Burke in heart surgery, expressing envy that she got to hold a human heart. Meredith describes the experience as unforgettable, but privately confides to George her anxiety that she may have damaged Mrs. Patterson\u2019s heart during the procedure\u2014she worries she might have squeezed too hard or accidentally punctured it with her fingernail. George reassures Meredith that Mrs. Patterson is stable and advises her not to mention her fears to Dr. Burke, since there is no evidence of harm. As they walk away, Meredith continues to grapple with the weight of her responsibilities, realizing how much more is at stake now that she is no longer a child.",
+      "is_recap": false,
+      "start_time": "00:03:45,891",
+      "end_time": "00:05:28,860",
+      "start_seconds": 225.891,
+      "end_seconds": 328.86,
+      "start_subtitle_index": 77,
+      "end_subtitle_index": 109
+    },
+    {
+      "scene_number": 5,
+      "plot_segment": "Dr. Miranda Bailey quizzes George O'Malley on Mrs. Drake\u2019s chest X-ray, prompting him to identify hyperinflated lungs with diminished capacity. The team discusses Mrs. Drake\u2019s history of lung surgery and considers a bulectomy as the next step. Dr. Bailey instructs the interns to avoid lecturing Mrs. Drake about smoking. During the exam, Mrs. Drake complains of severe back pain and insists that only Demerol or Dilaudid will relieve it, rejecting George\u2019s suggestion of morphine. Dr. Bailey suspects possible drug-seeking behavior but reminds the team that the patient\u2019s pain must still be treated as real. Due to Mrs. Drake\u2019s poor veins, Dr. Bailey orders a central line.",
+      "is_recap": false,
+      "start_time": "00:05:37,108",
+      "end_time": "00:07:08,843",
+      "start_seconds": 337.108,
+      "end_seconds": 428.843,
+      "start_subtitle_index": 110,
+      "end_subtitle_index": 151
+    },
+    {
+      "scene_number": 6,
+      "plot_segment": "George O\u2019Malley checks on Mrs. Drake, a patient with hyperinflated lungs and chronic pain. Mrs. Drake recounts her struggle to quit smoking and describes persistent pain that forced her to leave her job, expressing frustration that no one believed her symptoms were real. George listens empathetically and assures her that her pain is not imagined. Mrs. Drake asks if the upcoming bulectomy surgery will finally help, and George tells her it\u2019s her best option. She jokes that George looks too young to be a doctor, prompting George to insist he\u2019s older than he appears.",
+      "is_recap": false,
+      "start_time": "00:07:17,632",
+      "end_time": "00:08:25,204",
+      "start_seconds": 437.632,
+      "end_seconds": 505.204,
+      "start_subtitle_index": 152,
+      "end_subtitle_index": 180
+    },
+    {
+      "scene_number": 7,
+      "plot_segment": "Dr. Bailey checks on Mr. Patterson, who is anxious about his wife\u2019s recovery following heart surgery. Bailey reassures him that Mrs. Patterson is being closely monitored and that her prognosis is good. In a nearby room, Dr. Karev prepares to discharge Mr. Sturman after his bowel obstruction resolves. Mr. Sturman jokes that he never wants to experience a bowel obstruction again. Karev asks about his bowel movements, and during their conversation, learns that Mr. Sturman attended medical school but left before graduating. Mr. Sturman shares that he now works in research and has a family, and offers Karev advice, emphasizing that a physician\u2019s first responsibility is always to the patient.",
+      "is_recap": false,
+      "start_time": "00:08:28,660",
+      "end_time": "00:10:52,455",
+      "start_seconds": 508.66,
+      "end_seconds": 652.455,
+      "start_subtitle_index": 181,
+      "end_subtitle_index": 221
+    },
+    {
+      "scene_number": 8,
+      "plot_segment": "In the operating room, Dr. Preston Burke leads heart surgery on Mrs. Patterson with Meredith Grey assisting. During the procedure, Meredith slips while handling the heart and apologizes, but Dr. Burke reassures her and calmly instructs her to gently release the heart from bypass. The surgical team works together to stabilize Mrs. Patterson as her heart resumes beating on its own. Afterward, Dr. Burke commends the team for their work. Outside the OR, George O'Malley expresses envy to Meredith about getting to hold a heart, while Cristina Yang jokes that even a monkey could do it. The interns discuss the upcoming party at Meredith\u2019s house; Izzie Stevens mentions inviting people from Pediatrics, which annoys Cristina, who wanted only \"jocks\" to attend. Izzie says she\u2019ll check with Meredith, but Meredith is surprised and denies knowing about any party when asked.",
+      "is_recap": false,
+      "start_time": "00:10:53,919",
+      "end_time": "00:13:06,201",
+      "start_seconds": 653.919,
+      "end_seconds": 786.201,
+      "start_subtitle_index": 222,
+      "end_subtitle_index": 266
+    },
+    {
+      "scene_number": 9,
+      "plot_segment": "Cristina Yang and Izzie Stevens coordinate ordering microbrews and bar snacks for Meredith Grey\u2019s house party, disguising the purchase as office supplies to avoid suspicion. As they finalize the order, Alex Karev overhears and asks for an invitation to the party in exchange for helping them carry the supplies. Meanwhile, at the hospital, Jerry Frost, a patient with a history of addiction but also legitimate pain, becomes agitated about his care and resists discharge. Dr. Alex Karev and Izzie attempt to manage Jerry\u2019s frustration, but he grows increasingly upset. Dr. Miranda Bailey reprimands Karev for questioning her orders and instructs him to start a central line for Jerry, emphasizing that while his addiction history is relevant, his pain must still be treated seriously.",
+      "is_recap": false,
+      "start_time": "00:13:06,221",
+      "end_time": "00:14:03,932",
+      "start_seconds": 786.221,
+      "end_seconds": 843.932,
+      "start_subtitle_index": 267,
+      "end_subtitle_index": 294
+    },
+    {
+      "scene_number": 10,
+      "plot_segment": "During surgery, Dr. Burke and Dr. Bailey discover that a surgical towel was left inside Mrs. Drake during an operation performed five years earlier. Dr. Burke instructs Cristina Yang to investigate who was responsible for the original surgery, while George O'Malley is told to keep Mrs. Drake comfortable as she wakes up. When Mrs. Drake is informed about the towel, she is stunned and demands to know how such a mistake could have happened. George tries to reassure her, but Mrs. Drake is visibly upset and overwhelmed by the news.",
+      "is_recap": false,
+      "start_time": "00:14:15,268",
+      "end_time": "00:15:49,013",
+      "start_seconds": 855.268,
+      "end_seconds": 949.013,
+      "start_subtitle_index": 295,
+      "end_subtitle_index": 312
+    },
+    {
+      "scene_number": 11,
+      "plot_segment": "Dr. Burke instructs George O'Malley to keep the discovery of the surgical towel inside Mrs. Drake confidential while the hospital investigates the incident. Dr. Bailey pages Izzie Stevens to call the CCU. Cristina Yang checks on George, noticing he seems shaken after the long surgery, and asks if he\u2019s all right. Cristina invites George to dinner, but he declines, mentioning he has to attend Meredith Grey\u2019s party. Cristina and Izzie discuss the party, debating who has been invited and whether Meredith knows about it. Suddenly, Mrs. Patterson develops rapid swelling and bleeding at her surgical site. Dr. Burke, Meredith, and the team respond urgently, working to stabilize her. George, visibly anxious, later confides to Cristina that he may have damaged Mrs. Patterson\u2019s heart during surgery by squeezing it when he nodded off and puncturing his glove. Cristina reassures him that the heart is resilient and Mrs. Patterson is stable.",
+      "is_recap": false,
+      "start_time": "00:15:49,052",
+      "end_time": "00:17:28,655",
+      "start_seconds": 949.052,
+      "end_seconds": 1048.655,
+      "start_subtitle_index": 313,
+      "end_subtitle_index": 357
+    },
+    {
+      "scene_number": 12,
+      "plot_segment": "In the operating room, Dr. Preston Burke leads the surgical team as they work to repair the damage to Mrs. Patterson\u2019s heart. Meredith Grey, still shaken from her earlier slip during the procedure, assists under Burke\u2019s supervision. Dr. Burke reassures Meredith and instructs her to gently release the heart from bypass. As the team stabilizes Mrs. Patterson, Dr. Burke requests copies of the patient\u2019s chart and tells Cristina Yang to schedule a meeting with the hospital\u2019s legal department for the next morning. He warns the interns, including Meredith and George O\u2019Malley, to be prepared to explain exactly what happened during the surgery.",
+      "is_recap": false,
+      "start_time": "00:17:29,616",
+      "end_time": "00:18:37,242",
+      "start_seconds": 1049.616,
+      "end_seconds": 1117.242,
+      "start_subtitle_index": 358,
+      "end_subtitle_index": 380
+    },
+    {
+      "scene_number": 13,
+      "plot_segment": "In the break room, Meredith Grey, Cristina Yang, George O'Malley, and Izzie Stevens discuss the upcoming meeting with Chief Webber and the possibility of Meredith being expelled from the surgical program after the incident with Mrs. Patterson\u2019s heart surgery. George is anxious about his own role in the surgery, worried he may have damaged the patient\u2019s heart, while Cristina tries to reassure him that the heart is resilient. The conversation shifts to the party at Meredith\u2019s house; Izzie admits she invited people from Pediatrics, which irritates Cristina, who wanted only certain guests. Izzie promises to check with Meredith, but Meredith is surprised to hear about the party and denies knowing anything about it. Cristina insists she had nothing to do with organizing the event, and the group debates who is responsible for the growing guest list. The interns\u2019 banter is underscored by their anxiety about the meeting with the chief and the consequences of their actions in the OR.",
+      "is_recap": false,
+      "start_time": "00:18:42,303",
+      "end_time": "00:24:00,432",
+      "start_seconds": 1122.3029999999999,
+      "end_seconds": 1440.432,
+      "start_subtitle_index": 381,
+      "end_subtitle_index": 502
+    },
+    {
+      "scene_number": 14,
+      "plot_segment": "Meredith Grey arrives late at her mother Ellis Grey\u2019s care facility, visibly stressed and frustrated by the responsibility of managing her mother\u2019s legal affairs. A notary, a lawyer, and care staff are waiting for her, but Ellis is confused and distracted, preoccupied with imaginary surgical work due to her advancing Alzheimer\u2019s. The facility\u2019s physician explains to Meredith that Ellis is \u201csundowning\u201d and not lucid enough to sign the estate paperwork. The lawyer reminds Meredith that the documents must be signed while Ellis is coherent, and the notary cannot proceed. Meredith is told she will have to come back another day when her mother is more lucid. Tension rises as a family member criticizes Meredith for not handling the paperwork sooner, leaving her feeling overwhelmed and isolated by the weight of her adult responsibilities.",
+      "is_recap": false,
+      "start_time": "00:24:07,380",
+      "end_time": "00:25:28,200",
+      "start_seconds": 1447.38,
+      "end_seconds": 1528.2,
+      "start_subtitle_index": 503,
+      "end_subtitle_index": 534
+    },
+    {
+      "scene_number": 15,
+      "plot_segment": "At Meredith\u2019s house, the party is in full swing with hospital staff crowding the rooms. Cristina Yang, frustrated by the chaos and the number of unexpected guests, confronts Izzie Stevens about inviting people from Pediatrics and threatens to make her clean up the mess. Izzie warns George O\u2019Malley not to touch the expensive microbrews or he\u2019ll be in trouble. Meredith, overwhelmed by the noise and mess, tells Izzie that the party was never supposed to happen. Cristina insists the issue is handled and tells everyone not to bring it up again. Amidst the commotion, Alex Karev asks if there\u2019s any bourbon, searching for a drink to cope with the hectic scene.",
+      "is_recap": false,
+      "start_time": "00:26:31,528",
+      "end_time": "00:27:09,078",
+      "start_seconds": 1591.528,
+      "end_seconds": 1629.078,
+      "start_subtitle_index": 535,
+      "end_subtitle_index": 547
+    },
+    {
+      "scene_number": 16,
+      "plot_segment": "At the hospital, Jerry Frost, a patient suspected of drug-seeking, becomes agitated when Dr. Alex Karev and Izzie Stevens attempt to discharge him. Jerry insists he is still in pain and demands more medication. As Karev and Izzie try to escort him out, Jerry resists, stumbles, and falls, hitting his head on the floor. Meredith Grey and Izzie quickly respond, noticing Jerry\u2019s deteriorating condition, including a blown pupil. They rush him to get a CT scan, which reveals a subdural hematoma with midline shift. Dr. Derek Shepherd reviews the scan and immediately decides that Jerry needs emergency brain surgery. Izzie eagerly volunteers to assist Dr. Shepherd in the operation.",
+      "is_recap": false,
+      "start_time": "00:27:17,242",
+      "end_time": "00:28:13,086",
+      "start_seconds": 1637.242,
+      "end_seconds": 1693.086,
+      "start_subtitle_index": 548,
+      "end_subtitle_index": 579
+    },
+    {
+      "scene_number": 17,
+      "plot_segment": "At Meredith\u2019s house, the party is already in full swing, and Meredith feels overwhelmed by the unexpected number of guests. She realizes that Izzie Stevens never actually cleared the party with her, despite promising Cristina Yang she would. Meredith debates kicking everyone out but is distracted when Izzie\u2019s boyfriend, Hank, arrives and is visibly uncomfortable with the chaotic scene. Meredith greets Hank, offering him tequila and trying to explain the relentless demands of being a surgical intern. Hank grows increasingly frustrated by Izzie\u2019s absence and the fact that the party is nothing like he expected. He confronts Izzie about her work commitments and the lack of time they have together, while Izzie tries to reassure him that things will get better. Their conversation grows tense as Hank feels neglected and out of place among the hospital staff, ultimately leading him to leave the party, upset. Meredith watches the exchange, caught between her own exhaustion and the fallout from Izzie\u2019s personal life, as the party continues to spiral out of control around her.",
+      "is_recap": false,
+      "start_time": "00:28:20,625",
+      "end_time": "00:31:32,011",
+      "start_seconds": 1700.625,
+      "end_seconds": 1892.011,
+      "start_subtitle_index": 580,
+      "end_subtitle_index": 652
+    },
+    {
+      "scene_number": 18,
+      "plot_segment": "At the hospital, Izzie Stevens and Alex Karev discuss who will monitor Jerry Frost, a patient suspected of drug-seeking behavior, as he recovers from surgery for a subdural bleed. Alex offers to take over Jerry\u2019s care so Izzie can leave early and spend time with her boyfriend, Hank. Izzie thanks Alex for his help. Later, Izzie arrives home to find Hank frustrated by the chaotic party at Meredith Grey\u2019s house. Hank confronts Izzie about her priorities, upset that she didn\u2019t call and that her work always comes first. Izzie tries to explain her commitment to her patients and the demands of being a surgical intern, but Hank, feeling neglected and overwhelmed by the situation, tells her he\u2019ll call her and leaves.",
+      "is_recap": false,
+      "start_time": "00:31:32,031",
+      "end_time": "00:33:50,990",
+      "start_seconds": 1892.031,
+      "end_seconds": 2030.99,
+      "start_subtitle_index": 653,
+      "end_subtitle_index": 694
+    },
+    {
+      "scene_number": 19,
+      "plot_segment": "At Meredith\u2019s crowded house party, Meredith Grey stands outside, drinking and feeling overwhelmed by the chaos inside and the weight of her responsibilities. Derek Shepherd joins her on the porch, and they exchange playful banter about tequila and the absurdity of sneaking around together. Their flirtation is tinged with exhaustion as Meredith admits her life feels like a mess. Derek reassures her, encouraging her to take a break from her worries. Their private moment is interrupted when a guest comes outside to ask them to move a car that\u2019s blocking the driveway, pulling them back into the reality of the party and their complicated lives.",
+      "is_recap": false,
+      "start_time": "00:33:56,692",
+      "end_time": "00:35:42,552",
+      "start_seconds": 2036.692,
+      "end_seconds": 2142.552,
+      "start_subtitle_index": 695,
+      "end_subtitle_index": 712
+    },
+    {
+      "scene_number": 20,
+      "plot_segment": "The morning after the chaotic party, Meredith Grey wakes up to survey the mess left behind in her house. Izzie Stevens apologizes for how out of control the party became, but Meredith is preoccupied with anxiety about her upcoming meeting with Chief Webber and the hospital\u2019s legal team regarding the surgical error during Mrs. Patterson\u2019s operation. Cristina Yang and Izzie try to reassure her, but Meredith worries she could be expelled from the program for not reporting the glove puncture during surgery. As they discuss the case, Meredith explains her theory that Mrs. Patterson\u2019s rapid and significant weight loss led to weakened heart walls, which made the surgical complication more likely. Cristina listens as Meredith prepares her research and arguments for the meeting, determined to defend her actions and take responsibility for her mistake.",
+      "is_recap": false,
+      "start_time": "00:36:11,286",
+      "end_time": "00:37:21,472",
+      "start_seconds": 2171.286,
+      "end_seconds": 2241.472,
+      "start_subtitle_index": 713,
+      "end_subtitle_index": 737
+    },
+    {
+      "scene_number": 21,
+      "plot_segment": "In the chief\u2019s office, Meredith Grey presents her research on Mrs. Patterson\u2019s rapid weight loss and how it weakened her heart muscle, making it vulnerable during surgery. Dr. Richard Webber, the chief of surgery, listens as Meredith explains that a minor poke could have been catastrophic due to the compromised heart walls. Dr. Miranda Bailey supports Meredith\u2019s findings, but the hospital\u2019s legal counsel emphasizes that Meredith\u2019s delay in reporting the glove puncture exposed the hospital to liability. Dr. Preston Burke intervenes, admitting he once left a towel inside a patient during surgery and failed to report it out of fear for his career. He argues that doctors need to be able to admit mistakes without fear of punishment, or patient safety will suffer. Dr. Webber acknowledges Burke\u2019s point and notes that Meredith did eventually come forward, but still places her on one month\u2019s probation. The meeting ends with Cristina Yang quietly telling Meredith that Burke saved her, while Bailey ushers the interns out and Cristina observes that Burke always meant to confess his own mistake, but waited for the right moment.",
+      "is_recap": false,
+      "start_time": "00:37:23,190",
+      "end_time": "00:39:22,432",
+      "start_seconds": 2243.19,
+      "end_seconds": 2362.432,
+      "start_subtitle_index": 738,
+      "end_subtitle_index": 773
+    },
+    {
+      "scene_number": 22,
+      "plot_segment": "After the meeting with the chief and legal, Meredith Grey tells Cristina Yang and Izzie Stevens that she has been placed on one month\u2019s probation for not immediately reporting the glove puncture during Mrs. Patterson\u2019s heart surgery. Meredith thanks Dr. Preston Burke for defending her in the meeting, acknowledging that his admission of leaving a towel in a patient years ago helped her case. Cristina points out that Burke always intended to reveal the towel incident but waited for the right moment. As the interns discuss the fallout from the surgical mistakes and the importance of timing when admitting errors, Miranda Bailey arrives and orders them back to work. Meredith\u2019s internal monologue reflects on the weight of responsibility that comes with being a surgeon, and how adulthood means facing consequences and carrying burdens that cannot be escaped.",
+      "is_recap": false,
+      "start_time": "00:39:27,744",
+      "end_time": "00:40:27,619",
+      "start_seconds": 2367.744,
+      "end_seconds": 2427.619,
+      "start_subtitle_index": 774,
+      "end_subtitle_index": 785
+    },
+    {
+      "scene_number": 23,
+      "plot_segment": "At the hospital, Meredith Grey meets with a social worker, Sloan, to arrange rehab options for Jerry Frost after his surgery for a subdural bleed caused by his fall. Meredith helps Jerry understand the next steps and encourages him to consider treatment for his addiction. Meanwhile, Meredith approaches Mrs. Drake to apologize for the surgical towel left inside her during a previous operation, taking responsibility for the hospital\u2019s mistake. Jerry, relieved after his ordeal, celebrates finally having a bowel movement, a small but meaningful victory for him. Meredith\u2019s internal monologue reflects on how adulthood brings unavoidable responsibilities, and that facing them\u2014no matter how difficult\u2014is part of growing up.",
+      "is_recap": false,
+      "start_time": "00:40:27,639",
+      "end_time": "00:41:09,471",
+      "start_seconds": 2427.639,
+      "end_seconds": 2469.471,
+      "start_subtitle_index": 786,
+      "end_subtitle_index": 794
+    },
+    {
+      "scene_number": 24,
+      "plot_segment": "Cristina Yang and Meredith Grey sit together after a long shift, reflecting on how they missed the party at Meredith\u2019s house and the relentless demands of being surgical interns. Exhausted but resigned, they joke about the supposed perks of adulthood\u2014like being able to buy their own shoes, have sex, and not answer to parents\u2014while acknowledging the weight of their responsibilities. Sharing coffee, they admit that, despite the chaos and pressure, there are small joys in their chosen path. The scene ends with a sense of acceptance as they find comfort in each other\u2019s company and the reality of their adult lives.",
+      "is_recap": false,
+      "start_time": "00:41:13,788",
+      "end_time": "00:42:26,235",
+      "start_seconds": 2473.788,
+      "end_seconds": 2546.235,
+      "start_subtitle_index": 795,
+      "end_subtitle_index": 808
+    }
+  ]
+}

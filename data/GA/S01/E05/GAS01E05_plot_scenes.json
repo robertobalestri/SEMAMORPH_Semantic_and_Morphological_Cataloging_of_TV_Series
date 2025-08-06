@@ -1,0 +1,124 @@
+{
+  "scenes": [
+    {
+      "scene_number": 1,
+      "plot_segment": "A voice tells someone to wake up. An internal monologue reflects on childhood worries, contrasting them with the responsibilities of adulthood. The speaker mentions not having slept in 48 hours, getting a first shot at heart surgery, and missing rounds. A lawyer explains that due to a mother's advancing Alzheimer's, she needs to sign over her estate while still lucid. The person being addressed is reluctant to handle these responsibilities, questioning if someone else can do it, but is told it's their duty as her child.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 2,
+      "plot_segment": "The internal monologue continues, discussing adult responsibilities like earning a living and paying rent. The speaker notes that being a surgeon means holding a human heart, which is a huge responsibility. In an operating room, someone addresses Dr. Grey, who apologizes for letting something slip from her hands. Another voice tells Dr. Grey to gently release Mrs. Patterson's heart. The surgical team prepares to get the patient off bypass. The internal monologue compares this responsibility to childhood worries.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 3,
+      "plot_segment": "In a break room or lounge, several characters discuss wanting to hold a heart. One person claims even a monkey could do it. Someone named George is asked to get more ice and chips. There is talk about a party at Meredith's house, with debates over the guest list and whether Meredith knows about it. Someone denies knowledge of the party. The conversation shifts back to the operating room, where the team is concerned about Mrs. Patterson's condition post-surgery. Medical staff work to revive her, eventually restoring her heart rhythm.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 4,
+      "plot_segment": "The internal monologue reflects on the fear of letting responsibility slip. In a hospital corridor, someone congratulates another for participating in a heart surgery with Burke. They discuss the experience of holding a heart and how memorable it is. After the conversation, one character confides in George, expressing concern that they may have damaged the heart during surgery by squeezing it or puncturing it with a fingernail. George reassures them that the patient is okay and advises not to tell Burke since nothing happened.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 5,
+      "plot_segment": "A group of medical staff reviews a patient's X-ray. George is asked what he sees and describes hyperinflated lungs with diminished capacity. The team discusses the patient's previous surgery and the need for a bulectomy. They are told to avoid anti-smoking lectures. In another exam, a patient describes severe back pain and requests specific pain medications. The staff suspects drug-seeking behavior but is reminded that pain must be treated as real. A central line is ordered due to poor veins.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 6,
+      "plot_segment": "A patient named Mrs. Drake discusses her history of quitting smoking and ongoing pain. She feels that no one believed her pain was real. A young doctor reassures her after reviewing her films. Mrs. Drake asks if the surgery will work this time and is told it's her best option. She comments that the doctor looks too young, but the doctor insists they are older than they appear.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 7,
+      "plot_segment": "A doctor checks on Mr. Patterson, asking about his wife's hemodynamic stability. The doctor reassures Mr. Patterson that his wife should be fine after heart surgery. In another room, a doctor prepares to discharge Mr. Sturman, who jokes about never wanting a bowel obstruction again. The doctor asks about bowel movements and learns that Mr. Sturman attended medical school but dropped out. He now does research and has a family, advising the doctor that a physician's first responsibility is always to the patient.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 8,
+      "plot_segment": "In the operating room, a procedure called a spaghetti procedure is underway on Mrs. Drake. The team discovers a towel inside her chest, likely left from her surgery five years ago. The attending instructs Cristina to research the previous operation and find out who was responsible. George is told to stay with the patient. Cristina asks if she is invited to the party, and George awkwardly says yes.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 9,
+      "plot_segment": "A character orders beer and snacks for the party, pretending it's for office supplies. Another person asks for an invitation to the party in exchange for help. In the hospital, a patient named Mr. Frost is agitated about his care. A doctor is reprimanded for questioning orders and is told to start a central line for Mr. Frost, who has a history of addiction but also real pain.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 10,
+      "plot_segment": "Mrs. Drake is informed by a doctor that a towel was left inside her during her previous surgery. She is shocked and asks how that could happen. George tries to comfort her, but she is understandably upset.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 11,
+      "plot_segment": "A doctor is told to keep the towel incident confidential while the hospital works it out. Dr. Stevens is paged to call the CCU. Another character checks on a colleague, noticing they seem upset after a long surgery. The colleague is invited to dinner but declines due to the party. There is discussion about the party and who knows about it. Suddenly, Mrs. Patterson develops swelling and bleeding at her surgical site. The team responds urgently, and a doctor confesses to possibly nicking the heart during surgery.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 12,
+      "plot_segment": "In the operating room, the attending surgeon is upset that the possible error was not reported earlier. The team works to repair the damage. The chief surgeon demands copies of the patient's chart and schedules a meeting with legal for the next morning, warning the doctors to be prepared to explain what happened.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 13,
+      "plot_segment": "In a break room, a group discusses the upcoming meeting with the chief and the risk of being kicked out of the program. One character is upset that another confessed to the attending. The conversation shifts to party logistics, with concerns about the guest list and whether Meredith knows about the party. Someone insists they had nothing to do with organizing it.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 14,
+      "plot_segment": "At a care facility, Meredith arrives late for a meeting to sign legal papers for her mother. The notary and others are present, but her mother is not lucid and is preoccupied with work. The home's physician says her mother is 'sundowning' and cannot sign. Meredith is told to return another day when her mother is lucid. There is tension about why the process was delayed.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 15,
+      "plot_segment": "At Meredith's house, the party is underway. Someone threatens Izzy for the chaos. Another character is told not to touch something or they'll be in trouble. There is a brief conversation about an issue being 'taken care of' and not to be discussed further. Someone asks for bourbon.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 16,
+      "plot_segment": "At the hospital, Mr. Frost resists being discharged, demanding more pain medication. Security or staff attempt to remove him, but he falls and suffers a head injury. Medical staff respond, noting a blown pupil and ordering a CT scan. The scan reveals a subdural bleed with midline shift, and emergency brain surgery is planned. Dr. Stevens is invited to assist in the surgery.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 17,
+      "plot_segment": "At the party, Meredith is overwhelmed by the number of guests and realizes Izzy did not clear the party with her. Meredith considers kicking everyone out but is distracted by the arrival of Izzy's boyfriend, Hank. Meredith interacts with Hank, offering him tequila and explaining the demands of being an intern. Hank is frustrated by Izzy's absence and the unexpected party.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 18,
+      "plot_segment": "At the hospital, Dr. Stevens and Alex discuss who will monitor a patient in recovery. Alex offers to take over so Stevens can see her boyfriend. Stevens thanks Alex. Later, Izzy arrives home and apologizes to Hank for not calling, explaining she was needed for brain surgery. Hank is upset about the party and Izzy's priorities. Izzy tries to explain her commitment to her work, but Hank leaves, saying he'll call her.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 19,
+      "plot_segment": "At the party, Meredith is seen drinking and reflecting on her life. She interacts with Derek outside, joking about tequila. They share a flirtatious moment and discuss sneaking around. Their conversation is interrupted by someone asking them to move a car.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 20,
+      "plot_segment": "The morning after the party, Meredith prepares for her meeting with the chief. She surveys the mess left behind. Izzy apologizes for the party getting out of hand. Meredith is more concerned about her upcoming meeting regarding the surgical error. Meredith and another character discuss the patient's significant weight loss and its impact on muscle mass, possibly explaining the surgical complication.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 21,
+      "plot_segment": "In the chief's office, Meredith presents her research on the patient's weight loss and its effect on heart muscle. The chief and legal counsel note that Meredith's late reporting of the error left the hospital open to liability. Dr. Burke admits to a past mistake of leaving a towel inside a patient and not reporting it out of fear for his career. He argues that doctors must be able to speak up about mistakes without fear of retribution. The chief acknowledges this and notes that Meredith did eventually speak up.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 22,
+      "plot_segment": "After the meeting, Meredith tells her friends she received one month probation. She thanks Burke for supporting her. The group discusses the towel incident and the importance of timing when reporting mistakes. The internal monologue reflects on the burden of responsibility.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 23,
+      "plot_segment": "In the hospital, a social worker named Sloan is introduced to Jerry, the patient with addiction issues, to discuss rehab options. Meredith apologizes to Mrs. Drake for the towel incident. Another patient celebrates having a bowel movement after surgery. The internal monologue continues, reflecting on how responsibility cannot be avoided and must be faced.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 24,
+      "plot_segment": "In the final scenes, characters reflect on missing the party and the realities of life as a surgeon. Meredith and another character share a moment, acknowledging the challenges and perks of adulthood, such as independence and freedom from parental control. The episode ends with a sense of acceptance of adult responsibilities.",
+      "is_recap": false
+    }
+  ]
+}
