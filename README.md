@@ -1,101 +1,67 @@
-# SEMAMORPH: Semantic and Morphological Cataloging of TV Series
+# SEMAMORPH - Semantic and Morphological Cataloging of TV Series
 
-This project provides tools for semantic and morphological analysis of TV series content, including narrative arc extraction, character analysis, and entity linking.
-
-## Setup
+## Installation
 
 ### Backend Setup
-```bash
-pip install -r requirements.txt
-```
 
-### Frontend Setup
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-### Running the Application
-
-1. **Start the API server:**
+1. **Create and activate virtual environment:**
    ```bash
-   uvicorn api.api_main:app --reload
+   python -m venv .venv
+   source .venv/bin/activate  # On Linux/Mac
+   # or
+   .venv\Scripts\activate     # On Windows
    ```
 
-2. **Start the frontend:**
+2. **Install Python requirements:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Install PyTorch requirements:**
+   ```bash
+   pip install -r requirements_torch.txt
+   ```
+
+4. **Download spaCy English model:**
+   ```bash
+   python -m spacy download en_core_web_trf
+   ```
+
+### Frontend Setup
+
+1. **Navigate to frontend directory:**
    ```bash
    cd frontend
+   ```
+
+2. **Install Node.js dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server:**
+   ```bash
    npm run dev
    ```
 
-3. **Process episodes:**
-   Run `main.py` to process individual episodes, or use the web interface's Processing tab.
+## Running the Application
 
-## Configuration
+### Backend Server
 
-The project includes a configuration system that allows you to customize processing behavior:
+To start the backend webserver:
 
-### Viewing Configuration
 ```bash
-python3 config_manager.py
+uvicorn api.api_main_updated:app --reload --host 0.0.0.0 --port 8000
 ```
 
-### Key Configuration Options
+### Frontend Development
 
-**Use Original Plot as Summary:**
-```bash
-# Use original plot files as summarized plots (faster processing)
-python3 config_manager.py set-original true
+The frontend will be available at `http://localhost:3000` when running in development mode.
 
-# Generate new summarized plots using LLM (default)
-python3 config_manager.py set-original false
-```
+## Requirements
 
-When `use_original_plot_as_summary` is set to `true`, the system will copy the original plot file as the summarized plot instead of generating a new summary using LLM. This significantly speeds up processing while maintaining compatibility with the narrative arc extraction system.
+- Python 3.8+
+- Node.js 16+
+- Virtual environment (recommended)
 
-## Data Management
 
-### Processing Data
-Use the web interface's "Processing" tab to process episodes and generate narrative arcs, or run:
-```bash
-python main.py --series GA --season S01 --episode E01
-```
-
-### Cleaning Processed Data
-The project includes tools to clean processed data while preserving original source files:
-
-#### Interactive Cleanup (Recommended)
-```bash
-./clean_data_interactive.sh
-```
-
-#### Command Line Cleanup
-```bash
-# Preview what would be deleted
-python3 clean_data.py --dry-run
-
-# Clean all processed data
-python3 clean_data.py
-
-# Clean specific series
-python3 clean_data.py --series GA
-
-# Clean specific season
-python3 clean_data.py --series GA --season S01
-```
-
-**Note:** The cleaning scripts preserve:
-- `*_plot.txt` (original plot files)
-- `*_full_dialogues.json` (original dialogue files)
-
-All other processed files (entities, semantic segments, narrative arcs, etc.) will be deleted.
-
-## Project Structure
-
-- `data/` - TV series data organized by series/season/episode
-- `frontend/` - React-based web interface
-- `api/` - FastAPI backend
-- `src/` - Core processing modules
-- `main.py` - Episode processing script
-- `clean_data.py` - Data cleaning utility

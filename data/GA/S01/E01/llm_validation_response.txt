@@ -1,0 +1,56 @@
+[
+    {
+        "entity_name": "izzie_stevens",
+        "best_appellation": "Dr. Izzie Stevens",
+        "appellations": ["Izzie", "Dr. Stevens", "Izzie Stevens", "Dr. Izzie Stevens"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "derek_shepherd",
+        "best_appellation": "Dr. Derek Shepherd",
+        "appellations": ["Derek", "Dr. Shepherd", "Derek Shepherd", "Dr. Derek Shepherd"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "miranda_bailey",
+        "best_appellation": "Dr. Miranda Bailey",
+        "appellations": ["Dr. Bailey", "Miranda Bailey", "Dr. Miranda Bailey"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "preston_burke",
+        "best_appellation": "Dr. Preston Burke",
+        "appellations": ["Dr. Burke", "Preston Burke", "Dr. Preston Burke"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "katie_bryce",
+        "best_appellation": "Katie Bryce",
+        "appellations": ["Katie", "Katie Bryce"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "meredith_gray",
+        "best_appellation": "Dr. Meredith Gray",
+        "appellations": ["Meredith", "Meredith Gray", "Dr. Meredith Gray"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "george_omalley",
+        "best_appellation": "Dr. George O'Malley",
+        "appellations": ["George", "George O'Malley", "Dr. George O'Malley", "007"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "cristina_yang",
+        "best_appellation": "Dr. Cristina Yang",
+        "appellations": ["Cristina", "Cristina Yang", "Dr. Cristina Yang"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "mr_bryce",
+        "best_appellation": "Mr. Bryce",
+        "appellations": ["Mr. Bryce"],
+        "biological_sex": "M"
+    }
+]

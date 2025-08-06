@@ -1,0 +1,290 @@
+{
+  "scenes": [
+    {
+      "scene_number": 1,
+      "plot_segment": "A voice narrates about 'the game,' reflecting on whether a person has what it takes to play. The narrator mentions their mother was one of the greats and expresses self-doubt about their own abilities.",
+      "is_recap": false,
+      "start_time": "00:00:04,097",
+      "end_time": "00:00:18,140",
+      "start_seconds": 4.097,
+      "end_seconds": 18.14,
+      "start_subtitle_index": 0,
+      "end_subtitle_index": 3
+    },
+    {
+      "scene_number": 2,
+      "plot_segment": "In a house, a woman and a man have an awkward morning conversation. The woman insists the man leave because she is late for her first day of work. They discuss whether she lives there; she explains she moved from Boston two weeks ago and is selling her mother's house. The man apologizes, thinking her mother is dead, but she clarifies her mother is alive. The woman says they don't need to exchange details or pretend to care. She goes upstairs to shower, telling the man to be gone when she returns. They exchange names: Derek and Meredith. Meredith says goodbye to Derek.",
+      "is_recap": false,
+      "start_time": "00:00:37,173",
+      "end_time": "00:01:45,603",
+      "start_seconds": 37.173,
+      "end_seconds": 105.60300000000001,
+      "start_subtitle_index": 4,
+      "end_subtitle_index": 45
+    },
+    {
+      "scene_number": 3,
+      "plot_segment": "At a hospital, a senior doctor addresses a group of new interns, telling them they are now doctors and warning them about the challenges ahead. He says most will not make it through the program. The narrator again expresses self-doubt.",
+      "is_recap": false,
+      "start_time": "00:02:06,155",
+      "end_time": "00:02:52,007",
+      "start_seconds": 126.155,
+      "end_seconds": 172.007,
+      "start_subtitle_index": 46,
+      "end_subtitle_index": 59
+    },
+    {
+      "scene_number": 4,
+      "plot_segment": "In a hospital corridor, several interns gather. One comments on the low number of women and mentions a rumor that one is a model. Two interns, Cristina and George, discuss being assigned to a resident named Bailey, who is referred to as 'the Nazi.' Another intern, Izzie, introduces herself. Dr. Bailey arrives and lays out five strict rules for the interns, including not waking her unless a patient is dying and always moving when she moves. She assigns them to a 48-hour shift.",
+      "is_recap": false,
+      "start_time": "00:03:03,546",
+      "end_time": "00:05:12,170",
+      "start_seconds": 183.546,
+      "end_seconds": 312.17,
+      "start_subtitle_index": 60,
+      "end_subtitle_index": 110
+    },
+    {
+      "scene_number": 5,
+      "plot_segment": "A medical emergency arrives: Katie Bryce, a 15-year-old girl with seizures. The team works to stabilize her. Dr. Bailey assigns Cristina to labs, George to patient workups, Meredith to take Katie for a CT, and Izzie to perform rectal exams.",
+      "is_recap": false,
+      "start_time": "00:05:30,511",
+      "end_time": "00:06:22,252",
+      "start_seconds": 330.511,
+      "end_seconds": 382.252,
+      "start_subtitle_index": 111,
+      "end_subtitle_index": 129
+    },
+    {
+      "scene_number": 6,
+      "plot_segment": "In a hospital room, Meredith checks on Katie, who is upset about missing her pageant. Katie is frustrated and questions Meredith's competence. Meanwhile, Izzie prepares to perform a rectal exam on a patient.",
+      "is_recap": false,
+      "start_time": "00:06:38,584",
+      "end_time": "00:08:33,878",
+      "start_seconds": 398.584,
+      "end_seconds": 513.878,
+      "start_subtitle_index": 130,
+      "end_subtitle_index": 170
+    },
+    {
+      "scene_number": 7,
+      "plot_segment": "In a break area, several interns talk about their experiences. Izzie complains about performing rectal exams. The group gossips about Meredith's mother, Ellis Grey, a famous surgeon. Cristina expresses envy, and George is unfamiliar with Ellis Grey's reputation.",
+      "is_recap": false,
+      "start_time": "00:08:34,717",
+      "end_time": "00:09:22,355",
+      "start_seconds": 514.717,
+      "end_seconds": 562.355,
+      "start_subtitle_index": 171,
+      "end_subtitle_index": 199
+    },
+    {
+      "scene_number": 8,
+      "plot_segment": "Dr. Burke announces that George has been chosen to perform the first surgery, an appendectomy. Other interns are surprised. In a private conversation, two doctors discuss George's selection, suggesting it is a tactic to intimidate the group.",
+      "is_recap": false,
+      "start_time": "00:09:23,875",
+      "end_time": "00:10:16,883",
+      "start_seconds": 563.875,
+      "end_seconds": 616.883,
+      "start_subtitle_index": 200,
+      "end_subtitle_index": 221
+    },
+    {
+      "scene_number": 9,
+      "plot_segment": "Katie's parents arrive and ask about her condition. An intern is unable to answer their questions and goes to find the attending doctor. Meredith is told that Dr. Shepherd is now in charge of Katie's case.",
+      "is_recap": false,
+      "start_time": "00:10:17,624",
+      "end_time": "00:10:53,534",
+      "start_seconds": 617.624,
+      "end_seconds": 653.534,
+      "start_subtitle_index": 222,
+      "end_subtitle_index": 237
+    },
+    {
+      "scene_number": 10,
+      "plot_segment": "Meredith and Derek (now Dr. Shepherd) have an awkward conversation about their previous night together. Meredith insists they pretend it never happened because of their professional relationship. Derek jokes about the situation, but Meredith is firm.",
+      "is_recap": false,
+      "start_time": "00:10:57,346",
+      "end_time": "00:12:13,793",
+      "start_seconds": 657.346,
+      "end_seconds": 733.793,
+      "start_subtitle_index": 238,
+      "end_subtitle_index": 269
+    },
+    {
+      "scene_number": 11,
+      "plot_segment": "In the operating room, George prepares for his appendectomy while other interns watch and place bets on his performance. George begins the surgery but encounters complications. Dr. Burke takes over, and George is removed from the OR. The other interns later tease George, calling him '007' (license to kill).",
+      "is_recap": false,
+      "start_time": "00:12:16,076",
+      "end_time": "00:15:11,852",
+      "start_seconds": 736.076,
+      "end_seconds": 911.852,
+      "start_subtitle_index": 270,
+      "end_subtitle_index": 332
+    },
+    {
+      "scene_number": 12,
+      "plot_segment": "George is upset about being called '007.' Other interns try to reassure him, but he remains discouraged. Suddenly, there is an emergency with Katie Bryce, and the interns rush to respond.",
+      "is_recap": false,
+      "start_time": "00:15:12,332",
+      "end_time": "00:19:35,512",
+      "start_seconds": 912.332,
+      "end_seconds": 1175.512,
+      "start_subtitle_index": 333,
+      "end_subtitle_index": 432
+    },
+    {
+      "scene_number": 13,
+      "plot_segment": "Katie suffers a cardiac arrest. The interns and staff attempt to revive her, using medication and defibrillation. After several attempts, her heart rhythm returns. Dr. Bailey and Dr. Shepherd arrive and criticize the interns for not paging them immediately.",
+      "is_recap": false,
+      "start_time": "00:19:47,997",
+      "end_time": "00:22:32,163",
+      "start_seconds": 1187.997,
+      "end_seconds": 1352.163,
+      "start_subtitle_index": 433,
+      "end_subtitle_index": 492
+    },
+    {
+      "scene_number": 14,
+      "plot_segment": "Katie's parents confront Dr. Shepherd, demanding answers about their daughter's condition. Dr. Shepherd admits he does not know the cause of her seizures yet, which angers Mr. Bryce.",
+      "is_recap": false,
+      "start_time": "00:22:32,182",
+      "end_time": "00:23:08,782",
+      "start_seconds": 1352.182,
+      "end_seconds": 1388.782,
+      "start_subtitle_index": 493,
+      "end_subtitle_index": 511
+    },
+    {
+      "scene_number": 15,
+      "plot_segment": "In another case, Dr. Burke explains a bypass procedure to a patient named Tony Savage and his wife, Gloria. An intern reassures Gloria that Tony will be fine, promising a good outcome.",
+      "is_recap": false,
+      "start_time": "00:23:10,125",
+      "end_time": "00:23:50,680",
+      "start_seconds": 1390.125,
+      "end_seconds": 1430.68,
+      "start_subtitle_index": 512,
+      "end_subtitle_index": 530
+    },
+    {
+      "scene_number": 16,
+      "plot_segment": "In a break area, an intern practices suturing on a banana. Another intern apologizes for being mean when tired. Dr. Shepherd gathers the interns and asks for their help diagnosing Katie Bryce. He offers the incentive that whoever solves the case will assist in surgery.",
+      "is_recap": false,
+      "start_time": "00:23:54,625",
+      "end_time": "00:25:43,313",
+      "start_seconds": 1434.625,
+      "end_seconds": 1543.313,
+      "start_subtitle_index": 531,
+      "end_subtitle_index": 572
+    },
+    {
+      "scene_number": 17,
+      "plot_segment": "Cristina and Meredith agree to work together to solve Katie's case. Meredith reveals to Cristina that she had sex with Dr. Shepherd. They review Katie's symptoms and medical history, considering various diagnoses.",
+      "is_recap": false,
+      "start_time": "00:25:43,472",
+      "end_time": "00:27:36,972",
+      "start_seconds": 1543.472,
+      "end_seconds": 1656.972,
+      "start_subtitle_index": 573,
+      "end_subtitle_index": 620
+    },
+    {
+      "scene_number": 18,
+      "plot_segment": "Meredith realizes that Katie's minor fall during pageant rehearsal could have caused a rare brain aneurysm. Meredith and Cristina present their findings to Dr. Shepherd, who confirms a subarachnoid hemorrhage and prepares for surgery. Dr. Shepherd chooses Meredith to assist in the operation.",
+      "is_recap": false,
+      "start_time": "00:27:38,336",
+      "end_time": "00:29:32,226",
+      "start_seconds": 1658.336,
+      "end_seconds": 1772.226,
+      "start_subtitle_index": 621,
+      "end_subtitle_index": 662
+    },
+    {
+      "scene_number": 19,
+      "plot_segment": "Cristina is disappointed that Meredith was chosen to assist in surgery. Cristina accuses Meredith of being cutthroat and benefiting from her connections. Meredith denies this, and Cristina expresses frustration about not getting opportunities.",
+      "is_recap": false,
+      "start_time": "00:29:40,314",
+      "end_time": "00:32:24,119",
+      "start_seconds": 1780.314,
+      "end_seconds": 1944.119,
+      "start_subtitle_index": 663,
+      "end_subtitle_index": 702
+    },
+    {
+      "scene_number": 20,
+      "plot_segment": "Dr. Burke informs Gloria Savage that Tony died during surgery due to extensive heart damage. Gloria is devastated. An intern reflects on having promised Gloria a good outcome and is reprimanded by Dr. Bailey for making promises to patients' families.",
+      "is_recap": false,
+      "start_time": "00:32:37,357",
+      "end_time": "00:33:51,516",
+      "start_seconds": 1957.357,
+      "end_seconds": 2031.516,
+      "start_subtitle_index": 703,
+      "end_subtitle_index": 713
+    },
+    {
+      "scene_number": 21,
+      "plot_segment": "Meredith prepares Katie for surgery, promising to make her look cool. Meredith asks Dr. Shepherd if she was chosen because they slept together. He jokes but then tells her she earned the right to assist. Meredith is encouraged to take the opportunity.",
+      "is_recap": false,
+      "start_time": "00:33:52,317",
+      "end_time": "00:34:25,096",
+      "start_seconds": 2032.317,
+      "end_seconds": 2065.096,
+      "start_subtitle_index": 714,
+      "end_subtitle_index": 724
+    },
+    {
+      "scene_number": 22,
+      "plot_segment": "Several interns reflect on their experiences and insecurities. George laments his failures and wonders if he is suited to be a surgeon. Cristina recalls her mother's doubts about her abilities. They discuss the pressures of the job and the desire to succeed.",
+      "is_recap": false,
+      "start_time": "00:34:39,793",
+      "end_time": "00:35:32,523",
+      "start_seconds": 2079.793,
+      "end_seconds": 2132.523,
+      "start_subtitle_index": 725,
+      "end_subtitle_index": 737
+    },
+    {
+      "scene_number": 23,
+      "plot_segment": "A senior doctor quizzes George on the causes of post-operative fever. Cristina correctly answers, diagnosing a pulmonary embolus in a patient. The doctor recognizes Meredith as Ellis Grey's daughter and welcomes her.",
+      "is_recap": false,
+      "start_time": "00:35:40,414",
+      "end_time": "00:36:57,527",
+      "start_seconds": 2140.414,
+      "end_seconds": 2217.527,
+      "start_subtitle_index": 738,
+      "end_subtitle_index": 762
+    },
+    {
+      "scene_number": 24,
+      "plot_segment": "In the operating room, Dr. Shepherd prepares for surgery, telling the team it's a beautiful night to save lives. Meredith narrates about the challenges and responsibilities of being a surgeon, expressing her love for the work.",
+      "is_recap": false,
+      "start_time": "00:37:15,849",
+      "end_time": "00:39:03,030",
+      "start_seconds": 2235.849,
+      "end_seconds": 2343.03,
+      "start_subtitle_index": 763,
+      "end_subtitle_index": 774
+    },
+    {
+      "scene_number": 25,
+      "plot_segment": "After surgery, Meredith and Derek have a brief conversation, agreeing not to have an emotional moment. Meredith and Cristina exchange tired banter. Izzie expresses excitement about the experience of surgery.",
+      "is_recap": false,
+      "start_time": "00:39:03,451",
+      "end_time": "00:40:56,923",
+      "start_seconds": 2343.451,
+      "end_seconds": 2456.923,
+      "start_subtitle_index": 775,
+      "end_subtitle_index": 795
+    },
+    {
+      "scene_number": 26,
+      "plot_segment": "Meredith narrates that she and the other interns survived their first shift. She decides to keep her mother's house and considers getting roommates. Meredith visits her mother, who does not recognize her. Meredith reminds her mother that she was a surgeon.",
+      "is_recap": false,
+      "start_time": "00:40:56,943",
+      "end_time": "00:42:25,391",
+      "start_seconds": 2456.943,
+      "end_seconds": 2545.391,
+      "start_subtitle_index": 796,
+      "end_subtitle_index": 819
+    }
+  ]
+}

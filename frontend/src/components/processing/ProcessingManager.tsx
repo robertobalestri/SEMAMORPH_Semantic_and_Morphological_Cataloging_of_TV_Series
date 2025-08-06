@@ -158,10 +158,8 @@ export const ProcessingManager: React.FC<ProcessingManagerProps> = ({ series }) 
       }
     } catch (error) {
       console.error('Error fetching available series:', error);
-      setAvailableSeries(['GA', 'FIABA']); // Default fallback
-      if (!selectedSeries) {
-        setSelectedSeries('GA');
-      }
+      // No fallback - let the UI handle empty series list
+      setAvailableSeries([]);
     }
   }, [selectedSeries]);
 

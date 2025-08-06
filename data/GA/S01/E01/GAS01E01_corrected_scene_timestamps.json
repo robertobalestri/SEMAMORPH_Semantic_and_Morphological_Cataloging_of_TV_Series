@@ -1,0 +1,290 @@
+{
+  "scenes": [
+    {
+      "scene_number": 1,
+      "plot_segment": "Meredith Grey narrates about the pressures of becoming a surgeon, questioning whether she has what it takes to succeed, especially in the shadow of her mother, Ellis Grey, a renowned surgeon. As Meredith wakes up in bed next to Derek Shepherd after a one-night stand, she is embarrassed and urges him to leave because she is late for her first day as a surgical intern at Seattle Grace Hospital. Derek tries to prolong their flirtation, but Meredith insists he go, and they awkwardly exchange names before she rushes out to start her new job.",
+      "is_recap": false,
+      "start_time": "00:00:04,097",
+      "end_time": "00:00:18,140",
+      "start_seconds": 4.097,
+      "end_seconds": 18.14,
+      "start_subtitle_index": 0,
+      "end_subtitle_index": 3
+    },
+    {
+      "scene_number": 2,
+      "plot_segment": "Meredith Grey wakes up in a stranger\u2019s house after a one-night stand with Derek Shepherd. Embarrassed and pressed for time, Meredith urges Derek to leave because she is late for her first day as a surgical intern at Seattle Grace Hospital. Derek tries to prolong their flirtatious conversation, but Meredith insists he go, clarifying that she moved from Boston two weeks ago and is staying at her mother Ellis Grey\u2019s house while preparing to sell it. When Derek assumes her mother is dead, Meredith corrects him, stating her mother is alive. Meredith makes it clear they don\u2019t need to exchange personal details or pretend to care about each other. As she heads upstairs to shower, she tells Derek to be gone when she returns. Before parting, they finally introduce themselves by name\u2014Meredith and Derek\u2014and Meredith says goodbye, still unaware that Derek is an attending surgeon at her new hospital.",
+      "is_recap": false,
+      "start_time": "00:00:37,173",
+      "end_time": "00:01:45,603",
+      "start_seconds": 37.173,
+      "end_seconds": 105.60300000000001,
+      "start_subtitle_index": 4,
+      "end_subtitle_index": 45
+    },
+    {
+      "scene_number": 3,
+      "plot_segment": "At Seattle Grace Hospital, Meredith Grey and the other new surgical interns\u2014Cristina Yang, George O'Malley, and Izzie Stevens\u2014gather for orientation. Meredith internally reflects on the daunting challenges ahead and her uncertainty about living up to her mother Ellis Grey\u2019s legacy. Dr. Richard Webber, the Chief of Surgery, addresses the group, emphasizing the intensity of the program and warning that only a few will make it through. As Dr. Webber calls out their names and assignments, the interns size each other up, with Cristina noting the small number of women and George mentioning that one intern is rumored to be a model. The group\u2019s nerves and anticipation are palpable as they prepare to begin their first day as surgical interns.",
+      "is_recap": false,
+      "start_time": "00:02:06,155",
+      "end_time": "00:02:52,007",
+      "start_seconds": 126.155,
+      "end_seconds": 172.007,
+      "start_subtitle_index": 46,
+      "end_subtitle_index": 59
+    },
+    {
+      "scene_number": 4,
+      "plot_segment": "In a bustling hospital corridor at Seattle Grace, new surgical interns Meredith Grey, Cristina Yang, George O'Malley, and Izzie Stevens gather for orientation. Cristina observes the low number of women among the interns, while George mentions a rumor that one of them is a model. Izzie introduces herself to the group, trying to break the tension. The conversation shifts to their assigned resident, Dr. Miranda Bailey, who is notoriously strict and referred to as \"the Nazi.\" Dr. Bailey arrives and immediately asserts her authority, laying out five uncompromising rules: no sucking up, answer every page at a run, never wake her unless a patient is dying, don\u2019t let a dying patient be dead when she arrives, and always move when she moves. She informs the interns that they are starting with a grueling 48-hour shift, making it clear that she expects nothing less than total commitment and discipline from each of them. The interns exchange anxious glances, realizing the intensity of the challenge ahead.",
+      "is_recap": false,
+      "start_time": "00:03:03,546",
+      "end_time": "00:05:12,170",
+      "start_seconds": 183.546,
+      "end_seconds": 312.17,
+      "start_subtitle_index": 60,
+      "end_subtitle_index": 110
+    },
+    {
+      "scene_number": 5,
+      "plot_segment": "A medical emergency arrives as Katie Bryce, a 15-year-old rhythmic gymnast experiencing unexplained seizures, is rushed into the ER. Dr. Miranda Bailey quickly takes charge, assigning tasks to the new surgical interns: Cristina Yang is told to handle Katie\u2019s labs, George O\u2019Malley is given patient workups, Meredith Grey is instructed to escort Katie for a CT scan, and Izzie Stevens is assigned to perform rectal exams on other patients. The interns scramble to follow Bailey\u2019s orders, feeling the pressure of their first day as they begin to navigate their new roles and responsibilities under Bailey\u2019s strict supervision.",
+      "is_recap": false,
+      "start_time": "00:05:30,511",
+      "end_time": "00:06:22,252",
+      "start_seconds": 330.511,
+      "end_seconds": 382.252,
+      "start_subtitle_index": 111,
+      "end_subtitle_index": 129
+    },
+    {
+      "scene_number": 6,
+      "plot_segment": "Meredith Grey checks on Katie Bryce, the teenage patient frustrated about missing her beauty pageant due to her seizures. Katie is sarcastic and questions Meredith\u2019s competence, expressing anger about her situation. Meredith tries to reassure her while gathering information about Katie\u2019s symptoms. Meanwhile, Izzie Stevens prepares to perform a rectal exam on a male patient, nervously introducing herself and attempting to maintain professionalism despite her discomfort with the task.",
+      "is_recap": false,
+      "start_time": "00:06:38,584",
+      "end_time": "00:08:33,878",
+      "start_seconds": 398.584,
+      "end_seconds": 513.878,
+      "start_subtitle_index": 130,
+      "end_subtitle_index": 170
+    },
+    {
+      "scene_number": 7,
+      "plot_segment": "In the hospital break room, Izzie Stevens vents to the other interns\u2014Meredith Grey, Cristina Yang, and George O\u2019Malley\u2014about being assigned a long list of rectal exams by Dr. Miranda Bailey, feeling singled out and frustrated. Cristina jokes about the indignities of intern life and shifts the conversation to Meredith\u2019s mother, Ellis Grey, expressing envy over Meredith\u2019s famous surgical lineage. Izzie admires Ellis\u2019s reputation, while George admits he\u2019s never heard of her, surprising the others. Alex Karev enters, making a dismissive remark about Izzie\u2019s tasks and teasing her by calling her a nurse, which irritates her. The group continues to gossip about Ellis Grey and speculate about the pressures Meredith faces, highlighting the mix of rivalry and camaraderie among the new interns.",
+      "is_recap": false,
+      "start_time": "00:08:34,717",
+      "end_time": "00:09:22,355",
+      "start_seconds": 514.717,
+      "end_seconds": 562.355,
+      "start_subtitle_index": 171,
+      "end_subtitle_index": 199
+    },
+    {
+      "scene_number": 8,
+      "plot_segment": "Dr. Miranda Bailey gathers the interns\u2014Meredith Grey, Cristina Yang, George O'Malley, Izzie Stevens, and Alex Karev\u2014and announces that George has been selected to scrub in for the first surgery, an appendectomy. The other interns, especially Cristina and Alex, are visibly surprised and skeptical about George\u2019s abilities. As George processes the news, Cristina and Alex privately discuss Bailey\u2019s decision, speculating that choosing George is a deliberate move to intimidate the group and set the tone for their internship. Izzie expresses concern for George, while Meredith observes the group\u2019s reactions, noting the competitive atmosphere among the interns.",
+      "is_recap": false,
+      "start_time": "00:09:23,875",
+      "end_time": "00:10:16,883",
+      "start_seconds": 563.875,
+      "end_seconds": 616.883,
+      "start_subtitle_index": 200,
+      "end_subtitle_index": 221
+    },
+    {
+      "scene_number": 9,
+      "plot_segment": "Katie Bryce\u2019s parents arrive at the nurses\u2019 station, anxious for information about their daughter\u2019s worsening seizures. George O\u2019Malley, still flustered from his earlier surgical mishap, is unable to answer their questions and nervously promises to find someone who can help. He quickly leaves to get Dr. Miranda Bailey. Meanwhile, Meredith Grey is informed by Bailey that Dr. Derek Shepherd, the attending neurosurgeon, is now taking over Katie\u2019s case. Meredith and Cristina Yang exchange glances, realizing the significance of Dr. Shepherd\u2019s involvement and the pressure to solve Katie\u2019s mysterious condition.",
+      "is_recap": false,
+      "start_time": "00:10:17,624",
+      "end_time": "00:10:53,534",
+      "start_seconds": 617.624,
+      "end_seconds": 653.534,
+      "start_subtitle_index": 222,
+      "end_subtitle_index": 237
+    },
+    {
+      "scene_number": 10,
+      "plot_segment": "Meredith Grey and Derek Shepherd wake up together after a one-night stand at Meredith\u2019s house. Meredith, realizing she is late for her first day as a surgical intern at Seattle Grace Hospital, hurriedly gets dressed and insists that Derek leave. Derek tries to lighten the mood with flirtatious banter, but Meredith is embarrassed and focused on getting to work on time. They awkwardly exchange names for the first time, only now learning each other\u2019s full names. Meredith firmly tells Derek that their night together should be forgotten, emphasizing the need for professionalism as she rushes out the door to start her internship.",
+      "is_recap": false,
+      "start_time": "00:10:57,346",
+      "end_time": "00:12:13,793",
+      "start_seconds": 657.346,
+      "end_seconds": 733.793,
+      "start_subtitle_index": 238,
+      "end_subtitle_index": 269
+    },
+    {
+      "scene_number": 11,
+      "plot_segment": "In the operating room, George O'Malley nervously prepares to perform his first solo surgery, an appendectomy, under the supervision of Dr. Preston Burke. Cristina Yang, Alex Karev, Izzie Stevens, and Meredith Grey watch from the gallery, with Cristina and Alex making bets on whether George will succeed or fail. As George begins the procedure, Dr. Miranda Bailey observes from the sidelines. Initially, George follows the steps correctly, but he soon becomes flustered and accidentally causes internal bleeding. Dr. Burke quickly intervenes, taking over the surgery and instructing George to step aside. Humiliated, George leaves the OR while the other interns, especially Cristina and Alex, mock him for his mistake. Later, in the locker room, the group teases George by giving him the nickname \"007,\" implying he has a \"license to kill\" after his near-disastrous performance.",
+      "is_recap": false,
+      "start_time": "00:12:16,076",
+      "end_time": "00:15:11,852",
+      "start_seconds": 736.076,
+      "end_seconds": 911.852,
+      "start_subtitle_index": 270,
+      "end_subtitle_index": 332
+    },
+    {
+      "scene_number": 12,
+      "plot_segment": "George O'Malley is visibly upset after being nicknamed \"007\" by the other interns, a reference to his near-fatal mistake in the operating room. Cristina Yang and Izzie Stevens try to reassure him, but George remains discouraged and embarrassed by his performance. Alex Karev mocks George, fueling his insecurity. As the interns discuss the pressures of their first day and the competitive atmosphere, Dr. Miranda Bailey interrupts with news of an emergency: Katie Bryce, the teenage patient with unexplained seizures, is crashing. The interns immediately rush to Katie\u2019s room, scrambling to respond to her deteriorating condition as Bailey issues urgent instructions.",
+      "is_recap": false,
+      "start_time": "00:15:12,332",
+      "end_time": "00:19:35,512",
+      "start_seconds": 912.332,
+      "end_seconds": 1175.512,
+      "start_subtitle_index": 333,
+      "end_subtitle_index": 432
+    },
+    {
+      "scene_number": 13,
+      "plot_segment": "Katie Bryce suddenly goes into cardiac arrest while under the care of Meredith Grey, Cristina Yang, George O'Malley, Izzie Stevens, and Alex Karev. The interns immediately spring into action, with Meredith leading chest compressions as Cristina prepares the crash cart and George administers medications. Izzie and Alex assist, following Bailey\u2019s earlier instructions. Despite their efforts with CPR and defibrillation, Katie\u2019s heart does not respond at first, and the interns grow increasingly frantic. After several tense moments and repeated attempts, Katie\u2019s heart rhythm finally returns. Dr. Miranda Bailey and Dr. Derek Shepherd arrive just as Katie stabilizes and sharply reprimand the interns for not paging them sooner, emphasizing the seriousness of the situation and the importance of following protocol. The interns are left shaken by the close call and Bailey\u2019s stern warning.",
+      "is_recap": false,
+      "start_time": "00:19:47,997",
+      "end_time": "00:22:32,163",
+      "start_seconds": 1187.997,
+      "end_seconds": 1352.163,
+      "start_subtitle_index": 433,
+      "end_subtitle_index": 492
+    },
+    {
+      "scene_number": 14,
+      "plot_segment": "Katie Bryce\u2019s parents, Mr. and Mrs. Bryce, confront Dr. Derek Shepherd in the hallway, anxiously demanding answers about Katie\u2019s worsening seizures. Dr. Shepherd, accompanied by Meredith Grey, explains that despite extensive testing, they still have not identified the cause of Katie\u2019s condition. Mr. Bryce grows frustrated and raises his voice, insisting that someone must know what\u2019s wrong with his daughter. Dr. Shepherd reassures them that they are doing everything possible and promises to keep searching for answers, but the lack of a clear diagnosis leaves the Bryces visibly upset and desperate for reassurance.",
+      "is_recap": false,
+      "start_time": "00:22:32,182",
+      "end_time": "00:23:08,782",
+      "start_seconds": 1352.182,
+      "end_seconds": 1388.782,
+      "start_subtitle_index": 493,
+      "end_subtitle_index": 511
+    },
+    {
+      "scene_number": 15,
+      "plot_segment": "Dr. Preston Burke explains a coronary artery bypass procedure to a patient named Tony Savage and his wife, Gloria, outlining the risks and steps of the surgery. George O'Malley, one of the new surgical interns, stands by and tries to reassure Gloria, promising that Tony will be fine and that Dr. Burke is the best. Gloria, visibly anxious, clings to George\u2019s words, while Dr. Burke maintains a professional demeanor and reminds George not to make promises about surgical outcomes.",
+      "is_recap": false,
+      "start_time": "00:23:10,125",
+      "end_time": "00:23:50,680",
+      "start_seconds": 1390.125,
+      "end_seconds": 1430.68,
+      "start_subtitle_index": 512,
+      "end_subtitle_index": 530
+    },
+    {
+      "scene_number": 16,
+      "plot_segment": "In the break room, George O'Malley practices suturing on a banana while Izzie Stevens enters and apologizes to Cristina Yang for being short-tempered when she's tired. Dr. Derek Shepherd arrives and gathers Meredith Grey, Cristina, George, Izzie, and Alex Karev, explaining that Katie Bryce\u2019s seizures remain unexplained and asking for their help in diagnosing her. He offers an incentive: whichever intern correctly identifies the cause of Katie\u2019s condition will get to assist in her surgery. The interns exchange determined looks, eager for the opportunity, and immediately begin brainstorming possible diagnoses as Derek emphasizes the urgency of solving the case.",
+      "is_recap": false,
+      "start_time": "00:23:54,625",
+      "end_time": "00:25:43,313",
+      "start_seconds": 1434.625,
+      "end_seconds": 1543.313,
+      "start_subtitle_index": 531,
+      "end_subtitle_index": 572
+    },
+    {
+      "scene_number": 17,
+      "plot_segment": "Meredith Grey and Cristina Yang meet in an empty hallway to discuss their patient, Katie Bryce, whose seizures remain unexplained. As they review Katie\u2019s symptoms and medical history, Cristina pushes for a diagnosis, focused on the competitive promise that whoever solves the case will get to assist in surgery. Meredith, distracted, confides in Cristina that she slept with Dr. Derek Shepherd, not realizing he would be her attending neurosurgeon. Cristina is momentarily surprised but quickly redirects the conversation back to Katie\u2019s case, uninterested in Meredith\u2019s personal life. Together, they analyze Katie\u2019s recent activities and medical tests, considering possible causes for her seizures and debating potential diagnoses, determined to solve the mystery and prove themselves as surgical interns.",
+      "is_recap": false,
+      "start_time": "00:25:43,472",
+      "end_time": "00:27:36,972",
+      "start_seconds": 1543.472,
+      "end_seconds": 1656.972,
+      "start_subtitle_index": 573,
+      "end_subtitle_index": 620
+    },
+    {
+      "scene_number": 18,
+      "plot_segment": "Meredith Grey and Cristina Yang, after reviewing Katie Bryce\u2019s test results and medical history, realize that Katie\u2019s seizures could be caused by a subarachnoid hemorrhage resulting from a minor fall during her rhythmic gymnastics rehearsal. They urgently present their findings to Dr. Derek Shepherd, who listens as Meredith explains the connection between the fall and the rare brain aneurysm. Dr. Shepherd confirms their diagnosis of a subarachnoid hemorrhage and immediately prepares for surgery. He tells the group of interns that Meredith will assist him in the operation, emphasizing that she earned the opportunity through her diagnostic work, not because of their personal connection. Cristina is visibly disappointed but acknowledges Meredith\u2019s achievement, while the other interns react with a mix of surprise and envy as Meredith prepares to scrub in for the surgery.",
+      "is_recap": false,
+      "start_time": "00:27:38,336",
+      "end_time": "00:29:32,226",
+      "start_seconds": 1658.336,
+      "end_seconds": 1772.226,
+      "start_subtitle_index": 621,
+      "end_subtitle_index": 662
+    },
+    {
+      "scene_number": 19,
+      "plot_segment": "Cristina Yang confronts Meredith Grey after Derek Shepherd selects Meredith to assist in Katie Bryce\u2019s brain surgery. Cristina, frustrated and feeling overlooked, accuses Meredith of benefiting from her mother Ellis Grey\u2019s reputation and questions whether Meredith\u2019s relationship with Derek influenced his decision. Meredith insists she was chosen because she helped diagnose Katie\u2019s condition, not because of her connections or her night with Derek. Cristina, visibly upset, vents about how hard she works and how she keeps missing out on opportunities despite her efforts. The tension between them highlights the competitive atmosphere among the interns and the pressure they feel to prove themselves.",
+      "is_recap": false,
+      "start_time": "00:29:40,314",
+      "end_time": "00:32:24,119",
+      "start_seconds": 1780.314,
+      "end_seconds": 1944.119,
+      "start_subtitle_index": 663,
+      "end_subtitle_index": 702
+    },
+    {
+      "scene_number": 20,
+      "plot_segment": "Dr. Preston Burke informs Gloria Savage that her husband, Tony, died during surgery due to severe heart damage. Gloria is devastated by the news. George O'Malley, who had earlier reassured Gloria that Tony would be fine, is visibly shaken and guilt-ridden. Dr. Miranda Bailey sternly reprimands George for making promises to patients\u2019 families, emphasizing that he must never guarantee a positive outcome. George is left struggling with the weight of his mistake as Bailey walks away.",
+      "is_recap": false,
+      "start_time": "00:32:37,357",
+      "end_time": "00:33:51,516",
+      "start_seconds": 1957.357,
+      "end_seconds": 2031.516,
+      "start_subtitle_index": 703,
+      "end_subtitle_index": 713
+    },
+    {
+      "scene_number": 21,
+      "plot_segment": "Meredith Grey reassures Katie Bryce as she prepares her for surgery, promising to make her look \"cool\" with the surgical cap. Meredith then asks Dr. Derek Shepherd if she was chosen to assist in the operation because they slept together. Derek jokes at first but then sincerely tells Meredith that she earned her place by helping diagnose Katie\u2019s condition. Encouraged by his words, Meredith prepares to scrub in, realizing she has proven herself on her own merit.",
+      "is_recap": false,
+      "start_time": "00:33:52,317",
+      "end_time": "00:34:25,096",
+      "start_seconds": 2032.317,
+      "end_seconds": 2065.096,
+      "start_subtitle_index": 714,
+      "end_subtitle_index": 724
+    },
+    {
+      "scene_number": 22,
+      "plot_segment": "George O'Malley, still shaken from his failed appendectomy, confides in Cristina Yang and Izzie Stevens about his doubts and embarrassment, questioning whether he is truly cut out to be a surgeon after his mistake in the OR. Cristina, recalling her mother's skepticism about her abilities, admits to feeling the pressure to prove herself, especially in such a competitive environment. Izzie tries to reassure George, sharing her own insecurities about being underestimated because of her background as a model. The three interns discuss the intense expectations at Seattle Grace Hospital, their fears of not measuring up, and their determination to succeed despite setbacks and self-doubt.",
+      "is_recap": false,
+      "start_time": "00:34:39,793",
+      "end_time": "00:35:32,523",
+      "start_seconds": 2079.793,
+      "end_seconds": 2132.523,
+      "start_subtitle_index": 725,
+      "end_subtitle_index": 737
+    },
+    {
+      "scene_number": 23,
+      "plot_segment": "Dr. Bailey leads the interns\u2014Meredith Grey, Cristina Yang, George O'Malley, Izzie Stevens, and Alex Karev\u2014on rounds. Dr. Bailey quizzes George on the causes of post-operative fever, putting him on the spot in front of the group. George struggles to answer, while Cristina quickly and confidently lists possible causes, ultimately diagnosing a pulmonary embolism in a patient. As they move on, Dr. Webber, the Chief of Surgery, recognizes Meredith and welcomes her, mentioning her mother, Ellis Grey, and making it clear he expects great things from her. The other interns take note of Meredith\u2019s connection to the hospital\u2019s legendary surgeon.",
+      "is_recap": false,
+      "start_time": "00:35:40,414",
+      "end_time": "00:36:57,527",
+      "start_seconds": 2140.414,
+      "end_seconds": 2217.527,
+      "start_subtitle_index": 738,
+      "end_subtitle_index": 762
+    },
+    {
+      "scene_number": 24,
+      "plot_segment": "In the operating room, Dr. Derek Shepherd prepares for surgery on Katie Bryce, addressing the surgical team and encouraging them by saying, \"It's a beautiful night to save lives.\" Meredith Grey, chosen to assist in the procedure after diagnosing Katie\u2019s subarachnoid hemorrhage, joins Derek at the table. Cristina Yang and the other interns observe from the gallery, eager but anxious about their own progress. As Derek begins the operation, Meredith internally narrates about the immense responsibility and pressure that comes with being a surgeon, questioning whether she and her fellow interns have what it takes to succeed. She reflects on her mother Ellis Grey\u2019s legacy and her own determination to stay in the game, despite the challenges. The scene highlights the intensity of the surgical environment, the teamwork required, and Meredith\u2019s growing passion for the work.",
+      "is_recap": false,
+      "start_time": "00:37:15,849",
+      "end_time": "00:39:03,030",
+      "start_seconds": 2235.849,
+      "end_seconds": 2343.03,
+      "start_subtitle_index": 763,
+      "end_subtitle_index": 774
+    },
+    {
+      "scene_number": 25,
+      "plot_segment": "After Katie Bryce\u2019s surgery, Meredith Grey and Derek Shepherd briefly talk outside the OR, both agreeing to keep things professional and not have an emotional moment about their earlier connection. Meredith, exhausted, finds Cristina Yang, and the two exchange weary, sarcastic banter about surviving their first shift as surgical interns. Izzie Stevens, still energized, excitedly shares her enthusiasm about assisting in surgery, while George O\u2019Malley lingers nearby, still shaken by his earlier mistake in the OR. The group, tired but relieved, reflects on the intensity of their first day, supporting each other as they prepare for the challenges ahead.",
+      "is_recap": false,
+      "start_time": "00:39:03,451",
+      "end_time": "00:40:56,923",
+      "start_seconds": 2343.451,
+      "end_seconds": 2456.923,
+      "start_subtitle_index": 775,
+      "end_subtitle_index": 795
+    },
+    {
+      "scene_number": 26,
+      "plot_segment": "Meredith Grey narrates about surviving the first shift as a surgical intern and questions whether she and her fellow interns have what it takes to succeed. After a grueling day, Meredith decides to keep her mother Ellis Grey\u2019s house and considers finding roommates among the other interns. She visits Ellis at the care facility, where Ellis, suffering from memory loss, does not recognize Meredith as her daughter. Meredith gently reminds her mother that she was a renowned surgeon, reflecting on the legacy she is trying to live up to.",
+      "is_recap": false,
+      "start_time": "00:40:56,943",
+      "end_time": "00:42:25,391",
+      "start_seconds": 2456.943,
+      "end_seconds": 2545.391,
+      "start_subtitle_index": 796,
+      "end_subtitle_index": 819
+    }
+  ]
+}

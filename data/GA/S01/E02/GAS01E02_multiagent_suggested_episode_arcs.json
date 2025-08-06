@@ -1,68 +1,698 @@
 [
   {
-    "title": "Meredith’s Struggle for Boundaries: Navigating Professionalism, Trauma, and Personal Space",
+    "title": "Medical Case: Allison's Assault and the Severed Penis",
+    "arc_type": "Anthology Arc",
+    "description": "A single-episode medical case in which the interns at Seattle Grace Hospital treat Allison, a young woman who survives a rape attempt by fighting off her attacker and severing his penis. The arc follows the trauma care, evidence handling, police involvement, and the emotional impact on the interns, culminating in the attacker being brought in for treatment.",
+    "main_characters": "Allison; Meredith Grey; Alex Karev; Cristina Yang",
+    "interfering_episode_characters": "Dr. Miranda Bailey; Dr. Preston Burke; Attacker; Izzie Stevens; George O'Malley; Police; Hospital Staff",
+    "single_episode_progression_events": [
+      {
+        "content": "Allison is admitted to the ER after surviving a rape attempt, and the interns begin her trauma assessment.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Allison",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:05:34,231",
+        "end_timestamp": "00:05:55,624",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Alex and Cristina discover a severed penis in a specimen jar among Allison's belongings.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Alex Karev",
+          "Cristina Yang",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:06:53,170",
+        "end_timestamp": "00:07:17,701",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith is assigned to maintain the chain of custody for the severed penis until the police arrive.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:10:18,490",
+        "end_timestamp": "00:11:04,245",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The rape kit returns negative, confirming Allison was not raped.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Allison",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:06:33,471",
+        "end_timestamp": "00:06:35,014",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The hospital staff is instructed to be vigilant as the police search for Allison's attacker.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Hospital Staff",
+          "Police"
+        ],
+        "start_timestamp": "00:18:18,963",
+        "end_timestamp": "00:18:34,040",
+        "confidence_score": 0.88,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The attacker is brought into the hospital with severe injuries.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Attacker",
+          "Dr. Miranda Bailey",
+          "Dr. Preston Burke",
+          "Surgical Team"
+        ],
+        "start_timestamp": "00:21:36,227",
+        "end_timestamp": "00:21:48,015",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The surgical team determines the penis cannot be reattached.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Dr. Preston Burke",
+          "Surgical Team",
+          "Attacker"
+        ],
+        "start_timestamp": "00:22:08,184",
+        "end_timestamp": "00:22:25,634",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey informs the attacker that he will be incontinent and impotent for life.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Attacker"
+        ],
+        "start_timestamp": "00:39:14,514",
+        "end_timestamp": "00:39:22,284",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns reflect on the emotional toll of the case and the loneliness of patients like Allison.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:35:21,447",
+        "end_timestamp": "00:36:42,222",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Medical Case: Mrs. Liu's Wound and Language Barrier",
+    "arc_type": "Anthology Arc",
+    "description": "A single-episode medical case in which the interns at Seattle Grace treat Mrs. Liu, an undocumented Chinese-speaking patient, highlighting the challenges of communication, cultural differences, and access to care for vulnerable patients in the healthcare system.",
+    "main_characters": "Izzie Stevens; Mrs. Liu",
+    "interfering_episode_characters": "Cristina Yang; George O'Malley; Meredith Grey",
+    "single_episode_progression_events": [
+      {
+        "content": "Izzie Stevens attempts to communicate with Mrs. Liu, a Chinese-speaking patient with a wound, but cannot understand her due to the language barrier.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Mrs. Liu"
+        ],
+        "start_timestamp": "00:09:42,705",
+        "end_timestamp": "00:09:55,739",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie asks Cristina Yang for help translating, but Cristina reveals she does not speak Chinese.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:15:15,028",
+        "end_timestamp": "00:15:35,697",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Mrs. Liu expresses fear of entering the hospital because she is undocumented and worries about being reported.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Mrs. Liu",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:28:44,875",
+        "end_timestamp": "00:29:07,401",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie, George, and Meredith meet Mrs. Liu outside the hospital and reassure her that they will not report her immigration status.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Izzie Stevens",
+          "George O'Malley",
+          "Meredith Grey",
+          "Mrs. Liu"
+        ],
+        "start_timestamp": "00:28:03,125",
+        "end_timestamp": "00:29:29,815",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns treat Mrs. Liu's wound outside the hospital to accommodate her fears.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Izzie Stevens",
+          "George O'Malley",
+          "Meredith Grey",
+          "Mrs. Liu"
+        ],
+        "start_timestamp": "00:31:18,183",
+        "end_timestamp": "00:31:54,479",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith gives Mrs. Liu a card with instructions to return for follow-up care.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Meredith Grey",
+          "Mrs. Liu"
+        ],
+        "start_timestamp": "00:31:46,685",
+        "end_timestamp": "00:32:05,777",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Medical Case: The Baby with a Heart Murmur",
+    "arc_type": "Anthology Arc",
+    "description": "A single-episode medical case in which Meredith Grey notices a baby with a heart murmur and, despite hospital protocol, advocates for further evaluation. Dr. Burke confirms a congenital heart defect and schedules surgery, highlighting the challenges of balancing rules with patient advocacy.",
+    "main_characters": "Meredith Grey; Dr. Preston Burke",
+    "interfering_episode_characters": "Baby; Baby's Parents; Pediatrician",
+    "single_episode_progression_events": [
+      {
+        "content": "Meredith Grey notices a baby in the pediatric ward with a heart murmur during her rounds.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Meredith Grey",
+          "Baby"
+        ],
+        "start_timestamp": "00:19:03,864",
+        "end_timestamp": "00:19:08,749",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith Grey asks Dr. Preston Burke to examine the baby, but Dr. Burke refuses without a pediatric consult.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Dr. Preston Burke"
+        ],
+        "start_timestamp": "00:19:08,749",
+        "end_timestamp": "00:19:18,498",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith Grey informs the baby's parents about her concerns regarding the heart murmur.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Meredith Grey",
+          "Baby's Parents"
+        ],
+        "start_timestamp": "00:25:44,336",
+        "end_timestamp": "00:26:13,440",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "A confrontation occurs between the pediatric and surgical teams over Meredith Grey's actions.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Meredith Grey",
+          "Dr. Preston Burke",
+          "Pediatrician",
+          "Baby's Parents"
+        ],
+        "start_timestamp": "00:26:13,440",
+        "end_timestamp": "00:26:29,078",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Preston Burke examines the baby, orders tests, and confirms a congenital heart defect.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Dr. Preston Burke",
+          "Meredith Grey",
+          "Baby",
+          "Baby's Parents"
+        ],
+        "start_timestamp": "00:26:39,377",
+        "end_timestamp": "00:27:25,721",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Preston Burke schedules surgery for the baby and warns Meredith Grey not to undermine other doctors again.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Dr. Preston Burke",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:27:38,044",
+        "end_timestamp": "00:27:57,473",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "The Interns' Rivalries and Bonds in Surgical Residency",
     "arc_type": "Soap Arc",
-    "description": "Meredith attempts to establish boundaries in her personal and professional life—resisting romantic advances from Derek, grappling with the emotional impact of treating a rape victim who shares her shoes, and struggling to find suitable roommates while maintaining distance from her peers.",
-    "main_characters": "Meredith Grey; Derek Shepherd; George O’Malley; Izzie Stevens",
-    "interfering_episode_characters": "Cristina Yang; Bailey; Allison (rape victim)",
-    "single_episode_progression_string": "Meredith posts a roommate notice but repeatedly rejects George and Izzie as candidates, seeking emotional distance. She tries to draw a line with Derek, but they share a kiss, blurring boundaries. Treating Allison, a rape victim with the same shoes, triggers Meredith’s empathy and trauma, leading her to question her own vulnerability. Ultimately, she relents and invites George and Izzie to move in, signaling a shift toward accepting connection.",
-    "thematic_focus": "relationship_development",
-    "narrative_scope": "episode",
-    "consolidation_notes": ""
+    "description": "Meredith, Cristina, George, Izzie, and Alex navigate the intense pressures of surgical residency at Seattle Grace. As they compete for cases and recognition, they form shifting friendships, alliances, and rivalries. Their relationships are tested by the demands of the program, personal insecurities, and the need to prove themselves, shaping their sense of belonging and identity within the hospital.",
+    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Izzie Stevens; Alex Karev",
+    "interfering_episode_characters": "Miranda Bailey; Mrs. Liu",
+    "single_episode_progression_events": [
+      {
+        "content": "Dr. Miranda Bailey introduces Meredith, Cristina, George, Izzie, and Alex as the new interns and assigns them their first duties, establishing the competitive dynamic among them.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:00:31,373",
+        "end_timestamp": "00:03:49,069",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns gossip about Meredith's background as Ellis Grey's daughter, fueling curiosity and tension within the group.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:00:42,926",
+        "end_timestamp": "00:00:49,594",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith discusses her search for roommates, with Cristina, Izzie, and George expressing interest and negotiating living arrangements.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:00:52,775",
+        "end_timestamp": "00:00:54,295",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Alex and Cristina take the lead on the trauma case, competing for surgical involvement and recognition.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Alex Karev",
+          "Cristina Yang",
+          "Meredith Grey",
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:05:34,951",
+        "end_timestamp": "00:06:11,754",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie and Alex race to finish their patient rounds faster, escalating their rivalry.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:16:38,860",
+        "end_timestamp": "00:16:52,440",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie struggles with a language barrier while treating Mrs. Liu and seeks help from Cristina, leading to a moment of camaraderie.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Cristina Yang",
+          "Mrs. Liu"
+        ],
+        "start_timestamp": "00:09:42,705",
+        "end_timestamp": "00:09:48,503",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George expresses frustration about his code team duties and bonds with Izzie over the emotional toll of their work.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:33:51,680",
+        "end_timestamp": "00:34:12,371",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith, Izzie, and George work together to help Mrs. Liu outside the hospital, strengthening their bond as a team.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Meredith Grey",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Mrs. Liu"
+        ],
+        "start_timestamp": "00:28:03,125",
+        "end_timestamp": "00:32:05,777",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie confides in George about kissing another doctor, and they share a moment of levity about their lives as interns.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:20:23,788",
+        "end_timestamp": "00:20:54,255",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith decides to let George and Izzie move in with her, breaking her own boundary and solidifying their friendship.",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "Meredith Grey",
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:40:16,409",
+        "end_timestamp": "00:40:27,063",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina jokes that babies make Meredith soft as the interns celebrate their new living arrangement, highlighting their growing camaraderie.",
+        "ordinal_position": 11,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey",
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:40:31,451",
+        "end_timestamp": "00:40:39,061",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
   },
   {
-    "title": "Cristina and Alex: Reluctant Partners in Medical Hierarchy",
+    "title": "Meredith Grey and Derek Shepherd: Secret Romance and Professional Boundaries",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey and Derek Shepherd's romantic relationship begins with a one-night stand, only for Meredith to discover that Derek is her attending neurosurgeon at Seattle Grace Hospital. Their relationship is complicated by the need for secrecy, the challenge of maintaining professional boundaries, and the risk to Meredith's reputation and career as they navigate their personal and professional lives.",
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "Richard Webber",
+    "single_episode_progression_events": [
+      {
+        "content": "Meredith and Derek have an awkward conversation about their one-night stand, with Meredith insisting they pretend it never happened because he is her attending.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:00:15,672",
+        "end_timestamp": "00:00:27,349",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek flirts with Meredith during their hospital shift, and Meredith tries to set clear boundaries, telling him she will not date or sleep with him again.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:04:02,408",
+        "end_timestamp": "00:04:35,937",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Richard Webber interrupts Meredith and Derek's conversation, reinforcing the professional hierarchy.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd",
+          "Richard Webber"
+        ],
+        "start_timestamp": "00:04:39,762",
+        "end_timestamp": "00:05:04,560",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek tries to charm Meredith with talk about Seattle's ferry boats, but Meredith reiterates her refusal to cross professional lines.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:04:02,408",
+        "end_timestamp": "00:04:35,937",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith and Derek share a quiet moment at the end of the episode, acknowledging the ongoing tension and attraction between them.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:40:56,619",
+        "end_timestamp": "00:41:38,900",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Miranda Bailey's Mentorship of the Surgical Interns",
     "arc_type": "Genre-Specific Arc",
-    "description": "Cristina is forced to mentor Alex Karev, whom she dislikes, highlighting her frustration with the hospital’s hierarchy and the emotional labor of patient care, especially as she is repeatedly hugged by grateful patients.",
-    "main_characters": "Cristina Yang; Alex Karev",
-    "interfering_episode_characters": "Bailey; various patients",
-    "single_episode_progression_string": "Cristina is assigned Alex as her intern and immediately expresses disdain due to a prior insult. Despite their mutual dislike, they must collaborate to deliver lab results and manage patient interactions. Cristina’s discomfort with emotional displays is tested as she is repeatedly hugged, culminating in her deflecting a hug onto Alex. Their begrudging teamwork and banter set the tone for their evolving dynamic.",
-    "thematic_focus": "professional_conflict",
-    "narrative_scope": "episode",
-    "consolidation_notes": ""
+    "description": "Dr. Miranda Bailey establishes herself as a strict but effective mentor to the new surgical interns. Her demanding expectations and no-nonsense rules push the interns to confront their weaknesses, learn from their mistakes, and develop the resilience and skills necessary to survive the pressures of surgical training.",
+    "main_characters": "Miranda Bailey",
+    "interfering_episode_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev; Preston Burke; Richard Webber; Derek Shepherd; Rapist",
+    "single_episode_progression_events": [
+      {
+        "content": "Miranda Bailey introduces herself to the new interns, outlines the rules, and assigns each intern their initial duties, emphasizing the hospital hierarchy.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:00:15,585",
+        "end_timestamp": "00:02:55,956",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey warns the interns that their job is to keep her happy by doing the grunt work, not to seek surgical opportunities.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:03:04,444",
+        "end_timestamp": "00:03:39,610",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey assigns George to run the code team, placing him in a high-pressure, emotionally taxing role.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Miranda Bailey",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:02:55,956",
+        "end_timestamp": "00:02:57,658",
+        "confidence_score": 0.88,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey oversees the trauma case handled by the interns, monitoring their performance and adherence to protocol.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Alex Karev",
+          "Cristina Yang",
+          "Meredith Grey",
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:06:05,665",
+        "end_timestamp": "00:06:08,108",
+        "confidence_score": 0.85,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey delivers the news to the rapist that his injuries are permanent, demonstrating her authority and professionalism.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Rapist",
+          "Surgical Team"
+        ],
+        "start_timestamp": "00:39:14,514",
+        "end_timestamp": "00:39:22,284",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey warns the interns about the consequences of overstepping boundaries and the importance of respecting hospital protocols after Meredith's actions with the pediatric case.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:29:49,162",
+        "end_timestamp": "00:29:57,473",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
   },
   {
-    "title": "George’s Initiation by Fire: The Emotional Toll of Code Team Duty",
+    "title": "Preston Burke and Richard Webber: Ambition and the Chief of Surgery",
     "arc_type": "Genre-Specific Arc",
-    "description": "George faces the harsh realities of being on the code team, repeatedly losing patients and struggling with the emotional burden, while seeking independence from his family by wanting to move out.",
-    "main_characters": "George O’Malley",
-    "interfering_episode_characters": "Cristina Yang; Meredith Grey; Izzie Stevens",
-    "single_episode_progression_string": "George expresses his desire to move out from his mother’s care, hinting at wanting to be Meredith’s roommate. Assigned to the code team, he repeatedly attempts to revive patients but is forced to declare multiple deaths, culminating in a sense of defeat and emotional exhaustion. Cristina offers a pragmatic perspective, helping George process the inevitability of loss in medicine.",
-    "thematic_focus": "professional_growth",
-    "narrative_scope": "episode",
-    "consolidation_notes": ""
-  },
-  {
-    "title": "Izzie’s Compassion Beyond Protocol: Treating Undocumented Patients in Secret",
-    "arc_type": "Anthology Arc",
-    "description": "Izzie is confronted with the ethical and legal challenges of treating undocumented patients, ultimately choosing to help Ms. Lu’s daughter Ahn in secret, risking her job to provide care.",
-    "main_characters": "Izzie Stevens; Ms. Lu; Ahn",
-    "interfering_episode_characters": "Cristina Yang; Alex Karev",
-    "single_episode_progression_string": "Izzie struggles to communicate with Ms. Lu, a Chinese-speaking patient, and discovers her daughter Ahn has a serious injury but is afraid to seek help due to her undocumented status. Izzie secretly treats Ahn outside hospital protocol, gives her personal contact information, and warns her not to tell anyone, highlighting Izzie’s empathy and willingness to bend rules for patient care.",
-    "thematic_focus": "ethical_challenges",
-    "narrative_scope": "episode",
-    "consolidation_notes": ""
-  },
-  {
-    "title": "Burke and Derek: Rivalry for Chief Amidst High-Stakes Cases",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Burke and Derek’s professional rivalry intensifies as they compete for the Chief of Surgery position, set against the backdrop of complex cases, including the rape victim and a critical infant surgery.",
-    "main_characters": "Preston Burke; Derek Shepherd; Richard Webber",
-    "interfering_episode_characters": "Bailey; Meredith Grey",
-    "single_episode_progression_string": "Burke questions Richard about Derek’s recruitment, feeling threatened in his pursuit of Chief. Their rivalry is underscored by their handling of high-profile cases—Burke’s leadership in the infant’s surgery and Derek’s care for Allison. Burke ultimately asserts their competition, refusing Derek’s offer for camaraderie.",
-    "thematic_focus": "professional_conflict",
-    "narrative_scope": "episode",
-    "consolidation_notes": ""
-  },
-  {
-    "title": "Meredith’s Advocacy for Vulnerable Patients: Challenging Authority in Pediatrics",
-    "arc_type": "Anthology Arc",
-    "description": "Meredith risks professional repercussions by advocating for a baby she believes is in danger, challenging the pediatric team’s assessment and ultimately prompting Burke to intervene.",
-    "main_characters": "Meredith Grey; Preston Burke",
-    "interfering_episode_characters": "Pediatrics intern; Dr. Kay; Mr. and Mrs. Johnson",
-    "single_episode_progression_string": "Meredith notices a baby turning blue and, despite being told by the pediatric intern that the condition is benign, voices her concerns to the parents. This leads to conflict with the pediatric team, but Burke supports Meredith’s instincts, takes over the case, and allows her to assist in surgery, validating her advocacy.",
-    "thematic_focus": "ethical_challenges",
-    "narrative_scope": "episode",
-    "consolidation_notes": ""
+    "description": "Dr. Preston Burke aspires to become Chief of Surgery at Seattle Grace, but his ambitions are threatened by the arrival of Dr. Derek Shepherd and the high expectations set by Chief Richard Webber. Throughout the season, Burke navigates professional rivalries, institutional politics, and Webber's mentorship, all while striving to prove his worthiness for the hospital's top surgical position.",
+    "main_characters": "Preston Burke; Richard Webber",
+    "interfering_episode_characters": "Derek Shepherd; Meredith Grey; Baby's Parents",
+    "single_episode_progression_events": [
+      {
+        "content": "Preston Burke confronts Richard Webber about hiring Derek Shepherd, expressing concern for his own prospects as Chief of Surgery.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Preston Burke",
+          "Richard Webber"
+        ],
+        "start_timestamp": "00:15:47,950",
+        "end_timestamp": "00:16:15,460",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Richard Webber criticizes Preston Burke for only meeting expectations and challenges him to demonstrate why he deserves to be Chief.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Richard Webber",
+          "Preston Burke"
+        ],
+        "start_timestamp": "00:22:50,855",
+        "end_timestamp": "00:23:13,942",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Preston Burke refuses Meredith Grey's request to examine a pediatric patient without a Pediatrics consult, citing hospital protocol.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Preston Burke",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:19:03,864",
+        "end_timestamp": "00:19:18,498",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Preston Burke intervenes in the pediatric case after Meredith Grey alerts the baby's parents, orders diagnostic tests, and confirms a congenital heart defect.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Preston Burke",
+          "Meredith Grey",
+          "Baby's Parents"
+        ],
+        "start_timestamp": "00:25:36,230",
+        "end_timestamp": "00:26:14,101",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Preston Burke warns Meredith Grey not to undermine another doctor again, reinforcing his authority and adherence to hospital hierarchy.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Preston Burke",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:29:47,680",
+        "end_timestamp": "00:29:57,473",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
   }
 ]
