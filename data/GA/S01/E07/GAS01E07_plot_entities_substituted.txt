@@ -1,130 +1,112 @@
-A character narrates about the exhaustion of being an intern, noting that it's not just the job that keeps the character up all night.
-In a bedroom, someone is told to get up because it's 5:20 AM and there are rounds to do.
-Another person is urged to leave before others see the person.
-In another room, two people discuss the noise from the previous night, speculating about who was involved and joking about being jealous.
-The group of interns, including Dr. Meredith Gray, Dr. George O'Malley, and Dr. Izzie Stevens, discuss the events of the night, with one intern asking Dr. Meredith Gray who the guy was.
-Dr. Meredith Gray deflects, saying it's no one the group knows.
-The group jokes about Dr. Meredith Gray's sex life and the noise, and Dr. George O'Malley complains about not getting enough sleep.
-Dr. Meredith Gray expresses concern about Dr. Meredith Gray's roommates thinking Dr. Meredith Gray is getting special treatment.
-At the hospital, Dr. Miranda Bailey assigns Dr. George O'Malley, Dr. Cristina Yang, and Dr. Alex Karev to the clinic.
-Dr. Miranda Bailey tells Dr. Izzie Stevens to stay with Dr. Miranda Bailey for the day.
-Dr. Derek Shepherd and Dr. Miranda Bailey greet each other.
-Dr. Miranda Bailey notes Dr. Meredith Gray looks tired and warns Dr. Meredith Gray to pray the caffeine kicks in.
-Dr. Miranda Bailey gives Dr. Meredith Gray a list of tasks, including a consult in the pit for a girl with fever and abdominal pain, and other patient care duties.
-Dr. Miranda Bailey tells Dr. Meredith Gray to get started immediately.
-In the emergency department, a woman demands help because her boyfriend swallowed her keys.
-The boyfriend admits he did it so the woman wouldn't leave.
-Dr. Meredith Gray is told to locate the keys.
-Another patient is brought in with a gunshot wound, claiming his friend shot him as a favor because he likes the scars.
-The staff prepares to take the patient to the pit.
-A group of male characters discuss tattoos and wrestling with the gunshot patient, Digby Owens.
-Digby Owens explains Digby Owenss ethos about pain and commitment, referencing Digby Owenss wrestling background.
-Another character jokes about men in tights, and someone mentions a flu going around the hospital.
-Dr. Meredith Gray examines a young woman named Claire Rice, who resists an abdominal exam.
-Dr. Meredith Gray notices recent surgical scars and asks about the scars.
-Claire Rice begs Dr. Meredith Gray not to tell Claire Rice's parents.
-Dr. Meredith Gray deduces Claire Rice had surgery in Mexico to hide it from Claire Rice's parents and asks what procedure was done.
-A child named Jamie Hayes is discussed by Jamie Hayes's parents and a doctor.
-Jamie Hayes has had foot twitching for three months, and a CT scan showed a brain abnormality.
-Jamie Hayes’s parents brought Jamie Hayes to the hospital for better care.
-The doctor reassures Jamie Hayes's parents and says Dr. Derek Shepherd, a brain specialist, will see Jamie Hayes.
-In another area, a doctor discusses the boyfriend who swallowed keys and suggests a bronchoscopy.
-The intern is told to perform the procedure alone.
-The intern expresses gratitude for the opportunity, feeling the intern's hard work is being noticed.
-Dr. Meredith Gray reports to Dr. Miranda Bailey about the pit patient, Claire Rice, who is febrile and has peritoneal signs.
-Dr. Cristina Yang, who appears ill, returns to the clinic.
-Dr. Meredith Gray suspects Claire Rice had illegal surgery in Mexico, noting four laparoscopic scars and unawareness from Claire Rice's parents.
-Dr. Miranda Bailey instructs Dr. Meredith Gray to order a CT and gives Dr. Meredith Gray more tasks.
-Dr. Cristina Yang and another intern discuss the flu spreading in the hospital.
-A group of interns discuss Dr. Meredith Gray's relationship with Dr. Derek Shepherd.
-Some express concern that Dr. Meredith Gray is getting special treatment, while others debate whether Dr. Derek Shepherd is taking advantage of Dr. Meredith Gray.
-The group of interns argues about the risks of sleeping with attendings and the impact on the interns' careers.
-A staff member delivers Jamie Hayes' old CT scans to a doctor.
-Two staff members discuss Dr. Taylor and suspect Dr. Taylor smells of alcohol.
-One staff member says Dr. Taylor is the best anesthesiologist and will only worry if Dr. Taylor is too drunk to do Dr. Taylor's crossword.
-A doctor discusses Jamie Hayes' case with Dr. Derek Shepherd, noting Jamie Hayes' continuous seizure activity and the need for new scans.
-Dr. Derek Shepherd instructs the doctor to order new imaging, as Jamie Hayes' brain could look very different now.
-Doctors discuss Digby Owens' gunshot wound and Digby Owens' history of similar injuries.
-The doctors note Digby Owens likes pain and body art.
-Another doctor brings Claire Rice's CTs to Dr. Miranda Bailey, who observes that Claire Rice has had a gastric bypass, an unusual procedure for someone Claire Rice's age and size.
-Dr. Miranda Bailey explains the risks and complications to Claire Rice's parents, who are shocked.
-Claire Rice's parents agree to surgery to reverse the bypass.
-Jamie Hayes is prepared for an MRI.
-Jamie Hayes' parents express concern about the cost of surgery, but the doctor reassures Jamie Hayes' parents not to worry.
-Jamie Hayes has a focal left-side seizure, and the team administers diazepam.
-The staff tries to comfort Jamie Hayes during the procedure.
-JP, the boyfriend who swallowed keys, is told JP will undergo conscious sedation for the bronchoscopy.
-JP and JP's partner argue about their relationship, with accusations of passive-aggressive behavior and manipulation.
-JP's partner is eventually asked to leave the room.
-Digby Owens is examined by doctors, who explain that Digby Owens' gunshot caused a fractured rib and hemopneumothorax.
-Digby Owens expresses pride in Digby Owens' pain tolerance and wrestling background.
-The doctors prepare to insert a chest tube to treat Digby Owens' collapsed lung.
-Claire Rice's parents confront Claire Rice about the surgery.
-Claire Rice says Claire Rice learned about it on the internet and wanted to lose weight to focus on Claire Rice's studies.
-Claire Rice's mother criticizes Claire Rice for taking shortcuts.
-The doctors explain that reversing the bypass is necessary for Claire Rice's health, but Claire Rice resists, saying Claire Rice would rather be thin.
-The doctors inform Claire Rice the choice is not Claire Rice's.
-Dr. Derek Shepherd explains to Jamie Hayes' parents that Jamie Hayes has Rasmussen's encephalitis, which is killing part of Jamie Hayes' brain.
-The only treatment is to remove the diseased half of Jamie Hayes' brain.
-Jamie Hayes' parents are shocked but are told that, due to Jamie Hayes' age, Jamie Hayes' brain can compensate, and Jamie Hayes could live a relatively normal life if the surgery is successful.
-Dr. Derek Shepherd offers Dr. George O'Malley the chance to scrub in on Jamie Hayes' hemispherectomy if Jamie Hayes' parents consent.
-Dr. George O'Malley excitedly tells the other interns, who express envy.
-The group of interns discusses Dr. Meredith Gray's relationship with Dr. Derek Shepherd, with some expressing surprise and others joking about it.
-The conversation shifts to concerns about Dr. Taylor's possible drinking at work.
-Digby Owens jokes about Digby Owens' new scar.
-Digby Owens and another patient talk about wrestling and trumpet playing.
+Scene 2: Dr. Meredith Gray narrates about the exhaustion of being an intern and how it's not just the job that keeps Dr. Meredith Gray up at night.
+In the early morning, Dr. Meredith Gray urges someone to leave Dr. Meredith Gray's bed before Dr. Meredith Gray's roommates see.
+There is playful banter about who was responsible for the noise the previous night.
+Roommates speculate about Dr. Meredith Gray's sex life and joke about Dr. Meredith Gray having a long day at work.
+The group discusses the possibility that Dr. Meredith Gray is sleeping with their boss, with some denying it and others questioning why Dr. Meredith Gray would keep it a secret.
+Dr. Meredith Gray deflects questions about Dr. Meredith Gray's sex life and urges everyone to leave for work.
+Scene 3: At the hospital, Dr. Meredith Gray worries about Dr. Meredith Gray's roommates finding out about Dr. Meredith Gray's relationship with Dr. Derek Shepherd.
+Dr. Meredith Gray expresses concern about being perceived as getting special treatment.
+Dr. Miranda Bailey assigns Dr. George O'Malley, Dr. Cristina Yang, and Dr. Alex Karev to the clinic, and tells Dr. Isobel Stevens she will be working with Dr. Miranda Bailey.
+Dr. Miranda Bailey gives Dr. Meredith Gray a list of tasks, including a consult for a girl with fever and abdominal pain, and other patient responsibilities.
+Dr. Miranda Bailey warns Dr. Meredith Gray to get started quickly.
+Scene 4: Dr. Meredith Gray examines a young woman named Claire Rice who has a fever and abdominal pain.
+Claire Rice's mother and another woman discuss Claire Rice's recent trip to Mexico and Claire Rice's weight loss.
+Claire Rice resists an exam, but Dr. Meredith Gray insists.
+Meanwhile, a man named Digby Owens arrives for an appointment, but Digby Owens is found to be bleeding from a gunshot wound.
+Digby Owens explains Digby Owens' friend shot Digby Owens as a favor, and Digby Owens likes the scars.
+The staff prepares to treat Digby Owens' injury.
+Scene 5: Digby Owens discusses Digby Owens' philosophy about pain and commitment, referencing Digby Owens' wrestling background.
+Another character jokes about men in tights.
+A character with the flu comments on the irony.
+Dr. Meredith Gray examines Claire Rice and discovers recent surgical scars.
+Claire Rice asks Dr. Meredith Gray not to tell Claire Rice's parents.
+Dr. Meredith Gray questions Claire Rice about the surgery, and Claire Rice admits to having it done in Mexico.
+Scene 6: A young girl named Jamie Hayes is discussed with Jamie Hayes's parents, who describe Jamie Hayes's worsening foot twitching and previous CT scan showing a brain abnormality.
+Dr. Meredith Gray reassures Jamie Hayes's parents and says Dr. Meredith Gray will bring in Dr. Derek Shepherd, the brain specialist.
+Jamie Hayes’s parents ask if Dr. Derek Shepherd is good, and Dr. Meredith Gray responds affirmatively.
+Scene 7: A patient who swallowed keys is prepped for a bronchoscopy.
+An intern is given the opportunity to perform the procedure alone.
+Dr. Meredith Gray reports to Dr. Miranda Bailey about Dr. Meredith Gray's pit patient, Claire Rice, who is febrile with peritoneal signs and has had possible illegal surgery in Mexico.
+Dr. Miranda Bailey instructs Dr. Meredith Gray to handle additional tasks and to document patient information.
+Another character with the flu is told to go home but refuses.
+Scene 8: Two interns discuss Dr. Meredith Gray's relationship with Dr. Derek Shepherd and the risks it poses to their careers.
+One expresses concern that Dr. Derek Shepherd is taking advantage of Dr. Meredith Gray, while another points out that it did not sound non-consensual.
+The group debates the implications of sleeping with an attending.
+Scene 9: A staff member delivers Jamie Hayes's CT scans to a doctor.
+Two characters comment on the anesthesiologist, Dr. Taylor, possibly smelling of alcohol, but dismiss concerns as long as Dr. Taylor can do Dr. Taylor's job.
+In the OR, Dr. Derek Shepherd is informed about Jamie Hayes's admission and Jamie Hayes's symptoms.
+Dr. Derek Shepherd requests new scans, as the old ones are three months outdated.
+Dr. Meredith Gray agrees to order them.
+Scene 10: A group of doctors discuss Digby Owens' previous gunshot wound and Digby Owens' ethos about pain.
+The doctors recognize Digby Owens from a previous visit.
+Dr. Meredith Gray brings Claire Rice's CT scans to Dr. Miranda Bailey, and Dr. Miranda Bailey identifies that Claire Rice has had a gastric bypass, a procedure usually reserved for obese patients.
+Claire Rice's mother is shocked, and Dr. Miranda Bailey explains the risks and complications.
+Claire Rice's parents agree to surgery to reverse the bypass, but Claire Rice protests, saying Claire Rice would rather be thin.
+Dr. Miranda Bailey insists the choice is not up to Claire Rice.
+Scene 11: Dr. Derek Shepherd explains to Jamie Hayes's parents that Jamie Hayes has Rasmussen's encephalitis, which has worsened since Jamie Hayes's last scan.
+Dr. Derek Shepherd says the only treatment is to remove the diseased half of Jamie Hayes's brain, but because Jamie Hayes is young, Jamie Hayes's brain can compensate.
+Jamie Hayes’s parents are shocked, but Dr. Derek Shepherd reassures Jamie Hayes's parents that surgery could save Jamie Hayes's life.
+Another doctor is invited to scrub in on the hemispherectomy if Jamie Hayes's parents consent.
+Scene 12: An intern excitedly tells the group about scrubbing in on the hemispherectomy.
+The group discusses Dr. Meredith Gray's relationship with Dr. Derek Shepherd, with some expressing surprise and others admitting they already knew.
+The group jokes about the effects of sex all night and debates whether Dr. Meredith Gray is getting special treatment.
+One intern expresses frustration about not being more upset.
+Another intern asks about Dr. Taylor's possible drinking at work, but the group is hesitant to act.
+Scene 13: Digby Owens discusses Digby Owens' scars and pain tolerance with the doctors.
 Digby Owens feels dizzy from blood loss.
-Digby Owens encourages another doctor to make time for wrestling.
-The doctors prepare to move on to other patients.
-In surgery, doctors work to reverse Claire Rice's gastric bypass and free Claire Rice's bowel from adhesions.
-The doctors discuss Claire Rice's motivations and Claire Rice's desire for Claire Rice's mother's approval.
-Dr. Miranda Bailey reminds Dr. Meredith Gray of Dr. Meredith Gray's post-op duties and tells Dr. Meredith Gray to pick up extra work because Dr. Cristina Yang is sick.
-Dr. Meredith Gray and Dr. Miranda Bailey have a tense exchange about Dr. Meredith Gray's personal choices and professional responsibilities.
-Scene 22: In the OR, Dr. Miranda Bailey instructs Dr. Meredith Gray on repairing an organ after draining the organ.
-Dr. Miranda Bailey tells Dr. Meredith Gray to inform Claire Rice's parents about Claire Rice's condition after showering.
-Dr. Meredith Gray jokes about smelling like Dr. Meredith Gray's patient's insides, and Dr. Meredith Gray's colleagues tease Dr. Meredith Gray about karma.
-Scene 23: Dr. Derek Shepherd prepares for Jamie Hayes' hemispherectomy and asks which intern is available.
+Another character encourages Digby Owens to make time for wrestling.
+In surgery, the team works on Claire Rice's bowel, which is full of adhesions from the abscess.
+Dr. Miranda Bailey tells Dr. Meredith Gray to pick up extra work in the clinic due to Dr. Cristina Yang's illness.
+Dr. Meredith Gray and Dr. Miranda Bailey have a tense exchange about Dr. Meredith Gray's choices outside the hospital.
+Dr. Miranda Bailey warns Dr. Meredith Gray about the consequences of Dr. Meredith Gray's actions.
+Scene 14: In the OR, Dr. Miranda Bailey instructs Dr. Meredith Gray on repairing an organ.
+Later, a doctor thanks another doctor for the opportunity to scrub in on a procedure.
+A staff member brings coffee and a crossword to Dr. Taylor, who is preparing for a long day.
+Jamie Hayes is prepared for anesthesia.
+Dr. Meredith Gray and another doctor notice the smell of alcohol and confront Dr. Taylor, who denies drinking.
+An argument ensues, and Dr. George O'Malley is told to leave the OR.
+Dr. Derek Shepherd warns Dr. Taylor to be ready.
+Scene 15: A couple argues about their relationship while a doctor prepares to remove swallowed keys from the man.
+The woman accuses the man of being manipulative and needy.
+The procedure is performed successfully.
+The doctor advises the woman to leave for the woman's own sake.
+The woman jokes that the man will never find where the woman parked the car.
+Scene 16: Dr. Miranda Bailey tells Dr. Meredith Gray to inform Claire Rice's parents about Claire Rice's condition before showering.
+Dr. Meredith Gray and another intern discuss the unpleasant smell from surgery.
+The group jokes about karma and Dr. Meredith Gray's luck with surgeries.
+Dr. Miranda Bailey asks which intern is available for Dr. Derek Shepherd's surgery.
 Dr. Cristina Yang insists Dr. Cristina Yang is healthy enough, but Dr. Miranda Bailey chooses Dr. Meredith Gray.
-Dr. Cristina Yang is frustrated, believing Dr. Meredith Gray is favored because of Dr. Meredith Gray's relationship with Dr. Derek Shepherd.
-Dr. Miranda Bailey sends Dr. Meredith Gray to the OR.
-Scene 24: A doctor notes Digby Owens' post-op labs show a high white blood cell count, indicating possible infection.
-The team is told to check for other sources of infection or recent illness.
-Scene 25: In the OR, Dr. Derek Shepherd begins Jamie Hayes' hemispherectomy, describing the steps to the team.
-Dr. Cristina Yang is present.
-Scene 26: A doctor informs Claire Rice's parents that the gastric bypass was reversed, but Claire Rice lost a significant portion of Claire Rice's bowel and will have lifelong nutrition problems.
-Claire Rice's parents argue about responsibility, with one suggesting Claire Rice is trying to please Claire Rice's mother.
-The other parent denies responsibility, but the doctor insists Claire Rice worships Claire Rice's mother and didn't do this for Claire Rice.
-Scene 27: Digby Owens develops a fever and low blood pressure.
-The doctors discover an infected tattoo on Digby Owens' calf, which has worsened since the morning.
-The infection, exacerbated by the gunshot, leads to sepsis.
+Dr. Cristina Yang accuses Dr. Meredith Gray of getting special treatment due to Dr. Meredith Gray's relationship with Dr. Derek Shepherd.
+Scene 17: A doctor reviews Digby Owens' lab results and finds a high white blood cell count, indicating infection.
+The team investigates possible sources, and Digby Owens reveals a new tattoo on Digby Owens's calf, which is infected.
+The infection is worsened by the gunshot wound.
 Digby Owens is sent to the ICU for antibiotics.
-Scene 28: During Jamie Hayes' surgery, Dr. Derek Shepherd notes the anesthesia is too light.
-Dr. Taylor, the anesthesiologist, is found asleep at the table.
-The team wakes Dr. Taylor, and Dr. Derek Shepherd orders Dr. Taylor to leave and be replaced.
-Another doctor is called to take over anesthesia.
-Scene 29: Digby Owens goes into multisystem organ failure from sepsis.
-The team attempts to stabilize Digby Owens with medication and defibrillation, but Digby Owens loses Digby Owens' pulse.
-Efforts are made to resuscitate Digby Owens.
-Scene 30: Jamie Hayes' surgery concludes.
-Dr. Derek Shepherd and Dr. Cristina Yang explain that the packing will prevent hemorrhaging and the cerebral spinal fluid will fill the cavity.
-The interns are allowed to close up.
-The team reflects on the intensity of the surgery and the team's exhaustion.
-Scene 31: Dr. George O'Malley apologizes to Dr. Derek Shepherd for questioning Dr. Taylor's sobriety in the OR.
-Dr. Derek Shepherd says Dr. Derek Shepherd should have taken responsibility and that Dr. George O'Malley did the right thing, regardless of the code among doctors.
-Scene 32: Dr. Derek Shepherd and another doctor discuss Dr. Meredith Gray.
-Dr. Derek Shepherd insists Dr. Derek Shepherd is not favoring Dr. Meredith Gray and says Dr. Meredith Gray is a great intern.
-Dr. Derek Shepherd and the other doctor prepare to tell Jamie Hayes' parents that Jamie Hayes will be fine, barring complications.
-Scene 33: Dr. Meredith Gray tells Claire Rice that the surgery was not able to completely fix Claire Rice, and Claire Rice will have lifelong dietary issues.
-Dr. Meredith Gray says social services will contact Claire Rice's parents to help Claire Rice.
-Dr. Meredith Gray tells Claire Rice that life is not supposed to be this hard.
-Scene 34: Digby Owens dies from sepsis.
+Scene 18: In the OR, Dr. Derek Shepherd and the team begin Jamie Hayes's hemispherectomy.
+Dr. Taylor, the anesthesiologist, is found asleep during surgery, causing Jamie Hayes to begin waking up.
+The team quickly intervenes, and Dr. Taylor is replaced.
+Dr. Derek Shepherd orders Dr. Taylor to leave and get it together.
+Scene 19: Digby Owens goes into multisystem organ failure due to sepsis.
+The medical team attempts to stabilize Digby Owens with medication and defibrillation, but Digby Owens loses Digby Owens's pulse.
+The team works to revive Digby Owens.
+Scene 20: The surgical team completes Jamie Hayes's hemispherectomy, packing the cavity to prevent hemorrhaging.
+Dr. Cristina Yang is asked to explain the procedure, and Dr. Cristina Yang describes how cerebrospinal fluid will fill the cavity.
+The team is allowed to close up.
+Dr. Cristina Yang and another intern reflect on the intensity of the surgery and their exhaustion.
+Scene 21: Dr. George O'Malley apologizes to Dr. Taylor for confronting Dr. Taylor about drinking.
+Dr. Taylor admits Dr. Taylor was out of line and says Dr. Taylor should have taken responsibility.
+Dr. Taylor tells Dr. George O'Malley did the right thing, regardless of the code among doctors.
+Scene 22: Dr. Derek Shepherd and another doctor discuss Dr. Meredith Gray, with Dr. Derek Shepherd insisting Dr. Derek Shepherd does not favor Dr. Meredith Gray and that Dr. Meredith Gray is a great intern.
+Dr. Derek Shepherd and another doctor prepare to tell Jamie Hayes's parents about Jamie Hayes's successful surgery.
+Scene 23: Dr. Meredith Gray tells Claire Rice that the bypass was reversed but Claire Rice will have lifelong nutritional problems.
+Claire Rice's parents are upset, and Dr. Meredith Gray tells Claire Rice's mother that Claire Rice is trying to please Claire Rice's mother.
+Dr. Meredith Gray arranges for social services to help Claire Rice, telling Claire Rice that life should not be this hard.
+Scene 24: Digby Owens dies from sepsis.
+Another character reflects on meeting Digby Owens and the people from back home.
 The time of death is called.
-A character reflects on meeting someone from back home and the anonymity of being far from those who might judge a character.
-Scene 35: Late at night, Dr. Meredith Gray and Dr. Izzie Stevens talk in the kitchen.
-Dr. Izzie Stevens confronts Dr. Meredith Gray about Dr. Meredith Gray's relationship with Dr. Derek Shepherd, expressing frustration about Dr. Meredith Gray's privileges and the risk to Dr. Izzie Stevens's credibility.
-Dr. Meredith Gray insists Dr. Meredith Gray's relationship with Dr. Derek Shepherd is not about getting ahead or the surgeries.
-Dr. Izzie Stevens realizes Dr. Meredith Gray is falling for Dr. Derek Shepherd.
-Dr. Meredith Gray and Dr. Izzie Stevens joke about the situation and about cake.
-Scene 36: A montage shows the interns reflecting on pain and why the interns might be drawn to it.
-Dr. Meredith Gray and Dr. Derek Shepherd talk quietly, considering whether to just sleep.
-Dr. Meredith Gray wonders why people keep hurting themselves, concluding that it feels good when the pain stops.
+Scene 25: Late at night, Dr. Meredith Gray finds Dr. Isobel Stevens baking a cake.
+Dr. Isobel Stevens confronts Dr. Meredith Gray about Dr. Meredith Gray's relationship with Dr. Derek Shepherd, pointing out Dr. Meredith Gray's privileges and questioning Dr. Meredith Gray's choices.
+Dr. Isobel Stevens accuses Dr. Meredith Gray of falling for Dr. Derek Shepherd, which Dr. Meredith Gray denies.
+Dr. Meredith Gray and Dr. Isobel Stevens joke about the situation and discuss the details of Dr. Meredith Gray's relationship.
+Scene 26: Dr. Meredith Gray narrates about pain and why people might seek it out.
+Dr. Cristina Yang and another character discuss the aftermath of the day.
+Dr. Meredith Gray and Dr. Derek Shepherd consider sleeping, reflecting on the saying about hitting oneself with a hammer because it feels good when you stop.

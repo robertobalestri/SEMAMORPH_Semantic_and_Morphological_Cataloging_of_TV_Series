@@ -1,0 +1,106 @@
+[
+  {
+    "entity_name": "george_omalley",
+    "best_appellation": "George O'Malley",
+    "appellations": [
+      "George O'Malley",
+      "George",
+      "O'Malley"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "mr_walker",
+    "best_appellation": "Mr. Walker",
+    "appellations": [
+      "Mr. Walker",
+      "Walker"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "mr_duff",
+    "best_appellation": "Mr. Duff",
+    "appellations": [
+      "Mr. Duff",
+      "Duff"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "devo",
+    "best_appellation": "Devo",
+    "appellations": [
+      "Devo"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": null
+  },
+  {
+    "entity_name": "cricket",
+    "best_appellation": "Cricket",
+    "appellations": [
+      "Cricket"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": null
+  },
+  {
+    "entity_name": "esther",
+    "best_appellation": "Esther",
+    "appellations": [
+      "Esther"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "prince_charming",
+    "best_appellation": "Prince Charming",
+    "appellations": [
+      "Prince Charming"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": null
+  },
+  {
+    "entity_name": "george",
+    "best_appellation": "George",
+    "appellations": [
+      "George"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "mr_walker",
+    "best_appellation": "Mr. Walker",
+    "appellations": [
+      "Mr. Walker"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "mr_duff",
+    "best_appellation": "Mr. Duff",
+    "appellations": [
+      "Mr. Duff"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "prince_charming",
+    "best_appellation": "Prince Charming",
+    "appellations": [
+      "Prince Charming",
+      "prince_charming"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  }
+]

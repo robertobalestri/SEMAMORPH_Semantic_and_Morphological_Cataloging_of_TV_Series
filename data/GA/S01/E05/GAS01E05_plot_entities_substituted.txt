@@ -1,83 +1,73 @@
-Scene 1: A voice tells a character to wake up. An internal monologue reflects on childhood worries, contrasting them with the responsibilities of adulthood. The speaker mentions not having slept in 48 hours, getting a first shot at heart surgery, and missing rounds. A lawyer explains that due to a mother's advancing Alzheimer's, the mother needs to sign over her estate while still lucid. The person being addressed is reluctant to handle these responsibilities, questioning if someone else can do it, but is told it's their duty as the mother's child.
-Scene 2: The internal monologue continues, discussing adult responsibilities like earning a living and paying rent. The speaker notes that being a surgeon means holding a human heart, which is a huge responsibility. In an operating room, someone addresses Dr. Meredith Gray, who apologizes for letting something slip from Dr. Meredith Gray's hands. Another voice tells Dr. Meredith Gray to gently release Mrs. Patterson's heart. The surgical team prepares to get the patient off bypass. The internal monologue compares this responsibility to childhood worries.
-Scene 3: In a break room or lounge, several characters discuss wanting to hold a heart. One person claims even a monkey could do it. Someone named Dr. George O'Malley is asked to get more ice and chips. There is talk about a party at Dr. Meredith Gray's house, with debates over the guest list and whether Dr. Meredith Gray knows about it. Someone denies knowledge of the party. The conversation shifts back to the operating room, where the team is concerned about Mrs. Patterson's condition post-surgery. Medical staff work to revive Mrs. Patterson, eventually restoring Mrs. Patterson's heart rhythm.
-Scene 4: The internal monologue reflects on the fear of letting responsibility slip. In a hospital corridor, someone congratulates another for participating in a heart surgery with Dr. Preston Burke. They discuss the experience of holding a heart and how memorable it is. After the conversation, one character confides in Dr. George O'Malley, expressing concern that the character may have damaged the heart during surgery by squeezing it or puncturing it with a fingernail. Dr. George O'Malley reassures the character that the patient is okay and advises not to tell Dr. Preston Burke since nothing happened.
-Scene 5: A group of medical staff reviews a patient's X-ray. Dr. George O'Malley is asked what Dr. George O'Malley sees and describes hyperinflated lungs with diminished capacity. The team discusses the patient's previous surgery and the need for a bulectomy. The team is told to avoid anti-smoking lectures. In another exam, a patient describes severe back pain and requests specific pain medications. The staff suspects drug-seeking behavior but is reminded that pain must be treated as real. A central line is ordered due to poor veins.
-Scene 6: A patient named Mrs. Drake discusses Mrs. Drake's history of quitting smoking and ongoing pain. Mrs. Drake feels that no one believed Mrs. Drake's pain was real. A young doctor reassures Mrs. Drake after reviewing Mrs. Drake's films. Mrs. Drake asks if the surgery will work this time and is told it's Mrs. Drake's best option. Mrs. Drake comments that the doctor looks too young, but the doctor insists the doctor is older than the doctor appears.
-Scene 7: A doctor checks on Mr. Patterson, asking about Mrs. Patterson's hemodynamic stability. The doctor reassures Mr. Patterson that Mrs. Patterson should be fine after heart surgery. In another room, a doctor prepares to discharge Mr. Sturman, who jokes about never wanting a bowel obstruction again. The doctor asks about bowel movements and learns that Mr. Sturman attended medical school but dropped out. Mr. Sturman now does research and has a family, advising the doctor that a physician's first responsibility is always to the patient.
-In the operating room, a procedure called a spaghetti procedure is underway on Mrs. Drake.
-The team discovers a towel inside Mrs. Drake's chest, likely left from Mrs. Drake's surgery five years ago.
-The attending instructs Dr. Cristina Yang to research the previous operation and find out who was responsible.
-Dr. George O'Malley is told to stay with Mrs. Drake.
-Dr. Cristina Yang asks Dr. George O'Malley if Dr. Cristina Yang is invited to the party, and Dr. George O'Malley awkwardly says yes.
-A character orders beer and snacks for the party, pretending the order is for office supplies.
-Another person asks for an invitation to the party in exchange for help.
-In the hospital, a patient named Mr. Frost is agitated about Mr. Frost's care.
-A doctor is reprimanded for questioning orders and is told to start a central line for Mr. Frost, who has a history of addiction but also real pain.
-Mrs. Drake is informed by a doctor that a towel was left inside Mrs. Drake during Mrs. Drake's previous surgery.
-Mrs. Drake is shocked and asks how that could happen.
-Dr. George O'Malley tries to comfort Mrs. Drake, but Mrs. Drake is understandably upset.
-A doctor is told to keep the towel incident confidential while the hospital works it out.
-Dr. Isobel Stevens is paged to call the CCU.
-Another character checks on a colleague, noticing the colleague seems upset after a long surgery.
-The colleague is invited to dinner but declines due to the party.
-There is discussion about the party and who knows about it.
-Suddenly, Mrs. Patterson develops swelling and bleeding at Mrs. Patterson's surgical site.
-The team responds urgently, and a doctor confesses to possibly nicking Mrs. Patterson's heart during surgery.
-In the operating room, the attending surgeon is upset that the possible error was not reported earlier.
-The team works to repair the damage to Mrs. Patterson's heart.
-The chief surgeon demands copies of Mrs. Patterson's chart and schedules a meeting with legal for the next morning, warning the doctors to be prepared to explain what happened.
-In a break room, a group discusses the upcoming meeting with the chief and the risk of being kicked out of the program.
-One character is upset that another confessed to the attending.
-The conversation shifts to party logistics, with concerns about the guest list and whether Dr. Meredith Gray knows about the party.
-Someone insists they had nothing to do with organizing the party.
-At a care facility, Dr. Meredith Gray arrives late for a meeting to sign legal papers for Dr. Meredith Gray's mother.
-The notary and others are present, but Dr. Meredith Gray's mother is not lucid and is preoccupied with work.
-The home's physician says Dr. Meredith Gray's mother is 'sundowning' and cannot sign.
-Dr. Meredith Gray is told to return another day when Dr. Meredith Gray's mother is lucid.
-There is tension about why the process was delayed.
-At Dr. Meredith Gray's house, the party is underway.
-Someone threatens Dr. Isobel Stevens for the chaos.
-Another character is told not to touch something or they'll be in trouble.
-There is a brief conversation about an issue being 'taken care of' and not to be discussed further.
-Someone asks for bourbon.
-At the hospital, Mr. Frost resists being discharged, demanding more pain medication.
-Security or staff attempt to remove Mr. Frost, but Mr. Frost falls and suffers a head injury.
-Medical staff respond, noting a blown pupil and ordering a CT scan.
-The scan reveals a subdural bleed with midline shift, and emergency brain surgery is planned.
-Dr. Isobel Stevens is invited to assist in the surgery.
-Scene 17: At the party, Dr. Meredith Gray is overwhelmed by the number of guests and realizes Dr. Isobel Stevens did not clear the party with Dr. Meredith Gray.
-Dr. Meredith Gray considers kicking everyone out but is distracted by the arrival of Dr. Isobel Stevens's boyfriend, Hank.
-Dr. Meredith Gray interacts with Hank, offering Hank tequila and explaining the demands of being an intern.
-Hank is frustrated by Dr. Isobel Stevens's absence and the unexpected party.
-Scene 18: At the hospital, Dr. Isobel Stevens and Dr. Alex Karev discuss who will monitor a patient in recovery.
-Dr. Alex Karev offers to take over so Dr. Isobel Stevens can see Dr. Isobel Stevens's boyfriend.
-Dr. Isobel Stevens thanks Dr. Alex Karev.
-Later, Dr. Isobel Stevens arrives home and apologizes to Hank for not calling, explaining Dr. Isobel Stevens was needed for brain surgery.
-Hank is upset about the party and Dr. Isobel Stevens's priorities.
-Dr. Isobel Stevens tries to explain Dr. Isobel Stevens's commitment to Dr. Isobel Stevens's work, but Hank leaves, saying Hank will call Dr. Isobel Stevens.
-Scene 19: At the party, Dr. Meredith Gray is seen drinking and reflecting on Dr. Meredith Gray's life.
-Dr. Meredith Gray interacts with Dr. Derek Shepherd outside, joking about tequila.
-Dr. Meredith Gray and Dr. Derek Shepherd share a flirtatious moment and discuss sneaking around.
-Dr. Meredith Gray and Dr. Derek Shepherd's conversation is interrupted by someone asking them to move a car.
-Scene 20: The morning after the party, Dr. Meredith Gray prepares for Dr. Meredith Gray's meeting with the chief.
-Dr. Meredith Gray surveys the mess left behind.
-Dr. Isobel Stevens apologizes for the party getting out of hand.
-Dr. Meredith Gray is more concerned about Dr. Meredith Gray's upcoming meeting regarding the surgical error.
-Dr. Meredith Gray and another character discuss the patient's significant weight loss and its impact on muscle mass, possibly explaining the surgical complication.
-Scene 21: In the chief's office, Dr. Meredith Gray presents Dr. Meredith Gray's research on the patient's weight loss and its effect on heart muscle.
-The chief and legal counsel note that Dr. Meredith Gray's late reporting of the error left the hospital open to liability.
-Dr. Preston Burke admits to a past mistake of leaving a towel inside a patient and not reporting it out of fear for Dr. Preston Burke's career.
-Dr. Preston Burke argues that doctors must be able to speak up about mistakes without fear of retribution.
-The chief acknowledges this and notes that Dr. Meredith Gray did eventually speak up.
-Scene 22: After the meeting, Dr. Meredith Gray tells Dr. Meredith Gray's friends Dr. Meredith Gray received one month probation.
-Dr. Meredith Gray thanks Dr. Preston Burke for supporting Dr. Meredith Gray.
-The group discusses the towel incident and the importance of timing when reporting mistakes.
-The internal monologue reflects on the burden of responsibility.
-Scene 23: In the hospital, a social worker named Sloan is introduced to Jerry, the patient with addiction issues, to discuss rehab options.
+Scene 1: A character wakes someone up. A voiceover reflects on childhood worries, such as getting a bike for a birthday or eating cookies for breakfast, and contrasts those worries with the burdens of adulthood. The narration states that adulthood is overrated, despite the apparent perks, and emphasizes that adulthood is about responsibility. A lawyer explains to Dr. Meredith Gray that Dr. Meredith Gray's mother's Alzheimer's is advancing and that, while Dr. Meredith Gray's mother is still lucid, Dr. Meredith Gray's mother needs to sign over her estate, finances, and medical care. Dr. Meredith Gray, exhausted from lack of sleep, questions why Dr. Meredith Gray must handle these responsibilities alone. The lawyer insists that Dr. Meredith Gray is the only one who can do it, as it concerns Dr. Meredith Gray's mother. The narration continues, lamenting the difficulties of adult responsibilities.
+Scene 2: The narration continues, describing the obligations of adulthood, such as having to be places, do things, earn a living, and pay rent. The narrator notes that training to be a surgeon, and holding a human heart, is the ultimate responsibility. In an operating room, Dr. Meredith Gray is told by another doctor to be careful with Mrs. Patterson's heart. Dr. Meredith Gray apologizes for slipping, and is told to gently release the heart. The surgical team prepares to get Mrs. Patterson off bypass. The narrator compares the seriousness of surgery to the simplicity of childhood worries.
+Scene 3: In a break room or lounge, a group of interns discuss the heart surgery. One intern wishes that intern could have held a heart, and another intern jokes that even a monkey could do it. The conversation turns to a party at Dr. Meredith Gray's house. Some interns complain about the guest list, noting that people from Pediatrics and Psychiatry have been invited, and joke about the party being 'DOA.' Someone mentions that Dr. Meredith Gray thinks the party will be a small gathering, and questions whether Dr. Meredith Gray knows about the expanded guest list. Another intern asks why someone is wasting their boyfriend's visit on a big party, speculating about the quality of that couple's sex life. The conversation is interrupted by news of the party spreading through the hospital, with some people surprised and others denying knowledge of it.
+Scene 4: Back in the operating room, the team monitors Mrs. Patterson's vitals as Mrs. Patterson comes off bypass. There is concern about Mrs. Patterson's temperature and whether Mrs. Patterson's heart is functioning on its own. The surgical team performs compressions and prepares to shock Mrs. Patterson's heart. After several attempts, the team restores Mrs. Patterson's rhythm and stabilizes Mrs. Patterson. The narrator reflects on the fear of responsibility, especially when things go wrong.
+Scene 5: In a hallway or lounge, an intern confides in Dr. George O'Malley that the intern may have damaged Mrs. Patterson's heart during surgery by squeezing it while nodding off and puncturing a glove with a fingernail. The intern worries the intern may have punctured Mrs. Patterson's heart. Dr. George O'Malley reassures the intern that Mrs. Patterson's heart is beating and Mrs. Patterson is okay, so there is no need to tell Dr. Burke. The intern is relieved.
+Scene 6: A teaching moment occurs as an attending quizzes Dr. George O'Malley on a patient's X-ray, identifying hyperinflated lungs and diminished capacity. The attending instructs Dr. George O'Malley to recommend a bulectomy for Mrs. Drake and to avoid lecturing Mrs. Drake about smoking, as Mrs. Drake already feels guilty. The interns discuss whether graphic images on cigarette packs would deter smokers.
+Scene 7: An intern interviews a male patient with chronic back pain who describes the pain in exaggerated terms and requests specific pain medications, including Dilaudid. The intern and another doctor discuss the signs of drug-seeking behavior and the importance of treating pain as real, regardless of suspicion. The attending instructs the intern to start a central line because the patient's veins are shot.
+Scene 8: Mrs. Drake discusses Mrs. Drake's previous surgery and quitting smoking with an intern. Mrs. Drake insists Mrs. Drake quit five years ago, but still suffers pain and had to quit Mrs. Drake's job. The intern reassures Mrs. Drake that Mrs. Drake's pain is real and not just in Mrs. Drake's head. Mrs. Drake jokes about the intern being too young to be a doctor. The intern recommends the surgery as Mrs. Drake's best option.
+Scene 9: An intern checks on Mr. Patterson, who is concerned about Mrs. Patterson's condition after heart surgery.
+The intern reassures Mr. Patterson that Mrs. Patterson's vital signs are stable and that recovery from heart surgery is difficult, but Mrs. Patterson should be fine.
+Scene 10: Another intern checks on Mr. Sturman, who is recovering from a bowel obstruction.
+The intern jokes about patients requesting bowel obstructions and asks about Mr. Sturman's bowel movements.
+Mr. Sturman admits Mr. Sturman has not passed gas.
+Mr. Sturman reveals Mr. Sturman went to medical school but dropped out, and now works in research.
+Mr. Sturman tells the intern that a doctor's first responsibility is always to the patient.
+Scene 11: In the operating room, a surgeon explains the 'spaghetti procedure' to the team as the team works on Mrs. Drake's lung.
+During the procedure, the team discovers a towel inside Mrs. Drake's chest, likely left from Mrs. Drake's previous surgery five years ago.
+The attending instructs Dr. Cristina Yang to research the previous operation and find out who was responsible for closing.
+Dr. George O'Malley is told to stay with Mrs. Drake and keep Mrs. Drake happy.
+Dr. George O'Malley asks if Dr. George O'Malley is invited to the party, and the attending says yes.
+Scene 12: In a hospital office, someone orders beer and bar nuts, pretending to be ordering office supplies.
+Another person asks if the person will be invited to the party if the person helps.
+There is banter about the party and the beer delivery.
+An intern checks on Mr. Frost, the pain patient, who is agitated and asks where the intern has been.
+The attending scolds the intern for questioning orders and reminds the intern to start a central line without judgment, emphasizing that Mr. Frost's pain is real despite Mr. Frost's addiction.
+Scene 13: Mrs. Drake is told by Dr. George O'Malley that a towel was found inside Mrs. Drake during surgery.
+Mrs. Drake is shocked and asks who would do that.
+Dr. George O'Malley tries to reassure Mrs. Drake, but Mrs. Drake is upset about having a towel left inside Mrs. Drake for years.
+Scene 14: A senior doctor instructs Dr. Cristina Yang to keep the discovery of the towel confidential while the team investigates.
+Dr. Izzie Stevens is paged to the CCU.
+Scene 15: A character checks on another character, asking if the character is okay after the long heart surgery.
+The person offers to take the other character out to dinner, but the invitation is declined due to the party.
+The character is surprised to learn about the party and feels left out for not being invited.
+The conversation is interrupted by an emergency: Mrs. Patterson is bleeding from Mrs. Patterson's sternum.
+The team applies pressure and calls for Dr. Burke.
+Dr. Meredith Gray confesses to Dr. Burke that Dr. Meredith Gray may have nicked Mrs. Patterson's heart during surgery.
+Dr. Burke is upset that Dr. Meredith Gray did not speak up sooner and that Dr. Meredith Gray confessed in front of Mr. Patterson.
+In surgery, the team discovers the heart wall is weak, more than just a fingernail nick.
+Dr. Burke demands Mrs. Patterson's chart and schedules a meeting with Dr. Meredith Gray and legal for the next morning.
+Scene 16: Dr. Meredith Gray tells Dr. Meredith Gray's friends Dr. Meredith Gray has been called before the chief and could be kicked out of the program.
+Dr. Cristina Yang and another intern discuss the situation, with Dr. Cristina Yang criticizing Dr. Meredith Gray for telling Dr. Burke about the possible mistake.
+Dr. Meredith Gray is anxious about the upcoming meeting.
+Scene 17: Dr. Izzie Stevens updates Dr. Meredith Gray, Dr. Cristina Yang, and the group that the beer will arrive at 7, and some nurses are bringing wine.
+Dr. Cristina Yang is surprised that nurses have been invited.
+The group jokes about the party and Dr. Izzie Stevens's sex life.
+Dr. Izzie Stevens insists Dr. Izzie Stevens and Dr. Izzie Stevens's boyfriend have great sex.
+The conversation shifts to the idea that doctors can have fun, though someone insists the group are all workaholics.
+Scene 18: Dr. Meredith Gray arranges with the lawyer and notary to meet at 6:30 to sign papers for Dr. Meredith Gray's mother. The home's physician will be present to attest to Dr. Meredith Gray's mother's competency. Dr. Meredith Gray asks if Dr. Meredith Gray needs to bring anything besides Dr. Meredith Gray's license and checkbook. Dr. Meredith Gray is told to come at 6:30. Dr. Meredith Gray tries to explain to another character that Dr. Meredith Gray is not talking about the heart incident, but about the notary. The other person asks if Dr. Meredith Gray wants to talk about the heart incident. Dr. Meredith Gray laments the responsibilities of adulthood.
+Scene 19: Dr. Cristina Yang updates Dr. Burke on the bypass graft surgery, saying the surgery was complicated but manageable. Dr. Burke receives a call from Dr. Burke's lawyer, who advises Dr. Burke not to speak to Dr. Meredith Gray. Mr. Patterson, Mrs. Patterson's husband, is angry and refuses to provide more information, believing the doctors are blaming Mrs. Patterson for Mrs. Patterson's condition. Dr. Meredith Gray tries to explain that Mrs. Patterson's heart walls are abnormally thin, but Mr. Patterson is upset and defensive.
+Scene 20: A doctor checks on Mr. Jerry Frost, the pain patient, who reports Mr. Jerry Frost's pain is now a three. The doctor notes that Mr. Jerry Frost has been treated at several hospitals recently and is pleased to discharge Mr. Jerry Frost. Dr. Alex Karev is told to have Dr. Izzie Stevens discharge Mr. Jerry Frost. Mr. Jerry Frost protests, insisting Mr. Jerry Frost is still in pain, but is told to go home and seek help. Another patient is told the patient will need to stay another night and jokes about missing the party. The intern assures the patient the patient is the last patient on the list and will try to make the party.
+Scene 21: Dr. Izzie Stevens is paged and asked to go home to sign for the beer delivery. Dr. Izzie Stevens is annoyed and tells another character to have that character's boyfriend do it. Dr. Alex Karev appears, and there is tension between Dr. Alex Karev and Dr. Izzie Stevens. Dr. Alex Karev says Dr. Alex Karev would not come to the party anyway. Dr. Cristina Yang asks if Dr. Meredith Gray knows about the size of the party, and is told that Dr. Meredith Gray has already left for an errand. Dr. Cristina Yang insists that another character make it clear to Dr. Meredith Gray that Dr. Cristina Yang had nothing to do with the party.
+Scene 22: Dr. Meredith Gray arrives late to Dr. Meredith Gray's mother's care facility, apologizing for the traffic. The notary and others are waiting, but Dr. Meredith Gray's mother is not present. Dr. Meredith Gray finds Dr. Meredith Gray's mother, who is confused and agitated, insisting Dr. Meredith Gray's mother has a cranial reconstruction surgery to perform. Dr. Meredith Gray tries to get Dr. Meredith Gray's mother to sign the papers, but Dr. Meredith Gray's mother is unable to focus. The home's physician says Dr. Meredith Gray's mother is 'sundowning' and cannot sign anything now. Dr. Meredith Gray is told Dr. Meredith Gray will have to come back the next day when Dr. Meredith Gray's mother is lucid. Tensions rise as another character criticizes Dr. Meredith Gray and Dr. Meredith Gray's mother for putting off the paperwork.
+Scene 23: At Dr. Meredith Gray's house, the party is in full swing. Another character threatens Dr. Izzie Stevens for the chaos. Another guest jokes about touching something and being killed for it. Another character assures another character that an issue has been taken care of and tells that character not to worry about it. The conversation is cut short, and another character asks for bourbon.
+Scene 24: At the hospital, Mr. Jerry Frost resists being discharged, demanding more pain medication. Mr. Jerry Frost struggles with staff, falls, and is injured. A doctor notes Mr. Jerry Frost has blown Mr. Jerry Frost's left pupil and orders a page to Dr. Shepherd and a CT scan. The scan reveals a subdural bleed with midline shift, requiring immediate evacuation. Dr. Izzie Stevens is asked if Dr. Izzie Stevens is available to assist in brain surgery, and Dr. Izzie Stevens eagerly agrees.
+Scene 25: At Dr. Meredith Gray's house, the party is chaotic. Dr. Meredith Gray arrives and is overwhelmed by the number of guests. Dr. Meredith Gray confronts Dr. Izzie Stevens and Dr. George O'Malley about the size of the party, learning that Dr. Izzie Stevens did not clear it with Dr. Meredith Gray. Dr. Meredith Gray threatens to kick everyone out. Dr. Izzie Stevens is distracted when Hank arrives. Dr. Meredith Gray gives up and hands off responsibility.
+Scene 26: Dr. George O'Malley is called over by party guests. The party continues with drinking and games. Some guests play strip poker. Dr. Meredith Gray, drunk, complains about Dr. Meredith Gray's life and the party. Hank arrives and is surprised by the party. Dr. Meredith Gray offers Hank tequila and jokes about Dr. Izzie Stevens and Hank having tall, blonde children. Hank is annoyed that Dr. Izzie Stevens is not at the party. Dr. Meredith Gray explains that interns have demanding schedules and the hospital owns the interns.
+Scene 27: At the hospital, Dr. Izzie Stevens and Dr. Alex Karev discuss who will take a patient through recovery. Dr. Izzie Stevens insists on doing it herself so Dr. Alex Karev can see Dr. Alex Karev's hockey player. Dr. Alex Karev agrees.
+Scene 28: Dr. Izzie Stevens arrives home and apologizes to Hank for not calling, explaining that Dr. Izzie Stevens was assisting in brain surgery. Hank is upset about the party and the lack of time together. Dr. Izzie Stevens tries to explain Dr. Izzie Stevens's demanding schedule, but Hank is frustrated and leaves, saying Hank will call Dr. Izzie Stevens.
+Scene 29: Outside the house, Dr. Meredith Gray is seen in a state of undress. Dr. Derek Shepherd finds Dr. Meredith Gray and jokes about Dr. Meredith Gray drinking tequila. Dr. Meredith Gray and Dr. Derek Shepherd flirt, and Dr. Meredith Gray asks Dr. Derek Shepherd to take Dr. Meredith Gray for a ride. Dr. Meredith Gray and Dr. Derek Shepherd share a private moment outside as the party winds down. Dr. Derek Shepherd suggests Dr. Meredith Gray sneak back inside, but Dr. Meredith Gray says Dr. Meredith Gray and Dr. Derek Shepherd have done enough sneaking for one night. Dr. Meredith Gray and Dr. Derek Shepherd's moment is interrupted by someone asking Dr. Meredith Gray and Dr. Derek Shepherd to move a car.
+Scene 30: The next morning, Dr. Meredith Gray prepares for Dr. Meredith Gray's meeting with the chief. Dr. Cristina Yang surveys the aftermath of the party and jokes about the chaos. Dr. Izzie Stevens apologizes to Dr. Meredith Gray for the party getting out of hand, but Dr. Meredith Gray says Dr. Meredith Gray does not care. Dr. Cristina Yang asks about the heart wall tear and the patient's history. Dr. Meredith Gray explains that the patient lost 100 pounds in a year, which may have weakened the patient's heart muscle.
+Scene 31: In a hospital office, Dr. Cristina Yang and Dr. Alex Karev bet on whether Dr. Meredith Gray will be kicked out of the program. Dr. Meredith Gray presents Dr. Meredith Gray's case to the chief and legal, explaining that the patient's rapid weight loss likely caused the heart wall to be weak. The chief points out that Dr. Meredith Gray failed to report the incident immediately, leaving the hospital open to liability. Dr. Burke defends Dr. Meredith Gray, arguing that doctors need to be able to admit mistakes without fear of retribution. Dr. Burke confesses that Dr. Burke once failed to report a mistake. The chief acknowledges that Dr. Meredith Gray spoke up, even if late.
+Scene 32: Dr. Meredith Gray tells Dr. Meredith Gray's friends Dr. Meredith Gray received one month of probation. Dr. Meredith Gray thanks Dr. Burke for saving Dr. Meredith Gray. Dr. Cristina Yang notes that Dr. Burke always intended to report the towel incident, but wanted to wait for the right time.
+Dr. Cristina Yang reflects that information is power.
+Scene 33: The narrator reflects that responsibility does not go away with age.
+Mr. Jerry Frost is introduced to a rehab counselor named Sloan, who offers to discuss options for rehabilitation.
 Dr. Meredith Gray apologizes to Mrs. Drake for the towel incident.
-Another patient celebrates having a bowel movement after surgery.
-The internal monologue continues, reflecting on how responsibility cannot be avoided and must be faced.
-Scene 24: In the final scenes, characters reflect on missing the party and the realities of life as a surgeon.
-Dr. Meredith Gray and another character share a moment, acknowledging the challenges and perks of adulthood, such as independence and freedom from parental control.
-The episode ends with a sense of acceptance of adult responsibilities.
+Another patient celebrates having a bowel movement.
+The interns joke about missing the party, but affirm the interns' dedication to the interns' work as surgeons.
+Scene 34: The narrator notes that adulthood has its perks.
+Dr. Meredith Gray is thanked for coffee.
+In a conversation, someone jokes about a woman who took her clothes off for a room full of frozen faces.
+Another person mentions hearing that the woman went to find God in the Indian subcontinent.
+The narrator concludes by reflecting on the perks of adulthood, such as shoes, sex, and freedom from parental control.

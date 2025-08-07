@@ -1,0 +1,46 @@
+```json
+[
+    {
+        "entity_name": "george_omalley",
+        "best_appellation": "George O'Malley",
+        "appellations": ["George O'Malley", "George", "O'Malley"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "mr_walker",
+        "best_appellation": "Mr. Walker",
+        "appellations": ["Mr. Walker", "Walker"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "mr_duff",
+        "best_appellation": "Mr. Duff",
+        "appellations": ["Mr. Duff", "Duff"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "devo",
+        "best_appellation": "Devo",
+        "appellations": ["Devo"],
+        "biological_sex": null
+    },
+    {
+        "entity_name": "cricket",
+        "best_appellation": "Cricket",
+        "appellations": ["Cricket"],
+        "biological_sex": null
+    },
+    {
+        "entity_name": "esther",
+        "best_appellation": "Esther",
+        "appellations": ["Esther"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "prince_charming",
+        "best_appellation": "Prince Charming",
+        "appellations": ["Prince Charming"],
+        "biological_sex": null
+    }
+]
+```

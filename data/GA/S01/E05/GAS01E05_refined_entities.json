@@ -1,25 +1,41 @@
 [
   {
+    "entity_name": "george_omalley",
+    "best_appellation": "Dr. George O'Malley",
+    "appellations": [
+      "George",
+      "Dr. O'Malley",
+      "Dr. George O'Malley",
+      "O'Malley"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
     "entity_name": "isobel_stevens",
     "best_appellation": "Dr. Isobel Stevens",
     "appellations": [
-      "Dr. Isobel Stevens",
-      "Isobel Stevens",
+      "Izzie",
+      "Izzie Stevens",
       "Dr. Stevens",
-      "Izzy",
-      "Izzy Stevens"
+      "Dr. Isobel Stevens",
+      "Stevens"
     ],
     "entity_type": "PERSON",
     "biological_sex": "F"
   },
   {
-    "entity_name": "mr_patterson",
-    "best_appellation": "Mr. Patterson",
+    "entity_name": "meredith_gray",
+    "best_appellation": "Dr. Meredith Gray",
     "appellations": [
-      "Mr. Patterson"
+      "Meredith",
+      "Dr. Gray",
+      "Dr. Meredith Gray",
+      "Gray",
+      "Meredith Gray"
     ],
     "entity_type": "PERSON",
-    "biological_sex": "M"
+    "biological_sex": "F"
   },
   {
     "entity_name": "mrs_drake",
@@ -31,12 +47,26 @@
     "biological_sex": "F"
   },
   {
-    "entity_name": "derek_shepherd",
-    "best_appellation": "Dr. Derek Shepherd",
+    "entity_name": "alex_karev",
+    "best_appellation": "Dr. Alex Karev",
     "appellations": [
-      "Dr. Derek Shepherd",
-      "Derek Shepherd",
-      "Derek"
+      "Alex",
+      "Alex Karev",
+      "Dr. Karev",
+      "Dr. Alex Karev",
+      "Karev"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "jerry_frost",
+    "best_appellation": "Mr. Jerry Frost",
+    "appellations": [
+      "Jerry",
+      "Jerry Frost",
+      "Mr. Frost",
+      "Mr. Jerry Frost"
     ],
     "entity_type": "PERSON",
     "biological_sex": "M"
@@ -45,9 +75,10 @@
     "entity_name": "cristina_yang",
     "best_appellation": "Dr. Cristina Yang",
     "appellations": [
+      "Cristina",
+      "Dr. Yang",
       "Dr. Cristina Yang",
-      "Cristina Yang",
-      "Cristina"
+      "Yang"
     ],
     "entity_type": "PERSON",
     "biological_sex": "F"
@@ -62,83 +93,14 @@
     "biological_sex": "M"
   },
   {
-    "entity_name": "meredith_gray",
-    "best_appellation": "Dr. Meredith Gray",
+    "entity_name": "derek_shepherd",
+    "best_appellation": "Dr. Derek Shepherd",
     "appellations": [
-      "Dr. Meredith Gray",
-      "Meredith Gray",
-      "Dr. Grey",
-      "Meredith"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "F"
-  },
-  {
-    "entity_name": "sloan",
-    "best_appellation": "Sloan",
-    "appellations": [
-      "Sloan"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": null
-  },
-  {
-    "entity_name": "alex_karev",
-    "best_appellation": "Dr. Alex Karev",
-    "appellations": [
-      "Dr. Alex Karev",
-      "Alex Karev",
-      "Alex"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "preston_burke",
-    "best_appellation": "Dr. Preston Burke",
-    "appellations": [
-      "Dr. Preston Burke",
-      "Preston Burke",
-      "Dr. Burke",
-      "Burke"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "mrs_patterson",
-    "best_appellation": "Mrs. Patterson",
-    "appellations": [
-      "Mrs. Patterson"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "F"
-  },
-  {
-    "entity_name": "mr_frost",
-    "best_appellation": "Mr. Frost",
-    "appellations": [
-      "Mr. Frost"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "jerry",
-    "best_appellation": "Jerry",
-    "appellations": [
-      "Jerry"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "george_omalley",
-    "best_appellation": "Dr. George O'Malley",
-    "appellations": [
-      "Dr. George O'Malley",
-      "George O'Malley",
-      "George"
+      "Derek Shepherd",
+      "Dr. Shepherd",
+      "Dr. Derek Shepherd",
+      "Shepherd",
+      "Derek"
     ],
     "entity_type": "PERSON",
     "biological_sex": "M"
@@ -153,13 +115,143 @@
     "biological_sex": "M"
   },
   {
-    "entity_name": "isobel_stevens",
-    "best_appellation": "Dr. Isobel Stevens",
+    "entity_name": "sloan",
+    "best_appellation": "Sloan",
+    "appellations": [
+      "Sloan"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": null
+  },
+  {
+    "entity_name": "mrs_patterson",
+    "best_appellation": "Mrs. Patterson",
+    "appellations": [
+      "Mrs. Patterson"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "preston_burke",
+    "best_appellation": "Dr. Preston Burke",
+    "appellations": [
+      "Dr. Burke",
+      "Dr. Preston Burke",
+      "Burke",
+      "Preston Burke"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "mr_patterson",
+    "best_appellation": "Mr. Patterson",
+    "appellations": [
+      "Mr. Patterson"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "george",
+    "best_appellation": "George",
+    "appellations": [
+      "George"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "dr_stevens",
+    "best_appellation": "Dr. Izzie Stevens",
     "appellations": [
       "Dr. Stevens",
-      "Izzy",
-      "Isobel Stevens",
-      "Dr. Isobel Stevens"
+      "Izzie Stevens",
+      "Izzie"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "dr_gray",
+    "best_appellation": "Dr. Meredith Gray",
+    "appellations": [
+      "Dr. Gray",
+      "Meredith",
+      "Meredith Gray"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "mrs_drake",
+    "best_appellation": "Mrs. Drake",
+    "appellations": [
+      "Mrs. Drake"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "alex",
+    "best_appellation": "Alex",
+    "appellations": [
+      "Alex"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "mr_frost",
+    "best_appellation": "Mr. Frost",
+    "appellations": [
+      "Mr. Frost"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "cristina",
+    "best_appellation": "Cristina",
+    "appellations": [
+      "Cristina"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "dr_shepherd",
+    "best_appellation": "Dr. Shepherd",
+    "appellations": [
+      "Dr. Shepherd"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "mr_sturman",
+    "best_appellation": "Mr. Sturman",
+    "appellations": [
+      "Mr. Sturman"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "dr_burke",
+    "best_appellation": "Dr. Burke",
+    "appellations": [
+      "Dr. Burke"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "mrs_patterson",
+    "best_appellation": "Mrs. Patterson",
+    "appellations": [
+      "Mrs. Patterson"
     ],
     "entity_type": "PERSON",
     "biological_sex": "F"
@@ -174,109 +266,10 @@
     "biological_sex": "M"
   },
   {
-    "entity_name": "mrs_drake",
-    "best_appellation": "Mrs. Drake",
+    "entity_name": "jerry",
+    "best_appellation": "Jerry",
     "appellations": [
-      "Mrs. Drake"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "F"
-  },
-  {
-    "entity_name": "derek_shepherd",
-    "best_appellation": "Dr. Derek Shepherd",
-    "appellations": [
-      "Derek",
-      "Dr. Shepherd",
-      "Dr. Derek Shepherd",
-      "Derek Shepherd"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "cristina_yang",
-    "best_appellation": "Dr. Cristina Yang",
-    "appellations": [
-      "Cristina",
-      "Dr. Yang",
-      "Cristina Yang",
-      "Dr. Cristina Yang"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "F"
-  },
-  {
-    "entity_name": "meredith_gray",
-    "best_appellation": "Dr. Meredith Gray",
-    "appellations": [
-      "Meredith",
-      "Dr. Gray",
-      "Meredith Gray",
-      "Dr. Meredith Gray"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "F"
-  },
-  {
-    "entity_name": "alex_karev",
-    "best_appellation": "Dr. Alex Karev",
-    "appellations": [
-      "Alex",
-      "Dr. Karev",
-      "Alex Karev",
-      "Dr. Alex Karev"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "preston_burke",
-    "best_appellation": "Dr. Preston Burke",
-    "appellations": [
-      "Burke",
-      "Dr. Burke",
-      "Preston Burke",
-      "Dr. Preston Burke"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "mrs_patterson",
-    "best_appellation": "Mrs. Patterson",
-    "appellations": [
-      "Mrs. Patterson"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "F"
-  },
-  {
-    "entity_name": "mr_frost",
-    "best_appellation": "Mr. Frost",
-    "appellations": [
-      "Mr. Frost"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "george_omalley",
-    "best_appellation": "Dr. George O'Malley",
-    "appellations": [
-      "George",
-      "George O'Malley",
-      "Dr. O'Malley",
-      "Dr. George O'Malley"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "mr_sturman",
-    "best_appellation": "Mr. Sturman",
-    "appellations": [
-      "Mr. Sturman"
+      "Jerry"
     ],
     "entity_type": "PERSON",
     "biological_sex": "M"

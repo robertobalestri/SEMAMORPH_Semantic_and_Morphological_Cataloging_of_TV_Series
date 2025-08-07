@@ -1,0 +1,290 @@
+{
+  "scenes": [
+    {
+      "scene_number": 1,
+      "plot_segment": "Dr. Meredith Grey narrates about the challenges of being an intern, highlighting that sleepless nights come not only from work but also from personal struggles. George O'Malley confides in Izzie Stevens that he has liked Meredith since the beginning but can't bring himself to tell her. Izzie encourages George to ask Meredith out, but he hesitates. Meredith confronts Alex Karev about his attitude, and Alex jokes about drowning his sorrows with her, but Meredith declines, revealing she's seeing someone. Alex tells George to give up because Meredith is \"off the market,\" but George insists he would know if Meredith were dating since they live together. Miranda Bailey warns Derek Shepherd that if she sees him giving Meredith special treatment, she will keep Meredith out of the OR for a month. Early in the morning, Meredith wakes Derek and tells him he needs to leave before her roommates see him, then rushes off to start her rounds. Izzie and Cristina Yang tease Meredith about the noise from her room the previous night, speculating about her sex life. George is visibly jealous, and the roommates debate whether Meredith is sleeping with Dr. Shepherd, their boss. Meredith denies it and tries to avoid the subject as she gets ready for the day.",
+      "is_recap": true,
+      "start_time": "00:00:01,145",
+      "end_time": "00:00:47,807",
+      "start_seconds": 1.145,
+      "end_seconds": 47.807,
+      "start_subtitle_index": 0,
+      "end_subtitle_index": 17
+    },
+    {
+      "scene_number": 2,
+      "plot_segment": "Dr. Meredith Grey narrates about the exhaustion and sleeplessness that come with being a surgical intern, emphasizing that it's not just the demands of the job that keep them awake at night. Early in the morning, Meredith urges Dr. Derek Shepherd to leave her bed before her roommates notice, concerned about keeping their relationship secret. As Derek sneaks out, Meredith\u2019s roommates, Izzie Stevens and Cristina Yang, tease her about the noise from her room the previous night, speculating about her sex life and joking about her having a long day ahead. George O'Malley, who harbors feelings for Meredith, is visibly uncomfortable and tries to downplay the teasing, while Alex Karev makes a sarcastic comment about Meredith being \"off the market.\" The group debates whether Meredith is sleeping with their boss, Dr. Shepherd, with Izzie and Cristina pressing for details and George insisting he would know if it were true since they all live together. Meredith deflects their questions, avoids confirming anything about her relationship with Derek, and urges everyone to get ready and leave for work.",
+      "is_recap": false,
+      "start_time": "00:00:52,411",
+      "end_time": "00:03:54,038",
+      "start_seconds": 52.411,
+      "end_seconds": 234.038,
+      "start_subtitle_index": 18,
+      "end_subtitle_index": 101
+    },
+    {
+      "scene_number": 3,
+      "plot_segment": "At the hospital, Meredith Grey is anxious about her roommates discovering her relationship with Dr. Derek Shepherd, worried they\u2019ll think she\u2019s receiving special treatment. Miranda Bailey assigns George O'Malley, Cristina Yang, and Alex Karev to work in the clinic, while Izzie Stevens is told she\u2019ll be working directly with Bailey. Bailey hands Meredith a list of tasks, including a consult for Claire Rice, a girl presenting with fever and abdominal pain, and several other patient responsibilities. Bailey pointedly warns Meredith to get started immediately, making it clear that she expects Meredith to prove herself without any favoritism.",
+      "is_recap": false,
+      "start_time": "00:03:57,580",
+      "end_time": "00:04:26,675",
+      "start_seconds": 237.57999999999998,
+      "end_seconds": 266.675,
+      "start_subtitle_index": 102,
+      "end_subtitle_index": 112
+    },
+    {
+      "scene_number": 4,
+      "plot_segment": "Meredith Grey examines Claire Rice, a young woman brought in by her mother and another woman, who are concerned about Claire\u2019s fever and abdominal pain following a recent trip to Mexico. Claire\u2019s mother mentions her daughter\u2019s significant weight loss, attributing it to the trip. Claire is reluctant to allow an exam, but Meredith firmly insists, noticing surgical scars on Claire\u2019s abdomen that suggest a recent procedure. As Meredith questions Claire about the surgery, Claire refuses to explain or let her parents know what happened. Meanwhile, Digby Owens arrives at the hospital for an appointment but is found bleeding from a gunshot wound. When questioned by the staff, Digby explains that his friend shot him as part of his personal philosophy about pain and commitment, and he expresses pride in his scars. The medical team quickly prepares to treat Digby\u2019s injury while Meredith continues to investigate the cause of Claire\u2019s symptoms, suspecting an illegal surgery performed in Mexico.",
+      "is_recap": false,
+      "start_time": "00:04:27,076",
+      "end_time": "00:07:21,250",
+      "start_seconds": 267.076,
+      "end_seconds": 441.25,
+      "start_subtitle_index": 113,
+      "end_subtitle_index": 176
+    },
+    {
+      "scene_number": 5,
+      "plot_segment": "In the clinic, Digby Owens, a patient with a gunshot wound, explains to George O'Malley and Alex Karev his philosophy about pain and commitment, referencing his wrestling background and describing his injuries as part of his \"art.\" Alex jokes about men in tights, prompting Digby to elaborate further. Meanwhile, Izzie Stevens, who has the flu, comments on the irony of being surrounded by pain while feeling miserable herself. In the ER, Meredith Grey examines Claire Rice, a teenage girl with a fever and abdominal pain. Meredith notices fresh surgical scars on Claire\u2019s abdomen and gently questions her about them. Claire admits she had surgery in Mexico but begs Meredith not to tell her parents. Meredith, concerned about the risks of an illegal procedure, promises to keep Claire\u2019s secret for now but insists on learning more to help her.",
+      "is_recap": false,
+      "start_time": "00:07:21,752",
+      "end_time": "00:09:15,769",
+      "start_seconds": 441.752,
+      "end_seconds": 555.769,
+      "start_subtitle_index": 177,
+      "end_subtitle_index": 211
+    },
+    {
+      "scene_number": 6,
+      "plot_segment": "Meredith Grey meets with Jamie Hayes\u2019 parents, who are worried about Jamie\u2019s worsening foot twitching and mention a previous CT scan that revealed a brain abnormality. Meredith reassures them and explains that she will have Dr. Derek Shepherd, the hospital\u2019s neurosurgeon, evaluate Jamie. The parents anxiously ask if Dr. Shepherd is the best, and Meredith confidently assures them that he is.",
+      "is_recap": false,
+      "start_time": "00:09:16,110",
+      "end_time": "00:10:00,902",
+      "start_seconds": 556.11,
+      "end_seconds": 600.902,
+      "start_subtitle_index": 212,
+      "end_subtitle_index": 231
+    },
+    {
+      "scene_number": 7,
+      "plot_segment": "Cristina Yang is assigned to perform a bronchoscopy on a patient who swallowed keys and is excited to do the procedure solo, seeing it as recognition of her abilities. Meanwhile, Meredith Grey updates Miranda Bailey about her ER patient, Claire Rice, a teenage girl with fever and abdominal pain who recently returned from Mexico. Meredith reports that Claire has peritoneal signs and surgical scars, suggesting she underwent a gastric bypass abroad despite being of normal weight. Bailey instructs Meredith to order a CT scan, document all findings, and manage additional tasks. In the clinic, Izzie Stevens tells a flu-stricken patient to go home, but the patient refuses to leave, insisting on being treated despite her illness.",
+      "is_recap": false,
+      "start_time": "00:10:03,464",
+      "end_time": "00:11:43,870",
+      "start_seconds": 603.464,
+      "end_seconds": 703.87,
+      "start_subtitle_index": 232,
+      "end_subtitle_index": 282
+    },
+    {
+      "scene_number": 8,
+      "plot_segment": "In the locker room, George O'Malley confides to Izzie Stevens that he has feelings for Meredith Grey but is too nervous to tell her. Izzie encourages him to ask Meredith out, but George hesitates, worried about risking their friendship. Alex Karev overhears and jokes about Meredith being \"off the market,\" implying she's seeing someone. George insists he would know if Meredith were dating, since they live together. Izzie and Cristina Yang tease Meredith about the noises from her room the previous night, speculating about her sex life and whether she's involved with Dr. Shepherd. Meredith denies the rumors and tries to change the subject, while George grows increasingly uncomfortable with the conversation.",
+      "is_recap": false,
+      "start_time": "00:11:44,410",
+      "end_time": "00:12:07,971",
+      "start_seconds": 704.41,
+      "end_seconds": 727.971,
+      "start_subtitle_index": 283,
+      "end_subtitle_index": 295
+    },
+    {
+      "scene_number": 9,
+      "plot_segment": "A hospital staff member brings Jamie Hayes\u2019s outdated CT scans to Dr. Derek Shepherd. In the hallway, George O\u2019Malley and Alex Karev discuss rumors that Dr. Taylor, the anesthesiologist, may have been drinking, but Alex shrugs it off, saying as long as Taylor can do his job, it doesn\u2019t matter. In the OR, Dr. Shepherd reviews Jamie\u2019s case with Meredith Grey, noting that the scans are three months old and requesting updated imaging. Meredith agrees to order new scans for Jamie.",
+      "is_recap": false,
+      "start_time": "00:12:27,307",
+      "end_time": "00:13:22,139",
+      "start_seconds": 747.307,
+      "end_seconds": 802.139,
+      "start_subtitle_index": 296,
+      "end_subtitle_index": 322
+    },
+    {
+      "scene_number": 10,
+      "plot_segment": "Dr. Meredith Grey brings Claire Rice\u2019s CT scans to Dr. Miranda Bailey, who immediately recognizes that Claire has undergone a gastric bypass surgery, a procedure typically reserved for obese patients, despite Claire being of normal weight. Claire\u2019s mother, Mrs. Rice, is shocked by the revelation and demands answers, while Claire refuses to explain why she had the surgery. Bailey explains the severe risks and complications associated with the procedure, especially for someone of Claire\u2019s size, and insists that the bypass must be reversed to save Claire\u2019s life. Claire protests, insisting she would rather be thin than undergo the reversal, but Bailey firmly tells her that the decision is not hers to make due to the life-threatening nature of her condition. Meanwhile, the group of interns, including Meredith, George O\u2019Malley, Cristina Yang, Izzie Stevens, and Alex Karev, discuss Digby Owens, a patient with a gunshot wound who claims his injuries are part of his artistic philosophy about pain and commitment. They recall treating Digby during a previous visit and debate his unusual outlook on suffering.",
+      "is_recap": false,
+      "start_time": "00:13:24,241",
+      "end_time": "00:20:23,708",
+      "start_seconds": 804.241,
+      "end_seconds": 1223.708,
+      "start_subtitle_index": 323,
+      "end_subtitle_index": 492
+    },
+    {
+      "scene_number": 11,
+      "plot_segment": "Dr. Derek Shepherd meets with Jamie Hayes\u2019 parents to explain that Jamie has Rasmussen\u2019s encephalitis, a rare and progressive brain disorder that has worsened since her last scan. He tells them that the only viable treatment is a hemispherectomy\u2014removing the diseased half of Jamie\u2019s brain. Dr. Shepherd reassures the parents that, because Jamie is young, her brain can adapt and compensate for the loss, giving her a chance at a normal life. Jamie\u2019s parents are stunned and overwhelmed by the news, struggling to process the gravity of the surgery. Dr. Shepherd emphasizes that the procedure could save Jamie\u2019s life and answers their questions with calm reassurance. After the parents agree to the surgery, Dr. Shepherd invites George O\u2019Malley to scrub in on the rare operation, giving him an opportunity to observe and assist if the parents consent.",
+      "is_recap": false,
+      "start_time": "00:20:37,761",
+      "end_time": "00:22:02,577",
+      "start_seconds": 1237.761,
+      "end_seconds": 1322.577,
+      "start_subtitle_index": 493,
+      "end_subtitle_index": 521
+    },
+    {
+      "scene_number": 12,
+      "plot_segment": "George O'Malley bursts into the intern locker room, excitedly telling Izzie Stevens, Cristina Yang, and Alex Karev that he\u2019s been invited to scrub in on Jamie Hayes\u2019s hemispherectomy with Dr. Shepherd. The group is impressed, with Cristina expressing envy and Alex making a sarcastic comment about George\u2019s luck. The conversation shifts as Izzie and Cristina tease Meredith Grey about the noise from her room the previous night, joking about her sex life and speculating whether she\u2019s sleeping with Dr. Shepherd. George, visibly uncomfortable and jealous, insists he would know if Meredith were seeing someone since they live together. Meredith tries to deflect their questions, denying any relationship with Dr. Shepherd. Alex jokes that Meredith is \u201coff the market,\u201d causing more awkwardness. The interns debate whether Meredith is getting special treatment, with Cristina dismissing the idea and Izzie pointing out that Meredith\u2019s life is complicated enough without extra scrutiny. George admits he wishes he were more upset about the situation but feels conflicted. As the group\u2019s banter continues, Izzie hesitantly brings up her concerns about Dr. Taylor possibly drinking on the job, but the others are reluctant to get involved, unsure how to proceed. The scene ends with the interns distracted by their personal dramas as they prepare for another demanding day.",
+      "is_recap": false,
+      "start_time": "00:22:12,868",
+      "end_time": "00:23:41,365",
+      "start_seconds": 1332.868,
+      "end_seconds": 1421.365,
+      "start_subtitle_index": 522,
+      "end_subtitle_index": 566
+    },
+    {
+      "scene_number": 13,
+      "plot_segment": "Digby Owens, a patient with a gunshot wound and an infected tattoo, discusses his high pain tolerance and philosophy about pain with Dr. Meredith Grey and Dr. Alex Karev while feeling lightheaded from blood loss. Alex jokes about Digby\u2019s commitment to wrestling, encouraging him to keep pursuing it despite his injuries. Meanwhile, in surgery, Dr. Miranda Bailey leads Meredith and the team as they operate on Claire Rice, whose bowel is riddled with adhesions from a botched gastric bypass performed in Mexico. Bailey instructs Meredith to pick up extra shifts in the clinic to cover for Cristina Yang, who is out sick, and pointedly warns Meredith about the consequences of her choices outside the hospital, referencing her relationship with Dr. Derek Shepherd. Meredith and Bailey exchange tense words, with Bailey emphasizing that Meredith\u2019s actions could jeopardize her surgical career.",
+      "is_recap": false,
+      "start_time": "00:23:47,992",
+      "end_time": "00:25:34,883",
+      "start_seconds": 1427.992,
+      "end_seconds": 1534.883,
+      "start_subtitle_index": 567,
+      "end_subtitle_index": 610
+    },
+    {
+      "scene_number": 14,
+      "plot_segment": "In the operating room, Miranda Bailey supervises Meredith Grey as she repairs damage to Claire Rice\u2019s intestines following the failed gastric bypass. Bailey gives precise instructions, guiding Meredith through the delicate procedure. Afterward, George O'Malley thanks Derek Shepherd for letting him scrub in on Jamie Hayes\u2019s rare hemispherectomy, expressing his excitement. An OR nurse brings coffee and a crossword puzzle to Dr. Taylor, the anesthesiologist, who is preparing for a long surgery. Jamie is prepped for anesthesia. During the operation, Meredith and Cristina Yang notice the smell of alcohol on Dr. Taylor and quietly alert Shepherd. When confronted, Dr. Taylor denies drinking, but his behavior becomes erratic, leading to a tense exchange. Bailey orders George to leave the OR, and Shepherd sternly warns Dr. Taylor to stay alert and professional as the surgery continues.",
+      "is_recap": false,
+      "start_time": "00:25:40,414",
+      "end_time": "00:27:36,365",
+      "start_seconds": 1540.414,
+      "end_seconds": 1656.365,
+      "start_subtitle_index": 611,
+      "end_subtitle_index": 655
+    },
+    {
+      "scene_number": 15,
+      "plot_segment": "As Dr. Bailey prepares to remove a set of swallowed keys from a male patient, his girlfriend confronts him about their dysfunctional relationship, accusing him of being manipulative and emotionally dependent. The argument escalates as Bailey calmly readies her instruments, with the girlfriend expressing frustration over always having to rescue him from his reckless behavior. Bailey successfully completes the procedure, extracting the keys without complications. Afterward, Bailey privately advises the girlfriend to consider leaving the relationship for her own well-being. The girlfriend, half-joking, tells the patient he\u2019ll never find where she parked the car, hinting at her intention to move on.",
+      "is_recap": false,
+      "start_time": "00:27:40,327",
+      "end_time": "00:29:25,851",
+      "start_seconds": 1660.327,
+      "end_seconds": 1765.851,
+      "start_subtitle_index": 656,
+      "end_subtitle_index": 695
+    },
+    {
+      "scene_number": 16,
+      "plot_segment": "Miranda Bailey instructs Meredith Grey to inform Claire Rice\u2019s parents about the complications from her secret gastric bypass surgery before Meredith takes a shower. In the locker room, Meredith and Izzie Stevens complain about the lingering smell from the OR, while Alex Karev jokes about the less glamorous side of surgery. The interns banter about karma and Meredith\u2019s recent luck with surgeries, with Cristina Yang insisting she\u2019s healthy enough to assist on Dr. Derek Shepherd\u2019s hemispherectomy. Bailey interrupts, asking which intern is available for Shepherd\u2019s surgery. Cristina argues she\u2019s ready, but Bailey selects Meredith, citing her current caseload. Cristina pointedly accuses Meredith of receiving special treatment because of her relationship with Dr. Shepherd, causing tension among the interns as Meredith tries to deflect the accusation.",
+      "is_recap": false,
+      "start_time": "00:29:31,416",
+      "end_time": "00:31:18,523",
+      "start_seconds": 1771.416,
+      "end_seconds": 1878.523,
+      "start_subtitle_index": 696,
+      "end_subtitle_index": 736
+    },
+    {
+      "scene_number": 17,
+      "plot_segment": "Dr. Bailey reviews Digby Owens\u2019 lab results with Meredith Grey and notes his elevated white blood cell count, indicating a serious infection. As Meredith and the team question Digby about possible sources, he reluctantly reveals a fresh tattoo on his calf, which is red, swollen, and oozing pus. Bailey examines the tattoo and determines it is badly infected, likely worsened by the trauma of his recent gunshot wound. Digby admits he got the tattoo as part of his commitment to experiencing pain for his art. Bailey orders Meredith to transfer Digby to the ICU for aggressive IV antibiotics, warning that the combination of the infected tattoo and the gunshot wound has put him at risk for sepsis. As Digby is wheeled away, Meredith updates Bailey on his deteriorating condition, and Bailey instructs her to monitor him closely for signs of organ failure.",
+      "is_recap": false,
+      "start_time": "00:31:20,846",
+      "end_time": "00:33:48,865",
+      "start_seconds": 1880.846,
+      "end_seconds": 2028.865,
+      "start_subtitle_index": 737,
+      "end_subtitle_index": 782
+    },
+    {
+      "scene_number": 18,
+      "plot_segment": "In the operating room, Dr. Derek Shepherd leads the team as they begin Jamie Hayes\u2019s hemispherectomy. George O\u2019Malley assists, eager for the rare opportunity. During the procedure, George and Cristina Yang notice the smell of alcohol on Dr. Taylor, the anesthesiologist. Shepherd quietly confronts Taylor, who denies any wrongdoing, but moments later Taylor nods off at his station, causing Jamie to start moving on the table as the anesthesia wears off. Shepherd immediately orders Taylor out of the OR and calls for a replacement anesthesiologist. Miranda Bailey steps in to help stabilize Jamie while the new anesthesiologist takes over, and Shepherd sternly tells Taylor to leave and get himself together before returning to work. The team quickly regains control, and the surgery continues.",
+      "is_recap": false,
+      "start_time": "00:33:57,703",
+      "end_time": "00:35:01,208",
+      "start_seconds": 2037.703,
+      "end_seconds": 2101.208,
+      "start_subtitle_index": 783,
+      "end_subtitle_index": 808
+    },
+    {
+      "scene_number": 19,
+      "plot_segment": "Digby Owens, admitted with a gunshot wound and an infected tattoo, rapidly deteriorates in the ICU as Dr. Miranda Bailey, Meredith Grey, and the medical team realize he is in multisystem organ failure from overwhelming sepsis. Despite aggressive treatment with broad-spectrum antibiotics and vasopressors, Digby\u2019s blood pressure crashes and he loses his pulse. Bailey immediately leads the team in resuscitation efforts, calling for chest compressions and defibrillation while Meredith and Alex Karev assist, but Digby remains unresponsive as they fight to revive him.",
+      "is_recap": false,
+      "start_time": "00:35:09,034",
+      "end_time": "00:35:33,135",
+      "start_seconds": 2109.034,
+      "end_seconds": 2133.135,
+      "start_subtitle_index": 809,
+      "end_subtitle_index": 821
+    },
+    {
+      "scene_number": 20,
+      "plot_segment": "Dr. Derek Shepherd and his surgical team, including Cristina Yang and George O'Malley, complete Jamie Hayes's hemispherectomy, carefully packing the cranial cavity to prevent bleeding. Dr. Miranda Bailey asks Cristina to explain the next steps, and Cristina describes how cerebrospinal fluid will gradually fill the empty space where the brain tissue was removed. The team is given permission to begin closing up. As they finish, Cristina and George exchange exhausted glances, quietly acknowledging the intensity and rarity of the surgery, and reflecting on the emotional and physical toll of their responsibilities as interns.",
+      "is_recap": false,
+      "start_time": "00:35:40,625",
+      "end_time": "00:36:28,003",
+      "start_seconds": 2140.625,
+      "end_seconds": 2188.003,
+      "start_subtitle_index": 822,
+      "end_subtitle_index": 835
+    },
+    {
+      "scene_number": 21,
+      "plot_segment": "George O'Malley approaches Dr. Taylor to apologize for reporting his suspected drinking during surgery. Dr. Taylor admits he was wrong to deny the problem and acknowledges that he should have taken responsibility for his actions. He tells George that, despite the unspoken code among doctors to protect each other, George did the right thing by speaking up, and thanks him for putting the patient's safety first.",
+      "is_recap": false,
+      "start_time": "00:36:29,324",
+      "end_time": "00:36:58,606",
+      "start_seconds": 2189.324,
+      "end_seconds": 2218.606,
+      "start_subtitle_index": 836,
+      "end_subtitle_index": 850
+    },
+    {
+      "scene_number": 22,
+      "plot_segment": "Miranda Bailey warns Derek Shepherd that if she catches him giving Meredith Grey special treatment, she will ensure Meredith is barred from the OR for a month. Derek insists he does not favor Meredith and defends her abilities as an intern. As they walk together, they prepare to update Jamie Hayes\u2019 parents on the successful outcome of Jamie\u2019s brain surgery.",
+      "is_recap": false,
+      "start_time": "00:37:08,695",
+      "end_time": "00:37:30,400",
+      "start_seconds": 2228.695,
+      "end_seconds": 2250.4,
+      "start_subtitle_index": 851,
+      "end_subtitle_index": 858
+    },
+    {
+      "scene_number": 23,
+      "plot_segment": "Dr. Meredith Grey informs Claire Rice and her parents that although the gastric bypass surgery has been reversed, Claire will suffer lifelong nutritional complications due to the damage. Claire\u2019s parents are distraught, and Meredith gently tells Mrs. Rice that Claire\u2019s risky decision was driven by her desire to gain her mother\u2019s approval. Meredith arranges for social services to support Claire, reassuring her that life shouldn\u2019t be this difficult and that she deserves help moving forward.",
+      "is_recap": false,
+      "start_time": "00:37:34,396",
+      "end_time": "00:38:06,514",
+      "start_seconds": 2254.396,
+      "end_seconds": 2286.514,
+      "start_subtitle_index": 859,
+      "end_subtitle_index": 869
+    },
+    {
+      "scene_number": 24,
+      "plot_segment": "Digby Owens succumbs to sepsis in the ICU despite the interns\u2019 efforts to save him. As Dr. Miranda Bailey calls the time of death, George O'Malley quietly reflects on Digby\u2019s life and the people he left behind, thinking about the stories Digby shared from back home. The team stands in somber silence, processing the loss and the reality of losing a patient.",
+      "is_recap": false,
+      "start_time": "00:38:06,936",
+      "end_time": "00:38:31,166",
+      "start_seconds": 2286.936,
+      "end_seconds": 2311.166,
+      "start_subtitle_index": 870,
+      "end_subtitle_index": 875
+    },
+    {
+      "scene_number": 25,
+      "plot_segment": "Late at night at their house, Meredith Grey finds Izzie Stevens in the kitchen baking a cake to relieve stress after a long shift. Izzie, frustrated and feeling she has to work harder for respect, confronts Meredith about her secret relationship with Dr. Derek Shepherd. She points out that Meredith is risking her reputation and questions why she would get involved with an attending, especially when it could jeopardize her career. Izzie accuses Meredith of falling for Derek, which Meredith initially denies, but after some teasing and prodding from Izzie and Cristina Yang, she reluctantly admits her feelings. The roommates joke about Meredith\u2019s love life, with Cristina chiming in and George O\u2019Malley awkwardly avoiding the conversation. Despite the tension, the friends share a moment of honesty and camaraderie, acknowledging the complications of balancing personal lives with the pressures of their internship.",
+      "is_recap": false,
+      "start_time": "00:38:35,516",
+      "end_time": "00:40:48,280",
+      "start_seconds": 2315.516,
+      "end_seconds": 2448.28,
+      "start_subtitle_index": 876,
+      "end_subtitle_index": 920
+    },
+    {
+      "scene_number": 26,
+      "plot_segment": "Meredith Grey narrates about the nature of pain and why people might seek it out, reflecting on how being an intern means sleepless nights caused by both work and personal turmoil. At home, Izzie Stevens and Cristina Yang tease Meredith about the noises from her room, speculating about her relationship with Dr. Derek Shepherd. George O'Malley, visibly jealous, tries to hide his feelings as the roommates debate whether Meredith is sleeping with their boss. Meredith denies the rumors and tries to change the subject, but her friends persist. Later, Meredith and Derek share a quiet moment together, joking about the saying that people hit themselves with a hammer because it feels so good when they stop, underscoring the complicated pleasure and pain of their secret relationship.",
+      "is_recap": false,
+      "start_time": "00:40:49,380",
+      "end_time": "00:42:00,264",
+      "start_seconds": 2449.38,
+      "end_seconds": 2520.264,
+      "start_subtitle_index": 921,
+      "end_subtitle_index": 935
+    }
+  ]
+}

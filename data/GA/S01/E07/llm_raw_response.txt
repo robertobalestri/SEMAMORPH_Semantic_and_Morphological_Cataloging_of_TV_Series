@@ -1,34 +1,40 @@
 ```json
 [
     {
-        "entity_name": "miranda_bailey",
-        "best_appellation": "Dr. Miranda Bailey",
-        "appellations": ["Dr. Bailey", "Miranda Bailey", "Bailey", "Dr. Miranda Bailey"],
+        "entity_name": "digby_owens",
+        "best_appellation": "Digby Owens",
+        "appellations": ["Digby Owens", "Digby"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "claire_rice",
+        "best_appellation": "Claire Rice",
+        "appellations": ["Claire Rice", "Claire"],
         "biological_sex": "F"
     },
     {
         "entity_name": "alex_karev",
         "best_appellation": "Dr. Alex Karev",
-        "appellations": ["Karev", "Alex Karev", "Dr. Karev", "Dr. Alex Karev"],
+        "appellations": ["Alex Karev", "Karev", "Dr. Karev", "Alex"],
         "biological_sex": "M"
     },
     {
-        "entity_name": "taylor",
-        "best_appellation": "Dr. Taylor",
-        "appellations": ["Dr. Taylor", "Taylor"],
-        "biological_sex": null
+        "entity_name": "cristina_yang",
+        "best_appellation": "Dr. Cristina Yang",
+        "appellations": ["Cristina Yang", "Yang", "Dr. Yang", "Cristina"],
+        "biological_sex": "F"
     },
     {
-        "entity_name": "jamie_hayes",
-        "best_appellation": "Jamie Hayes",
-        "appellations": ["Jamie Hayes", "Jamie", "Hayes", "Jamie Hayes'"],
-        "biological_sex": null
-    },
-    {
-        "entity_name": "digby_owens",
-        "best_appellation": "Digby Owens",
-        "appellations": ["Digby Owens", "Owens", "Digby Owens'"],
+        "entity_name": "george_omalley",
+        "best_appellation": "Dr. George O'Malley",
+        "appellations": ["George O'Malley", "O'Malley", "George", "George George", "Dr. O'Malley"],
         "biological_sex": "M"
+    },
+    {
+        "entity_name": "meredith_gray",
+        "best_appellation": "Dr. Meredith Gray",
+        "appellations": ["Meredith Gray", "Meredith", "Dr. Gray", "Gray"],
+        "biological_sex": "F"
     },
     {
         "entity_name": "rasmussen",
@@ -37,46 +43,34 @@
         "biological_sex": null
     },
     {
-        "entity_name": "cristina_yang",
-        "best_appellation": "Dr. Cristina Yang",
-        "appellations": ["Yang", "Cristina", "Cristina Yang", "Dr. Yang", "Dr. Cristina Yang"],
+        "entity_name": "taylor",
+        "best_appellation": "Dr. Taylor",
+        "appellations": ["Dr. Taylor", "Taylor"],
+        "biological_sex": null
+    },
+    {
+        "entity_name": "miranda_bailey",
+        "best_appellation": "Dr. Miranda Bailey",
+        "appellations": ["Miranda Bailey", "Bailey", "Dr. Bailey", "Miranda"],
         "biological_sex": "F"
     },
     {
-        "entity_name": "george_omalley",
-        "best_appellation": "Dr. George O'Malley",
-        "appellations": ["George O'Malley", "O'Malley", "George", "Dr. O'Malley", "Dr. George O'Malley"],
-        "biological_sex": "M"
-    },
-    {
-        "entity_name": "claire_rice",
-        "best_appellation": "Claire Rice",
-        "appellations": ["Claire Rice", "Claire", "Rice"],
+        "entity_name": "isobel_stevens",
+        "best_appellation": "Dr. Isobel Stevens",
+        "appellations": ["Isobel Stevens", "Izzie", "Dr. Stevens", "Stevens"],
         "biological_sex": "F"
     },
     {
-        "entity_name": "meredith_gray",
-        "best_appellation": "Dr. Meredith Gray",
-        "appellations": ["Meredith", "Meredith Gray", "Gray", "Dr. Gray", "Dr. Meredith Gray"],
-        "biological_sex": "F"
-    },
-    {
-        "entity_name": "izzie_stevens",
-        "best_appellation": "Dr. Izzie Stevens",
-        "appellations": ["Izzie", "Izzie Stevens", "Stevens", "Dr. Stevens", "Dr. Izzie Stevens"],
-        "biological_sex": "F"
-    },
-    {
-        "entity_name": "derek_shepherd",
+        "entity_name": "dr_shepherd",
         "best_appellation": "Dr. Derek Shepherd",
-        "appellations": ["Dr. Shepherd", "Derek Shepherd", "Shepherd", "Dr. Derek Shepherd", "Derek"],
+        "appellations": ["Dr. Shepherd", "Shepherd"],
         "biological_sex": "M"
     },
     {
-        "entity_name": "jp",
-        "best_appellation": "JP",
-        "appellations": ["JP"],
-        "biological_sex": "M"
+        "entity_name": "jamie_hayes",
+        "best_appellation": "Jamie Hayes",
+        "appellations": ["Jamie Hayes", "Jamie"],
+        "biological_sex": "F"
     }
 ]
 ```
