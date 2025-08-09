@@ -1,0 +1,7 @@
+file '/home/rbale/dev/SEMAMORPH_Semantic_and_Morphological_Cataloging_of_TV_Series/data/GA/S01/E01/recap_files/clips/GAS01E01_clip_a62c9c59-9815-4e10-9e77-c16fef508c06.mp4'
+file '/home/rbale/dev/SEMAMORPH_Semantic_and_Morphological_Cataloging_of_TV_Series/data/GA/S01/E06/recap_files/clips/GAS01E06_clip_110b80e7-a6d2-4c1a-8d10-b016b62bcdbe.mp4'
+file '/home/rbale/dev/SEMAMORPH_Semantic_and_Morphological_Cataloging_of_TV_Series/data/GA/S01/E01/recap_files/clips/GAS01E01_clip_40038afa-66c4-427b-9118-c92bf51c63d3.mp4'
+file '/home/rbale/dev/SEMAMORPH_Semantic_and_Morphological_Cataloging_of_TV_Series/data/GA/S01/E07/recap_files/clips/GAS01E07_clip_692a8901-aacb-40a3-8842-ee353a9923ef.mp4'
+file '/home/rbale/dev/SEMAMORPH_Semantic_and_Morphological_Cataloging_of_TV_Series/data/GA/S01/E01/recap_files/clips/GAS01E01_clip_7a36f2b1-16c7-46a5-ae28-97feb26f4d5e.mp4'
+file '/home/rbale/dev/SEMAMORPH_Semantic_and_Morphological_Cataloging_of_TV_Series/data/GA/S01/E05/recap_files/clips/GAS01E05_clip_101521ab-c61e-4d67-81e3-91d5775b56b5.mp4'
+file '/home/rbale/dev/SEMAMORPH_Semantic_and_Morphological_Cataloging_of_TV_Series/data/GA/S01/E06/recap_files/clips/GAS01E06_clip_cc52a82e-3170-4d5d-9622-d44ac50fa3db.mp4'

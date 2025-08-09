@@ -56,11 +56,7 @@ class PathHandler:
     def get_srt_file_path(self) -> str:
         """Get the path to the SRT subtitle file for this episode."""
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}.srt")
-
-    def get_enhanced_srt_path(self) -> str:
-        """Get the path to the enhanced SRT file with speaker identification for this episode."""
-        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_enhanced.srt")
-
+    
     def get_possible_speakers_srt_path(self) -> str:
         """Get the path to the SRT file with possible speakers for this episode."""
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_possible_speakers.srt")
@@ -221,43 +217,16 @@ class PathHandler:
         """Get the path to the recap metadata JSON file."""
         recap_dir = self.get_recap_files_dir()
         return os.path.join(recap_dir, f"{self.series}{self.season}{self.episode}_recap_metadata.json")
-    
-    def get_individual_clip_path(self, clip_id: str) -> str:
-        """Get the path to an individual extracted clip file."""
-        recap_dir = self.get_recap_files_dir()
-        clips_dir = os.path.join(recap_dir, "clips")
-        return os.path.join(clips_dir, f"{self.series}{self.season}{self.episode}_clip_{clip_id}.mp4")
-    
-    def get_recap_clips_dir(self) -> str:
+
+    def get_recap_clip_dir(self) -> str:
         """Get the directory for storing individual recap clips."""
         recap_dir = self.get_recap_files_dir()
         return os.path.join(recap_dir, "clips")
-    
-    def validate_episode_processed(self) -> bool:
-        """Check if episode has completed the full SEMAMORPH processing pipeline."""
-        required_files = [
-            self.get_plot_possible_speakers_path(),
-            self.get_present_running_plotlines_path(),
-            self.get_possible_speakers_srt_path(),
-            self.get_video_file_path()
-        ]
-        return all(os.path.exists(file_path) for file_path in required_files)
-    
-    def get_missing_required_files(self) -> List[str]:
-        """Get list of missing files required for recap generation."""
-        required_files = [
-            ("plot_possible_speakers", self.get_plot_possible_speakers_path()),
-            ("present_running_plotlines", self.get_present_running_plotlines_path()),
-            ("possible_speakers_srt", self.get_possible_speakers_srt_path()),
-            ("video_file", self.get_video_file_path())
-        ]
-        
-        missing = []
-        for file_type, file_path in required_files:
-            if not os.path.exists(file_path):
-                missing.append(f"{file_type}: {file_path}")
-        
-        return missing
+
+    def get_individual_clip_path(self, clip_id: str) -> str:
+        """Get the path to an individual extracted clip file."""
+        clips_dir = self.get_recap_clip_dir()
+        return os.path.join(clips_dir, f"{self.series}{self.season}{self.episode}_clip_{clip_id}.mp4")
 
     @staticmethod
     def get_episode_plot_path(base_dir: str, series: str, season: str, episode: str) -> str:

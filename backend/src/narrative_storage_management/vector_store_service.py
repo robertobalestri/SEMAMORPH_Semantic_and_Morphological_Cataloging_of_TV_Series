@@ -3,13 +3,25 @@
 from typing import List, Dict, Optional, Any, Union
 from langchain.schema import Document
 from langchain_chroma import Chroma
-from ..ai_models.ai_models import get_embedding_model
 import logging
 import os
 import numpy as np
 from hdbscan import HDBSCAN
 
-from ..utils.logger_utils import setup_logging
+# Use absolute imports to avoid relative import issues
+try:
+    from ai_models.ai_models import get_embedding_model
+    from utils.logger_utils import setup_logging
+except ImportError:
+    # Fallback for when running from different contexts
+    import sys
+    current_dir = os.path.dirname(__file__)
+    backend_src = os.path.dirname(current_dir)
+    if backend_src not in sys.path:
+        sys.path.insert(0, backend_src)
+    from ai_models.ai_models import get_embedding_model
+    from utils.logger_utils import setup_logging
+
 logger = setup_logging(__name__)
 
 class VectorStoreService:
@@ -293,18 +305,7 @@ class VectorStoreService:
 
         except Exception as e:
             logger.error(f"Error deleting event documents for progression ID {progression_id}: {e}")
-            raise
-
-            if ids_to_delete:
-                self.collection.delete(ids=ids_to_delete)
-                logger.info(f"Deleted {len(ids_to_delete)} documents for arc ID {arc_id}.")
-            else:
-                logger.info(f"No documents found for arc ID {arc_id}.")
-
-        except Exception as e:
-            logger.error(f"Error deleting documents for arc ID {arc_id}: {e}")
-            raise
-
+            
     def delete_all_documents(self):
         """Delete all documents from the collection."""
         try:
