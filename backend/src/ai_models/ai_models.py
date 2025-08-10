@@ -147,6 +147,8 @@ def get_embedding_model():
         model="embed-v-4-0",
         cohere_api_key=os.getenv("AZURE_COHERE_EMBEDDING_API_KEY"),
         base_url=os.getenv("AZURE_COHERE_EMBEDDING_API_ENDPOINT"),
+        request_timeout=1000000,  # 30 second timeout per request
+        max_retries=2,       # Maximum 2 retries (3 total attempts)
     )
     
     

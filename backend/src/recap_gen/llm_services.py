@@ -54,13 +54,13 @@ def clean_llm_json_response(response: str) -> Dict:
                     return parsed_json
             except json.JSONDecodeError as e:
                 logger.error(f"Failed to parse JSON: {e}")
-                logger.debug(f"JSON string that failed: {json_str[:200]}...")
+                logger.debug(f"JSON string that failed: {json_str}...")
         
         # If no JSON found, try to find just numbers (fallback)
         numbers = re.findall(r'\b\d+\b', response_cleaned)
         if numbers:
             logger.warning(f"No JSON found, extracted numbers: {numbers}")
-            return {"selected_events": [int(x) for x in numbers[:3]]}
+            return {"selected_events": [int(x) for x in numbers]}
         
     except Exception as e:
         logger.error(f"Error in clean_llm_json_response: {e}")
@@ -88,9 +88,9 @@ def generate_arc_queries(season_summary: str, episode_plot: str, narrative_arcs:
     for arc in narrative_arcs:
         prompt = f"""Generate 2-3 specific vector database search queries to find historical events that provide context for this narrative arc in the current episode.
 
-**Season Context:** {season_summary[:500]}...
+**Season Context:** {season_summary}
 
-**Current Episode Plot:** {episode_plot[:500]}...
+**Current Episode Plot:** {episode_plot}
 
 **Focus Narrative Arc:**
 - Title: {arc['title']}
@@ -100,6 +100,9 @@ Generate queries that will find events showing:
 1. Development and evolution of this arc
 2. Character motivations within this arc  
 3. Past conflicts/relationships that impact this arc
+
+The most important thing is that the events proposed should be the most interesting and relevant to the current episode! We are creating a recap to help viewers understand the current episode.
+Do not generate phrases such as "search for", "the scene where", "the moment when", "Key interactions where". These lines are all introductory but don't help the research. The query should be a direct narrative moment such as "John confronts Sarah about the missing files".
 
 Output as JSON:
 ```json
@@ -163,15 +166,15 @@ def rank_events_per_arc(events_by_arc: Dict[str, List[Any]], episode_plot: str) 
             continue
             
         # Limit to top 20 events to avoid token limits
-        events = events[:20]
+        events = events
         
         event_summaries = []
         for i, event in enumerate(events):
-            event_summaries.append(f"{i}: [{event.series}{event.season}E{event.episode}] {event.content[:150]}")
+            event_summaries.append(f"{i}: [{event.series}{event.season}E{event.episode}] {event.content}")
         
         prompt = f"""Select the 3 most ESSENTIAL events that provide crucial background for understanding the current episode.
 
-**Current Episode Plot:** {episode_plot[:400]}...
+**Current Episode Plot:** {episode_plot}...
 
 **Historical Events:**
 {chr(10).join(event_summaries)}
@@ -181,6 +184,8 @@ Select events that:
 2. Show crucial backstory for character motivations
 3. Set up major plot developments that matter now
 
+The most important thing is that the events selected should be the most interesting and relevant to the current episode! We are creating a recap to help viewers understand the current episode.
+
 IMPORTANT: Respond with ONLY the event numbers, separated by commas. Example: "0, 5, 12" or "1, 3, 7"
 
 Your answer (just the numbers):"""
@@ -189,14 +194,14 @@ Your answer (just the numbers):"""
             response = llm.invoke(prompt)
             response_content = response.content if hasattr(response, 'content') else str(response)
             
-            logger.debug(f"LLM response for arc {arc_id}: {response_content[:200]}...")
+            logger.debug(f"LLM response for arc {arc_id}: {response_content}...")
             
             # Simple number parsing from comma-separated response
             response_clean = response_content.strip()
             
             # Try to extract numbers directly
             numbers = re.findall(r'\b\d+\b', response_clean)
-            selected_indices = [int(x) for x in numbers[:3]]  # Take first 3 numbers
+            selected_indices = [int(x) for x in numbers]  # Take first 3 numbers
             
             # Convert indices to events
             selected_events = []
@@ -209,14 +214,14 @@ Your answer (just the numbers):"""
                 logger.info(f"Arc {arc_id}: selected {len(selected_events)} events")
             else:
                 logger.warning(f"Arc {arc_id}: LLM selection failed, using fallback")
-                ranked_events[arc_id] = events[:3]  # Fallback: first 3 events
+                ranked_events[arc_id] = events # Fallback: all events
                 logger.warning(f"Arc {arc_id}: LLM selection failed, using fallback")
-                ranked_events[arc_id] = events[:3]
+                ranked_events[arc_id] = events
             
         except Exception as e:
             logger.warning(f"Failed to rank events for arc {arc_id}: {e}")
             # Fallback: take first 3 events
-            ranked_events[arc_id] = events[:3]
+            ranked_events[arc_id] = events
     
     total_selected = sum(len(events) for events in ranked_events.values())
     logger.info(f"Ranked events across {len(ranked_events)} arcs: {total_selected} total events")
@@ -311,7 +316,7 @@ def extract_key_dialogue(events: List[Any], subtitle_data: Dict[str, List[Dict]]
 
             prompt = f"""Select the BEST CONSECUTIVE dialogue sequence for a "Previously On" recap clip.
 
-**Event Context:** {current_event.content[:200]}...
+**Event Context:** {current_event.content}
 **Arc:** {current_event.arc_title}
 **Event Timespan:** {current_event.start_time} - {current_event.end_time}
 
@@ -325,9 +330,11 @@ INSTRUCTIONS:
 4. Maximum: As many consecutive subtitles as fit within 10 seconds
 5. Choose dialogue that best represents this narrative moment
 
+The most important thing is that the subtitles selected should be the most interesting and relevant to the current episode! We are creating a recap to help viewers understand the current episode.
+
 OUTPUT FORMAT:
 If good consecutive dialogue exists, respond with ONLY the subtitle numbers (e.g., "0,1,2" or "1,2,3,4")
-If no good consecutive dialogue exists, respond with "SKIP"
+If no good consecutive dialogue exists, respond just with "SKIP"
 
 Your selection:"""
 

@@ -301,7 +301,7 @@ def search_vector_database(queries: List[Dict[str, Any]], current_series: str = 
                 # Search vector database using SAME method as original
                 results = vector_service.find_similar_events(
                     query['query_text'],
-                    n_results=4,  # Same as original
+                    n_results=10,  # Same as original
                     series=current_series or 'GA',
                     narrative_arc_ids=[query['narrative_arc_id']] if query.get('narrative_arc_id') else None,
                     exclude_episodes=exclude_episodes

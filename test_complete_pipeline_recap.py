@@ -57,8 +57,8 @@ def test_complete_recap_pipeline():
         print("\n📦 STEP 1: IMPORTING MODULES")
         print("-" * 30)
         
-        from recap_gen.recap_generator import RecapGenerator
-        from path_handler import PathHandler
+        from backend.src.recap_gen.recap_generator import RecapGenerator
+        from backend.src.path_handler import PathHandler
         
         logger.info("✅ Modules imported successfully")
         print("✅ RecapGenerator imported")
