@@ -1,0 +1,68 @@
+[
+    {
+        "entity_name": "george_omalley",
+        "best_appellation": "George O'Malley",
+        "appellations": ["George", "George O'Malley", "O'Malley"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "derek_shepherd",
+        "best_appellation": "Dr. Derek Shepherd",
+        "appellations": ["Derek", "Dr. Shepherd", "Derek Shepherd"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "mr_lavangie",
+        "best_appellation": "Mr. LaVangie",
+        "appellations": ["Mr. LaVangie"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "mrs_harper",
+        "best_appellation": "Mrs. Harper",
+        "appellations": ["Mrs. Harper"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "meredith_gray",
+        "best_appellation": "Meredith Gray",
+        "appellations": ["Meredith", "Meredith Gray", "Meredith Meredith"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "dr_burke",
+        "best_appellation": "Dr. Burke",
+        "appellations": ["Dr. Burke"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "alex_karev",
+        "best_appellation": "Alex Karev",
+        "appellations": ["Alex", "Alex Karev"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "cristina_yang",
+        "best_appellation": "Cristina Yang",
+        "appellations": ["Cristina", "Cristina Yang"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "miranda_bailey",
+        "best_appellation": "Dr. Miranda Bailey",
+        "appellations": ["Bailey", "Dr. Bailey", "Miranda Bailey"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "izzie_stevens",
+        "best_appellation": "Izzie Stevens",
+        "appellations": ["Izzie", "Izzie Izzie", "Izzie Stevens"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "mr_harper",
+        "best_appellation": "Mr. Harper",
+        "appellations": ["Mr. Harper"],
+        "biological_sex": "M"
+    }
+]

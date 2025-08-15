@@ -301,8 +301,6 @@ async def process_episode_directly(series: str, season: str, episode: str, inclu
             
             file_paths_for_graph = {
                 "episode_plot_path": path_handler.get_plot_possible_speakers_path(),
-                "seasonal_narrative_analysis_output_path": path_handler.get_season_narrative_analysis_path(),
-                "episode_narrative_analysis_output_path": path_handler.get_episode_narrative_analysis_path(),
                 "season_entities_path": path_handler.get_season_extracted_refined_entities_path(),
                 "suggested_episode_arc_path": suggested_arc_path
             }

@@ -1,0 +1,913 @@
+[
+  {
+    "title": "Medical Case: Annie Connors' Massive Tumor",
+    "arc_type": "Anthology Arc",
+    "description": "The surgical team at Seattle Grace treats Annie Connors, a woman with a massive abdominal tumor who has avoided hospitals for years due to traumatic losses. The interns participate in her complex case, from diagnosis through surgery, ultimately facing the emotional and physical toll when Annie dies in the operating room. The arc highlights the challenges and unpredictability of high-risk surgical cases.",
+    "main_characters": "Annie Connors; Dr. Miranda Bailey; Dr. Preston Burke",
+    "interfering_episode_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
+    "single_episode_progression_events": [
+      {
+        "content": "Dr. Miranda Bailey introduces Annie Connors and her case to the surgical interns, explaining the extent of her massive abdominal tumor.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Annie Connors",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:04:51,737",
+        "end_timestamp": "00:06:01,000",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Annie Connors jokes with the interns and requests Alex Karev to accompany her for her CT scan.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Annie Connors",
+          "Alex Karev",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:06:01,000",
+        "end_timestamp": "00:06:57,115",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "During Annie's CT scan, the interns accidentally leave the microphone on and Annie overhears Alex and others making insensitive comments about her tumor.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Annie Connors",
+          "Alex Karev",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:10:46,673",
+        "end_timestamp": "00:11:52,259",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Annie Connors requests that Alex Karev not be present during her surgery after overhearing the comments.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Annie Connors",
+          "Alex Karev",
+          "Dr. Miranda Bailey"
+        ],
+        "start_timestamp": "00:16:49,566",
+        "end_timestamp": "00:17:03,128",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Miranda Bailey reprimands the interns for their behavior during the CT scan and bans Izzie Stevens from the operating room for the week.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Izzie Stevens",
+          "Cristina Yang",
+          "George O'Malley",
+          "Alex Karev",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:17:25,939",
+        "end_timestamp": "00:17:41,738",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie Stevens talks with Annie Connors, who shares her fear of hospitals and her past trauma of losing loved ones in medical settings.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Annie Connors"
+        ],
+        "start_timestamp": "00:18:03,660",
+        "end_timestamp": "00:19:00,778",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Preston Burke leads the surgical team in the operation to remove Annie Connors' tumor, with George O'Malley and another intern assigned to retract the tumor.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Dr. Preston Burke",
+          "Annie Connors",
+          "George O'Malley",
+          "Cristina Yang",
+          "Meredith Grey",
+          "Surgical Team"
+        ],
+        "start_timestamp": "00:23:35,692",
+        "end_timestamp": "00:23:55,079",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The surgical team encounters severe complications as Annie Connors' tumor is more invasive than expected, causing uncontrollable bleeding.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Dr. Preston Burke",
+          "Annie Connors",
+          "George O'Malley",
+          "Cristina Yang",
+          "Meredith Grey",
+          "Surgical Team"
+        ],
+        "start_timestamp": "00:24:32,905",
+        "end_timestamp": "00:25:16,161",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Annie Connors dies on the operating table due to complications from the surgery.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Dr. Preston Burke",
+          "Annie Connors",
+          "George O'Malley",
+          "Cristina Yang",
+          "Meredith Grey",
+          "Surgical Team"
+        ],
+        "start_timestamp": "00:37:56,688",
+        "end_timestamp": "00:37:59,356",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Medical Case: Mr. LaVangie's Deep Brain Stimulation for Parkinson's Disease",
+    "arc_type": "Anthology Arc",
+    "description": "Meredith Grey and Derek Shepherd treat Mr. LaVangie, a patient with advanced Parkinson's disease, who must decide whether to undergo deep brain stimulation surgery to improve his quality of life for his daughter's wedding. The arc follows the team's efforts to gain his consent and the tense, ultimately successful, awake brain procedure.",
+    "main_characters": "Mr. LaVangie; Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "Mr. LaVangie's Daughter; Izzie Stevens",
+    "single_episode_progression_events": [
+      {
+        "content": "Meredith presents Mr. LaVangie's case to the team, outlining his advanced Parkinson's disease and pain management needs.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Meredith Grey",
+          "Mr. LaVangie",
+          "Derek Shepherd",
+          "Interns"
+        ],
+        "start_timestamp": "00:09:01,524",
+        "end_timestamp": "00:09:32,340",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek discusses the option of deep brain stimulation surgery with Mr. LaVangie, who refuses the procedure.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Mr. LaVangie"
+        ],
+        "start_timestamp": "00:21:40,969",
+        "end_timestamp": "00:22:23,559",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Mr. LaVangie's daughter asks Meredith to help convince her father to undergo surgery.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Mr. LaVangie",
+          "Mr. LaVangie's Daughter",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:12:51,201",
+        "end_timestamp": "00:13:00,754",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith promises Mr. LaVangie's daughter she will try to persuade him.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Meredith Grey",
+          "Mr. LaVangie's Daughter"
+        ],
+        "start_timestamp": "00:13:00,173",
+        "end_timestamp": "00:13:55,408",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek makes a second attempt to explain the risks and benefits of surgery to Mr. LaVangie, who remains resistant.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Mr. LaVangie"
+        ],
+        "start_timestamp": "00:15:16,346",
+        "end_timestamp": "00:15:40,841",
+        "confidence_score": 0.88,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith appeals to Mr. LaVangie, emphasizing the impact of his decision on his daughter.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Meredith Grey",
+          "Mr. LaVangie"
+        ],
+        "start_timestamp": "00:23:17,124",
+        "end_timestamp": "00:23:26,817",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Mr. LaVangie agrees to undergo deep brain stimulation surgery.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Mr. LaVangie",
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:24:01,809",
+        "end_timestamp": "00:24:08,644",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek performs the awake deep brain stimulation surgery on Mr. LaVangie, with Meredith and Izzie assisting.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Mr. LaVangie",
+          "Meredith Grey",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:27:28,701",
+        "end_timestamp": "00:28:18,445",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The surgical team successfully completes the procedure and Mr. LaVangie responds positively.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Mr. LaVangie",
+          "Meredith Grey",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:29:26,413",
+        "end_timestamp": "00:30:06,317",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Medical Case: Emergency Bedside Surgery on Mr. Harper",
+    "arc_type": "Anthology Arc",
+    "description": "The interns are thrust into a high-stakes medical situation when Izzie Stevens and Cristina Yang must perform an emergency bedside thoracotomy on post-op heart patient Mr. Harper without an attending present, showcasing their ability to act decisively and save a life under extreme pressure.",
+    "main_characters": "Izzie Stevens; Cristina Yang",
+    "interfering_episode_characters": "Mr. Harper; Resident (voice)",
+    "single_episode_progression_events": [
+      {
+        "content": "Mr. Harper, a post-op heart patient, suddenly deteriorates and goes into cardiac distress on the ward.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Mr. Harper",
+          "Izzie Stevens",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:31:19,634",
+        "end_timestamp": "00:31:44,509",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina and Izzie determine that no attending is available and decide to intervene immediately.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:31:44,528",
+        "end_timestamp": "00:31:48,493",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina calls a resident for instructions over the phone while Izzie prepares for an emergency thoracotomy.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Resident (voice)"
+        ],
+        "start_timestamp": "00:31:48,473",
+        "end_timestamp": "00:32:06,289",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie, guided by Cristina and the resident, performs a bedside thoracotomy and locates a clot in Mr. Harper's chest.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Cristina Yang",
+          "Mr. Harper",
+          "Resident (voice)"
+        ],
+        "start_timestamp": "00:32:06,790",
+        "end_timestamp": "00:32:41,701",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie removes the clot, restoring Mr. Harper's heartbeat and stabilizing his condition.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Cristina Yang",
+          "Mr. Harper"
+        ],
+        "start_timestamp": "00:32:41,701",
+        "end_timestamp": "00:33:08,965",
+        "confidence_score": 0.91,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Meredith Grey and Derek Shepherd: Secret Romance and Professional Boundaries",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey and Derek Shepherd's romantic relationship, which began before they knew they would be working together, is complicated by the need for secrecy at Seattle Grace Hospital. As they try to balance their personal feelings with professional boundaries, their relationship faces scrutiny from colleagues, risks to Meredith's reputation, and the constant threat of exposure, all while navigating the pressures of surgical residency.",
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "Miranda Bailey; Cristina Yang",
+    "single_episode_progression_events": [
+      {
+        "content": "Meredith and Derek discuss the risks and complications of continuing their secret relationship at work.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:02:54,538",
+        "end_timestamp": "00:03:10,145",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Miranda Bailey, aware of their relationship, avoids Meredith and warns Derek not to show Meredith favoritism.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:09:58,072",
+        "end_timestamp": "00:10:42,076",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina confronts Meredith about avoiding her after Bailey witnessed Meredith and Derek together.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:02:34,538",
+        "end_timestamp": "00:02:45,288",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek tells Meredith that if he were a better man, he would end their relationship, but Meredith remains undecided.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:02:55,889",
+        "end_timestamp": "00:03:10,145",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey warns Derek again not to show Meredith any favoritism and threatens to keep Meredith out of the OR if she sees bias.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Derek Shepherd",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:10:18,687",
+        "end_timestamp": "00:10:42,076",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith confides in Cristina about her struggles with Derek and the impact on her reputation.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:19:42,932",
+        "end_timestamp": "00:20:01,017",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina advises Meredith to end her relationship with Derek.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:20:02,798",
+        "end_timestamp": "00:20:04,540",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith confronts Derek after surgery and insists he cannot treat her differently because of their relationship.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:30:15,950",
+        "end_timestamp": "00:30:37,313",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek invites Meredith to watch the sunrise with him after their shift.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:41:33,811",
+        "end_timestamp": "00:42:16,650",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "The Interns' Rivalries and Bonds in Surgical Residency",
+    "arc_type": "Soap Arc",
+    "description": "Meredith, Cristina, George, Izzie, and Alex navigate the intense pressures of surgical residency at Seattle Grace. As they compete for cases and recognition, they form shifting friendships, alliances, and rivalries. Their relationships are tested by the demands of the program, personal insecurities, and the need to prove themselves, shaping their sense of belonging and identity within the hospital.",
+    "main_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
+    "interfering_episode_characters": "Miranda Bailey; Annie Connors; Preston Burke; Other Interns; Resident (phone)",
+    "single_episode_progression_events": [
+      {
+        "content": "Cristina and Izzie tease George about his feelings for Meredith during the interns' morning routine.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Meredith Grey",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:01:52,174",
+        "end_timestamp": "00:02:16,753",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina confronts Meredith about avoiding her after Bailey witnesses Meredith and Derek together.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:02:34,538",
+        "end_timestamp": "00:02:54,115",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns gather around Annie Connors and speculate about her tumor.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:06:45,201",
+        "end_timestamp": "00:07:08,593",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Annie requests Alex to accompany her for her CT scan, prompting playful rivalry among the interns.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Annie Connors",
+          "Alex Karev",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:07:09,413",
+        "end_timestamp": "00:07:16,805",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey reprimands the interns after Annie overhears their insensitive comments during her CT scan, and bans Izzie from the OR.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Izzie Stevens",
+          "Alex Karev",
+          "Cristina Yang",
+          "George O'Malley",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:12:43,043",
+        "end_timestamp": "00:12:38,615",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie and Cristina discuss Annie's avoidance of hospitals.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:13:41,441",
+        "end_timestamp": "00:13:47,663",
+        "confidence_score": 0.88,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George confides in Annie about his fear of asking out his roommate.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "George O'Malley",
+          "Annie Connors"
+        ],
+        "start_timestamp": "00:18:11,451",
+        "end_timestamp": "00:18:22,721",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina jokes about Dr. Burke possibly being interested in her in front of the other interns.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:20:11,651",
+        "end_timestamp": "00:20:19,568",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns express excitement and competition over participating in Annie's tumor surgery.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:20:19,568",
+        "end_timestamp": "00:20:33,651",
+        "confidence_score": 0.88,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George and another intern are assigned to retract Annie's tumor for hours during surgery.",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "George O'Malley",
+          "Other Interns"
+        ],
+        "start_timestamp": "00:23:35,692",
+        "end_timestamp": "00:23:55,079",
+        "confidence_score": 0.91,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie and Cristina perform an emergency bedside surgery together, coached by a resident over the phone.",
+        "ordinal_position": 11,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Cristina Yang",
+          "Resident (phone)"
+        ],
+        "start_timestamp": "00:31:29,710",
+        "end_timestamp": "00:33:09,865",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina, exhausted after surgery, argues with Burke about their undefined relationship.",
+        "ordinal_position": 12,
+        "characters_involved": [
+          "Cristina Yang",
+          "Preston Burke"
+        ],
+        "start_timestamp": "00:39:56,889",
+        "end_timestamp": "00:40:22,168",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Alex tells George that Meredith is 'off the market,' and George insists they are just friends.",
+        "ordinal_position": 13,
+        "characters_involved": [
+          "Alex Karev",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:40:43,193",
+        "end_timestamp": "00:40:53,585",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Cristina Yang and Preston Burke: Ambiguous Romance and Professional Ambition",
+    "arc_type": "Soap Arc",
+    "description": "Cristina Yang and Dr. Preston Burke navigate a secret romantic relationship while working together as surgeon and intern. Their connection is complicated by the demands of surgical careers, the need for discretion, and uncertainty about defining their relationship. Throughout the season, they struggle to balance ambition, professionalism, and personal feelings as their relationship evolves.",
+    "main_characters": "Cristina Yang; Preston Burke",
+    "interfering_episode_characters": "Izzie Stevens; Alex Karev; George O'Malley",
+    "single_episode_progression_events": [
+      {
+        "content": "Cristina jokes to the interns that Dr. Burke might be interested in her, hinting at their secret relationship.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Alex Karev",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:20:14,953",
+        "end_timestamp": "00:20:18,117",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina and Burke exchange glances and subtle interactions in the OR while maintaining secrecy.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Cristina Yang",
+          "Preston Burke"
+        ],
+        "start_timestamp": "00:28:28,737",
+        "end_timestamp": "00:29:03,153",
+        "confidence_score": 0.85,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina, exhausted after surgery, confronts Burke about their undefined relationship and questions whether he wants to complicate things further.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Cristina Yang",
+          "Preston Burke"
+        ],
+        "start_timestamp": "00:39:56,889",
+        "end_timestamp": "00:40:29,614",
+        "confidence_score": 0.88,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Miranda Bailey's Mentorship of the Surgical Interns",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Dr. Miranda Bailey asserts her authority as a strict and principled mentor to the surgical interns at Seattle Grace, upholding professional boundaries and enforcing hospital hierarchies. Through her demanding expectations and disciplinary actions, Bailey guides the interns as they navigate the challenges of surgical training, institutional politics, and the complications arising from personal relationships within the hospital.",
+    "main_characters": "Miranda Bailey",
+    "interfering_episode_characters": "Meredith Grey; Derek Shepherd; Izzie Stevens; Alex Karev; Cristina Yang; George O'Malley",
+    "single_episode_progression_events": [
+      {
+        "content": "Bailey becomes aware of Meredith and Derek's affair and begins avoiding Meredith, signaling her disapproval and enforcing professional distance.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:02:50,734",
+        "end_timestamp": "00:02:52,435",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey gathers the interns for morning rounds and introduces Annie Connors, assigning responsibilities and setting expectations for their conduct.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:04:51,737",
+        "end_timestamp": "00:05:13,723",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey warns Derek not to show favoritism toward Meredith and threatens to keep Meredith out of the OR if she observes any bias.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Derek Shepherd",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:09:58,072",
+        "end_timestamp": "00:10:42,076",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey reprimands the interns, especially Izzie, after Annie overhears insensitive comments during her CT scan, and bans Izzie from the OR for the week.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Izzie Stevens",
+          "Alex Karev",
+          "Cristina Yang",
+          "George O'Malley",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:17:25,939",
+        "end_timestamp": "00:17:41,738",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Ethical Dilemmas and Moral Growth in Surgical Training",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The surgical interns and staff at Seattle Grace confront complex ethical decisions and high-pressure medical situations, including end-of-life care, patient consent, and professional conduct. These challenges test their values, professionalism, and technical abilities, shaping their moral growth and confidence as developing surgeons.",
+    "main_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
+    "interfering_episode_characters": "Miranda Bailey; Derek Shepherd; Preston Burke; Annie Connors; Mr. LaVangie; Mr. LaVangie's Daughter; Mr. Harper; Resident (phone)",
+    "single_episode_progression_events": [
+      {
+        "content": "Bailey warns Derek not to show favoritism toward Meredith due to their relationship, threatening to keep Meredith out of the OR if bias is observed.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Derek Shepherd",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:09:58,072",
+        "end_timestamp": "00:10:42,076",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns discuss Annie Connors' massive tumor and speculate about its weight, raising issues of patient privacy and sensitivity.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:07:02,463",
+        "end_timestamp": "00:07:16,805",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Annie overhears Alex and other interns making insensitive comments about her tumor during her CT scan and requests that Alex not be present for her surgery.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Annie Connors",
+          "Alex Karev",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:11:21,325",
+        "end_timestamp": "00:16:59,200",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey reprimands the interns for their lack of professionalism and bans Izzie from the OR for the week as a consequence of the CT scan incident.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Izzie Stevens",
+          "Alex Karev",
+          "Cristina Yang",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:17:25,939",
+        "end_timestamp": "00:17:41,738",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Mr. LaVangie's daughter asks Meredith to convince her father to undergo deep brain stimulation for his Parkinson's disease.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Meredith Grey",
+          "Mr. LaVangie",
+          "Mr. LaVangie's Daughter"
+        ],
+        "start_timestamp": "00:12:51,201",
+        "end_timestamp": "00:13:53,446",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek and Meredith discuss the risks and benefits of deep brain stimulation with Mr. LaVangie, who initially refuses the surgery.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Meredith Grey",
+          "Mr. LaVangie",
+          "Mr. LaVangie's Daughter"
+        ],
+        "start_timestamp": "00:21:40,969",
+        "end_timestamp": "00:22:59,538",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith appeals to Mr. LaVangie to consider the surgery for his daughter's sake, leading him to consent to the procedure.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Meredith Grey",
+          "Mr. LaVangie"
+        ],
+        "start_timestamp": "00:23:17,124",
+        "end_timestamp": "00:23:26,817",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek performs deep brain stimulation on Mr. LaVangie with Meredith and Izzie assisting, requiring the patient to remain awake.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Meredith Grey",
+          "Izzie Stevens",
+          "Mr. LaVangie"
+        ],
+        "start_timestamp": "00:27:28,701",
+        "end_timestamp": "00:30:04,449",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie and Cristina perform an emergency bedside surgery on Mr. Harper, cracking his chest and removing a clot without an attending present, guided by a resident over the phone.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Cristina Yang",
+          "Mr. Harper",
+          "Resident (phone)"
+        ],
+        "start_timestamp": "00:31:23,942",
+        "end_timestamp": "00:33:09,865",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The surgical team operates on Annie Connors' tumor, encounters unexpected complications, and ultimately fails to save her.",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "Preston Burke",
+          "Cristina Yang",
+          "George O'Malley",
+          "Annie Connors"
+        ],
+        "start_timestamp": "00:33:20,105",
+        "end_timestamp": "00:37:59,356",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  }
+]

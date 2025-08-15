@@ -1,0 +1,104 @@
+{
+  "scenes": [
+    {
+      "scene_number": 1,
+      "plot_segment": "A character narrates about childhood belief in fairy tales, describing fantasies of a perfect life with a white dress and Prince Charming. The narration continues, reflecting on the loss of faith in these fantasies as one grows up. The scene shifts to two people baking cupcakes and discussing that something is missing from the recipe. One person suggests calling their mother for advice, but the other refuses. The narration continues about how people turn to those they trust when the fairy tale fades. Another character suggests sleeping at the other's house for a change, questioning if they even have a house with personal belongings. The conversation is light but hints at intimacy and questions about personal life. The scene ends with a character offering cupcakes to others in the morning, and the narration notes that most people still hold onto a bit of hope that their dreams might come true.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 2,
+      "plot_segment": "At the hospital, a character checks their rotation schedule and tries to book a medical procedure for the 16th, discussing options like termination, adoption, or keeping a baby with a healthcare provider. The character is not interested in talking and confirms the appointment for the 16th. The scene then shifts to a patient named Devo, a 17-year-old female hospitalized for excessive bleeding after a root canal, who also has a new heart murmur and fever. Devo jokes about her parents and expresses fear of dying. A doctor assures her she is in good hands and assigns another doctor to run labs. Devo reveals she prefers to be called Esther and makes jokes about her name and background. The scene ends with another patient being transferred from psych to neuro, who claims to be psychic and predicts someone will die on the fourth floor. The staff are skeptical but proceed with medical evaluations.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 3,
+      "plot_segment": "A group of interns discuss the psychic patient's prediction about someone dying on the fourth floor. One intern asks another to cover their shift on the 16th, but is evasive about the reason. The conversation shifts to personal details, with one character pressing another for information about their life outside work, such as friends and hobbies. The other character is reluctant to share, insisting they are a surgeon and have no friends. The conversation becomes tense as one character demands more personal details, threatening to withhold intimacy until they get answers. The other suggests being flexible and seeing what happens, but the first character insists they are not flexible.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 4,
+      "plot_segment": "A doctor explains to Devo's parents that she needs a valve replacement due to von Willebrand's disease, which caused her excessive bleeding. A porcine (pig) valve is recommended, but Devo and her family have religious concerns about using a pig valve. The parents ultimately tell the doctors to do whatever is necessary to save their daughter's life. In another room, staff discuss the psychic patient and the frequency of deaths on the fourth floor. The psychic continues to make jokes and claims about his abilities. Meanwhile, another patient, Mr. Walker, is evaluated for paralysis after a fall while rock climbing. The staff note his symptoms are progressing, and an MRI is ordered. An intern is assigned to accompany him.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 5,
+      "plot_segment": "During a procedure, an intern attempts to intubate a patient but mistakenly places the tube in the esophagus instead of the trachea. The attending physician criticizes the intern for not being confident and for making a potentially dangerous mistake. The attending reviews the importance of always being able to follow through and never taking their eyes off the task. The intern admits to not having much experience but insists they are usually competent. The attending emphasizes the seriousness of the job and the need for certainty.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 6,
+      "plot_segment": "A doctor reviews MRI results with the psychic patient, Mr. Duff, and explains that he has epilepsy, not visions, and that his episodes are seizures. Mr. Duff is skeptical and resists further testing. Suddenly, he appears to have another episode. The staff try to keep him engaged and joke with him, but he insists that someone on the fourth floor is going to die. The scene shifts to another intern asking to switch off the psychic case, offering to do extra work in exchange. The supervising doctor agrees to the switch, assigning the psychic patient to another intern. The new intern is also tasked with a breast cancer patient who is pregnant and needs a pelvic exam.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 7,
+      "plot_segment": "A doctor reviews Mr. Walker's case and notes that his films are clear, with no obvious reason for his progressing paralysis. The attending is frustrated and demands more information from the intern. The intern asks personal questions, but the attending is dismissive. Meanwhile, the breast cancer patient and her husband discuss treatment options with the medical team. The doctors explain that the cancer treatment will not allow the baby to survive, forcing the patient to choose between her own life and the baby's. The patient and her husband are devastated by the decision they must make.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 8,
+      "plot_segment": "Mr. Walker's paralysis worsens, and the staff discuss the possibility of a conversion reaction (psychosomatic paralysis) due to emotional trauma. Mr. Duff, the psychic patient, interjects and insists that Mr. Walker is not crazy. The attending orders a higher-level MRI to investigate further. In another scene, the breast cancer patient expresses her frustration about the religious implications of receiving a pig valve. She debates with her parents about faith and the importance of her beliefs. The attending doctor insists that the procedure is necessary to save her life.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 9,
+      "plot_segment": "Mr. Duff flirts with a doctor while being prepared for an MRI, making jokes about her being attracted to him. During the scan, he mentions chocolate cupcakes, which surprises the doctor. She suspects he is using observation and body language rather than psychic abilities. Mr. Duff continues to play along, and the doctor remains skeptical. In another scene, an intern encourages a colleague to ask out a nurse after a difficult day, but the colleague is discouraged by a recent mistake. The group jokes about seeing the psychic for advice.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 10,
+      "plot_segment": "The breast cancer patient, who is 47 and pregnant, shares her feelings about the difficulty of her situation with a doctor. She describes her struggle with fertility and the unexpected pregnancy. The doctor bluntly explains the statistics and the consequences of forgoing treatment. The patient is left to consider whose life she wants to save—her own or the baby's. In another room, Mr. Walker's neurological exam continues, and the attending decides to operate, suspecting a missed clot in the upper spine. The intern questions the decision, but the attending insists on trusting their instincts and taking a chance to save the patient's life.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 11,
+      "plot_segment": "The breast cancer patient and her husband decide to proceed with evacuation of the fetus and begin chemotherapy. The intern is asked if they have performed a D&C before and is told to proceed under supervision. In the OR, the attending and intern operate on Mr. Walker, searching for a clot that may be causing his paralysis. The intern expresses doubts, but the attending insists on continuing. The operation is tense, with the team searching for the source of the problem.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 12,
+      "plot_segment": "The breast cancer patient and her husband change their minds and decide to keep the baby, despite the risks. The doctor explains that survival is not guaranteed, and the patient acknowledges the difficult odds but chooses to proceed with the pregnancy. The doctor suggests a psych consult, but the patient declines, determined to be happy and live for the baby. In another scene, the attending and intern continue the spinal surgery, searching for the clot. The intern is told to focus and keep looking.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 13,
+      "plot_segment": "An intern is called to intubate a patient whose oxygen levels are dropping. The intern is nervous but successfully completes the intubation, receiving praise from the attending. In another scene, the intern who previously suggested a bovine valve for Devo is allowed to scrub in on the surgery after arranging for the valve to be delivered. The attending reminds the intern that this does not earn them any special points and instructs them to find a rabbi to bless Devo before surgery.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 14,
+      "plot_segment": "During the spinal surgery, the team finally locates the clot at the second thoracic vertebrae. The attending and intern suction and pack the area, relieved to have found the cause of the paralysis. The attending is called to oncology, and the intern is told they were right about the diagnosis. The patient's family is informed that the paralysis has been stopped, but it is uncertain if the existing paralysis will be permanent. The intern reflects on the importance of faith and believing in what is real.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 15,
+      "plot_segment": "Two characters discuss the nature of their relationship, with one suggesting that it could be considered a relationship involving exchanging keys and personal items. The other is hesitant but is asked to show a reason to believe. In another scene, the breast cancer patient is discharged. She explains to her doctor that she and her husband have made their decision and do not need the doctor's approval, though she wishes the doctor would understand.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 16,
+      "plot_segment": "An intern brings consent forms to Mr. Duff, who appears to be having another seizure. He tells the intern that he thinks his visions are about to end, expressing concern that his identity has always been tied to his psychic abilities. The intern reassures him that if his visions are real, he will still have them after surgery. In another scene, a rabbi blesses Devo before her surgery. The surgical team prepares for the bovine valve replacement, assisted remotely by an expert from the Cleveland Clinic.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 17,
+      "plot_segment": "Two interns discuss the earlier disagreement about the spinal surgery, with one admitting they tried to talk the attending out of it and feeling guilty. The other jokes about being attractive. Another intern, George, is teased about having a date, and is given advice about safe sex. The group reflects on the psychic patient's surgery and wonders if his abilities will remain. One intern shares a personal story about growing up with a mother who believed in psychics, expressing doubt but also curiosity about the patient's insights.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 18,
+      "plot_segment": "Mr. Walker, the spinal surgery patient, is recovering and regaining some sensation in his stomach and feet, though bladder and bowel function are still impaired. He thanks the intern for believing in him. He demonstrates some movement in his toes, which is a significant improvement. The intern is pleased and acknowledges the progress.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 19,
+      "plot_segment": "A character narrates about faith, noting that it appears unexpectedly. Mr. Duff, the psychic patient, is awake after surgery and gives the intern a tip for the cupcake recipe: one tablespoon of coconut extract. The narration continues, reflecting on how the fairy tale may not be exactly as imagined, but happiness can still be found in the present moment. Two characters go for a walk together, and one asks if something beats or moves, suggesting a romantic or hopeful gesture.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 20,
+      "plot_segment": "A character calls their mother, using the nickname 'Cricket,' and shares that they have been thinking about her. The narration continues, stating that people can surprise you. Another character shares personal details about their life, including family, favorite foods, hobbies, and quirks, revealing vulnerability and trust. The narration concludes that sometimes people can take your breath away.",
+      "is_recap": false
+    }
+  ]
+}

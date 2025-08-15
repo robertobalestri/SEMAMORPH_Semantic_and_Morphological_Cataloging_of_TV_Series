@@ -1,0 +1,26 @@
+[
+    {
+        "entity_name": "george",
+        "best_appellation": "George",
+        "appellations": ["George"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "mr_walker",
+        "best_appellation": "Mr. Walker",
+        "appellations": ["Mr. Walker"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "mr_duff",
+        "best_appellation": "Mr. Duff",
+        "appellations": ["Mr. Duff"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "prince_charming",
+        "best_appellation": "Prince Charming",
+        "appellations": ["Prince Charming", "prince_charming"],
+        "biological_sex": "M"
+    }
+]

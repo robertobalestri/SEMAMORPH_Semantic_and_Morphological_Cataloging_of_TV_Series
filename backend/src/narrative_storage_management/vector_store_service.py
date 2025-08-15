@@ -3,13 +3,25 @@
 from typing import List, Dict, Optional, Any, Union
 from langchain.schema import Document
 from langchain_chroma import Chroma
-from ..ai_models.ai_models import get_embedding_model
 import logging
 import os
 import numpy as np
 from hdbscan import HDBSCAN
 
-from ..utils.logger_utils import setup_logging
+# Use absolute imports to avoid relative import issues
+try:
+    from ai_models.ai_models import get_embedding_model
+    from utils.logger_utils import setup_logging
+except ImportError:
+    # Fallback for when running from different contexts
+    import sys
+    current_dir = os.path.dirname(__file__)
+    backend_src = os.path.dirname(current_dir)
+    if backend_src not in sys.path:
+        sys.path.insert(0, backend_src)
+    from ai_models.ai_models import get_embedding_model
+    from utils.logger_utils import setup_logging
+
 logger = setup_logging(__name__)
 
 class VectorStoreService:
@@ -116,9 +128,11 @@ class VectorStoreService:
         season: Optional[str] = None,
         episode: Optional[str] = None,
         timestamp_range: Optional[tuple] = None,
-        min_confidence: Optional[float] = None
+        min_confidence: Optional[float] = None,
+        narrative_arc_ids: Optional[List[str]] = None,
+        exclude_episodes: Optional[List[tuple]] = None  # New parameter: [(season, episode), ...]
     ) -> List[Dict[str, Any]]:
-        """Find similar events to a query with optional temporal and quality filtering."""
+        """Find similar events to a query with optional temporal, quality, and narrative arc filtering."""
         filter_criteria = {"$and": [{"doc_type": "event"}]}
         if series:
             filter_criteria["$and"].append({"series": series})
@@ -132,13 +146,46 @@ class VectorStoreService:
             filter_criteria["$and"].append({"end_timestamp": {"$lte": end_time}})
         if min_confidence:
             filter_criteria["$and"].append({"confidence_score": {"$gte": min_confidence}})
+        if narrative_arc_ids:
+            # Filter by narrative arc IDs - events/progressions use 'main_arc_id', main docs use 'id'
+            filter_criteria["$and"].append({
+                "$or": [
+                    {"main_arc_id": {"$in": narrative_arc_ids}},  # For progressions and events
+                    {"id": {"$in": narrative_arc_ids}}            # For main arc documents
+                ]
+            })
 
         try:
+            # Get initial results from vector search
             results = self.collection.similarity_search_with_score(
                 query,
-                k=n_results,
+                k=n_results * 3 if exclude_episodes else n_results,  # Get more if we need to filter
                 filter=filter_criteria
             )
+            
+            # Apply episode exclusion post-search if needed (ChromaDB doesn't support complex NOT queries)
+            if exclude_episodes:
+                filtered_results = []
+                for result in results:
+                    metadata = result[0].metadata
+                    episode_season = metadata.get('season')
+                    episode_episode = metadata.get('episode')
+                    
+                    # Check if this episode should be excluded
+                    should_exclude = any(
+                        episode_season == exclude_season and episode_episode == exclude_episode
+                        for exclude_season, exclude_episode in exclude_episodes
+                    )
+                    
+                    if not should_exclude:
+                        filtered_results.append(result)
+                        
+                    # Stop when we have enough results
+                    if len(filtered_results) >= n_results:
+                        break
+                
+                results = filtered_results
+            
             return [{"metadata": result[0].metadata, "cosine_distance": result[1], "page_content": result[0].page_content} for result in results]
         except Exception as e:
             logger.error(f"Error during event similarity search: {e}")
@@ -258,18 +305,7 @@ class VectorStoreService:
 
         except Exception as e:
             logger.error(f"Error deleting event documents for progression ID {progression_id}: {e}")
-            raise
-
-            if ids_to_delete:
-                self.collection.delete(ids=ids_to_delete)
-                logger.info(f"Deleted {len(ids_to_delete)} documents for arc ID {arc_id}.")
-            else:
-                logger.info(f"No documents found for arc ID {arc_id}.")
-
-        except Exception as e:
-            logger.error(f"Error deleting documents for arc ID {arc_id}: {e}")
-            raise
-
+            
     def delete_all_documents(self):
         """Delete all documents from the collection."""
         try:

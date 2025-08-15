@@ -1,0 +1,264 @@
+[
+  {
+    "entity_name": "george_omalley",
+    "best_appellation": "Dr. George O'Malley",
+    "appellations": [
+      "George O'Malley",
+      "George",
+      "Dr. O'Malley",
+      "Dr. George O'Malley",
+      "O'Malley"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "derek_shepherd",
+    "best_appellation": "Dr. Derek Shepherd",
+    "appellations": [
+      "Derek Shepherd",
+      "Derek",
+      "Dr. Shepherd",
+      "Dr. Derek Shepherd",
+      "Shepherd"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "mr_lavangie",
+    "best_appellation": "Mr. LaVangie",
+    "appellations": [
+      "Mr. LaVangie",
+      "LaVangie"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "mrs_harper",
+    "best_appellation": "Mrs. Harper",
+    "appellations": [
+      "Mrs. Harper"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "meredith_gray",
+    "best_appellation": "Dr. Meredith Gray",
+    "appellations": [
+      "Meredith Gray",
+      "Meredith",
+      "Dr. Gray",
+      "Dr. Meredith Gray",
+      "Gray",
+      "Meredith Meredith"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "annie_connors",
+    "best_appellation": "Annie Connors",
+    "appellations": [
+      "Annie Connors",
+      "Annie"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "dr_burke",
+    "best_appellation": "Dr. Preston Burke",
+    "appellations": [
+      "Dr. Burke",
+      "Burke",
+      "Dr. Preston Burke"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "alex_karev",
+    "best_appellation": "Dr. Alex Karev",
+    "appellations": [
+      "Alex Karev",
+      "Alex",
+      "Dr. Karev",
+      "Dr. Alex Karev",
+      "Karev"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "benjamin_franklin",
+    "best_appellation": "Benjamin Franklin",
+    "appellations": [
+      "Benjamin Franklin",
+      "Franklin"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "cristina_yang",
+    "best_appellation": "Dr. Cristina Yang",
+    "appellations": [
+      "Cristina Yang",
+      "Cristina",
+      "Dr. Yang",
+      "Dr. Cristina Yang",
+      "Yang"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "miranda_bailey",
+    "best_appellation": "Dr. Miranda Bailey",
+    "appellations": [
+      "Miranda Bailey",
+      "Bailey",
+      "Dr. Bailey",
+      "Dr. Miranda Bailey"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "izzie_stevens",
+    "best_appellation": "Dr. Izzie Stevens",
+    "appellations": [
+      "Izzie Stevens",
+      "Izzie",
+      "Dr. Stevens",
+      "Dr. Izzie Stevens",
+      "Stevens",
+      "Izzie Izzie"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "mr_harper",
+    "best_appellation": "Mr. Harper",
+    "appellations": [
+      "Mr. Harper"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "george_omalley",
+    "best_appellation": "George O'Malley",
+    "appellations": [
+      "George",
+      "George O'Malley",
+      "O'Malley"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "derek_shepherd",
+    "best_appellation": "Dr. Derek Shepherd",
+    "appellations": [
+      "Derek",
+      "Dr. Shepherd",
+      "Derek Shepherd"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "mr_lavangie",
+    "best_appellation": "Mr. LaVangie",
+    "appellations": [
+      "Mr. LaVangie"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "mrs_harper",
+    "best_appellation": "Mrs. Harper",
+    "appellations": [
+      "Mrs. Harper"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "meredith_gray",
+    "best_appellation": "Meredith Gray",
+    "appellations": [
+      "Meredith",
+      "Meredith Gray",
+      "Meredith Meredith"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "dr_burke",
+    "best_appellation": "Dr. Burke",
+    "appellations": [
+      "Dr. Burke"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "alex_karev",
+    "best_appellation": "Alex Karev",
+    "appellations": [
+      "Alex",
+      "Alex Karev"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "cristina_yang",
+    "best_appellation": "Cristina Yang",
+    "appellations": [
+      "Cristina",
+      "Cristina Yang"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "miranda_bailey",
+    "best_appellation": "Dr. Miranda Bailey",
+    "appellations": [
+      "Bailey",
+      "Dr. Bailey",
+      "Miranda Bailey"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "izzie_stevens",
+    "best_appellation": "Izzie Stevens",
+    "appellations": [
+      "Izzie",
+      "Izzie Izzie",
+      "Izzie Stevens"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "mr_harper",
+    "best_appellation": "Mr. Harper",
+    "appellations": [
+      "Mr. Harper"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  }
+]

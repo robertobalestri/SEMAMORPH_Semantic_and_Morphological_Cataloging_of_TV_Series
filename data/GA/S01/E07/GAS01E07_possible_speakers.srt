@@ -1,0 +1,3744 @@
+1
+00:00:01,145 --> 00:00:02,907
+Dr. Meredith Gray: Previously on Grey's Anatomy.
+
+2
+00:00:02,927 --> 00:00:05,235
+George O'Malley / Dr. Meredith Gray (PVM): I've had this thing from my roommate since, like, day one.
+
+3
+00:00:05,394 --> 00:00:07,440
+George O'Malley / Dr. Meredith Gray (PVM): And I just, I can't tell her.
+
+4
+00:00:08,663 --> 00:00:10,125
+Izzie Stevens / Dr. Meredith Gray (PVM): Wouldn't it be easier to just ask her out?
+
+5
+00:00:10,768 --> 00:00:12,913
+Meredith Grey / Dr. Meredith Gray (PVM): Are you really as shallow and callous as you seem?
+
+6
+00:00:13,855 --> 00:00:17,905
+Alex Karev / Digby Owens (PVM): Oh, you want to go out for a drink later and hear about my secret pain?
+
+7
+00:00:17,986 --> 00:00:18,547
+Meredith Grey / Dr. Meredith Gray (PVM): I can't.
+
+8
+00:00:18,567 --> 00:00:19,547
+Meredith Grey / Digby Owens OR Dr. Meredith Gray (PVM): I'm seeing someone.
+
+9
+00:00:19,568 --> 00:00:21,010
+Alex Karev / Digby Owens (PVM): Save yourself the misery, man.
+
+10
+00:00:21,170 --> 00:00:22,192
+Alex Karev / Digby Owens OR Dr. Meredith Gray (PVM): She's off the market.
+
+11
+00:00:22,332 --> 00:00:22,512
+George O'Malley: What?
+
+12
+00:00:22,713 --> 00:00:23,253
+George O'Malley: But she's not.
+
+13
+00:00:23,271 --> 00:00:25,196
+George O'Malley: I mean, if she was seeing someone, I live with her.
+
+14
+00:00:25,335 --> 00:00:25,856
+George O'Malley: I would know it.
+
+15
+00:00:25,937 --> 00:00:37,332
+Miranda Bailey / Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): And the longer this little fling goes on, the more favors you get over the others who are fighting to the nail just to make it through this program when those people start finding out what's going on.
+
+16
+00:00:37,713 --> 00:00:39,576
+Meredith Grey / Dr. Miranda Bailey OR Digby Owens (PVM): What is this that we're doing here?
+
+17
+00:00:40,295 --> 00:00:41,378
+Derek Shepherd / Dr. Miranda Bailey (PVM): You need a definition?
+
+18
+00:00:41,417 --> 00:00:47,807
+Dr. Miranda Bailey: The next time I see you favoring Meredith Gray in any way, I'll make sure she doesn't see the inside of an OR for a month.
+
+19
+00:00:52,411 --> 00:00:59,118
+Dr. Meredith Gray: Okay, anyone who says you can sleep when you die, tell them to come talk to me after a few months as an intern.
+
+20
+00:01:00,359 --> 00:01:04,245
+Dr. Meredith Gray: Of course, it's not just the job that keeps us up all night.
+
+21
+00:01:05,346 --> 00:01:08,971
+Meredith Grey / Dr. Miranda Bailey OR Dr. Meredith Gray OR Dr. Meredith Gray OR Dr. Meredith Gray (PVM): You have to get up now.
+
+22
+00:01:08,992 --> 00:01:09,971
+Derek Shepherd / Dr. Isobel Stevens (PVM): What?
+
+23
+00:01:09,992 --> 00:01:13,378
+Derek Shepherd / Dick B. OR Dr. Meredith Gray OR Dr. Meredith Gray (PVM): My God, what time is it?
+
+24
+00:01:13,397 --> 00:01:13,998
+Meredith Grey / Dr. Meredith Gray (PVM): It's 5.20.
+
+25
+00:01:15,000 --> 00:01:16,319
+Meredith Grey / Dr. Meredith Gray (PVM): And I have three rounds.
+
+26
+00:01:18,384 --> 00:01:19,825
+Meredith Grey / Dr. Meredith Gray (PVM): And you have to leave before they see you.
+
+27
+00:01:20,066 --> 00:01:21,608
+Derek Shepherd / Dr. Meredith Gray (PVM): Oh, come on now.
+
+28
+00:01:22,144 --> 00:01:24,408
+Izzie Stevens / Dr. Meredith Gray (PVM): Why don't you just let him sleep?
+
+29
+00:01:24,426 --> 00:01:24,486
+Meredith Grey / Dr. Meredith Gray (PVM): No.
+
+30
+00:01:24,507 --> 00:01:24,828
+Derek Shepherd / Dr. Meredith Gray (PVM): Please.
+
+31
+00:01:24,908 --> 00:01:27,251
+Derek Shepherd / Jamie Hayes (PVM): No, no.
+
+32
+00:01:27,271 --> 00:01:28,152
+Izzie Stevens / Dr. Meredith Gray (PVM): You get any sleep?
+
+33
+00:01:30,093 --> 00:01:33,757
+Cristina Yang / Dr. Meredith Gray (PVM): She could boil the bed screens as a courtesy or at least buy a padded headboard.
+
+34
+00:01:36,539 --> 00:01:37,162
+Izzie Stevens / Dr. George O'Malley (PVM): So who's the guy?
+
+35
+00:01:37,763 --> 00:01:39,584
+Cristina Yang / Dr. Isobel Stevens (PVM): You think it was just one guy doing all that work?
+
+36
+00:01:39,745 --> 00:01:40,063
+Izzie Stevens / Dr. George O'Malley (PVM): Yeah.
+
+37
+00:01:40,084 --> 00:01:41,265
+Meredith Grey / Dr. George O'Malley OR Dr. Meredith Gray (PVM): Do you mind if I don't think about that?
+
+38
+00:01:41,887 --> 00:01:43,027
+Cristina Yang / Dr. Isobel Stevens (PVM): Oh, jelly.
+
+39
+00:01:43,048 --> 00:01:44,509
+Izzie Stevens / Dr. Isobel Stevens OR Dr. George O'Malley OR Dr. Meredith Gray (PVM): You're not jealous.
+
+40
+00:01:44,590 --> 00:01:45,051
+George O'Malley / Dr. Meredith Gray OR Dr. Isobel Stevens (PVM): Well, I am.
+
+41
+00:01:45,912 --> 00:01:48,033
+Cristina Yang / Dr. Meredith Gray OR Dr. Isobel Stevens (PVM): At least I know she'll be having a long day at work.
+
+42
+00:02:02,780 --> 00:02:05,081
+Cristina Yang / Dr. Meredith Gray (PVM): Well, at least we know brain surgery isn't his only skill.
+
+43
+00:02:05,102 --> 00:02:05,903
+George O'Malley / Dr. Meredith Gray (PVM): It can't be.
+
+44
+00:02:05,923 --> 00:02:06,682
+Izzie Stevens / Dr. Meredith Gray (PVM): He's her boss.
+
+45
+00:02:07,343 --> 00:02:07,784
+Meredith Grey / Dr. Meredith Gray (PVM): We're late.
+
+46
+00:02:08,506 --> 00:02:09,545
+George O'Malley / Dr. Isobel Stevens (PVM): He's all of our boss.
+
+47
+00:02:11,429 --> 00:02:14,072
+Cristina Yang / Dr. Isobel Stevens OR Dr. Meredith Gray (PVM): You know, she has been scrubbing in a lot lately on his surgeries.
+
+48
+00:02:14,092 --> 00:02:14,151
+George O'Malley / Dr. Meredith Gray (PVM): No.
+
+49
+00:02:14,592 --> 00:02:15,674
+Izzie Stevens / Dr. Meredith Gray (PVM): Meredith wouldn't sleep with him.
+
+50
+00:02:15,712 --> 00:02:16,294
+Cristina Yang / Dr. Meredith Gray (PVM): Just no.
+
+51
+00:02:16,533 --> 00:02:18,637
+Cristina Yang / Dr. Isobel Stevens (PVM): Well, if she's not ashamed of it, why is she keeping it a secret?
+
+52
+00:02:19,157 --> 00:02:19,776
+George O'Malley / Dr. George O'Malley (PVM): Maybe she didn't.
+
+53
+00:02:20,959 --> 00:02:21,818
+Izzie Stevens / Dr. George O'Malley (PVM): Maybe it just happened.
+
+54
+00:02:23,782 --> 00:02:25,283
+Izzie Stevens / Dr. George O'Malley (PVM): You know, spontaneously last night.
+
+55
+00:02:26,925 --> 00:02:27,045
+Dr. Meredith Gray: Hi.
+
+56
+00:02:27,545 --> 00:02:27,806
+Izzie Stevens / Dr. Isobel Stevens (PVM): Good morning.
+
+57
+00:02:27,884 --> 00:02:28,466
+Cristina Yang / Dr. Isobel Stevens (PVM): Morning.
+
+58
+00:02:30,168 --> 00:02:32,699
+Cristina Yang / Dr. Isobel Stevens (PVM): Hey, so it sounded like you were having some pretty radical sex last night.
+
+59
+00:02:32,740 --> 00:02:33,626
+Izzie Stevens / Dr. Isobel Stevens (PVM): All night long.
+
+60
+00:02:34,468 --> 00:02:34,973
+George O'Malley / Dr. Isobel Stevens (PVM): Who's the guy?
+
+61
+00:02:35,836 --> 00:02:36,700
+Dr. Meredith Gray: No one you know.
+
+62
+00:02:38,502 --> 00:02:38,965
+Cristina Yang / Dr. Meredith Gray (PVM): We're late.
+
+63
+00:02:38,985 --> 00:02:39,425
+Izzie Stevens / Dr. Shepherd (PVM): Let's go.
+
+64
+00:02:39,585 --> 00:02:44,349
+Dr. Meredith Gray: I mean, if life's so hard already, why do we bring more trouble down on ourselves?
+
+65
+00:02:44,651 --> 00:02:47,394
+Dr. Meredith Gray: What's up with the need to hit the self-destruct button?
+
+66
+00:02:47,413 --> 00:02:47,813
+Cristina Yang / Dr. Meredith Gray (PVM): Yikes.
+
+67
+00:02:48,293 --> 00:02:50,037
+Izzie Stevens / Dr. Meredith Gray (PVM): Wouldn't want to meet you in a dark alley.
+
+68
+00:02:50,317 --> 00:02:50,896
+Cristina Yang / Dr. Meredith Gray (PVM): Right back at you.
+
+69
+00:02:51,317 --> 00:02:51,799
+Izzie Stevens / Dr. Meredith Gray (PVM): Oh, run?
+
+70
+00:02:52,060 --> 00:02:52,961
+Cristina Yang / Dr. Taylor OR Dr. Meredith Gray (PVM): You run?
+
+71
+00:02:53,099 --> 00:02:53,980
+Izzie Stevens / Dr. Taylor (PVM): Every day, babe.
+
+72
+00:02:54,002 --> 00:02:54,901
+Cristina Yang / Dr. Taylor OR Dr. Meredith Gray (PVM): Every day.
+
+73
+00:02:54,923 --> 00:02:55,924
+Cristina Yang / Dr. Meredith Gray (PVM): Not suffering enough?
+
+74
+00:02:57,126 --> 00:02:58,605
+Izzie Stevens / Dr. Taylor OR Digby Owens (PVM): Doesn't kill you, makes you stronger.
+
+75
+00:02:58,687 --> 00:02:58,926
+Alex Karev / Dr. Meredith Gray (PVM): Oh, come on.
+
+76
+00:02:58,966 --> 00:03:00,930
+Alex Karev / Dr. Meredith Gray (PVM): Don't go acting all indefatigable crap.
+
+77
+00:03:00,949 --> 00:03:02,169
+Alex Karev / Dr. Meredith Gray (PVM): You're dragging like the rest of us.
+
+78
+00:03:02,450 --> 00:03:03,853
+Izzie Stevens / Digby Owens (PVM): Oh, what is that?
+
+79
+00:03:03,872 --> 00:03:05,413
+Alex Karev / Digby Owens (PVM): Confession of weakness, Dr. Yang?
+
+80
+00:03:05,655 --> 00:03:06,757
+Cristina Yang: It's called the flu.
+
+81
+00:03:06,977 --> 00:03:07,075
+George O'Malley / Dr. George O'Malley (PVM): Yeah.
+
+82
+00:03:07,883 --> 00:03:10,286
+Izzie Stevens / Digby Owens (PVM): I'm gonna need a major rush to make it through this day.
+
+83
+00:03:11,705 --> 00:03:13,307
+Cristina Yang: I need a kick-ass surgery.
+
+84
+00:03:13,348 --> 00:03:14,651
+Alex Karev / Digby Owens (PVM): You a bad boy last night, George?
+
+85
+00:03:15,229 --> 00:03:15,972
+George O'Malley: That would be Meredith.
+
+86
+00:03:17,032 --> 00:03:19,694
+Alex Karev / Digby Owens OR Dr. Meredith Gray (PVM): You a bad boy, Meredith?
+
+87
+00:03:19,716 --> 00:03:20,197
+Izzie Stevens / Dr. Meredith Gray (PVM): Do tell.
+
+88
+00:03:20,257 --> 00:03:21,716
+Dr. Meredith Gray: Nothing to tell.
+
+89
+00:03:21,776 --> 00:03:24,841
+Cristina Yang / Dr. Meredith Gray (PVM): Well, it says it all, huh?
+
+90
+00:03:24,860 --> 00:03:26,502
+Dr. Meredith Gray: Sorry, I have a sex life.
+
+91
+00:03:26,644 --> 00:03:27,723
+Cristina Yang / Digby Owens (PVM): Don't apologize.
+
+92
+00:03:27,943 --> 00:03:28,746
+Izzie Stevens / Digby Owens (PVM): Embrace it.
+
+93
+00:03:29,146 --> 00:03:29,646
+Alex Karev / Digby Owens (PVM): Share it.
+
+94
+00:03:30,768 --> 00:03:31,228
+George O'Malley / Digby Owens (PVM): Count me in.
+
+95
+00:03:32,168 --> 00:03:33,091
+Izzie Stevens / Dr. George O'Malley (PVM): Yeah.
+
+96
+00:03:33,110 --> 00:03:36,675
+George O'Malley / Dr. Isobel Stevens (PVM): Next time, just let me know if I need to go to a hotel so I can get some sleep.
+
+97
+00:03:38,883 --> 00:03:40,122
+Izzie Stevens / Dr. Meredith Gray (PVM): Am I missing something?
+
+98
+00:03:40,324 --> 00:03:40,884
+Cristina Yang / Dr. Meredith Gray (PVM): Just a little loud.
+
+99
+00:03:44,848 --> 00:03:48,752
+Dr. Meredith Gray: Do they know it's McDreamy keeping them up all night?
+
+100
+00:03:48,771 --> 00:03:49,413
+Dr. Meredith Gray: I hope not.
+
+101
+00:03:49,872 --> 00:03:51,194
+Dr. Meredith Gray: I already have Bailey riding me.
+
+102
+00:03:51,375 --> 00:03:54,038
+Dr. Meredith Gray: I don't need my roommates thinking I'm getting special treatment.
+
+103
+00:03:57,579 --> 00:04:00,264
+Dr. Miranda Bailey: O'Malley, Yang, Karev, go on to clinic.
+
+104
+00:04:02,444 --> 00:04:04,467
+Dr. Miranda Bailey: O'Malley, patients are waiting.
+
+105
+00:04:05,258 --> 00:04:06,401
+Dr. Miranda Bailey: You two come with me.
+
+106
+00:04:06,800 --> 00:04:08,245
+Dr. Miranda Bailey: Izzy, you're hanging with me today.
+
+107
+00:04:08,786 --> 00:04:10,590
+Dr. Isobel Stevens: Good morning, Dr. Shepherd.
+
+108
+00:04:10,610 --> 00:04:10,971
+Dr. Derek Shepherd: Dr. Bailey.
+
+109
+00:04:15,442 --> 00:04:16,903
+Miranda Bailey / Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): Late night, Gray.
+
+110
+00:04:17,543 --> 00:04:19,805
+Meredith Grey / Dr. Miranda Bailey (PVM): No, caffeine just hasn't kicked in yet.
+
+111
+00:04:19,985 --> 00:04:23,091
+Miranda Bailey / Dr. Miranda Bailey (PVM): If you're at all religious, you would want to start praying it kicks in soon.
+
+112
+00:04:23,370 --> 00:04:24,653
+Miranda Bailey / Dr. Miranda Bailey (PVM): There's a consult in the pit.
+
+113
+00:04:24,932 --> 00:04:26,675
+Miranda Bailey / Dr. Miranda Bailey (PVM): A girl with a fever and abdominal pain.
+
+114
+00:04:27,076 --> 00:04:30,060
+Miranda Bailey / Dr. Miranda Bailey (PVM): After that, Nicholas in 3311 needs his meds.
+
+115
+00:04:30,079 --> 00:04:32,683
+Miranda Bailey / Dr. Miranda Bailey (PVM): Mr. Mowers' IV fell out, and he's a hard stick.
+
+116
+00:04:32,983 --> 00:04:36,909
+Miranda Bailey / Dr. Miranda Bailey (PVM): Post stops in 1337, 3342, 3363, and 2381.
+
+117
+00:04:36,930 --> 00:04:39,112
+Meredith Grey / Dr. Miranda Bailey OR Dr. Meredith Gray OR Dr. Miranda Bailey (PVM): 3381.
+
+118
+00:04:40,290 --> 00:04:41,973
+Miranda Bailey / Dr. Meredith Gray (PVM): 33-42, 33-63, and 23-81.
+
+119
+00:04:42,052 --> 00:04:51,444
+Miranda Bailey / Dr. Miranda Bailey OR Dr. Meredith Gray OR Dr. Miranda Bailey (PVM): Why are you still standing in front of me?
+
+120
+00:04:51,463 --> 00:04:53,165
+Miranda Bailey / Dr. Miranda Bailey (PVM): You look more like me than you right now.
+
+121
+00:04:53,206 --> 00:04:53,786
+Miranda Bailey / Dr. Miranda Bailey (PVM): What's the matter?
+
+122
+00:04:54,247 --> 00:04:54,608
+Meredith Grey / Dr. Meredith Gray (PVM): Nothing.
+
+123
+00:04:54,889 --> 00:04:55,108
+Unknown Patient / Dr. Meredith Gray (PVM): Help.
+
+124
+00:04:55,468 --> 00:04:57,271
+Unknown Patient / Dr. Meredith Gray (PVM): I need immediate help.
+
+125
+00:04:57,290 --> 00:04:57,911
+Miranda Bailey / Dr. Meredith Gray (PVM): What's the problem?
+
+126
+00:04:57,932 --> 00:05:01,076
+Woman (Girlfriend) / Dr. Miranda Bailey OR Dr. Meredith Gray OR Dr. Taylor OR Dr. Meredith Gray (PVM): My damn boyfriend swallowed my keys.
+
+127
+00:05:01,096 --> 00:05:02,858
+Boyfriend (Patient) / Dr. Miranda Bailey OR Dr. Taylor (PVM): I didn't want her to leave.
+
+128
+00:05:04,220 --> 00:05:06,062
+Miranda Bailey / Dr. Miranda Bailey (PVM): Locate the lady's keys.
+
+129
+00:05:06,682 --> 00:05:09,826
+Claire's Mother / Dr. Meredith Gray (PVM): I think she got some bug on her trip to Mexico with her friends.
+
+130
+00:05:10,348 --> 00:05:13,713
+Claire's Mother / Dr. Meredith Gray (PVM): I told her not to go to a third world country, but does she ever listen?
+
+131
+00:05:14,355 --> 00:05:16,398
+Claire's Mother / Dick B. OR Dr. Meredith Gray (PVM): She's been weak ever since, and she's lost weight.
+
+132
+00:05:17,319 --> 00:05:17,720
+Claire Rice: Barely.
+
+133
+00:05:18,461 --> 00:05:19,923
+Claire's Mother / Dick B. (PVM): And this morning, she passed out in the shower.
+
+134
+00:05:21,887 --> 00:05:24,189
+Meredith Grey / Dr. Meredith Gray (PVM): When was the trip?
+
+135
+00:05:24,209 --> 00:05:25,091
+Claire's Mother / Dr. Meredith Gray (PVM): A couple weeks ago.
+
+136
+00:05:25,451 --> 00:05:26,274
+Claire Rice: I'm really fine.
+
+137
+00:05:26,293 --> 00:05:27,134
+Claire Rice: I just have a fever.
+
+138
+00:05:28,978 --> 00:05:31,141
+Meredith Grey / Dr. Meredith Gray (PVM): OK, well, will you lie back for an exam for me?
+
+139
+00:05:32,343 --> 00:05:32,944
+Claire Rice: No, please.
+
+140
+00:05:33,262 --> 00:05:34,423
+Claire Rice: I don't need an exam.
+
+141
+00:05:34,963 --> 00:05:37,646
+Claire Rice: Just give me some antibiotics and send me home.
+
+142
+00:05:38,088 --> 00:05:39,308
+Meredith Grey / Dr. Meredith Gray (PVM): Well, maybe it is just a fever.
+
+143
+00:05:39,990 --> 00:05:43,153
+Meredith Grey / Dr. Meredith Gray (PVM): But they called down for a surgeon, so I have to give the OK to let you go.
+
+144
+00:05:44,175 --> 00:05:46,437
+Meredith Grey / Dr. Meredith Gray (PVM): So just let me do the exam.
+
+145
+00:05:50,002 --> 00:05:50,562
+Mrs. Rice / Dr. Meredith Gray (PVM): Do the exam.
+
+146
+00:05:51,362 --> 00:05:51,625
+Claire / Dr. Meredith Gray (PVM): No.
+
+147
+00:05:54,127 --> 00:05:54,889
+Claire / Dr. Meredith Gray (PVM): This is crazy.
+
+148
+00:05:54,927 --> 00:05:55,610
+Claire / Dr. Meredith Gray (PVM): I'm fine.
+
+149
+00:05:56,149 --> 00:05:59,134
+Mrs. Rice / Dr. Meredith Gray (PVM): For God's sake, Claire, I don't want to spend my entire day here.
+
+150
+00:06:01,274 --> 00:06:05,939
+Meredith / Dr. Meredith Gray (PVM): You know, actually, Mrs. Rice, this might be easier if we had some privacy.
+
+151
+00:06:07,100 --> 00:06:08,701
+Meredith / Dr. Meredith Gray (PVM): So would you two mind leaving the room?
+
+152
+00:06:09,483 --> 00:06:14,949
+Mrs. Rice / Dick B. OR Digby Owens (PVM): That's fine.
+
+153
+00:06:14,970 --> 00:06:15,370
+Digby Owens / Digby Owens (PVM): Digby.
+
+154
+00:06:15,750 --> 00:06:16,271
+Digby Owens: Digby Owens.
+
+155
+00:06:16,331 --> 00:06:20,336
+Digby Owens: I have an appointment.
+
+156
+00:06:20,355 --> 00:06:20,956
+Meredith / Digby Owens (PVM): Excuse me, sir.
+
+157
+00:06:21,418 --> 00:06:22,158
+Meredith / Dr. Meredith Gray (PVM): You're bleeding.
+
+158
+00:06:22,177 --> 00:06:23,139
+Meredith / Dr. Meredith Gray (PVM): Do you mind if I?
+
+159
+00:06:23,160 --> 00:06:23,860
+Digby Owens: Sure, sure.
+
+160
+00:06:24,281 --> 00:06:24,701
+Meredith / Dr. Meredith Gray (PVM): Have a look.
+
+161
+00:06:26,584 --> 00:06:27,305
+Meredith / Dr. Meredith Gray (PVM): That's a gunshot.
+
+162
+00:06:27,824 --> 00:06:27,925
+Digby Owens: Yeah.
+
+163
+00:06:27,944 --> 00:06:28,987
+Meredith / Dr. Meredith Gray (PVM): We got a gunshot wound.
+
+164
+00:06:29,007 --> 00:06:30,266
+Meredith / Dr. Meredith Gray (PVM): We got to get him down to pit.
+
+165
+00:06:31,024 --> 00:06:32,468
+Digby Owens: I'm sorry.
+
+166
+00:06:32,608 --> 00:06:32,949
+Meredith / Digby Owens (PVM): I'm sorry.
+
+167
+00:06:32,968 --> 00:06:36,817
+Digby Owens: Mr. Dickby, all right, but just remember, see, look, I scheduled this.
+
+168
+00:06:37,257 --> 00:06:38,019
+Meredith / Digby Owens (PVM): What, gunshot?
+
+169
+00:06:38,319 --> 00:06:39,461
+Digby Owens: Yeah, my buddy shot me.
+
+170
+00:06:39,481 --> 00:06:39,843
+Meredith / Digby Owens (PVM): Your buddy?
+
+171
+00:06:40,201 --> 00:06:41,564
+Digby Owens: Yeah, just as a favor.
+
+172
+00:06:41,826 --> 00:06:42,266
+Meredith / Digby Owens (PVM): On purpose?
+
+173
+00:06:42,288 --> 00:06:42,728
+Digby Owens: Hell, yeah.
+
+174
+00:06:42,749 --> 00:06:44,692
+Digby Owens: I mean, he wasn't trying to hurt me or nothing, but you know.
+
+175
+00:06:44,992 --> 00:06:45,433
+Meredith / Digby Owens (PVM): But why?
+
+176
+00:06:45,454 --> 00:06:47,497
+Digby Owens: I like the scars.
+
+177
+00:07:17,684 --> 00:07:21,250
+Digby Owens: Look, everyone in town has tats, but my art is about commitment.
+
+178
+00:07:21,752 --> 00:07:23,596
+Meredith / Digby Owens (PVM): So this is your art, huh?
+
+179
+00:07:23,615 --> 00:07:24,396
+Digby Owens: Damn straight.
+
+180
+00:07:25,038 --> 00:07:26,180
+Another character / Dr. Meredith Gray (PVM): Damn stupid.
+
+181
+00:07:26,201 --> 00:07:27,483
+Male Patient / Dr. Meredith Gray (PVM): The bullet went all the way through.
+
+182
+00:07:27,862 --> 00:07:29,146
+Male Patient / Digby Owens (PVM): Bounced off my ribs.
+
+183
+00:07:29,547 --> 00:07:31,451
+Male Patient / Digby Owens (PVM): I have another one still in my shoulder.
+
+184
+00:07:32,451 --> 00:07:33,093
+Male Patient / Digby Owens (PVM): Nice, huh?
+
+185
+00:07:34,596 --> 00:07:35,980
+Male Patient / Dr. Meredith Gray (PVM): You could hang it in the Louvre.
+
+186
+00:07:36,769 --> 00:07:38,252
+Male Patient / Digby Owens (PVM): I have an ethos.
+
+187
+00:07:38,271 --> 00:07:41,896
+Male Patient / Digby Owens (PVM): Why do anything unless you're willing to go one step further than anybody else?
+
+188
+00:07:42,295 --> 00:07:44,076
+Male Patient / Digby Owens (PVM): What doesn't kill you makes you stronger, right?
+
+189
+00:07:44,098 --> 00:07:44,939
+Second Male Patient / Digby Owens (PVM): Exactly.
+
+190
+00:07:45,399 --> 00:07:46,740
+Male Patient / Digby Owens (PVM): And pain is the great divide.
+
+191
+00:07:47,242 --> 00:07:50,004
+Male Patient / Digby Owens (PVM): My coach used to say it's all about how we process pain.
+
+192
+00:07:50,504 --> 00:07:51,447
+Second Male Patient / Digby Owens (PVM): Football?
+
+193
+00:07:51,466 --> 00:07:52,567
+Male Patient / Digby Owens (PVM): Wrestling, Iowa State.
+
+194
+00:07:53,228 --> 00:07:53,930
+Second Male Patient / Digby Owens (PVM): Iowa?
+
+195
+00:07:53,949 --> 00:07:54,110
+Male Patient / Digby Owens (PVM): 141.
+
+196
+00:07:54,149 --> 00:07:55,492
+Second Male Patient / Digby Owens (PVM): 157.
+
+197
+00:07:55,731 --> 00:07:57,593
+Male Patient / Dr. Meredith Gray OR Digby Owens (PVM): Well, you gotta be more than 180 now.
+
+198
+00:07:57,994 --> 00:07:59,716
+Second Male Patient / Digby Owens (PVM): I'd like to see you get back under 145.
+
+199
+00:08:00,475 --> 00:08:05,442
+Female Doctor / Dr. Meredith Gray (PVM): Excuse me, but thinking of you men in tights makes me want to puke.
+
+200
+00:08:06,300 --> 00:08:08,084
+Female Doctor / Dr. Meredith Gray (PVM): There's a flu going around the hospital.
+
+201
+00:08:08,785 --> 00:08:09,625
+Male Patient / Dr. Meredith Gray (PVM): Somewhat ironic.
+
+202
+00:08:13,112 --> 00:08:13,231
+Male Patient / Nurse Steph (PVM): Ow.
+
+203
+00:08:15,653 --> 00:08:16,697
+Male Patient / Dr. Meredith Gray OR Nurse Steph (PVM): Don't push so hard.
+
+204
+00:08:19,341 --> 00:08:33,523
+Female Doctor / Dr. Meredith Gray (PVM): Can you lift your shirt so I can examine your stomach?
+
+205
+00:08:44,557 --> 00:08:45,456
+Female Doctor / Dr. Meredith Gray (PVM): Where did you get these?
+
+206
+00:08:45,499 --> 00:08:52,788
+Patient (Jamie) / Dr. Meredith Gray (PVM): There.
+
+207
+00:08:52,808 --> 00:08:54,211
+Female Doctor / Dr. Meredith Gray (PVM): You've had surgery recently.
+
+208
+00:08:54,874 --> 00:08:56,134
+Female Doctor / Dr. Meredith Gray (PVM): These scars are still pink.
+
+209
+00:08:57,378 --> 00:08:58,418
+Patient (Jamie) / Dr. Meredith Gray (PVM): Don't tell my parents.
+
+210
+00:08:59,980 --> 00:09:05,250
+Female Doctor / Dr. Meredith Gray (PVM): You did this in Mexico so your parents wouldn't know?
+
+211
+00:09:05,269 --> 00:09:06,091
+Female Doctor / Dr. Meredith Gray (PVM): What did you have done?
+
+212
+00:09:13,767 --> 00:09:15,769
+Female Doctor (Meredith) / Dr. Meredith Gray (PVM): And you noticed her foot twitching?
+
+213
+00:09:16,110 --> 00:09:16,571
+Parent / Dr. Meredith Gray (PVM): Come on, Jamie.
+
+214
+00:09:18,332 --> 00:09:18,855
+Patient (Jamie) / Dr. Meredith Gray (PVM): Oh, yeah.
+
+215
+00:09:19,375 --> 00:09:20,157
+Parent / Dr. Meredith Gray (PVM): About three months ago?
+
+216
+00:09:20,397 --> 00:09:21,057
+Parent / Dr. Meredith Gray (PVM): Just a little.
+
+217
+00:09:21,619 --> 00:09:26,807
+Mrs. Hayes / Dr. Meredith Gray (PVM): We took her to county hospital, and she got the CT scan, which showed her brain abnormality.
+
+218
+00:09:27,206 --> 00:09:27,908
+Jamie / Dr. Meredith Gray OR Dr. Meredith Gray (PVM): Here, you can put it.
+
+219
+00:09:28,490 --> 00:09:29,850
+Mrs. Hayes / Dr. Meredith Gray (PVM): And the twitching has gotten worse.
+
+220
+00:09:30,211 --> 00:09:30,812
+Jamie / Dr. Meredith Gray (PVM): A lot worse.
+
+221
+00:09:31,153 --> 00:09:33,918
+Mrs. Hayes / Dr. Isobel Stevens OR Dr. Meredith Gray (PVM): They just don't have the proper equipment back home to figure out what's wrong.
+
+222
+00:09:35,340 --> 00:09:37,341
+Meredith Grey / Dr. Shepherd OR Dr. Isobel Stevens OR Dr. Meredith Gray (PVM): You did a good thing.
+
+223
+00:09:37,802 --> 00:09:39,066
+Jamie / Dr. Isobel Stevens OR Dr. Shepherd (PVM): Yes, your mommy.
+
+224
+00:09:40,024 --> 00:09:44,451
+Meredith Grey / Dr. Isobel Stevens OR Dr. George O'Malley (PVM): Okay, you did a good thing by coming all this way, Mr. and Mrs. Hayes.
+
+225
+00:09:44,471 --> 00:09:45,754
+Meredith Grey / Dr. George O'Malley (PVM): You sit tight, Jamie, okay?
+
+226
+00:09:46,355 --> 00:09:49,120
+Meredith Grey / Dr. George O'Malley (PVM): I'm gonna bring in Dr. Shepherd to see you, okay?
+
+227
+00:09:49,642 --> 00:09:51,085
+Jamie / Dr. George O'Malley (PVM): Dr. Shepherd, okay?
+
+228
+00:09:51,846 --> 00:09:53,008
+Meredith Grey / Dr. George O'Malley (PVM): He's the brain specialist.
+
+229
+00:09:53,469 --> 00:09:54,370
+Jamie / Dr. Shepherd OR Dr. George O'Malley (PVM): To Mommy.
+
+230
+00:09:54,389 --> 00:09:54,931
+Jamie / Dr. Shepherd (PVM): To Mommy and Daddy.
+
+231
+00:09:54,951 --> 00:09:58,037
+Mr. Hayes / Dr. Shepherd OR Dr. George O'Malley OR Jamie Hayes (PVM): Doctor, is he good, this Dr. Shepherd?
+
+232
+00:09:59,798 --> 00:10:00,902
+Meredith Grey / Dr. George O'Malley (PVM): At just about everything,
+
+233
+00:10:03,464 --> 00:10:07,671
+Cristina Yang / Dr. Miranda Bailey (PVM): I assume the lady needs her keys to leave this guy's sorry ass behind.
+
+234
+00:10:08,893 --> 00:10:08,993
+Alex Karev / Dr. George O'Malley (PVM): Yeah.
+
+235
+00:10:09,013 --> 00:10:11,177
+Cristina Yang / Dr. Miranda Bailey (PVM): Well, how about?
+
+236
+00:10:11,197 --> 00:10:12,177
+Cristina Yang / Dr. Isobel Stevens OR Dr. Miranda Bailey (PVM): He needs a bronchoscopy.
+
+237
+00:10:12,499 --> 00:10:13,961
+Dr. Bailey / Dr. Miranda Bailey (PVM): So you want to do one, teach one.
+
+238
+00:10:13,980 --> 00:10:14,682
+Dr. Bailey / Dr. Miranda Bailey (PVM): You've seen one.
+
+239
+00:10:14,743 --> 00:10:15,464
+Dr. Bailey / Dr. Miranda Bailey (PVM): It's time to do one.
+
+240
+00:10:16,205 --> 00:10:16,485
+Cristina Yang / Dr. Isobel Stevens (PVM): Alone?
+
+241
+00:10:16,524 --> 00:10:17,966
+Alex Karev / Jamie Hayes (PVM): Seriously?
+
+242
+00:10:18,008 --> 00:10:19,009
+Cristina Yang / Dr. Taylor (PVM): Thanks.
+
+243
+00:10:19,028 --> 00:10:20,913
+Cristina Yang / Dr. Isobel Stevens (PVM): I mean, the vote of confidence in my skills and all.
+
+244
+00:10:20,932 --> 00:10:24,298
+Cristina Yang / Dr. Isobel Stevens (PVM): I didn't think you, well, anyone was noticing how hard I have been working with you.
+
+245
+00:10:24,317 --> 00:10:24,538
+Dr. Bailey / Dr. Isobel Stevens (PVM): Easy.
+
+246
+00:10:24,940 --> 00:10:25,000
+Dr. Bailey / Dr. Miranda Bailey (PVM): Go.
+
+247
+00:10:25,283 --> 00:10:26,065
+Dr. Bailey / Dr. Meredith Gray (PVM): You paged?
+
+248
+00:10:26,085 --> 00:10:26,605
+Dr. Bailey / Dr. Meredith Gray (PVM): Where are we?
+
+249
+00:10:27,048 --> 00:10:30,135
+Meredith Grey / Dr. Meredith Gray (PVM): I did the consult, did the IV, the meds, the post-ops, everything.
+
+250
+00:10:30,216 --> 00:10:31,019
+Dr. Bailey / Dr. Meredith Gray (PVM): How's your pit patient?
+
+251
+00:10:31,178 --> 00:10:33,206
+Meredith Grey / Dr. Meredith Gray (PVM): She's febrile and has peritoneal signs.
+
+252
+00:10:33,625 --> 00:10:34,649
+Dr. Bailey / Dr. Miranda Bailey (PVM): You all right, Dr. Yang?
+
+253
+00:10:34,870 --> 00:10:36,796
+Dr. Meredith Gray OR Dr. Isobel Stevens / Dr. Meredith Gray OR Dr. Isobel Stevens (PVM): Fine.
+
+254
+00:10:36,816 --> 00:10:38,278
+Dr. Meredith Gray / Dr. Meredith Gray (PVM): On my way back to clinic.
+
+255
+00:10:38,581 --> 00:10:41,224
+Dr. Meredith Gray / Dr. Meredith Gray (PVM): I think she had some sort of illegal surgery done in Mexico.
+
+256
+00:10:41,543 --> 00:10:42,264
+Dr. Meredith Gray / Dr. Meredith Gray (PVM): Botched abortion?
+
+257
+00:10:42,485 --> 00:10:42,706
+Dr. Meredith Gray / Dr. Meredith Gray (PVM): No.
+
+258
+00:10:42,806 --> 00:10:46,671
+Dr. Meredith Gray / Dr. Meredith Gray (PVM): She has four laparoscopic scars on her abdomen and won't say what they're from.
+
+259
+00:10:46,691 --> 00:10:47,772
+Dr. Meredith Gray / Dr. Meredith Gray (PVM): And the parents are clueless.
+
+260
+00:10:47,792 --> 00:10:48,393
+Dr. Meredith Gray / Dr. Meredith Gray (PVM): She's a minor.
+
+261
+00:10:48,413 --> 00:10:50,115
+Dr. Miranda Bailey OR Dr. Meredith Gray / Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): 17, freshman in college.
+
+262
+00:10:50,235 --> 00:10:51,375
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): You order her up for a CT?
+
+263
+00:10:51,475 --> 00:10:51,735
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): Yes.
+
+264
+00:10:52,418 --> 00:10:55,642
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): So while she's there, the nurses couldn't get a Foley on Mr. Garay.
+
+265
+00:10:55,701 --> 00:10:58,004
+Jamie Hayes OR Dr. Miranda Bailey / Jamie Hayes OR Dr. Miranda Bailey (PVM): He may need a cadet cath if you can't get a normal one in there.
+
+266
+00:10:58,283 --> 00:11:02,870
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): Write up post-op notes on all surgical floor patients that are esky surgery within the last 24 hours.
+
+267
+00:11:03,149 --> 00:11:06,053
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): Be sure to document their EKGs and x-rays.
+
+268
+00:11:06,455 --> 00:11:07,995
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): Hunt them down if you can't find them.
+
+269
+00:11:07,975 --> 00:11:08,618
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): Right away.
+
+270
+00:11:09,957 --> 00:11:10,038
+Dick B. / Dick B. (PVM): Hey.
+
+271
+00:11:10,057 --> 00:11:10,519
+Dr. Meredith Gray / Dr. Meredith Gray (PVM): Whoa.
+
+272
+00:11:11,200 --> 00:11:15,725
+Dr. Miranda Bailey OR Dr. Meredith Gray OR Dr. Meredith Gray / Dr. Miranda Bailey OR Dr. Meredith Gray OR Dr. Meredith Gray (PVM): You got the flu?
+
+273
+00:11:16,065 --> 00:11:17,186
+Dr. Meredith Gray / Dr. Meredith Gray (PVM): Yeah, and thanks for it.
+
+274
+00:11:17,206 --> 00:11:18,527
+Dr. Meredith Gray / Dr. Meredith Gray (PVM): It's making my life so much easier.
+
+275
+00:11:18,547 --> 00:11:20,249
+Dr. Meredith Gray / Dr. Meredith Gray (PVM): I didn't give it to you.
+
+276
+00:11:20,269 --> 00:11:21,288
+Dr. Meredith Gray / Dr. Meredith Gray (PVM): It's all over the hospital.
+
+277
+00:11:22,230 --> 00:11:22,990
+Dr. Meredith Gray / Dr. Meredith Gray (PVM): You should be in bed.
+
+278
+00:11:24,013 --> 00:11:26,475
+Dr. Meredith Gray / Dr. Meredith Gray (PVM): Disease diagnosis and prescription from one man.
+
+279
+00:11:27,495 --> 00:11:28,817
+Digby Owens / Digby Owens (PVM): Seriously, I'll give you a ride home.
+
+280
+00:11:29,418 --> 00:11:30,817
+Digby Owens OR Dr. Meredith Gray / Digby Owens OR Dr. Meredith Gray (PVM): This is not going to make me go home.
+
+281
+00:11:31,538 --> 00:11:32,139
+Digby Owens / Digby Owens (PVM): You go home.
+
+282
+00:11:33,422 --> 00:11:34,423
+Digby Owens / Digby Owens (PVM): But I feel fine.
+
+283
+00:11:42,267 --> 00:11:43,870
+Izzie Stevens / Dr. Meredith Gray (PVM): Hey, hey, hey, have you seen Shepard?
+
+284
+00:11:44,409 --> 00:11:45,831
+Cristina Yang / Dr. Isobel Stevens (PVM): Not as up close as Meredith has.
+
+285
+00:11:46,614 --> 00:11:46,715
+George O'Malley / Dr. Isobel Stevens (PVM): What?
+
+286
+00:11:46,735 --> 00:11:47,696
+Izzie Stevens / Dr. Isobel Stevens (PVM): Are you trying to get her in trouble?
+
+287
+00:11:47,716 --> 00:11:48,418
+George O'Malley / Dr. Isobel Stevens (PVM): She's our friend.
+
+288
+00:11:48,576 --> 00:11:51,841
+Cristina Yang / Dr. Isobel Stevens (PVM): George, this program will make or break our careers, OK?
+
+289
+00:11:51,883 --> 00:11:53,745
+Meredith Grey / Dr. Isobel Stevens (PVM): Some of us will make it through, and some of us won't.
+
+290
+00:11:53,807 --> 00:11:57,952
+Cristina Yang / Dr. Isobel Stevens (PVM): And that decision depends entirely on recommendations from doctors like Shepard.
+
+291
+00:11:58,673 --> 00:12:00,518
+Cristina Yang / Dr. Meredith Gray (PVM): There is a reason we don't sleep with the attendants.
+
+292
+00:12:00,538 --> 00:12:01,620
+Izzie Stevens / Dr. George O'Malley OR Dr. Meredith Gray (PVM): It's not her fault it's Shepard's.
+
+293
+00:12:01,899 --> 00:12:02,562
+George O'Malley / Dr. George O'Malley (PVM): He's the attending.
+
+294
+00:12:02,701 --> 00:12:03,403
+Cristina Yang / Dr. George O'Malley (PVM): He should know better.
+
+295
+00:12:03,663 --> 00:12:04,745
+Izzie Stevens / Dr. Isobel Stevens OR Dr. George O'Malley (PVM): He's taking advantage of her.
+
+296
+00:12:04,806 --> 00:12:07,971
+Cristina Yang / Dr. Isobel Stevens OR Dr. George O'Malley (PVM): Didn't exactly sound like anything was happening against her will last night.
+
+297
+00:12:27,307 --> 00:12:27,947
+Orderly / Dr. Meredith Gray (PVM): Here you go, Doc.
+
+298
+00:12:28,427 --> 00:12:30,110
+Orderly / Dr. Meredith Gray (PVM): The kid's CTs just arrived from county.
+
+299
+00:12:30,192 --> 00:12:30,532
+Dr. Shepherd / Dr. Taylor (PVM): Thanks.
+
+300
+00:12:30,692 --> 00:12:31,091
+Unknown Doctor / Dr. Meredith Gray (PVM): Excuse me.
+
+301
+00:12:31,494 --> 00:12:32,134
+Unknown Doctor / Dr. Meredith Gray (PVM): Sorry, Dr. Taylor.
+
+302
+00:12:34,596 --> 00:12:35,360
+Cristina Yang / Dr. Meredith Gray (PVM): That would be bourbon.
+
+303
+00:12:36,360 --> 00:12:36,581
+Meredith Grey / Dr. Isobel Stevens (PVM): What?
+
+304
+00:12:37,243 --> 00:12:37,903
+Izzie Stevens / Dr. Meredith Gray (PVM): I smelled it too.
+
+305
+00:12:39,546 --> 00:12:41,687
+Cristina Yang / Dr. Meredith Gray (PVM): And he's the best anesthesiologist on the staff.
+
+306
+00:12:42,610 --> 00:12:44,713
+Meredith Grey / Dr. Meredith Gray (PVM): I'll worry when he's too juiced to do his crossword puzzle.
+
+307
+00:12:50,543 --> 00:12:53,927
+Dr. Shepherd / Dr. George O'Malley (PVM): Can you close up for me?
+
+308
+00:12:54,808 --> 00:12:55,490
+Dr. Shepherd / Dr. George O'Malley (PVM): Thank you, everyone.
+
+309
+00:12:58,711 --> 00:12:59,451
+Meredith Grey / Dr. Isobel Stevens OR Dr. Meredith Gray (PVM): Dr. Shepherd.
+
+310
+00:12:59,490 --> 00:13:00,413
+Dr. Shepherd / Dr. Meredith Gray (PVM): I gotta get some coffee.
+
+311
+00:13:01,332 --> 00:13:02,456
+Meredith Grey / Dr. Meredith Gray (PVM): Jamie Hayes has been admitted.
+
+312
+00:13:02,754 --> 00:13:04,317
+Dr. Shepherd / Dr. Meredith Gray (PVM): The little girl with the brain abnormality?
+
+313
+00:13:04,418 --> 00:13:05,077
+Dr. Shepherd / Dr. Meredith Gray (PVM): How's she presenting?
+
+314
+00:13:05,577 --> 00:13:08,721
+Meredith Grey / Dr. Meredith Gray (PVM): She has what looks like continuous seizure activity in her left foot.
+
+315
+00:13:09,724 --> 00:13:10,524
+Meredith Grey / Dr. Meredith Gray (PVM): Her balance is off.
+
+316
+00:13:10,543 --> 00:13:12,508
+Meredith Grey / Dr. Meredith Gray (PVM): Her parents have come a long way to try to find out what's wrong.
+
+317
+00:13:12,908 --> 00:13:14,110
+Dr. Shepherd / Dr. Meredith Gray (PVM): How old are these?
+
+318
+00:13:14,129 --> 00:13:15,029
+Meredith Grey / Dr. Shepherd OR Dr. Meredith Gray (PVM): They're three months old.
+
+319
+00:13:15,051 --> 00:13:15,571
+Dr. Shepherd: I need new ones.
+
+320
+00:13:15,591 --> 00:13:17,173
+Dr. Shepherd: Her brain could look dramatically different today.
+
+321
+00:13:19,475 --> 00:13:19,716
+Meredith Grey / Dr. Meredith Gray (PVM): OK.
+
+322
+00:13:20,096 --> 00:13:20,618
+Dr. Meredith Gray: I'll order them.
+
+323
+00:13:21,798 --> 00:13:22,139
+Dr. Shepherd: Thank you.
+
+324
+00:13:24,240 --> 00:13:27,826
+Orderly / Digby Owens OR Dr. Meredith Gray (PVM): Doc.
+
+325
+00:13:27,846 --> 00:13:28,346
+Unknown Doctor / Digby Owens (PVM): And that?
+
+326
+00:13:28,985 --> 00:13:30,988
+Unknown Doctor / Digby Owens (PVM): That's a bullet from a previous gunshot.
+
+327
+00:13:31,187 --> 00:13:32,470
+Unknown Doctor / Digby Owens (PVM): Previous gunshot, OK.
+
+328
+00:13:32,990 --> 00:13:33,971
+Unknown Doctor / Digby Owens (PVM): No reason to take it out.
+
+329
+00:13:34,172 --> 00:13:35,634
+Unknown Doctor / Digby Owens (PVM): No, guy likes pain.
+
+330
+00:13:35,653 --> 00:13:36,335
+Unknown Doctor / Digby Owens (PVM): It's his ethos.
+
+331
+00:13:36,836 --> 00:13:37,677
+Unknown Doctor / Digby Owens (PVM): Pain is an ethos.
+
+332
+00:13:38,738 --> 00:13:43,182
+Unknown Doctor / Digby Owens (PVM): Wait, I think I know this guy.
+
+333
+00:13:43,202 --> 00:13:44,024
+Unknown Doctor / Digby Owens (PVM): You remember this guy?
+
+334
+00:13:45,187 --> 00:13:46,749
+Unknown Doctor / Dr. Miranda Bailey OR Dr. Miranda Bailey (PVM): Hey, the tattooed masochist.
+
+335
+00:13:47,308 --> 00:13:48,311
+Unknown Doctor / Digby Owens (PVM): Had himself shot again.
+
+336
+00:13:48,812 --> 00:13:50,514
+Unknown Doctor / Dr. Miranda Bailey OR Dr. Miranda Bailey OR Dr. Meredith Gray OR Digby Owens (PVM): Glad to see he's still stupid.
+
+337
+00:13:50,533 --> 00:13:50,995
+Unknown Doctor / Digby Owens (PVM): It's his ethos.
+
+338
+00:13:51,774 --> 00:13:53,177
+Unknown Doctor / Digby Owens (PVM): Let's go tell him what he gets to do today.
+
+339
+00:13:53,596 --> 00:13:56,903
+Meredith Grey / Dr. Meredith Gray (PVM): Dr. Bailey, Claire Rice's abdominal CTs.
+
+340
+00:13:57,724 --> 00:13:58,705
+Dr. Miranda Bailey: Is this girl fat?
+
+341
+00:13:59,105 --> 00:13:59,648
+Meredith Grey / Dr. Meredith Gray (PVM): Not at all.
+
+342
+00:13:59,668 --> 00:14:00,908
+Meredith Grey / Dr. Meredith Gray (PVM): She's a normal college kid.
+
+343
+00:14:01,671 --> 00:14:02,610
+Dr. Miranda Bailey: So what do you see?
+
+344
+00:14:03,832 --> 00:14:04,875
+Meredith Grey / Dr. Meredith Gray (PVM): Her stomach's stapled.
+
+345
+00:14:05,735 --> 00:14:07,077
+Dr. Miranda Bailey: She's had a gastric bypass.
+
+346
+00:14:07,399 --> 00:14:12,267
+Dr. Miranda Bailey: And a bad one at that.
+
+347
+00:14:12,288 --> 00:14:17,195
+Dr. Miranda Bailey: Gastric bypass is a procedure normally done on obese patients to help them lose weight.
+
+348
+00:14:18,537 --> 00:14:18,937
+Claire's Mother / Dr. Meredith Gray (PVM): Claire?
+
+349
+00:14:20,100 --> 00:14:21,139
+Claire's Mother / Dr. Meredith Gray OR Dr. Meredith Gray (PVM): She doesn't need to lose weight.
+
+350
+00:14:21,201 --> 00:14:21,880
+Claire's Father / Dr. Meredith Gray (PVM): Are you kidding?
+
+351
+00:14:22,663 --> 00:14:24,186
+Claire's Mother / Dr. Meredith Gray (PVM): This means the world to her.
+
+352
+00:14:24,841 --> 00:14:27,524
+Claire's Mother / Dr. Meredith Gray (PVM): But it is so typical of this girl to take the easy way out.
+
+353
+00:14:27,562 --> 00:14:29,807
+Claire's Mother / Dr. Meredith Gray (PVM): She's done it with everything since she was a little kid.
+
+354
+00:14:30,287 --> 00:14:30,346
+Dr. Miranda Bailey: Ms.
+
+355
+00:14:30,407 --> 00:14:32,548
+Dr. Miranda Bailey: Rice, nothing about this is going to be easy.
+
+356
+00:14:32,830 --> 00:14:37,413
+Dr. Miranda Bailey: She's going to face a lifelong struggle with malnutrition unless she has surgery to reverse the procedure.
+
+357
+00:14:37,894 --> 00:14:38,696
+Claire's Father / Dr. Meredith Gray (PVM): Do the surgery.
+
+358
+00:14:40,158 --> 00:14:42,139
+Claire's Mother / Dr. Meredith Gray (PVM): I told her to watch the freshman 15.
+
+359
+00:14:42,659 --> 00:14:44,383
+Claire's Mother / Dr. Meredith Gray (PVM): Don't eat junk, exercise.
+
+360
+00:14:44,403 --> 00:14:50,470
+Claire's Mother / Dr. Meredith Gray (PVM): But when she came home Christmas, who had to take her out and buy her a brand new pair of size 6 jeans because she couldn't get in the ones I got her last summer?
+
+361
+00:14:51,409 --> 00:14:53,633
+Jamie’s Parent / Dr. Meredith Gray (PVM): Tina, you know, she tries so hard.
+
+362
+00:14:54,575 --> 00:14:56,216
+Jamie’s Parent / Dr. Meredith Gray (PVM): She gets good grades.
+
+363
+00:14:56,235 --> 00:14:57,038
+Jamie’s Parent / Dr. Meredith Gray (PVM): She gets A's.
+
+364
+00:14:57,918 --> 00:14:59,662
+Jamie’s Parent / Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): She has illegal surgery in Mexico.
+
+365
+00:15:00,744 --> 00:15:04,327
+Dr. Shepherd / Dr. Miranda Bailey (PVM): Unfortunately, there were complications with the bypass.
+
+366
+00:15:05,811 --> 00:15:06,250
+Jamie’s Parent / Dick B. (PVM): What do you mean?
+
+367
+00:15:07,653 --> 00:15:13,120
+Dr. Shepherd / Dr. Miranda Bailey (PVM): She has what looks like an abscess under her diaphragm and edema, which is a swelling of the bowel wall.
+
+368
+00:15:13,740 --> 00:15:15,605
+Dr. Shepherd / Dr. Miranda Bailey (PVM): I can't say for certain she'll recover completely.
+
+369
+00:15:18,408 --> 00:15:21,812
+Jamie’s Parent / Dr. Meredith Gray (PVM): Just do whatever you have to do to make her well, okay?
+
+370
+00:15:24,950 --> 00:15:26,253
+Jamie’s Parent / Dr. George O'Malley OR Dr. Meredith Gray (PVM): You look like a princess.
+
+371
+00:15:26,312 --> 00:15:27,215
+Jamie’s Parent / Dr. George O'Malley (PVM): Do you know you're a princess?
+
+372
+00:15:29,219 --> 00:15:30,120
+Jamie / Dr. George O'Malley (PVM): It's not lipstick.
+
+373
+00:15:30,139 --> 00:15:30,903
+Jamie’s Parent / Dr. George O'Malley (PVM): It's not lipstick?
+
+374
+00:15:30,942 --> 00:15:32,264
+Jamie / Dr. George O'Malley (PVM): No, it's not lipstick.
+
+375
+00:15:32,284 --> 00:15:33,649
+Jamie / Dr. George O'Malley (PVM): Want to do my shoulder?
+
+376
+00:15:33,668 --> 00:15:34,711
+Jamie’s Parent / Dr. George O'Malley OR Dr. Miranda Bailey (PVM): Oh, good.
+
+377
+00:15:34,730 --> 00:15:34,932
+Jamie’s Parent / Dr. Shepherd (PVM): Thank you.
+
+378
+00:15:34,951 --> 00:15:35,832
+Jamie / Dr. George O'Malley (PVM): And your nose.
+
+379
+00:15:35,854 --> 00:15:38,440
+Dr. Shepherd / Dr. George O'Malley (PVM): We're going to find out what's causing the seizures.
+
+380
+00:15:38,460 --> 00:15:40,023
+Dr. Shepherd / Dr. George O'Malley (PVM): Does MRI know we're coming down?
+
+381
+00:15:40,043 --> 00:15:40,845
+Jamie’s Parent / Dr. George O'Malley (PVM): You said CT.
+
+382
+00:15:42,086 --> 00:15:42,849
+Dr. Shepherd / Dr. George O'Malley (PVM): Now I'm saying MRI.
+
+383
+00:15:44,211 --> 00:15:45,033
+Nurse / Dr. Meredith Gray (PVM): It's available.
+
+384
+00:15:46,533 --> 00:15:48,153
+Jamie’s Parent / Dr. Meredith Gray (PVM): Doctor, is she gonna need surgery?
+
+385
+00:15:48,796 --> 00:15:49,274
+Dr. Shepherd / Dr. Meredith Gray (PVM): I don't know yet.
+
+386
+00:15:49,557 --> 00:15:53,540
+Jamie’s Parent / Jamie Hayes OR Dr. Shepherd OR Dr. Meredith Gray (PVM): It's just that my wife and I, we both work, and I don't know... We know it can be very expensive.
+
+387
+00:15:53,860 --> 00:15:54,883
+Dr. Shepherd / Dr. Shepherd (PVM): I don't want you to worry about that.
+
+388
+00:15:58,086 --> 00:15:59,128
+Dr. Shepherd / Dr. Shepherd (PVM): It's a focal left-side seizure.
+
+389
+00:15:59,148 --> 00:16:01,190
+Dr. Shepherd / Dr. Shepherd OR Nurse Steph (PVM): Okay, let's get that diazepam running right now, please.
+
+390
+00:16:01,210 --> 00:16:01,571
+Nurse / Dr. Shepherd OR Nurse Steph (PVM): Diazepam IV.
+
+391
+00:16:01,591 --> 00:16:02,312
+Dr. Shepherd / Dr. Shepherd OR Nurse Steph (PVM): Okay, tourniquet, please.
+
+392
+00:16:02,971 --> 00:16:03,192
+Nurse / Dr. Shepherd OR Dr. George O'Malley (PVM): Tourniquet.
+
+393
+00:16:03,211 --> 00:16:04,494
+Dr. Shepherd / Dr. George O'Malley (PVM): Hey, Jamie, here's what we're gonna do.
+
+394
+00:16:05,235 --> 00:16:06,635
+Dr. Shepherd / Dr. George O'Malley (PVM): We're gonna put this on your arm, okay?
+
+395
+00:16:07,336 --> 00:16:07,878
+Dr. Shepherd / Dr. George O'Malley (PVM): Isn't that fun?
+
+396
+00:16:08,577 --> 00:16:10,360
+Dr. Shepherd / Dr. George O'Malley (PVM): We're gonna put that right there like that.
+
+397
+00:16:10,379 --> 00:16:11,403
+Nurse / Dr. George O'Malley (PVM): This is gonna feel cold.
+
+398
+00:16:12,283 --> 00:16:13,485
+Nurse / Dr. George O'Malley (PVM): This is a butterfly.
+
+399
+00:16:14,461 --> 00:16:15,422
+Nurse / Dr. George O'Malley (PVM): Butterfly lands right there.
+
+400
+00:16:16,524 --> 00:16:16,864
+Nurse / Dr. George O'Malley (PVM): There we go.
+
+401
+00:16:16,884 --> 00:16:17,663
+Nurse / Dr. George O'Malley (PVM): Blanket for the butterfly.
+
+402
+00:16:17,683 --> 00:16:17,904
+Nurse / Dr. Meredith Gray OR Dr. Meredith Gray (PVM): Good.
+
+403
+00:16:17,966 --> 00:16:18,566
+Nurse / Dr. George O'Malley (PVM): Nicely done.
+
+404
+00:16:23,673 --> 00:16:28,298
+Intern (e.g., George O'Malley) / Dr. Shepherd OR Dr. George O'Malley (PVM): It's amazing stuff, isn't it?
+
+405
+00:16:28,317 --> 00:16:29,240
+Intern (e.g., George O'Malley) / Dr. Shepherd (PVM): Hey, you like spaceships?
+
+406
+00:16:29,921 --> 00:16:30,322
+Intern (e.g., George O'Malley) / Dr. Shepherd OR Jamie Hayes (PVM): You do?
+
+407
+00:16:30,721 --> 00:16:31,081
+Intern (e.g., George O'Malley) / Dr. Meredith Gray (PVM): OK.
+
+408
+00:16:31,263 --> 00:16:35,509
+Intern (George O'Malley) / Dr. Shepherd (PVM): Should we take Captain O'Malley, my first lieutenant, to the spaceship MRI?
+
+409
+00:16:36,210 --> 00:16:36,509
+Intern (e.g., George O'Malley) / Dr. Shepherd (PVM): Let's go.
+
+410
+00:16:38,110 --> 00:16:41,716
+Doctor (possibly Resident or Attending) / Dr. Isobel Stevens (PVM): It'll be safer to wait until your lunch digests before we do the procedure.
+
+411
+00:16:42,269 --> 00:16:42,912
+Patient / Jamie Hayes (PVM): Perfect.
+
+412
+00:16:43,133 --> 00:16:45,196
+Patient / Jamie Hayes (PVM): This is just perfect.
+
+413
+00:16:45,274 --> 00:16:46,658
+Patient / Jamie Hayes (PVM): I was hoping to be in Portland right now.
+
+414
+00:16:47,019 --> 00:16:50,085
+Doctor (possibly Resident or Attending) / Dr. Isobel Stevens (PVM): You're gonna be under conscious sedation, JP, which means you'll be awake but groggy.
+
+415
+00:16:51,385 --> 00:16:53,230
+Patient / Dr. Isobel Stevens (PVM): Is this gonna hurt?
+
+416
+00:16:53,250 --> 00:16:55,695
+Doctor (possibly Resident or Attending) / Dr. Isobel Stevens (PVM): You'll have some discomfort, but we'll give you something for pain.
+
+417
+00:16:55,715 --> 00:16:58,038
+Cristina Yang / Dr. Isobel Stevens OR Jamie Hayes OR Dr. Meredith Gray (PVM): Do you know how stupid you make me look?
+
+418
+00:16:58,057 --> 00:16:59,620
+Burke / Dr. Meredith Gray (PVM): I thought you would think this is funny.
+
+419
+00:17:00,648 --> 00:17:02,090
+Burke / Dr. Meredith Gray (PVM): Romantic.
+
+420
+00:17:02,591 --> 00:17:04,432
+Cristina Yang / Jamie Hayes (PVM): Like the therapist thing was funny and romantic?
+
+421
+00:17:04,452 --> 00:17:05,516
+Burke / Jamie Hayes (PVM): That was funny.
+
+422
+00:17:05,615 --> 00:17:06,758
+Cristina Yang / Jamie Hayes (PVM): No, that was sad.
+
+423
+00:17:06,998 --> 00:17:11,183
+Cristina Yang / Dr. Isobel Stevens OR Jamie Hayes (PVM): He called my therapist pretending to be his therapist to find out what I'd said about him.
+
+424
+00:17:11,345 --> 00:17:12,987
+Izzie Stevens / Dr. Isobel Stevens OR Jamie Hayes (PVM): He's a little passive-aggressive, isn't he?
+
+425
+00:17:13,008 --> 00:17:13,428
+Cristina Yang / Jamie Hayes (PVM): A little.
+
+426
+00:17:13,448 --> 00:17:14,971
+Izzie Stevens / Jamie Hayes (PVM): He is the king of passive-aggressive.
+
+427
+00:17:15,550 --> 00:17:16,834
+Cristina Yang / Jamie Hayes (PVM): And he's manipulative.
+
+428
+00:17:17,252 --> 00:17:17,913
+Izzie Stevens / Jamie Hayes (PVM): And needy.
+
+429
+00:17:19,217 --> 00:17:20,077
+Cristina Yang / Jamie Hayes OR Dr. Meredith Gray (PVM): That's the trifecta.
+
+430
+00:17:20,459 --> 00:17:21,221
+Izzie Stevens / Jamie Hayes OR Dr. Meredith Gray (PVM): What do I win?
+
+431
+00:17:25,185 --> 00:17:25,547
+Cristina Yang / Dr. Isobel Stevens (PVM): What?
+
+432
+00:17:27,911 --> 00:17:28,510
+Izzie Stevens / Digby Owens (PVM): Duh.
+
+433
+00:17:30,971 --> 00:17:32,713
+Doctor (likely Bailey or Meredith) / Digby Owens (PVM): I prefer we stop meeting like this, Mr. Owens.
+
+434
+00:17:33,414 --> 00:17:33,895
+Digby Owens: Digby.
+
+435
+00:17:35,116 --> 00:17:36,721
+Doctor (likely Meredith Grey) / Digby Owens (PVM): So how's the trumpet playing?
+
+436
+00:17:36,740 --> 00:17:38,502
+Digby Owens: Very safe compared to your hobby.
+
+437
+00:17:40,487 --> 00:17:42,209
+Doctor (likely Meredith Grey) / Digby Owens (PVM): Getting shot is a little more risky.
+
+438
+00:17:42,528 --> 00:17:43,289
+Digby Owens: That's kind of the point.
+
+439
+00:17:44,291 --> 00:17:45,034
+Doctor (likely Meredith Grey or Bailey) / Digby Owens (PVM): He's running a fever.
+
+440
+00:17:45,432 --> 00:17:48,057
+Doctor (likely Meredith Grey or Bailey) / Digby Owens OR Digby Owens (PVM): Due to the extra stress on his body from the gunshot.
+
+441
+00:17:48,077 --> 00:17:55,951
+Doctor (likely Meredith Grey or Bailey) / Digby Owens OR Digby Owens (PVM): Digby, the impact of the bullet in your chest fractured a rib and caused a hemopneumothorax.
+
+442
+00:17:55,971 --> 00:17:56,730
+Digby Owens: That sucks, I guess.
+
+443
+00:17:57,030 --> 00:17:58,733
+Doctor (likely Meredith Grey or Bailey) / Digby Owens (PVM): Well, there's blood in your collapsed lung.
+
+444
+00:17:59,103 --> 00:18:01,226
+Doctor (likely Meredith Grey) / Digby Owens (PVM): The price of body art went up since your last gunshot.
+
+445
+00:18:01,826 --> 00:18:03,048
+Digby Owens: Eh, no pain, no gain, right?
+
+446
+00:18:03,489 --> 00:18:04,391
+Doctor (likely Meredith Grey or Bailey) / Digby Owens (PVM): That's one way to look at it.
+
+447
+00:18:05,070 --> 00:18:06,634
+Digby Owens: And we have that in common, you docs and me.
+
+448
+00:18:07,173 --> 00:18:07,473
+Doctor (likely Bailey) / Digby Owens (PVM): Do it.
+
+449
+00:18:07,954 --> 00:18:10,818
+Digby Owens: Yeah, the way you guys push and push and push.
+
+450
+00:18:11,559 --> 00:18:15,125
+Digby Owens: When I was wrestling, if you wanted to pin me, you was gonna have to kill me.
+
+451
+00:18:16,228 --> 00:18:16,887
+Doctor (likely Bailey) / Digby Owens (PVM): Iowa style.
+
+452
+00:18:17,087 --> 00:18:18,171
+Digby Owens: Iowa State style.
+
+453
+00:18:19,132 --> 00:18:20,534
+Digby Owens: Back home, we were sworn enemies.
+
+454
+00:18:21,233 --> 00:18:23,659
+Digby Owens: But here in Seattle, man, we're brothers.
+
+455
+00:18:26,643 --> 00:18:30,548
+Digby Owens: Now, so what are we going to do about this, uh, hemo-numo-jurassic?
+
+456
+00:18:30,807 --> 00:18:33,751
+Doctor (likely Meredith Grey or Bailey) / Digby Owens (PVM): We're going to insert a chest tube to drain the blood and then reinflate your lung.
+
+457
+00:18:35,977 --> 00:18:36,395
+Digby Owens: Oh, please.
+
+458
+00:18:37,679 --> 00:18:38,681
+Digby Owens: Tell me I get to watch.
+
+459
+00:18:45,308 --> 00:18:47,393
+Digby Owens: Oh, man.
+
+460
+00:18:47,413 --> 00:18:50,278
+Doctor (likely Bailey) / Dr. Meredith Gray (PVM): I will stop.
+
+461
+00:18:50,298 --> 00:18:52,140
+Claire Rice: Before you guys start, I know you're mad.
+
+462
+00:18:52,180 --> 00:18:53,582
+Doctor (likely Bailey or Meredith) / Dr. Meredith Gray (PVM): Disbelief, Claire.
+
+463
+00:18:53,682 --> 00:18:53,981
+Claire Rice: Just...
+
+464
+00:18:54,470 --> 00:18:55,131
+Doctor (likely Bailey or Meredith) / Dr. Meredith Gray (PVM): Disbelief.
+
+465
+00:18:55,771 --> 00:18:56,913
+Doctor (likely Bailey or Meredith) / Dr. Meredith Gray (PVM): I'm just concerned.
+
+466
+00:18:57,817 --> 00:18:59,480
+Doctor (likely Bailey or Meredith) / Dr. Meredith Gray OR Dr. Meredith Gray (PVM): Where did you get the idea to do this?
+
+467
+00:19:00,000 --> 00:19:02,163
+Claire Rice: The internet.
+
+468
+00:19:02,183 --> 00:19:04,670
+Doctor (likely Bailey or Meredith) / Dr. Meredith Gray (PVM): But honey, there is a healthy way to lose weight.
+
+469
+00:19:06,614 --> 00:19:12,443
+Claire / Dr. Meredith Gray (PVM): Yeah, I've tried that, but it doesn't work for me like it does for you.
+
+470
+00:19:13,300 --> 00:19:15,905
+Tina / Dr. Meredith Gray (PVM): Hey, you don't need to lose weight.
+
+471
+00:19:16,448 --> 00:19:17,147
+Mother / Dr. Meredith Gray (PVM): What are you waiting?
+
+472
+00:19:17,950 --> 00:19:19,471
+Mother / Dr. Meredith Gray (PVM): And how much have you been working out?
+
+473
+00:19:19,854 --> 00:19:23,819
+Mother / Dr. Meredith Gray (PVM): I mean, you know, most of the time when people hit their target weight, they have to work to stay there.
+
+474
+00:19:24,442 --> 00:19:26,987
+Claire / Dr. Meredith Gray OR Nurse Steph (PVM): Everyone gains weight in college, Mom.
+
+475
+00:19:28,390 --> 00:19:30,491
+Claire / Nurse Steph (PVM): It's stressful.
+
+476
+00:19:31,335 --> 00:19:35,781
+Claire / Nurse Steph (PVM): There's not enough time for exercise.
+
+477
+00:19:37,887 --> 00:19:44,459
+Claire / Dr. Meredith Gray OR Nurse Steph (PVM): I just thought if I wasn't worried about my diet, then I could focus more on my studies.
+
+478
+00:19:44,919 --> 00:19:46,401
+Mother / Dr. Meredith Gray (PVM): So you took yet another shortcut.
+
+479
+00:19:47,521 --> 00:19:48,963
+Mother / Dr. Meredith Gray (PVM): Life doesn't work that way, Claire.
+
+480
+00:19:49,365 --> 00:19:49,726
+Tina / Dr. Meredith Gray (PVM): Tina.
+
+481
+00:19:50,287 --> 00:19:50,507
+Mother / Dr. Isobel Stevens (PVM): What?
+
+482
+00:19:50,807 --> 00:19:51,627
+Mother / Dr. Meredith Gray (PVM): You want to argue this?
+
+483
+00:19:53,872 --> 00:19:55,212
+Mother / Dr. Meredith Gray (PVM): She has so much potential.
+
+484
+00:19:55,294 --> 00:19:56,997
+Mother / Dr. Meredith Gray OR Dr. Taylor OR Dr. Meredith Gray (PVM): If she would just apply herself.
+
+485
+00:19:57,336 --> 00:19:57,656
+Tina / Dr. Meredith Gray (PVM): OK.
+
+486
+00:19:58,740 --> 00:20:01,804
+Doctor (Meredith or Bailey) / Dr. Meredith Gray (PVM): I think we should focus on taking care of your daughter.
+
+487
+00:20:02,509 --> 00:20:08,338
+Doctor (Meredith or Bailey) / Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): And Claire, your parents agree the best thing to do is to reverse the bypass.
+
+488
+00:20:08,441 --> 00:20:08,819
+Claire / Dr. Meredith Gray (PVM): No.
+
+489
+00:20:10,403 --> 00:20:11,546
+Claire / Dr. Meredith Gray (PVM): No, it's my body.
+
+490
+00:20:11,566 --> 00:20:15,471
+Claire / Dr. Meredith Gray (PVM): I do not want surgery again, please.
+
+491
+00:20:15,491 --> 00:20:19,298
+Doctor (Meredith or Bailey) / Dr. Meredith Gray (PVM): There are serious complications, and this is about your health.
+
+492
+00:20:20,102 --> 00:20:21,242
+Claire / Dr. Meredith Gray (PVM): But I'd rather be thin.
+
+493
+00:20:21,983 --> 00:20:23,708
+Doctor (Meredith or Bailey) / Dr. Meredith Gray (PVM): Well, I'm afraid the choice isn't up to you.
+
+494
+00:20:37,760 --> 00:20:39,482
+Doctor (Shepherd or Bailey) / Dr. George O'Malley (PVM): It's called Rasmussen's encephalitis.
+
+495
+00:20:40,663 --> 00:20:44,169
+Doctor (Shepherd or Bailey) / Dr. George O'Malley (PVM): What it amounts to is that this side of her brain, this part's all healthy.
+
+496
+00:20:44,190 --> 00:20:45,411
+Doctor (Shepherd or Bailey) / Dr. George O'Malley (PVM): It's working perfectly.
+
+497
+00:20:45,431 --> 00:20:48,733
+Doctor (Shepherd or Bailey) / Dr. Shepherd OR Dr. George O'Malley (PVM): This black part of the brain, his, all of that is dead or dying.
+
+498
+00:20:49,634 --> 00:20:53,078
+Doctor (Shepherd or Bailey) / Dr. Shepherd OR Dr. George O'Malley (PVM): The condition has gotten radically worse since her CT scans three months ago.
+
+499
+00:20:53,921 --> 00:20:56,123
+Doctor (Shepherd or Bailey) / Dr. Shepherd OR Dr. George O'Malley (PVM): Left untreated, the disease is going to kill her.
+
+500
+00:20:58,144 --> 00:20:58,644
+Parent (Mother or Father) / Dr. Meredith Gray (PVM): How soon?
+
+501
+00:20:59,728 --> 00:21:00,106
+Doctor (Shepherd or Bailey) / Dr. George O'Malley (PVM): Too soon.
+
+502
+00:21:01,970 --> 00:21:03,432
+Parent (Mother or Father) / Dr. George O'Malley (PVM): So is there a cure?
+
+503
+00:21:04,135 --> 00:21:07,720
+Doctor (Shepherd or Bailey) / Dr. George O'Malley (PVM): Yeah, the treatment requires the diseased portion of her brain be removed and sealed off.
+
+504
+00:21:08,721 --> 00:21:12,825
+Doctor (Shepherd or Bailey) / Dr. George O'Malley OR Dr. George O'Malley (PVM): See, eventually, the spinal fluid will fill the cavity.
+
+505
+00:21:12,845 --> 00:21:13,884
+Man (patient) / Dr. George O'Malley (PVM): Remove what?
+
+506
+00:21:13,903 --> 00:21:15,865
+Doctor / Dr. George O'Malley (PVM): I mean, that's... Half her brain, yes.
+
+507
+00:21:24,894 --> 00:21:25,576
+Woman (girlfriend) / Dr. Meredith Gray (PVM): Half her brain?
+
+508
+00:21:25,654 --> 00:21:28,178
+Woman (girlfriend) / Dr. Meredith Gray (PVM): That seems impossible.
+
+509
+00:21:28,897 --> 00:21:29,979
+Doctor / Dr. George O'Malley (PVM): Her age makes it possible.
+
+510
+00:21:30,980 --> 00:21:34,041
+Doctor / Dr. George O'Malley (PVM): Her brain's not fully developed, so the remaining neurons will...
+
+511
+00:21:34,326 --> 00:21:35,307
+Another Doctor / Dr. George O'Malley (PVM): Compensate for the loss.
+
+512
+00:21:36,489 --> 00:21:38,089
+Woman (girlfriend) / Dr. George O'Malley OR Dr. George O'Malley (PVM): But will she be normal?
+
+513
+00:21:38,111 --> 00:21:39,211
+Doctor / Dr. George O'Malley (PVM): Is there a risk to any surgery?
+
+514
+00:21:39,413 --> 00:21:41,335
+Doctor / Dr. George O'Malley (PVM): And this is, you know, a major one.
+
+515
+00:21:41,835 --> 00:21:47,221
+Doctor / Dr. George O'Malley (PVM): But if, you know, we're successful, Jamie could walk out of this hospital in a couple of weeks, go on to live a relatively normal life.
+
+516
+00:21:47,760 --> 00:21:51,286
+Doctor / Dr. George O'Malley (PVM): Look, I know this is a lot to digest, but the important thing to remember is that we can save a life.
+
+517
+00:21:51,786 --> 00:21:52,185
+Woman (girlfriend) / Dr. Shepherd (PVM): Thank you.
+
+518
+00:21:52,247 --> 00:21:53,708
+Doctor / Dr. George O'Malley OR Dr. Shepherd (PVM): Dr. O'Malley.
+
+519
+00:21:54,169 --> 00:21:54,788
+Dr. George O'Malley: Yes, what?
+
+520
+00:21:55,548 --> 00:22:00,756
+Another Doctor (possibly a resident or nurse) / Dr. George O'Malley (PVM): I'm sorry to bother you, but if the parents consent, I thought you'd like to scrub in on a hemispherectomy.
+
+521
+00:22:00,776 --> 00:22:02,317
+Another Doctor (possibly Dr. Shepard) / Dr. George O'Malley (PVM): Are you in or not?
+
+522
+00:22:02,336 --> 00:22:02,576
+Dr. George O'Malley: Uh, in.
+
+523
+00:22:12,867 --> 00:22:16,978
+Dr. George O'Malley: Gang, I'm scrubbing in on a hemispherectomy with Shepard.
+
+524
+00:22:17,719 --> 00:22:18,160
+Izzie Stevens / Dr. Meredith Gray (PVM): Get out.
+
+525
+00:22:18,180 --> 00:22:19,122
+Cristina Yang / Dr. Meredith Gray (PVM): I would kill for that.
+
+526
+00:22:19,162 --> 00:22:22,470
+Dr. O'Malley / Dr. Meredith Gray (PVM): We're going to cut out half the girl's brain, and it's going to work.
+
+527
+00:22:23,391 --> 00:22:24,073
+Cristina Yang / Dr. Meredith Gray (PVM): It's outrageous.
+
+528
+00:22:25,576 --> 00:22:27,661
+Izzie Stevens / Dr. Meredith Gray (PVM): Almost makes it hard to hate him.
+
+529
+00:22:27,681 --> 00:22:28,362
+Dr. O'Malley / Dr. Meredith Gray (PVM): Why do you hate him?
+
+530
+00:22:28,761 --> 00:22:30,424
+Cristina Yang / Dr. Meredith Gray (PVM): Oh, no reason.
+
+531
+00:22:30,445 --> 00:22:31,528
+Izzie Stevens / Dr. Meredith Gray (PVM): You know about him and Merida?
+
+532
+00:22:32,852 --> 00:22:33,491
+Cristina Yang / Dr. Meredith Gray (PVM): You know?
+
+533
+00:22:34,537 --> 00:22:36,240
+Izzie Stevens / Dr. Meredith Gray (PVM): I'm going to figure out that I know everything.
+
+534
+00:22:36,259 --> 00:22:36,682
+Cristina Yang / Dr. Meredith Gray (PVM): She knows.
+
+535
+00:22:37,522 --> 00:22:38,486
+Izzie Stevens / Dr. Meredith Gray (PVM): All about Dr. Sest.
+
+536
+00:22:38,767 --> 00:22:39,808
+Cristina Yang / Dr. Meredith Gray (PVM): It's been going on for like ever.
+
+537
+00:22:40,250 --> 00:22:40,730
+Dr. O'Malley / Dr. Isobel Stevens (PVM): What?
+
+538
+00:22:40,750 --> 00:22:41,634
+Izzie Stevens / Jamie Hayes OR Dr. George O'Malley OR Dr. Meredith Gray OR Jamie Hayes (PVM): And you didn't tell us?
+
+539
+00:22:41,973 --> 00:22:43,258
+Cristina Yang / Dr. Meredith Gray (PVM): Oh, you're a gossip, huh?
+
+540
+00:22:43,278 --> 00:22:43,837
+Izzie Stevens / Dr. Meredith Gray (PVM): I am not.
+
+541
+00:22:44,098 --> 00:22:45,000
+Cristina Yang / Jamie Hayes OR Dr. Meredith Gray (PVM): I am.
+
+542
+00:22:45,488 --> 00:22:48,351
+George O'Malley / Dr. Meredith Gray (PVM): He's about to go into major brain surgery on no sleep.
+
+543
+00:22:48,371 --> 00:22:49,652
+Izzie Stevens / Dr. Meredith Gray (PVM): Not very responsible.
+
+544
+00:22:49,810 --> 00:22:50,552
+Alex Karev / Dr. Meredith Gray (PVM): Shall I smash?
+
+545
+00:22:50,853 --> 00:22:52,413
+Cristina Yang / Dr. Meredith Gray (PVM): Sex all night isn't about being responsible.
+
+546
+00:22:52,615 --> 00:22:53,934
+Alex Karev / Dr. Meredith Gray (PVM): No, it's about sex all night.
+
+547
+00:22:54,217 --> 00:22:56,617
+Izzie Stevens / Dr. Meredith Gray (PVM): I can't believe you're not more pissed off about this, you of all people.
+
+548
+00:22:56,877 --> 00:22:57,960
+George O'Malley / Dr. Meredith Gray (PVM): She works hard all day.
+
+549
+00:22:57,980 --> 00:22:59,020
+George O'Malley / Dr. Meredith Gray (PVM): She's good at her job.
+
+550
+00:22:59,060 --> 00:23:00,541
+George O'Malley / Dr. Meredith Gray (PVM): Why should you care how she unwinds?
+
+551
+00:23:00,883 --> 00:23:02,203
+Izzie Stevens / Dr. Meredith Gray (PVM): I mean, you like to bake all night.
+
+552
+00:23:02,345 --> 00:23:03,346
+Alex Karev / Dr. Meredith Gray (PVM): Some people like to drink.
+
+553
+00:23:03,404 --> 00:23:05,166
+Alex Karev / Dr. Meredith Gray (PVM): Others like an occasional screaming orgasm.
+
+554
+00:23:05,346 --> 00:23:05,807
+Cristina Yang / Digby Owens (PVM): Yeah, we do.
+
+555
+00:23:08,431 --> 00:23:09,832
+Cristina Yang / Digby Owens (PVM): Forget I said that.
+
+556
+00:23:09,852 --> 00:23:10,531
+Cristina Yang / Digby Owens (PVM): Pretend like I'm not here.
+
+557
+00:23:13,934 --> 00:23:15,478
+Izzie Stevens / Digby Owens (PVM): You look like you need to be spoon fed.
+
+558
+00:23:16,605 --> 00:23:17,527
+Cristina Yang / Dr. Meredith Gray (PVM): You look like Alex.
+
+559
+00:23:18,367 --> 00:23:23,336
+George O'Malley / Dr. Meredith Gray (PVM): OK, about drinking, Dr. Taylor, the anesthesiologist, do you think he drinks?
+
+560
+00:23:24,076 --> 00:23:25,358
+Cristina Yang / Dr. Meredith Gray (PVM): I said, whatever gets you through the day.
+
+561
+00:23:25,420 --> 00:23:26,461
+George O'Malley / Dr. Meredith Gray OR Dr. Meredith Gray (PVM): No, but I mean here at work.
+
+562
+00:23:26,820 --> 00:23:28,144
+George O'Malley / Dr. Meredith Gray (PVM): Earlier, I thought I smelled.
+
+563
+00:23:29,444 --> 00:23:30,067
+George O'Malley / Dr. Meredith Gray (PVM): You know, do you think?
+
+564
+00:23:31,209 --> 00:23:32,529
+George O'Malley / Dr. Meredith Gray (PVM): I mean, his patients trust the.
+
+565
+00:23:34,594 --> 00:23:37,057
+George O'Malley / Digby Owens OR Dr. Meredith Gray (PVM): So I should say something, right?
+
+566
+00:23:37,076 --> 00:23:38,058
+Cristina Yang / Digby Owens (PVM): It's a can of worms, George.
+
+567
+00:23:39,740 --> 00:23:41,365
+George O'Malley / Digby Owens (PVM): And why are we talking about sex, anyway?
+
+568
+00:23:47,991 --> 00:23:50,435
+Patient (Claire) / Digby Owens (PVM): This is going to leave a pretty sexy scar, huh?
+
+569
+00:23:51,278 --> 00:23:52,740
+Meredith Grey / Digby Owens (PVM): Don't get any more crazy ideas.
+
+570
+00:23:53,820 --> 00:23:55,324
+Patient (Claire) / Digby Owens (PVM): You really think my ideas are crazy?
+
+571
+00:23:56,183 --> 00:23:57,026
+Meredith Grey / Digby Owens (PVM): I'm leaning that way.
+
+572
+00:23:57,747 --> 00:23:59,067
+Patient (Claire) / Digby Owens (PVM): We wrestle, he plays trumpet.
+
+573
+00:24:00,990 --> 00:24:02,012
+Patient (Claire) / Digby Owens (PVM): I feel pretty dizzy.
+
+574
+00:24:02,993 --> 00:24:03,776
+Meredith Grey / Digby Owens (PVM): You've lost some blood.
+
+575
+00:24:05,877 --> 00:24:07,019
+Meredith Grey / Dick B. (PVM): This too shall pass.
+
+576
+00:24:08,541 --> 00:24:09,124
+Unknown / Dick B. (PVM): Hey.
+
+577
+00:24:10,875 --> 00:24:12,817
+Digby / Digby Owens OR Dick B. (PVM): How come I don't see you down at the mat and bell time?
+
+578
+00:24:13,358 --> 00:24:14,361
+Digby / Digby Owens (PVM): Oh, man, no time.
+
+579
+00:24:14,882 --> 00:24:15,884
+Friend of Digby / Digby Owens (PVM): Bro, make time.
+
+580
+00:24:17,144 --> 00:24:18,207
+Friend of Digby / Digby Owens (PVM): I'll be expecting you.
+
+581
+00:24:19,528 --> 00:24:25,557
+Digby / Digby Owens OR Dr. Miranda Bailey OR Dick B. (PVM): Oh, man.
+
+582
+00:24:25,576 --> 00:24:26,460
+Nurse / Dr. Miranda Bailey (PVM): Handle with care.
+
+583
+00:24:26,500 --> 00:24:28,843
+Surgeon / Dr. Miranda Bailey (PVM): This thing's full of gunk, I know.
+
+584
+00:24:29,462 --> 00:24:33,430
+Surgeon / Dr. Miranda Bailey OR Dr. Miranda Bailey (PVM): We need to free the bowel from the adhesions caused from the abscess.
+
+585
+00:24:34,290 --> 00:24:35,192
+Resident / Dr. Miranda Bailey (PVM): This poor girl.
+
+586
+00:24:36,034 --> 00:24:36,493
+Nurse / Dr. Taylor (PVM): Cell phone.
+
+587
+00:24:36,828 --> 00:24:38,132
+Resident / Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): What was she thinking?
+
+588
+00:24:38,152 --> 00:24:39,432
+Surgeon / Dr. Meredith Gray (PVM): She wants her mother's approval.
+
+589
+00:24:40,134 --> 00:24:41,115
+Resident / Dr. Meredith Gray (PVM): She wanted to please her.
+
+590
+00:24:41,557 --> 00:24:42,877
+Resident / Dr. Meredith Gray (PVM): And this damages the result?
+
+591
+00:24:42,979 --> 00:24:45,363
+Surgeon / Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): Here, resect that.
+
+592
+00:24:45,824 --> 00:24:46,903
+Surgeon / Dr. Meredith Gray (PVM): Needle tip bovie, please.
+
+593
+00:24:48,386 --> 00:24:50,589
+Dr. Miranda Bailey: When you're done here, you have post-ops waiting.
+
+594
+00:24:51,451 --> 00:24:52,512
+Dr. Meredith Gray: I know, Dr. Bailey.
+
+595
+00:24:52,794 --> 00:24:55,659
+Dr. Miranda Bailey: Christina's got the flu, so you need to pick up the slack in the clinic.
+
+596
+00:24:55,877 --> 00:24:57,740
+Dr. Meredith Gray: Look, I'm off the floors, OK?
+
+597
+00:24:59,765 --> 00:25:01,227
+Dr. Meredith Gray: Sorry, that was inappropriate.
+
+598
+00:25:01,247 --> 00:25:03,088
+Dr. Miranda Bailey: It's not the only thing that's inappropriate.
+
+599
+00:25:06,241 --> 00:25:07,483
+Dr. Meredith Gray: Are we on the subject?
+
+600
+00:25:07,505 --> 00:25:09,067
+Dr. Miranda Bailey: You care to tell me what you think you're doing?
+
+601
+00:25:09,086 --> 00:25:11,150
+Dr. Meredith Gray: Look, I'll jump through hoops if you want me to.
+
+602
+00:25:11,588 --> 00:25:14,134
+Dr. Meredith Gray: But what I do when I leave this hospital is my business.
+
+603
+00:25:14,493 --> 00:25:16,477
+Dr. Miranda Bailey: Half this hospital knows your business.
+
+604
+00:25:16,497 --> 00:25:18,640
+Dr. Miranda Bailey: Flu isn't the only virus spreading around here.
+
+605
+00:25:19,421 --> 00:25:20,162
+Dr. Meredith Gray: I made a choice.
+
+606
+00:25:20,501 --> 00:25:22,644
+Dr. Meredith Gray: And I know you don't respect me for that choice.
+
+607
+00:25:23,487 --> 00:25:25,048
+Dr. Meredith Gray: But I'll live with the consequences.
+
+608
+00:25:25,390 --> 00:25:27,791
+Dr. Miranda Bailey: Then I'll have lots of hoops for you to jump through.
+
+609
+00:25:27,873 --> 00:25:29,473
+Dr. Meredith Gray: I've done everything you've asked me to do.
+
+610
+00:25:29,934 --> 00:25:32,038
+Dr. Meredith Gray: I may not do it your way, but it gets done.
+
+611
+00:25:32,858 --> 00:25:34,883
+Dr. Meredith Gray: So whatever else you got, bring it on.
+
+612
+00:25:40,413 --> 00:25:46,000
+Surgeon / Dr. Miranda Bailey (PVM): Okay, Dr. Gray, now that you've drained the organ, we can attempt to repair it.
+
+613
+00:25:46,923 --> 00:25:48,703
+Unknown (likely a surgical team member or Dr. Shepherd) / Dr. Miranda Bailey (PVM): Now my day is perfect.
+
+614
+00:25:51,627 --> 00:25:51,949
+Unknown (possibly a nurse or surgical team member) / Unknown (PVM): Okay, bye.
+
+615
+00:25:55,673 --> 00:25:56,413
+Unknown (possibly a resident or junior surgeon) / Dr. George O'Malley (PVM): I appreciate this.
+
+616
+00:25:56,453 --> 00:26:02,642
+Unknown (possibly same as 615, likely a resident or junior surgeon) / Dr. George O'Malley (PVM): The chance to scrub in on this kind of procedure is, well, yeah, I appreciate it.
+
+617
+00:26:04,006 --> 00:26:04,905
+Unknown (possibly a nurse or assistant) / Dr. Shepherd OR Dr. George O'Malley (PVM): Here you go.
+
+618
+00:26:04,925 --> 00:26:06,429
+Unknown (possibly a nurse or assistant) / Dr. Shepherd (PVM): Triple espresso, not too hot.
+
+619
+00:26:06,548 --> 00:26:08,351
+Unknown (possibly Dr. Taylor or Dr. Shepherd) / Dr. Shepherd OR Dr. Shepherd OR Dr. George O'Malley (PVM): Oh, I love you.
+
+620
+00:26:08,371 --> 00:26:08,671
+Unknown (same as 619, likely Dr. Taylor or Dr. Shepherd) / Dr. Shepherd (PVM): Seriously.
+
+621
+00:26:08,809 --> 00:26:09,471
+Unknown (possibly Dr. Taylor or Dr. Shepherd) / Dr. Shepherd (PVM): Ah, coffee.
+
+622
+00:26:09,592 --> 00:26:11,874
+Unknown (possibly Dr. Taylor or Dr. Shepherd) / Dr. Shepherd OR Dr. Shepherd OR Dr. George O'Malley (PVM): Where would medicine be without it, huh?
+
+623
+00:26:11,894 --> 00:26:11,993
+Unknown (possibly coffee bringer or recipient) / Dr. George O'Malley (PVM): Yeah.
+
+624
+00:26:12,015 --> 00:26:13,336
+Unknown (possibly Dr. Taylor or Dr. Shepherd) / Dr. Shepherd OR Dr. Isobel Stevens (PVM): Oh, I hope you have a new crossword, too.
+
+625
+00:26:13,355 --> 00:26:14,856
+Unknown (possibly Dr. Taylor or Dr. Shepherd) / Dr. Taylor OR Dr. Shepherd OR Dr. Isobel Stevens (PVM): I'm going to be here a while.
+
+626
+00:26:15,278 --> 00:26:15,979
+Unknown (possibly coffee bringer) / Dr. Taylor (PVM): Never go without.
+
+627
+00:26:16,818 --> 00:26:17,839
+Unknown (possibly Dr. Shepherd or senior surgeon) / Dr. Taylor (PVM): Big day for you, kid.
+
+628
+00:26:17,881 --> 00:26:18,381
+Unknown (possibly Dr. Shepherd or senior surgeon) / Dr. Taylor (PVM): Congrats.
+
+629
+00:26:18,780 --> 00:26:19,122
+Unknown (possibly junior surgeon or resident) / Dr. Taylor (PVM): Thanks.
+
+630
+00:26:20,041 --> 00:26:20,624
+Dr. Taylor / Jamie Hayes (PVM): Hey, princess.
+
+631
+00:26:21,525 --> 00:26:22,526
+Dr. Taylor / Jamie Hayes (PVM): You ready to take a nap?
+
+632
+00:26:23,625 --> 00:26:24,567
+Jamie Hayes: Hey, look what I can blow bubbles.
+
+633
+00:26:24,586 --> 00:26:24,988
+Dr. Taylor / Jamie Hayes OR Dr. George O'Malley (PVM): That's it.
+
+634
+00:26:25,008 --> 00:26:25,607
+Dr. Taylor / Jamie Hayes OR Dr. George O'Malley (PVM): You just breathe in.
+
+635
+00:26:25,627 --> 00:26:27,529
+Dr. Taylor / Jamie Hayes OR Dr. George O'Malley (PVM): Oh, that's it.
+
+636
+00:26:27,671 --> 00:26:28,570
+Unknown (possibly Dr. Shepherd or a nurse) / Dr. Isobel Stevens (PVM): What?
+
+637
+00:26:28,592 --> 00:26:29,231
+Unknown (possibly Dr. Shepherd or a nurse) / Dr. George O'Malley (PVM): Do you smell?
+
+638
+00:26:29,972 --> 00:26:30,232
+Unknown (possibly Dr. Taylor or Dr. Shepherd) / Dr. George O'Malley (PVM): Smell what?
+
+639
+00:26:30,252 --> 00:26:31,193
+Unknown (possibly Dr. Taylor or Dr. Shepherd) / Dr. George O'Malley (PVM): You can't have a mask.
+
+640
+00:26:33,689 --> 00:26:43,642
+Dr. Shepherd: I'm sorry, Dr. Taylor, but did you just... Have you been drinking?
+
+641
+00:26:45,723 --> 00:26:46,404
+Dr. Taylor: I beg your pardon?
+
+642
+00:26:47,326 --> 00:26:47,527
+Unknown (possibly Dr. Shepherd or another team member) / Dr. Isobel Stevens (PVM): What?
+
+643
+00:26:47,567 --> 00:26:51,132
+Unknown (possibly Dr. Shepherd or another team member) / Dr. Taylor (PVM): Do you smell... I smell alcohol.
+
+644
+00:26:51,152 --> 00:26:53,653
+Dr. Taylor: Where the hell do you get off accusing me of something like that?
+
+645
+00:26:56,177 --> 00:26:57,259
+Unknown (possibly a nurse or team member) / Dr. Taylor OR Dr. Meredith Gray (PVM): George, you're out of wine.
+
+646
+00:26:58,019 --> 00:26:58,701
+Unknown (possibly Dr. Shepherd or another senior doctor) / Dr. Meredith Gray (PVM): There are rules.
+
+647
+00:26:58,740 --> 00:27:00,884
+Unknown (possibly Dr. Shepherd or another senior doctor) / Dr. Meredith Gray (PVM): You know, there are rules for a reason.
+
+648
+00:27:00,943 --> 00:27:01,163
+Unknown (possibly Dr. Shepherd or another senior doctor) / Dr. Meredith Gray (PVM): You just...
+
+649
+00:27:05,108 --> 00:27:06,813
+Doctor / Dr. Meredith Gray (PVM): There is a two-year-old girl on this table.
+
+650
+00:27:09,175 --> 00:27:11,622
+Athena / Dr. Taylor OR Dr. Meredith Gray (PVM): You shouldn't take advantage of someone else's vulnerability.
+
+651
+00:27:11,662 --> 00:27:14,307
+Senior Doctor / Dr. Taylor (PVM): Look, I don't need some punk intern telling me what's at stake here.
+
+652
+00:27:15,509 --> 00:27:16,328
+Senior Doctor / Dr. Taylor (PVM): Get him out of here, Shep.
+
+653
+00:27:19,895 --> 00:27:20,135
+Senior Doctor / Dr. George O'Malley (PVM): Shep.
+
+654
+00:27:22,559 --> 00:27:23,423
+Shep / Dr. George O'Malley (PVM): You're out, George.
+
+655
+00:27:33,038 --> 00:27:34,387
+Senior Doctor / Dr. Taylor (PVM): You damn well better be ready, Taylor.
+
+656
+00:27:34,813 --> 00:27:36,365
+Dr. Taylor: I wouldn't be here if I wasn't.
+
+657
+00:27:40,326 --> 00:27:42,809
+Athena / Jamie Hayes (PVM): Do you really seriously want to know why I'm leaving?
+
+658
+00:27:43,412 --> 00:27:43,893
+JP / Jamie Hayes (PVM): Seriously?
+
+659
+00:27:44,313 --> 00:27:48,837
+Athena / Jamie Hayes OR Jamie Hayes (PVM): How about when you started insisting that I quit my job right when I started to make more money than you?
+
+660
+00:27:49,057 --> 00:27:50,942
+Athena / Jamie Hayes OR Jamie Hayes (PVM): That should have been the last straw.
+
+661
+00:27:51,280 --> 00:27:51,520
+JP / Jamie Hayes (PVM): No, no.
+
+662
+00:27:51,903 --> 00:27:59,413
+Athena / Jamie Hayes OR Jamie Hayes (PVM): No, the last straw should have been when I found out that those mysterious phone calls that you'd been getting that you kept denying were from other women were really coming from your mother.
+
+663
+00:28:00,232 --> 00:28:01,233
+Medical Staff / Jamie Hayes (PVM): This isn't healthy.
+
+664
+00:28:01,295 --> 00:28:02,537
+Medical Staff / Jamie Hayes OR Dr. Meredith Gray OR Nurse Steph (PVM): Just hold still, please.
+
+665
+00:28:02,557 --> 00:28:03,656
+Athena / Jamie Hayes OR Nurse Steph (PVM): Don't you dare try to catch this.
+
+666
+00:28:03,938 --> 00:28:05,681
+Medical Staff / Jamie Hayes OR Nurse Steph (PVM): Okay, could the both of you just please stop?
+
+667
+00:28:05,921 --> 00:28:07,843
+Athena / Nurse Steph OR Jamie Hayes OR Nurse Steph OR Jamie Hayes (PVM): You don't love me, JP.
+
+668
+00:28:07,863 --> 00:28:08,344
+Athena / Jamie Hayes OR Jamie Hayes (PVM): You love to smother me.
+
+669
+00:28:08,324 --> 00:28:13,308
+Athena / Jamie Hayes OR Dr. Isobel Stevens OR Jamie Hayes (PVM): And if I could just get you to admit that, then I could leave you with an ounce of respect.
+
+670
+00:28:13,588 --> 00:28:17,816
+Medical Staff / Jamie Hayes OR Dr. Isobel Stevens (PVM): Hey, Athena, I let you stay in here to keep him calm, so if you're just gonna keep on... Check that.
+
+671
+00:28:17,836 --> 00:28:21,880
+Athena / Jamie Hayes (PVM): I can't respect a man desperate enough to swallow my exit strategy.
+
+672
+00:28:21,961 --> 00:28:23,761
+JP / Jamie Hayes (PVM): That is the last straw.
+
+673
+00:28:23,843 --> 00:28:25,285
+Medical Staff / Jamie Hayes (PVM): Michelle, can you get her out of here?
+
+674
+00:28:25,345 --> 00:28:26,945
+Michelle / Dr. Meredith Gray OR Dr. Meredith Gray OR Jamie Hayes OR Dr. Isobel Stevens (PVM): Ma'am?
+
+675
+00:28:28,008 --> 00:28:28,788
+Athena / Dr. Meredith Gray OR Dr. Isobel Stevens (PVM): Fine.
+
+676
+00:28:30,990 --> 00:28:31,152
+Michelle / Dr. Taylor OR Dr. Shepherd (PVM): Come on.
+
+677
+00:28:31,172 --> 00:28:31,372
+Athena / Dr. Isobel Stevens (PVM): What?
+
+678
+00:28:33,875 --> 00:28:34,976
+Athena / Dr. Meredith Gray (PVM): What's happening?
+
+679
+00:28:35,415 --> 00:28:36,356
+Medical Staff / Dr. Miranda Bailey (PVM): The keys move farther down.
+
+680
+00:28:36,798 --> 00:28:37,960
+Athena / Dr. Meredith Gray (PVM): Oh, my God, what does that mean?
+
+681
+00:28:38,798 --> 00:28:39,701
+JP / Dr. Meredith Gray (PVM): What did you do?
+
+682
+00:28:40,060 --> 00:28:41,723
+Athena / Dr. Meredith Gray (PVM): Don't you dare die, JP.
+
+683
+00:28:41,785 --> 00:28:42,306
+JP / Dr. Meredith Gray (PVM): Oh, please.
+
+684
+00:28:42,546 --> 00:28:43,586
+Medical Staff / Dr. Meredith Gray (PVM): Please, just shut up.
+
+685
+00:28:43,748 --> 00:28:44,650
+Cristina Yang / Dr. Meredith Gray (PVM): Just breathe, JP.
+
+686
+00:28:45,191 --> 00:28:45,852
+Meredith Grey / Dr. Meredith Gray (PVM): Just breathe.
+
+687
+00:28:49,198 --> 00:28:49,538
+JP / Jamie Hayes (PVM): Got it.
+
+688
+00:28:57,790 --> 00:29:01,198
+Attending Surgeon (possibly Dr. Shepherd) / Dr. Isobel Stevens OR Dr. Meredith Gray OR Dr. Shepherd (PVM): Very impressive, JP.
+
+689
+00:29:01,939 --> 00:29:02,200
+Cristina Yang / Dr. Isobel Stevens (PVM): You OK?
+
+690
+00:29:02,220 --> 00:29:02,618
+Meredith Grey / Dr. Isobel Stevens (PVM): Are you OK?
+
+691
+00:29:02,640 --> 00:29:02,839
+JP / Dr. George O'Malley (PVM): Yeah.
+
+692
+00:29:03,221 --> 00:29:04,182
+Cristina Yang / Dr. Isobel Stevens (PVM): You'll be fine.
+
+693
+00:29:10,795 --> 00:29:14,063
+Cristina Yang / Jamie Hayes (PVM): You did that on purpose, didn't you?
+
+694
+00:29:15,226 --> 00:29:16,386
+Attending Surgeon (possibly Dr. Bailey) / Dr. Isobel Stevens (PVM): Can I offer you some advice?
+
+695
+00:29:17,852 --> 00:29:21,200
+Attending Surgeon (possibly Dr. Bailey) / Dr. Isobel Stevens OR Dr. Meredith Gray (PVM): Get in your car and go, for all of our sakes.
+
+696
+00:29:23,865 --> 00:29:25,851
+JP / Dr. Taylor OR Dr. Meredith Gray (PVM): You're never gonna find where I parked it.
+
+697
+00:29:31,415 --> 00:29:32,396
+Cristina Yang / Dr. Miranda Bailey (PVM): I need a shower.
+
+698
+00:29:32,836 --> 00:29:33,699
+Meredith Grey / Dr. Miranda Bailey (PVM): I need a shower.
+
+699
+00:29:33,857 --> 00:29:37,343
+Attending Surgeon (possibly Dr. Bailey) / Dr. Miranda Bailey (PVM): You need to go tell that girl's parents what kind of kid they're getting back.
+
+700
+00:29:37,363 --> 00:29:38,824
+Cristina Yang / Dr. Miranda Bailey (PVM): You're not going to let me shower first?
+
+701
+00:29:39,144 --> 00:29:41,125
+Attending Surgeon (possibly Dr. Bailey) / Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): That would be a hoop, would it not?
+
+702
+00:29:41,885 --> 00:29:42,886
+Cristina Yang / Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): It would qualify.
+
+703
+00:29:42,927 --> 00:29:45,289
+Attending Surgeon (possibly Dr. Bailey) / Dr. Meredith Gray (PVM): Shower first, then.
+
+704
+00:29:47,052 --> 00:29:50,434
+Meredith Grey / Dr. Isobel Stevens OR Dr. Meredith Gray OR Jamie Hayes (PVM): Ew, it smells.
+
+705
+00:29:50,934 --> 00:29:54,838
+Cristina Yang / Dr. Meredith Gray (PVM): That would be me, or more specifically, my patient's insides all over me.
+
+706
+00:29:54,900 --> 00:29:57,643
+Meredith Grey / Dr. Meredith Gray OR Dr. Meredith Gray (PVM): That makes me strangely happy.
+
+707
+00:30:01,015 --> 00:30:02,655
+Cristina Yang / Dr. Meredith Gray (PVM): I smell like karma.
+
+708
+00:30:03,297 --> 00:30:03,557
+Meredith Grey / Dr. Isobel Stevens (PVM): What?
+
+709
+00:30:04,298 --> 00:30:04,637
+Cristina Yang / Dr. Meredith Gray (PVM): Nothing.
+
+710
+00:30:04,659 --> 00:30:06,621
+Meredith Grey / Dr. Meredith Gray (PVM): Oh, there's something vile stuck in your hair.
+
+711
+00:30:06,681 --> 00:30:08,363
+Cristina Yang / Dr. Meredith Gray (PVM): You know, just go stand over there, please.
+
+712
+00:30:13,307 --> 00:30:13,406
+Cristina Yang / Dr. Meredith Gray (PVM): Ugh.
+
+713
+00:30:13,867 --> 00:30:16,069
+Cristina Yang / Dr. Meredith Gray (PVM): How much do I love being a surgeon right now?
+
+714
+00:30:17,230 --> 00:30:18,394
+Meredith Grey / Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): Karma?
+
+715
+00:30:18,413 --> 00:30:20,316
+Meredith Grey / Dr. Meredith Gray (PVM): What does karma have to do with anything?
+
+716
+00:30:20,816 --> 00:30:26,000
+Cristina Yang / Dr. Isobel Stevens OR Dr. Miranda Bailey (PVM): I'm just saying, you've been given all the best surgeries, and now you smell like putrid goo.
+
+717
+00:30:26,843 --> 00:30:27,923
+Cristina Yang / Dr. Isobel Stevens (PVM): And you're giving off a stench.
+
+718
+00:30:28,284 --> 00:30:29,065
+Cristina Yang / Dr. Isobel Stevens OR Dr. Meredith Gray (PVM): Karma's a bitch.
+
+719
+00:30:30,951 --> 00:30:32,953
+Attending Surgeon (possibly Dr. Shepherd) / Dr. Miranda Bailey OR Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): Dr. Shepherd needs an intern in surgery.
+
+720
+00:30:32,973 --> 00:30:33,977
+Attending Surgeon (possibly Dr. Shepherd) / Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): Which one of you is clear to go?
+
+721
+00:30:33,997 --> 00:30:34,576
+George O'Malley / Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): I'm good, Dr. Bailey.
+
+722
+00:30:34,596 --> 00:30:35,419
+George O'Malley / Dr. Meredith Gray (PVM): Where do you want me?
+
+723
+00:30:35,439 --> 00:30:36,681
+Dr. Miranda Bailey / Dr. Meredith Gray (PVM): You need to lie down somewhere.
+
+724
+00:30:36,740 --> 00:30:37,060
+George O'Malley / Dr. Meredith Gray (PVM): I'm fine.
+
+725
+00:30:37,102 --> 00:30:38,983
+George O'Malley / Dr. Meredith Gray (PVM): I'm completely healthy.
+
+726
+00:30:39,005 --> 00:30:39,345
+Dr. Miranda Bailey / Dr. Meredith Gray (PVM): Gray.
+
+727
+00:30:40,385 --> 00:30:40,807
+Dr. Meredith Gray: Of course.
+
+728
+00:30:41,729 --> 00:30:42,829
+Cristina Yang / Dr. Isobel Stevens (PVM): What is your problem?
+
+729
+00:30:43,192 --> 00:30:44,052
+Meredith Grey / Dr. Isobel Stevens (PVM): Um, you.
+
+730
+00:30:44,614 --> 00:30:48,759
+Cristina Yang / Dr. Isobel Stevens (PVM): Because apparently you can help Dr. McDreamy in ways the rest of us can't.
+
+731
+00:30:50,624 --> 00:30:53,326
+Meredith Grey / Dr. Isobel Stevens OR Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): You did not just say... Yes, I did.
+
+732
+00:30:54,769 --> 00:30:54,848
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): Hey!
+
+733
+00:30:54,868 --> 00:30:57,252
+Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): Hemispherectomy and OR1 with Dr. Shepherd.
+
+734
+00:30:57,272 --> 00:30:57,733
+Dr. Miranda Bailey: Go.
+
+735
+00:31:07,250 --> 00:31:14,798
+Cristina Yang / Dr. Miranda Bailey OR Nurse Steph (PVM): Apparently, I'm not the only one with hoops.
+
+736
+00:31:14,817 --> 00:31:18,103
+Cristina Yang / Digby Owens OR Nurse Steph (PVM): If you're gonna get up, you might as well get up.
+
+737
+00:31:18,123 --> 00:31:18,522
+Dr. Richard Webber / Digby Owens (PVM): Doctor.
+
+738
+00:31:20,846 --> 00:31:24,471
+Izzie Stevens / Digby Owens (PVM): Digby's post-op CBC shows a severe spike in the white blood cell count.
+
+739
+00:31:24,490 --> 00:31:24,852
+Dr. Miranda Bailey / Dick B. (PVM): What is it?
+
+740
+00:31:25,432 --> 00:31:27,054
+Izzie Stevens / Digby Owens OR Digby Owens (PVM): It's 27 with 16% bands.
+
+741
+00:31:27,855 --> 00:31:28,634
+Dr. Miranda Bailey / Digby Owens (PVM): Something else is wrong.
+
+742
+00:31:29,175 --> 00:31:30,557
+Dr. Miranda Bailey / Digby Owens (PVM): That's a little high for simple stress.
+
+743
+00:31:30,719 --> 00:31:35,805
+Dr. Miranda Bailey / Digby Owens (PVM): Check for any other possible sources of infection or recent illness.
+
+744
+00:31:36,528 --> 00:31:40,954
+Dr. Derek Shepherd / Dr. Shepherd OR Dr. George O'Malley (PVM): All right, we're going to start the procedure with the left temporal rectum.
+
+745
+00:31:40,976 --> 00:31:43,240
+Dr. Derek Shepherd: Thanks for joining us, Dr. Yang.
+
+746
+00:31:43,259 --> 00:31:57,085
+Dr. Derek Shepherd: After the temporal, we'll do the frontal and then the occipital rectum.
+
+747
+00:32:00,794 --> 00:32:05,121
+Dr. Miranda Bailey / Dr. Meredith Gray (PVM): We were able to reverse the gastric bypass, but we did lose a significant portion of her bowel.
+
+748
+00:32:05,442 --> 00:32:08,968
+Dr. Miranda Bailey / Dr. Meredith Gray (PVM): And because of the short gut syndrome, Claire will never eat normally again.
+
+749
+00:32:08,988 --> 00:32:09,048
+Izzie Stevens / Dr. Meredith Gray (PVM): OK.
+
+750
+00:32:10,450 --> 00:32:11,270
+Izzie Stevens / Dr. Isobel Stevens (PVM): What?
+
+751
+00:32:11,290 --> 00:32:11,751
+Izzie Stevens / Dr. Meredith Gray (PVM): Can we?
+
+752
+00:32:12,374 --> 00:32:13,375
+Izzie Stevens / Dr. Meredith Gray (PVM): How do we help her here?
+
+753
+00:32:14,155 --> 00:32:17,182
+Dr. Miranda Bailey / Dr. Meredith Gray (PVM): Well, getting proper nutrition will be a lifelong problem for Claire.
+
+754
+00:32:17,402 --> 00:32:17,843
+Izzie Stevens / Dr. Meredith Gray (PVM): Great.
+
+755
+00:32:17,863 --> 00:32:19,865
+Izzie Stevens / Dr. Meredith Gray OR Dr. Meredith Gray (PVM): As if we already don't have our hands full with her.
+
+756
+00:32:21,607 --> 00:32:23,290
+George O'Malley / Dr. Meredith Gray (PVM): She gets good grades.
+
+757
+00:32:23,845 --> 00:32:24,986
+Dr. Shepherd / Dr. Meredith Gray (PVM): She stays out of trouble.
+
+758
+00:32:25,006 --> 00:32:26,326
+Dr. Shepherd / Dr. Meredith Gray (PVM): She's smart.
+
+759
+00:32:27,429 --> 00:32:30,353
+Another doctor (possibly Dr. Bailey) / Dr. Meredith Gray (PVM): I just think she feels like nothing she does is good enough for you.
+
+760
+00:32:30,373 --> 00:32:33,076
+Dr. Shepherd / Dr. Meredith Gray (PVM): If you somehow think that I'm responsible for this.
+
+761
+00:32:33,096 --> 00:32:36,660
+Another doctor (possibly Dr. Bailey) / Dr. Meredith Gray (PVM): I think Claire is killing herself to please you.
+
+762
+00:32:37,740 --> 00:32:38,182
+Dr. Shepherd / Dr. Meredith Gray (PVM): Please.
+
+763
+00:32:41,404 --> 00:32:43,769
+Dr. Shepherd / Dr. Meredith Gray (PVM): You have no idea what's going on in that girl's mind.
+
+764
+00:32:44,288 --> 00:32:44,930
+Another doctor (possibly Dr. Bailey) / Dr. Meredith Gray (PVM): You're her mother.
+
+765
+00:32:46,172 --> 00:32:47,791
+Another doctor (possibly Dr. Bailey) / Dr. Meredith Gray (PVM): She worships the ground you walk on.
+
+766
+00:32:50,096 --> 00:32:51,656
+Another doctor (possibly Dr. Bailey) / Dr. Meredith Gray (PVM): She didn't do this for herself.
+
+767
+00:32:56,650 --> 00:32:59,153
+Dr. Shepherd / Dr. Meredith Gray OR Dr. Meredith Gray (PVM): I think that this situation is completely ridiculous.
+
+768
+00:32:59,211 --> 00:33:00,413
+Another doctor (possibly Dr. Bailey) / Dr. Meredith Gray (PVM): Shut up.
+
+769
+00:33:09,505 --> 00:33:09,846
+Doctor (possibly Dr. Bailey or Dr. Shepherd) / Dick B. (PVM): What is it?
+
+770
+00:33:10,567 --> 00:33:12,067
+Dick B.: I'm freezing, doc.
+
+771
+00:33:12,086 --> 00:33:13,048
+Dick B.: I can't stop shaking.
+
+772
+00:33:13,348 --> 00:33:15,451
+Nurse / Nurse Steph (PVM): His temp's way up and BP's dropping, doctor.
+
+773
+00:33:16,011 --> 00:33:20,116
+Doctor (possibly Dr. Bailey or Dr. Shepherd) / Digby Owens (PVM): All right, Dick B. Have you had any recent illnesses, new piercings, tattoos, wounds?
+
+774
+00:33:20,557 --> 00:33:21,778
+Dick B.: New tat on my calf.
+
+775
+00:33:30,483 --> 00:33:32,249
+Doctor (possibly Dr. Bailey or Dr. Shepherd) / Jamie Hayes OR Digby Owens OR Dick B. OR Digby Owens (PVM): Oh, my God.
+
+776
+00:33:32,269 --> 00:33:33,991
+Dick B.: It was nowhere near that nasty this morning.
+
+777
+00:33:34,113 --> 00:33:34,772
+Doctor (possibly Dr. Bailey or Dr. Shepherd) / Digby Owens (PVM): But it was infected.
+
+778
+00:33:35,414 --> 00:33:36,416
+Doctor (possibly Dr. Bailey or Dr. Shepherd) / Digby Owens OR Dick B. (PVM): Why didn't you say anything?
+
+779
+00:33:36,438 --> 00:33:37,117
+Dick B.: Ah, it was nothing.
+
+780
+00:33:38,741 --> 00:33:40,527
+Dick B.: I'm not here to complain about a little pain.
+
+781
+00:33:41,347 --> 00:33:44,295
+Doctor (possibly Dr. Bailey or Dr. Shepherd) / Digby Owens (PVM): Well, the infection's been exacerbated by the stress in your body from the gunshot.
+
+782
+00:33:44,914 --> 00:33:45,778
+Doctor (possibly Dr. Bailey or Dr. Shepherd) / Digby Owens (PVM): Get him to ICU.
+
+783
+00:33:47,039 --> 00:33:48,865
+Doctor (possibly Dr. Bailey or Dr. Shepherd) / Digby Owens (PVM): We'll get you started on some antibiotics.
+
+784
+00:33:57,702 --> 00:34:01,347
+Dr. Shepherd / Dr. George O'Malley OR Dr. Shepherd (PVM): We'll encounter the anterior cerebral artery.
+
+785
+00:34:01,808 --> 00:34:08,840
+Another surgeon / Dr. Taylor OR Dr. George O'Malley OR Dr. Meredith Gray (PVM): Yes, and we're going to need to... The branches of the artery need to be coagulated and divided.
+
+786
+00:34:09,481 --> 00:34:11,402
+Dr. Shepherd / Dr. Shepherd OR Dr. George O'Malley (PVM): You know, Taylor, her anesthesia is awful light.
+
+787
+00:34:14,789 --> 00:34:15,268
+Dr. Shepherd / Dr. Shepherd (PVM): Come on, Taylor.
+
+788
+00:34:15,289 --> 00:34:16,411
+Another surgeon / Dr. Shepherd (PVM): She's waking up.
+
+789
+00:34:20,498 --> 00:34:21,059
+Dr. Shepherd / Dr. Meredith Gray (PVM): Dr. Taylor.
+
+790
+00:34:22,681 --> 00:34:23,282
+Another surgeon / Dr. Meredith Gray (PVM): He's asleep.
+
+791
+00:34:24,864 --> 00:34:25,364
+Dr. Shepherd / Dr. Meredith Gray OR Jamie Hayes (PVM): Taylor!
+
+792
+00:34:34,862 --> 00:34:35,884
+Dr. Shepherd / Dr. Taylor OR Jamie Hayes (PVM): Dr. Taylor!
+
+793
+00:34:37,364 --> 00:34:38,045
+Unknown / Dr. Taylor (PVM): Oh, god.
+
+794
+00:34:38,065 --> 00:34:38,346
+Unknown / Dr. Taylor (PVM): Sorry.
+
+795
+00:34:38,425 --> 00:34:38,726
+Unknown / Dr. Taylor (PVM): Sorry.
+
+796
+00:34:38,907 --> 00:34:39,246
+Unknown / Dr. Taylor (PVM): I'm on it.
+
+797
+00:34:41,449 --> 00:34:44,152
+Unknown / Dr. Taylor OR Dr. Shepherd (PVM): My bad, Chuck.
+
+798
+00:34:44,172 --> 00:34:44,811
+Unknown / Dr. Shepherd (PVM): He was right, wasn't he?
+
+799
+00:34:46,514 --> 00:34:47,275
+Unknown / Dr. Taylor (PVM): I nodded off.
+
+800
+00:34:47,295 --> 00:34:47,695
+Unknown / Dr. Taylor OR Dr. Shepherd (PVM): Come on.
+
+801
+00:34:47,715 --> 00:34:49,277
+Unknown / Dr. Taylor OR Dr. Shepherd (PVM): Yeah, whatever you got to do to get through the day, all right?
+
+802
+00:34:49,416 --> 00:34:50,538
+Unknown / Dr. Shepherd OR Dr. George O'Malley (PVM): Steph, get me some coffee.
+
+803
+00:34:50,797 --> 00:34:51,318
+Nurse Steph: Yes, doctor.
+
+804
+00:34:52,320 --> 00:34:52,920
+Unknown / Dr. George O'Malley (PVM): I'll be fine.
+
+805
+00:34:52,960 --> 00:34:53,701
+Unknown / Dr. George O'Malley (PVM): It won't happen again.
+
+806
+00:34:53,739 --> 00:34:55,782
+Unknown / Dr. George O'Malley (PVM): Yeah, not in here it won't.
+
+807
+00:34:55,902 --> 00:34:57,244
+Unknown / Dr. George O'Malley (PVM): Steph, call Dr. Pennington.
+
+808
+00:34:57,844 --> 00:34:59,405
+Unknown / Dr. George O'Malley (PVM): Hopkins, take over until she gets here.
+
+809
+00:35:00,007 --> 00:35:01,208
+Unknown / Dr. George O'Malley (PVM): Get out of here and get it together.
+
+810
+00:35:09,034 --> 00:35:09,755
+Unknown / Digby Owens (PVM): What happened?
+
+811
+00:35:09,775 --> 00:35:12,900
+Unknown / Digby Owens OR Dr. George O'Malley (PVM): He went into multisystem organ failure, secondary to overwhelming sepsis.
+
+812
+00:35:13,402 --> 00:35:14,043
+Unknown / Digby Owens (PVM): Now he's all.
+
+813
+00:35:14,483 --> 00:35:16,688
+Unknown / Digby Owens OR Digby Owens (PVM): If it fixes his BP, that should help his mental status.
+
+814
+00:35:17,228 --> 00:35:19,331
+Unknown / Jamie Hayes OR Digby Owens (PVM): He's maxed out on presto.
+
+815
+00:35:19,351 --> 00:35:20,052
+Unknown / Jamie Hayes OR Digby Owens (PVM): We got V-tach.
+
+816
+00:35:21,114 --> 00:35:21,815
+Unknown / Digby Owens (PVM): He's looking bad.
+
+817
+00:35:22,416 --> 00:35:25,282
+Unknown / Digby Owens OR Digby Owens (PVM): Put the D-fib pads on him and give him 150 on amiodarone.
+
+818
+00:35:27,905 --> 00:35:28,007
+Unknown / Dr. George O'Malley (PVM): Yeah.
+
+819
+00:35:28,027 --> 00:35:29,088
+Unknown / Digby Owens OR Digby Owens (PVM): I lost his pulse.
+
+820
+00:35:29,108 --> 00:35:29,909
+Unknown / Digby Owens (PVM): D-fib, get the pads.
+
+821
+00:35:29,969 --> 00:35:32,994
+Unknown / Digby Owens OR Digby Owens OR Dr. Meredith Gray (PVM): Get the paddles in charge of 200.
+
+822
+00:35:33,014 --> 00:35:33,135
+Unknown / Digby Owens (PVM): Clear.
+
+823
+00:35:40,625 --> 00:36:03,239
+Unknown / Jamie Hayes OR Dr. George O'Malley OR Dr. Meredith Gray OR Digby Owens (PVM): This packing we hope will, uh...
+
+824
+00:36:03,893 --> 00:36:04,856
+Unknown / Dr. George O'Malley (PVM): prevent hemorrhaging.
+
+825
+00:36:04,876 --> 00:36:06,697
+Unknown / Dr. George O'Malley OR Dr. Meredith Gray (PVM): Dr. Yang, do you want to add something to that?
+
+826
+00:36:06,717 --> 00:36:09,641
+Dr. Cristina Yang: We'll allow the cerebral spinal fluid to eventually fill the cavity.
+
+827
+00:36:10,442 --> 00:36:11,202
+Unknown / Dr. Meredith Gray (PVM): Very nice.
+
+828
+00:36:11,603 --> 00:36:12,364
+Unknown / Dr. George O'Malley (PVM): You two, you want to close up?
+
+829
+00:36:12,744 --> 00:36:13,987
+Nurse / Nurse Steph OR Dr. George O'Malley OR Dr. Meredith Gray (PVM): Yes, Doc.
+
+830
+00:36:14,007 --> 00:36:14,567
+Supporting Character / Dr. George O'Malley (PVM): I'm going to go to bed.
+
+831
+00:36:16,168 --> 00:36:17,791
+Main Character / Dr. Meredith Gray (PVM): That was unreal.
+
+832
+00:36:17,989 --> 00:36:20,313
+Main Character / Dr. Meredith Gray (PVM): I mean, that's all there is.
+
+833
+00:36:20,454 --> 00:36:23,416
+Reflective Character / Dr. Meredith Gray (PVM): I was feeling sick until I came here.
+
+834
+00:36:23,838 --> 00:36:24,398
+Reflective Character / Dr. George O'Malley (PVM): I was tired.
+
+835
+00:36:25,460 --> 00:36:26,221
+Reflective Character / Dr. George O'Malley (PVM): Now I'm tired again.
+
+836
+00:36:26,239 --> 00:36:28,003
+Reflective Character / Dr. George O'Malley OR Dr. Meredith Gray (PVM): It's back to reality.
+
+837
+00:36:29,324 --> 00:36:32,788
+Reflective Character / Dr. Meredith Gray OR Dr. Meredith Gray (PVM): So forget about your troubles
+
+838
+00:36:36,025 --> 00:36:36,726
+Doctor / Dr. Shepherd (PVM): Let me explain.
+
+839
+00:36:36,746 --> 00:36:37,146
+Other Doctor / Dr. Shepherd (PVM): It's fine.
+
+840
+00:36:37,266 --> 00:36:38,550
+Doctor / Dr. Shepherd (PVM): No, there is a code among doctors.
+
+841
+00:36:38,610 --> 00:36:40,572
+Doctor / Dr. Shepherd (PVM): We're not supposed to ask each other questions.
+
+842
+00:36:40,634 --> 00:36:42,657
+Doctor / Dr. Shepherd (PVM): Not within the walls of this hospital.
+
+843
+00:36:42,898 --> 00:36:43,960
+Other Doctor / Dr. George O'Malley (PVM): Okay, I was out of line.
+
+844
+00:36:44,239 --> 00:36:44,721
+Doctor / Dr. Shepherd (PVM): No, you weren't.
+
+845
+00:36:44,902 --> 00:36:45,242
+Other Doctor / Dr. Shepherd (PVM): I was.
+
+846
+00:36:46,925 --> 00:36:47,646
+Other Doctor / Dr. Shepherd (PVM): I was out of line.
+
+847
+00:36:48,869 --> 00:36:52,456
+Surgeon / Dr. Shepherd (PVM): Somebody should have taken responsibility, and it should have been the guy doing the cutting.
+
+848
+00:36:52,576 --> 00:36:53,277
+Surgeon / Dr. Shepherd (PVM): It should have been me.
+
+849
+00:36:54,518 --> 00:36:55,942
+Other Doctor / Dr. Shepherd (PVM): You didn't deserve what happened to you today.
+
+850
+00:36:56,523 --> 00:36:57,344
+Other Doctor / Dr. George O'Malley (PVM): You did the right thing.
+
+851
+00:36:57,744 --> 00:36:58,606
+Other Doctor / Dr. George O'Malley (PVM): Code or no code.
+
+852
+00:37:08,695 --> 00:37:10,697
+Parent or Guardian / Dr. George O'Malley (PVM): You saw me leave the house this morning, didn't you?
+
+853
+00:37:11,739 --> 00:37:12,378
+Other Parent or Guardian / Dr. Meredith Gray (PVM): Oh, is that you?
+
+854
+00:37:12,418 --> 00:37:17,304
+Doctor / Dr. George O'Malley OR Dr. Meredith Gray (PVM): I'm not using her.
+
+855
+00:37:18,827 --> 00:37:19,967
+Doctor / Dr. George O'Malley (PVM): And I don't favor her.
+
+856
+00:37:22,630 --> 00:37:23,632
+Doctor / Dr. Meredith Gray (PVM): She's pretty great, you know.
+
+857
+00:37:26,576 --> 00:37:26,815
+Other Character / Unknown (PVM): Mm-hmm.
+
+858
+00:37:26,835 --> 00:37:26,936
+Other Character / Dr. George O'Malley (PVM): Yeah.
+
+859
+00:37:26,956 --> 00:37:30,400
+Doctor / Dr. George O'Malley (PVM): So come on, let's go tell Jamie's parents she's going to be fine, barring any complications.
+
+860
+00:37:34,396 --> 00:37:35,416
+Patient / Dr. Meredith Gray (PVM): Did you fix me?
+
+861
+00:37:36,157 --> 00:37:38,141
+Doctor / Dr. Meredith Gray (PVM): No, not completely.
+
+862
+00:37:38,161 --> 00:37:41,907
+Patient / Dr. Meredith Gray (PVM): So I won't get fat?
+
+863
+00:37:41,927 --> 00:37:42,166
+Doctor / Dr. Meredith Gray (PVM): No.
+
+864
+00:37:43,449 --> 00:37:47,014
+Patient / Dr. Meredith Gray OR Dr. Meredith Gray (PVM): Oh, that's awesome.
+
+865
+00:37:47,034 --> 00:37:50,378
+Meredith Grey / Dr. Meredith Gray (PVM): Claire, I've asked social services to contact your parents.
+
+866
+00:37:51,981 --> 00:37:52,481
+Claire / Dr. Meredith Gray (PVM): Why?
+
+867
+00:37:53,103 --> 00:37:55,105
+Meredith Grey / Dr. Meredith Gray (PVM): They can help you.
+
+868
+00:37:55,125 --> 00:37:58,831
+Claire / Dr. Meredith Gray (PVM): With what?
+
+869
+00:37:58,851 --> 00:38:03,356
+Meredith Grey / Dr. Meredith Gray (PVM): You don't know this yet, but life isn't supposed to be like this.
+
+870
+00:38:04,972 --> 00:38:06,514
+Meredith Grey / Dr. Meredith Gray (PVM): It's not supposed to be this hard.
+
+871
+00:38:06,936 --> 00:38:13,905
+Patient (Elderly Woman) / Jamie Hayes OR Digby Owens (PVM): Well, don't worry with your suitcase, dear.
+
+872
+00:38:13,925 --> 00:38:15,005
+Doctor (possibly Meredith or Izzie) / Digby Owens (PVM): Time of death, 2049.
+
+873
+00:38:15,126 --> 00:38:19,210
+Patient (Elderly Woman) / Digby Owens OR Dr. Meredith Gray OR Digby Owens OR Dr. Meredith Gray OR Dr. Miranda Bailey (PVM): Don't worry with your suitcase, dear.
+
+874
+00:38:19,231 --> 00:38:22,255
+Patient (possibly Elderly Woman) / Digby Owens OR Dr. Meredith Gray (PVM): First guy I ever met out here from back home.
+
+875
+00:38:22,275 --> 00:38:29,405
+Patient (possibly Elderly Woman) / Dr. Meredith Gray (PVM): Because the people out to get you don't know that you're here.
+
+876
+00:38:29,425 --> 00:38:31,166
+Patient (Elderly Woman) / Dr. Meredith Gray (PVM): So don't worry with your suitcase, dear.
+
+877
+00:38:35,516 --> 00:38:36,898
+Meredith Grey / Dr. Meredith Gray (PVM): I thought you'd be asleep by now.
+
+878
+00:38:38,018 --> 00:38:41,824
+Izzie Stevens / Dr. Meredith Gray (PVM): Yeah, well, I'm not.
+
+879
+00:38:41,844 --> 00:38:44,726
+Dr. Isobel Stevens: You wait a few minutes, you can have a piece of cake baked a chock full of love.
+
+880
+00:38:46,009 --> 00:38:50,994
+Dr. Isobel Stevens: Actually, chock full of unrelenting, all-consuming rage and hostility, but still tasty.
+
+881
+00:38:51,074 --> 00:38:52,496
+Meredith Grey / Dr. Meredith Gray (PVM): So you know.
+
+882
+00:38:52,675 --> 00:38:52,936
+Izzie Stevens / Dr. Meredith Gray (PVM): I know.
+
+883
+00:38:54,978 --> 00:39:01,405
+Dr. Meredith Gray: Well, do you want the long-sworded version, or do you want the short version where I started sleeping with a guy who turned out to be my boss?
+
+884
+00:39:01,686 --> 00:39:02,907
+Dr. Isobel Stevens: Neither.
+
+885
+00:39:03,309 --> 00:39:04,893
+Dr. Meredith Gray: Izzy, cut me some slack here.
+
+886
+00:39:05,514 --> 00:39:05,733
+Dr. Isobel Stevens: No.
+
+887
+00:39:06,335 --> 00:39:07,297
+Dr. Isobel Stevens: You went to Dartmouth.
+
+888
+00:39:07,838 --> 00:39:09,018
+Dr. Isobel Stevens: Your mother is Ellis Gray.
+
+889
+00:39:09,039 --> 00:39:11,063
+Dr. Isobel Stevens: You grew up... Look at this house.
+
+890
+00:39:11,804 --> 00:39:15,570
+Dr. Isobel Stevens: You know, you walk into the O.R., and there isn't anyone who doubts that you should be there.
+
+891
+00:39:16,452 --> 00:39:17,793
+Dr. Isobel Stevens: I grew up in a trailer park.
+
+892
+00:39:17,813 --> 00:39:19,456
+Dr. Isobel Stevens: I went to state school.
+
+893
+00:39:19,496 --> 00:39:22,041
+Dr. Isobel Stevens: I put myself through med school by posing in my underwear.
+
+894
+00:39:22,601 --> 00:39:25,487
+Dr. Isobel Stevens: You know, I walk into the O.R., and everyone hopes I'm the nurse.
+
+895
+00:39:26,429 --> 00:39:30,735
+Dr. Isobel Stevens: You have their respect without even trying, and you're throwing it away for what?
+
+896
+00:39:31,016 --> 00:39:32,117
+Dr. Isobel Stevens: A few good surgeries?
+
+897
+00:39:32,396 --> 00:39:32,657
+Dr. Meredith Gray: No.
+
+898
+00:39:33,599 --> 00:39:34,721
+Dr. Meredith Gray: It's not about the surgeries.
+
+899
+00:39:35,422 --> 00:39:36,503
+Dr. Meredith Gray: It's not about getting ahead.
+
+900
+00:39:36,963 --> 00:39:37,545
+Dr. Isobel Stevens: Then what?
+
+901
+00:39:38,766 --> 00:39:39,748
+Cristina Yang / Dr. Meredith Gray (PVM): A little hot sex?
+
+902
+00:39:40,728 --> 00:39:42,911
+Cristina Yang / Dr. Isobel Stevens (PVM): You're willing to ruin your credibility over that?
+
+903
+00:39:42,931 --> 00:39:46,617
+Cristina Yang / Dr. Isobel Stevens (PVM): I mean, Meredith, what the hell are you doing?
+
+904
+00:39:46,657 --> 00:39:51,744
+Cristina Yang / Dr. Isobel Stevens OR Dr. Meredith Gray (PVM): Oh, my god.
+
+905
+00:39:53,193 --> 00:39:54,253
+Cristina Yang / Dr. Meredith Gray (PVM): You're falling for him.
+
+906
+00:39:54,273 --> 00:39:55,315
+Dr. Meredith Gray: I am not.
+
+907
+00:39:55,956 --> 00:39:57,318
+Cristina Yang / Dr. Meredith Gray (PVM): Oh, you so are.
+
+908
+00:39:57,338 --> 00:39:58,980
+Dr. Meredith Gray: No, I'm not.
+
+909
+00:40:00,442 --> 00:40:01,023
+Cristina Yang / Dr. Meredith Gray (PVM): You so are.
+
+910
+00:40:01,083 --> 00:40:03,585
+Dr. Meredith Gray: Damn it.
+
+911
+00:40:03,606 --> 00:40:04,688
+Cristina Yang / Dr. Meredith Gray (PVM): You poor girl.
+
+912
+00:40:06,670 --> 00:40:12,016
+Dr. Meredith Gray: You know, it's just that he's just so, and I'm just, I'm having a hard time.
+
+913
+00:40:12,077 --> 00:40:20,027
+Cristina Yang / Dr. Meredith Gray (PVM): You're all mushy and warm and full of secret feelings.
+
+914
+00:40:24,934 --> 00:40:25,614
+Dr. Meredith Gray: I hate you.
+
+915
+00:40:27,277 --> 00:40:27,918
+Meredith Grey / Dr. Meredith Gray (PVM): And your cake.
+
+916
+00:40:28,398 --> 00:40:31,561
+Cristina Yang / Dr. Meredith Gray (PVM): My cake is good.
+
+917
+00:40:31,581 --> 00:40:33,824
+Izzie Stevens / Dr. Isobel Stevens OR Dr. Meredith Gray (PVM): So, um, how hot is this sex?
+
+918
+00:40:36,327 --> 00:40:36,907
+Dr. Meredith Gray: Izzy.
+
+919
+00:40:36,927 --> 00:40:37,248
+Dr. Isobel Stevens: What?
+
+920
+00:40:37,708 --> 00:40:38,949
+Dr. Isobel Stevens: Come on, I'm not getting any.
+
+921
+00:40:38,969 --> 00:40:48,280
+Dr. Isobel Stevens: Help a girl out with a few details.
+
+922
+00:40:49,380 --> 00:40:51,043
+Dr. Meredith Gray: Maybe we like the pain.
+
+923
+00:40:56,356 --> 00:40:58,559
+Derek Shepherd / Dr. Meredith Gray (PVM): How's she doing?
+
+924
+00:40:58,719 --> 00:40:58,900
+Cristina Yang / Dr. Meredith Gray OR Dr. Meredith Gray (PVM): Good.
+
+925
+00:40:58,920 --> 00:40:59,862
+Meredith Grey / Dr. Meredith Gray OR Dr. Meredith Gray (PVM): Good.
+
+926
+00:40:59,882 --> 00:41:01,384
+Dr. Meredith Gray: Maybe we're wired that way.
+
+927
+00:41:02,585 --> 00:41:10,239
+Meredith Grey / Dr. Meredith Gray OR Dr. Meredith Gray (PVM): Christina?
+
+928
+00:41:13,643 --> 00:41:15,927
+Dr. Meredith Gray: Because without it, I don't know.
+
+929
+00:41:17,110 --> 00:41:22,818
+Dr. Meredith Gray: Maybe we just wouldn't feel real.
+
+930
+00:41:23,541 --> 00:41:35,056
+Derek Shepherd / Dr. Meredith Gray OR Dr. George O'Malley OR Jamie Hayes (PVM): You know, we could just... Sleep?
+
+931
+00:41:37,061 --> 00:41:39,204
+Meredith Grey / Dr. Meredith Gray OR Dr. George O'Malley (PVM): We could, yeah, if you want to.
+
+932
+00:41:39,824 --> 00:41:43,849
+Derek Shepherd / Dr. Meredith Gray (PVM): Yeah?
+
+933
+00:41:45,112 --> 00:41:45,931
+Meredith Grey / Dr. Meredith Gray (PVM): What's that saying?
+
+934
+00:41:46,934 --> 00:41:49,056
+Derek Shepherd / Dr. Meredith Gray (PVM): Why do I keep hitting myself with a hammer?
+
+935
+00:41:49,998 --> 00:41:51,219
+Meredith Grey / Dr. Meredith Gray OR Dr. Meredith Gray (PVM): Oh, thank God.
+
+936
+00:41:53,172 --> 00:42:00,264
+Dr. Meredith Gray: because it feels so good when I stop.
+

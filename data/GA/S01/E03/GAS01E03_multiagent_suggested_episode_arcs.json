@@ -1,0 +1,1075 @@
+[
+  {
+    "title": "Medical Case: The Brain Death and Organ Donation of Kevin Davidson",
+    "arc_type": "Anthology Arc",
+    "description": "A critically injured John Doe, later identified as Kevin Davidson, is brought to the hospital after a traffic accident. The surgical interns navigate the medical, ethical, and emotional complexities of confirming brain death, identifying the patient, and facilitating organ donation. The arc explores the challenges of balancing clinical detachment with compassion, culminating in a life-saving organ harvest for other patients after Kevin's family says goodbye.",
+    "main_characters": "Cristina Yang; Izzie Stevens; Meredith Grey; George O'Malley; Kevin Davidson",
+    "interfering_episode_characters": "Alex Karev; Preston Burke; Derek Shepherd; Richard Webber; Mrs. Davidson; Organ Procurement Coordinator; Police; Family and Friends",
+    "single_episode_progression_events": [
+      {
+        "content": "Paramedics bring in an unidentified John Doe after he is hit by a car during the Dead Baby Bike Race.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Paramedics",
+          "Kevin Davidson",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:05:11,923",
+        "end_timestamp": "00:05:31,425",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Derek Shepherd assesses the John Doe and determines he is likely brain dead, ordering confirmatory tests.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Kevin Davidson",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:05:34,752",
+        "end_timestamp": "00:05:52,502",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie Stevens struggles with the prospect of declaring the patient dead, while George O'Malley explains the protocol for confirming brain death.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Izzie Stevens",
+          "George O'Malley",
+          "Kevin Davidson"
+        ],
+        "start_timestamp": "00:08:03,487",
+        "end_timestamp": "00:08:55,317",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns notice clues to the patient's identity and contact the police to help locate his family before the brain death confirmation window closes.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev",
+          "Police"
+        ],
+        "start_timestamp": "00:09:29,846",
+        "end_timestamp": "00:14:36,106",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Kevin begins to crash before the six-hour mark, and Cristina Yang leads the interns in stabilizing him with dopamine and a blood transfusion to preserve his organs for donation.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley",
+          "Alex Karev",
+          "Kevin Davidson"
+        ],
+        "start_timestamp": "00:16:14,254",
+        "end_timestamp": "00:16:48,677",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns discover a traumatic aortic injury and attempt to persuade Dr. Burke to operate to keep Kevin a viable organ donor, but he refuses.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley",
+          "Alex Karev",
+          "Preston Burke"
+        ],
+        "start_timestamp": "00:17:44,723",
+        "end_timestamp": "00:19:12,951",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns go to Chief Webber and leverage another patient's need for a liver transplant to get approval for Kevin's aortic repair surgery.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley",
+          "Alex Karev",
+          "Richard Webber"
+        ],
+        "start_timestamp": "00:19:52,931",
+        "end_timestamp": "00:20:23,009",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Burke performs the aortic repair surgery on Kevin with the interns assisting, preserving his organs for donation.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Preston Burke",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley",
+          "Alex Karev",
+          "Kevin Davidson"
+        ],
+        "start_timestamp": "00:20:46,519",
+        "end_timestamp": "00:21:10,442",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The police identify Kevin Davidson and his wife arrives at the hospital.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Police",
+          "Kevin Davidson",
+          "Mrs. Davidson",
+          "Izzie Stevens",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:21:23,730",
+        "end_timestamp": "00:21:54,548",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie Stevens explains Kevin's condition to his wife and discusses the organ donation process.",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Mrs. Davidson"
+        ],
+        "start_timestamp": "00:21:57,230",
+        "end_timestamp": "00:22:26,184",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The organ procurement coordinator walks Mrs. Davidson through the consent process for organ, cornea, and skin donation.",
+        "ordinal_position": 11,
+        "characters_involved": [
+          "Organ Procurement Coordinator",
+          "Mrs. Davidson",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:26:53,549",
+        "end_timestamp": "00:28:11,652",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina Yang admits to Meredith Grey that she struggles with the emotional side of dealing with families, and Meredith reminds her to see Kevin as a person.",
+        "ordinal_position": 12,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:28:34,512",
+        "end_timestamp": "00:29:04,971",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Kevin Davidson's family and friends say their goodbyes as the team prepares for the organ harvest.",
+        "ordinal_position": 13,
+        "characters_involved": [
+          "Kevin Davidson",
+          "Mrs. Davidson",
+          "Family and Friends",
+          "Izzie Stevens",
+          "Cristina Yang",
+          "Meredith Grey",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:34:03,636",
+        "end_timestamp": "00:35:08,094",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The surgical team performs the organ harvest, providing life-saving organs to other patients.",
+        "ordinal_position": 14,
+        "characters_involved": [
+          "Preston Burke",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley",
+          "Alex Karev",
+          "Organ Procurement Team",
+          "Kevin Davidson"
+        ],
+        "start_timestamp": "00:35:08,114",
+        "end_timestamp": "00:35:54,077",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Medical Case: Lloyd Mackey's Liver Transplant Preparation",
+    "arc_type": "Anthology Arc",
+    "description": "George O'Malley is assigned to care for Lloyd Mackey, a liver cancer patient at the top of the transplant list. The arc follows Mackey's journey as he awaits a donor, explores his interactions with George, and culminates in the events surrounding his eventual liver transplant made possible by a trauma patient's organ donation.",
+    "main_characters": "George O'Malley; Lloyd Mackey",
+    "interfering_episode_characters": "Dr. Preston Burke; Chief Webber; Surgical Team; Kevin Davidson",
+    "single_episode_progression_events": [
+      {
+        "content": "Dr. Preston Burke assigns George O'Malley to monitor Lloyd Mackey, a liver cancer patient awaiting transplant.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "George O'Malley",
+          "Dr. Preston Burke",
+          "Lloyd Mackey"
+        ],
+        "start_timestamp": "00:06:06,790",
+        "end_timestamp": "00:06:27,516",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George checks in on Mackey, who jokes about his prognosis and displays a cynical outlook.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "George O'Malley",
+          "Lloyd Mackey"
+        ],
+        "start_timestamp": "00:06:45,908",
+        "end_timestamp": "00:07:55,555",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George encourages Mackey, who responds with humor about dying and discusses his perspective as a terminal patient.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "George O'Malley",
+          "Lloyd Mackey"
+        ],
+        "start_timestamp": "00:07:13,076",
+        "end_timestamp": "00:07:55,555",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George informs Mackey about the possibility of receiving a liver from a brain-dead trauma patient, Kevin Davidson.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "George O'Malley",
+          "Lloyd Mackey"
+        ],
+        "start_timestamp": "00:19:28,644",
+        "end_timestamp": "00:19:41,156",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The surgical team confirms Kevin Davidson as a viable organ donor and prepares Mackey for transplant surgery.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "George O'Malley",
+          "Lloyd Mackey",
+          "Surgical Team"
+        ],
+        "start_timestamp": "00:22:33,855",
+        "end_timestamp": "00:23:02,500",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George visits Mackey before surgery, and Mackey jokes about taking George out after the transplant and asks about George's feelings for Meredith.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "George O'Malley",
+          "Lloyd Mackey"
+        ],
+        "start_timestamp": "00:29:16,385",
+        "end_timestamp": "00:30:34,760",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Chief Webber informs George that Mackey's liver transplant surgery went smoothly, and Mackey jokes about having to quit smoking.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Chief Webber",
+          "George O'Malley",
+          "Lloyd Mackey"
+        ],
+        "start_timestamp": "00:40:31,960",
+        "end_timestamp": "00:40:38,590",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Medical Case: Viper's Bike Race Injuries",
+    "arc_type": "Anthology Arc",
+    "description": "Each year, the interns treat Viper, a notorious participant in the illegal Dead Baby Bike Race, for severe injuries sustained during the event. The arc showcases the recurring dangers of the underground race and the interns' evolving skills and teamwork as they work to stabilize and save Viper's life.",
+    "main_characters": "Viper; Cristina Yang; Alex Karev",
+    "interfering_episode_characters": "Dr. Miranda Bailey; Izzie Stevens; Meredith Grey; Viper's Friends",
+    "single_episode_progression_events": [
+      {
+        "content": "Viper arrives in the ER with multiple injuries after crashing during the Dead Baby Bike Race.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Viper",
+          "Cristina Yang",
+          "Alex Karev",
+          "Izzie Stevens",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:32:11,813",
+        "end_timestamp": "00:32:30,175",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina and Alex compete to claim Viper's case.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Cristina Yang",
+          "Alex Karev",
+          "Viper"
+        ],
+        "start_timestamp": "00:32:32,558",
+        "end_timestamp": "00:32:38,173",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns assess Viper's injuries and identify internal bleeding and a possible head injury.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Cristina Yang",
+          "Alex Karev",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "Viper"
+        ],
+        "start_timestamp": "00:32:38,173",
+        "end_timestamp": "00:32:54,837",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Alex suggests an aggressive treatment plan for Viper in front of Dr. Bailey.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Alex Karev",
+          "Dr. Miranda Bailey",
+          "Viper"
+        ],
+        "start_timestamp": "00:32:54,979",
+        "end_timestamp": "00:33:19,307",
+        "confidence_score": 0.88,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey reprimands Alex and assigns Cristina to assist in Viper's surgery.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Alex Karev",
+          "Cristina Yang",
+          "Viper"
+        ],
+        "start_timestamp": "00:33:19,387",
+        "end_timestamp": "00:33:31,144",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina assists in surgery to repair Viper's internal injuries.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Cristina Yang",
+          "Dr. Miranda Bailey",
+          "Viper"
+        ],
+        "start_timestamp": "00:33:36,432",
+        "end_timestamp": "00:33:43,372",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Viper survives surgery and regains consciousness.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Viper",
+          "Cristina Yang",
+          "Alex Karev",
+          "Izzie Stevens",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:37:04,088",
+        "end_timestamp": "00:37:18,052",
+        "confidence_score": 0.88,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Viper's friends visit him post-surgery and thank the doctors.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Viper",
+          "Viper's Friends",
+          "Cristina Yang",
+          "Alex Karev",
+          "Izzie Stevens",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:38:18,253",
+        "end_timestamp": "00:39:19,835",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Meredith Grey And Ellis Grey: Legacy And Estrangement",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey faces the immense pressure of living up to her mother Ellis Grey's legendary status as a surgeon, while also coping with Ellis's declining health and memory loss. Meredith works to define her own identity and career in medicine, separate from her mother's shadow, and navigates the emotional complexities of their strained relationship.",
+    "main_characters": "Meredith Grey; Ellis Grey",
+    "interfering_episode_characters": "Izzie Stevens; George O'Malley; Cristina Yang; Alex Karev",
+    "single_episode_progression_events": [
+      {
+        "content": "Izzie and George argue about unpacking Ellis Grey's boxes and making Meredith's house feel like home, highlighting Ellis's lingering presence.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Meredith Grey",
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:00:17,184",
+        "end_timestamp": "00:00:24,887",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie finds a box of Ellis Grey's surgical tapes and suggests watching them, but Meredith hesitates and avoids engaging with her mother's legacy.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:01:24,130",
+        "end_timestamp": "00:01:08,579",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith vents to Cristina about the chaos at home and the difficulty of living with reminders of her mother.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:25:50,692",
+        "end_timestamp": "00:26:17,880",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith and her friends gather to watch one of Ellis Grey's surgical tapes together, marking Meredith's tentative step toward facing her mother's legacy.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Meredith Grey",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Cristina Yang",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:41:36,907",
+        "end_timestamp": "00:42:21,510",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Meredith Grey And Derek Shepherd: Secret Romance And Professional Boundaries",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey and Derek Shepherd's romantic relationship begins with a one-night stand, only for Meredith to discover that Derek is her attending neurosurgeon at Seattle Grace Hospital. Their relationship is complicated by the need for secrecy, the challenge of maintaining professional boundaries, and the risk to Meredith's reputation and career as they navigate their personal and professional lives.",
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "Cristina Yang; Alex Karev",
+    "single_episode_progression_events": [
+      {
+        "content": "Derek Shepherd flirts with Meredith Grey in the hospital hallway, signaling his ongoing interest despite workplace rules.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:11:39,913",
+        "end_timestamp": "00:11:53,081",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith Grey rejects Derek Shepherd's advances, emphasizing the professional risks and her refusal to date him while working together.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:12:12,875",
+        "end_timestamp": "00:12:37,384",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek Shepherd approaches Meredith Grey at the end of the day and tells her his interest is genuine and not just about the thrill of the chase.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:39:30,985",
+        "end_timestamp": "00:40:00,795",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith Grey firmly restates her boundaries to Derek Shepherd, maintaining her stance against starting a relationship.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:40:07,643",
+        "end_timestamp": "00:40:08,907",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "The Interns' Rivalries And Bonds In Surgical Residency",
+    "arc_type": "Soap Arc",
+    "description": "Meredith, Cristina, George, Izzie, and Alex navigate the intense pressures of surgical residency at Seattle Grace. As they compete for cases and recognition, they form shifting friendships, alliances, and rivalries. Their relationships are tested by the demands of the program, personal insecurities, and the need to prove themselves, shaping their sense of belonging and identity within the hospital.",
+    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Izzie Stevens; Alex Karev",
+    "interfering_episode_characters": "Dr. Miranda Bailey; Chief Webber",
+    "single_episode_progression_events": [
+      {
+        "content": "Izzie and George argue over who gets the bigger room at Meredith's house",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:00:16,890",
+        "end_timestamp": "00:00:36,145",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie suggests unpacking Meredith's mother's belongings to make the house feel more like home",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:00:47,707",
+        "end_timestamp": "00:01:01,908",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie finds tapes of Meredith's mother performing surgery and proposes watching them together, but Meredith hesitates",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:01:02,130",
+        "end_timestamp": "00:01:08,579",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina and Alex compete for trauma cases in the ER",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Cristina Yang",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:03:38,359",
+        "end_timestamp": "00:03:53,953",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns debate the ethics of keeping a brain-dead patient alive for organ donation",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Cristina Yang",
+          "Meredith Grey",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:08:03,487",
+        "end_timestamp": "00:08:47,196",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina leads the interns in intervening to keep the brain-dead patient viable for organ donation",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:16:14,254",
+        "end_timestamp": "00:16:48,677",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns collaborate to persuade Chief Webber to approve surgery for the donor",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley",
+          "Chief Webber"
+        ],
+        "start_timestamp": "00:19:52,931",
+        "end_timestamp": "00:20:14,317",
+        "confidence_score": 0.91,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina admits her discomfort with family interactions and Meredith encourages her to see patients as people",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:28:34,512",
+        "end_timestamp": "00:29:04,971",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Alex tries to impress Dr. Bailey and is chastised, while Meredith tells him to stay out of her way",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Alex Karev",
+          "Dr. Miranda Bailey",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:23:35,582",
+        "end_timestamp": "00:24:09,663",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith vents to Cristina about her chaotic home life and they joke about living together",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:25:50,692",
+        "end_timestamp": "00:26:17,880",
+        "confidence_score": 0.91,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns gather at Meredith's house to watch one of her mother's surgical tapes together",
+        "ordinal_position": 11,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:41:36,907",
+        "end_timestamp": "00:42:21,510",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Miranda Bailey's Mentorship Of The Surgical Interns",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Dr. Miranda Bailey establishes herself as a strict but effective mentor to the new surgical interns. Her demanding expectations and no-nonsense rules push the interns to confront their weaknesses, learn from their mistakes, and develop the resilience and skills necessary to survive the pressures of surgical training.",
+    "main_characters": "Miranda Bailey",
+    "interfering_episode_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev; Viper; Bike Racers",
+    "single_episode_progression_events": [
+      {
+        "content": "Bailey gathers the interns and firmly reminds them of the hospital hierarchy, warning them not to fight over patients or mingle with ER interns.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:01:32,456",
+        "end_timestamp": "00:01:29,810",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey assigns trauma cases to the interns and monitors their responses to the chaos caused by the Dead Baby Bike Race.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:01:45,687",
+        "end_timestamp": "00:03:02,752",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey chastises Alex Karev for showing off during Viper's case, emphasizing the importance of teamwork and humility.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:32:45,364",
+        "end_timestamp": "00:32:31,144",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey oversees the interns as they advocate for the John Doe trauma patient to be kept alive for organ donation, observing their initiative and ethical debates.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:12:40,840",
+        "end_timestamp": "00:13:21,197",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey lectures the bike racers after treating their injuries, reinforcing the consequences of reckless behavior and the responsibilities of medical professionals.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Viper",
+          "Bike Racers",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:38:29,755",
+        "end_timestamp": "00:39:06,469",
+        "confidence_score": 0.97,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Power Dynamics And Professional Boundaries At Seattle Grace",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The staff and interns at Seattle Grace navigate the hospital's rigid hierarchies, power struggles, and institutional politics. Attendings, residents, and interns confront challenges to professional boundaries, face ethical dilemmas, and experience the consequences of personal relationships within the high-pressure environment of surgical training, shaping their development as medical professionals.",
+    "main_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
+    "interfering_episode_characters": "Miranda Bailey; Preston Burke; Richard Webber",
+    "single_episode_progression_events": [
+      {
+        "content": "Miranda Bailey gathers the interns and reminds them of the hospital hierarchy, warning them not to fight over patients or mingle with ER interns.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:03:18,396",
+        "end_timestamp": "00:03:29,810",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina Yang and Alex Karev compete for trauma cases from the Dead Baby Bike Race, each trying to secure the best learning opportunities.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Cristina Yang",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:03:42,804",
+        "end_timestamp": "00:04:42,353",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie Stevens, Meredith Grey, and Cristina Yang debate the ethics of keeping a brain-dead patient alive for organ donation, revealing differing priorities and approaches to medical protocol.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Meredith Grey",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:08:03,487",
+        "end_timestamp": "00:09:23,096",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina Yang leads the interns in intervening to keep the brain-dead patient viable for organ donation.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:16:44,774",
+        "end_timestamp": "00:16:48,677",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns go over Preston Burke’s head to Richard Webber to advocate for surgery on the brain-dead patient, leveraging the hospital’s hierarchy.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley",
+          "Alex Karev",
+          "Preston Burke",
+          "Richard Webber"
+        ],
+        "start_timestamp": "00:18:06,144",
+        "end_timestamp": "00:20:12,232",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Alex Karev attempts to impress Miranda Bailey during a trauma case but is chastised for showing off.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Alex Karev",
+          "Miranda Bailey"
+        ],
+        "start_timestamp": "00:23:18,766",
+        "end_timestamp": "00:23:31,144",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith Grey tells Alex Karev to stay out of her way after he tries to take over a case.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Meredith Grey",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:23:51,152",
+        "end_timestamp": "00:24:05,978",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina Yang admits to Meredith Grey that she struggles with the human side of medicine, focusing more on clinical outcomes than patient families.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:28:34,512",
+        "end_timestamp": "00:29:04,971",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Ethical Dilemmas and Moral Growth in Surgical Training",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Throughout the season, the surgical interns and staff at Seattle Grace face complex ethical decisions involving end-of-life care, organ donation, and patient prioritization. These dilemmas test their values and professionalism, forcing them to confront the realities and responsibilities of becoming doctors while shaping their moral growth.",
+    "main_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
+    "interfering_episode_characters": "Dr. Miranda Bailey; Dr. Derek Shepherd; Dr. Preston Burke; Dr. Richard Webber; Mrs. Davidson; Organ Procurement Coordinator",
+    "single_episode_progression_events": [
+      {
+        "content": "Dr. Miranda Bailey instructs the interns on hospital hierarchy and warns them not to fight over patients or cross ethical boundaries.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:03:18,396",
+        "end_timestamp": "00:03:29,810",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Derek Shepherd assesses John Doe (Kevin Davidson) as likely brain dead and orders confirmatory tests, initiating end-of-life protocols.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:05:34,752",
+        "end_timestamp": "00:05:52,502",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie Stevens expresses reluctance to declare Kevin Davidson dead and discusses the importance of protocol with George O'Malley.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Izzie Stevens",
+          "George O'Malley",
+          "Meredith Grey",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:08:09,490",
+        "end_timestamp": "00:08:55,317",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns debate whether to keep Kevin Davidson alive for organ donation, weighing patient rights against the needs of other patients.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Cristina Yang",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:09:43,432",
+        "end_timestamp": "00:09:49,456",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina Yang leads the interns in administering dopamine and a blood transfusion to Kevin Davidson to preserve his organs for donation.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:16:44,774",
+        "end_timestamp": "00:16:48,677",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns discover Kevin Davidson's aortic injury and attempt to persuade Dr. Burke to operate to maintain organ viability; when he refuses, they appeal to Chief Webber using another patient's need for a liver.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley",
+          "Dr. Preston Burke",
+          "Dr. Richard Webber"
+        ],
+        "start_timestamp": "00:17:44,723",
+        "end_timestamp": "00:20:12,232",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Chief Webber authorizes the aortic repair surgery for Kevin Davidson, and Dr. Burke performs the operation with the interns assisting.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Dr. Richard Webber",
+          "Dr. Preston Burke",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:20:13,236",
+        "end_timestamp": "00:21:10,442",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie Stevens explains Kevin Davidson's condition and the organ donation process to his wife, facilitating the consent discussion.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Mrs. Davidson"
+        ],
+        "start_timestamp": "00:21:44,078",
+        "end_timestamp": "00:22:26,184",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina Yang confides in Meredith Grey about her difficulty handling grieving families.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:28:34,512",
+        "end_timestamp": "00:29:04,971",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The team prepares for organ harvest as Kevin Davidson's family says goodbye, and the organ procurement coordinator guides Mrs. Davidson through the consent process.",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "Organ Procurement Coordinator",
+          "Mrs. Davidson",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:27:00,076",
+        "end_timestamp": "00:28:11,652",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  }
+]

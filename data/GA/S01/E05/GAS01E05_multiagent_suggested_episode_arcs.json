@@ -1,0 +1,868 @@
+[
+  {
+    "title": "Medical Case: Mrs. Patterson's Heart Surgery and Post-Operative Complications",
+    "arc_type": "Anthology Arc",
+    "description": "The surgical team, led by Dr. Burke and assisted by intern Meredith Grey, performs open-heart surgery on Mrs. Patterson. Following the procedure, Mrs. Patterson experiences severe complications, prompting a medical crisis and an investigation into the cause. Meredith admits to possibly injuring the heart during surgery, leading to a formal review of her actions and a discussion about transparency and accountability in surgical practice.",
+    "main_characters": "Meredith Grey; Dr. Burke",
+    "interfering_episode_characters": "Cristina Yang; Dr. Webber; Dr. Bailey; George O'Malley; Nurse Tyler; Mrs. Patterson; Mr. Patterson",
+    "single_episode_progression_events": [
+      {
+        "content": "Dr. Burke selects Meredith Grey to assist in Mrs. Patterson's open-heart surgery and assigns her to hold the patient's heart.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Dr. Burke",
+          "Meredith Grey",
+          "Mrs. Patterson"
+        ],
+        "start_timestamp": "00:01:10,000",
+        "end_timestamp": "00:01:27,652",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith's hands slip while holding Mrs. Patterson's heart during surgery, and Dr. Burke instructs her to gently release it.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Dr. Burke",
+          "Mrs. Patterson"
+        ],
+        "start_timestamp": "00:01:34,381",
+        "end_timestamp": "00:01:43,019",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "After surgery, Mrs. Patterson's heart stops responding, and Dr. Burke and the surgical team resuscitate her in the ICU.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Dr. Burke",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Nurse Tyler",
+          "Mrs. Patterson"
+        ],
+        "start_timestamp": "00:02:52,188",
+        "end_timestamp": "00:03:26,027",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith confides in George O'Malley that she may have damaged Mrs. Patterson's heart during surgery by nodding off and possibly squeezing or puncturing it.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Meredith Grey",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:04:18,512",
+        "end_timestamp": "00:05:04,598",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Mrs. Patterson begins bleeding from her sternum; Cristina Yang and Nurse Tyler attempt to stabilize her as Dr. Burke takes over.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Cristina Yang",
+          "Nurse Tyler",
+          "Dr. Burke",
+          "Mrs. Patterson"
+        ],
+        "start_timestamp": "00:16:48,835",
+        "end_timestamp": "00:17:14,356",
+        "confidence_score": 0.91,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith confesses to Dr. Burke, in front of Mr. Patterson, that she may have nicked Mrs. Patterson's heart during surgery.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Meredith Grey",
+          "Dr. Burke",
+          "Mr. Patterson"
+        ],
+        "start_timestamp": "00:17:19,445",
+        "end_timestamp": "00:17:28,016",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Burke, Dr. Webber, and Dr. Bailey conduct a formal review with Meredith, where she presents her research on Mrs. Patterson's rapid weight loss possibly weakening the heart muscle.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Dr. Burke",
+          "Dr. Webber",
+          "Dr. Bailey",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:37:23,190",
+        "end_timestamp": "00:37:54,494",
+        "confidence_score": 0.94,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Burke admits to having made a similar mistake in the past and advocates for transparency in reporting errors.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Dr. Burke",
+          "Dr. Webber",
+          "Dr. Bailey",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:38:26,623",
+        "end_timestamp": "00:39:04,422",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The hospital leadership places Meredith on one month's probation but allows her to remain in the surgical program.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Dr. Webber",
+          "Dr. Bailey",
+          "Dr. Burke",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:39:27,744",
+        "end_timestamp": "00:39:34,438",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Medical Case: Mrs. Drake's Retained Surgical Towel",
+    "arc_type": "Anthology Arc",
+    "description": "A patient, Mrs. Drake, is admitted for chronic back pain years after lung surgery. During her current operation, a surgical towel left inside her from a previous procedure is discovered. The hospital must investigate the error, manage the patient's reaction, and address the implications for patient safety and staff accountability.",
+    "main_characters": "Cristina Yang; George O'Malley; Mrs. Drake",
+    "interfering_episode_characters": "Senior Doctor; Surgical Team",
+    "single_episode_progression_events": [
+      {
+        "content": "George is assigned to care for Mrs. Drake, who presents with chronic back pain and a history of lung surgery.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "George O'Malley",
+          "Mrs. Drake"
+        ],
+        "start_timestamp": "00:05:37,108",
+        "end_timestamp": "00:08:25,204",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Mrs. Drake undergoes surgery to address her chronic pain.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "George O'Malley",
+          "Cristina Yang",
+          "Mrs. Drake",
+          "Surgical Team"
+        ],
+        "start_timestamp": "00:11:06,899",
+        "end_timestamp": "00:12:02,567",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina and George discover a surgical towel left inside Mrs. Drake during the operation.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Cristina Yang",
+          "George O'Malley",
+          "Mrs. Drake"
+        ],
+        "start_timestamp": "00:12:02,567",
+        "end_timestamp": "00:12:26,662",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina and George are tasked with investigating who was responsible for leaving the towel inside Mrs. Drake.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Cristina Yang",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:12:30,985",
+        "end_timestamp": "00:12:40,216",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Mrs. Drake is informed about the retained towel and becomes upset upon learning of the medical error.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Mrs. Drake",
+          "Cristina Yang",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:14:15,268",
+        "end_timestamp": "00:15:06,980",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "A senior doctor instructs Cristina to keep the matter quiet while the hospital investigates the incident.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Cristina Yang",
+          "Senior Doctor"
+        ],
+        "start_timestamp": "00:15:46,870",
+        "end_timestamp": "00:16:04,854",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Medical Case: Jerry Frost's Suspected Drug-Seeking and Subdural Bleed",
+    "arc_type": "Anthology Arc",
+    "description": "Jerry Frost, a patient with a history of chronic pain and suspected drug-seeking behavior, is discharged from the hospital despite ongoing complaints. After being forced out, he collapses and is found to have a subdural bleed, requiring emergency brain surgery. The case underscores the complexities of managing patients with difficult pain histories and the risks of misjudging or dismissing their symptoms.",
+    "main_characters": "Jerry Frost; Izzie Stevens; Alex Karev",
+    "interfering_episode_characters": "George O'Malley; Dr. Derek Shepherd; Attending Physician; Hospital Staff",
+    "single_episode_progression_events": [
+      {
+        "content": "George O'Malley and Izzie Stevens discuss Jerry Frost's repeated requests for pain medication, suspecting drug-seeking behavior.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "George O'Malley",
+          "Izzie Stevens",
+          "Jerry Frost"
+        ],
+        "start_timestamp": "00:06:14,314",
+        "end_timestamp": "00:06:51,286",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "An attending physician reminds George O'Malley that pain must be treated as real, regardless of suspicions.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Attending Physician",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:07:00,612",
+        "end_timestamp": "00:07:07,961",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Alex Karev is instructed to start a central line on Jerry Frost due to his damaged veins.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Alex Karev",
+          "Jerry Frost"
+        ],
+        "start_timestamp": "00:07:07,982",
+        "end_timestamp": "00:07:08,843",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie Stevens and Alex Karev discharge Jerry Frost from the hospital despite his continued complaints of pain.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Alex Karev",
+          "Jerry Frost"
+        ],
+        "start_timestamp": "00:22:05,630",
+        "end_timestamp": "00:22:48,114",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Jerry Frost collapses in the hospital after discharge, suffering a fall that results in a subdural bleed.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Jerry Frost",
+          "Hospital Staff"
+        ],
+        "start_timestamp": "00:27:17,241",
+        "end_timestamp": "00:27:50,500",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Derek Shepherd determines that Jerry Frost requires emergency brain surgery for his subdural bleed.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "Jerry Frost"
+        ],
+        "start_timestamp": "00:28:01,011",
+        "end_timestamp": "00:28:06,076",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Derek Shepherd invites Izzie Stevens to assist in Jerry Frost's emergency brain surgery.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "Izzie Stevens",
+          "Jerry Frost"
+        ],
+        "start_timestamp": "00:28:06,096",
+        "end_timestamp": "00:28:08,539",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Meredith Grey and Ellis Grey: Legacy and Estrangement",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey faces the immense pressure of living up to her mother Ellis Grey's legendary status as a surgeon, while also coping with Ellis's declining health and memory loss. Meredith works to define her own identity and career in medicine, separate from her mother's shadow, and navigates the emotional complexities of their strained relationship.",
+    "main_characters": "Meredith Grey; Ellis Grey",
+    "interfering_episode_characters": "Lawyer; Richard Webber",
+    "single_episode_progression_events": [
+      {
+        "content": "A lawyer informs Meredith that Ellis's Alzheimer's is advancing and that Ellis must sign over her estate while still lucid.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Meredith Grey",
+          "Lawyer"
+        ],
+        "start_timestamp": "00:00:31,146",
+        "end_timestamp": "00:00:39,825",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith protests the responsibility of handling Ellis's legal affairs but is told it must be her duty as daughter.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Lawyer"
+        ],
+        "start_timestamp": "00:00:39,884",
+        "end_timestamp": "00:01:13,995",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith visits Ellis to obtain her signature on the legal paperwork, but Ellis is confused and unable to consent.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Meredith Grey",
+          "Ellis Grey"
+        ],
+        "start_timestamp": "00:24:07,380",
+        "end_timestamp": "00:24:48,982",
+        "confidence_score": 0.97,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Richard Webber confronts Meredith about not handling Ellis's affairs sooner.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Meredith Grey",
+          "Richard Webber"
+        ],
+        "start_timestamp": "00:24:56,557",
+        "end_timestamp": "00:25:08,557",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith reflects on the burdens of adulthood, including caring for Ellis and managing her legacy.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:40:08,701",
+        "end_timestamp": "00:40:27,619",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Meredith Grey and Derek Shepherd: Secret Romance and Professional Boundaries",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey and Derek Shepherd's romantic relationship begins with a one-night stand, only for Meredith to discover that Derek is her attending neurosurgeon at Seattle Grace Hospital. Their relationship is complicated by the need for secrecy, the challenge of maintaining professional boundaries, and the risk to Meredith's reputation and career as they navigate their personal and professional lives.",
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
+    "single_episode_progression_events": [
+      {
+        "content": "Meredith and Derek exchange flirtatious glances and banter in the hospital while keeping their relationship hidden from colleagues.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:11:16,475",
+        "end_timestamp": "00:11:28,490",
+        "confidence_score": 0.88,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek jokes with Meredith about sneaking around as they share a quiet, intimate moment outside her house during the party.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:34:44,614",
+        "end_timestamp": "00:35:27,282",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "The Interns' Rivalries and Bonds in Surgical Residency",
+    "arc_type": "Soap Arc",
+    "description": "Meredith, Cristina, George, Izzie, and Alex navigate the intense pressures of surgical residency at Seattle Grace. As they compete for cases and recognition, they form shifting friendships, alliances, and rivalries. Their relationships are tested by the demands of the program, personal insecurities, and the need to prove themselves, shaping their sense of belonging and identity within the hospital.",
+    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Izzie Stevens; Alex Karev",
+    "interfering_episode_characters": "Derek Shepherd; Hank; Dr. Burke",
+    "single_episode_progression_events": [
+      {
+        "content": "Cristina teases Meredith about holding a heart during surgery, sparking competitive banter among the interns.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:01:55,929",
+        "end_timestamp": "00:01:58,512",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns discuss the upcoming party at Meredith's house, debating the guest list and revealing social tensions.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Alex Karev",
+          "George O'Malley",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:02:03,638",
+        "end_timestamp": "00:02:52,122",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie and Alex argue about the party and their relationship, with Alex upset about not being invited and Izzie declining his dinner invitation.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:16:19,707",
+        "end_timestamp": "00:16:42,936",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George reassures Meredith after she confides her fears about possibly damaging a patient's heart during surgery.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "George O'Malley",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:04:18,512",
+        "end_timestamp": "00:05:06,939",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina criticizes Meredith for confessing her surgical mistake to Dr. Burke in front of the patient's husband.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:17:44,364",
+        "end_timestamp": "00:17:50,221",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The party at Meredith's house grows out of control, with Izzie struggling to manage the chaos and the interns' social boundaries blurring.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Cristina Yang",
+          "Alex Karev",
+          "George O'Malley",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:29:04,307",
+        "end_timestamp": "00:29:55,440",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie's boyfriend Hank arrives at the party, is surprised by the chaos, and later argues with Izzie about her priorities.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Hank"
+        ],
+        "start_timestamp": "00:30:49,107",
+        "end_timestamp": "00:33:36,549",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith returns home to find her house overrun by guests and tries to kick everyone out, but is swept up in the revelry.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Alex Karev",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:29:04,307",
+        "end_timestamp": "00:29:10,997",
+        "confidence_score": 0.88,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie leaves the party to assist Dr. Shepherd in emergency surgery, missing time with Hank.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Derek Shepherd",
+          "Hank"
+        ],
+        "start_timestamp": "00:27:36,250",
+        "end_timestamp": "00:28:11,202",
+        "confidence_score": 0.88,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina, Izzie, and George discuss Meredith's impending meeting with the chief, expressing concern for her future.",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:36:11,286",
+        "end_timestamp": "00:36:48,101",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith and Derek share a quiet moment outside the party, joking about sneaking around as the party winds down.",
+        "ordinal_position": 11,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:34:44,614",
+        "end_timestamp": "00:35:27,282",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns celebrate Meredith not being expelled from the program after her probation is announced.",
+        "ordinal_position": 12,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:39:27,744",
+        "end_timestamp": "00:39:35,960",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Miranda Bailey's Mentorship of the Surgical Interns",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Dr. Miranda Bailey establishes herself as a strict but effective mentor to the new surgical interns. Her demanding expectations and no-nonsense rules push the interns to confront their weaknesses, learn from their mistakes, and develop the resilience and skills necessary to survive the pressures of surgical training.",
+    "main_characters": "Miranda Bailey",
+    "interfering_episode_characters": "Meredith Grey; George O'Malley; Cristina Yang; Preston Burke; Richard Webber",
+    "single_episode_progression_events": [
+      {
+        "content": "Dr. Bailey reprimands Meredith for missing rounds and reminds her of the expectations for surgical interns.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:00:46,167",
+        "end_timestamp": "00:01:13,995",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey assigns George to care for Mrs. Drake and instructs him on the importance of treating pain seriously, regardless of suspicions about drug-seeking.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Miranda Bailey",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:06:58,069",
+        "end_timestamp": "00:07:07,961",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey instructs Cristina and George to quietly investigate who left a towel inside Mrs. Drake during her previous surgery, emphasizing the need for discretion within the hospital hierarchy.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Cristina Yang",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:15:49,052",
+        "end_timestamp": "00:16:04,854",
+        "confidence_score": 0.85,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey confronts Meredith during the disciplinary meeting, criticizing her for not immediately reporting her mistake in Mrs. Patterson's surgery.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Richard Webber",
+          "Preston Burke"
+        ],
+        "start_timestamp": "00:37:52,672",
+        "end_timestamp": "00:38:20,393",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey participates in the decision to place Meredith on probation, reinforcing the consequences of failing to follow protocol while acknowledging the importance of honesty and learning from mistakes.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Richard Webber",
+          "Preston Burke"
+        ],
+        "start_timestamp": "00:39:27,744",
+        "end_timestamp": "00:39:36,922",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Power Dynamics and Professional Boundaries at Seattle Grace",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The staff and interns at Seattle Grace navigate the hospital's rigid hierarchies, power struggles, and institutional politics. Attendings, residents, and interns confront challenges to professional boundaries, face ethical dilemmas, and experience the consequences of personal relationships within the high-pressure environment of surgical training, shaping their development as medical professionals.",
+    "main_characters": "Meredith Grey; Dr. Burke",
+    "interfering_episode_characters": "Cristina Yang; George O'Malley; Dr. Miranda Bailey; Dr. Richard Webber; Senior Doctor; Derek Shepherd",
+    "single_episode_progression_events": [
+      {
+        "content": "Meredith faces consequences for her surgical mistake and must confess to Dr. Burke, then attend a disciplinary meeting with Dr. Bailey, Dr. Burke, and Dr. Webber.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Meredith Grey",
+          "Dr. Burke",
+          "Dr. Bailey",
+          "Dr. Webber"
+        ],
+        "start_timestamp": "00:16:58,442",
+        "end_timestamp": "00:37:36,949",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Burke admits to his own past mistake and discusses the culture of fear around reporting errors.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Dr. Burke",
+          "Dr. Bailey",
+          "Dr. Webber",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:37:36,971",
+        "end_timestamp": "00:39:06,585",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina and George are pressured to keep quiet about the towel left in Mrs. Drake during her previous surgery.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Cristina Yang",
+          "George O'Malley",
+          "Senior Doctor"
+        ],
+        "start_timestamp": "00:15:46,870",
+        "end_timestamp": "00:16:04,854",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith and Derek maintain secrecy about their romantic relationship due to professional boundaries.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:34:44,614",
+        "end_timestamp": "00:35:27,282",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Ethical Dilemmas and Moral Growth in Surgical Training",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Throughout the season, the surgical interns and staff at Seattle Grace face complex ethical decisions involving end-of-life care, organ donation, and patient prioritization. These dilemmas test their values and professionalism, forcing them to confront the realities and responsibilities of becoming doctors while shaping their moral growth.",
+    "main_characters": "Meredith Grey; Dr. Preston Burke",
+    "interfering_episode_characters": "Cristina Yang; George O'Malley; Izzie Stevens; Alex Karev; Dr. Miranda Bailey; Dr. Richard Webber; Mrs. Patterson; Mr. Patterson; Mrs. Drake; Jerry Frost; Senior Doctor; Lawyer; Ellis Grey",
+    "single_episode_progression_events": [
+      {
+        "content": "Meredith is informed by a lawyer that she must obtain her mother's consent to sign over her estate due to advancing Alzheimer's.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Meredith Grey",
+          "Lawyer",
+          "Ellis Grey"
+        ],
+        "start_timestamp": "00:00:31,146",
+        "end_timestamp": "00:00:45,276",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith accidentally injures Mrs. Patterson's heart during surgery and struggles with whether to confess her mistake.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Dr. Burke",
+          "Mrs. Patterson"
+        ],
+        "start_timestamp": "00:01:34,381",
+        "end_timestamp": "00:05:04,598",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith ultimately confesses her error to Dr. Burke, risking her career.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Meredith Grey",
+          "Dr. Burke",
+          "Mr. Patterson"
+        ],
+        "start_timestamp": "00:17:15,759",
+        "end_timestamp": "00:18:37,241",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Burke reveals his own past ethical lapse of not reporting a surgical error, using it as a teaching moment about the importance of admitting mistakes.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Dr. Burke",
+          "Dr. Bailey",
+          "Dr. Webber",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:38:26,623",
+        "end_timestamp": "00:39:04,422",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie and Alex discharge Jerry Frost, suspected of drug-seeking, but he collapses and requires emergency surgery, highlighting the risks of misjudging patients.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Alex Karev",
+          "Jerry Frost"
+        ],
+        "start_timestamp": "00:22:05,630",
+        "end_timestamp": "00:28:08,539",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "The Roommates: Navigating Intimacy, Boundaries, and Growing Up",
+    "arc_type": "Soap Arc",
+    "description": "Meredith, Izzie, George, and Cristina share a house, and their living arrangement becomes a crucible for personal growth, awkwardness, and evolving friendships. Over the season, they negotiate boundaries around privacy, gender roles, and intimacy, learning to coexist despite clashing personalities, romantic tensions, and the stress of their demanding jobs.",
+    "main_characters": "Meredith Grey; Izzie Stevens; George O'Malley; Cristina Yang",
+    "interfering_episode_characters": "Alex Karev; Hank",
+    "single_episode_progression_events": [
+      {
+        "content": "Cristina and Izzie debate the guest list for the party at Meredith's house, revealing tensions about boundaries and privacy.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:02:28,638",
+        "end_timestamp": "00:02:46,920",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The party at Meredith's house grows out of control, causing chaos and stress for the roommates.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:28:38,500",
+        "end_timestamp": "00:29:10,997",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie misses the party due to work obligations, leading to conflict with her boyfriend and highlighting the impact of their jobs on home life.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Hank"
+        ],
+        "start_timestamp": "00:32:01,942",
+        "end_timestamp": "00:33:26,738",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith returns home late and is overwhelmed by the number of guests, attempting to kick everyone out.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:29:04,227",
+        "end_timestamp": "00:29:10,997",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The roommates support each other through personal and professional crises, such as worrying about Meredith's future in the program.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:36:11,286",
+        "end_timestamp": "00:36:50,405",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  }
+]

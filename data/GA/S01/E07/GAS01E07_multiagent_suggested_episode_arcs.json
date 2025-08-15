@@ -1,0 +1,871 @@
+[
+  {
+    "title": "Medical Case: Claire Rice's Illegal Gastric Bypass",
+    "arc_type": "Anthology Arc",
+    "description": "Meredith Grey treats Claire Rice, a teenage girl suffering severe complications after undergoing an illegal gastric bypass surgery in Mexico. The arc examines the medical risks of unsupervised procedures and the emotional impact of body image pressures on young patients.",
+    "main_characters": "Meredith Grey; Claire Rice",
+    "interfering_episode_characters": "Miranda Bailey; Claire's Mother",
+    "single_episode_progression_events": [
+      {
+        "content": "Meredith examines Claire Rice in the ER after she presents with fever and abdominal pain.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Meredith Grey",
+          "Claire Rice",
+          "Claire's Mother"
+        ],
+        "start_timestamp": "00:05:09,826",
+        "end_timestamp": "00:06:08,701",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith discovers surgical scars on Claire's abdomen and questions her about recent surgery.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Claire Rice"
+        ],
+        "start_timestamp": "00:08:19,341",
+        "end_timestamp": "00:09:05,269",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Claire refuses to tell her parents about the surgery, and Meredith consults with Miranda Bailey.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Meredith Grey",
+          "Miranda Bailey",
+          "Claire Rice"
+        ],
+        "start_timestamp": "00:09:05,269",
+        "end_timestamp": "00:10:51,735",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey orders a CT scan, which reveals Claire has had a gastric bypass despite being of normal weight.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Claire Rice"
+        ],
+        "start_timestamp": "00:13:53,596",
+        "end_timestamp": "00:14:18,537",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey and Meredith inform Claire's parents about the illegal surgery and the need for immediate reversal.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Claire Rice",
+          "Claire's Mother"
+        ],
+        "start_timestamp": "00:14:18,537",
+        "end_timestamp": "00:15:19,298",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Claire resists the reversal surgery, expressing her desire to remain thin, but Bailey insists on proceeding.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Claire Rice",
+          "Miranda Bailey",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:18:50,298",
+        "end_timestamp": "00:20:23,708",
+        "confidence_score": 0.91,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey and Meredith perform the surgery to reverse the bypass; Claire loses a significant portion of her bowel.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Claire Rice"
+        ],
+        "start_timestamp": "00:24:25,576",
+        "end_timestamp": "00:25:48,703",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey and Meredith discuss Claire's prognosis and lifelong nutritional consequences with Claire's mother.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Claire's Mother"
+        ],
+        "start_timestamp": "00:32:00,794",
+        "end_timestamp": "00:32:36,660",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Medical Case: Jamie Hayes' Hemispherectomy",
+    "arc_type": "Anthology Arc",
+    "description": "When young patient Jamie Hayes is diagnosed with Rasmussen's encephalitis, Dr. Shepherd and the surgical team must perform a rare and high-risk hemispherectomy to save her life. The arc explores the medical, ethical, and emotional challenges faced by the doctors and Jamie's family as they navigate this life-altering procedure.",
+    "main_characters": "Jamie Hayes; Derek Shepherd",
+    "interfering_episode_characters": "Meredith Grey; Jamie's Parents; George O'Malley; Dr. Taylor; Cristina Yang; Izzie Stevens; Surgical Team",
+    "single_episode_progression_events": [
+      {
+        "content": "Jamie Hayes is admitted to the hospital with neurological symptoms and undergoes initial evaluation.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Jamie Hayes",
+          "Meredith Grey",
+          "Jamie's Parents"
+        ],
+        "start_timestamp": "00:08:44,557",
+        "end_timestamp": "00:09:33,918",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith Grey arranges for Dr. Shepherd to consult on Jamie's case.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Jamie Hayes",
+          "Jamie's Parents",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:09:44,451",
+        "end_timestamp": "00:10:15,591",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Shepherd diagnoses Jamie with Rasmussen's encephalitis and explains to her parents that a hemispherectomy is the only viable treatment.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Jamie Hayes",
+          "Jamie's Parents",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:20:37,760",
+        "end_timestamp": "00:21:15,865",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Jamie's parents consent to the hemispherectomy after discussing the risks and options with Dr. Shepherd.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Jamie's Parents",
+          "Derek Shepherd",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:21:54,169",
+        "end_timestamp": "00:22:02,576",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George O'Malley is invited to scrub in on Jamie's hemispherectomy procedure.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "George O'Malley",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:22:00,756",
+        "end_timestamp": "00:22:22,470",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "During the hemispherectomy, Dr. Shepherd and the team notice Dr. Taylor, the anesthesiologist, may be impaired by alcohol.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Dr. Taylor",
+          "George O'Malley",
+          "Surgical Team"
+        ],
+        "start_timestamp": "00:31:40,954",
+        "end_timestamp": "00:31:57,085",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Taylor nods off during surgery and is removed from the OR by Dr. Shepherd.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Dr. Taylor",
+          "Derek Shepherd",
+          "George O'Malley",
+          "Surgical Team"
+        ],
+        "start_timestamp": "00:34:09,481",
+        "end_timestamp": "00:34:55,782",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The surgical team completes Jamie's hemispherectomy.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Derek Shepherd",
+          "George O'Malley",
+          "Surgical Team",
+          "Jamie Hayes"
+        ],
+        "start_timestamp": "00:36:03,239",
+        "end_timestamp": "00:36:13,307",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina Yang explains to the interns how Jamie's brain will compensate after the hemispherectomy.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Cristina Yang",
+          "George O'Malley",
+          "Izzie Stevens",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:36:06,717",
+        "end_timestamp": "00:36:11,202",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Medical Case: Digby Owens' Gunshot Wound and Infected Tattoo",
+    "arc_type": "Anthology Arc",
+    "description": "The interns treat Digby Owens, a patient who arrives with a self-inflicted gunshot wound as part of his artistic expression. His condition deteriorates due to an infected tattoo at the wound site, leading to multisystem organ failure and a critical medical emergency. The arc highlights the challenges of treating self-inflicted injuries and the complexities of patient care in extreme cases.",
+    "main_characters": "Digby Owens; Meredith Grey; Cristina Yang; Alex Karev",
+    "interfering_episode_characters": "Miranda Bailey; ICU Staff",
+    "single_episode_progression_events": [
+      {
+        "content": "Digby Owens arrives in the ER with a self-inflicted gunshot wound, claiming it is part of his art.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Digby Owens",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:06:14,970",
+        "end_timestamp": "00:06:47,497",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith and the interns assess Digby's wound and discuss his philosophy regarding pain and artistic commitment.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Digby Owens",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:07:17,684",
+        "end_timestamp": "00:07:50,004",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Digby develops a fever and shows signs of infection at the tattoo site near the gunshot wound.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Digby Owens",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:17:44,291",
+        "end_timestamp": "00:18:06,634",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns consult Dr. Bailey about Digby's worsening infection and start antibiotics.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Digby Owens",
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:31:18,846",
+        "end_timestamp": "00:31:35,805",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Digby is transferred to the ICU as his infection leads to multisystem organ failure.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Digby Owens",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Alex Karev",
+          "ICU Staff"
+        ],
+        "start_timestamp": "00:33:09,505",
+        "end_timestamp": "00:33:44,914",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The medical team attempts to resuscitate Digby after his condition rapidly declines.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Digby Owens",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Alex Karev",
+          "ICU Staff"
+        ],
+        "start_timestamp": "00:33:44,914",
+        "end_timestamp": "00:34:15,126",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Medical Case: Dr. Taylor's Suspected Impairment in the OR",
+    "arc_type": "Anthology Arc",
+    "description": "When the surgical team suspects anesthesiologist Dr. Taylor of being impaired during a critical brain surgery, they must act quickly to protect the patient and uphold professional standards. The incident highlights the dangers of impaired medical staff and the duty of colleagues to intervene for patient safety.",
+    "main_characters": "Dr. Taylor; Dr. Derek Shepherd",
+    "interfering_episode_characters": "George O'Malley; Cristina Yang; Izzie Stevens",
+    "single_episode_progression_events": [
+      {
+        "content": "George O'Malley and other team members notice the smell of alcohol on Dr. Taylor in the OR before surgery begins.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "George O'Malley",
+          "Dr. Taylor",
+          "Cristina Yang",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:12:30,692",
+        "end_timestamp": "00:12:44,713",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Derek Shepherd is informed about the suspicion and confronts Dr. Taylor about possible intoxication.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "Dr. Taylor"
+        ],
+        "start_timestamp": "00:26:33,689",
+        "end_timestamp": "00:26:53,653",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Taylor denies being impaired and insists on continuing with the surgery.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Dr. Taylor",
+          "Dr. Derek Shepherd"
+        ],
+        "start_timestamp": "00:26:53,653",
+        "end_timestamp": "00:27:36,365",
+        "confidence_score": 0.88,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "During the hemispherectomy, Dr. Taylor nods off at the anesthesia station, causing a near-crisis as the patient's vitals destabilize.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Dr. Taylor",
+          "Dr. Derek Shepherd",
+          "George O'Malley",
+          "Cristina Yang",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:34:01,808",
+        "end_timestamp": "00:34:47,715",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Shepherd and the team intervene, stabilize the patient, and remove Dr. Taylor from the OR.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "Dr. Taylor",
+          "George O'Malley",
+          "Cristina Yang",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:34:47,715",
+        "end_timestamp": "00:34:57,244",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Shepherd and George O'Malley discuss the incident after surgery, acknowledging the importance of vigilance and responsibility among doctors.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:36:36,025",
+        "end_timestamp": "00:36:58,606",
+        "confidence_score": 0.91,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Meredith Grey and Derek Shepherd: Secret Romance and Professional Boundaries",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey and Derek Shepherd navigate a secret romantic relationship while working together as surgical resident and attending. Their connection is challenged by the pressures of hospital politics, the risk of exposure, and the need to maintain professional boundaries, all of which threaten Meredith's career, reputation, and friendships.",
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "Miranda Bailey; Izzie Stevens; Cristina Yang; George O'Malley; Alex Karev",
+    "single_episode_progression_events": [
+      {
+        "content": "Meredith wakes up with Derek in her bed and urges him to leave before her roommates see him.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:01:05,346",
+        "end_timestamp": "00:01:21,608",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Miranda Bailey warns Derek Shepherd that any favoritism toward Meredith will have consequences for Meredith's surgical opportunities.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:00:25,937",
+        "end_timestamp": "00:00:47,807",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith denies to her roommates that she is sleeping with Derek when they tease her about her sex life.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Meredith Grey",
+          "Izzie Stevens",
+          "Cristina Yang",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:02:30,168",
+        "end_timestamp": "00:02:38,965",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Alex Karev tells George that Meredith is 'off the market,' implying she is seeing someone, which George disputes.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Alex Karev",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:00:18,567",
+        "end_timestamp": "00:00:25,196",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith admits to Cristina that she is falling for Derek after denying it to her friends.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:39:53,193",
+        "end_timestamp": "00:40:12,077",
+        "confidence_score": 0.96,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith and Derek share a quiet moment at the end of the day, joking about why people seek pain, reinforcing their connection.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:40:49,380",
+        "end_timestamp": "00:42:00,264",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "The Interns' Rivalries, Bonds, and Coming of Age at Seattle Grace",
+    "arc_type": "Soap Arc",
+    "description": "Meredith, Cristina, George, Izzie, and Alex navigate the relentless pressures of surgical residency at Seattle Grace, forging friendships and rivalries as they compete for recognition, face personal insecurities, and support each other through crises. Their shared living arrangement and diverse backgrounds create both comfort and conflict, shaping their growth as doctors and individuals. Key journeys—such as George's unrequited love for Meredith, Izzie's fight for respect, Cristina's ambition, and Alex's struggle for acceptance—are woven into the evolving group dynamic throughout the season.",
+    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Izzie Stevens; Alex Karev",
+    "interfering_episode_characters": "Derek Shepherd; Miranda Bailey",
+    "single_episode_progression_events": [
+      {
+        "content": "George confides in Izzie about his feelings for Meredith and his fear of telling her.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:00:02,927",
+        "end_timestamp": "00:00:07,440",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie encourages George to ask Meredith out, but George hesitates.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:00:08,663",
+        "end_timestamp": "00:00:10,125",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Alex tells George to give up on Meredith, claiming she is 'off the market', but George insists he would know if Meredith were seeing someone.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Alex Karev",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:00:19,568",
+        "end_timestamp": "00:00:25,856",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie and Cristina tease Meredith about the noise from her room and speculate about her sex life while George listens jealously.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Meredith Grey",
+          "Izzie Stevens",
+          "Cristina Yang",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:01:33,757",
+        "end_timestamp": "00:01:45,051",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The roommates debate whether Meredith is sleeping with Dr. Shepherd, and Meredith denies it, trying to avoid the subject.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Meredith Grey",
+          "Izzie Stevens",
+          "Cristina Yang",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:02:02,780",
+        "end_timestamp": "00:02:16,294",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina is assigned a bronchoscopy to perform alone and expresses excitement to the group.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:13:11,200",
+        "end_timestamp": "00:13:20,913",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns discuss the risks of sleeping with attendings and the pressures of the program during a break.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:11:44,409",
+        "end_timestamp": "00:12:07,971",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George is invited to scrub in on the rare hemispherectomy and tells his friends.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "George O'Malley",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:21:54,169",
+        "end_timestamp": "00:22:22,470",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "At home, Izzie expresses frustration to Meredith about having to work harder for respect and worries Meredith is risking her reputation by seeing Shepherd.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:38:38,018",
+        "end_timestamp": "00:39:32,117",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina realizes Meredith is falling for Shepherd and teases her, leading Meredith to admit her feelings.",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:39:38,766",
+        "end_timestamp": "00:40:12,077",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The friends tease each other about Meredith's love life after a difficult day.",
+        "ordinal_position": 11,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:40:24,934",
+        "end_timestamp": "00:40:48,280",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Miranda Bailey's Mentorship and the Demands of Surgical Training",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Dr. Miranda Bailey's rigorous mentorship shapes the surgical interns at Seattle Grace, challenging them to meet high professional standards, confront ethical dilemmas, and endure the intense pressures of surgical training. The arc follows Bailey's pivotal role in developing the interns' clinical skills, resilience, and sense of responsibility within the hospital's demanding hierarchy.",
+    "main_characters": "Miranda Bailey",
+    "interfering_episode_characters": "Meredith Grey; George O'Malley; Cristina Yang; Alex Karev; Izzie Stevens; Derek Shepherd; Claire Rice; Claire's Mother",
+    "single_episode_progression_events": [
+      {
+        "content": "Miranda Bailey warns Derek Shepherd not to show favoritism toward Meredith Grey, threatening to bar Meredith from the OR if she observes bias.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Derek Shepherd",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:00:25,937",
+        "end_timestamp": "00:00:47,807",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey assigns George O'Malley, Cristina Yang, and Alex Karev to clinic duty to reinforce humility and teamwork.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Miranda Bailey",
+          "George O'Malley",
+          "Cristina Yang",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:03:57,579",
+        "end_timestamp": "00:04:04,467",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey assigns Izzie Stevens to work directly with her, emphasizing hands-on teaching.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:04:06,800",
+        "end_timestamp": "00:04:08,245",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey reviews Meredith Grey's findings on Claire Rice and orders a CT scan, guiding Meredith through the diagnostic process.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:13:53,596",
+        "end_timestamp": "00:10:51,735",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey discusses Claire Rice's illegal gastric bypass with Meredith and Claire's parents, explaining the ethical and medical implications.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Claire Rice",
+          "Claire's Mother"
+        ],
+        "start_timestamp": "00:13:57,724",
+        "end_timestamp": "00:14:37,894",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey insists on reversing Claire's surgery despite Claire's resistance, prioritizing patient safety.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Claire Rice"
+        ],
+        "start_timestamp": "00:20:02,509",
+        "end_timestamp": "00:20:23,708",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey debriefs with Meredith after Claire's surgery, discussing the psychological pressures on patients and the responsibilities of surgeons.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:32:00,794",
+        "end_timestamp": "00:32:17,843",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Power Dynamics, Professional Responsibility, and Ethical Dilemmas at Seattle Grace",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Across the season, the staff and interns at Seattle Grace navigate the hospital's strict hierarchies, confront ethical challenges, and uphold the unspoken code among doctors. They face dilemmas involving professional boundaries, reporting impaired colleagues, and making critical medical decisions, all of which shape their development as medical professionals.",
+    "main_characters": "Miranda Bailey; Derek Shepherd; Meredith Grey; George O'Malley",
+    "interfering_episode_characters": "Cristina Yang; Alex Karev; Dr. Taylor; Claire Rice; Jamie Hayes; Jamie's Parents; Surgical Team",
+    "single_episode_progression_events": [
+      {
+        "content": "Miranda Bailey warns Derek Shepherd that any favoritism toward Meredith Grey will result in Meredith being barred from the OR for a month.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Derek Shepherd",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:00:35,937",
+        "end_timestamp": "00:00:47,807",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey assigns George O'Malley, Cristina Yang, and Alex Karev to clinic duty, reinforcing the hospital's hierarchy.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Miranda Bailey",
+          "George O'Malley",
+          "Cristina Yang",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:03:57,579",
+        "end_timestamp": "00:04:06,800",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith Grey consults Miranda Bailey about Claire Rice's suspected illegal surgery, seeking ethical guidance.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Meredith Grey",
+          "Miranda Bailey",
+          "Claire Rice"
+        ],
+        "start_timestamp": "00:10:27,048",
+        "end_timestamp": "00:10:51,735",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek Shepherd diagnoses Jamie Hayes with Rasmussen's encephalitis and explains to her parents that a hemispherectomy is the only option.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Jamie Hayes",
+          "Jamie's Parents",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:20:37,760",
+        "end_timestamp": "00:21:51,786",
+        "confidence_score": 0.96,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George O'Malley detects the smell of alcohol on Dr. Taylor and discreetly alerts Derek Shepherd.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "George O'Malley",
+          "Dr. Taylor",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:12:28,427",
+        "end_timestamp": "00:12:44,713",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek Shepherd confronts Dr. Taylor about possible intoxication and removes him from the OR after Taylor nods off during surgery.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Dr. Taylor",
+          "George O'Malley",
+          "Surgical Team"
+        ],
+        "start_timestamp": "00:26:33,689",
+        "end_timestamp": "00:27:00,007",
+        "confidence_score": 0.94,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek Shepherd and George O'Malley discuss the incident with Dr. Taylor, acknowledging the importance of responsibility and the code among doctors.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Derek Shepherd",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:36:36,025",
+        "end_timestamp": "00:36:58,606",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  }
+]

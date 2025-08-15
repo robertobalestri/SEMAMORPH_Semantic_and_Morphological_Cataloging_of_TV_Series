@@ -1,0 +1,80 @@
+[
+    {
+        "entity_name": "george",
+        "best_appellation": "George",
+        "appellations": ["George"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "dr_stevens",
+        "best_appellation": "Dr. Izzie Stevens",
+        "appellations": ["Dr. Stevens", "Izzie Stevens", "Izzie"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "dr_gray",
+        "best_appellation": "Dr. Meredith Gray",
+        "appellations": ["Dr. Gray", "Meredith", "Meredith Gray"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "mrs_drake",
+        "best_appellation": "Mrs. Drake",
+        "appellations": ["Mrs. Drake"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "alex",
+        "best_appellation": "Alex",
+        "appellations": ["Alex"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "mr_frost",
+        "best_appellation": "Mr. Frost",
+        "appellations": ["Mr. Frost"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "cristina",
+        "best_appellation": "Cristina",
+        "appellations": ["Cristina"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "dr_shepherd",
+        "best_appellation": "Dr. Shepherd",
+        "appellations": ["Dr. Shepherd"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "mr_sturman",
+        "best_appellation": "Mr. Sturman",
+        "appellations": ["Mr. Sturman"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "dr_burke",
+        "best_appellation": "Dr. Burke",
+        "appellations": ["Dr. Burke"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "mrs_patterson",
+        "best_appellation": "Mrs. Patterson",
+        "appellations": ["Mrs. Patterson"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "mr_patterson",
+        "best_appellation": "Mr. Patterson",
+        "appellations": ["Mr. Patterson"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "jerry",
+        "best_appellation": "Jerry",
+        "appellations": ["Jerry"],
+        "biological_sex": "M"
+    }
+]

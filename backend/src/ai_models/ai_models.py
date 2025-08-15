@@ -68,7 +68,9 @@ def _initialize_llm(intelligent_or_cheap: LLMType) -> AzureChatOpenAI:
                 api_key=os.getenv("AZURE_OPENAI_API_KEY"),
                 azure_endpoint=os.getenv("AZURE_OPENAI_API_ENDPOINT"),
                 api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
-                temperature=0.2,
+                temperature=os.getenv("TEMPERATURE_GPT"),
+                #use_responses_api=True,
+                #reasoning_effort="low"
             )
             logger.info("✅ INTELLIGENT LLM initialized successfully")
             return llm
@@ -85,7 +87,9 @@ def _initialize_llm(intelligent_or_cheap: LLMType) -> AzureChatOpenAI:
                 api_key=os.getenv("AZURE_OPENAI_API_KEY"),
                 azure_endpoint=os.getenv("AZURE_OPENAI_API_ENDPOINT"),
                 api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
-                temperature=0.2,
+                temperature=os.getenv("TEMPERATURE_GPT"),
+                #use_responses_api=True,
+                #reasoning_effort="low"
             )
             logger.info("✅ CHEAP LLM initialized successfully")
             return llm
@@ -143,6 +147,8 @@ def get_embedding_model():
         model="embed-v-4-0",
         cohere_api_key=os.getenv("AZURE_COHERE_EMBEDDING_API_KEY"),
         base_url=os.getenv("AZURE_COHERE_EMBEDDING_API_ENDPOINT"),
+        request_timeout=1000000,  # 30 second timeout per request
+        max_retries=2,       # Maximum 2 retries (3 total attempts)
     )
     
     

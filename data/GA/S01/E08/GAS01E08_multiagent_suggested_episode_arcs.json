@@ -1,0 +1,948 @@
+[
+  {
+    "title": "Medical Case: Devo's Valve Replacement",
+    "arc_type": "Anthology Arc",
+    "description": "When 17-year-old Devo is admitted with excessive bleeding and a heart murmur, the team diagnoses her with von Willebrand's disease and determines she needs a heart valve replacement. The case focuses on finding a valve compatible with her Orthodox Jewish faith, leading to a complex bovine valve surgery with remote expert assistance.",
+    "main_characters": "Devo; Dr. Izzie Stevens; Dr. Cristina Yang; Dr. Miranda Bailey",
+    "interfering_episode_characters": "Dr. Alex Karev; Dr. Preston Burke; Devo's Parents; Dr. Chesney; Rabbi",
+    "single_episode_progression_events": [
+      {
+        "content": "Devo is admitted to the hospital for excessive bleeding after a dental procedure and is found to have a heart murmur and fever.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Devo",
+          "Dr. Miranda Bailey",
+          "Dr. Alex Karev"
+        ],
+        "start_timestamp": "00:03:60,877",
+        "end_timestamp": "00:03:29,420",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The team diagnoses Devo with von Willebrand's disease and determines she needs a heart valve replacement.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Devo",
+          "Dr. Miranda Bailey",
+          "Dr. Alex Karev",
+          "Dr. Cristina Yang",
+          "Dr. Izzie Stevens"
+        ],
+        "start_timestamp": "00:07:26,036",
+        "end_timestamp": "00:07:40,115",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Doctors recommend a porcine (pig) valve, but Devo and her Orthodox Jewish family refuse it for religious reasons.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Devo",
+          "Devo's Parents",
+          "Dr. Miranda Bailey",
+          "Dr. Cristina Yang",
+          "Dr. Izzie Stevens"
+        ],
+        "start_timestamp": "00:15:04,134",
+        "end_timestamp": "00:15:57,061",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie researches alternatives and discovers a bovine (cow) valve option, which is more complicated but acceptable to Devo's family.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Dr. Izzie Stevens",
+          "Dr. Miranda Bailey",
+          "Dr. Cristina Yang",
+          "Devo",
+          "Devo's Parents"
+        ],
+        "start_timestamp": "00:24:52,991",
+        "end_timestamp": "00:25:26,884",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Devo requests a rabbi to bless her before surgery, and Izzie arranges for the rabbi's visit.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Devo",
+          "Dr. Izzie Stevens",
+          "Rabbi"
+        ],
+        "start_timestamp": "00:31:14,395",
+        "end_timestamp": "00:35:30,333",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Chesney, a bovine valve expert, assists the surgical team via satellite during Devo's heart valve replacement procedure.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Dr. Preston Burke",
+          "Dr. Cristina Yang",
+          "Dr. Alex Karev",
+          "Dr. Chesney",
+          "Devo"
+        ],
+        "start_timestamp": "00:35:46,327",
+        "end_timestamp": "00:36:16,014",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The surgery is completed successfully, and Devo's family is informed of the positive outcome.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Dr. Preston Burke",
+          "Dr. Cristina Yang",
+          "Dr. Alex Karev",
+          "Dr. Miranda Bailey",
+          "Devo",
+          "Devo's Parents"
+        ],
+        "start_timestamp": "00:39:45,632",
+        "end_timestamp": "00:39:59,371",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Medical Case: Mr. Duff's Psychic Seizures",
+    "arc_type": "Anthology Arc",
+    "description": "The interns treat Mr. Duff, a patient transferred from psychiatry after experiencing seizures and claiming psychic abilities. As they investigate his medical condition, they discover an arteriovenous malformation (AVM) in his brain. The team debates the connection between his symptoms and his supposed abilities, ultimately performing surgery to remove the AVM and observing his recovery.",
+    "main_characters": "Mr. Duff; Izzie Stevens",
+    "interfering_episode_characters": "Miranda Bailey; Meredith Grey; Cristina Yang; George O'Malley; Alex Karev; Psych Resident; Surgical Team; Hospital Staff",
+    "single_episode_progression_events": [
+      {
+        "content": "Mr. Duff is admitted from psychiatry to the surgical floor after experiencing seizures and claiming to be psychic.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Mr. Duff",
+          "Psych Resident",
+          "Interns"
+        ],
+        "start_timestamp": "00:03:57,335",
+        "end_timestamp": "00:04:28,535",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns begin a neurological workup and discuss Mr. Duff's claims of psychic abilities.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Mr. Duff",
+          "Meredith Grey",
+          "Izzie Stevens",
+          "Cristina Yang",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:04:33,682",
+        "end_timestamp": "00:04:43,711",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Mr. Duff predicts that someone will die on the fourth floor, causing speculation among the staff.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Mr. Duff",
+          "Interns",
+          "Hospital Staff"
+        ],
+        "start_timestamp": "00:05:00,127",
+        "end_timestamp": "00:06:12,204",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie Stevens pushes for further testing after becoming emotionally invested in Mr. Duff's case.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Mr. Duff",
+          "Miranda Bailey"
+        ],
+        "start_timestamp": "00:08:24,653",
+        "end_timestamp": "00:08:31,963",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The team discovers an arteriovenous malformation (AVM) in Mr. Duff's brain.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Miranda Bailey",
+          "Mr. Duff",
+          "Interns"
+        ],
+        "start_timestamp": "00:21:26,597",
+        "end_timestamp": "00:21:34,403",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie advocates for surgery to remove the AVM despite Bailey's warnings.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Miranda Bailey",
+          "Mr. Duff"
+        ],
+        "start_timestamp": "00:21:34,766",
+        "end_timestamp": "00:22:03,105",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Mr. Duff expresses fear that surgery might take away his psychic abilities, and Izzie reassures him.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Mr. Duff",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:33:30,265",
+        "end_timestamp": "00:34:41,818",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The surgical team performs the operation to remove Mr. Duff's AVM.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Mr. Duff",
+          "Surgical Team",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:35:46,327",
+        "end_timestamp": "00:36:15,893",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "After surgery, Mr. Duff thanks Izzie for believing in him and shows signs of improvement.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Mr. Duff",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:38:09,083",
+        "end_timestamp": "00:38:30,628",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Medical Case: Mrs. Glass's Cancer and Pregnancy Dilemma",
+    "arc_type": "Anthology Arc",
+    "description": "Mrs. Glass, a pregnant woman diagnosed with breast cancer, faces a life-altering decision: undergo aggressive cancer treatment that would require terminating her pregnancy, or continue the pregnancy and risk her own life. The arc explores the medical, ethical, and emotional challenges of her situation.",
+    "main_characters": "Mrs. Glass; Mr. Glass",
+    "interfering_episode_characters": "Dr. Miranda Bailey; Dr. Izzie Stevens",
+    "single_episode_progression_events": [
+      {
+        "content": "Mrs. Glass is admitted to the hospital and diagnosed with breast cancer while pregnant.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Mrs. Glass",
+          "Dr. Miranda Bailey",
+          "Dr. Izzie Stevens"
+        ],
+        "start_timestamp": "00:12:13,778",
+        "end_timestamp": "00:12:18,716",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey and Dr. Stevens explain to Mrs. Glass and her husband that aggressive cancer treatment would require terminating the pregnancy.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Mrs. Glass",
+          "Mr. Glass",
+          "Dr. Miranda Bailey",
+          "Dr. Izzie Stevens"
+        ],
+        "start_timestamp": "00:13:11,643",
+        "end_timestamp": "00:13:49,971",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Mrs. Glass and her husband discuss their options and struggle with the decision.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Mrs. Glass",
+          "Mr. Glass"
+        ],
+        "start_timestamp": "00:17:58,376",
+        "end_timestamp": "00:18:49,672",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Mrs. Glass and her husband inform the doctors that they have decided to keep the baby despite the risks to Mrs. Glass's health.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Mrs. Glass",
+          "Mr. Glass",
+          "Dr. Miranda Bailey",
+          "Dr. Izzie Stevens"
+        ],
+        "start_timestamp": "00:26:42,674",
+        "end_timestamp": "00:27:18,586",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Medical Case: Mr. Walker's Progressive Paralysis",
+    "arc_type": "Anthology Arc",
+    "description": "After a rock climbing accident, Mr. Walker is admitted to the hospital with progressive paralysis. Despite inconclusive imaging, Dr. Derek Shepherd suspects a hidden spinal clot and performs high-risk exploratory surgery, ultimately locating and removing the clot to halt the paralysis.",
+    "main_characters": "Mr. Walker; Dr. Derek Shepherd",
+    "interfering_episode_characters": "Dr. Meredith Grey; Dr. George O'Malley",
+    "single_episode_progression_events": [
+      {
+        "content": "Mr. Walker is admitted to the hospital after a rock climbing accident with numbness and weakness.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Mr. Walker",
+          "Dr. Derek Shepherd",
+          "Dr. Meredith Grey",
+          "Dr. George O'Malley"
+        ],
+        "start_timestamp": "00:08:35,264",
+        "end_timestamp": "00:08:57,269",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Shepherd and the interns review Mr. Walker's MRI scans, which show no clear cause for his worsening paralysis.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "Dr. Meredith Grey",
+          "Dr. George O'Malley",
+          "Mr. Walker"
+        ],
+        "start_timestamp": "00:12:31,216",
+        "end_timestamp": "00:12:45,720",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Mr. Walker's paralysis worsens, and the team debates whether his symptoms are psychosomatic.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "Dr. Meredith Grey",
+          "Dr. George O'Malley",
+          "Mr. Walker"
+        ],
+        "start_timestamp": "00:14:07,033",
+        "end_timestamp": "00:14:56,316",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Shepherd decides to perform exploratory surgery to search for a spinal clot.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "Dr. Meredith Grey",
+          "Dr. George O'Malley",
+          "Mr. Walker"
+        ],
+        "start_timestamp": "00:19:27,105",
+        "end_timestamp": "00:20:07,810",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "During surgery, Dr. Shepherd and the team locate and remove a clot in Mr. Walker's upper spine.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Dr. Derek Shepherd",
+          "Dr. Meredith Grey",
+          "Dr. George O'Malley",
+          "Mr. Walker"
+        ],
+        "start_timestamp": "00:28:40,026",
+        "end_timestamp": "00:31:51,635",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "After surgery, Mr. Walker shows signs of improvement.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Mr. Walker",
+          "Dr. Derek Shepherd",
+          "Dr. Meredith Grey",
+          "Dr. George O'Malley"
+        ],
+        "start_timestamp": "00:37:46,003",
+        "end_timestamp": "00:38:30,628",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Meredith Grey and Derek Shepherd: Secret Romance and Professional Boundaries",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey and Derek Shepherd's romantic relationship is defined by secrecy and the challenge of maintaining professional boundaries within the hospital. As they navigate their connection, Meredith pushes for greater emotional openness, while Derek remains guarded. The arc follows their struggle to balance intimacy, vulnerability, and the risks to Meredith's career as their personal and professional lives intertwine.",
+    "main_characters": "Meredith Grey; Derek Shepherd",
+    "interfering_episode_characters": "Ellis Grey",
+    "single_episode_progression_events": [
+      {
+        "content": "Meredith questions Derek about his personal life and asks about his friends and activities outside of work.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:06:32,290",
+        "end_timestamp": "00:06:46,872",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek evades Meredith's questions and claims he is just a surgeon without friends.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:06:46,872",
+        "end_timestamp": "00:06:53,981",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith establishes a boundary by insisting she needs to know more about Derek before continuing their physical relationship.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:06:53,981",
+        "end_timestamp": "00:07:00,531",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek encourages Meredith to be flexible and to see where their relationship goes.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:07:00,552",
+        "end_timestamp": "00:07:17,697",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith calls her mother, using her childhood nickname, and reaches out to reconnect.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Meredith Grey",
+          "Ellis Grey"
+        ],
+        "start_timestamp": "00:40:13,643",
+        "end_timestamp": "00:40:29,550",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek opens up to Meredith, sharing personal details about his family and interests, and tells her she will have to take the rest on faith.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:40:39,228",
+        "end_timestamp": "00:41:30,041",
+        "confidence_score": 0.98,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Meredith Grey and Ellis Grey: Legacy, Estrangement, and Identity",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey navigates the challenges of living in the shadow of her mother Ellis Grey's surgical legacy while coping with Ellis's declining health and memory loss. The arc follows Meredith's efforts to define her own identity as a surgeon, her ongoing estrangement from Ellis, and her gradual attempts to reconnect and reconcile their complicated relationship.",
+    "main_characters": "Meredith Grey; Ellis Grey",
+    "interfering_episode_characters": "Cristina Yang; Izzie Stevens",
+    "single_episode_progression_events": [
+      {
+        "content": "Meredith narrates about childhood beliefs and the influence of her mother's legacy, reflecting on the contrast between fairy tales and reality.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Meredith Grey",
+          "Ellis Grey"
+        ],
+        "start_timestamp": "00:00:04,198",
+        "end_timestamp": "00:00:14,554",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith resists calling her mother for a childhood cupcake recipe despite encouragement from Cristina and Izzie.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:00:15,755",
+        "end_timestamp": "00:00:59,218",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith calls her mother, uses her childhood nickname 'Cricket,' and says she's been thinking about her.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Meredith Grey",
+          "Ellis Grey"
+        ],
+        "start_timestamp": "00:40:13,643",
+        "end_timestamp": "00:40:29,950",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "The Surgical Interns: Rivalries, Bonds, and Coming of Age at Seattle Grace",
+    "arc_type": "Soap Arc",
+    "description": "Meredith, Cristina, George, Izzie, and Alex navigate the intense pressures of surgical residency at Seattle Grace, forming and testing friendships, alliances, and rivalries while living together and coming from diverse backgrounds. The arc tracks their evolving group dynamic, personal insecurities, and growth as doctors and individuals, including George's quest for confidence, Izzie's emotional investment in patients, Cristina's ambition and reproductive choices, and Alex's struggle for acceptance.",
+    "main_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
+    "interfering_episode_characters": "Dr. Miranda Bailey; Dr. Preston Burke; Scheduler; Nurse Olivia; Mr. Duff; Dr. Chesney",
+    "single_episode_progression_events": [
+      {
+        "content": "Izzie bakes cupcakes repeatedly, trying to recreate a childhood recipe, while Meredith and Cristina taste-test and tease her about refusing to call her mother for help.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Meredith Grey",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:00:28,533",
+        "end_timestamp": "00:01:18,161",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina suggests the group sleep at Izzie's house, sparking debate about whose apartment feels most like home.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:01:19,486",
+        "end_timestamp": "00:01:26,855",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns gather in the morning, share cupcakes, and banter about Meredith's breakfast habits and whose apartment is the group's home base.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Cristina Yang",
+          "Meredith Grey",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:01:26,855",
+        "end_timestamp": "00:02:15,591",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina checks her surgical schedule and tries to arrange a lighter rotation for her upcoming procedure.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Cristina Yang",
+          "Scheduler"
+        ],
+        "start_timestamp": "00:02:25,627",
+        "end_timestamp": "00:02:57,877",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George is asked to cover a shift on the 16th and discusses his appearance and lack of confidence with staff.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "George O'Malley",
+          "Nurse Olivia",
+          "Other Staff"
+        ],
+        "start_timestamp": "00:06:12,444",
+        "end_timestamp": "00:06:34,834",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George redeems himself by successfully intubating a patient during surgery.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:29:43,818",
+        "end_timestamp": "00:30:33,048",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina and Izzie encourage George after his failed intubation attempt, with Cristina joking about him needing to ask out a nurse.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:17:18,934",
+        "end_timestamp": "00:17:49,171",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Alex is teased by Cristina and Izzie for his earlier skepticism about a surgical case, but is later allowed to scrub in on a complex surgery after securing the necessary valve.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Alex Karev",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Dr. Burke"
+        ],
+        "start_timestamp": "00:24:00,760",
+        "end_timestamp": "00:31:11,153",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina, feeling overwhelmed by her first bovine valve replacement, seeks advice from Dr. Burke, who encourages her to research and get help.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Cristina Yang",
+          "Dr. Burke"
+        ],
+        "start_timestamp": "00:28:00,493",
+        "end_timestamp": "00:28:33,375",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie becomes emotionally invested in Mr. Duff's case, pushing for surgery and being cautioned by Bailey about getting too close to patients.",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Dr. Bailey",
+          "Mr. Duff"
+        ],
+        "start_timestamp": "00:21:24,915",
+        "end_timestamp": "00:22:03,105",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The interns share moments of connection and support after a challenging day, finding comfort in each other despite their differences and insecurities.",
+        "ordinal_position": 11,
+        "characters_involved": [
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:35:46,327",
+        "end_timestamp": "00:37:47,864",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Cristina Yang and Preston Burke: Ambiguous Romance and Professional Ambition",
+    "arc_type": "Soap Arc",
+    "description": "Cristina Yang and Dr. Preston Burke navigate a secret romantic relationship while working together at the hospital. Their connection is shaped by the pressures of surgical careers, the need for discretion, and uncertainty about defining their relationship, as they attempt to balance ambition, professionalism, and personal feelings over the course of the season.",
+    "main_characters": "Cristina Yang; Preston Burke",
+    "interfering_episode_characters": "Izzie Stevens; Alex Karev",
+    "single_episode_progression_events": [
+      {
+        "content": "Cristina privately seeks advice from Dr. Burke about performing her first bovine valve replacement surgery.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Cristina Yang",
+          "Preston Burke"
+        ],
+        "start_timestamp": "00:28:00,493",
+        "end_timestamp": "00:28:17,335",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Burke advises Cristina to research the procedure and get assistance, maintaining a professional demeanor while offering support.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Cristina Yang",
+          "Preston Burke"
+        ],
+        "start_timestamp": "00:28:21,901",
+        "end_timestamp": "00:28:33,375",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina and Burke share a private conversation in the stairwell about the difference between solvable and unsolvable problems, referencing both surgical and personal challenges.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Cristina Yang",
+          "Preston Burke"
+        ],
+        "start_timestamp": "00:28:29,451",
+        "end_timestamp": "00:28:33,375",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Miranda Bailey's Rigorous Mentorship and the Shaping of Surgical Interns",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Throughout the season, Dr. Miranda Bailey establishes herself as a demanding but effective mentor to the new surgical interns at Seattle Grace Hospital. Through strict oversight, high expectations, and direct feedback, Bailey pushes the interns to confront their weaknesses, learn from their mistakes, and develop the clinical skills and resilience required to succeed in surgical training.",
+    "main_characters": "Miranda Bailey",
+    "interfering_episode_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
+    "single_episode_progression_events": [
+      {
+        "content": "Bailey assigns Alex Karev to run labs and orders additional tests for Devo, emphasizing thoroughness and accountability.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:03:09,830",
+        "end_timestamp": "00:03:34,347",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey leads the interns through morning rounds, assigning them to new patients and setting clear expectations for their responsibilities.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:11:57,226",
+        "end_timestamp": "00:12:15,980",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey warns Izzie Stevens about becoming too emotionally involved with Mr. Duff's case, reinforcing professional boundaries.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:21:51,403",
+        "end_timestamp": "00:21:58,131",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey supervises the interns as they debate diagnostic and treatment options for their patients, challenging their clinical reasoning.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:14:15,225",
+        "end_timestamp": "00:14:37,754",
+        "confidence_score": 0.85,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey observes and evaluates the interns' performance during patient care, providing feedback and correction as needed.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:23:08,217",
+        "end_timestamp": "00:23:17,991",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Power Dynamics, Professional Boundaries, and Ethical Dilemmas at Seattle Grace",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Across the season, the staff and interns at Seattle Grace Hospital navigate institutional hierarchies, professional boundaries, and complex ethical dilemmas. Attendings, residents, and interns face challenges involving patient autonomy, religious beliefs, and treatment prioritization, while upholding the hospital's protocols and the unspoken code among doctors. These experiences shape their growth as medical professionals and influence their relationships within the hospital.",
+    "main_characters": "Miranda Bailey; Cristina Yang; Izzie Stevens; Alex Karev; Meredith Grey; Derek Shepherd; Preston Burke",
+    "interfering_episode_characters": "George O'Malley; Devo; Devo's Parents; Surgical Scheduler; Counselor; Mr. Walker; Mr. Duff; Dr. Chesney; Rabbi",
+    "single_episode_progression_events": [
+      {
+        "content": "Dr. Miranda Bailey assigns the interns to new patients and delegates responsibilities, reinforcing the hospital's hierarchy.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:11:49,428",
+        "end_timestamp": "00:12:15,980",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina Yang negotiates with the surgical scheduler to arrange a lighter rotation for her upcoming procedure.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Cristina Yang",
+          "Surgical Scheduler"
+        ],
+        "start_timestamp": "00:02:25,627",
+        "end_timestamp": "00:02:32,514",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina Yang is counseled about options besides termination for her pregnancy, following hospital protocols for ethical counseling.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Cristina Yang",
+          "Counselor"
+        ],
+        "start_timestamp": "00:02:37,538",
+        "end_timestamp": "00:02:57,817",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The surgical team discusses Devo's need for a heart valve replacement and debates the ethical dilemma of respecting her family's religious beliefs versus medical necessity.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Izzie Stevens",
+          "Cristina Yang",
+          "Devo",
+          "Devo's Parents"
+        ],
+        "start_timestamp": "00:07:26,036",
+        "end_timestamp": "00:07:53,612",
+        "confidence_score": 0.96,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie Stevens researches alternative valve options to accommodate Devo's religious restrictions.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Miranda Bailey",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:24:44,116",
+        "end_timestamp": "00:25:14,565",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Burke allows Alex Karev to scrub in on the bovine valve surgery after Alex secures the necessary valve, but warns him not to act without attending approval.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Preston Burke",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:30:52,991",
+        "end_timestamp": "00:31:11,153",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The team debates whether Mr. Walker's paralysis is psychosomatic or due to a missed clot, and Dr. Shepherd decides to operate despite the risks.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Miranda Bailey",
+          "Meredith Grey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "George O'Malley",
+          "Mr. Walker"
+        ],
+        "start_timestamp": "00:13:14,042",
+        "end_timestamp": "00:20:07,810",
+        "confidence_score": 0.94,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey warns Izzie Stevens about becoming too emotionally involved with Mr. Duff's case.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:21:45,237",
+        "end_timestamp": "00:21:58,131",
+        "confidence_score": 0.91,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The team arranges for a rabbi to bless Devo before surgery, balancing institutional protocols with respect for patient religious needs.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Devo",
+          "Rabbi"
+        ],
+        "start_timestamp": "00:35:09,440",
+        "end_timestamp": "00:35:30,333",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Chesney assists remotely during the bovine valve replacement, demonstrating collaboration across institutional boundaries.",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "Dr. Chesney",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Preston Burke",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:35:46,327",
+        "end_timestamp": "00:36:16,014",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  }
+]

@@ -39,24 +39,6 @@ class PathHandler:
     def get_entity_normalized_plot_file_path(self) -> str:
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_plot_entities_normalized.txt")
 
-    def get_season_plot_file_path(self) -> str:
-        return os.path.join(self.base_dir, self.series, self.season, f"{self.series}{self.season}_season_plot.txt")
-
-    def get_semantic_segments_path(self) -> str:
-        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_plot_semantic_segments.json")
-
-    def get_episode_narrative_arcs_path(self) -> str:
-        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_multiagent_episode_narrative_arcs.json")
-
-    def get_season_narrative_arcs_path(self) -> str:
-        return os.path.join(self.base_dir, self.series, self.season, f"{self.series}{self.season}_multiagent_season_narrative_arcs.json")
-
-    def get_episode_narrative_analysis_path(self) -> str:
-        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_multiagent_episode_narrative_analysis.txt")
-
-    def get_season_narrative_analysis_path(self) -> str:
-        return os.path.join(self.base_dir, self.series, self.season, f"{self.series}{self.season}_multiagent_season_narrative_analysis.txt")
-
     def get_episode_refined_entities_path(self) -> str:
         """Path for saving refined entities for the episode."""
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_refined_entities.json")
@@ -68,20 +50,13 @@ class PathHandler:
     def get_season_extracted_refined_entities_path(self) -> str:
         return os.path.join(self.base_dir, self.series, self.season, f"{self.series}{self.season}_extracted_entities.json")
     
-    def get_plot_localized_sentences_path(self) -> str:
-        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_plot_localized_sentences.json")
-    
     def get_suggested_episode_arc_path(self) -> str:
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_multiagent_suggested_episode_arcs.json")
 
     def get_srt_file_path(self) -> str:
         """Get the path to the SRT subtitle file for this episode."""
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}.srt")
-
-    def get_enhanced_srt_path(self) -> str:
-        """Get the path to the enhanced SRT file with speaker identification for this episode."""
-        return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_enhanced.srt")
-
+    
     def get_possible_speakers_srt_path(self) -> str:
         """Get the path to the SRT file with possible speakers for this episode."""
         return os.path.join(self.base_dir, self.series, self.season, self.episode, f"{self.series}{self.season}{self.episode}_possible_speakers.srt")
@@ -222,6 +197,36 @@ class PathHandler:
         """Get the path to the present running plotlines file."""
         recap_dir = os.path.join(self.base_dir, self.series, self.season, self.episode, "recap_files")
         return os.path.join(recap_dir, f"{self.series}{self.season}{self.episode}_present_running_plotlines.json")
+
+    # Recap generation specific paths
+    def get_recap_files_dir(self) -> str:
+        """Get the recap_files directory path."""
+        return os.path.join(self.base_dir, self.series, self.season, self.episode, "recap_files")
+    
+    def get_recap_clips_json_path(self) -> str:
+        """Get the path to the recap clips specifications JSON file."""
+        recap_dir = self.get_recap_files_dir()
+        return os.path.join(recap_dir, f"{self.series}{self.season}{self.episode}_recap_clips.json")
+    
+    def get_final_recap_video_path(self) -> str:
+        """Get the path to the final recap video file."""
+        recap_dir = self.get_recap_files_dir()
+        return os.path.join(recap_dir, f"{self.series}{self.season}{self.episode}_recap.mp4")
+    
+    def get_recap_metadata_path(self) -> str:
+        """Get the path to the recap metadata JSON file."""
+        recap_dir = self.get_recap_files_dir()
+        return os.path.join(recap_dir, f"{self.series}{self.season}{self.episode}_recap_metadata.json")
+
+    def get_recap_clip_dir(self) -> str:
+        """Get the directory for storing individual recap clips."""
+        recap_dir = self.get_recap_files_dir()
+        return os.path.join(recap_dir, "clips")
+
+    def get_individual_clip_path(self, clip_id: str) -> str:
+        """Get the path to an individual extracted clip file."""
+        clips_dir = self.get_recap_clip_dir()
+        return os.path.join(clips_dir, f"{self.series}{self.season}{self.episode}_clip_{clip_id}.mp4")
 
     @staticmethod
     def get_episode_plot_path(base_dir: str, series: str, season: str, episode: str) -> str:

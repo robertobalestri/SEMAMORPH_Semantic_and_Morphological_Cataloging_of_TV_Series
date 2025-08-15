@@ -1,11 +1,12 @@
 # narrative_models.py
 
 from __future__ import annotations
-from typing import List, Optional
+from typing import Dict, List, Optional
 from sqlmodel import SQLModel, Field, Relationship
 from sqlalchemy.orm import relationship
 import uuid
 from sqlalchemy import UniqueConstraint, func
+
 
 from ..utils.logger_utils import setup_logging
 logger = setup_logging(__name__)
