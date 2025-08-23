@@ -1,8 +1,35 @@
 """
 Main recap generator class - simplified and streamlined.
 
-This module provides the core RecapGenerator class that orchestrates
-the entire recap generation process following the specified LLM workflow.
+This module provides the core RecapGenerator class that orch                for ev in selected_events:
+                    dialogue_info = key_dialogue.get(ev.id, {})
+                    
+                    # Use actual dialogue timestamps if available, otherwise fall back to event timestamps
+                    if dialogue_info.get('start_time') and dialogue_info.get('end_time'):
+                        actual_start_time = dialogue_info['start_time']
+                        actual_end_time = dialogue_info['end_time']
+                        source_event_id = dialogue_info.get('source_event_id', ev.id)
+                    else:
+                        actual_start_time = ev.start_time
+                        actual_end_time = ev.end_time
+                        source_event_id = ev.id
+                    
+                    selected_clips.append({
+                        "event_id": ev.id,
+                        "arc_title": ev.arc_title,
+                        "narrative_arc_id": getattr(ev, 'narrative_arc_id', ''),
+                        "source_episode": f"{ev.series}{ev.season}{ev.episode}",
+                        "start_time": actual_start_time,  # Use actual dialogue timestamps
+                        "end_time": actual_end_time,      # Use actual dialogue timestamps
+                        "content": ev.content,
+                        "selected_subtitles": dialogue_info.get('lines', []),
+                        "debug_info": {
+                            **dialogue_info.get('debug', {}),
+                            "original_event_timespan": f"{ev.start_time} - {ev.end_time}",
+                            "actual_dialogue_timespan": f"{actual_start_time} - {actual_end_time}",
+                            "source_event_used": source_event_id
+                        }
+                    }) entire recap generation process following the specified LLM workflow.
 """
 
 import logging
@@ -19,7 +46,7 @@ if src_dir not in sys.path:
 
 from path_handler import PathHandler
 from .models import RecapResult
-from .utils import load_episode_inputs, select_events_round_robin, search_vector_database
+from .utils import load_episode_inputs, search_and_select_unique_events
 from .llm_services import generate_arc_queries, rank_events_per_arc, extract_key_dialogue
 from .video_processor import extract_video_clips, assemble_final_recap
 
@@ -83,25 +110,16 @@ class RecapGenerator:
                     error_message="No queries generated"
                 )
             
-            # Step 3: Search vector database
-            logger.info("🔍 Searching vector database...")
-            events_by_arc = search_vector_database(arc_queries, series, season, episode)
-            
-            if not events_by_arc:
-                return RecapResult(
-                    video_path="", events=[], clips=[],
-                    total_duration=0.0, success=False,
-                    error_message="No events found in vector database"
-                )
-            
-            # Step 4: LLM #2 - Rank events per arc (loop)
-            logger.info("📊 Ranking events per narrative arc...")
-            ranked_events = rank_events_per_arc(events_by_arc, inputs['episode_plot'])
-            logger.info("📊 Event ranking complete.")
-            
-            # Step 5: Round-robin final event selection
-            logger.info("🎯 Selecting final events (round-robin)...")
-            selected_events = select_events_round_robin(ranked_events, max_events=8)
+            # Step 3-5: Progressive search and selection (prevents duplicates)
+            logger.info("🔍 Starting progressive search and selection...")
+            selected_events, ranked_events = search_and_select_unique_events(
+                arc_queries=arc_queries,
+                episode_plot=inputs['episode_plot'],
+                current_series=series, 
+                current_season=season, 
+                current_episode=episode,
+                max_events=8
+            )
             
             if not selected_events:
                 return RecapResult(
@@ -130,16 +148,33 @@ class RecapGenerator:
                     "selected_events": []
                 }
                 for ev in selected_events:
+                    dialogue_info = key_dialogue.get(ev.id, {})
+                    
+                    # Use actual dialogue timestamps if available, otherwise fall back to event timestamps
+                    if dialogue_info.get('start_time') and dialogue_info.get('end_time'):
+                        actual_start_time = dialogue_info['start_time']
+                        actual_end_time = dialogue_info['end_time']
+                        source_event_id = dialogue_info.get('source_event_id', ev.id)
+                    else:
+                        actual_start_time = ev.start_time
+                        actual_end_time = ev.end_time
+                        source_event_id = ev.id
+                    
                     export["selected_events"].append({
                         "event_id": ev.id,
                         "arc_title": ev.arc_title,
                         "narrative_arc_id": getattr(ev, 'narrative_arc_id', ''),
                         "source_episode": f"{ev.series}{ev.season}{ev.episode}",
-                        "start_time": ev.start_time,
-                        "end_time": ev.end_time,
+                        "start_time": actual_start_time,  # Use actual dialogue timestamps
+                        "end_time": actual_end_time,      # Use actual dialogue timestamps
                         "content": ev.content,
-                        "selected_subtitles": key_dialogue.get(ev.id, {}).get('lines', []),
-                        "debug_info": key_dialogue.get(ev.id, {}).get('debug', {})
+                        "selected_subtitles": dialogue_info.get('lines', []),
+                        "debug_info": {
+                            **dialogue_info.get('debug', {}),
+                            "original_event_timespan": f"{ev.start_time} - {ev.end_time}",
+                            "actual_dialogue_timespan": f"{actual_start_time} - {actual_end_time}",
+                            "source_event_used": source_event_id
+                        }
                     })
 
                 with open(recap_spec_path, 'w', encoding='utf-8') as f:

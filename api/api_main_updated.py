@@ -21,7 +21,8 @@ if backend_path not in sys.path:
 
 from fastapi import FastAPI, HTTPException, Body, Query, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
-from typing import List, Optional, Dict, Union
+from fastapi.staticfiles import StaticFiles
+from typing import List, Optional, Dict, Union, Any
 from pydantic import BaseModel, ValidationError
 from backend.src.narrative_storage_management.repositories import DatabaseSessionManager
 from backend.src.narrative_storage_management.narrative_arc_service import NarrativeArcService
@@ -342,6 +343,15 @@ import logging
 logging.getLogger("uvicorn.access").handlers = []
 
 app = FastAPI(title="Narrative Arcs Dashboard API")
+
+# Mount static files for video serving
+try:
+    data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+    if os.path.exists(data_dir):
+        app.mount("/api/static", StaticFiles(directory=data_dir), name="static")
+        logger.info(f"📁 Mounted static files from: {data_dir}")
+except Exception as e:
+    logger.warning(f"⚠️ Could not mount static files: {e}")
 
 # Configure CORS
 app.add_middleware(
@@ -720,6 +730,58 @@ class RecapSummaryResponse(BaseModel):
     episodes_with_recaps: int
     total_recap_scenes: int
     validation_issues: List[str]
+
+# RECAP GENERATION MODELS
+class RecapEvent(BaseModel):
+    id: str
+    content: str
+    series: str
+    season: str
+    episode: str
+    start_time: str
+    end_time: str
+    narrative_arc_id: str
+    arc_title: str
+    relevance_score: float
+    selected_subtitles: List[str]
+    debug_info: Dict[str, Any]
+
+class RecapClip(BaseModel):
+    event_id: str
+    file_path: str
+    start_seconds: float
+    end_seconds: float
+    duration: float
+    subtitle_lines: List[str]
+    arc_title: str
+
+class RecapGenerationRequest(BaseModel):
+    series: str
+    season: str
+    episode: str
+
+class RecapGenerationResponse(BaseModel):
+    video_path: str
+    events: List[RecapEvent]
+    clips: List[RecapClip]
+    total_duration: float
+    success: bool
+    error_message: Optional[str] = None
+    queries: List[Dict[str, Any]] = []
+    ranking_details: Dict[str, List[Dict[str, Any]]] = {}
+
+class RecapGenerationJob(BaseModel):
+    job_id: str
+    series: str
+    season: str
+    episode: str
+    status: str  # "running", "completed", "failed"
+    progress: float  # 0.0 to 1.0
+    current_step: str
+    result: Optional[RecapGenerationResponse] = None
+    error_message: Optional[str] = None
+    created_at: datetime
+    updated_at: datetime
 # SCENE VALIDATION MODELS
 class SceneValidationRequest(BaseModel):
     series: str
@@ -748,6 +810,7 @@ class SceneValidationResponse(BaseModel):
 
 # In-memory storage for processing jobs
 processing_jobs: Dict[str, ProcessingJob] = {}
+recap_jobs: Dict[str, RecapGenerationJob] = {}
 
 def normalize_season_episode(season: str, episode: str) -> tuple[str, str]:
     """Normalize season and episode format to S01, E01."""
@@ -3189,3 +3252,183 @@ async def get_recap_scenes(series: str, season: str, episode: str):
     except Exception as e:
         logger.error(f"Error getting recap scenes: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+# ========================================
+# NEW: Recap Generation Endpoints
+# ========================================
+
+@app.post("/api/recap-generation/start", response_model=RecapGenerationJob)
+async def start_recap_generation(request: RecapGenerationRequest, background_tasks: BackgroundTasks):
+    """Start recap generation for an episode"""
+    try:
+        import uuid
+        from datetime import datetime
+        
+        job_id = str(uuid.uuid4())
+        
+        # Create job entry
+        job = RecapGenerationJob(
+            job_id=job_id,
+            series=request.series,
+            season=request.season,
+            episode=request.episode,
+            status="running",
+            progress=0.0,
+            current_step="Initializing...",
+            created_at=datetime.now(),
+            updated_at=datetime.now()
+        )
+        
+        recap_jobs[job_id] = job
+        
+        # Start background task
+        background_tasks.add_task(run_recap_generation, job_id, request.series, request.season, request.episode)
+        
+        return job
+        
+    except Exception as e:
+        logger.error(f"Error starting recap generation: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/recap-generation/jobs", response_model=List[RecapGenerationJob])
+async def get_recap_jobs():
+    """Get all recap generation jobs"""
+    return list(recap_jobs.values())
+
+@app.get("/api/recap-generation/jobs/{job_id}", response_model=RecapGenerationJob)
+async def get_recap_job(job_id: str):
+    """Get a specific recap generation job"""
+    if job_id not in recap_jobs:
+        raise HTTPException(status_code=404, detail="Job not found")
+    return recap_jobs[job_id]
+
+@app.delete("/api/recap-generation/jobs/{job_id}")
+async def delete_recap_job(job_id: str):
+    """Delete a recap generation job"""
+    if job_id not in recap_jobs:
+        raise HTTPException(status_code=404, detail="Job not found")
+    
+    del recap_jobs[job_id]
+    return {"message": "Job deleted successfully"}
+
+async def run_recap_generation(job_id: str, series: str, season: str, episode: str):
+    """Background task to run recap generation"""
+    try:
+        from backend.src.recap_gen.recap_generator import RecapGenerator
+        
+        job = recap_jobs[job_id]
+        
+        # Update job status
+        def update_job(progress: float, step: str):
+            job.progress = progress
+            job.current_step = step
+            job.updated_at = datetime.now()
+        
+        # Use absolute path for data directory in API context
+        data_dir = os.path.abspath("data")
+        
+        # Run the complete pipeline using RecapGenerator (same as test)
+        update_job(0.1, "Starting recap generation...")
+        generator = RecapGenerator(base_dir=data_dir)
+        
+        update_job(0.2, "Running complete pipeline...")
+        result = generator.generate_recap(series, season, episode)
+        
+        if result.success:
+            update_job(0.9, "Building response...")
+            
+            # For the API response, we need to get the intermediate results
+            # Let's load the saved JSON spec to get the detailed process info
+            try:
+                from backend.src.path_handler import PathHandler
+                import json
+                
+                path_handler = PathHandler(series, season, episode, data_dir)
+                recap_spec_path = path_handler.get_recap_clips_json_path()
+                
+                queries_info = []
+                ranking_info = {}
+                
+                if os.path.exists(recap_spec_path):
+                    with open(recap_spec_path, 'r', encoding='utf-8') as f:
+                        spec_data = json.load(f)
+                    
+                    # Extract queries and ranking info from the spec
+                    ranked_events_by_arc = spec_data.get('ranked_events_by_arc', {})
+                    
+                    # Build queries info (we'll approximate this from the arcs)
+                    for arc_id in ranked_events_by_arc.keys():
+                        # Find the arc title from the first event
+                        events = ranked_events_by_arc[arc_id]
+                        if events:
+                            arc_title = events[0].get('arc_title', 'Unknown Arc')
+                            queries_info.append({
+                                "query_text": f"Events related to {arc_title}",
+                                "purpose": "Search for relevant historical events",
+                                "narrative_arc_id": arc_id,
+                                "arc_title": arc_title
+                            })
+                    
+                    # Build ranking details
+                    ranking_info = ranked_events_by_arc
+                
+            except Exception as e:
+                logger.warning(f"Could not load detailed process info: {e}")
+                queries_info = []
+                ranking_info = {}
+            
+            # Build detailed response
+            recap_events = []
+            for event in result.events:
+                recap_events.append(RecapEvent(
+                    id=event.id,
+                    content=event.content,
+                    series=event.series,
+                    season=event.season,
+                    episode=event.episode,
+                    start_time=event.start_time,
+                    end_time=event.end_time,
+                    narrative_arc_id=event.narrative_arc_id,
+                    arc_title=event.arc_title,
+                    relevance_score=event.relevance_score,
+                    selected_subtitles=[],  # Will be filled from video clips
+                    debug_info={}
+                ))
+            
+            recap_clips = []
+            for clip in result.clips:
+                recap_clips.append(RecapClip(
+                    event_id=clip.event_id,
+                    file_path=clip.file_path,
+                    start_seconds=clip.start_seconds,
+                    end_seconds=clip.end_seconds,
+                    duration=clip.duration,
+                    subtitle_lines=clip.subtitle_lines,
+                    arc_title=clip.arc_title
+                ))
+            
+            response = RecapGenerationResponse(
+                video_path=result.video_path,
+                events=recap_events,
+                clips=recap_clips,
+                total_duration=result.total_duration,
+                success=True,
+                queries=queries_info,
+                ranking_details=ranking_info
+            )
+            
+            update_job(1.0, "Completed successfully")
+            job.status = "completed"
+            job.result = response
+        else:
+            job.status = "failed"
+            job.error_message = result.error_message
+            update_job(1.0, f"Failed: {result.error_message}")
+            
+    except Exception as e:
+        logger.error(f"Recap generation failed for job {job_id}: {e}")
+        job.status = "failed"
+        job.error_message = str(e)
+        job.progress = 1.0
+        job.current_step = f"Failed: {str(e)}"
+        job.updated_at = datetime.now()

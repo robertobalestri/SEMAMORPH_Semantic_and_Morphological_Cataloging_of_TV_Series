@@ -130,30 +130,43 @@ class VectorStoreService:
         timestamp_range: Optional[tuple] = None,
         min_confidence: Optional[float] = None,
         narrative_arc_ids: Optional[List[str]] = None,
-        exclude_episodes: Optional[List[tuple]] = None  # New parameter: [(season, episode), ...]
+        exclude_episodes: Optional[List[tuple]] = None,  # [(season, episode), ...]
+        excluded_event_ids: Optional[List[str]] = None  # Event IDs to exclude
     ) -> List[Dict[str, Any]]:
         """Find similar events to a query with optional temporal, quality, and narrative arc filtering."""
-        filter_criteria = {"$and": [{"doc_type": "event"}]}
+        # Build filter conditions list
+        conditions = [{"doc_type": "event"}]
+        
         if series:
-            filter_criteria["$and"].append({"series": series})
+            conditions.append({"series": series})
         if season:
-            filter_criteria["$and"].append({"season": season})
+            conditions.append({"season": season})
         if episode:
-            filter_criteria["$and"].append({"episode": episode})
+            conditions.append({"episode": episode})
         if timestamp_range:
             start_time, end_time = timestamp_range
-            filter_criteria["$and"].append({"start_timestamp": {"$gte": start_time}})
-            filter_criteria["$and"].append({"end_timestamp": {"$lte": end_time}})
+            conditions.append({"start_timestamp": {"$gte": start_time}})
+            conditions.append({"end_timestamp": {"$lte": end_time}})
         if min_confidence:
-            filter_criteria["$and"].append({"confidence_score": {"$gte": min_confidence}})
+            conditions.append({"confidence_score": {"$gte": min_confidence}})
         if narrative_arc_ids:
             # Filter by narrative arc IDs - events/progressions use 'main_arc_id', main docs use 'id'
-            filter_criteria["$and"].append({
+            conditions.append({
                 "$or": [
                     {"main_arc_id": {"$in": narrative_arc_ids}},  # For progressions and events
                     {"id": {"$in": narrative_arc_ids}}            # For main arc documents
                 ]
             })
+        
+        # Exclude specific event IDs using $nin operator
+        if excluded_event_ids:
+            conditions.append({"id": {"$nin": excluded_event_ids}})
+
+        # Build final filter - only use $and if we have multiple conditions
+        if len(conditions) == 1:
+            filter_criteria = conditions[0]
+        else:
+            filter_criteria = {"$and": conditions}
 
         try:
             # Get initial results from vector search

@@ -7,7 +7,7 @@ import json
 import sqlite3
 import logging
 import sys
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Tuple
 
 # Add the src directory to Python path to enable proper imports
 current_dir = os.path.dirname(__file__)
@@ -221,25 +221,35 @@ def parse_srt_file(srt_path: str) -> List[Dict]:
 def select_events_round_robin(ranked_events_by_arc: Dict[str, List[Any]], max_events: int = 8) -> List[Any]:
     """
     Select final events using round-robin approach to ensure arc coverage.
+    Now includes duplicate prevention by tracking selected event IDs.
     
     Args:
         ranked_events_by_arc: Dict mapping arc_id to ranked events
         max_events: Maximum number of events to select
         
     Returns:
-        List of selected events
+        List of selected events (guaranteed no duplicates)
     """
     selected_events = []
+    selected_event_ids = set()  # Track selected event IDs to prevent duplicates
     arc_ids = list(ranked_events_by_arc.keys())
     
     if not arc_ids:
         return selected_events
     
+    logger.info(f"🎯 Starting round-robin selection from {len(arc_ids)} arcs (max {max_events} events)")
+    
     # Round 1: Select one event from each arc (guaranteed coverage)
     for arc_id in arc_ids:
         events = ranked_events_by_arc[arc_id]
-        if events:
-            selected_events.append(events[0])
+        for event in events:
+            if event.id not in selected_event_ids:
+                selected_events.append(event)
+                selected_event_ids.add(event.id)
+                logger.debug(f"  Round 1: Selected event {event.id[:8]} from arc {arc_id[:8]}")
+                break
+        else:
+            logger.warning(f"  Round 1: No unique events available for arc {arc_id[:8]}")
     
     # Round 2-3: Add additional events while under limit
     round_num = 1
@@ -251,20 +261,137 @@ def select_events_round_robin(ranked_events_by_arc: Dict[str, List[Any]], max_ev
                 break
                 
             events = ranked_events_by_arc[arc_id]
-            if len(events) > round_num:
-                selected_events.append(events[round_num])
-                added_this_round += 1
+            # Find next available unique event for this arc
+            for i in range(round_num, len(events)):
+                event = events[i]
+                if event.id not in selected_event_ids:
+                    selected_events.append(event)
+                    selected_event_ids.add(event.id)
+                    added_this_round += 1
+                    logger.debug(f"  Round {round_num + 1}: Selected event {event.id[:8]} from arc {arc_id[:8]}")
+                    break
         
         if added_this_round == 0:
+            logger.info(f"  Round {round_num + 1}: No more unique events available")
             break
             
         round_num += 1
     
-    logger.info(f"Round-robin selection: {len(selected_events)} events from {len(arc_ids)} arcs")
+    logger.info(f"Round-robin selection: {len(selected_events)} unique events from {len(arc_ids)} arcs")
+    logger.info(f"Selected event IDs: {[event.id[:8] + '...' for event in selected_events]}")
     return selected_events
 
 
-def search_vector_database(queries: List[Dict[str, Any]], current_series: str = None, current_season: str = None, current_episode: str = None) -> Dict[str, List[Any]]:
+def search_and_select_unique_events(arc_queries: List[Dict[str, Any]], episode_plot: str, current_series: str = None, current_season: str = None, current_episode: str = None, vector_service=None, max_events: int = 8) -> Tuple[List[Any], Dict[str, List[Any]]]:
+    """
+    Progressive search and selection to ensure no duplicate events across arcs.
+    
+    This function iteratively:
+    1. Searches for events for each arc
+    2. Ranks events within each arc
+    3. Selects events using round-robin while tracking selected IDs
+    4. Re-searches with excluded IDs if needed to fill remaining slots
+    
+    Args:
+        arc_queries: List of query dictionaries for narrative arcs
+        episode_plot: Current episode plot for ranking
+        current_series: Current series for exclusion
+        current_season: Current season for exclusion  
+        current_episode: Current episode for exclusion
+        vector_service: Vector service instance
+        max_events: Maximum events to select
+        
+    Returns:
+        Tuple of (selected_events, ranked_events_by_arc)
+    """
+    from .llm_services import rank_events_per_arc
+    
+    selected_events = []
+    selected_event_ids = set()
+    all_ranked_events = {}  # Accumulate all ranked events for JSON spec
+    
+    logger.info(f"🔄 Starting progressive search and selection for {len(arc_queries)} arcs")
+    
+    # Phase 1: Initial search and selection
+    events_by_arc = search_vector_database(
+        arc_queries, 
+        current_series, 
+        current_season, 
+        current_episode, 
+        vector_service, 
+        excluded_event_ids=list(selected_event_ids)
+    )
+    
+    if not events_by_arc:
+        logger.warning("No events found in initial search")
+        return selected_events, all_ranked_events
+    
+    # Rank events within each arc
+    ranked_events = rank_events_per_arc(events_by_arc, episode_plot)
+    all_ranked_events.update(ranked_events)  # Keep track of all rankings
+    
+    # Select events using round-robin (now with duplicate prevention)
+    initial_selection = select_events_round_robin(ranked_events, max_events)
+    selected_events.extend(initial_selection)
+    selected_event_ids.update(event.id for event in initial_selection)
+    
+    logger.info(f"✅ Phase 1: Selected {len(selected_events)} unique events")
+    
+    # Phase 2: If we need more events and have capacity, search again with exclusions
+    attempts = 0
+    max_attempts = 2
+    
+    while len(selected_events) < max_events and attempts < max_attempts:
+        attempts += 1
+        logger.info(f"🔄 Phase {attempts + 1}: Searching for additional events (excluding {len(selected_event_ids)} IDs)")
+        
+        # Search again with current exclusions
+        additional_events_by_arc = search_vector_database(
+            arc_queries, 
+            current_series, 
+            current_season, 
+            current_episode, 
+            vector_service, 
+            excluded_event_ids=list(selected_event_ids)
+        )
+        
+        if not additional_events_by_arc:
+            logger.info(f"No additional events found in phase {attempts + 1}")
+            break
+        
+        # Rank the new events
+        additional_ranked = rank_events_per_arc(additional_events_by_arc, episode_plot)
+        
+        # Update all_ranked_events with new rankings (append to existing arc lists)
+        for arc_id, events in additional_ranked.items():
+            if arc_id in all_ranked_events:
+                # Extend existing list with new events (filter out duplicates)
+                existing_ids = {event.id for event in all_ranked_events[arc_id]}
+                new_events = [event for event in events if event.id not in existing_ids]
+                all_ranked_events[arc_id].extend(new_events)
+            else:
+                all_ranked_events[arc_id] = events
+        
+        # Select additional events to fill remaining slots
+        remaining_slots = max_events - len(selected_events)
+        additional_selection = select_events_round_robin(additional_ranked, remaining_slots)
+        
+        # Filter out any events we already have (extra safety)
+        new_events = [event for event in additional_selection if event.id not in selected_event_ids]
+        
+        if new_events:
+            selected_events.extend(new_events)
+            selected_event_ids.update(event.id for event in new_events)
+            logger.info(f"✅ Phase {attempts + 1}: Added {len(new_events)} additional unique events")
+        else:
+            logger.info(f"No new unique events found in phase {attempts + 1}")
+            break
+    
+    logger.info(f"🎉 Final selection: {len(selected_events)} unique events across {len(set(event.narrative_arc_id for event in selected_events))} arcs")
+    return selected_events, all_ranked_events
+
+
+def search_vector_database(queries: List[Dict[str, Any]], current_series: str = None, current_season: str = None, current_episode: str = None, vector_service=None, excluded_event_ids: List[str] = None) -> Dict[str, List[Any]]:
     """
     Search vector database for events matching the queries.
     
@@ -273,6 +400,8 @@ def search_vector_database(queries: List[Dict[str, Any]], current_series: str = 
         current_series: Current series for exclusion list
         current_season: Current season for exclusion list  
         current_episode: Current episode for exclusion list
+        vector_service: Optional pre-initialized vector service
+        excluded_event_ids: List of event IDs to exclude from search results
         
     Returns:
         Dictionary mapping arc_id to list of matching events
@@ -280,20 +409,46 @@ def search_vector_database(queries: List[Dict[str, Any]], current_series: str = 
     try:
         from .models import Event
         
-        # Initialize vector service using the same approach as working system
-        vector_service = VectorStoreService()
+        # Use provided vector service or initialize new one
+        if vector_service is None:
+            # Initialize vector service with proper paths
+            # Try to use the standard narrative_storage path for API context
+            try:
+                # Check if we're in API context by looking for existing services
+                base_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
+                persist_dir = os.path.join(base_path, "narrative_storage", "chroma_db")
+                
+                if os.path.exists(persist_dir):
+                    logger.info(f"🗂️ Using vector store from: {persist_dir}")
+                    vector_service = VectorStoreService(persist_directory=persist_dir)
+                else:
+                    logger.warning(f"⚠️ ChromaDB directory not found at {persist_dir}, using default")
+                    vector_service = VectorStoreService()
+            except Exception as e:
+                logger.warning(f"⚠️ Could not initialize vector service with custom path: {e}")
+                vector_service = VectorStoreService()
+        
+        # Validate vector service initialization
+        if not hasattr(vector_service, 'find_similar_events'):
+            logger.error("❌ Vector service is not properly initialized")
+            return {}
+        
         events_by_arc = {}
         
         # Build exclusion list (exclude current and future episodes)
         if current_season and current_episode:
             exclude_episodes = build_exclusion_list(current_season, current_episode)
-        elif queries:
-            exclude_episodes = build_exclusion_list('S01', 'E09')  # Default for testing
         else:
             exclude_episodes = []
         
+        # Initialize excluded_event_ids if not provided
+        if excluded_event_ids is None:
+            excluded_event_ids = []
+        
         logger.info(f"🔍 Searching vector database for {len(queries)} queries")
         logger.info(f"🚫 Excluding {len(exclude_episodes)} future episodes from search")
+        if excluded_event_ids:
+            logger.info(f"🚫 Excluding {len(excluded_event_ids)} already selected event IDs")
         
         for query in queries:
             try:
@@ -304,8 +459,14 @@ def search_vector_database(queries: List[Dict[str, Any]], current_series: str = 
                     n_results=10,  # Same as original
                     series=current_series or 'GA',
                     narrative_arc_ids=[query['narrative_arc_id']] if query.get('narrative_arc_id') else None,
-                    exclude_episodes=exclude_episodes
+                    exclude_episodes=exclude_episodes,
+                    excluded_event_ids=excluded_event_ids  # Exclude already selected events
                 )
+                
+                # Check if results is None (defensive programming)
+                if results is None:
+                    logger.warning(f"Vector search returned None for query: {query.get('query_text', '')[:30]}...")
+                    continue
                 
                 # Convert results to Event objects
                 arc_id = query['narrative_arc_id']
@@ -313,8 +474,16 @@ def search_vector_database(queries: List[Dict[str, Any]], current_series: str = 
                     events_by_arc[arc_id] = []
                 
                 for result in results:
+                    # Check if result is properly structured
+                    if not isinstance(result, dict):
+                        logger.warning(f"Invalid result format: {type(result)}")
+                        continue
+                        
                     # Extract metadata from vector search result
                     metadata = result.get('metadata', {})
+                    if not metadata:
+                        logger.warning(f"No metadata in result: {result}")
+                        continue
                     
                     # Create Event object with proper data from vector search
                     event = Event(
@@ -335,6 +504,7 @@ def search_vector_database(queries: List[Dict[str, Any]], current_series: str = 
                 
             except Exception as e:
                 logger.warning(f"Vector search failed for query {query.get('query_text', '')[:30]}...: {e}")
+                logger.debug(f"Full error details: {e}", exc_info=True)
                 continue
         
         total_events = sum(len(events) for events in events_by_arc.values())

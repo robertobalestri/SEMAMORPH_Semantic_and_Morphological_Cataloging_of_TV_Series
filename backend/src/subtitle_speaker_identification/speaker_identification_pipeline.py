@@ -47,9 +47,7 @@ class SpeakerIdentificationPipeline:
         self.face_extractor = SubtitleFaceExtractor(self.path_handler)
         self.face_embedder = SubtitleFaceEmbedder(self.path_handler)
         self.face_clustering_system = FaceClusteringSystem(self.path_handler, self.face_vector_store)
-        
-        # Initialize debug tracker
-        self.debug_tracker = SpeakerDebugTracker(self.path_handler)
+    
     
     def run_complete_pipeline(
         self,
