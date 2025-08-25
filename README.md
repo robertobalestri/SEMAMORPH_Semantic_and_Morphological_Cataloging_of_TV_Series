@@ -1,4 +1,4 @@
-# SEMAMORPH - Semantic and Morphological Cataloging of TV Series
+# "Previously On. . . ": Toward Automating Episodic Recaps through LLM-Based Semantic Narrative Analysis in Medical Drama
 
 ## Installation
 
