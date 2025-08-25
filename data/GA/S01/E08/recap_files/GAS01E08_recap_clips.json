@@ -1,0 +1,583 @@
+{
+  "series": "GA",
+  "season": "S01",
+  "episode": "E08",
+  "ranked_events_by_arc": {
+    "6ac77639-cc0d-49ed-a35b-81cfbfdb9991": [
+      {
+        "id": "110b80e7-a6d2-4c1a-8d10-b016b62bcdbe",
+        "content": "Meredith and Derek discuss the risks and complications of continuing their secret relationship at work.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E06",
+        "start_time": "00:02:54,538",
+        "end_time": "00:03:10,145",
+        "narrative_arc_id": "6ac77639-cc0d-49ed-a35b-81cfbfdb9991",
+        "arc_title": "Meredith Grey And Derek Shepherd: Secret Romance And Professional Boundaries",
+        "relevance_score": 0.6897706389427185
+      },
+      {
+        "id": "4627eb99-60cc-4350-8742-767ef19c14cf",
+        "content": "Miranda Bailey warns Derek Shepherd that any favoritism toward Meredith will have consequences for Meredith's surgical opportunities.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E07",
+        "start_time": "00:00:25,937",
+        "end_time": "00:00:47,807",
+        "narrative_arc_id": "6ac77639-cc0d-49ed-a35b-81cfbfdb9991",
+        "arc_title": "Meredith Grey And Derek Shepherd: Secret Romance And Professional Boundaries",
+        "relevance_score": 0.6019116640090942
+      },
+      {
+        "id": "42e95008-08c9-420e-ba81-ec5523b5b160",
+        "content": "Meredith confides in Cristina about her struggles with Derek and the impact on her reputation.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E06",
+        "start_time": "00:19:42,932",
+        "end_time": "00:20:01,017",
+        "narrative_arc_id": "6ac77639-cc0d-49ed-a35b-81cfbfdb9991",
+        "arc_title": "Meredith Grey And Derek Shepherd: Secret Romance And Professional Boundaries",
+        "relevance_score": 0.5476646423339844
+      }
+    ],
+    "ed5bc0bf-5654-47fb-b429-91a09dd7fb15": [
+      {
+        "id": "3cd129e0-7426-4720-bead-02f26af4920f",
+        "content": "Bailey warns Derek not to show favoritism toward Meredith and threatens to keep Meredith out of the OR if she observes any bias.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E06",
+        "start_time": "00:09:58,072",
+        "end_time": "00:10:42,076",
+        "narrative_arc_id": "ed5bc0bf-5654-47fb-b429-91a09dd7fb15",
+        "arc_title": "Miranda Bailey'S Rigorous Mentorship And The Shaping Of Surgical Interns",
+        "relevance_score": 0.7116397023200989
+      },
+      {
+        "id": "0b640f1e-8cc6-40c4-a775-9f4e9c0cf45e",
+        "content": "Bailey becomes aware of Meredith and Derek's affair and begins avoiding Meredith, signaling her disapproval and enforcing professional distance.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E06",
+        "start_time": "00:02:50,734",
+        "end_time": "00:02:52,435",
+        "narrative_arc_id": "ed5bc0bf-5654-47fb-b429-91a09dd7fb15",
+        "arc_title": "Miranda Bailey'S Rigorous Mentorship And The Shaping Of Surgical Interns",
+        "relevance_score": 0.6050646305084229
+      },
+      {
+        "id": "78e2da58-4d48-443f-9ba4-9c544dacd961",
+        "content": "Dr. Bailey participates in the decision to place Meredith on probation, reinforcing the consequences of failing to follow protocol while acknowledging the importance of honesty and learning from mistakes.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E05",
+        "start_time": "00:39:27,744",
+        "end_time": "00:39:36,922",
+        "narrative_arc_id": "ed5bc0bf-5654-47fb-b429-91a09dd7fb15",
+        "arc_title": "Miranda Bailey'S Rigorous Mentorship And The Shaping Of Surgical Interns",
+        "relevance_score": 0.5314640998840332
+      }
+    ],
+    "3a745869-d4d0-442f-a92d-c2e7adb32fad": [
+      {
+        "id": "089891ae-d6da-4650-bfa5-c7555d4bf073",
+        "content": "Meredith and Derek maintain secrecy about their romantic relationship due to professional boundaries.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E05",
+        "start_time": "00:34:44,614",
+        "end_time": "00:35:27,282",
+        "narrative_arc_id": "3a745869-d4d0-442f-a92d-c2e7adb32fad",
+        "arc_title": "Power Dynamics, Professional Boundaries, And Ethical Dilemmas At Seattle Grace",
+        "relevance_score": 0.528762936592102
+      },
+      {
+        "id": "e1fdbf8e-867b-435a-b393-cf01ca5b14d5",
+        "content": "George O'Malley panics and makes a mistake during surgery, leading Dr. Burke to take over and humiliating George in front of his peers.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E01",
+        "start_time": "00:13:05,325",
+        "end_time": "00:14:47,557",
+        "narrative_arc_id": "3a745869-d4d0-442f-a92d-c2e7adb32fad",
+        "arc_title": "Power Dynamics, Professional Boundaries, And Ethical Dilemmas At Seattle Grace",
+        "relevance_score": 0.5543415546417236
+      },
+      {
+        "id": "900ee65c-65ff-4927-ac02-aa794e88f71b",
+        "content": "The interns nickname George '007' after his surgical error, reinforcing the impact of peer judgment on professional reputation.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E01",
+        "start_time": "00:14:56,190",
+        "end_time": "00:15:31,312",
+        "narrative_arc_id": "3a745869-d4d0-442f-a92d-c2e7adb32fad",
+        "arc_title": "Power Dynamics, Professional Boundaries, And Ethical Dilemmas At Seattle Grace",
+        "relevance_score": 0.5052324533462524
+      }
+    ],
+    "846796cb-d556-4e39-b0c8-d4a0e8b9e96a": [
+      {
+        "id": "662ddaba-67ac-4759-8bde-ad80a946dc54",
+        "content": "Meredith accidentally injures Mrs. Patterson's heart during surgery and struggles with whether to confess her mistake.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E05",
+        "start_time": "00:01:34,381",
+        "end_time": "00:05:04,598",
+        "narrative_arc_id": "846796cb-d556-4e39-b0c8-d4a0e8b9e96a",
+        "arc_title": "Ethical Dilemmas And Moral Growth In Surgical Training",
+        "relevance_score": 0.6903682947158813
+      },
+      {
+        "id": "49f5d6e5-99dd-4097-b1b3-2861ca957559",
+        "content": "Izzie stands up to Dr. Victor in surgery, insisting on a nerve-sparing approach for Mr. Humphrey as per his wishes, and Dr. Bailey supports her advocacy.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E04",
+        "start_time": "00:39:02,568",
+        "end_time": "00:39:56,217",
+        "narrative_arc_id": "846796cb-d556-4e39-b0c8-d4a0e8b9e96a",
+        "arc_title": "Ethical Dilemmas And Moral Growth In Surgical Training",
+        "relevance_score": 0.640091061592102
+      },
+      {
+        "id": "d09e68df-6740-4e47-9d43-9ea30ebaef2f",
+        "content": "Bailey reprimands the interns for their lack of professionalism and bans Izzie from the OR for the week as a consequence of the CT scan incident.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E06",
+        "start_time": "00:17:25,939",
+        "end_time": "00:17:41,738",
+        "narrative_arc_id": "846796cb-d556-4e39-b0c8-d4a0e8b9e96a",
+        "arc_title": "Ethical Dilemmas And Moral Growth In Surgical Training",
+        "relevance_score": 0.4384530782699585
+      }
+    ],
+    "f673f72a-ba99-48f6-98c7-e70d706b4e72": [
+      {
+        "id": "7f018c20-1a62-4610-8644-b087f284e16a",
+        "content": "The roommates debate setting rules about nudity and boundaries.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E04",
+        "start_time": "00:05:29,514",
+        "end_time": "00:05:47,516",
+        "narrative_arc_id": "f673f72a-ba99-48f6-98c7-e70d706b4e72",
+        "arc_title": "The Roommates: Navigating Intimacy, Boundaries, And Growing Up",
+        "relevance_score": 0.46994686126708984
+      },
+      {
+        "id": "2057f7e3-84b6-4413-ab51-723cb0d49899",
+        "content": "Izzie misses the party due to work obligations, leading to conflict with her boyfriend and highlighting the impact of their jobs on home life.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E05",
+        "start_time": "00:32:01,942",
+        "end_time": "00:33:26,738",
+        "narrative_arc_id": "f673f72a-ba99-48f6-98c7-e70d706b4e72",
+        "arc_title": "The Roommates: Navigating Intimacy, Boundaries, And Growing Up",
+        "relevance_score": 0.4696851372718811
+      },
+      {
+        "id": "3963e6dc-3b88-4e28-88e2-93b006b355e1",
+        "content": "The roommates support each other through personal and professional crises, such as worrying about Meredith's future in the program.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E05",
+        "start_time": "00:36:11,286",
+        "end_time": "00:36:50,405",
+        "narrative_arc_id": "f673f72a-ba99-48f6-98c7-e70d706b4e72",
+        "arc_title": "The Roommates: Navigating Intimacy, Boundaries, And Growing Up",
+        "relevance_score": 0.49731385707855225
+      }
+    ],
+    "996ec07a-df9e-4d33-bd43-956cb88b01fd": [
+      {
+        "id": "d6b8cc14-1ab6-40aa-9ec9-a5ec69f3f271",
+        "content": "Cristina, exhausted after surgery, confronts Burke about their undefined relationship and questions whether he wants to complicate things further.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E06",
+        "start_time": "00:39:56,889",
+        "end_time": "00:40:29,614",
+        "narrative_arc_id": "996ec07a-df9e-4d33-bd43-956cb88b01fd",
+        "arc_title": "Cristina Yang And Preston Burke: Ambiguous Romance And Professional Ambition",
+        "relevance_score": 0.5580921173095703
+      },
+      {
+        "id": "17d21223-ee48-4d5a-910e-8a4531047401",
+        "content": "Cristina and Burke exchange glances and subtle interactions in the OR while maintaining secrecy.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E06",
+        "start_time": "00:28:28,737",
+        "end_time": "00:29:03,153",
+        "narrative_arc_id": "996ec07a-df9e-4d33-bd43-956cb88b01fd",
+        "arc_title": "Cristina Yang And Preston Burke: Ambiguous Romance And Professional Ambition",
+        "relevance_score": 0.51186203956604
+      },
+      {
+        "id": "d6b8cc14-1ab6-40aa-9ec9-a5ec69f3f271",
+        "content": "Cristina, exhausted after surgery, confronts Burke about their undefined relationship and questions whether he wants to complicate things further.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E06",
+        "start_time": "00:39:56,889",
+        "end_time": "00:40:29,614",
+        "narrative_arc_id": "996ec07a-df9e-4d33-bd43-956cb88b01fd",
+        "arc_title": "Cristina Yang And Preston Burke: Ambiguous Romance And Professional Ambition",
+        "relevance_score": 0.517331600189209
+      }
+    ]
+  },
+  "selected_events": [
+    {
+      "event_id": "110b80e7-a6d2-4c1a-8d10-b016b62bcdbe",
+      "arc_title": "Meredith Grey And Derek Shepherd: Secret Romance And Professional Boundaries",
+      "narrative_arc_id": "6ac77639-cc0d-49ed-a35b-81cfbfdb9991",
+      "source_episode": "GAS01E06",
+      "start_time": "00:02:55,210",
+      "end_time": "00:03:02,858",
+      "content": "Meredith and Derek discuss the risks and complications of continuing their secret relationship at work.",
+      "selected_subtitles": [
+        "Dr. Derek Shepherd: If I was a better guy, I'd walk away.",
+        "Dr. Meredith Gray: Yes, you would.",
+        "Dr. Derek Shepherd: Do you want me to be a better guy?",
+        "Dr. Meredith Gray: Yes."
+      ],
+      "debug_info": {
+        "event_used": "110b80e7-a6d2-4c1a-8d10-b016b62bcdbe",
+        "event_timespan": "00:02:54,538 - 00:03:10,145",
+        "subtitles_sent_to_llm": [
+          "0: [00:02:55,210 - 00:02:57,170] Dr. Derek Shepherd: If I was a better guy, I'd walk away.",
+          "1: [00:02:57,352 - 00:02:57,831] Dr. Meredith Gray: Yes, you would.",
+          "2: [00:02:57,853 - 00:03:01,574] Dr. Derek Shepherd: Do you want me to be a better guy?",
+          "3: [00:03:02,417 - 00:03:02,858] Dr. Meredith Gray: Yes.",
+          "4: [00:03:05,680 - 00:03:05,901] Dr. Meredith Gray: No.",
+          "5: [00:03:08,323 - 00:03:10,145] Dr. Meredith Gray: Crap."
+        ],
+        "llm_response": "0,1,2,3",
+        "selected_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "duration_seconds": 7.6,
+        "status": "SUCCESS - Used event 110b80e7-a6d2-4c1a-8d10-b016b62bcdbe for original event 110b80e7-a6d2-4c1a-8d10-b016b62bcdbe",
+        "original_event_timespan": "00:02:54,538 - 00:03:10,145",
+        "actual_dialogue_timespan": "00:02:55,210 - 00:03:02,858",
+        "source_event_used": "110b80e7-a6d2-4c1a-8d10-b016b62bcdbe"
+      }
+    },
+    {
+      "event_id": "3cd129e0-7426-4720-bead-02f26af4920f",
+      "arc_title": "Miranda Bailey'S Rigorous Mentorship And The Shaping Of Surgical Interns",
+      "narrative_arc_id": "ed5bc0bf-5654-47fb-b429-91a09dd7fb15",
+      "source_episode": "GAS01E06",
+      "start_time": "00:39:27,744",
+      "end_time": "00:39:36,922",
+      "content": "Bailey warns Derek not to show favoritism toward Meredith and threatens to keep Meredith out of the OR if she observes any bias.",
+      "selected_subtitles": [
+        "Cristina Yang / Dr. Alex Karev (PVM): Meredith, you OK?",
+        "Dr. Meredith Gray: Yeah, one month probation.",
+        "Cristina Yang / Dr. Alex Karev (PVM): Good.",
+        "Izzie Stevens / Dr. Alex Karev OR Dr. Meredith Gray (PVM): That's good.",
+        "George O'Malley / Dr. Meredith Gray (PVM): Yeah.",
+        "Dr. Meredith Gray: Burke saved my ass in there.",
+        "Miranda Bailey / Dr. Meredith Gray OR Mrs. Drake (PVM): Don't you all have something better to do?",
+        "Miranda Bailey / Mrs. Drake (PVM): Come on, people, move."
+      ],
+      "debug_info": {
+        "event_used": "78e2da58-4d48-443f-9ba4-9c544dacd961",
+        "event_timespan": "00:39:27,744 - 00:39:36,922",
+        "subtitles_sent_to_llm": [
+          "0: [00:39:27,744 - 00:39:28,947] Cristina Yang / Dr. Alex Karev (PVM): Meredith, you OK?",
+          "1: [00:39:29,088 - 00:39:30,469] Dr. Meredith Gray: Yeah, one month probation.",
+          "2: [00:39:30,871 - 00:39:31,391] Cristina Yang / Dr. Alex Karev (PVM): Good.",
+          "3: [00:39:31,411 - 00:39:31,773] Izzie Stevens / Dr. Alex Karev OR Dr. Meredith Gray (PVM): That's good.",
+          "4: [00:39:31,793 - 00:39:32,012] George O'Malley / Dr. Meredith Gray (PVM): Yeah.",
+          "5: [00:39:32,672 - 00:39:34,438] Dr. Meredith Gray: Burke saved my ass in there.",
+          "6: [00:39:34,498 - 00:39:35,960] Miranda Bailey / Dr. Meredith Gray OR Mrs. Drake (PVM): Don't you all have something better to do?",
+          "7: [00:39:36,001 - 00:39:36,922] Miranda Bailey / Mrs. Drake (PVM): Come on, people, move."
+        ],
+        "llm_response": "0,1,2,3,4,5,6,7",
+        "selected_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "duration_seconds": 9.2,
+        "status": "SUCCESS - Used event 78e2da58-4d48-443f-9ba4-9c544dacd961 for original event 3cd129e0-7426-4720-bead-02f26af4920f",
+        "original_event_timespan": "00:09:58,072 - 00:10:42,076",
+        "actual_dialogue_timespan": "00:39:27,744 - 00:39:36,922",
+        "source_event_used": "78e2da58-4d48-443f-9ba4-9c544dacd961"
+      }
+    },
+    {
+      "event_id": "089891ae-d6da-4650-bfa5-c7555d4bf073",
+      "arc_title": "Power Dynamics, Professional Boundaries, And Ethical Dilemmas At Seattle Grace",
+      "narrative_arc_id": "3a745869-d4d0-442f-a92d-c2e7adb32fad",
+      "source_episode": "GAS01E05",
+      "start_time": "00:35:19,010",
+      "end_time": "00:35:27,282",
+      "content": "Meredith and Derek maintain secrecy about their romantic relationship due to professional boundaries.",
+      "selected_subtitles": [
+        "Derek Shepherd / Dr. Meredith Gray OR Mr. Jerry Frost (PVM): You should probably sneak inside, though.",
+        "Meredith Grey / Dr. Meredith Gray (PVM): We did enough sneaking for the night.",
+        "Derek Shepherd / Dr. Meredith Gray OR Alex (PVM): It was good sneaking, but enough sneaking.",
+        "Meredith Grey / Alex (PVM): Yeah, I say we're pretty good sneakers."
+      ],
+      "debug_info": {
+        "event_used": "089891ae-d6da-4650-bfa5-c7555d4bf073",
+        "event_timespan": "00:34:44,614 - 00:35:27,282",
+        "subtitles_sent_to_llm": [
+          "0: [00:34:44,614 - 00:34:46,257] Derek Shepherd / Dr. Alex Karev OR Mr. Jerry Frost (PVM): So you blew me off for a bottle of tequila.",
+          "1: [00:34:47,099 - 00:34:48,001] Meredith Grey / Dr. Alex Karev (PVM): Tequila's no good for you.",
+          "2: [00:34:48,621 - 00:34:50,143] Derek Shepherd / Dr. Alex Karev (PVM): Doesn't call, doesn't write.",
+          "3: [00:34:50,164 - 00:34:52,027] Meredith Grey / Dr. Alex Karev (PVM): It's not nearly as much fun to wake up to.",
+          "4: [00:34:56,159 - 00:35:14,463] Dr. Meredith Gray: Take me for a ride, Derek.",
+          "5: [00:35:14,483 - 00:35:17,608] Derek Shepherd / Mr. Jerry Frost (PVM): You know, it sounds like the party's winding down.",
+          "6: [00:35:17,628 - 00:35:17,806] Meredith Grey / Dr. Meredith Gray (PVM): Yeah.",
+          "7: [00:35:17,827 - 00:35:18,329] Derek Shepherd / Mr. Jerry Frost (PVM): Listen to me.",
+          "8: [00:35:18,527 - 00:35:18,909] Meredith Grey / Mr. Jerry Frost (PVM): What?",
+          "9: [00:35:19,010 - 00:35:20,731] Derek Shepherd / Dr. Meredith Gray OR Mr. Jerry Frost (PVM): You should probably sneak inside, though.",
+          "10: [00:35:22,112 - 00:35:24,117] Meredith Grey / Dr. Meredith Gray (PVM): We did enough sneaking for the night.",
+          "11: [00:35:24,137 - 00:35:26,000] Derek Shepherd / Dr. Meredith Gray OR Alex (PVM): It was good sneaking, but enough sneaking.",
+          "12: [00:35:26,061 - 00:35:27,282] Meredith Grey / Alex (PVM): Yeah, I say we're pretty good sneakers."
+        ],
+        "llm_response": "9,10,11,12",
+        "selected_indices": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "duration_seconds": 8.3,
+        "status": "SUCCESS - Used event 089891ae-d6da-4650-bfa5-c7555d4bf073 for original event 089891ae-d6da-4650-bfa5-c7555d4bf073",
+        "original_event_timespan": "00:34:44,614 - 00:35:27,282",
+        "actual_dialogue_timespan": "00:35:19,010 - 00:35:27,282",
+        "source_event_used": "089891ae-d6da-4650-bfa5-c7555d4bf073"
+      }
+    },
+    {
+      "event_id": "662ddaba-67ac-4759-8bde-ad80a946dc54",
+      "arc_title": "Ethical Dilemmas And Moral Growth In Surgical Training",
+      "narrative_arc_id": "846796cb-d556-4e39-b0c8-d4a0e8b9e96a",
+      "source_episode": "GAS01E05",
+      "start_time": "00:17:34,509",
+      "end_time": "00:17:41,718",
+      "content": "Meredith accidentally injures Mrs. Patterson's heart during surgery and struggles with whether to confess her mistake.",
+      "selected_subtitles": [
+        "Izzie Stevens / Dr. Meredith Gray (PVM): I didn't realize she could hear me.",
+        "Miranda Bailey / Dr. Meredith Gray (PVM): Well, now you won't realize your chance to scrub in.",
+        "Miranda Bailey / Annie Connors OR Dr. Meredith Gray (PVM): You're banned from the OR, mine or anyone else's, all week."
+      ],
+      "debug_info": {
+        "event_used": "d09e68df-6740-4e47-9d43-9ea30ebaef2f",
+        "event_timespan": "00:17:25,939 - 00:17:41,738",
+        "subtitles_sent_to_llm": [
+          "0: [00:17:25,939 - 00:17:30,525] Miranda Bailey / Izzie Stevens OR Annie Connors OR Dr. Meredith Gray (PVM): If anything goes wrong, anything, you are 60% more likely to be sued if you've offended the patient.",
+          "1: [00:17:30,943 - 00:17:31,346] George O'Malley / Dr. Meredith Gray (PVM): 60%.",
+          "2: [00:17:31,404 - 00:17:32,645] Izzie Stevens / Annie Connors OR Dr. Meredith Gray (PVM): I never would have said that stuff.",
+          "3: [00:17:33,228 - 00:17:34,347] George O'Malley / Dr. Meredith Gray (PVM): The mic shouldn't have been on.",
+          "4: [00:17:34,509 - 00:17:35,711] Izzie Stevens / Dr. Meredith Gray (PVM): I didn't realize she could hear me.",
+          "5: [00:17:36,372 - 00:17:38,252] Miranda Bailey / Dr. Meredith Gray (PVM): Well, now you won't realize your chance to scrub in.",
+          "6: [00:17:38,615 - 00:17:41,718] Miranda Bailey / Annie Connors OR Dr. Meredith Gray (PVM): You're banned from the OR, mine or anyone else's, all week.",
+          "7: [00:17:41,738 - 00:17:42,700] Cristina Yang / Dr. Meredith Gray (PVM): I got the history on the tumor."
+        ],
+        "llm_response": "4,5,6",
+        "selected_indices": [
+          4,
+          5,
+          6
+        ],
+        "duration_seconds": 7.2,
+        "status": "SUCCESS - Used event d09e68df-6740-4e47-9d43-9ea30ebaef2f for original event 662ddaba-67ac-4759-8bde-ad80a946dc54",
+        "original_event_timespan": "00:01:34,381 - 00:05:04,598",
+        "actual_dialogue_timespan": "00:17:34,509 - 00:17:41,718",
+        "source_event_used": "d09e68df-6740-4e47-9d43-9ea30ebaef2f"
+      }
+    },
+    {
+      "event_id": "7f018c20-1a62-4610-8644-b087f284e16a",
+      "arc_title": "The Roommates: Navigating Intimacy, Boundaries, And Growing Up",
+      "narrative_arc_id": "f673f72a-ba99-48f6-98c7-e70d706b4e72",
+      "source_episode": "GAS01E04",
+      "start_time": "00:32:10,815",
+      "end_time": "00:32:17,846",
+      "content": "The roommates debate setting rules about nudity and boundaries.",
+      "selected_subtitles": [
+        "Dr. Izzie Stevens: I'm sorry I didn't have a chance to call.",
+        "Dr. Izzie Stevens: My patient needed brain surgery.",
+        "Dr. Izzie Stevens: Like we were inside his brain.",
+        "Hank / Dr. Izzie Stevens (PVM): How cool is that?"
+      ],
+      "debug_info": {
+        "event_used": "2057f7e3-84b6-4413-ab51-723cb0d49899",
+        "event_timespan": "00:32:01,942 - 00:33:26,738",
+        "subtitles_sent_to_llm": [
+          "0: [00:32:01,942 - 00:32:03,943] Izzie / Dr. Izzie Stevens (PVM): Hey.",
+          "1: [00:32:03,963 - 00:32:04,045] Hank / Dr. Izzie Stevens (PVM): Hey.",
+          "2: [00:32:04,065 - 00:32:05,086] Hank / Dr. Izzie Stevens (PVM): What are you doing here?",
+          "3: [00:32:10,815 - 00:32:13,479] Dr. Izzie Stevens: I'm sorry I didn't have a chance to call.",
+          "4: [00:32:13,499 - 00:32:15,602] Dr. Izzie Stevens: My patient needed brain surgery.",
+          "5: [00:32:15,622 - 00:32:17,064] Dr. Izzie Stevens: Like we were inside his brain.",
+          "6: [00:32:17,084 - 00:32:17,846] Hank / Dr. Izzie Stevens (PVM): How cool is that?",
+          "7: [00:32:22,731 - 00:32:22,951] Addison Montgomery / Dr. Izzie Stevens (PVM): Oh, my God.",
+          "8: [00:32:22,971 - 00:32:25,497] Hank / Dr. Meredith Gray OR Dr. Izzie Stevens (PVM): There's a party at your house.",
+          "9: [00:32:25,695 - 00:32:27,077] Addison Montgomery / Dr. Izzie Stevens (PVM): Yeah, did you get a chance to hang out?",
+          "10: [00:32:27,318 - 00:32:28,961] Addison Montgomery / Dr. Izzie Stevens (PVM): Why don't you meet some of the people I work with?",
+          "11: [00:32:29,868 - 00:32:32,093] Hank / Dr. Meredith Gray (PVM): I don't care about the people you work with.",
+          "12: [00:32:32,113 - 00:32:32,873] Hank / Dr. Meredith Gray (PVM): I just want to see you.",
+          "13: [00:32:34,653 - 00:32:34,714] Addison Montgomery / Dr. Izzie Stevens (PVM): Hm.",
+          "14: [00:32:34,736 - 00:32:37,857] Addison Montgomery / Dr. Izzie Stevens OR Hank (PVM): Well, you didn't mind meeting the people I worked with when they were models.",
+          "15: [00:32:37,877 - 00:32:41,722] Hank / Hank (PVM): Yeah, well, when they were models, you actually showed up to your own parties.",
+          "16: [00:32:43,704 - 00:32:44,006] Addison Montgomery / Dr. Meredith Gray (PVM): Yeah.",
+          "17: [00:32:48,990 - 00:32:51,673] Dr. Addison Shepherd: This is my life now, Hank.",
+          "18: [00:32:51,693 - 00:32:52,855] Dr. Addison Shepherd: I work 100-hour weeks.",
+          "19: [00:32:53,737 - 00:32:57,902] Dr. Addison Shepherd: I can't always show up to my own parties on time, and my patients have to come first.",
+          "20: [00:32:58,102 - 00:33:03,028] Hank: Yeah, I just flew across the entire country, and there's a hundred people at your house.",
+          "21: [00:33:03,048 - 00:33:04,809] Dr. Addison Shepherd: Yeah, a hundred people will understand what I do all day.",
+          "22: [00:33:05,652 - 00:33:07,094] Dr. Addison Shepherd: I shouldn't have to apologize for that.",
+          "23: [00:33:07,933 - 00:33:16,846] Hank: No, you shouldn't.",
+          "24: [00:33:16,865 - 00:33:19,650] Dr. Addison Shepherd: Look, let's just go by the party for a little while.",
+          "25: [00:33:19,710 - 00:33:25,317] Dr. Addison Shepherd: You'll really like everyone once you get a chance to know them.",
+          "26: [00:33:25,336 - 00:33:26,218] Hank: Let's just go.",
+          "27: [00:33:26,738 - 00:33:31,462] Dr. Addison Shepherd: Hank, come on."
+        ],
+        "llm_response": "3,4,5,6",
+        "selected_indices": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "duration_seconds": 7.0,
+        "status": "SUCCESS - Used event 2057f7e3-84b6-4413-ab51-723cb0d49899 for original event 7f018c20-1a62-4610-8644-b087f284e16a",
+        "original_event_timespan": "00:05:29,514 - 00:05:47,516",
+        "actual_dialogue_timespan": "00:32:10,815 - 00:32:17,846",
+        "source_event_used": "2057f7e3-84b6-4413-ab51-723cb0d49899"
+      }
+    },
+    {
+      "event_id": "d6b8cc14-1ab6-40aa-9ec9-a5ec69f3f271",
+      "arc_title": "Cristina Yang And Preston Burke: Ambiguous Romance And Professional Ambition",
+      "narrative_arc_id": "996ec07a-df9e-4d33-bd43-956cb88b01fd",
+      "source_episode": "GAS01E06",
+      "start_time": "00:39:56,889",
+      "end_time": "00:40:05,717",
+      "content": "Cristina, exhausted after surgery, confronts Burke about their undefined relationship and questions whether he wants to complicate things further.",
+      "selected_subtitles": [
+        "Cristina Yang / Dr. Meredith Gray (PVM): I have been holding up 50 pounds of tumor for the past 12 hours.",
+        "Cristina Yang / Dr. Meredith Gray (PVM): My back's gonna need traction, and the patient died anyways.",
+        "Cristina Yang / Dr. Meredith Gray (PVM): You think you did me a favor?"
+      ],
+      "debug_info": {
+        "event_used": "d6b8cc14-1ab6-40aa-9ec9-a5ec69f3f271",
+        "event_timespan": "00:39:56,889 - 00:40:29,614",
+        "subtitles_sent_to_llm": [
+          "0: [00:39:56,889 - 00:40:00,271] Cristina Yang / Dr. Meredith Gray (PVM): I have been holding up 50 pounds of tumor for the past 12 hours.",
+          "1: [00:40:00,291 - 00:40:03,715] Cristina Yang / Dr. Meredith Gray (PVM): My back's gonna need traction, and the patient died anyways.",
+          "2: [00:40:04,155 - 00:40:05,717] Cristina Yang / Dr. Meredith Gray (PVM): You think you did me a favor?",
+          "3: [00:40:07,619 - 00:40:11,302] Preston Burke / Annie Connors OR Dr. Meredith Gray (PVM): Look, I'm just... What is this?",
+          "4: [00:40:13,577 - 00:40:16,141] Preston Burke / Annie Connors (PVM): that we're doing here.",
+          "5: [00:40:16,161 - 00:40:21,065] Cristina Yang / Annie Connors OR Dr. Meredith Gray (PVM): What is it?",
+          "6: [00:40:21,085 - 00:40:22,148] Preston Burke / Dr. Meredith Gray (PVM): You need a definition?",
+          "7: [00:40:22,168 - 00:40:29,614] Cristina Yang / Dr. Meredith Gray OR Dr. Meredith Gray (PVM): You really want to be that guy."
+        ],
+        "llm_response": "0,1,2",
+        "selected_indices": [
+          0,
+          1,
+          2
+        ],
+        "duration_seconds": 8.8,
+        "status": "SUCCESS - Used event d6b8cc14-1ab6-40aa-9ec9-a5ec69f3f271 for original event d6b8cc14-1ab6-40aa-9ec9-a5ec69f3f271",
+        "original_event_timespan": "00:39:56,889 - 00:40:29,614",
+        "actual_dialogue_timespan": "00:39:56,889 - 00:40:05,717",
+        "source_event_used": "d6b8cc14-1ab6-40aa-9ec9-a5ec69f3f271"
+      }
+    },
+    {
+      "event_id": "4627eb99-60cc-4350-8742-767ef19c14cf",
+      "arc_title": "Meredith Grey And Derek Shepherd: Secret Romance And Professional Boundaries",
+      "narrative_arc_id": "6ac77639-cc0d-49ed-a35b-81cfbfdb9991",
+      "source_episode": "GAS01E07",
+      "start_time": "00:00:37,713",
+      "end_time": "00:00:41,378",
+      "content": "Miranda Bailey warns Derek Shepherd that any favoritism toward Meredith will have consequences for Meredith's surgical opportunities.",
+      "selected_subtitles": [
+        "Meredith Grey / Dr. Miranda Bailey OR Digby Owens (PVM): What is this that we're doing here?",
+        "Derek Shepherd / Dr. Miranda Bailey (PVM): You need a definition?"
+      ],
+      "debug_info": {
+        "event_used": "4627eb99-60cc-4350-8742-767ef19c14cf",
+        "event_timespan": "00:00:25,937 - 00:00:47,807",
+        "subtitles_sent_to_llm": [
+          "0: [00:00:25,937 - 00:00:37,332] Miranda Bailey / Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): And the longer this little fling goes on, the more favors you get over the others who are fighting to the nail just to make it through this program when those people start finding out what's going on.",
+          "1: [00:00:37,713 - 00:00:39,576] Meredith Grey / Dr. Miranda Bailey OR Digby Owens (PVM): What is this that we're doing here?",
+          "2: [00:00:40,295 - 00:00:41,378] Derek Shepherd / Dr. Miranda Bailey (PVM): You need a definition?",
+          "3: [00:00:41,417 - 00:00:47,807] Dr. Miranda Bailey: The next time I see you favoring Meredith Gray in any way, I'll make sure she doesn't see the inside of an OR for a month."
+        ],
+        "llm_response": "1,2",
+        "selected_indices": [
+          1,
+          2
+        ],
+        "duration_seconds": 3.7,
+        "status": "SUCCESS - Used event 4627eb99-60cc-4350-8742-767ef19c14cf for original event 4627eb99-60cc-4350-8742-767ef19c14cf",
+        "original_event_timespan": "00:00:25,937 - 00:00:47,807",
+        "actual_dialogue_timespan": "00:00:37,713 - 00:00:41,378",
+        "source_event_used": "4627eb99-60cc-4350-8742-767ef19c14cf"
+      }
+    },
+    {
+      "event_id": "0b640f1e-8cc6-40c4-a775-9f4e9c0cf45e",
+      "arc_title": "Miranda Bailey'S Rigorous Mentorship And The Shaping Of Surgical Interns",
+      "narrative_arc_id": "ed5bc0bf-5654-47fb-b429-91a09dd7fb15",
+      "source_episode": "GAS01E06",
+      "start_time": "00:02:50,734",
+      "end_time": "00:02:52,435",
+      "content": "Bailey becomes aware of Meredith and Derek's affair and begins avoiding Meredith, signaling her disapproval and enforcing professional distance.",
+      "selected_subtitles": [],
+      "debug_info": {
+        "subtitles": [
+          "0: [00:09:58,072 - 00:09:58,230] Dr. Derek Shepherd: Miranda.",
+          "1: [00:09:58,250 - 00:09:58,653] Dr. Bailey / Annie Connors (PVM): Excuse me.",
+          "2: [00:09:58,793 - 00:10:06,686] Dr. Derek Shepherd: Well, that's your name, right?",
+          "3: [00:10:07,187 - 00:10:11,594] Dr. Derek Shepherd: It's on your jacket.",
+          "4: [00:10:11,653 - 00:10:12,816] Dr. Derek Shepherd: Fine, I'll just call you Bailey then.",
+          "5: [00:10:12,980 - 00:10:18,168] Dr. Miranda Bailey: You think you're charming, and that talented, neurotic, overly-moosed-hair sort of way good for you.",
+          "6: [00:10:18,687 - 00:10:22,273] Dr. Miranda Bailey: But if you think I'm gonna stand back and watch while you favor her... I don't favor her.",
+          "7: [00:10:22,351 - 00:10:22,812] Dr. Derek Shepherd: She's good.",
+          "8: [00:10:23,495 - 00:10:24,296] Dr. Miranda Bailey: She is.",
+          "9: [00:10:24,634 - 00:10:26,918] Dr. Bailey / Dr. Derek Shepherd (PVM): You know, can I point out that technically, I'm your boss.",
+          "10: [00:10:27,259 - 00:10:28,158] Dr. Shepherd / Dr. Meredith Gray (PVM): You don't scare me.",
+          "11: [00:10:28,899 - 00:10:33,086] Dr. Bailey / Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): Look, I'm not gonna advertise your extracurricular activities with my intern.",
+          "12: [00:10:33,105 - 00:10:38,731] Dr. Bailey / Dr. Miranda Bailey (PVM): However, the next time I see you favoring Meredith Grey in any way, I'll make sure she doesn't see the inside of an O.R.",
+          "13: [00:10:38,831 - 00:10:39,374] Dr. Bailey / Dr. Miranda Bailey (PVM): for a month.",
+          "14: [00:10:40,553 - 00:10:42,076] Dr. Bailey / Dr. Miranda Bailey (PVM): Just for the sake of balance."
+        ],
+        "event_used": "3cd129e0-7426-4720-bead-02f26af4920f",
+        "event_timespan": "00:09:58,072 - 00:10:42,076",
+        "original_event": "0b640f1e-8cc6-40c4-a775-9f4e9c0cf45e",
+        "llm_response": "5,6,7,8",
+        "status": "FAILED after 3 attempts",
+        "subtitles_in_original_event": [
+          "Dr. Meredith Gray: Bailey isn't speaking to me anymore."
+        ],
+        "original_event_timespan": "00:02:50,734 - 00:02:52,435",
+        "actual_dialogue_timespan": "00:02:50,734 - 00:02:52,435",
+        "source_event_used": "0b640f1e-8cc6-40c4-a775-9f4e9c0cf45e"
+      }
+    }
+  ]
+}

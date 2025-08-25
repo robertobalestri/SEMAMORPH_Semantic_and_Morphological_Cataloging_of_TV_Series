@@ -18,6 +18,7 @@ import { VectorStoreTabManager } from './components/vector/VectorStoreTabManager
 import { CharacterManager } from './components/character/CharacterManager';
 import { ProcessingManager } from './components/processing/ProcessingManager';
 import { EventsTabManager } from './components/events/EventsTabManager';
+import { RecapGenerator } from './components/recap/RecapGenerator';
 import { ApiClient } from './services/api/ApiClient';
 import type { NarrativeArc, Episode } from './architecture/types';
 
@@ -32,7 +33,7 @@ const App: React.FC = () => {
     const fetchSeries = async () => {
       try {
         const response = await api.request<string[]>('/available-series');
-        if (!response.error) {
+        if ('data' in response) {
           const availableSeries = response.data || [];
           setSeries(availableSeries);
           
@@ -60,10 +61,10 @@ const App: React.FC = () => {
             api.request<NarrativeArc[]>(`/arcs/series/${selectedSeries}`)
           ]);
 
-          if (!episodesResponse.error) {
+          if ('data' in episodesResponse) {
             setEpisodes(episodesResponse.data);
           }
-          if (!arcsResponse.error) {
+          if ('data' in arcsResponse) {
             setArcs(arcsResponse.data);
           }
         } catch (error) {
@@ -81,7 +82,7 @@ const App: React.FC = () => {
     if (selectedSeries) {
       try {
         const response = await api.request<NarrativeArc[]>(`/arcs/series/${selectedSeries}`);
-        if (!response.error) {
+        if ('data' in response) {
           setArcs(response.data);
         }
       } catch (error) {
@@ -121,6 +122,7 @@ const App: React.FC = () => {
                   <Tab>Vector Store</Tab>
                   <Tab>Characters</Tab>
                   <Tab>Processing</Tab>
+                  <Tab>Recap Generator</Tab>
                 </TabList>
                 <TabPanels>
                   <TabPanel p={0}>
@@ -154,18 +156,25 @@ const App: React.FC = () => {
                       series={selectedSeries}
                     />
                   </TabPanel>
+                  <TabPanel p={0}>
+                    <RecapGenerator 
+                      series={selectedSeries}
+                      episodes={episodes}
+                    />
+                  </TabPanel>
                 </TabPanels>
               </Tabs>
             </Box>
           ) : (
             <Box className={styles.tabContainer}>
-              <Tabs isFitted variant="enclosed" defaultIndex={3}>
+              <Tabs isFitted variant="enclosed" defaultIndex={4}>
                 <TabList>
                   <Tab isDisabled>Narrative Arcs</Tab>
                   <Tab isDisabled>Events</Tab>
                   <Tab isDisabled>Vector Store</Tab>
                   <Tab isDisabled>Characters</Tab>
                   <Tab>Processing</Tab>
+                  <Tab isDisabled>Recap Generator</Tab>
                 </TabList>
                 <TabPanels>
                   <TabPanel p={0}>
@@ -187,6 +196,9 @@ const App: React.FC = () => {
                         You can process episodes even if no data exists in the database yet. This is where you start to populate your data.
                       </Text>
                     </Box>
+                  </TabPanel>
+                  <TabPanel p={0}>
+                    <Text>Please select a series to generate recaps.</Text>
                   </TabPanel>
                 </TabPanels>
               </Tabs>

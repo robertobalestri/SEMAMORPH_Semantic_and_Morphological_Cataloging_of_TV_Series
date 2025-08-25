@@ -36,6 +36,8 @@ def extract_video_clips(events: List[Event], key_dialogue: Dict[str, List[str]],
     """
     clips = []
     
+    logger.info(f"🎬 Starting video clip extraction for {len(events)} events")
+    
     for event in events:
         try:
             # Create PathHandler for this event's episode
@@ -58,6 +60,9 @@ def extract_video_clips(events: List[Event], key_dialogue: Dict[str, List[str]],
             end_seconds = _parse_timestamp_to_seconds(dialogue_info['end_time'])
             duration = end_seconds - start_seconds
             
+            source_event_id = dialogue_info.get('source_event_id', event.id)
+            logger.info(f"🎥 Event {event.id[:8]}... -> {dialogue_info['start_time']}-{dialogue_info['end_time']} (source: {source_event_id[:8]}...)")
+            
             # Create output directory using PathHandler
             output_dir = path_handler.get_recap_clip_dir()
             os.makedirs(output_dir, exist_ok=True)
@@ -79,12 +84,17 @@ def extract_video_clips(events: List[Event], key_dialogue: Dict[str, List[str]],
                     subtitle_lines=dialogue_info['lines'],
                     arc_title=event.arc_title
                 ))
-                logger.info(f"Extracted clip: {event.arc_title} ({duration:.1f}s)")
+                logger.info(f"✅ Extracted clip: {event.arc_title} ({duration:.1f}s)")
             
         except Exception as e:
             logger.warning(f"Failed to extract clip for event {event.id}: {e}")
     
-    logger.info(f"Successfully extracted {len(clips)} video clips")
+    logger.info(f"🎬 Video extraction summary:")
+    logger.info(f"   📊 {len(clips)} clips extracted from {len(events)} events")
+    if len(clips) < len(events):
+        skipped = len(events) - len(clips)
+        logger.info(f"   ⚠️  {skipped} events skipped (no dialogue found)")
+    
     return clips
 
 

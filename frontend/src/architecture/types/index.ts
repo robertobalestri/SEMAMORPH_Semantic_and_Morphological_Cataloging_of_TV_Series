@@ -14,3 +14,12 @@ export type { Episode } from './episode';
 export type { Character } from './character';
 
 export type { VectorStoreEntry } from './vector';
+
+export type {
+  RecapEvent,
+  RecapClip,
+  RecapQuery,
+  RecapGenerationRequest,
+  RecapGenerationResponse,
+  RecapGenerationJob
+} from './recap';

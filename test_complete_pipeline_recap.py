@@ -45,11 +45,13 @@ def test_complete_recap_pipeline():
     """Test the complete recap generation pipeline."""
     
     logger = setup_logging()
-    
+
+    episode = str(9)
+
     print("🎬 COMPLETE RECAP GENERATION PIPELINE TEST")
     print("=" * 60)
     print(f"📅 Started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"🎯 Target: GA S01 E09 (Grey's Anatomy Season 1 Episode 9)")
+    print(f"🎯 Target: GA S01 E09 (Grey's Anatomy Season 1 Episode {episode})")
     print("=" * 60)
     
     try:
@@ -75,8 +77,10 @@ def test_complete_recap_pipeline():
         # Step 3: Validate prerequisites
         print("\n📋 STEP 3: VALIDATING PREREQUISITES")
         print("-" * 37)
-        
-        series, season, episode = "GA", "S01", "E09"
+
+        #episode should be padded  like 08 09 10
+        series, season, episode = "GA", "S01", f"E{episode.zfill(2)}"
+
         validation = generator.validate_prerequisites(series, season, episode)
         
         logger.info(f"Prerequisites validation: {validation}")
