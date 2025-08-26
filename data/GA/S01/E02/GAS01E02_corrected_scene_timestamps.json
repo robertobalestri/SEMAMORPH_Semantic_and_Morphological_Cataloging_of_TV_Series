@@ -2,7 +2,7 @@
   "scenes": [
     {
       "scene_number": 1,
-      "plot_segment": "Dr. Richard Webber narrates a recap of the intense pressures and expectations facing surgical interns at Seattle Grace Hospital, warning that residency will test their limits and not everyone will succeed. Scenes highlight Dr. Meredith Grey\u2019s complicated dynamic with Dr. Derek Shepherd, referencing their one-night stand and Meredith\u2019s insistence on maintaining professional boundaries since Derek is her attending. The montage introduces Dr. Miranda Bailey assigning the new interns\u2014Meredith, Cristina Yang, Izzie Stevens, George O\u2019Malley, and Alex Karev\u2014their initial duties and making it clear they are at the bottom of the hospital hierarchy. The interns gossip about Meredith\u2019s background as the daughter of renowned surgeon Ellis Grey, and Meredith\u2019s search for roommates is mentioned, with Cristina, Izzie, and George expressing interest in moving in. The recap also touches on Meredith\u2019s strained relationship with her mother, Ellis, who is suffering from Alzheimer\u2019s and does not recognize her. The sequence ends with reminders of the personal and professional challenges the interns face as they begin their surgical careers.",
+      "plot_segment": "A narrator recaps previous events: Dr. Richard Webber addresses the new surgical interns\u2014Meredith Grey, Cristina Yang, George O\u2019Malley, and Izzie Stevens\u2014warning them that surgical residency will be grueling, and not all will make it. Meredith and Dr. Derek Shepherd awkwardly discuss their one-night stand, agreeing to keep things professional since he is her attending and she is his intern. Dr. Miranda Bailey introduces the interns to their first shift, making it clear they are at the bottom of the hospital hierarchy. The group navigates the hospital, with Cristina, George, and Izzie gossiping about Meredith\u2019s mother, Ellis Grey, a renowned surgeon. Meredith visits Ellis, who is suffering from Alzheimer\u2019s and does not recognize her, highlighting Meredith\u2019s emotional struggle. The interns share their anxieties and hopes about surviving the challenges of residency.",
       "is_recap": true,
       "start_time": "00:00:01,246",
       "end_time": "00:01:15,382",
@@ -13,18 +13,29 @@
     },
     {
       "scene_number": 2,
-      "plot_segment": "Meredith Grey narrates about the boundaries people draw in life and at work, emphasizing the need to keep a professional distance from colleagues to avoid complications. As her voice-over continues, Meredith interviews potential roommates at her house, making it clear she is selective about who she lets move in. She rejects one candidate for being too old. Izzie Stevens tries to persuade Meredith to let her move in, offering baked goods and promising to be a considerate roommate, but Meredith insists she only wants strangers as housemates. Cristina Yang also expresses interest in moving in, but Meredith remains hesitant, determined to keep her personal and professional lives separate.",
+      "plot_segment": "Dr. Meredith Grey narrates about the significance of boundaries in the hospital, reflecting on the invisible lines that separate doctors, patients, and interns. As she prepares for her first day as a surgical intern, Dr. Richard Webber addresses the new interns\u2014Meredith, Cristina Yang, George O'Malley, and Izzie Stevens\u2014warning them that their residency will be both the best and worst years of their lives, and that not all will make it through. Scenes show the interns getting ready, exchanging nervous glances and banter about Meredith\u2019s mother, Ellis Grey, and the pressures of living up to her legacy. Dr. Miranda Bailey introduces herself as their resident and makes it clear that they are at the bottom of the hospital hierarchy, setting the tone for the challenges ahead.",
       "is_recap": false,
       "start_time": "00:01:15,403",
-      "end_time": "00:02:55,377",
+      "end_time": "00:02:08,000",
       "start_seconds": 75.403,
-      "end_seconds": 175.377,
+      "end_seconds": 128.0,
       "start_subtitle_index": 29,
-      "end_subtitle_index": 70
+      "end_subtitle_index": 40
     },
     {
       "scene_number": 3,
-      "plot_segment": "In the hospital hallway, Dr. Miranda Bailey gathers the new surgical interns\u2014Meredith Grey, Cristina Yang, Izzie Stevens, and George O\u2019Malley\u2014and assigns their first tasks: George is put in charge of running the code team, Meredith is given the trauma pager, Cristina is responsible for delivering lab results, and Izzie is assigned to sutures. Izzie attempts to win Bailey\u2019s favor by offering her a homemade mocha latte, but Bailey firmly rejects the gesture and reminds all the interns that their primary job is to keep their resident happy by handling the grunt work. She makes it clear that none of them will be allowed near an operating room until she is satisfied with their performance, establishing her authority and the hierarchy they must respect.",
+      "plot_segment": "At Meredith Grey\u2019s house, Meredith interviews Izzie Stevens for a roommate position. Izzie tries to win Meredith over by offering a homemade mocha latte and promising to be quiet, clean, and pay a deposit upfront. Meredith is hesitant, explaining she prefers roommates who are strangers and won\u2019t expect interaction. As they talk, George O\u2019Malley arrives, awkwardly asking if he can move in as well, mentioning that his mother still irons his scrubs. Meredith remains reluctant about living with people she knows, but both Izzie and George try to persuade her, eager for a place to stay.",
+      "is_recap": false,
+      "start_time": "00:02:09,222",
+      "end_time": "00:02:55,377",
+      "start_seconds": 129.222,
+      "end_seconds": 175.377,
+      "start_subtitle_index": 41,
+      "end_subtitle_index": 70
+    },
+    {
+      "scene_number": 4,
+      "plot_segment": "Dr. Miranda Bailey gathers the new surgical interns\u2014Meredith Grey, Cristina Yang, George O\u2019Malley, and Izzie Stevens\u2014in the hospital hallway and assigns their first tasks for the 48-hour shift. George is put in charge of the code team, Meredith is given the trauma pager, Cristina is told to deliver lab results, and Izzie is assigned to suturing. Cristina tries to negotiate for a chance to assist in surgery by offering Dr. Bailey a mocha latte as a bribe, but Bailey firmly rejects the offer and reminds the group that their job is to keep her, their resident, happy\u2014not to perform surgeries. The interns exchange nervous glances and disperse to begin their assigned duties.",
       "is_recap": false,
       "start_time": "00:02:55,957",
       "end_time": "00:03:49,069",
@@ -34,63 +45,63 @@
       "end_subtitle_index": 96
     },
     {
-      "scene_number": 4,
-      "plot_segment": "Dr. Meredith Grey and Dr. Derek Shepherd share an awkward early morning conversation outside Seattle Grace Hospital. Derek, trying to break the tension, brings up Seattle\u2019s ferry boats, expressing his fondness for them, while Meredith, originally from New York, admits she never expected to like Seattle or its ferries. The conversation quickly turns to their one-night stand; Meredith firmly tells Derek that they cannot pursue anything further because he is her attending and she is his intern. Derek playfully challenges her boundaries, but Meredith insists on drawing a clear professional line between them. Their banter becomes lighthearted as Derek jokes about whether the boundary is imaginary or if Meredith needs to physically draw it with a marker, highlighting the unresolved tension and humor in their dynamic.",
+      "scene_number": 5,
+      "plot_segment": "Meredith Grey and Derek Shepherd walk together outside the hospital, and Derek expresses his enthusiasm for Seattle\u2019s ferry boats. Meredith, surprised, admits she\u2019s lived in Seattle for six weeks without knowing about the ferries, revealing her unfamiliarity with the city. Derek explains Seattle\u2019s unique geography and how the ferries are an essential part of local life, sharing his fondness for them. Meredith, originally from New York, confesses she hadn\u2019t planned on liking Seattle but is starting to reconsider, hinting at her growing openness to her new life and surroundings. Their conversation is tinged with underlying tension from their previous night together, as Meredith tries to maintain professional boundaries despite Derek\u2019s friendly and slightly flirtatious demeanor.",
       "is_recap": false,
       "start_time": "00:03:59,205",
-      "end_time": "00:05:04,560",
+      "end_time": "00:04:22,305",
       "start_seconds": 239.20499999999998,
-      "end_seconds": 304.56,
+      "end_seconds": 262.305,
       "start_subtitle_index": 97,
-      "end_subtitle_index": 123
-    },
-    {
-      "scene_number": 5,
-      "plot_segment": "In the emergency department, Dr. Alex Karev and Dr. Cristina Yang respond to the arrival of a 25-year-old woman named Allison, who has been brought in as a trauma case after surviving a violent rape attempt. Dr. Miranda Bailey oversees as the interns assess Allison\u2019s injuries and discuss her case. Meredith Grey, assigned to the trauma pager, joins them and examines the evidence, discovering a severed penis in a specimen jar. The team learns that Allison fought back against her attacker, biting off his penis during the assault. The rape kit comes back negative, confirming that Allison successfully defended herself. The interns react with shock and a mix of admiration for Allison\u2019s courage, while Dr. Bailey reminds them to focus on their responsibilities and maintain the chain of custody for the evidence until the police arrive.",
-      "is_recap": false,
-      "start_time": "00:05:27,322",
-      "end_time": "00:07:20,403",
-      "start_seconds": 327.322,
-      "end_seconds": 440.403,
-      "start_subtitle_index": 124,
-      "end_subtitle_index": 165
+      "end_subtitle_index": 108
     },
     {
       "scene_number": 6,
-      "plot_segment": "Dr. Preston Burke and Dr. Derek Shepherd discuss Allison\u2019s critical condition, acknowledging that her recovery will be long and uncertain if she survives her injuries. As they review her chart, Burke questions why Shepherd chose to move to Seattle, prompting Derek to reveal that Chief Richard Webber personally recruited him to join the hospital. Their exchange is brief and tense, with Burke clearly unsettled by Derek\u2019s presence and the chief\u2019s decision, before Burke abruptly ends the conversation and walks away.",
+      "plot_segment": "In the elevator, Dr. Meredith Grey and Dr. Derek Shepherd share a tense conversation about their previous night together. Meredith insists they must draw a professional boundary because Derek is her attending and she is his intern, declaring they cannot date or sleep together again. Derek playfully challenges her resolve, teasing her about the \"line\" she wants to draw and jokingly asking if she needs a marker to make it real. Meredith remains firm, emphasizing the importance of keeping their relationship strictly professional despite Derek\u2019s flirtatious banter.",
       "is_recap": false,
-      "start_time": "00:07:42,439",
-      "end_time": "00:08:19,303",
-      "start_seconds": 462.439,
-      "end_seconds": 499.303,
-      "start_subtitle_index": 166,
-      "end_subtitle_index": 176
+      "start_time": "00:04:28,653",
+      "end_time": "00:05:04,560",
+      "start_seconds": 268.653,
+      "end_seconds": 304.56,
+      "start_subtitle_index": 109,
+      "end_subtitle_index": 123
     },
     {
       "scene_number": 7,
-      "plot_segment": "Dr. Miranda Bailey gathers the interns and assigns their responsibilities for the day: George O\u2019Malley is put in charge of the code team, Meredith Grey takes the trauma pager, Cristina Yang is tasked with delivering lab results, and Izzie Stevens is assigned to sutures. Cristina, frustrated that her advanced degrees have led to running errands, vents her annoyance. Bailey pairs Alex Karev with Cristina, instructing him to shadow her for the day. Cristina and Alex immediately clash, exchanging sarcastic remarks and making it clear they dislike each other, but begrudgingly agree to work together to get through their tasks.",
+      "plot_segment": "Meredith responds to a trauma page and joins Dr. Miranda Bailey and the surgical team in the emergency room, where paramedics have brought in Allison, a 25-year-old woman who is the victim of a violent sexual assault. Meredith, Bailey, and Dr. Derek Shepherd assess Allison\u2019s extensive injuries, noting defensive wounds that indicate she fought back against her attacker. During the examination, the team discovers a severed penis in the trauma kit, realizing that Allison bit it off during the assault. Bailey instructs Meredith to maintain custody of the specimen until the police arrive, emphasizing the importance of chain of evidence. The interns, including Cristina Yang and George O'Malley, react with shock and discuss the case, recognizing Allison\u2019s resilience and the gravity of the situation.",
       "is_recap": false,
-      "start_time": "00:08:22,327",
-      "end_time": "00:09:16,655",
-      "start_seconds": 502.327,
-      "end_seconds": 556.655,
-      "start_subtitle_index": 177,
-      "end_subtitle_index": 202
+      "start_time": "00:05:27,322",
+      "end_time": "00:07:57,903",
+      "start_seconds": 327.322,
+      "end_seconds": 477.903,
+      "start_subtitle_index": 124,
+      "end_subtitle_index": 167
     },
     {
       "scene_number": 8,
-      "plot_segment": "George O\u2019Malley, nervously introduced as \u201cDr. O\u2019Malley,\u201d prepares to lead the code team on a 57-year-old male patient in cardiac arrest, under the watchful eye of Dr. Miranda Bailey and several nurses. As George tries to recall the correct procedures, Bailey gives him terse instructions, testing his ability to handle the pressure. Meanwhile, Izzie Stevens attempts to communicate with Mrs. Liu, a patient who speaks only Chinese. Izzie asks Cristina Yang for help, but Cristina explains she is Korean and cannot translate. Frustrated, Izzie searches the busy hallway for anyone who speaks Chinese, determined to find a way to help Mrs. Liu despite the language barrier.",
+      "plot_segment": "Dr. Miranda Bailey and Dr. Preston Burke discuss Allison\u2019s critical condition, noting that her survival depends on whether she regains consciousness within the next 72 hours. Dr. Addison Montgomery joins the conversation, mentioning that she moved to Seattle after being recruited by Chief Richard Webber. The discussion is interrupted when Dr. Burke abruptly leaves to attend to another patient, leaving Bailey and Addison to continue coordinating Allison\u2019s care.",
       "is_recap": false,
-      "start_time": "00:09:20,821",
-      "end_time": "00:10:07,230",
-      "start_seconds": 560.821,
-      "end_seconds": 607.23,
-      "start_subtitle_index": 203,
-      "end_subtitle_index": 216
+      "start_time": "00:07:57,923",
+      "end_time": "00:08:19,303",
+      "start_seconds": 477.923,
+      "end_seconds": 499.303,
+      "start_subtitle_index": 168,
+      "end_subtitle_index": 176
     },
     {
       "scene_number": 9,
-      "plot_segment": "Meredith Grey brings the severed penis, identified as belonging to Allison\u2019s attacker, to a hospital staff member for evidence processing. She is informed that, due to strict chain of custody protocols, she must personally retain possession of the specimen until the police arrive to collect it. Uncertain and visibly uncomfortable about carrying such a sensitive item, Meredith nonetheless accepts responsibility and keeps the specimen with her, following hospital procedure.",
+      "plot_segment": "Dr. George O'Malley, newly assigned to run the code team by Dr. Miranda Bailey, receives a briefing on his responsibilities and anxiously prepares for his first code in the ER, feeling the pressure of leadership. Meanwhile, Dr. Izzie Stevens attempts to treat Mrs. Liu, a patient with a wound who does not speak English. Struggling to communicate, Izzie searches the hospital for someone who speaks Chinese to help translate, determined to provide proper care despite the language barrier.",
+      "is_recap": false,
+      "start_time": "00:08:22,327",
+      "end_time": "00:10:07,230",
+      "start_seconds": 502.327,
+      "end_seconds": 607.23,
+      "start_subtitle_index": 177,
+      "end_subtitle_index": 216
+    },
+    {
+      "scene_number": 10,
+      "plot_segment": "Meredith Grey arrives at the nurses\u2019 station carrying the severed penis from Allison\u2019s rape case, wrapped and preserved as evidence. She approaches Dr. Miranda Bailey, who sternly explains the chain of custody protocol: since Meredith collected the specimen, she is responsible for maintaining possession until the police arrive, ensuring it is not tampered with or misplaced. Cristina Yang and Izzie Stevens overhear and exchange shocked, darkly humorous remarks about the bizarre responsibility Meredith now faces. Meredith, flustered and uncertain, stands awkwardly with the specimen, realizing she must keep it with her while continuing her intern duties, as Bailey walks away leaving her to figure out how to manage the situation.",
       "is_recap": false,
       "start_time": "00:10:16,491",
       "end_time": "00:11:06,808",
@@ -100,30 +111,52 @@
       "end_subtitle_index": 243
     },
     {
-      "scene_number": 10,
-      "plot_segment": "Dr. Bailey informs her patient, Mrs. Liu, through a translator that she has a rare but minor disorder and can be discharged without surgery. Mrs. Liu is visibly relieved, having feared her condition was life-threatening. Meanwhile, in the intern locker room, Izzie, Cristina, and George discuss Meredith\u2019s responsibility for maintaining the chain of custody for the severed penis from Allison\u2019s rape case, which she is keeping in a cooler until the police arrive. The interns joke nervously about the bizarre task, but the mood shifts when Izzie confides that Allison was wearing the same shoes as her, making the case feel disturbingly personal. Izzie admits she feels unsettled and exhausted, and the group grows quiet, reflecting on the emotional toll of their first day.",
+      "scene_number": 11,
+      "plot_segment": "Dr. Miranda Bailey informs a patient that she has a rare but minor disorder, assuring her that surgery is not necessary and she will be discharged soon. The patient expresses relief upon learning her condition is not life-threatening, while interns Meredith Grey, Cristina Yang, George O'Malley, and Izzie Stevens observe, gaining insight into patient communication and the importance of clear, compassionate reassurance.",
       "is_recap": false,
       "start_time": "00:11:10,793",
-      "end_time": "00:12:48,831",
+      "end_time": "00:11:27,471",
       "start_seconds": 670.793,
-      "end_seconds": 768.831,
+      "end_seconds": 687.471,
       "start_subtitle_index": 244,
-      "end_subtitle_index": 284
-    },
-    {
-      "scene_number": 11,
-      "plot_segment": "Cristina Yang and Meredith Grey meet in a quiet corridor, discussing their secret coping ritual\u2014sneaking away to watch surgeries from the gallery when the stress of intern life becomes overwhelming. Cristina calls their habit \u201csick and twisted,\u201d but both admit it helps them survive the relentless pressure at Seattle Grace. Cristina debates whether they should keep doing it, but ultimately decides she needs the escape and invites Meredith to join her. As they head toward the gallery, George O\u2019Malley rushes by, responding to a code blue, leaving the two women to their clandestine break.",
-      "is_recap": false,
-      "start_time": "00:12:51,333",
-      "end_time": "00:13:55,379",
-      "start_seconds": 771.333,
-      "end_seconds": 835.379,
-      "start_subtitle_index": 285,
-      "end_subtitle_index": 299
+      "end_subtitle_index": 252
     },
     {
       "scene_number": 12,
-      "plot_segment": "Meredith Grey enters the pediatric ward and notices a baby with a heart murmur who is turning blue, concerned that no tests have been ordered. She questions the pediatric attending, who dismisses her concerns and insists the murmur is benign, reminding Meredith that the baby is not her patient and telling her to leave. Meredith persists, pressing the attending about the baby's symptoms, but the attending becomes defensive and orders her out of the room, refusing to take further action.",
+      "plot_segment": "Cristina Yang, George O'Malley, and Izzie Stevens gather around Meredith Grey, who is carrying the severed penis from Allison\u2019s rape case in a cooler for police evidence. Cristina explains the chain of custody and the seriousness of Meredith\u2019s responsibility, while George is visibly uncomfortable and refuses to hug Meredith, joking about the awkwardness of the situation. Izzie tries to lighten the mood, quipping about \u201ctaking a bite out of crime,\u201d and the interns exchange nervous banter about the bizarre realities of their job and the brutality of the case.",
+      "is_recap": false,
+      "start_time": "00:11:33,509",
+      "end_time": "00:12:17,455",
+      "start_seconds": 693.509,
+      "end_seconds": 737.455,
+      "start_subtitle_index": 253,
+      "end_subtitle_index": 272
+    },
+    {
+      "scene_number": 13,
+      "plot_segment": "Meredith Grey, visibly unsettled after noticing that she and Allison, the rape victim, are wearing identical shoes, confides in Cristina Yang about how the coincidence has shaken her. Meredith admits she feels exhausted and overwhelmed by the emotional toll of the case. Cristina, recognizing Meredith\u2019s distress, suggests they need a distraction and hints at a secret activity they share to cope with the stress of residency, reinforcing their growing camaraderie amidst the chaos of their first shift.",
+      "is_recap": false,
+      "start_time": "00:12:24,590",
+      "end_time": "00:12:57,235",
+      "start_seconds": 744.59,
+      "end_seconds": 777.235,
+      "start_subtitle_index": 273,
+      "end_subtitle_index": 286
+    },
+    {
+      "scene_number": 14,
+      "plot_segment": "Cristina Yang and Alex Karev slip away from their assigned duties, joking about how they promised to stop sneaking off but haven\u2019t managed to. Cristina quips, \u201cNancy Reagan lied,\u201d referencing the futility of \u201cjust saying no.\u201d The two leave together, sharing a conspiratorial laugh, while George O'Malley responds to a code call, hurrying off to fulfill his responsibilities as the code team leader.",
+      "is_recap": false,
+      "start_time": "00:13:00,078",
+      "end_time": "00:13:55,379",
+      "start_seconds": 780.078,
+      "end_seconds": 835.379,
+      "start_subtitle_index": 287,
+      "end_subtitle_index": 299
+    },
+    {
+      "scene_number": 15,
+      "plot_segment": "Izzie Stevens is found in the neonatal unit by Dr. Burke, who questions why she is there without authorization. Izzie explains she noticed a newborn with a heart murmur during her rounds and is worried it could be serious. Dr. Burke insists the murmur is benign and tells Izzie she should not be in the unit without a consult, warning her about the consequences of acting outside her assigned duties. Izzie reluctantly leaves, frustrated that her concerns are dismissed.",
       "is_recap": false,
       "start_time": "00:14:20,302",
       "end_time": "00:14:59,592",
@@ -133,8 +166,8 @@
       "end_subtitle_index": 314
     },
     {
-      "scene_number": 13,
-      "plot_segment": "Izzie Stevens is approached by a hospital staff member who needs help communicating with Mrs. Liu, a patient who only speaks Chinese. Izzie, assuming Cristina Yang might be able to help, asks her to translate, but Cristina clarifies that she is Korean and does not speak Chinese. Unable to find a translator, Izzie and Cristina struggle to communicate with Mrs. Liu, leaving the language barrier unresolved and complicating Mrs. Liu\u2019s care.",
+      "scene_number": 16,
+      "plot_segment": "Izzie Stevens approaches Cristina Yang, hoping she can help translate for Mrs. Liu, who speaks only Mandarin. Cristina clarifies that she is Korean and only knows a few words of Chinese from restaurant menus, so she is unable to assist. Izzie, frustrated, realizes she will have to find another way to communicate with Mrs. Liu about her medical care.",
       "is_recap": false,
       "start_time": "00:15:00,134",
       "end_time": "00:15:38,503",
@@ -144,8 +177,8 @@
       "end_subtitle_index": 325
     },
     {
-      "scene_number": 14,
-      "plot_segment": "Dr. Preston Burke confronts Chief Richard Webber in his office, questioning why Dr. Derek Shepherd was recruited to Seattle Grace. Burke, feeling threatened about his own chances of becoming chief of surgery, presses Richard for answers. Richard explains that Derek is a former student and insists there is no hidden agenda. Burke expresses frustration, worried that his position is at risk with Derek\u2019s arrival. Richard challenges Burke, criticizing him for only meeting expectations rather than exceeding them, and tells him that if he wants to be chief, he needs to prove he deserves it rather than expecting it to be handed to him.",
+      "scene_number": 17,
+      "plot_segment": "Dr. Preston Burke confronts Chief Richard Webber in his office, questioning why Dr. Derek Shepherd was recruited to Seattle Grace. Burke, concerned about his own prospects for becoming chief, asks if Shepherd\u2019s arrival signals a change in Webber\u2019s succession plans. Webber assures Burke that Shepherd is simply an old student and denies any ulterior motives, but Burke remains uneasy about his standing in the hospital\u2019s hierarchy.",
       "is_recap": false,
       "start_time": "00:15:47,950",
       "end_time": "00:16:15,460",
@@ -155,8 +188,8 @@
       "end_subtitle_index": 340
     },
     {
-      "scene_number": 15,
-      "plot_segment": "Cristina Yang and Alex Karev race to deliver lab results as quickly as possible, agreeing to split the list of patients and keep their interactions strictly professional, avoiding emotional involvement. In a nearby exam room, Dr. Izzie Stevens and Dr. George O\u2019Malley inform Mrs. Liu, a Chinese-speaking patient, that her test results are clear\u2014she does not need an amputation, her kidneys are healthy, and she is free to go home. Izzie reassures Mrs. Liu, using gestures and simple words to overcome the language barrier, while George offers a supportive smile, and Mrs. Liu expresses her relief and gratitude before leaving.",
+      "scene_number": 18,
+      "plot_segment": "Cristina Yang and Alex Karev deliver lab results to patients, expressing frustration over the repetitive nature of their tasks and the lack of challenging cases. They agree to divide the work quickly and avoid forming emotional connections with the patients, focusing on efficiency rather than empathy. Cristina asserts her authority over Alex, making it clear he is her shadow for the day, while Alex\u2019s abrasive attitude prompts Meredith Grey to voice her dislike for him. The interns\u2019 banter highlights their desire for more meaningful medical experiences amid the monotony of routine responsibilities.",
       "is_recap": false,
       "start_time": "00:16:18,460",
       "end_time": "00:17:20,825",
@@ -166,19 +199,30 @@
       "end_subtitle_index": 370
     },
     {
-      "scene_number": 16,
-      "plot_segment": "Meredith, Izzie, and George move through the hospital, discharging patients and offering congratulations as they complete their rounds. Their conversation turns lighthearted as Izzie teases George about his taste in music, prompting a brief debate about favorite bands. In another part of the hospital, George responds to a code but arrives too late to save the patient; Dr. Bailey calls the time of death, and George quietly processes the emotional weight before returning to his duties.",
+      "scene_number": 19,
+      "plot_segment": "George O'Malley and Izzie Stevens inform Mrs. Liu, a patient who does not speak English, that her test results are negative\u2014she does not have a serious condition and will not need surgery or risk losing her leg. With Izzie gently reassuring her, they let Mrs. Liu know she is healthy enough to be discharged and can go home.",
       "is_recap": false,
       "start_time": "00:17:21,205",
-      "end_time": "00:18:07,002",
+      "end_time": "00:17:31,741",
       "start_seconds": 1041.205,
-      "end_seconds": 1087.002,
+      "end_seconds": 1051.741,
       "start_subtitle_index": 371,
+      "end_subtitle_index": 377
+    },
+    {
+      "scene_number": 20,
+      "plot_segment": "Izzie Stevens attempts to communicate with Mrs. Liu, a patient who does not speak English, asking about her favorite music group in an effort to build rapport, but Mrs. Liu remains unresponsive and anxious. Izzie reassures Mrs. Liu and tells her she can go home, trying to ease her fears about treatment and deportation. Meanwhile, in the ER, George O'Malley leads a code on a critical patient; despite the team's efforts, the patient dies, and George is forced to call the time of death, visibly shaken by the experience.",
+      "is_recap": false,
+      "start_time": "00:17:36,088",
+      "end_time": "00:18:07,002",
+      "start_seconds": 1056.088,
+      "end_seconds": 1087.002,
+      "start_subtitle_index": 378,
       "end_subtitle_index": 387
     },
     {
-      "scene_number": 17,
-      "plot_segment": "Dr. Miranda Bailey instructs a nurse to call every hospital in the county, anticipating that Allison\u2019s attacker will seek emergency care for his injuries. Meredith Grey learns from another staff member that Allison, the rape victim, has no family in Seattle to support her. The staff express concern and sympathy for Allison\u2019s isolation, highlighting the emotional toll the case is taking on everyone involved.",
+      "scene_number": 21,
+      "plot_segment": "Officer Martinez instructs Nurse Tyler to call every hospital in the county, explaining that the rapist will eventually need medical attention and that the severed penis, now in Meredith Grey\u2019s custody, will be critical evidence. Nurse Tyler adds that Allison, the rape victim, has no family in Seattle and only recently moved to the city. The staff, including Meredith and Cristina Yang, express sympathy for Allison\u2019s situation, recognizing her isolation and the trauma she\u2019s endured.",
       "is_recap": false,
       "start_time": "00:18:18,964",
       "end_time": "00:18:45,394",
@@ -188,30 +232,30 @@
       "end_subtitle_index": 396
     },
     {
-      "scene_number": 18,
-      "plot_segment": "Meredith, visibly troubled after handling the rape case evidence, excuses herself from the group, saying she has something she needs to take care of. She approaches Dr. Preston Burke and tells him she noticed a baby in the pediatric ward with a possible heart murmur. Burke, adhering strictly to hospital protocol, refuses to examine the baby without a formal consult from Pediatrics, reminding Meredith that he cannot intervene without the proper request from the pediatric team. Meredith is frustrated by his response but is left with no choice but to follow the chain of command.",
+      "scene_number": 22,
+      "plot_segment": "Meredith, visibly shaken after caring for Allison, excuses herself, saying she needs to do something. Izzie offers to stay with Allison in Meredith\u2019s absence. Meredith seeks out Dr. Burke to express concern about a baby in pediatrics with a heart murmur that Izzie discovered, but Burke refuses to intervene without a formal consult from the pediatrics department, citing hospital protocol and warning Meredith not to bypass proper channels.",
       "is_recap": false,
       "start_time": "00:18:52,933",
-      "end_time": "00:19:20,460",
+      "end_time": "00:19:32,337",
       "start_seconds": 1132.933,
-      "end_seconds": 1160.46,
+      "end_seconds": 1172.337,
       "start_subtitle_index": 397,
-      "end_subtitle_index": 411
+      "end_subtitle_index": 413
     },
     {
-      "scene_number": 19,
-      "plot_segment": "Izzie Stevens is recognized by a patient who saw her photo in a modeling magazine, prompting some teasing from Alex Karev. After finishing the patient\u2019s sutures and directing them to see the nurse, Izzie moves on to Mrs. Liu, a Chinese-speaking patient who is hesitant to let Izzie examine her injured arm. Struggling with the language barrier and unable to get help from Cristina Yang, who doesn\u2019t speak Chinese, Izzie gently reassures Mrs. Liu and eventually gains her trust, convincing her to allow the examination.",
+      "scene_number": 23,
+      "plot_segment": "While treating Mrs. Liu, Izzie Stevens is recognized by the patient as a former model from a magazine. Mrs. Liu, who speaks limited English, questions whether Izzie is mentally stable enough to be her doctor. Izzie calmly insists that Mrs. Liu sit down so she can properly examine her injured arm, reassuring her and maintaining professionalism despite the awkward encounter.",
       "is_recap": false,
-      "start_time": "00:19:23,140",
+      "start_time": "00:19:32,357",
       "end_time": "00:20:12,974",
-      "start_seconds": 1163.14,
+      "start_seconds": 1172.357,
       "end_seconds": 1212.974,
-      "start_subtitle_index": 412,
+      "start_subtitle_index": 414,
       "end_subtitle_index": 428
     },
     {
-      "scene_number": 20,
-      "plot_segment": "Izzie and George find a quiet spot away from the chaos of the hospital to decompress after a grueling shift. Izzie vents about her overwhelming day and awkwardly admits to George that she kissed Dr. Eric in the elevator, not Derek Shepherd. They share a laugh about the absurdity of their experiences, including Meredith having to carry the severed penis for the police and Allison, the rape victim, wearing the same shoes as Meredith. Both reflect on how surreal and unsettling their new lives as surgical interns have become, finding comfort in confiding in each other amidst the strangeness.",
+      "scene_number": 24,
+      "plot_segment": "Cristina Yang hides from Alex Karev in a quiet hallway while Izzie Stevens carries the evidence cooler containing the severed penis from Allison\u2019s rape case. Cristina confides in Izzie that she impulsively kissed Dr. Derek Shepherd in the elevator earlier, admitting it was a bad day and she needed a distraction. They discuss how each copes with stress, joking about the absurdity of being responsible for a severed penis. The conversation shifts when Meredith Grey joins them, unsettled by the fact that she and Allison wore the same shoes that day, which makes her reflect on the randomness of trauma and deepens her sense of exhaustion and emotional overwhelm.",
       "is_recap": false,
       "start_time": "00:20:22,387",
       "end_time": "00:21:04,967",
@@ -221,8 +265,8 @@
       "end_subtitle_index": 446
     },
     {
-      "scene_number": 21,
-      "plot_segment": "Security responds as paramedics wheel in a new patient under heavy guard\u2014the man identified as Allison\u2019s attacker, his injuries severe from the assault. Dr. Miranda Bailey quickly assesses the situation while Meredith Grey is instructed to contact Chief Webber and inform him that the rapist has been apprehended and brought to Seattle Grace. The surgical team prepares for emergency treatment, aware of the gravity of the case and the heightened tension among staff.",
+      "scene_number": 25,
+      "plot_segment": "A hospital staff member urgently calls for security as the rapist, severely injured after Allison\u2019s attack, is wheeled into the ER. Dr. Miranda Bailey and the surgical team quickly assess his condition and rush him toward surgery, knowing his injuries are irreparable. Meredith Grey is instructed to notify Chief Richard Webber that the attacker has arrived, and the staff exchange tense glances, aware of the gravity and emotional weight of treating the man who assaulted their patient.",
       "is_recap": false,
       "start_time": "00:21:30,512",
       "end_time": "00:21:48,015",
@@ -232,8 +276,8 @@
       "end_subtitle_index": 451
     },
     {
-      "scene_number": 22,
-      "plot_segment": "Dr. Miranda Bailey and the surgical team examine the rapist\u2019s injuries, concluding that his penis cannot be reattached due to the extent of the damage. Dr. Bailey informs the team that the patient will be permanently incontinent and impotent. Dr. Richard Webber, the chief of surgery, is notified that the rapist has arrived at Seattle Grace for treatment. Meanwhile, Dr. Preston Burke confronts Chief Webber about his future at the hospital, expressing frustration over being overlooked for advancement. Webber criticizes Burke for only meeting expectations instead of exceeding them, challenging him to prove he deserves the position of chief.",
+      "scene_number": 26,
+      "plot_segment": "In the staff room, Dr. Miranda Bailey and Dr. Preston Burke discuss the extent of Allison\u2019s injuries and the condition of her attacker, whose severed penis cannot be reattached due to the severity of the trauma. Bailey makes a dark joke about the rapist\u2019s future, and the staff exchange grim humor about the case. Dr. Richard Webber is informed that the rapist has been brought into the hospital, prompting concern about security and protocol. Meanwhile, Burke and Webber debate their ongoing rivalry for the chief of surgery position, with Webber challenging Burke to prove he deserves the role rather than expecting it to be handed to him.",
       "is_recap": false,
       "start_time": "00:22:02,575",
       "end_time": "00:23:13,942",
@@ -243,8 +287,8 @@
       "end_subtitle_index": 485
     },
     {
-      "scene_number": 23,
-      "plot_segment": "Izzie Stevens struggles to communicate with Mrs. Liu, a Chinese-speaking patient who is hesitant to enter the hospital because she is undocumented. Unable to bridge the language barrier or reassure her, Izzie reluctantly sends Mrs. Liu away for the time being. Meanwhile, Meredith Grey, Cristina Yang, George O\u2019Malley, Izzie, and Alex Karev gather in a hallway, venting their frustrations about the menial tasks assigned to them and their lack of real surgical experience. Meredith complains about having to store the severed penis from Allison\u2019s case overnight due to police delays, feeling both disturbed and burdened by the responsibility. Alex tries to lighten the mood with a crude joke, but the group remains discouraged, overwhelmed by the emotional and physical demands of their first days as interns.",
+      "scene_number": 27,
+      "plot_segment": "Izzie Stevens struggles to communicate with Mrs. Liu, who speaks little English, apologizing for not understanding her concerns about treatment and deportation. Over the hospital intercom, Dr. Miranda Bailey is paged, adding to the interns\u2019 stress. Izzie and George O'Malley commiserate about their difficult day, including the responsibility of keeping the severed penis from the rape case in Meredith Grey\u2019s custody overnight. The group of interns\u2014Meredith, Izzie, George, and Cristina Yang\u2014gather in a hallway, expressing frustration and uncertainty about their roles, questioning whether they are truly learning anything or just following orders, and feeling overwhelmed by the emotional and ethical challenges they face as new surgical interns.",
       "is_recap": false,
       "start_time": "00:23:44,752",
       "end_time": "00:25:11,577",
@@ -254,8 +298,8 @@
       "end_subtitle_index": 514
     },
     {
-      "scene_number": 24,
-      "plot_segment": "Meredith enters the nursery and discreetly approaches the parents of the baby she suspects has a heart murmur, expressing her concern and urging them to ask for further evaluation. The pediatrician, Dr. Knox, notices Meredith\u2019s interference and confronts her, frustrated that a surgical intern is overstepping into pediatrics. As tensions rise, Dr. Preston Burke arrives, asserting his authority as an attending surgeon. He listens to the baby\u2019s heart, confirms Meredith\u2019s suspicion of a possible congenital defect, and orders an echocardiogram and additional tests. Dr. Burke reassures the anxious parents, explains the next steps, and takes over the case, while sternly warning Meredith not to undermine another physician\u2019s care in the future.",
+      "scene_number": 28,
+      "plot_segment": "In the pediatric unit, Izzie Stevens voices concern about a baby with a heart murmur, but the attending pediatrician dismisses her worries, insisting the murmur is benign. Meredith Grey, noticing Izzie's distress and the baby's symptoms, encourages Izzie to advocate for further testing. Meredith then approaches Dr. Preston Burke, explaining the situation and urging him to intervene. Burke steps in, orders additional tests for the baby, and takes over the case. Afterward, Burke warns Meredith not to bypass the chain of command or undermine other doctors, cautioning that if she oversteps again, her residency will become much more difficult.",
       "is_recap": false,
       "start_time": "00:25:36,230",
       "end_time": "00:27:31,692",
@@ -265,41 +309,52 @@
       "end_subtitle_index": 565
     },
     {
-      "scene_number": 25,
-      "plot_segment": "Outside the hospital, Dr. Izzie Stevens, accompanied by Dr. George O\u2019Malley and Dr. Meredith Grey, finds Mrs. Liu, a Chinese-speaking patient who is afraid to enter the hospital because she is undocumented. Mrs. Liu, anxious about being reported to immigration authorities, hesitates to accept care. Izzie reassures her that they will not report her and offers to treat her wound outside. With George and Meredith\u2019s help, Izzie carefully cleans and stitches Mrs. Liu\u2019s injury, explaining each step in simple terms to ease her fear. Meredith gives Mrs. Liu a card with contact information and instructions to return in five days for a follow-up. Grateful, Mrs. Liu thanks the interns, calling Izzie a good doctor and person before leaving. The three interns share a quiet moment, reflecting on the challenges their patients face and the small ways they can help.",
+      "scene_number": 29,
+      "plot_segment": "Izzie Stevens finds Mrs. Liu outside the hospital, nursing a wound on her arm and visibly anxious. Mrs. Liu, who speaks little English and fears deportation due to her undocumented status, refuses to enter the hospital for treatment. Izzie gently assures her that she will not report her to authorities and discreetly cleans and dresses the wound right there, risking her own job. Izzie explains how to care for the injury and urges Mrs. Liu to return in five days for a follow-up, emphasizing the importance of keeping their interaction confidential. Mrs. Liu expresses gratitude, and Izzie\u2019s compassion highlights the ethical dilemmas faced by the interns.",
       "is_recap": false,
       "start_time": "00:27:36,650",
-      "end_time": "00:32:36,183",
+      "end_time": "00:32:12,406",
       "start_seconds": 1656.65,
-      "end_seconds": 1956.183,
+      "end_seconds": 1932.406,
       "start_subtitle_index": 566,
+      "end_subtitle_index": 647
+    },
+    {
+      "scene_number": 30,
+      "plot_segment": "Mrs. Liu, relieved and grateful after Izzie Stevens treats her wound without reporting her immigration status, thanks Izzie in her native language and gestures her appreciation. Izzie, moved by Mrs. Liu\u2019s trust and gratitude, reassures her with a gentle smile and hands her written instructions for follow-up care, visibly touched by the connection and the impact she\u2019s made.",
+      "is_recap": false,
+      "start_time": "00:32:22,006",
+      "end_time": "00:32:36,183",
+      "start_seconds": 1942.006,
+      "end_seconds": 1956.183,
+      "start_subtitle_index": 648,
       "end_subtitle_index": 652
     },
     {
-      "scene_number": 26,
-      "plot_segment": "Cristina Yang approaches Dr. Preston Burke and asks if he thinks she comes across as overly confident. Burke, maintaining his authoritative demeanor, tells Cristina she has thirty seconds to speak candidly. Taking the opportunity, Cristina bluntly tells Burke that he is cocky, arrogant, bossy, pushy, and has a God complex, listing each trait without hesitation. She continues her forthright critique until Burke interrupts her, signaling the end of her allotted time.",
+      "scene_number": 31,
+      "plot_segment": "Dr. Miranda Bailey pointedly asks Dr. Cristina Yang if she thinks she\u2019s too confident. Bailey gives Cristina thirty seconds to speak candidly, prompting Cristina to list Bailey\u2019s intimidating qualities, including her arrogance, perfectionism, and tendency to act like she\u2019s infallible. Bailey listens without interruption, then ends the conversation by telling Cristina she needs a drink, a man, or a massage, highlighting both the stress of the job and the rare moment of honesty between them.",
       "is_recap": false,
       "start_time": "00:32:57,123",
-      "end_time": "00:33:36,967",
+      "end_time": "00:33:48,797",
       "start_seconds": 1977.123,
-      "end_seconds": 2016.967,
+      "end_seconds": 2028.797,
       "start_subtitle_index": 653,
-      "end_subtitle_index": 665
+      "end_subtitle_index": 668
     },
     {
-      "scene_number": 27,
-      "plot_segment": "George O\u2019Malley confides in Izzie Stevens about his distress after losing five patients while running the code team, feeling responsible and calling himself the \"angel of death.\" Izzie reassures George, explaining that most code patients are beyond saving before they even arrive and that he shouldn\u2019t blame himself for outcomes he can\u2019t control. George admits he wishes someone had told him this earlier, and Izzie offers comfort, reminding him that being an intern is hard and that he\u2019s not alone in feeling overwhelmed.",
+      "scene_number": 32,
+      "plot_segment": "George sits with Meredith, Izzie, and Cristina, visibly shaken after losing five patients while leading the code team. He confesses that he feels like the \"angel of death,\" doubting his abilities as a doctor. Cristina, pragmatic and direct, reassures George that most code patients are beyond saving and that their deaths are not his fault. Meredith and Izzie listen quietly, sharing in the exhaustion and self-doubt that comes with their first grueling shift, as the group reflects on the emotional toll of residency and the isolation they feel from the attendings.",
       "is_recap": false,
-      "start_time": "00:33:39,729",
+      "start_time": "00:33:51,680",
       "end_time": "00:34:12,371",
-      "start_seconds": 2019.729,
+      "start_seconds": 2031.68,
       "end_seconds": 2052.371,
-      "start_subtitle_index": 666,
+      "start_subtitle_index": 669,
       "end_subtitle_index": 675
     },
     {
-      "scene_number": 28,
-      "plot_segment": "Meredith Grey and George O\u2019Malley sit together, discussing the upcoming heart surgery for the baby Meredith flagged earlier. Meredith confides that she was convinced she was right about the diagnosis, but admits she\u2019s terrified she might have been wrong. George reassures her, saying that as interns, they\u2019re always scared and rarely certain, but that fear is part of the job. They both acknowledge feeling overwhelmed by the responsibility and pressure of being new surgical interns, bonding over their shared anxiety and uncertainty.",
+      "scene_number": 33,
+      "plot_segment": "Meredith Grey and Cristina Yang stand together in the hospital corridor, discussing the upcoming heart surgery for the infant Izzie Stevens discovered with a murmur. Meredith confides that she was convinced she was right about the diagnosis but admits how rare it is for interns to be correct or even listened to. Both women reflect on the constant fear and uncertainty they feel as new doctors, quietly admitting to each other that they are terrified all the time, despite trying to appear confident in front of their colleagues.",
       "is_recap": false,
       "start_time": "00:34:24,146",
       "end_time": "00:35:02,307",
@@ -309,8 +364,8 @@
       "end_subtitle_index": 687
     },
     {
-      "scene_number": 29,
-      "plot_segment": "George O\u2019Malley sits quietly at Allison\u2019s bedside as she remains unconscious after her assault, reflecting on his own family and how he would want his four sisters by his side if he were in a coma. Meredith Grey joins him, and they share a moment of empathy for Allison\u2019s isolation, noting that she has no family in Seattle. George expresses his hope that Allison knows someone cares, even if she can\u2019t hear him. Meredith, thinking of her own complicated relationship with her mother, Ellis Grey, wonders aloud how her mother would react in a similar situation. The conversation shifts as Meredith and George discuss the emotional toll of their work, with George admitting how hard it is to witness so much suffering. Meredith glances through the nursery window at a newborn baby, reflecting on the stark contrast between the innocence of new life and the trauma Allison has endured. The two interns sit in silence, united by the weight of their responsibilities and the vulnerability of their patients.",
+      "scene_number": 34,
+      "plot_segment": "Meredith checks on Allison, the rape victim, who remains unconscious after surgery. Izzie joins Meredith at Allison\u2019s bedside and shares that she has four sisters, admitting she can\u2019t imagine being alone in a coma. Meredith reflects on her own mother, Ellis Grey, noting that if Ellis were in Allison\u2019s situation, she would be present and in control, not vulnerable. Their conversation shifts to Meredith\u2019s complicated relationship with Dr. Derek Shepherd, with both interns acknowledging the awkwardness and tension that lingers from Meredith and Derek\u2019s previous night together and their current professional boundaries.",
       "is_recap": false,
       "start_time": "00:35:21,447",
       "end_time": "00:36:42,222",
@@ -320,30 +375,19 @@
       "end_subtitle_index": 720
     },
     {
-      "scene_number": 30,
-      "plot_segment": "In the OR, Dr. Burke and the surgical team operate on Allison, the rape victim, after her intracranial pressure spikes dangerously. Meredith, Cristina, and Alex assist, anxiously watching as Burke removes a section of Allison\u2019s skull to relieve the swelling. After the surgery, Dr. Burke updates Meredith and the other interns: Allison\u2019s skull flap was left off due to severe brain swelling, and her condition remains critical. Burke explains that Allison\u2019s prognosis is uncertain\u2014she may not survive unless she regains consciousness soon. The interns process the gravity of the situation, shaken by the fragility of their patient\u2019s life and the limits of what surgery can accomplish.",
+      "scene_number": 35,
+      "plot_segment": "Allison\u2019s condition deteriorates, prompting Dr. Miranda Bailey and the surgical team to rush her into emergency surgery. Dr. Preston Burke leads the operation, and afterward, he informs Meredith Grey and the other interns that they had to leave Allison\u2019s skull flap off due to severe brain swelling. Burke explains that Allison\u2019s survival now depends on whether she regains consciousness. Outside the OR, Dr. Burke declines Dr. Richard Webber\u2019s invitation to join him for drinks, citing exhaustion. Webber and Burke briefly acknowledge their ongoing rivalry for the chief of surgery position, each determined to prove themselves as the best candidate.",
       "is_recap": false,
       "start_time": "00:36:49,204",
-      "end_time": "00:37:40,135",
-      "start_seconds": 2209.204,
-      "end_seconds": 2260.135,
-      "start_subtitle_index": 721,
-      "end_subtitle_index": 733
-    },
-    {
-      "scene_number": 31,
-      "plot_segment": "Dr. Preston Burke is approached by Dr. Derek Shepherd, who suggests they get a drink together, but Burke declines. As they talk, both men reveal that Chief Richard Webber has privately promised each of them the position of chief of surgery. They acknowledge that they are now direct competitors for the job, but agree that while they are rivals, they do not have to be enemies.",
-      "is_recap": false,
-      "start_time": "00:37:40,175",
       "end_time": "00:38:05,786",
-      "start_seconds": 2260.175,
+      "start_seconds": 2209.204,
       "end_seconds": 2285.786,
-      "start_subtitle_index": 734,
+      "start_subtitle_index": 721,
       "end_subtitle_index": 742
     },
     {
-      "scene_number": 32,
-      "plot_segment": "Meredith, visibly uneasy, receives instructions from a senior nurse on how to properly sign the chain of custody paperwork for the severed penis, which is being held as evidence in the rape case. Meredith hesitates, admitting her discomfort because she used to care for the patient as a child and once changed his diapers. Despite her unease, she completes the necessary documentation, and the evidence is formally handed over to the police officer waiting nearby.",
+      "scene_number": 36,
+      "plot_segment": "Meredith Grey completes the chain of custody paperwork for the severed penis with a uniformed police officer, both exchanging awkward jokes to diffuse the tension of the bizarre task. Meredith carefully hands over the evidence container to the officer, ensuring all protocols are followed, while Cristina Yang and Izzie Stevens watch nearby, making wry comments about the surreal responsibilities of being a surgical intern.",
       "is_recap": false,
       "start_time": "00:38:12,414",
       "end_time": "00:38:38,625",
@@ -353,8 +397,8 @@
       "end_subtitle_index": 752
     },
     {
-      "scene_number": 33,
-      "plot_segment": "In the operating room, Dr. Preston Burke prepares for surgery on the infant with a congenital heart defect. He instructs Meredith Grey to scrub in, acknowledging her initiative in catching the diagnosis, and tells her she can assist by holding the clamp during the procedure. Meredith, both nervous and excited, joins Burke and the surgical team as they get ready to operate, aware that this is a rare opportunity for an intern.",
+      "scene_number": 37,
+      "plot_segment": "In the operating room, Dr. Preston Burke prepares to perform heart surgery on the infant Izzie Stevens identified with a heart murmur. Meredith Grey, having advocated for the baby's care, is allowed by Burke to scrub in. He tells Meredith she can hold the clamp during the procedure but warns her not to make him regret the decision, emphasizing the responsibility and trust involved.",
       "is_recap": false,
       "start_time": "00:38:42,166",
       "end_time": "00:39:06,199",
@@ -364,8 +408,8 @@
       "end_subtitle_index": 762
     },
     {
-      "scene_number": 34,
-      "plot_segment": "Dr. Miranda Bailey informs the rapist, now a patient in the hospital, that his bleeding has been controlled and that his severed penis will be handed over to the police as evidence. She bluntly tells him that due to the injury, he will be incontinent and impotent for the rest of his life. In a nearby bed, Dr. Izzie Stevens reassures another patient that their tumor is benign and they are cleared to go home, offering a moment of relief amid the tense atmosphere.",
+      "scene_number": 38,
+      "plot_segment": "Dr. Miranda Bailey informs the rapist that his bleeding has been controlled, but that his severed penis will be handed over to the police as evidence. Nearby, Izzie Stevens tells Mrs. Liu that her tumor is benign and reassures her she can go home, offering comfort after the stressful wait for results.",
       "is_recap": false,
       "start_time": "00:39:14,514",
       "end_time": "00:39:37,079",
@@ -375,8 +419,8 @@
       "end_subtitle_index": 769
     },
     {
-      "scene_number": 35,
-      "plot_segment": "Meredith narrates about boundaries and the lines people draw, reflecting on how they can keep others out but also trap oneself inside. In the kitchen of her house, Meredith tells George and Izzie that they can move in with her, finally agreeing after much hesitation. George and Izzie are thrilled and celebrate, while Cristina teases Meredith that the babies she saw in the hospital softened her up. Meredith jokingly blames the babies for her decision. As the friends laugh together, Meredith\u2019s narration continues, suggesting that life is less about drawing lines and more about having the courage to cross them, even if it means risking vulnerability and connection.",
+      "scene_number": 39,
+      "plot_segment": "Meredith Grey, feeling the weight of isolation and exhaustion after a grueling shift, finally tells George O'Malley and Izzie Stevens that they can move into her house as roommates. George and Izzie celebrate, excitedly hugging Meredith and each other. Meredith jokes that she\u2019ll blame the babies in the hospital for her impulsive decision. As they share a moment of relief and camaraderie, Meredith\u2019s internal narration reflects on the messiness of life and the necessity of crossing boundaries, concluding that sometimes the lines we draw are meant to be crossed.",
       "is_recap": false,
       "start_time": "00:39:40,503",
       "end_time": "00:40:53,855",
@@ -386,8 +430,8 @@
       "end_subtitle_index": 785
     },
     {
-      "scene_number": 36,
-      "plot_segment": "Meredith Grey and Derek Shepherd cross paths in the hospital hallway. Derek tries to engage Meredith in conversation by mentioning Seattle\u2019s ferry boats, but Meredith keeps her distance, reminding him that they can\u2019t be involved because he is her attending and she is his intern. She pointedly chooses to take the stairs instead of the elevator, referencing their lack of self-control and reinforcing her boundaries. As Meredith walks away, her internal narration reflects on the necessity and risks of crossing boundaries, suggesting that sometimes taking chances can lead to extraordinary outcomes.",
+      "scene_number": 40,
+      "plot_segment": "Meredith Grey and Dr. Derek Shepherd ride the elevator together in tense silence after a long shift. Meredith, aware of their complicated history and the professional boundaries between them, tries to keep the conversation light by mentioning her fondness for Seattle\u2019s ferry boats. Derek gently teases her, but Meredith insists she\u2019ll take the stairs next time to avoid the temptation of being alone with him. As the elevator doors close, Meredith\u2019s internal narration reflects on the dangers of crossing certain lines, acknowledging that while boundaries can protect, sometimes taking the risk can lead to something extraordinary.",
       "is_recap": false,
       "start_time": "00:40:56,619",
       "end_time": "00:42:08,753",

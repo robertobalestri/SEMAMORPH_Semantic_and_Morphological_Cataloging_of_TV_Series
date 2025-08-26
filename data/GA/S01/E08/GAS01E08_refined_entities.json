@@ -1,14 +1,168 @@
 [
   {
-    "entity_name": "george_omalley",
-    "best_appellation": "George O'Malley",
+    "entity_name": "dr_chesney",
+    "best_appellation": "Dr. Chesney",
     "appellations": [
-      "George O'Malley",
+      "Dr. Chesney",
+      "Chesney"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": null
+  },
+  {
+    "entity_name": "derek_shepherd",
+    "best_appellation": "Dr. Derek Shepherd",
+    "appellations": [
+      "Dr. Shepherd",
+      "Shepherd",
+      "Derek Shepherd",
+      "Derek"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "cricket",
+    "best_appellation": "Cricket",
+    "appellations": [
+      "Cricket"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "mr_walker",
+    "best_appellation": "Mr. Walker",
+    "appellations": [
+      "Mr. Walker"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "miranda_bailey",
+    "best_appellation": "Dr. Miranda Bailey",
+    "appellations": [
+      "Dr. Bailey",
+      "Bailey",
+      "Miranda Bailey",
+      "Miranda"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "meredith_gray",
+    "best_appellation": "Dr. Meredith Gray",
+    "appellations": [
+      "Meredith Gray",
+      "Meredith",
+      "Dr. Gray",
+      "Dr. Meredith Gray"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "mrs_glass",
+    "best_appellation": "Mrs. Glass",
+    "appellations": [
+      "Mrs. Glass"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "devo",
+    "best_appellation": "Devo",
+    "appellations": [
+      "Devo",
+      "Esther"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "george_omalley",
+    "best_appellation": "Dr. George O'Malley",
+    "appellations": [
       "George",
+      "Dr. George O'Malley",
       "O'Malley"
     ],
     "entity_type": "PERSON",
     "biological_sex": "M"
+  },
+  {
+    "entity_name": "mr_duff",
+    "best_appellation": "Mr. Duff",
+    "appellations": [
+      "Mr. Duff"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "alex_karev",
+    "best_appellation": "Dr. Alex Karev",
+    "appellations": [
+      "Dr. Karev",
+      "Karev",
+      "Alex Karev",
+      "Alex"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "prince_charming",
+    "best_appellation": "Prince Charming",
+    "appellations": [
+      "Prince Charming"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "esther",
+    "best_appellation": "Esther",
+    "appellations": [
+      "Esther",
+      "Devo"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "izzie_stevens",
+    "best_appellation": "Dr. Izzie Stevens",
+    "appellations": [
+      "Izzy",
+      "Izzie Stevens",
+      "Dr. Stevens",
+      "Izzie"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "dr_chesney",
+    "best_appellation": "Dr. Chesney",
+    "appellations": [
+      "Dr. Chesney",
+      "Chesney"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": null
+  },
+  {
+    "entity_name": "shepherd",
+    "best_appellation": "Shepherd",
+    "appellations": [
+      "Shepherd"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": null
   },
   {
     "entity_name": "mr_walker",
@@ -16,6 +170,53 @@
     "appellations": [
       "Mr. Walker",
       "Walker"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "dr_bailey",
+    "best_appellation": "Dr. Bailey",
+    "appellations": [
+      "Dr. Bailey",
+      "Bailey"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": null
+  },
+  {
+    "entity_name": "meredith_meredith",
+    "best_appellation": "Meredith Meredith",
+    "appellations": [
+      "Meredith Meredith"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "mrs_glass",
+    "best_appellation": "Mrs. Glass",
+    "appellations": [
+      "Mrs. Glass",
+      "Glass"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "meredith",
+    "best_appellation": "Meredith",
+    "appellations": [
+      "Meredith"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "george",
+    "best_appellation": "George",
+    "appellations": [
+      "George"
     ],
     "entity_type": "PERSON",
     "biological_sex": "M"
@@ -31,31 +232,14 @@
     "biological_sex": "M"
   },
   {
-    "entity_name": "devo",
-    "best_appellation": "Devo",
+    "entity_name": "dr_karev",
+    "best_appellation": "Dr. Karev",
     "appellations": [
-      "Devo"
+      "Dr. Karev",
+      "Karev"
     ],
     "entity_type": "PERSON",
-    "biological_sex": null
-  },
-  {
-    "entity_name": "cricket",
-    "best_appellation": "Cricket",
-    "appellations": [
-      "Cricket"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": null
-  },
-  {
-    "entity_name": "esther",
-    "best_appellation": "Esther",
-    "appellations": [
-      "Esther"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "F"
+    "biological_sex": "M"
   },
   {
     "entity_name": "prince_charming",
@@ -64,43 +248,15 @@
       "Prince Charming"
     ],
     "entity_type": "PERSON",
-    "biological_sex": null
-  },
-  {
-    "entity_name": "george",
-    "best_appellation": "George",
-    "appellations": [
-      "George"
-    ],
-    "entity_type": "PERSON",
     "biological_sex": "M"
   },
   {
-    "entity_name": "mr_walker",
-    "best_appellation": "Mr. Walker",
+    "entity_name": "izzy",
+    "best_appellation": "Izzy",
     "appellations": [
-      "Mr. Walker"
+      "Izzy"
     ],
     "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "mr_duff",
-    "best_appellation": "Mr. Duff",
-    "appellations": [
-      "Mr. Duff"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "prince_charming",
-    "best_appellation": "Prince Charming",
-    "appellations": [
-      "Prince Charming",
-      "prince_charming"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
+    "biological_sex": "F"
   }
 ]

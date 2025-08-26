@@ -2,7 +2,7 @@
   "scenes": [
     {
       "scene_number": 1,
-      "plot_segment": "A montage of scenes from previous episodes is shown. Various characters discuss romantic feelings and relationships, including someone expressing difficulty confessing feelings to a roommate, another character suggesting asking her out, and a conversation about someone being 'off the market.' There are references to a secret relationship between Meredith and an attending, concerns about favoritism, and warnings about the consequences if Meredith receives special treatment. Bailey threatens to keep Meredith out of the OR if she is favored. These scenes summarize ongoing storylines and character dynamics.",
+      "plot_segment": "A voice announces, 'Previously on Grey's Anatomy.' Scenes are shown in which a character discusses having feelings for a roommate but being unable to confess. Another character suggests asking the roommate out. Someone questions another about being shallow and callous. A character declines an invitation for drinks, saying they are seeing someone. Another advises, 'Save yourself the misery, man. She's off the market.' There is debate about whether someone is truly unavailable. A voice warns that the longer a 'fling' continues, the more favors one intern receives, and that if others find out, there will be consequences. A supervisor threatens that if Meredith Grey is favored, she will be banned from the operating room for a month. Scenes show tension about relationships and favoritism among interns and attendings.",
       "is_recap": true,
       "start_time": "00:00:01,145",
       "end_time": "00:00:47,807",
@@ -13,7 +13,7 @@
     },
     {
       "scene_number": 2,
-      "plot_segment": "Meredith narrates about the exhaustion of being an intern and how it's not just the job that keeps them up at night. In the early morning, Meredith urges someone to leave her bed before her roommates see. There is playful banter about who was responsible for the noise the previous night. Roommates speculate about Meredith's sex life and joke about her having a long day at work. The group discusses the possibility that Meredith is sleeping with their boss, with some denying it and others questioning why she would keep it a secret. Meredith deflects questions about her sex life and urges everyone to leave for work.",
+      "plot_segment": "Meredith Grey narrates about the exhaustion of being an intern and how the job and other factors keep them up all night. In the early morning, Meredith is urged to get up and asks about the time. She tells someone they need to leave before her roommates see them. Another character suggests letting 'him' sleep, but Meredith insists he must go. Meredith is asked if she got any sleep. In another room, two characters discuss the noise from Meredith's room, speculating about who the man was and joking about jealousy. Meredith joins her roommates, who tease her about her sex life and the loudness of her activities. Meredith insists there is nothing to tell. The roommates joke about needing to go to a hotel for sleep. Meredith worries about her roommates discovering she is involved with her boss, and does not want them to think she is getting special treatment.",
       "is_recap": false,
       "start_time": "00:00:52,411",
       "end_time": "00:03:54,038",
@@ -24,51 +24,62 @@
     },
     {
       "scene_number": 3,
-      "plot_segment": "At the hospital, Meredith worries about her roommates finding out about her relationship with Dr. Shepherd. She expresses concern about being perceived as getting special treatment. Bailey assigns O'Malley, Yang, and Karev to the clinic, and tells Izzie she will be working with her. Bailey gives Meredith a list of tasks, including a consult for a girl with fever and abdominal pain, and other patient responsibilities. Bailey warns Meredith to get started quickly.",
+      "plot_segment": "At the hospital, Dr. Bailey assigns O'Malley, Yang, and Karev to the clinic, and tells O'Malley that patients are waiting. Bailey instructs Meredith and Izzie to accompany her, with Izzie assigned to Bailey for the day. Bailey greets Dr. Shepherd. Bailey notes Meredith's late night and warns her to hope caffeine kicks in. Bailey gives Meredith a list of tasks, including a consult in the pit for a girl with fever and abdominal pain, medication for Nicholas, and IV for Mr. Mowers. Bailey quizzes Meredith on the room numbers and asks why she is still standing there. Bailey observes Meredith looks more like herself than usual and asks what's wrong. Meredith denies any problem.",
       "is_recap": false,
       "start_time": "00:03:57,580",
-      "end_time": "00:04:26,675",
+      "end_time": "00:04:54,608",
       "start_seconds": 237.57999999999998,
-      "end_seconds": 266.675,
+      "end_seconds": 294.608,
       "start_subtitle_index": 102,
-      "end_subtitle_index": 112
+      "end_subtitle_index": 121
     },
     {
       "scene_number": 4,
-      "plot_segment": "Meredith examines a young woman named Claire who has a fever and abdominal pain. Claire's mother and another woman discuss her recent trip to Mexico and weight loss. Claire resists an exam, but Meredith insists. Meanwhile, a man named Digby Owens arrives for an appointment, but is found to be bleeding from a gunshot wound. He explains his friend shot him as a favor, and he likes the scars. The staff prepares to treat his injury.",
+      "plot_segment": "A woman urgently seeks help, saying her boyfriend swallowed her keys because he did not want her to leave. Meredith is told to locate the keys. The boyfriend admits he swallowed them intentionally. Meredith examines a patient who recently returned from Mexico and has been weak and lost weight. The patient's parent says she passed out in the shower. Meredith asks about the timing of the trip and is told it was a couple weeks ago. The patient insists she is fine and only has a fever, requesting antibiotics and to be sent home. Meredith explains she must do an exam before releasing her.",
       "is_recap": false,
-      "start_time": "00:04:27,076",
-      "end_time": "00:07:21,250",
-      "start_seconds": 267.076,
-      "end_seconds": 441.25,
-      "start_subtitle_index": 113,
-      "end_subtitle_index": 176
+      "start_time": "00:04:54,889",
+      "end_time": "00:06:14,949",
+      "start_seconds": 294.889,
+      "end_seconds": 374.949,
+      "start_subtitle_index": 122,
+      "end_subtitle_index": 151
     },
     {
       "scene_number": 5,
-      "plot_segment": "Digby Owens discusses his philosophy about pain and commitment, referencing his wrestling background. Another character jokes about men in tights. A character with the flu comments on the irony. Meredith examines Claire and discovers recent surgical scars. Claire asks Meredith not to tell her parents. Meredith questions Claire about the surgery, and Claire admits to having it done in Mexico.",
+      "plot_segment": "Meredith asks for privacy to examine the patient, and the parents leave. Meanwhile, Digby Owens arrives, bleeding from a gunshot wound. Meredith notes the wound and suggests moving him to the pit. Digby explains his friend shot him as a favor, and he likes the scars. He says the shooting was intentional and part of his commitment to body art.",
       "is_recap": false,
-      "start_time": "00:07:21,752",
-      "end_time": "00:09:15,769",
-      "start_seconds": 441.752,
-      "end_seconds": 555.769,
-      "start_subtitle_index": 177,
-      "end_subtitle_index": 211
+      "start_time": "00:06:14,970",
+      "end_time": "00:06:47,497",
+      "start_seconds": 374.97,
+      "end_seconds": 407.497,
+      "start_subtitle_index": 152,
+      "end_subtitle_index": 175
     },
     {
       "scene_number": 6,
-      "plot_segment": "A young girl named Jamie is discussed with her parents, who describe her worsening foot twitching and previous CT scan showing a brain abnormality. Meredith reassures the parents and says she will bring in Dr. Shepherd, the brain specialist. The parents ask if Dr. Shepherd is good, and Meredith responds affirmatively.",
+      "plot_segment": "Digby discusses his tattoos and ethos about pain and commitment, referencing his wrestling background at Iowa State. Another character jokes about men in tights and mentions a flu going around the hospital. Meredith examines a patient, asking her to lift her shirt. Meredith discovers recent surgical scars and asks the patient not to tell her parents. Meredith deduces the patient had surgery in Mexico to hide it from her parents and asks what procedure was done.",
       "is_recap": false,
-      "start_time": "00:09:16,110",
-      "end_time": "00:10:00,902",
-      "start_seconds": 556.11,
-      "end_seconds": 600.902,
-      "start_subtitle_index": 212,
-      "end_subtitle_index": 231
+      "start_time": "00:07:17,684",
+      "end_time": "00:09:06,091",
+      "start_seconds": 437.684,
+      "end_seconds": 546.091,
+      "start_subtitle_index": 176,
+      "end_subtitle_index": 210
     },
     {
       "scene_number": 7,
-      "plot_segment": "A patient who swallowed keys is prepped for a bronchoscopy. An intern is given the opportunity to perform the procedure alone. Meredith reports to Bailey about her pit patient, Claire, who is febrile with peritoneal signs and has had possible illegal surgery in Mexico. Bailey instructs Meredith to handle additional tasks and to document patient information. Another character with the flu is told to go home but refuses.",
+      "plot_segment": "A group discusses a young girl, Jamie, who has been experiencing foot twitching and had a CT scan showing a brain abnormality. Her parents explain the worsening symptoms and their efforts to get proper care. Meredith reassures them and says she will bring in Dr. Shepherd, the brain specialist. The parents ask if Dr. Shepherd is good, and Meredith affirms his skills.",
+      "is_recap": false,
+      "start_time": "00:09:13,767",
+      "end_time": "00:10:00,902",
+      "start_seconds": 553.767,
+      "end_seconds": 600.902,
+      "start_subtitle_index": 211,
+      "end_subtitle_index": 231
+    },
+    {
+      "scene_number": 8,
+      "plot_segment": "In the clinic, the woman whose boyfriend swallowed her keys explains his behavior. Meredith is told to perform a bronchoscopy and is encouraged to do it alone. Meredith expresses gratitude for the confidence shown in her skills. Bailey asks Meredith about her pit patient, who is febrile and has peritoneal signs. Cristina Yang, who has the flu, says she is heading back to the clinic. Meredith suspects the patient had illegal surgery in Mexico, noting laparoscopic scars and unawareness by the parents. Bailey instructs Meredith to order a CT and handle other tasks. Cristina and another intern discuss the flu and the need for rest.",
       "is_recap": false,
       "start_time": "00:10:03,464",
       "end_time": "00:11:43,870",
@@ -78,8 +89,8 @@
       "end_subtitle_index": 282
     },
     {
-      "scene_number": 8,
-      "plot_segment": "Two interns discuss Meredith's relationship with Dr. Shepherd and the risks it poses to their careers. One expresses concern that Shepherd is taking advantage of Meredith, while another points out that it did not sound non-consensual. The group debates the implications of sleeping with an attending.",
+      "scene_number": 9,
+      "plot_segment": "George O'Malley asks if anyone has seen Dr. Shepherd. Another intern jokes about Meredith being close to Shepherd. Cristina warns George that the program will determine their careers and that recommendations from attendings like Shepherd are crucial. The group discusses the risks of interns sleeping with attendings and debates responsibility and power dynamics. There is concern about Meredith's relationship with Shepherd and its impact on her career.",
       "is_recap": false,
       "start_time": "00:11:44,410",
       "end_time": "00:12:07,971",
@@ -89,30 +100,96 @@
       "end_subtitle_index": 295
     },
     {
-      "scene_number": 9,
-      "plot_segment": "A staff member delivers Jamie's CT scans to a doctor. Two characters comment on the anesthesiologist, Dr. Taylor, possibly smelling of alcohol, but dismiss concerns as long as he can do his job. In the OR, Dr. Shepherd is informed about Jamie's admission and her symptoms. He requests new scans, as the old ones are three months outdated. Meredith agrees to order them.",
+      "scene_number": 10,
+      "plot_segment": "A staff member delivers Jamie's CT scans to a doctor. Another character comments on the smell of bourbon and notes that Dr. Taylor, the anesthesiologist, is the best on staff. They joke about worrying only if he is too drunk to do his crossword puzzle.",
       "is_recap": false,
       "start_time": "00:12:27,307",
-      "end_time": "00:13:22,139",
+      "end_time": "00:12:55,490",
       "start_seconds": 747.307,
-      "end_seconds": 802.139,
+      "end_seconds": 775.49,
       "start_subtitle_index": 296,
-      "end_subtitle_index": 322
-    },
-    {
-      "scene_number": 10,
-      "plot_segment": "A group of doctors discuss Digby Owens' previous gunshot wound and his ethos about pain. They recognize him from a previous visit. Meredith brings Claire's CT scans to Bailey, who identifies that Claire has had a gastric bypass, a procedure usually reserved for obese patients. Claire's mother is shocked, and Bailey explains the risks and complications. Claire's parents agree to surgery to reverse the bypass, but Claire protests, saying she would rather be thin. Bailey insists the choice is not up to her.",
-      "is_recap": false,
-      "start_time": "00:13:24,241",
-      "end_time": "00:20:23,708",
-      "start_seconds": 804.241,
-      "end_seconds": 1223.708,
-      "start_subtitle_index": 323,
-      "end_subtitle_index": 492
+      "end_subtitle_index": 307
     },
     {
       "scene_number": 11,
-      "plot_segment": "Dr. Shepherd explains to Jamie's parents that she has Rasmussen's encephalitis, which has worsened since her last scan. He says the only treatment is to remove the diseased half of her brain, but because Jamie is young, her brain can compensate. The parents are shocked, but Dr. Shepherd reassures them that surgery could save her life. Another doctor is invited to scrub in on the hemispherectomy if the parents consent.",
+      "plot_segment": "Dr. Shepherd is informed that Jamie Hayes has been admitted with continuous seizure activity in her left foot and balance issues. Meredith explains the parents have traveled far for help. Shepherd requests new scans, as the old ones are three months old. Meredith agrees to order them.",
+      "is_recap": false,
+      "start_time": "00:12:58,711",
+      "end_time": "00:13:22,139",
+      "start_seconds": 778.711,
+      "end_seconds": 802.139,
+      "start_subtitle_index": 308,
+      "end_subtitle_index": 322
+    },
+    {
+      "scene_number": 12,
+      "plot_segment": "A doctor examines Digby Owens and notes a bullet from a previous gunshot. The team discusses Digby's ethos of pain and recognize him as the tattooed masochist who has been shot before. They joke about his stupidity and prepare to inform him about his treatment for the current injury.",
+      "is_recap": false,
+      "start_time": "00:13:24,241",
+      "end_time": "00:13:53,177",
+      "start_seconds": 804.241,
+      "end_seconds": 833.177,
+      "start_subtitle_index": 323,
+      "end_subtitle_index": 337
+    },
+    {
+      "scene_number": 13,
+      "plot_segment": "Bailey reviews Claire Rice's abdominal CTs and asks if the girl is fat. Meredith says she is a normal college kid. Bailey identifies a stapled stomach, indicating a gastric bypass, and explains the procedure is usually for obese patients. Claire's mother expresses concern, and Bailey warns that Claire will face lifelong malnutrition unless the surgery is reversed. The mother insists on surgery. Claire's mother describes buying new jeans for Claire and her academic achievements. Bailey explains complications from the bypass, including abscess and bowel swelling, and says recovery is uncertain. The mother asks the doctors to do whatever is necessary.",
+      "is_recap": false,
+      "start_time": "00:13:53,597",
+      "end_time": "00:15:21,813",
+      "start_seconds": 833.597,
+      "end_seconds": 921.813,
+      "start_subtitle_index": 338,
+      "end_subtitle_index": 368
+    },
+    {
+      "scene_number": 14,
+      "plot_segment": "A doctor interacts with Jamie, calling her a princess and explaining medical procedures in child-friendly terms. The team prepares Jamie for MRI. Her parents worry about the cost of surgery, but the doctor reassures them not to worry. Jamie is diagnosed with focal left-side seizure, and diazepam is administered. The team prepares Jamie for MRI, using playful language to comfort her.",
+      "is_recap": false,
+      "start_time": "00:15:24,950",
+      "end_time": "00:16:36,509",
+      "start_seconds": 924.95,
+      "end_seconds": 996.509,
+      "start_subtitle_index": 369,
+      "end_subtitle_index": 408
+    },
+    {
+      "scene_number": 15,
+      "plot_segment": "A patient, JP, is told he will be under conscious sedation for a procedure. He expresses frustration about his situation and argues with his partner Athena about past romantic gestures and manipulative behavior. Athena accuses JP of being passive-aggressive and needy. Their argument escalates, and a staff member asks Athena to leave to keep JP calm. During the procedure, JP's keys move farther down his digestive tract, causing concern. Athena is asked to leave the room.",
+      "is_recap": false,
+      "start_time": "00:16:38,111",
+      "end_time": "00:17:28,511",
+      "start_seconds": 998.111,
+      "end_seconds": 1048.511,
+      "start_subtitle_index": 409,
+      "end_subtitle_index": 431
+    },
+    {
+      "scene_number": 16,
+      "plot_segment": "Digby Owens is visited by a doctor who jokes about his risky hobby of getting shot. Digby is running a fever due to stress from the gunshot. The doctor explains the bullet fractured a rib and caused a hemopneumothorax. Digby jokes about pain and wrestling. The team prepares to insert a chest tube to treat Digby's collapsed lung. Digby asks to watch the procedure.",
+      "is_recap": false,
+      "start_time": "00:17:30,971",
+      "end_time": "00:18:50,278",
+      "start_seconds": 1050.971,
+      "end_seconds": 1130.278,
+      "start_subtitle_index": 432,
+      "end_subtitle_index": 459
+    },
+    {
+      "scene_number": 17,
+      "plot_segment": "Claire's parents confront her about her decision to have surgery in Mexico. Claire explains she tried healthy weight loss methods but they did not work for her. She says college is stressful and she wanted to focus on her studies. Her mother accuses her of taking shortcuts. The doctors recommend reversing the bypass, but Claire refuses, saying she would rather be thin. The doctors explain the choice is not hers due to medical complications.",
+      "is_recap": false,
+      "start_time": "00:18:50,298",
+      "end_time": "00:20:23,708",
+      "start_seconds": 1130.298,
+      "end_seconds": 1223.708,
+      "start_subtitle_index": 460,
+      "end_subtitle_index": 492
+    },
+    {
+      "scene_number": 18,
+      "plot_segment": "Dr. Shepherd explains to Jamie's parents that she has Rasmussen's encephalitis, with part of her brain dead or dying. The condition has worsened since her last scans. The only treatment is to remove the diseased portion of her brain—half her brain. Shepherd explains that Jamie's age makes the surgery possible, as her brain can compensate. The parents are told the risks and potential for a relatively normal life if successful. Shepherd asks O'Malley if he wants to scrub in on the hemispherectomy, and O'Malley agrees.",
       "is_recap": false,
       "start_time": "00:20:37,761",
       "end_time": "00:22:02,577",
@@ -122,8 +199,8 @@
       "end_subtitle_index": 521
     },
     {
-      "scene_number": 12,
-      "plot_segment": "An intern excitedly tells the group about scrubbing in on the hemispherectomy. The group discusses Meredith's relationship with Dr. Shepherd, with some expressing surprise and others admitting they already knew. They joke about the effects of sex all night and debate whether Meredith is getting special treatment. One intern expresses frustration about not being more upset. Another intern asks about Dr. Taylor's possible drinking at work, but the group is hesitant to act.",
+      "scene_number": 19,
+      "plot_segment": "O'Malley excitedly tells the other interns he will scrub in on a hemispherectomy with Dr. Shepherd. The group discusses the surgery and jokes about Dr. Shepherd and Meredith. Cristina claims to know everything about Meredith and Shepherd's relationship. The interns debate responsibility and professionalism, and joke about sex and coping mechanisms. George asks about Dr. Taylor's drinking, and Cristina says whatever gets you through the day. George wonders if he should report Taylor's drinking but is warned it is a 'can of worms.'",
       "is_recap": false,
       "start_time": "00:22:12,868",
       "end_time": "00:23:41,365",
@@ -133,19 +210,30 @@
       "end_subtitle_index": 566
     },
     {
-      "scene_number": 13,
-      "plot_segment": "Digby Owens discusses his scars and pain tolerance with the doctors. He feels dizzy from blood loss. Another character encourages him to make time for wrestling. In surgery, the team works on Claire's bowel, which is full of adhesions from the abscess. Bailey tells Meredith to pick up extra work in the clinic due to Cristina's illness. Meredith and Bailey have a tense exchange about Meredith's choices outside the hospital. Bailey warns Meredith about the consequences of her actions.",
+      "scene_number": 20,
+      "plot_segment": "Digby Owens is told his new scar will be impressive. He discusses his hobbies and feels dizzy from blood loss. Digby encourages a doctor to make time for wrestling. The team continues treating Digby. In surgery, the doctors work on Claire Rice, freeing her bowel from adhesions caused by an abscess. Bailey instructs Meredith to pick up extra clinic duties due to Cristina's flu. Meredith apologizes for an inappropriate comment. Bailey warns Meredith about inappropriate behavior.",
       "is_recap": false,
       "start_time": "00:23:47,992",
-      "end_time": "00:25:34,883",
+      "end_time": "00:25:14,134",
       "start_seconds": 1427.992,
-      "end_seconds": 1534.883,
+      "end_seconds": 1514.134,
       "start_subtitle_index": 567,
+      "end_subtitle_index": 601
+    },
+    {
+      "scene_number": 21,
+      "plot_segment": "Bailey confronts Meredith about her relationship with Shepherd, saying half the hospital knows her business and that the flu is not the only virus spreading. Meredith says she made a choice and will live with the consequences. Bailey says she will have many hoops for Meredith to jump through. Meredith insists she gets her work done, even if not Bailey's way.",
+      "is_recap": false,
+      "start_time": "00:25:14,494",
+      "end_time": "00:25:34,883",
+      "start_seconds": 1514.494,
+      "end_seconds": 1534.883,
+      "start_subtitle_index": 602,
       "end_subtitle_index": 610
     },
     {
-      "scene_number": 14,
-      "plot_segment": "In the OR, Bailey instructs Meredith on repairing an organ. Later, a doctor thanks another for the opportunity to scrub in on a procedure. A staff member brings coffee and a crossword to Dr. Taylor, who is preparing for a long day. Jamie is prepared for anesthesia. Meredith and another doctor notice the smell of alcohol and confront Dr. Taylor, who denies drinking. An argument ensues, and George is told to leave the OR. Dr. Shepherd warns Dr. Taylor to be ready.",
+      "scene_number": 22,
+      "plot_segment": "In surgery, Dr. Gray is instructed to repair an organ after draining it. Meredith expresses appreciation for the chance to scrub in. Someone brings Dr. Taylor a triple espresso and crossword puzzle. Taylor jokes about the importance of coffee in medicine. Jamie is prepared for anesthesia, and someone comments on a smell of alcohol. Meredith asks Dr. Taylor if he has been drinking. Taylor is offended and denies it. George is told he is out of line and removed from the operating room.",
       "is_recap": false,
       "start_time": "00:25:40,414",
       "end_time": "00:27:36,365",
@@ -155,30 +243,30 @@
       "end_subtitle_index": 655
     },
     {
-      "scene_number": 15,
-      "plot_segment": "A couple argues about their relationship while a doctor prepares to remove swallowed keys from the man. The woman accuses the man of being manipulative and needy. The procedure is performed successfully. The doctor advises the woman to leave for her own sake. She jokes that he will never find where she parked the car.",
+      "scene_number": 23,
+      "plot_segment": "Athena and JP continue arguing about their relationship, discussing issues of control, jealousy, and unhealthy dynamics. Athena accuses JP of smothering her and says she cannot respect him. A staff member asks Athena to leave. During JP's procedure, the keys move farther down, causing a medical emergency. Athena panics, and the staff works to stabilize JP. The keys are successfully retrieved, and JP is told he will be fine. Athena is advised to leave for everyone's sake.",
       "is_recap": false,
       "start_time": "00:27:40,327",
-      "end_time": "00:29:25,851",
+      "end_time": "00:29:32,397",
       "start_seconds": 1660.327,
-      "end_seconds": 1765.851,
+      "end_seconds": 1772.397,
       "start_subtitle_index": 656,
-      "end_subtitle_index": 695
+      "end_subtitle_index": 696
     },
     {
-      "scene_number": 16,
-      "plot_segment": "Bailey tells Meredith to inform Claire's parents about her condition before showering. Meredith and another intern discuss the unpleasant smell from surgery. The group jokes about karma and Meredith's luck with surgeries. Bailey asks which intern is available for Dr. Shepherd's surgery. Cristina insists she is healthy enough, but Bailey chooses Meredith. Cristina accuses Meredith of getting special treatment due to her relationship with Dr. Shepherd.",
+      "scene_number": 24,
+      "plot_segment": "Meredith requests a shower after a messy surgery. Bailey instructs Meredith to inform Claire's parents about her condition before showering, calling it a 'hoop.' Meredith is allowed to shower first. Meredith jokes about smelling like karma, and her roommate comments on something vile in her hair. They discuss Meredith's luck in getting the best surgeries and the resulting unpleasantness. Meredith is called to assist Dr. Shepherd in surgery. Cristina insists she is healthy enough to go, but Bailey selects Meredith. Cristina accuses Meredith of getting special treatment due to her relationship with Shepherd.",
       "is_recap": false,
-      "start_time": "00:29:31,416",
+      "start_time": "00:29:32,837",
       "end_time": "00:31:18,523",
-      "start_seconds": 1771.416,
+      "start_seconds": 1772.837,
       "end_seconds": 1878.523,
-      "start_subtitle_index": 696,
+      "start_subtitle_index": 697,
       "end_subtitle_index": 736
     },
     {
-      "scene_number": 17,
-      "plot_segment": "A doctor reviews Digby's lab results and finds a high white blood cell count, indicating infection. The team investigates possible sources, and Digby reveals a new tattoo on his calf, which is infected. The infection is worsened by the gunshot wound. Digby is sent to the ICU for antibiotics.",
+      "scene_number": 25,
+      "plot_segment": "Digby's post-op bloodwork shows a severe spike in white blood cell count, indicating infection. The team investigates possible sources, and Digby reveals a new tattoo on his calf. The tattoo is found to be infected, and the infection is worsened by the gunshot wound. Digby is sent to ICU for antibiotics.",
       "is_recap": false,
       "start_time": "00:31:20,846",
       "end_time": "00:33:48,865",
@@ -188,8 +276,8 @@
       "end_subtitle_index": 782
     },
     {
-      "scene_number": 18,
-      "plot_segment": "In the OR, Dr. Shepherd and the team begin Jamie's hemispherectomy. Dr. Taylor, the anesthesiologist, is found asleep during surgery, causing Jamie to begin waking up. The team quickly intervenes, and Dr. Taylor is replaced. Dr. Shepherd orders him to leave and get it together.",
+      "scene_number": 26,
+      "plot_segment": "In Jamie's hemispherectomy surgery, Dr. Shepherd and Dr. Yang discuss the procedure, including coagulating and dividing branches of the anterior cerebral artery. Dr. Taylor's anesthesia is noted to be light, and Jamie begins to wake up. Taylor is found asleep and is awakened. Shepherd orders Taylor to leave and calls for another anesthesiologist. Taylor apologizes and leaves the operating room.",
       "is_recap": false,
       "start_time": "00:33:57,703",
       "end_time": "00:35:01,208",
@@ -199,8 +287,8 @@
       "end_subtitle_index": 808
     },
     {
-      "scene_number": 19,
-      "plot_segment": "Digby goes into multisystem organ failure due to sepsis. The medical team attempts to stabilize him with medication and defibrillation, but he loses his pulse. The team works to revive him.",
+      "scene_number": 27,
+      "plot_segment": "Digby Owens goes into multisystem organ failure due to overwhelming sepsis. The team attempts to stabilize him with medication and defibrillation, but his condition deteriorates. The staff works to resuscitate him.",
       "is_recap": false,
       "start_time": "00:35:09,034",
       "end_time": "00:35:33,135",
@@ -210,52 +298,41 @@
       "end_subtitle_index": 821
     },
     {
-      "scene_number": 20,
-      "plot_segment": "The surgical team completes Jamie's hemispherectomy, packing the cavity to prevent hemorrhaging. Cristina is asked to explain the procedure, and she describes how cerebrospinal fluid will fill the cavity. The team is allowed to close up. Cristina and another intern reflect on the intensity of the surgery and their exhaustion.",
+      "scene_number": 28,
+      "plot_segment": "The surgical team completes Jamie's hemispherectomy, packing the cavity to prevent hemorrhaging. Dr. Yang explains that cerebrospinal fluid will eventually fill the cavity. Shepherd praises the team and allows two interns to close up. The team reflects on the experience, feeling tired but exhilarated by the surgery.",
       "is_recap": false,
       "start_time": "00:35:40,625",
-      "end_time": "00:36:28,003",
+      "end_time": "00:36:32,788",
       "start_seconds": 2140.625,
-      "end_seconds": 2188.003,
+      "end_seconds": 2192.788,
       "start_subtitle_index": 822,
-      "end_subtitle_index": 835
+      "end_subtitle_index": 836
     },
     {
-      "scene_number": 21,
-      "plot_segment": "George apologizes to Dr. Taylor for confronting him about drinking. Dr. Taylor admits he was out of line and says he should have taken responsibility. He tells George he did the right thing, regardless of the code among doctors.",
+      "scene_number": 29,
+      "plot_segment": "George apologizes for questioning Dr. Taylor about drinking, and Taylor admits he was out of line. Taylor says someone should have taken responsibility, and it should have been the surgeon. Taylor tells George he did the right thing, code or no code.",
       "is_recap": false,
-      "start_time": "00:36:29,324",
+      "start_time": "00:36:36,025",
       "end_time": "00:36:58,606",
-      "start_seconds": 2189.324,
+      "start_seconds": 2196.025,
       "end_seconds": 2218.606,
-      "start_subtitle_index": 836,
+      "start_subtitle_index": 837,
       "end_subtitle_index": 850
     },
     {
-      "scene_number": 22,
-      "plot_segment": "Dr. Shepherd and another doctor discuss Meredith, with Shepherd insisting he does not favor her and that she is a great intern. They prepare to tell Jamie's parents about her successful surgery.",
+      "scene_number": 30,
+      "plot_segment": "Dr. Shepherd and another character discuss Meredith, with Shepherd insisting he does not favor her and that she is 'pretty great.' They prepare to inform Jamie's parents about her recovery. Meredith tells Claire Rice she will not get fat, and social services will contact her parents to help. Meredith reflects that life is not supposed to be this hard.",
       "is_recap": false,
       "start_time": "00:37:08,695",
-      "end_time": "00:37:30,400",
-      "start_seconds": 2228.695,
-      "end_seconds": 2250.4,
-      "start_subtitle_index": 851,
-      "end_subtitle_index": 858
-    },
-    {
-      "scene_number": 23,
-      "plot_segment": "Meredith tells Claire that the bypass was reversed but she will have lifelong nutritional problems. Claire's parents are upset, and Meredith tells Claire's mother that Claire is trying to please her. Meredith arranges for social services to help Claire, telling her that life should not be this hard.",
-      "is_recap": false,
-      "start_time": "00:37:34,396",
       "end_time": "00:38:06,514",
-      "start_seconds": 2254.396,
+      "start_seconds": 2228.695,
       "end_seconds": 2286.514,
-      "start_subtitle_index": 859,
+      "start_subtitle_index": 851,
       "end_subtitle_index": 869
     },
     {
-      "scene_number": 24,
-      "plot_segment": "Digby dies from sepsis. Another character reflects on meeting him and the people from back home. The time of death is called.",
+      "scene_number": 31,
+      "plot_segment": "A character notes the time of death for a patient. Another reflects on meeting someone from back home. The narration suggests that people out to get you do not know you are here, so there is no need to worry.",
       "is_recap": false,
       "start_time": "00:38:06,936",
       "end_time": "00:38:31,166",
@@ -265,8 +342,8 @@
       "end_subtitle_index": 875
     },
     {
-      "scene_number": 25,
-      "plot_segment": "Late at night, Meredith finds Izzie baking a cake. Izzie confronts Meredith about her relationship with Dr. Shepherd, pointing out Meredith's privileges and questioning her choices. Izzie accuses Meredith of falling for him, which Meredith denies. They joke about the situation and discuss the details of Meredith's relationship.",
+      "scene_number": 32,
+      "plot_segment": "Late at night, Meredith and Izzie talk in the kitchen. Izzie offers cake and says it is full of rage and hostility. Izzie confronts Meredith about her relationship with Shepherd, comparing their backgrounds and experiences. Izzie accuses Meredith of throwing away her respect for a few good surgeries. Meredith insists it is not about surgeries or getting ahead. Izzie realizes Meredith is falling for Shepherd, which Meredith denies. Izzie teases Meredith about being mushy and asks for details about the sex. Meredith jokes about hating Izzie and her cake.",
       "is_recap": false,
       "start_time": "00:38:35,516",
       "end_time": "00:40:48,280",
@@ -276,8 +353,8 @@
       "end_subtitle_index": 920
     },
     {
-      "scene_number": 26,
-      "plot_segment": "Meredith narrates about pain and why people might seek it out. Cristina and another character discuss the aftermath of the day. Meredith and Dr. Shepherd consider sleeping, reflecting on the saying about hitting oneself with a hammer because it feels good when you stop.",
+      "scene_number": 33,
+      "plot_segment": "Meredith reflects on pain and whether people are wired to seek it. Cristina is mentioned. Meredith suggests that without pain, maybe they would not feel real. Meredith and another character consider sleeping. Meredith recalls the saying, 'Why do I keep hitting myself with a hammer?' and answers, 'because it feels so good when I stop.'",
       "is_recap": false,
       "start_time": "00:40:49,380",
       "end_time": "00:42:00,264",

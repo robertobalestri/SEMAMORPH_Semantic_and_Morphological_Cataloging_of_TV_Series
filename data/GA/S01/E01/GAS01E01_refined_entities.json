@@ -1,104 +1,10 @@
 [
   {
-    "entity_name": "izzie_stevens",
-    "best_appellation": "Dr. Izzie Stevens",
+    "entity_name": "gloria_savage",
+    "best_appellation": "Gloria Savage",
     "appellations": [
-      "Dr. Izzie Stevens",
-      "Izzie Stevens",
-      "Izzie"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "F"
-  },
-  {
-    "entity_name": "derek_shepherd",
-    "best_appellation": "Dr. Derek Shepherd",
-    "appellations": [
-      "Dr. Derek Shepherd",
-      "Derek Shepherd",
-      "Dr. Shepherd",
-      "Derek"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "miranda_bailey",
-    "best_appellation": "Dr. Miranda Bailey",
-    "appellations": [
-      "Dr. Miranda Bailey",
-      "Miranda Bailey",
-      "Dr. Bailey",
-      "The Nazi"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "F"
-  },
-  {
-    "entity_name": "ellis_grey",
-    "best_appellation": "Dr. Ellis Grey",
-    "appellations": [
-      "Dr. Ellis Grey",
-      "Ellis Grey"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "F"
-  },
-  {
-    "entity_name": "preston_burke",
-    "best_appellation": "Dr. Preston Burke",
-    "appellations": [
-      "Dr. Preston Burke",
-      "Preston Burke",
-      "Dr. Burke"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "mr_bryce",
-    "best_appellation": "Mr. Bryce",
-    "appellations": [
-      "Mr. Bryce"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "katie_bryce",
-    "best_appellation": "Katie Bryce",
-    "appellations": [
-      "Katie Bryce",
-      "Katie"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "F"
-  },
-  {
-    "entity_name": "gloria",
-    "best_appellation": "Gloria",
-    "appellations": [
+      "Gloria Savage",
       "Gloria"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "F"
-  },
-  {
-    "entity_name": "tony_savage",
-    "best_appellation": "Tony Savage",
-    "appellations": [
-      "Tony Savage"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "meredith_gray",
-    "best_appellation": "Dr. Meredith Grey",
-    "appellations": [
-      "Dr. Meredith Grey",
-      "Meredith Grey",
-      "Meredith"
     ],
     "entity_type": "PERSON",
     "biological_sex": "F"
@@ -107,7 +13,6 @@
     "entity_name": "george_omalley",
     "best_appellation": "Dr. George O'Malley",
     "appellations": [
-      "Dr. George O'Malley",
       "George O'Malley",
       "George",
       "007"
@@ -116,39 +21,14 @@
     "biological_sex": "M"
   },
   {
-    "entity_name": "cristina_yang",
-    "best_appellation": "Dr. Cristina Yang",
+    "entity_name": "ellis_gray",
+    "best_appellation": "Dr. Ellis Gray",
     "appellations": [
-      "Dr. Cristina Yang",
-      "Cristina Yang",
-      "Cristina"
+      "Ellis Gray",
+      "Dr. Ellis Gray"
     ],
     "entity_type": "PERSON",
     "biological_sex": "F"
-  },
-  {
-    "entity_name": "izzie_stevens",
-    "best_appellation": "Dr. Izzie Stevens",
-    "appellations": [
-      "Izzie",
-      "Dr. Stevens",
-      "Izzie Stevens",
-      "Dr. Izzie Stevens"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "F"
-  },
-  {
-    "entity_name": "derek_shepherd",
-    "best_appellation": "Dr. Derek Shepherd",
-    "appellations": [
-      "Derek",
-      "Dr. Shepherd",
-      "Derek Shepherd",
-      "Dr. Derek Shepherd"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
   },
   {
     "entity_name": "miranda_bailey",
@@ -156,28 +36,7 @@
     "appellations": [
       "Dr. Bailey",
       "Miranda Bailey",
-      "Dr. Miranda Bailey"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "F"
-  },
-  {
-    "entity_name": "preston_burke",
-    "best_appellation": "Dr. Preston Burke",
-    "appellations": [
-      "Dr. Burke",
-      "Preston Burke",
-      "Dr. Preston Burke"
-    ],
-    "entity_type": "PERSON",
-    "biological_sex": "M"
-  },
-  {
-    "entity_name": "katie_bryce",
-    "best_appellation": "Katie Bryce",
-    "appellations": [
-      "Katie",
-      "Katie Bryce"
+      "The Nazi"
     ],
     "entity_type": "PERSON",
     "biological_sex": "F"
@@ -194,22 +53,62 @@
     "biological_sex": "F"
   },
   {
-    "entity_name": "george_omalley",
-    "best_appellation": "Dr. George O'Malley",
+    "entity_name": "derek_shepherd",
+    "best_appellation": "Dr. Derek Shepherd",
     "appellations": [
-      "George",
-      "George O'Malley",
-      "Dr. George O'Malley",
-      "007"
+      "Derek",
+      "Dr. Shepherd",
+      "Derek Shepherd"
     ],
     "entity_type": "PERSON",
     "biological_sex": "M"
   },
   {
-    "entity_name": "cristina_yang",
+    "entity_name": "alex_karev",
+    "best_appellation": "Dr. Alex Karev",
+    "appellations": [
+      "Alex",
+      "Alex Karev",
+      "Dr. Alex Karev"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "tony_savage",
+    "best_appellation": "Tony Savage",
+    "appellations": [
+      "Tony Savage",
+      "Tony"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "dr_burke",
+    "best_appellation": "Dr. Preston Burke",
+    "appellations": [
+      "Dr. Burke",
+      "Preston Burke"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "katie_bryce",
+    "best_appellation": "Katie Bryce",
+    "appellations": [
+      "Katie Bryce",
+      "Katie"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "christina_yang",
     "best_appellation": "Dr. Cristina Yang",
     "appellations": [
-      "Cristina",
+      "Christina",
       "Cristina Yang",
       "Dr. Cristina Yang"
     ],
@@ -224,5 +123,128 @@
     ],
     "entity_type": "PERSON",
     "biological_sex": "M"
+  },
+  {
+    "entity_name": "izzie_stevens",
+    "best_appellation": "Dr. Isobel Stevens",
+    "appellations": [
+      "Izzy",
+      "Izzie Stevens",
+      "Dr. Isobel Stevens",
+      "Isobel Stevens"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "gloria",
+    "best_appellation": "Gloria",
+    "appellations": [
+      "Gloria"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "miranda_bailey",
+    "best_appellation": "Dr. Miranda Bailey",
+    "appellations": [
+      "Dr. Bailey",
+      "Miranda Bailey",
+      "the Nazi"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "meredith_grey",
+    "best_appellation": "Meredith Grey",
+    "appellations": [
+      "Meredith",
+      "Meredith Grey"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "derek_shepherd",
+    "best_appellation": "Dr. Derek Shepherd",
+    "appellations": [
+      "Derek",
+      "Dr. Shepherd",
+      "Derek Shepherd"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "alex_karev",
+    "best_appellation": "Alex Karev",
+    "appellations": [
+      "Alex",
+      "Alex Karev"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "preston_burke",
+    "best_appellation": "Dr. Preston Burke",
+    "appellations": [
+      "Dr. Burke",
+      "Preston Burke"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "george_omalley",
+    "best_appellation": "George O'Malley",
+    "appellations": [
+      "George",
+      "George O'Malley",
+      "007"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "katie_bryce",
+    "best_appellation": "Katie Bryce",
+    "appellations": [
+      "Katie",
+      "Katie Bryce"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "christina_yang",
+    "best_appellation": "Cristina Yang",
+    "appellations": [
+      "Christina",
+      "Cristina Yang"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
+  },
+  {
+    "entity_name": "mr_bryce",
+    "best_appellation": "Mr. Bryce",
+    "appellations": [
+      "Mr. Bryce"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "M"
+  },
+  {
+    "entity_name": "isobel_stevens",
+    "best_appellation": "Isobel Stevens",
+    "appellations": [
+      "Izzy",
+      "Isobel Stevens"
+    ],
+    "entity_type": "PERSON",
+    "biological_sex": "F"
   }
 ]

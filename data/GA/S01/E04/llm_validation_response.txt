@@ -6,39 +6,33 @@
         "biological_sex": "M"
     },
     {
-        "entity_name": "miranda_bailey",
-        "best_appellation": "Dr. Miranda Bailey",
-        "appellations": ["Dr. Bailey", "Miranda Bailey", "Dr. Miranda Bailey"],
-        "biological_sex": "F"
-    },
-    {
-        "entity_name": "meredith_grey",
-        "best_appellation": "Dr. Meredith Grey",
-        "appellations": ["Grey", "Meredith Grey", "Dr. Meredith Grey"],
-        "biological_sex": "F"
-    },
-    {
-        "entity_name": "isobel_stevens",
-        "best_appellation": "Dr. Isobel Stevens",
-        "appellations": ["Izzie Stevens", "Isobel Stevens", "Dr. Isobel Stevens"],
-        "biological_sex": "F"
-    },
-    {
-        "entity_name": "elizabeth_fallon",
-        "best_appellation": "Elizabeth Fallon",
-        "appellations": ["Liz Fallon", "Elizabeth Fallon", "Nurse Fallon"],
-        "biological_sex": "F"
-    },
-    {
         "entity_name": "mr_humphrey",
         "best_appellation": "Mr. Humphrey",
         "appellations": ["Mr. Humphrey"],
         "biological_sex": "M"
     },
     {
-        "entity_name": "preston_burke",
-        "best_appellation": "Dr. Preston Burke",
-        "appellations": ["Dr. Burke", "Preston Burke", "Dr. Preston Burke"],
+        "entity_name": "dr_bethany_whisperer",
+        "best_appellation": "Dr. Bethany Whisperer",
+        "appellations": ["Dr. Bethany Whisperer"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "dr_shepherd",
+        "best_appellation": "Dr. Shepherd",
+        "appellations": ["Dr. Shepherd"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "dr_bailey",
+        "best_appellation": "Dr. Bailey",
+        "appellations": ["Dr. Bailey", "Miranda Bailey"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "dr_burke",
+        "best_appellation": "Dr. Burke",
+        "appellations": ["Dr. Burke"],
         "biological_sex": "M"
     }
 ]

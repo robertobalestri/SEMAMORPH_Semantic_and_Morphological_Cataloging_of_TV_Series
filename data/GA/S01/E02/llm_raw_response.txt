@@ -2,8 +2,20 @@
 [
     {
         "entity_name": "izzie_stevens",
-        "best_appellation": "Dr. Izzie Stevens",
-        "appellations": ["Izzie", "Dr. Izzie Stevens", "Izzie Stevens", "Dr. Stevens"],
+        "best_appellation": "Dr. Isobel Stevens",
+        "appellations": ["Izzie", "Isobel Stevens", "Dr. Isobel Stevens", "Dr. Stevens", "Izzie Stevens"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "richard_webber",
+        "best_appellation": "Dr. Richard Webber",
+        "appellations": ["Richard", "Dr. Richard Webber", "Dr. Webber", "Richard Webber", "the chief"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "miranda_bailey",
+        "best_appellation": "Dr. Miranda Bailey",
+        "appellations": ["Dr. Bailey", "Miranda", "Miranda Bailey", "Dr. Miranda Bailey", "Bailey", "The Nazi"],
         "biological_sex": "F"
     },
     {
@@ -13,22 +25,34 @@
         "biological_sex": "F"
     },
     {
-        "entity_name": "derek_shepherd",
-        "best_appellation": "Dr. Derek Shepherd",
-        "appellations": ["Dr. Shepherd", "Derek", "Dr. Derek Shepherd", "Derek Shepherd", "Shepherd"],
+        "entity_name": "cristina_yang",
+        "best_appellation": "Dr. Cristina Yang",
+        "appellations": ["Cristina", "Cristina Yang", "Dr. Cristina Yang", "Dr. Yang"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "meredith_grey",
+        "best_appellation": "Dr. Meredith Grey",
+        "appellations": ["Meredith", "Meredith Grey", "Dr. Meredith Grey", "Dr. Grey"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "preston_burke",
+        "best_appellation": "Dr. Preston Burke",
+        "appellations": ["Dr. Burke", "Preston", "Preston Burke", "Dr. Preston Burke", "Burke"],
         "biological_sex": "M"
     },
     {
-        "entity_name": "miranda_bailey",
-        "best_appellation": "Dr. Miranda Bailey",
-        "appellations": ["Dr. Bailey", "Miranda Bailey", "Dr. Miranda Bailey", "Bailey", "Miranda"],
-        "biological_sex": "F"
+        "entity_name": "george_omalley",
+        "best_appellation": "Dr. George O'Malley",
+        "appellations": ["George", "George O'Malley", "Dr. George O'Malley", "Dr. O'Malley", "O'Malley"],
+        "biological_sex": "M"
     },
     {
-        "entity_name": "ellis_grey",
-        "best_appellation": "Dr. Ellis Grey",
-        "appellations": ["Ellis Grey", "Dr. Ellis Grey", "Ellis"],
-        "biological_sex": "F"
+        "entity_name": "derek_shepherd",
+        "best_appellation": "Dr. Derek Shepherd",
+        "appellations": ["Dr. Shepherd", "Derek", "Derek Shepherd", "Dr. Derek Shepherd", "Shepherd", "McDreamy"],
+        "biological_sex": "M"
     },
     {
         "entity_name": "allison",
@@ -37,46 +61,16 @@
         "biological_sex": "F"
     },
     {
-        "entity_name": "richard_webber",
-        "best_appellation": "Chief Richard Webber",
-        "appellations": ["Chief Richard Webber", "Chief Webber", "Richard", "Richard Webber", "Webber", "Chief Richard"],
-        "biological_sex": "M"
+        "entity_name": "nancy_reagan",
+        "best_appellation": "Nancy Reagan",
+        "appellations": ["Nancy Reagan", "Nancy"],
+        "biological_sex": "F"
     },
     {
         "entity_name": "alex_karev",
         "best_appellation": "Dr. Alex Karev",
         "appellations": ["Alex", "Alex Karev", "Dr. Alex Karev", "Dr. Karev", "Karev"],
         "biological_sex": "M"
-    },
-    {
-        "entity_name": "preston_burke",
-        "best_appellation": "Dr. Preston Burke",
-        "appellations": ["Dr. Burke", "Dr. Preston Burke", "Preston Burke", "Burke", "Preston"],
-        "biological_sex": "M"
-    },
-    {
-        "entity_name": "george_omalley",
-        "best_appellation": "Dr. George O'Malley",
-        "appellations": ["Dr. O'Malley", "George", "George O'Malley", "Dr. George O'Malley", "O'Malley"],
-        "biological_sex": "M"
-    },
-    {
-        "entity_name": "meredith_gray",
-        "best_appellation": "Dr. Meredith Gray",
-        "appellations": ["Meredith", "Meredith Gray", "Dr. Meredith Gray", "Dr. Gray", "Gray"],
-        "biological_sex": "F"
-    },
-    {
-        "entity_name": "cristina_yang",
-        "best_appellation": "Dr. Cristina Yang",
-        "appellations": ["Cristina", "Cristina Yang", "Dr. Cristina Yang", "Dr. Yang", "Yang"],
-        "biological_sex": "F"
-    },
-    {
-        "entity_name": "god",
-        "best_appellation": "God",
-        "appellations": ["God"],
-        "biological_sex": null
     }
 ]
 ```

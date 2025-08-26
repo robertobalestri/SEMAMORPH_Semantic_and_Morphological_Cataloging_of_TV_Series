@@ -2,132 +2,162 @@
   "scenes": [
     {
       "scene_number": 1,
-      "plot_segment": "A montage of scenes and dialogue from previous episodes is shown. Meredith is questioned about her relationship with Derek, and her friends ask about the details of their sex life. There are references to Derek leaving New York for Seattle, Cristina's pregnancy options, George's frustration about being seen as a man and not a sister, and encouragement for him to ask out a nurse. Meredith is shown discussing her mother's Alzheimer's diagnosis and the secrecy surrounding it. The recap highlights the theme of secrets and relationships among the interns and attendings.",
+      "plot_segment": "A montage of scenes from previous episodes is shown. Characters discuss relationships and secrets. Meredith is questioned about her relationship with Derek. Cristina is seen discussing options regarding a pregnancy. George is teased about his sex life. There are references to Ellis Grey's Alzheimer's diagnosis and the secrecy surrounding it. These moments summarize ongoing storylines and character dynamics.",
       "is_recap": true
     },
     {
       "scene_number": 2,
-      "plot_segment": "Meredith narrates about secrets and how medicine exposes the truth. At Meredith's house, George locks himself in the bathroom. Izzie tries to get in, and George insists he needs privacy. Meredith also tries to enter, but George is embarrassed. Izzie teases George about what he might be doing in the bathroom, but George denies it. Meredith and Izzie joke about George's supposed activities. George insists he has a girlfriend, but Izzie is skeptical. Meredith and Izzie continue to tease him, and George leaves the bathroom flustered.",
+      "plot_segment": "Meredith narrates about secrets and truth in medicine. At home, George is in the bathroom when Meredith tries to enter. There is an awkward exchange, and Meredith apologizes for interrupting. George insists he was not doing what she thinks. Meredith leaves, and George comes out. Meredith reflects on how secrets eventually come out.",
       "is_recap": false
     },
     {
       "scene_number": 3,
-      "plot_segment": "Meredith receives an early morning phone call from Miss Henry at the nursing home regarding her mother. Meredith tries to avoid the conversation and lies to her roommates about the call, claiming it was a wrong number. Izzie and George continue to discuss George's supposed activities in the bathroom, with Izzie teasing him about having needs. Meredith asks about breakfast, and George tries to change the subject.",
+      "plot_segment": "Meredith receives an early morning phone call from Miss Henry at the nursing home about her mother, Ellis Grey. Meredith tries to end the call quickly, claiming it's a wrong number when questioned by someone present. She appears anxious about the call.",
       "is_recap": false
     },
     {
       "scene_number": 4,
-      "plot_segment": "Cristina is on the phone, refusing counseling and confirming an appointment for the 16th, implying a decision about her pregnancy. She is approached by Dr. Burke, who mentions paging her the previous night for reasons other than work. Burke suggests she could give him her home number, but Cristina avoids the conversation and leaves abruptly.",
+      "plot_segment": "George is teased by Izzie and Meredith about being in the bathroom for a long time. George claims he has a girlfriend, but Izzie jokes that she is imaginary. George insists his girlfriend is real. Meredith and Izzie continue to tease him about his needs. Miranda Bailey interrupts, asking what is going on. The group denies anything is happening.",
       "is_recap": false
     },
     {
       "scene_number": 5,
-      "plot_segment": "George meets Olivia at the hospital and awkwardly asks about her well-being. Olivia expresses interest in seeing George after their shifts. George tries to tell Olivia something important but struggles to find the words. Eventually, he blurts out that he has syphilis. Olivia is shocked by the news.",
+      "plot_segment": "Someone asks Meredith if she will answer a ringing phone, but she ignores it, saying she is at the hospital. Meredith is shown at work, reflecting on how secrets accumulate. Cristina is heard on the phone, refusing counseling and confirming an appointment for the 16th. Cristina and Burke have a brief exchange about paging and personal contact. Cristina leaves abruptly.",
       "is_recap": false
     },
     {
       "scene_number": 6,
-      "plot_segment": "In a surgical case, Dr. Burke and another attending discuss a patient named Bill who is undergoing a cystoscopy. George and Alex are present as interns. The doctors joke about their fraternity days and warn the interns to be careful with their answers. During the procedure, a mass is found in Bill's bladder, and a biopsy is ordered. Bill's wife is pregnant, and the doctors reassure her. The team prepares for further tests.",
+      "plot_segment": "George has an awkward conversation with Olivia, a nurse, about their recent time together. Olivia asks if George is feeling okay, and George says he is, but mentions feeling itchy. Izzie and Olivia greet each other. George tells Izzie that Olivia is interested in him. Izzie asks George about his time in the bathroom that morning, but George avoids answering and leaves.",
       "is_recap": false
     },
     {
       "scene_number": 7,
-      "plot_segment": "Cristina and Meredith examine a patient named Mr. Franklin, whose abdomen has been enlarging rapidly. His daughter Alice is frustrated about the cost of medical care and accuses her father of drinking too much. Meredith explains that Mr. Franklin has ascites, likely due to liver disease, and the team prepares to admit him for tests.",
+      "plot_segment": "Alex Karev approaches George and asks him to look at a rash in a private area. George reluctantly examines Alex and determines that Alex has syphilis.",
       "is_recap": false
     },
     {
       "scene_number": 8,
-      "plot_segment": "George receives his own lab results and learns he has syphilis. He is embarrassed when Alex and Izzie find out. The news quickly spreads among the interns, and George is teased about his condition. Izzie and Cristina advise him to tell Olivia so she can get tested, and they joke about how to break the news.",
+      "plot_segment": "A surgical team, including Dr. Burke and another doctor, discusses a patient named Bill who is undergoing a cystoscopy due to abdominal pain and blood in his urine. The doctors joke about their fraternity days. During the procedure, a mass is found in Bill's bladder. George is instructed to take a biopsy, and Alex is told to schedule a CT scan.",
       "is_recap": false
     },
     {
       "scene_number": 9,
-      "plot_segment": "Dr. Bailey assigns George and Alex to perform a paracentesis on Mr. Franklin. George admits he has never seen the procedure before, but Bailey tells him to do it anyway. The interns express anxiety about the task but proceed with the procedure, trying to reassure Mr. Franklin.",
+      "plot_segment": "A surgical team discusses a patient who needs most of his colon removed due to extensive damage. In another room, Meredith and Izzie examine Mr. Franklin, whose abdomen is swollen. His daughter, Alice, complains about the cost of tests. Meredith notes signs of liver disease and says they need to admit Mr. Franklin for further tests.",
       "is_recap": false
     },
     {
       "scene_number": 10,
-      "plot_segment": "Dr. Burke and another doctor review Bill's test results and discover that the mass in his bladder is actually an ovary, due to a rare condition involving merged embryos. Bill is shocked to learn he has an ovary but is reassured that it will be removed and that his sex life is unaffected. Burke and his friend joke about the situation.",
+      "plot_segment": "A lab technician gives results for George O'Malley. Izzie asks about the results for O'Malley, and the technician hands over a blood test. Izzie discovers that someone has syphilis and shares this with George and Alex. Izzie and George leave quickly.",
       "is_recap": false
     },
     {
       "scene_number": 11,
-      "plot_segment": "George receives a penicillin injection for syphilis from Izzie, with Alex and Meredith present. The group jokes about George's embarrassment and his 'cute butt.' Meredith brings news about Mr. Franklin's scheduled procedure. The interns tease George, and he reflects on the awkwardness of the situation.",
+      "plot_segment": "Izzie confronts George about having syphilis. George is shocked and unsure how it happened. Izzie jokes about Olivia's reputation, but George defends her. Izzie tells George he needs to inform Olivia so she can get tested. George is anxious about how to tell her.",
       "is_recap": false
     },
     {
       "scene_number": 12,
-      "plot_segment": "Miss Henry from the nursing home calls Meredith again to remind her about the monthly family dinner for residents. Meredith tries to explain her busy schedule as a surgical intern and promises to try to attend. Miss Henry emphasizes the importance of these events for the residents.",
+      "plot_segment": "In the operating room, Dr. Bailey and George assist with a surgery. Dr. Bailey jokes about George's situation. Another doctor asks George who gave him syphilis, but George refuses to answer. The doctors joke about not discussing their private parts with other men.",
       "is_recap": false
     },
     {
       "scene_number": 13,
-      "plot_segment": "A hospital-wide announcement is made about a syphilis outbreak among staff, including interns, residents, and nurses. Staff are instructed to get tested if they have had unprotected sex with other staff members. Patricia demonstrates proper condom use with a banana as part of a safe sex demonstration. The interns react with embarrassment and humor.",
+      "plot_segment": "Meredith and Izzie discuss Mr. Franklin's drinking habits and the possibility of liver disease. Alex and another doctor review Bill's scans and discover the mass is shaped like an ovary. The team is surprised by the finding. Another doctor brings lab results and says the chromosomal analysis is unusual.",
       "is_recap": false
     },
     {
       "scene_number": 14,
-      "plot_segment": "Meredith and Derek have a private conversation in the syphilis testing line. Derek assures Meredith there is no one else, and Meredith confirms she does not need to be in the line. They discuss their relationship and agree to set some rules. They joke about glow-in-the-dark condoms and express affection for each other.",
+      "plot_segment": "The surgical team tells Bill that the mass in his bladder is actually an ovary, due to a rare genetic condition. Bill is concerned about his masculinity and sex life, but is reassured by the doctors. Bill jokes about his pregnant wife.",
       "is_recap": false
     },
     {
       "scene_number": 15,
-      "plot_segment": "During Bill's surgery, Dr. Knox discovers that Bill is sterile due to a congenital condition. The team realizes that Bill's pregnant wife must be carrying another man's child. The interns discuss whether Bill should be told the truth, but Dr. Burke insists the matter is private and instructs them not to gossip.",
+      "plot_segment": "Izzie prepares to give George a penicillin shot for his syphilis. Meredith enters to offer moral support, and Izzie and Alex tease George about his situation. Meredith and Izzie joke about George's butt. Alex and Izzie administer the shot while George protests. The group jokes about the situation.",
       "is_recap": false
     },
     {
       "scene_number": 16,
-      "plot_segment": "Cristina and Meredith discuss Mr. Franklin's sudden death after the paracentesis. They worry they may have made a mistake, but Dr. Bailey reviews the chart and assures them the procedure was done correctly. The family declines an autopsy, and Bailey tells the interns to let it go.",
+      "plot_segment": "Meredith receives another call from Miss Henry, who reminds her about a family dinner at the nursing home. Meredith tries to explain her busy schedule as a surgical intern but promises to try to attend. Miss Henry emphasizes the importance of these events.",
       "is_recap": false
     },
     {
       "scene_number": 17,
-      "plot_segment": "Cristina and Izzie debate whether to perform an unauthorized autopsy on Mr. Franklin to clear their names and determine the true cause of death. Meredith is reluctant but eventually agrees to help. They plan to do the autopsy while Dr. Bailey is occupied elsewhere.",
+      "plot_segment": "Dr. Webber is informed by Patricia that there is a syphilis outbreak among staff, with several interns, residents, and nurses diagnosed. Dr. Webber addresses the staff, urging anyone having unprotected sex with colleagues to get tested. Patricia gives a safe sex demonstration using a banana and a condom.",
       "is_recap": false
     },
     {
       "scene_number": 18,
-      "plot_segment": "Cristina, Izzie, and Meredith secretly perform an autopsy on Mr. Franklin in the morgue, using a textbook for guidance. They joke nervously about the procedure and try to avoid detection. Meanwhile, Dr. Bailey is suspicious about their whereabouts.",
+      "plot_segment": "Cristina and Burke discuss a secret surgery for the chief. Burke asks Cristina if she can keep a secret. Meanwhile, Meredith, Izzie, and Cristina perform a paracentesis on Mr. Franklin. During the procedure, Mr. Franklin loses his pulse and dies unexpectedly.",
       "is_recap": false
     },
     {
       "scene_number": 19,
-      "plot_segment": "Dr. Burke confronts Bill's wife, Holly, about the paternity of her unborn child. Holly insists that their marriage is happy and asks Burke not to tell Bill the truth. Burke struggles with the ethical dilemma but ultimately decides that, as Bill's doctor, he cannot lie to him.",
+      "plot_segment": "Meredith, Izzie, and Cristina are distressed over Mr. Franklin's sudden death. They review the procedure and worry they may have missed something. Dr. Bailey checks their chart and assures them they followed protocol. The family declines an autopsy, so the cause of death is listed as cardiopulmonary arrest complicated by liver disease.",
       "is_recap": false
     },
     {
       "scene_number": 20,
-      "plot_segment": "Miss Henry informs Meredith that her mother, Ellis Grey, has been asking about her and was lucid enough to remember her daughter's name. Meredith is surprised and emotional upon hearing this news.",
+      "plot_segment": "Derek Shepherd and another doctor review MRI results and discover a tumor pressing against the optic nerve. The patient is told surgery is possible but risky, with the chance of permanent blindness. The patient insists on keeping the surgery secret. Derek agrees to assemble a trusted team for the operation.",
       "is_recap": false
     },
     {
       "scene_number": 21,
-      "plot_segment": "Cristina and Izzie are caught by Dr. Bailey after performing the unauthorized autopsy. Bailey is furious and warns them about the legal and professional consequences of their actions. Cristina and Izzie point out that Mr. Franklin's heart is enlarged and contains abnormal material, and they request to run further tests.",
+      "plot_segment": "Burke and another doctor operate on Bill to remove the ovary. During surgery, Dr. Knox notes that Bill is sterile due to a blind vas deferens, meaning he could never have fathered a child. The team realizes Bill's pregnant wife is carrying another man's child.",
       "is_recap": false
     },
     {
       "scene_number": 22,
-      "plot_segment": "Dr. Webber's surgery is completed, and Meredith is instructed to monitor him. Bailey becomes suspicious when Meredith lies about Cristina and Izzie's whereabouts. Bailey realizes Meredith is lying and leaves to find the others.",
+      "plot_segment": "Burke confronts Bill's wife, Holly, about the paternity of her child. Holly insists on keeping the secret for the sake of her marriage. Burke struggles with whether to tell Bill the truth, torn between his roles as friend and doctor.",
       "is_recap": false
     },
     {
       "scene_number": 23,
-      "plot_segment": "Bailey and the interns present the autopsy findings to Mr. Franklin's family. They explain that he died from hematomacrosis, a genetic blood disorder that caused heart failure, not from the procedure. The family is informed that Alice may also have the condition and can be tested and treated early. The family signs the autopsy consent form retroactively.",
+      "plot_segment": "Meredith, Cristina, and Izzie debate whether to perform an unauthorized autopsy on Mr. Franklin to clear their names. Cristina and Izzie decide to proceed, while Meredith is hesitant. They plan to do it when Bailey is occupied.",
       "is_recap": false
     },
     {
       "scene_number": 24,
-      "plot_segment": "Olivia finds George and explains that when they started dating, she was still seeing someone else but ended it when she realized she liked George. George learns that the other man was Alex. George becomes angry, realizing Olivia and Alex both gave him syphilis, and confronts Alex in front of others. A fight nearly breaks out, but others intervene.",
+      "plot_segment": "Cristina and Izzie secretly perform the autopsy on Mr. Franklin at night, using a textbook for guidance. Meredith assists reluctantly. They joke nervously about the situation.",
       "is_recap": false
     },
     {
       "scene_number": 25,
-      "plot_segment": "Meredith and Derek share a quiet moment after work, discussing food and wine. They joke about getting drunk and taking advantage of each other, and express contentment with their new relationship rules.",
+      "plot_segment": "Bailey discovers the interns' absence and realizes they are lying about their whereabouts. She leaves someone else in charge and goes to find them.",
       "is_recap": false
     },
     {
       "scene_number": 26,
-      "plot_segment": "Meredith is approached by Addison Shepherd, who introduces herself as Derek's wife. Addison confronts Meredith, revealing that she is the woman Derek has been having an affair with. Meredith is stunned by the revelation.",
+      "plot_segment": "Bailey finds Cristina and Izzie in the middle of the unauthorized autopsy. She is furious, warning them of the legal and professional consequences. Cristina and Izzie point out that Mr. Franklin's heart is unusually large and contains grainy material. They request to run tests on the tissue.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 27,
+      "plot_segment": "Bailey and the interns meet with Mr. Franklin's family. They explain that the cause of death was a genetic blood disorder, not the procedure. The family is informed that the condition is hereditary and that Alice should be tested. The family is asked to sign a consent form for the autopsy.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 28,
+      "plot_segment": "Meredith confides in Derek about her mother's Alzheimer's and the lies she has told to hide it. Meredith admits she is the only one who knows about her mother's illness. Derek listens and offers support.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 29,
+      "plot_segment": "Bailey confronts Meredith about her relationship with Derek, warning her that she is making a mistake by getting involved with an attending. Meredith insists it is not a mistake.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 30,
+      "plot_segment": "George and Olivia have a conversation. Olivia admits that when she started dating George, she was still seeing someone else but broke it off when she realized she liked George. George realizes the other man was Alex. George angrily confronts Alex, accusing him of giving him syphilis. A physical altercation nearly breaks out, but others intervene.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 31,
+      "plot_segment": "Burke and another character share a meal and a drink after a long day. They joke about getting drunk and taking advantage of each other. They agree that having rules in their relationship is a good thing.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 32,
+      "plot_segment": "Meredith receives news from Miss Henry that her mother was asking for her by name. Meredith is surprised and emotional. Later, Meredith is approached by Addison, who introduces herself as Addison Shepherd. Addison tells Meredith that she is Derek Shepherd's wife and that Meredith is the woman who has been sleeping with her husband.",
       "is_recap": false
     }
   ]

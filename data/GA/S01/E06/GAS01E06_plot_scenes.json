@@ -2,147 +2,217 @@
   "scenes": [
     {
       "scene_number": 1,
-      "plot_segment": "A narrator's voice says, 'Previously on Grey's Anatomy.' Scenes from earlier episodes are recapped: Meredith and Derek discuss their past sexual encounter and the complications of dating since Derek is Meredith's boss. George is questioned about his feelings for Izzie, and he denies being attracted to her. Meredith is told by a lawyer that her mother's Alzheimer's is advancing and she needs to sign over her estate. Meredith reacts with surprise. Derek and Meredith have a brief, awkward interaction over coffee.",
+      "plot_segment": "A recap sequence begins with the phrase 'Previously on Grey's Anatomy.' Scenes from earlier episodes are shown or referenced: a character says 'We had sex once,' another says 'Go out with me,' and there is discussion about workplace relationships and attraction. A conversation about someone being attracted to 'Izzy' but denying it, and admitting attraction to someone else, is included. There is mention of Meredith and her mother's advancing Alzheimer's disease, with a lawyer explaining that while Ellis Grey is still lucid, she needs to sign everything over to Meredith. A character thanks another for coffee. There is a reference to someone being blown off for tequila, and a car blocking another in. These moments summarize previous relationship and medical developments.",
       "is_recap": true
     },
     {
       "scene_number": 2,
-      "plot_segment": "A narrator reflects on procrastination and fear, referencing Benjamin Franklin's advice about not putting things off. Meredith is shown running late and asks someone to save her. The narration continues, discussing fear of failure, pain, and rejection. In a hospital setting, two characters discuss whether they should wait for someone who is late. One insists they should not wait, and another jokes about not being her mother or boyfriend. The conversation turns to whether George should ask someone out, but he denies wanting to do so. The narrator continues to reflect on the fear of making decisions.",
+      "plot_segment": "A voice narrates about Benjamin Franklin's advice to not put things off, connecting it to fear of failure, pain, and rejection. A character asks if it would be easier to just ask someone out. In a hospital setting, a group of interns waits for someone who is late; one suggests waiting, another says not to, and they discuss not being her mother or boyfriend. There is teasing about romantic interest, and one intern insists he does not want to ask her out. The narration continues, reflecting on fear of making decisions and the consequences of mistakes.",
       "is_recap": false
     },
     {
       "scene_number": 3,
-      "plot_segment": "Meredith arrives late at the hospital and is confronted by Derek, who says she's avoiding him. Meredith confirms she is, but also notes she's late. Derek wants to talk about their relationship and Bailey's knowledge of it, but Meredith refuses. They discuss the complications of their relationship, with Meredith noting she's the intern sleeping with the attending and that Bailey isn't speaking to her. Derek asks if Meredith wants him to be a better guy and walk away. Meredith is conflicted, first saying yes, then no, and then leaves, saying she's late. Derek tells her to take her time and think about it.",
+      "plot_segment": "Meredith arrives late and admits to avoiding someone. She is asked if they are going to talk about a complicated situation involving Bailey seeing something. Meredith says she does not need to talk about it, having experienced it naked. The conversation is about the complications of being an intern sleeping with an attending, and Bailey not speaking to Meredith. Meredith and the other person discuss whether to end their relationship, with Meredith uncertain. She leaves, and the other person tells her to take her time and think about it.",
       "is_recap": false
     },
     {
       "scene_number": 4,
-      "plot_segment": "Meredith and Derek share a moment, with Meredith saying being late was worth it. Meredith and Cristina discuss being late and whether Bailey told anyone about Meredith and Derek. Cristina reassures Meredith that Bailey would not tell, but warns that if people find out, Derek could be humiliated and lose opportunities. Meredith decides she has to end the relationship. Cristina tells Meredith to stop whining and notes that no good can come from sleeping with her boss. Bailey arrives and reprimands Cristina and Meredith for being late.",
+      "plot_segment": "Meredith and another intern discuss being late and the risk of angering Bailey. They wonder if Bailey told anyone about Meredith and 'McDreamy.' The consequences of their relationship are discussed, including the risk of being blacklisted and passed over for promotions. Meredith decides she has to end the relationship, and her colleague tells her to stop talking. The colleague jokes about the American dream and warns that no good can come from sleeping with one's boss. Bailey arrives and notes both are late.",
       "is_recap": false
     },
     {
       "scene_number": 5,
-      "plot_segment": "Bailey leads the interns into a patient's room, warning them to maintain decorum. The patient, Annie Connors, is introduced. Alex Karev presents her case: Annie is a 43-year-old woman with a large tumor pressing against her diaphragm. Annie jokes about her age and weight. Dr. Burke enters, and Alex continues the case presentation. Annie is scheduled for a CT scan. Annie asks if Alex can take her for the scan because she finds him attractive. The interns discuss the size of Annie's tumor and speculate on its weight. Bailey warns the interns that Annie's surgery will take most surgeons off the floor, so the interns must be extra careful with their other patients.",
+      "plot_segment": "Bailey instructs the interns to maintain decorum before entering a patient's room, warning them not to laugh or react inappropriately. The group enters and greets Miss Connors, who has a large tumor. The narration notes that the tumor is literal, not metaphorical.",
       "is_recap": false
     },
     {
       "scene_number": 6,
-      "plot_segment": "Bailey and the interns visit another patient, Mr. LaVangie, a 63-year-old man with Parkinson's disease admitted for pain management. An intern presents his case and suggests an intraspinal catheter for pain control. Dr. Shepherd assigns Meredith to prep Mr. LaVangie for the procedure and assist. Bailey instructs the other interns to make themselves busy.",
+      "plot_segment": "Bailey, Dr. Burke, and several interns visit Annie Connors. Annie prefers to be called by her first name and jokes about her age and weight. Alex Karev presents Annie's case: she is a 43-year-old woman with progressive shortness of breath and a large tumor pressing against her diaphragm. She is scheduled for a CT scan. Annie jokes about being claustrophobic and requests Alex to take her for the scan because she finds him attractive. Alex and Annie leave for the CT.",
       "is_recap": false
     },
     {
       "scene_number": 7,
-      "plot_segment": "Dr. Shepherd is confronted by Bailey in a hallway. Bailey warns Derek not to show favoritism toward Meredith, threatening to keep Meredith out of the OR for a month if she sees any special treatment. Derek tries to defend Meredith's abilities, but Bailey is firm.",
+      "plot_segment": "Interns discuss the size of Annie's tumor, speculating it weighs 60 pounds or more. They note Annie is carrying around a whole extra person and that this case is remarkable. Bailey warns that Annie's surgery will occupy most surgeons, so the interns must work extra hard and avoid mistakes, as no one will be available to fix them. Burke is called to a trauma team in OR1. An intern expresses eagerness to participate in Annie's surgery.",
       "is_recap": false
     },
     {
       "scene_number": 8,
-      "plot_segment": "Izzie prepares Annie Connors for her CT scan, reassuring her about the procedure and promising to be nearby. Annie expresses confidence. Izzie asks Annie if she's ready, and Annie agrees to proceed.",
+      "plot_segment": "Bailey instructs an intern to find Annie's mother, get a family history, and report back. Another patient, Mr. Harper, is discussed: he had a coronary bypass, and his blood pressure and labs are reviewed. The intern plans a chest X-ray and tube check for possible occlusion. Bailey approves the plan and says the patient is doing fine.",
       "is_recap": false
     },
     {
       "scene_number": 9,
-      "plot_segment": "Elsewhere, two staff members observe Annie's scan and comment on the size of her tumor, expressing disbelief and some judgment about how she let it get so large. One suggests maybe Annie is afraid of doctors, while another dismisses this, calling her 'sick' and 'warped.'",
+      "plot_segment": "George discusses with another intern that he does not have romantic feelings for Meredith, clarifying he likes her but does not 'have that thing' for her. He asks the other intern not to mention anything to Meredith to avoid awkwardness since they live together. The other intern tells George to stop talking.",
       "is_recap": false
     },
     {
       "scene_number": 10,
-      "plot_segment": "Annie's mother explains to a doctor and intern that Annie was initially thought to be gaining weight, but as the tumor grew, Annie became more afraid to see a doctor. Annie only felt truly ill the previous night when she couldn't breathe, prompting her mother to call 911. The doctor gently explains that the tumor was crushing Annie's lungs.",
+      "plot_segment": "Bailey and interns visit Mr. LaVangie, a 63-year-old man admitted for pain management for dyskinesia. He welcomes the interns sarcastically. An intern presents his case, mentioning pain management and possible treatments. Bailey asks about spinal pain treatments, and the intern suggests an intraspinal catheter for constant pain medication. Bailey assigns Meredith to prep Mr. LaVangie for the procedure and assist.",
       "is_recap": false
     },
     {
       "scene_number": 11,
-      "plot_segment": "Annie's mother is told by a doctor that she should have called sooner. The doctor then moves to another patient, Mr. LaVangie, and is approached by Mr. LaVangie's daughter, who asks if the doctor can talk to her father about brain surgery for his Parkinson's. She explains the potential benefits and her desire for her father to walk her down the aisle at her wedding. The doctor empathizes, saying she knows what it's like to watch a parent decline, and promises to help.",
+      "plot_segment": "Bailey and another attending have a tense exchange. The attending calls Bailey by her first name, and Bailey responds by saying she will call him by his last name. Bailey warns the attending not to favor Meredith Grey, threatening to keep Meredith out of the OR for a month if favoritism is shown. The attending insists Meredith is good, and Bailey says she is technically his boss. Bailey makes it clear she will not tolerate favoritism.",
       "is_recap": false
     },
     {
       "scene_number": 12,
-      "plot_segment": "A group of surgeons, including Dr. Burke, discuss Annie's tumor and the surgical plan. They debate whether to start at the spine or the front, weighing the risks of paralysis versus death. One surgeon questions whether Annie wants to live, given how long she waited to seek treatment. Another argues that people do risky things all the time without wanting to die. They agree that, at 43, Annie deserves a chance.",
+      "plot_segment": "Annie is prepared for her CT scan. An intern explains the microphone system and reassures Annie, promising to be nearby. Annie is ready for the scan and enters the machine.",
       "is_recap": false
     },
     {
       "scene_number": 13,
-      "plot_segment": "Meredith approaches Dr. Shepherd and asks if Mr. LaVangie is a good candidate for deep brain stimulation (DBS). Derek says yes, but the patient is not interested and insists it's not their job to push him. Derek tells Meredith not to scrub in on the case, as she disagrees with his approach.",
+      "plot_segment": "Two unidentified people discuss Annie's tumor, expressing disbelief at its size and wondering how someone lets it get so bad. One suggests Annie might be afraid of doctors, while the other dismisses sympathy and calls her sick and warped. They speculate about how Annie lives with herself.",
       "is_recap": false
     },
     {
       "scene_number": 14,
-      "plot_segment": "Bailey talks to Annie Connors, explaining the risks of surgery. Annie asks directly if she will die, and Bailey says there is always that risk, but without surgery, Annie will die soon. Annie's mother insists Annie will have the surgery, but Annie says she will only do it if a certain doctor is not present. Annie explains this is how she lives with herself. Bailey agrees to her condition.",
+      "plot_segment": "Annie's mother explains to an intern that Annie initially thought she was gaining weight, but as her condition worsened, Annie became afraid to see a doctor. The mother says Annie never felt very sick until last night, when she could not breathe due to the tumor crushing her lungs. The mother called 911, believing it was the right thing to do. Another person comments that the right thing would have been to call a year ago.",
       "is_recap": false
     },
     {
       "scene_number": 15,
-      "plot_segment": "Bailey confronts Alex Karev about offending Annie during her CT scan, as Annie overheard negative comments through the microphone. Bailey bans Alex from the OR for a week. Alex protests, saying he didn't realize the mic was on. Another intern is assigned to scrub in with Cristina instead. Annie is prepped for surgery and jokes about being the 'fat, nasty tumor lady.' She expresses guilt for letting her condition get so bad. When asked why she waited, Annie explains her fear of hospitals due to past family deaths. George relates, sharing his own fear of confessing feelings to a roommate.",
+      "plot_segment": "Meredith interacts with Mr. LaVangie's daughter, who apologizes for her father's preference for 'skinny blondes.' The daughter asks Meredith to talk to her father about brain surgery, hoping it could improve his symptoms. She explains she is getting married soon and wants her father to be present, having already lost her mother. Meredith empathizes, saying she understands what it is like to watch a parent suffer. Meredith agrees to help.",
       "is_recap": false
     },
     {
       "scene_number": 16,
-      "plot_segment": "Cristina and Meredith discuss the perception that Meredith is being favored because of her relationship with Derek. Cristina tells Meredith that she deserves her opportunities, but warns that others will resent her if they find out. Meredith insists she has to end the relationship. Alex interrupts, asking about scrubbing in on Annie's surgery, but Cristina and Meredith dismiss him. The interns joke about stabbing Alex with a fork. George joins the group, and they discuss Derek's behavior. George tries to invite everyone out for drinks.",
+      "plot_segment": "A group of surgeons reviews Annie's CT scan, noting the tumor is displacing her lung tissue and infiltrating her spinal canal. They debate surgical approaches, with one preferring to start with the spine and another with the front. They discuss the risks of paralysis and death, and whether Annie wants to live. The group concludes that Annie's chances of surviving surgery are slightly better than doing nothing, and decide it is worth trying.",
       "is_recap": false
     },
     {
       "scene_number": 17,
-      "plot_segment": "George visits a patient, Mr. Harper, and checks his back. He is asked to leave the board for the patient. George checks on Mr. LaVangie, asking if he has reconsidered brain surgery. Mr. LaVangie refuses, expressing frustration at being pressured. His daughter pleads with him, but he insists it's his life and brain. Meredith tries to persuade him, saying it's also his daughter's life and that he should try to get better.",
+      "plot_segment": "Meredith asks Dr. Shepherd if Mr. LaVangie is a good candidate for deep brain stimulation (DBS). Shepherd says yes, but the patient is not interested. Meredith suggests pushing him, but Shepherd refuses, saying it is not their job to persuade the patient into risky brain surgery. Shepherd tells Meredith not to scrub in on the minor procedure, as she is uncomfortable with his decision.",
       "is_recap": false
     },
     {
       "scene_number": 18,
-      "plot_segment": "In the OR, Cristina and another intern are told by Dr. Burke that they will be retracting Annie's tumor for many hours. Dr. Shepherd is informed that Mr. LaVangie has agreed to DBS if it is done today. Meredith urges that the surgery be done immediately, as he may not return if he leaves. Derek agrees to proceed.",
+      "plot_segment": "Bailey is called 'the Nazi' by a patient. Bailey explains the surgery will be long and difficult, but the team is capable. Annie asks if she will die, and Bailey says there is always a risk, but without surgery, Annie will definitely die soon. Annie's mother insists Annie will have the surgery, but Annie sets a condition: she does not want a certain person present during the operation. Bailey agrees to Annie's request.",
       "is_recap": false
     },
     {
       "scene_number": 19,
-      "plot_segment": "Meredith approaches Bailey and tries to explain that she didn't know Derek was her boss when they met. Bailey interrupts, saying she doesn't care about Meredith's personal life, but is frustrated by how it affects her day and the program. Bailey warns Meredith that as others find out, they will resent her and it will make things harder for everyone.",
+      "plot_segment": "Alex Karev is confronted about offending Annie during the CT scan, as the microphone was on and Annie overheard negative comments. Bailey bans Alex from the OR for a week. Another intern reports the tumor has been growing for a year and a half. Bailey assigns another intern to prep Annie for surgery and scrub in with Cristina.",
       "is_recap": false
     },
     {
       "scene_number": 20,
-      "plot_segment": "Alex and Izzie are assigned to a task together, but both are frustrated that they are not in surgery. They joke about doing the procedure in the stairwell. Izzie leaves to change. Another intern expresses gratitude for being assigned to surgery. In the OR, Cristina and another intern hold Annie's tumor for hours, their backs aching. Dr. Burke cauterizes bleeders and asks for more blood. George is reprimanded for losing focus while retracting. The team continues to operate.",
+      "plot_segment": "An intern reassures Annie before surgery, saying Dr. Burke and Dr. Bailey are great. Annie calls herself the 'fat, nasty tumor lady' and says she does not deserve sympathy. The intern asks why Annie let her condition get so bad. Annie explains she avoided hospitals because everyone she knew who went in died. The intern relates, admitting to procrastinating about confessing feelings to a roommate. Annie jokes about the comparison between love life and her tumor.",
       "is_recap": false
     },
     {
       "scene_number": 21,
-      "plot_segment": "Derek performs DBS on Mr. LaVangie, with Meredith present. Derek reassures Mr. LaVangie, who jokes about blaming Meredith if anything goes wrong. Derek drills into the skull and asks Mr. LaVangie to mimic his motions. The procedure is successful, and Mr. LaVangie jokes that if Meredith doesn't marry Derek, he will.",
+      "plot_segment": "Meredith and Cristina discuss favoritism from an attending. Cristina tells Meredith she deserves what she has earned, regardless of her relationship with Shepherd. Meredith worries about looking bad and decides she must end the relationship. Another intern asks if Cristina gets to scrub in on Annie's tumor surgery, and Cristina confirms she does.",
       "is_recap": false
     },
     {
       "scene_number": 22,
-      "plot_segment": "Derek and Meredith discuss their relationship. Meredith insists Derek cannot do her favors or treat her badly because of their relationship. She says she can take care of herself but is unsure how to get out of the situation. Derek tells her she did great work.",
+      "plot_segment": "A group of interns discusses the excitement of scrubbing in on Annie's tumor surgery. One jokes that Burke wants to get into Cristina's scrubs. There is banter about kicking someone off the surgery and making an injury look accidental. Another intern arrives, and the group discusses Shepherd's behavior, with some calling him a jackass and others defending him. Someone suggests going out for drinks to cope with a bad day.",
       "is_recap": false
     },
     {
       "scene_number": 23,
-      "plot_segment": "A crisis occurs with Mr. Harper, whose blood pressure drops and who goes into cardiac distress. Nurses and interns scramble to stabilize him. Mrs. Harper is told to leave the room. Izzie is instructed to open Mr. Harper's chest at the bedside, despite never having done it before. She is coached through the procedure, removes a clot by hand, and massages the heart until a pulse returns.",
+      "plot_segment": "A patient is asked about his back and comfort level. An intern checks his pain and asks about surgical options. The patient refuses further surgery, saying he is already letting them cut into his back. His daughter urges him to listen, but he insists on his decision. The intern explains the narrow window for DBS due to Parkinson's progression. The patient expresses frustration and asks to be left alone. The intern tells him it is his life but also his daughter's, and urges him to try.",
       "is_recap": false
     },
     {
       "scene_number": 24,
-      "plot_segment": "In the OR, Dr. Burke and the team continue Annie's surgery. They struggle with the complexity and blood loss. Cristina and George assist, and the team requests more blood. The artery walls are too weak, and Annie is losing blood rapidly. George is asked to help apply pressure. Despite their efforts, Annie's condition worsens.",
+      "plot_segment": "Surgeons prepare for Annie's tumor surgery, warning the interns they will be retracting the tumor for 14 hours and need strong backs. Meredith reports that Mr. LaVangie has agreed to DBS if it is done today. Shepherd is paged and agrees to proceed.",
       "is_recap": false
     },
     {
       "scene_number": 25,
-      "plot_segment": "Despite last-minute efforts to save Annie, she dies on the operating table. The time of death is called at 11:42.",
+      "plot_segment": "Meredith tries to explain to Bailey that she did not know Shepherd was her boss when they met. Bailey says she does not care and that Meredith's relationship affects Bailey's day, especially as others perceive favoritism. Bailey warns that as the relationship continues, Meredith will be isolated by her peers, and Bailey will be affected by their complaints. Meredith acknowledges Bailey's point.",
       "is_recap": false
     },
     {
       "scene_number": 26,
-      "plot_segment": "A narrator reflects on proverbs about time and hesitation. Izzie is comforted by a colleague, who tells her she saved a life. The narrator continues, saying that sometimes people must see for themselves and make their own mistakes.",
+      "plot_segment": "Two interns, not assigned to surgeries, complain about being left out while others are scrubbed in. They joke about doing procedures in the stairwell. One says he is changing and will call the other if needed.",
       "is_recap": false
     },
     {
       "scene_number": 27,
-      "plot_segment": "Cristina tells Meredith she is done doing her favors, frustrated after holding up Annie's tumor for 12 hours and losing the patient. Meredith and Derek discuss their relationship, questioning what it is and whether it needs a definition. Meredith and Derek decide to lock the door and be together.",
+      "plot_segment": "In the OR, surgeons and interns work on Annie's tumor. They hang another bag of blood and cauterize bleeders. George is told to be quiet. Another patient, Mrs. Harker, is shown chest films and told her husband's obstruction was relieved. Mrs. Harker recalls her husband making waffles before collapsing. Izzie is called away for a central line, and another intern is paged but does not answer.",
       "is_recap": false
     },
     {
       "scene_number": 28,
-      "plot_segment": "George asks Alex if he has seen Meredith. Alex tells George that Meredith is 'off the market,' implying she is seeing someone. George denies it, saying he would know if Meredith was seeing someone since they live together.",
+      "plot_segment": "In the OR, Mr. LaVangie is prepared for DBS. He jokes with the team and focuses on the 'pretty girl' to stay calm. The procedure begins, and the team drills into his skull, searching for the spot controlling motor function. Mr. LaVangie is awake and interacts with the team throughout.",
       "is_recap": false
     },
     {
       "scene_number": 29,
-      "plot_segment": "The narrator reflects on the importance of seizing the day and learning from mistakes. Derek invites Meredith to watch the sunrise over the ferry boats, and Meredith says she remembers that she likes ferry boats. The narrator concludes that even the biggest failure is better than never trying.",
+      "plot_segment": "Izzie is called away for various tasks and asks someone to page Dr. Karev again. In Annie's surgery, the team notes the size of the tumor and the strain on the interns holding it for hours. They observe a large artery feeding the tumor and call for more O negative blood.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 30,
+      "plot_segment": "Burke scolds George for moving during surgery, asking if he wants to kill the patient. George apologizes, saying he had an itch. The other interns tease George for his mistake.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 31,
+      "plot_segment": "During DBS, Mr. LaVangie is coached to mimic motions and keep trying. The probe is almost in, and the team encourages him. Eventually, they find the correct spot, and the procedure is successful.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 32,
+      "plot_segment": "Meredith confronts Shepherd about favoritism and insists she can take care of herself. She says she got herself into the situation and will get herself out, though she is unsure how. Shepherd tells her she did great work.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 33,
+      "plot_segment": "Mr. LaVangie jokes with Meredith, apologizing for calling Shepherd a jackass. He tells Meredith that if she does not marry Shepherd, he will. The team laughs.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 34,
+      "plot_segment": "A crisis occurs with a patient named Jimmy, whose blood pressure drops and he has runs of V-tach. The team scrambles to treat him, giving dopamine and trying to reach the resident. Mrs. Harper is told to leave the room. The team debates the diagnosis and decides to open the patient up immediately. Izzie is instructed to crack the chest, despite never having done it before. She massages the heart and restores a pulse.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 35,
+      "plot_segment": "Annie's surgery continues, with the team noting the complexity and blood loss. They struggle to get around a large artery and call for forceps. The team is amazed by the case and cautioned to watch what they say, as someone may be listening.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 36,
+      "plot_segment": "Two interns banter about personal pain and dating, with one asking the other out for drinks. The invitation is declined, as the intern says she is seeing someone. The other intern accuses her of lying, but she insists she might really be seeing someone.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 37,
+      "plot_segment": "Izzie reports to the team that she had to open Mr. Harper's chest bedside due to cardiac tamponade. The team is surprised, and Izzie explains there was no time to page anyone. Another intern realizes he forgot to change the battery, leading to frustration and accusations.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 38,
+      "plot_segment": "In Annie's surgery, the team struggles with blood loss and calls for more blood and suction. The artery walls are too weak, and Annie is losing blood rapidly. The team works frantically to save her.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 39,
+      "plot_segment": "Despite efforts, Annie Connors dies during surgery. The time of death is called at 11:42.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 40,
+      "plot_segment": "A voice-over reflects on proverbs about time and hesitation. An intern apologizes for the outcome, but is told not to be sorry, as a life was saved. The narration continues, emphasizing the importance of learning lessons firsthand.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 41,
+      "plot_segment": "Cristina tells Burke she will not accept any more favors, having held up 50 pounds of tumor for 12 hours and the patient died anyway. They discuss the nature of their relationship and whether it needs a definition. Cristina asks Burke to lock the door.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 42,
+      "plot_segment": "A group of interns discusses Meredith's relationship status. One warns another to save himself the misery, saying Meredith is 'off the market.' George protests, saying he would know if Meredith was seeing someone since he lives with her.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 43,
+      "plot_segment": "A voice-over reflects on the importance of knowing rather than wondering, and waking rather than sleeping. Meredith and another character talk about a place with a sunrise view over the ferry boats, sharing a personal moment. The narration concludes that even the biggest failure is better than never trying.",
       "is_recap": false
     }
   ]

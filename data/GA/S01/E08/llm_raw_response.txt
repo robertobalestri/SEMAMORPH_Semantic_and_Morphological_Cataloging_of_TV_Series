@@ -1,15 +1,56 @@
-```json
 [
     {
-        "entity_name": "george_omalley",
-        "best_appellation": "George O'Malley",
-        "appellations": ["George O'Malley", "George", "O'Malley"],
+        "entity_name": "dr_chesney",
+        "best_appellation": "Dr. Chesney",
+        "appellations": ["Dr. Chesney", "Chesney"],
+        "biological_sex": null
+    },
+    {
+        "entity_name": "derek_shepherd",
+        "best_appellation": "Dr. Derek Shepherd",
+        "appellations": ["Dr. Shepherd", "Shepherd", "Derek Shepherd", "Derek"],
         "biological_sex": "M"
+    },
+    {
+        "entity_name": "cricket",
+        "best_appellation": "Cricket",
+        "appellations": ["Cricket"],
+        "biological_sex": "F"
     },
     {
         "entity_name": "mr_walker",
         "best_appellation": "Mr. Walker",
         "appellations": ["Mr. Walker", "Walker"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "miranda_bailey",
+        "best_appellation": "Dr. Miranda Bailey",
+        "appellations": ["Dr. Bailey", "Bailey", "Miranda Bailey", "Miranda"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "meredith_gray",
+        "best_appellation": "Dr. Meredith Gray",
+        "appellations": ["Meredith Gray", "Meredith", "Dr. Gray", "Dr. Meredith Gray"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "mrs_glass",
+        "best_appellation": "Mrs. Glass",
+        "appellations": ["Mrs. Glass", "Glass"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "devo",
+        "best_appellation": "Devo",
+        "appellations": ["Devo", "Esther"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "george_omalley",
+        "best_appellation": "Dr. George O'Malley",
+        "appellations": ["George", "Dr. George O'Malley", "O'Malley"],
         "biological_sex": "M"
     },
     {
@@ -19,28 +60,27 @@
         "biological_sex": "M"
     },
     {
-        "entity_name": "devo",
-        "best_appellation": "Devo",
-        "appellations": ["Devo"],
-        "biological_sex": null
-    },
-    {
-        "entity_name": "cricket",
-        "best_appellation": "Cricket",
-        "appellations": ["Cricket"],
-        "biological_sex": null
-    },
-    {
-        "entity_name": "esther",
-        "best_appellation": "Esther",
-        "appellations": ["Esther"],
-        "biological_sex": "F"
+        "entity_name": "alex_karev",
+        "best_appellation": "Dr. Alex Karev",
+        "appellations": ["Dr. Karev", "Karev", "Alex Karev", "Alex"],
+        "biological_sex": "M"
     },
     {
         "entity_name": "prince_charming",
         "best_appellation": "Prince Charming",
         "appellations": ["Prince Charming"],
-        "biological_sex": null
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "esther",
+        "best_appellation": "Esther",
+        "appellations": ["Esther", "Devo"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "izzie_stevens",
+        "best_appellation": "Dr. Izzie Stevens",
+        "appellations": ["Izzy", "Izzie Stevens", "Dr. Stevens", "Izzie"],
+        "biological_sex": "F"
     }
 ]
-```

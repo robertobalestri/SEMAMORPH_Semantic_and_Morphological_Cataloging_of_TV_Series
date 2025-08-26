@@ -2,182 +2,202 @@
   "scenes": [
     {
       "scene_number": 1,
-      "plot_segment": "A voice says, 'Previously on Grey's Anatomy.' A montage of dialogue and narration summarizes the challenges of surgical residency, referencing the pressures, failures, and relationships among the interns and attendings. Meredith and Derek's romantic encounter is referenced, as well as Meredith's status as an intern and Derek as an attending. There are reminders of the hierarchy at the hospital, the tough expectations, and Meredith's relationship to her mother, Ellis Grey. The recap also touches on Meredith visiting her mother, who does not recognize her.",
+      "plot_segment": "A narrator says, 'Previously on Grey's Anatomy.' A montage of dialogue and events from earlier episodes follows: a senior doctor warns new surgical residents about the challenges ahead, including the likelihood that some will quit or be asked to leave. Meredith and Dr. Shepherd discuss their one-night stand and the awkwardness of their new working relationship. Dr. Bailey introduces the interns to their first shift, emphasizing their low status. Other characters gossip about Meredith's family background, specifically her mother, Ellis Grey. Meredith visits her mother, who does not recognize her. The interns express their hopes and anxieties about surviving residency.",
       "is_recap": true
     },
     {
       "scene_number": 2,
-      "plot_segment": "A character reflects through voice-over narration about boundaries and lines in life and work, emphasizing the importance of not getting too close to colleagues. The narration continues as scenes show Meredith interviewing potential roommates. Meredith tells someone she is particular about who lives in her house and rejects a candidate based on their age. Another character, likely Izzie, tries to convince Meredith to let her move in, offering bribes and promising to be a good roommate. Meredith resists, wanting only strangers as roommates.",
+      "plot_segment": "A narrator reflects on the importance of boundaries in the hospital, describing the various 'lines' that exist between people. The narration is accompanied by scenes of hospital life and the interns preparing for their day.",
       "is_recap": false
     },
     {
       "scene_number": 3,
-      "plot_segment": "In a hospital hallway, Dr. Bailey assigns tasks to the interns: George is to run the code team, Meredith takes the trauma pager, Cristina delivers labs, and Izzie is on sutures. Izzie tries to curry favor with Bailey by offering a mocha latte, but Bailey rebuffs her and tells all the interns that their job is to make their resident happy. Bailey makes it clear that no one will perform surgery until she is satisfied with their work.",
+      "plot_segment": "In a house, one character (likely Meredith) interviews another character for a roommate position. The applicant tries to convince her by offering a mocha latte and promising to be quiet, clean, and pay a deposit. The interviewer is hesitant, expressing a desire for distant roommates. Another character, George, enters and asks for a place to live, mentioning his mother irons his scrubs. The interviewer remains reluctant.",
       "is_recap": false
     },
     {
       "scene_number": 4,
-      "plot_segment": "Two characters, likely Meredith and Derek, discuss Seattle's ferry boats. One of them, from New York, expresses surprise at the existence of ferry boats and admits to not planning on liking Seattle. The other admits to having a fondness for ferry boats. The conversation shifts as one character tells the other they are not going out with them, referencing their previous romantic encounter. The two banter about boundaries and roles, with one character insisting on drawing a line between them. The scene ends with a humorous exchange about whether the line is imaginary or needs to be drawn with a marker.",
+      "plot_segment": "At the hospital, a supervising doctor (likely Dr. Bailey) assigns tasks to the interns: George is put in charge of the code team, Meredith gets the trauma pager, Cristina delivers labs, and Izzie is assigned to sutures. Cristina tries to negotiate for a chance to assist in surgery, offering a mocha latte as a bribe. The supervisor rejects the offer and reminds the interns that their job is to make the resident happy, not to perform surgeries. The group disperses to their assignments.",
       "is_recap": false
     },
     {
       "scene_number": 5,
-      "plot_segment": "In the emergency department, a staff member asks if someone is the surgeon. The surgeon confirms. They are informed that a 25-year-old female rape victim, Allison, has been brought in with severe trauma. Medical staff discuss her injuries and the fact that she fought back. The rape kit is negative, but it is revealed that Allison bit off her attacker's penis. The medical team reacts with shock and discusses the evidence.",
+      "plot_segment": "Two characters discuss Seattle's ferry boats. One is surprised to learn about them after living in the city for six weeks. The other explains Seattle's geography and expresses a fondness for ferry boats. The first character, who is from New York, admits to not planning on liking Seattle but is now reconsidering.",
       "is_recap": false
     },
     {
       "scene_number": 6,
-      "plot_segment": "Medical staff discuss Allison's prognosis, noting she will have a long recovery if she survives. Two doctors discuss why one of them moved to Seattle, revealing that the chief of surgery, Richard, recruited him. The conversation is brief and ends with one doctor leaving.",
+      "plot_segment": "In an elevator, two characters (one of whom is likely Meredith) have a tense exchange about their personal and professional boundaries. One insists on drawing a line between them, stating they will not date or sleep together again because of their working relationship. The other teases about the line, asking if it's imaginary or if a marker is needed.",
       "is_recap": false
     },
     {
       "scene_number": 7,
-      "plot_segment": "George is briefed on the code team's responsibilities, which involve saving lives. Another intern, possibly Cristina, is frustrated about delivering lab results despite her advanced degrees. Bailey assigns Alex Karev to shadow Cristina for the day. Cristina and Alex exchange mutual dislike, but agree to work together.",
+      "plot_segment": "A character is called to the emergency room by a paramedic to treat a rape victim, a 25-year-old woman named Allison. The medical team discusses her injuries, noting she fought back. They discover a severed penis, realizing Allison bit it off during the attack.",
       "is_recap": false
     },
     {
       "scene_number": 8,
-      "plot_segment": "George introduces himself as Dr. O'Malley and prepares to run a code on a 57-year-old male patient. Meanwhile, Izzie attempts to communicate with Mrs. Liu, a patient who does not speak English. Izzie tries to find someone who speaks Chinese to help with translation.",
+      "plot_segment": "Medical staff discuss Allison's prognosis, noting her survival depends on waking up in the next 72 hours. Two doctors talk about why one of them moved to Seattle, revealing it was due to an offer from the chief of surgery, Richard. The conversation ends with one doctor leaving abruptly.",
       "is_recap": false
     },
     {
       "scene_number": 9,
-      "plot_segment": "Meredith brings a specimen to a staff member for the police. She is told that, due to chain of custody rules, she must keep the severed penis with her until the police arrive. Meredith is uncertain what to do with it, but accepts responsibility.",
+      "plot_segment": "George, now running the code team, is briefed on a patient. Izzie attempts to communicate with a patient, Mrs. Liu, but struggles due to a language barrier and searches for someone who speaks Chinese.",
       "is_recap": false
     },
     {
       "scene_number": 10,
-      "plot_segment": "A doctor informs a patient that she has a rare but minor disorder and will be discharged without surgery. The patient is relieved to learn she is not dying. In another area, a group of interns discuss Meredith carrying the severed penis in a cooler. They joke about the situation and discuss the rape case. One intern, likely Izzie, is affected by the fact that Allison, the rape victim, was wearing the same shoes as her. She feels unsettled and tired.",
+      "plot_segment": "A character brings a specimen (the severed penis) to another staff member, who explains chain of custody rules for rape evidence: the person who collected it must keep it until police arrive. The character is left wondering what to do with the specimen.",
       "is_recap": false
     },
     {
       "scene_number": 11,
-      "plot_segment": "Two interns, possibly Meredith and Cristina, discuss a secret activity they do together to cope with stress, hinting at something they consider 'sick and twisted.' They debate whether to continue, and one decides to go ahead, inviting the other to join or stay behind. Another intern is called away to respond to a code.",
+      "plot_segment": "A doctor informs a patient that she has a rare but minor disorder and will be discharged without surgery. The patient is relieved to learn she is not dying.",
       "is_recap": false
     },
     {
       "scene_number": 12,
-      "plot_segment": "A character enters a room where a baby is present and notes that no tests have been ordered despite the baby having a heart murmur and turning blue. The attending physician tells the intern that the murmur is benign and that the baby is not their patient. The intern questions the attending, who insists the intern leave.",
+      "plot_segment": "Two interns discuss the severed penis Meredith is carrying for evidence. One jokes about the situation, while another refuses to hug. They discuss the rape case and the fact that Meredith is carrying the evidence in a cooler. Another intern makes a joke about 'taking a bite out of crime.'",
       "is_recap": false
     },
     {
       "scene_number": 13,
-      "plot_segment": "Izzie is asked by another staff member to help communicate with Mrs. Liu, but Izzie explains she cannot speak Chinese and is Korean. The attempt to find a translator is unsuccessful.",
+      "plot_segment": "Meredith is visibly affected after realizing she owns the same shoes as Allison, the rape victim. She confides in another intern about feeling unsettled by this coincidence and her exhaustion. The other intern suggests she needs something to distract herself, hinting at a shared secret activity.",
       "is_recap": false
     },
     {
       "scene_number": 14,
-      "plot_segment": "Dr. Burke confronts Chief Richard Webber about why Dr. Shepherd was brought to Seattle Grace. Richard says Shepherd is an old student and denies any ulterior motive. Burke is frustrated, feeling his position is threatened. Richard criticizes Burke for only doing the minimum required and challenges him to earn the chief position.",
+      "plot_segment": "Two interns sneak away to engage in a secret activity, joking about how they said they would stop but have not. One jokes about 'Nancy Reagan lied' and the inability to 'just say no.' They leave together, while another intern responds to a code.",
       "is_recap": false
     },
     {
       "scene_number": 15,
-      "plot_segment": "Cristina and Alex compete to deliver lab results quickly, agreeing to split the workload and avoid emotional engagement with patients. In another area, doctors inform a patient that her test results are negative and she will not need an amputation or lose her kidneys. The patient is told she can go home.",
+      "plot_segment": "An intern is found in the neonatal unit by a doctor, who questions her presence. She explains she noticed a baby with a heart murmur and is concerned. The doctor insists the murmur is benign and tells her to leave, warning her about being unauthorized in the area.",
       "is_recap": false
     },
     {
       "scene_number": 16,
-      "plot_segment": "Interns continue to discharge patients, congratulating them on their health. The scene includes light conversation about favorite music groups. In another area, a patient dies and the time of death is called.",
+      "plot_segment": "Izzie asks another intern, who she believes speaks Chinese, to help communicate with Mrs. Liu. The intern reveals she is Korean and only knows Chinese from a restaurant menu, so she cannot help.",
       "is_recap": false
     },
     {
       "scene_number": 17,
-      "plot_segment": "A staff member instructs someone to call every hospital in the county, expecting the rapist to seek medical attention. Meredith learns that Allison, the rape victim, has no family in Seattle. Another staff member expresses sympathy for Allison's situation.",
+      "plot_segment": "A senior doctor (the chief) is questioned by another doctor about why Dr. Shepherd was brought to the hospital. The chief says Shepherd is an old student and denies any ulterior motive. The questioning doctor expresses concern about their own position and the chief's succession plans.",
       "is_recap": false
     },
     {
       "scene_number": 18,
-      "plot_segment": "Meredith appears distressed and leaves, saying she has something to do. Another doctor, Dr. Burke, is told by Meredith about a baby in Pediatrics with a possible heart murmur. Burke refuses to check on the baby without a consult from Pediatrics, citing hospital rules.",
+      "plot_segment": "Two interns deliver lab results to patients, complaining about the lack of interesting cases and the monotony of their tasks. They agree to split the work quickly and avoid emotional interactions with patients.",
       "is_recap": false
     },
     {
       "scene_number": 19,
-      "plot_segment": "Izzie is recognized by a patient from a magazine photo. She finishes treating the patient and asks them to see the nurse. Izzie then tries to convince another patient, Mrs. Liu, to let her examine her arm. Mrs. Liu is hesitant but eventually agrees.",
+      "plot_segment": "Two interns deliver good news to a patient: her test results are negative, and she will not need surgery or lose her leg. The patient is told she can go home.",
       "is_recap": false
     },
     {
       "scene_number": 20,
-      "plot_segment": "Izzie and another intern, possibly George, hide in a quiet area. Izzie confesses to kissing Derek in the elevator and discusses her bad day. They talk about Meredith carrying the severed penis and Allison wearing the same shoes as Meredith. Both reflect on how strange and unsettling the situation is.",
+      "plot_segment": "An intern asks a patient about her favorite music group, but the patient does not answer as expected. The intern then tells another patient they can go home. In another area, a code patient dies and the time of death is called.",
       "is_recap": false
     },
     {
       "scene_number": 21,
-      "plot_segment": "Security is called. Medical staff bring in a new patient, identified as the rapist. Meredith is told to call the chief and inform him that the rapist has been caught.",
+      "plot_segment": "A police officer instructs a staff member to call every hospital in the county, explaining that the rapist will eventually seek medical attention and the severed penis will be used as evidence. Another staff member reveals that Allison has no family in Seattle and recently moved there. The staff express sympathy for her situation.",
       "is_recap": false
     },
     {
       "scene_number": 22,
-      "plot_segment": "Doctors discuss the extent of the rapist's injuries and why his penis cannot be reattached. They explain that the damage is too severe and that he will have permanent consequences. The chief is informed that the rapist came to the hospital for treatment. Dr. Burke confronts Richard about his status at the hospital, and Richard criticizes Burke for not going above and beyond in his work.",
+      "plot_segment": "Meredith, appearing distressed, leaves to do something. Another character says they will sit with Allison. Meredith approaches Dr. Burke about a baby she is concerned about in pediatrics, but he refuses to get involved without a consult from the appropriate department, citing hospital rules.",
       "is_recap": false
     },
     {
       "scene_number": 23,
-      "plot_segment": "Izzie is unable to communicate with Mrs. Liu due to the language barrier and has to send her away. The interns gather and express frustration about their lack of experience and the menial nature of their tasks. Meredith complains about having to keep the severed penis overnight due to police delays. Alex makes a joke, but the group is mostly discouraged.",
+      "plot_segment": "Izzie is recognized by a patient as a model from a magazine. She finishes treating the patient, who then questions her mental state. Izzie insists the patient sit so she can examine her arm.",
       "is_recap": false
     },
     {
       "scene_number": 24,
-      "plot_segment": "Meredith enters the nursery and speaks with the parents of the baby with the heart murmur. She is confronted by the pediatrician, who is upset that Meredith is interfering. Dr. Burke arrives, takes over the case, and orders tests for the baby. He asserts his authority as an attending and reassures the parents.",
+      "plot_segment": "Two interns, one hiding from Alex and the other carrying the evidence cooler, talk in a quiet area. One confesses to kissing Dr. Shepherd in the elevator, explaining it was a bad day. They discuss coping mechanisms and the oddness of carrying around a severed penis. The conversation shifts to Allison's shoes and the unsettling feeling it gives Meredith.",
       "is_recap": false
     },
     {
       "scene_number": 25,
-      "plot_segment": "Izzie finds Mrs. Liu outside the hospital and discovers that she is afraid of being arrested for being undocumented. Izzie promises not to report her and offers to treat her wound outside. Izzie cleans and stitches the wound, gives Mrs. Liu her pager number, and asks her to return in five days for a follow-up. Mrs. Liu thanks Izzie, calling her a good person and doctor.",
+      "plot_segment": "A staff member calls for security. The rapist, badly injured, is brought into the hospital. The staff quickly move him to surgery, and Meredith is told to notify the chief that they have the rapist.",
       "is_recap": false
     },
     {
       "scene_number": 26,
-      "plot_segment": "Cristina asks Dr. Burke if he thinks she is too confident. He offers her a chance to speak freely for 30 seconds. Cristina tells him he is cocky, arrogant, bossy, pushy, and has a God complex. She continues her critique until interrupted.",
+      "plot_segment": "Medical staff discuss the severity of Allison's injuries and the state of the rapist. They explain why the severed penis cannot be reattached due to the nature of the injury. The staff make dark jokes about the rapist's future. The chief is informed that the rapist came to the hospital. Two senior doctors discuss their rivalry for the chief position, with one being told to 'earn it.'",
       "is_recap": false
     },
     {
       "scene_number": 27,
-      "plot_segment": "George confides in Izzie that he lost five patients on the code team and feels like the angel of death. Izzie reassures him that most code patients cannot be revived and that he should not blame himself. George wishes he had known this before.",
+      "plot_segment": "Izzie continues to struggle communicating with Mrs. Liu, apologizing for not understanding her. Over the hospital intercom, Dr. Bailey is paged. Izzie and another intern commiserate about their difficult day, including turning away a patient and having to keep the evidence overnight. The group of interns express their frustration and uncertainty about their roles and whether they are learning anything.",
       "is_recap": false
     },
     {
       "scene_number": 28,
-      "plot_segment": "Meredith and George discuss the baby's upcoming heart surgery. Meredith admits she thought she was right about the diagnosis, and George says interns are rarely right. They both admit to feeling terrified all the time as interns.",
+      "plot_segment": "In the pediatric unit, Meredith speaks with the parents of the baby she is concerned about. She suggests the murmur might not be benign and recommends further tests. The pediatric doctor is upset that Meredith intervened. Dr. Burke arrives, takes over the case, and orders tests. He warns Meredith not to overstep again or her residency will be made difficult.",
       "is_recap": false
     },
     {
       "scene_number": 29,
-      "plot_segment": "George sits with Allison, the rape victim, who remains unconscious. Meredith joins him. George shares that he has four sisters and would want them by his side if he were in a coma. Meredith reflects on her own mother, Ellis Grey, and her likely reaction. Meredith and Derek discuss their ambiguous relationship, with Derek joking about needing breath mints for future kisses. Meredith reflects on the baby in the nursery and the contrast between innocence and trauma.",
+      "plot_segment": "Izzie finds Mrs. Liu outside the hospital, tending to her injured arm. Mrs. Liu is afraid to come inside, fearing jail due to her immigration status. Izzie promises not to report her and treats her wound outside, giving her instructions to return in five days for a check-up and not to tell anyone about the treatment.",
       "is_recap": false
     },
     {
       "scene_number": 30,
-      "plot_segment": "Medical staff notice Allison's intracranial pressure has doubled and prepare her for emergency surgery. After surgery, a doctor explains that Allison's skull flap had to be left off due to brain swelling. Her prognosis is uncertain, and she may not survive unless she wakes up.",
+      "plot_segment": "Mrs. Liu thanks Izzie, calling her a good person and doctor. Izzie is visibly moved by the gratitude.",
       "is_recap": false
     },
     {
       "scene_number": 31,
-      "plot_segment": "Dr. Burke is approached by another doctor about getting a drink, but he declines. The two discuss that Richard promised both of them the chief position. They acknowledge their competition but clarify that they are not enemies.",
+      "plot_segment": "A senior doctor asks another if he is too confident. The subordinate is given 30 seconds to speak freely and lists the senior's negative traits, including arrogance and a God complex. The conversation ends with the subordinate needing a drink, a man, or a massage.",
       "is_recap": false
     },
     {
       "scene_number": 32,
-      "plot_segment": "A staff member explains to another how to sign the chain of custody paperwork for the severed penis. The staff member is uncomfortable because they used to change the patient's diapers. The paperwork is completed and the evidence is handed over to the police.",
+      "plot_segment": "George laments losing five patients on the code team and feeling like the 'angel of death.' Another intern reassures him that most code patients cannot be revived, and that he should not blame himself.",
       "is_recap": false
     },
     {
       "scene_number": 33,
-      "plot_segment": "In the operating room, Dr. Burke prepares to perform heart surgery on the baby. He tells Meredith to scrub in and promises to let her hold the clamp during the procedure.",
+      "plot_segment": "Meredith and another intern discuss the baby's upcoming heart surgery. Meredith admits she thought she was right about the diagnosis, and they reflect on how rare it is for interns to be correct. They both confess to feeling terrified all the time.",
       "is_recap": false
     },
     {
       "scene_number": 34,
-      "plot_segment": "Medical staff inform the rapist that his bleeding has been stopped and that his penis will be handed over to the police. Another patient is told their tumor is benign and they can go home.",
+      "plot_segment": "Meredith checks on Allison, who remains unchanged. Another intern joins her, sharing that she has four sisters and cannot imagine being alone in a coma. Meredith reflects on her own mother, who would be present and in control if she were in this situation. The conversation shifts to Meredith's complicated relationship with Dr. Shepherd, with both acknowledging the awkwardness of their interactions.",
       "is_recap": false
     },
     {
       "scene_number": 35,
-      "plot_segment": "A character narrates about boundaries and lines, reflecting on how they can keep people out but also fence oneself in. Meredith tells George and Izzie they can move into her house. They celebrate. Meredith blames the babies for her decision, jokingly. The narration continues, suggesting that life is about crossing lines rather than drawing them.",
+      "plot_segment": "Allison's condition worsens, and the medical team prepares her for emergency surgery. Afterward, a doctor explains that they had to leave her skull flap off due to brain swelling and that her survival depends on whether she wakes up. Another doctor declines an invitation for drinks, and two senior doctors acknowledge their rivalry for the chief position.",
       "is_recap": false
     },
     {
       "scene_number": 36,
-      "plot_segment": "Meredith and Derek meet again. Meredith mentions her fondness for ferry boats. She decides to take the stairs instead of the elevator, referencing their lack of self-control. The narration concludes with the idea that taking risks can lead to spectacular outcomes.",
+      "plot_segment": "A staff member completes the chain of custody paperwork for the severed penis with a police officer. They joke about the awkwardness of the situation. The evidence is handed over to the police.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 37,
+      "plot_segment": "In the operating room, Dr. Burke prepares to perform heart surgery on the baby. He allows Meredith to scrub in and promises to let her hold the clamp during the procedure, warning her not to make him change his mind.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 38,
+      "plot_segment": "The rapist is informed that his bleeding has been stopped but that his penis is being given to the police. Another patient is told her tumor is benign and she can go home.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 39,
+      "plot_segment": "A narrator reflects on boundaries and the messiness of life. Meredith tells George and Izzie they can move into her house. They celebrate, and Meredith jokes about blaming the babies for her decision. The narrator concludes that sometimes lines are meant to be crossed.",
+      "is_recap": false
+    },
+    {
+      "scene_number": 40,
+      "plot_segment": "Meredith and Dr. Shepherd ride the elevator together. Meredith remarks on her fondness for ferry boats and says she will take the stairs this time to avoid temptation. The narrator reflects that some lines are too dangerous to cross, but if you take the chance, the view can be spectacular.",
       "is_recap": false
     }
   ]

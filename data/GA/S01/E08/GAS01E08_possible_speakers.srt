@@ -4,7 +4,7 @@ Meredith Grey / Mr. Duff (PVM): You know how when you were a little kid and you 
 
 2
 00:00:08,845 --> 00:00:13,910
-Meredith Grey / Mr. Duff OR Attending Doctor (PVM): That fantasy of what your life would be.
+Meredith Grey / Mr. Duff OR Dr. Jennings OR Dr. Meredith Gray (PVM): That fantasy of what your life would be.
 
 3
 00:00:15,233 --> 00:00:19,757
@@ -12,19 +12,19 @@ Meredith Grey / Mr. Duff (PVM): White dress, Prince Charming who'd carry you awa
 
 4
 00:00:21,681 --> 00:00:26,745
-Meredith Grey / Hospital Intercom OR Mr. Duff (PVM): You'd lie in bed at night and close your eyes and you had complete and utter faith.
+Meredith Grey / Mr. Duff OR Dr. Meredith Gray (PVM): You'd lie in bed at night and close your eyes and you had complete and utter faith.
 
 5
 00:00:28,533 --> 00:00:34,368
-Izzie Stevens / Mr. Duff OR Dr. Miranda Bailey (PVM): Eight hours, 16 ounces of chocolate, and 32 cupcakes, and they still don't taste right.
+Izzie Stevens / Dr. Izzie Stevens (PVM): Eight hours, 16 ounces of chocolate, and 32 cupcakes, and they still don't taste right.
 
 6
 00:00:34,892 --> 00:00:36,215
-Meredith Grey / Mr. Duff (PVM): No, these are good.
+Meredith Grey / Devo (PVM): No, these are good.
 
 7
 00:00:36,756 --> 00:00:38,121
-Cristina Yang / Mr. Duff (PVM): Martha Stewart would be proud.
+Cristina Yang / Devo (PVM): Martha Stewart would be proud.
 
 8
 00:00:38,643 --> 00:00:39,505
@@ -40,11 +40,11 @@ Meredith Grey / Mr. Duff (PVM): They were so close, you could taste them.
 
 11
 00:00:46,404 --> 00:00:48,987
-Izzie Stevens / Mr. Duff OR Dr. Miranda Bailey (PVM): There's something missing, some specific ingredient.
+Izzie Stevens / Mr. Duff OR Dr. Izzie Stevens (PVM): There's something missing, some specific ingredient.
 
 12
 00:00:49,006 --> 00:00:49,968
-Izzie Stevens / Mr. Duff OR Dr. Miranda Bailey (PVM): Why can't I remember?
+Izzie Stevens / Mr. Duff OR Dr. Izzie Stevens (PVM): Why can't I remember?
 
 13
 00:00:50,307 --> 00:00:52,090
@@ -56,7 +56,7 @@ Meredith Grey / Mr. Duff (PVM): One day, you open your eyes, and the fairy tale 
 
 15
 00:00:56,755 --> 00:00:58,017
-Meredith Grey / Mr. Duff OR Dr. Derek Shepherd (PVM): Look, just call her.
+Cristina Yang / Dr. Jennings OR Mr. Duff (PVM): Look, just call her.
 
 16
 00:00:58,036 --> 00:00:59,218
@@ -84,87 +84,87 @@ Cristina Yang / Mr. Duff (PVM): I mean, why are we always sleeping at my house?
 
 22
 00:01:13,096 --> 00:01:13,998
-Meredith Grey / Mr. Duff (PVM): Do you even have one?
+Cristina Yang / Mr. Duff (PVM): Do you even have one?
 
 23
 00:01:14,438 --> 00:01:14,780
-Cristina Yang / Mr. Duff (PVM): One what?
+Meredith Grey / Mr. Duff (PVM): One what?
 
 24
 00:01:15,381 --> 00:01:20,807
-Meredith Grey / Mr. Duff (PVM): A house with a closet, with your stuff in it, your personal stuff.
+Cristina Yang / Mr. Duff OR Mr. Duff (PVM): A house with a closet, with your stuff in it, your personal stuff.
 
 25
 00:01:21,688 --> 00:01:22,849
-Meredith Grey / Mr. Duff (PVM): Do you even have one of those?
+Cristina Yang / Mr. Duff (PVM): Do you even have one of those?
 
 26
 00:01:26,855 --> 00:01:27,358
-Izzie Stevens / Dr. Derek Shepherd (PVM): Good morning.
+Hospital Staff Member / Patient (PVM): Good morning.
 
 27
 00:01:28,459 --> 00:01:28,539
-Meredith Grey / Dr. Derek Shepherd (PVM): Hey.
+Devo / Patient (PVM): Hey.
 
 28
 00:01:28,560 --> 00:01:29,539
-Izzie Stevens / Dr. Derek Shepherd OR Dr. Derek Shepherd (PVM): You guys want a cupcake?
+Devo / Patient (PVM): You guys want a cupcake?
 
 29
 00:01:30,242 --> 00:01:30,703
-Cristina Yang / Dr. Derek Shepherd (PVM): Easy made them.
+Devo / Patient (PVM): Easy made them.
 
 30
 00:01:32,164 --> 00:01:32,926
-Cristina Yang / Dr. Derek Shepherd (PVM): You know, I like it here.
+Devo's Father / Patient (PVM): You know, I like it here.
 
 31
 00:01:33,527 --> 00:01:34,527
-Meredith Grey / Dr. Derek Shepherd (PVM): Hey, you said so yourself.
+Devo / Patient (PVM): Hey, you said so yourself.
 
 32
 00:01:34,567 --> 00:01:37,793
-Cristina Yang / Dr. Derek Shepherd (PVM): You like to have your things around, sleeping in your own bed.
+Devo / Patient (PVM): You like to have your things around, sleeping in your own bed.
 
 33
 00:01:38,073 --> 00:01:39,816
-Cristina Yang / Dr. Derek Shepherd (PVM): You're like a health nut, aren't you?
+Devo's Father / Patient (PVM): You're like a health nut, aren't you?
 
 34
 00:01:40,503 --> 00:01:41,947
-Meredith Grey / Mr. Duff OR Dr. Alex Karev (PVM): Can I eat muesli every morning?
+Devo / Mr. Duff OR Patient (PVM): Can I eat muesli every morning?
 
 35
 00:01:41,986 --> 00:01:44,992
-Cristina Yang / Mr. Duff OR Dr. Alex Karev (PVM): No, I don't.
+Devo's Father / Mr. Duff (PVM): No, I don't.
 
 36
 00:01:46,215 --> 00:01:47,959
-Meredith Grey / Mr. Duff (PVM): Okay, the muesli thing, you do.
+Devo / Mr. Duff (PVM): Okay, the muesli thing, you do.
 
 37
 00:01:48,561 --> 00:01:49,581
-Cristina Yang / Mr. Duff (PVM): The last seven days at least.
+Devo / Mr. Duff (PVM): The last seven days at least.
 
 38
 00:01:49,804 --> 00:01:50,444
-Meredith Grey / Mr. Duff OR Dr. Meredith Gray (PVM): Oh, come on.
+Devo's Father / Mr. Duff (PVM): Oh, come on.
 
 39
 00:01:50,465 --> 00:01:53,450
-Cristina Yang / Mr. Duff OR Dr. Meredith Gray (PVM): I haven't been here for a whole week.
+Devo / Mr. Duff OR Cricket (PVM): I haven't been here for a whole week.
 
 40
 00:01:56,991 --> 00:01:57,253
-Meredith Grey / Mr. Duff OR Dr. Miranda Bailey (PVM): See?
+Devo / Mr. Duff OR Mr. Duff (PVM): See?
 
 41
 00:01:58,515 --> 00:01:59,638
-Cristina Yang / Mr. Duff (PVM): Even they think it's weird.
+Devo / Mr. Duff (PVM): Even they think it's weird.
 
 42
 00:02:00,197 --> 00:02:15,591
-Meredith Grey / Hospital Intercom OR Mr. Duff (PVM): But the thing is, it's hard to let go of that fairy tale entirely, because almost everyone still has that smallest bit of hope, of faith, that one day they'll open their eyes and it will all come true.
+Dr. Meredith Gray: But the thing is, it's hard to let go of that fairy tale entirely, because almost everyone still has that smallest bit of hope, of faith, that one day they'll open their eyes and it will all come true.
 
 43
 00:02:25,627 --> 00:02:26,908
@@ -184,59 +184,59 @@ Cristina Yang / Mr. Duff (PVM): Can you get me in then?
 
 47
 00:02:31,413 --> 00:02:32,514
-Healthcare Provider (Scheduler/Nurse/Doctor) / Mr. Duff (PVM): Oh, I'm afraid not.
+Medical Professional (OB/GYN) / Mr. Duff (PVM): Oh, I'm afraid not.
 
 48
 00:02:33,836 --> 00:02:35,456
-Healthcare Provider (Scheduler/Nurse/Doctor) / Mr. Duff (PVM): We have openings on the 16th.
+Medical Professional (OB/GYN) / Mr. Duff (PVM): We have openings on the 16th.
 
 49
 00:02:37,538 --> 00:02:40,401
-Healthcare Provider (OB/GYN) / Mr. Duff (PVM): There are other options besides termination, you know.
+Medical Professional (OB/GYN) / Mr. Duff (PVM): There are other options besides termination, you know.
 
 50
 00:02:41,223 --> 00:02:41,783
-Healthcare Provider (OB/GYN) / Mr. Duff (PVM): Adoption.
+Medical Professional (OB/GYN) / Mr. Duff (PVM): Adoption.
 
 51
 00:02:43,163 --> 00:02:43,846
-Healthcare Provider (OB/GYN) / Mr. Duff (PVM): Keeping the baby.
+Patient (possibly Devo) / Mr. Duff (PVM): Keeping the baby.
 
 52
 00:02:46,146 --> 00:02:46,829
-Healthcare Provider (OB/GYN) / Mr. Duff (PVM): You think it over.
+Doctor (likely Neurology or Psychiatry) / Mr. Duff (PVM): You think it over.
 
 53
 00:02:46,867 --> 00:02:47,389
-Healthcare Provider (OB/GYN) / Mr. Duff (PVM): Call me back.
+Doctor / Mr. Duff (PVM): Call me back.
 
 54
 00:02:47,468 --> 00:02:48,329
-Healthcare Provider (OB/GYN) / Mr. Duff OR Dr. Miranda Bailey (PVM): I'm here all day.
+Doctor / Mr. Duff OR Dr. Izzie Stevens OR Mr. Duff (PVM): I'm here all day.
 
 55
 00:02:48,348 --> 00:02:49,349
-Cristina Yang / Mr. Duff OR Dr. Miranda Bailey (PVM): Put me down for the 16th.
+Doctor / Mr. Duff OR Dr. Izzie Stevens OR Mr. Duff (PVM): Put me down for the 16th.
 
 56
 00:02:49,371 --> 00:02:51,432
-Cristina Yang / Mr. Duff OR Dr. Miranda Bailey (PVM): I'll confirm after I rearrange my schedule.
+Doctor / Mr. Duff (PVM): I'll confirm after I rearrange my schedule.
 
 57
 00:02:52,711 --> 00:02:54,375
-Healthcare Provider (OB/GYN) / Mr. Duff (PVM): I know this is a difficult decision.
+Doctor / Mr. Duff (PVM): I know this is a difficult decision.
 
 58
 00:02:54,395 --> 00:02:55,514
-Cristina Yang / Mr. Duff (PVM): Okay, you know the talking part?
+Doctor / Mr. Duff (PVM): Okay, you know the talking part?
 
 59
 00:02:57,198 --> 00:02:57,817
-Cristina Yang / Mr. Duff (PVM): I'm not interested.
+Patient (possibly Devo) / Mr. Duff (PVM): I'm not interested.
 
 60
 00:02:57,877 --> 00:03:03,443
-Dr. Miranda Bailey / George O'Malley (PVM): So, Devo, you just had a root canal, correct?
+Doctor (Neurology team) / Patient (PVM): So, Devo, you just had a root canal, correct?
 
 61
 00:03:04,145 --> 00:03:04,806
@@ -256,19 +256,19 @@ Devo: Now I'm stuck with you guys.
 
 65
 00:03:09,830 --> 00:03:10,393
-Dr. Miranda Bailey / Dr. Alex Karev (PVM): Give me the bullet.
+Doctor (Neurology team) / Devo (PVM): Give me the bullet.
 
 66
 00:03:11,193 --> 00:03:15,038
-Dr. Meredith Grey / Dr. Alex Karev (PVM): A 17-year-old female hospitalized for excessive bleeding status post-root canal.
+Doctor (Neurology team) / Devo (PVM): A 17-year-old female hospitalized for excessive bleeding status post-root canal.
 
 67
 00:03:15,298 --> 00:03:17,941
-Dr. Meredith Grey / Dr. Alex Karev (PVM): Also had a significant new heart murmur associated with fever.
+Doctor (Neurology team) / Devo (PVM): Also had a significant new heart murmur associated with fever.
 
 68
 00:03:18,181 --> 00:03:19,782
-Dr. Meredith Grey / Dr. Alex Karev (PVM): Now a fever along with antibiotics.
+Doctor (Neurology team) / Devo (PVM): Now a fever along with antibiotics.
 
 69
 00:03:20,810 --> 00:03:21,431
@@ -280,11 +280,11 @@ Devo: Can you pay for Mom and Dad?
 
 71
 00:03:22,431 --> 00:03:23,151
-Dr. Miranda Bailey / Dr. Miranda Bailey OR Dr. Alex Karev (PVM): You're not dying.
+Doctor (Neurology team) / Devo OR Dr. Karev (PVM): You're not dying.
 
 72
 00:03:23,592 --> 00:03:24,335
-Dr. Miranda Bailey / Dr. Alex Karev OR Dr. Miranda Bailey (PVM): Where are your parents?
+Doctor (Neurology team) / Dr. Karev (PVM): Where are your parents?
 
 73
 00:03:24,634 --> 00:03:25,514
@@ -296,27 +296,27 @@ Devo: My freak father likes hospital food.
 
 75
 00:03:28,218 --> 00:03:29,420
-Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): You're in excellent hands here.
+Doctor (Neurology team) / Dr. Karev (PVM): You're in excellent hands here.
 
 76
 00:03:29,461 --> 00:03:31,122
-Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): Dr. Karev is going to run some labs.
+Dr. Bailey / Dr. Karev (PVM): Dr. Karev is going to run some labs.
 
 77
 00:03:32,283 --> 00:03:34,347
-Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): And I'll see you with your parents in a little while.
+Dr. Bailey / Dr. Karev (PVM): And I'll see you with your parents in a little while.
 
 78
 00:03:35,889 --> 00:03:37,050
-Dr. Miranda Bailey / Dr. Miranda Bailey (PVM): Add a bleeding time to the coax.
+Dr. Bailey / Dr. Karev (PVM): Add a bleeding time to the coax.
 
 79
 00:03:39,013 --> 00:03:42,298
-Dr. Alex Karev / Dr. Miranda Bailey OR Dr. Alex Karev (PVM): So what kind of name is Devo anyway?
+Alex Karev / Devo (PVM): So what kind of name is Devo anyway?
 
 80
 00:03:42,817 --> 00:03:43,519
-Devo: He's a rocker.
+Patient (Devo) / Devo (PVM): He's a rocker.
 
 81
 00:03:44,079 --> 00:03:45,262
@@ -324,87 +324,87 @@ Devo: My parents did too much blow.
 
 82
 00:03:46,461 --> 00:03:47,965
-Devo: I call myself Esther.
+Esther: I call myself Esther.
 
 83
 00:03:48,331 --> 00:03:49,293
-Intern (likely Alex Karev) / Dr. Alex Karev (PVM): Nice skirt, Esther.
+Alex Karev / Devo (PVM): Nice skirt, Esther.
 
 84
 00:03:49,596 --> 00:03:50,679
-Esther (female intern, possibly Cristina Yang or Izzie Stevens) / Devo OR Dr. Alex Karev (PVM): What are you, Amish?
+Patient (Devo) / Devo OR Devo OR Esther (PVM): What are you, Amish?
 
 85
 00:03:50,699 --> 00:03:51,158
-Another intern (possibly Cristina Yang or Izzie Stevens) / Devo (PVM): Get a life.
+Another Patient (Esther) / Esther (PVM): Get a life.
 
 86
 00:03:51,461 --> 00:03:53,125
-Esther (female intern, possibly Cristina Yang or Izzie Stevens) / Devo (PVM): Haven't you ever seen an Orthodox Jew?
+Esther: Haven't you ever seen an Orthodox Jew?
 
 87
 00:03:57,335 --> 00:03:59,019
-Intern (likely Alex Karev) / Mr. Duff (PVM): This guy belongs in psych.
+Alex Karev / Mr. Duff (PVM): This guy belongs in psych.
 
 88
 00:03:59,038 --> 00:04:00,099
-Another intern (possibly George O'Malley or Izzie Stevens) / Mr. Duff (PVM): What are you doing turfing him here?
+Cristina Yang / Mr. Duff (PVM): What are you doing turfing him here?
 
 89
 00:04:00,603 --> 00:04:01,402
-Psych resident (possibly Dr. Milton or another psych doctor) / Dr. Miranda Bailey (PVM): He's my gift to you.
+Alex Karev / Mr. Duff (PVM): He's my gift to you.
 
 90
 00:04:01,685 --> 00:04:04,131
-Psych resident (possibly Dr. Milton or another psych doctor) / Dr. Miranda Bailey (PVM): Had a seizure two days ago and another one this morning.
+Cristina Yang / Mr. Duff (PVM): Had a seizure two days ago and another one this morning.
 
 91
 00:04:04,211 --> 00:04:05,393
-Intern (possibly Cristina Yang or Alex Karev) / Mr. Duff OR Mr. Duff (PVM): What are you talking about?
+Alex Karev / Dr. Jennings OR Dr. Izzie Stevens (PVM): What are you talking about?
 
 92
 00:04:05,431 --> 00:04:10,358
-Psych resident (possibly Dr. Milton or another psych doctor) / Mr. Duff (PVM): It says right here he talks to dead people, his family thinks he's dangerous, and they had him committed.
+Cristina Yang / Mr. Duff (PVM): It says right here he talks to dead people, his family thinks he's dangerous, and they had him committed.
 
 93
 00:04:10,736 --> 00:04:12,680
-Intern (possibly Cristina Yang) / Mr. Duff (PVM): That's psych, not neuro.
+Alex Karev / Mr. Duff (PVM): That's psych, not neuro.
 
 94
 00:04:12,699 --> 00:04:13,961
-Intern (possibly Alex Karev) / Mr. Duff OR Dr. Derek Shepherd (PVM): Man, didn't you go to med school?
+Cristina Yang / Mr. Duff (PVM): Man, didn't you go to med school?
 
 95
 00:04:13,979 --> 00:04:16,903
-Psych resident (possibly Dr. Milton or another psych doctor) / Mr. Duff OR Dr. Derek Shepherd (PVM): Yes, and unlike the correspondence school you attended.
+Alex Karev / Mr. Duff OR Dr. Meredith Gray (PVM): Yes, and unlike the correspondence school you attended.
 
 96
 00:04:16,923 --> 00:04:18,346
-Intern (possibly Alex Karev) / Mr. Duff OR Dr. Derek Shepherd (PVM): Oh, yeah, the W. Stanford, right?
+Cristina Yang / Mr. Duff OR Dr. Meredith Gray (PVM): Oh, yeah, the W. Stanford, right?
 
 97
 00:04:18,365 --> 00:04:18,665
-Psych resident (possibly Dr. Milton or another psych doctor) / Mr. Duff OR Dr. Derek Shepherd (PVM): Correspondence.
+Alex Karev / Mr. Duff OR Dr. Meredith Gray (PVM): Correspondence.
 
 98
 00:04:18,685 --> 00:04:20,307
-Psych resident (possibly Dr. Milton or another psych doctor) / Mr. Duff OR Dr. Derek Shepherd (PVM): I learned not to jump to conclusions.
+Cristina Yang / Mr. Duff OR Dr. Meredith Gray (PVM): I learned not to jump to conclusions.
 
 99
 00:04:20,788 --> 00:04:21,348
-Psych resident (possibly Dr. Milton or another psych doctor) / Mr. Duff OR Dr. Derek Shepherd (PVM): Sorry, ladies.
+Dr. Bailey / Mr. Duff (PVM): Sorry, ladies.
 
 100
 00:04:21,447 --> 00:04:22,930
-Psych resident (possibly Dr. Milton or another psych doctor) / Mr. Duff (PVM): We can't take him back until he's cleared.
+Dr. Bailey / Mr. Duff (PVM): We can't take him back until he's cleared.
 
 101
 00:04:23,410 --> 00:04:24,471
-Intern (possibly Cristina Yang or Alex Karev) / Mr. Duff (PVM): So you're dumping him on us.
+Cristina Yang / Mr. Duff (PVM): So you're dumping him on us.
 
 102
 00:04:24,992 --> 00:04:26,774
-Psych resident (possibly Dr. Milton or another psych doctor) / Mr. Duff (PVM): He thinks his seizures are visions.
+Meredith Grey / Mr. Duff (PVM): He thinks his seizures are visions.
 
 103
 00:04:26,994 --> 00:04:28,535
@@ -416,15 +416,15 @@ Mr. Duff: I'm psychic.
 
 105
 00:04:29,495 --> 00:04:31,418
-Intern (possibly Alex Karev) / Mr. Duff (PVM): Of course you are, and I'm a chicken.
+Cristina Yang / Mr. Duff (PVM): Of course you are, and I'm a chicken.
 
 106
 00:04:31,920 --> 00:04:33,543
-Intern (possibly Izzie Stevens) / Mr. Duff OR Hospital Intercom (PVM): Yay, genius!
+Mr. Duff: Yay, genius!
 
 107
 00:04:33,682 --> 00:04:38,987
-Intern (likely Cristina Yang) / Mr. Duff OR Hospital Intercom (PVM): Okay, Mr. Duff, we're gonna start our work up now.
+Meredith Grey / Hospital Intercom OR Mr. Duff OR Mr. Duff (PVM): Okay, Mr. Duff, we're gonna start our work up now.
 
 108
 00:04:39,007 --> 00:04:40,348
@@ -432,27 +432,27 @@ Mr. Duff: Work me up, work me down.
 
 109
 00:04:40,427 --> 00:04:41,689
-Mr. Duff: I'm telling you, it's a waste of time.
+Cristina Yang / Mr. Duff (PVM): I'm telling you, it's a waste of time.
 
 110
 00:04:41,709 --> 00:04:42,411
-Intern (likely Cristina Yang or Izzie Stevens) / Mr. Duff (PVM): Okay, well, humor us.
+Meredith Grey / Mr. Duff (PVM): Okay, well, humor us.
 
 111
 00:04:42,670 --> 00:04:43,711
-Intern (likely Cristina Yang or Izzie Stevens) / Mr. Duff (PVM): Can you grip my fingers, please?
+Cristina Yang / Mr. Duff (PVM): Can you grip my fingers, please?
 
 112
 00:04:52,100 --> 00:04:53,401
-Intern (likely Cristina Yang) / Hospital Intercom (PVM): Christina.
+Meredith Grey / Mr. Duff (PVM): Christina.
 
 113
 00:04:53,620 --> 00:04:54,822
-Intern (likely Cristina Yang or Izzie Stevens) / Mr. Duff (PVM): Mr. Duff?
+Cristina Yang / Mr. Duff (PVM): Mr. Duff?
 
 114
 00:04:54,862 --> 00:04:57,284
-Intern (likely Cristina Yang or Izzie Stevens) / Hospital Intercom (PVM): Mr. Duff, are you okay?
+Meredith Grey / Mr. Duff (PVM): Mr. Duff, are you okay?
 
 115
 00:05:00,127 --> 00:05:00,266
@@ -464,7 +464,7 @@ Mr. Duff: Someone...
 
 117
 00:05:01,704 --> 00:05:02,346
-Intern (likely Cristina Yang or Izzie Stevens) / Mr. Duff (PVM): Someone what?
+Meredith Grey / Mr. Duff OR Mr. Duff (PVM): Someone what?
 
 118
 00:05:04,211 --> 00:05:05,115
@@ -476,7 +476,7 @@ Mr. Duff: Bye bye.
 
 120
 00:05:07,600 --> 00:05:08,262
-Intern (likely Alex Karev) / Mr. Duff (PVM): Man, he's nuts.
+Cristina Yang / Mr. Duff (PVM): Man, he's nuts.
 
 121
 00:05:08,504 --> 00:05:09,968
@@ -488,119 +488,119 @@ Mr. Duff: And I'm telling you, someone on the fourth floor is going to die.
 
 123
 00:06:06,454 --> 00:06:07,757
-Intern (possibly Cristina Yang or Izzie Stevens) / Dr. Derek Shepherd (PVM): Fourth floor, dead guide.
+Cristina Yang / Dr. Jennings (PVM): Fourth floor, dead guide.
 
 124
 00:06:08,016 --> 00:06:09,720
-Staff Member / Dr. Derek Shepherd (PVM): Psychic predicted fourth floor, dead guide.
+Meredith Grey / Dr. Jennings OR Dr. Jennings (PVM): Psychic predicted fourth floor, dead guide.
 
 125
 00:06:10,841 --> 00:06:12,204
-Staff Member / Dr. Miranda Bailey (PVM): I need someone to cover me on the 16th.
+Cristina Yang / Dr. Izzie Stevens (PVM): I need someone to cover me on the 16th.
 
 126
 00:06:12,444 --> 00:06:12,665
-Staff Member / Dr. Miranda Bailey (PVM): You in?
+Doctor (possibly Meredith or Cristina) / Dr. Izzie Stevens (PVM): You in?
 
 127
 00:06:12,685 --> 00:06:15,790
-George / Mr. Duff OR Dr. Miranda Bailey (PVM): I'm thinking about letting my hair grow.
+George O'Malley / Mr. Duff OR Dr. Izzie Stevens (PVM): I'm thinking about letting my hair grow.
 
 128
 00:06:16,451 --> 00:06:19,175
-George / Mr. Duff (PVM): Maybe I won't shave, go for the stubble effect.
+George O'Malley / Patient OR Mr. Duff (PVM): Maybe I won't shave, go for the stubble effect.
 
 129
 00:06:19,795 --> 00:06:20,317
-George / Mr. Duff (PVM): What do you think?
+George O'Malley / Patient (PVM): What do you think?
 
 130
 00:06:20,336 --> 00:06:23,781
-Staff Member / Mr. Duff OR Dr. Miranda Bailey (PVM): 16th George, can you cover me or not?
+Cristina Yang / Patient OR Dr. Izzie Stevens (PVM): 16th George, can you cover me or not?
 
 131
 00:06:24,762 --> 00:06:26,064
-George / Mr. Duff (PVM): Uh, yeah, I guess.
+George O'Malley / Patient OR Mr. Duff (PVM): Uh, yeah, I guess.
 
 132
 00:06:26,225 --> 00:06:26,446
-Staff Member / Mr. Duff (PVM): Why?
+Cristina Yang / Patient OR Mr. Duff (PVM): Why?
 
 133
 00:06:27,086 --> 00:06:27,788
-George / Mr. Duff (PVM): It's none of your business.
+Cristina Yang / Mr. Duff (PVM): It's none of your business.
 
 134
 00:06:29,790 --> 00:06:30,172
-Staff Member / Mr. Duff (PVM): Thank you.
+Cristina Yang / Mr. Duff (PVM): Thank you.
 
 135
 00:06:30,192 --> 00:06:32,175
-George / Mr. Duff (PVM): You would be nice.
+George O'Malley / Patient OR Mr. Duff (PVM): You would be nice.
 
 136
 00:06:32,290 --> 00:06:34,834
-Staff Member / Mr. Duff (PVM): It's just that I hardly know anything about you.
+George O'Malley / Mr. Duff (PVM): It's just that I hardly know anything about you.
 
 137
 00:06:34,933 --> 00:06:35,915
-Derek Shepherd / Dr. Derek Shepherd (PVM): You know I'm from New York.
+Cristina Yang / Patient (PVM): You know I'm from New York.
 
 138
 00:06:35,935 --> 00:06:37,096
-Derek Shepherd / Mr. Duff OR Dr. Derek Shepherd (PVM): You know I like ferry boats.
+Cristina Yang / Patient OR Mr. Duff (PVM): You know I like ferry boats.
 
 139
 00:06:37,237 --> 00:06:38,579
-Meredith Grey / Mr. Duff (PVM): Enough with the ferry boats.
+Cristina Yang / Mr. Duff (PVM): Enough with the ferry boats.
 
 140
 00:06:38,659 --> 00:06:39,680
-Meredith Grey / Mr. Duff OR Dr. Derek Shepherd (PVM): What about your friends?
+George O'Malley / Patient OR Mr. Duff (PVM): What about your friends?
 
 141
 00:06:39,701 --> 00:06:40,302
-Derek Shepherd / Mr. Duff OR Dr. Derek Shepherd (PVM): I'm a surgeon.
+Cristina Yang / Patient OR Mr. Duff (PVM): I'm a surgeon.
 
 142
 00:06:40,442 --> 00:06:41,122
-Derek Shepherd / Mr. Duff OR Dr. Derek Shepherd (PVM): I don't have friends.
+Cristina Yang / Patient OR Mr. Duff (PVM): I don't have friends.
 
 143
 00:06:41,262 --> 00:06:42,403
-Meredith Grey / Mr. Duff (PVM): Everybody has friends.
+George O'Malley / Mr. Duff (PVM): Everybody has friends.
 
 144
 00:06:43,004 --> 00:06:44,709
-Meredith Grey / Mr. Duff (PVM): I mean, who do you hang out with?
+George O'Malley / Mr. Duff (PVM): I mean, who do you hang out with?
 
 145
 00:06:45,129 --> 00:06:46,850
-Meredith Grey / Mr. Duff (PVM): What do you do on your days off?
+George O'Malley / Mr. Duff (PVM): What do you do on your days off?
 
 146
 00:06:46,872 --> 00:06:48,394
-Meredith Grey / Mr. Duff OR Dr. Derek Shepherd (PVM): These are important questions.
+George O'Malley / Patient OR Mr. Duff OR Dr. Jennings (PVM): These are important questions.
 
 147
 00:06:48,413 --> 00:06:48,834
-Derek Shepherd / Dr. Derek Shepherd (PVM): Ah, important.
+Cristina Yang / Dr. Jennings (PVM): Ah, important.
 
 148
 00:06:48,935 --> 00:06:49,235
-Derek Shepherd / Dr. Derek Shepherd (PVM): For who?
+Cristina Yang / Dr. Jennings (PVM): For who?
 
 149
 00:06:49,814 --> 00:06:51,076
-Meredith Grey / Mr. Duff (PVM): We're having sex every night.
+Cristina Yang / Mr. Duff (PVM): We're having sex every night.
 
 150
 00:06:51,117 --> 00:06:52,560
-Meredith Grey / Mr. Duff (PVM): I think I deserve details.
+Cristina Yang / Patient OR Mr. Duff (PVM): I think I deserve details.
 
 151
 00:06:52,699 --> 00:06:53,961
-Derek Shepherd / Mr. Duff OR Dr. Derek Shepherd (PVM): You have more details than most.
+Cristina Yang / Patient OR Mr. Duff (PVM): You have more details than most.
 
 152
 00:06:53,981 --> 00:06:55,963
@@ -612,243 +612,243 @@ Meredith Grey / Mr. Duff (PVM): I want facts.
 
 154
 00:06:57,548 --> 00:07:00,531
-Meredith Grey / Mr. Duff OR Dr. Derek Shepherd (PVM): And until I get them, my pants are staying on.
+Meredith Grey / Patient OR Mr. Duff (PVM): And until I get them, my pants are staying on.
 
 155
 00:07:00,552 --> 00:07:01,774
-Derek Shepherd / Dr. Derek Shepherd (PVM): Or you could just roll with it.
+Cristina Yang / Patient (PVM): Or you could just roll with it.
 
 156
 00:07:02,276 --> 00:07:02,978
-Derek Shepherd / Dr. Derek Shepherd (PVM): Be flexible.
+Cristina Yang / Patient (PVM): Be flexible.
 
 157
 00:07:03,398 --> 00:07:04,079
-Derek Shepherd / Dr. Derek Shepherd (PVM): See what happens.
+Cristina Yang / Patient (PVM): See what happens.
 
 158
 00:07:04,519 --> 00:07:05,822
-Meredith Grey / Mr. Duff OR Dr. Derek Shepherd (PVM): I'm not flexible.
+Meredith Grey / Patient OR Mr. Duff (PVM): I'm not flexible.
 
 159
 00:07:06,882 --> 00:07:07,884
-Derek Shepherd / Dr. Derek Shepherd (PVM): I dare disagree.
+Cristina Yang / Patient (PVM): I dare disagree.
 
 160
 00:07:09,064 --> 00:07:09,766
-Meredith Grey / Dr. Derek Shepherd OR Dr. Derek Shepherd (PVM): I gotta go.
+Meredith Grey / Patient (PVM): I gotta go.
 
 161
 00:07:13,812 --> 00:07:14,793
-Derek Shepherd / Dr. Derek Shepherd (PVM): Well, find these things out.
+Cristina Yang / Patient (PVM): Well, find these things out.
 
 162
 00:07:15,374 --> 00:07:16,355
-Derek Shepherd / Dr. Derek Shepherd (PVM): That's the fun part, you know?
+Cristina Yang / Patient OR Dr. Jennings (PVM): That's the fun part, you know?
 
 163
 00:07:16,615 --> 00:07:17,117
-Derek Shepherd / Dr. Derek Shepherd (PVM): That's the gravy.
+Cristina Yang / Dr. Jennings (PVM): That's the gravy.
 
 164
 00:07:17,697 --> 00:07:19,119
-Derek Shepherd / Hospital Intercom (PVM): That is what I'm talking about.
+Cristina Yang / Mr. Duff (PVM): That is what I'm talking about.
 
 165
 00:07:19,699 --> 00:07:21,281
-Unknown (possibly a patient or family member) / Hospital Intercom (PVM): I don't want to be your gravy.
+Meredith Grey / Mr. Duff (PVM): I don't want to be your gravy.
 
 166
 00:07:26,036 --> 00:07:27,778
-Attending Physician / Dr. Miranda Bailey (PVM): Your daughter needs a valve replacement.
+Attending Doctor (likely Dr. Miranda Bailey or Dr. Preston Burke) / Dr. Karev (PVM): Your daughter needs a valve replacement.
 
 167
 00:07:28,259 --> 00:07:33,326
-Attending Physician / Dr. Miranda Bailey (PVM): Tests are indicative of von Willebrand's disease, which explains the excessive bleeding after the root canal.
+Attending Doctor (likely Dr. Miranda Bailey or Dr. Preston Burke) / Dr. Karev (PVM): Tests are indicative of von Willebrand's disease, which explains the excessive bleeding after the root canal.
 
 168
 00:07:33,346 --> 00:07:34,447
-Patient's Parent / Dr. Miranda Bailey OR Dr. Alex Karev (PVM): And that means?
+Parent or Family Member / Devo OR Dr. Karev (PVM): And that means?
 
 169
 00:07:34,528 --> 00:07:37,932
-Attending Physician / Dr. Alex Karev (PVM): Devo can't take the blood thinners necessary to maintain a mechanical heart valve.
+Attending Doctor (likely Dr. Miranda Bailey or Dr. Preston Burke) / Devo (PVM): Devo can't take the blood thinners necessary to maintain a mechanical heart valve.
 
 170
 00:07:38,252 --> 00:07:40,115
-Attending Physician / Dr. Miranda Bailey (PVM): We're suggesting a porcine valve instead.
+Attending Doctor (likely Dr. Miranda Bailey or Dr. Preston Burke) / Dr. Karev (PVM): We're suggesting a porcine valve instead.
 
 171
 00:07:40,677 --> 00:07:41,338
-Patient's Parent / Dr. Alex Karev (PVM): Porcine?
+Parent or Family Member / Devo (PVM): Porcine?
 
 172
 00:07:42,379 --> 00:07:43,060
-Patient's Parent / Dr. Alex Karev (PVM): As in pig?
+Parent or Family Member / Devo (PVM): As in pig?
 
 173
 00:07:43,540 --> 00:07:45,562
-Attending Physician / Dr. Miranda Bailey (PVM): It's the standard of care for someone in this situation.
+Attending Doctor (likely Dr. Miranda Bailey or Dr. Preston Burke) / Dr. Karev (PVM): It's the standard of care for someone in this situation.
 
 174
 00:07:47,225 --> 00:07:49,067
-Patient's Parent / Dr. Alex Karev (PVM): Pig, huh?
+Parent or Family Member / Devo OR Devo (PVM): Pig, huh?
 
 175
 00:07:49,088 --> 00:07:51,129
-Intern / Hospital Intercom OR Dr. Alex Karev (PVM): It's the other white meat.
+Attending Doctor (likely Dr. Miranda Bailey or Dr. Preston Burke) / Devo OR Dr. Jennings (PVM): It's the other white meat.
 
 176
 00:07:51,151 --> 00:07:52,231
-Patient's Parent / Hospital Intercom (PVM): I don't care what you have to do.
+Parent (likely Mrs. Glass) / Dr. Jennings (PVM): I don't care what you have to do.
 
 177
 00:07:52,271 --> 00:07:53,612
-Patient's Parent / Hospital Intercom (PVM): Save my daughter's life.
+Parent (likely Mrs. Glass) / Dr. Jennings (PVM): Save my daughter's life.
 
 178
 00:07:54,639 --> 00:07:57,185
-Hospital Intercom: Dr. Jennings to OR7.
+Hospital PA System / Hospital Intercom (PVM): Dr. Jennings to OR7.
 
 179
 00:07:57,204 --> 00:07:58,548
-Hospital Intercom: Dr. Jennings to OR7.
+Hospital PA System / Hospital Intercom (PVM): Dr. Jennings to OR7.
 
 180
 00:07:58,567 --> 00:08:03,737
-Surgeon (possibly Attending Physician) / Hospital Intercom OR Attending Doctor OR Attending Doctor (PVM): I'm removing the lump now.
+Surgeon (possibly Dr. Jennings) / Dr. Jennings OR Hospital Intercom OR Dr. Jennings (PVM): I'm removing the lump now.
 
 181
 00:08:03,778 --> 00:08:06,862
-Intern / Attending Doctor (PVM): Someone said you guys have a psychic running around here.
+Nurse or Surgical Assistant / Dr. Jennings (PVM): Someone said you guys have a psychic running around here.
 
 182
 00:08:06,944 --> 00:08:07,805
-Another Intern / Attending Doctor (PVM): Is that true?
+Nurse or Surgical Assistant / Mr. Duff OR Dr. Jennings (PVM): Is that true?
 
 183
 00:08:07,836 --> 00:08:09,899
-Intern / Mr. Duff OR Attending Doctor (PVM): I did not even hear you say that.
+Surgeon (possibly Dr. Jennings) / Dr. Jennings OR Mr. Duff (PVM): I did not even hear you say that.
 
 184
 00:08:09,918 --> 00:08:11,821
-Psychic Patient / Mr. Duff OR Attending Doctor (PVM): I predicted someone would die on the fourth floor.
+Mr. Duff / Mr. Duff (PVM): I predicted someone would die on the fourth floor.
 
 185
 00:08:11,879 --> 00:08:13,403
-Intern / Attending Doctor OR Attending Doctor (PVM): ICU's on the fourth floor.
+Doctor (possibly Dr. Jennings) / Dr. Jennings OR Mr. Duff (PVM): ICU's on the fourth floor.
 
 186
 00:08:13,423 --> 00:08:14,403
-Intern / Attending Doctor (PVM): People die all the time.
+Doctor (possibly Dr. Jennings) / Dr. Jennings (PVM): People die all the time.
 
 187
 00:08:14,624 --> 00:08:15,084
-Intern / Dr. Derek Shepherd (PVM): OK.
+Doctor (possibly Dr. Jennings) / Dr. Jennings OR Mr. Duff (PVM): OK.
 
 188
 00:08:15,504 --> 00:08:17,646
-Surgeon (possibly Attending Physician) / Attending Doctor (PVM): We'll be finishing up here, Mrs. Glass.
+Surgeon (possibly Dr. Jennings) / Dr. Jennings OR Dr. Jennings (PVM): We'll be finishing up here, Mrs. Glass.
 
 189
 00:08:18,088 --> 00:08:24,314
-Surgeon (possibly Attending Physician) / Dr. Miranda Bailey OR Attending Doctor (PVM): We'll take this down the path, get the results of the frozen section biopsy, and see you in a few hours.
+Surgeon (possibly Dr. Jennings) / Dr. Izzie Stevens OR Dr. Jennings (PVM): We'll take this down the path, get the results of the frozen section biopsy, and see you in a few hours.
 
 190
 00:08:24,653 --> 00:08:26,254
-Intern / Dr. Miranda Bailey (PVM): Seriously, the guy's just playing mind games.
+Doctor or Nurse / Dr. Izzie Stevens (PVM): Seriously, the guy's just playing mind games.
 
 191
 00:08:26,817 --> 00:08:28,499
-Intern / Dr. Miranda Bailey (PVM): I can see further into the future than he can.
+Doctor or Nurse / Dr. Izzie Stevens (PVM): I can see further into the future than he can.
 
 192
 00:08:29,220 --> 00:08:30,980
-Intern / Attending Doctor (PVM): Why do you even care about this, Stevens?
+Doctor or Nurse / Dr. Jennings (PVM): Why do you even care about this, Stevens?
 
 193
 00:08:31,701 --> 00:08:31,963
-Stevens / Attending Doctor OR Dr. Miranda Bailey (PVM): I don't.
+Stevens / Dr. Izzie Stevens (PVM): I don't.
 
 194
 00:08:35,264 --> 00:08:37,168
-Doctor (possibly Intern) / Dr. Derek Shepherd OR Mr. Walker (PVM): OK, Mr. Walker, does that hurt?
+Doctor (Examiner) / Cricket OR Mr. Duff (PVM): OK, Mr. Walker, does that hurt?
 
 195
 00:08:38,312 --> 00:08:39,995
-Mr. Walker: I can't feel anything until you get to my thigh.
+Mr. Walker / Cricket (PVM): I can't feel anything until you get to my thigh.
 
 196
 00:08:41,296 --> 00:08:42,157
-Doctor (possibly Intern) / Mr. Walker (PVM): Try wiggling your toes.
+Doctor (Examiner) / Cricket (PVM): Try wiggling your toes.
 
 197
 00:08:45,239 --> 00:08:45,700
-Doctor (possibly Intern) / Mr. Walker (PVM): Are they moving?
+Doctor (Examiner) / Cricket OR Cricket (PVM): Are they moving?
 
 198
 00:08:47,399 --> 00:08:48,022
-Mr. Walker: No.
+Mr. Walker / Unknown (PVM): No.
 
 199
 00:08:48,042 --> 00:08:49,101
-Doctor (possibly Intern) / George O'Malley (PVM): Damn.
+Doctor (Examiner) / Patient (PVM): Damn.
 
 200
 00:08:49,123 --> 00:08:50,163
-Mr. Walker: I could about 10 minutes ago.
+Mr. Walker / Cricket (PVM): I could about 10 minutes ago.
 
 201
 00:08:51,745 --> 00:08:53,346
-Doctor (possibly Intern) / Dr. Derek Shepherd (PVM): Well, your spine X-rays look clear.
+Doctor (likely Meredith Grey or Miranda Bailey) / Patient (PVM): Well, your spine X-rays look clear.
 
 202
 00:08:53,927 --> 00:08:54,988
-Doctor (possibly Intern) / Dr. Derek Shepherd OR Mr. Walker (PVM): You fell rock climbing?
+Doctor (likely Meredith Grey or Miranda Bailey) / Patient OR Mr. Walker OR Patient (PVM): You fell rock climbing?
 
 203
 00:08:55,008 --> 00:08:55,729
-Mr. Walker: In Snohomish.
+Patient: In Snohomish.
 
 204
 00:08:55,749 --> 00:08:56,590
-Mr. Walker: Just a small drop.
+Patient: Just a small drop.
 
 205
 00:08:56,668 --> 00:08:57,269
-Mr. Walker: I was belayed.
+Patient: I was belayed.
 
 206
 00:08:59,230 --> 00:09:00,231
-Mr. Duff: My wife and boys are on the way.
+Patient: My wife and boys are on the way.
 
 207
 00:09:01,494 --> 00:09:02,394
-Mr. Duff: What's wrong with me, anyway?
+Patient: What's wrong with me, anyway?
 
 208
 00:09:02,715 --> 00:09:07,778
-Doctor / Mr. Duff (PVM): Hold your legs up.
+Doctor (likely Meredith Grey or Miranda Bailey) / Patient (PVM): Hold your legs up.
 
 209
 00:09:08,433 --> 00:09:09,556
-Mr. Duff: Should I be scared now?
+Patient: Should I be scared now?
 
 210
 00:09:09,576 --> 00:09:10,456
-Doctor / Dr. Derek Shepherd (PVM): No, just try and relax.
+Doctor (likely Meredith Grey or Miranda Bailey) / Patient (PVM): No, just try and relax.
 
 211
 00:09:11,557 --> 00:09:13,541
-Dr. Miranda Bailey: Nurse, I need a stat MRI.
+Doctor (likely Miranda Bailey) / Patient OR Dr. Meredith Gray (PVM): Nurse, I need a stat MRI.
 
 212
 00:09:14,321 --> 00:09:15,221
-Dr. Miranda Bailey: Send an intern with him.
+Doctor (likely Miranda Bailey) / Dr. Meredith Gray (PVM): Send an intern with him.
 
 213
 00:09:16,624 --> 00:09:17,423
-Dr. Miranda Bailey: Take it Meredith, correct?
+Doctor (likely Miranda Bailey) / Dr. Meredith Gray (PVM): Take it Meredith, correct?
 
 214
 00:09:17,445 --> 00:09:17,605
@@ -856,135 +856,135 @@ Dr. Meredith Gray: Mm-hmm.
 
 215
 00:09:19,826 --> 00:09:21,769
-Doctor / George O'Malley (PVM): Ooh, thick, short neck.
+Doctor (likely Miranda Bailey) / Patient (PVM): Ooh, thick, short neck.
 
 216
 00:09:21,788 --> 00:09:22,490
-Intern / George O'Malley (PVM): That isn't good.
+Doctor (likely Meredith Grey) / Patient (PVM): That isn't good.
 
 217
 00:09:22,791 --> 00:09:23,571
-Doctor / George O'Malley (PVM): It's hard to intubate.
+Doctor (likely Miranda Bailey) / Patient (PVM): It's hard to intubate.
 
 218
 00:09:23,591 --> 00:09:24,211
-Intern (George O'Malley) / George O'Malley (PVM): You want me to do that?
+Meredith Grey / Patient (PVM): You want me to do that?
 
 219
 00:09:24,250 --> 00:09:25,211
-Intern (George O'Malley) / George O'Malley (PVM): He's my patient.
+Doctor (likely Miranda Bailey) / Patient (PVM): He's my patient.
 
 220
 00:09:25,331 --> 00:09:26,192
-Patient / George O'Malley (PVM): I'm fine.
+Patient: I'm fine.
 
 221
 00:09:26,213 --> 00:09:28,475
-Intern (George O'Malley) / George O'Malley (PVM): I just can't see anything yet.
+Doctor (likely Miranda Bailey) / Patient (PVM): I just can't see anything yet.
 
 222
 00:09:28,495 --> 00:09:28,917
-Doctor / George O'Malley OR Dr. Alex Karev (PVM): Suction.
+Doctor (likely Miranda Bailey) / Patient (PVM): Suction.
 
 223
 00:09:31,778 --> 00:09:32,860
-Patient / Mr. Duff OR George O'Malley OR Dr. Alex Karev (PVM): Don't break any teeth on me.
+Patient: Don't break any teeth on me.
 
 224
 00:09:32,880 --> 00:09:33,182
-George O'Malley: I know that.
+Doctor (likely Meredith Grey) / Mr. Duff (PVM): I know that.
 
 225
 00:09:33,221 --> 00:09:34,221
-George O'Malley: Don't you think I know that?
+Doctor (likely Miranda Bailey) / Mr. Duff (PVM): Don't you think I know that?
 
 226
 00:09:38,287 --> 00:09:39,649
-Nurse / George O'Malley (PVM): Ball socks down 87%.
+Intern (possibly O'Malley) / Patient (PVM): Ball socks down 87%.
 
 227
 00:09:39,668 --> 00:09:40,308
-Doctor / George O'Malley (PVM): Damn.
+Another Intern (possibly Cristina or Meredith) / Patient (PVM): Damn.
 
 228
 00:09:40,330 --> 00:09:40,870
-Doctor / George O'Malley (PVM): Bag him.
+Attending (possibly Dr. Bailey) / Patient (PVM): Bag him.
 
 229
 00:09:40,889 --> 00:09:42,913
-George O'Malley: I'll raise him.
+Intern (possibly O'Malley) / Patient (PVM): I'll raise him.
 
 230
 00:09:42,932 --> 00:09:44,014
-Doctor / Mr. Duff OR George O'Malley (PVM): Are you sure you don't want to do that?
+Resident (possibly Meredith) / Patient OR Patient (PVM): Are you sure you don't want to do that?
 
 231
 00:09:44,173 --> 00:09:44,836
-George O'Malley: No, damn it.
+Intern (possibly O'Malley) / Patient (PVM): No, damn it.
 
 232
 00:09:45,157 --> 00:09:48,061
-Another Intern (possibly Alex Karev) / Mr. Duff (PVM): Dude.
+Intern (possibly Alex Karev) / Mr. Duff (PVM): Dude.
 
 233
 00:09:53,908 --> 00:09:54,370
-George O'Malley: Got it.
+Intern (possibly O'Malley) / Patient OR Mr. Duff (PVM): Got it.
 
 234
 00:09:59,235 --> 00:10:00,216
-Doctor / Dr. Alex Karev (PVM): It's in the esophagus.
+Intern (possibly O'Malley) / Patient (PVM): It's in the esophagus.
 
 235
 00:10:00,259 --> 00:10:02,139
-Doctor / Mr. Duff OR Dr. Alex Karev (PVM): Don't you know an esophagus from a trachea?
+Attending (possibly Dr. Bailey) / Patient OR Mr. Duff (PVM): Don't you know an esophagus from a trachea?
 
 236
 00:10:02,221 --> 00:10:02,642
-George O'Malley: Damn it.
+Intern (possibly O'Malley) / Mr. Duff (PVM): Damn it.
 
 237
 00:10:02,721 --> 00:10:04,585
-George O'Malley: Anatomy is all messed up in here.
+Intern (possibly O'Malley) / Patient OR Mr. Duff OR Dr. Karev (PVM): Anatomy is all messed up in here.
 
 238
 00:10:04,605 --> 00:10:06,167
-Dr. Miranda Bailey: Are you trying to kill this patient, O'Malley?
+Attending (possibly Dr. Bailey) / Patient OR Dr. Karev (PVM): Are you trying to kill this patient, O'Malley?
 
 239
 00:10:10,298 --> 00:10:12,880
-George O'Malley: No, it's just I haven't done this much.
+O'Malley / Mr. Duff OR Dr. Karev (PVM): No, it's just I haven't done this much.
 
 240
 00:10:14,344 --> 00:10:16,985
-George O'Malley: But when I have, it's been good.
+O'Malley / Mr. Duff (PVM): But when I have, it's been good.
 
 241
 00:10:19,529 --> 00:10:20,630
-George O'Malley: It's just I haven't.
+O'Malley / Dr. Karev (PVM): It's just I haven't.
 
 242
 00:10:21,231 --> 00:10:22,455
-Dr. Miranda Bailey: Let's review the concept.
+Attending (possibly Dr. Bailey) / Dr. Karev (PVM): Let's review the concept.
 
 243
 00:10:23,735 --> 00:10:24,738
-Dr. Miranda Bailey: Never take your eyes away.
+Attending (possibly Dr. Bailey) / Dr. Karev (PVM): Never take your eyes away.
 
 244
 00:10:25,437 --> 00:10:28,201
-Dr. Miranda Bailey: Always, always know you can follow through.
+Attending (possibly Dr. Bailey) / Devo OR Dr. Karev (PVM): Always, always know you can follow through.
 
 245
 00:10:29,365 --> 00:10:31,868
-Dr. Miranda Bailey: I'll never follow through on one of my patients, O'Malley.
+Attending (possibly Dr. Bailey) / Devo OR Devo (PVM): I'll never follow through on one of my patients, O'Malley.
 
 246
 00:10:44,740 --> 00:10:48,302
-Intern (Cristina Yang) / Mr. Duff OR Mr. Duff (PVM): A little Botox would do wonders on those frown lines.
+Intern (possibly Cristina Yang) / Esther OR Mr. Duff (PVM): A little Botox would do wonders on those frown lines.
 
 247
 00:10:48,322 --> 00:10:49,625
-Intern (possibly George or Izzie) / Mr. Duff (PVM): Okay.
+Attending (possibly Dr. Bailey) / Mr. Duff (PVM): Okay.
 
 248
 00:10:49,644 --> 00:10:50,024
@@ -992,91 +992,91 @@ Attending (possibly Dr. Bailey) / Mr. Duff (PVM): Shut up.
 
 249
 00:10:50,225 --> 00:10:53,307
-Intern (possibly Izzie or George) / Mr. Duff (PVM): Are you allowed to talk to me like that?
+Intern (possibly Cristina Yang) / Mr. Duff (PVM): Are you allowed to talk to me like that?
 
 250
 00:10:53,326 --> 00:10:54,149
-Patient (possibly Mr. Duff) / Mr. Duff (PVM): God, you're hot.
+Intern (possibly Alex Karev) / Mr. Duff (PVM): God, you're hot.
 
 251
 00:10:54,970 --> 00:10:56,091
-Patient (possibly Mr. Duff) / Mr. Duff (PVM): In a Mrs. Livingston kind of way.
+Unknown (Possibly Meredith Grey or another intern) / Mr. Duff (PVM): In a Mrs. Livingston kind of way.
 
 252
 00:10:56,551 --> 00:10:56,892
-Doctor (possibly Izzie or Meredith) / Mr. Duff (PVM): See here?
+Unknown (Possibly a doctor showing scans) / Mr. Duff (PVM): See here?
 
 253
 00:10:56,932 --> 00:11:00,836
-Doctor (possibly Izzie or Meredith) / Mr. Duff (PVM): These are spikes in your temporal lobe.
+Unknown (Likely a doctor explaining results) / Mr. Duff (PVM): These are spikes in your temporal lobe.
 
 254
 00:11:00,894 --> 00:11:03,118
-Doctor (possibly Izzie or Meredith) / Mr. Duff (PVM): It means you have epilepsy, not visions.
+Unknown (Likely a doctor) / Mr. Duff (PVM): It means you have epilepsy, not visions.
 
 255
 00:11:03,518 --> 00:11:03,918
-Doctor (possibly Izzie or Meredith) / Mr. Duff (PVM): Seizures.
+Unknown (Likely a doctor) / Mr. Duff (PVM): Seizures.
 
 256
 00:11:04,038 --> 00:11:04,980
-Patient (possibly Mr. Duff) / Mr. Duff (PVM): You think I'm epileptic?
+Unknown (Likely the patient) / Mr. Duff (PVM): You think I'm epileptic?
 
 257
 00:11:05,778 --> 00:11:06,620
-Patient (possibly Mr. Duff) / Mr. Duff (PVM): That is so not right.
+Unknown (Likely the patient) / Mr. Duff (PVM): That is so not right.
 
 258
 00:11:07,182 --> 00:11:09,682
-Doctor (possibly Izzie or Meredith) / Dr. Miranda Bailey (PVM): I'm gonna order an MRI so I can take a closer look at your brain.
+Unknown (Likely a doctor) / Mr. Duff (PVM): I'm gonna order an MRI so I can take a closer look at your brain.
 
 259
 00:11:09,744 --> 00:11:10,543
-Patient (possibly Mr. Duff) / Mr. Duff OR George O'Malley OR Dr. Miranda Bailey (PVM): Yeah, there's no way.
+Unknown (Likely the patient) / Mr. Duff OR Esther (PVM): Yeah, there's no way.
 
 260
 00:11:16,312 --> 00:11:16,832
-Doctor (possibly Izzie or Meredith) / Mr. Duff (PVM): Mr. Duff?
+Unknown (Likely a doctor or nurse) / Mr. Duff (PVM): Mr. Duff?
 
 261
 00:11:18,014 --> 00:11:18,894
-Doctor (possibly Izzie or Meredith) / Mr. Duff (PVM): Mr. Duff, can you see me?
+Unknown (Likely a doctor or nurse) / Mr. Duff (PVM): Mr. Duff, can you see me?
 
 262
 00:11:19,154 --> 00:11:19,615
-Doctor (possibly Izzie or Meredith) / Mr. Duff (PVM): Can you hear me?
+Unknown (Likely a doctor or nurse) / Mr. Duff (PVM): Can you hear me?
 
 263
 00:11:20,879 --> 00:11:21,219
-Doctor (possibly Izzie or Meredith) / Mr. Duff (PVM): Stay with me.
+Unknown (Likely a doctor or nurse) / Mr. Duff (PVM): Stay with me.
 
 264
 00:11:21,840 --> 00:11:24,623
-Patient (possibly Mr. Duff) / Mr. Duff (PVM): Wouldn't have picked you for the mommy track, Nurse Betty.
+Unknown (Possibly a doctor or another nurse) / Patient (PVM): Wouldn't have picked you for the mommy track, Nurse Betty.
 
 265
 00:11:29,908 --> 00:11:33,673
-Patient (possibly Mr. Duff) / Mr. Duff OR Dr. Miranda Bailey (PVM): See?
+Unknown (Possibly Nurse Betty or another nurse) / Mr. Duff OR Mr. Duff (PVM): See?
 
 266
 00:11:33,692 --> 00:11:34,575
-Patient (possibly Mr. Duff) / Mr. Duff OR Mr. Duff (PVM): Told you I know things.
+Unknown (Possibly Nurse Betty) / Esther (PVM): Told you I know things.
 
 267
 00:11:36,355 --> 00:11:40,260
-Patient (possibly Mr. Duff) / Devo OR Mr. Duff OR Mr. Duff (PVM): This pregnancy thing, you can't run away from it.
+Unknown (Possibly Nurse Betty or another nurse) / Esther OR Mr. Duff OR Esther (PVM): This pregnancy thing, you can't run away from it.
 
 268
 00:11:47,226 --> 00:11:49,428
-Intern (possibly Meredith) / Devo OR Dr. Miranda Bailey (PVM): Dr. Bailey, I want off the psychic case.
+Unknown (Likely an intern, possibly Meredith Grey or Cristina Yang) / Mr. Duff (PVM): Dr. Bailey, I want off the psychic case.
 
 269
 00:11:49,450 --> 00:11:50,311
-Another Intern (possibly Cristina) / Mr. Duff OR Dr. Miranda Bailey (PVM): I'll take whatever you got.
+Unknown (Likely an intern, possibly Cristina Yang) / Mr. Duff (PVM): I'll take whatever you got.
 
 270
 00:11:50,792 --> 00:11:51,230
-Another Intern (possibly George) / Mr. Duff (PVM): Can I switch?
+Unknown (Likely an intern) / Mr. Duff (PVM): Can I switch?
 
 271
 00:11:51,572 --> 00:11:52,274
@@ -1084,195 +1084,195 @@ Dr. Bailey / Mr. Duff (PVM): Ask nicely.
 
 272
 00:11:53,875 --> 00:11:54,956
-Intern (possibly Meredith or Cristina) / Dr. Miranda Bailey (PVM): But this is me doing nicely.
+Unknown (Likely an intern) / Mr. Duff (PVM): But this is me doing nicely.
 
 273
 00:11:57,119 --> 00:11:57,879
-Intern (possibly Cristina) / Mr. Duff (PVM): Look, I know the type.
+Unknown (Likely an intern) / Dr. Izzie Stevens (PVM): Look, I know the type.
 
 274
 00:11:58,080 --> 00:12:00,302
-Intern (possibly Cristina) / Mr. Duff (PVM): These guys just want everybody to think they're a sideshow.
+Unknown (Likely an intern) / Dr. Izzie Stevens (PVM): These guys just want everybody to think they're a sideshow.
 
 275
 00:12:00,322 --> 00:12:00,883
-Intern (possibly Cristina) / Mr. Duff (PVM): Let me take them.
+Unknown (Likely an intern) / Dr. Izzie Stevens (PVM): Let me take them.
 
 276
 00:12:01,322 --> 00:12:02,524
-Dr. Bailey / Attending Doctor OR Dr. Miranda Bailey (PVM): I don't do switches.
+Cristina Yang / Dr. Jennings OR Dr. Izzie Stevens (PVM): I don't do switches.
 
 277
 00:12:02,663 --> 00:12:04,307
-Intern (possibly Cristina) / Attending Doctor (PVM): I'll do your post-op notes for a month.
+George O'Malley / Dr. Jennings (PVM): I'll do your post-op notes for a month.
 
 278
 00:12:06,349 --> 00:12:06,730
-Dr. Bailey / Attending Doctor (PVM): Fine.
+Cristina Yang / Dr. Jennings (PVM): Fine.
 
 279
 00:12:06,970 --> 00:12:07,791
-Intern (possibly Cristina) / Attending Doctor OR Attending Doctor (PVM): I can accept that.
+Cristina Yang / Dr. Jennings (PVM): I can accept that.
 
 280
 00:12:08,451 --> 00:12:09,793
-Dr. Bailey / Attending Doctor (PVM): Izzy, you get psych guy.
+Cristina Yang / Dr. Jennings (PVM): Izzy, you get psych guy.
 
 281
 00:12:10,091 --> 00:12:10,494
-Izzie Stevens / Attending Doctor (PVM): Yay.
+Dr. Izzie Stevens: Yay.
 
 282
 00:12:10,614 --> 00:12:11,634
-Another Intern (possibly Cristina) / Attending Doctor (PVM): This is your lucky day.
+Cristina Yang / Dr. Jennings (PVM): This is your lucky day.
 
 283
 00:12:11,975 --> 00:12:13,778
-Dr. Bailey / Attending Doctor (PVM): You get to be with me on the breast cancer.
+Alex Karev / Dr. Jennings (PVM): You get to be with me on the breast cancer.
 
 284
 00:12:14,057 --> 00:12:15,940
-Dr. Bailey / Attending Doctor (PVM): And they're spotting, so you need to do a pelvic.
+Cristina Yang / Dr. Jennings (PVM): And they're spotting, so you need to do a pelvic.
 
 285
 00:12:15,980 --> 00:12:16,879
-Intern (possibly Izzie or Meredith) / Attending Doctor (PVM): She's pregnant.
+Izzie Stevens / Dr. Jennings (PVM): She's pregnant.
 
 286
 00:12:18,716 --> 00:12:29,452
-Patient (possibly the breast cancer patient or her husband) / Mr. Duff OR Dr. Miranda Bailey (PVM): See?
+Izzie Stevens / Mr. Duff OR Mr. Duff (PVM): See?
 
 287
 00:12:29,514 --> 00:12:31,197
-Patient (possibly the breast cancer patient or her husband) / Mr. Duff (PVM): This.
+Cristina Yang / Mr. Duff (PVM): This.
 
 288
 00:12:31,216 --> 00:12:32,298
-Radiologist / Mr. Duff (PVM): Your guy's films are clear.
+Cristina Yang / Mr. Duff (PVM): Your guy's films are clear.
 
 289
 00:12:33,278 --> 00:12:36,065
-Radiologist / Mr. Duff (PVM): There's no reason I can see for his creeping paralysis.
+Cristina Yang / Mr. Duff (PVM): There's no reason I can see for his creeping paralysis.
 
 290
 00:12:36,105 --> 00:12:37,287
-Resident / Mr. Duff (PVM): It's just so surprising.
+Meredith Grey / Mr. Duff (PVM): It's just so surprising.
 
 291
 00:12:38,368 --> 00:12:42,413
-Resident / Dr. Derek Shepherd (PVM): I expected an intrusion into the spinal space, where bony sperm the nucleus proposes.
+Cristina Yang / Dr. Meredith Gray (PVM): I expected an intrusion into the spinal space, where bony sperm the nucleus proposes.
 
 292
 00:12:42,653 --> 00:12:43,475
-Attending Doctor / Mr. Duff (PVM): Well, you were wrong.
+Meredith Grey / Mr. Duff (PVM): Well, you were wrong.
 
 293
 00:12:43,917 --> 00:12:45,720
-Attending Doctor / Mr. Duff OR Dr. Derek Shepherd (PVM): You don't always get what you expect, do you?
+Meredith Grey / Mr. Duff OR Dr. Meredith Gray (PVM): You don't always get what you expect, do you?
 
 294
 00:12:48,350 --> 00:12:49,572
-Resident / Dr. Derek Shepherd (PVM): What is your problem?
+Cristina Yang / Mr. Duff OR Dr. Meredith Gray (PVM): What is your problem?
 
 295
 00:12:50,052 --> 00:12:51,254
-Resident / Mr. Duff (PVM): Give me something to go on.
+Cristina Yang / Mr. Duff (PVM): Give me something to go on.
 
 296
 00:12:51,875 --> 00:12:52,254
-Resident / Mr. Duff (PVM): Anything.
+Cristina Yang / Mr. Duff (PVM): Anything.
 
 297
 00:12:53,336 --> 00:12:54,437
-Resident / Mr. Duff (PVM): What are your grandparents' names?
+Cristina Yang / Mr. Duff (PVM): What are your grandparents' names?
 
 298
 00:12:54,599 --> 00:12:55,678
-Mr. Walker: I don't have grandparents.
+Patient / Mr. Duff OR Dr. Meredith Gray (PVM): I don't have grandparents.
 
 299
 00:12:55,700 --> 00:12:56,301
-Resident / Mr. Duff (PVM): Where'd you grow up?
+Cristina Yang / Mr. Duff (PVM): Where'd you grow up?
 
 300
 00:12:57,000 --> 00:12:58,524
-Resident / Mr. Duff (PVM): What's your favorite flavor of ice cream?
+Cristina Yang / Mr. Duff (PVM): What's your favorite flavor of ice cream?
 
 301
 00:12:58,803 --> 00:13:00,307
-Resident / Mr. Duff (PVM): Where'd you spend your summer vacations?
+Doctor / Mr. Duff (PVM): Where'd you spend your summer vacations?
 
 302
 00:13:00,625 --> 00:13:01,187
-Attending Doctor / Mr. Duff (PVM): Lighten up.
+Doctor / Mr. Duff (PVM): Lighten up.
 
 303
 00:13:01,346 --> 00:13:02,629
-Attending Doctor / Mr. Duff (PVM): It'll be good for your blood pressure.
+Doctor / Mr. Duff (PVM): It'll be good for your blood pressure.
 
 304
 00:13:02,870 --> 00:13:04,753
-Resident / Mr. Duff (PVM): Oh, don't you tell me to lighten up.
+Mrs. Glass / Mr. Duff (PVM): Oh, don't you tell me to lighten up.
 
 305
 00:13:05,634 --> 00:13:08,719
-Resident / Hospital Intercom OR Mr. Duff (PVM): I'll lighten up when I feel light.
+Mrs. Glass / Mr. Duff OR Dr. Meredith Gray (PVM): I'll lighten up when I feel light.
 
 306
 00:13:11,643 --> 00:13:13,125
-Breast Cancer Patient / Breast Cancer Patient (PVM): Don't we have treatment options?
+Mrs. Glass / Dr. Karev (PVM): Don't we have treatment options?
 
 307
 00:13:13,706 --> 00:13:15,268
-Breast Cancer Patient / Breast Cancer Patient (PVM): I mean, aren't there always alternatives?
+Mrs. Glass / Dr. Karev (PVM): I mean, aren't there always alternatives?
 
 308
 00:13:15,466 --> 00:13:21,618
-Attending Doctor / Mr. Duff (PVM): With this stage of invasive carcinoma, surgery, chemo, radiation, and drug therapy are your only options.
+Dr. Jennings: With this stage of invasive carcinoma, surgery, chemo, radiation, and drug therapy are your only options.
 
 309
 00:13:21,957 --> 00:13:23,421
-Breast Cancer Patient: Can I wait until the end of my pregnancy?
+Mrs. Glass / Mr. Duff (PVM): Can I wait until the end of my pregnancy?
 
 310
 00:13:24,022 --> 00:13:26,807
-Attending Doctor / Mr. Duff (PVM): The pregnancy hormones will likely speed the growth of the cancer.
+Dr. Jennings: The pregnancy hormones will likely speed the growth of the cancer.
 
 311
 00:13:27,628 --> 00:13:28,129
-Breast Cancer Patient: And the baby?
+Mrs. Glass / Dr. Karev (PVM): And the baby?
 
 312
 00:13:28,750 --> 00:13:31,432
-Attending Doctor / Mr. Duff OR Attending Doctor (PVM): Oh, none of these courses of treatment will allow the baby to survive.
+Dr. Jennings: Oh, none of these courses of treatment will allow the baby to survive.
 
 313
 00:13:34,019 --> 00:13:37,082
-Attending Doctor: Mr. and Mrs. Glass, I understand how difficult this is.
+Dr. Jennings: Mr. and Mrs. Glass, I understand how difficult this is.
 
 314
 00:13:37,104 --> 00:13:39,147
-Mr. Glass / Attending Doctor (PVM): No disrespect, but like hell you do.
+Mrs. Glass / Dr. Jennings (PVM): No disrespect, but like hell you do.
 
 315
 00:13:41,201 --> 00:13:44,524
-Attending Doctor: You're going to have to make a decision as to how you want to proceed.
+Dr. Jennings: You're going to have to make a decision as to how you want to proceed.
 
 316
 00:13:44,865 --> 00:13:46,509
-Breast Cancer Patient: You mean my baby's life or my own?
+Mrs. Glass / Dr. Jennings (PVM): You mean my baby's life or my own?
 
 317
 00:13:49,753 --> 00:13:49,971
-Attending Doctor: Yes.
+Dr. Jennings: Yes.
 
 318
 00:13:57,182 --> 00:13:58,724
-Attending Doctor: We'll have to evacuate the fetus.
+Dr. Jennings: We'll have to evacuate the fetus.
 
 319
 00:14:07,033 --> 00:14:08,195
-Resident / Mr. Walker (PVM): Any changes, Mr. Walker?
+Doctor / Mr. Walker (PVM): Any changes, Mr. Walker?
 
 320
 00:14:08,615 --> 00:14:10,298
@@ -1280,7 +1280,7 @@ Mr. Walker: I can't move my legs at all now.
 
 321
 00:14:10,394 --> 00:14:12,120
-Resident / Mr. Duff (PVM): He said he was moving his legs when he came in.
+Mrs. Walker / Mr. Duff (PVM): He said he was moving his legs when he came in.
 
 322
 00:14:12,541 --> 00:14:13,162
@@ -1288,919 +1288,919 @@ Mrs. Walker / Mr. Duff (PVM): What's wrong with them?
 
 323
 00:14:13,724 --> 00:14:14,163
-Mr. Walker: I don't know.
+Doctor / Dr. Jennings (PVM): I don't know.
 
 324
 00:14:15,225 --> 00:14:18,956
-Resident / Dr. Derek Shepherd OR Mr. Walker (PVM): The paralysis is moving very quickly, and there was nothing in the MRI to explain it.
+Dr. Jennings: The paralysis is moving very quickly, and there was nothing in the MRI to explain it.
 
 325
 00:14:19,576 --> 00:14:21,221
-Resident / Mr. Duff (PVM): Has Tommy been under any stress lately?
+Doctor / Mr. Duff (PVM): Has Tommy been under any stress lately?
 
 326
 00:14:21,461 --> 00:14:23,826
-Mr. Walker: You know what's making me stressed is being in here and not being able to move.
+Mr. Walker / Cricket (PVM): You know what's making me stressed is being in here and not being able to move.
 
 327
 00:14:23,846 --> 00:14:25,990
-Resident / Mr. Walker (PVM): Dr. Gray.
+Unknown / Cricket (PVM): Dr. Gray.
 
 328
 00:14:28,062 --> 00:14:30,725
-Resident / Mr. Duff (PVM): Emotional trauma can be converted into something physical, right?
+Dr. Gray / Mr. Duff (PVM): Emotional trauma can be converted into something physical, right?
 
 329
 00:14:30,826 --> 00:14:31,548
-Doctor / Mr. Duff (PVM): This is possible.
+Dr. Gray / Mr. Duff (PVM): This is possible.
 
 330
 00:14:32,109 --> 00:14:33,710
-Doctor / Mr. Duff (PVM): Like hysterical numbness or paralysis.
+Dr. Gray / Mr. Duff (PVM): Like hysterical numbness or paralysis.
 
 331
 00:14:34,250 --> 00:14:37,754
-Doctor / Mr. Duff OR Mr. Duff (PVM): Maybe there is no physiological reason, and he's just having a conversion reaction.
+Dr. Gray / Esther OR Mr. Duff (PVM): Maybe there is no physiological reason, and he's just having a conversion reaction.
 
 332
 00:14:37,815 --> 00:14:39,235
-Intern / Mr. Duff OR Mr. Duff (PVM): You think it's psychosomatic?
+Mr. Duff / Esther OR Mr. Duff (PVM): You think it's psychosomatic?
 
 333
 00:14:39,255 --> 00:14:40,937
-Intern / Mr. Duff (PVM): It is not in your head, man.
+Dr. Gray / Esther (PVM): It is not in your head, man.
 
 334
 00:14:41,379 --> 00:14:42,019
-Intern / Mr. Duff (PVM): I believe you.
+Dr. Gray / Esther (PVM): I believe you.
 
 335
 00:14:42,200 --> 00:14:42,801
-Doctor / Mr. Duff (PVM): Mr. Duff, please.
+Dr. Gray / Mr. Duff (PVM): Mr. Duff, please.
 
 336
 00:14:46,024 --> 00:14:46,543
-Doctor / Mr. Duff (PVM): What was that?
+Mr. Duff / Mr. Duff (PVM): What was that?
 
 337
 00:14:47,306 --> 00:14:48,147
-Intern / Mr. Duff (PVM): Psych sent him down.
+Dr. Gray / Mr. Duff (PVM): Psych sent him down.
 
 338
 00:14:48,187 --> 00:14:49,028
-Intern / Mr. Duff (PVM): He has visions.
+Dr. Gray / Mr. Duff (PVM): He has visions.
 
 339
 00:14:49,508 --> 00:14:49,889
-Doctor / Mr. Walker (PVM): Is that it?
+Mr. Duff / Cricket (PVM): Is that it?
 
 340
 00:14:50,889 --> 00:14:51,408
-Mr. Duff: Am I crazy?
+Mr. Duff / Dr. Jennings OR Cricket (PVM): Am I crazy?
 
 341
 00:14:52,552 --> 00:14:53,231
-Doctor / Dr. Derek Shepherd (PVM): No, no.
+Dr. Gray / Dr. Jennings (PVM): No, no.
 
 342
 00:14:54,173 --> 00:14:56,316
-Dr. Miranda Bailey: I'm going to order a higher level MRI.
+Dr. Gray / Dr. Jennings (PVM): I'm going to order a higher level MRI.
 
 343
 00:14:57,341 --> 00:14:58,302
-Dr. Miranda Bailey: We're going to figure this out.
+Dr. Gray / Dr. Jennings (PVM): We're going to figure this out.
 
 344
 00:15:04,134 --> 00:15:05,697
-Patient (Miss Freeman) / Devo (PVM): You know how important this is to me.
+Mr. Walker's wife / Esther (PVM): You know how important this is to me.
 
 345
 00:15:05,836 --> 00:15:07,480
-Patient (Miss Freeman) / Hospital Intercom OR Devo (PVM): This is about saving your life, sweetie.
+Mr. Walker's wife / Esther OR Dr. Jennings (PVM): This is about saving your life, sweetie.
 
 346
 00:15:07,500 --> 00:15:09,683
-Patient (Miss Freeman) / Devo OR Hospital Intercom (PVM): And you're not respecting it, or me.
+Mr. Walker's wife / Esther OR Dr. Jennings (PVM): And you're not respecting it, or me.
 
 347
 00:15:10,245 --> 00:15:18,422
-Miss Freeman: You're letting them put a pig, a freaking non-kosher trade mammal, into my chest, into my heart, the very essence of my being.
+Mr. Walker / Esther (PVM): You're letting them put a pig, a freaking non-kosher trade mammal, into my chest, into my heart, the very essence of my being.
 
 348
 00:15:18,552 --> 00:15:20,336
-Dr. Miranda Bailey: It's a porcine valve, actually.
+Dr. Gray / Devo OR Esther (PVM): It's a porcine valve, actually.
 
 349
 00:15:20,355 --> 00:15:21,716
-Miss Freeman: I don't care what the hell it is.
+Mr. Walker / Esther (PVM): I don't care what the hell it is.
 
 350
 00:15:22,139 --> 00:15:24,182
-Miss Freeman: If you give me a pig part, I might as well be dead.
+Mr. Walker / Esther (PVM): If you give me a pig part, I might as well be dead.
 
 351
 00:15:24,360 --> 00:15:26,625
-Patient's Spouse / Mr. Walker (PVM): I told you this whole Orthodox thing was a mistake.
+Devo's Parent / Devo OR Cricket (PVM): I told you this whole Orthodox thing was a mistake.
 
 352
 00:15:26,644 --> 00:15:29,588
-Patient's Spouse / Mr. Walker (PVM): What was so wrong with being clean or reformed like everyone else we know?
+Devo's Parent / Cricket (PVM): What was so wrong with being clean or reformed like everyone else we know?
 
 353
 00:15:30,009 --> 00:15:31,892
-Patient's Spouse / Devo (PVM): You guys don't even light candles Friday nights.
+Devo / Esther (PVM): You guys don't even light candles Friday nights.
 
 354
 00:15:32,373 --> 00:15:34,394
-Patient's Spouse / Devo (PVM): You don't even know all the Passover plagues.
+Devo / Esther (PVM): You don't even know all the Passover plagues.
 
 355
 00:15:34,696 --> 00:15:37,077
-Patient's Spouse / Dr. Alex Karev (PVM): Boils, vermin, pestilence, even I know that.
+Devo / Devo OR Devo (PVM): Boils, vermin, pestilence, even I know that.
 
 356
 00:15:39,260 --> 00:15:43,466
-Dr. Miranda Bailey: Miss Freeman, I appreciate your extreme religious convictions.
+Attending Doctor / Dr. Karev (PVM): Miss Freeman, I appreciate your extreme religious convictions.
 
 357
 00:15:43,548 --> 00:15:44,827
-Patient's Spouse / Dr. Miranda Bailey (PVM): Fire, hail, slain, firstborn.
+Devo / Dr. Karev (PVM): Fire, hail, slain, firstborn.
 
 358
 00:15:44,849 --> 00:15:47,633
-Dr. Miranda Bailey: But simply put, without this procedure, you will die.
+Attending Doctor / Dr. Karev (PVM): But simply put, without this procedure, you will die.
 
 359
 00:15:49,672 --> 00:15:50,773
-Patient's Spouse / Devo (PVM): You're hot shot, doctors.
+Esther: You're hot shot, doctors.
 
 360
 00:15:51,332 --> 00:15:52,315
-Patient's Spouse / Devo (PVM): You'll come up with something else.
+Esther: You'll come up with something else.
 
 361
 00:15:53,277 --> 00:15:57,061
-Patient's Spouse / Devo (PVM): As long as it doesn't answer to Wilbur and say oink, I don't care what it is.
+Esther: As long as it doesn't answer to Wilbur and say oink, I don't care what it is.
 
 362
 00:16:08,235 --> 00:16:09,115
-Mr. Duff: Your nostrils are flaring.
+Devo / Esther (PVM): Your nostrils are flaring.
 
 363
 00:16:09,956 --> 00:16:10,378
-Dr. Miranda Bailey: They are not.
+Doctor / Mr. Duff (PVM): They are not.
 
 364
 00:16:10,839 --> 00:16:11,340
-Mr. Duff: You're into me.
+Devo / Esther (PVM): You're into me.
 
 365
 00:16:11,460 --> 00:16:11,879
-Mr. Duff: I can tell.
+Devo / Esther (PVM): I can tell.
 
 366
 00:16:12,980 --> 00:16:17,147
-Mr. Duff: Dr. Small and Angry was a hot appetizer, but you, Doc, are a smorgasbord of lust.
+Esther: Dr. Small and Angry was a hot appetizer, but you, Doc, are a smorgasbord of lust.
 
 367
 00:16:17,245 --> 00:16:18,649
-Dr. Miranda Bailey: Mr. Doff, you're pressing your luck.
+Doctor / Dr. Izzie Stevens (PVM): Mr. Doff, you're pressing your luck.
 
 368
 00:16:19,201 --> 00:16:20,124
-Mr. Duff: Would you press it for me?
+Esther: Would you press it for me?
 
 369
 00:16:21,745 --> 00:16:22,846
-Dr. Miranda Bailey: I hope you're not claustrophobic.
+Doctor / Dr. Izzie Stevens (PVM): I hope you're not claustrophobic.
 
 370
 00:16:26,269 --> 00:16:27,091
-Mr. Duff / Mr. Duff (PVM): You're staring at me.
+Devo / Mr. Duff OR Dr. Izzie Stevens (PVM): You're staring at me.
 
 371
 00:16:27,471 --> 00:16:27,812
-Patient (breast cancer patient) / Mr. Duff (PVM): Stop.
+Doctor / Esther (PVM): Stop.
 
 372
 00:16:28,312 --> 00:16:30,474
-Mr. Duff / Mr. Duff OR Mr. Duff (PVM): I'm looking at you, sweetheart, but it's the strangest thing.
+Esther: I'm looking at you, sweetheart, but it's the strangest thing.
 
 373
 00:16:31,215 --> 00:16:32,975
-Mr. Duff / Mr. Duff (PVM): I'm hungry for a chocolate cupcake.
+Esther: I'm hungry for a chocolate cupcake.
 
 374
 00:16:33,777 --> 00:16:34,317
-Patient (breast cancer patient) / Mr. Duff (PVM): What did you say?
+Doctor / Mr. Duff (PVM): What did you say?
 
 375
 00:16:34,356 --> 00:16:35,879
-Patient (breast cancer patient) / Mr. Duff (PVM): A chocolate cupcake?
+Esther: A chocolate cupcake?
 
 376
 00:16:36,360 --> 00:16:39,663
-Mr. Duff / Mr. Duff (PVM): Maybe one of those fudgy things with the white squiggle on the frosting.
+Mr. Duff: Maybe one of those fudgy things with the white squiggle on the frosting.
 
 377
 00:16:39,883 --> 00:16:40,403
-Mr. Duff / Mr. Duff (PVM): Could you oblige?
+Mr. Duff: Could you oblige?
 
 378
 00:16:42,846 --> 00:16:43,005
-Patient (breast cancer patient) / Mr. Duff (PVM): What?
+Dr. Jennings: What?
 
 379
 00:16:43,826 --> 00:16:46,509
-Mr. Duff / Mr. Duff (PVM): Do I still have some chocolate on my face or in my hair or something?
+Mr. Duff: Do I still have some chocolate on my face or in my hair or something?
 
 380
 00:16:47,873 --> 00:16:48,774
-Patient (breast cancer patient) / Mr. Duff OR Mr. Duff (PVM): What are you talking about?
+Dr. Jennings: What are you talking about?
 
 381
 00:16:49,254 --> 00:16:49,336
-Mr. Duff / Mr. Duff (PVM): You.
+Mr. Duff: You.
 
 382
 00:16:49,355 --> 00:16:50,840
-Mr. Duff / Mr. Duff (PVM): I know the drill, so keep it up.
+Dr. Jennings: I know the drill, so keep it up.
 
 383
 00:16:51,620 --> 00:16:54,466
-Mr. Duff / Mr. Duff (PVM): Next, you'll be reading my cards, telling me my dead uncle is in the room.
+Dr. Jennings: Next, you'll be reading my cards, telling me my dead uncle is in the room.
 
 384
 00:16:56,331 --> 00:16:56,572
-Patient (breast cancer patient) / Mr. Duff (PVM): Is he?
+Mr. Duff: Is he?
 
 385
 00:16:57,335 --> 00:16:58,216
-Mr. Duff / Mr. Duff (PVM): I don't have a dead uncle.
+Dr. Jennings: I don't have a dead uncle.
 
 386
 00:17:00,000 --> 00:17:06,454
-Mr. Duff / Mr. Duff (PVM): I'm watching you.
+Mr. Duff: I'm watching you.
 
 387
 00:17:15,192 --> 00:17:16,682
-Mr. Duff / Mr. Duff (PVM): If that's turkey, can I have some?
+Mr. Duff: If that's turkey, can I have some?
 
 388
 00:17:16,701 --> 00:17:17,002
-Patient (breast cancer patient) / Mr. Duff (PVM): It's soggy.
+Dr. Jennings: It's soggy.
 
 389
 00:17:17,226 --> 00:17:18,432
-Patient (breast cancer patient) / Mr. Duff (PVM): It'll kill you to solve everything.
+Doctor / Mr. Duff (PVM): It'll kill you to solve everything.
 
 390
 00:17:18,934 --> 00:17:20,163
-George O'Malley / Mr. Duff (PVM): I could have gotten that intubation.
+George / Mr. Duff (PVM): I could have gotten that intubation.
 
 391
 00:17:20,241 --> 00:17:21,810
-George O'Malley / Mr. Duff (PVM): I am good at intubations.
+George / Mr. Duff (PVM): I am good at intubations.
 
 392
 00:17:22,602 --> 00:17:25,423
-George O'Malley / Mr. Duff (PVM): Why does everything in a hospital smell like a hospital?
+George / Mr. Duff (PVM): Why does everything in a hospital smell like a hospital?
 
 393
 00:17:25,443 --> 00:17:26,807
-Izzie Stevens / Mr. Duff (PVM): Don't be so hard on yourself, George.
+Doctor / Mr. Duff (PVM): Don't be so hard on yourself, George.
 
 394
 00:17:26,905 --> 00:17:27,605
-Izzie Stevens / Mr. Duff OR Dr. Derek Shepherd (PVM): Everybody makes mistakes.
+Doctor / Mr. Duff OR Dr. Izzie Stevens (PVM): Everybody makes mistakes.
 
 395
 00:17:27,625 --> 00:17:28,788
-George O'Malley / Mr. Duff OR Dr. Derek Shepherd (PVM): You know, I'm good at a lot of things.
+George / Mr. Duff OR Dr. Izzie Stevens (PVM): You know, I'm good at a lot of things.
 
 396
 00:17:28,807 --> 00:17:29,127
-George O'Malley / Mr. Duff (PVM): You know what?
+George / Mr. Duff (PVM): You know what?
 
 397
 00:17:29,209 --> 00:17:30,009
-George O'Malley / Mr. Duff (PVM): I want to tell you something.
+George / Mr. Duff (PVM): I want to tell you something.
 
 398
 00:17:30,028 --> 00:17:31,832
-Cristina Yang / Mr. Duff (PVM): Hey, George, you need to get laid.
+Doctor / Mr. Duff (PVM): Hey, George, you need to get laid.
 
 399
 00:17:32,413 --> 00:17:33,173
-Cristina Yang / Mr. Duff (PVM): See that nurse over there?
+Doctor / Mr. Duff (PVM): See that nurse over there?
 
 400
 00:17:33,732 --> 00:17:34,295
-Cristina Yang / Mr. Duff OR Dr. Miranda Bailey (PVM): She's single.
+Doctor / Mr. Duff (PVM): She's single.
 
 401
 00:17:34,835 --> 00:17:35,976
-Cristina Yang / Dr. Miranda Bailey (PVM): She's got red hair.
+Unknown (likely a young doctor or nurse) / Mr. Duff (PVM): She's got red hair.
 
 402
 00:17:36,435 --> 00:17:37,258
-Cristina Yang / Mr. Duff OR Dr. Miranda Bailey OR Dr. Alex Karev (PVM): Go ask her out.
+Unknown (likely a colleague/friend of previous speaker) / Mr. Duff (PVM): Go ask her out.
 
 403
 00:17:37,278 --> 00:17:39,358
-George O'Malley / Dr. Alex Karev (PVM): In case you forgot, I intubated an esophagus.
+Unknown (likely the person who intubated the esophagus, possibly a resident or intern) / Mr. Duff (PVM): In case you forgot, I intubated an esophagus.
 
 404
 00:17:39,380 --> 00:17:40,559
-Cristina Yang / Dr. Alex Karev (PVM): Dude, you're tweaking.
+Unknown (likely a friend or colleague) / Mr. Duff (PVM): Dude, you're tweaking.
 
 405
 00:17:40,842 --> 00:17:42,403
-Cristina Yang / Dr. Alex Karev (PVM): Maybe you should go see that psychic.
+Unknown (likely same as previous, teasing) / Mr. Duff (PVM): Maybe you should go see that psychic.
 
 406
 00:17:42,522 --> 00:17:44,125
-George O'Malley / Mr. Duff (PVM): Mr. Duff is not a psychic!
+Unknown (likely the person being teased) / Mr. Duff (PVM): Mr. Duff is not a psychic!
 
 407
 00:17:44,265 --> 00:17:45,625
-Cristina Yang / Mr. Duff (PVM): I am trying to help you.
+Unknown (likely the teaser) / Mr. Duff (PVM): I am trying to help you.
 
 408
 00:17:46,105 --> 00:17:48,568
-Cristina Yang / Mr. Duff OR Attending Doctor OR Breast Cancer Patient (PVM): Go buy her a latte and freshen up your gonad.
+Unknown (likely the teaser/friend) / Dr. Jennings OR Mr. Duff (PVM): Go buy her a latte and freshen up your gonad.
 
 409
 00:17:48,730 --> 00:17:49,171
-Cristina Yang / Mr. Duff OR Breast Cancer Patient (PVM): Please.
+Unknown (likely the person being teased) / Mr. Duff (PVM): Please.
 
 410
 00:17:51,153 --> 00:17:51,291
-George O'Malley / Mr. Duff OR Breast Cancer Patient (PVM): Please.
+Unknown (likely another participant in the banter) / Mr. Duff (PVM): Please.
 
 411
 00:17:55,692 --> 00:17:56,493
-Breast Cancer Patient / Mr. Duff (PVM): Shut up.
+Unknown (likely the person being teased) / Mr. Duff (PVM): Shut up.
 
 412
 00:17:58,376 --> 00:17:59,640
-Breast Cancer Patient's Husband / Mr. Duff (PVM): It's not too late to call her.
+Unknown (likely a friend/colleague) / Mr. Duff (PVM): It's not too late to call her.
 
 413
 00:18:00,200 --> 00:18:01,060
-Breast Cancer Patient's Husband / Mr. Duff (PVM): You know, moms like that.
+Unknown (likely same as previous) / Mr. Duff (PVM): You know, moms like that.
 
 414
 00:18:01,642 --> 00:18:03,044
-Breast Cancer Patient's Husband / Mr. Duff (PVM): Surprises on their birthdays.
+Unknown (likely same as previous) / Mr. Duff (PVM): Surprises on their birthdays.
 
 415
 00:18:03,964 --> 00:18:05,268
-Breast Cancer Patient's Husband / Mr. Duff (PVM): You know, it's very hallmark.
+Unknown (likely same as previous) / Mr. Duff (PVM): You know, it's very hallmark.
 
 416
 00:18:14,480 --> 00:18:15,803
-Breast Cancer Patient: I'm 47, you know?
+Mrs. Glass / Mrs. Glass (PVM): I'm 47, you know?
 
 417
 00:18:15,863 --> 00:18:21,651
-Breast Cancer Patient: I'm 47 and having a baby, which is kind of a miracle, and it kind of sucks, if you see what I mean.
+Mrs. Glass / Mrs. Glass (PVM): I'm 47 and having a baby, which is kind of a miracle, and it kind of sucks, if you see what I mean.
 
 418
 00:18:23,285 --> 00:18:26,146
-Breast Cancer Patient: Would have actually given up on the whole kid thing about a year ago.
+Mrs. Glass / Mrs. Glass (PVM): Would have actually given up on the whole kid thing about a year ago.
 
 419
 00:18:26,188 --> 00:18:29,832
-Breast Cancer Patient: You know, fertility treatments, acupuncture needles in my eyes.
+Mrs. Glass / Mrs. Glass (PVM): You know, fertility treatments, acupuncture needles in my eyes.
 
 420
 00:18:31,011 --> 00:18:33,055
-Breast Cancer Patient: Well, not really, but it felt like it.
+Mrs. Glass / Mrs. Glass (PVM): Well, not really, but it felt like it.
 
 421
 00:18:33,295 --> 00:18:34,556
-Breast Cancer Patient: I was like, screw this.
+Mrs. Glass / Mrs. Glass (PVM): I was like, screw this.
 
 422
 00:18:34,695 --> 00:18:38,318
-Breast Cancer Patient: I want my life back.
+Mrs. Glass / Mrs. Glass (PVM): I want my life back.
 
 423
 00:18:38,338 --> 00:18:42,163
-Breast Cancer Patient: Then one awesome night on the beach with a bottle of Merlot.
+Mrs. Glass / Mr. Duff OR Mrs. Glass (PVM): Then one awesome night on the beach with a bottle of Merlot.
 
 424
 00:18:42,324 --> 00:18:44,066
-Doctor (likely OB/GYN Attending or Resident) / Mr. Duff (PVM): I should have these labs back in a couple hours.
+Doctor / Mr. Duff OR Mrs. Glass (PVM): I should have these labs back in a couple hours.
 
 425
 00:18:44,507 --> 00:18:45,125
-Breast Cancer Patient / Breast Cancer Patient (PVM): You get it, right?
+Doctor / Mrs. Glass (PVM): You get it, right?
 
 426
 00:18:46,288 --> 00:18:47,028
-Breast Cancer Patient: My hesitation.
+Patient / Mrs. Glass (PVM): My hesitation.
 
 427
 00:18:48,170 --> 00:18:49,632
-Breast Cancer Patient: This isn't an easy decision.
+Patient / Mrs. Glass (PVM): This isn't an easy decision.
 
 428
 00:18:49,672 --> 00:18:51,874
-Breast Cancer Patient: I mean, I'm having a baby.
+Patient / Mrs. Glass (PVM): I mean, I'm having a baby.
 
 429
 00:18:53,508 --> 00:18:55,131
-Doctor (likely OB/GYN Attending or Resident) / Dr. Miranda Bailey (PVM): You have advanced stage carcinoma.
+Doctor / Dr. Izzie Stevens (PVM): You have advanced stage carcinoma.
 
 430
 00:18:55,592 --> 00:18:56,855
-Doctor (likely OB/GYN Attending or Resident) / Dr. Miranda Bailey (PVM): You're 47 years old.
+Doctor / Dr. Izzie Stevens (PVM): You're 47 years old.
 
 431
 00:18:56,913 --> 00:19:00,019
-Doctor (likely OB/GYN Attending or Resident) / Dr. Miranda Bailey (PVM): So statistically, you have a good probability of survival.
+Doctor / Dr. Izzie Stevens (PVM): So statistically, you have a good probability of survival.
 
 432
 00:19:00,500 --> 00:19:01,222
-Doctor (likely OB/GYN Attending or Resident) / Dr. Miranda Bailey (PVM): Forgo treatment.
+Doctor / Dr. Izzie Stevens (PVM): Forgo treatment.
 
 433
 00:19:01,522 --> 00:19:03,749
-Doctor (likely OB/GYN Attending or Resident) / Dr. Miranda Bailey (PVM): Chances are you won't see your baby go to kindergarten.
+Doctor / Dr. Izzie Stevens (PVM): Chances are you won't see your baby go to kindergarten.
 
 434
 00:19:03,769 --> 00:19:06,074
-Doctor (likely OB/GYN Attending or Resident) / Dr. Miranda Bailey (PVM): So whose life are you interested in saving?
+Doctor / Dr. Izzie Stevens (PVM): So whose life are you interested in saving?
 
 435
 00:19:06,114 --> 00:19:14,569
-Breast Cancer Patient: Excuse me.
+Patient / Mr. Duff (PVM): Excuse me.
 
 436
 00:19:27,105 --> 00:19:27,625
-Mr. Walker: Where's my fingers?
+Patient / Dr. Jennings (PVM): Where's my fingers?
 
 437
 00:19:28,188 --> 00:19:29,891
-Mr. Walker: I can't.
+Patient / Dr. Jennings OR Cricket (PVM): I can't.
 
 438
 00:19:30,152 --> 00:19:30,692
-Doctor (likely Attending or Intern) / Dr. Derek Shepherd (PVM): Right here.
+Doctor / Dr. Jennings (PVM): Right here.
 
 439
 00:19:30,711 --> 00:19:30,991
-Doctor (likely Attending or Intern) / Dr. Derek Shepherd (PVM): No?
+Doctor / Dr. Jennings (PVM): No?
 
 440
 00:19:32,296 --> 00:19:38,027
-Doctor (likely Attending or Intern) / Dr. Derek Shepherd (PVM): Let me know if you feel this.
+Doctor / Dr. Jennings (PVM): Let me know if you feel this.
 
 441
 00:19:38,346 --> 00:19:39,307
-Doctor (likely Attending or Intern) / Dr. Derek Shepherd (PVM): Anything here?
+Doctor / Dr. Jennings (PVM): Anything here?
 
 442
 00:19:39,327 --> 00:19:39,890
-Doctor (likely Attending or Intern) / Dr. Derek Shepherd (PVM): Up here?
+Doctor / Dr. Jennings (PVM): Up here?
 
 443
 00:19:39,910 --> 00:19:40,570
-Doctor (likely Attending or Intern) / Dr. Derek Shepherd (PVM): OK.
+Doctor / Dr. Jennings OR Mr. Duff (PVM): OK.
 
 444
 00:19:40,592 --> 00:19:41,353
-Doctor (likely Attending or Intern) / Dr. Derek Shepherd (PVM): Nothing on this side?
+Doctor / Dr. Jennings (PVM): Nothing on this side?
 
 445
 00:19:41,913 --> 00:19:43,457
-Doctor (likely Attending or Intern) / Dr. Derek Shepherd (PVM): All right, I'll be right back.
+Doctor / Dr. Jennings (PVM): All right, I'll be right back.
 
 446
 00:19:43,477 --> 00:19:44,940
-Doctor (likely Attending or Intern) / Dr. Derek Shepherd (PVM): Nurse, cancel the second MRI.
+Dr. Jennings: Nurse, cancel the second MRI.
 
 447
 00:19:45,038 --> 00:19:46,583
-Doctor (likely Attending or Intern) / Dr. Derek Shepherd (PVM): Call down and prep OR staff.
+Dr. Jennings: Call down and prep OR staff.
 
 448
 00:19:47,845 --> 00:19:48,644
-Intern / Mr. Duff (PVM): You're operating?
+Nurse / Mr. Duff (PVM): You're operating?
 
 449
 00:19:49,405 --> 00:19:49,927
-Intern / Mr. Duff (PVM): On what?
+Nurse / Mr. Duff (PVM): On what?
 
 450
 00:19:50,307 --> 00:19:52,089
-Intern / Mr. Duff (PVM): If there was something to fix, wouldn't we have seen it?
+Doctor / Mr. Duff (PVM): If there was something to fix, wouldn't we have seen it?
 
 451
 00:19:52,111 --> 00:19:54,173
-Attending / Dr. Derek Shepherd OR Dr. Derek Shepherd (PVM): I think the MRI missed a clot somewhere in his upper spine.
+Attending Surgeon / Patient (PVM): I think the MRI missed a clot somewhere in his upper spine.
 
 452
 00:19:54,993 --> 00:19:55,615
-Attending Surgeon / Dr. Derek Shepherd (PVM): I'm going to cut him open.
+Attending Surgeon / Patient (PVM): I'm going to cut him open.
 
 453
 00:19:55,634 --> 00:19:56,056
-Attending Surgeon / Dr. Derek Shepherd OR Dr. Derek Shepherd (PVM): I'm going in.
+Attending Surgeon / Patient (PVM): I'm going in.
 
 454
 00:19:56,576 --> 00:19:57,356
-Intern / Hospital Intercom (PVM): What if you're wrong?
+Meredith Grey / Mr. Duff (PVM): What if you're wrong?
 
 455
 00:19:57,857 --> 00:20:00,382
-Intern / Hospital Intercom OR Dr. Derek Shepherd (PVM): Couldn't unnecessary spinal surgery do more damage?
+Meredith Grey / Patient OR Mr. Duff (PVM): Couldn't unnecessary spinal surgery do more damage?
 
 456
 00:20:00,422 --> 00:20:04,748
-Attending Surgeon / Dr. Derek Shepherd OR Dr. Derek Shepherd (PVM): If we wait any longer and this thing expands into his brain stem, we have a paralyzed man who can't breathe.
+Attending Surgeon / Patient (PVM): If we wait any longer and this thing expands into his brain stem, we have a paralyzed man who can't breathe.
 
 457
 00:20:04,768 --> 00:20:05,729
-Attending Surgeon / Dr. Derek Shepherd (PVM): I'm trusting my instincts.
+Attending Surgeon / Patient (PVM): I'm trusting my instincts.
 
 458
 00:20:06,088 --> 00:20:07,810
-Attending Surgeon / Dr. Derek Shepherd (PVM): Sometimes you've got to take a chance to save a life.
+Attending Surgeon / Patient (PVM): Sometimes you've got to take a chance to save a life.
 
 459
 00:20:15,942 --> 00:20:22,796
-Doctor (possibly Alex Karev) / Dr. Miranda Bailey OR George O'Malley (PVM): Your mitral regurg is getting worse.
+Doctor (possibly Cristina Yang) / Dr. Jennings OR Devo (PVM): Your mitral regurg is getting worse.
 
 460
 00:20:24,680 --> 00:20:25,981
-Doctor (possibly Alex Karev) / George O'Malley (PVM): The valves are leakier than ever.
+Doctor (possibly Cristina Yang) / Devo (PVM): The valves are leakier than ever.
 
 461
 00:20:26,041 --> 00:20:31,836
-Patient (possibly a young woman) / Devo OR George O'Malley (PVM): Are you hitting on me?
+Patient (Teenager) / Devo OR Esther (PVM): Are you hitting on me?
 
 462
 00:20:32,557 --> 00:20:33,156
-Doctor (possibly Alex Karev) / Dr. Alex Karev (PVM): You want me to?
+Doctor (possibly Cristina Yang) / Devo (PVM): You want me to?
 
 463
 00:20:34,299 --> 00:20:35,824
-Patient / Devo (PVM): I hear they call you Dr. Evilsbaum.
+Patient (Teenager) / Esther (PVM): I hear they call you Dr. Evilsbaum.
 
 464
 00:20:36,192 --> 00:20:37,653
-Doctor (possibly Alex Karev) / Dr. Alex Karev (PVM): Only the people that like me.
+Doctor (possibly Cristina Yang) / Devo (PVM): Only the people that like me.
 
 465
 00:20:38,493 --> 00:20:40,356
-Patient / Devo (PVM): I guess that explains the lack of faith thing.
+Patient (Teenager) / Devo (PVM): I guess that explains the lack of faith thing.
 
 466
 00:20:40,376 --> 00:20:45,925
-Doctor (possibly Alex Karev) / Devo OR Dr. Miranda Bailey (PVM): Well, I kind of think of myself as a pagan, but, uh, hey, that's just me.
+Doctor (possibly Cristina Yang) / Devo OR Devo (PVM): Well, I kind of think of myself as a pagan, but, uh, hey, that's just me.
 
 467
 00:20:49,892 --> 00:20:51,815
-Patient / Devo (PVM): You know what it's like being a teenager these days?
+Patient (Teenager) / Esther (PVM): You know what it's like being a teenager these days?
 
 468
 00:20:53,017 --> 00:20:55,961
-Patient / Devo (PVM): My friends spend most of their time screwing around and getting wasted.
+Patient (Teenager) / Esther (PVM): My friends spend most of their time screwing around and getting wasted.
 
 469
 00:20:56,000 --> 00:20:58,265
-Patient / Devo (PVM): At least I have God.
+Patient (Teenager) / Devo OR Esther (PVM): At least I have God.
 
 470
 00:20:58,403 --> 00:21:02,289
-Doctor (possibly Alex Karev) / Dr. Miranda Bailey (PVM): Well, so God wants you to die, huh?
+Doctor (possibly Cristina Yang) / Devo (PVM): Well, so God wants you to die, huh?
 
 471
 00:21:03,413 --> 00:21:05,674
-Patient / Devo (PVM): He wants me to be passionate about what I believe in.
+Patient (Teenager) / Esther (PVM): He wants me to be passionate about what I believe in.
 
 472
 00:21:06,953 --> 00:21:08,174
-Doctor (possibly Alex Karev) / Devo (PVM): You don't believe in anything.
+Doctor (possibly Cristina Yang) / Esther (PVM): You don't believe in anything.
 
 473
 00:21:09,656 --> 00:21:10,920
-Doctor (possibly Alex Karev) / Dr. Miranda Bailey (PVM): No, my mother used to pray to St.
+Doctor (possibly Cristina Yang) / Devo (PVM): No, my mother used to pray to St.
 
 474
 00:21:11,019 --> 00:21:12,161
-Doctor (possibly Alex Karev) / Devo OR Dr. Miranda Bailey (PVM): Jude for me.
+Doctor (possibly Cristina Yang) / Devo OR Esther (PVM): Jude for me.
 
 475
 00:21:12,181 --> 00:21:13,060
-Patient / Devo (PVM): How appropriate.
+Patient (Teenager) / Esther (PVM): How appropriate.
 
 476
 00:21:14,182 --> 00:21:15,625
-Patient / Devo (PVM): Patron saint of lost causes.
+Cristina Yang / Esther (PVM): Patron saint of lost causes.
 
 477
 00:21:17,027 --> 00:21:17,307
-Doctor (possibly Alex Karev) / Unknown (PVM): Oh.
+George O'Malley / Unknown (PVM): Oh.
 
 478
 00:21:20,971 --> 00:21:21,791
-Patient / Dr. Miranda Bailey (PVM): The fate of Kurt Cobain.
+Izzie Stevens / Mrs. Glass (PVM): The fate of Kurt Cobain.
 
 479
 00:21:24,915 --> 00:21:26,597
-Intern (possibly Izzie Stevens) / Dr. Miranda Bailey (PVM): I did an angio on my side case.
+Cristina Yang / Dr. Izzie Stevens (PVM): I did an angio on my side case.
 
 480
 00:21:27,200 --> 00:21:29,102
-Intern (possibly Izzie Stevens) / Dr. Miranda Bailey (PVM): The MRI came out clean, but I saw a digital.
+Cristina Yang / Dr. Izzie Stevens (PVM): The MRI came out clean, but I saw a digital.
 
 481
 00:21:29,122 --> 00:21:29,942
-Intern (possibly Izzie Stevens) / Dr. Miranda Bailey (PVM): There's something here.
+Cristina Yang / Dr. Izzie Stevens (PVM): There's something here.
 
 482
 00:21:31,463 --> 00:21:31,545
-Senior Resident / Attending Doctor OR Attending Doctor (PVM): Yep.
+Meredith Grey / Dr. Jennings (PVM): Yep.
 
 483
 00:21:32,182 --> 00:21:34,403
-Senior Resident / Attending Doctor (PVM): You're right, there's an AVM on his left temporal lobe.
+Meredith Grey / Dr. Jennings OR Dr. Jennings (PVM): You're right, there's an AVM on his left temporal lobe.
 
 484
 00:21:34,766 --> 00:21:36,086
-Intern (possibly Izzie Stevens) / Attending Doctor OR Dr. Miranda Bailey OR Attending Doctor (PVM): I'll schedule the OR for tonight, then.
+Cristina Yang / Dr. Izzie Stevens (PVM): I'll schedule the OR for tonight, then.
 
 485
 00:21:36,826 --> 00:21:37,689
-Senior Resident / Attending Doctor (PVM): Oh, back up, girl.
+Meredith Grey / Dr. Jennings (PVM): Oh, back up, girl.
 
 486
 00:21:38,328 --> 00:21:40,070
-Senior Resident / Attending Doctor (PVM): There's high risk of spontaneous hemorrhage.
+Meredith Grey / Dr. Jennings (PVM): There's high risk of spontaneous hemorrhage.
 
 487
 00:21:40,092 --> 00:21:41,432
-Senior Resident / Attending Doctor (PVM): The attending has to see the films.
+Meredith Grey / Dr. Jennings (PVM): The attending has to see the films.
 
 488
 00:21:41,471 --> 00:21:42,574
-Senior Resident / Attending Doctor (PVM): We need consent forms.
+Meredith Grey / Dr. Jennings (PVM): We need consent forms.
 
 489
 00:21:42,894 --> 00:21:45,155
-Senior Resident / Attending Doctor (PVM): Believe it or not, Stevens, we have to follow protocol.
+Alex Karev / Dr. Jennings (PVM): Believe it or not, Stevens, we have to follow protocol.
 
 490
 00:21:45,237 --> 00:21:45,677
-Senior Resident / Attending Doctor (PVM): Take a breath.
+Meredith Grey / Dr. Jennings (PVM): Take a breath.
 
 491
 00:21:45,817 --> 00:21:48,220
-Intern (possibly Izzie Stevens) / Attending Doctor (PVM): But if the AVM looks like it's going to blow, we fix it, right?
+Izzie Stevens / Dr. Jennings (PVM): But if the AVM looks like it's going to blow, we fix it, right?
 
 492
 00:21:48,480 --> 00:21:51,364
-Senior Resident / Attending Doctor OR Attending Doctor (PVM): If the man needs to be fixed, we'll fix him in due time.
+Alex Karev / Dr. Jennings OR Dr. Jennings (PVM): If the man needs to be fixed, we'll fix him in due time.
 
 493
 00:21:51,403 --> 00:21:52,625
-Miranda Bailey / Attending Doctor (PVM): Why are you moving so quickly?
+Alex Karev / Dr. Jennings (PVM): Why are you moving so quickly?
 
 494
 00:21:53,306 --> 00:21:56,647
-Miranda Bailey / Attending Doctor OR Attending Doctor (PVM): You get too involved with your patients, Izzy.
+Alex Karev / Dr. Jennings (PVM): You get too involved with your patients, Izzy.
 
 495
 00:21:56,669 --> 00:21:58,131
-Miranda Bailey / Attending Doctor (PVM): Why do you make everything so personal?
+Alex Karev / Dr. Izzie Stevens OR Dr. Jennings (PVM): Why do you make everything so personal?
 
 496
 00:21:59,172 --> 00:22:00,011
-Izzie Stevens / Dr. Miranda Bailey (PVM): It's not personal.
+Izzie Stevens / Dr. Izzie Stevens (PVM): It's not personal.
 
 497
 00:22:02,525 --> 00:22:03,105
-Izzie Stevens / Dr. Miranda Bailey (PVM): It's not.
+Izzie Stevens / Dr. Izzie Stevens (PVM): It's not.
 
 498
 00:22:03,125 --> 00:22:09,894
-Izzie Stevens / Dr. Miranda Bailey OR Dr. Derek Shepherd OR Devo (PVM): I've got to save this cord.
+George O'Malley / Dr. Jennings OR Patient OR Mr. Duff OR Dr. Izzie Stevens (PVM): I've got to save this cord.
 
 499
 00:22:10,757 --> 00:22:13,661
-Miranda Bailey / Dr. Derek Shepherd OR Devo (PVM): This guy is built like the rock of Gibraltar.
+Alex Karev / Dr. Jennings OR Patient OR Mr. Duff OR Dr. Meredith Gray (PVM): This guy is built like the rock of Gibraltar.
 
 500
 00:22:13,681 --> 00:22:14,422
-Izzie Stevens / Dr. Derek Shepherd (PVM): You want me to start?
+George O'Malley / Dr. Meredith Gray (PVM): You want me to start?
 
 501
 00:22:14,942 --> 00:22:17,967
-Miranda Bailey / Dr. Derek Shepherd (PVM): No, I'm going to cut here from the base of the neck to the rib cage.
+Dr. Karev / Patient OR Dr. Meredith Gray (PVM): No, I'm going to cut here from the base of the neck to the rib cage.
 
 502
 00:22:19,166 --> 00:22:20,430
-Miranda Bailey / Dr. Derek Shepherd (PVM): I want you to hit the bleeders.
+Dr. Karev / Patient (PVM): I want you to hit the bleeders.
 
 503
 00:22:20,509 --> 00:22:23,634
-Izzie Stevens / Hospital Intercom OR Dr. Derek Shepherd (PVM): I still don't think we should be doing this.
+Dr. O'Malley / Patient OR Dr. Meredith Gray (PVM): I still don't think we should be doing this.
 
 504
 00:22:25,237 --> 00:22:26,759
-Miranda Bailey / Hospital Intercom OR Mr. Duff OR Dr. Derek Shepherd (PVM): This guy has a spinal hematoma.
+Dr. Karev / Patient OR Dr. Meredith Gray (PVM): This guy has a spinal hematoma.
 
 505
 00:22:26,877 --> 00:22:27,740
-Izzie Stevens / Hospital Intercom OR Dr. Derek Shepherd (PVM): We don't know that.
+Dr. O'Malley / Patient OR Dr. Meredith Gray (PVM): We don't know that.
 
 506
 00:22:27,759 --> 00:22:29,962
-Miranda Bailey / Mr. Duff OR Dr. Derek Shepherd (PVM): Which left untreated are almost always fatal.
+Dr. Karev / Patient OR Dr. Meredith Gray (PVM): Which left untreated are almost always fatal.
 
 507
 00:22:29,982 --> 00:22:30,943
-Izzie Stevens / Mr. Duff (PVM): You're cutting blind.
+Dr. O'Malley / Dr. Meredith Gray (PVM): You're cutting blind.
 
 508
 00:22:31,144 --> 00:22:32,665
-Izzie Stevens / Mr. Duff (PVM): Whatever happened to being practical?
+Dr. O'Malley / Dr. Meredith Gray (PVM): Whatever happened to being practical?
 
 509
 00:22:33,126 --> 00:22:34,028
-Miranda Bailey / Mr. Duff (PVM): I need to see more here.
+Dr. Karev / Dr. Meredith Gray (PVM): I need to see more here.
 
 510
 00:22:34,107 --> 00:22:34,990
-Miranda Bailey / Mr. Duff (PVM): Tractor.
+Dr. Karev / Dr. Meredith Gray (PVM): Tractor.
 
 511
 00:22:37,813 --> 00:22:38,173
-Izzie Stevens / Mr. Duff OR Dr. Derek Shepherd OR Devo (PVM): Wow.
+Dr. O'Malley / Mr. Duff OR Dr. Meredith Gray (PVM): Wow.
 
 512
 00:22:38,973 --> 00:22:39,615
-Miranda Bailey / Devo (PVM): Good cap refill.
+Dr. Karev / Mr. Duff (PVM): Good cap refill.
 
 513
 00:22:39,996 --> 00:22:40,717
-Miranda Bailey / Dr. Derek Shepherd (PVM): The spine.
+Dr. Karev / Dr. Meredith Gray (PVM): The spine.
 
 514
 00:22:41,416 --> 00:22:50,750
-Miranda Bailey / Mr. Duff OR Dr. Derek Shepherd (PVM): There is no wow in practical.
+Dr. O'Malley / Mr. Duff OR Dr. Meredith Gray (PVM): There is no wow in practical.
 
 515
 00:22:52,112 --> 00:22:54,012
-Miranda Bailey / Mr. Duff OR Dr. Derek Shepherd OR Breast Cancer Patient (PVM): We've decided to go ahead with the evacuation.
+Dr. Bailey / Mr. Duff OR Mrs. Glass (PVM): We've decided to go ahead with the evacuation.
 
 516
 00:22:54,433 --> 00:22:57,817
-Miranda Bailey / Mr. Duff OR Hospital Intercom OR Breast Cancer Patient (PVM): What the hell, right?
+Dr. Karev / Mr. Duff OR Mr. Duff OR Mrs. Glass (PVM): What the hell, right?
 
 517
 00:22:57,837 --> 00:22:59,480
-Miranda Bailey / Breast Cancer Patient (PVM): Maybe this is how it's supposed to be.
+Dr. Karev / Mrs. Glass (PVM): Maybe this is how it's supposed to be.
 
 518
 00:23:00,522 --> 00:23:02,047
-Cristina Yang / Attending Doctor (PVM): We need to start chemo right away, then.
+Dr. Bailey / Dr. Jennings (PVM): We need to start chemo right away, then.
 
 519
 00:23:02,507 --> 00:23:03,228
-Izzie Stevens / Attending Doctor (PVM): We'll get everything ready.
+Dr. Stevens / Dr. Jennings (PVM): We'll get everything ready.
 
 520
 00:23:08,217 --> 00:23:09,499
-Miranda Bailey / Attending Doctor (PVM): You ever done a DNC before?
+Dr. Bailey / Dr. Jennings (PVM): You ever done a DNC before?
 
 521
 00:23:09,980 --> 00:23:10,661
-Izzie Stevens / Attending Doctor (PVM): We learn at school.
+Dr. Stevens / Dr. Jennings (PVM): We learn at school.
 
 522
 00:23:11,461 --> 00:23:12,903
-Miranda Bailey / Attending Doctor (PVM): OK, go ahead.
+Dr. Bailey / Dr. Jennings (PVM): OK, go ahead.
 
 523
 00:23:13,085 --> 00:23:15,910
-Miranda Bailey / Attending Doctor (PVM): I'll call an OP resident down to supervise.
+Dr. Bailey / Dr. Jennings (PVM): I'll call an OP resident down to supervise.
 
 524
 00:23:15,930 --> 00:23:17,991
-Miranda Bailey / Attending Doctor (PVM): If she needs anything, page me.
+Dr. Bailey / Dr. Jennings (PVM): If she needs anything, page me.
 
 525
 00:23:38,001 --> 00:23:39,903
-Alex Karev / George O'Malley (PVM): You're using up my oxygen, O'Malley.
+Dr. Karev / Patient (PVM): You're using up my oxygen, O'Malley.
 
 526
 00:23:39,923 --> 00:23:43,768
-George O'Malley / George O'Malley OR Dr. Alex Karev (PVM): How does a pompous cocky jackass like you always have women all over him?
+Cristina Yang / Patient OR Patient (PVM): How does a pompous cocky jackass like you always have women all over him?
 
 527
 00:23:44,969 --> 00:23:45,890
-Dr. Alex Karev: Little blue love pills.
+Alex Karev / Devo (PVM): Little blue love pills.
 
 528
 00:23:46,568 --> 00:23:48,230
-Dr. Alex Karev: Lots of them.
+Alex Karev / Patient OR Devo (PVM): Lots of them.
 
 529
 00:23:48,250 --> 00:23:50,294
-George O'Malley: Come on.
+Cristina Yang / Devo (PVM): Come on.
 
 530
 00:23:50,314 --> 00:23:52,335
-Dr. Alex Karev: Float like a butterfly, sting like a bee.
+Alex Karev / Devo (PVM): Float like a butterfly, sting like a bee.
 
 531
 00:23:54,115 --> 00:23:54,537
-Dr. Alex Karev: There it is.
+Meredith Grey / Devo (PVM): There it is.
 
 532
 00:23:55,298 --> 00:23:57,038
-Miranda Bailey / Dr. Alex Karev OR Dr. Alex Karev (PVM): A bovine xenograft.
+Attending Surgeon / Devo (PVM): A bovine xenograft.
 
 533
 00:24:00,760 --> 00:24:02,502
-Miranda Bailey / Dr. Alex Karev (PVM): O'Malley, you think too much.
+Alex Karev / Devo OR Patient (PVM): O'Malley, you think too much.
 
 534
 00:24:02,923 --> 00:24:03,585
-Alex Karev / Dr. Alex Karev (PVM): Can't you see it?
+Alex Karev / Patient (PVM): Can't you see it?
 
 535
 00:24:04,243 --> 00:24:05,486
-Alex Karev / Dr. Alex Karev (PVM): You got to dance and jab.
+Alex Karev / Patient (PVM): You got to dance and jab.
 
 536
 00:24:05,507 --> 00:24:07,268
-Alex Karev / Dr. Alex Karev (PVM): Dance and jab.
+Alex Karev / Patient (PVM): Dance and jab.
 
 537
 00:24:07,535 --> 00:24:08,194
-Alex Karev / Dr. Alex Karev (PVM): Like me.
+Alex Karev / Patient (PVM): Like me.
 
 538
 00:24:08,817 --> 00:24:10,459
-Alex Karev / George O'Malley OR Dr. Alex Karev (PVM): I am the Ali of this place.
+Alex Karev / Patient (PVM): I am the Ali of this place.
 
 539
 00:24:13,281 --> 00:24:28,884
-Patient / Dr. Alex Karev OR Devo (PVM): Does the wall ever bow back?
+George O'Malley / Devo OR Devo (PVM): Does the wall ever bow back?
 
 540
 00:24:38,028 --> 00:24:39,548
-Cristina Yang / Devo (PVM): It's called davening, smartass.
+Cristina Yang / Esther (PVM): It's called davening, smartass.
 
 541
 00:24:40,352 --> 00:24:43,457
-Cristina Yang / Devo (PVM): This is me communing with God, and you're interrupting.
+Cristina Yang / Esther (PVM): This is me communing with God, and you're interrupting.
 
 542
 00:24:44,116 --> 00:24:45,720
-Izzie Stevens / George O'Malley (PVM): I've found a transplant option.
+Izzie Stevens / Devo OR Patient (PVM): I've found a transplant option.
 
 543
 00:24:46,760 --> 00:24:49,865
-Izzie Stevens / George O'Malley OR Dr. Alex Karev (PVM): At first, I thought maybe a cadaver, but they're really hard to find.
+Izzie Stevens / Devo OR Patient (PVM): At first, I thought maybe a cadaver, but they're really hard to find.
 
 544
 00:24:50,646 --> 00:24:55,375
-Izzie Stevens / Dr. Alex Karev (PVM): And then I realized Dr. Burke can transplant a bovine mitral valve instead of the pig.
+Izzie Stevens / Devo (PVM): And then I realized Dr. Burke can transplant a bovine mitral valve instead of the pig.
 
 545
 00:24:55,954 --> 00:24:57,156
-Patient's Family Member / Dr. Alex Karev (PVM): She can get a cow valve?
+Patient's Family Member / Devo (PVM): She can get a cow valve?
 
 546
 00:24:58,180 --> 00:25:00,103
-Patient's Family Member / Hospital Intercom (PVM): Dr. Burke, why wasn't this mentioned before?
+Patient's Family Member / Dr. Jennings (PVM): Dr. Burke, why wasn't this mentioned before?
 
 547
 00:25:00,942 --> 00:25:03,548
-Dr. Burke / Hospital Intercom OR Dr. Alex Karev (PVM): The divine valve has only been an option the last few years.
+Dr. Burke / Devo OR Devo OR Dr. Jennings (PVM): The divine valve has only been an option the last few years.
 
 548
 00:25:04,067 --> 00:25:05,691
-Dr. Burke / Dr. Alex Karev (PVM): And it's a much more complicated procedure.
+Dr. Burke / Devo (PVM): And it's a much more complicated procedure.
 
 549
 00:25:05,711 --> 00:25:08,875
-Dr. Burke / Dr. Alex Karev (PVM): But the best part is it's actually superior to the pig.
+Dr. Burke / Devo (PVM): But the best part is it's actually superior to the pig.
 
 550
 00:25:08,894 --> 00:25:09,497
-Dr. Burke / Dr. Miranda Bailey OR Dr. Alex Karev (PVM): It lasts longer.
+Dr. Burke / Devo (PVM): It lasts longer.
 
 551
 00:25:09,537 --> 00:25:14,565
-Dr. Burke / Dr. Miranda Bailey (PVM): What incredibly small fraction of your brain were you using there?
+Dr. Miranda Bailey / Dr. Karev (PVM): What incredibly small fraction of your brain were you using there?
 
 552
 00:25:15,125 --> 00:25:15,326
@@ -2208,47 +2208,47 @@ Alex Karev / Mr. Duff (PVM): What?
 
 553
 00:25:15,665 --> 00:25:20,272
-Dr. Burke / Dr. Miranda Bailey (PVM): Correct me if I'm wrong, but did you not present an alternative procedure without consulting your attending first?
+Dr. Miranda Bailey / Dr. Karev (PVM): Correct me if I'm wrong, but did you not present an alternative procedure without consulting your attending first?
 
 554
 00:25:20,574 --> 00:25:21,756
-Alex Karev / Dr. Miranda Bailey (PVM): I thought you'd be... What, impressed?
+Alex Karev / Dr. Karev (PVM): I thought you'd be... What, impressed?
 
 555
 00:25:22,477 --> 00:25:23,298
-Dr. Burke / Dr. Miranda Bailey (PVM): That's just stupid.
+Dr. Miranda Bailey / Dr. Karev (PVM): That's just stupid.
 
 556
 00:25:23,980 --> 00:25:24,338
-Alex Karev / Dr. Miranda Bailey (PVM): I'm sorry.
+Alex Karev / Dr. Karev (PVM): I'm sorry.
 
 557
 00:25:24,358 --> 00:25:25,300
-Dr. Burke / Dr. Miranda Bailey (PVM): We're finished here, Karev.
+Dr. Miranda Bailey / Dr. Karev (PVM): We're finished here, Karev.
 
 558
 00:25:25,842 --> 00:25:26,884
-Dr. Burke / Dr. Miranda Bailey (PVM): You're off this case.
+Dr. Miranda Bailey / Dr. Karev (PVM): You're off this case.
 
 559
 00:25:42,404 --> 00:25:45,607
-Miranda Bailey / Dr. Miranda Bailey (PVM): You need to sign these consent forms so we can proceed with your surgery.
+Dr. Alex Karev / Dr. Izzie Stevens (PVM): You need to sign these consent forms so we can proceed with your surgery.
 
 560
 00:25:46,367 --> 00:25:50,451
-Patient / Mr. Duff (PVM): Sweetheart, I'm not signing anything unless it's got my name on it, followed by a whole bunch of zeros.
+Patient (possibly a comedic or stubborn patient) / Esther (PVM): Sweetheart, I'm not signing anything unless it's got my name on it, followed by a whole bunch of zeros.
 
 561
 00:25:50,853 --> 00:25:53,894
-Miranda Bailey / Dr. Miranda Bailey (PVM): Look, the AVM is located in this crucial part of the brain.
+Dr. Alex Karev / Dr. Izzie Stevens (PVM): Look, the AVM is located in this crucial part of the brain.
 
 562
 00:25:53,954 --> 00:25:57,798
-Miranda Bailey / Dr. Miranda Bailey (PVM): It's a tangle of blood vessels that could burst and affect your speech, among other things.
+Dr. Alex Karev / Mr. Duff OR Dr. Izzie Stevens (PVM): It's a tangle of blood vessels that could burst and affect your speech, among other things.
 
 563
 00:25:57,877 --> 00:26:00,161
-Miranda Bailey / Dr. Miranda Bailey (PVM): So we know your visions are actually seizures.
+Dr. Alex Karev / Mr. Duff (PVM): So we know your visions are actually seizures.
 
 564
 00:26:00,402 --> 00:26:00,701
@@ -2256,7 +2256,7 @@ Patient / Mr. Duff (PVM): Do you?
 
 565
 00:26:01,000 --> 00:26:01,583
-Miranda Bailey / Dr. Miranda Bailey (PVM): Do I what?
+Dr. Alex Karev / Mr. Duff (PVM): Do I what?
 
 566
 00:26:02,844 --> 00:26:03,624
@@ -2264,55 +2264,55 @@ Patient / Mr. Duff (PVM): Know they're seizures.
 
 567
 00:26:05,125 --> 00:26:06,945
-Miranda Bailey / Mr. Duff (PVM): You're really good at reading people, aren't you?
+Patient / Mr. Duff OR Dr. Izzie Stevens (PVM): You're really good at reading people, aren't you?
 
 568
 00:26:07,626 --> 00:26:08,689
-Miranda Bailey / Mr. Duff (PVM): Telling them what they want to hear.
+Patient / Dr. Izzie Stevens (PVM): Telling them what they want to hear.
 
 569
 00:26:09,347 --> 00:26:12,310
-Patient / Mr. Duff (PVM): There's a really unfortunate alignment of Saturn in the house of Jupiter right now.
+Patient / Esther (PVM): There's a really unfortunate alignment of Saturn in the house of Jupiter right now.
 
 570
 00:26:13,979 --> 00:26:15,961
-Miranda Bailey / Mr. Duff OR Dr. Miranda Bailey (PVM): Okay, I know what you're doing.
+Dr. Alex Karev / Dr. Izzie Stevens (PVM): Okay, I know what you're doing.
 
 571
 00:26:16,820 --> 00:26:19,183
-Miranda Bailey / Dr. Miranda Bailey (PVM): You watch people, read their body language.
+Dr. Alex Karev / Dr. Izzie Stevens (PVM): You watch people, read their body language.
 
 572
 00:26:19,605 --> 00:26:23,269
-Miranda Bailey / Dr. Miranda Bailey (PVM): You say chocolate cupcakes, I lean towards you, so you think you're on the right track.
+Dr. Alex Karev / Dr. Izzie Stevens (PVM): You say chocolate cupcakes, I lean towards you, so you think you're on the right track.
 
 573
 00:26:23,611 --> 00:26:25,932
-Miranda Bailey / Dr. Miranda Bailey (PVM): Not only do you know you're having seizures, but you're milking it.
+Dr. Alex Karev / Dr. Izzie Stevens (PVM): Not only do you know you're having seizures, but you're milking it.
 
 574
 00:26:28,596 --> 00:26:31,480
-Patient / Mr. Duff (PVM): Well, we'll just see about that, Cricket.
+Patient / Patient (PVM): Well, we'll just see about that, Cricket.
 
 575
 00:26:32,121 --> 00:26:32,319
-Unknown / Mr. Duff (PVM): What?
+Dr. Alex Karev / Mr. Duff (PVM): What?
 
 576
 00:26:34,002 --> 00:26:35,243
-Unknown / Mr. Duff OR Dr. Miranda Bailey (PVM): What did you just call me?
+Mrs. Glass / Mr. Duff OR Dr. Izzie Stevens (PVM): What did you just call me?
 
 577
 00:26:40,791 --> 00:26:42,476
-Doctor / Dr. Miranda Bailey (PVM): I'm going to do a quick pelvic exam.
+Doctor / Dr. Izzie Stevens (PVM): I'm going to do a quick pelvic exam.
 
 578
 00:26:42,674 --> 00:26:44,177
-Doctor / Dr. Miranda Bailey (PVM): The OB resident should be down soon.
+Doctor / Mr. Duff OR Dr. Izzie Stevens (PVM): The OB resident should be down soon.
 
 579
 00:26:44,897 --> 00:26:45,701
-Doctor / Mr. Duff OR Dr. Miranda Bailey (PVM): It's a short procedure.
+Doctor / Mr. Duff (PVM): It's a short procedure.
 
 580
 00:26:45,721 --> 00:26:47,001
@@ -2320,7 +2320,7 @@ Doctor / Mr. Duff (PVM): Your husband can stay if he likes.
 
 581
 00:26:47,584 --> 00:26:48,384
-Breast Cancer Patient / Mr. Duff (PVM): He changed our minds.
+Mrs. Glass / Mr. Duff (PVM): He changed our minds.
 
 582
 00:26:48,443 --> 00:26:49,266
@@ -2328,395 +2328,395 @@ Doctor / Mr. Duff (PVM): Excuse me?
 
 583
 00:26:49,987 --> 00:26:51,189
-Breast Cancer Patient / Dr. Derek Shepherd (PVM): We've decided to keep the baby.
+Mrs. Glass / Dr. Jennings (PVM): We've decided to keep the baby.
 
 584
 00:26:53,112 --> 00:26:53,874
-Doctor / Mr. Duff (PVM): You have cancer.
+Dr. Jennings: You have cancer.
 
 585
 00:26:54,615 --> 00:26:56,938
-Breast Cancer Patient / Mr. Duff (PVM): Can you tell me I'll survive if I go through with this?
+Mrs. Glass: Can you tell me I'll survive if I go through with this?
 
 586
 00:26:59,040 --> 00:27:02,026
-Doctor / Mr. Duff (PVM): Having the procedure does not necessarily improve the treatment outcome.
+Dr. Jennings: Having the procedure does not necessarily improve the treatment outcome.
 
 587
 00:27:02,326 --> 00:27:04,009
-Breast Cancer Patient / Mr. Duff (PVM): You have quite the bedside manner.
+Mrs. Glass: You have quite the bedside manner.
 
 588
 00:27:04,048 --> 00:27:04,911
-Breast Cancer Patient / Mr. Duff OR Breast Cancer Patient (PVM): You know that, right?
+Mrs. Glass: You know that, right?
 
 589
 00:27:06,815 --> 00:27:09,978
-Breast Cancer Patient / Breast Cancer Patient (PVM): My mom died of breast cancer when she was in her 40s.
+Mrs. Glass: My mom died of breast cancer when she was in her 40s.
 
 590
 00:27:10,597 --> 00:27:11,921
-Breast Cancer Patient / Breast Cancer Patient (PVM): I have that cancer gene.
+Mrs. Glass: I have that cancer gene.
 
 591
 00:27:11,980 --> 00:27:16,865
-Breast Cancer Patient / Breast Cancer Patient (PVM): My chances are pretty much lose-lose, whichever way you look at it, except for the baby.
+Mrs. Glass: My chances are pretty much lose-lose, whichever way you look at it, except for the baby.
 
 592
 00:27:17,967 --> 00:27:18,586
-Breast Cancer Patient / Breast Cancer Patient (PVM): We're keeping it.
+Mrs. Glass / Mrs. Glass (PVM): We're keeping it.
 
 593
 00:27:21,351 --> 00:27:22,550
-Doctor / Breast Cancer Patient (PVM): I'll call down a psych consult.
+Dr. Jennings: I'll call down a psych consult.
 
 594
 00:27:22,592 --> 00:27:23,133
-Breast Cancer Patient / Breast Cancer Patient (PVM): Don't bother.
+Mrs. Glass: Don't bother.
 
 595
 00:27:23,653 --> 00:27:28,259
-Breast Cancer Patient / Breast Cancer Patient (PVM): I am going to get fat and happy instead of skinny and bald.
+Mrs. Glass: I am going to get fat and happy instead of skinny and bald.
 
 596
 00:27:28,798 --> 00:27:29,578
-Breast Cancer Patient / Breast Cancer Patient OR Breast Cancer Patient (PVM): And at the end of it all.
+Mrs. Glass: And at the end of it all.
 
 597
 00:27:29,598 --> 00:27:32,383
-Breast Cancer Patient / Breast Cancer Patient OR Breast Cancer Patient (PVM): Look, if you want to live, honey, that's what I'm doing.
+Mrs. Glass: Look, if you want to live, honey, that's what I'm doing.
 
 598
 00:27:47,298 --> 00:27:49,641
-Cristina Yang / Dr. Miranda Bailey (PVM): Look, if you think you're gonna get any, think again.
+Mrs. Glass / Mr. Duff OR Dr. Izzie Stevens (PVM): Look, if you think you're gonna get any, think again.
 
 599
 00:27:50,942 --> 00:27:51,742
-Cristina Yang / Dr. Miranda Bailey (PVM): I'm not in the mood.
+Mrs. Glass / Dr. Izzie Stevens (PVM): I'm not in the mood.
 
 600
 00:27:53,566 --> 00:27:54,467
-Preston Burke / Dr. Miranda Bailey OR Dr. Miranda Bailey (PVM): I'm not in the mood either.
+Mr. Glass / Mr. Duff OR Dr. Karev OR Dr. Izzie Stevens (PVM): I'm not in the mood either.
 
 601
 00:27:54,487 --> 00:27:54,807
-Cristina Yang / Unknown (PVM): Good.
+Burke / Unknown (PVM): Good.
 
 602
 00:28:00,493 --> 00:28:00,954
-Cristina Yang / Dr. Miranda Bailey (PVM): What do you want?
+Burke / Dr. Karev (PVM): What do you want?
 
 603
 00:28:01,957 --> 00:28:02,238
-Preston Burke / Dr. Miranda Bailey (PVM): Nothing.
+Cristina Yang / Dr. Karev (PVM): Nothing.
 
 604
 00:28:02,857 --> 00:28:03,838
-Preston Burke / Dr. Miranda Bailey (PVM): I just haven't seen you all day.
+Cristina Yang / Dr. Karev (PVM): I just haven't seen you all day.
 
 605
 00:28:07,683 --> 00:28:13,050
-Cristina Yang / Dr. Miranda Bailey (PVM): So I'm working.
+Burke / Dr. Izzie Stevens (PVM): So I'm working.
 
 606
 00:28:15,412 --> 00:28:17,335
-Cristina Yang / Dr. Miranda Bailey (PVM): I've never done a bovine replacement before.
+Cristina Yang / Dr. Karev (PVM): I've never done a bovine replacement before.
 
 607
 00:28:17,355 --> 00:28:19,557
-Cristina Yang / Dr. Miranda Bailey (PVM): I don't know what I'm doing.
+Cristina Yang / Dr. Karev (PVM): I don't know what I'm doing.
 
 608
 00:28:21,901 --> 00:28:25,065
-Preston Burke / Dr. Miranda Bailey (PVM): Look it up, research it, and get someone to assist you.
+Burke / Mr. Duff (PVM): Look it up, research it, and get someone to assist you.
 
 609
 00:28:27,827 --> 00:28:28,769
-Cristina Yang / Dr. Miranda Bailey (PVM): It's not that easy.
+Cristina Yang / Dr. Karev (PVM): It's not that easy.
 
 610
 00:28:29,451 --> 00:28:31,855
-Preston Burke / Dr. Miranda Bailey (PVM): This is a problem that has a solution, Burke.
+Burke / Mr. Duff (PVM): This is a problem that has a solution, Burke.
 
 611
 00:28:32,153 --> 00:28:33,375
-Preston Burke / Dr. Miranda Bailey (PVM): There are a lot of problems that don't.
+Burke / Mr. Duff (PVM): There are a lot of problems that don't.
 
 612
 00:28:40,026 --> 00:28:41,728
-Unknown Surgeon / Hospital Intercom (PVM): Third thoracic laminae, nothing.
+Meredith Gray / Cricket (PVM): Third thoracic laminae, nothing.
 
 613
 00:28:42,750 --> 00:28:45,011
-Unknown Surgeon / Hospital Intercom (PVM): I think I see the dura pulsating here.
+Meredith Gray / Cricket OR Mr. Duff (PVM): I think I see the dura pulsating here.
 
 614
 00:28:45,567 --> 00:28:46,166
-Unknown Surgeon / Mr. Duff (PVM): No, it's not.
+Derek Shepherd / Mr. Duff (PVM): No, it's not.
 
 615
 00:28:46,867 --> 00:28:47,269
-Unknown Surgeon / Mr. Duff (PVM): Keep looking.
+Derek Shepherd / Mr. Duff (PVM): Keep looking.
 
 616
 00:28:47,348 --> 00:28:48,951
-Unknown Surgeon / Mr. Duff (PVM): We've been at this for four hours.
+Meredith Gray / Mr. Duff (PVM): We've been at this for four hours.
 
 617
 00:28:49,192 --> 00:28:52,036
-Unknown Resident / Mr. Duff OR Dr. Derek Shepherd (PVM): Maybe he just injured his spinal cord, and there's nothing to fix.
+Meredith Gray / Mr. Duff OR Dr. Jennings OR Dr. Meredith Gray (PVM): Maybe he just injured his spinal cord, and there's nothing to fix.
 
 618
 00:28:52,195 --> 00:28:55,480
-Attending Surgeon / Dr. Derek Shepherd (PVM): Gray, when you read your books, make sure you reference them correctly.
+Dr. Derek Shepherd: Gray, when you read your books, make sure you reference them correctly.
 
 619
 00:28:55,740 --> 00:28:58,285
-Dr. Gray / Dr. Derek Shepherd (PVM): Progressive paralysis implies a pressure lesion.
+Meredith Gray / Dr. Meredith Gray (PVM): Progressive paralysis implies a pressure lesion.
 
 620
 00:28:58,746 --> 00:28:59,788
-Dr. Gray / Mr. Duff (PVM): My books got me here.
+Meredith Gray / Mr. Duff (PVM): My books got me here.
 
 621
 00:29:01,951 --> 00:29:04,314
-OR Nurse / Mr. Duff OR Dr. Derek Shepherd OR Dr. Derek Shepherd (PVM): Pressure's up to 180 over 111.
+Nurse / Mr. Duff OR Mr. Duff (PVM): Pressure's up to 180 over 111.
 
 622
 00:29:04,653 --> 00:29:05,476
-OR Nurse / Dr. Derek Shepherd (PVM): Pulse is in the 40s.
+Nurse / Mr. Duff (PVM): Pulse is in the 40s.
 
 623
 00:29:05,615 --> 00:29:06,057
-Attending Surgeon / Dr. Miranda Bailey (PVM): What is it?
+Derek Shepherd / Dr. Izzie Stevens (PVM): What is it?
 
 624
 00:29:06,237 --> 00:29:08,180
-Resident or Nurse / Dr. Derek Shepherd (PVM): I'm pushing 70 milligrams of disoxide.
+Meredith Gray / Mr. Duff (PVM): I'm pushing 70 milligrams of disoxide.
 
 625
 00:29:08,318 --> 00:29:08,700
-Attending Surgeon / Dr. Derek Shepherd (PVM): OK.
+Unknown (likely a surgeon or doctor) / Dr. Jennings OR Mr. Duff (PVM): OK.
 
 626
 00:29:09,602 --> 00:29:10,803
-Dr. Bailey / Mr. Duff OR Dr. Derek Shepherd (PVM): Autonomic dysreflexia.
+Unknown (likely a doctor or surgeon) / Mr. Duff (PVM): Autonomic dysreflexia.
 
 627
 00:29:10,824 --> 00:29:12,286
-Dr. Gray / Mr. Duff OR Dr. Derek Shepherd (PVM): Damage to the sympathetic nervous system?
+Unknown (likely a doctor or intern) / Patient OR Mr. Duff OR Dr. Jennings (PVM): Damage to the sympathetic nervous system?
 
 628
 00:29:12,306 --> 00:29:14,627
-OR Nurse / Mr. Duff OR Dr. Derek Shepherd (PVM): The CP in the heart rate are unstable.
+Unknown (likely a doctor) / Patient OR Mr. Duff OR Dr. Jennings (PVM): The CP in the heart rate are unstable.
 
 629
 00:29:14,759 --> 00:29:15,602
-Dr. Gray / Mr. Duff (PVM): We're in trouble, aren't we?
+Unknown (likely Dr. Meredith Gray) / Mr. Duff (PVM): We're in trouble, aren't we?
 
 630
 00:29:15,721 --> 00:29:16,762
-Attending Surgeon / Dr. Derek Shepherd (PVM): We've got to find the clot.
+Unknown (likely Dr. Bailey or lead surgeon) / Dr. Jennings (PVM): We've got to find the clot.
 
 631
 00:29:19,669 --> 00:29:21,191
-Attending Surgeon / Mr. Duff (PVM): Now, I can see the cord below the door.
+Unknown (likely a surgeon) / Mr. Duff (PVM): Now, I can see the cord below the door.
 
 632
 00:29:21,211 --> 00:29:22,093
-Dr. Gray / Mr. Duff OR Dr. Derek Shepherd OR Dr. Derek Shepherd (PVM): Is he going to stroke out?
+Unknown (likely Dr. O'Malley) / Mr. Duff OR Dr. Jennings (PVM): Is he going to stroke out?
 
 633
 00:29:22,153 --> 00:29:23,114
-Attending Surgeon / Dr. Derek Shepherd (PVM): Just focus, Gray.
+Unknown (likely Dr. Bailey) / Dr. Jennings (PVM): Just focus, Gray.
 
 634
 00:29:23,134 --> 00:29:24,134
-Attending Surgeon / Dr. Derek Shepherd (PVM): We're going to find the clot.
+Unknown (likely Dr. Bailey) / Dr. Jennings (PVM): We're going to find the clot.
 
 635
 00:29:24,296 --> 00:29:24,655
-Dr. Gray / Dr. Derek Shepherd (PVM): It's there.
+Unknown (likely Dr. Meredith Gray) / Dr. Jennings (PVM): It's there.
 
 636
 00:29:25,336 --> 00:29:26,239
-Attending Surgeon / Dr. Derek Shepherd OR Dr. Derek Shepherd (PVM): Peanut, please.
+Unknown (likely Dr. Bailey) / Dr. Jennings (PVM): Peanut, please.
 
 637
 00:29:27,579 --> 00:29:27,740
-OR Nurse / Mr. Duff (PVM): Okay.
+Unknown (likely scrub nurse or intern) / Mr. Duff (PVM): Okay.
 
 638
 00:29:27,779 --> 00:29:28,461
-OR Nurse / Dr. Derek Shepherd (PVM): BP is still up.
+Unknown (likely Dr. Meredith Gray or nurse) / Dr. Jennings (PVM): BP is still up.
 
 639
 00:29:28,583 --> 00:29:29,624
-OR Nurse / Dr. Derek Shepherd (PVM): Heart rate's at 44.
+Unknown (likely Dr. Meredith Gray or nurse) / Dr. Jennings (PVM): Heart rate's at 44.
 
 640
 00:29:30,944 --> 00:29:31,728
-Attending Surgeon / Dr. Derek Shepherd OR Dr. Derek Shepherd (PVM): Get on those bleeders.
+Unknown (likely Dr. Bailey) / Dr. Jennings (PVM): Get on those bleeders.
 
 641
 00:29:36,335 --> 00:29:37,695
-Attending Surgeon / Dr. Derek Shepherd (PVM): Keep looking, Dr. Gray.
+Unknown (likely Dr. Bailey) / Dr. Jennings (PVM): Keep looking, Dr. Gray.
 
 642
 00:29:43,818 --> 00:29:45,942
-OR Nurse / Dr. Miranda Bailey OR Dr. Miranda Bailey (PVM): Dr. O'Malley, our patient's pulse ox is dropping.
+Unknown (likely nurse or Dr. Bailey) / Devo (PVM): Dr. O'Malley, our patient's pulse ox is dropping.
 
 643
 00:29:45,961 --> 00:29:46,423
-Dr. O'Malley / Dr. Miranda Bailey (PVM): She's agonal.
+Unknown (likely Dr. O'Malley or nurse) / Devo (PVM): She's agonal.
 
 644
 00:29:46,442 --> 00:29:47,124
-Dr. O'Malley / Dr. Miranda Bailey (PVM): She needs to be intubated.
+Unknown (likely Dr. Bailey or Dr. O'Malley) / Devo (PVM): She needs to be intubated.
 
 645
 00:29:48,345 --> 00:29:49,665
-Dr. O'Malley / Mr. Duff (PVM): Isn't there anyone else who can do this?
+Unknown (likely Dr. O'Malley) / Mr. Duff (PVM): Isn't there anyone else who can do this?
 
 646
 00:29:50,208 --> 00:29:51,067
-OR Nurse / Dr. Miranda Bailey (PVM): You're standing right here.
+Unknown (likely Dr. Bailey) / Devo (PVM): You're standing right here.
 
 647
 00:29:51,087 --> 00:29:52,269
-Dr. O'Malley / Dr. Miranda Bailey (PVM): I could try and find someone.
+Unknown (likely Dr. O'Malley) / Devo (PVM): I could try and find someone.
 
 648
 00:29:52,711 --> 00:29:54,673
-Dr. O'Malley / Mr. Duff (PVM): No, that's... I got it.
+Unknown (likely Dr. O'Malley) / Mr. Duff (PVM): No, that's... I got it.
 
 649
 00:30:01,121 --> 00:30:02,521
-Dr. O'Malley / Mr. Duff (PVM): Okay.
+Unknown (likely a surgeon or nurse) / Mr. Duff (PVM): Okay.
 
 650
 00:30:03,682 --> 00:30:04,924
-OR Nurse / Dr. Miranda Bailey (PVM): So that's down to 86%.
+Unknown (likely someone monitoring vitals) / Mr. Duff OR Dr. Jennings (PVM): So that's down to 86%.
 
 651
 00:30:04,944 --> 00:30:09,411
-Attending Surgeon / Mr. Duff OR Dr. Miranda Bailey (PVM): Crank pressure, please.
+Unknown (likely lead surgeon) / Mr. Duff OR Mr. Duff OR Dr. Jennings (PVM): Crank pressure, please.
 
 652
 00:30:09,431 --> 00:30:09,529
-Dr. O'Malley / Mr. Duff (PVM): Okay.
+Unknown (team member) / Mr. Duff (PVM): Okay.
 
 653
 00:30:09,549 --> 00:30:10,530
-Dr. O'Malley / Mr. Duff (PVM): I see cords.
+Unknown (likely intubating doctor) / Mr. Duff (PVM): I see cords.
 
 654
 00:30:10,550 --> 00:30:11,093
-Dr. O'Malley / Mr. Duff (PVM): Two, three.
+Unknown (counting during procedure) / Mr. Duff (PVM): Two, three.
 
 655
 00:30:31,625 --> 00:30:33,048
-OR Nurse / Dr. Miranda Bailey (PVM): Clear and equal.
+Unknown (likely monitoring lungs) / Mr. Duff OR Dr. Karev (PVM): Clear and equal.
 
 656
 00:30:33,067 --> 00:30:34,308
-OR Nurse / Dr. Miranda Bailey (PVM): CO2 detector mellow yellow.
+Unknown (likely anesthesiologist) / Mr. Duff OR Dr. Karev (PVM): CO2 detector mellow yellow.
 
 657
 00:30:36,112 --> 00:30:37,334
-Cristina Yang / Dr. Miranda Bailey (PVM): Smooth moves, doctor.
+Unknown (teasing colleague) / Mr. Duff OR Dr. Karev (PVM): Smooth moves, doctor.
 
 658
 00:30:38,295 --> 00:30:38,836
-Izzie Stevens / Dr. Alex Karev (PVM): Kicked ass.
+Unknown (affirming compliment) / Patient (PVM): Kicked ass.
 
 659
 00:30:52,991 --> 00:30:53,952
-Dr. Burke / Dr. Miranda Bailey (PVM): Ah, Dr. Karev.
+Unknown (addressing Dr. Karev) / Dr. Karev (PVM): Ah, Dr. Karev.
 
 660
 00:30:55,496 --> 00:30:58,278
-Dr. Burke / Dr. Alex Karev OR George O'Malley OR Dr. Miranda Bailey (PVM): How long did it take to get a car valve?
+Dr. Shepherd / Dr. Karev OR Patient (PVM): How long did it take to get a car valve?
 
 661
 00:30:58,298 --> 00:31:00,402
-Dr. Alex Karev: Oh, about 60 minutes by messenger.
+Dr. Karev / Devo OR Patient (PVM): Oh, about 60 minutes by messenger.
 
 662
 00:31:03,487 --> 00:31:04,208
-Dr. Burke / Dr. Alex Karev (PVM): You're scrubbing in.
+Dr. Shepherd / Devo (PVM): You're scrubbing in.
 
 663
 00:31:06,190 --> 00:31:07,211
-Dr. Alex Karev: Thank you very much, sir.
+Dr. Karev: Thank you very much, sir.
 
 664
 00:31:07,269 --> 00:31:08,832
-Dr. Burke / Dr. Alex Karev (PVM): This doesn't get you any points, Karev.
+Dr. Shepherd / Dr. Karev (PVM): This doesn't get you any points, Karev.
 
 665
 00:31:09,531 --> 00:31:11,153
-Dr. Alex Karev: I'm the only one with points around here, OK?
+Dr. Bailey / Dr. Karev (PVM): I'm the only one with points around here, OK?
 
 666
 00:31:14,395 --> 00:31:18,039
-Izzie Stevens / Dr. Miranda Bailey (PVM): Oh, by the way, Devo wants a rabbi to bless her before surgery.
+Unknown (informing about patient request) / Dr. Karev (PVM): Oh, by the way, Devo wants a rabbi to bless her before surgery.
 
 667
 00:31:19,221 --> 00:31:19,622
-Cristina Yang / Dr. Miranda Bailey (PVM): Seriously?
+Unknown (reacting to request) / Dr. Karev (PVM): Seriously?
 
 668
 00:31:20,182 --> 00:31:21,104
-Dr. Burke / Dr. Miranda Bailey (PVM): You came up with the call.
+Dr. Bailey / Dr. Karev (PVM): You came up with the call.
 
 669
 00:31:21,682 --> 00:31:22,765
-Dr. Burke / Dr. Miranda Bailey (PVM): You can find that girl a rabbi.
+Dr. Bailey / Dr. Karev (PVM): You can find that girl a rabbi.
 
 670
 00:31:26,689 --> 00:31:29,372
-Dr. Burke / Mr. Duff OR Dr. Miranda Bailey (PVM): For the irrigation and suction, have it ready.
+Unknown (giving surgical instruction) / Dr. Karev OR Mr. Duff OR Dr. Meredith Gray (PVM): For the irrigation and suction, have it ready.
 
 671
 00:31:29,392 --> 00:31:29,612
-Cristina Yang / Dr. Miranda Bailey (PVM): Right away.
+Unknown (acknowledging instruction) / Dr. Meredith Gray (PVM): Right away.
 
 672
 00:31:32,493 --> 00:31:33,957
-Dr. Burke / Dr. Miranda Bailey (PVM): What is it?
+Unknown (asking about something noticed) / Dr. Izzie Stevens (PVM): What is it?
 
 673
 00:31:34,195 --> 00:31:34,798
-Cristina Yang / Dr. Derek Shepherd (PVM): See for yourself.
+Dr. Miranda Bailey / Patient (PVM): See for yourself.
 
 674
 00:31:35,798 --> 00:31:39,021
-Dr. Burke / Mr. Duff OR Dr. Derek Shepherd OR Hospital Intercom (PVM): Second thoracic vertebrae.
+Dr. Preston Burke / Dr. Izzie Stevens OR Patient OR Mr. Duff OR Cricket (PVM): Second thoracic vertebrae.
 
 675
 00:31:39,103 --> 00:31:42,527
-Izzie Stevens / Mr. Duff OR Hospital Intercom (PVM): Oh, my God.
+Dr. Izzie Stevens / Cricket OR Mr. Duff (PVM): Oh, my God.
 
 676
 00:31:42,665 --> 00:31:44,146
-Cristina Yang / Hospital Intercom (PVM): I see it.
+Dr. Meredith Grey / Cricket (PVM): I see it.
 
 677
 00:31:44,269 --> 00:31:45,028
-Izzie Stevens / Hospital Intercom (PVM): It really is there.
+Dr. Cristina Yang / Cricket (PVM): It really is there.
 
 678
 00:31:45,067 --> 00:31:46,069
-Dr. Burke / Hospital Intercom OR Dr. Derek Shepherd (PVM): Of course it is.
+Dr. Miranda Bailey / Dr. Jennings OR Cricket (PVM): Of course it is.
 
 679
 00:31:46,329 --> 00:31:51,635
-Dr. Burke / Hospital Intercom OR Dr. Derek Shepherd (PVM): Let's suction and pack this baby, shall we?
+Dr. Miranda Bailey / Dr. Jennings OR Hospital Intercom OR Mr. Duff (PVM): Let's suction and pack this baby, shall we?
 
 680
 00:31:51,655 --> 00:31:55,121
-Cristina Yang / Hospital Intercom OR Hospital Intercom (PVM): Here you go.
+Dr. Miranda Bailey / Dr. Jennings OR Hospital Intercom OR Cricket (PVM): Here you go.
 
 681
 00:31:55,240 --> 00:31:57,163
@@ -2724,7 +2724,7 @@ Hospital Intercom: Dr. Burke to oncology.
 
 682
 00:31:57,182 --> 00:31:57,784
-Cristina Yang / Hospital Intercom OR Hospital Intercom (PVM): You were right.
+Dr. Meredith Grey / Hospital Intercom OR Mr. Duff (PVM): You were right.
 
 683
 00:31:58,305 --> 00:31:59,526
@@ -2732,55 +2732,55 @@ Hospital Intercom: Dr. Burke to oncology.
 
 684
 00:31:59,546 --> 00:32:00,665
-Izzie Stevens / Mr. Duff OR Hospital Intercom (PVM): Is he gonna be okay?
+Dr. Izzie Stevens / Mr. Duff (PVM): Is he gonna be okay?
 
 685
 00:32:00,685 --> 00:32:01,166
-Dr. Burke / Mr. Duff (PVM): I think so.
+Dr. Preston Burke / Mr. Duff (PVM): I think so.
 
 686
 00:32:01,788 --> 00:32:02,549
-Cristina Yang / Mr. Duff (PVM): But you don't know that.
+Dr. Cristina Yang / Mr. Duff (PVM): But you don't know that.
 
 687
 00:32:02,951 --> 00:32:05,673
-Dr. Burke / Mr. Duff (PVM): I know we stopped the paralysis from advancing.
+Dr. Preston Burke / Mr. Duff (PVM): I know we stopped the paralysis from advancing.
 
 688
 00:32:05,692 --> 00:32:08,576
-Cristina Yang / Mr. Duff (PVM): But you don't know if the paralysis he already has will be permanent?
+Dr. Cristina Yang / Mr. Duff (PVM): But you don't know if the paralysis he already has will be permanent?
 
 689
 00:32:08,596 --> 00:32:08,655
-Dr. Burke / Unknown (PVM): No.
+Dr. Preston Burke / Unknown (PVM): No.
 
 690
 00:32:09,938 --> 00:32:11,940
-Cristina Yang / Mr. Duff (PVM): You know, you keep taking everything on faith.
+Dr. Cristina Yang / Mr. Duff (PVM): You know, you keep taking everything on faith.
 
 691
 00:32:13,362 --> 00:32:14,883
-Cristina Yang / Mr. Duff (PVM): How do you know what's real and what's not?
+Dr. Cristina Yang / Mr. Duff (PVM): How do you know what's real and what's not?
 
 692
 00:32:15,502 --> 00:32:15,982
-Dr. Burke / Dr. Derek Shepherd (PVM): We just do.
+Dr. Meredith Grey / Patient (PVM): We just do.
 
 693
 00:32:19,248 --> 00:32:20,990
-Izzie Stevens / Dr. Derek Shepherd (PVM): You know, some people would call this a relationship.
+Dr. Izzie Stevens / Patient (PVM): You know, some people would call this a relationship.
 
 694
 00:32:22,049 --> 00:32:24,711
-Izzie Stevens / Dr. Derek Shepherd (PVM): The kind where you exchange keys, leave your toothbrush over.
+Dr. Izzie Stevens / Patient (PVM): The kind where you exchange keys, leave your toothbrush over.
 
 695
 00:32:25,472 --> 00:32:25,732
-Alex Karev / Mr. Duff (PVM): Who?
+Dr. Meredith Grey / Mrs. Glass (PVM): Who?
 
 696
 00:32:26,433 --> 00:32:27,414
-Alex Karev / Mr. Duff OR Hospital Intercom (PVM): Who would call it that?
+Dr. Meredith Grey / Mr. Duff OR Mrs. Glass OR Cricket (PVM): Who would call it that?
 
 697
 00:32:28,596 --> 00:32:28,798
@@ -2788,477 +2788,477 @@ Mr. Walker / Mr. Duff (PVM): Me.
 
 698
 00:32:30,858 --> 00:32:31,240
-Mr. Walker / Dr. Derek Shepherd OR Dr. Derek Shepherd (PVM): I would.
+Mr. Walker / Dr. Jennings OR Patient OR Dr. Jennings (PVM): I would.
 
 699
 00:32:33,800 --> 00:32:35,182
-Intern / Hospital Intercom (PVM): And I'm supposed to believe you.
+Doctor / Mr. Duff (PVM): And I'm supposed to believe you.
 
 700
 00:32:35,383 --> 00:32:35,604
-Mr. Walker / Dr. Derek Shepherd (PVM): Uh-huh.
+Mr. Walker / Dr. Jennings OR Mr. Duff (PVM): Uh-huh.
 
 701
 00:32:36,683 --> 00:32:37,483
-Intern / Hospital Intercom (PVM): Show me something.
+Doctor / Mr. Duff (PVM): Show me something.
 
 702
 00:32:39,945 --> 00:32:41,209
-Intern / Hospital Intercom (PVM): Give me a reason to believe.
+Doctor / Mr. Duff (PVM): Give me a reason to believe.
 
 703
 00:32:48,193 --> 00:32:56,442
-Intern / Devo OR Mr. Duff OR Hospital Intercom (PVM): I have your discharge papers.
+Doctor / Mr. Duff OR Mr. Duff OR Mr. Duff (PVM): I have your discharge papers.
 
 704
 00:32:58,041 --> 00:32:59,605
-Patient (possibly Mr. Walker or another patient) / Hospital Intercom (PVM): Oh, you're not happy with me, are you?
+Mr. Walker / Mr. Duff (PVM): Oh, you're not happy with me, are you?
 
 705
 00:33:00,424 --> 00:33:00,986
-Intern / Mr. Duff OR Breast Cancer Patient (PVM): I'm your doctor.
+Dr. Jennings: I'm your doctor.
 
 706
 00:33:01,006 --> 00:33:02,086
-Intern / Breast Cancer Patient (PVM): It's not my place to be happy.
+Doctor / Mrs. Glass (PVM): It's not my place to be happy.
 
 707
 00:33:02,557 --> 00:33:06,403
-Patient (possibly Mrs. Duff) / Mr. Duff OR Breast Cancer Patient (PVM): My husband and child are going to be together long after I'm gone.
+Patient (likely a female patient, not Mr. Walker) / Mrs. Glass (PVM): My husband and child are going to be together long after I'm gone.
 
 708
 00:33:06,443 --> 00:33:07,487
-Patient (possibly Mrs. Duff) / Breast Cancer Patient (PVM): We've talked about it.
+Patient (likely same as 707) / Mrs. Glass (PVM): We've talked about it.
 
 709
 00:33:07,507 --> 00:33:10,271
-Patient (possibly Mrs. Duff) / Breast Cancer Patient (PVM): It's our decision, and that's OK.
+Patient (likely same as 707) / Mrs. Glass (PVM): It's our decision, and that's OK.
 
 710
 00:33:10,933 --> 00:33:11,935
-Intern / Dr. Miranda Bailey (PVM): So why do you need my approval?
+Doctor / Dr. Izzie Stevens (PVM): So why do you need my approval?
 
 711
 00:33:11,977 --> 00:33:13,558
-Patient (possibly Mrs. Duff) / Dr. Miranda Bailey OR Breast Cancer Patient (PVM): I just want you to understand.
+Patient (likely same as 707) / Mrs. Glass OR Dr. Izzie Stevens (PVM): I just want you to understand.
 
 712
 00:33:14,442 --> 00:33:14,961
-Intern / Dr. Miranda Bailey (PVM): Well, I don't.
+Doctor / Mrs. Glass OR Dr. Izzie Stevens (PVM): Well, I don't.
 
 713
 00:33:30,265 --> 00:33:31,567
-Intern / Mr. Duff OR Dr. Miranda Bailey (PVM): I brought the consent forms again.
+Doctor / Dr. Izzie Stevens (PVM): I brought the consent forms again.
 
 714
 00:33:32,228 --> 00:33:33,490
-Intern / Mr. Duff (PVM): You really need to sign them.
+Doctor / Dr. Izzie Stevens (PVM): You really need to sign them.
 
 715
 00:33:34,392 --> 00:33:35,713
-Intern / Mr. Duff (PVM): Your surgeon scheduled the OR.
+Doctor / Mr. Duff OR Dr. Izzie Stevens (PVM): Your surgeon scheduled the OR.
 
 716
 00:33:36,316 --> 00:33:39,622
-Intern / Mr. Duff OR Dr. Miranda Bailey (PVM): Mr. Duff, are you all right?
+Dr. Jennings: Mr. Duff, are you all right?
 
 717
 00:33:39,642 --> 00:33:40,742
-Intern / Dr. Miranda Bailey (PVM): Are you having another seizure?
+Dr. Jennings: Are you having another seizure?
 
 718
 00:33:46,231 --> 00:33:46,334
-Mr. Duff / Mr. Duff (PVM): Yeah.
+Mr. Duff / Devo (PVM): Yeah.
 
 719
 00:33:46,354 --> 00:33:46,993
-Mr. Duff / Mr. Duff (PVM): Yeah.
+Mr. Duff / Devo (PVM): Yeah.
 
 720
 00:33:47,015 --> 00:33:47,776
-Mr. Duff / Mr. Duff OR Dr. Derek Shepherd (PVM): I think maybe I am.
+Mr. Duff / Mr. Duff (PVM): I think maybe I am.
 
 721
 00:33:50,922 --> 00:33:51,682
-Intern / Dr. Miranda Bailey (PVM): What is it?
+Unknown (likely a doctor or nurse) / Dr. Izzie Stevens (PVM): What is it?
 
 722
 00:33:57,348 --> 00:34:01,355
-Mr. Duff / Devo OR Mr. Duff (PVM): It's me.
+Mr. Duff / Mr. Duff OR Patient (PVM): It's me.
 
 723
 00:34:01,375 --> 00:34:04,721
-Mr. Duff / Mr. Duff OR Dr. Miranda Bailey (PVM): I think it's about to be over.
+Mr. Duff / Dr. Izzie Stevens OR Patient (PVM): I think it's about to be over.
 
 724
 00:34:04,740 --> 00:34:06,221
-Intern / Dr. Miranda Bailey (PVM): We know what we're doing, Mr. Duff.
+Doctor (possibly lead surgeon) / Dr. Izzie Stevens (PVM): We know what we're doing, Mr. Duff.
 
 725
 00:34:07,124 --> 00:34:08,364
-Intern / Dr. Miranda Bailey (PVM): You saw the angio results.
+Doctor / Dr. Izzie Stevens (PVM): You saw the angio results.
 
 726
 00:34:08,485 --> 00:34:10,188
-Intern / Dr. Miranda Bailey (PVM): We're catching the AVM just in time.
+Doctor / Dr. Izzie Stevens (PVM): We're catching the AVM just in time.
 
 727
 00:34:10,369 --> 00:34:11,251
-Intern / Dr. Miranda Bailey (PVM): You don't need to be nervous.
+Doctor / Dr. Izzie Stevens (PVM): You don't need to be nervous.
 
 728
 00:34:11,831 --> 00:34:12,592
-Intern / Dr. Miranda Bailey (PVM): You're not gonna die.
+Doctor / Dr. Izzie Stevens (PVM): You're not gonna die.
 
 729
 00:34:14,014 --> 00:34:15,135
-Mr. Duff / Mr. Duff (PVM): I'm not talking about dying.
+Mr. Duff / Esther (PVM): I'm not talking about dying.
 
 730
 00:34:22,547 --> 00:34:24,369
-Mr. Duff / Mr. Duff (PVM): My whole life has been about what I see.
+Mr. Duff / Esther (PVM): My whole life has been about what I see.
 
 731
 00:34:25,311 --> 00:34:27,596
-Mr. Duff / Mr. Duff (PVM): and about believing in myself, whatever people think.
+Mr. Duff / Esther (PVM): and about believing in myself, whatever people think.
 
 732
 00:34:28,476 --> 00:34:30,300
-Mr. Duff / Mr. Duff (PVM): And you're telling me there's a very good chance that will go away?
+Mr. Duff / Esther (PVM): And you're telling me there's a very good chance that will go away?
 
 733
 00:34:32,523 --> 00:34:33,545
-Intern / Dr. Miranda Bailey (PVM): Look, you're a healthy guy.
+Doctor / Mr. Duff (PVM): Look, you're a healthy guy.
 
 734
 00:34:33,585 --> 00:34:36,009
-Intern / Mr. Duff OR Dr. Miranda Bailey (PVM): You're going to live a long, full life.
+Doctor / Mr. Duff OR Dr. Izzie Stevens (PVM): You're going to live a long, full life.
 
 735
 00:34:37,710 --> 00:34:41,818
-Intern / Dr. Miranda Bailey (PVM): And if your psychic visions are real, you've got to believe you'll have them when you come out.
+Doctor / Mr. Duff (PVM): And if your psychic visions are real, you've got to believe you'll have them when you come out.
 
 736
 00:35:09,440 --> 00:35:30,333
-Unknown (possibly a rabbi, chaplain, or someone reciting a prayer) / Dr. Miranda Bailey OR Dr. Miranda Bailey OR Dr. Meredith Gray (PVM): Meesha, Beirach, Avotenu, Avraham, Yitzchak, V'Yakob, V'imotenu, Sarah, Rivka, Rachel, B'Leah, Hu Yivarech, V'Yirapet, Acholah,
+Unknown (possibly a rabbi, chaplain, or praying character) / Dr. Meredith Gray OR Cricket OR Mr. Duff (PVM): Meesha, Beirach, Avotenu, Avraham, Yitzchak, V'Yakob, V'imotenu, Sarah, Rivka, Rachel, B'Leah, Hu Yivarech, V'Yirapet, Acholah,
 
 737
 00:35:46,327 --> 00:35:48,730
-Unknown Doctor / Dr. Miranda Bailey (PVM): This is Dr. Chesney from the Cleveland Clinic.
+Dr. Chesney: This is Dr. Chesney from the Cleveland Clinic.
 
 738
 00:35:49,271 --> 00:35:53,094
-Unknown Doctor / Dr. Miranda Bailey (PVM): He's an expert on bovine valve replacement surgery.
+Unknown (likely another doctor or narrator) / Dr. Karev (PVM): He's an expert on bovine valve replacement surgery.
 
 739
 00:35:53,114 --> 00:35:55,096
-Unknown Doctor / Dr. Miranda Bailey (PVM): He will be assisting via satellite.
+Unknown (likely another doctor or narrator) / Dr. Karev (PVM): He will be assisting via satellite.
 
 740
 00:35:57,137 --> 00:35:58,679
-Dr. Chesney / Dr. Alex Karev OR Dr. Miranda Bailey (PVM): Thank you, doctor.
+Dr. Chesney / Dr. Karev OR Mr. Duff (PVM): Thank you, doctor.
 
 741
 00:35:58,699 --> 00:36:15,893
-Unknown Surgeon / Dr. Alex Karev (PVM): After the sternotomy and connection to bypass, we're going to do a transverse left atrial to expose the valve.
+Lead surgeon / Mr. Duff OR Devo OR Mr. Duff OR Dr. Karev OR Mr. Duff (PVM): After the sternotomy and connection to bypass, we're going to do a transverse left atrial to expose the valve.
 
 742
 00:36:15,914 --> 00:36:16,014
-Unknown Doctor / Unknown (PVM): Good.
+Unknown (possibly another doctor) / Unknown (PVM): Good.
 
 743
 00:36:19,184 --> 00:36:21,887
-Alex Karev / Mr. Duff (PVM): I tried to talk Shepard out of that clot surgery.
+Unknown (possibly another doctor) / Cricket OR Mr. Duff (PVM): I tried to talk Shepard out of that clot surgery.
 
 744
 00:36:22,967 --> 00:36:24,047
-Alex Karev / Mr. Duff (PVM): What is wrong with me?
+Unknown (possibly Mr. Duff or another doctor) / Mr. Duff (PVM): What is wrong with me?
 
 745
 00:36:24,469 --> 00:36:26,070
-Cristina Yang / Mr. Duff OR Dr. Alex Karev (PVM): Basically, you tried to kill the guy.
+Cristina Yang / Devo OR Mr. Duff OR Patient (PVM): Basically, you tried to kill the guy.
 
 746
 00:36:26,090 --> 00:36:27,771
-Izzie Stevens / Mr. Duff OR Dr. Alex Karev (PVM): Basically, you're an ass.
+Meredith Grey / Devo OR Mr. Duff (PVM): Basically, you're an ass.
 
 747
 00:36:27,791 --> 00:36:28,893
-Alex Karev / Mr. Duff OR Dr. Alex Karev (PVM): Oh, you know you want it.
+Cristina Yang / Devo OR Mr. Duff (PVM): Oh, you know you want it.
 
 748
 00:36:29,273 --> 00:36:30,335
-Alex Karev / Dr. Alex Karev (PVM): Come to Poppy, baby.
+Poppy / Devo (PVM): Come to Poppy, baby.
 
 749
 00:36:32,016 --> 00:36:33,418
-Izzie Stevens / Mr. Duff (PVM): This is George.
+Alex Karev / Patient (PVM): This is George.
 
 750
 00:36:33,498 --> 00:36:38,081
-Izzie Stevens / Mr. Duff OR Hospital Intercom (PVM): George has a hot date.
+Alex Karev / Patient OR Cricket (PVM): George has a hot date.
 
 751
 00:36:38,101 --> 00:36:39,282
-Cristina Yang / Hospital Intercom (PVM): Oh, that's great, George.
+Izzie Stevens / Cricket (PVM): Oh, that's great, George.
 
 752
 00:36:40,905 --> 00:36:41,284
-George O'Malley / Mr. Duff (PVM): Yeah.
+George O'Malley / Devo (PVM): Yeah.
 
 753
 00:36:42,425 --> 00:36:44,168
-Cristina Yang / Mr. Duff (PVM): Well, left pocket of my lab coat, Georgie.
+Alex Karev / Devo (PVM): Well, left pocket of my lab coat, Georgie.
 
 754
 00:36:44,829 --> 00:36:46,170
-Cristina Yang / Mr. Duff OR George O'Malley (PVM): No glove, no love.
+Cristina Yang / Devo (PVM): No glove, no love.
 
 755
 00:36:53,304 --> 00:37:00,494
-Izzie Stevens / Dr. Miranda Bailey OR Hospital Intercom OR Dr. Miranda Bailey (PVM): My psychic had a surgery.
+Izzie Stevens / Esther OR Dr. Izzie Stevens OR Mr. Duff (PVM): My psychic had a surgery.
 
 756
 00:37:01,936 --> 00:37:02,255
-Meredith Grey / Dr. Miranda Bailey (PVM): Yeah?
+Meredith Grey / Dr. Izzie Stevens (PVM): Yeah?
 
 757
 00:37:03,556 --> 00:37:06,041
-Izzie Stevens / Dr. Miranda Bailey OR Hospital Intercom (PVM): I wonder what happened with his gift.
+Izzie Stevens / Cricket OR Dr. Izzie Stevens (PVM): I wonder what happened with his gift.
 
 758
 00:37:06,440 --> 00:37:08,163
-Cristina Yang / Dr. Miranda Bailey (PVM): Come on, we all know he's crazy.
+Cristina Yang / Dr. Izzie Stevens (PVM): Come on, we all know he's crazy.
 
 759
 00:37:08,181 --> 00:37:14,510
-Meredith Grey / Dr. Miranda Bailey OR Hospital Intercom OR Dr. Miranda Bailey (PVM): I thought you said you didn't believe in that stuff.
+Meredith Grey / Cricket OR Dr. Izzie Stevens (PVM): I thought you said you didn't believe in that stuff.
 
 760
 00:37:14,530 --> 00:37:19,077
-Izzie Stevens / Dr. Miranda Bailey (PVM): I grew up in a trailer park, no way to tables, which was supposed to put me through college, but...
+Dr. Izzie Stevens: I grew up in a trailer park, no way to tables, which was supposed to put me through college, but...
 
 761
 00:37:20,052 --> 00:37:24,496
-Izzie Stevens / Dr. Miranda Bailey (PVM): My mother was always calling these psychics all the time.
+Dr. Izzie Stevens: My mother was always calling these psychics all the time.
 
 762
 00:37:26,400 --> 00:37:29,262
-Izzie Stevens / Dr. Miranda Bailey (PVM): And the bills started piling up, so I had to use my money to pay them.
+Dr. Izzie Stevens: And the bills started piling up, so I had to use my money to pay them.
 
 763
 00:37:30,284 --> 00:37:32,246
-Izzie Stevens / Dr. Miranda Bailey (PVM): When I turned 18, I left and never went back.
+Dr. Izzie Stevens: When I turned 18, I left and never went back.
 
 764
 00:37:33,407 --> 00:37:37,472
-Izzie Stevens / Dr. Miranda Bailey (PVM): But this guy has been saying things to me, things he couldn't possibly know anything about.
+Dr. Izzie Stevens: But this guy has been saying things to me, things he couldn't possibly know anything about.
 
 765
 00:37:39,635 --> 00:37:41,657
-Izzie Stevens / Mr. Duff OR Dr. Miranda Bailey OR Dr. Miranda Bailey (PVM): So I just wonder.
+Dr. Izzie Stevens: So I just wonder.
 
 766
 00:37:46,003 --> 00:37:47,864
-Unknown Doctor / Hospital Intercom (PVM): Do you have sensation anywhere else?
+Doctor (possibly Derek Shepherd or Miranda Bailey) / Cricket (PVM): Do you have sensation anywhere else?
 
 767
 00:37:48,518 --> 00:37:50,882
-Mr. Duff / Mr. Walker (PVM): Some feeling in my stomach and feet, I guess.
+Patient / Cricket (PVM): Some feeling in my stomach and feet, I guess.
 
 768
 00:37:51,282 --> 00:37:52,103
-Unknown Doctor / Mr. Duff (PVM): Bladder and bowels?
+Doctor (possibly Derek Shepherd or Miranda Bailey) / Mr. Duff (PVM): Bladder and bowels?
 
 769
 00:37:52,885 --> 00:37:53,766
-Mr. Duff / Mr. Walker (PVM): Not so good still.
+Cricket / Cricket (PVM): Not so good still.
 
 770
 00:37:54,246 --> 00:37:56,829
-Unknown Doctor / Mr. Duff OR Hospital Intercom (PVM): They said the pressure stockings help relieve clots and bed sores.
+Cricket's Mother / Mr. Duff OR Dr. Jennings (PVM): They said the pressure stockings help relieve clots and bed sores.
 
 771
 00:37:56,909 --> 00:38:09,063
-Mr. Duff / Mr. Duff OR Hospital Intercom (PVM): They do.
+Cricket / Dr. Jennings (PVM): They do.
 
 772
 00:38:09,083 --> 00:38:14,047
-Mr. Duff / Mr. Walker (PVM): I want to thank you for everything, believing in me that I wasn't making it up.
+Cricket: I want to thank you for everything, believing in me that I wasn't making it up.
 
 773
 00:38:16,351 --> 00:38:18,273
-Izzie Stevens / Hospital Intercom (PVM): Well, I'll come back tomorrow then.
+Cricket's Mother / Dr. Meredith Gray (PVM): Well, I'll come back tomorrow then.
 
 774
 00:38:18,675 --> 00:38:19,976
-Mr. Duff / Mr. Walker (PVM): Hey, I wanted to show you something.
+Cricket / Cricket (PVM): Hey, I wanted to show you something.
 
 775
 00:38:20,338 --> 00:38:27,643
-Mr. Duff / Mr. Walker (PVM): I wasn't sure it would last, but now, look.
+Cricket: I wasn't sure it would last, but now, look.
 
 776
 00:38:27,664 --> 00:38:30,628
-Izzie Stevens / Hospital Intercom OR Mr. Walker (PVM): I know it's hardly anything, but... No, it's something.
+Cricket / Cricket OR Cricket OR Patient (PVM): I know it's hardly anything, but... No, it's something.
 
 777
 00:38:33,130 --> 00:38:34,152
-Meredith Grey / Hospital Intercom (PVM): It's something really big.
+Cricket: It's something really big.
 
 778
 00:38:39,978 --> 00:38:44,262
-Meredith Grey / Mr. Duff OR Dr. Meredith Gray (PVM): At the end of the day, faith is a funny thing.
+Cricket: At the end of the day, faith is a funny thing.
 
 779
 00:38:46,822 --> 00:38:48,965
-Meredith Grey / Mr. Duff OR Dr. Meredith Gray (PVM): It turns up when you don't really expect it.
+Cricket: It turns up when you don't really expect it.
 
 780
 00:38:50,027 --> 00:38:52,630
-Medical Professional (e.g., Doctor or Nurse) / Mr. Duff (PVM): Mr. Duff, you're still with us.
+Cricket / Mr. Duff (PVM): Mr. Duff, you're still with us.
 
 781
 00:38:53,010 --> 00:38:56,474
-Medical Professional (e.g., Doctor or Nurse) / Mr. Duff (PVM): For your recipe.
+Cricket / Esther (PVM): For your recipe.
 
 782
 00:39:00,059 --> 00:39:02,280
-Mr. Duff / Mr. Duff (PVM): One tablespoon coconut extract.
+Cricket / Esther (PVM): One tablespoon coconut extract.
 
 783
 00:39:05,284 --> 00:39:12,172
-Meredith Grey / Mr. Duff OR Devo (PVM): It's like one day you realize that the fairy tale may be slightly different than you dreamed.
+Cricket: It's like one day you realize that the fairy tale may be slightly different than you dreamed.
 
 784
 00:39:14,565 --> 00:39:27,422
-Unknown Character / Hospital Intercom OR Devo OR Hospital Intercom OR Dr. Derek Shepherd OR Dr. Meredith Gray (PVM): Where are we going?
+Cricket's Mother / Mr. Duff OR Cricket OR Patient OR Devo OR Esther (PVM): Where are we going?
 
 785
 00:39:27,443 --> 00:39:32,148
-Unknown Character / Hospital Intercom OR Devo OR Dr. Meredith Gray (PVM): Trust me.
+Cricket: Trust me.
 
 786
 00:39:32,168 --> 00:39:42,041
-Meredith Grey / Mr. Duff OR Hospital Intercom OR Devo OR Dr. Meredith Gray (PVM): The castle, well, it may not be a castle.
+Cricket: The castle, well, it may not be a castle.
 
 787
 00:39:45,632 --> 00:39:54,405
-Unknown Character / Devo OR Hospital Intercom OR Devo OR Breast Cancer Patient (PVM): Does it beat?
+Cricket's Mother / Mr. Duff OR Cricket OR Esther (PVM): Does it beat?
 
 788
 00:39:55,226 --> 00:39:56,708
-Unknown Character / Mr. Duff OR Devo (PVM): Or move.
+Cricket's Mother / Mr. Duff OR Esther (PVM): Or move.
 
 789
 00:39:56,728 --> 00:39:59,371
-Meredith Grey / Mr. Duff (PVM): And it's not so important that it's happy ever after.
+Cricket: And it's not so important that it's happy ever after.
 
 790
 00:40:02,215 --> 00:40:03,978
-Meredith Grey / Mr. Duff (PVM): Just that it's happy right now.
+Cricket: Just that it's happy right now.
 
 791
 00:40:06,942 --> 00:40:12,349
-Unknown Character / Dr. Meredith Gray (PVM): This love is all I have to give.
+Cricket: This love is all I have to give.
 
 792
 00:40:13,643 --> 00:40:23,701
-Dr. Meredith Gray: Mom, it's me.
+Cricket: Mom, it's me.
 
 793
 00:40:23,721 --> 00:40:24,782
-Dr. Meredith Gray: Cricket.
+Unknown / Mr. Duff (PVM): Cricket.
 
 794
 00:40:24,802 --> 00:40:29,550
-Meredith Grey / Mr. Duff OR Dr. Miranda Bailey (PVM): See, once in a while, once in a blue moon, people will surprise you.
+Narrator / Mr. Duff OR Dr. Izzie Stevens (PVM): See, once in a while, once in a blue moon, people will surprise you.
 
 795
 00:40:29,951 --> 00:40:35,460
-Dr. Meredith Gray: I've been thinking about you a lot, too.
+Unknown / Mr. Duff (PVM): I've been thinking about you a lot, too.
 
 796
 00:40:35,480 --> 00:40:37,804
-Unknown Character / Mr. Duff OR Dr. Derek Shepherd (PVM): Where are we?
+Unknown / Patient OR Mr. Duff (PVM): Where are we?
 
 797
 00:40:37,824 --> 00:40:38,103
-Unknown Character / Dr. Derek Shepherd (PVM): Shh, shh, shh.
+Unknown / Patient OR Mr. Duff (PVM): Shh, shh, shh.
 
 798
 00:40:38,123 --> 00:40:38,505
-Unknown Character / Unknown (PVM): I'm gonna tell you.
+Unknown / Mr. Duff (PVM): I'm gonna tell you.
 
 799
 00:40:39,228 --> 00:40:41,891
-Dr. Derek Shepherd: All right, my mother's maiden name, Maloney.
+Main Character / Patient (PVM): All right, my mother's maiden name, Maloney.
 
 800
 00:40:42,251 --> 00:40:43,692
-Dr. Derek Shepherd: I have four sisters.
+Main Character / Patient (PVM): I have four sisters.
 
 801
 00:40:43,710 --> 00:40:48,516
-Dr. Derek Shepherd: I have nine nieces, five nephews.
+Main Character / Patient OR Dr. Meredith Gray (PVM): I have nine nieces, five nephews.
 
 802
 00:40:48,536 --> 00:40:53,822
-Dr. Derek Shepherd: I like coffee ice cream, single malt scotch, occasionally good cigar, like the fly fish.
+Main Character / Dr. Meredith Gray (PVM): I like coffee ice cream, single malt scotch, occasionally good cigar, like the fly fish.
 
 803
 00:40:55,003 --> 00:40:56,625
-Dr. Derek Shepherd: And I cheat when I do the crossword puzzle on Sunday.
+Main Character / Dr. Meredith Gray (PVM): And I cheat when I do the crossword puzzle on Sunday.
 
 804
 00:40:57,465 --> 00:41:01,047
-Dr. Derek Shepherd: And I never dance in public.
+Main Character / Patient OR Dr. Meredith Gray (PVM): And I never dance in public.
 
 805
 00:41:01,068 --> 00:41:02,690
-Dr. Derek Shepherd: Favorite novel, Sun Also Rises.
+Main Character / Patient (PVM): Favorite novel, Sun Also Rises.
 
 806
 00:41:03,030 --> 00:41:04,893
-Dr. Derek Shepherd: Favorite band, The Clash.
+Main Character / Patient (PVM): Favorite band, The Clash.
 
 807
 00:41:04,913 --> 00:41:05,594
-Dr. Derek Shepherd: Favorite color is blue.
+Main Character / Patient OR Dr. Meredith Gray (PVM): Favorite color is blue.
 
 808
 00:41:05,652 --> 00:41:07,074
-Dr. Derek Shepherd: I don't like light, indigo.
+Main Character / Patient OR Dr. Meredith Gray (PVM): I don't like light, indigo.
 
 809
 00:41:08,152 --> 00:41:13,039
-Dr. Derek Shepherd: The scar right here on my forehead, that's why I don't ride motorcycles anymore.
+Main Character / Dr. Meredith Gray (PVM): The scar right here on my forehead, that's why I don't ride motorcycles anymore.
 
 810
 00:41:13,059 --> 00:41:14,018
-Dr. Derek Shepherd: And I live in that trailer.
+Main Character / Dr. Meredith Gray (PVM): And I live in that trailer.
 
 811
 00:41:14,880 --> 00:41:19,286
-Dr. Derek Shepherd: All this land is mine.
+Main Character / Cricket OR Dr. Meredith Gray (PVM): All this land is mine.
 
 812
 00:41:20,148 --> 00:41:21,389
-Dr. Derek Shepherd: I have no idea what I'm gonna do with it.
+Main Character / Dr. Meredith Gray (PVM): I have no idea what I'm gonna do with it.
 
 813
 00:41:22,891 --> 00:41:23,353
-Dr. Derek Shepherd: So that's it.
+Main Character / Dr. Meredith Gray (PVM): So that's it.
 
 814
 00:41:24,193 --> 00:41:25,135
-Dr. Derek Shepherd: That's all you've earned for now.
+Main Character / Dr. Jennings (PVM): That's all you've earned for now.
 
 815
 00:41:26,197 --> 00:41:30,041
-Dr. Derek Shepherd: The rest you're just... just gonna have to take on fate.
+Main Character / Dr. Jennings (PVM): The rest you're just... just gonna have to take on fate.
 
 816
 00:41:35,523 --> 00:41:48,485
-Meredith Grey / Mr. Duff OR Hospital Intercom OR Breast Cancer Patient (PVM): And once in a while, people may even take your breath away.
+Narrator / Mr. Duff OR Mr. Duff OR Dr. Meredith Gray OR Mr. Duff (PVM): And once in a while, people may even take your breath away.
 

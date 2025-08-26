@@ -2,7 +2,7 @@
   "scenes": [
     {
       "scene_number": 1,
-      "plot_segment": "Dr. Meredith Grey narrates about the demanding, competitive lives of surgical residents who spend most of their time together. In Meredith\u2019s house, Izzie Stevens and George O\u2019Malley argue over who should get the larger bedroom, with Izzie insisting she needs more closet space for her clothes and George claiming he arrived first. Meredith listens but does not get involved in their dispute. The conversation shifts to the boxes of Ellis Grey\u2019s belongings cluttering the house, and Izzie suggests they unpack to make the place feel more like home. While sorting through the boxes, Izzie finds tapes of Ellis Grey performing surgeries and proposes watching them together, but Meredith is visibly uncomfortable and hesitant. Izzie asks Meredith if she wants privacy, but Meredith quietly declines, leaving the matter unresolved as the roommates continue to navigate their new living situation.",
+      "plot_segment": "Meredith Grey reflects on the demanding, competitive environment of surgical residency, noting how the residents spend more time together than apart. In Meredith\u2019s house, Izzie Stevens complains that George O\u2019Malley\u2019s room is larger than hers and argues she should have the bigger room because of her expanding wardrobe, while George insists he arrived first and that Meredith should decide since it\u2019s her house. Cristina Yang interjects, emphasizing that everything among residents is a competition and that everyone keeps score. Izzie suggests unpacking Meredith\u2019s mother\u2019s boxes and decorating to make the house feel more homey, mentioning a box of tapes showing Meredith\u2019s mother performing medical procedures. Cristina is intrigued and proposes watching the tapes, but Meredith hesitates. The group discusses the presence of Meredith\u2019s mother\u2019s things and the possibility of her return, and Meredith is asked if she wants privacy.",
       "is_recap": false,
       "start_time": "00:00:04,131",
       "end_time": "00:01:21,986",
@@ -13,7 +13,7 @@
     },
     {
       "scene_number": 2,
-      "plot_segment": "At Seattle Grace Hospital, Dr. Miranda Bailey briskly walks through the corridor as George O\u2019Malley greets her, but she curtly tells him to be quiet and reminds him of the strict hierarchy between attendings and residents. Bailey appears distracted, mentally running through her responsibilities and trying to remember something important about the day. George hesitates, sensing her preoccupation, but eventually leaves her alone as Bailey continues to focus, determined to recall what she might be forgetting.",
+      "plot_segment": "Meredith Grey, Izzie Stevens, George O'Malley, and Cristina Yang arrive at Seattle Grace Hospital together, still caught up in their earlier debate about room assignments and the competitive nature of their residency. As they enter, Meredith greets Dr. Miranda Bailey, who immediately asserts her authority by curtly reminding the group to quiet down and respect the hospital hierarchy, emphasizing that she is their attending and they work for her. George, distracted and anxious, tries to recall something important about the day but can\u2019t quite remember. After a brief, tense exchange in which Dr. Bailey reinforces her expectations, she moves on, leaving the residents to gather themselves before starting their shifts.",
       "is_recap": false,
       "start_time": "00:01:27,992",
       "end_time": "00:01:50,453",
@@ -24,29 +24,29 @@
     },
     {
       "scene_number": 3,
-      "plot_segment": "In the emergency department, Dr. Miranda Bailey gathers the surgical interns\u2014Meredith Grey, Cristina Yang, Izzie Stevens, George O\u2019Malley, and Alex Karev\u2014and firmly reminds them not to fight over patients or interact with the ER interns, emphasizing the importance of hierarchy and teamwork. The staff prepares for a surge of trauma cases caused by the annual illegal \u201cDead Baby Bike Race,\u201d an underground event notorious for its lack of rules and high risk of injury. As ambulances begin to arrive, the interns discuss the absurdity and danger of the race, with Cristina and Alex competing to claim the most interesting trauma cases. Izzie expresses frustration about being stuck in the pit handling ER cases instead of getting surgical opportunities, while Meredith tries to keep the group focused. The tension between the interns grows as they navigate the chaos of the emergency room, eager for hands-on experience but constrained by Bailey\u2019s strict instructions.",
+      "plot_segment": "A flurry of activity erupts in the hospital as trauma patients from the annual Dead Baby Bike Race are rushed in, with paramedics wheeling in the first casualties. Meredith Grey, Cristina Yang, Izzie Stevens, George O\u2019Malley, and Alex Karev gather at the nurses\u2019 station, discussing the notorious underground race. Alex explains that the only rule is \u201cno eye gouging,\u201d while Cristina is energized by the competitive chaos, and Izzie questions the sanity of the participants. Dr. Miranda Bailey arrives and firmly instructs the residents on trauma protocol, emphasizing that they are not to fight over patients or get involved with the ER interns. She assigns George to assist Dr. Richard Webber, but Webber redirects George to monitor his pre- and post-op patients, including VIP liver cancer patient Lloyd Mackey. As more injured racers and bystanders are brought in, the residents brace themselves for a flood of trauma cases, setting the stage for a day defined by competition, ethical dilemmas, and high-stakes medicine.",
       "is_recap": false,
       "start_time": "00:01:52,316",
-      "end_time": "00:04:18,610",
+      "end_time": "00:03:34,375",
       "start_seconds": 112.316,
-      "end_seconds": 258.61,
+      "end_seconds": 214.375,
       "start_subtitle_index": 39,
-      "end_subtitle_index": 87
+      "end_subtitle_index": 78
     },
     {
       "scene_number": 4,
-      "plot_segment": "Cristina Yang and Alex Karev argue over who gets to take the next trauma case, flipping a coin to decide while bickering about who gets to call heads or tails. As they compete for the more interesting patient, a cyclist with minor injuries from the Dead Baby Bike Race insists on being discharged so he can rejoin the race, prompting Cristina and Alex to debate the seriousness of his wounds. Suddenly, EMTs bring in an unidentified John Doe who was hit by a car avoiding the bike race. Dr. Derek Shepherd assesses the patient and suspects brain death, instructing the interns to begin the necessary tests to confirm it. Izzie Stevens hesitates, visibly shaken by the prospect of declaring the patient dead, while George O\u2019Malley explains the importance of following protocol to ensure accuracy. The team prepares to run the confirmatory exams as Dr. Shepherd oversees their work.",
+      "plot_segment": "The residents eagerly compete to claim trauma cases as patients from the chaotic Dead Baby Bike Race flood the ER. Cristina Yang and Alex Karev argue over who gets to treat a particularly interesting patient, ultimately flipping a coin to decide. One cyclist, Viper, insists on a quick treatment so he can return to the race, displaying the reckless attitude of the participants. Meanwhile, a critically injured John Doe, later identified as Kevin Davidson, is brought in after being struck by a motorist who swerved to avoid a bike. Dr. Derek Shepherd assesses the patient and instructs Cristina, Izzie Stevens, and the team to perform neurological tests to confirm brain death. Izzie struggles emotionally with the possibility of organ donation, while Cristina focuses on the technical aspects and the opportunity for surgical intervention. The team begins searching for clues to identify the John Doe and contacts the police, hoping to locate his family and secure consent for organ donation.",
       "is_recap": false,
-      "start_time": "00:04:22,807",
+      "start_time": "00:03:38,359",
       "end_time": "00:05:52,502",
-      "start_seconds": 262.807,
+      "start_seconds": 218.359,
       "end_seconds": 352.502,
-      "start_subtitle_index": 88,
+      "start_subtitle_index": 79,
       "end_subtitle_index": 131
     },
     {
       "scene_number": 5,
-      "plot_segment": "Dr. Miranda Bailey assigns George O\u2019Malley to assist Dr. Preston Burke for the day, but instead of allowing George to scrub in on surgeries, Burke instructs him to monitor pre- and post-operative patients. Burke specifically asks George to look after his friend, Lloyd Mackey, a liver cancer patient awaiting a transplant, and to make sure Mackey has everything he needs. George approaches Mackey, who jokes about his situation and displays a cynical sense of humor about his prognosis, while George tries to offer encouragement and support.",
+      "plot_segment": "George O'Malley is assigned by Dr. Miranda Bailey to assist Dr. Richard Webber, but Webber instructs him to focus on monitoring pre- and post-operative patients instead of scrubbing in. Dr. Webber specifically asks George to look after Lloyd Mackey, a VIP patient with liver cancer, and to provide whatever Mackey needs. Mackey jokes about his situation and flirts with George, while George tries to reassure him and fulfill his requests as part of his new responsibilities.",
       "is_recap": false,
       "start_time": "00:06:06,791",
       "end_time": "00:06:27,517",
@@ -57,7 +57,7 @@
     },
     {
       "scene_number": 6,
-      "plot_segment": "George O\u2019Malley enters Lloyd Mackey\u2019s hospital room and finds him secretly smoking a cigarette. George reminds Mackey that smoking is prohibited in the hospital and urges him to quit, especially since Mackey is currently at the top of the liver transplant list. Mackey, cynical about his chances after waiting eight months for a donor, jokes about his situation and downplays George\u2019s concerns. George tries to encourage him, promising to help with anything he needs, and the two share a moment of camaraderie as Mackey uses humor to cope with his prognosis.",
+      "plot_segment": "George O'Malley checks on Lloyd Mackey, a VIP patient with liver cancer, who is smoking in his hospital room. George reminds Mackey that smoking is not allowed and tries to encourage him by mentioning that he\u2019s now at the top of the liver donor list. Mackey remains skeptical, referencing his long wait and joking about his odds using a baseball metaphor. He shares with George that Chief Richard Webber has been his doctor for thirty years, expressing both cynicism and a sense of resignation about his situation.",
       "is_recap": false,
       "start_time": "00:06:45,908",
       "end_time": "00:07:55,555",
@@ -68,117 +68,106 @@
     },
     {
       "scene_number": 7,
-      "plot_segment": "Meredith Grey, Izzie Stevens, George O\u2019Malley, and Cristina Yang gather around the unidentified John Doe patient, later revealed as Kevin Davidson, monitoring his vital signs and noting the absence of corneal reflexes and higher brain function. Izzie clings to hope for a miracle, expressing her discomfort with declaring someone dead, while George explains the necessity of rigorous tests to confirm brain death before making the call. The group discusses the emotional difficulty of waiting for a patient to die and debates the ethical implications of \u201cdo no harm,\u201d especially in the context of organ donation. They observe personal details about Kevin\u2014his new sneakers, a sewn shirt, and a hotel key card\u2014speculating about his life and family, and decide to contact the police in hopes of identifying him before the brain death confirmation window closes. As they wait, the conversation shifts to the importance of organ donation, with Cristina emphasizing the value of his organs for saving other lives, while Izzie insists on honoring every remaining minute of his life.",
+      "plot_segment": "Cristina Yang and Izzie Stevens monitor the unidentified John Doe patient in the ER after he was hit by a car during the Dead Baby Bike Race. Cristina notes the absence of corneal reflexes and explains to Izzie the clinical criteria for declaring brain death, emphasizing the importance of following strict medical protocol. Izzie, visibly distressed, clings to the hope of a miracle and struggles with the emotional weight of letting go, while Cristina remains pragmatic about the process and the potential for organ donation. The two residents reflect on the difficulty of watching a patient die without being able to intervene, and begin searching through the patient\u2019s belongings for clues to his identity, determined to contact his family and secure consent for organ donation.",
       "is_recap": false,
       "start_time": "00:08:03,488",
-      "end_time": "00:09:49,457",
+      "end_time": "00:09:23,857",
       "start_seconds": 483.488,
-      "end_seconds": 589.457,
+      "end_seconds": 563.857,
       "start_subtitle_index": 167,
-      "end_subtitle_index": 205
+      "end_subtitle_index": 195
     },
     {
       "scene_number": 8,
-      "plot_segment": "Izzie Stevens tends to Viper, an injured bike race participant who insists on leaving the hospital against medical advice so he can finish the \u201cDead Baby Bike Race.\u201d Izzie urges him to stay for a CT scan, warning him about the risks of internal injuries, but Viper refuses, prioritizing the race over his health. As Izzie tries to persuade him, Viper flirts with her and, before leaving, impulsively kisses her for good luck. Izzie is left flustered and frustrated as Viper walks out, ignoring her medical advice.",
+      "plot_segment": "Cristina Yang and Izzie Stevens examine the unidentified John Doe patient who was hit by a car during the Dead Baby Bike Race, noting details like his new sneakers and a shirt with a sewn name tag, which suggest he has a family. As Dr. Derek Shepherd confirms the patient is brain dead, Cristina and Izzie discuss the technical criteria for brain death and the process of organ donation, with Izzie emotionally struggling to accept the finality of his condition. They search through the patient\u2019s belongings for identification, finding clues that he is married and has a child, and contact the police in hopes of locating his family before proceeding with organ donation. Cristina debates the ethics of keeping the patient alive solely for organ harvesting, while Izzie pleads with the John Doe to survive. As the team works to maintain his viability as a donor, they administer dopamine and blood transfusions, and Cristina discovers a traumatic aortic injury that requires surgery. The residents strategize how to convince Dr. Preston Burke to operate, eventually going to Dr. Richard Webber when they realize the patient is a match for Lloyd Mackey, a liver cancer patient. Dr. Burke reluctantly agrees to perform the surgery, and the police soon identify the John Doe as Kevin Davidson. His wife, Mrs. Davidson, is contacted and arrives at the hospital, where the team prepares to discuss organ donation with her, emphasizing the impact it could have on other patients. Throughout the scene, the residents grapple with the ethical and emotional weight of their decisions, balancing their responsibilities to both the donor and recipients.",
       "is_recap": false,
-      "start_time": "00:09:58,287",
-      "end_time": "00:11:24,289",
-      "start_seconds": 598.287,
-      "end_seconds": 684.289,
-      "start_subtitle_index": 206,
-      "end_subtitle_index": 237
+      "start_time": "00:09:29,847",
+      "end_time": "00:16:57,250",
+      "start_seconds": 569.847,
+      "end_seconds": 1017.25,
+      "start_subtitle_index": 196,
+      "end_subtitle_index": 352
     },
     {
       "scene_number": 9,
-      "plot_segment": "Derek Shepherd approaches Meredith Grey in a quiet hallway, bringing up their past romantic tension and asking her out again. Meredith firmly rejects his invitation, making it clear she does not want to get involved. Derek insists his interest is genuine and not just about pursuing a challenge, but Meredith remains skeptical, suggesting he is motivated by the thrill of the chase and has something to prove. Their conversation is tense, with Derek trying to convince Meredith that his feelings are real, while Meredith stands her ground, unwilling to risk further complications in her personal and professional life.",
+      "plot_segment": "George O'Malley checks on Lloyd Mackey, a witty and flirtatious patient with liver cancer who is at the top of the transplant list. During the examination, Mackey openly flirts with George, making jokes about his condition and the hospital environment. Despite George\u2019s attempts to persuade him to stay for further tests and monitoring, Mackey insists on leaving to finish the Dead Baby Bike Race, disregarding medical advice about the risks to his health. George tries to convince him to remain in the hospital, but Mackey is determined and signs an Against Medical Advice (AMA) form. Before leaving, Mackey gives George a playful kiss for good luck, leaving George flustered and prompting him to reflect on boldness and attraction in the face of mortality.",
       "is_recap": false,
-      "start_time": "00:11:38,971",
-      "end_time": "00:12:37,384",
-      "start_seconds": 698.971,
-      "end_seconds": 757.384,
-      "start_subtitle_index": 238,
-      "end_subtitle_index": 264
+      "start_time": "00:16:58,390",
+      "end_time": "00:31:52,478",
+      "start_seconds": 1018.39,
+      "end_seconds": 1912.478,
+      "start_subtitle_index": 353,
+      "end_subtitle_index": 617
     },
     {
       "scene_number": 10,
-      "plot_segment": "Cristina Yang, Meredith Grey, Izzie Stevens, George O\u2019Malley, and Alex Karev debate the fate of Kevin Davidson, the unidentified John Doe who is now confirmed brain dead after being struck by a car during the Dead Baby Bike Race. Izzie, emotionally invested, argues for keeping Kevin alive as long as possible, while Cristina focuses on the importance of preserving his organs for donation. The interns notice Kevin\u2019s new sneakers, sewn shirt, and hotel key card, and work together to contact the police in hopes of identifying him and notifying his family before the six-hour brain death protocol expires. When Kevin\u2019s condition deteriorates, Cristina leads the group in administering dopamine and a blood transfusion to stabilize him, ensuring he remains a viable organ donor. They discover a traumatic aortic injury that requires surgical repair. The interns approach Dr. Preston Burke to request the surgery, emphasizing the potential to save multiple lives through organ donation, but Burke refuses, insisting that Kevin is already dead and not a surgical candidate. Frustrated, the interns consider going over Burke\u2019s head and ultimately persuade George to speak to Chief Webber, leveraging Lloyd Mackey\u2019s urgent need for a liver transplant. Chief Webber authorizes the surgery, and Dr. Burke performs the aortic repair with the interns assisting, preserving Kevin\u2019s organs for donation as the police continue efforts to locate his family.",
+      "plot_segment": "George O'Malley confides in Lloyd Mackey, the liver cancer patient, about his feelings for Meredith Grey, admitting his jealousy over her past romantic encounters, including a kiss in an elevator. Mackey encourages George to be bold and pursue Meredith, reminding him that life is short and unpredictable. George hesitates, expressing that Meredith is focused on proving herself as a surgical resident and isn\u2019t interested in dating right now, but Mackey urges him not to let fear hold him back.",
       "is_recap": false,
-      "start_time": "00:12:40,840",
-      "end_time": "00:20:14,317",
-      "start_seconds": 760.84,
-      "end_seconds": 1214.317,
-      "start_subtitle_index": 265,
-      "end_subtitle_index": 438
+      "start_time": "00:32:11,813",
+      "end_time": "00:32:23,320",
+      "start_seconds": 1931.813,
+      "end_seconds": 1943.32,
+      "start_subtitle_index": 618,
+      "end_subtitle_index": 623
     },
     {
       "scene_number": 11,
-      "plot_segment": "George informs Chief Webber that he and the other interns have found a liver for Lloyd Mackey, leveraging Mackey\u2019s urgent need to convince the Chief to authorize surgery on the brain-dead John Doe, now identified as Kevin Davidson. The interns are anxious about defying Dr. Burke\u2019s refusal to operate, but Chief Webber overrides Burke\u2019s decision and instructs him to proceed with the aortic repair. During the surgery, Cristina, Meredith, Izzie, and George assist and observe, while Alex tries to take credit for being involved. As the operation concludes, the police call to confirm Kevin Davidson\u2019s identity, and his wife is on her way to the hospital, prompting the team to prepare for the next steps in the organ donation process.",
+      "plot_segment": "Cristina Yang interrupts Dr. Preston Burke in the men's restroom during a break from surgery, urgently requesting that he perform an aortic repair on the brain-dead John Doe patient from the bike race. Cristina argues that repairing the aorta will keep the patient\u2019s organs viable for donation, potentially saving Lloyd Mackey, the VIP liver cancer patient. Burke questions the legality and ethics of operating on a brain-dead patient solely to preserve organs, expressing concern about consent and medical boundaries. Cristina insists that the surgery is necessary and highlights the match between John Doe and Mackey. Burke remains firm, refusing to operate without proper authorization and telling Cristina to leave, emphasizing the seriousness of the ethical dilemma.",
       "is_recap": false,
-      "start_time": "00:20:15,700",
-      "end_time": "00:21:31,865",
-      "start_seconds": 1215.7,
-      "end_seconds": 1291.865,
-      "start_subtitle_index": 439,
-      "end_subtitle_index": 464
+      "start_time": "00:32:25,526",
+      "end_time": "00:35:08,094",
+      "start_seconds": 1945.526,
+      "end_seconds": 2108.094,
+      "start_subtitle_index": 624,
+      "end_subtitle_index": 673
     },
     {
       "scene_number": 12,
-      "plot_segment": "Kevin Davidson\u2019s wife arrives at the hospital after the police identify him as the John Doe hit by a car during the Dead Baby Bike Race. Izzie Stevens gently explains Kevin\u2019s critical condition and the likelihood that he is brain dead, while the organ procurement coordinator discusses the process and emotional difficulty of organ donation, including the possibility of donating his corneas and skin. Meredith Grey and Cristina Yang observe as Mrs. Davidson struggles with the decision, and Cristina admits to Meredith that she finds it hard to deal with grieving families. Meredith reminds Cristina to see Kevin as a person, not just a source of organs. The team prepares for the organ harvest, giving Kevin\u2019s friends and family a chance to say their goodbyes as they come to terms with his death and the impact of his donation.",
+      "plot_segment": "Cristina Yang and Izzie Stevens discuss how to get Chief Richard Webber\u2019s attention regarding the potential liver transplant for Lloyd Mackey, a VIP patient with liver cancer. They strategize about leveraging the match between the brain-dead John Doe, now identified as Kevin Davidson, and Mackey\u2019s liver needs to convince the chief to authorize the necessary surgery. George O\u2019Malley approaches Chief Webber and informs him that Mackey may have a viable liver donor, prompting Webber to take action on the case.",
       "is_recap": false,
-      "start_time": "00:21:44,079",
-      "end_time": "00:29:01,405",
-      "start_seconds": 1304.079,
-      "end_seconds": 1741.405,
-      "start_subtitle_index": 465,
-      "end_subtitle_index": 584
+      "start_time": "00:35:08,114",
+      "end_time": "00:35:54,077",
+      "start_seconds": 2108.114,
+      "end_seconds": 2154.077,
+      "start_subtitle_index": 674,
+      "end_subtitle_index": 683
     },
     {
       "scene_number": 13,
-      "plot_segment": "Chief Richard Webber visits Lloyd Mackey, a liver cancer patient, in his hospital room. Mackey jokes with Chief Webber about being reprimanded for smoking, displaying his irreverent attitude toward his illness. Chief Webber informs Mackey that George O\u2019Malley, one of the surgical interns, may have found him a potential liver donor. Mackey reacts with a mix of hope and skepticism, continuing to banter with both Chief Webber and George about his prognosis and the possibility of a transplant. The conversation highlights Mackey\u2019s coping mechanisms and the camaraderie developing between him and George as they await news about the donor organ.",
+      "plot_segment": "Dr. Preston Burke operates on Kevin Davidson, the brain-dead John Doe, to repair his traumatic aortic injury and ensure his organs remain viable for donation. Cristina Yang and Izzie Stevens observe from the gallery, commenting on Burke\u2019s surgical precision and the urgency of the procedure. Cristina notes that if Kevin weren\u2019t brain dead, he would have an excellent chance of recovery after such expert care. During the surgery, a call comes in from the police confirming Kevin\u2019s identity, and Meredith Grey relays that his wife, Mrs. Davidson, is on her way to the hospital. The residents exchange glances, aware that the next steps depend on her consent for organ donation.",
       "is_recap": false,
-      "start_time": "00:29:01,885",
-      "end_time": "00:40:38,590",
-      "start_seconds": 1741.885,
-      "end_seconds": 2438.59,
-      "start_subtitle_index": 585,
-      "end_subtitle_index": 730
+      "start_time": "00:37:04,088",
+      "end_time": "00:37:48,809",
+      "start_seconds": 2224.088,
+      "end_seconds": 2268.809,
+      "start_subtitle_index": 684,
+      "end_subtitle_index": 689
     },
     {
       "scene_number": 14,
-      "plot_segment": "In the hospital break room, Alex Karev boasts to the other interns about the adrenaline rush of assisting in open-heart surgery, making light of the experience. Meredith Grey, frustrated by Alex\u2019s arrogance and dismissive attitude, confronts him directly, voicing her irritation over his constant need to show off and his lack of respect for their work and each other. The exchange grows tense as Meredith, already overwhelmed by personal and professional stress, tells Alex to stay out of her way and leaves the room, leaving Alex momentarily silenced.",
+      "plot_segment": "Mrs. Davidson arrives at the hospital and is met by Dr. Derek Shepherd and Dr. Miranda Bailey, who gently inform her that her husband, Kevin Davidson, has suffered irreversible brain damage and is being kept on life support. Dr. Bailey explains the process of determining brain death and discusses the possibility of organ donation, emphasizing that Kevin\u2019s organs could help save multiple lives, including burn victims and patients in critical need. Mrs. Davidson is overwhelmed but grateful for the compassion shown by the doctors. Dr. Shepherd reassures her that there is no rush to make a decision and that she can wait until morning to consider organ donation if there is no change in Kevin\u2019s condition. The team offers Mrs. Davidson time to say goodbye, and Izzie Stevens quietly observes, visibly affected by the emotional weight of the situation.",
       "is_recap": false,
-      "start_time": "00:40:53,588",
-      "end_time": "00:41:36,887",
-      "start_seconds": 2453.588,
-      "end_seconds": 2496.887,
-      "start_subtitle_index": 731,
-      "end_subtitle_index": 738
+      "start_time": "00:38:18,253",
+      "end_time": "00:40:38,590",
+      "start_seconds": 2298.253,
+      "end_seconds": 2438.59,
+      "start_subtitle_index": 690,
+      "end_subtitle_index": 730
     },
     {
       "scene_number": 15,
-      "plot_segment": "At Meredith\u2019s house, Izzie Stevens and George O\u2019Malley sit in the living room, surrounded by unpacked boxes of Ellis Grey\u2019s belongings. Izzie has found a box of surgical tapes featuring Ellis performing operations and is eager to watch them, while George is curious but hesitant. Meredith Grey enters, immediately noticing that Izzie has unpacked her mother\u2019s things without asking. Annoyed, Meredith tells Izzie and George not to watch the tapes or unpack any more boxes, and pointedly reminds them to use coasters on the furniture. Izzie tries to lighten the mood by mentioning she ordered Chinese food, but Meredith curtly responds that she hates Chinese, making her frustration clear before leaving the room.",
+      "plot_segment": "Dr. Richard Webber visits Lloyd Mackey in his hospital room, where Mackey jokes about George O'Malley not letting him smoke and tries to lighten the mood with flirtatious banter. Webber tells Mackey that George may have found him a liver from a newly identified donor, Kevin Davidson, whose wife has just consented to organ donation. Mackey is visibly relieved and grateful, expressing his appreciation to both Webber and George for their efforts and sharing a moment of hope about his chances for survival.",
       "is_recap": false,
-      "start_time": "00:41:36,907",
-      "end_time": "00:41:44,778",
-      "start_seconds": 2496.907,
-      "end_seconds": 2504.778,
-      "start_subtitle_index": 739,
-      "end_subtitle_index": 739
-    },
-    {
-      "scene_number": 16,
-      "plot_segment": "Meredith vents to Cristina about the chaos at home with Izzie and George as her roommates, frustrated by their constant presence and cheerful energy. Cristina suggests Meredith could kick them out, but Meredith admits she invited them to move in and feels responsible for the situation. They joke about repressing their feelings and commiserate over being assigned to the pit again, missing out on more interesting surgical cases. Their conversation touches on the competitive atmosphere among the interns and the added challenges they face as women in a male-dominated environment, highlighting their shared ambition and the complexities of balancing personal and professional lives.",
-      "is_recap": false,
-      "start_time": "00:41:44,798",
+      "start_time": "00:40:53,588",
       "end_time": "00:42:08,016",
-      "start_seconds": 2504.798,
+      "start_seconds": 2453.588,
       "end_seconds": 2528.016,
-      "start_subtitle_index": 740,
+      "start_subtitle_index": 731,
       "end_subtitle_index": 745
     },
     {
-      "scene_number": 17,
-      "plot_segment": "Izzie Stevens and the organ procurement coordinator speak with Mrs. Davidson, asking for her consent to donate her husband Kevin Davidson\u2019s organs, including his corneas and skin. Mrs. Davidson becomes visibly distressed at the mention of skin donation, worried about how Kevin will look at the funeral and how their daughter will remember him. Izzie, struggling with the emotional weight of the conversation, is gently reminded by Meredith Grey to refer to the patient as Kevin, emphasizing his identity and humanity rather than reducing him to a case or condition.",
+      "scene_number": 16,
+      "plot_segment": "After a successful surgery, Izzie Stevens, George O'Malley, Cristina Yang, and Meredith Grey gather in the hallway, joking about the lingering smell of open-heart procedures. Meredith, still frustrated from earlier tensions, tells Alex Karev to stay out of her way. Alex defensively claims Meredith started the confrontation, prompting Cristina to warn Alex to leave before Meredith loses her temper. The group\u2019s banter underscores their competitive dynamic, but also their camaraderie in the aftermath of a challenging day.",
       "is_recap": false,
       "start_time": "00:42:08,657",
       "end_time": "00:42:09,759",
@@ -188,8 +177,8 @@
       "end_subtitle_index": 746
     },
     {
-      "scene_number": 18,
-      "plot_segment": "George O\u2019Malley checks on Lloyd Mackey after his successful liver transplant. Mackey thanks George for helping him get a new liver and jokes about taking George out to celebrate once he\u2019s recovered. When George awkwardly clarifies that he\u2019s not gay, Mackey laughs and says he never thought George was, explaining that being terminally ill gives him the freedom to flirt and say whatever he wants. Mackey then asks George if he\u2019s ever wanted someone he can\u2019t have, prompting George to admit, somewhat embarrassed, that he has feelings for Meredith Grey.",
+      "scene_number": 17,
+      "plot_segment": "Cristina, Izzie, and George gather in Meredith\u2019s living room, surrounded by boxes of Ellis Grey\u2019s belongings. Izzie unpacks a box and suggests decorating to make the house feel more like home, mentioning tapes of Ellis Grey\u2019s surgeries. Cristina is eager to watch the tapes, but Meredith firmly refuses, insisting on keeping boundaries and not unpacking her mother\u2019s things. Meredith expresses her discomfort with the situation and her dislike for Chinese food, while the others try to persuade her to join in.",
       "is_recap": false,
       "start_time": "00:42:10,539",
       "end_time": "00:42:11,480",
@@ -199,8 +188,8 @@
       "end_subtitle_index": 747
     },
     {
-      "scene_number": 19,
-      "plot_segment": "Dr. Burke leads the surgical team as they prepare for Kevin Davidson\u2019s organ harvest. Dr. Izzie Stevens, visibly uneasy, voices her discomfort about taking organs from a patient she wishes she could save, while Cristina Yang reassures her that they\u2019re giving other patients a chance at life. Dr. Miranda Bailey instructs the team to proceed with care and respect, reminding them to sew up Kevin for his family after the procedure. The team begins the surgery, working in somber silence as they honor the donor and prepare his organs for transplantation.",
+      "scene_number": 18,
+      "plot_segment": "Meredith Grey confides in Cristina Yang about the challenges of living with Izzie Stevens and George O'Malley, noting how their constant cheerfulness and thoughtfulness can be overwhelming. Cristina jokingly suggests that Meredith should kick them out, but Meredith insists she can't do that. They tease each other about repressing their feelings and share their frustration about being assigned to the ER pit again, while other residents got to participate in the organ harvest surgery, highlighting their competitive disappointment.",
       "is_recap": false,
       "start_time": "00:42:11,661",
       "end_time": "00:42:16,085",
@@ -210,8 +199,8 @@
       "end_subtitle_index": 748
     },
     {
-      "scene_number": 20,
-      "plot_segment": "A nurse informs Mrs. Davidson that her husband, Kevin Davidson, is ready if she would like to see him. She is accompanied by the organ procurement coordinator as they prepare for her to say goodbye and discuss the organ donation process.",
+      "scene_number": 19,
+      "plot_segment": "Mrs. Davidson is gently asked by Dr. Miranda Bailey and Izzie Stevens to consider organ donation for her brain-dead husband, Kevin Davidson, including his corneas and skin. Mrs. Davidson hesitates at the idea of donating his skin, expressing concern about how her daughter will see her father at the funeral and fearing the impact on their final goodbye. The emotional weight of the decision is clear as Mrs. Davidson struggles with the reality of loss and the hope of helping others.",
       "is_recap": false,
       "start_time": "00:42:16,105",
       "end_time": "00:42:18,847",
@@ -221,8 +210,8 @@
       "end_subtitle_index": 749
     },
     {
-      "scene_number": 21,
-      "plot_segment": "Viper\u2019s friends arrive at the hospital, anxiously asking Dr. Miranda Bailey about his condition after the bike race accident. Dr. Bailey sternly warns them about the dangers of the illegal race and the impact their recklessness has on others. Dr. Alex Karev then steps in to reassure the group, confirming that Viper survived surgery and will recover.",
+      "scene_number": 20,
+      "plot_segment": "Alex Karev, struggling to communicate with Kevin Davidson\u2019s wife about his condition, admits he isn\u2019t good at talking to families and apologizes. Dr. Miranda Bailey firmly reminds Alex to refer to the patient by his name, Kevin Davidson, rather than as \u201cJohn Doe\u201d or by his injuries, emphasizing the importance of recognizing patients as people and showing respect to their loved ones during difficult conversations.",
       "is_recap": false,
       "start_time": "00:42:18,867",
       "end_time": "00:42:20,268",
@@ -232,8 +221,8 @@
       "end_subtitle_index": 750
     },
     {
-      "scene_number": 22,
-      "plot_segment": "Dr. Derek Shepherd approaches Meredith Grey outside the hospital and tells her that his feelings for her are real and not just about the excitement of pursuing someone unattainable. Meredith listens but remains unconvinced, firmly telling Derek that she still will not go out with him, despite his insistence on the sincerity of his interest.",
+      "scene_number": 21,
+      "plot_segment": "Lloyd Mackey thanks George O'Malley for helping secure him a liver transplant and suggests they celebrate together once he recovers. George clarifies that he isn\u2019t interested in Mackey romantically, prompting Mackey to explain that facing death makes him bold enough to flirt and ask personal questions. Mackey asks George if he\u2019s ever wanted someone he couldn\u2019t have, and George awkwardly admits his feelings for Meredith Grey.",
       "is_recap": false,
       "start_time": "00:42:20,289",
       "end_time": "00:42:21,309",
@@ -243,8 +232,8 @@
       "end_subtitle_index": 751
     },
     {
-      "scene_number": 23,
-      "plot_segment": "Chief Webber informs George O\u2019Malley that Lloyd Mackey\u2019s liver transplant surgery was successful. Mackey jokes with George about needing to quit smoking now that he has a new liver. Meanwhile, at Meredith Grey\u2019s house, Meredith, Izzie Stevens, and George gather in the living room to watch one of Ellis Grey\u2019s old surgical tapes together. Meredith joins her roommates, and they share a quiet moment of camaraderie after the difficult day. Meredith\u2019s closing voiceover reflects on how the real victories in medicine are about saving lives, not winning competitions, and that sometimes, in saving others, you might just save yourself.",
+      "scene_number": 22,
+      "plot_segment": "Dr. Preston Burke voices his discomfort with the organ harvesting process, emphasizing to Cristina Yang that, as a surgeon, he prefers saving lives rather than removing organs from brain-dead patients. Cristina acknowledges the difficulty of the situation and quietly thanks Kevin Davidson, the donor patient, for his sacrifice before leaving the room.",
       "is_recap": false,
       "start_time": "00:42:21,329",
       "end_time": "00:42:21,510",
@@ -252,6 +241,105 @@
       "end_seconds": 2541.51,
       "start_subtitle_index": 752,
       "end_subtitle_index": 752
+    },
+    {
+      "scene_number": 23,
+      "plot_segment": "Viper, one of the injured bike messengers from the Dead Baby Bike Race, waits in the ER for treatment. Cristina Yang and Alex Karev check on his condition, noting his multiple injuries and reckless attitude. Dr. Miranda Bailey arrives, quickly assesses Viper, and orders Alex and Cristina to prep him for surgery. As they move Viper toward the operating room, Bailey takes charge, instructing the interns on proper procedure and emphasizing the urgency due to internal bleeding. Viper jokes about his injuries, but Cristina focuses on stabilizing him while Alex helps transport him to the OR under Bailey\u2019s supervision.",
+      "is_recap": false,
+      "start_time": null,
+      "end_time": null,
+      "start_seconds": null,
+      "end_seconds": null,
+      "start_subtitle_index": null,
+      "end_subtitle_index": null
+    },
+    {
+      "scene_number": 24,
+      "plot_segment": "Dr. Miranda Bailey prepares for surgery on Lloyd Mackey, adjusting the operating table and coordinating with the surgical team. She instructs Meredith Grey and Alex Karev to return to their assigned duties, reminding Alex not to show off in front of patients. As Bailey readies Mackey for anesthesia, she reassures him and asks him to count backwards, maintaining a calm and professional demeanor while ensuring Mackey feels supported before the procedure begins.",
+      "is_recap": false,
+      "start_time": null,
+      "end_time": null,
+      "start_seconds": null,
+      "end_seconds": null,
+      "start_subtitle_index": null,
+      "end_subtitle_index": null
+    },
+    {
+      "scene_number": 25,
+      "plot_segment": "Cristina Yang and Izzie Stevens stand outside the OR, discussing the emotional difficulty of witnessing Kevin Davidson\u2019s organs being harvested for donation. Izzie, visibly shaken and struggling with the ethical weight of the procedure, decides she cannot stay and leaves, unable to watch. Cristina, though affected, reminds herself that each organ represents a life saved and steels herself for the surgery. She prepares to assist in the organ harvest, focusing on the impact their work will have on the recipients and Kevin Davidson\u2019s family.",
+      "is_recap": false,
+      "start_time": null,
+      "end_time": null,
+      "start_seconds": null,
+      "end_seconds": null,
+      "start_subtitle_index": null,
+      "end_subtitle_index": null
+    },
+    {
+      "scene_number": 26,
+      "plot_segment": "The organ harvest surgery begins for Kevin Davidson, the brain-dead patient identified by Cristina Yang and Izzie Stevens. Dr. Preston Burke leads the procedure, while Cristina assists in the operating room. Dr. Miranda Bailey instructs Izzie to sew up Kevin Davidson\u2019s body after the organ retrieval so his family can see him one last time. Initially, a surgical resident offers to do it for Izzie, but Bailey insists that Izzie should handle the closure herself, emphasizing the importance of compassion and responsibility in patient care. Izzie, emotionally affected by the situation, carefully sutures Kevin\u2019s body, preparing him for his wife\u2019s final visit.",
+      "is_recap": false,
+      "start_time": null,
+      "end_time": null,
+      "start_seconds": null,
+      "end_seconds": null,
+      "start_subtitle_index": null,
+      "end_subtitle_index": null
+    },
+    {
+      "scene_number": 27,
+      "plot_segment": "Mrs. Davidson is escorted by Dr. Miranda Bailey and the surgical team to see her husband, Kevin Davidson, who has been declared brain dead following a traumatic accident. Cristina Yang and Izzie Stevens have ensured Kevin is presentable after organ harvest surgery, and Mrs. Davidson is given a quiet moment to say goodbye to her husband, supported by the compassionate presence of the residents.",
+      "is_recap": false,
+      "start_time": null,
+      "end_time": null,
+      "start_seconds": null,
+      "end_seconds": null,
+      "start_subtitle_index": null,
+      "end_subtitle_index": null
+    },
+    {
+      "scene_number": 28,
+      "plot_segment": "A group of Viper\u2019s friends rush into the ER, anxious about his condition after the bike race crash. Dr. Alex Karev confronts them, sternly warning about the dangers and recklessness of the Dead Baby Bike Race and how their actions endanger others. Dr. Miranda Bailey steps in, cutting off Alex\u2019s lecture and taking control of the situation. Dr. Cristina Yang reassures Viper\u2019s friends that he is stable and will survive, calming their fears before they are ushered out of the trauma bay.",
+      "is_recap": false,
+      "start_time": null,
+      "end_time": null,
+      "start_seconds": null,
+      "end_seconds": null,
+      "start_subtitle_index": null,
+      "end_subtitle_index": null
+    },
+    {
+      "scene_number": 29,
+      "plot_segment": "George O'Malley confesses his feelings for Meredith Grey, telling her that his attraction is not about the excitement of pursuing her, but about his genuine affection for her, mentioning how much he likes her hair and even her bossiness. Meredith listens but firmly insists that she is still not interested in dating him, making it clear that she values their friendship but does not reciprocate his romantic feelings.",
+      "is_recap": false,
+      "start_time": null,
+      "end_time": null,
+      "start_seconds": null,
+      "end_seconds": null,
+      "start_subtitle_index": null,
+      "end_subtitle_index": null
+    },
+    {
+      "scene_number": 30,
+      "plot_segment": "George O'Malley monitors Lloyd Mackey after his successful liver transplant surgery. Mackey jokes with George about needing to quit smoking now that he has a new liver, and flirts with him, prompting George to laugh. Izzie Stevens stops by to check on Mackey, reassuring him about his recovery and mentioning that he\u2019s at the top of the donor list. Cristina Yang passes through and remarks that the attractive patients always seem to return, referencing Mackey\u2019s charm. The group shares a light moment, relieved that the surgery went smoothly and hopeful for Mackey\u2019s future.",
+      "is_recap": false,
+      "start_time": null,
+      "end_time": null,
+      "start_seconds": null,
+      "end_seconds": null,
+      "start_subtitle_index": null,
+      "end_subtitle_index": null
+    },
+    {
+      "scene_number": 31,
+      "plot_segment": "Meredith Grey reflects on the true nature of competition among surgical residents, observing that victories are measured by lives saved rather than by winning or losing. After a challenging day marked by ethical dilemmas and emotional struggles surrounding organ donation, Meredith, Cristina Yang, Izzie Stevens, George O'Malley, and Alex Karev gather at Meredith\u2019s house to watch Ellis Grey\u2019s old surgical tapes together. The group celebrates Ellis\u2019s remarkable surgical skill and shares a moment of camaraderie, learning, and relief. Meredith quietly notes that sometimes, the life you save is your own, underscoring the personal impact of their work and the importance of supporting each other.",
+      "is_recap": false,
+      "start_time": null,
+      "end_time": null,
+      "start_seconds": null,
+      "end_seconds": null,
+      "start_subtitle_index": null,
+      "end_subtitle_index": null
     }
   ]
 }

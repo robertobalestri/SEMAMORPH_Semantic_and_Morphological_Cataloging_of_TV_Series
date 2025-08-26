@@ -268,24 +268,28 @@ def extract_key_dialogue(events: List[Any], subtitle_data: Dict[str, List[Dict]]
         # Smart sorting: prioritize events less likely to have timestamp conflicts
         def event_conflict_score(event):
             """Score events by likelihood of timestamp conflicts (lower is better)"""
-            event_range = f"{event.start_time}-{event.end_time}"
+            event_episode_key = f"{event.series}{event.season}{event.episode}"
+            event_range = f"{event_episode_key}:{event.start_time}-{event.end_time}"
             if event_range in used_timestamp_ranges:
                 return 1000  # High penalty for exact range conflicts
             
-            # Check for partial overlaps with used ranges
+            # Check for partial overlaps with used ranges in the same episode
             event_start = _parse_timestamp_to_seconds(event.start_time)
             event_end = _parse_timestamp_to_seconds(event.end_time)
             overlap_penalty = 0
             
             for used_range in used_timestamp_ranges:
-                if '-' in used_range:
-                    used_start_str, used_end_str = used_range.split('-')
-                    used_start = _parse_timestamp_to_seconds(used_start_str)
-                    used_end = _parse_timestamp_to_seconds(used_end_str)
-                    
-                    # Check for overlap
-                    if not (event_end < used_start or event_start > used_end):
-                        overlap_penalty += 10  # Penalty for any overlap
+                if ':' in used_range and used_range.startswith(event_episode_key + ':'):
+                    # Only check overlaps within the same episode
+                    used_timestamps = used_range.split(':', 1)[1]  # Remove episode prefix
+                    if '-' in used_timestamps:
+                        used_start_str, used_end_str = used_timestamps.split('-')
+                        used_start = _parse_timestamp_to_seconds(used_start_str)
+                        used_end = _parse_timestamp_to_seconds(used_end_str)
+                        
+                        # Check for overlap
+                        if not (event_end < used_start or event_start > used_end):
+                            overlap_penalty += 10  # Penalty for any overlap within same episode
             
             return overlap_penalty
         
@@ -316,10 +320,11 @@ def extract_key_dialogue(events: List[Any], subtitle_data: Dict[str, List[Dict]]
             start_seconds = _parse_timestamp_to_seconds(current_event.start_time)
             end_seconds = _parse_timestamp_to_seconds(current_event.end_time)
             
-            # Pre-check: Does this event's timespan conflict with already-used ranges?
-            current_event_range = f"{current_event.start_time}-{current_event.end_time}"
+            # Pre-check: Does this event's timespan conflict with already-used ranges in the same episode?
+            current_episode_key = f"{current_event.series}{current_event.season}{current_event.episode}"
+            current_event_range = f"{current_episode_key}:{current_event.start_time}-{current_event.end_time}"
             if current_event_range in used_timestamp_ranges:
-                logger.info(f"   ⚠️  Event {current_event.id[:8]}... timespan already used by {timestamp_to_event_map[current_event_range][:8]}..., skipping")
+                logger.info(f"   ⚠️  Event {current_event.id[:8]}... timespan already used by {timestamp_to_event_map[current_event_range][:8]}... in {current_episode_key}, skipping")
                 continue
             
             for i, subtitle in enumerate(subtitles):
@@ -438,12 +443,13 @@ Your selection:"""
                                     }
                                 }
                                 
-                                # Check for timestamp conflicts and track usage
-                                timestamp_key = f"{first_sub['start_formatted']}-{last_sub['end_formatted']}"
+                                # Check for timestamp conflicts and track usage (episode-specific)
+                                episode_key = f"{current_event.series}{current_event.season}{current_event.episode}"
+                                timestamp_key = f"{episode_key}:{first_sub['start_formatted']}-{last_sub['end_formatted']}"
                                 if timestamp_key in used_timestamp_ranges:
-                                    logger.warning(f"🚨 DIALOGUE CONFLICT: Event {original_event.id[:8]}... would use same dialogue timestamps as {timestamp_to_event_map[timestamp_key][:8]}...: {timestamp_key}")
+                                    logger.warning(f"🚨 DIALOGUE CONFLICT: Event {original_event.id[:8]}... would use same dialogue timestamps as {timestamp_to_event_map[timestamp_key][:8]}... in {episode_key}: {first_sub['start_formatted']}-{last_sub['end_formatted']}")
                                     logger.warning(f"   Trying to find alternative dialogue in same event...")
-                                    last_attempt_inputs["status"] = f"Dialogue conflict with {timestamp_to_event_map[timestamp_key][:8]}..., trying alternative"
+                                    last_attempt_inputs["status"] = f"Dialogue conflict with {timestamp_to_event_map[timestamp_key][:8]}... in {episode_key}, trying alternative"
                                     
                                     # Try to find alternative consecutive dialogue in the same event
                                     alternative_found = False
@@ -456,7 +462,7 @@ Your selection:"""
                                             alt_indices = list(range(alt_start_idx, alt_start_idx + alt_length))
                                             alt_subs = [event_subtitles_with_timing[idx] for idx in alt_indices]
                                             alt_duration = alt_subs[-1]['end'] - alt_subs[0]['start']
-                                            alt_timestamp_key = f"{alt_subs[0]['start_formatted']}-{alt_subs[-1]['end_formatted']}"
+                                            alt_timestamp_key = f"{episode_key}:{alt_subs[0]['start_formatted']}-{alt_subs[-1]['end_formatted']}"
                                             
                                             if alt_duration <= 10.0 and alt_timestamp_key not in used_timestamp_ranges:
                                                 # Found alternative dialogue!
@@ -467,7 +473,7 @@ Your selection:"""
                                                 duration = alt_duration
                                                 timestamp_key = alt_timestamp_key
                                                 alternative_found = True
-                                                logger.info(f"   ✅ Found alternative dialogue: {timestamp_key} ({duration:.1f}s)")
+                                                logger.info(f"   ✅ Found alternative dialogue: {alt_subs[0]['start_formatted']}-{alt_subs[-1]['end_formatted']} in {episode_key} ({duration:.1f}s)")
                                                 break
                                         
                                         if alternative_found:

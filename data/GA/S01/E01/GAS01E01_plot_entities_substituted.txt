@@ -1,60 +1,88 @@
-Scene 1: A voice narrates about 'the game,' reflecting on whether a person has what it takes to play. The narrator mentions that the narrator's mother was one of the greats and expresses self-doubt about the narrator's own abilities.
-Scene 2: In a house, Dr. Meredith Grey and Dr. Derek Shepherd have an awkward morning conversation. Dr. Meredith Grey insists Dr. Derek Shepherd leave because Dr. Meredith Grey is late for Dr. Meredith Grey's first day of work. Dr. Derek Shepherd and Dr. Meredith Grey discuss whether Dr. Meredith Grey lives there; Dr. Meredith Grey explains Dr. Meredith Grey moved from Boston two weeks ago and is selling Dr. Meredith Grey's mother's house. Dr. Derek Shepherd apologizes, thinking Dr. Meredith Grey's mother is dead, but Dr. Meredith Grey clarifies that Dr. Meredith Grey's mother is alive. Dr. Meredith Grey says Dr. Derek Shepherd and Dr. Meredith Grey don't need to exchange details or pretend to care. Dr. Meredith Grey goes upstairs to shower, telling Dr. Derek Shepherd to be gone when Dr. Meredith Grey returns. Dr. Derek Shepherd and Dr. Meredith Grey exchange names. Dr. Meredith Grey says goodbye to Dr. Derek Shepherd.
-Scene 3: At a hospital, a senior doctor addresses a group of new interns, telling the interns that the interns are now doctors and warning the interns about the challenges ahead. The senior doctor says most of the interns will not make it through the program. The narrator again expresses self-doubt.
-Scene 4: In a hospital corridor, several interns gather. One intern comments on the low number of women and mentions a rumor that one intern is a model. Dr. Cristina Yang and Dr. George O'Malley discuss being assigned to a resident named Dr. Miranda Bailey, who is referred to as 'Dr. Miranda Bailey.' Dr. Izzie Stevens introduces herself. Dr. Miranda Bailey arrives and lays out five strict rules for the interns, including not waking Dr. Miranda Bailey unless a patient is dying and always moving when Dr. Miranda Bailey moves. Dr. Miranda Bailey assigns the interns to a 48-hour shift.
-Scene 5: A medical emergency arrives: Katie Bryce, a 15-year-old girl with seizures. The team works to stabilize Katie Bryce. Dr. Miranda Bailey assigns Dr. Cristina Yang to labs, Dr. George O'Malley to patient workups, Dr. Meredith Grey to take Katie Bryce for a CT, and Dr. Izzie Stevens to perform rectal exams.
-Scene 6: In a hospital room, Dr. Meredith Grey checks on Katie Bryce, who is upset about missing Katie Bryce's pageant. Katie Bryce is frustrated and questions Dr. Meredith Grey's competence. Meanwhile, Dr. Izzie Stevens prepares to perform a rectal exam on a patient.
-Scene 7: In a break area, several interns talk about the interns' experiences. Dr. Izzie Stevens complains about performing rectal exams. The group gossips about Dr. Meredith Grey's mother, Dr. Ellis Grey, a famous surgeon. Dr. Cristina Yang expresses envy, and Dr. George O'Malley is unfamiliar with Dr. Ellis Grey's reputation.
-Scene 8: Dr. Preston Burke announces that Dr. George O'Malley has been chosen to perform the first surgery, an appendectomy. Other interns are surprised. In a private conversation, two doctors discuss Dr. George O'Malley's selection, suggesting it is a tactic to intimidate the group.
-Scene 9: Katie Bryce's parents arrive and ask about Katie Bryce's condition. An intern is unable to answer Katie Bryce's parents' questions and goes to find the attending doctor. Dr. Meredith Grey is told that Dr. Derek Shepherd is now in charge of Katie Bryce's case.
-Scene 10: Dr. Meredith Grey and Dr. Derek Shepherd (now Dr. Derek Shepherd) have an awkward conversation about Dr. Meredith Grey and Dr. Derek Shepherd's previous night together. Dr. Meredith Grey insists Dr. Meredith Grey and Dr. Derek Shepherd pretend it never happened because of Dr. Meredith Grey and Dr. Derek Shepherd's professional relationship. Dr. Derek Shepherd jokes about the situation, but Dr. Meredith Grey is firm.
-Scene 11: In the operating room, Dr. George O'Malley prepares for Dr. George O'Malley's appendectomy while other interns watch and place bets on Dr. George O'Malley's performance. Dr. George O'Malley begins the surgery but encounters complications.
+Scene 1: A voice narrates about 'the game,' stating that people either have what it takes to play or they don't. The narrator mentions that the narrator's mother was one of the greats, but the narrator feels personally unprepared.
+Scene 2: In a bedroom, two unidentified people talk after what appears to be a night together. One expresses embarrassment and says that person is late for their first day of work. They discuss whether one of them lives in the house, revealing it belonged to that person's mother and is being sold. The conversation is awkward, with one person wanting to avoid exchanging personal details. As one goes to shower, that person asks the other to leave before that person returns. Before parting, they exchange names: Dr. Derek Shepherd and Meredith Grey.
+Scene 3: A group of new surgical interns gathers. An unidentified person addresses the group, explaining that a month ago the group was in medical school, but now the group members are doctors. The speaker describes the challenges ahead during the group's seven years as surgical residents, warning that many will not make it. The narrator (likely Meredith Grey) internally repeats that the narrator is 'screwed.'
+Scene 4: In a hospital hallway, several interns (including Dr. Cristina Yang, Dr. George O'Malley, Meredith Grey, and Dr. Isobel Stevens) meet and discuss their assignments. The group talks about their supervising resident, referred to as 'Dr. Miranda Bailey,' and shares rumors about one intern being a model. Dr. George O'Malley introduces Dr. George O'Malley and references meeting Dr. Cristina Yang at a mixer. The group is called out by name for their assignments.
+Scene 5: The resident known as 'Dr. Miranda Bailey' (later identified as Dr. Miranda Bailey) addresses the interns, laying out five strict rules for the group's conduct. Dr. Miranda Bailey assigns specific tasks to each intern: Dr. Cristina Yang is on labs, Dr. George O'Malley on patient workups, and Meredith Grey is responsible for a patient named Katie Bryce. Dr. Isobel Stevens is assigned rectal exams. Dr. Miranda Bailey emphasizes the seriousness of the interns' roles and the need to follow Dr. Miranda Bailey's rules.
+Scene 6: A medical emergency unfolds as the interns and Dr. Miranda Bailey treat Katie Bryce, a 15-year-old girl with seizures. The team works together to stabilize Katie Bryce, with Dr. Miranda Bailey giving rapid instructions and assigning responsibilities. Dr. Preston Burke is present and gives additional orders. The interns are thrust into action on the group's first shift.
+Scene 7: In a hospital corridor, an intern (likely Meredith Grey) informs Dr. Miranda Bailey that Katie Bryce's labs are clear. The intern mentions a rumor that the best intern gets to perform a procedure on the first shift. Dr. Miranda Bailey dismisses the intern, telling the intern to leave.
+Scene 8: In a patient room, an intern (likely Dr. George O'Malley) tries to reassure a patient about upcoming bypass surgery. The patient jokes about missing bacon after surgery. Dr. George O'Malley expresses a desire to help but notes Dr. George O'Malley's role as a healer. The patient tells Dr. George O'Malley that Dr. George O'Malley is lost and questions Dr. George O'Malley about Dr. George O'Malley's feelings. The patient laments missing a pageant and discusses the patient's talent in rhythmic gymnastics. Dr. George O'Malley prepares to perform a rectal exam.
+Scene 9: In a break area, several interns discuss the group's difficult shift. One complains about performing 17 rectal exams and feeling disliked by Dr. Miranda Bailey. The group gossips about Meredith Grey's mother, Dr. Ellis Gray, who is described as a legendary surgeon. The interns express envy and discuss the pressures of living up to such a reputation. Another intern complains about a difficult patient, Katie Bryce.
+Scene 10: Dr. Miranda Bailey gathers the interns and announces that Dr. George O'Malley has been chosen to scrub in for an appendectomy, an honor reserved for the most promising intern. Dr. George O'Malley is surprised and congratulated.
+In a separate conversation, two doctors discuss Dr. George O'Malley's selection, suggesting Dr. George O'Malley was chosen to be 'terrorized' as an example to the other interns.
+Katie Bryce's parents arrive and ask about Katie Bryce's condition, expressing concern and frustration at the lack of answers.
+Scene 11: Meredith Grey approaches Dr. Derek Shepherd (Dr. Derek Shepherd) to discuss Katie Bryce's case.
+Meredith Grey and Dr. Derek Shepherd awkwardly acknowledge their previous night together and agree to keep the relationship professional.
+Meredith Grey insists that Meredith Grey and Dr. Derek Shepherd's personal history cannot continue now that Dr. Derek Shepherd is Meredith Grey's attending and Meredith Grey is Dr. Derek Shepherd's intern.
+Dr. Derek Shepherd tries to lighten the mood, but Meredith Grey insists on boundaries.
+Scene 12: In the operating gallery, several interns watch as Dr. George O'Malley performs the appendectomy.
+The interns place bets on whether Dr. George O'Malley will succeed or fail.
+Dr. George O'Malley begins the surgery under pressure, initially performing well but then making a mistake that causes complications.
 Dr. Preston Burke takes over, and Dr. George O'Malley is removed from the OR.
-The other interns later tease Dr. George O'Malley, calling Dr. George O'Malley 'Dr. George O'Malley' (license to kill).
-Dr. George O'Malley is upset about being called 'Dr. George O'Malley.'
-Other interns try to reassure Dr. George O'Malley, but Dr. George O'Malley remains discouraged.
-Suddenly, there is an emergency with Katie Bryce, and the interns rush to respond.
-Katie Bryce suffers a cardiac arrest.
-The interns and staff attempt to revive Katie Bryce, using medication and defibrillation.
+The interns nickname Dr. George O'Malley 'Dr. George O'Malley,' implying Dr. George O'Malley has a 'license to kill.'
+Scene 13: In a hallway, Dr. George O'Malley confronts the other interns about being called 'Dr. George O'Malley.'
+The other interns deny it, but Dr. George O'Malley is unconvinced.
+Suddenly, there is an emergency page for Katie Bryce, and the interns rush off.
+Scene 14: In a patient room, Meredith Grey discovers that Katie Bryce is fine and only paged the interns out of boredom.
+Katie Bryce complains about missing Katie Bryce's pageant on TV and asks for help.
+Meredith Grey is frustrated and tells Katie Bryce to go to sleep and stop wasting time.
+Scene 15: In another part of the hospital, Dr. Isobel Stevens asks Dr. Miranda Bailey for help starting a central line on a patient with difficult veins.
+Dr. Miranda Bailey refuses to be disturbed unless the patient is dying, reinforcing Dr. Miranda Bailey's earlier rules.
+Scene 16: A nurse questions an intern's diagnosis of post-op pneumonia in a patient.
+The intern is defensive, and the nurse suggests alternative diagnoses.
+Dr. Alex Karev introduces himself and makes a derogatory comment about nurses.
+The group discusses Katie Bryce and relationships among the interns.
+Scene 17: Katie Bryce has another seizure.
+Dr. Miranda Bailey and the interns respond urgently, administering medications and attempting to stabilize Katie Bryce.
+The interns page Dr. Derek Shepherd, but the medications are not working.
+Katie Bryce's heart stops, and the team performs defibrillation.
 After several attempts, Katie Bryce's heart rhythm returns.
-Dr. Miranda Bailey and Dr. Derek Shepherd arrive and criticize the interns for not paging Dr. Miranda Bailey and Dr. Derek Shepherd immediately.
-Katie Bryce's parents confront Dr. Derek Shepherd, demanding answers about Katie Bryce's condition.
-Dr. Derek Shepherd admits Dr. Derek Shepherd does not know the cause of Katie Bryce's seizures yet, which angers Mr. Bryce.
-Dr. Preston Burke explains a bypass procedure to a patient named Tony Savage and Tony Savage's wife, Gloria.
-An intern reassures Gloria that Tony Savage will be fine, promising a good outcome.
-In a break area, an intern practices suturing on a banana.
-Another intern apologizes for being mean when tired.
-Dr. Derek Shepherd gathers the interns and asks for the interns' help diagnosing Katie Bryce.
-Dr. Derek Shepherd offers the incentive that whoever solves the case will assist in surgery.
-Dr. Cristina Yang and Dr. Meredith Grey agree to work together to solve Katie Bryce's case.
-Dr. Meredith Grey reveals to Dr. Cristina Yang that Dr. Meredith Grey had sex with Dr. Derek Shepherd.
-Dr. Cristina Yang and Dr. Meredith Grey review Katie Bryce's symptoms and medical history, considering various diagnoses.
-Dr. Meredith Grey realizes that Katie Bryce's minor fall during pageant rehearsal could have caused a rare brain aneurysm.
-Dr. Meredith Grey and Dr. Cristina Yang present Dr. Meredith Grey and Dr. Cristina Yang's findings to Dr. Derek Shepherd, who confirms a subarachnoid hemorrhage and prepares for surgery.
-Dr. Derek Shepherd chooses Dr. Meredith Grey to assist in the operation.
-Dr. Cristina Yang is disappointed that Dr. Meredith Grey was chosen to assist in surgery.
-Dr. Cristina Yang accuses Dr. Meredith Grey of being cutthroat and benefiting from Dr. Meredith Grey's connections.
-Dr. Meredith Grey denies this, and Dr. Cristina Yang expresses frustration about not getting opportunities.
-Dr. Preston Burke informs Gloria that Tony Savage died during surgery due to extensive heart damage.
-Gloria is devastated.
-An intern reflects on having promised Gloria a good outcome and is reprimanded by Dr. Miranda Bailey for making promises to patients' families.
-Dr. Meredith Grey prepares Katie Bryce for surgery, promising to make Katie Bryce look cool.
-Dr. Meredith Grey asks Dr. Derek Shepherd if Dr. Meredith Grey was chosen because Dr. Meredith Grey and Dr. Derek Shepherd slept together.
-Dr. Derek Shepherd jokes but then tells Dr. Meredith Grey that Dr. Meredith Grey earned the right to assist.
-Dr. Meredith Grey is encouraged to take the opportunity.
-Several interns reflect on the interns' experiences and insecurities.
-Dr. George O'Malley laments Dr. George O'Malley's failures and wonders if Dr. George O'Malley is suited to be a surgeon.
-Dr. Cristina Yang recalls Dr. Cristina Yang's mother's doubts about Dr. Cristina Yang's abilities.
-The interns discuss the pressures of the job and the desire to succeed.
-A senior doctor quizzes Dr. George O'Malley on the causes of post-operative fever.
-Dr. Cristina Yang correctly answers, diagnosing a pulmonary embolus in a patient.
-The doctor recognizes Dr. Meredith Grey as Dr. Ellis Grey's daughter and welcomes Dr. Meredith Grey.
-In the operating room, Dr. Derek Shepherd prepares for surgery, telling the team it's a beautiful night to save lives.
-Dr. Meredith Grey narrates about the challenges and responsibilities of being a surgeon, expressing Dr. Meredith Grey's love for the work.
-After surgery, Dr. Meredith Grey and Dr. Derek Shepherd have a brief conversation, agreeing not to have an emotional moment.
-Dr. Meredith Grey and Dr. Cristina Yang exchange tired banter.
-Dr. Izzie Stevens expresses excitement about the experience of surgery.
-Dr. Meredith Grey narrates that Dr. Meredith Grey and the other interns survived their first shift.
-Dr. Meredith Grey decides to keep Dr. Meredith Grey's mother's house and considers getting roommates.
-Dr. Meredith Grey visits Dr. Meredith Grey's mother, who does not recognize Dr. Meredith Grey.
-Dr. Meredith Grey reminds Dr. Meredith Grey's mother that Dr. Meredith Grey was a surgeon.
+Dr. Miranda Bailey reprimands the team for not paging Dr. Miranda Bailey immediately during the emergency.
+Scene 18: Katie Bryce's parents confront Dr. Derek Shepherd about the lack of a diagnosis.
+Mr. Bryce becomes angry and demands a different doctor.
+Dr. Derek Shepherd tries to reassure Katie Bryce's parents but admits Dr. Derek Shepherd does not have answers yet.
+In another room, Dr. Preston Burke explains bypass surgery to Tony Savage and Tony Savage's wife, Gloria Savage.
+Tony Savage is reassured, and the intern promises Gloria Savage that Tony Savage will be fine.
+Scene 19: In a break room, Meredith Grey sutures a banana to practice.
+Dr. Cristina Yang questions Meredith Grey about smiling at Dr. George O'Malley ('Dr. George O'Malley').
+The interns discuss the group's day and wonder why the interns have been called together.
+Dr. Derek Shepherd enters and asks the interns for help diagnosing Katie Bryce, offering the incentive of scrubbing in on Katie Bryce's surgery to whoever finds the answer.
+Dr. Miranda Bailey hands out Katie Bryce's chart.
+Scene 20: An intern pages Dr. Miranda Bailey about a patient still short of breath.
+Dr. Miranda Bailey dismisses the concern, attributing it to the patient's age and telling the intern not to page again.
+Later, Meredith Grey and Dr. Cristina Yang agree to work together to solve Katie Bryce's case, with Meredith Grey declining the chance to scrub in if Meredith Grey and Dr. Cristina Yang succeed.
+Dr. Cristina Yang asks why, and Meredith Grey eventually reveals Meredith Grey had sex with Dr. Derek Shepherd.
+Meredith Grey and Dr. Cristina Yang continue to brainstorm possible diagnoses for Katie Bryce.
+Scene 21: Meredith Grey and Dr. Cristina Yang discuss Katie Bryce's case, considering various medical possibilities.
+Meredith Grey suddenly realizes that Katie Bryce's rhythmic gymnastics accident—a minor fall—could have caused a rare brain aneurysm.
+Meredith Grey and Dr. Cristina Yang rush to tell Dr. Derek Shepherd, who confirms the diagnosis after reviewing Katie Bryce's scans.
+Meredith Grey is chosen to scrub in on the surgery.
+Scene 22: Dr. Cristina Yang is disappointed about not being chosen for the surgery.
+Dr. Cristina Yang and Meredith Grey have a tense conversation about ambition and fairness.
+Dr. Cristina Yang accuses Meredith Grey of benefiting from Dr. Ellis Gray's reputation and Meredith Grey's relationship with Dr. Derek Shepherd.
+Meredith Grey tries to apologize, but Dr. Cristina Yang tells Meredith Grey to accept the consequences of Meredith Grey's actions.
+Scene 23: Dr. Isobel Stevens informs Gloria Savage that Tony Savage died during surgery due to extensive heart damage.
+Gloria Savage is devastated.
+Dr. Isobel Stevens is visibly upset after delivering the news.
+Scene 24: In a hospital room, Meredith Grey helps prepare Katie Bryce for surgery, making sure Katie Bryce looks presentable.
+Meredith Grey asks Dr. Derek Shepherd if Meredith Grey was chosen for the surgery because Meredith Grey and Dr. Derek Shepherd slept together.
+Dr. Derek Shepherd jokes, then assures Meredith Grey she earned it.
+Meredith Grey initially declines to scrub in, suggesting Dr. Cristina Yang instead, but Dr. Derek Shepherd encourages Meredith Grey to take the opportunity.
+Scene 25: In a quiet moment, Dr. George O'Malley reflects on Dr. George O'Malley's parents' pride and Dr. George O'Malley's own doubts about being a surgeon.
+Dr. George O'Malley recalls Dr. George O'Malley's mother discouraging Dr. George O'Malley from pursuing medicine.
+Meredith Grey and Dr. George O'Malley talk about surviving Meredith Grey and Dr. George O'Malley's first shift.
+Scene 26: A senior doctor questions an intern about a patient with post-op fever.
+The intern struggles to answer, and another intern correctly lists the five common causes of post-op fever.
+The senior doctor praises the answer and instructs the team to follow the correct diagnostic steps.
+The senior doctor recognizes Meredith Grey as Dr. Ellis Gray's daughter and welcomes Meredith Grey.
+Scene 27: Dr. Derek Shepherd gathers the team for Katie Bryce's surgery, declaring it 'a beautiful night to save lives.'
+Meredith Grey narrates about the challenges of being a surgeon and the reasons to quit, but ultimately expresses Meredith Grey's love for the work.
+The surgery is successful, and the team celebrates.
+Scene 28: In the aftermath, Meredith Grey and Dr. Cristina Yang share a brief, honest conversation, agreeing not to have an emotional moment.
+Meredith Grey and Dr. Cristina Yang joke about Meredith Grey and Dr. Cristina Yang's appearance and exhaustion.
+Scene 29: Meredith Grey and Dr. Derek Shepherd talk after surgery.
+Meredith Grey describes the exhilaration of performing surgery for the first time.
+Meredith Grey and Dr. Derek Shepherd share a quiet moment before parting ways.
+Scene 30: Meredith Grey narrates about surviving Meredith Grey's first shift.
+Meredith Grey reflects on Meredith Grey's fellow interns and decides not to sell Dr. Ellis Gray's house, opting to keep it and find roommates.
+Meredith Grey visits Dr. Ellis Gray, who is in a care facility and does not recognize Meredith Grey.
+Meredith Grey reminds Dr. Ellis Gray that Dr. Ellis Gray was a surgeon.

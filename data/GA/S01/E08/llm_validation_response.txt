@@ -1,26 +1,74 @@
 [
     {
+        "entity_name": "dr_chesney",
+        "best_appellation": "Dr. Chesney",
+        "appellations": ["Dr. Chesney", "Chesney"],
+        "biological_sex": null
+    },
+    {
+        "entity_name": "shepherd",
+        "best_appellation": "Shepherd",
+        "appellations": ["Shepherd"],
+        "biological_sex": null
+    },
+    {
+        "entity_name": "mr_walker",
+        "best_appellation": "Mr. Walker",
+        "appellations": ["Mr. Walker", "Walker"],
+        "biological_sex": "M"
+    },
+    {
+        "entity_name": "dr_bailey",
+        "best_appellation": "Dr. Bailey",
+        "appellations": ["Dr. Bailey", "Bailey"],
+        "biological_sex": null
+    },
+    {
+        "entity_name": "meredith_meredith",
+        "best_appellation": "Meredith Meredith",
+        "appellations": ["Meredith Meredith"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "mrs_glass",
+        "best_appellation": "Mrs. Glass",
+        "appellations": ["Mrs. Glass", "Glass"],
+        "biological_sex": "F"
+    },
+    {
+        "entity_name": "meredith",
+        "best_appellation": "Meredith",
+        "appellations": ["Meredith"],
+        "biological_sex": "F"
+    },
+    {
         "entity_name": "george",
         "best_appellation": "George",
         "appellations": ["George"],
         "biological_sex": "M"
     },
     {
-        "entity_name": "mr_walker",
-        "best_appellation": "Mr. Walker",
-        "appellations": ["Mr. Walker"],
+        "entity_name": "mr_duff",
+        "best_appellation": "Mr. Duff",
+        "appellations": ["Mr. Duff", "Duff"],
         "biological_sex": "M"
     },
     {
-        "entity_name": "mr_duff",
-        "best_appellation": "Mr. Duff",
-        "appellations": ["Mr. Duff"],
+        "entity_name": "dr_karev",
+        "best_appellation": "Dr. Karev",
+        "appellations": ["Dr. Karev", "Karev"],
         "biological_sex": "M"
     },
     {
         "entity_name": "prince_charming",
         "best_appellation": "Prince Charming",
-        "appellations": ["Prince Charming", "prince_charming"],
+        "appellations": ["Prince Charming"],
         "biological_sex": "M"
+    },
+    {
+        "entity_name": "izzy",
+        "best_appellation": "Izzy",
+        "appellations": ["Izzy"],
+        "biological_sex": "F"
     }
 ]

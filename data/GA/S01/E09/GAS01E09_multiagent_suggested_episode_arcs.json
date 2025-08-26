@@ -1,486 +1,487 @@
 [
   {
-    "title": "Medical Case: Bill the Chimera",
+    "title": "Medical Case: Bill's Chimerism and Ovarian Mass",
     "arc_type": "Anthology Arc",
-    "description": "Dr. Burke and the interns treat Bill, a patient whose case reveals he is a chimera with both male and female reproductive organs. The arc explores the medical discovery, the implications for Bill's identity and marriage, and the ethical dilemma of disclosing the truth about his sterility and the paternity of his wife's unborn child.",
-    "main_characters": "Preston Burke; Bill",
-    "interfering_episode_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Molly",
+    "description": "A patient, Bill, presents with abdominal pain and blood in his urine. The surgical team investigates and discovers a mass that is revealed to be an ovary, leading to the diagnosis of chimerism (gonadal hermaphroditism). The case explores the medical, personal, and relational impact of this rare genetic condition, including Bill's infertility and the resulting questions about his wife Molly's pregnancy.",
+    "main_characters": "Bill; Molly",
+    "interfering_episode_characters": "Preston Burke; Miranda Bailey; Derek Shepherd; Alex Karev; Meredith Grey",
     "single_episode_progression_events": [
       {
-        "content": "Dr. Burke and the interns admit Bill for abdominal pain and blood in his urine.",
+        "content": "Meredith presents Bill to the surgical team with abdominal pain and blood in his urine.",
         "ordinal_position": 1,
         "characters_involved": [
-          "Preston Burke",
-          "Bill",
           "Meredith Grey",
-          "Cristina Yang",
-          "Izzie Stevens",
-          "George O'Malley"
+          "Bill",
+          "Surgical Team"
         ],
         "start_timestamp": "00:06:46,110",
-        "end_timestamp": "00:07:00,165",
+        "end_timestamp": "00:06:49,353",
         "confidence_score": 0.95,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "The surgical team discovers a mass in Bill's bladder during surgery.",
+        "content": "Derek Shepherd and Preston Burke perform a cystoscopy on Bill and discover a mass.",
         "ordinal_position": 2,
         "characters_involved": [
+          "Derek Shepherd",
           "Preston Burke",
           "Bill",
-          "Meredith Grey",
-          "Cristina Yang",
-          "Izzie Stevens",
-          "George O'Malley"
+          "Miranda Bailey"
         ],
-        "start_timestamp": "00:07:39,677",
-        "end_timestamp": "00:07:47,096",
+        "start_timestamp": "00:06:49,374",
+        "end_timestamp": "00:07:43,293",
         "confidence_score": 0.92,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Chromosome analysis reveals the mass is an ovary and Bill is a chimera with both male and female reproductive organs.",
+        "content": "The team biopsies the mass and sends it to the lab for analysis.",
         "ordinal_position": 3,
         "characters_involved": [
+          "Derek Shepherd",
           "Preston Burke",
-          "Bill",
-          "Meredith Grey",
-          "Cristina Yang",
-          "Izzie Stevens",
-          "George O'Malley"
+          "Miranda Bailey",
+          "Bill"
         ],
-        "start_timestamp": "00:12:39,269",
-        "end_timestamp": "00:13:06,960",
-        "confidence_score": 0.93,
+        "start_timestamp": "00:07:43,293",
+        "end_timestamp": "00:07:47,096",
+        "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Dr. Burke informs Bill of his diagnosis.",
+        "content": "Lab results reveal the mass is an ovary, and Bailey explains Bill's chimerism and gonadal hermaphroditism to the team.",
         "ordinal_position": 4,
         "characters_involved": [
+          "Miranda Bailey",
+          "Alex Karev",
           "Preston Burke",
+          "Derek Shepherd",
           "Bill"
         ],
-        "start_timestamp": "00:18:00,892",
+        "start_timestamp": "00:12:39,259",
         "end_timestamp": "00:18:41,060",
         "confidence_score": 0.93,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Bill expresses concern about telling his pregnant wife Molly about his sterility and the implications for their unborn child.",
+        "content": "Burke and Alex reassure Bill about his rare genetic condition.",
         "ordinal_position": 5,
         "characters_involved": [
-          "Bill",
-          "Preston Burke"
+          "Preston Burke",
+          "Alex Karev",
+          "Bill"
         ],
-        "start_timestamp": "00:18:47,971",
+        "start_timestamp": "00:18:41,060",
         "end_timestamp": "00:19:11,111",
-        "confidence_score": 0.88,
+        "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Dr. Burke confronts Molly about the paternity of her unborn child.",
+        "content": "Burke confronts Molly about her pregnancy, revealing Bill is sterile and the baby cannot be his.",
         "ordinal_position": 6,
         "characters_involved": [
           "Preston Burke",
           "Molly"
         ],
-        "start_timestamp": "00:34:41,065",
-        "end_timestamp": "00:35:11,864",
+        "start_timestamp": "00:29:40,045",
+        "end_timestamp": "00:35:15,250",
         "confidence_score": 0.92,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Dr. Burke decides to tell Bill the truth about his condition and the paternity issue.",
+        "content": "Molly refuses to tell Bill the truth about the baby's paternity.",
         "ordinal_position": 7,
         "characters_involved": [
-          "Preston Burke",
-          "Bill"
+          "Molly",
+          "Preston Burke"
         ],
-        "start_timestamp": "00:35:15,250",
-        "end_timestamp": "00:35:31,070",
+        "start_timestamp": "00:35:01,929",
+        "end_timestamp": "00:35:15,250",
         "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       }
     ]
   },
   {
-    "title": "Medical Case: Mr. Franklin's Sudden Death and Unauthorized Autopsy",
+    "title": "Medical Case: Mr. Franklin's Sudden Death After Paracentesis",
     "arc_type": "Anthology Arc",
-    "description": "When Mr. Franklin, a patient with severe liver disease, dies unexpectedly after a routine procedure, the interns fear they are responsible. Driven to clear their names, they secretly perform an unauthorized autopsy and discover a genetic blood disorder was the true cause of death. Their actions bring both consequences and closure, highlighting the complexities of medical responsibility and the importance of accurate diagnosis.",
-    "main_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
-    "interfering_episode_characters": "Miranda Bailey; Mr. Franklin; Mr. Franklin's Family",
+    "description": "Throughout the season, the interns face complex medical cases that challenge their skills and ethics. In this episode, George and Izzie treat Mr. Franklin for liver disease and perform a paracentesis. When Mr. Franklin dies unexpectedly, the interns conduct an unauthorized autopsy to clear themselves of blame, ultimately discovering he died from hematomacrosis, a genetic blood disorder, not a procedural error.",
+    "main_characters": "George O'Malley; Izzie Stevens; Mr. Franklin",
+    "interfering_episode_characters": "Cristina Yang; Meredith Grey; Preston Burke; Miranda Bailey; Alex Karev; Dr. Knox; Mrs. Franklin; Alice Franklin",
     "single_episode_progression_events": [
       {
-        "content": "The interns perform a paracentesis on Mr. Franklin, who has severe abdominal swelling from liver disease.",
+        "content": "George admits Mr. Franklin to the hospital for abdominal swelling and suspects liver disease.",
         "ordinal_position": 1,
         "characters_involved": [
-          "Meredith Grey",
-          "Cristina Yang",
-          "Izzie Stevens",
           "George O'Malley",
-          "Alex Karev",
-          "Mr. Franklin"
+          "Mr. Franklin",
+          "Mrs. Franklin"
         ],
-        "start_timestamp": "00:24:14,367",
-        "end_timestamp": "00:25:02,579",
+        "start_timestamp": "00:08:30,252",
+        "end_timestamp": "00:08:58,697",
         "confidence_score": 0.95,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Mr. Franklin dies unexpectedly after the procedure.",
+        "content": "Izzie and Alex discuss Mr. Franklin's alcoholism and schedule a paracentesis to relieve his abdominal pressure.",
         "ordinal_position": 2,
         "characters_involved": [
-          "Meredith Grey",
-          "Cristina Yang",
           "Izzie Stevens",
-          "George O'Malley",
           "Alex Karev",
+          "Mr. Franklin"
+        ],
+        "start_timestamp": "00:13:14,865",
+        "end_timestamp": "00:13:25,437",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George and Izzie perform the paracentesis procedure on Mr. Franklin.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "George O'Malley",
+          "Izzie Stevens",
+          "Mr. Franklin"
+        ],
+        "start_timestamp": "00:24:03,570",
+        "end_timestamp": "00:25:02,579",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Mr. Franklin dies suddenly after the paracentesis.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "George O'Malley",
+          "Izzie Stevens",
           "Mr. Franklin"
         ],
         "start_timestamp": "00:26:07,132",
-        "end_timestamp": "00:26:19,671",
+        "end_timestamp": "00:26:20,833",
         "confidence_score": 0.95,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "The interns question whether they made a fatal mistake during the procedure.",
-        "ordinal_position": 3,
-        "characters_involved": [
-          "Meredith Grey",
-          "Cristina Yang",
-          "Izzie Stevens",
-          "George O'Malley",
-          "Alex Karev"
-        ],
-        "start_timestamp": "00:26:37,469",
-        "end_timestamp": "00:26:53,557",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Miranda Bailey reassures the interns that they followed protocol and attributes Mr. Franklin's death to his underlying conditions.",
-        "ordinal_position": 4,
-        "characters_involved": [
-          "Miranda Bailey",
-          "Meredith Grey",
-          "Cristina Yang",
-          "Izzie Stevens",
-          "George O'Malley",
-          "Alex Karev"
-        ],
-        "start_timestamp": "00:26:53,557",
-        "end_timestamp": "00:27:07,443",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "The interns perform an unauthorized autopsy on Mr. Franklin to determine the true cause of death.",
+        "content": "Burke and Dr. Knox review the procedure and confirm it was performed correctly; the Franklin family refuses an autopsy.",
         "ordinal_position": 5,
         "characters_involved": [
-          "Meredith Grey",
-          "Cristina Yang",
-          "Izzie Stevens",
+          "Preston Burke",
+          "Dr. Knox",
+          "Mrs. Franklin",
           "George O'Malley",
-          "Alex Karev"
+          "Izzie Stevens"
         ],
-        "start_timestamp": "00:30:48,940",
-        "end_timestamp": "00:33:34,165",
+        "start_timestamp": "00:26:37,469",
+        "end_timestamp": "00:27:15,576",
         "confidence_score": 0.92,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "The interns discover during the autopsy that Mr. Franklin had hematomacrosis, a genetic blood disorder that caused his heart failure.",
+        "content": "Cristina, Izzie, and Meredith decide to perform an unauthorized autopsy on Mr. Franklin.",
         "ordinal_position": 6,
         "characters_involved": [
-          "Meredith Grey",
           "Cristina Yang",
           "Izzie Stevens",
-          "George O'Malley",
-          "Alex Karev"
+          "Meredith Grey",
+          "Mr. Franklin"
         ],
-        "start_timestamp": "00:37:41,416",
-        "end_timestamp": "00:37:52,688",
-        "confidence_score": 0.9,
+        "start_timestamp": "00:30:48,940",
+        "end_timestamp": "00:31:40,767",
+        "confidence_score": 0.93,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "The interns inform Mr. Franklin's family of the true cause of death and the genetic implications for surviving relatives.",
+        "content": "The interns sneak into the morgue at night and conduct the autopsy using a textbook.",
         "ordinal_position": 7,
         "characters_involved": [
-          "Meredith Grey",
           "Cristina Yang",
           "Izzie Stevens",
-          "George O'Malley",
-          "Alex Karev",
-          "Mr. Franklin's Family"
+          "Meredith Grey",
+          "Mr. Franklin"
         ],
-        "start_timestamp": "00:38:38,596",
-        "end_timestamp": "00:39:19,920",
-        "confidence_score": 0.9,
+        "start_timestamp": "00:32:28,726",
+        "end_timestamp": "00:33:08,678",
+        "confidence_score": 0.92,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Miranda Bailey discovers the interns performed an unauthorized autopsy and warns them about the legal and professional consequences.",
+        "content": "Bailey discovers the unauthorized autopsy and confronts the interns.",
         "ordinal_position": 8,
         "characters_involved": [
           "Miranda Bailey",
-          "Meredith Grey",
           "Cristina Yang",
           "Izzie Stevens",
-          "George O'Malley",
-          "Alex Karev"
+          "Meredith Grey"
         ],
         "start_timestamp": "00:37:01,190",
         "end_timestamp": "00:37:39,157",
-        "confidence_score": 0.95,
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "During the autopsy, the interns find Mr. Franklin's heart is enlarged and filled with grainy material.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "Mr. Franklin"
+        ],
+        "start_timestamp": "00:37:41,416",
+        "end_timestamp": "00:37:47,822",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Burke explains to the Franklin family that Mr. Franklin died from hematomacrosis, a genetic blood disorder, not a procedural error.",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "Preston Burke",
+          "Mrs. Franklin",
+          "Alice Franklin",
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:38:47,771",
+        "end_timestamp": "00:38:58,387",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Burke recommends a blood test for Alice Franklin to check for the genetic disorder.",
+        "ordinal_position": 11,
+        "characters_involved": [
+          "Preston Burke",
+          "Alice Franklin",
+          "Mrs. Franklin"
+        ],
+        "start_timestamp": "00:39:07,402",
+        "end_timestamp": "00:39:19,920",
+        "confidence_score": 0.91,
         "extraction_method": "dialogue_matching"
       }
     ]
   },
   {
-    "title": "The Surgical Interns: Rivalries, Bonds, and Coming of Age at Seattle Grace",
-    "arc_type": "Soap Arc",
-    "description": "Meredith, Cristina, George, Izzie, and Alex navigate the pressures of surgical residency at Seattle Grace, forming shifting friendships, alliances, and rivalries while competing for recognition. Their group dynamic is shaped by personal insecurities, romantic entanglements, and the need to prove themselves, with individual journeys such as George's quest for confidence, Izzie's fight for respect, Cristina's ambition and reproductive choices, and Alex's struggle for acceptance. Their shared home life and professional challenges test their boundaries, foster growth, and drive their evolution as doctors and individuals.",
-    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Izzie Stevens; Alex Karev",
-    "interfering_episode_characters": "Derek Shepherd; Preston Burke; Olivia Harper",
+    "title": "Medical Case: Syphilis Outbreak Among Hospital Staff",
+    "arc_type": "Anthology Arc",
+    "description": "A syphilis outbreak among the hospital staff begins when George O'Malley discovers he has contracted the disease. The arc explores the spread of the infection, the necessity of disclosure and testing, and the personal repercussions for those involved. The outbreak prompts safe sex education and exposes the romantic entanglements between George, Olivia, and Alex, affecting their relationships and reputations within the hospital.",
+    "main_characters": "George O'Malley; Olivia Harper; Alex Karev",
+    "interfering_episode_characters": "Cristina Yang; Miranda Bailey; Patricia; Izzie Stevens; Meredith Grey; Preston Burke; Hospital Staff",
     "single_episode_progression_events": [
       {
-        "content": "Meredith, Cristina, and Izzie discuss Meredith's sexual relationship with Derek.",
+        "content": "George asks Cristina to examine a rash, suspecting he has syphilis.",
         "ordinal_position": 1,
         "characters_involved": [
-          "Meredith Grey",
-          "Cristina Yang",
-          "Izzie Stevens"
+          "George O'Malley",
+          "Cristina Yang"
         ],
-        "start_timestamp": "00:00:03,435",
-        "end_timestamp": "00:00:11,493",
+        "start_timestamp": "00:05:02,346",
+        "end_timestamp": "00:05:29,620",
         "confidence_score": 0.95,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Cristina and Izzie tease George about his lack of romantic experience and encourage him to ask out Olivia.",
+        "content": "Cristina confirms George's rash is syphilis.",
         "ordinal_position": 2,
         "characters_involved": [
-          "Cristina Yang",
-          "Izzie Stevens",
-          "George O'Malley"
-        ],
-        "start_timestamp": "00:00:23,917",
-        "end_timestamp": "00:00:32,009",
-        "confidence_score": 0.92,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "George awkwardly interacts with Olivia, leading to the start of their relationship.",
-        "ordinal_position": 3,
-        "characters_involved": [
           "George O'Malley",
-          "Olivia Harper"
-        ],
-        "start_timestamp": "00:04:07,865",
-        "end_timestamp": "00:04:23,776",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Izzie catches George in the bathroom and, along with Meredith, teases him about his supposed activities.",
-        "ordinal_position": 4,
-        "characters_involved": [
-          "Izzie Stevens",
-          "George O'Malley",
-          "Meredith Grey"
-        ],
-        "start_timestamp": "00:01:11,352",
-        "end_timestamp": "00:01:44,025",
-        "confidence_score": 0.93,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Cristina makes a secret phone call to schedule a medical procedure.",
-        "ordinal_position": 5,
-        "characters_involved": [
           "Cristina Yang"
         ],
-        "start_timestamp": "00:03:07,967",
-        "end_timestamp": "00:03:20,020",
+        "start_timestamp": "00:06:00,615",
+        "end_timestamp": "00:06:02,509",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George receives a positive syphilis test result in the lab.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:09:05,725",
+        "end_timestamp": "00:09:29,413",
         "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Cristina avoids giving Burke her home number and leaves abruptly after he tries to connect with her.",
-        "ordinal_position": 6,
-        "characters_involved": [
-          "Cristina Yang",
-          "Preston Burke"
-        ],
-        "start_timestamp": "00:03:24,824",
-        "end_timestamp": "00:03:43,711",
-        "confidence_score": 0.92,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "George develops a rash and asks Cristina to examine it; Cristina calls Alex for a second opinion.",
-        "ordinal_position": 7,
-        "characters_involved": [
-          "George O'Malley",
-          "Cristina Yang",
-          "Alex Karev"
-        ],
-        "start_timestamp": "00:05:02,346",
-        "end_timestamp": "00:06:02,509",
-        "confidence_score": 0.93,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Alex diagnoses George with syphilis, and the news quickly spreads among the interns.",
-        "ordinal_position": 8,
+        "content": "Alex jokes about Olivia's promiscuity after learning George has syphilis.",
+        "ordinal_position": 4,
         "characters_involved": [
           "Alex Karev",
-          "George O'Malley",
-          "Cristina Yang",
-          "Izzie Stevens",
-          "Meredith Grey"
+          "George O'Malley"
         ],
-        "start_timestamp": "00:06:02,509",
-        "end_timestamp": "00:09:27,583",
-        "confidence_score": 0.92,
+        "start_timestamp": "00:09:51,267",
+        "end_timestamp": "00:09:52,951",
+        "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Cristina insists George must tell Olivia about his diagnosis so she can get tested.",
-        "ordinal_position": 9,
+        "content": "Cristina tells George he must inform Olivia so she can get tested.",
+        "ordinal_position": 5,
         "characters_involved": [
           "Cristina Yang",
           "George O'Malley"
         ],
         "start_timestamp": "00:10:24,475",
-        "end_timestamp": "00:10:33,888",
+        "end_timestamp": "00:10:34,788",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey and the surgical team tease George about his syphilis diagnosis.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Miranda Bailey",
+          "George O'Malley",
+          "Preston Burke",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:11:07,884",
+        "end_timestamp": "00:11:37,417",
         "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "George struggles to tell Olivia about his diagnosis and finally does so in a rambling conversation.",
-        "ordinal_position": 10,
+        "content": "George tells Olivia he has syphilis.",
+        "ordinal_position": 7,
         "characters_involved": [
           "George O'Malley",
           "Olivia Harper"
         ],
-        "start_timestamp": "00:14:03,576",
+        "start_timestamp": "00:14:12,716",
         "end_timestamp": "00:15:13,625",
-        "confidence_score": 0.93,
+        "confidence_score": 0.95,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Olivia reveals she already knows she has syphilis and admits she was seeing someone else before George.",
-        "ordinal_position": 11,
+        "content": "Patricia announces a syphilis outbreak among staff and demonstrates safe sex practices with a banana.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Patricia",
+          "Hospital Staff",
+          "George O'Malley",
+          "Cristina Yang",
+          "Alex Karev",
+          "Izzie Stevens",
+          "Miranda Bailey"
+        ],
+        "start_timestamp": "00:21:14,438",
+        "end_timestamp": "00:22:16,083",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Olivia admits to George she was seeing Alex when she started dating George and broke it off when she realized she liked George.",
+        "ordinal_position": 9,
         "characters_involved": [
           "Olivia Harper",
           "George O'Malley"
         ],
-        "start_timestamp": "00:15:26,629",
-        "end_timestamp": "00:15:28,091",
+        "start_timestamp": "00:40:08,751",
+        "end_timestamp": "00:40:23,251",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George realizes Olivia gave him syphilis via Alex and confronts Alex in the hallway.",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "George O'Malley",
+          "Alex Karev",
+          "Olivia Harper"
+        ],
+        "start_timestamp": "00:40:23,872",
+        "end_timestamp": "00:40:47,483",
         "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "George learns from Olivia that she had been seeing Alex Karev before him, realizing Alex is the source of his infection.",
-        "ordinal_position": 12,
-        "characters_involved": [
-          "George O'Malley",
-          "Olivia Harper",
-          "Alex Karev"
-        ],
-        "start_timestamp": "00:16:43,730",
-        "end_timestamp": "00:16:57,124",
-        "confidence_score": 0.88,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "George angrily confronts Alex in the hospital, causing a scene.",
-        "ordinal_position": 13,
-        "characters_involved": [
-          "George O'Malley",
-          "Alex Karev"
-        ],
-        "start_timestamp": "00:40:36,951",
-        "end_timestamp": "00:40:47,023",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Cristina and Meredith share a quiet moment, discussing the exhaustion of the day and the comfort of sharing secrets.",
-        "ordinal_position": 14,
+        "content": "Cristina, Izzie, and Meredith intervene to break up the confrontation between George and Alex.",
+        "ordinal_position": 11,
         "characters_involved": [
           "Cristina Yang",
-          "Meredith Grey"
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley",
+          "Alex Karev"
         ],
-        "start_timestamp": "00:40:59,655",
-        "end_timestamp": "00:41:21,389",
-        "confidence_score": 0.93,
+        "start_timestamp": "00:40:45,862",
+        "end_timestamp": "00:40:47,483",
+        "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       }
     ]
   },
   {
-    "title": "Meredith Grey and Derek Shepherd: Secret Romance and Professional Boundaries",
+    "title": "Meredith and Derek's Secret Workplace Relationship",
     "arc_type": "Soap Arc",
-    "description": "Meredith Grey and Derek Shepherd's romantic relationship begins with a one-night stand, only for Meredith to discover that Derek is her attending neurosurgeon at Seattle Grace Hospital. Their relationship is complicated by the need for secrecy, the challenge of maintaining professional boundaries, and the risk to Meredith's reputation and career as they navigate their personal and professional lives.",
+    "description": "Meredith Grey and Derek Shepherd’s relationship begins with a chance encounter and evolves into a secret, complicated romance as they navigate the challenges of working together at Seattle Grace Hospital. They struggle to maintain professional boundaries, keep their relationship hidden, and confront the emotional complexities that arise from their personal and professional entanglement.",
     "main_characters": "Meredith Grey; Derek Shepherd",
-    "interfering_episode_characters": "Cristina Yang; Izzie Stevens; Addison Shepherd",
+    "interfering_episode_characters": "Addison Shepherd; Cristina Yang; Izzie Stevens",
     "single_episode_progression_events": [
       {
-        "content": "Meredith, Cristina, and Izzie discuss Meredith's secret sexual relationship with Derek.",
+        "content": "Cristina Yang questions Meredith Grey about her relationship with Derek Shepherd, prompting Meredith to acknowledge their nightly intimacy and the secrecy surrounding it.",
         "ordinal_position": 1,
-        "characters_involved": [
-          "Meredith Grey",
-          "Cristina Yang",
-          "Izzie Stevens"
-        ],
-        "start_timestamp": "00:00:03,435",
-        "end_timestamp": "00:00:12,573",
-        "confidence_score": 0.95,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Cristina speculates about Derek's past and his reasons for leaving New York.",
-        "ordinal_position": 2,
         "characters_involved": [
           "Cristina Yang",
           "Meredith Grey"
         ],
-        "start_timestamp": "00:00:12,595",
-        "end_timestamp": "00:00:14,919",
-        "confidence_score": 0.9,
+        "start_timestamp": "00:00:03,435",
+        "end_timestamp": "00:00:09,910",
+        "confidence_score": 0.95,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Meredith and Derek interact at the hospital, maintaining a professional facade while concealing their romantic involvement.",
-        "ordinal_position": 3,
+        "content": "Izzie Stevens suggests to Meredith Grey that her relationship with Derek Shepherd is more than just physical, highlighting its emotional complexity.",
+        "ordinal_position": 2,
         "characters_involved": [
-          "Meredith Grey",
-          "Derek Shepherd"
+          "Izzie Stevens",
+          "Meredith Grey"
         ],
-        "start_timestamp": "00:25:08,711",
-        "end_timestamp": "00:25:39,296",
+        "start_timestamp": "00:00:04,317",
+        "end_timestamp": "00:00:04,317",
         "confidence_score": 0.85,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Derek approaches Meredith to apologize and attempts to speak privately.",
+        "content": "Derek Shepherd admits to Meredith Grey that he hardly knows her, despite their ongoing secret encounters.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:00:06,081",
+        "end_timestamp": "00:00:06,081",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith Grey and Derek Shepherd share a private moment in the hospital, maintaining the secrecy of their relationship.",
         "ordinal_position": 4,
         "characters_involved": [
           "Derek Shepherd",
           "Meredith Grey"
         ],
-        "start_timestamp": "00:41:36,731",
-        "end_timestamp": "00:41:42,967",
+        "start_timestamp": "00:36:00,096",
+        "end_timestamp": "00:36:24,125",
         "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Addison Shepherd arrives and introduces herself to Meredith as Derek's wife, confronting Meredith about the affair.",
+        "content": "Meredith Grey confides in Derek Shepherd about her mother's Alzheimer's diagnosis and her struggles with keeping secrets.",
         "ordinal_position": 5,
+        "characters_involved": [
+          "Meredith Grey",
+          "Derek Shepherd"
+        ],
+        "start_timestamp": "00:36:28,411",
+        "end_timestamp": "00:37:01,170",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Addison Shepherd arrives at Seattle Grace Hospital and introduces herself to Meredith Grey as Derek Shepherd's wife, publicly exposing Meredith and Derek's affair.",
+        "ordinal_position": 6,
         "characters_involved": [
           "Addison Shepherd",
           "Meredith Grey",
@@ -488,400 +489,147 @@
         ],
         "start_timestamp": "00:41:42,967",
         "end_timestamp": "00:42:01,851",
-        "confidence_score": 0.95,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Meredith is left stunned as her secret relationship with Derek is exposed.",
-        "ordinal_position": 6,
-        "characters_involved": [
-          "Meredith Grey",
-          "Derek Shepherd",
-          "Addison Shepherd"
-        ],
-        "start_timestamp": "00:42:01,851",
-        "end_timestamp": "00:42:11,518",
-        "confidence_score": 0.9,
+        "confidence_score": 0.98,
         "extraction_method": "dialogue_matching"
       }
     ]
   },
   {
-    "title": "Meredith and Ellis Grey: Legacy, Estrangement, and Reconciliation",
+    "title": "Formation and Evolution of Interns' Friendships, Rivalries, and Personal Growth",
     "arc_type": "Soap Arc",
-    "description": "Meredith Grey faces the immense pressure of living up to her mother Ellis Grey's legendary status as a surgeon, while also coping with Ellis's declining health and memory loss. As Meredith works to define her own identity and career in medicine, separate from her mother's shadow, she navigates the emotional complexities of their strained relationship. The arc follows Meredith's ongoing estrangement from Ellis and her gradual attempts to reconnect and reconcile, exploring the challenges of legacy, identity, and the possibility of healing their complicated bond.",
-    "main_characters": "Meredith Grey; Ellis Grey",
-    "interfering_episode_characters": "Miss Henry; Cristina Yang",
+    "description": "Meredith Grey, Cristina Yang, Izzie Stevens, George O'Malley, and Alex Karev navigate the intense pressures of surgical residency at Seattle Grace Hospital. As they tackle demanding shifts, complex cases, and personal struggles, they form friendships and rivalries, supporting each other through setbacks and triumphs. Competition, secrets, humor, conflict, and vulnerability shape their relationships, creating tension but also camaraderie. Their evolving dynamics become a crucial source of strength and personal growth, forming a close-knit group whose development as doctors and individuals is deeply intertwined with their bonds.",
+    "main_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
+    "interfering_episode_characters": "Miranda Bailey; Olivia Harper",
     "single_episode_progression_events": [
       {
-        "content": "Meredith receives a call from Miss Henry at her mother's nursing home about Ellis Grey.",
+        "content": "Cristina questions Meredith about her sex life with Derek, prompting group discussion about personal relationships among the interns.",
         "ordinal_position": 1,
         "characters_involved": [
+          "Cristina Yang",
           "Meredith Grey",
-          "Miss Henry"
+          "Izzie Stevens"
         ],
-        "start_timestamp": "00:01:53,346",
-        "end_timestamp": "00:01:54,655",
+        "start_timestamp": "00:00:03,435",
+        "end_timestamp": "00:00:12,595",
         "confidence_score": 0.95,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Meredith avoids discussing her mother's condition with Miss Henry.",
+        "content": "Izzie teases George about being caught in the bathroom, leading to group jokes and George's embarrassment about his private life.",
         "ordinal_position": 2,
         "characters_involved": [
-          "Meredith Grey",
-          "Miss Henry"
-        ],
-        "start_timestamp": "00:01:54,573",
-        "end_timestamp": "00:02:01,941",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Miss Henry tells Meredith that Ellis Grey has been asking for her.",
-        "ordinal_position": 3,
-        "characters_involved": [
-          "Miss Henry",
-          "Meredith Grey",
-          "Ellis Grey"
-        ],
-        "start_timestamp": "00:35:46,675",
-        "end_timestamp": "00:35:53,646",
-        "confidence_score": 0.92,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Meredith confides in Cristina about her mother's Alzheimer's diagnosis and the difficulty of keeping it a secret.",
-        "ordinal_position": 4,
-        "characters_involved": [
-          "Meredith Grey",
-          "Cristina Yang"
-        ],
-        "start_timestamp": "00:36:00,076",
-        "end_timestamp": "00:36:38,016",
-        "confidence_score": 0.97,
-        "extraction_method": "dialogue_matching"
-      }
-    ]
-  },
-  {
-    "title": "Cristina Yang and Preston Burke: Ambiguous Romance and Professional Ambition",
-    "arc_type": "Soap Arc",
-    "description": "Cristina Yang and Dr. Preston Burke navigate a secret romantic relationship while working together as surgeon and intern. Their connection is complicated by the demands of surgical careers, the need for discretion, and uncertainty about defining their relationship. Throughout the season, they struggle to balance ambition, professionalism, and personal feelings as their relationship evolves.",
-    "main_characters": "Cristina Yang; Preston Burke",
-    "interfering_episode_characters": "Meredith Grey",
-    "single_episode_progression_events": [
-      {
-        "content": "Burke asks Cristina for her home phone number to connect outside of work.",
-        "ordinal_position": 1,
-        "characters_involved": [
-          "Cristina Yang",
-          "Preston Burke"
-        ],
-        "start_timestamp": "00:03:33,295",
-        "end_timestamp": "00:03:38,543",
-        "confidence_score": 0.95,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Cristina refuses to give Burke her number and leaves abruptly.",
-        "ordinal_position": 2,
-        "characters_involved": [
-          "Cristina Yang",
-          "Preston Burke"
-        ],
-        "start_timestamp": "00:03:38,905",
-        "end_timestamp": "00:03:43,591",
-        "confidence_score": 0.92,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Cristina makes a private phone call to confirm a medical appointment, keeping it secret from Burke.",
-        "ordinal_position": 3,
-        "characters_involved": [
-          "Cristina Yang"
-        ],
-        "start_timestamp": "00:03:07,967",
-        "end_timestamp": "00:03:20,020",
-        "confidence_score": 0.93,
-        "extraction_method": "dialogue_matching"
-      }
-    ]
-  },
-  {
-    "title": "Miranda Bailey's Rigorous Mentorship and the Shaping of Surgical Interns",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Dr. Miranda Bailey establishes herself as a strict but effective mentor to the new surgical interns at Seattle Grace Hospital. Through her demanding expectations, no-nonsense rules, and rigorous guidance, Bailey challenges the interns to confront their weaknesses, learn from their mistakes, and develop the resilience and clinical skills necessary to survive the intense pressures of surgical training. The arc follows Bailey's pivotal role in shaping the interns' sense of responsibility, helping them navigate ethical dilemmas, and preparing them to meet the high professional standards required within the hospital's demanding hierarchy.",
-    "main_characters": "Miranda Bailey",
-    "interfering_episode_characters": "Cristina Yang; Meredith Grey; Izzie Stevens; George O'Malley; Alex Karev; Preston Burke; Patricia",
-    "single_episode_progression_events": [
-      {
-        "content": "Bailey assigns the interns to assist Dr. Burke with Bill's case and oversees their participation in the procedure.",
-        "ordinal_position": 1,
-        "characters_involved": [
-          "Miranda Bailey",
-          "Cristina Yang",
-          "Meredith Grey",
           "Izzie Stevens",
           "George O'Malley",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:01:11,352",
+        "end_timestamp": "00:02:44,025",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina and Alex encourage George to pursue Olivia Harper, resulting in George asking her out and beginning a new romantic connection.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Cristina Yang",
           "Alex Karev",
-          "Preston Burke"
-        ],
-        "start_timestamp": "00:06:46,110",
-        "end_timestamp": "00:07:04,550",
-        "confidence_score": 0.92,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Bailey supervises the interns as they perform a paracentesis on Mr. Franklin, instructing them on proper procedure.",
-        "ordinal_position": 2,
-        "characters_involved": [
-          "Miranda Bailey",
-          "Cristina Yang",
-          "Meredith Grey",
-          "Izzie Stevens",
-          "George O'Malley"
-        ],
-        "start_timestamp": "00:13:17,990",
-        "end_timestamp": "00:13:34,567",
-        "confidence_score": 0.92,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Bailey reassures the interns after Mr. Franklin's unexpected death, explaining that they followed protocol and that the likely cause was underlying disease.",
-        "ordinal_position": 3,
-        "characters_involved": [
-          "Miranda Bailey",
-          "Cristina Yang",
-          "Meredith Grey",
-          "Izzie Stevens",
-          "George O'Malley"
-        ],
-        "start_timestamp": "00:26:48,989",
-        "end_timestamp": "00:27:07,443",
-        "confidence_score": 0.93,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Bailey addresses the hospital staff about a syphilis outbreak, emphasizing the importance of responsibility and safe practices.",
-        "ordinal_position": 4,
-        "characters_involved": [
-          "Miranda Bailey",
-          "Hospital Staff",
           "George O'Malley",
-          "Cristina Yang",
-          "Izzie Stevens",
-          "Meredith Grey",
-          "Alex Karev"
+          "Olivia Harper"
         ],
-        "start_timestamp": "00:21:21,203",
-        "end_timestamp": "00:21:53,865",
-        "confidence_score": 0.95,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Bailey discovers the interns performed an unauthorized autopsy on Mr. Franklin and confronts them about the legal and professional consequences.",
-        "ordinal_position": 5,
-        "characters_involved": [
-          "Miranda Bailey",
-          "Cristina Yang",
-          "Meredith Grey",
-          "Izzie Stevens",
-          "George O'Malley"
-        ],
-        "start_timestamp": "00:37:01,190",
-        "end_timestamp": "00:37:39,157",
-        "confidence_score": 0.95,
-        "extraction_method": "dialogue_matching"
-      }
-    ]
-  },
-  {
-    "title": "Power Dynamics, Professional Boundaries, and Ethical Dilemmas at Seattle Grace",
-    "arc_type": "Genre-Specific Arc",
-    "description": "The staff and interns at Seattle Grace navigate the hospital's rigid hierarchies, power struggles, and institutional politics. Across the season, attendings, residents, and interns confront challenges to professional boundaries, face ethical dilemmas, and uphold the unspoken code among doctors. They deal with dilemmas involving reporting impaired colleagues, making critical medical decisions, and managing the consequences of personal relationships within the high-pressure environment of surgical training. These experiences shape their development as medical professionals.",
-    "main_characters": "Cristina Yang; Meredith Grey; Izzie Stevens; George O'Malley; Miranda Bailey; Preston Burke",
-    "interfering_episode_characters": "Bill; Molly; Mr. Franklin; Patricia; Hospital Staff",
-    "single_episode_progression_events": [
-      {
-        "content": "Cristina refuses to give Preston Burke her home number and avoids his attempts to connect outside of work, reinforcing professional boundaries.",
-        "ordinal_position": 1,
-        "characters_involved": [
-          "Cristina Yang",
-          "Preston Burke"
-        ],
-        "start_timestamp": "00:03:24,824",
-        "end_timestamp": "00:03:43,711",
-        "confidence_score": 0.92,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "The interns assist Dr. Burke with his college friend Bill's medical case, highlighting the intersection of personal relationships and professional responsibilities.",
-        "ordinal_position": 2,
-        "characters_involved": [
-          "Preston Burke",
-          "Cristina Yang",
-          "Meredith Grey",
-          "Izzie Stevens",
-          "George O'Malley",
-          "Bill"
-        ],
-        "start_timestamp": "00:06:46,110",
-        "end_timestamp": "00:07:47,096",
+        "start_timestamp": "00:00:26,742",
+        "end_timestamp": "00:00:32,029",
         "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "The interns perform a paracentesis on Mr. Franklin under Miranda Bailey's supervision, adhering to protocol when the patient dies unexpectedly.",
-        "ordinal_position": 3,
+        "content": "Cristina and Izzie tease George about his relationship with Olivia, highlighting the group's camaraderie and willingness to poke fun at each other.",
+        "ordinal_position": 4,
         "characters_involved": [
-          "Miranda Bailey",
           "Cristina Yang",
-          "Meredith Grey",
           "Izzie Stevens",
-          "George O'Malley",
-          "Mr. Franklin"
+          "George O'Malley"
         ],
-        "start_timestamp": "00:24:14,367",
-        "end_timestamp": "00:26:20,833",
-        "confidence_score": 0.93,
+        "start_timestamp": "00:04:26,720",
+        "end_timestamp": "00:04:44,158",
+        "confidence_score": 0.88,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Miranda Bailey addresses the hospital staff about a syphilis outbreak, emphasizing the importance of professional conduct and safe practices.",
-        "ordinal_position": 4,
+        "content": "George confides in Cristina about his rash, and she diagnoses him with syphilis, deepening their trust and exposing vulnerabilities.",
+        "ordinal_position": 5,
         "characters_involved": [
-          "Miranda Bailey",
-          "Hospital Staff",
           "George O'Malley",
-          "Patricia"
+          "Cristina Yang"
         ],
-        "start_timestamp": "00:21:27,410",
-        "end_timestamp": "00:22:16,083",
+        "start_timestamp": "00:05:02,346",
+        "end_timestamp": "00:06:02,509",
         "confidence_score": 0.95,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "The interns perform an unauthorized autopsy on Mr. Franklin to clear their names, knowingly violating hospital rules.",
-        "ordinal_position": 5,
-        "characters_involved": [
-          "Cristina Yang",
-          "Meredith Grey",
-          "Izzie Stevens",
-          "George O'Malley"
-        ],
-        "start_timestamp": "00:30:48,940",
-        "end_timestamp": "00:33:34,165",
-        "confidence_score": 0.92,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Miranda Bailey discovers the interns' unauthorized autopsy and reprimands them, warning of legal and professional repercussions.",
+        "content": "Alex, Cristina, and Izzie discuss George's syphilis diagnosis, with Alex making jokes and Cristina insisting George must tell Olivia.",
         "ordinal_position": 6,
         "characters_involved": [
-          "Miranda Bailey",
+          "Alex Karev",
           "Cristina Yang",
-          "Meredith Grey",
           "Izzie Stevens",
           "George O'Malley"
         ],
-        "start_timestamp": "00:37:01,190",
-        "end_timestamp": "00:37:34,833",
+        "start_timestamp": "00:09:27,528",
+        "end_timestamp": "00:10:44,493",
         "confidence_score": 0.93,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Preston Burke confronts Molly about the paternity of her unborn child and struggles with whether to reveal the truth to Bill.",
+        "content": "Bailey and the surgical team tease George about his syphilis in the break room, publicly exposing his secret.",
         "ordinal_position": 7,
         "characters_involved": [
-          "Preston Burke",
-          "Molly",
-          "Bill"
-        ],
-        "start_timestamp": "00:34:37,782",
-        "end_timestamp": "00:35:19,135",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      }
-    ]
-  },
-  {
-    "title": "Institutional Challenges: Learning Through Failure and Unorthodox Actions",
-    "arc_type": "Genre-Specific Arc",
-    "description": "Throughout the season, the interns face institutional barriers such as strict protocols, legal risks, and the threat of disciplinary action. Their willingness to challenge or circumvent hospital rules—by performing unauthorized procedures or autopsies—demonstrates their commitment to learning and patient care, but also exposes them to professional consequences and tests the boundaries of the hospital's tolerance for rule-breaking. These experiences drive their growth as doctors and shape their understanding of medical ethics and responsibility.",
-    "main_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley",
-    "interfering_episode_characters": "Miranda Bailey; Mr. Franklin; Mr. Franklin's Family",
-    "single_episode_progression_events": [
-      {
-        "content": "The interns perform a paracentesis on Mr. Franklin under Bailey's supervision, following hospital protocol.",
-        "ordinal_position": 1,
-        "characters_involved": [
-          "Meredith Grey",
-          "Cristina Yang",
-          "Izzie Stevens",
-          "George O'Malley",
           "Miranda Bailey",
-          "Mr. Franklin"
-        ],
-        "start_timestamp": "00:24:14,367",
-        "end_timestamp": "00:25:02,579",
-        "confidence_score": 0.95,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Mr. Franklin dies unexpectedly after the procedure.",
-        "ordinal_position": 2,
-        "characters_involved": [
-          "Meredith Grey",
-          "Cristina Yang",
-          "Izzie Stevens",
           "George O'Malley",
-          "Miranda Bailey",
-          "Mr. Franklin"
-        ],
-        "start_timestamp": "00:26:07,132",
-        "end_timestamp": "00:26:19,651",
-        "confidence_score": 0.95,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "The interns debate whether to perform an autopsy on Mr. Franklin despite the family's refusal.",
-        "ordinal_position": 3,
-        "characters_involved": [
-          "Meredith Grey",
+          "Alex Karev",
           "Cristina Yang",
           "Izzie Stevens",
-          "George O'Malley"
+          "Meredith Grey"
         ],
-        "start_timestamp": "00:26:39,951",
-        "end_timestamp": "00:27:15,576",
+        "start_timestamp": "00:11:07,884",
+        "end_timestamp": "00:11:29,994",
         "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "The interns perform an unauthorized autopsy on Mr. Franklin.",
-        "ordinal_position": 4,
+        "content": "Cristina, Izzie, and Meredith decide to perform an unauthorized autopsy to clear their names after a patient's death.",
+        "ordinal_position": 8,
         "characters_involved": [
-          "Meredith Grey",
           "Cristina Yang",
           "Izzie Stevens",
-          "George O'Malley",
-          "Mr. Franklin"
+          "Meredith Grey"
         ],
-        "start_timestamp": "00:28:44,182",
-        "end_timestamp": "00:33:34,165",
-        "confidence_score": 0.9,
+        "start_timestamp": "00:30:48,940",
+        "end_timestamp": "00:31:10,372",
+        "confidence_score": 0.92,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Bailey discovers the unauthorized autopsy and confronts the interns about the legal and professional risks.",
-        "ordinal_position": 5,
+        "content": "Cristina, Izzie, and Meredith sneak into the morgue at night and perform the autopsy together.",
+        "ordinal_position": 9,
         "characters_involved": [
-          "Miranda Bailey",
-          "Meredith Grey",
           "Cristina Yang",
           "Izzie Stevens",
-          "George O'Malley"
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:32:28,726",
+        "end_timestamp": "00:33:08,678",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey confronts Cristina, Izzie, and Meredith about their unauthorized autopsy, threatening consequences.",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey"
         ],
         "start_timestamp": "00:37:01,190",
         "end_timestamp": "00:37:39,157",
@@ -889,18 +637,231 @@
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "The interns present the autopsy results to Mr. Franklin's family, revealing a genetic disorder as the true cause of death.",
-        "ordinal_position": 6,
+        "content": "George learns from Olivia that she was seeing Alex when she started dating George, leading to a confrontation between George and Alex, with Cristina, Izzie, and Meredith intervening.",
+        "ordinal_position": 11,
         "characters_involved": [
+          "George O'Malley",
+          "Olivia Harper",
+          "Alex Karev",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:40:08,751",
+        "end_timestamp": "00:40:47,483",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina, Meredith, and Izzie unwind together after the long day, joking about rules and supporting each other.",
+        "ordinal_position": 12,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:40:59,655",
+        "end_timestamp": "00:41:21,708",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Mentorship, Power Struggles, and Professional Hierarchies at Seattle Grace Hospital",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Throughout the season, Seattle Grace Hospital's culture is shaped by the mentorship and authority of senior surgeons, especially Dr. Miranda Bailey and Chief Richard Webber. Their leadership sets standards, expectations, and opportunities for interns and residents. Power struggles, shifting alliances, and professional boundaries are tested through case assignments, ethical dilemmas, and the arrival of new staff, continually redefining hierarchies and influencing patient care and career advancement.",
+    "main_characters": "Miranda Bailey; Richard Webber; Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev; Preston Burke; Derek Shepherd",
+    "interfering_episode_characters": "Patricia; Olivia Harper; Dr. Knox; Interns; Residents; Attendings",
+    "single_episode_progression_events": [
+      {
+        "content": "Dr. Miranda Bailey leads surgical rounds and sets expectations for the interns.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Miranda Bailey",
           "Meredith Grey",
           "Cristina Yang",
           "Izzie Stevens",
           "George O'Malley",
-          "Mr. Franklin's Family"
+          "Alex Karev"
         ],
-        "start_timestamp": "00:38:38,596",
-        "end_timestamp": "00:39:19,920",
+        "start_timestamp": "00:06:53,999",
+        "end_timestamp": "00:07:24,918",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Chief Richard Webber grants Meredith exclusive access to an Alzheimer's patient.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Richard Webber",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:00:35,192",
+        "end_timestamp": "00:00:42,323",
         "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey assigns George and Izzie to perform a paracentesis on Mr. Franklin.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Miranda Bailey",
+          "George O'Malley",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:13:19,291",
+        "end_timestamp": "00:13:31,764",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey and the surgical team discuss George's syphilis diagnosis in a professional context.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Miranda Bailey",
+          "George O'Malley",
+          "Alex Karev",
+          "Cristina Yang",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:10:43,591",
+        "end_timestamp": "00:10:46,956",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Patricia announces a syphilis outbreak among staff and conducts a safe sex demonstration for hospital personnel.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Patricia",
+          "Miranda Bailey",
+          "Richard Webber",
+          "Interns",
+          "Residents",
+          "Attendings"
+        ],
+        "start_timestamp": "00:21:14,438",
+        "end_timestamp": "00:22:16,462",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina, Izzie, and Meredith perform an unauthorized autopsy to clear their names.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:30:48,940",
+        "end_timestamp": "00:33:08,678",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Bailey discovers the unauthorized autopsy and confronts the interns about legal and professional consequences.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:37:01,190",
+        "end_timestamp": "00:37:37,416",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Burke confides in Meredith about his vision problems and asks her to keep it secret.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Preston Burke",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:16:08,292",
+        "end_timestamp": "00:16:34,740",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Professional Boundaries and Ethical Dilemmas in Patient Care",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The interns and attendings at Seattle Grace Hospital confront ethical dilemmas and professional boundaries in patient care. They navigate issues of patient autonomy, advocacy, and institutional authority, often challenging norms to prioritize patient well-being. These experiences shape their growth as doctors and individuals.",
+    "main_characters": "Cristina Yang; Izzie Stevens; Meredith Grey",
+    "interfering_episode_characters": "Miranda Bailey; Preston Burke; Dr. Knox; Mr. Franklin's Family",
+    "single_episode_progression_events": [
+      {
+        "content": "Cristina, Izzie, and Meredith decide to perform an unauthorized autopsy on Mr. Franklin to determine the true cause of his death after he dies suddenly during a procedure.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:30:48,940",
+        "end_timestamp": "00:31:35,979",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina, Izzie, and Meredith sneak into the morgue at night and perform the autopsy without official permission.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:32:28,726",
+        "end_timestamp": "00:33:08,678",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Miranda Bailey grows suspicious of the interns' whereabouts and questions them about their activities.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:34:00,218",
+        "end_timestamp": "00:34:19,802",
+        "confidence_score": 0.88,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Miranda Bailey discovers the unauthorized autopsy and confronts the interns, warning them of the legal and professional consequences.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Miranda Bailey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:37:01,190",
+        "end_timestamp": "00:37:39,157",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Preston Burke and Dr. Knox review the autopsy findings and explain to Mr. Franklin's family that he died of hematomacrosis, not a procedural complication.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Preston Burke",
+          "Dr. Knox",
+          "Mr. Franklin's Family",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:38:38,597",
+        "end_timestamp": "00:39:19,920",
+        "confidence_score": 0.91,
         "extraction_method": "dialogue_matching"
       }
     ]

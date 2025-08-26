@@ -1,308 +1,281 @@
 [
   {
-    "title": "Medical Case: Jorge Cruz's Nail Gun Head Injury and Brain Tumor",
+    "title": "Medical Case: Jorge Cruz's Nail Gun Head Trauma and Brain Tumor",
     "arc_type": "Anthology Arc",
-    "description": "Jorge Cruz is admitted to the hospital after accidentally shooting seven nails into his skull with a nail gun. The medical team must carefully remove the nails while minimizing neurological damage. During his treatment, they discover Jorge has a hypothalamic tumor, forcing his family to choose between a high-risk surgery that could cause memory loss or less invasive radiation with a shorter life expectancy. The arc explores trauma care, surgical risk, and complex family decisions.",
-    "main_characters": "Jorge Cruz; Dr. Derek Shepherd; Meredith Grey",
-    "interfering_episode_characters": "Sona Cruz; Javi; Dr. Miranda Bailey; George O'Malley; Cristina Yang; Alex Karev",
+    "description": "Jorge Cruz is admitted to the hospital after a traumatic accident leaves him with multiple nails embedded in his skull. The medical team must safely remove the nails and manage the immediate risks, only to discover a previously undiagnosed brain tumor. Jorge faces a life-altering decision between surgery and radiation, each with significant consequences for his future. The arc explores the complexities of emergency trauma care, the discovery of serious underlying conditions, and the emotional impact of difficult medical choices.",
+    "main_characters": "Jorge Cruz; Derek Shepherd",
+    "interfering_episode_characters": "Meredith Grey; George O'Malley; Izzie Stevens; Alex Karev; Sona Cruz",
     "single_episode_progression_events": [
       {
-        "content": "Jorge Cruz arrives at the hospital after accidentally shooting seven nails into his skull with a nail gun.",
+        "content": "Jorge Cruz arrives at the hospital with seven nails embedded in his skull after falling down stairs with a nail gun.",
         "ordinal_position": 1,
         "characters_involved": [
           "Jorge Cruz",
           "Meredith Grey",
           "George O'Malley",
-          "Dr. Derek Shepherd",
-          "Dr. Miranda Bailey"
+          "Izzie Stevens",
+          "Alex Karev",
+          "Derek Shepherd"
         ],
-        "start_timestamp": "00:06:05,298",
-        "end_timestamp": "00:06:56,587",
+        "start_timestamp": "00:06:22,925",
+        "end_timestamp": "00:06:24,612",
         "confidence_score": 0.95,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "The team finds Jorge conscious but blind and discusses imaging options due to the metal in his head.",
+        "content": "The trauma team stabilizes Jorge, who is conscious but temporarily blind, and orders imaging to assess the extent of the injuries.",
         "ordinal_position": 2,
         "characters_involved": [
           "Jorge Cruz",
-          "Dr. Derek Shepherd",
           "Meredith Grey",
           "George O'Malley",
-          "Dr. Miranda Bailey"
+          "Derek Shepherd",
+          "Izzie Stevens",
+          "Alex Karev"
         ],
-        "start_timestamp": "00:07:06,588",
-        "end_timestamp": "00:07:52,360",
-        "confidence_score": 0.95,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Sona Cruz and Javi arrive and provide additional history about Jorge's symptoms.",
-        "ordinal_position": 3,
-        "characters_involved": [
-          "Jorge Cruz",
-          "Sona Cruz",
-          "Javi",
-          "Dr. Derek Shepherd",
-          "Meredith Grey"
-        ],
-        "start_timestamp": "00:09:47,517",
-        "end_timestamp": "00:10:07,418",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "The surgical team prepares for the removal of the nails, discussing the risks of further neurological damage.",
-        "ordinal_position": 4,
-        "characters_involved": [
-          "Dr. Derek Shepherd",
-          "Dr. Miranda Bailey",
-          "Meredith Grey",
-          "George O'Malley",
-          "Alex Karev",
-          "Cristina Yang"
-        ],
-        "start_timestamp": "00:16:41,682",
-        "end_timestamp": "00:17:05,240",
+        "start_timestamp": "00:06:56,588",
+        "end_timestamp": "00:07:51,701",
         "confidence_score": 0.92,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Dr. Shepherd and the team successfully remove the nails from Jorge's skull during surgery.",
-        "ordinal_position": 5,
+        "content": "Sona Cruz arrives and provides Jorge's medical history, including recent headaches and dizziness.",
+        "ordinal_position": 3,
         "characters_involved": [
-          "Dr. Derek Shepherd",
-          "Dr. Miranda Bailey",
+          "Sona Cruz",
+          "Jorge Cruz",
+          "Meredith Grey",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:12:14,613",
+        "end_timestamp": "00:12:47,783",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The team uses X-rays and a C-Arm to plan the removal of the nails due to a malfunctioning CT scanner.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Derek Shepherd",
           "Meredith Grey",
           "George O'Malley",
           "Alex Karev",
-          "Cristina Yang",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:07:35,725",
+        "end_timestamp": "00:07:49,117",
+        "confidence_score": 0.88,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek Shepherd and the surgical team remove the nails from Jorge's skull in the operating room.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Meredith Grey",
+          "George O'Malley",
+          "Alex Karev",
+          "Izzie Stevens",
           "Jorge Cruz"
         ],
-        "start_timestamp": "00:19:24,375",
+        "start_timestamp": "00:16:41,682",
         "end_timestamp": "00:19:41,335",
         "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Jorge regains consciousness and partial vision after surgery, and further tests are ordered.",
+        "content": "The team discovers a brain tumor in Jorge during follow-up imaging after surgery.",
         "ordinal_position": 6,
         "characters_involved": [
-          "Jorge Cruz",
+          "Derek Shepherd",
           "Meredith Grey",
-          "Cristina Yang",
-          "Dr. Derek Shepherd"
-        ],
-        "start_timestamp": "00:23:54,413",
-        "end_timestamp": "00:27:38,405",
-        "confidence_score": 0.85,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "An MRI reveals Jorge has a hypothalamic tumor.",
-        "ordinal_position": 7,
-        "characters_involved": [
-          "Jorge Cruz",
-          "Meredith Grey",
-          "Cristina Yang",
-          "Dr. Derek Shepherd"
+          "George O'Malley",
+          "Jorge Cruz"
         ],
         "start_timestamp": "00:30:10,432",
         "end_timestamp": "00:30:14,454",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "The team discusses treatment options with Jorge and Sona: a risky surgery that could cause memory loss or less invasive radiation with a shorter life expectancy.",
-        "ordinal_position": 8,
-        "characters_involved": [
-          "Jorge Cruz",
-          "Sona Cruz",
-          "Dr. Derek Shepherd",
-          "Meredith Grey",
-          "Cristina Yang"
-        ],
-        "start_timestamp": "00:30:28,692",
-        "end_timestamp": "00:31:27,823",
-        "confidence_score": 0.92,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Sona supports Jorge’s decision regarding his treatment.",
-        "ordinal_position": 9,
-        "characters_involved": [
-          "Sona Cruz",
-          "Jorge Cruz",
-          "Meredith Grey",
-          "Cristina Yang"
-        ],
-        "start_timestamp": "00:37:02,858",
-        "end_timestamp": "00:37:45,626",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      }
-    ]
-  },
-  {
-    "title": "Medical Case: Elizabeth 'Nurse' Fallon's Pancreatic Cancer and DNR",
-    "arc_type": "Anthology Arc",
-    "description": "Elizabeth Fallon, a respected former scrub nurse, is hospitalized with advanced pancreatic cancer. The surgical team considers a Whipple procedure, but Fallon is evasive about surgery and her health declines. Ultimately, she suffers a code and, due to her DNR order, the team must let her go. The arc explores end-of-life care, the emotional toll on medical staff, and the importance of respecting patient autonomy.",
-    "main_characters": "Elizabeth Fallon; Cristina Yang; Meredith Grey",
-    "interfering_episode_characters": "Dr. Burke; Liz (scrub nurse); Dr. Bailey; Medical Team",
-    "single_episode_progression_events": [
-      {
-        "content": "Cristina Yang meets Elizabeth Fallon, who insists on being called 'Nurse Fallon' and recognizes Cristina's ambition to assist in her surgery.",
-        "ordinal_position": 1,
-        "characters_involved": [
-          "Cristina Yang",
-          "Elizabeth Fallon"
-        ],
-        "start_timestamp": "00:03:34,680",
-        "end_timestamp": "00:04:13,807",
-        "confidence_score": 0.95,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Cristina presents Nurse Fallon's case to Dr. Burke and asks to assist in the Whipple procedure.",
-        "ordinal_position": 2,
-        "characters_involved": [
-          "Cristina Yang",
-          "Dr. Burke",
-          "Elizabeth Fallon"
-        ],
-        "start_timestamp": "00:08:03,533",
-        "end_timestamp": "00:08:27,605",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Dr. Burke assigns Meredith Grey to Fallon's case, believing she and Liz may connect due to Meredith's mother, Ellis Grey.",
-        "ordinal_position": 3,
-        "characters_involved": [
-          "Dr. Burke",
-          "Meredith Grey",
-          "Elizabeth Fallon",
-          "Liz (scrub nurse)"
-        ],
-        "start_timestamp": "00:08:28,086",
-        "end_timestamp": "00:08:51,850",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Cristina is instructed by Dr. Burke to stay with Fallon and confirms she is on call for the case.",
-        "ordinal_position": 4,
-        "characters_involved": [
-          "Cristina Yang",
-          "Dr. Burke",
-          "Elizabeth Fallon"
-        ],
-        "start_timestamp": "00:20:03,364",
-        "end_timestamp": "00:20:33,096",
-        "confidence_score": 0.92,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Meredith Grey and Elizabeth Fallon discuss Ellis Grey, with Fallon questioning Meredith about her mother's whereabouts.",
-        "ordinal_position": 5,
-        "characters_involved": [
-          "Meredith Grey",
-          "Elizabeth Fallon"
-        ],
-        "start_timestamp": "00:21:00,383",
-        "end_timestamp": "00:21:54,940",
         "confidence_score": 0.93,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Meredith confronts Fallon about her evasiveness regarding the Whipple surgery and accuses her of never intending to operate.",
-        "ordinal_position": 6,
-        "characters_involved": [
-          "Meredith Grey",
-          "Elizabeth Fallon"
-        ],
-        "start_timestamp": "00:29:14,288",
-        "end_timestamp": "00:29:47,755",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Cristina Yang and Meredith Grey discover Fallon's worsening labs and lack of progress, prompting further discussion about her care.",
+        "content": "Derek Shepherd explains treatment options to Jorge and Sona: surgery with risk of memory and personality loss, or radiation with shorter life but preserved identity.",
         "ordinal_position": 7,
         "characters_involved": [
-          "Cristina Yang",
-          "Meredith Grey",
-          "Elizabeth Fallon"
+          "Derek Shepherd",
+          "Jorge Cruz",
+          "Sona Cruz",
+          "Meredith Grey"
         ],
-        "start_timestamp": "00:20:03,364",
-        "end_timestamp": "00:20:23,746",
-        "confidence_score": 0.88,
+        "start_timestamp": "00:30:29,992",
+        "end_timestamp": "00:31:27,823",
+        "confidence_score": 0.95,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Elizabeth Fallon's condition deteriorates and she codes; the team attempts resuscitation but must stop due to her DNR order.",
+        "content": "Jorge and Sona discuss the implications of each treatment option, with Sona supporting Jorge's decision.",
         "ordinal_position": 8,
         "characters_involved": [
-          "Elizabeth Fallon",
-          "Cristina Yang",
-          "Meredith Grey",
-          "Dr. Burke",
-          "Medical Team"
+          "Jorge Cruz",
+          "Sona Cruz"
         ],
-        "start_timestamp": "00:35:40,228",
-        "end_timestamp": "00:38:08,876",
-        "confidence_score": 0.95,
+        "start_timestamp": "00:36:53,565",
+        "end_timestamp": "00:37:45,626",
+        "confidence_score": 0.92,
         "extraction_method": "dialogue_matching"
       }
     ]
   },
   {
-    "title": "Medical Case: Mr. Humphrey's Prostate Cancer and Patient-Doctor Boundaries",
+    "title": "Medical Case: Nurse Elizabeth Fallon's Pancreatic Cancer",
     "arc_type": "Anthology Arc",
-    "description": "Mr. Humphrey, an older patient diagnosed with prostate cancer, faces a choice between radical surgery and a conservative approach. His refusal to allow Dr. Izzie Stevens to participate in his care due to her past as a lingerie model creates conflict over professionalism and respect. Izzie ultimately asserts her role as a doctor, advocates for Mr. Humphrey's wishes in surgery, and ensures his dignity is preserved. The arc explores patient dignity, gender dynamics, and the importance of advocacy in medical care.",
-    "main_characters": "Izzie Stevens; Mr. Humphrey",
-    "interfering_episode_characters": "Dr. Shepherd; Cristina Yang; Dr. Victor; Dr. Bailey",
+    "description": "Nurse Elizabeth Fallon, a respected former scrub nurse, is admitted to the hospital with advanced pancreatic cancer. The medical team debates whether to attempt a high-risk Whipple procedure or allow her to die peacefully in the hospital where she dedicated her career. The arc explores the ethical and emotional complexities of end-of-life care within the hospital setting.",
+    "main_characters": "Nurse Elizabeth Fallon; Cristina Yang; Dr. Miranda Bailey; Dr. Preston Burke",
+    "interfering_episode_characters": "Meredith Grey; Izzie Stevens; Ellis Grey; Richard Webber",
     "single_episode_progression_events": [
       {
-        "content": "Mr. Humphrey recognizes Izzie Stevens from a lingerie ad and refuses to let her participate in his care.",
+        "content": "Cristina Yang meets Nurse Elizabeth Fallon, who requests to be called 'Nurse Fallon' and recognizes Cristina's ambition.",
         "ordinal_position": 1,
         "characters_involved": [
-          "Mr. Humphrey",
-          "Izzie Stevens"
+          "Cristina Yang",
+          "Nurse Elizabeth Fallon"
         ],
-        "start_timestamp": "00:04:58,211",
-        "end_timestamp": "00:05:22,987",
+        "start_timestamp": "00:03:34,680",
+        "end_timestamp": "00:04:29,281",
         "confidence_score": 0.95,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Dr. Shepherd prepares for Mr. Humphrey’s prostate biopsy, but Mr. Humphrey reiterates his refusal to have Izzie involved.",
+        "content": "Dr. Miranda Bailey presents Nurse Fallon's case to the attendings and discusses the possibility of a Whipple procedure.",
         "ordinal_position": 2,
         "characters_involved": [
-          "Dr. Shepherd",
-          "Mr. Humphrey",
-          "Izzie Stevens"
+          "Dr. Miranda Bailey",
+          "Nurse Elizabeth Fallon",
+          "Dr. Preston Burke",
+          "Interns"
         ],
-        "start_timestamp": "00:11:55,373",
-        "end_timestamp": "00:12:03,379",
+        "start_timestamp": "00:08:03,533",
+        "end_timestamp": "00:09:12,807",
         "confidence_score": 0.92,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Cristina Yang finds Izzie hiding in the hallway and tells her to act like a doctor and do her job despite Mr. Humphrey’s attitude.",
+        "content": "Cristina Yang expresses disappointment when Meredith Grey is assigned to Nurse Fallon's case.",
         "ordinal_position": 3,
         "characters_involved": [
           "Cristina Yang",
-          "Izzie Stevens"
+          "Meredith Grey",
+          "Dr. Miranda Bailey"
         ],
-        "start_timestamp": "00:13:10,355",
-        "end_timestamp": "00:13:33,028",
+        "start_timestamp": "00:09:24,412",
+        "end_timestamp": "00:09:41,740",
         "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Izzie confronts Mr. Humphrey about his refusal, asserting her qualifications and demanding respect as his doctor.",
+        "content": "Nurse Fallon reveals she was Ellis Grey's scrub nurse for eighteen years but never met Meredith Grey.",
         "ordinal_position": 4,
+        "characters_involved": [
+          "Nurse Elizabeth Fallon",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:09:46,004",
+        "end_timestamp": "00:09:51,850",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Nurse Fallon's condition worsens, with labs showing elevated liver enzymes and worsening jaundice.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Nurse Elizabeth Fallon",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Dr. Preston Burke"
+        ],
+        "start_timestamp": "00:20:03,364",
+        "end_timestamp": "00:20:24,007",
+        "confidence_score": 0.91,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina Yang and Izzie Stevens urge Dr. Burke to schedule the Whipple procedure, but Dr. Burke decides to wait for biopsy results.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Dr. Preston Burke"
+        ],
+        "start_timestamp": "00:29:14,288",
+        "end_timestamp": "00:29:42,096",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Miranda Bailey suspects Dr. Burke never intended to operate and believes Nurse Fallon was admitted to die in the hospital.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Dr. Preston Burke",
+          "Cristina Yang",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:29:42,375",
+        "end_timestamp": "00:29:47,755",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Nurse Fallon's condition deteriorates rapidly, and despite resuscitation efforts, she dies in the hospital.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Nurse Elizabeth Fallon",
+          "Dr. Miranda Bailey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "Dr. Preston Burke"
+        ],
+        "start_timestamp": "00:35:40,228",
+        "end_timestamp": "00:40:59,827",
+        "confidence_score": 0.97,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Medical Case: Mr. Humphrey's Prostate Biopsy and Prostatectomy",
+    "arc_type": "Anthology Arc",
+    "description": "Mr. Humphrey's prostate surgery highlights issues of patient dignity, gender dynamics, and the importance of advocating for patient quality of life, as Izzie Stevens confronts bias stemming from her modeling past and fights to preserve Mr. Humphrey's nerve function during surgery.",
+    "main_characters": "Izzie Stevens; Mr. Humphrey",
+    "interfering_episode_characters": "Cristina Yang; Dr. Victor; Dr. Bailey; Richard Webber",
+    "single_episode_progression_events": [
+      {
+        "content": "Izzie Stevens attempts to examine Mr. Humphrey before his prostate biopsy, but he refuses her care and requests another doctor.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Mr. Humphrey"
+        ],
+        "start_timestamp": "00:04:42,050",
+        "end_timestamp": "00:05:11,430",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Mr. Humphrey tells Izzie he recognizes her from a lingerie magazine and feels uncomfortable with her presence during his procedure.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Mr. Humphrey",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:13:10,355",
+        "end_timestamp": "00:13:27,360",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie confronts Mr. Humphrey, asserting her role as a doctor and demanding professional respect.",
+        "ordinal_position": 3,
         "characters_involved": [
           "Izzie Stevens",
           "Mr. Humphrey"
@@ -313,453 +286,71 @@
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Mr. Humphrey admits he fantasized about Izzie’s modeling photo and does not want her to witness his emasculation during surgery.",
-        "ordinal_position": 5,
+        "content": "During Mr. Humphrey's prostatectomy, Izzie and Cristina Yang advocate for preserving his nerve function to maintain his sexual health.",
+        "ordinal_position": 4,
         "characters_involved": [
+          "Izzie Stevens",
+          "Cristina Yang",
           "Mr. Humphrey",
-          "Izzie Stevens"
-        ],
-        "start_timestamp": "00:28:18,112",
-        "end_timestamp": "00:29:11,490",
-        "confidence_score": 0.92,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "During surgery, Izzie stands up to Dr. Victor, insisting on a nerve-sparing approach as Mr. Humphrey requested.",
-        "ordinal_position": 6,
-        "characters_involved": [
-          "Izzie Stevens",
-          "Dr. Victor",
-          "Dr. Bailey",
-          "Mr. Humphrey"
+          "Dr. Victor"
         ],
         "start_timestamp": "00:39:02,568",
-        "end_timestamp": "00:39:41,597",
-        "confidence_score": 0.93,
+        "end_timestamp": "00:39:35,628",
+        "confidence_score": 0.96,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Dr. Bailey supports Izzie’s advocacy for the patient’s wishes, and the team proceeds with the nerve-sparing surgery.",
-        "ordinal_position": 7,
+        "content": "Dr. Victor initially resists but ultimately allows Izzie to perform the nerve-sparing technique during surgery.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Dr. Victor",
+          "Izzie Stevens",
+          "Cristina Yang",
+          "Mr. Humphrey"
+        ],
+        "start_timestamp": "00:39:35,650",
+        "end_timestamp": "00:39:43,318",
+        "confidence_score": 0.94,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey warns Izzie and Cristina she will report their actions to Richard Webber, but ultimately supports their decision to prioritize Mr. Humphrey's wishes.",
+        "ordinal_position": 6,
         "characters_involved": [
           "Dr. Bailey",
           "Izzie Stevens",
-          "Dr. Victor",
-          "Mr. Humphrey"
-        ],
-        "start_timestamp": "00:39:42,657",
-        "end_timestamp": "00:39:56,217",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      }
-    ]
-  },
-  {
-    "title": "Meredith Grey and Ellis Grey: Legacy and Estrangement",
-    "arc_type": "Soap Arc",
-    "description": "Meredith Grey faces the immense pressure of living up to her mother Ellis Grey's legendary status as a surgeon, while also coping with Ellis's declining health and memory loss. Meredith works to define her own identity and career in medicine, separate from her mother's shadow, and navigates the emotional complexities of their strained relationship.",
-    "main_characters": "Meredith Grey; Ellis Grey",
-    "interfering_episode_characters": "Liz Fallon; Richard Webber; Cristina Yang",
-    "single_episode_progression_events": [
-      {
-        "content": "Liz Fallon, a former scrub nurse who worked with Ellis Grey, expresses skepticism about Meredith's connection to her mother.",
-        "ordinal_position": 1,
-        "characters_involved": [
-          "Liz Fallon",
-          "Meredith Grey"
-        ],
-        "start_timestamp": "00:08:38,196",
-        "end_timestamp": "00:08:51,850",
-        "confidence_score": 0.92,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Liz Fallon reminisces about Ellis Grey's work ethic and asks Meredith about her mother's current whereabouts.",
-        "ordinal_position": 2,
-        "characters_involved": [
-          "Liz Fallon",
-          "Meredith Grey"
-        ],
-        "start_timestamp": "00:21:00,383",
-        "end_timestamp": "00:21:21,544",
-        "confidence_score": 0.93,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Meredith lies to Liz Fallon, claiming Ellis is traveling and not practicing medicine.",
-        "ordinal_position": 3,
-        "characters_involved": [
-          "Meredith Grey",
-          "Liz Fallon"
-        ],
-        "start_timestamp": "00:21:24,227",
-        "end_timestamp": "00:21:32,978",
-        "confidence_score": 0.95,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Liz Fallon notes that Ellis Grey not practicing medicine is out of character, highlighting Meredith's discomfort.",
-        "ordinal_position": 4,
-        "characters_involved": [
-          "Liz Fallon",
-          "Meredith Grey"
-        ],
-        "start_timestamp": "00:21:34,160",
-        "end_timestamp": "00:21:43,932",
-        "confidence_score": 0.92,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Richard Webber tells Meredith that Liz Fallon remembers Ellis Grey.",
-        "ordinal_position": 5,
-        "characters_involved": [
-          "Richard Webber",
-          "Meredith Grey"
-        ],
-        "start_timestamp": "00:31:49,910",
-        "end_timestamp": "00:32:04,866",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Meredith confirms her mother's diagnosis of early-onset Alzheimer's to Cristina Yang.",
-        "ordinal_position": 6,
-        "characters_involved": [
-          "Meredith Grey",
-          "Cristina Yang"
-        ],
-        "start_timestamp": "00:32:29,171",
-        "end_timestamp": "00:32:36,621",
-        "confidence_score": 0.95,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Meredith explains to Cristina Yang why she keeps her mother's illness a secret.",
-        "ordinal_position": 7,
-        "characters_involved": [
-          "Meredith Grey",
-          "Cristina Yang"
-        ],
-        "start_timestamp": "00:32:36,641",
-        "end_timestamp": "00:32:57,141",
-        "confidence_score": 0.92,
-        "extraction_method": "dialogue_matching"
-      }
-    ]
-  },
-  {
-    "title": "Meredith Grey and Derek Shepherd: Secret Romance and Professional Boundaries",
-    "arc_type": "Soap Arc",
-    "description": "Meredith Grey and Derek Shepherd's romantic relationship begins with a one-night stand, only for Meredith to discover that Derek is her attending neurosurgeon at Seattle Grace Hospital. Their relationship is complicated by the need for secrecy, the challenge of maintaining professional boundaries, and the risk to Meredith's reputation and career as they navigate their personal and professional lives.",
-    "main_characters": "Meredith Grey; Derek Shepherd",
-    "interfering_episode_characters": "Cristina Yang; Alex Karev; Izzie Stevens; George O'Malley",
-    "single_episode_progression_events": [
-      {
-        "content": "Cristina Yang and Alex Karev tease Meredith Grey about rumors of her relationship with Dr. Shepherd, questioning her professionalism.",
-        "ordinal_position": 1,
-        "characters_involved": [
-          "Meredith Grey",
           "Cristina Yang",
-          "Alex Karev"
+          "Richard Webber"
         ],
-        "start_timestamp": "00:02:38,256",
-        "end_timestamp": "00:02:42,418",
-        "confidence_score": 0.95,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Derek Shepherd arrives early at the hospital and offers to buy Meredith Grey breakfast, which she declines to avoid suspicion.",
-        "ordinal_position": 2,
-        "characters_involved": [
-          "Meredith Grey",
-          "Derek Shepherd"
-        ],
-        "start_timestamp": "00:02:45,252",
-        "end_timestamp": "00:02:49,860",
-        "confidence_score": 0.95,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Cristina Yang makes sarcastic remarks about Meredith Grey's breakfast habits and insists on keeping her distance from Meredith in the hospital due to the rumors.",
-        "ordinal_position": 3,
-        "characters_involved": [
-          "Cristina Yang",
-          "Meredith Grey"
-        ],
-        "start_timestamp": "00:02:51,783",
-        "end_timestamp": "00:03:09,675",
-        "confidence_score": 0.92,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Alex Karev implies that Cristina Yang's ambition is because she is not involved with an attending, fueling further gossip about Meredith and Shepherd.",
-        "ordinal_position": 4,
-        "characters_involved": [
-          "Alex Karev",
-          "Cristina Yang",
-          "Meredith Grey"
-        ],
-        "start_timestamp": "00:03:09,655",
-        "end_timestamp": "00:03:12,781",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Meredith Grey denies any inappropriate relationship with Dr. Shepherd in front of her fellow interns.",
-        "ordinal_position": 5,
-        "characters_involved": [
-          "Meredith Grey",
-          "Cristina Yang",
-          "Alex Karev",
-          "Izzie Stevens",
-          "George O'Malley"
-        ],
-        "start_timestamp": "00:03:12,800",
-        "end_timestamp": "00:03:13,301",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Derek Shepherd and Meredith Grey interact professionally during Jorge Cruz's trauma case, maintaining a careful distance in front of others.",
-        "ordinal_position": 6,
-        "characters_involved": [
-          "Meredith Grey",
-          "Derek Shepherd"
-        ],
-        "start_timestamp": "00:06:56,588",
-        "end_timestamp": "00:07:51,701",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Cristina Yang avoids being seen with Meredith Grey in the hospital to prevent association due to the rumors about Meredith and Shepherd.",
-        "ordinal_position": 7,
-        "characters_involved": [
-          "Cristina Yang",
-          "Meredith Grey"
-        ],
-        "start_timestamp": "00:03:05,448",
-        "end_timestamp": "00:03:09,675",
-        "confidence_score": 0.88,
-        "extraction_method": "dialogue_matching"
-      }
-    ]
-  },
-  {
-    "title": "The Interns' Rivalries and Bonds in Surgical Residency",
-    "arc_type": "Soap Arc",
-    "description": "Meredith, Cristina, George, Izzie, and Alex navigate the intense pressures of surgical residency at Seattle Grace. As they compete for cases and recognition, they form shifting friendships, alliances, and rivalries. Their relationships are tested by the demands of the program, personal insecurities, and the need to prove themselves, shaping their sense of belonging and identity within the hospital.",
-    "main_characters": "Meredith Grey; Cristina Yang; George O'Malley; Izzie Stevens; Alex Karev",
-    "interfering_episode_characters": "Dr. Miranda Bailey; Dr. Derek Shepherd; Dr. Preston Burke; Dr. Victor",
-    "single_episode_progression_events": [
-      {
-        "content": "Izzie asks if someone is using her toothbrush and adds tampons to the shopping list, highlighting awkwardness and boundary issues among the roommates.",
-        "ordinal_position": 1,
-        "characters_involved": [
-          "Izzie Stevens",
-          "Meredith Grey",
-          "George O'Malley"
-        ],
-        "start_timestamp": "00:00:22,018",
-        "end_timestamp": "00:01:14,926",
-        "confidence_score": 0.95,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "George complains about the lack of privacy in the house, referencing the women parading in their underwear while he is naked in the shower.",
-        "ordinal_position": 2,
-        "characters_involved": [
-          "George O'Malley",
-          "Izzie Stevens",
-          "Meredith Grey"
-        ],
-        "start_timestamp": "00:01:14,926",
-        "end_timestamp": "00:01:29,566",
-        "confidence_score": 0.93,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Izzie asks George to buy tampons, but he refuses, insisting he doesn't buy 'girl products.'",
-        "ordinal_position": 3,
-        "characters_involved": [
-          "Izzie Stevens",
-          "George O'Malley"
-        ],
-        "start_timestamp": "00:01:16,230",
-        "end_timestamp": "00:01:26,037",
-        "confidence_score": 0.92,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Alex greets Izzie with a mocking 'Dr. Model,' referencing her past as a lingerie model, and Cristina hopes for better patients, showing competitiveness among the interns.",
-        "ordinal_position": 4,
-        "characters_involved": [
-          "Alex Karev",
-          "Izzie Stevens",
-          "Cristina Yang"
-        ],
-        "start_timestamp": "00:02:08,615",
-        "end_timestamp": "00:02:29,948",
-        "confidence_score": 0.95,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Alex implies Cristina is only ambitious because she is not involved with an attending, taking a dig at Meredith's rumored relationship with Dr. Shepherd.",
-        "ordinal_position": 5,
-        "characters_involved": [
-          "Alex Karev",
-          "Cristina Yang",
-          "Meredith Grey"
-        ],
-        "start_timestamp": "00:02:38,256",
-        "end_timestamp": "00:02:42,418",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Cristina avoids being seen with Meredith in the hospital due to rumors about Meredith and Dr. Shepherd.",
-        "ordinal_position": 6,
-        "characters_involved": [
-          "Cristina Yang",
-          "Meredith Grey"
-        ],
-        "start_timestamp": "00:03:05,448",
-        "end_timestamp": "00:03:18,992",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Cristina asks George if he has a crush on Izzie, which he denies, clarifying that he is attracted to someone else.",
-        "ordinal_position": 7,
-        "characters_involved": [
-          "Cristina Yang",
-          "George O'Malley"
-        ],
-        "start_timestamp": "00:05:51,233",
-        "end_timestamp": "00:05:59,987",
-        "confidence_score": 0.92,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Alex teases George about living with women who walk around in their underwear, and George awkwardly tries to explain their relationship as not being like siblings.",
-        "ordinal_position": 8,
-        "characters_involved": [
-          "Alex Karev",
-          "George O'Malley"
-        ],
-        "start_timestamp": "00:10:37,418",
-        "end_timestamp": "00:11:22,942",
-        "confidence_score": 0.93,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Cristina confronts Izzie about hiding in the hallway after being rejected by a patient, telling her to act like a doctor and do her job.",
-        "ordinal_position": 9,
-        "characters_involved": [
-          "Cristina Yang",
-          "Izzie Stevens"
-        ],
-        "start_timestamp": "00:13:10,355",
-        "end_timestamp": "00:13:33,769",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Izzie and George have another awkward exchange about tampons and gender roles at the hospital.",
-        "ordinal_position": 10,
-        "characters_involved": [
-          "Izzie Stevens",
-          "George O'Malley"
-        ],
-        "start_timestamp": "00:18:03,387",
-        "end_timestamp": "00:18:22,962",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Cristina expresses frustration about the attention Izzie gets for her looks, and Izzie downplays it as makeup and retouching.",
-        "ordinal_position": 11,
-        "characters_involved": [
-          "Cristina Yang",
-          "Izzie Stevens"
-        ],
-        "start_timestamp": "00:33:31,213",
-        "end_timestamp": "00:33:53,832",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "At home, Izzie and George argue again about the tampons, with Izzie insisting George needs to get over his discomfort with women's issues.",
-        "ordinal_position": 12,
-        "characters_involved": [
-          "Izzie Stevens",
-          "George O'Malley"
-        ],
-        "start_timestamp": "00:33:10,717",
-        "end_timestamp": "00:33:39,913",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Cristina is reprimanded for waking a patient abruptly and complains about being tired from being on call; Dr. Burke tells her not to feel sorry for herself.",
-        "ordinal_position": 13,
-        "characters_involved": [
-          "Cristina Yang",
-          "Dr. Burke"
-        ],
-        "start_timestamp": "00:24:40,788",
-        "end_timestamp": "00:25:19,017",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Izzie stands up to Dr. Victor in surgery, insisting on saving Mr. Humphrey's nerves to preserve his quality of life, with Dr. Bailey supporting her advocacy.",
-        "ordinal_position": 14,
-        "characters_involved": [
-          "Izzie Stevens",
-          "Dr. Victor",
-          "Dr. Bailey"
-        ],
-        "start_timestamp": "00:39:02,568",
+        "start_timestamp": "00:39:49,967",
         "end_timestamp": "00:39:56,217",
         "confidence_score": 0.92,
         "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Meredith warns Izzie not to use her toothbrush, and Izzie assures her she isn't, ending the episode with a moment of roommate intimacy.",
-        "ordinal_position": 15,
-        "characters_involved": [
-          "Meredith Grey",
-          "Izzie Stevens"
-        ],
-        "start_timestamp": "00:42:13,811",
-        "end_timestamp": "00:42:18,318",
-        "confidence_score": 0.95,
-        "extraction_method": "dialogue_matching"
       }
     ]
   },
   {
-    "title": "The Roommates: Navigating Intimacy, Boundaries, and Growing Up",
+    "title": "Formation and Evolution of Interns' Friendships, Rivalries, and Personal Growth",
     "arc_type": "Soap Arc",
-    "description": "Meredith, Izzie, George, and Cristina share a house, and their living arrangement becomes a crucible for personal growth, awkwardness, and evolving friendships. Over the season, they negotiate boundaries around privacy, gender roles, and intimacy, learning to coexist despite clashing personalities, romantic tensions, and the stress of their demanding jobs.",
-    "main_characters": "Meredith Grey; Izzie Stevens; George O'Malley; Cristina Yang",
-    "interfering_episode_characters": "Meredith Grey; Izzie Stevens; George O'Malley; Cristina Yang",
+    "description": "Meredith Grey, Cristina Yang, Izzie Stevens, George O'Malley, and Alex Karev navigate the intense pressures of surgical residency at Seattle Grace Hospital. As they tackle demanding shifts, complex cases, and personal struggles, they form friendships and rivalries, supporting each other through setbacks and triumphs. Competition, secrets, humor, conflict, and vulnerability shape their relationships, creating tension but also camaraderie. Their evolving dynamics become a crucial source of strength and personal growth, forming a close-knit group whose development as doctors and individuals is deeply intertwined with their bonds.",
+    "main_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
+    "interfering_episode_characters": "Dr. Miranda Bailey; Dr. Preston Burke; Dr. Derek Shepherd; Dr. Richard Webber; Dr. Victor; Nurse Elizabeth Fallon; Jorge Cruz; Sona Cruz; Mr. Humphrey; Other Interns",
     "single_episode_progression_events": [
       {
-        "content": "Izzie confronts Meredith about someone using her toothbrush, highlighting awkwardness in their shared living space.",
+        "content": "Meredith, Izzie, and George navigate awkwardness and banter over their morning routines and household responsibilities.",
         "ordinal_position": 1,
         "characters_involved": [
+          "Meredith Grey",
           "Izzie Stevens",
-          "Meredith Grey"
+          "George O'Malley"
         ],
         "start_timestamp": "00:00:22,018",
-        "end_timestamp": "00:00:27,625",
+        "end_timestamp": "00:00:31,069",
         "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "George complains about the lack of privacy in the house, referencing the women walking around in their underwear while he is naked in the shower.",
+        "content": "George becomes uncomfortable with Meredith and Izzie walking around in their underwear, leading to teasing and a debate about buying tampons.",
         "ordinal_position": 2,
         "characters_involved": [
           "George O'Malley",
@@ -767,301 +358,514 @@
           "Meredith Grey"
         ],
         "start_timestamp": "00:01:05,775",
-        "end_timestamp": "00:01:14,908",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Izzie asks George to buy tampons, but he refuses, insisting he doesn't buy 'girl products.'",
-        "ordinal_position": 3,
-        "characters_involved": [
-          "Izzie Stevens",
-          "George O'Malley"
-        ],
-        "start_timestamp": "00:01:16,230",
-        "end_timestamp": "00:01:26,037",
+        "end_timestamp": "00:01:31,251",
         "confidence_score": 0.95,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Izzie teases George by flaunting her underwear, further challenging his discomfort with their living situation.",
-        "ordinal_position": 4,
-        "characters_involved": [
-          "Izzie Stevens",
-          "George O'Malley"
-        ],
-        "start_timestamp": "00:01:28,164",
-        "end_timestamp": "00:01:31,810",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "The roommates debate setting rules about nudity and boundaries.",
-        "ordinal_position": 5,
-        "characters_involved": [
-          "Meredith Grey",
-          "Izzie Stevens",
-          "George O'Malley",
-          "Cristina Yang"
-        ],
-        "start_timestamp": "00:05:29,514",
-        "end_timestamp": "00:05:47,516",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Cristina asks George if he has a crush on Izzie, which he denies, clarifying he is attracted to someone else.",
-        "ordinal_position": 6,
+        "content": "Cristina, Izzie, and Meredith discuss their hopes for interesting surgical cases, revealing their ambitions and competitive natures.",
+        "ordinal_position": 3,
         "characters_involved": [
           "Cristina Yang",
-          "George O'Malley"
+          "Izzie Stevens",
+          "Meredith Grey"
         ],
-        "start_timestamp": "00:05:51,233",
-        "end_timestamp": "00:05:59,987",
-        "confidence_score": 0.9,
+        "start_timestamp": "00:01:35,491",
+        "end_timestamp": "00:02:31,087",
+        "confidence_score": 0.92,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "George and Izzie argue again about the tampons, with Izzie insisting George needs to get over his discomfort with women's issues.",
-        "ordinal_position": 7,
+        "content": "Cristina tries to get assigned to Nurse Fallon's surgery, displaying her ambition while the others observe.",
+        "ordinal_position": 4,
         "characters_involved": [
-          "George O'Malley",
+          "Cristina Yang",
+          "Meredith Grey",
           "Izzie Stevens"
         ],
-        "start_timestamp": "00:23:10,717",
-        "end_timestamp": "00:23:39,913",
+        "start_timestamp": "00:03:27,251",
+        "end_timestamp": "00:03:52,018",
         "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Cristina jokes that if she looked like Izzie, she would walk around naked all the time, highlighting differences in self-perception and comfort.",
+        "content": "Alex questions George about living with Meredith and Izzie, making jokes and highlighting George's discomfort.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Alex Karev",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:10:44,605",
+        "end_timestamp": "00:11:33,202",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George confides in Meredith about his feelings, denying a crush on Izzie and hinting at attraction to someone else.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "George O'Malley",
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:05:51,233",
+        "end_timestamp": "00:06:02,033",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie faces ridicule from other interns and staff after her lingerie modeling photos appear in a magazine.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Alex Karev",
+          "Other Interns"
+        ],
+        "start_timestamp": "00:13:10,355",
+        "end_timestamp": "00:13:29,984",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina and Izzie research nail gun injuries together, collaborating despite their competitive natures.",
         "ordinal_position": 8,
         "characters_involved": [
           "Cristina Yang",
           "Izzie Stevens"
         ],
-        "start_timestamp": "00:33:31,213",
-        "end_timestamp": "00:33:47,740",
+        "start_timestamp": "00:10:24,374",
+        "end_timestamp": "00:10:32,088",
         "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Meredith warns Izzie not to use her toothbrush, and Izzie assures her she isn't, reinforcing the need for personal boundaries.",
+        "content": "Cristina and Izzie debate the ethics of fighting for a dying patient versus letting go, exposing their differing philosophies.",
         "ordinal_position": 9,
         "characters_involved": [
-          "Meredith Grey",
-          "Izzie Stevens"
-        ],
-        "start_timestamp": "00:42:13,811",
-        "end_timestamp": "00:42:18,318",
-        "confidence_score": 0.95,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Izzie wishes Meredith good night, showing their growing comfort and camaraderie.",
-        "ordinal_position": 10,
-        "characters_involved": [
+          "Cristina Yang",
           "Izzie Stevens",
           "Meredith Grey"
         ],
-        "start_timestamp": "00:42:48,034",
-        "end_timestamp": "00:42:49,135",
+        "start_timestamp": "00:33:11,279",
+        "end_timestamp": "00:33:27,608",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie and Cristina advocate for preserving Mr. Humphrey's sexual function during surgery, working together and challenging authority.",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Cristina Yang",
+          "Dr. Victor",
+          "Dr. Bailey"
+        ],
+        "start_timestamp": "00:39:02,568",
+        "end_timestamp": "00:39:41,597",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The roommates return home and resume playful banter, with Meredith warning them not to use her toothbrush.",
+        "ordinal_position": 11,
+        "characters_involved": [
+          "Meredith Grey",
+          "Izzie Stevens",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:42:13,811",
+        "end_timestamp": "00:42:18,358",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Meredith Grey's Burden of Ellis Grey's Legacy and Caregiving",
+    "arc_type": "Soap Arc",
+    "description": "Meredith Grey struggles to define herself as a surgeon and individual while living in the shadow of her mother, Ellis Grey, a legendary figure in medicine now suffering from Alzheimer's disease. Meredith manages the secrecy and emotional toll of Ellis's illness, balancing professional expectations, personal responsibility, and her own identity apart from her mother's legacy.",
+    "main_characters": "Meredith Grey; Ellis Grey",
+    "interfering_episode_characters": "Richard Webber; Nurse Fallon",
+    "single_episode_progression_events": [
+      {
+        "content": "Nurse Fallon reveals she was Ellis Grey’s scrub nurse for 18 years and expresses surprise at never meeting Meredith.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Meredith Grey",
+          "Nurse Fallon"
+        ],
+        "start_timestamp": "00:08:46,004",
+        "end_timestamp": "00:08:51,850",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Richard Webber privately tells Meredith that Ellis Grey is in a nursing home with early-onset Alzheimer’s and that he is the only one Ellis allows to visit.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Meredith Grey",
+          "Richard Webber"
+        ],
+        "start_timestamp": "00:31:49,910",
+        "end_timestamp": "00:32:46,173",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Meredith keeps her mother’s illness secret from her roommates and colleagues.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Meredith Grey"
+        ],
+        "start_timestamp": "00:21:24,227",
+        "end_timestamp": "00:21:50,313",
         "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       }
     ]
   },
   {
-    "title": "Miranda Bailey's Mentorship of the Surgical Interns",
+    "title": "Interns' Growth and Institutional Challenges at Seattle Grace Hospital",
     "arc_type": "Genre-Specific Arc",
-    "description": "Dr. Miranda Bailey establishes herself as a strict but effective mentor to the new surgical interns. Her demanding expectations and no-nonsense rules push the interns to confront their weaknesses, learn from their mistakes, and develop the resilience and skills necessary to survive the pressures of surgical training.",
-    "main_characters": "Miranda Bailey",
-    "interfering_episode_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev; Derek Shepherd; Dr. Victor",
+    "description": "At Seattle Grace Hospital, new surgical interns face the demanding realities of residency as they learn medical skills, handle high-pressure situations, and strive for recognition and respect under the supervision of experienced attendings. Their journey from novices to capable surgeons unfolds within a competitive environment shaped by strict hierarchies, institutional rules, and power dynamics. Both successes and failures contribute to their personal and professional growth as they navigate the challenges and opportunities presented by the hospital's complex structure.",
+    "main_characters": "Cristina Yang; Meredith Grey; Izzie Stevens; George O'Malley; Alex Karev",
+    "interfering_episode_characters": "Dr. Miranda Bailey; Dr. Preston Burke; Dr. Derek Shepherd; Dr. Richard Webber; Dr. Victor; Nurse Elizabeth Fallon; Mr. Humphrey; Hospital Staff",
     "single_episode_progression_events": [
       {
-        "content": "Bailey instructs the interns on the importance of pre-rounds and patient comfort, warning them not to make her look bad.",
+        "content": "Cristina Yang instructs the interns on conducting pre-rounds and emphasizes the importance of making residents look good.",
         "ordinal_position": 1,
         "characters_involved": [
-          "Miranda Bailey",
-          "Meredith Grey",
           "Cristina Yang",
+          "Meredith Grey",
           "Izzie Stevens",
           "George O'Malley",
           "Alex Karev"
         ],
         "start_timestamp": "00:01:35,491",
-        "end_timestamp": "00:02:03,762",
+        "end_timestamp": "00:02:07,370",
         "confidence_score": 0.95,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Bailey assigns the interns to complete pre-rounds by 5:30 a.m. and threatens consequences for failure.",
+        "content": "Cristina Yang attempts to get assigned to Nurse Fallon's Whipple procedure, demonstrating ambition within the hospital hierarchy.",
         "ordinal_position": 2,
         "characters_involved": [
-          "Miranda Bailey",
-          "Meredith Grey",
           "Cristina Yang",
-          "Izzie Stevens",
-          "George O'Malley",
-          "Alex Karev"
+          "Nurse Elizabeth Fallon"
         ],
-        "start_timestamp": "00:02:03,742",
-        "end_timestamp": "00:02:04,864",
+        "start_timestamp": "00:03:34,680",
+        "end_timestamp": "00:04:09,735",
         "confidence_score": 0.92,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Bailey orders O'Malley and Grey to assist Dr. Shepherd in trauma, demonstrating her control over intern assignments.",
+        "content": "Cristina Yang is disappointed when Meredith Grey is assigned to Nurse Fallon's case instead, highlighting competition among interns.",
         "ordinal_position": 3,
         "characters_involved": [
-          "Miranda Bailey",
+          "Cristina Yang",
+          "Meredith Grey",
+          "Dr. Burke"
+        ],
+        "start_timestamp": "00:08:24,442",
+        "end_timestamp": "00:08:51,850",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie Stevens is refused by Mr. Humphrey during his pre-op exam, as he requests another doctor.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Mr. Humphrey"
+        ],
+        "start_timestamp": "00:05:01,295",
+        "end_timestamp": "00:05:22,165",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie Stevens faces ridicule from staff after her lingerie modeling photos appear in a magazine.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Hospital Staff"
+        ],
+        "start_timestamp": "00:13:10,355",
+        "end_timestamp": "00:13:27,360",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie Stevens confronts Mr. Humphrey about his refusal to let her participate in his care and asserts her professionalism.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Izzie Stevens",
+          "Mr. Humphrey"
+        ],
+        "start_timestamp": "00:27:49,913",
+        "end_timestamp": "00:28:03,836",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina Yang and Izzie Stevens advocate for nerve-sparing surgery during Mr. Humphrey's prostatectomy, challenging Dr. Victor's authority.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Dr. Victor",
+          "Dr. Bailey"
+        ],
+        "start_timestamp": "00:39:02,568",
+        "end_timestamp": "00:39:41,597",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey warns Cristina Yang and Izzie Stevens she will report their actions to Chief Webber but ultimately supports their decision.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Dr. Bailey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Dr. Richard Webber"
+        ],
+        "start_timestamp": "00:39:49,967",
+        "end_timestamp": "00:39:56,217",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina Yang and Izzie Stevens research nail gun injuries to the head in preparation for Jorge Cruz's surgery.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:10:24,254",
+        "end_timestamp": "00:10:32,088",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "George O'Malley and Meredith Grey assist Dr. Shepherd in a trauma case involving Jorge Cruz.",
+        "ordinal_position": 10,
+        "characters_involved": [
           "George O'Malley",
           "Meredith Grey",
-          "Derek Shepherd"
+          "Dr. Derek Shepherd"
+        ],
+        "start_timestamp": "00:06:05,298",
+        "end_timestamp": "00:07:51,701",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina Yang and Izzie Stevens push Dr. Burke to schedule Nurse Fallon's Whipple procedure, advocating for their patient.",
+        "ordinal_position": 11,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Dr. Burke"
+        ],
+        "start_timestamp": "00:29:14,288",
+        "end_timestamp": "00:29:47,755",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina Yang debates with Meredith Grey about the ethics of aggressive intervention versus palliative care for Nurse Fallon.",
+        "ordinal_position": 12,
+        "characters_involved": [
+          "Cristina Yang",
+          "Meredith Grey",
+          "Izzie Stevens"
+        ],
+        "start_timestamp": "00:33:11,279",
+        "end_timestamp": "00:33:27,608",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Dr. Miranda Bailey's Leadership and Mentorship of Interns",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Dr. Miranda Bailey’s tough, principled mentorship challenges the new surgical interns to meet the demands of residency. Her strict rules, high expectations, and hands-on supervision shape the interns’ professional development and establish her as a defining influence on their growth as surgeons.",
+    "main_characters": "Dr. Miranda Bailey",
+    "interfering_episode_characters": "Cristina Yang; Izzie Stevens; Meredith Grey; George O'Malley; Alex Karev; Dr. Derek Shepherd; Dr. Burke; Dr. Victor; Mr. Humphrey; Dr. Richard Webber",
+    "single_episode_progression_events": [
+      {
+        "content": "Dr. Bailey instructs the interns on conducting pre-rounds, emphasizing bedside manner and the importance of making residents look good.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Meredith Grey",
+          "George O'Malley",
+          "Alex Karev"
+        ],
+        "start_timestamp": "00:01:35,491",
+        "end_timestamp": "00:01:44,044",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey assigns George and Meredith to assist Dr. Shepherd in a trauma case, overseeing their participation and training.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "George O'Malley",
+          "Meredith Grey",
+          "Dr. Derek Shepherd"
         ],
         "start_timestamp": "00:06:05,298",
         "end_timestamp": "00:06:12,110",
-        "confidence_score": 0.93,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Bailey discusses Jorge Cruz's case with Dr. Shepherd, involving the interns in the decision-making process.",
-        "ordinal_position": 4,
-        "characters_involved": [
-          "Miranda Bailey",
-          "Derek Shepherd",
-          "Meredith Grey",
-          "George O'Malley"
-        ],
-        "start_timestamp": "00:13:59,038",
-        "end_timestamp": "00:14:17,993",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Bailey supervises the interns during Jorge's surgery and explains the importance of technique and precision.",
-        "ordinal_position": 5,
-        "characters_involved": [
-          "Miranda Bailey",
-          "Meredith Grey",
-          "Cristina Yang",
-          "Izzie Stevens",
-          "George O'Malley",
-          "Alex Karev"
-        ],
-        "start_timestamp": "00:16:41,682",
-        "end_timestamp": "00:16:59,393",
-        "confidence_score": 0.9,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Bailey scolds the interns for not answering their pages promptly, reinforcing her expectations for discipline.",
-        "ordinal_position": 6,
-        "characters_involved": [
-          "Miranda Bailey",
-          "Meredith Grey",
-          "Cristina Yang",
-          "Izzie Stevens",
-          "George O'Malley",
-          "Alex Karev"
-        ],
-        "start_timestamp": "00:34:14,775",
-        "end_timestamp": "00:34:24,766",
         "confidence_score": 0.92,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Bailey supports Izzie in the OR when she stands up to Dr. Victor, backing her insistence on respecting the patient's wishes during surgery.",
-        "ordinal_position": 7,
+        "content": "Dr. Bailey presents Nurse Fallon's case to the attendings and interns, modeling professional case management.",
+        "ordinal_position": 3,
         "characters_involved": [
-          "Miranda Bailey",
+          "Dr. Miranda Bailey",
+          "Cristina Yang",
+          "Meredith Grey",
           "Izzie Stevens",
+          "Dr. Burke",
           "Dr. Victor"
         ],
-        "start_timestamp": "00:39:05,650",
-        "end_timestamp": "00:39:56,217",
+        "start_timestamp": "00:08:03,533",
+        "end_timestamp": "00:08:24,461",
         "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey supervises Izzie during Mr. Humphrey's prostate biopsy, intervening when the patient refuses Izzie's care and reinforcing professionalism.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Izzie Stevens",
+          "Mr. Humphrey"
+        ],
+        "start_timestamp": "00:11:33,224",
+        "end_timestamp": "00:13:33,769",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey warns Izzie and Cristina she will report them to Richard Webber after they advocate for nerve-sparing surgery, but ultimately supports their decision to prioritize the patient's wishes.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Izzie Stevens",
+          "Cristina Yang",
+          "Dr. Richard Webber"
+        ],
+        "start_timestamp": "00:39:05,710",
+        "end_timestamp": "00:39:56,217",
+        "confidence_score": 0.92,
         "extraction_method": "dialogue_matching"
       }
     ]
   },
   {
-    "title": "Ethical Dilemmas and Moral Growth in Surgical Training",
+    "title": "Dr. Richard Webber's Role as Chief and Mentor",
     "arc_type": "Genre-Specific Arc",
-    "description": "Throughout the season, the surgical interns and staff at Seattle Grace face complex ethical decisions involving end-of-life care, organ donation, and patient prioritization. These dilemmas test their values and professionalism, forcing them to confront the realities and responsibilities of becoming doctors while shaping their moral growth.",
-    "main_characters": "Meredith Grey; Cristina Yang; Izzie Stevens; George O'Malley; Alex Karev",
-    "interfering_episode_characters": "Dr. Miranda Bailey; Dr. Derek Shepherd; Dr. Preston Burke; Elizabeth Fallon; Mr. Humphrey; Jorge Cruz; Sona Cruz; Javi; Dr. Victor; Liz (scrub nurse); Dr. Richard Webber",
+    "description": "Dr. Richard Webber oversees Seattle Grace Hospital as Chief of Surgery, setting the standards for surgical excellence and guiding the professional growth of interns and attendings. His mentorship, leadership, and personal relationships—particularly with Ellis and Meredith Grey—shape the hospital’s culture and influence the development of the surgical team.",
+    "main_characters": "Dr. Richard Webber",
+    "interfering_episode_characters": "Meredith Grey; Ellis Grey; Dr. Burke; Dr. Bailey; Dr. Victor; Izzie Stevens; Cristina Yang",
     "single_episode_progression_events": [
       {
-        "content": "Dr. Bailey instructs the interns to prioritize patient comfort during pre-rounds to ensure effective information gathering and uphold professional standards.",
+        "content": "Dr. Webber meets with Meredith Grey and informs her that Ellis Grey is in a nursing home with early-onset Alzheimer’s and only allows him to visit.",
         "ordinal_position": 1,
         "characters_involved": [
-          "Dr. Bailey",
+          "Dr. Richard Webber",
           "Meredith Grey",
-          "Cristina Yang",
-          "Izzie Stevens",
-          "George O'Malley",
-          "Alex Karev"
+          "Ellis Grey"
         ],
-        "start_timestamp": "00:01:35,491",
-        "end_timestamp": "00:02:04,864",
+        "start_timestamp": "00:31:49,910",
+        "end_timestamp": "00:32:46,173",
         "confidence_score": 0.95,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Cristina meets Elizabeth Fallon, a former scrub nurse with pancreatic cancer, and is confronted about her ambition to participate in Fallon's surgery.",
+        "content": "Dr. Webber attends the meeting with attending physicians to discuss Nurse Fallon’s case and reinforces hospital standards for patient care and surgical decision-making.",
         "ordinal_position": 2,
         "characters_involved": [
-          "Cristina Yang",
-          "Elizabeth Fallon"
+          "Dr. Richard Webber",
+          "Dr. Burke",
+          "Dr. Bailey",
+          "Dr. Victor"
         ],
-        "start_timestamp": "00:03:34,680",
-        "end_timestamp": "00:04:25,016",
-        "confidence_score": 0.92,
+        "start_timestamp": "00:08:03,533",
+        "end_timestamp": "00:08:32,668",
+        "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Mr. Humphrey refuses to allow Izzie to participate in his care due to her past as a lingerie model, challenging her professional role.",
+        "content": "Dr. Bailey warns Izzie Stevens and Cristina Yang that she will report their actions during Mr. Humphrey’s surgery to Dr. Webber, emphasizing his authority over intern conduct.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Dr. Miranda Bailey",
+          "Dr. Richard Webber",
+          "Izzie Stevens",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:39:49,967",
+        "end_timestamp": "00:39:56,217",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Professional Boundaries and Ethical Dilemmas in Patient Care",
+    "arc_type": "Genre-Specific Arc",
+    "description": "The interns and attendings at Seattle Grace Hospital confront ethical dilemmas and professional boundaries in patient care. They navigate issues of patient autonomy, advocacy, and institutional authority, often challenging norms to prioritize patient well-being. These experiences shape their growth as doctors and individuals.",
+    "main_characters": "Cristina Yang; Izzie Stevens; Meredith Grey; Dr. Bailey; Dr. Burke; Derek Shepherd",
+    "interfering_episode_characters": "Nurse Fallon; Mr. Humphrey; Dr. Victor; Jorge Cruz; Sona Cruz; Richard Webber; George O'Malley",
+    "single_episode_progression_events": [
+      {
+        "content": "Cristina Yang appeals to Dr. Burke to be assigned to Nurse Fallon's Whipple procedure for surgical experience.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Cristina Yang",
+          "Dr. Burke",
+          "Nurse Fallon"
+        ],
+        "start_timestamp": "00:03:95,251",
+        "end_timestamp": "00:03:27,533",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Nurse Fallon insists on being treated as a patient and not a teaching opportunity, directly addressing Cristina's motives.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Cristina Yang",
+          "Nurse Fallon"
+        ],
+        "start_timestamp": "00:03:34,680",
+        "end_timestamp": "00:03:44,811",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Mr. Humphrey refuses Izzie Stevens as his doctor for a prostate biopsy due to her gender and her modeling past.",
         "ordinal_position": 3,
         "characters_involved": [
           "Izzie Stevens",
           "Mr. Humphrey"
         ],
         "start_timestamp": "00:04:58,211",
-        "end_timestamp": "00:05:22,206",
-        "confidence_score": 0.93,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Cristina tells Izzie to fulfill her duties as a doctor regardless of the patient's attitude.",
-        "ordinal_position": 4,
-        "characters_involved": [
-          "Cristina Yang",
-          "Izzie Stevens"
-        ],
-        "start_timestamp": "00:13:11,557",
-        "end_timestamp": "00:13:33,028",
+        "end_timestamp": "00:05:22,165",
         "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Dr. Shepherd and Dr. Bailey discuss the risks of Jorge Cruz's surgery and emphasize the importance of patient safety during the procedure.",
-        "ordinal_position": 5,
-        "characters_involved": [
-          "Dr. Shepherd",
-          "Dr. Bailey",
-          "Jorge Cruz",
-          "Meredith Grey",
-          "George O'Malley"
-        ],
-        "start_timestamp": "00:16:41,682",
-        "end_timestamp": "00:17:05,240",
-        "confidence_score": 0.88,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Izzie confronts Mr. Humphrey about his refusal to let her treat him and asserts her qualifications as his doctor.",
-        "ordinal_position": 6,
+        "content": "Izzie Stevens confronts Mr. Humphrey, asserting her professionalism and demanding to be treated as a doctor.",
+        "ordinal_position": 4,
         "characters_involved": [
           "Izzie Stevens",
           "Mr. Humphrey"
@@ -1072,59 +876,204 @@
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Meredith and Cristina discover Jorge Cruz has a hypothalamic tumor and present his family with the choice between risky surgery with possible memory loss or less invasive radiation with a shorter life expectancy.",
-        "ordinal_position": 7,
+        "content": "Cristina Yang and Izzie Stevens advocate for preserving Mr. Humphrey's nerves during his prostatectomy, challenging Dr. Victor's surgical plan.",
+        "ordinal_position": 5,
         "characters_involved": [
-          "Meredith Grey",
           "Cristina Yang",
-          "Jorge Cruz",
-          "Sona Cruz",
-          "Javi"
+          "Izzie Stevens",
+          "Dr. Victor",
+          "Dr. Bailey"
         ],
-        "start_timestamp": "00:30:10,432",
-        "end_timestamp": "00:31:27,823",
-        "confidence_score": 0.93,
-        "extraction_method": "dialogue_matching"
-      },
-      {
-        "content": "Sona Cruz struggles with Jorge's medical decision and ultimately supports his autonomy in choosing his treatment.",
-        "ordinal_position": 8,
-        "characters_involved": [
-          "Sona Cruz",
-          "Jorge Cruz",
-          "Izzie Stevens"
-        ],
-        "start_timestamp": "00:34:42,989",
-        "end_timestamp": "00:37:45,626",
+        "start_timestamp": "00:39:02,568",
+        "end_timestamp": "00:39:41,597",
         "confidence_score": 0.9,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Cristina and the team attempt to resuscitate Elizabeth Fallon during a code but honor her DNR order and cease efforts.",
-        "ordinal_position": 9,
+        "content": "Dr. Bailey warns Cristina and Izzie she will report their insubordination but ultimately supports their patient-centered decision.",
+        "ordinal_position": 6,
+        "characters_involved": [
+          "Dr. Bailey",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Richard Webber"
+        ],
+        "start_timestamp": "00:39:49,967",
+        "end_timestamp": "00:39:56,217",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Derek Shepherd presents Jorge Cruz with two treatment options for his brain tumor, allowing Jorge to make an informed, autonomous decision.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Derek Shepherd",
+          "Jorge Cruz",
+          "Sona Cruz",
+          "Meredith Grey",
+          "George O'Malley"
+        ],
+        "start_timestamp": "00:30:10,432",
+        "end_timestamp": "00:31:27,823",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Cristina Yang and Izzie Stevens push Dr. Burke to schedule Nurse Fallon's Whipple procedure despite her declining condition.",
+        "ordinal_position": 8,
         "characters_involved": [
           "Cristina Yang",
-          "Elizabeth Fallon",
+          "Izzie Stevens",
           "Dr. Burke",
-          "Nurses"
+          "Dr. Bailey",
+          "Nurse Fallon"
         ],
-        "start_timestamp": "00:35:11,380",
-        "end_timestamp": "00:38:08,876",
+        "start_timestamp": "00:29:14,288",
+        "end_timestamp": "00:29:47,755",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey voices suspicion that Dr. Burke never intended to operate on Nurse Fallon, highlighting the ethical dilemma of admitting patients to die in the hospital.",
+        "ordinal_position": 9,
+        "characters_involved": [
+          "Dr. Bailey",
+          "Dr. Burke",
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Nurse Fallon"
+        ],
+        "start_timestamp": "00:29:39,886",
+        "end_timestamp": "00:29:47,755",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "The team attempts to resuscitate Nurse Fallon as her condition deteriorates and calls her time of death after unsuccessful efforts.",
+        "ordinal_position": 10,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Dr. Bailey",
+          "Dr. Burke",
+          "Nurse Fallon"
+        ],
+        "start_timestamp": "00:35:40,228",
+        "end_timestamp": "00:40:59,827",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      }
+    ]
+  },
+  {
+    "title": "Power Struggles and Hierarchies Among Attendings and Residents",
+    "arc_type": "Genre-Specific Arc",
+    "description": "Attendings and residents at Seattle Grace Hospital engage in ongoing power struggles, competing for surgical cases, recognition, and influence over interns. These dynamics shape mentorship, opportunities for advancement, and the hospital's culture, directly impacting patient care and career trajectories.",
+    "main_characters": "Cristina Yang; Izzie Stevens; Dr. Burke; Dr. Bailey; Dr. Victor",
+    "interfering_episode_characters": "Meredith Grey; Nurse Fallon; Richard Webber",
+    "single_episode_progression_events": [
+      {
+        "content": "Cristina Yang tries to get assigned to Nurse Fallon's Whipple procedure to gain surgical experience.",
+        "ordinal_position": 1,
+        "characters_involved": [
+          "Cristina Yang",
+          "Dr. Burke",
+          "Nurse Fallon"
+        ],
+        "start_timestamp": "00:03:34,680",
+        "end_timestamp": "00:04:09,735",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Nurse Fallon recognizes Cristina's ambition and calls her out for trying to secure a spot in her surgery.",
+        "ordinal_position": 2,
+        "characters_involved": [
+          "Cristina Yang",
+          "Nurse Fallon"
+        ],
+        "start_timestamp": "00:04:10,497",
+        "end_timestamp": "00:04:29,281",
+        "confidence_score": 0.95,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Burke assigns Meredith Grey, not Cristina, to Nurse Fallon's case, demonstrating his authority over intern assignments.",
+        "ordinal_position": 3,
+        "characters_involved": [
+          "Dr. Burke",
+          "Meredith Grey",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:08:23,500",
+        "end_timestamp": "00:08:57,475",
         "confidence_score": 0.92,
         "extraction_method": "dialogue_matching"
       },
       {
-        "content": "Izzie stands up to Dr. Victor in surgery, insisting on a nerve-sparing approach for Mr. Humphrey as per his wishes, and Dr. Bailey supports her advocacy.",
-        "ordinal_position": 10,
+        "content": "Cristina Yang and Izzie Stevens push Dr. Burke to schedule the Whipple procedure for Nurse Fallon, challenging his decision.",
+        "ordinal_position": 4,
+        "characters_involved": [
+          "Cristina Yang",
+          "Izzie Stevens",
+          "Dr. Burke"
+        ],
+        "start_timestamp": "00:29:14,288",
+        "end_timestamp": "00:29:39,298",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey suspects Dr. Burke never intended to operate on Nurse Fallon, highlighting decision-making among attendings.",
+        "ordinal_position": 5,
+        "characters_involved": [
+          "Dr. Bailey",
+          "Dr. Burke",
+          "Nurse Fallon"
+        ],
+        "start_timestamp": "00:29:39,886",
+        "end_timestamp": "00:29:47,755",
+        "confidence_score": 0.93,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Izzie Stevens and Cristina Yang advocate for preserving Mr. Humphrey's nerves during his prostatectomy, challenging Dr. Victor's surgical plan.",
+        "ordinal_position": 6,
         "characters_involved": [
           "Izzie Stevens",
-          "Dr. Victor",
-          "Dr. Bailey",
-          "Mr. Humphrey"
+          "Cristina Yang",
+          "Dr. Victor"
         ],
         "start_timestamp": "00:39:02,568",
+        "end_timestamp": "00:39:36,509",
+        "confidence_score": 0.92,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Victor relents and allows Izzie to take over the surgery, shifting the power dynamic in the operating room.",
+        "ordinal_position": 7,
+        "characters_involved": [
+          "Dr. Victor",
+          "Izzie Stevens",
+          "Cristina Yang"
+        ],
+        "start_timestamp": "00:39:42,657",
+        "end_timestamp": "00:39:44,641",
+        "confidence_score": 0.9,
+        "extraction_method": "dialogue_matching"
+      },
+      {
+        "content": "Dr. Bailey warns Izzie and Cristina she will report their actions to Richard Webber but ultimately supports their decision.",
+        "ordinal_position": 8,
+        "characters_involved": [
+          "Dr. Bailey",
+          "Izzie Stevens",
+          "Cristina Yang",
+          "Richard Webber"
+        ],
+        "start_timestamp": "00:39:49,967",
         "end_timestamp": "00:39:56,217",
-        "confidence_score": 0.93,
+        "confidence_score": 0.91,
         "extraction_method": "dialogue_matching"
       }
     ]

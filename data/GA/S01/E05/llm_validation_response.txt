@@ -1,20 +1,8 @@
 [
     {
-        "entity_name": "george",
-        "best_appellation": "George",
-        "appellations": ["George"],
-        "biological_sex": "M"
-    },
-    {
-        "entity_name": "dr_stevens",
+        "entity_name": "izzie_stevens",
         "best_appellation": "Dr. Izzie Stevens",
-        "appellations": ["Dr. Stevens", "Izzie Stevens", "Izzie"],
-        "biological_sex": "F"
-    },
-    {
-        "entity_name": "dr_gray",
-        "best_appellation": "Dr. Meredith Gray",
-        "appellations": ["Dr. Gray", "Meredith", "Meredith Gray"],
+        "appellations": ["Izzie Stevens", "Dr. Stevens", "Izzie Stevens'"],
         "biological_sex": "F"
     },
     {
@@ -24,22 +12,16 @@
         "biological_sex": "F"
     },
     {
-        "entity_name": "alex",
-        "best_appellation": "Alex",
-        "appellations": ["Alex"],
-        "biological_sex": "M"
-    },
-    {
-        "entity_name": "mr_frost",
-        "best_appellation": "Mr. Frost",
-        "appellations": ["Mr. Frost"],
-        "biological_sex": "M"
-    },
-    {
-        "entity_name": "cristina",
-        "best_appellation": "Cristina",
-        "appellations": ["Cristina"],
+        "entity_name": "mrs_patterson",
+        "best_appellation": "Mrs. Patterson",
+        "appellations": ["Mrs. Patterson"],
         "biological_sex": "F"
+    },
+    {
+        "entity_name": "dr_burke",
+        "best_appellation": "Dr. Preston Burke",
+        "appellations": ["Dr. Burke"],
+        "biological_sex": "M"
     },
     {
         "entity_name": "dr_shepherd",
@@ -54,27 +36,9 @@
         "biological_sex": "M"
     },
     {
-        "entity_name": "dr_burke",
-        "best_appellation": "Dr. Burke",
-        "appellations": ["Dr. Burke"],
-        "biological_sex": "M"
-    },
-    {
-        "entity_name": "mrs_patterson",
-        "best_appellation": "Mrs. Patterson",
-        "appellations": ["Mrs. Patterson"],
-        "biological_sex": "F"
-    },
-    {
-        "entity_name": "mr_patterson",
-        "best_appellation": "Mr. Patterson",
-        "appellations": ["Mr. Patterson"],
-        "biological_sex": "M"
-    },
-    {
-        "entity_name": "jerry",
-        "best_appellation": "Jerry",
-        "appellations": ["Jerry"],
+        "entity_name": "mr_frost",
+        "best_appellation": "Mr. Frost",
+        "appellations": ["Mr. Frost"],
         "biological_sex": "M"
     }
 ]
