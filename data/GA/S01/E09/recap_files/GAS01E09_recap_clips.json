@@ -14,7 +14,7 @@
         "end_time": "00:21:50,313",
         "narrative_arc_id": "750c008f-d0c4-4bea-a6a3-825ea18e3967",
         "arc_title": "Meredith Grey'S Burden Of Ellis Grey'S Legacy And Caregiving",
-        "relevance_score": 0.6466398239135742
+        "relevance_score": 0.6443285346031189
       },
       {
         "id": "c725fa18-bba4-4eea-8c0c-0e7287c789a3",
@@ -26,33 +26,45 @@
         "end_time": "00:32:46,173",
         "narrative_arc_id": "750c008f-d0c4-4bea-a6a3-825ea18e3967",
         "arc_title": "Meredith Grey'S Burden Of Ellis Grey'S Legacy And Caregiving",
-        "relevance_score": 0.6083702445030212
+        "relevance_score": 0.5885617733001709
       },
       {
-        "id": "14265b53-a865-4f11-a574-6b4294b6ce15",
-        "content": "Meredith receives a call from a lawyer informing her that Ellis Grey's Alzheimer's is advancing and she must sign over power of attorney while Ellis is still lucid.",
+        "id": "f0da7776-b381-4a7f-9042-f42893451200",
+        "content": "Meredith learns from a lawyer that Ellis Grey's Alzheimer's is worsening and she must sign her mother's estate over to herself while Ellis is still lucid.",
         "series": "GA",
         "season": "S01",
-        "episode": "E06",
-        "start_time": "00:00:22,440",
-        "end_time": "00:00:29,210",
+        "episode": "E05",
+        "start_time": "00:00:31,146",
+        "end_time": "00:00:39,825",
         "narrative_arc_id": "750c008f-d0c4-4bea-a6a3-825ea18e3967",
         "arc_title": "Meredith Grey'S Burden Of Ellis Grey'S Legacy And Caregiving",
-        "relevance_score": 0.5839383602142334
+        "relevance_score": 0.5699975490570068
       }
     ],
     "1925f04e-426b-4f48-b735-8d6d48f2a140": [
       {
-        "id": "e07b641e-3bea-44e4-aaee-42669fffbdd8",
-        "content": "Meredith wakes up after a one-night stand with Derek and insists he leave before her first day at the hospital.",
+        "id": "9ff741b4-a633-4026-b867-1e0864a1af09",
+        "content": "Meredith and Derek meet privately after spending the night together, acknowledging the risk of continuing their relationship.",
         "series": "GA",
         "season": "S01",
-        "episode": "E01",
-        "start_time": "00:00:37,173",
-        "end_time": "00:01:33,030",
+        "episode": "E06",
+        "start_time": "00:02:55,210",
+        "end_time": "00:03:10,503",
         "narrative_arc_id": "1925f04e-426b-4f48-b735-8d6d48f2a140",
         "arc_title": "Meredith And Derek'S Secret Workplace Relationship",
-        "relevance_score": 0.7170203924179077
+        "relevance_score": 0.5907063484191895
+      },
+      {
+        "id": "54eea811-86e8-47c8-aa8e-05e67f0eccec",
+        "content": "Bailey confronts Meredith about her relationship with an attending and warns her about favoritism",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E07",
+        "start_time": "00:00:25,937",
+        "end_time": "00:00:47,807",
+        "narrative_arc_id": "1925f04e-426b-4f48-b735-8d6d48f2a140",
+        "arc_title": "Meredith And Derek'S Secret Workplace Relationship",
+        "relevance_score": 0.6045981645584106
       },
       {
         "id": "0f3fa280-96cb-4f42-8ce2-d9c64646cbba",
@@ -64,19 +76,7 @@
         "end_time": "00:00:41,378",
         "narrative_arc_id": "1925f04e-426b-4f48-b735-8d6d48f2a140",
         "arc_title": "Meredith And Derek'S Secret Workplace Relationship",
-        "relevance_score": 0.4814035892486572
-      },
-      {
-        "id": "a515351d-b9e6-4afe-a553-13976a7d305a",
-        "content": "Izzie and Meredith have a candid conversation about Meredith risking her credibility for Shepherd, with Izzie teasing Meredith about falling for him",
-        "series": "GA",
-        "season": "S01",
-        "episode": "E07",
-        "start_time": "00:39:53,193",
-        "end_time": "00:40:48,280",
-        "narrative_arc_id": "1925f04e-426b-4f48-b735-8d6d48f2a140",
-        "arc_title": "Meredith And Derek'S Secret Workplace Relationship",
-        "relevance_score": 0.4708784222602844
+        "relevance_score": 0.48628711700439453
       }
     ],
     "9facbc83-0817-491a-9ba2-119658c5df35": [
@@ -90,7 +90,7 @@
         "end_time": "00:26:49,864",
         "narrative_arc_id": "9facbc83-0817-491a-9ba2-119658c5df35",
         "arc_title": "Formation And Evolution Of Interns' Friendships, Rivalries, And Personal Growth",
-        "relevance_score": 0.5476224422454834
+        "relevance_score": 0.5972437858581543
       },
       {
         "id": "d088d82d-f8a7-43ad-a0c0-a028d0597f20",
@@ -102,19 +102,19 @@
         "end_time": "00:12:07,971",
         "narrative_arc_id": "9facbc83-0817-491a-9ba2-119658c5df35",
         "arc_title": "Formation And Evolution Of Interns' Friendships, Rivalries, And Personal Growth",
-        "relevance_score": 0.47378456592559814
+        "relevance_score": 0.479530930519104
       },
       {
-        "id": "50afec83-b539-404b-8aca-58ee5de0e9ce",
-        "content": "Izzie and George gossip about Meredith's sex life and speculate about her relationship with Derek",
+        "id": "8093f6f8-0b70-480f-8f6d-ccec54ea44f1",
+        "content": "Izzie confronts Meredith about her choices and the impact of her relationship with Shepherd",
         "series": "GA",
         "season": "S01",
         "episode": "E07",
-        "start_time": "00:02:02,780",
-        "end_time": "00:02:21,818",
+        "start_time": "00:38:51,074",
+        "end_time": "00:40:12,016",
         "narrative_arc_id": "9facbc83-0817-491a-9ba2-119658c5df35",
         "arc_title": "Formation And Evolution Of Interns' Friendships, Rivalries, And Personal Growth",
-        "relevance_score": 0.48726797103881836
+        "relevance_score": 0.5715593099594116
       }
     ],
     "49264788-e224-49b5-b4d5-4cd71689c975": [
@@ -128,31 +128,31 @@
         "end_time": "00:00:49,594",
         "narrative_arc_id": "49264788-e224-49b5-b4d5-4cd71689c975",
         "arc_title": "Interns' Growth And Institutional Challenges At Seattle Grace Hospital",
-        "relevance_score": 0.5756735801696777
+        "relevance_score": 0.5719013214111328
       },
       {
-        "id": "1ef460c3-3781-484e-b6c1-dd62c34fc239",
-        "content": "Miranda Bailey reprimands Meredith Grey for being late and for her relationship with Derek Shepherd, emphasizing the consequences of breaking hospital rules.",
+        "id": "acb05c29-470b-4342-aec2-81e93fb5acf6",
+        "content": "Dr. Derek Shepherd confirms Meredith and Cristina's diagnosis and invites Meredith to scrub in on the surgery.",
         "series": "GA",
         "season": "S01",
-        "episode": "E06",
-        "start_time": "00:03:25,431",
-        "end_time": "00:03:44,310",
+        "episode": "E01",
+        "start_time": "00:28:14,967",
+        "end_time": "00:29:32,226",
         "narrative_arc_id": "49264788-e224-49b5-b4d5-4cd71689c975",
         "arc_title": "Interns' Growth And Institutional Challenges At Seattle Grace Hospital",
-        "relevance_score": 0.5239701271057129
+        "relevance_score": 0.525365948677063
       },
       {
-        "id": "e38fa51c-535d-4880-9c67-4f4d5d94000f",
-        "content": "Izzie Stevens and George O'Malley perform an emergency bedside thoracotomy on Mr. Harper, saving his life without immediate attending supervision.",
+        "id": "448fbb23-77a0-4d8b-ad02-20899c0db4c7",
+        "content": "Bailey selects George O'Malley to scrub in on Dr. Shepherd's hemispherectomy, giving him a high-profile surgical opportunity.",
         "series": "GA",
         "season": "S01",
-        "episode": "E06",
-        "start_time": "00:31:19,634",
-        "end_time": "00:33:09,865",
+        "episode": "E07",
+        "start_time": "00:21:52,185",
+        "end_time": "00:22:02,576",
         "narrative_arc_id": "49264788-e224-49b5-b4d5-4cd71689c975",
         "arc_title": "Interns' Growth And Institutional Challenges At Seattle Grace Hospital",
-        "relevance_score": 0.46137458086013794
+        "relevance_score": 0.6090129017829895
       }
     ],
     "dbb01a21-6da2-4881-addd-2636c0684045": [
@@ -166,7 +166,7 @@
         "end_time": "00:00:47,807",
         "narrative_arc_id": "dbb01a21-6da2-4881-addd-2636c0684045",
         "arc_title": "Dr. Miranda Bailey'S Leadership And Mentorship Of Interns",
-        "relevance_score": 0.485615074634552
+        "relevance_score": 0.479733943939209
       },
       {
         "id": "9685b64c-ba8d-4d98-9829-d110b366feab",
@@ -178,19 +178,19 @@
         "end_time": "00:05:12,170",
         "narrative_arc_id": "dbb01a21-6da2-4881-addd-2636c0684045",
         "arc_title": "Dr. Miranda Bailey'S Leadership And Mentorship Of Interns",
-        "relevance_score": 0.6714085936546326
+        "relevance_score": 0.518514096736908
       },
       {
-        "id": "df293386-5328-4537-80fe-4e8c99195e42",
-        "content": "Dr. Bailey assigns the interns to their first patient cases and outlines their responsibilities.",
+        "id": "9685b64c-ba8d-4d98-9829-d110b366feab",
+        "content": "Dr. Bailey introduces herself to the interns and presents her five strict rules for surviving surgical residency.",
         "series": "GA",
         "season": "S01",
         "episode": "E01",
-        "start_time": "00:06:05,552",
-        "end_time": "00:06:16,485",
+        "start_time": "00:04:18,745",
+        "end_time": "00:05:12,170",
         "narrative_arc_id": "dbb01a21-6da2-4881-addd-2636c0684045",
         "arc_title": "Dr. Miranda Bailey'S Leadership And Mentorship Of Interns",
-        "relevance_score": 0.6418201327323914
+        "relevance_score": 0.6976168751716614
       }
     ],
     "9afd051e-93a7-4c4a-8766-ca6e8a72f08b": [
@@ -216,7 +216,7 @@
         "end_time": "00:32:46,173",
         "narrative_arc_id": "9afd051e-93a7-4c4a-8766-ca6e8a72f08b",
         "arc_title": "Dr. Richard Webber'S Role As Chief And Mentor",
-        "relevance_score": 0.3209560513496399
+        "relevance_score": 0.31275564432144165
       },
       {
         "id": "cbc0c6de-c7c3-4271-ac24-5c3bb19988e1",
@@ -228,7 +228,7 @@
         "end_time": "00:20:04,798",
         "narrative_arc_id": "9afd051e-93a7-4c4a-8766-ca6e8a72f08b",
         "arc_title": "Dr. Richard Webber'S Role As Chief And Mentor",
-        "relevance_score": 0.45422136783599854
+        "relevance_score": 0.4442617893218994
       }
     ],
     "558b3c6b-0f9b-4495-89a4-3790b442a0f3": [
@@ -242,7 +242,19 @@
         "end_time": "00:42:25,391",
         "narrative_arc_id": "558b3c6b-0f9b-4495-89a4-3790b442a0f3",
         "arc_title": "Meredith Grey'S Journey To Independence And Building A New Home",
-        "relevance_score": 0.5416884422302246
+        "relevance_score": 0.5427326560020447
+      },
+      {
+        "id": "43f8826d-84e6-4321-b8c1-e97f4c9c3b6f",
+        "content": "Meredith visits Ellis Grey at the care facility and introduces herself, acknowledging her mother's legacy and her own new beginning.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E01",
+        "start_time": "00:41:37,253",
+        "end_time": "00:42:25,391",
+        "narrative_arc_id": "558b3c6b-0f9b-4495-89a4-3790b442a0f3",
+        "arc_title": "Meredith Grey'S Journey To Independence And Building A New Home",
+        "relevance_score": 0.5368596315383911
       },
       {
         "id": "d071ed85-d9df-4492-ae36-da20a345b2aa",
@@ -254,19 +266,7 @@
         "end_time": "00:40:48,280",
         "narrative_arc_id": "558b3c6b-0f9b-4495-89a4-3790b442a0f3",
         "arc_title": "Meredith Grey'S Journey To Independence And Building A New Home",
-        "relevance_score": 0.46046769618988037
-      },
-      {
-        "id": "74329e6d-604b-4418-a915-a525508538df",
-        "content": "Meredith is pressured to sign legal documents to take ownership of her mother's estate.",
-        "series": "GA",
-        "season": "S01",
-        "episode": "E05",
-        "start_time": "00:00:31,146",
-        "end_time": "00:00:45,276",
-        "narrative_arc_id": "558b3c6b-0f9b-4495-89a4-3790b442a0f3",
-        "arc_title": "Meredith Grey'S Journey To Independence And Building A New Home",
-        "relevance_score": 0.45791852474212646
+        "relevance_score": 0.4843214750289917
       }
     ],
     "50a993ef-3e22-47c2-adbb-2e3aca068a28": [
@@ -280,19 +280,7 @@
         "end_time": "00:01:13,995",
         "narrative_arc_id": "50a993ef-3e22-47c2-adbb-2e3aca068a28",
         "arc_title": "Professional Boundaries And Ethical Dilemmas In Patient Care",
-        "relevance_score": 0.47797876596450806
-      },
-      {
-        "id": "e38c073d-bf46-4e2f-b47c-afca4f820186",
-        "content": "Meredith learns from a lawyer that she must take responsibility for her mother's advancing Alzheimer's and estate.",
-        "series": "GA",
-        "season": "S01",
-        "episode": "E05",
-        "start_time": "00:00:31,146",
-        "end_time": "00:01:13,995",
-        "narrative_arc_id": "50a993ef-3e22-47c2-adbb-2e3aca068a28",
-        "arc_title": "Professional Boundaries And Ethical Dilemmas In Patient Care",
-        "relevance_score": 0.5773308277130127
+        "relevance_score": 0.4779024124145508
       },
       {
         "id": "36954fc0-9298-4f57-a127-e07067852ec4",
@@ -304,7 +292,19 @@
         "end_time": "00:00:47,807",
         "narrative_arc_id": "50a993ef-3e22-47c2-adbb-2e3aca068a28",
         "arc_title": "Professional Boundaries And Ethical Dilemmas In Patient Care",
-        "relevance_score": 0.4786136746406555
+        "relevance_score": 0.4593732953071594
+      },
+      {
+        "id": "932e95eb-c570-4372-a639-9c51ea7d0062",
+        "content": "George notices Dr. Taylor's impairment and reports it, advocating for patient safety despite institutional hierarchy.",
+        "series": "GA",
+        "season": "S01",
+        "episode": "E07",
+        "start_time": "00:26:33,689",
+        "end_time": "00:27:23,423",
+        "narrative_arc_id": "50a993ef-3e22-47c2-adbb-2e3aca068a28",
+        "arc_title": "Professional Boundaries And Ethical Dilemmas In Patient Care",
+        "relevance_score": 0.42894595861434937
       }
     ]
   },
@@ -314,61 +314,72 @@
       "arc_title": "Meredith Grey'S Burden Of Ellis Grey'S Legacy And Caregiving",
       "narrative_arc_id": "750c008f-d0c4-4bea-a6a3-825ea18e3967",
       "source_episode": "GAS01E04",
-      "start_time": "00:00:22,440",
-      "end_time": "00:00:29,210",
+      "start_time": "00:00:31,146",
+      "end_time": "00:00:39,825",
       "content": "Meredith keeps her mother’s illness secret from her roommates and colleagues.",
       "selected_subtitles": [
-        "Lawyer / Dr. Meredith Grey (PVM): Your mother's Alzheimer's is advancing, so while she's still lucid enough to consent, she needs to sign everything over to you.",
-        "Meredith Grey / Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): Me?"
+        "Lawyer / Dr. Meredith Grey (PVM): Her lawyer has been managing her estate with a limited power of attorney, but your mother's Alzheimer's is advancing.",
+        "Lawyer / Dr. Meredith Grey (PVM): So while she's still lucid enough to consent, she needs to sign everything over to you."
       ],
       "debug_info": {
-        "event_used": "14265b53-a865-4f11-a574-6b4294b6ce15",
-        "event_timespan": "00:00:22,440 - 00:00:29,210",
+        "event_used": "f0da7776-b381-4a7f-9042-f42893451200",
+        "event_timespan": "00:00:31,146 - 00:00:39,825",
         "subtitles_sent_to_llm": [
-          "0: [00:00:22,440 - 00:00:28,329] Lawyer / Dr. Meredith Grey (PVM): Your mother's Alzheimer's is advancing, so while she's still lucid enough to consent, she needs to sign everything over to you.",
-          "1: [00:00:28,390 - 00:00:29,210] Meredith Grey / Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): Me?"
+          "0: [00:00:31,146 - 00:00:35,938] Lawyer / Dr. Meredith Grey (PVM): Her lawyer has been managing her estate with a limited power of attorney, but your mother's Alzheimer's is advancing.",
+          "1: [00:00:36,057 - 00:00:39,825] Lawyer / Dr. Meredith Grey (PVM): So while she's still lucid enough to consent, she needs to sign everything over to you."
         ],
         "llm_response": "0,1",
         "selected_indices": [
           0,
           1
         ],
-        "duration_seconds": 6.8,
-        "status": "SUCCESS - Used event 14265b53-a865-4f11-a574-6b4294b6ce15 for original event 241e321c-1f53-474e-9457-fb30ecfde148",
+        "duration_seconds": 8.7,
+        "status": "SUCCESS - Used event f0da7776-b381-4a7f-9042-f42893451200 for original event 241e321c-1f53-474e-9457-fb30ecfde148",
         "original_event_timespan": "00:21:24,227 - 00:21:50,313",
-        "actual_dialogue_timespan": "00:00:22,440 - 00:00:29,210",
-        "source_event_used": "14265b53-a865-4f11-a574-6b4294b6ce15"
+        "actual_dialogue_timespan": "00:00:31,146 - 00:00:39,825",
+        "source_event_used": "f0da7776-b381-4a7f-9042-f42893451200"
       }
     },
     {
-      "event_id": "e07b641e-3bea-44e4-aaee-42669fffbdd8",
+      "event_id": "9ff741b4-a633-4026-b867-1e0864a1af09",
       "arc_title": "Meredith And Derek'S Secret Workplace Relationship",
       "narrative_arc_id": "1925f04e-426b-4f48-b735-8d6d48f2a140",
-      "source_episode": "GAS01E01",
-      "start_time": "00:00:37,713",
-      "end_time": "00:00:41,378",
-      "content": "Meredith wakes up after a one-night stand with Derek and insists he leave before her first day at the hospital.",
+      "source_episode": "GAS01E06",
+      "start_time": "00:02:55,210",
+      "end_time": "00:03:05,901",
+      "content": "Meredith and Derek meet privately after spending the night together, acknowledging the risk of continuing their relationship.",
       "selected_subtitles": [
-        "Meredith Grey / Dr. Miranda Bailey OR Digby Owens (PVM): What is this that we're doing here?",
-        "Derek Shepherd / Dr. Miranda Bailey (PVM): You need a definition?"
+        "Derek Shepherd / Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): If I was a better guy, I'd walk away.",
+        "Meredith Grey / Dr. Meredith Grey (PVM): Yes, you would.",
+        "Derek Shepherd / Dr. Miranda Bailey OR Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): Do you want me to be a better guy?",
+        "Meredith Grey / Dr. Miranda Bailey OR Dr. Miranda Bailey (PVM): Yes.",
+        "Meredith Grey / Dr. Meredith Grey (PVM): No."
       ],
       "debug_info": {
-        "event_used": "0f3fa280-96cb-4f42-8ce2-d9c64646cbba",
-        "event_timespan": "00:00:37,713 - 00:00:41,378",
+        "event_used": "9ff741b4-a633-4026-b867-1e0864a1af09",
+        "event_timespan": "00:02:55,210 - 00:03:10,503",
         "subtitles_sent_to_llm": [
-          "0: [00:00:37,713 - 00:00:39,576] Meredith Grey / Dr. Miranda Bailey OR Digby Owens (PVM): What is this that we're doing here?",
-          "1: [00:00:40,295 - 00:00:41,378] Derek Shepherd / Dr. Miranda Bailey (PVM): You need a definition?"
+          "0: [00:02:55,210 - 00:02:57,170] Derek Shepherd / Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): If I was a better guy, I'd walk away.",
+          "1: [00:02:57,352 - 00:02:57,831] Meredith Grey / Dr. Meredith Grey (PVM): Yes, you would.",
+          "2: [00:02:57,853 - 00:03:01,574] Derek Shepherd / Dr. Miranda Bailey OR Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): Do you want me to be a better guy?",
+          "3: [00:03:02,417 - 00:03:02,858] Meredith Grey / Dr. Miranda Bailey OR Dr. Miranda Bailey (PVM): Yes.",
+          "4: [00:03:05,680 - 00:03:05,901] Meredith Grey / Dr. Meredith Grey (PVM): No.",
+          "5: [00:03:08,323 - 00:03:10,145] Meredith Grey / Dr. Miranda Bailey OR Dr. Meredith Grey (PVM): Crap.",
+          "6: [00:03:10,163 - 00:03:10,503] Meredith Grey / Dr. Miranda Bailey (PVM): I'm late."
         ],
-        "llm_response": "0,1",
+        "llm_response": "0,1,2,3,4",
         "selected_indices": [
           0,
-          1
+          1,
+          2,
+          3,
+          4
         ],
-        "duration_seconds": 3.7,
-        "status": "SUCCESS - Used event 0f3fa280-96cb-4f42-8ce2-d9c64646cbba for original event e07b641e-3bea-44e4-aaee-42669fffbdd8",
-        "original_event_timespan": "00:00:37,173 - 00:01:33,030",
-        "actual_dialogue_timespan": "00:00:37,713 - 00:00:41,378",
-        "source_event_used": "0f3fa280-96cb-4f42-8ce2-d9c64646cbba"
+        "duration_seconds": 10.7,
+        "status": "SUCCESS - Used event 9ff741b4-a633-4026-b867-1e0864a1af09 for original event 9ff741b4-a633-4026-b867-1e0864a1af09",
+        "original_event_timespan": "00:02:55,210 - 00:03:10,503",
+        "actual_dialogue_timespan": "00:02:55,210 - 00:03:05,901",
+        "source_event_used": "9ff741b4-a633-4026-b867-1e0864a1af09"
       }
     },
     {
@@ -377,35 +388,62 @@
       "narrative_arc_id": "9facbc83-0817-491a-9ba2-119658c5df35",
       "source_episode": "GAS01E01",
       "start_time": "00:26:21,655",
-      "end_time": "00:26:27,501",
+      "end_time": "00:26:49,864",
       "content": "Meredith confides in Cristina about her one-night stand with Derek Shepherd.",
-      "selected_subtitles": [
-        "Meredith Grey / Meredith Grey (PVM): You can't comment, make a face, or react in any way.",
-        "Meredith Grey / Meredith Grey (PVM): We had sex."
-      ],
+      "selected_subtitles": [],
       "debug_info": {
-        "event_used": "cd17a49f-a420-4c6c-a3bc-5234b3967dd8",
-        "event_timespan": "00:26:21,655 - 00:26:49,864",
-        "subtitles_sent_to_llm": [
-          "0: [00:26:21,655 - 00:26:26,902] Meredith Grey / Meredith Grey (PVM): You can't comment, make a face, or react in any way.",
-          "1: [00:26:26,922 - 00:26:27,501] Meredith Grey / Meredith Grey (PVM): We had sex.",
-          "2: [00:26:31,945 - 00:26:32,866] Christina Yang / Meredith Grey OR Dr. Miranda Bailey (PVM): What about an aneurysm?",
-          "3: [00:26:33,807 - 00:26:35,750] Meredith Grey / Dr. Miranda Bailey OR Meredith Grey (PVM): No blood on the CT and no headaches.",
-          "4: [00:26:36,741 - 00:26:39,807] Christina Yang / Dr. Miranda Bailey (PVM): There's no drug use, no pregnancy, no trauma.",
-          "5: [00:26:42,672 - 00:26:43,231] Christina Yang / Dr. Miranda Bailey (PVM): Was he good?",
-          "6: [00:26:43,251 - 00:26:45,154] Christina Yang / Dr. Miranda Bailey OR Meredith Grey (PVM): I mean, he looks like he'd be good.",
-          "7: [00:26:45,174 - 00:26:45,836] Christina Yang / Meredith Grey (PVM): Was it any good?",
-          "8: [00:26:45,855 - 00:26:49,864] Meredith Grey / Meredith Grey (PVM): A lot of answers."
+        "subtitles": [
+          "0: [00:38:51,074 - 00:38:52,496] Izzie Stevens / Meredith Grey (PVM): So you know.",
+          "1: [00:38:52,675 - 00:38:52,936] Meredith Grey / Meredith Grey (PVM): I know.",
+          "2: [00:38:54,978 - 00:39:01,405] Meredith Grey / Meredith Grey (PVM): Well, do you want the long-sworded version, or do you want the short version where I started sleeping with a guy who turned out to be my boss?",
+          "3: [00:39:01,686 - 00:39:02,907] Izzie Stevens / Izzie Stevens OR Meredith Grey (PVM): Neither.",
+          "4: [00:39:03,309 - 00:39:04,893] Meredith Grey: Izzy, cut me some slack here.",
+          "5: [00:39:05,514 - 00:39:05,733] Izzie Stevens: No.",
+          "6: [00:39:06,335 - 00:39:07,297] Izzie Stevens: You went to Dartmouth.",
+          "7: [00:39:07,838 - 00:39:09,018] Izzie Stevens: Your mother is Ellis Gray.",
+          "8: [00:39:09,039 - 00:39:11,063] Izzie Stevens: You grew up... Look at this house.",
+          "9: [00:39:11,804 - 00:39:15,570] Izzie Stevens: You know, you walk into the O.R., and there isn't anyone who doubts that you should be there.",
+          "10: [00:39:16,452 - 00:39:17,793] Izzie Stevens: I grew up in a trailer park.",
+          "11: [00:39:17,813 - 00:39:19,456] Izzie Stevens: I went to state school.",
+          "12: [00:39:19,496 - 00:39:22,041] Izzie Stevens: I put myself through med school by posing in my underwear.",
+          "13: [00:39:22,601 - 00:39:25,487] Izzie Stevens: You know, I walk into the O.R., and everyone hopes I'm the nurse.",
+          "14: [00:39:26,429 - 00:39:30,735] Izzie Stevens: You have their respect without even trying, and you're throwing it away for what?",
+          "15: [00:39:31,016 - 00:39:32,117] Izzie Stevens: A few good surgeries?",
+          "16: [00:39:32,396 - 00:39:32,657] Meredith Grey: No.",
+          "17: [00:39:33,599 - 00:39:34,721] Meredith Grey: It's not about the surgeries.",
+          "18: [00:39:35,422 - 00:39:36,503] Meredith Grey: It's not about getting ahead.",
+          "19: [00:39:36,963 - 00:39:37,545] Izzie Stevens: Then what?",
+          "20: [00:39:38,766 - 00:39:39,748] Izzie Stevens: A little hot sex?",
+          "21: [00:39:40,728 - 00:39:42,911] Izzie Stevens: You're willing to ruin your credibility over that?",
+          "22: [00:39:42,931 - 00:39:46,617] Izzie Stevens: I mean, Meredith, what the hell are you doing?",
+          "23: [00:39:46,657 - 00:39:51,744] Izzie Stevens / Meredith Grey (PVM): Oh, my god.",
+          "24: [00:39:53,193 - 00:39:54,253] Izzie Stevens: You're falling for him.",
+          "25: [00:39:54,273 - 00:39:55,315] Meredith Grey: I am not.",
+          "26: [00:39:55,956 - 00:39:57,318] Izzie Stevens: Oh, you so are.",
+          "27: [00:39:57,338 - 00:39:58,980] Meredith Grey: No, I'm not.",
+          "28: [00:40:00,442 - 00:40:01,023] Izzie Stevens / Meredith Grey (PVM): You so are.",
+          "29: [00:40:01,083 - 00:40:03,585] Meredith Grey / Meredith Grey (PVM): Damn it.",
+          "30: [00:40:03,606 - 00:40:04,688] Izzie Stevens / Meredith Grey (PVM): You poor girl.",
+          "31: [00:40:06,670 - 00:40:12,016] Meredith Grey / Meredith Grey (PVM): You know, it's just that he's just so, and I'm just, I'm having a hard time."
         ],
-        "llm_response": "0,1",
-        "selected_indices": [
-          0,
-          1
+        "event_used": "8093f6f8-0b70-480f-8f6d-ccec54ea44f1",
+        "event_timespan": "00:38:51,074 - 00:40:12,016",
+        "original_event": "cd17a49f-a420-4c6c-a3bc-5234b3967dd8",
+        "llm_response": "6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
+        "status": "FAILED after 3 attempts",
+        "subtitles_in_original_event": [
+          "Meredith Grey / Meredith Grey (PVM): You can't comment, make a face, or react in any way.",
+          "Meredith Grey / Meredith Grey (PVM): We had sex.",
+          "Christina Yang / Meredith Grey OR Dr. Miranda Bailey (PVM): What about an aneurysm?",
+          "Meredith Grey / Dr. Miranda Bailey OR Meredith Grey (PVM): No blood on the CT and no headaches.",
+          "Christina Yang / Dr. Miranda Bailey (PVM): There's no drug use, no pregnancy, no trauma.",
+          "Christina Yang / Dr. Miranda Bailey (PVM): Was he good?",
+          "Christina Yang / Dr. Miranda Bailey OR Meredith Grey (PVM): I mean, he looks like he'd be good.",
+          "Christina Yang / Meredith Grey (PVM): Was it any good?",
+          "Meredith Grey / Meredith Grey (PVM): A lot of answers."
         ],
-        "duration_seconds": 5.8,
-        "status": "SUCCESS - Used event cd17a49f-a420-4c6c-a3bc-5234b3967dd8 for original event cd17a49f-a420-4c6c-a3bc-5234b3967dd8",
         "original_event_timespan": "00:26:21,655 - 00:26:49,864",
-        "actual_dialogue_timespan": "00:26:21,655 - 00:26:27,501",
+        "actual_dialogue_timespan": "00:26:21,655 - 00:26:49,864",
         "source_event_used": "cd17a49f-a420-4c6c-a3bc-5234b3967dd8"
       }
     },
@@ -454,20 +492,12 @@
       "arc_title": "Dr. Miranda Bailey'S Leadership And Mentorship Of Interns",
       "narrative_arc_id": "dbb01a21-6da2-4881-addd-2636c0684045",
       "source_episode": "GAS01E07",
-      "start_time": "00:04:20,884",
-      "end_time": "00:04:26,593",
+      "start_time": "00:00:25,937",
+      "end_time": "00:00:47,807",
       "content": "Bailey confronts Meredith about her relationship with an attending and warns her about favoritism.",
-      "selected_subtitles": [
-        "Dr. Miranda Bailey: I have five rules.",
-        "Dr. Miranda Bailey: Memorize them.",
-        "Dr. Miranda Bailey: Rule number one, don't bother sucking up.",
-        "Dr. Miranda Bailey: I already hate you.",
-        "Dr. Miranda Bailey: That's not going to change."
-      ],
+      "selected_subtitles": [],
       "debug_info": {
-        "event_used": "9685b64c-ba8d-4d98-9829-d110b366feab",
-        "event_timespan": "00:04:18,745 - 00:05:12,170",
-        "subtitles_sent_to_llm": [
+        "subtitles": [
           "0: [00:04:20,884 - 00:04:22,146] Dr. Miranda Bailey: I have five rules.",
           "1: [00:04:22,206 - 00:04:23,048] Dr. Miranda Bailey: Memorize them.",
           "2: [00:04:23,108 - 00:04:24,810] Dr. Miranda Bailey: Rule number one, don't bother sucking up.",
@@ -493,19 +523,20 @@
           "22: [00:05:07,180 - 00:05:08,242] Cristina Yang / Dr. Miranda Bailey OR Meredith Grey (PVM): That was only four.",
           "23: [00:05:09,867 - 00:05:12,170] Dr. Miranda Bailey: Rule number five, when I move, you move."
         ],
-        "llm_response": "0,1,2,3,4",
-        "selected_indices": [
-          0,
-          1,
-          2,
-          3,
-          4
+        "event_used": "9685b64c-ba8d-4d98-9829-d110b366feab",
+        "event_timespan": "00:04:18,745 - 00:05:12,170",
+        "original_event": "f3805542-4ba4-473c-b3c5-9cb201947ec5",
+        "llm_response": "0,1,2,3,4,5,6,7,8",
+        "status": "FAILED after 3 attempts",
+        "subtitles_in_original_event": [
+          "Miranda Bailey / Meredith Grey OR Dr. Miranda Bailey (PVM): And the longer this little fling goes on, the more favors you get over the others who are fighting to the nail just to make it through this program when those people start finding out what's going on.",
+          "Meredith Grey / Dr. Miranda Bailey OR Digby Owens (PVM): What is this that we're doing here?",
+          "Derek Shepherd / Dr. Miranda Bailey (PVM): You need a definition?",
+          "Miranda Bailey / Dr. Miranda Bailey (PVM): The next time I see you favoring Meredith Gray in any way, I'll make sure she doesn't see the inside of an OR for a month."
         ],
-        "duration_seconds": 5.7,
-        "status": "SUCCESS - Used event 9685b64c-ba8d-4d98-9829-d110b366feab for original event f3805542-4ba4-473c-b3c5-9cb201947ec5",
         "original_event_timespan": "00:00:25,937 - 00:00:47,807",
-        "actual_dialogue_timespan": "00:04:20,884 - 00:04:26,593",
-        "source_event_used": "9685b64c-ba8d-4d98-9829-d110b366feab"
+        "actual_dialogue_timespan": "00:00:25,937 - 00:00:47,807",
+        "source_event_used": "f3805542-4ba4-473c-b3c5-9cb201947ec5"
       }
     },
     {
@@ -530,7 +561,7 @@
         "event_used": "cbc0c6de-c7c3-4271-ac24-5c3bb19988e1",
         "event_timespan": "00:19:47,247 - 00:20:04,798",
         "original_event": "13d8f9b3-e943-4355-b6b4-6354980840e1",
-        "llm_response": "1,2,3,4,5,6",
+        "llm_response": "0,1,2,3,4,5,6",
         "status": "FAILED after 3 attempts",
         "subtitles_in_original_event": [
           "Meredith Grey / Dr. Meredith Gray OR Jorge Cruz (PVM): I told my mother about you.",
@@ -605,15 +636,15 @@
       "selected_subtitles": [],
       "debug_info": {
         "subtitles": [
-          "0: [00:00:25,937 - 00:00:37,332] Miranda Bailey / Meredith Grey OR Dr. Miranda Bailey (PVM): And the longer this little fling goes on, the more favors you get over the others who are fighting to the nail just to make it through this program when those people start finding out what's going on.",
-          "1: [00:00:37,713 - 00:00:39,576] Meredith Grey / Dr. Miranda Bailey OR Digby Owens (PVM): What is this that we're doing here?",
-          "2: [00:00:40,295 - 00:00:41,378] Derek Shepherd / Dr. Miranda Bailey (PVM): You need a definition?",
-          "3: [00:00:41,417 - 00:00:47,807] Miranda Bailey / Dr. Miranda Bailey (PVM): The next time I see you favoring Meredith Gray in any way, I'll make sure she doesn't see the inside of an OR for a month."
+          "0: [00:00:31,146 - 00:00:35,938] Lawyer / Dr. Meredith Grey (PVM): Her lawyer has been managing her estate with a limited power of attorney, but your mother's Alzheimer's is advancing.",
+          "1: [00:00:36,057 - 00:00:39,825] Lawyer / Dr. Meredith Grey (PVM): So while she's still lucid enough to consent, she needs to sign everything over to you.",
+          "2: [00:00:39,884 - 00:00:45,276] Dr. Meredith Grey: Me?",
+          "3: [00:00:46,167 - 00:01:13,995] Dr. Meredith Grey: responsibility it really does suck look I haven't slept in 48 hours I'm getting my first shot at heart surgery this morning I'm missing rounds are you sure there isn't anybody here or the attorney I mean do I really have to be the one to handle this we're talking about her estate her finances her medical care you really want to leave her life in someone else's hands she's your mother really really sucks"
         ],
-        "event_used": "36954fc0-9298-4f57-a127-e07067852ec4",
-        "event_timespan": "00:00:25,937 - 00:00:47,807",
-        "original_event": "e38c073d-bf46-4e2f-b47c-afca4f820186",
-        "llm_response": "1,2,3",
+        "event_used": "e38c073d-bf46-4e2f-b47c-afca4f820186",
+        "event_timespan": "00:00:31,146 - 00:01:13,995",
+        "original_event": null,
+        "llm_response": "0,1,2",
         "status": "FAILED after 3 attempts",
         "subtitles_in_original_event": [
           "Lawyer / Dr. Meredith Grey (PVM): Her lawyer has been managing her estate with a limited power of attorney, but your mother's Alzheimer's is advancing.",

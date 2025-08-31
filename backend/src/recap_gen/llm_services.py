@@ -371,9 +371,9 @@ def extract_key_dialogue(events: List[Any], subtitle_data: Dict[str, List[Dict]]
 
 INSTRUCTIONS:
 1. Choose CONSECUTIVE subtitles that form a meaningful dialogue exchange
-2. Maximum span: 10 seconds from first to last selected subtitle
+2. Maximum span: 12 seconds from first to last selected subtitle
 3. Minimum: 2 consecutive subtitles
-4. Maximum: As many consecutive subtitles as fit within 10 seconds
+4. Maximum: As many consecutive subtitles as fit within 12 seconds
 5. Choose dialogue that best represents this narrative moment
 
 The most important thing is that the subtitles selected should be the most interesting and relevant to the current episode! We are creating a recap to help viewers understand the current episode.
@@ -417,12 +417,12 @@ Your selection:"""
                         # Get the selected subtitles (using the indices from our ordered list)
                         selected_subs = [event_subtitles_with_timing[idx] for idx in selected_indices]
 
-                        # Check if selection fits within 10 seconds
+                        # Check if selection fits within 12 seconds
                         first_sub = selected_subs[0]
                         last_sub = selected_subs[-1]
                         duration = last_sub['end'] - first_sub['start']
                         
-                        if duration <= 10.0:
+                        if duration <= 12.0:
                             # Extract selected subtitles
                             selected_lines = [sub['text'] for sub in selected_subs]
                             
@@ -464,7 +464,7 @@ Your selection:"""
                                             alt_duration = alt_subs[-1]['end'] - alt_subs[0]['start']
                                             alt_timestamp_key = f"{episode_key}:{alt_subs[0]['start_formatted']}-{alt_subs[-1]['end_formatted']}"
                                             
-                                            if alt_duration <= 10.0 and alt_timestamp_key not in used_timestamp_ranges:
+                                            if alt_duration <= 12.0 and alt_timestamp_key not in used_timestamp_ranges:
                                                 # Found alternative dialogue!
                                                 selected_indices = alt_indices
                                                 selected_subs = alt_subs
@@ -493,8 +493,8 @@ Your selection:"""
                                 success = True
                                 break
                         else:
-                            last_attempt_inputs["status"] = f"Selected dialogue span too long ({duration:.1f}s > 10s)"
-                            logger.warning(f"Selected dialogue span for event {current_event.id} too long ({duration:.1f}s > 10s), trying next event")
+                            last_attempt_inputs["status"] = f"Selected dialogue span too long ({duration:.1f}s > 12s)"
+                            logger.warning(f"Selected dialogue span for event {current_event.id} too long ({duration:.1f}s > 12s), trying next event")
                     else:
                         last_attempt_inputs["status"] = "Invalid selection (not consecutive or out of range)"
                         logger.warning(f"Invalid selection (not consecutive or out of range), trying next event")
